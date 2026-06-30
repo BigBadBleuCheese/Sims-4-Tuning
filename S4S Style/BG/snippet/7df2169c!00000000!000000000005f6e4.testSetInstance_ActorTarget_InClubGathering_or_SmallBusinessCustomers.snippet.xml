@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="TestSetInstance" i="snippet" m="event_testing.tests" n="testSetInstance_ActorTarget_InClubGathering_or_SmallBusinessCustomers" s="390884">
+  <L n="test">
+    <L>
+      <V t="club_test">
+        <U n="club_test">
+          <V n="affordance_rule" t="enabled">
+            <V n="enabled" t="is_encouraged" />
+          </V>
+          <V n="club" t="use_any_club" />
+        </U>
+      </V>
+      <V t="club_gathering_test">
+        <U n="club_gathering_test">
+          <V n="club" t="use_any_club" />
+          <V n="club_gathering_status" t="enabled">
+            <V n="enabled" t="Gathering Exists" />
+          </V>
+          <V n="subject_club_gathering_status" t="enabled">
+            <V n="enabled" t="In Gathering" />
+          </V>
+          <V n="target_club_gathering_status" t="enabled">
+            <V n="enabled" t="In Gathering" />
+          </V>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="small_business_is_affordance_encouraged_test">
+        <U n="small_business_is_affordance_encouraged_test">
+          <E n="small_business_customer_situation_tag">Situation_SmallBusiness_Customer</E>
+          <V n="tooltip" t="disabled" />
+        </U>
+      </V>
+      <V t="situation_job_test">
+        <U n="situation_job_test">
+          <L n="situation_jobs">
+            <T>373362<!--SituationJob: job_SmallBusinessCustomer--></T>
+            <T>399327<!--SituationJob: jobs_SmallBusinessEmployee_Work--></T>
+            <T>401789<!--SituationJob: jobs_SmallBusinessEmployee_Work_Owner--></T>
+          </L>
+        </U>
+      </V>
+      <V t="situation_job_test">
+        <U n="situation_job_test">
+          <E n="participant">TargetSim</E>
+          <L n="situation_jobs">
+            <T>373362<!--SituationJob: job_SmallBusinessCustomer--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

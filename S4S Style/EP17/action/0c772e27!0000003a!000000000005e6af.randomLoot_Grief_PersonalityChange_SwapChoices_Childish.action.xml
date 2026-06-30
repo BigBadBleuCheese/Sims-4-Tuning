@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="RandomWeightedLoot" i="action" m="interactions.utils.loot" n="randomLoot_Grief_PersonalityChange_SwapChoices_Childish" s="386735">
+  <L n="random_loot_actions">
+    <U>
+      <V n="action" t="notification_and_dialog">
+        <U n="notification_and_dialog">
+          <V n="dialog" t="dialog_icon">
+            <U n="dialog_icon">
+              <L n="content_icons">
+                <U>
+                  <T n="icon" p="InGame\UI\Icons\CAS\Traits\trait_childish_cas.png">2f7d0004:00000000:4ab232629d5e7db6</T>
+                  <V n="label" t="enabled">
+                    <T n="enabled">0x1B308E3C<!--String: "Childish"--></T>
+                  </V>
+                </U>
+                <U>
+                  <T n="icon" p="InGame\UI\Icons\Notifications\notification_TraitSwap.png">2f7d0004:00000000:944aa44ac60e672c</T>
+                </U>
+                <U>
+                  <T n="icon" p="InGame\UI\Icons\CAS\Traits\trait_creative_cas.png">2f7d0004:00000000:c8b3377565ce04eb</T>
+                  <V n="label" t="enabled">
+                    <T n="enabled">0x5BD67003<!--String: "Creative"--></T>
+                  </V>
+                </U>
+              </L>
+              <V n="text" t="single">
+                <T n="single">0x70AD767<!--String: "Congratulations! {0.SimFirstName} was able to cope with Grief in a healthy way, resulting in a Personality Trait change."--></T>
+              </V>
+              <V n="title" t="enabled">
+                <T n="enabled">0xA80117C2<!--String: "Personality Change"--></T>
+              </V>
+              <L n="ui_responses">
+                <U>
+                  <V n="loots_for_response" t="enabled">
+                    <U n="enabled">
+                      <L n="loots">
+                        <T>386430<!--LootActions: loot_Grief_PersonalityChange_Swap_ChildishtoCreative--></T>
+                      </L>
+                    </U>
+                  </V>
+                  <T n="text">0x2FD36C96<!--String: "Yes"--></T>
+                </U>
+                <U>
+                  <V n="loots_for_response" t="enabled">
+                    <U n="enabled">
+                      <E n="dialog_response_id_override">DIALOG_RESPONSE_CUSTOM_2</E>
+                      <L n="loots">
+                        <T>386425<!--LootActions: loot_Grief_PersonalityChange_DeclineChange--></T>
+                      </L>
+                    </U>
+                  </V>
+                  <T n="text">0xCD7BA1DC<!--String: "No"--></T>
+                </U>
+              </L>
+            </U>
+          </V>
+        </U>
+      </V>
+    </U>
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">386711<!--LootActions: loot_Grief_PersonalityChange_PackDialog_ChildishtoWise--></T>
+      </V>
+      <U n="weight">
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="trait">
+                  <U n="trait">
+                    <L n="blacklist_traits">
+                      <T>34320<!--Trait: trait_elder--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+  </L>
+</I>

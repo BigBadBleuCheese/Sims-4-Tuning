@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Sentiment_AddSentiment_Close_ChildhoodSentiment_FictitiousFriend" s="463486">
+  <L n="loot_actions">
+    <V t="statistics">
+      <V n="statistics" t="relationship_set_max">
+        <U n="relationship_set_max">
+          <U n="chance">
+            <L n="multipliers" />
+          </U>
+          <L n="subject">
+            <E>Actor</E>
+          </L>
+          <L n="subject_filter_tests">
+            <L>
+              <V t="sim_info">
+                <U n="sim_info">
+                  <V n="ages" t="specified">
+                    <L n="specified">
+                      <E>CHILD</E>
+                    </L>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+          <L n="target_filter_tests">
+            <L>
+              <V t="sim_info">
+                <U n="sim_info">
+                  <V n="ages" t="specified">
+                    <L n="specified">
+                      <E>CHILD</E>
+                    </L>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+          <L n="target_participant_type">
+            <E>TargetSim</E>
+          </L>
+          <T n="track">462171<!--SentimentTrack: sentimentTrack_Actor_CloseTo_Target_LT_ChildhoodSentiment_FictitiousFriend--></T>
+        </U>
+      </V>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="audio_sting" t="disabled" />
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>TargetSim</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant" />
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x191213F8<!--String: "Sometimes the best friends are the friends we created with our imagination along the way!"--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0xDB3F7217<!--String: "Sentiment Gained"--></T>
+            </V>
+            <L n="ui_responses">
+              <U>
+                <T n="text">0xDB3F7217<!--String: "Sentiment Gained"--></T>
+                <E n="ui_request">SHOW_RELATIONSHIP_PANEL</E>
+              </U>
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="run_test_first">False</T>
+  <L n="tests">
+    <L>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>453528<!--Trait: trait_Hidden_EP20_IF--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

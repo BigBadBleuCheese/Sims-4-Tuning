@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Competitive_Reaction_Game_Loss_Target" s="460188">
+  <L n="loot_actions">
+    <V t="actions">
+      <T n="actions">472634<!--RandomWeightedLoot: randomWeightedLoot_Competitive_GiveSentiment_Target--></T>
+    </V>
+    <V t="actions">
+      <T n="actions">464047<!--LootActions: loot_Competitive_Tracker_Target_LostAgainst_Actor--></T>
+    </V>
+    <V t="reaction">
+      <U n="reaction">
+        <V n="mixer_reaction" t="enabled">
+          <U n="enabled">
+            <T n="affordance">458584<!--MixerInteraction: mixer_Competitive_TryNotTo_Rage--></T>
+            <V n="affordance_target" t="enabled">
+              <E n="enabled">TargetSim</E>
+            </V>
+          </U>
+        </V>
+        <V n="si_reaction" t="enabled">
+          <U n="enabled">
+            <T n="affordance">443367<!--SuperInteraction: SI_Competitive_Loss_TryNotTo_Rage--></T>
+            <E n="affordance_priority">Low</E>
+            <V n="affordance_target" t="enabled">
+              <E n="enabled">TargetSim</E>
+            </V>
+          </U>
+        </V>
+        <E n="subject">TargetSim</E>
+        <L n="tests">
+          <L>
+            <V t="participant_running_interaction">
+              <U n="participant_running_interaction">
+                <L n="affordance_lists">
+                  <T>464045<!--AffordanceList: affordanceList_Competitive_ProhibitReaction--></T>
+                </L>
+                <E n="participant">TargetSim</E>
+                <T n="test_for_not_running">True</T>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="actions">
+      <T n="actions">461276<!--LootActions: loot_Competitive_Reaction_BuffOnly_Target_Loss--></T>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="trait">
+        <U n="trait">
+          <E n="subject">TargetSim</E>
+          <L n="whitelist_traits">
+            <T>443222<!--Trait: trait_Competitive--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="RandomWeightedLoot" i="action" m="interactions.utils.loot" n="randomWeightedLoot_AutoInitRomance_Triggers_Lovebirds" s="363468">
+  <L n="random_loot_actions">
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">361863<!--RandomWeightedLoot: randomWeightedLoot_AutoInitRomance_RelChanges_AskOnDate--></T>
+      </V>
+      <U n="weight">
+        <T n="base_value">5</T>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">361864<!--RandomWeightedLoot: randomWeightedLoot_AutoInitRomance_RelChanges_AskToBecomeSignificantOthers--></T>
+      </V>
+      <U n="weight">
+        <T n="base_value">1</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="relationship">
+                  <U n="relationship">
+                    <U n="required_relationship_bits">
+                      <L n="match_any">
+                        <T>369543<!--RelationshipBitCollection: rbc_Romantic_HasRelationship--></T>
+                      </L>
+                    </U>
+                    <L n="subject">
+                      <E>Actor</E>
+                    </L>
+                    <L n="target_sim">
+                      <E>TargetSim</E>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="do_nothing" />
+      <U n="weight">
+        <T n="base_value">3</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="test_set_reference">
+                  <T n="test_set_reference">377227<!--TestSetInstance: testSet_Attraction_Target_VeryAttractedTo_Actor--></T>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0.5</T>
+            <L n="tests">
+              <L>
+                <V t="test_set_reference">
+                  <T n="test_set_reference">377226<!--TestSetInstance: testSet_Attraction_Target_AttractedTo_Actor--></T>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">5</T>
+            <L n="tests">
+              <L>
+                <V t="test_set_reference">
+                  <T n="test_set_reference">377228<!--TestSetInstance: testSet_Attraction_Target_RepelledBy_Actor--></T>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">10</T>
+            <L n="tests">
+              <L>
+                <V t="test_set_reference">
+                  <T n="test_set_reference">377229<!--TestSetInstance: testSet_Attraction_Target_VeryRepelledBy_Actor--></T>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="game_option">
+        <U n="game_option">
+          <E n="gameplay_option">NPC_AUTONOMY_ROMANTIC</E>
+        </U>
+      </V>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="required_relationship_bits">
+            <L n="match_any">
+              <T>15829<!--RelationshipBit: RomanticCombo_Lovebirds--></T>
+            </L>
+          </U>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

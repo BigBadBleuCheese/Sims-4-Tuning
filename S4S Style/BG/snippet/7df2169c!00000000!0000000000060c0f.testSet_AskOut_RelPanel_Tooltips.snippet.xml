@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="TestSetInstance" i="snippet" m="event_testing.tests" n="testSet_AskOut_RelPanel_Tooltips" s="396303">
+  <L n="test">
+    <L>
+      <V t="location">
+        <U n="location">
+          <U n="location_tests">
+            <V n="is_venue_type" t="enabled">
+              <U n="enabled">
+                <T n="negate">True</T>
+                <T n="venue_type">111611<!--Venue: venue_HiddenAlienWorld--></T>
+              </U>
+            </V>
+          </U>
+          <V n="tooltip" t="enabled">
+            <T n="enabled">0x3DC110C6<!--String: "It seems there is no phone service in the area."--></T>
+          </V>
+        </U>
+      </V>
+      <V t="state">
+        <U n="state">
+          <V n="fallback_behavior" t="always_fail" />
+          <E n="operator">NOTEQUAL</E>
+          <V n="tooltip" t="enabled">
+            <T n="enabled">0x894E151E<!--String: "{0.SimFirstName} can't travel because {M0.he}{F0.she} is in labor!"--></T>
+          </V>
+          <T n="value">75273<!--CommodityBasedObjectStateValue: Pregnant_InLabor--></T>
+          <E n="who">Actor</E>
+        </U>
+      </V>
+      <V t="can_create_user_facing_situation">
+        <U n="can_create_user_facing_situation">
+          <T n="allow_non_prestige_is_exempt">True</T>
+          <V n="tooltip" t="enabled">
+            <T n="enabled">0xB1B5074A<!--String: "Cannot start a Date while a Social Event is already in progress or while working."--></T>
+          </V>
+        </U>
+      </V>
+      <V t="test_set_reference">
+        <T n="test_set_reference">111347<!--TestSetInstance: testSet_NotWorkLocation--></T>
+      </V>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="required_relationship_bits">
+            <L n="match_any">
+              <T>15803<!--RelationshipBit: has_met--></T>
+            </L>
+          </U>
+          <L n="target_sim">
+            <E>PickedSim</E>
+          </L>
+          <V n="tooltip" t="enabled">
+            <T n="enabled">0x2E240002<!--String: "Sims need to know each other first. Try an introduction!"--></T>
+          </V>
+        </U>
+      </V>
+      <V t="rabbit_hole">
+        <U n="rabbit_hole">
+          <T n="negate">True</T>
+          <E n="subject">PickedSim</E>
+          <V n="tooltip" t="enabled">
+            <T n="enabled">0x3A83ECDE<!--String: "{2.SimFirstName} is busy right now."--></T>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

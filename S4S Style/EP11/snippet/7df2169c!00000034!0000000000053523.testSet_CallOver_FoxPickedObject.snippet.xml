@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="TestSetInstance" i="snippet" m="event_testing.tests" n="testSet_CallOver_FoxPickedObject" s="341283">
+  <L n="test">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified">
+            <L n="specified">
+              <E>TEEN</E>
+              <E>YOUNGADULT</E>
+              <E>ADULT</E>
+              <E>ELDER</E>
+              <E>CHILD</E>
+              <E>TODDLER</E>
+            </L>
+          </V>
+        </U>
+      </V>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="species" t="specified">
+            <U n="specified">
+              <L n="species">
+                <E>FOX</E>
+              </L>
+            </U>
+          </V>
+          <E n="who">PickedObject</E>
+        </U>
+      </V>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>263653<!--Buff: buff_Fox_Hidden_Stalk--></T>
+            <T>141984<!--Buff: buff_Sim_SuppressTargetSimSocials_Hidden--></T>
+          </L>
+          <E n="subject">PickedObject</E>
+        </U>
+      </V>
+      <V t="location">
+        <U n="location">
+          <U n="location_tests">
+            <V n="is_venue_type" t="enabled">
+              <U n="enabled">
+                <T n="negate">True</T>
+                <T n="venue_type">105157<!--Venue: venue_retail--></T>
+              </U>
+            </V>
+          </U>
+        </U>
+      </V>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="required_relationship_bits">
+            <L n="match_any">
+              <T>159231<!--RelationshipBit: simToPet_RelationshipBit_00_Despised--></T>
+              <T>159232<!--RelationshipBit: simToPet_RelationshipBit_01_Disliked--></T>
+              <T>159233<!--RelationshipBit: simToPet_RelationshipBit_02_Acquaintance--></T>
+              <T>159236<!--RelationshipBit: simToPet_RelationshipBit_03_Friend--></T>
+              <T>159234<!--RelationshipBit: simToPet_RelationshipBit_04_GoodFriend--></T>
+              <T>159235<!--RelationshipBit: simToPet_RelationshipBit_05_Companion--></T>
+              <T>159230<!--RelationshipBit: simToPet_RelationshipBit_Indifferent_NeutralBit--></T>
+            </L>
+          </U>
+          <L n="target_sim">
+            <E>PickedObject</E>
+          </L>
+          <T n="track">159228<!--RelationshipTrack: LTR_SimToPet_Friendship_Main--></T>
+        </U>
+      </V>
+      <V t="distance">
+        <U n="distance">
+          <U n="distance_threshold">
+            <T n="value">10</T>
+          </U>
+          <V n="level_modifier" t="infinite" />
+          <V n="target" t="participant_type">
+            <U n="participant_type">
+              <E n="participant">PickedObject</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="posture">
+        <U n="posture">
+          <L n="prohibited_postures">
+            <T>117782<!--IntimatePartPosture: posture_HottubWoohoo--></T>
+            <T>117257<!--Posture: posture_HotTubSit--></T>
+            <T>117256<!--Posture: posture_HotTubStand--></T>
+            <T>172634<!--MobilePosture: posture_IceSkate--></T>
+            <T>182936<!--MobilePosture: posture_RollerSkate--></T>
+          </L>
+        </U>
+      </V>
+      <V t="distance">
+        <U n="distance">
+          <U n="distance_threshold">
+            <E n="comparison">LESS_OR_EQUAL</E>
+            <T n="value">30</T>
+          </U>
+          <V n="level_modifier" t="infinite" />
+          <V n="target" t="participant_type">
+            <U n="participant_type">
+              <E n="participant">PickedObject</E>
+            </U>
+          </V>
+          <V n="tooltip" t="enabled">
+            <T n="enabled">0x1CCE3F7D<!--String: "The Fox is too far to Call Over"--></T>
+          </V>
+        </U>
+      </V>
+      <V t="routability">
+        <U n="routability">
+          <E n="subject">PickedObject</E>
+          <E n="target">Actor</E>
+          <V n="tooltip" t="enabled">
+            <T n="enabled">0x81C39837<!--String: "This Sim needs to be invited in first."--></T>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="ImmediateSuperInteraction" i="interaction" m="interactions.base.immediate_interaction" n="immediate_Burglar_Reaction_Check" s="447240">
+  <V n="_saveable" t="disabled" />
+  <V n="content_score" t="disabled" />
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <L n="continuation">
+              <U>
+                <T n="affordance">422349<!--ImmediateSuperInteraction: immediate_Burglar_Reaction--></T>
+              </U>
+            </L>
+          </U>
+        </U>
+      </L>
+      <L n="prioritized_tested_outcomes">
+        <U>
+          <U n="outcome">
+            <L n="basic_extras">
+              <V t="balloon">
+                <U n="balloon">
+                  <L n="balloon_choices">
+                    <U>
+                      <V n="item" t="balloon_icon">
+                        <U n="balloon_icon">
+                          <V n="category_icon" t="show_category_icon">
+                            <V n="show_category_icon" t="resource_key">
+                              <U n="resource_key">
+                                <T p="InGame\UI\Icons\Headlines\Final\headline_QuestionMark.png" n="key">2f7d0004:00000000:873da6c8ff732f1f</T>
+                              </U>
+                            </V>
+                          </V>
+                          <V n="icon" t="resource_key">
+                            <U n="resource_key">
+                              <T n="key" p="InGame\UI\Icons\Headlines\headline_Burglar.png">2f7d0004:00000000:b5edc0bb3ed2a86b</T>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </L>
+                  <L n="balloon_target">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </U>
+          <L n="tests">
+            <L>
+              <V t="participant_running_interaction">
+                <U n="participant_running_interaction">
+                  <L n="affordances">
+                    <T>443958<!--NPCLeaveLotInteraction: NPCLeaveLot_Burglar_Arrested_Done--></T>
+                    <T>443957<!--NPCLeaveLotInteraction: NPCLeaveLot_Burglar_Arrested_Escape--></T>
+                    <T>443956<!--NPCLeaveLotInteraction: NPCLeaveLot_Burglar_Panic--></T>
+                    <T>443954<!--NPCLeaveLotInteraction: NPCLeaveLot_Burglar_Run--></T>
+                  </L>
+                  <E n="participant">TargetSim</E>
+                  <T n="test_interaction_queue">True</T>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <U n="outcome">
+            <L n="continuation">
+              <U>
+                <T n="affordance">426978<!--SuperInteraction: burglar_Reaction_NoThreat--></T>
+              </U>
+            </L>
+          </U>
+          <L n="tests">
+            <L>
+              <V t="situation_running_test">
+                <U n="situation_running_test">
+                  <V n="situation_whitelist" t="enabled">
+                    <L n="enabled">
+                      <T>421823<!--CustomStatesSituation: situation_Burglar_Police--></T>
+                    </L>
+                  </V>
+                </U>
+              </V>
+            </L>
+            <L>
+              <V t="participant_running_interaction">
+                <U n="participant_running_interaction">
+                  <L n="affordance_lists">
+                    <T>422067<!--AffordanceList: affordanceList_Burglar_TriggerHolding--></T>
+                  </L>
+                  <L n="affordances">
+                    <T>435033<!--SocialSuperInteraction: social_Burglar_Confront_Target--></T>
+                  </L>
+                  <E n="participant">TargetSim</E>
+                  <T n="test_interaction_queue">True</T>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="situation_job_test">
+      <U n="situation_job_test">
+        <E n="participant">TargetSim</E>
+        <L n="situation_jobs">
+          <T>421825<!--SituationJob: job_Burglar--></T>
+        </L>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">447241<!--TestSetInstance: testSet_Burglar_ActorNotReacting--></T>
+    </V>
+  </L>
+</I>

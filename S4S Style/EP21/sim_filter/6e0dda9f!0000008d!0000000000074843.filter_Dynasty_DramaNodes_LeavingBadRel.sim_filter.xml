@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="TunableSimFilter" i="sim_filter" m="filters.tunable" n="filter_Dynasty_DramaNodes_LeavingBadRel" s="477251">
+  <L n="_filter_terms">
+    <V t="species" />
+    <V t="dynasty">
+      <V n="dynasty" t="dynasty_same_dynasty_membership" />
+    </V>
+    <V t="age_variant">
+      <U n="age_variant">
+        <L n="allowed_ages">
+          <E>TEEN</E>
+          <E>YOUNGADULT</E>
+          <E />
+          <E>ELDER</E>
+        </L>
+      </U>
+    </V>
+    <V t="in_family">
+      <U n="in_family">
+        <T n="invert_score">True</T>
+      </U>
+    </V>
+    <V t="trait">
+      <U n="trait">
+        <T n="minimum_filter_score">0.1</T>
+        <T n="trait">469882<!--Trait: trait_Dynasty_BlackSheep_Resentful--></T>
+      </U>
+    </V>
+    <V t="relationship_track">
+      <U n="relationship_track">
+        <T n="ideal_value">-100</T>
+        <T n="max_value">-10</T>
+        <T n="minimum_filter_score">0.5</T>
+        <V n="relationship_selector" t="use_requesting_sim" />
+        <T n="relationship_track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+      </U>
+    </V>
+    <V t="relationship_bit_collection">
+      <U n="relationship_bit_collection">
+        <T n="minimum_filter_score">0.1</T>
+        <T n="reverse_bit_lookup">True</T>
+        <L n="white_list">
+          <T>240104<!--RelationshipBitCollection: rbc_Sentiment_Bitter--></T>
+          <T>240105<!--RelationshipBitCollection: rbc_Sentiment_Furious--></T>
+          <T>246490<!--RelationshipBitCollection: rbc_Sentiment_Hurt--></T>
+        </L>
+      </U>
+    </V>
+    <V t="relationship_track">
+      <U n="relationship_track">
+        <T n="ideal_value">-100</T>
+        <T n="invert_score">False</T>
+        <T n="max_value">19</T>
+        <T n="min_value">-100</T>
+        <V n="relationship_selector" t="use_requesting_sim" />
+        <T n="relationship_track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+      </U>
+    </V>
+  </L>
+  <V n="_household_templates_override" t="enabled">
+    <L n="enabled">
+      <T>98542<!--HouseholdTemplate: HH_template_NPC_adult_single--></T>
+    </L>
+  </V>
+  <T n="use_weighted_random">True</T>
+</I>

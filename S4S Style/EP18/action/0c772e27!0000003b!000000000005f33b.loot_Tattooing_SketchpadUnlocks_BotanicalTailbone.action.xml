@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Tattooing_SketchpadUnlocks_BotanicalTailbone" s="389947">
+  <L n="loot_actions">
+    <V t="cas_unlock">
+      <U n="cas_unlock">
+        <V n="cas_part_source" t="reference">
+          <U n="reference">
+            <L n="cas_parts">
+              <T>433741</T>
+              <T>433742</T>
+              <T>433743</T>
+              <T>433744</T>
+            </L>
+          </U>
+        </V>
+        <E n="unlock_mode">SIM</E>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Object</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xC442F3FB<!--String: "{0.SimFirstName} has unlocked the <b>Botanical Tailbone</b> Lower Back tattoo design."--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0xC71D13B<!--String: "Tattoo Design Unlocked"--></T>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <V n="whitelist" t="enabled">
+            <L n="enabled">
+              <T>403113<!--Buff: buff_Role_ServiceNPC_TattooArtist--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="canvas_texture">
+        <U n="canvas_texture">
+          <L n="textures">
+            <T>377723<!--PaintingTexture: paintingTexture_TattooingDesign_BotanicalTailbone--></T>
+          </L>
+        </U>
+      </V>
+      <V t="reward_part_test">
+        <U n="reward_part_test">
+          <T n="invert">True</T>
+          <L n="reward_parts">
+            <T>433741</T>
+          </L>
+          <E n="subject">Actor</E>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="sI_EP20_IF_PourHeartOut_Mood_Angry" s="484063">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U />
+        <U>
+          <V n="value" t="facing" />
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_prefer_participants_as_body_target" t="enabled">
+    <L n="enabled">
+      <E />
+    </L>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>460703<!--LootActions: loot_MediumSizedDoll_GiveSocial--></T>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>474539<!--LootActions: loot_EP20_IF_Doll_Rel_Gain--></T>
+        </L>
+        <U n="success_chance">
+          <L n="multipliers">
+            <U>
+              <T n="multiplier">0</T>
+              <L n="tests">
+                <L>
+                  <V t="state">
+                    <U n="state">
+                      <T n="value">35296<!--ObjectStateValue: GenericOnOff_On--></T>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+          </L>
+        </U>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>452256<!--LootActions: loot_ChildhoodInspiration_AddSuggestedChallenge_HaveBestImaginaryFriend--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="basic_focus" t="tunable_focus" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xD27BED66<!--String: "Pour Heart Out"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <V n="display_tooltip" t="enabled">
+    <T n="enabled">0xE74E9361<!--String: "This interaction can help comfort {0.SimFirstName} when {0.SimPronounSubjective} {S0.is}{P0.are} feeling negative emotions. This will halve the duration of negative moodlets!"--></T>
+  </V>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <V n="animation_ref" t="enabled">
+          <U n="enabled">
+            <T n="factory">460657<!--AnimationElement: mediumSizedDoll_Object_Whisper--></T>
+          </U>
+        </V>
+        <L n="basic_extras">
+          <V t="buff_fire_and_forget">
+            <U n="buff_fire_and_forget">
+              <U n="buff">
+                <V n="buff_reason" t="enabled">
+                  <T n="enabled">0x6FF30C30<!--String: "(From Pouring Heart Out to Doll)"--></T>
+                </V>
+                <T n="buff_type">460704<!--Buff: buff_EP20_IF_Unburdened--></T>
+              </U>
+            </U>
+          </V>
+          <V t="loot">
+            <U n="loot">
+              <L n="loot_list">
+                <T>489216<!--LootActions: loot_EP20_IF_PourHeartOut_RemoveNeg--></T>
+              </L>
+            </U>
+          </V>
+        </L>
+      </U>
+    </U>
+  </V>
+  <V n="pie_menu_color" t="enabled">
+    <U n="enabled">
+      <T n="mood">14632<!--Mood: Mood_Angry--></T>
+      <L n="tests">
+        <V t="mood">
+          <U n="mood">
+            <T n="mood">14632<!--Mood: Mood_Angry--></T>
+          </U>
+        </V>
+      </L>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all" />
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="has_parent_object" />
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>460704<!--Buff: buff_EP20_IF_Unburdened--></T>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x36501223<!--String: "{0.SimFirstName} needs to wait to do this again."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="mood">
+        <U n="mood">
+          <T n="mood">14632<!--Mood: Mood_Angry--></T>
+        </U>
+      </V>
+    </L>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

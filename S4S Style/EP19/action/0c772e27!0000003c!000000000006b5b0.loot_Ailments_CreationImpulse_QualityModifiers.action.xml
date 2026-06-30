@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Ailments_CreationImpulse_QualityModifiers" s="439728">
+  <L n="loot_actions">
+    <V t="state_change">
+      <U n="state_change">
+        <T n="state_value">15247<!--ObjectStateValue: Masterwork_Masterwork--></T>
+        <V n="subject" t="participant">
+          <E n="participant">CreatedObject</E>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="state">
+              <U n="state">
+                <T n="value">15305<!--CommodityBasedObjectStateValue: Quality_Outstanding--></T>
+                <E n="who">CreatedObject</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">50</T>
+          <T n="stat">16671<!--Statistic: statistic_Object_Consumable-Quality--></T>
+          <L n="subject">
+            <E>CreatedObject</E>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="state">
+                <U n="state">
+                  <E n="operator">NOTEQUAL</E>
+                  <T n="value">15305<!--CommodityBasedObjectStateValue: Quality_Outstanding--></T>
+                  <E n="who">CreatedObject</E>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <V n="whitelist" t="enabled">
+            <L n="enabled">
+              <T>433383<!--Buff: buff_Ailments_CreationImpulse_NeedToCreate--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

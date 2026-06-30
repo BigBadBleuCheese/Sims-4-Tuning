@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="horseBed_Clean" s="329131">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="circle">
+            <U n="circle">
+              <T n="radius">3</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="value" t="facing" />
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <L n="_static_commodities">
+    <U>
+      <T n="desire">10</T>
+      <T n="static_commodity">305074<!--StaticCommodity: staticCommodity_RanchHand_AnimalCare--></T>
+    </U>
+  </L>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="list_reference">
+          <T n="list_reference">40705<!--ExitConditionList: ExitConditionList_MotivesNearFail--></T>
+        </V>
+        <V t="list_reference">
+          <T n="list_reference">40144<!--ExitConditionList: ExitConditionList_EmotionMiserable--></T>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="stat_based">
+                <U n="stat_based">
+                  <T n="stat">16575<!--Commodity: commodity_dirtiness--></T>
+                  <U n="threshold">
+                    <T n="value">100</T>
+                  </U>
+                  <E n="who">Object</E>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+      </L>
+      <V n="content" t="looping_content">
+        <U n="looping_content">
+          <U n="animation_ref">
+            <T n="factory">329132<!--AnimationElement: horseBed_Clean--></T>
+          </U>
+        </U>
+      </V>
+      <V n="periodic_stat_change" t="enabled">
+        <U n="enabled">
+          <L n="operations">
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="advertise">False</T>
+                <T n="amount">-0.67</T>
+                <T n="stat">16657<!--Commodity: motive_Hygiene--></T>
+              </U>
+            </V>
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="advertise">True</T>
+                <T n="amount">0.78</T>
+                <T n="stat">16655<!--Commodity: motive_Fun--></T>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+                <L n="tests">
+                  <L>
+                    <V t="trait">
+                      <U n="trait">
+                        <L n="whitelist_traits">
+                          <T>16858<!--Trait: trait_Neat--></T>
+                          <T>257365<!--Trait: Trait_AnimalEnthusiast--></T>
+                          <T>248831<!--Trait: trait_Lifestyles_Outdoorsy--></T>
+                          <T>320988<!--Trait: trait_Rancher--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </V>
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="amount">10</T>
+                <T n="stat">16575<!--Commodity: commodity_dirtiness--></T>
+                <L n="subject">
+                  <E>Object</E>
+                </L>
+              </U>
+            </V>
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="advertise">False</T>
+                <T n="amount">5</T>
+                <T n="stat">16575<!--Commodity: commodity_dirtiness--></T>
+                <L n="subject">
+                  <E>Object</E>
+                </L>
+                <L n="tests">
+                  <L>
+                    <V t="mood">
+                      <U n="mood">
+                        <T n="mood">14636<!--Mood: Mood_Energized--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </V>
+            <V t="statistic_set_max">
+              <U n="statistic_set_max">
+                <T n="stat">265709<!--Commodity: commodity_Trait_Autonomy_AnimalEnthusiast--></T>
+              </U>
+            </V>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>329136<!--LootActions: loot_Buff_HorseBed_Clean--></T>
+        </L>
+      </U>
+    </V>
+    <V t="buff_fire_and_forget">
+      <U n="buff_fire_and_forget">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x591AEE07<!--String: "(From Doing Ranch Chores)"--></T>
+          </V>
+          <T n="buff_type">250387<!--Buff: buff_Lifestyles_AdrenalineSeeker_Bored--></T>
+        </U>
+        <U n="success_chance">
+          <T n="base_chance">75</T>
+          <L n="multipliers">
+            <U>
+              <T n="multiplier">0</T>
+              <L n="tests">
+                <L>
+                  <V t="trait">
+                    <U n="trait">
+                      <L n="blacklist_traits">
+                        <T>248829<!--Trait: trait_Lifestyles_AdrenalineSeeker--></T>
+                      </L>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+          </L>
+        </U>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>251822<!--LootActions: loot_Lifestyles_Outdoorsy_Liked--></T>
+          <T>250345<!--LootActions: loot_Lifestyles_Progress_Unlock_Outdoorsy--></T>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>254082<!--LootActions: loot_Lifestyles_Progress_Unlock_AdrenalineSeeker_AtMundaneVenue--></T>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>167478<!--LootActions: loot_Statistic_LifeSkill_Responsibility_Gain_MediumLow--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xE7F60195<!--String: "Clean Bed"--></T>
+  <V n="display_name_overrides" t="testable">
+    <U n="testable">
+      <L n="overrides">
+        <U>
+          <V n="new_display_name" t="enabled">
+            <T n="enabled">0xDDADFB88<!--String: "Power Clean"--></T>
+          </V>
+          <L n="test">
+            <L>
+              <V t="trait">
+                <U n="trait">
+                  <L n="whitelist_traits">
+                    <T>256786<!--Trait: trait_FastFastidious--></T>
+                  </L>
+                </U>
+              </V>
+              <V t="buff">
+                <U n="buff">
+                  <L n="blacklist">
+                    <T>257419<!--Buff: buff_VacuumCleaner_AllMessesTerminated--></T>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <V n="new_display_name" t="enabled">
+            <T n="enabled">0x5610209C<!--String: "Clean with Vigor"--></T>
+          </V>
+          <V n="new_display_tooltip" t="enabled">
+            <T n="enabled">0xAE0BA168<!--String: "Energized Sims clean much faster!"--></T>
+          </V>
+          <L n="test">
+            <L>
+              <V t="mood">
+                <U n="mood">
+                  <T n="mood">14636<!--Mood: Mood_Energized--></T>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <V n="new_display_name" t="enabled">
+            <T n="enabled">0xE7E2E482<!--String: "Swab the Deck"--></T>
+          </V>
+          <V n="new_pie_menu_icon" t="enabled">
+            <V n="enabled" t="tradition">
+              <U n="tradition">
+                <L n="participant_type">
+                  <E>Actor</E>
+                </L>
+              </U>
+            </V>
+          </V>
+          <L n="test">
+            <L>
+              <V t="buff">
+                <U n="buff">
+                  <V n="whitelist" t="enabled">
+                    <L n="enabled">
+                      <T>182293<!--Buff: buff_SurpriseHoliday_PirateDay_Autonomy--></T>
+                    </L>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <V n="new_display_name" t="disabled" />
+          <V n="new_pie_menu_icon" t="enabled">
+            <V n="enabled" t="tradition">
+              <U n="tradition">
+                <L n="participant_type">
+                  <E>Actor</E>
+                </L>
+              </U>
+            </V>
+          </V>
+          <L n="test">
+            <L>
+              <V t="holiday_tradition">
+                <U n="holiday_tradition">
+                  <U n="tradition_filter">
+                    <V n="whitelist" t="specify">
+                      <U n="specify">
+                        <L n="whitelist">
+                          <T>185432<!--HolidayTradition: holidayTradition_Clean--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+    <E>Interaction_TalkLikeAPirateDay</E>
+    <E>Interaction_Clean</E>
+  </L>
+  <L n="mood_list">
+    <T>14636<!--Mood: Mood_Energized--></T>
+  </L>
+  <T n="pie_menu_priority">10</T>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_autonomous">
+    <L>
+      <V t="state">
+        <U n="state">
+          <T n="value">15133<!--CommodityBasedObjectStateValue: Dirty_Dirty--></T>
+        </U>
+      </V>
+    </L>
+  </L>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">28305<!--TestSetInstance: testSet_EmotionNotMiserable--></T>
+    </V>
+    <V t="state">
+      <U n="state">
+        <E n="operator">NOTEQUAL</E>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x79D03F02<!--String: "Bed is already clean."--></T>
+        </V>
+        <T n="value">15132<!--CommodityBasedObjectStateValue: Dirty_Clean--></T>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">151576<!--TestSetInstance: testSetInstance_ObjectInUseState--></T>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

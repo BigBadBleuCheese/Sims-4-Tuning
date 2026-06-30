@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="RandomWeightedLoot" i="action" m="interactions.utils.loot" n="randomWeightedLoot_APM_POVisitType" s="350287">
+  <L n="random_loot_actions">
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">344936<!--LootActions: loot_APM_StartEventSituation--></T>
+      </V>
+      <U n="weight">
+        <T n="base_value">2</T>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">345209<!--LootActions: loot_APM_StartRuleSituation--></T>
+      </V>
+      <U n="weight">
+        <T n="base_value">1</T>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">350929<!--RandomWeightedLoot: randomWeightedLoot_APM_GenericPOVisit--></T>
+      </V>
+      <U n="weight">
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="business_rule_state">
+                  <U n="business_rule_state">
+                    <E n="state">BROKEN</E>
+                    <U n="threshold">
+                      <T n="value">1</T>
+                    </U>
+                  </U>
+                </V>
+              </L>
+              <L>
+                <V t="rental_unit_has_overdue_status_test">
+                  <U n="rental_unit_has_overdue_status_test">
+                    <E n="tenant">ActorHouseholdMembers</E>
+                  </U>
+                </V>
+              </L>
+              <L>
+                <V t="test_set_reference">
+                  <T n="test_set_reference">352764<!--TestSetInstance: testSet_muEvent_EventActive--></T>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+  </L>
+</I>

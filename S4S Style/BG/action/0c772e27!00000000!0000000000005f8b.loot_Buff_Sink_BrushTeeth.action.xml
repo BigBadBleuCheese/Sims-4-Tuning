@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Buff_Sink_BrushTeeth" s="24459">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x48FECE63<!--String: "(From Brushing Teeth)"--></T>
+          </V>
+          <T n="buff_type">12523<!--Buff: buff_Object_Sink-BrushTeeth--></T>
+        </U>
+        <U n="chance">
+          <T n="base_chance">100</T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="ages" t="specified" />
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff_removal">
+      <U n="buff_removal">
+        <L n="buffs_to_remove">
+          <T>267494<!--Buff: buff_Object_Drink_VillagerHelp_Focused--></T>
+          <T>267495<!--Buff: buff_Object_Drink_VillagerHelp_FocusedSampler--></T>
+        </L>
+      </U>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_change_by_category">
+        <U n="statistic_change_by_category">
+          <U n="chance">
+            <T n="base_chance">50</T>
+          </U>
+          <V n="change" t="percent_change">
+            <U n="percent_change">
+              <T n="percent_change_amount">-25</T>
+            </U>
+          </V>
+          <E n="statistic_category">Lose_Teeth_Buffs</E>
+        </U>
+      </V>
+    </V>
+  </L>
+</I>

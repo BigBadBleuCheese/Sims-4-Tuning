@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_PowerShifts_SpiderWell_TrialOutcome_Three_Success" s="496650">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">496566<!--Buff: buff_PowerShifts_SpiderWell_EliteSchemer--></T>
+        </U>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InEP21\UI\Icons\Notifications\notification_AnansisWell.png">2f7d0004:00000000:521e84daf86d49aa</T>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x55EBF9B1<!--String: "Anansi deems {0.SimFirstName} truly clever. A web of alliances grows stronger, and trust opens doors to whispered secrets."--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0xEDB840C7<!--String: "Anansi's Trial: Grins with Approval"--></T>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="buff_removal">
+      <U n="buff_removal">
+        <L n="buffs_to_remove">
+          <T>496568<!--Buff: buff_PowerShifts_SpiderWell_TrialWalkerDeceit--></T>
+        </L>
+      </U>
+    </V>
+    <V t="interaction">
+      <U n="interaction">
+        <E n="affordance_priority">Critical</E>
+        <L n="affordances">
+          <T>496790<!--SuperInteraction: powerShifts_SuperInteractions_SpiderWell_Reaction_Success--></T>
+        </L>
+      </U>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">1</T>
+          <T n="stat">496691<!--Commodity: commodity_PowerShifts_SpiderWell_TrialTracker--></T>
+          <L n="subject">
+            <E>Actor</E>
+          </L>
+        </U>
+      </V>
+    </V>
+    <V t="actions">
+      <T n="actions">497538<!--LootActions: loot_PowerShifts_SpiderWell_Favor_Gain_Royal--></T>
+    </V>
+    <V t="actions">
+      <T n="actions">497537<!--LootActions: loot_PowerShifts_SpiderWell_Favor_Gain_Commoner--></T>
+    </V>
+    <V t="actions">
+      <T n="actions">497540<!--RandomWeightedLoot: randomWeightedLoot_PowerShifts_SpiderWell_Favor_Gain_Random--></T>
+    </V>
+    <V t="interaction">
+      <U n="interaction">
+        <E n="affordance_priority">Critical</E>
+        <L n="affordances">
+          <T>497545<!--AutonomousSimPickerSuperInteraction: autoSimPicker_PowerShifts_InformationBroker--></T>
+        </L>
+      </U>
+    </V>
+    <V t="vfx">
+      <U n="vfx">
+        <U n="vfx">
+          <T n="effect_name">ep21_anansi_trial_succeed</T>
+          <V n="joint_name" t="Slot">
+            <T n="Slot">b__ROOT__</T>
+          </V>
+        </U>
+      </U>
+    </V>
+  </L>
+  <T n="run_test_first">True</T>
+  <L n="tests">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <V n="whitelist" t="enabled">
+            <L n="enabled">
+              <T>496568<!--Buff: buff_PowerShifts_SpiderWell_TrialWalkerDeceit--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

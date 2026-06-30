@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="RandomWeightedLoot" i="action" m="interactions.utils.loot" n="randomWeightedLoot_Wills_Outcomes_MediumRel_Funds" s="402186">
+  <L n="random_loot_actions">
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">403618<!--LootActions: loot_Wills_InheritanceOutcomes_SimoleonsOrObject_Happy--></T>
+      </V>
+      <U n="weight">
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">999</T>
+            <L n="tests">
+              <L>
+                <V t="trait">
+                  <U n="trait">
+                    <L n="whitelist_traits">
+                      <T>16823<!--Trait: trait_Ambitious--></T>
+                      <T>9599<!--Trait: trait_Lazy--></T>
+                      <T>27913<!--Trait: trait_Materialistic--></T>
+                      <T>16836<!--Trait: trait_Evil--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="trait">
+                  <U n="trait">
+                    <L n="whitelist_traits">
+                      <T>16838<!--Trait: trait_FamilyOriented--></T>
+                      <T>27915<!--Trait: trait_Good--></T>
+                      <T>199561<!--Trait: trait_SelfAbsorbed--></T>
+                      <T>311267<!--Trait: trait_Loyal--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">403619<!--LootActions: loot_Wills_InheritanceOutcomes_SimoleonsOrObject_Sad--></T>
+      </V>
+      <U n="weight">
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">999</T>
+            <L n="tests">
+              <L>
+                <V t="trait">
+                  <U n="trait">
+                    <L n="whitelist_traits">
+                      <T>16838<!--Trait: trait_FamilyOriented--></T>
+                      <T>27915<!--Trait: trait_Good--></T>
+                      <T>199561<!--Trait: trait_SelfAbsorbed--></T>
+                      <T>311267<!--Trait: trait_Loyal--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="trait">
+                  <U n="trait">
+                    <L n="whitelist_traits">
+                      <T>16823<!--Trait: trait_Ambitious--></T>
+                      <T>9599<!--Trait: trait_Lazy--></T>
+                      <T>27913<!--Trait: trait_Materialistic--></T>
+                      <T>16836<!--Trait: trait_Evil--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="will">
+        <U n="will">
+          <T n="negate">True</T>
+          <V n="test_type" t="sim_dependent_recipient" />
+        </U>
+      </V>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="relationship_score_interval">
+            <T n="lower_bound">-33</T>
+            <T n="upper_bound">33</T>
+          </U>
+          <L n="subject">
+            <E>Actor</E>
+          </L>
+          <L n="target_sim">
+            <E>StoredSim</E>
+          </L>
+          <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+        </U>
+      </V>
+      <V t="test_set_reference">
+        <T n="test_set_reference">403626<!--TestSetInstance: testSet_Wills_Funds--></T>
+      </V>
+    </L>
+  </L>
+</I>

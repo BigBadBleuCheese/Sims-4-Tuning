@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="PortalData" i="snippet" m="snippets" n="portalData_Treehouse_Slide" s="306765">
+  <U n="value">
+    <V n="exclusion_flags" t="enabled">
+      <L n="enabled">
+        <E>Burglar_Dissallow</E>
+      </L>
+    </V>
+    <V n="required_flags" t="enabled">
+      <L n="enabled">
+        <E>Treehouse_CanUseSlide</E>
+        <E>REQUIRE_NO_CARRY</E>
+        <E>SPECIES_HUMAN</E>
+        <E>REQUIRE_NO_CARRY_BACK</E>
+      </L>
+    </V>
+    <V n="traversal_cost" t="asymmetrical_fixed_cost">
+      <U n="asymmetrical_fixed_cost">
+        <T n="go_back_cost">5</T>
+      </U>
+    </V>
+    <V n="traversal_type" t="animation">
+      <U n="animation">
+        <T n="animation_element">312438<!--AnimationElement: anim_Treehouse_Slide--></T>
+        <V n="go_back_locations" t="bone_back_portal">
+          <U n="bone_back_portal">
+            <U n="back_end">
+              <T n="bone_name">_route_portalTop_0</T>
+              <V n="orientation_angle" t="enabled">
+                <T n="enabled">180</T>
+              </V>
+              <V n="routing_surface" t="parent_object" />
+            </U>
+            <U n="back_start">
+              <T n="bone_name">_route_portalBottom_1</T>
+              <V n="orientation_angle" t="enabled">
+                <T n="enabled">180</T>
+              </V>
+              <V n="routing_surface" t="parent_object_terrain" />
+            </U>
+          </U>
+        </V>
+        <V n="go_there_locations" t="use_bone_locations">
+          <U n="use_bone_locations">
+            <U n="there_end">
+              <T n="bone_name">_route_portalBottom_1</T>
+              <V n="orientation_angle" t="enabled">
+                <T n="enabled">180</T>
+              </V>
+              <V n="routing_surface" t="parent_object_terrain" />
+            </U>
+            <U n="there_start">
+              <T n="bone_name">_route_portalTop_0</T>
+              <V n="orientation_angle" t="enabled">
+                <T n="enabled">360</T>
+              </V>
+              <V n="routing_surface" t="parent_object" />
+            </U>
+          </U>
+        </V>
+      </U>
+    </V>
+  </U>
+</I>

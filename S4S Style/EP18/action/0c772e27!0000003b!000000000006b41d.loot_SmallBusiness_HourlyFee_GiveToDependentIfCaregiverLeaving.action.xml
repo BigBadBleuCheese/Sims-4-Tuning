@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_SmallBusiness_HourlyFee_GiveToDependentIfCaregiverLeaving" s="439325">
+  <L n="loot_actions">
+    <V t="statistics">
+      <V n="statistics" t="statistic_set_max">
+        <U n="statistic_set_max">
+          <T n="stat">372060<!--Commodity: commodity_AttendanceSale_HourlyFee_Timer--></T>
+          <L n="subject">
+            <E>ActorHouseholdMembers</E>
+          </L>
+          <L n="subject_filter_tests">
+            <L>
+              <V t="situation_job_test">
+                <U n="situation_job_test">
+                  <L n="situation_jobs">
+                    <T>373362<!--SituationJob: job_SmallBusinessCustomer--></T>
+                  </L>
+                </U>
+              </V>
+              <V t="statistic">
+                <U n="statistic">
+                  <T n="stat">372060<!--Commodity: commodity_AttendanceSale_HourlyFee_Timer--></T>
+                  <V n="threshold" t="value_threshold">
+                    <U n="value_threshold">
+                      <E n="comparison">EQUAL</E>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="small_business_dependents_supervised">
+                <U n="small_business_dependents_supervised">
+                  <T n="negate">True</T>
+                </U>
+              </V>
+              <V t="situation_sim_count_test">
+                <U n="situation_sim_count_test">
+                  <L n="situation_tags">
+                    <E>Situation_SmallBusiness_Customer</E>
+                  </L>
+                  <U n="threshold">
+                    <T n="value">2</T>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="small_business_attendance_sale_mode_test">
+        <U n="small_business_attendance_sale_mode_test">
+          <E n="attendance_sale_mode">HOURLY_FEE</E>
+          <E n="participant">CurrentlyOpenSmallBusinessOwner</E>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

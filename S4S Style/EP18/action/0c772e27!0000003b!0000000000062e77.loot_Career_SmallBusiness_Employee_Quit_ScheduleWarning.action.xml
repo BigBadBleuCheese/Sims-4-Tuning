@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Career_SmallBusiness_Employee_Quit_ScheduleWarning" s="405111">
+  <L n="loot_actions">
+    <V t="interaction">
+      <U n="interaction">
+        <E n="affordance_priority">High</E>
+        <L n="affordances">
+          <T>405112<!--SocialSuperInteraction: smallBusiness_Socials_Employee_ComplainAboutJob_PreQuit--></T>
+        </L>
+        <E n="subject">TargetSim</E>
+        <E n="target_participant_type">Actor</E>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="is_business_employee" />
+      <V t="relationship">
+        <U n="relationship">
+          <U n="relationship_score_interval">
+            <T n="upper_bound">-12</T>
+          </U>
+          <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+        </U>
+      </V>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="prohibited_relationship_bits">
+            <L n="match_any">
+              <T>407279<!--RelationshipBit: shortTermBits_SmallBusinessEmployee_QuitWarningCooldown--></T>
+            </L>
+          </U>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

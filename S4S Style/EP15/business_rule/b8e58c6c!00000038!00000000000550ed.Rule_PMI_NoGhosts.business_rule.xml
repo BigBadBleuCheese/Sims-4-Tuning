@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="BusinessRule" i="business_rule" m="business.business_rule" n="Rule_PMI_NoGhosts" s="348397">
+  <T n="auto_resolve_time">0</T>
+  <T n="cooldown_time">1300</T>
+  <T n="fine">1000</T>
+  <T p="InEP15\UI\Icons\UnitRules\UnitRules_NoGhosts.png" n="icon">2f7d0004:00000000:19b9f326ff5c1702</T>
+  <T n="loot_on_auto_resolved">340361<!--LootActions: loot_LandlordTenant_ViolateRules--></T>
+  <T n="loot_on_rule_broken">349356<!--LootActions: loot_PMI_NoGhosts--></T>
+  <T n="rule_description">0x4DCFD489<!--String: "The afterlife is an afterthought here; no ghosts will be allowed to live in this Residential Rental unit."--></T>
+  <T n="rule_name">0xCDD07EEC<!--String: "No Ghosts"--></T>
+  <L n="test_events">
+    <L>
+      <V t="trait">
+        <U n="trait">
+          <T n="apply_thresholds_on_individual_basis">False</T>
+          <E n="subject">TargetHouseholdMembers</E>
+          <V n="tooltip" t="disabled" />
+          <L n="whitelist_trait_types">
+            <E>GHOST</E>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

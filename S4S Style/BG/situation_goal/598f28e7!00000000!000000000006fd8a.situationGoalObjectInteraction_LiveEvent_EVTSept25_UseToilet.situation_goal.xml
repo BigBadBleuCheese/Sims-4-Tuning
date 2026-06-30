@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalObjectInteraction" i="situation_goal" m="situations.situation_goal_object_interaction" n="situationGoalObjectInteraction_LiveEvent_EVTSept25_UseToilet" s="458122">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T p="InGame\UI\Icons\Headlines\Final\headline_toilet.png" n="enabled">2f7d0004:00000000:cf25571f0f5599af</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x5FCAC3B<!--String: "Use a Toilet"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0x494CFB55<!--String: "Even the bravest adventurers need a quick pit stop now and then!"--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>447711<!--SituationGoalLootActions: liveEvent_GoalLoot_CompleteQuestGoal--></T>
+  </L>
+  <U n="_goal_test">
+    <L n="affordances">
+      <T>104682<!--SuperInteraction: si_CampingBathroom_Use_Female--></T>
+      <T>104683<!--SuperInteraction: si_CampingBathroom_Use_Male--></T>
+      <T>38378<!--SuperInteraction: PublicBathroom_Use--></T>
+      <T>102629<!--SuperInteraction: PublicBathroom_Use_Male--></T>
+      <T>443235<!--SuperInteraction: publicBathroom_R5Event_Outhouse_Use--></T>
+    </L>
+    <L n="tags">
+      <E>Interaction_UseToilet</E>
+    </L>
+    <E n="test_event">InteractionComplete</E>
+  </U>
+  <L n="_post_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+      </U>
+    </V>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+  <V n="goal_completion_notification" t="enabled">
+    <U n="enabled">
+      <V n="icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T p="InGame\UI\Icons\Headlines\Final\headline_toilet.png" n="key">2f7d0004:00000000:cf25571f0f5599af</T>
+          </U>
+        </V>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0xFBBF88EB<!--String: "*bloop*"--></T>
+      </V>
+    </U>
+  </V>
+  <V n="tutorial_tip_group" t="enabled">
+    <T n="enabled">468673<!--TutorialTipGroup: tutorialTipGroup_LiveEvent_EVTSept25_UseToilet--></T>
+  </V>
+</I>

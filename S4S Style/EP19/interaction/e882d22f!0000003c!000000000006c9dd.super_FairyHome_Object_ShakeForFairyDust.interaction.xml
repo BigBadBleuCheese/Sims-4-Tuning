@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="super_FairyHome_Object_ShakeForFairyDust" s="444893">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="circle">
+            <U n="circle">
+              <T n="radius">1.75</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="value" t="facing" />
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <L n="basic_extras" />
+  <V n="content_score" t="disabled" />
+  <T n="counts_as_inside">False</T>
+  <T n="display_name">0x8F12DBD7<!--String: "Shake for Fairy Dust"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="dual">
+    <U n="dual">
+      <U n="failure_actions">
+        <V n="animation_ref" t="enabled">
+          <U n="enabled">
+            <T n="factory">445152<!--AnimationElement: anim_FairyHome_ShakeForDust_Fail--></T>
+          </U>
+        </V>
+        <L n="loot_list">
+          <T>444886<!--LootActions: loot_FairyHome_ShakingFail--></T>
+        </L>
+        <E n="outcome_result">FAILURE</E>
+      </U>
+      <U n="success_actions">
+        <V n="animation_ref" t="enabled">
+          <U n="enabled">
+            <T n="factory">445151<!--AnimationElement: anim_FairyHome_ShakeForDust_Success--></T>
+          </U>
+        </V>
+        <L n="basic_extras">
+          <V t="inventory_transfer">
+            <U n="inventory_transfer">
+              <V n="recipient" t="participant">
+                <E n="participant">Actor</E>
+              </V>
+              <V n="source" t="participant">
+                <E n="participant">Object</E>
+              </V>
+            </U>
+          </V>
+        </L>
+        <L n="loot_list">
+          <T>444887<!--LootActions: loot_FairyHome_ShakingSuccess--></T>
+          <T>464212<!--LootActions: loot_FairyHome_ShakingSuccess_FairySim--></T>
+        </L>
+      </U>
+      <U n="success_chance">
+        <T n="base_chance">60</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">2</T>
+            <L n="tests">
+              <L>
+                <V t="trait">
+                  <U n="trait">
+                    <L n="whitelist_traits">
+                      <T>433287<!--Trait: trait_OccultFairy_AllAges--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="in_use">
+      <U n="in_use">
+        <T n="negate">True</T>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>444568<!--Buff: buff_FairyHome_ShakingFail--></T>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x8036C522<!--String: "{0.SimFirstName} needs a moment to recover before trying this again."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="state">
+      <U n="state">
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x4A21BFA3<!--String: "This home doesn't have any Fairy Dust."--></T>
+        </V>
+        <T n="value">444943<!--ObjectStateValue: fairyHome_Values_FairyDust_Yes--></T>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="GameObject" i="object" m="objects.game_object" n="object_Urnstone_worldGeneric" s="178029">
+  <U n="_components">
+    <V n="focus" t="enabled">
+      <U n="enabled">
+        <V n="_focus_score" t="globally">
+          <U n="globally">
+            <E n="base">MEDIUM</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V n="inventory_item" t="disabled" />
+    <V n="name" t="disabled" />
+    <V n="object_relationships" t="enabled">
+      <U n="enabled">
+        <V n="number_of_allowed_relationships" t="enabled">
+          <T n="enabled">2</T>
+        </V>
+        <T n="relationship_stat">132465<!--Statistic: statistic_Object_Staff_Assigned_Relationship_BG--></T>
+      </U>
+    </V>
+    <V n="state" t="enabled">
+      <U n="enabled">
+        <L n="states">
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">100384<!--ObjectStateValue: UrnstoneType_Default--></T>
+              </U>
+              <U>
+                <T n="key">15432<!--ObjectStateValue: UrnstoneType_Tombstone--></T>
+                <U n="value">
+                  <V n="model" t="apply_new_value">
+                    <V n="apply_new_value" t="set_to_custom_model">
+                      <U n="set_to_custom_model">
+                        <V n="model" t="from_definition">
+                          <U n="from_definition">
+                            <T n="apply_definition">False</T>
+                            <T n="definition">18590</T>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">15433<!--ObjectStateValue: UrnstoneType_Urn--></T>
+                <U n="value">
+                  <V n="model" t="apply_new_value">
+                    <V n="apply_new_value" t="set_to_custom_model">
+                      <U n="set_to_custom_model">
+                        <V n="model" t="from_definition">
+                          <U n="from_definition">
+                            <T n="apply_definition">False</T>
+                            <T n="definition">18592</T>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </V>
+                </U>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">100384<!--ObjectStateValue: UrnstoneType_Default--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">378792<!--ObjectStateValue: urnstoneOccupation_Occupied--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">35297<!--ObjectStateValue: GenericOnOff_Off--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">386213<!--ObjectStateValue: urnstonePlus_SecondaryType_Default--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">386531<!--ObjectStateValue: urnstonePlus_Autoswitch_On--></T>
+            </V>
+          </U>
+        </L>
+        <V n="unique_state_changes" t="enabled">
+          <U n="enabled">
+            <T n="natural_ground_placement_lock">386532<!--ObjectStateValue: urnstonePlus_Autoswitch_Off--></T>
+            <T n="off_natural_ground_placement_state">15433<!--ObjectStateValue: UrnstoneType_Urn--></T>
+            <T n="on_natural_ground_placement_state">15432<!--ObjectStateValue: UrnstoneType_Tombstone--></T>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V n="tooltip_component" t="disabled" />
+    <V n="unique_object_component" t="enabled">
+      <U n="enabled">
+        <V n="unique_type" t="death_object" />
+      </U>
+    </V>
+  </U>
+  <U n="_components_native">
+    <V n="Slot" t="enabled">
+      <U n="enabled">
+        <T n="overwrite_sim_info_of_parent">True</T>
+      </U>
+    </V>
+  </U>
+  <L n="_super_affordances">
+    <T>13328<!--ImmediateSuperInteraction: debug_Reset--></T>
+    <T>13326<!--ImmediateSuperInteraction: debug_ObjectDestroy--></T>
+    <T>103888<!--ImmediateSuperInteraction: cheat_set_as_head--></T>
+    <T>153243<!--SuperInteraction: urnstone_Event_FallChallenge_DoTD--></T>
+    <T>102258<!--SuperInteraction: Ghost_Possess--></T>
+    <T>168502<!--SuperInteraction: Ghost_Pet_Possess--></T>
+    <T>324988<!--SuperInteraction: Ghost_Horse_Possess--></T>
+    <T>103810<!--DeathSuperInteraction: death_Netherworld--></T>
+    <T>103864<!--NPCLeaveLotInteraction: ghost_EnterUrnstone--></T>
+    <T>339347<!--ImmediateSuperInteraction: cheat_AddToFamily_StoredSim_Scenario_Inheritance--></T>
+    <T>391351<!--SuperInteraction: urnstone_Crypt_Reminisce--></T>
+    <T>380807<!--DeathSuperInteraction: death_MovingOn_MoveOntoTheGreatBeyond--></T>
+    <T>391349<!--SuperInteraction: urnstone_Crypt_Release_Inventory--></T>
+    <T>386119<!--ObjectDefinitionPickerInteraction: objectDefinitionPicker_UrnstonePlus_Grave--></T>
+    <T>383295<!--SuperInteraction: funerals_Eulogize_Lightheartedly_Gravesite--></T>
+    <T>386528<!--ImmediateSuperInteraction: immediate_UrnstonePlus_ToggleAutoswitch--></T>
+    <T>383293<!--SuperInteraction: funerals_Eulogize_Mournfully_Gravesite--></T>
+    <T>386114<!--ObjectDefinitionPickerInteraction: objectDefinitionPicker_UrnstonePlus_Urn--></T>
+    <T>383296<!--SuperInteraction: funerals_Weep--></T>
+    <T>383297<!--SuperInteraction: funerals_Wail--></T>
+    <T>383286<!--SuperInteraction: funerals_Reminisce--></T>
+    <T>383287<!--SuperInteraction: funerals_SpreadAshes--></T>
+    <T>383289<!--SuperInteraction: funerals_PourOneOut--></T>
+    <T>382837<!--SuperInteraction: urnstone_PlanFuneral--></T>
+    <T>120430<!--StandSuperInteraction: horse_stand--></T>
+    <T>124923<!--SuperInteraction: generic_Cat_layDown--></T>
+    <T>124546<!--SuperInteraction: generic_Dog_layDown--></T>
+    <T>387129<!--SuperInteraction: si_Gravesite_Horse_Mourn--></T>
+    <T>377822<!--SuperInteraction: movingOn_RecognizeFamiliarName--></T>
+    <T>387193<!--SuperInteraction: EP17World_WaylonWarez_ReadEpitaph--></T>
+    <T>389893<!--ImmediateSuperInteraction: immediate_GhostUpdates_AddGhostToHousehold--></T>
+    <T>391350<!--SuperInteraction: urnstone_Crypt_Mourn_Inventory--></T>
+    <T>391352<!--SuperInteraction: urnstone_Crypt_MomentOfSilence--></T>
+    <T>391353<!--SuperInteraction: urnstone_Crypt_LightCandle--></T>
+    <T>391347<!--SuperInteraction: urnstone_Crypt_DelayGhostCulling_Inventory--></T>
+    <T>425824<!--CreateCarriedObjectSuperInteraction: Funerals_ToastSim_CreateDrink--></T>
+    <T>394340<!--SuperInteraction: urnstone_BurialCasket_DelayGhostCulling_Inventory--></T>
+    <T>394341<!--SuperInteraction: urnstone_BurialCasket_LightCandle--></T>
+    <T>394342<!--SuperInteraction: urnstone_BurialCasket_MomentOfSilence--></T>
+    <T>394343<!--SuperInteraction: urnstone_BurialCasket_Mourn_Inventory--></T>
+    <T>394344<!--SuperInteraction: urnstone_BurialCasket_Release_Inventory--></T>
+    <T>394345<!--SuperInteraction: urnstone_BurialCasket_Reminisce--></T>
+    <T>412528<!--DeathSuperInteraction: death_MovingOn_MoveOntoTheGreatBeyond_Child--></T>
+    <T>383283<!--SuperInteraction: funerals_LightCandle--></T>
+    <T>390164<!--SuperInteraction: funerals_MomentOfSilence--></T>
+    <T>420461<!--SuperInteraction: funerals_CallGuestsOver--></T>
+    <T>178123<!--SuperInteraction: si_Gravestone_ReadEpitaph_genericRandom--></T>
+  </L>
+  <U n="aop_forward_data">
+    <T n="should_search_forwarded_parent_aop">True</T>
+  </U>
+  <U n="recycling_data">
+    <L n="recycling_loot">
+      <T>240919<!--LootActions: loot_Recycler_ObjectLoot_Urn--></T>
+    </L>
+    <L n="recycling_values">
+      <U>
+        <E n="Bucks Type">RecycleBitsBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+      <U>
+        <E n="Bucks Type">RecyclePiecesBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+    </L>
+  </U>
+</I>

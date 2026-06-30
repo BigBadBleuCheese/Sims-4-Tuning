@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_APM_StartTNS_WaterLeak" s="349374">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="audio_sting" t="enabled">
+              <U n="enabled">
+                <T n="audio" p="InEP15\Audio\music\bumpers\bumper_ep15_multiunit_event_emergency.propx">39b2aa4a:00000000:b360f7a6ada84f01</T>
+              </U>
+            </V>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T p="InEP15\UI\Icons\Notification\notification_WaterLeak.png" n="key">2f7d0004:00000000:86d0753961ad2b15</T>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x123DBA69<!--String: "The water is leaking everywhere in {1.String}! So many puddles and no one can even take a shower! The {0.String} household demands something must be done! Visit the unit to sort out the problem or Call a Contractor Crew over the phone!"--></T>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="participant_type_special">
+                    <U n="participant_type_special">
+                      <V n="participant_type" t="zone">
+                        <U n="zone">
+                          <V n="attribute" t="occupant_household_name" />
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                  <V t="participant_type_special">
+                    <U n="participant_type_special">
+                      <V n="participant_type" t="zone" />
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0xB73012AF<!--String: "Water Leak"--></T>
+            </V>
+          </U>
+        </V>
+        <E n="subject">ActiveHousehold</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="is_active_sim" t="enabled" />
+              </U>
+            </V>
+          </L>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="identity">
+              <U n="identity">
+                <E n="subject_a">PickedZoneId</E>
+                <E n="subject_b">CurrentZoneId</E>
+                <T n="use_value">True</T>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="audio_sting" t="enabled">
+              <U n="enabled">
+                <T n="audio" p="InEP15\Audio\music\bumpers\bumper_ep15_multiunit_event_emergency.propx">39b2aa4a:00000000:b360f7a6ada84f01</T>
+              </U>
+            </V>
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T p="InEP15\UI\Icons\Notification\notification_WaterLeak.png" n="key">2f7d0004:00000000:86d0753961ad2b15</T>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xA6338554<!--String: "Oh no! Something has sprung a leak and the water is out. The neighbors could also be affected. Time to sort out the problem!"--></T>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="participant_type_special">
+                    <U n="participant_type_special">
+                      <V n="participant_type" t="zone">
+                        <U n="zone">
+                          <V n="attribute" t="occupant_household_name" />
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                  <V t="participant_type_special">
+                    <U n="participant_type_special">
+                      <V n="participant_type" t="zone" />
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0xB73012AF<!--String: "Water Leak"--></T>
+            </V>
+          </U>
+        </V>
+        <E n="subject">ActiveHousehold</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="is_active_sim" t="enabled" />
+              </U>
+            </V>
+          </L>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="identity">
+              <U n="identity">
+                <E n="subject_a">PickedZoneId</E>
+                <E n="subject_b">CurrentZoneId</E>
+                <T n="subjects_match">True</T>
+                <T n="use_value">True</T>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_set">
+        <U n="statistic_set">
+          <T n="stat">351590<!--Statistic: statistic_muEvent_EventType--></T>
+          <L n="subject">
+            <E>Lot</E>
+          </L>
+          <T n="value">0</T>
+        </U>
+      </V>
+    </V>
+  </L>
+</I>

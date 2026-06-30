@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="superInteraction_EP19WorldPOI_GnomeStatue_AskforLuck" s="441191">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="circle">
+            <U n="circle">
+              <T n="radius">3</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="value" t="facing" />
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">441194<!--AnimationElement: animationElement_GnomeStatue_AskStatueLuck--></T>
+      </U>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="buff_fire_and_forget">
+      <U n="buff_fire_and_forget">
+        <U n="buff">
+          <T n="buff_type">444489<!--Buff: buff_EP19World_Hidden_AskGreatGnomeGoodLuck_Cooldown--></T>
+        </U>
+      </U>
+    </V>
+  </L>
+  <V n="basic_reserve_object" t="disabled" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xE4B456B2<!--String: "Ask Great Gnome for Good Luck"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <V n="buff_reason" t="enabled">
+                          <T n="enabled">0x84EEA45<!--String: "(From Great Gnome Statue)"--></T>
+                        </V>
+                        <T n="buff_type">440943<!--Buff: buff_EP19World_BlessedGreatGnome--></T>
+                      </U>
+                    </U>
+                  </V>
+                  <V t="loot">
+                    <U n="loot">
+                      <L n="loot_list">
+                        <T>444277<!--LootActions: loot_EP19World_GnomeStatue_AskGoodLuck_Success--></T>
+                      </L>
+                    </U>
+                  </V>
+                  <V t="notification">
+                    <U n="notification">
+                      <V n="dialog" t="single">
+                        <V n="single" t="literal">
+                          <U n="literal">
+                            <V n="secondary_icon" t="enabled">
+                              <V n="enabled" t="participant" />
+                            </V>
+                            <V n="text" t="single">
+                              <T n="single">0x9F4CB56A<!--String: "Behold! The Great Gnome has bestowed a gift of Luck to {0.SimFirstName}. {0.SimPronounSubjective|xxUpper} must be one special Sim indeed!\n\n{0.SimFirstName}'s Luck is better than it was before."--></T>
+                            </V>
+                          </U>
+                        </V>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+                <V n="response" t="enabled">
+                  <V n="enabled" t="individual">
+                    <U n="individual">
+                      <L n="animations">
+                        <U>
+                          <E n="target">Actor</E>
+                          <U n="animation">
+                            <T n="factory">11810<!--AnimationElement: Social_Responses_Confident_Random--></T>
+                          </U>
+                        </U>
+                      </L>
+                    </U>
+                  </V>
+                </V>
+              </U>
+              <U n="weight">
+                <L n="multipliers">
+                  <U>
+                    <T n="multiplier">0</T>
+                    <L n="tests">
+                      <L>
+                        <V t="buff">
+                          <U n="buff">
+                            <V n="whitelist" t="enabled">
+                              <L n="enabled">
+                                <T>440944<!--Buff: buff_EP19World_OutGnomed--></T>
+                                <T>440945<!--Buff: buff_EP19World_CursedGreatGnome--></T>
+                              </L>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                  <U>
+                    <T n="multiplier">4</T>
+                    <L n="tests">
+                      <L>
+                        <V t="trait">
+                          <U n="trait">
+                            <L n="whitelist_traits">
+                              <T>441067<!--Trait: trait_EP19Quests_GreatGnome--></T>
+                            </L>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                </L>
+              </U>
+            </U>
+            <U>
+              <U n="outcome">
+                <L n="basic_extras">
+                  <V t="notification">
+                    <U n="notification">
+                      <V n="dialog" t="single">
+                        <V n="single" t="literal">
+                          <U n="literal">
+                            <V n="secondary_icon" t="enabled">
+                              <V n="enabled" t="participant" />
+                            </V>
+                            <V n="text" t="single">
+                              <T n="single">0x6DD18FB5<!--String: "The Great Gnome is quite busy and has ignored {0.SimFirstName}'s request for Good Luck at this time. {0.SimFirstName} may try again in a day."--></T>
+                            </V>
+                          </U>
+                        </V>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </U>
+              <U n="weight">
+                <T n="base_value">3</T>
+              </U>
+            </U>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="luck">
+      <U n="luck">
+        <L n="luck_level_indices">
+          <T>0</T>
+          <T>1</T>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xE8ED8F09<!--String: "{0.SimFirstName} already has Good Luck."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>444489<!--Buff: buff_EP19World_Hidden_AskGreatGnomeGoodLuck_Cooldown--></T>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xB0A30FAD<!--String: "Best not bother the Great Gnome too often. Come back in a day."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

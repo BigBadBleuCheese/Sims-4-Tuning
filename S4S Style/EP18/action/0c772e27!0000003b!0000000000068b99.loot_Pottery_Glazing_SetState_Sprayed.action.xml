@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Pottery_Glazing_SetState_Sprayed" s="428953">
+  <L n="loot_actions">
+    <V t="state_change">
+      <U n="state_change">
+        <T n="state_value">394319<!--ObjectStateValue: potteryCeramic_GlazeState_Values_Sprayed--></T>
+        <V n="subject" t="participant">
+          <E n="participant">SavedActor1</E>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="state">
+              <U n="state">
+                <E n="operator">NOTEQUAL</E>
+                <T n="value">428768<!--ObjectStateValue: potteryCeramic_UnbreakableGlaze_PreSpray--></T>
+                <E n="who">SavedActor1</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="state_change">
+      <U n="state_change">
+        <T n="state_value">428950<!--ObjectStateValue: potteryCeramic_UnbreakableGlaze_Sprayed--></T>
+        <V n="subject" t="participant">
+          <E n="participant">SavedActor1</E>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="state">
+              <U n="state">
+                <T n="value">428768<!--ObjectStateValue: potteryCeramic_UnbreakableGlaze_PreSpray--></T>
+                <E n="who">SavedActor1</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T n="run_test_first">True</T>
+</I>

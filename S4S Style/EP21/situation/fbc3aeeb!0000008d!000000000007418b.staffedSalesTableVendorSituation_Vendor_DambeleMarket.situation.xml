@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="StaffedSalesTableVendorSituation" i="situation" m="situations.ambient.sales_table_vendor_situation" n="staffedSalesTableVendorSituation_Vendor_DambeleMarket" s="475531">
+  <V n="_object_to_staff_filter" t="object_tags">
+    <U n="object_tags">
+      <L n="tag_set">
+        <E>Func_CraftSalesTable_Table</E>
+      </L>
+    </U>
+  </V>
+  <T n="duration">330</T>
+  <T n="duration_randomizer">30</T>
+  <U n="number_of_sale_objects">
+    <T n="lower_bound">5</T>
+    <T n="upper_bound">8</T>
+  </U>
+  <U n="setup_state">
+    <U n="interaction_of_interest">
+      <L n="affordances">
+        <T>146838<!--SuperInteraction: si_CraftSalesTable_StockTable_NPC--></T>
+        <T>238438<!--SuperInteraction: si_CraftSalesTable_StockTable_NPC_StaffedOnly--></T>
+      </L>
+    </U>
+    <L n="job_and_role_changes">
+      <U>
+        <T n="Situation Job">477682<!--SituationJob: situationJob_Venue_CraftSalesTable_Vendor_PreferArtisan--></T>
+        <T n="Role State">475528<!--RoleState: roleState_CraftSalesTable_Vendor_Stock_Dambele--></T>
+      </U>
+    </L>
+  </U>
+  <V n="situation_end_time_string" t="show_end_time">
+    <T n="show_end_time">0xA3E17143<!--String: "Work day ends at {0.TimeShort}"--></T>
+  </V>
+  <U n="teardown_state">
+    <L n="job_and_role_changes">
+      <U>
+        <T n="Situation Job">477682<!--SituationJob: situationJob_Venue_CraftSalesTable_Vendor_PreferArtisan--></T>
+        <T n="Role State">475529<!--RoleState: roleState_CraftSalesTable_Vendor_CloseTable_Onlot--></T>
+      </U>
+    </L>
+  </U>
+  <U n="tend_state">
+    <L n="job_and_role_changes">
+      <U>
+        <T n="Situation Job">477682<!--SituationJob: situationJob_Venue_CraftSalesTable_Vendor_PreferArtisan--></T>
+        <T n="Role State">475530<!--RoleState: roleState_CraftSalesTable_Vendor_Tend_Onlot--></T>
+      </U>
+    </L>
+    <V n="time_out" t="enabled">
+      <T n="enabled">120</T>
+    </V>
+  </U>
+  <U n="vendor_job_and_role_state">
+    <T n="role_state">475528<!--RoleState: roleState_CraftSalesTable_Vendor_Stock_Dambele--></T>
+    <T n="situation_job">477682<!--SituationJob: situationJob_Venue_CraftSalesTable_Vendor_PreferArtisan--></T>
+  </U>
+</I>

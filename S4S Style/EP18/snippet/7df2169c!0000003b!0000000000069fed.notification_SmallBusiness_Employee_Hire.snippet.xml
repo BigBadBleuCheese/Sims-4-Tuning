@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Notification" i="snippet" m="snippets" n="notification_SmallBusiness_Employee_Hire" s="434157">
+  <U n="value">
+    <V n="audio_sting" t="enabled">
+      <U n="enabled">
+        <T n="audio" p="InEP18\Audio\music\bumpers\bumper_ep18_employee_rules_hire_employee.propx">39b2aa4a:00000000:2ab7962966648c7e</T>
+      </U>
+    </V>
+    <V n="icon" t="enabled">
+      <V n="enabled" t="small_business" />
+    </V>
+    <V n="primary_icon_response" t="enabled">
+      <U n="enabled">
+        <E n="ui_request">SHOW_SMALL_BUSINESS_PANEL</E>
+      </U>
+    </V>
+    <V n="secondary_icon" t="enabled">
+      <V n="enabled" t="participant" />
+    </V>
+    <V n="text" t="single">
+      <T n="single">0xD01CD904<!--String: "{0.SimFirstName} has hired {1.SimName} as a new employee at {2.String}. {1.SimFirstName} will show up for work the next time {2.String} is opened."--></T>
+    </V>
+    <V n="text_tokens" t="enabled">
+      <U n="enabled">
+        <L n="tokens">
+          <V t="participant_type" />
+          <V t="participant_type">
+            <U n="participant_type">
+              <V n="objects" t="from_participant">
+                <U n="from_participant">
+                  <E n="participant">TargetSim</E>
+                </U>
+              </V>
+            </U>
+          </V>
+          <V t="small_business" />
+        </L>
+      </U>
+    </V>
+    <V n="title" t="enabled">
+      <T n="enabled">0xB6A4B542<!--String: "New Employee"--></T>
+    </V>
+    <L n="ui_responses">
+      <U>
+        <V n="response_command" t="enabled">
+          <V n="enabled" t="literal">
+            <U n="literal">
+              <T n="command">business.show_small_business_employee_task_manager</T>
+            </U>
+          </V>
+        </V>
+        <T n="text">0x8D693031<!--String: "Manage Employee Tasks"--></T>
+        <E n="ui_request">SEND_COMMAND</E>
+      </U>
+    </L>
+  </U>
+</I>

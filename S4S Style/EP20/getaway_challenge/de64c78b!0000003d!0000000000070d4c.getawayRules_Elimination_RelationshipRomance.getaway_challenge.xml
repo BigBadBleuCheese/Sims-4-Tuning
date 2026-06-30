@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="RomanceElimination" i="getaway_challenge" m="custom_schedules.getaway_challenge_tuning" n="getawayRules_Elimination_RelationshipRomance" s="462156">
+  <U n="daily_timer">
+    <T n="hour">11</T>
+  </U>
+  <V n="daily_timer_notification" t="disabled" />
+  <T n="description_tooltip">0xEC3D9945<!--String: "Choose a role for <font color="#0096FF"><b>Sims to Romance</b></font> to define which Sims are meant to build romance. Then, select a role for <font color="#0096FF"><b>Elimination Candidates</b></font> to determine which Sims will be eligible for elimination. Each day, the Sim with the least progress or lowest score in romantic relationships will be sent home, until only one winning couple remains.\n\nOnly Sims in the selected roles are eligible, and participation is limited to young adults and older."--></T>
+  <T n="display_name">0xE21A3AC9<!--String: "Romantic Elimination"--></T>
+  <L n="groups">
+    <U>
+      <L n="associated_buff">
+        <U>
+          <T n="buff_type">474555<!--Buff: buff_Getaway_Hidden_ModifierRules_Romance--></T>
+        </U>
+        <U>
+          <T n="buff_type">477386<!--Buff: buff_Trait_Competitive_Hidden_Getaway_RelContest_RelationshipRomance--></T>
+        </U>
+        <U>
+          <T n="buff_type">462158<!--Buff: buff_Getaway_SimOfInterest--></T>
+        </U>
+      </L>
+      <L n="disallowed_ages">
+        <E />
+        <E>INFANT</E>
+        <E>TODDLER</E>
+        <E>CHILD</E>
+        <E>TEEN</E>
+      </L>
+      <L n="disallowed_species">
+        <E>CAT</E>
+        <E>DOG</E>
+        <E>FOX</E>
+        <E>HORSE</E>
+        <E>SMALLDOG</E>
+      </L>
+      <T n="group_name">0x48573D8B<!--String: "Sims to Romance"--></T>
+      <T n="multi_select">True</T>
+    </U>
+    <U>
+      <L n="associated_buff">
+        <U>
+          <T n="buff_type">483862<!--Buff: buff_Getaway_EliminationCandidate--></T>
+        </U>
+      </L>
+      <L n="disallowed_ages">
+        <E />
+        <E>INFANT</E>
+        <E>TODDLER</E>
+        <E>CHILD</E>
+        <E>TEEN</E>
+      </L>
+      <L n="disallowed_species">
+        <E>CAT</E>
+        <E>DOG</E>
+        <E>FOX</E>
+        <E>HORSE</E>
+        <E>SMALLDOG</E>
+      </L>
+      <T n="group_name">0x36F2FADF<!--String: "Elimination Candidates"--></T>
+      <T n="multi_select">True</T>
+    </U>
+  </L>
+  <T n="icon" p="InEP20\UI\Icons\GetawayRules\getaway_rules_RomanticRelationshipElimination.png">2f7d0004:00000000:4934037046879576</T>
+  <L n="loots_after_daily_timer">
+    <T>486062<!--LootActions: loot_Getaway_Elimination_Romantic--></T>
+    <T>487119<!--LootActions: loot_Getaway_Elimination_Romantic_2_Remaining--></T>
+    <T>487117<!--LootActions: loot_Getaway_Elimination_Romantic_3_Remaining--></T>
+    <T>487116<!--LootActions: loot_Getaway_Elimination_Romantic_4_Remaining--></T>
+    <T>487120<!--LootActions: loot_Getaway_Elimination_Romantic_FinalElimination--></T>
+    <T>489168<!--LootActions: loot_Getaway_Elimination_Romantic_2_Remaining_EndEarly--></T>
+  </L>
+  <L n="tests_blocking_daily_timer_behavior">
+    <L>
+      <V t="count">
+        <U n="count">
+          <V n="participant" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">GetawayEliminationCandidates</E>
+            </U>
+          </V>
+          <V n="threshold" t="from_value">
+            <U n="from_value">
+              <E n="comparison">LESS_OR_EQUAL</E>
+              <T n="value">1</T>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

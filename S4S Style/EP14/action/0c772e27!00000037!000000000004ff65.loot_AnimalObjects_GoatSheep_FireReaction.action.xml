@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_AnimalObjects_GoatSheep_FireReaction" s="327525">
+  <L n="loot_actions">
+    <V t="state_change">
+      <U n="state_change">
+        <T n="force_update">True</T>
+        <T n="state_value">349546<!--ObjectStateValue: animalObjects_Generic_IdleStateValues_WakeUp--></T>
+        <L n="tests">
+          <L>
+            <V t="state">
+              <U n="state">
+                <T n="value">262324<!--ObjectStateValue: animalObjects_Generic_MasterController_InSlot_Sleep--></T>
+                <E n="who">Actor</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="state_change">
+      <U n="state_change">
+        <T n="force_update">True</T>
+        <T n="state_value">262374<!--ObjectStateValue: animalObjects_Generic_MasterController_Free--></T>
+        <L n="tests">
+          <L>
+            <V t="state">
+              <U n="state">
+                <T n="value">262324<!--ObjectStateValue: animalObjects_Generic_MasterController_InSlot_Sleep--></T>
+                <E n="who">Actor</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="set_routing_info_and_state">
+      <U n="set_routing_info_and_state">
+        <V n="routing_owner" t="enabled">
+          <E n="enabled">Object</E>
+        </V>
+        <V n="routing_state_to_change" t="enabled">
+          <T n="enabled">327585<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_RunAway_Fire--></T>
+        </V>
+        <V n="routing_target" t="enabled">
+          <E n="enabled">Object</E>
+        </V>
+        <E n="subject">Actor</E>
+        <L n="tests">
+          <L>
+            <V t="state">
+              <U n="state">
+                <E n="operator">NOTEQUAL</E>
+                <T n="value">262324<!--ObjectStateValue: animalObjects_Generic_MasterController_InSlot_Sleep--></T>
+                <E n="who">Actor</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="object_criteria">
+        <U n="object_criteria">
+          <V n="identity_test" t="tags">
+            <U n="tags">
+              <L n="tag_set">
+                <E>Func_AnimalObject_Livestock_Goat</E>
+                <E>Func_AnimalObject_Livestock_Sheep</E>
+              </L>
+            </U>
+          </V>
+          <T n="owned">False</T>
+          <V n="subject_specific_tests" t="single_object">
+            <U n="single_object">
+              <E n="target">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="state_white_black">
+        <U n="state_white_black">
+          <E n="participant">Actor</E>
+          <U n="states">
+            <V n="blacklist" t="specify">
+              <U n="specify">
+                <L n="blacklist">
+                  <T>268087<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_CallOutFromCrow--></T>
+                  <T>268085<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_CallOutFromNest--></T>
+                  <T>264797<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_Disappear--></T>
+                  <T>260599<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_Social--></T>
+                  <T>264713<!--ObjectStateValue: animalObjects_Generic_MasterController_InSlot--></T>
+                  <T>266319<!--ObjectStateValue: animalObjects_Generic_MasterController_InInventory--></T>
+                  <T>262477<!--ObjectStateValue: animalObjects_Generic_MasterController_Missing--></T>
+                  <T>262080<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_Nest--></T>
+                  <T>262081<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_RoosterCrow--></T>
+                </L>
+              </U>
+            </V>
+          </U>
+        </U>
+      </V>
+      <V t="has_parent_object">
+        <U n="has_parent_object">
+          <T n="negate">True</T>
+          <E n="targets">Actor</E>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="pottery_Glaze_RemoveObjectFromKiln" s="394755">
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">389144<!--AnimationElement: pottery_PotteryKiln_Glazing_RemoveFromKiln--></T>
+      </U>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="slot_item_transfer">
+      <U n="slot_item_transfer">
+        <V n="objects_to_transfer" t="from_participant">
+          <U n="from_participant">
+            <V n="in_slot" t="by_reference">
+              <T n="by_reference">slot_Kiln</T>
+            </V>
+            <E n="participant">Object</E>
+          </U>
+        </V>
+        <V n="timing" t="on_xevt">
+          <U n="on_xevt">
+            <T n="xevt_id">334</T>
+          </U>
+        </V>
+        <T n="transfer_object_children">False</T>
+      </U>
+    </V>
+  </L>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xD55CDAE2<!--String: "Remove Ceramic from Kiln"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <L n="joinable">
+    <U>
+      <V n="invite_available" t="enabled">
+        <U n="enabled">
+          <V n="loc_custom_invite_name" t="enabled">
+            <T n="enabled">0xF80506D0<!--String: "{0.String}"--></T>
+          </V>
+          <T n="use_proxied_affordance_name">True</T>
+        </U>
+      </V>
+      <V n="join_affordance" t="affordance">
+        <U n="affordance">
+          <V n="value" t="custom">
+            <T n="custom">406938<!--SuperInteraction: mentor_Pottery--></T>
+          </V>
+        </U>
+      </V>
+      <V n="join_available" t="enabled">
+        <U n="enabled">
+          <V n="loc_custom_join_name" t="enabled">
+            <T n="enabled">0xF80506D0<!--String: "{0.String}"--></T>
+          </V>
+        </U>
+      </V>
+      <E n="join_target">Actor</E>
+      <T n="link_joinable">True</T>
+    </U>
+    <U>
+      <V n="invite_available" t="enabled">
+        <U n="enabled">
+          <V n="loc_custom_invite_name" t="enabled">
+            <T n="enabled">0xF80506D0<!--String: "{0.String}"--></T>
+          </V>
+          <T n="use_proxied_affordance_name">True</T>
+        </U>
+      </V>
+      <V n="join_affordance" t="affordance">
+        <U n="affordance">
+          <V n="value" t="custom">
+            <T n="custom">487439<!--SuperInteraction: mentor_Pottery_Getaway--></T>
+          </V>
+        </U>
+      </V>
+      <V n="join_available" t="enabled">
+        <U n="enabled">
+          <V n="loc_custom_join_name" t="enabled">
+            <T n="enabled">0xF80506D0<!--String: "{0.String}"--></T>
+          </V>
+        </U>
+      </V>
+      <E n="join_target">Actor</E>
+      <T n="link_joinable">True</T>
+    </U>
+  </L>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="slot_test">
+      <U n="slot_test">
+        <V n="child_slot" t="by_reference">
+          <T n="by_reference">slot_Kiln</T>
+        </V>
+        <V n="slot_test_type" t="has_used_slot">
+          <U n="has_used_slot">
+            <V n="object_type" t="enabled">
+              <V n="enabled" t="object_tags">
+                <U n="object_tags">
+                  <L n="tag_set">
+                    <E>Func_Pottery</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

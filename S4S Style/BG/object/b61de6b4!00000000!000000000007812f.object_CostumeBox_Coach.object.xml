@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="GameObject" i="object" m="objects.game_object" n="object_CostumeBox_Coach" s="491823">
+  <U n="_components">
+    <V n="focus" t="enabled">
+      <U n="enabled">
+        <V n="_focus_score" t="globally">
+          <U n="globally">
+            <E n="base">LOW</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V n="inventory_item" t="enabled">
+      <U n="enabled">
+        <V n="no_carry_add_to_sim_inventory_affordances" t="OVERRIDE">
+          <L n="OVERRIDE">
+            <T>106806<!--SuperInteraction: si_SwipeIntoSimInventory_StandOnly--></T>
+          </L>
+        </V>
+        <T n="skip_carry_pose">True</T>
+        <E n="stack_scheme">NONE</E>
+        <L n="valid_inventory_types">
+          <E>SIM</E>
+        </L>
+      </U>
+    </V>
+    <V n="retail_component" t="enabled">
+      <V n="enabled" t="reference">
+        <T n="reference">110393<!--RetailComponent: retailComponent_Default--></T>
+      </V>
+    </V>
+    <V n="state" t="enabled">
+      <U n="enabled">
+        <L n="state_triggers">
+          <U>
+            <L n="at_states">
+              <T>77532<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Replace--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>39737<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Not_Burning--></T>
+              </L>
+            </V>
+          </U>
+        </L>
+        <L n="states">
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">39611<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change--></T>
+              </U>
+              <U>
+                <T n="key">39736<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Burning--></T>
+              </U>
+              <U>
+                <T n="key">39737<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Not_Burning--></T>
+              </U>
+              <U>
+                <T n="key">77532<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Replace--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">39737<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Not_Burning--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">131794<!--ObjectStateValue: Kelpto_Stolen_Object--></T>
+              </U>
+              <U>
+                <T n="key">131795<!--ObjectStateValue: Klepto_Not_Stolen_Object--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">131795<!--ObjectStateValue: Klepto_Not_Stolen_Object--></T>
+            </V>
+          </U>
+        </L>
+      </U>
+    </V>
+  </U>
+  <L n="_super_affordances">
+    <T>13328<!--ImmediateSuperInteraction: debug_Reset--></T>
+    <T>13326<!--ImmediateSuperInteraction: debug_ObjectDestroy--></T>
+    <T>103888<!--ImmediateSuperInteraction: cheat_set_as_head--></T>
+    <T>491826<!--SuperInteraction: costumeBox_WearCostume_Confident_Coach--></T>
+    <T>491825<!--SuperInteraction: costumeBox_WearCostume_Flirty_Coach--></T>
+    <T>491824<!--SuperInteraction: costumeBox_WearCostume_Playful_Coach--></T>
+    <T>102258<!--SuperInteraction: Ghost_Possess--></T>
+    <T>276518<!--SuperInteraction: infant_WhatsThat--></T>
+    <T>361301<!--SuperInteraction: costumeBox_CallToWear_Athletic--></T>
+    <T>361306<!--SuperInteraction: costumeBox_CallToWear_ColdWeather--></T>
+    <T>361298<!--SuperInteraction: costumeBox_CallToWear_Costume--></T>
+    <T>361299<!--SuperInteraction: costumeBox_CallToWear_Everyday--></T>
+    <T>361300<!--SuperInteraction: costumeBox_CallToWear_Formal--></T>
+    <T>361317<!--SuperInteraction: costumeBox_RemoveCostume--></T>
+    <T>142163<!--OutfitPickerSuperInteraction: changeOutfitPicker_Actor_Dresser--></T>
+    <T>40119<!--SuperInteraction: dresser_TryOnOutfits_Start--></T>
+    <T>139512<!--SuperInteraction: dresser_ChangeSim--></T>
+    <T>97780<!--SuperInteraction: PlanOutfit--></T>
+    <T>74457<!--ImmediateSuperInteraction: fire_ReplaceBurntObject--></T>
+    <T>157510<!--SuperInteraction: generic_Object_Toddler_Check_Out_CircleConstraint--></T>
+    <T>106859<!--SuperInteraction: simRay_Transform_Object--></T>
+    <T>361305<!--SuperInteraction: costumeBox_CallToWear_HotWeather--></T>
+    <T>361303<!--SuperInteraction: costumeBox_CallToWear_Party--></T>
+    <T>361302<!--SuperInteraction: costumeBox_CallToWear_Sleep--></T>
+    <T>361304<!--SuperInteraction: costumeBox_CallToWear_SwimmingWear--></T>
+    <T>394565<!--SuperInteraction: costumeBox_FindObject--></T>
+  </L>
+  <U n="recycling_data">
+    <L n="recycling_values">
+      <U>
+        <E n="Bucks Type">RecycleBitsBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+      <U>
+        <E n="Bucks Type">RecyclePiecesBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+    </L>
+  </U>
+</I>

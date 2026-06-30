@@ -1,0 +1,1332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SocialSuperInteraction" i="interaction" m="interactions.social.social_super_interaction" n="social_TattooingTable_Services_Tattooing_Regular_Front" s="378964">
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>TargetSim</E>
+      </L>
+    </U>
+  </V>
+  <L n="_party_size_weight_tuning">
+    <U>
+      <T n="y">100</T>
+    </U>
+    <U>
+      <T n="x">1</T>
+      <T n="y">100</T>
+    </U>
+    <U>
+      <T n="x">2</T>
+      <T n="y">50</T>
+    </U>
+    <U>
+      <T n="x">3</T>
+      <T n="y">0</T>
+    </U>
+    <U>
+      <T n="x">4</T>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <T n="_social_group_type">378680<!--SocialGroup: group_TattooTable--></T>
+  <V n="affordance_to_push_on_target" t="push_affordance">
+    <T n="push_affordance">379524<!--SocialSuperInteraction: social_TattooingTable_Recipient_Front--></T>
+  </V>
+  <T n="allow_autonomous">False</T>
+  <T n="allow_defer_back_carry">False</T>
+  <T n="allow_user_directed">False</T>
+  <V n="animation_stat" t="enabled">
+    <U n="enabled">
+      <V n="actor_stat" t="enabled">
+        <V n="enabled" t="single">
+          <U n="single">
+            <T n="item">371481<!--Skill: statistic_Skill_AdultMajor_Tattooing--></T>
+          </U>
+        </V>
+      </V>
+    </U>
+  </V>
+  <T n="attention_cost">0</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="stat_based">
+                <U n="stat_based">
+                  <T n="stat">434042<!--Commodity: commodity_Tattooing_Progress--></T>
+                  <U n="threshold">
+                    <E n="comparison">GREATER_OR_EQUAL</E>
+                    <T n="value">100</T>
+                  </U>
+                  <E n="who">ActorPostureTarget</E>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+            <E n="progress_bar_action">FORCE_USE_CONDITION</E>
+          </U>
+        </V>
+        <V t="reference">
+          <T n="reference">40706<!--ExitCondition: exitCondition_MotiveNearFailHunger--></T>
+        </V>
+        <V t="reference">
+          <T n="reference">433464<!--ExitCondition: exitCondition_MotiveNearFailHunger_Target--></T>
+        </V>
+        <V t="reference">
+          <T n="reference">445254<!--ExitCondition: exitCondition_MotivesNearFail_VampirePower--></T>
+        </V>
+        <V t="reference">
+          <T n="reference">445255<!--ExitCondition: exitCondition_MotivesNearFail_VampirePower_Target--></T>
+        </V>
+      </L>
+      <V n="content" t="staging_content">
+        <U n="staging_content">
+          <U n="content_set">
+            <L n="affordance_links">
+              <T>378592<!--SocialMixerInteraction: mixer_TattooingTable_Fart--></T>
+              <T>378593<!--SocialMixerInteraction: mixer_TattooingTable_Tattoo_Basic--></T>
+              <T>378594<!--SocialMixerInteraction: mixer_TattooingTable_PainBreak--></T>
+              <T>378595<!--SocialMixerInteraction: mixer_TattooingTable_Tattoo_SkillVariant--></T>
+              <T>380778<!--SocialMixerInteraction: mixer_TattooingTable_PainBreak_Common--></T>
+              <T>380777<!--SocialMixerInteraction: mixer_TattooingTable_PainBreak_Rare--></T>
+            </L>
+          </U>
+        </U>
+      </V>
+      <V n="periodic_stat_change" t="enabled">
+        <U n="enabled">
+          <U n="operation_actions">
+            <L n="actions">
+              <T>385780<!--LootActions: loot_Tattooing_ArtistPainBuff--></T>
+            </L>
+            <T n="alarm_interval">10</T>
+          </U>
+          <L n="operations">
+            <V t="dynamic_skill">
+              <U n="dynamic_skill">
+                <U n="skill_loot_data_override">
+                  <E n="effectiveness">LargePeriodic</E>
+                  <V n="level_range" t="enabled">
+                    <U n="enabled">
+                      <T n="upper_bound">10</T>
+                    </U>
+                  </V>
+                  <T n="stat">371481<!--Skill: statistic_Skill_AdultMajor_Tattooing--></T>
+                </U>
+              </U>
+            </V>
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="amount">1</T>
+                <T n="stat">434042<!--Commodity: commodity_Tattooing_Progress--></T>
+                <L n="statistic_multipliers">
+                  <U>
+                    <V n="multiplier" t="value_curve">
+                      <L n="value_curve">
+                        <U>
+                          <T n="x">1</T>
+                          <T n="y">1</T>
+                        </U>
+                        <U>
+                          <T n="x">10</T>
+                          <T n="y">1.5</T>
+                        </U>
+                      </L>
+                    </V>
+                    <T n="statistic">371481<!--Skill: statistic_Skill_AdultMajor_Tattooing--></T>
+                  </U>
+                </L>
+                <L n="subject">
+                  <E>ActorPostureTarget</E>
+                </L>
+              </U>
+            </V>
+          </L>
+        </U>
+      </V>
+      <T n="start_autonomous_inertial">False</T>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>162659<!--LootActions: loot_Commodity_Culling_GhostAdd_target--></T>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x9C09275F<!--String: "(From Being in a social group with at least 3 Sims)"--></T>
+          </V>
+          <T n="buff_type">125555<!--Buff: buff_Trait_WithMyFriends--></T>
+        </U>
+        <L n="subject">
+          <E>Actor</E>
+          <E>SocialGroupSims</E>
+          <E>TargetSim</E>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="social_group">
+              <U n="social_group">
+                <V n="threshold" t="enabled">
+                  <U n="enabled">
+                    <T n="value">3</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="state_change">
+      <U n="state_change">
+        <V n="new_value" t="single_value">
+          <U n="single_value">
+            <T n="new_value">224553<!--ObjectStateValue: utilities_Power_Consumption_On--></T>
+          </U>
+        </V>
+        <E n="state_change_target">ActorPostureTarget</E>
+        <V n="timing" t="immediately" />
+      </U>
+    </V>
+    <V t="state_change">
+      <U n="state_change">
+        <V n="new_value" t="single_value">
+          <U n="single_value">
+            <T n="new_value">224564<!--ObjectStateValue: utilities_Power_Consumption_Off--></T>
+          </U>
+        </V>
+        <E n="state_change_target">ActorPostureTarget</E>
+        <V n="timing" t="at_end" />
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <T n="buff_type">395796<!--Buff: buff_TattooingTable_Hidden_BlockAutonomousTargetingInteractions--></T>
+        </U>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x1B989178<!--String: "(From Liking Tattooing)"--></T>
+          </V>
+          <T n="buff_type">376976<!--Buff: buff_SimPreference_Likes_Activities_Tattooing--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <L n="whitelist_traits">
+                  <T>376967<!--Preference: trait_SimPreference_Likes_Activities_Tattooing--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x45897107<!--String: "(From Disliking Tattooing)"--></T>
+          </V>
+          <T n="buff_type">376975<!--Buff: buff_SimPreference_Dislikes_Activities_Tattooing--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <L n="whitelist_traits">
+                  <T>376966<!--Preference: trait_SimPreference_Dislikes_Activities_Tattooing--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="adventure">
+      <U n="adventure">
+        <L n="_adventure_moments">
+          <U>
+            <E n="key">Career_ChanceCard_01</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">376982<!--AdventureMoment: adventureMoment_SimPreference_Activities_Tattooing_Like--></T>
+              </V>
+            </U>
+          </U>
+        </L>
+        <L n="_initial_moments">
+          <U>
+            <E n="adventure_moment_key">Career_ChanceCard_01</E>
+            <U n="weight">
+              <L n="multipliers">
+                <U>
+                  <T n="multiplier">0</T>
+                  <L n="tests">
+                    <L>
+                      <V t="test_set_reference">
+                        <T n="test_set_reference">269223<!--TestSetInstance: testSetInstance_SimPreference_PreferenceDiscovery_MaxOrCooldownOrAge--></T>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+                <U>
+                  <T n="multiplier">0</T>
+                  <L n="tests">
+                    <L>
+                      <V t="trait">
+                        <U n="trait">
+                          <L n="whitelist_traits">
+                            <T>376966<!--Preference: trait_SimPreference_Dislikes_Activities_Tattooing--></T>
+                            <T>376967<!--Preference: trait_SimPreference_Likes_Activities_Tattooing--></T>
+                            <T>376968<!--Trait: trait_SimPreference_NoOpinion_Activities_Tattooing--></T>
+                          </L>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+                <U>
+                  <T n="multiplier">0</T>
+                  <L n="tests">
+                    <L>
+                      <V t="test_set_reference">
+                        <T n="test_set_reference">267815<!--TestSetInstance: testSetInstance_SimPreference_PreferenceDiscovery_EnergizedFocusedInspired--></T>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+              </L>
+            </U>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V t="adventure">
+      <U n="adventure">
+        <L n="_adventure_moments">
+          <U>
+            <E n="key">Career_ChanceCard_01</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">376983<!--AdventureMoment: adventureMoment_SimPreference_Activities_Tattooing_Dislike--></T>
+              </V>
+            </U>
+          </U>
+        </L>
+        <L n="_initial_moments">
+          <U>
+            <U n="weight">
+              <L n="multipliers">
+                <U />
+                <U>
+                  <L n="tests">
+                    <L>
+                      <V t="trait">
+                        <U n="trait">
+                          <L n="whitelist_traits">
+                            <T>376966<!--Preference: trait_SimPreference_Dislikes_Activities_Tattooing--></T>
+                            <T>376967<!--Preference: trait_SimPreference_Likes_Activities_Tattooing--></T>
+                            <T>376968<!--Trait: trait_SimPreference_NoOpinion_Activities_Tattooing--></T>
+                          </L>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+                <U />
+              </L>
+            </U>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0xB9370CDF<!--String: "(From Getting Tattooed)"--></T>
+          </V>
+          <T n="buff_type">380711<!--Buff: buff_TattooingTable_GettingTattoed_Adrenaline--></T>
+        </U>
+        <L n="subject">
+          <E>TargetSim</E>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="test_based_score_threshold">
+              <U n="test_based_score_threshold">
+                <T n="test_based_score">380716<!--TestBasedScore: scores_Tattooing_GettingTattooed_Adrenaline--></T>
+                <U n="threshold">
+                  <T n="value">10</T>
+                </U>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0xB9370CDF<!--String: "(From Getting Tattooed)"--></T>
+          </V>
+          <T n="buff_type">380712<!--Buff: buff_TattooingTable_GettingTattoed_Scared--></T>
+        </U>
+        <L n="subject">
+          <E>TargetSim</E>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="test_based_score_threshold">
+              <U n="test_based_score_threshold">
+                <T n="test_based_score">380715<!--TestBasedScore: scores_Tattooing_GettingTattooed_Scared--></T>
+                <U n="threshold">
+                  <T n="value">10</T>
+                </U>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>380709<!--LootActions: loot_Tattooing_ResetProgress--></T>
+        </L>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <T n="buff_type">388489<!--Buff: buff_TattooingTable_Hidden_BlockBladderEnergyFailure_NoTempCommodity--></T>
+        </U>
+        <L n="subject">
+          <E>Actor</E>
+          <E>TargetSim</E>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <T n="buff_type">404178<!--Buff: buff_TattooingTable_Hidden_WithCustomer--></T>
+        </U>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>443154<!--LootActions: loot_Tattooing_StorePickedTatoo--></T>
+        </L>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+  </L>
+  <L n="basic_liabilities">
+    <V t="critical_priority">
+      <U n="critical_priority">
+        <E n="priority_on_push">High</E>
+      </U>
+    </V>
+  </L>
+  <V n="basic_reserve_object" t="enabled" />
+  <V n="canonical_animation" t="enabled">
+    <U n="enabled">
+      <T n="factory">378563<!--AnimationElement: tattooingTable_Tattoo_TattooBasic--></T>
+    </U>
+  </V>
+  <V n="carry_back_compatibility_override" t="enabled">
+    <U n="enabled">
+      <T n="wings">False</T>
+    </U>
+  </V>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x834852A8<!--String: "Give Tattoo"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <V n="idle_animation" t="disabled" />
+  <T n="ignore_group_socials">False</T>
+  <L n="interaction_category_tags">
+    <E>Interaction_SocialSuper</E>
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+    <E>Interaction_SocialAll</E>
+    <E>Interaction_Skill_Tattooing</E>
+    <E>Interaction_Burnout_Creative_IncreaseSmall</E>
+    <E>Interaction_Social_Contagious</E>
+  </L>
+  <T n="invite_in_after_interaction">True</T>
+  <L n="joinable">
+    <U>
+      <V n="invite_available" t="enabled">
+        <U n="enabled">
+          <V n="loc_custom_invite_name" t="enabled">
+            <T n="enabled">0xF80506D0<!--String: "{0.String}"--></T>
+          </V>
+          <T n="use_proxied_affordance_name">True</T>
+        </U>
+      </V>
+      <V n="join_affordance" t="affordance">
+        <U n="affordance">
+          <V n="value" t="custom">
+            <T n="custom">390785<!--SuperInteraction: mentor_Skill_Tattooing--></T>
+          </V>
+        </U>
+      </V>
+      <V n="join_available" t="enabled">
+        <U n="enabled">
+          <V n="loc_custom_join_name" t="enabled">
+            <T n="enabled">0xF80506D0<!--String: "{0.String}"--></T>
+          </V>
+        </U>
+      </V>
+      <E n="join_target">Actor</E>
+      <T n="link_joinable">True</T>
+    </U>
+    <U>
+      <V n="invite_available" t="enabled">
+        <U n="enabled">
+          <V n="loc_custom_invite_name" t="enabled">
+            <T n="enabled">0xF80506D0<!--String: "{0.String}"--></T>
+          </V>
+          <T n="use_proxied_affordance_name">True</T>
+        </U>
+      </V>
+      <V n="join_affordance" t="affordance">
+        <U n="affordance">
+          <V n="value" t="custom">
+            <T n="custom">487441<!--SuperInteraction: mentor_Skill_Tattooing_Getaway--></T>
+          </V>
+        </U>
+      </V>
+      <V n="join_available" t="enabled">
+        <U n="enabled">
+          <V n="loc_custom_join_name" t="enabled">
+            <T n="enabled">0xF80506D0<!--String: "{0.String}"--></T>
+          </V>
+        </U>
+      </V>
+      <E n="join_target">Actor</E>
+      <T n="link_joinable">True</T>
+    </U>
+  </L>
+  <U n="listen_animation">
+    <T o="true" n="factory" />
+  </U>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <V n="animation_ref" t="enabled">
+              <U n="enabled">
+                <T n="factory">378566<!--AnimationElement: tattooingTable_Tattoo_Clean--></T>
+              </U>
+            </V>
+            <L n="basic_extras">
+              <V t="loot">
+                <U n="loot">
+                  <L n="loot_list">
+                    <T>188892<!--LootActions: loot_Fame_Actor_Large--></T>
+                    <T>384322<!--LootActions: loot_Tattooing_Payment_Tattoo--></T>
+                    <T>390284<!--LootActions: loot_Tattooing_NewTattooBuff_Excellent--></T>
+                    <T>384585<!--RandomWeightedLoot: randomWeightedLoot_Tattooing_ExcellentTattooTipChance--></T>
+                  </L>
+                </U>
+              </V>
+              <V t="buff_fire_and_forget">
+                <U n="buff_fire_and_forget">
+                  <U n="buff">
+                    <V n="buff_reason" t="enabled">
+                      <T n="enabled">0xD15E6DB8<!--String: "(From Giving an Excellent Tattoo)"--></T>
+                    </V>
+                    <T n="buff_type">385778<!--Buff: buff_TattooingTable_GaveTattoo_Excellent--></T>
+                  </U>
+                  <E n="participant">Actor</E>
+                </U>
+              </V>
+            </L>
+            <L n="continuation">
+              <U>
+                <E n="actor">TargetSim</E>
+                <T n="affordance">378994<!--SocialSuperInteraction: social_TattooingTable_Reaction_Tattoo--></T>
+                <E n="target">Actor</E>
+              </U>
+            </L>
+            <L n="loot_list">
+              <T>387616<!--LootActions: loot_Tattooing_SetTattoo_RegularExcellent--></T>
+            </L>
+          </U>
+          <U n="weight">
+            <T n="base_value">1</T>
+            <L n="multipliers">
+              <U>
+                <T n="multiplier">1.25</T>
+                <L n="tests">
+                  <L>
+                    <V t="skill_test">
+                      <U n="skill_test">
+                        <T n="skill">371481<!--Skill: statistic_Skill_AdultMajor_Tattooing--></T>
+                        <V n="skill_range" t="interval">
+                          <U n="interval">
+                            <U n="skill_interval">
+                              <T n="lower_bound">3</T>
+                              <T n="upper_bound">4</T>
+                            </U>
+                          </U>
+                        </V>
+                        <T n="use_effective_skill_level">True</T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">1.5</T>
+                <L n="tests">
+                  <L>
+                    <V t="skill_test">
+                      <U n="skill_test">
+                        <T n="skill">371481<!--Skill: statistic_Skill_AdultMajor_Tattooing--></T>
+                        <V n="skill_range" t="interval">
+                          <U n="interval">
+                            <U n="skill_interval">
+                              <T n="lower_bound">5</T>
+                              <T n="upper_bound">6</T>
+                            </U>
+                          </U>
+                        </V>
+                        <T n="use_effective_skill_level">True</T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">2.5</T>
+                <L n="tests">
+                  <L>
+                    <V t="skill_test">
+                      <U n="skill_test">
+                        <T n="skill">371481<!--Skill: statistic_Skill_AdultMajor_Tattooing--></T>
+                        <V n="skill_range" t="interval">
+                          <U n="interval">
+                            <U n="skill_interval">
+                              <T n="lower_bound">7</T>
+                              <T n="upper_bound">8</T>
+                            </U>
+                          </U>
+                        </V>
+                        <T n="use_effective_skill_level">True</T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">4</T>
+                <L n="tests">
+                  <L>
+                    <V t="skill_test">
+                      <U n="skill_test">
+                        <T n="skill">371481<!--Skill: statistic_Skill_AdultMajor_Tattooing--></T>
+                        <V n="skill_range" t="interval">
+                          <U n="interval">
+                            <U n="skill_interval">
+                              <T n="lower_bound">9</T>
+                              <T n="upper_bound">10</T>
+                            </U>
+                          </U>
+                        </V>
+                        <T n="use_effective_skill_level">True</T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">6</T>
+                <L n="tests">
+                  <L>
+                    <V t="skill_test">
+                      <U n="skill_test">
+                        <T n="skill">371481<!--Skill: statistic_Skill_AdultMajor_Tattooing--></T>
+                        <V n="skill_range" t="interval">
+                          <U n="interval">
+                            <U n="skill_interval">
+                              <T n="lower_bound">11</T>
+                              <T n="upper_bound">20</T>
+                            </U>
+                          </U>
+                        </V>
+                        <T n="use_effective_skill_level">True</T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">1.5</T>
+                <L n="tests">
+                  <L>
+                    <V t="buff">
+                      <U n="buff">
+                        <V n="whitelist" t="enabled">
+                          <L n="enabled">
+                            <T>387589<!--Buff: buff_TattooingDesign_Normal--></T>
+                          </L>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">3</T>
+                <L n="tests">
+                  <L>
+                    <V t="buff">
+                      <U n="buff">
+                        <V n="whitelist" t="enabled">
+                          <L n="enabled">
+                            <T>387590<!--Buff: buff_TattooingDesign_Excellent--></T>
+                          </L>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">7</T>
+                <L n="tests">
+                  <L>
+                    <V t="buff">
+                      <U n="buff">
+                        <V n="whitelist" t="enabled">
+                          <L n="enabled">
+                            <T>387591<!--Buff: buff_TattooingDesign_Masterpiece--></T>
+                          </L>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+        <U>
+          <U n="outcome">
+            <V n="animation_ref" t="enabled">
+              <U n="enabled">
+                <T n="factory">378566<!--AnimationElement: tattooingTable_Tattoo_Clean--></T>
+              </U>
+            </V>
+            <L n="basic_extras">
+              <V t="loot">
+                <U n="loot">
+                  <L n="loot_list">
+                    <T>384322<!--LootActions: loot_Tattooing_Payment_Tattoo--></T>
+                    <T>390285<!--LootActions: loot_Tattooing_NewTattooBuff_Normal--></T>
+                  </L>
+                </U>
+              </V>
+              <V t="buff_fire_and_forget">
+                <U n="buff_fire_and_forget">
+                  <U n="buff">
+                    <T n="buff_type">394038<!--Buff: buff_TattooingTable_Hidden_GaveTattoo_Normal--></T>
+                  </U>
+                  <V n="timing" t="at_end">
+                    <U n="at_end">
+                      <E n="criticality">NotCritical</E>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+            <L n="continuation">
+              <U>
+                <E n="actor">TargetSim</E>
+                <T n="affordance">378994<!--SocialSuperInteraction: social_TattooingTable_Reaction_Tattoo--></T>
+                <E n="target">Actor</E>
+              </U>
+            </L>
+            <L n="loot_list">
+              <T>387617<!--LootActions: loot_Tattooing_SetTattoo_RegularNormal--></T>
+            </L>
+          </U>
+          <U n="weight">
+            <T n="base_value">5</T>
+          </U>
+        </U>
+        <U>
+          <U n="outcome">
+            <V n="animation_ref" t="enabled">
+              <U n="enabled">
+                <T n="factory">378566<!--AnimationElement: tattooingTable_Tattoo_Clean--></T>
+              </U>
+            </V>
+            <L n="basic_extras">
+              <V t="loot">
+                <U n="loot">
+                  <L n="loot_list">
+                    <T>389505<!--LootActions: loot_Tattooing_SetPoorTattooType_Regular--></T>
+                    <T>390283<!--LootActions: loot_Tattooing_NewTattooBuff_Poor--></T>
+                    <T>384583<!--RandomWeightedLoot: randomWeightedLoot_Tattooing_PoorTattooPayment--></T>
+                  </L>
+                </U>
+              </V>
+              <V t="buff_fire_and_forget">
+                <U n="buff_fire_and_forget">
+                  <U n="buff">
+                    <V n="buff_reason" t="enabled">
+                      <T n="enabled">0x5053612B<!--String: "(From Giving a Poor Tattoo)"--></T>
+                    </V>
+                    <T n="buff_type">385779<!--Buff: buff_TattooingTable_GaveTattoo_Poor--></T>
+                  </U>
+                  <E n="participant">Actor</E>
+                </U>
+              </V>
+            </L>
+            <L n="continuation">
+              <U>
+                <E n="actor">TargetSim</E>
+                <T n="affordance">378994<!--SocialSuperInteraction: social_TattooingTable_Reaction_Tattoo--></T>
+                <E n="target">Actor</E>
+              </U>
+            </L>
+            <E n="outcome_result">FAILURE</E>
+          </U>
+          <U n="weight">
+            <T n="base_value">3</T>
+            <L n="multipliers">
+              <U>
+                <T n="multiplier">0.8</T>
+                <L n="tests">
+                  <L>
+                    <V t="skill_test">
+                      <U n="skill_test">
+                        <T n="skill">371481<!--Skill: statistic_Skill_AdultMajor_Tattooing--></T>
+                        <V n="skill_range" t="interval">
+                          <U n="interval">
+                            <U n="skill_interval">
+                              <T n="lower_bound">3</T>
+                              <T n="upper_bound">4</T>
+                            </U>
+                          </U>
+                        </V>
+                        <T n="use_effective_skill_level">True</T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">0.6</T>
+                <L n="tests">
+                  <L>
+                    <V t="skill_test">
+                      <U n="skill_test">
+                        <T n="skill">371481<!--Skill: statistic_Skill_AdultMajor_Tattooing--></T>
+                        <V n="skill_range" t="interval">
+                          <U n="interval">
+                            <U n="skill_interval">
+                              <T n="lower_bound">5</T>
+                              <T n="upper_bound">6</T>
+                            </U>
+                          </U>
+                        </V>
+                        <T n="use_effective_skill_level">True</T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">0.4</T>
+                <L n="tests">
+                  <L>
+                    <V t="skill_test">
+                      <U n="skill_test">
+                        <T n="skill">371481<!--Skill: statistic_Skill_AdultMajor_Tattooing--></T>
+                        <V n="skill_range" t="interval">
+                          <U n="interval">
+                            <U n="skill_interval">
+                              <T n="lower_bound">7</T>
+                              <T n="upper_bound">8</T>
+                            </U>
+                          </U>
+                        </V>
+                        <T n="use_effective_skill_level">True</T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">0.2</T>
+                <L n="tests">
+                  <L>
+                    <V t="skill_test">
+                      <U n="skill_test">
+                        <T n="skill">371481<!--Skill: statistic_Skill_AdultMajor_Tattooing--></T>
+                        <V n="skill_range" t="interval">
+                          <U n="interval">
+                            <U n="skill_interval">
+                              <T n="lower_bound">9</T>
+                              <T n="upper_bound">10</T>
+                            </U>
+                          </U>
+                        </V>
+                        <T n="use_effective_skill_level">True</T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">0.1</T>
+                <L n="tests">
+                  <L>
+                    <V t="skill_test">
+                      <U n="skill_test">
+                        <T n="skill">371481<!--Skill: statistic_Skill_AdultMajor_Tattooing--></T>
+                        <V n="skill_range" t="interval">
+                          <U n="interval">
+                            <U n="skill_interval">
+                              <T n="lower_bound">11</T>
+                              <T n="upper_bound">20</T>
+                            </U>
+                          </U>
+                        </V>
+                        <T n="use_effective_skill_level">True</T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">0.67</T>
+                <L n="tests">
+                  <L>
+                    <V t="buff">
+                      <U n="buff">
+                        <V n="whitelist" t="enabled">
+                          <L n="enabled">
+                            <T>387589<!--Buff: buff_TattooingDesign_Normal--></T>
+                          </L>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">0.33</T>
+                <L n="tests">
+                  <L>
+                    <V t="buff">
+                      <U n="buff">
+                        <V n="whitelist" t="enabled">
+                          <L n="enabled">
+                            <T>387590<!--Buff: buff_TattooingDesign_Excellent--></T>
+                          </L>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">0.15</T>
+                <L n="tests">
+                  <L>
+                    <V t="buff">
+                      <U n="buff">
+                        <V n="whitelist" t="enabled">
+                          <L n="enabled">
+                            <T>387591<!--Buff: buff_TattooingDesign_Masterpiece--></T>
+                          </L>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+      </L>
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">382720<!--SuperInteraction: solo_GoToStand--></T>
+                  </U>
+                  <U>
+                    <E n="actor">TargetSim</E>
+                    <T n="affordance">382720<!--SuperInteraction: solo_GoToStand--></T>
+                  </U>
+                </L>
+                <T n="force_outcome_on_exit">True</T>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="statistic">
+                <U n="statistic">
+                  <T n="stat">434042<!--Commodity: commodity_Tattooing_Progress--></T>
+                  <V n="threshold" t="value_threshold">
+                    <U n="value_threshold">
+                      <E n="comparison">LESS</E>
+                      <T n="value">100</T>
+                    </U>
+                  </V>
+                  <E n="who">ActorPostureTarget</E>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">378566<!--AnimationElement: tattooingTable_Tattoo_Clean--></T>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="loot">
+                    <U n="loot">
+                      <L n="loot_list">
+                        <T>384322<!--LootActions: loot_Tattooing_Payment_Tattoo--></T>
+                      </L>
+                    </U>
+                  </V>
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <T n="buff_type">394038<!--Buff: buff_TattooingTable_Hidden_GaveTattoo_Normal--></T>
+                      </U>
+                      <V n="timing" t="at_end">
+                        <U n="at_end">
+                          <E n="criticality">NotCritical</E>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <T n="buff_type">382722<!--Buff: buff_Tattooing_Practice_TempTattoo_Front--></T>
+                      </U>
+                      <E n="participant">TargetSim</E>
+                    </U>
+                  </V>
+                </L>
+                <L n="continuation">
+                  <U>
+                    <E n="actor">TargetSim</E>
+                    <T n="affordance">378994<!--SocialSuperInteraction: social_TattooingTable_Reaction_Tattoo--></T>
+                    <E n="target">Actor</E>
+                  </U>
+                </L>
+                <T n="force_outcome_on_exit">False</T>
+              </U>
+              <U n="weight">
+                <T n="base_value">3</T>
+                <L n="multipliers">
+                  <U>
+                    <T n="multiplier">20</T>
+                    <L n="tests">
+                      <L>
+                        <V t="skill_test">
+                          <U n="skill_test">
+                            <T n="skill">371481<!--Skill: statistic_Skill_AdultMajor_Tattooing--></T>
+                            <V n="skill_range" t="interval">
+                              <U n="interval">
+                                <U n="skill_interval">
+                                  <T n="lower_bound">3</T>
+                                </U>
+                              </U>
+                            </V>
+                            <T n="use_effective_skill_level">True</T>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                  <U>
+                    <T n="multiplier">100</T>
+                    <L n="tests">
+                      <L>
+                        <V t="skill_test">
+                          <U n="skill_test">
+                            <T n="skill">371481<!--Skill: statistic_Skill_AdultMajor_Tattooing--></T>
+                            <V n="skill_range" t="threshold">
+                              <U n="threshold">
+                                <U n="skill_threshold">
+                                  <T n="value">7</T>
+                                </U>
+                              </U>
+                            </V>
+                            <T n="use_effective_skill_level">True</T>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                </L>
+              </U>
+            </U>
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">378566<!--AnimationElement: tattooingTable_Tattoo_Clean--></T>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="loot">
+                    <U n="loot">
+                      <L n="loot_list">
+                        <T>390283<!--LootActions: loot_Tattooing_NewTattooBuff_Poor--></T>
+                        <T>384583<!--RandomWeightedLoot: randomWeightedLoot_Tattooing_PoorTattooPayment--></T>
+                      </L>
+                    </U>
+                  </V>
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <V n="buff_reason" t="enabled">
+                          <T n="enabled">0x5053612B<!--String: "(From Giving a Poor Tattoo)"--></T>
+                        </V>
+                        <T n="buff_type">385779<!--Buff: buff_TattooingTable_GaveTattoo_Poor--></T>
+                      </U>
+                    </U>
+                  </V>
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <T n="buff_type">403689<!--Buff: buff_Tattooing_Practice_TempTattooBotched_Front--></T>
+                      </U>
+                      <E n="participant">TargetSim</E>
+                    </U>
+                  </V>
+                </L>
+                <L n="continuation">
+                  <U>
+                    <E n="actor">TargetSim</E>
+                    <T n="affordance">378994<!--SocialSuperInteraction: social_TattooingTable_Reaction_Tattoo--></T>
+                    <E n="target">Actor</E>
+                  </U>
+                </L>
+                <T n="force_outcome_on_exit">False</T>
+                <E n="outcome_result">FAILURE</E>
+              </U>
+              <U n="weight">
+                <T n="base_value">15</T>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="sim_info">
+                <U n="sim_info">
+                  <V n="npc" t="enabled">
+                    <T n="enabled">True</T>
+                  </V>
+                </U>
+              </V>
+              <V t="sim_info">
+                <U n="sim_info">
+                  <V n="npc" t="enabled">
+                    <T n="enabled">True</T>
+                  </V>
+                  <E n="who">TargetSim</E>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="posture_preferences">
+    <T n="disable_all_scoring">True</T>
+    <T n="prefer_clicked_parts">False</T>
+  </U>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">True</T>
+    <V n="force_listen_statistic" t="disabled" />
+  </U>
+  <T n="relationship_scoring">True</T>
+  <T n="relocate_main_group">True</T>
+  <T n="require_shared_body_target">True</T>
+  <E n="scoring_priority">NORMAL</E>
+  <V n="sim_affinity_posture_scoring_data" t="enabled">
+    <U n="enabled">
+      <L n="my_scoring">
+        <U>
+          <V n="affinity_strategy" t="relationship_based" />
+          <T n="negate_tag">True</T>
+          <E n="running_interaction_tag">Sleeping</E>
+        </U>
+        <U>
+          <V n="affinity_strategy" t="avoid" />
+          <E n="running_interaction_tag">Very_Loud</E>
+        </U>
+      </L>
+      <L n="my_tags">
+        <E>Loud</E>
+        <E>Chat</E>
+      </L>
+    </U>
+  </V>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all">
+        <U n="exclude_all">
+          <L n="include_affordances">
+            <T>383848<!--SuperInteraction: si_TattooingTable_Tend_UserDirected--></T>
+            <T>383880<!--SuperInteraction: si_TattooingTable_Tend_Autonomous--></T>
+          </L>
+          <L n="include_lists">
+            <T>33624<!--AffordanceList: AffordanceList_Stereo_Listens--></T>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <E n="target_type">TARGET</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">TargetSim</E>
+      </U>
+    </V>
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="trait">
+      <U n="trait">
+        <L n="blacklist_traits">
+          <T>276222<!--Trait: trait_OccultWerewolf_WereForm--></T>
+        </L>
+        <E n="subject">TargetSim</E>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="npc" t="enabled">
+            <T n="enabled">True</T>
+          </V>
+        </U>
+      </V>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="npc" t="enabled">
+            <T n="enabled">True</T>
+          </V>
+          <E n="who">TargetSim</E>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="interaction_restored_from_load" />
+      <V t="cas_catalog_object_body_type">
+        <U n="cas_catalog_object_body_type">
+          <L n="body_types">
+            <E>TATTOO_TORSO_FRONT_LOWER</E>
+            <E>TATTOO_TORSO_FRONT_UPPER</E>
+            <E>TATTOO_HEAD</E>
+          </L>
+          <E n="participant">PickedItemId</E>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="interaction_restored_from_load">
+        <U n="interaction_restored_from_load">
+          <T n="from_load">True</T>
+        </U>
+      </V>
+      <V t="cas_catalog_object_body_type">
+        <U n="cas_catalog_object_body_type">
+          <L n="body_types">
+            <E>TATTOO_TORSO_FRONT_LOWER</E>
+            <E>TATTOO_TORSO_FRONT_UPPER</E>
+            <E>TATTOO_HEAD</E>
+          </L>
+          <E n="participant">StoredPickedTattooOnActor</E>
+        </U>
+      </V>
+    </L>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

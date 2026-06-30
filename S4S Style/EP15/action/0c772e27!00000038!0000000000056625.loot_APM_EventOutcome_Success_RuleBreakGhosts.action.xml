@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_APM_EventOutcome_Success_RuleBreakGhosts" s="353829">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="audio_sting" t="disabled" />
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InEP15\UI\Icons\Notification\Notification_NoGhosts.png">2f7d0004:00000000:51f8ff8ef80d517a</T>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x25B9D709<!--String: "Success! Fine collected for the No Ghosts Rule violation in {1.String}. Unit Rating went up!"--></T>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="participant_type_special">
+                    <U n="participant_type_special">
+                      <V n="participant_type" t="zone">
+                        <U n="zone">
+                          <V n="attribute" t="occupant_household_name" />
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                  <V t="participant_type_special">
+                    <U n="participant_type_special">
+                      <V n="participant_type" t="zone" />
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0xC4945BDD<!--String: "Tenant Rule Violation"--></T>
+            </V>
+          </U>
+        </V>
+        <E n="subject">ActiveHousehold</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="is_active_sim" t="enabled" />
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="actions">
+      <T n="actions">357102<!--LootActions: loot_UnitRating_Progression_PickedUnit_ActiveLot_NoSims_Small_Gain--></T>
+    </V>
+    <V t="money_loot">
+      <U n="money_loot">
+        <V n="amount" t="literal">
+          <U n="literal">
+            <T n="value">1000</T>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="set_business_rule_compliance_state">
+      <U n="set_business_rule_compliance_state">
+        <V n="rule" t="rule_reference">
+          <U n="rule_reference">
+            <T n="reference">348397<!--BusinessRule: Rule_PMI_NoGhosts--></T>
+          </U>
+        </V>
+        <E n="subject">PickedZoneId</E>
+      </U>
+    </V>
+  </L>
+</I>

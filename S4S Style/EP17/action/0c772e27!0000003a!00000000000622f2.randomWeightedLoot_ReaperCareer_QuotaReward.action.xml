@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="RandomWeightedLoot" i="action" m="interactions.utils.loot" n="randomWeightedLoot_ReaperCareer_QuotaReward" s="402162">
+  <L n="random_loot_actions">
+    <U>
+      <V n="action" t="create_object">
+        <U n="create_object">
+          <V n="creation_data" t="random_by_tags">
+            <U n="random_by_tags">
+              <L n="filter_tags">
+                <E>Inventory_Consumable_Other</E>
+                <E>Inventory_Books_Fun</E>
+                <E>Inventory_Collectible_Other</E>
+                <E>Inventory_Collectible_Decoration</E>
+                <E>Inventory_Collectible_Creature</E>
+                <E>Func_ToddlerToybox</E>
+                <E>Func_WaylonWarez</E>
+              </L>
+            </U>
+          </V>
+          <V n="location" t="inventory" />
+          <E n="owner_sim">Actor</E>
+        </U>
+      </V>
+    </U>
+    <U>
+      <V n="action" t="money_loot">
+        <U n="money_loot">
+          <V n="amount" t="random_in_range">
+            <U n="random_in_range">
+              <T n="lower_bound">150</T>
+              <T n="upper_bound">666</T>
+            </U>
+          </V>
+        </U>
+      </V>
+    </U>
+  </L>
+</I>

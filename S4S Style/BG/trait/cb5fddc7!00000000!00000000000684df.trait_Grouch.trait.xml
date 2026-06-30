@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Trait" i="trait" m="traits.traits" n="trait_Grouch" s="427231">
+  <L n="ages">
+    <E>TEEN</E>
+    <E>ADULT</E>
+    <E>ELDER</E>
+    <E>YOUNGADULT</E>
+  </L>
+  <L n="buffs">
+    <U>
+      <T n="buff_type">427430<!--Buff: Buff_Trait_Grouch--></T>
+    </U>
+  </L>
+  <L n="buffs_proximity">
+    <T>428653<!--Buff: Buff_Trait_Grouch_NearSims(Hidden)--></T>
+    <T>428660<!--Buff: Buff_Trait_Grouch_NotAlone(Hidden)--></T>
+    <T>432707<!--Buff: buff_Proximity_KindOfPartyLike_Trigger--></T>
+  </L>
+  <T n="cas_trait_asm_param">HatesChildren</T>
+  <L n="conflicting_traits">
+    <T>27915<!--Trait: trait_Good--></T>
+    <T>341152<!--Trait: trait_Generous--></T>
+    <T>9322<!--Trait: trait_Cheerful--></T>
+    <T>251970<!--Trait: trait_Proper--></T>
+    <T>16826<!--Trait: trait_Bro--></T>
+    <T>125437<!--Trait: trait_Insider--></T>
+    <T>29571<!--Trait: trait_Outgoing--></T>
+    <T>284112<!--Trait: trait_PartyAnimal--></T>
+    <T>362090<!--Trait: trait_LoveStruck--></T>
+  </L>
+  <T n="display_name">0xAD9F0334<!--String: "Grouch"--></T>
+  <T n="display_name_gender_neutral">0xAA6C3A4<!--String: "Grouch"--></T>
+  <T p="InGame\UI\Icons\traits\trait_Grouch.png" n="icon">2f7d0004:00000000:135cc4cb2c1271f0</T>
+  <L n="initial_commodities">
+    <T>428652<!--Commodity: Commodity_Trait_Grouch_Alone--></T>
+    <T>428656<!--Commodity: commodity_Trait_Grouch_BeGrouchy--></T>
+    <T>428654<!--Commodity: commodity_trait_Grouch_NearSims--></T>
+  </L>
+  <E n="min_lod_value">MINIMUM</E>
+  <L n="species">
+    <E />
+  </L>
+  <L n="tags">
+    <E>TraitPersonality</E>
+    <E>TraitGroup_Social</E>
+  </L>
+  <L n="target_super_affordances">
+    <U>
+      <T n="affordance">428833<!--SimPickerInteraction: simPickerInteraction_SpreadGossipAbout_Grouch--></T>
+      <V n="object_filter" t="filter_by_sim" />
+    </U>
+    <U>
+      <T n="affordance">428706<!--SuperInteraction: object_Grouch_Sabotage--></T>
+      <V n="object_filter" t="filter_by_state">
+        <U n="filter_by_state">
+          <U n="states">
+            <L n="whitelist">
+              <T>15078<!--CommodityBasedObjectStateValue: Brokenness_Unbroken--></T>
+            </L>
+          </U>
+        </U>
+      </V>
+    </U>
+    <U>
+      <T n="affordance">428705<!--SuperInteraction: food_Rotten_Food_Grouch--></T>
+      <V n="object_filter" t="filter_by_state">
+        <U n="filter_by_state">
+          <U n="states">
+            <L n="whitelist">
+              <T>15191<!--CommodityBasedObjectStateValue: Freshness_Untouched--></T>
+              <T>15189<!--CommodityBasedObjectStateValue: Freshness_Fresh--></T>
+            </L>
+          </U>
+        </U>
+      </V>
+    </U>
+    <U>
+      <T n="affordance">428633<!--SuperInteraction: solo_EmitGrouchAura--></T>
+      <T n="allow_self">True</T>
+    </U>
+    <U>
+      <T n="affordance">427724<!--SuperInteraction: computer_ResearchPranks--></T>
+      <V n="object_filter" t="filter_by_tags">
+        <U n="filter_by_tags">
+          <L n="tags">
+            <E>Func_Computer</E>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <T n="affordance">431406<!--SuperInteraction: object_Grouch_SabotagePlantInstects--></T>
+      <V n="object_filter" t="filter_by_tags">
+        <U n="filter_by_tags">
+          <L n="tags">
+            <E>Func_Gardening</E>
+          </L>
+        </U>
+      </V>
+    </U>
+  </L>
+  <T n="trait_description">0x8C3DC0FB<!--String: "These Sims raise their Mischief skill faster by playing pranks and bothering others with their surprises."--></T>
+  <E n="trait_type">PERSONALITY</E>
+  <V n="ui_category" t="ui_trait_category_tag" />
+  <V n="whim_set" t="enabled">
+    <T n="enabled">427230<!--ObjectivelessWhimSet: whimset_HasTraitGrouch--></T>
+  </V>
+</I>

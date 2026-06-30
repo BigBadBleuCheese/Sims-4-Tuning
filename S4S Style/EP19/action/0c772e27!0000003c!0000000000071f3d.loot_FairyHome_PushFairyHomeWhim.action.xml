@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_FairyHome_PushFairyHomeWhim" s="466749">
+  <L n="loot_actions">
+    <V t="push_whimset">
+      <U n="push_whimset">
+        <T n="whimset">445575<!--ObjectivelessWhimSet: whimset_FairyHome_HasTraitFairy--></T>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="whim">
+        <U n="whim">
+          <T n="invert">True</T>
+          <L n="whims">
+            <T>445576<!--Whim: want_BuyObject_FairyHome--></T>
+          </L>
+        </U>
+      </V>
+      <V t="object_criteria">
+        <U n="object_criteria">
+          <V n="identity_test" t="tags">
+            <U n="tags">
+              <L n="tag_set">
+                <E>Func_FairyHome</E>
+              </L>
+            </U>
+          </V>
+          <V n="subject_specific_tests" t="all_objects">
+            <U n="all_objects">
+              <U n="quantity">
+                <E n="comparison">LESS</E>
+              </U>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified" />
+          <V n="species" t="specified">
+            <U n="specified">
+              <L n="species">
+                <E />
+              </L>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

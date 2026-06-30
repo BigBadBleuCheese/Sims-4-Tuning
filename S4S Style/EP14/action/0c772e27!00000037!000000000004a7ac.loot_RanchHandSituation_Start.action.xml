@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_RanchHandSituation_Start" s="305068">
+  <L n="loot_actions">
+    <V t="statistics">
+      <V n="statistics" t="relationship_change">
+        <U n="relationship_change">
+          <T n="amount">20</T>
+          <L n="subject">
+            <E>Actor</E>
+          </L>
+          <L n="target_participant_type">
+            <E>ActiveHousehold</E>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="relationship">
+                <U n="relationship">
+                  <U n="prohibited_relationship_bits">
+                    <L n="match_any">
+                      <T>15803<!--RelationshipBit: has_met--></T>
+                    </L>
+                  </U>
+                  <L n="target_sim">
+                    <E>ActiveHousehold</E>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+          <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+        </U>
+      </V>
+    </V>
+    <V t="relationship_bits_loot">
+      <U n="relationship_bits_loot">
+        <L n="bit_operations">
+          <U>
+            <T n="bit">15803<!--RelationshipBit: has_met--></T>
+            <E n="operation">ADD</E>
+            <E n="recipients">Actor</E>
+            <E n="targets">ActiveHousehold</E>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V t="relationship_bits_loot">
+      <U n="relationship_bits_loot">
+        <L n="bit_operations">
+          <U>
+            <T n="bit">15803<!--RelationshipBit: has_met--></T>
+            <E n="operation">ADD</E>
+            <E n="recipients">ActiveHousehold</E>
+            <E n="targets">Actor</E>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xE70A6FD3<!--String: "Hey there! I'm your Ranch Hand. The name is {0.SimLastName}. Nice to meet y'all!\n\nI'm good with animals, plants, and repairs. Let me know and I'll handle it! This Ranch is going to run like a well-oiled machine.\n\nOh, and if you want me to harvest plants or pick up Manure, just ask. Otherwise, I'll leave it to you. I want to make sure that's what <i>you'd</i> want. You never know!"--></T>
+            </V>
+            <E n="visual_type">SPEECH</E>
+          </U>
+        </V>
+        <E n="subject">LotOwnerSingleAndInstanced</E>
+      </U>
+    </V>
+    <V t="trait_add">
+      <U n="trait_add">
+        <E n="subject">Actor</E>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <L n="blacklist_traits">
+                  <T>339307<!--Trait: trait_HasMetRanchHand--></T>
+                </L>
+                <E n="subject">LotOwnerSingleAndInstanced</E>
+              </U>
+            </V>
+          </L>
+        </L>
+        <T n="trait">339307<!--Trait: trait_HasMetRanchHand--></T>
+      </U>
+    </V>
+  </L>
+  <L n="tests" />
+</I>

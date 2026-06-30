@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalObjectInteraction" i="situation_goal" m="situations.situation_goal_object_interaction" n="r4Event_ObjectInteraction_EmitLooksLike" s="424149">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T p="InGame\UI\Icons\Events\EventGoal_Computer.png" n="enabled">2f7d0004:00000000:0112f79d8b2d699e</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x53222BD9<!--String: "Check Emit's Social Media Profile"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0xFC8F180B<!--String: "Could it really be Emit?\n\nChecking his social media profile on a Computer might confirm it. Did he have blue hair, after all?\n\nYou can check his profile under Social Networking from any Computer.\n\n<i>(+15 Event Points)</i>"--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>447711<!--SituationGoalLootActions: liveEvent_GoalLoot_CompleteQuestGoal--></T>
+  </L>
+  <U n="_goal_test">
+    <L n="affordances">
+      <T>424150<!--SuperInteraction: computer_SocialNetwork_R4Event_SeeWhatEmitLooksLike--></T>
+      <T>434230<!--SuperInteraction: phone_R4Event_EmitProfile--></T>
+    </L>
+    <E n="test_event">InteractionComplete</E>
+  </U>
+  <L n="_post_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+      </U>
+    </V>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+  <V n="goal_completion_notification" t="enabled">
+    <U n="enabled">
+      <V n="icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T n="key" p="InGame\UI\Icons\Headlines\Events\headline_ThemedEventIcon.png">2f7d0004:00000000:c3e3e7bc8c57ab0c</T>
+          </U>
+        </V>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0x20F1717D<!--String: "Loves science, technology, believes in time travel, and has blue hair.\n\nThe description on the news definitely bears a strong similarity to Emit...\n\nIt must be him, right?"--></T>
+      </V>
+      <V n="title" t="enabled">
+        <T n="enabled">0xD24C1FBF<!--String: "Emit's Social Media Profile"--></T>
+      </V>
+    </U>
+  </V>
+  <V n="tutorial_tip_group" t="disabled" />
+</I>

@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Onboarding_FamilyRecipes" s="426608">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InEP18\UI\Icons\Notifications\notification_Family_Recipes.png">2f7d0004:00000000:84cfa4f64766a3cb</T>
+                </U>
+              </V>
+            </V>
+            <V n="primary_icon_response" t="enabled" />
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xFCAE949E<!--String: "This meal turned out really nice, but {0.SimFirstName} thinks {0.SimPronounSubjective} can improve it even more! Try to <b>Create a Family Recipe</b> and add some extra flavors to it!"--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x800BA678<!--String: "Family Recipe Potential"--></T>
+            </V>
+            <V n="tns_suppression_group" t="enabled">
+              <E n="enabled">Onboarding_FamilyRecipes</E>
+            </V>
+            <L n="ui_responses">
+              <U>
+                <T n="text">0x21675B6A<!--String: "View Family Recipe Lesson"--></T>
+                <V n="tutorial_id" t="enabled">
+                  <T n="enabled">420336<!--Tutorial: tutorial_EP18_FamilyRecipes--></T>
+                </V>
+                <E n="ui_request">SHOW_LESSONS</E>
+              </U>
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="state_white_black">
+        <U n="state_white_black">
+          <E n="participant">CreatedObject</E>
+          <U n="states">
+            <V n="whitelist" t="specify">
+              <U n="specify">
+                <L n="whitelist">
+                  <T>15305<!--CommodityBasedObjectStateValue: Quality_Outstanding--></T>
+                </L>
+              </U>
+            </V>
+          </U>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

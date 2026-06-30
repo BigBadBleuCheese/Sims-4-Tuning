@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_GrimRework_WinGame" s="391559">
+  <L n="loot_actions">
+    <V t="actions">
+      <T n="actions">10876<!--LootActions: loot_GrimReaper_Clemency_Large--></T>
+    </V>
+    <V t="buff_removal">
+      <U n="buff_removal">
+        <L n="buffs_to_remove">
+          <T>28209<!--Buff: Buff_Object_ChessTableWin--></T>
+          <T>28210<!--Buff: Buff_Object_ChessTableWin_HighLogic--></T>
+          <T>105086<!--Buff: buff_Object_HorseShoes_Win--></T>
+          <T>124475<!--Buff: buff_Object_Foosball_Win--></T>
+          <T>340937<!--Buff: buff_Hopscotch_HoppedToTop--></T>
+          <T>128481<!--Buff: buff_Object_Dartboard_DartVictory--></T>
+          <T>161270<!--Buff: buff_Object_BowlingLane_MoonlightBowling--></T>
+          <T>159005<!--Buff: buff_Object_BowlingLane_BowlingKing--></T>
+          <T>146885<!--Buff: buff_Object_Basketball_Visible_Dunkmaster--></T>
+          <T>127831<!--Buff: buff_Object_DontWakeLlama_LlamaSleepsHappy--></T>
+          <T>146889<!--Buff: buff_Object_Basketball_Visible_CourtRoyalty--></T>
+          <T>425700<!--Buff: buff_GrimRework_Hidden_GrimChallenge_HopscotchDelayedWin--></T>
+          <T>452072<!--Buff: buff_Archery_Game_Win--></T>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x18747335<!--String: "(From Winning Against Grim)"--></T>
+          </V>
+          <T n="buff_type">391660<!--Buff: buff_GrimRework_GameChallenge_Win--></T>
+        </U>
+      </U>
+    </V>
+    <V t="buff_removal">
+      <U n="buff_removal">
+        <L n="buffs_to_remove">
+          <T>402105<!--Buff: buff_GrimRework_Hidden_Grim_ChallengeFlag_FromSocial--></T>
+        </L>
+        <E n="subject">OtherSimsInteractingWithTarget</E>
+      </U>
+    </V>
+    <V t="actions">
+      <T n="actions">424242<!--LootActions: loot_GrimRework_DontWakeLlama_StopGame--></T>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <T n="apply_whitelist_on_individual_basis">False</T>
+          <E n="subject">OtherSimsInteractingWithTarget</E>
+          <V n="whitelist" t="enabled">
+            <L n="enabled">
+              <T>402104<!--Buff: buff_GrimRework_Hidden_Grim_ChallengedTracker--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <T n="apply_whitelist_on_individual_basis">False</T>
+          <V n="whitelist" t="enabled">
+            <L n="enabled">
+              <T>423389<!--Buff: buff_GrimRework_Hidden_Grim_ChallengerTracker--></T>
+              <T>424238<!--Buff: buff_GrimRework_Hidden_Challenger_ReactionPrevention--></T>
+              <T>425700<!--Buff: buff_GrimRework_Hidden_GrimChallenge_HopscotchDelayedWin--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

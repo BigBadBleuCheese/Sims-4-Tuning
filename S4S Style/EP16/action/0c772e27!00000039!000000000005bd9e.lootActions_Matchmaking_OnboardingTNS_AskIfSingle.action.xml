@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="lootActions_Matchmaking_OnboardingTNS_AskIfSingle" s="376222">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InEP16\UI\Icons\Notifications\notification_Matchmaking.png">2f7d0004:00000000:ed11e688150500fd</T>
+                </U>
+              </V>
+            </V>
+            <V n="primary_icon_response" t="enabled">
+              <U n="enabled">
+                <V n="response_command" t="enabled">
+                  <V n="enabled" t="literal">
+                    <U n="literal">
+                      <L n="arguments">
+                        <V t="participant_id" />
+                      </L>
+                      <T n="command">matchmaking.show_matchmaking_dialog</T>
+                    </U>
+                  </V>
+                </V>
+                <E n="ui_request">SEND_COMMAND</E>
+              </U>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x5D7F05F1<!--String: "If you're having trouble finding other single Sims near you, why don't you find your way to Cupid's Corner where you can be sure to find a single someone who is searching for a partner too. The Cupid's Corner app is available on your phone or computer now!"--></T>
+            </V>
+            <L n="ui_responses">
+              <U>
+                <V n="response_command" t="enabled">
+                  <V n="enabled" t="literal">
+                    <U n="literal">
+                      <L n="arguments">
+                        <V t="participant_id" />
+                      </L>
+                      <T n="command">matchmaking.show_matchmaking_dialog</T>
+                    </U>
+                  </V>
+                </V>
+                <T n="text">0x537C4D20<!--String: "Open Cupid's Corner"--></T>
+                <E n="ui_request">SEND_COMMAND</E>
+              </U>
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified">
+            <L n="specified">
+              <E>YOUNGADULT</E>
+              <E>ADULT</E>
+              <E>ELDER</E>
+            </L>
+          </V>
+        </U>
+      </V>
+      <V t="relationship">
+        <U n="relationship">
+          <T n="invert_num_relations">True</T>
+          <T n="num_relations">1</T>
+          <U n="required_relationship_bits">
+            <L n="match_any">
+              <T>15816<!--RelationshipBit: romantic-Engaged--></T>
+              <T>99429<!--RelationshipBit: romantic-Promised--></T>
+              <T>15822<!--RelationshipBit: romantic-Married--></T>
+              <T>15825<!--RelationshipBit: romantic-Significant_Other--></T>
+            </L>
+          </U>
+          <L n="target_sim">
+            <E>AllRelationships</E>
+          </L>
+        </U>
+      </V>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>365861<!--Trait: trait_Hidden_Matchmaking_Disabled--></T>
+            <T>132589<!--Trait: trait_Unflirty--></T>
+          </L>
+        </U>
+      </V>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>374480<!--Buff: buff_Matchmaking_UsedApp--></T>
+          </L>
+        </U>
+      </V>
+      <V t="zone">
+        <U n="zone">
+          <U n="zone_tests">
+            <V n="venue_type" t="enabled">
+              <U n="enabled">
+                <V n="blacklist" t="specify">
+                  <U n="specify">
+                    <L n="blacklist">
+                      <T>110576<!--Venue: venue_DoctorClinic--></T>
+                      <T>109774<!--Venue: venue_PoliceStation--></T>
+                      <T>107487<!--Venue: venue_ScientistLab--></T>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V n="world_tests" t="enabled">
+              <U n="enabled">
+                <V n="blacklist" t="specify">
+                  <U n="specify">
+                    <L n="blacklist">
+                      <T>239559<!--Recipe: recipe_Drink_Bar_Batuu_Blurrgfire_CantinaOrder--></T>
+                      <T>239558<!--Recipe: recipe_Drink_Bar_Batuu_BlackSpireBrew_CantinaOrder--></T>
+                      <T>239557<!--Recipe: recipe_Drink_Bar_Batuu_BespinFizz_CantinaOrder--></T>
+                      <T>72720</T>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </U>
+        </U>
+      </V>
+      <V t="relationship">
+        <U n="relationship">
+          <T n="num_relations">1</T>
+          <U n="required_relationship_bits">
+            <L n="match_any">
+              <T>15816<!--RelationshipBit: romantic-Engaged--></T>
+              <T>15822<!--RelationshipBit: romantic-Married--></T>
+              <T>99429<!--RelationshipBit: romantic-Promised--></T>
+              <T>15825<!--RelationshipBit: romantic-Significant_Other--></T>
+            </L>
+          </U>
+          <L n="subject">
+            <E>TargetSim</E>
+          </L>
+          <L n="target_sim">
+            <E>AllRelationships</E>
+          </L>
+          <T n="track">16651<!--RelationshipTrack: LTR_Romance_Main--></T>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

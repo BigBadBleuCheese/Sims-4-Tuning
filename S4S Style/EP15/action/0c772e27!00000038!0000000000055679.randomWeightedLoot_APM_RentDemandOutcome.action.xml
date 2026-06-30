@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="RandomWeightedLoot" i="action" m="interactions.utils.loot" n="randomWeightedLoot_APM_RentDemandOutcome" s="349817">
+  <L n="random_loot_actions">
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">349819<!--LootActions: loot_APM_PostRentDemand_Success--></T>
+      </V>
+      <U n="weight">
+        <T n="base_value">1</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">1.4</T>
+            <L n="tests">
+              <L>
+                <V t="zone">
+                  <U n="zone">
+                    <U n="zone_tests">
+                      <V n="zone_modifiers" t="enabled">
+                        <U n="enabled">
+                          <V n="whitelist" t="specify">
+                            <U n="specify">
+                              <L n="whitelist">
+                                <T>350230<!--ZoneModifier: zoneModifier_muEventAPM_Test_HighWealth--></T>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0.75</T>
+            <L n="tests">
+              <L>
+                <V t="rental_unit_star_rating_test">
+                  <U n="rental_unit_star_rating_test">
+                    <U n="star_rating">
+                      <T n="lower_bound">0</T>
+                      <T n="upper_bound">0</T>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">349815<!--LootActions: loot_APM_PostRentDemand_Failure--></T>
+      </V>
+      <U n="weight">
+        <T n="base_value">1</T>
+      </U>
+    </U>
+  </L>
+</I>

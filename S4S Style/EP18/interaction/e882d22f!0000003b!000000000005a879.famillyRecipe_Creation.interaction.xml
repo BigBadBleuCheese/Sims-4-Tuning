@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="StartCraftingSuperInteraction" i="interaction" m="crafting.crafting_interactions" n="famillyRecipe_Creation" s="370809">
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Object</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="disabled" />
+  <T n="allow_empty_recipes">True</T>
+  <U n="basic_reserve_object">
+    <L n="subject_list">
+      <U>
+        <V n="reserve_type" t="basic" />
+        <L n="subject">
+          <E>CraftingObject</E>
+          <E>CarriedObject</E>
+        </L>
+      </U>
+    </L>
+  </U>
+  <T n="can_shoo">False</T>
+  <T n="check_fridge_shared_inventory">False</T>
+  <T n="check_target_inventory">False</T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x4A9F165C<!--String: "Create a Family Recipe"--></T>
+  <V n="display_name_overrides" t="testable">
+    <U n="testable">
+      <L n="overrides">
+        <U>
+          <V n="new_display_name" t="enabled">
+            <T n="enabled">0x4A9F165C<!--String: "Create a Family Recipe"--></T>
+          </V>
+          <T n="new_pie_menu_category">390764<!--PieMenuCategory: pieMenuCategory_FamilyRecipes--></T>
+          <L n="test">
+            <L>
+              <V t="object_definition_criteria">
+                <U n="object_definition_criteria">
+                  <V n="identity_test" t="tags">
+                    <U n="tags">
+                      <L n="tag_set">
+                        <E>Func_Fridge</E>
+                        <E>Func_Oven</E>
+                        <E>Func_CookBook</E>
+                      </L>
+                    </U>
+                  </V>
+                  <E n="participant">Object</E>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <V n="paying_sim" t="disabled" />
+  <V n="picker_dialog" t="family_recipe">
+    <U n="family_recipe">
+      <U n="builder_picker">
+        <U n="buff_picker">
+          <U n="def_picker">
+            <T n="disabled_tooltip">0x7DEA5E02<!--String: "Fill Vacancy"--></T>
+            <T n="picker_interaction">370805<!--FamilyCreationItemPickerInteraction: familyCreationItemPickerInteraction_Buff--></T>
+          </U>
+        </U>
+        <U n="ingredient_picker">
+          <U n="def_picker">
+            <T n="disabled_tooltip">0x7DEA5E02<!--String: "Fill Vacancy"--></T>
+            <T n="picker_interaction">370804<!--FamilyCreationItemPickerInteraction: familyCreationItemPickerInteraction_Ingredient--></T>
+          </U>
+        </U>
+        <U n="recipe_picker">
+          <U n="def_picker">
+            <T n="disabled_tooltip">0x7DEA5E02<!--String: "Fill Vacancy"--></T>
+            <T n="picker_interaction">371804<!--StartCraftingFamilyRecipeSuperInteraction: familyRecipePickerSuperInteraction--></T>
+          </U>
+        </U>
+      </U>
+      <E n="dialog_style">DEFAULT</E>
+      <V n="icon" t="disabled" />
+      <V n="skill" t="enabled">
+        <T n="enabled">16705<!--Skill: statistic_Skill_AdultMajor_HomestyleCooking--></T>
+      </V>
+      <V n="subtitle" t="enabled">
+        <T n="enabled">0xE773661D<!--String: "Cooking Level: {0.Number}"--></T>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0x4A9F165C<!--String: "Create a Family Recipe"--></T>
+      </V>
+    </U>
+  </V>
+  <T n="pie_menu_priority">10</T>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <V n="tooltip" t="disabled" />
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="zone">
+      <U n="zone">
+        <U n="zone_tests">
+          <V n="zone_modifiers" t="enabled">
+            <U n="enabled">
+              <V n="blacklist" t="specify">
+                <U n="specify">
+                  <L n="blacklist">
+                    <T>258836<!--ZoneModifier: zoneModifiers_lotTrait_RequiredIngredients--></T>
+                  </L>
+                </U>
+              </V>
+            </U>
+          </V>
+        </U>
+      </U>
+    </V>
+    <V t="state">
+      <U n="state">
+        <V n="fallback_behavior" t="always_pass" />
+        <T n="value">447463<!--ObjectStateValue: FamilyRecipes_CraftAvailable_Yes--></T>
+      </U>
+    </V>
+    <V t="object_criteria">
+      <U n="object_criteria">
+        <V n="desired_state_threshold" t="enabled">
+          <U n="enabled">
+            <E n="comparison">EQUAL</E>
+            <T n="value">15081<!--ObjectStateValue: BrokenState_Unbroken--></T>
+          </U>
+        </V>
+        <V n="identity_test" t="tags">
+          <U n="tags">
+            <L n="tag_set">
+              <E>Func_Fridge</E>
+            </L>
+          </U>
+        </V>
+        <T n="on_active_lot">True</T>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x699C52E1<!--String: "There is no available fridge."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="use_ingredients_default_value">False</T>
+</I>

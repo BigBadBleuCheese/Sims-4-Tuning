@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Career_Reaper_TargetResults" s="401092">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x8B2C14ED<!--String: "(From Failing to Meet the Soul Quota)"--></T>
+          </V>
+          <T n="buff_type">400988<!--Buff: buff_Career_Reaper_TargetFail--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="must_have_stat">True</T>
+                <T n="stat">401090<!--Statistic: statistic_Career_Reaper_SoulCount_Low--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">LESS_OR_EQUAL</E>
+                    <T n="value">24</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="must_have_stat">True</T>
+                <T n="stat">401279<!--Statistic: statistic_Career_Reaper_SoulCount_Med--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">LESS_OR_EQUAL</E>
+                    <T n="value">34</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="must_have_stat">True</T>
+                <T n="stat">401280<!--Statistic: statistic_Career_Reaper_SoulCount_High--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">LESS_OR_EQUAL</E>
+                    <T n="value">49</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x658D1A39<!--String: "(From Meeting the Soul Quota)"--></T>
+          </V>
+          <T n="buff_type">400987<!--Buff: buff_Career_Reaper_TargetMet--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="must_have_stat">True</T>
+                <T n="stat">401090<!--Statistic: statistic_Career_Reaper_SoulCount_Low--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">GREATER_OR_EQUAL</E>
+                    <T n="value">25</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="must_have_stat">True</T>
+                <T n="stat">401279<!--Statistic: statistic_Career_Reaper_SoulCount_Med--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">GREATER_OR_EQUAL</E>
+                    <T n="value">35</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="must_have_stat">True</T>
+                <T n="stat">401280<!--Statistic: statistic_Career_Reaper_SoulCount_High--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">GREATER_OR_EQUAL</E>
+                    <T n="value">50</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_set_max">
+        <U n="statistic_set_max">
+          <T n="stat">400847<!--Commodity: commodity_ReaperCareer_SoulTimer--></T>
+          <L n="subject">
+            <E>Actor</E>
+          </L>
+        </U>
+      </V>
+    </V>
+  </L>
+</I>

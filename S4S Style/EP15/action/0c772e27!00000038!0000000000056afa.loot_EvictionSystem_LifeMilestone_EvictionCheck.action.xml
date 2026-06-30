@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_EvictionSystem_LifeMilestone_EvictionCheck" s="355066">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">355065<!--Buff: buff_EvictionSystem_JustEvicted--></T>
+        </U>
+        <E n="subject">ActorHouseholdMembers</E>
+      </U>
+    </V>
+    <V t="trait_remove">
+      <U n="trait_remove">
+        <E n="subject">ActorHouseholdMembers</E>
+        <V n="trait" t="specific_trait">
+          <U n="specific_trait">
+            <T n="specific_trait">351533<!--Trait: trait_Hidden_EvictionSystem_UsedFreeChance--></T>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <T n="apply_whitelist_on_individual_basis">False</T>
+          <L n="blacklist">
+            <T>346418<!--Buff: buff_EvictionSystem_StaySuccess_Confident--></T>
+            <T>346417<!--Buff: buff_EvictionSystem_StaySuccess_Happy--></T>
+          </L>
+          <E n="subject">ActorHouseholdMembers</E>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

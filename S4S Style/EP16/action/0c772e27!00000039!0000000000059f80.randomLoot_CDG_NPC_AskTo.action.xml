@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="RandomWeightedLoot" i="action" m="interactions.utils.loot" n="randomLoot_CDG_NPC_AskTo" s="368512">
+  <L n="random_loot_actions">
+    <U>
+      <V n="action" t="reaction">
+        <U n="reaction">
+          <V n="si_reaction" t="enabled">
+            <U n="enabled">
+              <T n="affordance">387985<!--SocialSuperInteraction: SocialSuper_CDG_NPC_AskTo_GoBackToYourPlace--></T>
+              <E n="affordance_priority">High</E>
+              <V n="affordance_run_priority" t="enabled">
+                <E n="enabled">High</E>
+              </V>
+              <V n="affordance_target" t="enabled">
+                <E n="enabled">Actor</E>
+              </V>
+            </U>
+          </V>
+          <E n="subject">TargetSim</E>
+          <L n="tests">
+            <L>
+              <V t="lot_owner">
+                <U n="lot_owner">
+                  <T n="consider_business_lot_as_owned">False</T>
+                  <T n="consider_rented_lot_as_owned">False</T>
+                  <T n="invert">False</T>
+                  <T n="owns_lot">False</T>
+                  <E n="subject">Actor</E>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">2</T>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="reaction">
+        <U n="reaction">
+          <V n="si_reaction" t="enabled">
+            <U n="enabled">
+              <T n="affordance">387984<!--SocialSuperInteraction: SocialSuper_CDG_NPC_AskTo_ExtendDate--></T>
+              <E n="affordance_priority">High</E>
+              <V n="affordance_run_priority" t="enabled">
+                <E n="enabled">High</E>
+              </V>
+              <V n="affordance_target" t="enabled">
+                <E n="enabled">Actor</E>
+              </V>
+            </U>
+          </V>
+          <E n="subject">TargetSim</E>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">3</T>
+      </U>
+    </U>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="situation_job_test">
+        <U n="situation_job_test">
+          <E n="participant">TargetSim</E>
+          <L n="situation_jobs">
+            <T>375208<!--SituationJob: job_CAD_Target_Date_Adult_BlindDate_Catfish--></T>
+            <T>374485<!--SituationJob: job_CAD_Target_Date_Adult_BlindDate--></T>
+            <T>365356<!--SituationJob: job_CAD_Target_Date_Adult--></T>
+            <T>365357<!--SituationJob: job_CAD_Target_Date_Adult_AdditionalDate--></T>
+            <T>365358<!--SituationJob: job_CAD_Target_Date_Teen--></T>
+            <T>365359<!--SituationJob: job_CAD_Target_Date_Teen_AdditionalDate--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

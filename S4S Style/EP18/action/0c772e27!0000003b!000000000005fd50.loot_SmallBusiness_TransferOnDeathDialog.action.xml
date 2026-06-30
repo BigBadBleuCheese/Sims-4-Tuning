@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_SmallBusiness_TransferOnDeathDialog" s="392528">
+  <L n="loot_actions">
+    <V t="sim_interaction_dialog">
+      <U n="sim_interaction_dialog">
+        <U n="dialog">
+          <T n="anonymous_target_sim">True</T>
+          <V n="custom_mask_target_sim" t="enabled">
+            <U n="enabled">
+              <V n="alert_icon" t="enabled">
+                <V n="enabled" t="resource_key">
+                  <U n="resource_key">
+                    <T n="key" p="InGame\UI\Icons\Dialog\phone_anonymous_caller_icon.png">2f7d0004:00000000:257c708573e63faf</T>
+                  </U>
+                </V>
+              </V>
+              <V n="alert_sim_name" t="enabled">
+                <T n="enabled">0x2577C03B<!--String: "Unknown Caller"--></T>
+              </V>
+              <V n="header_icon" t="enabled">
+                <V n="enabled" t="resource_key">
+                  <U n="resource_key">
+                    <T n="key" p="InGame\UI\Icons\Dialog\phone_anonymous_caller_icon.png">2f7d0004:00000000:257c708573e63faf</T>
+                  </U>
+                </V>
+              </V>
+            </U>
+          </V>
+          <E n="phone_ring_type">RING</E>
+          <V n="text" t="single">
+            <T n="single">0x8A7E350D<!--String: "I'm from the Business Bureau, here to inform you that {0.SimName} is no longer with us but designated that their business, {2.String}, worth {3.Money} was to be transferred to you, {1.SimName}. Would you like to accept this business and become a Small Business owner?"--></T>
+          </V>
+          <V n="text_tokens" t="enabled">
+            <U n="enabled">
+              <L n="tokens">
+                <V t="participant_type" />
+                <V t="participant_type">
+                  <U n="participant_type">
+                    <V n="objects" t="from_participant">
+                      <U n="from_participant">
+                        <E n="participant">TargetSim</E>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+                <V t="small_business" />
+                <V t="statistic_value">
+                  <U n="statistic_value">
+                    <T n="statistic">384512<!--Statistic: statistic_OwnableSmallBusiness_BusinessValue--></T>
+                  </U>
+                </V>
+              </L>
+            </U>
+          </V>
+        </U>
+        <L n="possible_responses">
+          <U>
+            <U n="item">
+              <L n="loot">
+                <T>390216<!--LootActions: loot_SmallBusiness_System_TransferTo_TargetSim--></T>
+              </L>
+              <T n="text">0x6D06ACA2<!--String: "Yes, I'm ready to run {2.String}!"--></T>
+            </U>
+          </U>
+          <U>
+            <U n="item">
+              <L n="loot">
+                <T>393778<!--LootActions: loot_SmallBusiness_System_Sell_NoConfirmation--></T>
+              </L>
+              <T n="text">0xBA6A42B7<!--String: "Sell it and send me the money!"--></T>
+            </U>
+          </U>
+        </L>
+        <E n="subject">TargetSim</E>
+        <E n="target_participant_type">Actor</E>
+      </U>
+    </V>
+    <V t="schedule_drama_node">
+      <U n="schedule_drama_node">
+        <T n="drama_node">392529<!--DialogDramaNode: dialogDramaNode_SmallBusiness_TransferOnDeathBackup--></T>
+      </U>
+    </V>
+  </L>
+</I>

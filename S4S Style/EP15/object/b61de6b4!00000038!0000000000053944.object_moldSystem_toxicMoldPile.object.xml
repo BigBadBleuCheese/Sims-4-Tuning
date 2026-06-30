@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="GameObject" i="object" m="objects.game_object" n="object_moldSystem_toxicMoldPile" s="342340">
+  <U n="_components">
+    <V n="focus" t="enabled">
+      <U n="enabled">
+        <V n="_focus_score" t="globally">
+          <U n="globally">
+            <E n="base">LOW</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V n="state" t="enabled">
+      <U n="enabled">
+        <L n="states">
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">100046<!--CommodityBasedObjectStateValue: FireState_Burn_Incinerate_NoAsh--></T>
+              </U>
+              <U>
+                <T n="key">100095<!--CommodityBasedObjectStateValue: FireState_Burn_Incinerate_NoAsh_Burning--></T>
+              </U>
+              <U>
+                <T n="key">100096<!--CommodityBasedObjectStateValue: FireState_Burn_Incinerate_NoAsh_Not_Burning--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">100096<!--CommodityBasedObjectStateValue: FireState_Burn_Incinerate_NoAsh_Not_Burning--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">352653<!--ObjectStateValue: moldSystem_Values_Alive--></T>
+              </U>
+              <U>
+                <T n="key">352654<!--ObjectStateValue: moldSystem_Values_Dead--></T>
+              </U>
+              <U>
+                <T n="key">352655<!--ObjectStateValue: moldSystem_Values_VFX--></T>
+              </U>
+              <U>
+                <T n="key">359690<!--ObjectStateValue: moldSystem_Values_RobotVacuum--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">352653<!--ObjectStateValue: moldSystem_Values_Alive--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">344607<!--CommodityBasedObjectStateValue: moldSystemValues_Toxic_T1_Mild--></T>
+            </V>
+            <T n="reset_on_load_if_time_passes">True</T>
+            <T n="reset_to_default">True</T>
+          </U>
+        </L>
+        <V n="timed_state_triggers" t="enabled">
+          <L n="enabled">
+            <U>
+              <T n="key">352655<!--ObjectStateValue: moldSystem_Values_VFX--></T>
+              <U n="value">
+                <L n="ops">
+                  <U>
+                    <L n="states_to_trigger">
+                      <T>352654<!--ObjectStateValue: moldSystem_Values_Dead--></T>
+                    </L>
+                    <T n="trigger_time">3</T>
+                  </U>
+                </L>
+              </U>
+            </U>
+            <U>
+              <T n="key">359690<!--ObjectStateValue: moldSystem_Values_RobotVacuum--></T>
+              <U n="value">
+                <L n="ops">
+                  <U>
+                    <L n="states_to_trigger">
+                      <T>352655<!--ObjectStateValue: moldSystem_Values_VFX--></T>
+                    </L>
+                    <T n="trigger_time">1</T>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+        </V>
+      </U>
+    </V>
+    <V n="tooltip_component" t="enabled">
+      <U n="enabled">
+        <L n="custom_tooltips">
+          <U>
+            <L n="tooltip_fields">
+              <U>
+                <E n="key">recipe_name</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x8C0B844<!--String: "Toxic Mold Pile"--></T>
+                  </V>
+                </U>
+              </U>
+            </L>
+          </U>
+        </L>
+      </U>
+    </V>
+  </U>
+  <L n="_super_affordances">
+    <T>13328<!--ImmediateSuperInteraction: debug_Reset--></T>
+    <T>13326<!--ImmediateSuperInteraction: debug_ObjectDestroy--></T>
+    <T>103888<!--ImmediateSuperInteraction: cheat_set_as_head--></T>
+    <T>351116<!--SuperInteraction: moldSystem_DeployMoldBomb_Starter--></T>
+    <T>344745<!--SuperInteraction: moldSystem_CleanMold_Starter--></T>
+    <T>353282<!--SuperInteraction: moldSystem_BurnMoldPile--></T>
+    <T>415212<!--SuperInteraction: ghostPowers_Abilities_Helpful_RemoveMaterial_Mold--></T>
+    <T>344882<!--ImmediateSuperInteraction: debug_MoldSystem_Toxic_SetState_T1_Mild--></T>
+    <T>344913<!--ImmediateSuperInteraction: debug_MoldSystem_Toxic_SetState_T2_Severe--></T>
+    <T>344914<!--ImmediateSuperInteraction: debug_MoldSystem_Toxic_SetState_T3_Deadly--></T>
+  </L>
+  <U n="recycling_data">
+    <L n="recycling_values">
+      <U>
+        <E n="Bucks Type">RecycleBitsBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+      <U>
+        <E n="Bucks Type">RecyclePiecesBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+    </L>
+  </U>
+</I>

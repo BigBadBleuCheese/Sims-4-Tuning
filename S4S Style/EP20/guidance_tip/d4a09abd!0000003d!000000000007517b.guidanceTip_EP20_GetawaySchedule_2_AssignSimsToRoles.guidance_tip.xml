@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="GuidanceTip" i="guidance_tip" m="guidance.guidance_tip" n="guidanceTip_EP20_GetawaySchedule_2_AssignSimsToRoles" s="479611">
+  <L n="activation_rules">
+    <U>
+      <L n="criteria">
+        <U>
+          <V n="criterion" t="game_option_setting">
+            <U n="game_option_setting">
+              <T n="setting_name">PackGuidanceEnabled</T>
+              <T n="setting_value">1</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="criterion" t="game_option_setting">
+            <U n="game_option_setting">
+              <T n="setting_name">GuidancePack</T>
+              <T n="setting_value">2</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+    <U>
+      <L n="criteria">
+        <U>
+          <V n="criterion" t="guidance_tips_satisfied">
+            <L n="guidance_tips_satisfied">
+              <T>486077<!--GuidanceTip: guidanceTip_EP20_GetawaySchedule_2_A_RoleProperties--></T>
+            </L>
+          </V>
+        </U>
+      </L>
+    </U>
+    <U>
+      <L n="criteria">
+        <U>
+          <V n="criterion" t="game_state">
+            <E n="game_state">LIVE_MODE</E>
+          </V>
+        </U>
+        <U>
+          <V n="criterion" t="ui_element_visible">
+            <L n="ui_element_visible">
+              <E>CSE_ASSIGNMENT_SIMS</E>
+            </L>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <T n="auto_select_on_activate">True</T>
+  <L n="options">
+    <U>
+      <U n="actions">
+        <L n="actions_on_activate">
+          <V t="tutorial_tip_group">
+            <T n="tutorial_tip_group">482069<!--TutorialTipGroup: tutorialTipGroup_EP20_Getaways_AssignSimsToRole_2--></T>
+          </V>
+        </L>
+        <L n="actions_on_cancel">
+          <V t="satisfy_guidance_item_group">
+            <T n="satisfy_guidance_item_group">479617<!--GuidanceTipGroup: guidanceTipGroup_Getaways_SchedulerGroup--></T>
+          </V>
+          <V t="activate_guidance_item">
+            <T n="activate_guidance_item">487651<!--GuidanceTip: guidanceTip_EP20_GetawaySchedule_7_Reminder--></T>
+          </V>
+        </L>
+        <T n="satisfy_on_action_cancel">True</T>
+        <T n="satisfy_on_activate">False</T>
+      </U>
+    </U>
+  </L>
+  <T n="satisfy_on_timeout">True</T>
+  <T n="timeout">0</T>
+</I>

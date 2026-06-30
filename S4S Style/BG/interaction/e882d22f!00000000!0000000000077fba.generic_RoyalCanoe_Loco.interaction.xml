@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="generic_RoyalCanoe_Loco" s="491450">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="posture">
+            <U n="posture">
+              <E n="body_target_tuning">INTERACTION_TARGET</E>
+              <L n="posture_manifest_tuning">
+                <U>
+                  <V n="posture_type" t="enabled">
+                    <T n="enabled">206337<!--MobilePosture: posture_IslandCanoe--></T>
+                  </V>
+                </U>
+              </L>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_icon" t="resource_key">
+    <U n="resource_key">
+      <T p="InGame\UI\Icons\InteractionQueue\IconQueueResting.png" n="key">2f7d0004:00000000:033252a4ecc5bbff</T>
+    </U>
+  </V>
+  <T n="_provided_posture_type">206337<!--MobilePosture: posture_IslandCanoe--></T>
+  <V n="_saveable" t="enabled" />
+  <T n="_super_affordance_can_share_target">True</T>
+  <T n="allow_autonomous">False</T>
+  <T n="allow_user_directed">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="buff_based">
+                <U n="buff_based">
+                  <T n="buff">185970<!--Buff: buff_GlobalTemperature_Freezing--></T>
+                  <E n="timing">ON_ADD</E>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_CANCEL</E>
+            <L n="loot_actions">
+              <T>222947<!--LootActions: loot_Temperature_Freezing_AddExitDelay--></T>
+            </L>
+          </U>
+        </V>
+      </L>
+      <T n="start_user_directed_inertial">True</T>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="state_change">
+      <U n="state_change">
+        <V n="new_value" t="single_value">
+          <U n="single_value">
+            <T n="new_value">206332<!--ObjectStateValue: islandCanoe_Values_Rider_On--></T>
+          </U>
+        </V>
+        <V n="timing" t="immediately" />
+      </U>
+    </V>
+    <V t="state_change">
+      <U n="state_change">
+        <V n="new_value" t="single_value">
+          <U n="single_value">
+            <T n="new_value">206331<!--ObjectStateValue: islandCanoe_Values_Rider_Off--></T>
+          </U>
+        </V>
+        <V n="timing" t="at_end">
+          <U n="at_end">
+            <E n="criticality">OnCancelOrException</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="routing_formation">
+      <U n="routing_formation">
+        <E n="master">Object</E>
+        <L n="routing_formations">
+          <T>206345<!--RoutingFormation: routingFormation_IslandCanoe_Ride--></T>
+        </L>
+        <E n="slave">Actor</E>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+  </L>
+  <L n="cancel_replacement_affordances">
+    <U>
+      <E n="key">BODY</E>
+      <U n="value">
+        <T n="affordance">491451<!--SuperInteraction: generic_RoyalCanoe_Sit--></T>
+        <V n="target" t="enabled" />
+      </U>
+    </U>
+  </L>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x41F95CEC<!--String: "Sit on {1.ObjectName}"--></T>
+  <V n="display_name_overrides" t="testable">
+    <U n="testable">
+      <L n="overrides">
+        <U>
+          <V n="new_display_name" t="enabled">
+            <T n="enabled">0xC508A325<!--String: "On {1.ObjectName}"--></T>
+          </V>
+          <L n="test">
+            <L>
+              <V t="state">
+                <U n="state">
+                  <T n="value">201399<!--ObjectStateValue: waterScooter_Rider_On--></T>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T n="ignore_group_socials">False</T>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T p="InGame\UI\Icons\InteractionQueue\IconQueueSitting_Over.png" n="key">2f7d0004:00000000:37312fa9747ff09a</T>
+      </U>
+    </V>
+  </V>
+  <T n="pie_menu_priority">9</T>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="object_definition_criteria">
+      <U n="object_definition_criteria">
+        <V n="identity_test" t="tags">
+          <U n="tags">
+            <L n="tag_set">
+              <E>Func_RoyalBoat</E>
+            </L>
+            <E n="test_type">CONTAINS_ANY_TAG_IN_SET</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="wading_interval_test">
+      <U n="wading_interval_test">
+        <V n="test" t="swim_here" />
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xEB0C5A58<!--String: "To sail, place the vessel in your inventory and select Sail on any swimmable water. If your house is by the sea, you can also place the vessel close to water in Build Mode."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="test_set_reference">
+        <T n="test_set_reference">215306<!--TestSetInstance: testSetInstance_IslandCanoe_Ownership--></T>
+      </V>
+    </L>
+  </L>
+  <T n="time_overhead">30</T>
+  <T n="visible">True</T>
+  <E n="visual_type_override">POSTURE</E>
+  <V n="walk_style" t="enabled">
+    <U n="enabled">
+      <E n="priority">INTERACTION</E>
+      <T p="InGame\Locomotion\Sailing.walkstyle" n="walkstyle">27c01d95:00000000:00000000728923b2</T>
+    </U>
+  </V>
+</I>

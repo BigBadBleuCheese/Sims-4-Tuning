@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalActor" i="situation_goal" m="situations.situation_goal_actor" n="liveEvent_Actor_R5Event_TakePhotoInCave" s="445328">
+  <T n="_cooldown">0</T>
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T p="InGame\UI\Icons\Headlines\Final\headline_camera.png" n="enabled">2f7d0004:00000000:56826bf5d4a6259d</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x4D2978E5<!--String: "Take Photos in the Cave"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0xEB90ED4F<!--String: "It's time to record your discoveries! Open the Phone menu and select the Camera to take photos of the Forgotten Grotto.\n\nSelect to learn more."--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>447711<!--SituationGoalLootActions: liveEvent_GoalLoot_CompleteQuestGoal--></T>
+  </L>
+  <V n="_goal_test" t="buff">
+    <U n="buff">
+      <V n="whitelist" t="enabled">
+        <L n="enabled">
+          <T>356336<!--Buff: buff_PivotalMoments_Hidden_PhotoTaken--></T>
+        </L>
+      </V>
+    </U>
+  </V>
+  <L n="_post_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+      </U>
+    </V>
+    <V t="location">
+      <U n="location">
+        <U n="location_tests">
+          <V n="is_venue_type" t="enabled">
+            <U n="enabled">
+              <T n="venue_type">98133<!--Venue: venue_HiddenCave--></T>
+            </U>
+          </V>
+        </U>
+      </U>
+    </V>
+  </L>
+  <T n="_score">0</T>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+  <V n="tutorial_tip_group" t="enabled">
+    <T n="enabled">448482<!--TutorialTipGroup: tutorialTipGroup_LiveEvent_R5Event_TakePhoto--></T>
+  </V>
+</I>

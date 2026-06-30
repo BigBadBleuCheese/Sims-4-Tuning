@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalActor" i="situation_goal" m="situations.situation_goal_actor" n="situationGoalActor_NobleCareer_CongratulateNoble" s="502807">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T n="enabled" p="InEP21\UI\Icons\Events\EventGoal_CongratulateNobleOnNewTitle.png">2f7d0004:00000000:2a7940c59c4932eb</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x2824CABF<!--String: "Congratulate Noble on New Title"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0x5B735D31<!--String: "Any Nobles who have recently been coronated, received a promotion or have been knighted can be congratulated. Select <b>Congratulate on Noble Title</b>, in the Friendly social category, under Compliments.  "--></T>
+      </V>
+    </U>
+  </V>
+  <V n="_goal_test" t="buff">
+    <U n="buff">
+      <V n="whitelist" t="enabled">
+        <L n="enabled">
+          <T>502808<!--Buff: buff_NobleCareer_Hidden_HaveCongratulated--></T>
+        </L>
+      </V>
+    </U>
+  </V>
+  <L n="_pre_tests">
+    <V t="buff">
+      <U n="buff">
+        <V n="whitelist" t="enabled">
+          <L n="enabled">
+            <T>479480<!--Buff: buff_NobleCareer_Hidden_CanCongratulateNoble--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="_score">10</T>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+</I>

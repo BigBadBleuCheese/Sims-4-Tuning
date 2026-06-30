@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_EP17World_HauntedHouseShell_Haunt" s="402376">
+  <L n="loot_actions">
+    <V t="object_rewards">
+      <U n="object_rewards">
+        <L n="object_rewards">
+          <U>
+            <T n="quantity">1</T>
+            <L n="reward_objects">
+              <U>
+                <V n="quantity" t="specific_amount">
+                  <T n="specific_amount">5</T>
+                </V>
+                <L n="reward">
+                  <V t="specify_definition">
+                    <U n="specify_definition">
+                      <T n="definition">417844</T>
+                    </U>
+                  </V>
+                </L>
+              </U>
+              <U>
+                <V n="quantity" t="specific_amount">
+                  <T n="specific_amount">7</T>
+                </V>
+                <L n="reward">
+                  <V t="specify_definition">
+                    <U n="specify_definition">
+                      <T n="definition">417844</T>
+                    </U>
+                  </V>
+                </L>
+              </U>
+              <U>
+                <V n="quantity" t="specific_amount">
+                  <T n="specific_amount">10</T>
+                </V>
+                <L n="reward">
+                  <V t="specify_definition">
+                    <U n="specify_definition">
+                      <T n="definition">417844</T>
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </L>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InEP17\UI\Icons\Inventory\inventory_ghostEssence.png">2f7d0004:00000000:503380fc09f1191b</T>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xC05C7629<!--String: "{0.SimFirstName} earned some Fear Essence in the inventory for Infesting an Abandoned House! Word around Mourningvale is that Waylon Warez will purchase Essence for Simoleons by the Crypt in the Crow's Crossing neighborhood of Ravenwood."--></T>
+            </V>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="inventory">
+              <U n="inventory">
+                <V n="contents_check" t="has_object_with_def">
+                  <U n="has_object_with_def">
+                    <T n="definition">417844</T>
+                  </U>
+                </V>
+                <U n="required_count">
+                  <E n="comparison">LESS_OR_EQUAL</E>
+                  <T n="value">0</T>
+                </U>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">15</T>
+          <T n="stat">384633<!--RankedStatistic: rankedStatistic_GhostPowers_GhostXP--></T>
+          <L n="subject">
+            <E>Actor</E>
+          </L>
+        </U>
+      </V>
+    </V>
+  </L>
+</I>

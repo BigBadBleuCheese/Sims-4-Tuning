@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="ObjectRoutingBehavior" i="snippet" m="routing.object_routing.object_routing_behavior" n="objectRoutingBehavior_AnimalObjects_Goat_LovingGaze" s="326637">
+  <E n="object_routing_priority">HIGH</E>
+  <V n="route" t="from_target_object">
+    <U n="from_target_object">
+      <L n="constraints">
+        <V t="circle">
+          <U n="circle">
+            <T n="radius">1.5</T>
+          </U>
+        </V>
+        <V t="facing" />
+      </L>
+      <L n="no_target_loot">
+        <T>263264<!--LootActions: loot_AnimalObjects_StartWalk--></T>
+      </L>
+      <L n="route_fail_loot">
+        <T>263264<!--LootActions: loot_AnimalObjects_StartWalk--></T>
+      </L>
+      <L n="target_selection_test">
+        <L>
+          <V t="object_relationship">
+            <U n="object_relationship">
+              <V n="relationship_status" t="relationship_range">
+                <U n="relationship_range">
+                  <U n="value_interval">
+                    <T n="lower_bound">35</T>
+                  </U>
+                </U>
+              </V>
+              <E n="sims">TargetSim</E>
+              <V n="targets" t="single_object">
+                <U n="single_object">
+                  <E n="target">Actor</E>
+                </U>
+              </V>
+            </U>
+          </V>
+        </L>
+      </L>
+      <V n="target_type" t="sim" />
+    </U>
+  </V>
+  <L n="routing_actions">
+    <V t="play_animation">
+      <U n="play_animation">
+        <U n="animation">
+          <T n="reference">326769<!--ObjectAnimationElement: animalObjects_Idles_Sheep_React_LovingGaze--></T>
+        </U>
+      </U>
+    </V>
+  </L>
+  <L n="success_loot">
+    <T>263264<!--LootActions: loot_AnimalObjects_StartWalk--></T>
+  </L>
+</I>

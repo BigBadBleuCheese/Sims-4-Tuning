@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Career_SmallBusiness_Employee_Quit" s="404235">
+  <L n="loot_actions">
+    <V t="interaction">
+      <U n="interaction">
+        <E n="affordance_priority">High</E>
+        <L n="affordances">
+          <T>404236<!--SocialSuperInteraction: smallBusiness_Socials_Employee_Quit--></T>
+        </L>
+        <E n="target_participant_type">TargetSim</E>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="is_small_business_open">
+        <U n="is_small_business_open">
+          <E n="participant">TargetSim</E>
+        </U>
+      </V>
+      <V t="is_business_employee">
+        <U n="is_business_employee">
+          <E n="subject">TargetSim</E>
+          <E n="target_sim">Actor</E>
+        </U>
+      </V>
+      <V t="existence" />
+      <V t="situation_job_test">
+        <U n="situation_job_test">
+          <L n="situation_jobs">
+            <T>399327<!--SituationJob: jobs_SmallBusinessEmployee_Work--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalObjectInteraction" i="situation_goal" m="situations.situation_goal_object_interaction" n="situationGoal_muEvent_Explosion" s="343681">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T n="enabled" p="InEP15\UI\Icons\Events\EventGoal_ReplaceDestroyedItem.png">2f7d0004:00000000:65d42e47a917c2a9</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x79EDC96A<!--String: "Replace the Faulty Stove, Oven, or Grill"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="disabled" />
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>343476<!--SituationGoalLootActions: situationGoalLoot_muEvent_CompletedPrimary--></T>
+    <T>351841<!--SituationGoalLootActions: situationGoalLoot_muEvent_Emergency--></T>
+  </L>
+  <U n="_goal_test">
+    <L n="affordances">
+      <T>99087<!--ImmediateSuperInteraction: object_ReplaceBrokenObject--></T>
+      <T>120380<!--ImmediateSuperInteraction: object_ReplaceBrokenObject_HotTub--></T>
+      <T>143552<!--ImmediateSuperInteraction: object_ReplaceBrokenObject_TalkingToilet--></T>
+      <T>187775<!--ImmediateSuperInteraction: object_ReplaceBrokenObject_BoxOfDecorations--></T>
+      <T>177115<!--ImmediateSuperInteraction: object_replaceBrokenObject_Laundry_WashingMachine--></T>
+      <T>74457<!--ImmediateSuperInteraction: fire_ReplaceBurntObject--></T>
+      <T>163419<!--ImmediateSuperInteraction: scratch_ReplaceScratchedObject--></T>
+      <T>215545<!--SuperInteraction: spells_Object_Repair_Craftable--></T>
+      <T>216924<!--SuperInteraction: spells_Object_Repair_Craftable_SpectralReach--></T>
+      <T>215504<!--SuperInteraction: spells_Object_Repair_Fix--></T>
+      <T>216926<!--SuperInteraction: spells_Object_Repair_Fix_SpectralReach--></T>
+    </L>
+    <V n="interaction_outcome" t="enabled">
+      <E n="enabled">SUCCESS</E>
+    </V>
+    <L n="tags">
+      <E>Interaction_Repair</E>
+    </L>
+    <U n="target_filters">
+      <V n="object_tags" t="enabled">
+        <U n="enabled">
+          <L n="tag_set">
+            <E>Func_muEvent_Explosion</E>
+          </L>
+        </U>
+      </V>
+    </U>
+    <E n="test_event">InteractionComplete</E>
+  </U>
+  <L n="_post_tests">
+    <V t="object_criteria">
+      <U n="object_criteria">
+        <V n="desired_state_threshold" t="enabled">
+          <U n="enabled">
+            <E n="comparison">EQUAL</E>
+            <T n="value">15076<!--CommodityBasedObjectStateValue: Brokenness_Broken--></T>
+          </U>
+        </V>
+        <V n="identity_test" t="tags">
+          <U n="tags">
+            <L n="tag_set">
+              <E>Func_muEvent_Explosion</E>
+            </L>
+          </U>
+        </V>
+        <T n="on_active_lot">True</T>
+        <T n="owned">False</T>
+        <V n="subject_specific_tests" t="all_objects">
+          <U n="all_objects">
+            <U n="quantity">
+              <E n="comparison">EQUAL</E>
+              <T n="value">0</T>
+            </U>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+</I>

@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="PurchasePickerInteraction" i="interaction" m="interactions.base.picker_interaction" n="purchasePicker_SocialActivities_Bartender" s="374045">
+  <V n="_saveable" t="disabled" />
+  <V n="content_score" t="disabled" />
+  <V n="delivery_method" t="purchase_to_inventory">
+    <U n="purchase_to_inventory">
+      <E n="participant_type">Actor</E>
+    </U>
+  </V>
+  <T n="display_name">0x21C25CB<!--String: "Purchase Social Item"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <V n="picker_dialog" t="purchase_picker">
+    <U n="purchase_picker">
+      <V n="max_selectable" t="unlimited" />
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T n="key" p="InGame\UI\Icons\PieMenu\Interactions\icon_pieMenu_immediateInteraction.png">2f7d0004:00000000:25eea5cdba6a6fd6</T>
+      </U>
+    </V>
+  </V>
+  <U n="price_multiplier">
+    <L n="multipliers">
+      <U>
+        <T n="multiplier">0.9</T>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>377844<!--Buff: buff_MovingOn_Hidden_FindingPurpose--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </L>
+  </U>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <L n="purchase_list_option">
+    <V t="specific_items">
+      <U n="specific_items">
+        <L n="item_list">
+          <T>393011</T>
+          <T>399590<!--SentimentTrack: sentimentTrack_Actor_MotivatedBy_Target_LT_HobbyClassFriend_Energized--></T>
+          <T>27232<!--HouseholdTemplate: HH_template_NPC_GD_singleMom_african_01--></T>
+          <T>20359</T>
+          <T>63924</T>
+          <T>298650<!--SuperInteraction: generic_consume_food_RawFish--></T>
+          <T>231503<!--Recipe: recipe_Drink_Bar_Batuu_BlackSpireBrew--></T>
+          <T>140220<!--CommodityBasedObjectState: SlippySlide_InUse--></T>
+          <T>398609<!--SocialSuperInteraction: social_HobbyClass_RequestClass_LocalCulture--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="purchase_notification" t="enabled">
+    <V n="enabled" t="literal">
+      <U n="literal">
+        <V n="icon" t="enabled">
+          <V n="enabled" t="resource_key">
+            <U n="resource_key">
+              <T n="key" p="InGame\UI\Icons\Notifications\notification_PurchaseSocialActivityItems.png">2f7d0004:00000000:4914e6c9d3d9aa6c</T>
+            </U>
+          </V>
+        </V>
+        <V n="secondary_icon" t="enabled">
+          <V n="enabled" t="participant" />
+        </V>
+        <V n="text" t="single">
+          <T n="single">0xDF63D133<!--String: "Thanks for shopping! Your items have been delivered to {0.SimFirstName}'s inventory."--></T>
+        </V>
+      </U>
+    </V>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+  </L>
+</I>

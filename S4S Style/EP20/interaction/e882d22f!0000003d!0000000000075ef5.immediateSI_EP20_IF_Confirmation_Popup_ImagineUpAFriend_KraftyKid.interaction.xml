@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="ImmediateSuperInteraction" i="interaction" m="interactions.base.immediate_interaction" n="immediateSI_EP20_IF_Confirmation_Popup_ImagineUpAFriend_KraftyKid" s="483061">
+  <V n="_saveable" t="disabled" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xD45222B9<!--String: "Turn into Imaginary Friend"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <V n="display_tooltip" t="enabled">
+    <T n="enabled">0x9B024788<!--String: "This will create an Imaginary Friend based on this Doll. The Friend will have this Doll's <b>Name</b> and <b>Personality</b>. A Child may only have one Imaginary Friend at a time. Doing this will set the Child as the owner of this Doll."--></T>
+  </V>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="basic_extras">
+          <V t="loot">
+            <U n="loot">
+              <L n="loot_list">
+                <T>483081<!--LootActions: loot_EP20_IF_Confirmation_Popup_KraftyKid--></T>
+              </L>
+            </U>
+          </V>
+        </L>
+      </U>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T p="InEP20\UI\Icons\PieMenu\Interactions\PieMenu_ImaginaryFriend.png" n="key">2f7d0004:00000000:9eadf868d4fa1232</T>
+      </U>
+    </V>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="imaginary_friend">
+      <U n="imaginary_friend">
+        <T n="negate">True</T>
+        <V n="test_type" t="imaginary_friend_exists" />
+      </U>
+    </V>
+    <V t="state">
+      <U n="state">
+        <T n="value">35297<!--ObjectStateValue: GenericOnOff_Off--></T>
+      </U>
+    </V>
+    <V t="object_ownership">
+      <U n="object_ownership">
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x73E0AEC1<!--String: "Another household owns this ImagineMe! Doll."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">478907<!--TestSetInstance: testSetInstance_EP20_IF_ImagineUp--></T>
+    </V>
+    <V t="in_use">
+      <U n="in_use">
+        <T n="negate">True</T>
+        <L n="targets">
+          <E>Object</E>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x3A22BB1E<!--String: "ImagineMe! Doll is already in use."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="situation_running_test">
+      <U n="situation_running_test">
+        <V n="participant" t="enabled" />
+        <V n="situation_blacklist" t="enabled">
+          <L n="enabled">
+            <T>460865<!--ImaginaryFriendSituation: situation_EP20_IF_SpawnFriend--></T>
+            <T>464190<!--ImaginaryFriendSituation: situation_EP20_IF_SpawnFriend_GoodbyeForever--></T>
+            <T>464327<!--ImaginaryFriendSituation: situation_EP20_IF_SpawnFriend_OfferMakeReal--></T>
+          </L>
+        </V>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x63587888<!--String: "Can't do this right now."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>485413<!--Buff: buff_EP20_IF_Hidden_TemporaryPrevent--></T>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x63587888<!--String: "Can't do this right now."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+</I>

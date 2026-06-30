@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Fear_Dark_Trigger_Outside" s="278001">
+  <L n="loot_actions">
+    <V t="trait_add">
+      <U n="trait_add">
+        <U n="chance">
+          <T n="base_chance">25</T>
+          <L n="multipliers">
+            <U>
+              <T n="multiplier">0.25</T>
+              <L n="tests">
+                <L>
+                  <V t="buff">
+                    <U n="buff">
+                      <V n="whitelist" t="enabled">
+                        <L n="enabled">
+                          <T>351440<!--Buff: buff_Gemology_Rainborz_Brave--></T>
+                        </L>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+            <U>
+              <T n="multiplier">1.25</T>
+              <L n="tests">
+                <L>
+                  <V t="buff">
+                    <U n="buff">
+                      <V n="whitelist" t="enabled">
+                        <L n="enabled">
+                          <T>393293<!--Buff: buff_Tarot_Outcomes_Cards_Strength--></T>
+                        </L>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+            <U>
+              <T n="multiplier">0.15</T>
+              <L n="tests">
+                <L>
+                  <V t="skill_test">
+                    <U n="skill_test">
+                      <T n="skill">434909<!--Skill: statistic_Skill_NLS--></T>
+                      <V n="skill_range" t="interval">
+                        <U n="interval">
+                          <U n="skill_interval">
+                            <T n="lower_bound">10</T>
+                          </U>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+          </L>
+        </U>
+        <T n="trait">277094<!--Trait: trait_Fear_Dark--></T>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>277115<!--Buff: buff_Fear_Immunity_ResolvedRecently--></T>
+            <T>340980<!--Buff: buff_Sim_BaskedInBravery--></T>
+            <T>446978<!--Buff: Apothecary_CuresAndElixirs_Buff_Timer--></T>
+          </L>
+        </U>
+      </V>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>277094<!--Trait: trait_Fear_Dark--></T>
+          </L>
+        </U>
+      </V>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="species" t="specified">
+            <U n="specified">
+              <L n="species">
+                <E />
+              </L>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="location">
+        <U n="location">
+          <U n="location_tests">
+            <V n="is_outside" t="enabled" />
+          </U>
+        </U>
+      </V>
+      <V t="day_and_time">
+        <U n="day_and_time">
+          <V n="is_day" t="enabled">
+            <T n="enabled">False</T>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

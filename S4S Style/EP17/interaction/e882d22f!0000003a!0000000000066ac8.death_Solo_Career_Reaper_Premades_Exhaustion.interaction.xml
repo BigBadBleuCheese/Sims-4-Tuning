@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="DeathSuperInteraction" i="interaction" m="interactions.utils.death_interactions" n="death_Solo_Career_Reaper_Premades_Exhaustion" s="420552">
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Actor</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <T n="automation">False</T>
+  <V n="basic_content" t="one_shot" />
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>97629<!--LootActions: loot_PostDeath--></T>
+          <T>411797<!--LootActions: loot_WitnessedDeath_TriggerBuff_Broadcaster--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T n="can_shoo">False</T>
+  <V n="content_score" t="disabled" />
+  <U n="death_dialog">
+    <U n="text">
+      <V n="fallback" t="single">
+        <T n="single">0x290909F9<!--String: "Oh no! {1.SimFirstName} is dead and there are no more adult Sims alive! Sim Social Services will take it from here to care for the Children. "--></T>
+      </V>
+    </U>
+  </U>
+  <U n="death_element">
+    <V n="cancel_on_inaccessible_placement" t="no" />
+    <V n="location" t="position">
+      <U n="position">
+        <T n="ignore_bb_footprints">False</T>
+        <T n="skip_plex_starting_position_validation">True</T>
+        <V n="surface_type_override" t="enabled" />
+      </U>
+    </V>
+  </U>
+  <V n="death_info" t="enabled">
+    <U n="enabled">
+      <E n="death_type">ElderExhaustion</E>
+    </U>
+  </V>
+  <T n="debug">False</T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="none" />
+  <T n="save_lock_tooltip">0x58E0B681<!--String: "You cannot do this while a Sim is dying!"--></T>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+  <T n="visible">False</T>
+</I>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_EP20_Asp_CritterEthuse_TraitReveal" s="463138">
+  <L n="loot_actions">
+    <V t="know_other_sims_trait">
+      <U n="know_other_sims_trait">
+        <V n="notification" t="enabled">
+          <U n="enabled">
+            <V n="dialog" t="single">
+              <V n="single" t="literal">
+                <U n="literal">
+                  <V n="icon" t="enabled">
+                    <V n="enabled" t="participant" />
+                  </V>
+                  <V n="secondary_icon" t="enabled">
+                    <V n="enabled" t="participant">
+                      <U n="participant">
+                        <L n="participant_type">
+                          <E>TargetSim</E>
+                        </L>
+                      </U>
+                    </V>
+                  </V>
+                  <V n="text" t="single">
+                    <T n="single">0x73B721E1<!--String: "{0.SimFirstName} just discovered that {1.SimFirstName} is also a Critter Enthusiast and bonded over their mutual interest!"--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="participant_type" />
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">TargetSim</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </V>
+          </U>
+        </V>
+        <V n="traits" t="specified">
+          <U n="specified">
+            <L n="potential_traits">
+              <T>452451<!--Trait: trait_Nature_EP20_Asp_CritterHunter_CritterEnthusiast--></T>
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="knowledge">
+        <U n="knowledge">
+          <L n="prohibited_traits">
+            <T>452451<!--Trait: trait_Nature_EP20_Asp_CritterHunter_CritterEnthusiast--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

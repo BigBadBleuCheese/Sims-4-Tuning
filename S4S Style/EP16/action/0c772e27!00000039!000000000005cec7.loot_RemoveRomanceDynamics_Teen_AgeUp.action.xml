@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_RemoveRomanceDynamics_Teen_AgeUp" s="380615">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant" />
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x561AEF00<!--String: "Entering adulthood comes with big changes for any Sim. {0.SimFirstName}'s previous Romance Dynamics have fallen away as {0.SimPronounPossessiveDependent} perspective of the world broadens."--></T>
+            </V>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="npc" t="enabled" />
+              </U>
+            </V>
+            <V t="buff">
+              <U n="buff">
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>362485<!--Buff: buff_RomanceDynamics_Hidden_Steamy--></T>
+                    <T>362498<!--Buff: buff_RomanceDynamics_Hidden_Strained--></T>
+                    <T>362497<!--Buff: buff_RomanceDynamics_Hidden_Unpredictable--></T>
+                    <T>362486<!--Buff: buff_RomanceDynamics_Hidden_Wholesome--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="relationship_bits_loot">
+      <U n="relationship_bits_loot">
+        <L n="bit_operations">
+          <U>
+            <T n="bit">362476<!--RelationshipBit: romanceTrope_steamy--></T>
+            <E n="operation">REMOVE</E>
+            <E n="recipients">AllRelationships</E>
+            <E n="targets">Actor</E>
+          </U>
+          <U>
+            <T n="bit">362478<!--RelationshipBit: romanceTrope_strained--></T>
+            <E n="operation">REMOVE</E>
+            <E n="recipients">AllRelationships</E>
+            <E n="targets">Actor</E>
+          </U>
+          <U>
+            <T n="bit">362477<!--RelationshipBit: romanceTrope_unpredictable--></T>
+            <E n="operation">REMOVE</E>
+            <E n="recipients">AllRelationships</E>
+            <E n="targets">Actor</E>
+          </U>
+          <U>
+            <T n="bit">362475<!--RelationshipBit: romanceTrope_wholesome--></T>
+            <E n="operation">REMOVE</E>
+            <E n="recipients">AllRelationships</E>
+            <E n="targets">Actor</E>
+          </U>
+          <U>
+            <T n="bit">363250<!--RelationshipBit: romanceTrope_WorkingOnRomanceDynamic--></T>
+            <E n="operation">REMOVE</E>
+            <E n="recipients">AllRelationships</E>
+            <E n="targets">Actor</E>
+          </U>
+          <U>
+            <T n="bit">362479<!--RelationshipBit: romanceTrope_NotSteamy--></T>
+            <E n="operation">REMOVE</E>
+            <E n="recipients">AllRelationships</E>
+            <E n="targets">Actor</E>
+          </U>
+          <U>
+            <T n="bit">362481<!--RelationshipBit: romanceTrope_NotUnpredictable--></T>
+            <E n="operation">REMOVE</E>
+            <E n="recipients">AllRelationships</E>
+            <E n="targets">Actor</E>
+          </U>
+          <U>
+            <T n="bit">362480<!--RelationshipBit: romanceTrope_NotStrained--></T>
+            <E n="operation">REMOVE</E>
+            <E n="recipients">AllRelationships</E>
+            <E n="targets">Actor</E>
+          </U>
+          <U>
+            <T n="bit">362482<!--RelationshipBit: romanceTrope_NotWholesome--></T>
+            <E n="operation">REMOVE</E>
+            <E n="recipients">AllRelationships</E>
+            <E n="targets">Actor</E>
+          </U>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

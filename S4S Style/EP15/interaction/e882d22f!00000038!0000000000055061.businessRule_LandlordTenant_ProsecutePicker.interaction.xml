@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="BusinessRulePickerSuperInteraction" i="interaction" m="interactions.base.business_rule_interaction" n="businessRule_LandlordTenant_ProsecutePicker" s="348257">
+  <V n="_saveable" t="disabled" />
+  <E n="business_rule_target">TargetSim</E>
+  <T n="category">345363<!--PieMenuCategory: pieMenuCategory_LandlordTenant_Rental--></T>
+  <V n="content_score" t="disabled" />
+  <L n="continuation">
+    <U>
+      <T n="affordance">348260<!--SocialSuperInteraction: social_LandlordTenant_Prosecute--></T>
+      <E n="target">TargetSim</E>
+    </U>
+  </L>
+  <T n="display_name">0x3EB4C284<!--String: "Prosecute Fine"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <V n="pie_menu_option" t="use_pie_menu">
+    <U n="use_pie_menu">
+      <T n="pie_menu_category">345467<!--PieMenuCategory: pieMenuCategory_LandlordTenant_Prosecute--></T>
+      <T n="pie_menu_name">0x2DA57091<!--String: "Prosecute Fine for {2.String}"--></T>
+      <T n="show_disabled_item">False</T>
+    </U>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <L n="rule_states">
+    <E>BROKEN</E>
+  </L>
+  <V n="single_choice_display_name" t="disabled" />
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+            <E>TODDLER</E>
+            <E>BABY</E>
+            <E>INFANT</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="relationship">
+      <U n="relationship">
+        <U n="required_relationship_bits">
+          <L n="match_any">
+            <T>343629<!--RelationshipBit: relBit_MultiUnit_LandlordToTenant--></T>
+          </L>
+        </U>
+      </U>
+    </V>
+    <V t="relationship">
+      <U n="relationship">
+        <U n="required_relationship_bits">
+          <L n="match_any">
+            <T>15803<!--RelationshipBit: has_met--></T>
+            <T>192631<!--RelationshipBit: relationshipBit_CelebrityAcquaintance--></T>
+          </L>
+        </U>
+        <L n="subject">
+          <E>Actor</E>
+        </L>
+        <L n="target_sim">
+          <E>TargetSim</E>
+        </L>
+      </U>
+    </V>
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">TargetSim</E>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>359461<!--Buff: buff_APM_ProsecuteFineCooldown--></T>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x94B2B15E<!--String: "{0.SimFirstName} needs to wait awhile before {M0.he}{F0.she} can do this again!"--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+</I>

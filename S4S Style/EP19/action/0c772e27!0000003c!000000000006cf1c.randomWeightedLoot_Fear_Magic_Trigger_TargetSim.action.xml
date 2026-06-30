@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="RandomWeightedLoot" i="action" m="interactions.utils.loot" n="randomWeightedLoot_Fear_Magic_Trigger_TargetSim" s="446236">
+  <L n="random_loot_actions">
+    <U>
+      <V n="action" t="do_nothing" />
+      <U n="weight">
+        <T n="base_value">7</T>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">448504<!--LootActions: loot_Fear_Magic_AddTrait_TargetSim--></T>
+      </V>
+      <U n="weight">
+        <T n="base_value">1</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">4</T>
+            <L n="tests">
+              <L>
+                <V t="trait">
+                  <U n="trait">
+                    <E n="subject">TargetSim</E>
+                    <L n="whitelist_traits">
+                      <T>203542<!--Trait: trait_Paranoid--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="trait">
+                  <U n="trait">
+                    <E n="subject">TargetSim</E>
+                    <L n="whitelist_traits">
+                      <T>414620<!--Trait: trait_OccultFairy_TYAE--></T>
+                      <T>213050<!--Trait: trait_Occult_WitchOccult--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0.5</T>
+            <L n="tests">
+              <L>
+                <V t="trait">
+                  <U n="trait">
+                    <E n="subject">TargetSim</E>
+                    <L n="whitelist_traits">
+                      <T>433541<!--Trait: trait_Mystical--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+              <L />
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>277115<!--Buff: buff_Fear_Immunity_ResolvedRecently--></T>
+            <T>340980<!--Buff: buff_Sim_BaskedInBravery--></T>
+          </L>
+          <E n="subject">TargetSim</E>
+        </U>
+      </V>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>445696<!--Trait: trait_Fear_Magic--></T>
+          </L>
+          <E n="subject">TargetSim</E>
+        </U>
+      </V>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="species" t="specified">
+            <U n="specified">
+              <L n="species">
+                <E />
+              </L>
+            </U>
+          </V>
+          <E n="who">TargetSim</E>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

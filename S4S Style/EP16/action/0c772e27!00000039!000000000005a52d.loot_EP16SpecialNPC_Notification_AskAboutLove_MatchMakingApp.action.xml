@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_EP16SpecialNPC_Notification_AskAboutLove_MatchMakingApp" s="369965">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <E n="expand_behavior">FORCE_EXPAND</E>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>TargetSim</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xBBBE2CFB<!--String: "Have you heard of the Cupid's Corner App? It's all the rage these days. My heart is too broken to even try that.\n\nBut if you want to give it a try, just look for <B>Cupid's Corner</B> on your phone and create a profile. I hope all the best for you."--></T>
+            </V>
+            <L n="ui_responses">
+              <U>
+                <T n="text">0xEABE5948<!--String: "View Lessons"--></T>
+                <V n="tutorial_id" t="enabled">
+                  <T n="enabled">384192<!--Tutorial: tutorial_EP16_MatchmakingApp--></T>
+                </V>
+                <E n="ui_request">SHOW_LESSONS</E>
+              </U>
+            </L>
+            <E n="visual_type">SPEECH</E>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <E n="subject">TargetSim</E>
+                <L n="whitelist_traits">
+                  <T>376258<!--Trait: trait_SpecialNPCs_EP16SpecialNPC_SammyGarcia--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <E n="expand_behavior">FORCE_EXPAND</E>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>TargetSim</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xFC4BCFE3<!--String: "If you want to give online dating a try, look for <B>Cupid's Corner</B> app on your phone and create a profile."--></T>
+            </V>
+            <L n="ui_responses">
+              <U>
+                <T n="text">0xEABE5948<!--String: "View Lessons"--></T>
+                <V n="tutorial_id" t="enabled">
+                  <T n="enabled">0</T>
+                </V>
+                <E n="ui_request">SHOW_LESSONS</E>
+              </U>
+            </L>
+            <E n="visual_type">SPEECH</E>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <L n="blacklist_traits">
+                  <T>376258<!--Trait: trait_SpecialNPCs_EP16SpecialNPC_SammyGarcia--></T>
+                </L>
+                <E n="subject">TargetSim</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

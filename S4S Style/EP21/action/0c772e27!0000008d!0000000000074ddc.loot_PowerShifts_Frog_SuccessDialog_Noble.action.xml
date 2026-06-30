@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_PowerShifts_Frog_SuccessDialog_Noble" s="478684">
+  <L n="loot_actions">
+    <V t="sim_interaction_dialog">
+      <U n="sim_interaction_dialog">
+        <U n="dialog">
+          <V n="icon" t="enabled">
+            <V n="enabled" t="participant">
+              <U n="participant">
+                <L n="participant_type">
+                  <E>Actor</E>
+                </L>
+              </U>
+            </V>
+          </V>
+          <V n="secondary_icon" t="enabled">
+            <V n="enabled" t="participant">
+              <U n="participant">
+                <L n="participant_type">
+                  <E>TargetSim</E>
+                </L>
+              </U>
+            </V>
+          </V>
+          <V n="text" t="single">
+            <T n="single">0x16C35418<!--String: "Oh my, {1.SimFirstName}! Your kiss transformed my world and set me free. Will you marry me and explore the wonders of this world together, leaving behind my froggy days forever? Shall we leap into this adventure and start our own story?"--></T>
+          </V>
+        </U>
+        <L n="possible_responses">
+          <U>
+            <U n="item">
+              <L n="loot">
+                <T>479098<!--LootActions: loot_PowerShifts_Frog_StartEngagement--></T>
+              </L>
+              <T n="text">0x580E7504<!--String: "Yes, let's start this adventure together!"--></T>
+            </U>
+          </U>
+          <U>
+            <U n="item">
+              <L n="loot">
+                <T>479097<!--LootActions: loot_PowerShifts_Frog_BackToFrog_NotNobleTargetSim--></T>
+                <T>479465<!--LootActions: loot_PowerShifts_Frog_BackToFrog_NobleTargetSim--></T>
+              </L>
+              <T n="text">0x40CD87CC<!--String: "Sorry, but I'm not ready for marriage."--></T>
+            </U>
+          </U>
+        </L>
+        <E n="subject">TargetSim</E>
+        <E n="target_participant_type">Actor</E>
+      </U>
+    </V>
+  </L>
+</I>

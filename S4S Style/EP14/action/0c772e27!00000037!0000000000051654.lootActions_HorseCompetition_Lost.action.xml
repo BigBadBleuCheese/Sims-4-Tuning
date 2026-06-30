@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="lootActions_HorseCompetition_Lost" s="333396">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">335314<!--Buff: buff_Horse_HorseCompetition_EnteredACompetition--></T>
+        </U>
+        <E n="subject">TargetSim</E>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">324471<!--Buff: buff_Horse_Moodlets_Sad_LostCompetition--></T>
+        </U>
+        <U n="chance">
+          <T n="base_chance">33</T>
+        </U>
+        <E n="subject">TargetSim</E>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">335588<!--Buff: buff_Hidden_HorseCompetition_EnterMasterCompetition--></T>
+        </U>
+        <E n="subject">TargetSim</E>
+      </U>
+    </V>
+    <V t="state_change">
+      <U n="state_change">
+        <T n="state_value">327479<!--ObjectStateValue: EP14World_EquestrianCenter_States_OpenClose_Closed--></T>
+        <V n="subject" t="all_objects_with_tag">
+          <E n="all_objects_with_tag">Func_EquestrianCenter</E>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="day_and_time">
+              <U n="day_and_time">
+                <V n="time_range" t="enabled">
+                  <U n="enabled">
+                    <U n="begin_time">
+                      <T n="hour">19</T>
+                    </U>
+                    <U n="duration">
+                      <T n="hour">7</T>
+                    </U>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="state_change">
+      <U n="state_change">
+        <T n="state_value">327478<!--ObjectStateValue: EP14World_EquestrianCenter_States_OpenClose_Open--></T>
+        <V n="subject" t="all_objects_with_tag">
+          <E n="all_objects_with_tag">Func_EquestrianCenter</E>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="day_and_time">
+              <U n="day_and_time">
+                <V n="time_range" t="enabled">
+                  <U n="enabled">
+                    <U n="begin_time">
+                      <T n="hour">7</T>
+                    </U>
+                    <U n="duration">
+                      <T n="hour">12</T>
+                    </U>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="actions">
+      <T n="actions">465060<!--LootActions: loot_Competitive_Reaction_Game_BuffOnly_Loss_NoAffordanceList--></T>
+    </V>
+  </L>
+</I>

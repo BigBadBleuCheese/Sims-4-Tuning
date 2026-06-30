@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_BalanceSys_ChooseMinorEffect" s="427288">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="audio_sting" t="enabled">
+              <U n="enabled">
+                <T n="audio" p="InEP19\Audio\music\bumpers\bumper_ep19_imbalance_first_time.propx">39b2aa4a:00000000:5e3ee35b4d07f776</T>
+                <T n="immediate_audio">True</T>
+              </U>
+            </V>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InEP19\UI\Icons\Headlines\headline_Imbalance.png">2f7d0004:00000000:a1757e4e9a93521a</T>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant" />
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x8B4DABB8<!--String: "<b>{0.SimFirstName} is Imbalanced!</b>\n\nThis usually happens when a Sim stays in a negative Mood over a long period of time, though some major life events can shift things instantly. There are several ways a Sim can regain Balance, such as staying in a positive Mood and consuming certain Apothecary Elixirs.\n\nWhile Imbalanced, a Sim's Mood and Needs may be affected in various ways. Very Imbalanced Sims are highly vulnerable to Ailments.\n\nBalance & Imbalance can be disabled in <b>Game Options</b> > <b>Pack Settings</b> if desired."--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0xCD8553D3<!--String: "Balance & Imbalance"--></T>
+            </V>
+            <V n="tns_suppression_group" t="enabled">
+              <E n="enabled">Onboarding_BalanceSystem</E>
+            </V>
+            <L n="ui_responses">
+              <U>
+                <T n="text">0xEABE5948<!--String: "View Lessons"--></T>
+                <V n="tutorial_id" t="enabled">
+                  <T n="enabled">458007<!--Tutorial: tutorial_EP19_Balance--></T>
+                </V>
+                <E n="ui_request">SHOW_LESSONS</E>
+              </U>
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="actions">
+      <T n="actions">432399<!--RandomWeightedLoot: randomWeightedLoot_BalanceSys_ChooseMinorEffect--></T>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="test_set_reference">
+        <T n="test_set_reference">449546<!--TestSetInstance: testSetInstance_BalanceSys_HasBalance--></T>
+      </V>
+      <V t="buff">
+        <U n="buff">
+          <V n="whitelist" t="enabled">
+            <L n="enabled">
+              <T>427287<!--Buff: buff_BalanceSys_Hidden_MinorImbalance--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

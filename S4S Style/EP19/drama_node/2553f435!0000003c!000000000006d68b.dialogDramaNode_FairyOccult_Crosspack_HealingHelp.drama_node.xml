@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="DialogDramaNode" i="drama_node" m="drama_scheduler.dialog_drama_node" n="dialogDramaNode_FairyOccult_Crosspack_HealingHelp" s="448139">
+  <T n="allow_during_work_hours">False</T>
+  <V n="cooldown_data" t="node_cooldown">
+    <U n="node_cooldown">
+      <V n="duration" t="permanent" />
+    </U>
+  </V>
+  <V n="dialog_and_loot" t="dialog_multi_response">
+    <U n="dialog_multi_response">
+      <U n="dialog">
+        <E n="phone_ring_type">RING</E>
+        <V n="text" t="single">
+          <T n="single">0xDC08434E<!--String: "Word on the street is you have some magical watering abilities. May I come and be bestowed with your watering gifts?"--></T>
+        </V>
+      </U>
+      <L n="possible_responses">
+        <U>
+          <U n="item">
+            <L n="loot">
+              <T>448149<!--LootActions: Loot_Occult_Crosspack_HealingHelp_OptionA--></T>
+            </L>
+            <T n="text">0x7FE1D1C5<!--String: "Let me water you!"--></T>
+          </U>
+        </U>
+        <U>
+          <U n="item">
+            <L n="loot">
+              <T>448181<!--LootActions: loot_Occult_Crosspack_HealingHelp_OptionB--></T>
+            </L>
+            <T n="text">0x6086B132<!--String: "Water yourself!"--></T>
+          </U>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="min_and_max_times">
+    <T n="lower_bound">1</T>
+    <T n="upper_bound">24</T>
+  </U>
+  <L n="pretests">
+    <L>
+      <V t="bucks_perks_test">
+        <U n="bucks_perks_test">
+          <T n="bucks_perk">437335<!--BucksPerk: fairyPerks_NurtureNature_1--></T>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="scoring" t="enabled">
+    <U n="enabled">
+      <T n="base_score">500</T>
+    </U>
+  </V>
+  <V n="sender_sim_info" t="sim_filter">
+    <U n="sim_filter">
+      <T n="sim_filter">448142<!--TunableSimFilter: DramaNodeFilters_FairyOccult_Crosspack_HealingHelp--></T>
+    </U>
+  </V>
+  <V n="time_option" t="schedule">
+    <U n="schedule">
+      <L n="valid_times">
+        <U>
+          <U n="days_available">
+            <T n="0 SUNDAY">True</T>
+            <T n="1 MONDAY">True</T>
+            <T n="2 TUESDAY">True</T>
+            <T n="3 WEDNESDAY">True</T>
+            <T n="4 THURSDAY">True</T>
+            <T n="5 FRIDAY">True</T>
+            <T n="6 SATURDAY">True</T>
+          </U>
+          <T n="duration">12</T>
+          <U n="start_time">
+            <T n="hour">8</T>
+          </U>
+        </U>
+      </L>
+    </U>
+  </V>
+</I>

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Marbles_Anted_Winner" s="348850">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x2FFFF094<!--String: "(From Winning a Marbles Game)"--></T>
+          </V>
+          <T n="buff_type">348852<!--Buff: buff_Marbles_AnotherForTheCollection--></T>
+        </U>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InEP15\UI\Icons\Notification\notification_marblecollection.png">2f7d0004:00000000:d01d7b5421e6c90c</T>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xA866EC57<!--String: "High risk led to a high reward for this Sim! Bask in the victory. {0.SimFirstName} just acquired a new Marble as a reward for winning a game for keeps. Check it out in {0.SimPronounPossessiveDependent} inventory."--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x732B003D<!--String: "Playing for Keeps"--></T>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="actions">
+      <T n="actions">359582<!--RandomWeightedLoot: randomWeightedLoot_Marbles_Gained_TradeMarble--></T>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <V n="whitelist" t="enabled">
+            <L n="enabled">
+              <T>348866<!--Buff: buff_Marbles_Hidden_AntedPlayer_DuringGame--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

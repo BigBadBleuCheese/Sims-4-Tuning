@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="BusinessRule" i="business_rule" m="business.business_rule" n="Rule_PMI_NoPets_EP04" s="352253">
+  <T n="auto_resolve_time">0</T>
+  <T n="cooldown_time">1300</T>
+  <T n="fine">1000</T>
+  <T p="InGame\UI\Icons\UnitRules\UnitRules_NoPets.png" n="icon">2f7d0004:00000000:a960900190e7f51c</T>
+  <T n="loot_on_auto_resolved">340361<!--LootActions: loot_LandlordTenant_ViolateRules--></T>
+  <T n="loot_on_rule_broken">349357<!--LootActions: loot_PMI_NoPets--></T>
+  <T n="rule_description">0x5F639FC3<!--String: "This will prohibit tenants from having cats or dogs in their unit. That's right: no fuzzy wuzzies allowed!"--></T>
+  <T n="rule_name">0xC8DDEA12<!--String: "No Pets"--></T>
+  <L n="test_events">
+    <L>
+      <V t="household_size">
+        <U n="household_size">
+          <E n="participant">TargetHouseholdMembers</E>
+          <V n="test_type" t="test_sim_infos">
+            <U n="test_sim_infos">
+              <V n="test" t="sim_info">
+                <U n="sim_info">
+                  <E n="match_type">MATCH_ALL</E>
+                  <V n="species" t="specified">
+                    <U n="specified">
+                      <L n="species">
+                        <E>HORSE</E>
+                        <E>DOG</E>
+                        <E>CAT</E>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </U>
+          </V>
+          <V n="tooltip" t="disabled" />
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

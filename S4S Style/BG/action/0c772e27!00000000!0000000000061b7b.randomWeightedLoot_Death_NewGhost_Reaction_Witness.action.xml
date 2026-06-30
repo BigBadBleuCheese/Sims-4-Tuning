@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="RandomWeightedLoot" i="action" m="interactions.utils.loot" n="randomWeightedLoot_Death_NewGhost_Reaction_Witness" s="400251">
+  <L n="random_loot_actions">
+    <U>
+      <V n="action" t="reaction">
+        <U n="reaction">
+          <V n="si_reaction" t="enabled">
+            <U n="enabled">
+              <T n="affordance">400259<!--SuperInteraction: reaction_Death_NewGhost_Witness_Surprised--></T>
+              <E n="affordance_priority">High</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">4</T>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="reaction">
+        <U n="reaction">
+          <V n="si_reaction" t="enabled">
+            <U n="enabled">
+              <T n="affordance">400260<!--SuperInteraction: reaction_Death_NewGhost_Witness_Sad--></T>
+              <E n="affordance_priority">High</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <U n="weight">
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">8</T>
+            <L n="tests">
+              <L>
+                <V t="relationship">
+                  <U n="relationship">
+                    <U n="relationship_score_interval">
+                      <T n="lower_bound">50</T>
+                    </U>
+                    <T n="track">16651<!--RelationshipTrack: LTR_Romance_Main--></T>
+                  </U>
+                </V>
+              </L>
+              <L>
+                <V t="relationship">
+                  <U n="relationship">
+                    <U n="required_relationship_bits">
+                      <L n="match_any">
+                        <T>369543<!--RelationshipBitCollection: rbc_Romantic_HasRelationship--></T>
+                      </L>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="reaction">
+        <U n="reaction">
+          <V n="si_reaction" t="enabled">
+            <U n="enabled">
+              <T n="affordance">400261<!--SuperInteraction: reaction_Death_NewGhost_Witness_Happy--></T>
+              <E n="affordance_priority">High</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <U n="weight">
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">8</T>
+            <L n="tests">
+              <L>
+                <V t="relationship">
+                  <U n="relationship">
+                    <U n="relationship_score_interval">
+                      <T n="lower_bound">50</T>
+                    </U>
+                    <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+  </L>
+</I>

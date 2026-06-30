@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_EP20World_NPC_NPCDrama_Skip_RevealPositive" s="469769">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>TargetSim</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xD5EE4B0C<!--String: "Thanks for the stuff you said, I really do want to try to do better as a Sim. I'm done being a slob who doesn't care about what other people think—I'm going to try harder to be a person who cares for others. That's right, pal, I'm a Loyal Sim now!"--></T>
+            </V>
+            <V n="title" t="disabled" />
+            <E n="visual_type">SPEECH</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="trait_add">
+      <U n="trait_add">
+        <T n="trait">469750<!--Trait: trait_Hidden_EP20World_NPC_NPCDrama_Skip_finished--></T>
+      </U>
+    </V>
+    <V t="actions">
+      <T n="actions">11030<!--LootActions: Rel_Gain_Large--></T>
+    </V>
+    <V t="trait_remove">
+      <U n="trait_remove">
+        <E n="subject">TargetSim</E>
+        <V n="trait" t="specific_trait">
+          <U n="specific_trait">
+            <T n="specific_trait">16860<!--Trait: trait_Slob--></T>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="trait_add">
+      <U n="trait_add">
+        <E n="subject">TargetSim</E>
+        <T n="trait">311267<!--Trait: trait_Loyal--></T>
+      </U>
+    </V>
+  </L>
+</I>

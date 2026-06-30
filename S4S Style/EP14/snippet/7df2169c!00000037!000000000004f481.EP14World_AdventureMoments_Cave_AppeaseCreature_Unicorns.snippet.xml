@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="AdventureMoment" i="snippet" m="snippets" n="EP14World_AdventureMoments_Cave_AppeaseCreature_Unicorns" s="324737">
+  <U n="value">
+    <L n="_finish_actions">
+      <U>
+        <L n="action_results">
+          <U>
+            <L n="loot_actions">
+              <T>324785<!--LootActions: loot_EP14World_Rabbithole_Cave_AppeaseCreature_Unicorns_Success--></T>
+            </L>
+          </U>
+        </L>
+        <L n="availability_tests">
+          <L>
+            <V t="inventory">
+              <U n="inventory">
+                <V n="contents_check" t="has_object_with_def">
+                  <U n="has_object_with_def">
+                    <T n="definition">346669</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+        <V n="cost" t="item_cost">
+          <U n="item_cost">
+            <U n="item_cost">
+              <L n="ingredients">
+                <U>
+                  <T n="ingredient">346669</T>
+                </U>
+              </L>
+            </U>
+          </U>
+        </V>
+        <V n="display_text" t="single">
+          <T n="single">0x4FCECF3E<!--String: "Attempt to Appease Unicorn"--></T>
+        </V>
+      </U>
+      <U>
+        <L n="action_results">
+          <U>
+            <L n="loot_actions">
+              <T>324783<!--LootActions: loot_EP14World_Rabbithole_Cave_AppeaseCreature_Unicorns_Fail--></T>
+            </L>
+          </U>
+        </L>
+        <L n="availability_tests">
+          <L>
+            <V t="inventory">
+              <U n="inventory">
+                <V n="contents_check" t="has_object_with_def">
+                  <U n="has_object_with_def">
+                    <T n="definition">346669</T>
+                  </U>
+                </V>
+                <U n="required_count">
+                  <E n="comparison">EQUAL</E>
+                  <T n="value">0</T>
+                </U>
+              </U>
+            </V>
+          </L>
+        </L>
+        <V n="display_text" t="single">
+          <T n="single">0x4FCECF3E<!--String: "Attempt to Appease Unicorn"--></T>
+        </V>
+      </U>
+      <U>
+        <L n="action_results">
+          <U>
+            <L n="loot_actions">
+              <T>324784<!--LootActions: loot_EP14World_Rabbithole_Cave_AppeaseCreature_Unicorns_Neutral--></T>
+            </L>
+          </U>
+        </L>
+        <V n="display_text" t="single">
+          <T n="single">0x64C27925<!--String: "Leave"--></T>
+        </V>
+      </U>
+    </L>
+    <V n="_visibility" t="show_dialog">
+      <U n="show_dialog">
+        <V n="audio_sting" t="enabled">
+          <U n="enabled">
+            <T n="audio" p="InEP14\Audio\music\cave_chance_cards\bumper_ep14_cave_unicorn_apear.propx">39b2aa4a:00000000:6f841fb1dbd8db70</T>
+            <T n="immediate_audio">True</T>
+          </U>
+        </V>
+        <E n="dialog_bg_style">BG_CHANCE_CARD</E>
+        <E n="dialog_style">LARGE_ICON</E>
+        <V n="icon" t="enabled">
+          <V n="enabled" t="resource_key">
+            <U n="resource_key">
+              <T n="key" p="InEP14\UI\Icons\Dialog\ChanceCard_Unicorn.png">2f7d0004:00000000:d7eda63ae2fe7146</T>
+            </U>
+          </V>
+        </V>
+        <V n="text" t="single">
+          <T n="single">0x988F9E82<!--String: "Through a small crevice in the cave, a golden light shines. Peering through, a Unicorn majestically loiters in an underground cavern filled with green grass and trees, magical fruits, and an underground lake that sparkles with magic. The Unicorn looks expectantly at {0.SimFirstName}."--></T>
+        </V>
+      </U>
+    </V>
+  </U>
+</I>

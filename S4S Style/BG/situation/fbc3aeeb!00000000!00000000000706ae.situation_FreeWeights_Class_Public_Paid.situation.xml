@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="GuidedMeditationSituation" i="situation" m="situations.complex.guided_meditation_situation" n="situation_FreeWeights_Class_Public_Paid" s="460462">
+  <T n="_class_member_job">460464<!--SituationJob: situationJob_FreeWeights_Class_Student--></T>
+  <T n="_instructor_job">460465<!--SituationJob: situationJob_FreeWeights_Class_Instructor--></T>
+  <U n="class_invite_situation_tag_blacklist">
+    <L n="situation_tags">
+      <E>Situation_Firefighter</E>
+    </L>
+  </U>
+  <V n="class_member_requirement" t="disabled" />
+  <T n="duration">0</T>
+  <U n="in_class_state">
+    <L n="job_and_role_changes">
+      <U>
+        <T n="Situation Job">460464<!--SituationJob: situationJob_FreeWeights_Class_Student--></T>
+        <T n="Role State">460270<!--RoleState: roleState_FreeWeights_InClass_Student--></T>
+      </U>
+      <U>
+        <T n="Situation Job">460465<!--SituationJob: situationJob_FreeWeights_Class_Instructor--></T>
+        <T n="Role State">460272<!--RoleState: roleState_FreeWeights_InClass_Instructor--></T>
+      </U>
+    </L>
+    <V n="time_out" t="enabled">
+      <T n="enabled">30</T>
+    </V>
+  </U>
+  <T n="instructor_in_position_interaction">460346<!--SuperInteraction: superInteraction_FreeWeights_Class_WaitForStart_Instructor--></T>
+  <U n="member_situation_job_test">
+    <T n="negate">True</T>
+    <L n="situation_jobs">
+      <T>460465<!--SituationJob: situationJob_FreeWeights_Class_Instructor--></T>
+      <T>460464<!--SituationJob: situationJob_FreeWeights_Class_Student--></T>
+    </L>
+  </U>
+  <T n="num_picked_sim_participants_for_post_class_loots">1</T>
+  <U n="number_of_npc_class_members">
+    <T n="lower_bound">0</T>
+    <T n="upper_bound">0</T>
+  </U>
+  <U n="picked_sim_weights">
+    <L n="modifiers">
+      <U>
+        <L n="tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="ages" t="specified" />
+              </U>
+            </V>
+          </L>
+          <L>
+            <V t="skill_test">
+              <U n="skill_test">
+                <T n="skill">16659<!--Skill: skill_Fitness--></T>
+                <V n="skill_range" t="interval">
+                  <U n="interval">
+                    <U n="skill_interval">
+                      <T n="lower_bound">2</T>
+                    </U>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </L>
+  </U>
+  <L n="post_class_loots">
+    <T>492358<!--LootActions: loot_FreeWeights_Payment--></T>
+  </L>
+  <U n="post_class_state">
+    <U n="situation_state">
+      <T n="allow_join_situation">False</T>
+      <L n="job_and_role_changes">
+        <U>
+          <T n="Situation Job">460464<!--SituationJob: situationJob_FreeWeights_Class_Student--></T>
+          <T n="Role State">474239<!--RoleState: roleState_FreeWeights_PostClass_Student--></T>
+        </U>
+        <U>
+          <T n="Situation Job">460465<!--SituationJob: situationJob_FreeWeights_Class_Instructor--></T>
+          <T n="Role State">460273<!--RoleState: roleState_FreeWeights_PostClass_Instructor--></T>
+        </U>
+      </L>
+    </U>
+    <T n="time_out">10</T>
+  </U>
+  <U n="pre_class_state">
+    <U n="situation_state">
+      <L n="job_and_role_changes">
+        <U>
+          <T n="Situation Job">460464<!--SituationJob: situationJob_FreeWeights_Class_Student--></T>
+          <T n="Role State">460269<!--RoleState: roleState_FreeWeights_PreClass_Student--></T>
+        </U>
+        <U>
+          <T n="Situation Job">460465<!--SituationJob: situationJob_FreeWeights_Class_Instructor--></T>
+          <T n="Role State">460271<!--RoleState: roleState_FreeWeights_PreClass_Instructor--></T>
+        </U>
+      </L>
+    </U>
+    <T n="time_out">5</T>
+  </U>
+  <V n="situation_end_time_string" t="show_end_time">
+    <T n="show_end_time">0xA3E17143<!--String: "Work day ends at {0.TimeShort}"--></T>
+  </V>
+  <L n="tags">
+    <E>Situation_Freeweight_Class</E>
+  </L>
+  <T n="use_instructor_staffed_object_as_target_object">True</T>
+</I>

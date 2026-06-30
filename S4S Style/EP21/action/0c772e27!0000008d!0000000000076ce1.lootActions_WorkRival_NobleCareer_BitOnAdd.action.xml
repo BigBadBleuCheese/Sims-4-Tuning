@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="lootActions_WorkRival_NobleCareer_BitOnAdd" s="486625">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="audio_sting" t="enabled">
+              <U n="enabled">
+                <T n="audio" p="InGame\Audio\Stings\base_sting.propx">39b2aa4a:00000000:5d8113c3809b3850</T>
+                <T n="immediate_audio">True</T>
+              </U>
+            </V>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>TargetSim</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xB78B8A10<!--String: "Ugh, who does {1.SimNameWithPrefix} think they are?! {0.SimFirstName} hates seeing their smug face at Court, and whether {1.SimFirstNameWithPrefix} knows it or not, it's the start of a Noble rivalry!\n\n{0.SimFirstName} won't be able to earn promotions until this matter is resolved. {0.SimPronounSubjective|xxUpper} can try befriending or sabotaging {1.SimFirstNameWithPrefix} to remedy the problem. Resolving the matters in person is also an option, whether {0.SimPronounSubjective} chooses to be friendly or try more...creative solutions."--></T>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="participant_type" />
+                  <V t="participant_type">
+                    <U n="participant_type">
+                      <V n="objects" t="from_participant">
+                        <U n="from_participant">
+                          <E n="participant">TargetSim</E>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0xE7F7DDA1<!--String: "A Noble Rivalry Ensues"--></T>
+            </V>
+            <E n="urgency">URGENT</E>
+          </U>
+        </V>
+        <E n="subject">ActorHouseholdMembers</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="is_active_sim" t="enabled" />
+                <V n="npc" t="enabled">
+                  <T n="enabled">False</T>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="relationship_set">
+        <U n="relationship_set">
+          <L n="subject">
+            <E>Actor</E>
+          </L>
+          <L n="target_participant_type">
+            <E>TargetSim</E>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="relationship">
+                <U n="relationship">
+                  <U n="relationship_score_interval">
+                    <T n="lower_bound">-35</T>
+                  </U>
+                  <L n="subject">
+                    <E>Actor</E>
+                  </L>
+                  <L n="target_sim">
+                    <E>TargetSim</E>
+                  </L>
+                  <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+                </U>
+              </V>
+            </L>
+          </L>
+          <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+          <T n="value">-35</T>
+        </U>
+      </V>
+    </V>
+  </L>
+</I>

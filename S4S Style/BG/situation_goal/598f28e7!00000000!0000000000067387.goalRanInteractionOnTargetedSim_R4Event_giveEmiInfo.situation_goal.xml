@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalRanInteractionOnTargetedSim" i="situation_goal" m="situations.situation_goal_targeted_sim" n="goalRanInteractionOnTargetedSim_R4Event_giveEmiInfo" s="422791">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T n="enabled" p="InGame\UI\Icons\Events\EventGoal_Socialize.png">2f7d0004:00000000:21835a4b8238b2fa</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x3937608C<!--String: "Report Back to Emit"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0x3F98D1AC<!--String: "The discovery in the archives of the capsule and the note—someone is clearly leaping through time and taking items!\n\nSelect Report about Time Capsule on Emit.\n\nYou can find him at Magnolia Blossom Park, or select the Social category on the Phone to Invite Over Emit.\n\n<i>(+25 Event Points)</i>"--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>447711<!--SituationGoalLootActions: liveEvent_GoalLoot_CompleteQuestGoal--></T>
+  </L>
+  <U n="_goal_test">
+    <L n="affordances">
+      <T>423836<!--SocialMixerInteraction: socials_Targeted_Friendly_AlwaysOn_STC_Events_R4_GiveEmitInfo--></T>
+    </L>
+    <L n="tags" />
+    <E n="test_event">InteractionComplete</E>
+  </U>
+  <L n="_post_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+      </U>
+    </V>
+  </L>
+  <T n="_score">0</T>
+  <T n="_select_all_instantiated_sims">True</T>
+  <L n="_target_tests">
+    <V t="trait">
+      <U n="trait">
+        <L n="whitelist_traits">
+          <T>406958<!--Trait: trait_isEmit--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+  <V n="goal_completion_notification" t="disabled" />
+</I>

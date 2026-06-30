@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="ObjectRoutingBehavior" i="snippet" m="routing.object_routing.object_routing_behavior" n="objectRoutingBehavior_AnimalObjects_GoatSheep_GardenHelp_Goat" s="304867">
+  <E n="object_routing_priority">HIGH</E>
+  <V n="route" t="from_target_object">
+    <U n="from_target_object">
+      <L n="constraints">
+        <V t="circle">
+          <U n="circle">
+            <T n="ideal_radius">0.8</T>
+            <T n="ideal_radius_width">0.2</T>
+            <T n="multi_surface">True</T>
+            <T n="radius">1.7</T>
+            <T n="require_los">True</T>
+          </U>
+        </V>
+        <V t="facing" />
+        <V t="line_of_sight">
+          <U n="line_of_sight">
+            <T n="multi_surface">True</T>
+            <V n="temporary_los" t="enabled" />
+          </U>
+        </V>
+      </L>
+      <V n="radius" t="enabled">
+        <T n="enabled">75</T>
+      </V>
+      <L n="route_fail_loot">
+        <T>256635<!--LootActions: loot_animalObjects_Stop--></T>
+      </L>
+      <U n="target_action_rules">
+        <L n="actions">
+          <U>
+            <L n="actions">
+              <V t="play_animation">
+                <U n="play_animation">
+                  <U n="animation">
+                    <T n="reference">320919<!--ObjectAnimationElement: animalObjects_Idles_GoatSheep_Eat--></T>
+                  </U>
+                </U>
+              </V>
+              <V t="apply_loot">
+                <U n="apply_loot">
+                  <L n="loot_actions">
+                    <T>183181<!--LootActions: Garden_BugSprayed_Loot--></T>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </U>
+        </L>
+        <T n="cancel_if_route_incomplete">True</T>
+      </U>
+      <L n="target_selection_test">
+        <L>
+          <V t="state_white_black">
+            <U n="state_white_black">
+              <U n="states">
+                <V n="whitelist" t="specify">
+                  <U n="specify">
+                    <L n="whitelist">
+                      <T>15236<!--CommodityBasedObjectStateValue: Infested_2_Sprayable--></T>
+                      <T>15235<!--CommodityBasedObjectStateValue: Infested_1_BugsLightYellow--></T>
+                      <T>15234<!--CommodityBasedObjectStateValue: Infested_0_BugsHeavyRed--></T>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </U>
+          </V>
+          <V t="state">
+            <U n="state">
+              <V n="fallback_behavior" t="always_pass" />
+              <T n="value">432856<!--ObjectStateValue: state_PottedPlants_OnPot_False--></T>
+            </U>
+          </V>
+          <V t="state">
+            <U n="state">
+              <V n="fallback_behavior" t="always_pass" />
+              <T n="value">234576<!--ObjectStateValue: gardenPlant_OnVerticalGarden_Off--></T>
+            </U>
+          </V>
+        </L>
+      </L>
+      <V n="target_type" t="object">
+        <U n="object">
+          <L n="tags">
+            <E>Func_Gardening</E>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="success_loot">
+    <T>263264<!--LootActions: loot_AnimalObjects_StartWalk--></T>
+  </L>
+</I>

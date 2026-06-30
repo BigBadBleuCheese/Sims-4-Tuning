@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_MidlifeCrisis_Active_Start_Create" s="313574">
+  <L n="loot_actions">
+    <V t="statistics">
+      <V n="statistics" t="statistic_add">
+        <U n="statistic_add">
+          <T n="stat">313899<!--Commodity: commodity_MidlifeCrisis_Active_DesiretoCreate--></T>
+        </U>
+      </V>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_remove">
+        <U n="statistic_remove">
+          <T n="stat">313265<!--Commodity: commodity_MidlifeCrisis_Leadup--></T>
+        </U>
+      </V>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_add">
+        <U n="statistic_add">
+          <T n="stat">317417<!--Commodity: commodity_MidlifeCrisis_Hidden_ObjRefresh--></T>
+        </U>
+      </V>
+    </V>
+    <V t="timed_aspiration">
+      <U n="timed_aspiration">
+        <T n="aspiration">313959<!--TimedAspiration: midlifeCrisis_Active_DesiretoCreate--></T>
+        <V n="operation" t="timed_aspiration_activate" />
+      </U>
+    </V>
+    <V t="reaction">
+      <U n="reaction">
+        <V n="si_reaction" t="enabled">
+          <U n="enabled">
+            <T n="affordance">313560<!--SuperInteraction: MidlifeCrisis_ContemplateLife--></T>
+            <E n="affordance_priority">High</E>
+            <V n="affordance_target" t="disabled" />
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InEP13\UI\Icons\Headlines\headline_MidlifeGenericIcon.png">2f7d0004:00000000:fb58faa6ad6e44b0</T>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant" />
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xCA645034<!--String: "{0.SimFirstName} has hit the breaking point in life! The daily grind of life has burnt {0.SimPronounObjective} out and now {0.SimPronounSubjective} has an intense desire to become a modern-day creative deity! On the plus side, any item {0.SimFirstName} creates will be one level higher in quality during this period. Check the Aspiration Panel for {0.SimFirstName}'s Midlife Crisis desires and complete them to decrease the duration of the Midlife Crisis! Desires are optional and are replaced with a new one when completed."--></T>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="participant_type" />
+                </L>
+              </U>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x11EFA432<!--String: "Midlife Crisis Alert!"--></T>
+            </V>
+            <L n="ui_responses">
+              <U>
+                <T n="text">0xF8492AC3<!--String: "Open Aspiration Panel"--></T>
+                <E n="ui_request">SHOW_ASPIRATION_PANEL</E>
+              </U>
+            </L>
+            <E n="visual_type">SPECIAL_MOMENT</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="actions">
+      <T n="actions">318610<!--LootActions: loot_MidlifeCrisis_ObjectivePicker_Initial_Create--></T>
+    </V>
+  </L>
+</I>

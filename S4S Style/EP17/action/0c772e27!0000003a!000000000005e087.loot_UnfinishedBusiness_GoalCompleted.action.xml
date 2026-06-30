@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_UnfinishedBusiness_GoalCompleted" s="385159">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x36F87A41<!--String: "(From Completed Bucket List Goal)"--></T>
+          </V>
+          <T n="buff_type">385161<!--Buff: buff_UnfinishedBusiness_Visible_Scratch--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <L n="blacklist_traits">
+                  <T>381402<!--Trait: trait_IsGhost--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x25DD365E<!--String: "(From Completed Unfinished Business Goal)"--></T>
+          </V>
+          <T n="buff_type">402668<!--Buff: buff_UnfinishedBusiness_Visible_Finished--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <L n="whitelist_traits">
+                  <T>381402<!--Trait: trait_IsGhost--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="reaction">
+      <U n="reaction">
+        <V n="si_reaction" t="enabled">
+          <U n="enabled">
+            <T n="affordance">381804<!--SuperInteraction: unfinishedBusiness_GoalComplete--></T>
+            <E n="affordance_priority">High</E>
+            <V n="affordance_target" t="disabled" />
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="actions">
+      <T n="actions">378660<!--LootActions: loot_MovingOn_SoulsJourneyIncrease_Regular--></T>
+    </V>
+  </L>
+</I>

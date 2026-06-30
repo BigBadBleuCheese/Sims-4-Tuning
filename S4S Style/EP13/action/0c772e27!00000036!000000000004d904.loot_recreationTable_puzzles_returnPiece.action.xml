@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_recreationTable_puzzles_returnPiece" s="317700">
+  <L n="loot_actions">
+    <V t="object_relationship">
+      <U n="object_relationship">
+        <T n="amount_to_add">-100</T>
+        <T n="remove_relationship">False</T>
+        <L n="tests">
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">305429<!--Statistic: statistic_Object_recreationTable_puzzles_pieceStolen--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">GREATER</E>
+                    <T n="value">1</T>
+                  </U>
+                </V>
+                <E n="who">Object</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="object_relationship">
+      <U n="object_relationship">
+        <T n="amount_to_add">-50</T>
+        <L n="tests">
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">305429<!--Statistic: statistic_Object_recreationTable_puzzles_pieceStolen--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">EQUAL</E>
+                    <T n="value">1</T>
+                  </U>
+                </V>
+                <E n="who">Object</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">-1</T>
+          <T n="stat">305429<!--Statistic: statistic_Object_recreationTable_puzzles_pieceStolen--></T>
+          <L n="subject">
+            <E>Object</E>
+          </L>
+        </U>
+      </V>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x752F3277<!--String: "(From Returning a Stolen Puzzle Piece)"--></T>
+          </V>
+          <T n="buff_type">308440<!--Buff: buff_recreationTable_puzzles_replaceFinalPiece--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="object_relationship">
+              <U n="object_relationship">
+                <V n="relationship_status" t="relationship_range">
+                  <U n="relationship_range">
+                    <U n="value_interval">
+                      <T n="lower_bound">50</T>
+                      <T n="upper_bound">50</T>
+                    </U>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="state">
+              <U n="state">
+                <T n="value">307997<!--ObjectStateValue: recreationTable_puzzles_crafting_finished--></T>
+                <E n="who">ObjectParent</E>
+              </U>
+            </V>
+            <V t="state">
+              <U n="state">
+                <E n="operator">NOTEQUAL</E>
+                <T n="value">318116<!--ObjectStateValue: recreationTable_puzzles_smashed_true--></T>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="state_change">
+      <U n="state_change">
+        <T n="state_value">318182<!--ObjectStateValue: recreationTable_puzzles_pieceStolen_false_finished--></T>
+        <V n="subject" t="participant">
+          <E n="participant">Object</E>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">305429<!--Statistic: statistic_Object_recreationTable_puzzles_pieceStolen--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">EQUAL</E>
+                    <T n="value">0</T>
+                  </U>
+                </V>
+                <E n="who">Object</E>
+              </U>
+            </V>
+            <V t="state">
+              <U n="state">
+                <T n="value">318109<!--ObjectStateValue: recreationTable_puzzles_pieceStolen_true--></T>
+              </U>
+            </V>
+            <V t="state">
+              <U n="state">
+                <T n="value">307997<!--ObjectStateValue: recreationTable_puzzles_crafting_finished--></T>
+                <E n="who">ObjectParent</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

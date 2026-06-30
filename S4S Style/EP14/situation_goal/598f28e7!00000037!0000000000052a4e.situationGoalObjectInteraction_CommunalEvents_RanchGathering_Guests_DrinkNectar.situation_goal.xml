@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalObjectInteraction" i="situation_goal" m="situations.situation_goal_object_interaction" n="situationGoalObjectInteraction_CommunalEvents_RanchGathering_Guests_DrinkNectar" s="338510">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T n="enabled" p="InEP14\UI\Icons\Events\EventGoal_DrinkNectar.png">2f7d0004:00000000:44494407926901ce</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x15943871<!--String: "Have Guests Drink Nectar"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0xF3FE9002<!--String: "Ensure Nectar Bottles or Nectar Glasses are readily available and Guests will naturally drink. If Nectar isn't available use the Nectar Maker to Craft Nectar. "--></T>
+      </V>
+    </U>
+  </V>
+  <U n="_goal_test">
+    <L n="affordances">
+      <T>13431<!--SuperInteraction: generic_consume_drink_bar--></T>
+      <T>347128<!--SuperInteraction: generic_consume_drink_bar_RanchNectar--></T>
+    </L>
+    <E n="test_event">InteractionComplete</E>
+  </U>
+  <T n="_iterations">3</T>
+  <L n="_post_tests">
+    <V t="situation_job">
+      <U n="situation_job">
+        <L n="situation_jobs">
+          <T>330679<!--SituationJob: communalEvents_Job_Guests--></T>
+        </L>
+      </U>
+    </V>
+    <V t="object_criteria">
+      <U n="object_criteria">
+        <V n="identity_test" t="tags">
+          <U n="tags">
+            <L n="tag_set">
+              <E>Func_Nectar</E>
+              <E>Func_RanchNectar_Bottle</E>
+            </L>
+          </U>
+        </V>
+        <T n="owned">False</T>
+        <V n="subject_specific_tests" t="single_object" />
+      </U>
+    </V>
+  </L>
+  <T n="_score">30</T>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+</I>

@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="kayak_GetIn" s="447048">
+  <V n="_saveable" t="enabled" />
+  <L n="_static_commodities">
+    <U>
+      <T n="static_commodity">450515<!--StaticCommodity: staticCommodity_RoleAutonomy_EP20Festival_GlowAndFlow_NPC--></T>
+    </U>
+    <U>
+      <T n="static_commodity">450018<!--StaticCommodity: staticCommodity_RoleAutonomy_EP20Festival_FashionAndFitness_NPC--></T>
+    </U>
+  </L>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <V n="basic_reserve_object" t="enabled">
+    <U n="enabled">
+      <L n="subject_list">
+        <U>
+          <V n="reserve_type" t="all" />
+        </U>
+      </L>
+    </U>
+  </V>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x900FEB93<!--String: "Sit on {1.ObjectName}"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="continuation">
+          <U>
+            <T n="affordance">447044<!--SuperInteraction: generic_Kayak_Sit--></T>
+          </U>
+        </L>
+      </U>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T n="key" p="InGame\UI\Icons\PieMenu\Interactions\icon_pieMenu_postureSit.png">2f7d0004:00000000:72eeed089a25dfef</T>
+      </U>
+    </V>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="include_all">
+        <U n="include_all">
+          <L n="exclude_affordances">
+            <T>271032<!--SuperInteraction: socialSuperInteraction_CarryPickUp_Infant--></T>
+            <T>271090<!--SuperInteraction: socialSuperInteraction_CarryPickUp_Infant_Back--></T>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="state">
+      <U n="state">
+        <T n="value">447064<!--ObjectStateValue: kayak_Values_Rider_Off--></T>
+      </U>
+    </V>
+    <V t="location">
+      <U n="location">
+        <U n="location_tests">
+          <V n="valid_surface_types" t="Test_Surface_Types">
+            <U n="Test_Surface_Types">
+              <V n="whitelist" t="specify">
+                <U n="specify">
+                  <L n="whitelist">
+                    <E>SURFACETYPE_POOL</E>
+                  </L>
+                </U>
+              </V>
+            </U>
+          </V>
+        </U>
+        <E n="subject">Object</E>
+      </U>
+    </V>
+    <V t="wading_interval_test">
+      <U n="wading_interval_test">
+        <V n="test" t="swim_here" />
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xC210C14B<!--String: "Kayak must be placed in swimmable water to do this."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

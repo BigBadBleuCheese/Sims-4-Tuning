@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="BasicFestivalOpenStreetDirector" i="open_street_director" m="open_street_director.basic_festival" n="festivals_EP17_OpenStreetDirector_TreeSpree" s="385428">
+  <U n="cleanup_festival_state">
+    <L n="_conditional_layers">
+      <T>385430<!--ConditionalLayer: conditionalLayer_EP17Festival_TreeSpree--></T>
+      <T>420579<!--ConditionalLayer: conditionalLayer_EP17Festival_TreeSpree_Client--></T>
+    </L>
+  </U>
+  <U n="cooldown_festival_state">
+    <V n="notification" t="enabled">
+      <V n="enabled" t="literal">
+        <U n="literal">
+          <V n="text" t="single">
+            <T n="single">0x8A4DBD8<!--String: "The festival will end in 1 hour. Finish up any activities before it closes. Be sure to come back the next time the festival is in town!"--></T>
+          </V>
+        </U>
+      </V>
+    </V>
+  </U>
+  <U n="main_festival_state">
+    <T n="_duration">420</T>
+    <L n="_situations">
+      <U>
+        <T n="number_of_situations">3</T>
+        <L n="situations">
+          <U>
+            <T n="situation">390038<!--GenericOneStateFestivalAttendeeSituation: EP17Festival_TreeSpree_Ghost--></T>
+          </U>
+        </L>
+      </U>
+      <U>
+        <T n="number_of_situations">2</T>
+        <L n="situations">
+          <U>
+            <T n="situation">390039<!--GenericOneStateFestivalAttendeeSituation: EP17Festival_TreeSpree_NonGhost--></T>
+          </U>
+        </L>
+      </U>
+      <U>
+        <L n="situations">
+          <U>
+            <T n="situation">390031<!--EmployeeFestivalSituationState: eP17Festival_Employee_ShadyMerchant--></T>
+          </U>
+        </L>
+      </U>
+      <U>
+        <L n="situations">
+          <U>
+            <T n="situation">390030<!--EmployeeFestivalSituationState: eP17Festival_Employee_TarotReader--></T>
+          </U>
+        </L>
+      </U>
+      <U>
+        <L n="situations">
+          <U>
+            <T n="situation">403494<!--EmployeeFestivalSituationState: eP17Festival_Employee_GrimUnderling--></T>
+          </U>
+        </L>
+      </U>
+      <U>
+        <L n="situations">
+          <U>
+            <T n="situation">426256<!--EmployeeFestivalSituationState: EP17Festival_TreeSpree_Employee_TheCollector--></T>
+          </U>
+          <U>
+            <T n="situation">427103<!--EmployeeFestivalSituationState: eP17Festival_Employee_TreeSpree_Employee_TheCollector_Tarot--></T>
+            <T n="weight">2</T>
+          </U>
+        </L>
+      </U>
+    </L>
+  </U>
+  <L n="npc_summoning_behavior">
+    <U>
+      <E n="key">DEFAULT</E>
+      <V n="value" t="create_situation">
+        <U n="create_situation">
+          <T n="situation_job">208913<!--SituationJob: OpenStreetEvent_PlayerSim--></T>
+          <T n="situation_to_create">208912<!--SingleJobSituation: OpenStreetEvent_TravelWithNPC--></T>
+        </U>
+      </V>
+    </U>
+  </L>
+  <V n="reactionary_whim_set" t="enabled">
+    <T n="enabled">385432<!--ObjectivelessWhimSet: whimSet_EP17Festival_TreeSpree--></T>
+  </V>
+  <U n="spinup_festival_state">
+    <L n="_conditional_layers">
+      <T>385430<!--ConditionalLayer: conditionalLayer_EP17Festival_TreeSpree--></T>
+      <T>420579<!--ConditionalLayer: conditionalLayer_EP17Festival_TreeSpree_Client--></T>
+    </L>
+    <L n="_situations">
+      <U>
+        <L n="situations">
+          <U>
+            <T n="situation">403494<!--EmployeeFestivalSituationState: eP17Festival_Employee_GrimUnderling--></T>
+          </U>
+        </L>
+      </U>
+      <U>
+        <L n="situations">
+          <U>
+            <T n="situation">426256<!--EmployeeFestivalSituationState: EP17Festival_TreeSpree_Employee_TheCollector--></T>
+          </U>
+          <U>
+            <T n="situation">427103<!--EmployeeFestivalSituationState: eP17Festival_Employee_TreeSpree_Employee_TheCollector_Tarot--></T>
+            <T n="weight">2</T>
+          </U>
+        </L>
+      </U>
+    </L>
+  </U>
+</I>

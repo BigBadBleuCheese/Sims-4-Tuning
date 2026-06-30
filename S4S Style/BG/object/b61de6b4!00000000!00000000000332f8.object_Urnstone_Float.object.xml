@@ -1,0 +1,462 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="GameObject" i="object" m="objects.game_object" n="object_Urnstone_Float" s="209656">
+  <U n="_components">
+    <V n="focus" t="enabled">
+      <U n="enabled">
+        <V n="_focus_score" t="globally">
+          <U n="globally">
+            <E n="base">MEDIUM</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V n="idle_component" t="enabled">
+      <U n="enabled">
+        <L n="idle_animation_map">
+          <U>
+            <T n="key">212702<!--ObjectStateValue: floatingUrn_OnWater--></T>
+            <T n="value">212699<!--ObjectAnimationElement: floatingUrn_Float--></T>
+          </U>
+          <U>
+            <T n="key">212703<!--ObjectStateValue: floatingUrn_OnLand--></T>
+            <T n="value">212700<!--ObjectAnimationElement: floatingUrn_OnLand--></T>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V n="inventory_item" t="enabled">
+      <U n="enabled">
+        <V n="no_carry_add_to_sim_inventory_affordances" t="OVERRIDE">
+          <L n="OVERRIDE">
+            <T>111335<!--SuperInteraction: si_SwipeUrnstoneIntoSimInventory--></T>
+            <T>210068<!--SuperInteraction: si_SwipeFloatingUrnStoneAndSetOwnership--></T>
+          </L>
+        </V>
+        <T n="skip_carry_pose">True</T>
+        <E n="stack_scheme">NONE</E>
+        <L n="valid_inventory_types">
+          <E>SIM</E>
+          <E>STORAGE_CHEST_DORM</E>
+          <E>CRYPT</E>
+          <E>BURIALCASKET</E>
+        </L>
+      </U>
+    </V>
+    <V n="name" t="enabled">
+      <U n="enabled">
+        <V n="affordance" t="enabled">
+          <T n="enabled">13887<!--RenameImmediateInteraction: rename_EngraveEpitaph--></T>
+        </V>
+        <T n="allow_description">True</T>
+        <T n="allow_name">False</T>
+      </U>
+    </V>
+    <V n="object_relationships" t="enabled">
+      <U n="enabled">
+        <V n="number_of_allowed_relationships" t="enabled">
+          <T n="enabled">2</T>
+        </V>
+        <T n="relationship_stat">132465<!--Statistic: statistic_Object_Staff_Assigned_Relationship_BG--></T>
+      </U>
+    </V>
+    <V n="state" t="enabled">
+      <U n="enabled">
+        <L n="state_triggers">
+          <U>
+            <L n="at_states">
+              <T>15432<!--ObjectStateValue: UrnstoneType_Tombstone--></T>
+              <T>15433<!--ObjectStateValue: UrnstoneType_Urn--></T>
+              <T>100384<!--ObjectStateValue: UrnstoneType_Default--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>212703<!--ObjectStateValue: floatingUrn_OnLand--></T>
+              </L>
+            </V>
+            <E n="trigger_operation">OR</E>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>209646<!--ObjectStateValue: urnstoneType_Floating--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>212702<!--ObjectStateValue: floatingUrn_OnWater--></T>
+                <T>386213<!--ObjectStateValue: urnstonePlus_SecondaryType_Default--></T>
+              </L>
+            </V>
+          </U>
+        </L>
+        <L n="states">
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">100384<!--ObjectStateValue: UrnstoneType_Default--></T>
+              </U>
+              <U>
+                <T n="key">15432<!--ObjectStateValue: UrnstoneType_Tombstone--></T>
+                <U n="value">
+                  <V n="model" t="apply_new_value">
+                    <V n="apply_new_value" t="set_to_custom_model">
+                      <U n="set_to_custom_model">
+                        <V n="model" t="from_definition">
+                          <U n="from_definition">
+                            <T n="apply_definition">True</T>
+                            <T n="definition">218640</T>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">15433<!--ObjectStateValue: UrnstoneType_Urn--></T>
+                <U n="value">
+                  <V n="model" t="apply_new_value">
+                    <V n="apply_new_value" t="set_to_custom_model">
+                      <U n="set_to_custom_model">
+                        <V n="model" t="from_definition">
+                          <U n="from_definition">
+                            <T n="apply_definition">True</T>
+                            <T n="definition">218641</T>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">209646<!--ObjectStateValue: urnstoneType_Floating--></T>
+                <U n="value">
+                  <V n="model" t="apply_new_value">
+                    <V n="apply_new_value" t="set_to_custom_model">
+                      <U n="set_to_custom_model">
+                        <V n="model" t="from_definition">
+                          <U n="from_definition">
+                            <T n="definition">216930</T>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </V>
+                </U>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">209646<!--ObjectStateValue: urnstoneType_Floating--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">378792<!--ObjectStateValue: urnstoneOccupation_Occupied--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">35297<!--ObjectStateValue: GenericOnOff_Off--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">386213<!--ObjectStateValue: urnstonePlus_SecondaryType_Default--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">386531<!--ObjectStateValue: urnstonePlus_Autoswitch_On--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">212702<!--ObjectStateValue: floatingUrn_OnWater--></T>
+            </V>
+          </U>
+        </L>
+        <V n="unique_state_changes" t="enabled">
+          <U n="enabled">
+            <T n="natural_ground_placement_lock">386532<!--ObjectStateValue: urnstonePlus_Autoswitch_Off--></T>
+            <T n="off_natural_ground_placement_state">15433<!--ObjectStateValue: UrnstoneType_Urn--></T>
+            <T n="on_natural_ground_placement_state">15432<!--ObjectStateValue: UrnstoneType_Tombstone--></T>
+            <L n="surface_type_placement_states">
+              <U>
+                <E n="key">SURFACETYPE_POOL</E>
+                <T n="value">209646<!--ObjectStateValue: urnstoneType_Floating--></T>
+              </U>
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V n="tooltip_component" t="enabled">
+      <U n="enabled">
+        <L n="custom_tooltips">
+          <U>
+            <L n="object_tests">
+              <L>
+                <V t="custom_name">
+                  <U n="custom_name">
+                    <V n="has_custom_description" t="enabled" />
+                  </U>
+                </V>
+                <V t="existence">
+                  <U n="existence">
+                    <E n="participant">StoredSimOrNameData</E>
+                  </U>
+                </V>
+              </L>
+            </L>
+            <L n="tooltip_fields">
+              <U>
+                <E n="key">recipe_description</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0xE2E9872D<!--String: "{0.ObjectDescription}"--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">Object</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <E n="key">recipe_name</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x58FCF93F<!--String: "{0.SimName}"--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">StoredSimOrNameData</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+            </L>
+            <E n="tooltip_style">HOVER_TIP_CUSTOM_OBJECT</E>
+          </U>
+          <U>
+            <L n="object_tests">
+              <L>
+                <V t="custom_name">
+                  <U n="custom_name">
+                    <V n="has_custom_description" t="enabled">
+                      <T n="enabled">False</T>
+                    </V>
+                  </U>
+                </V>
+                <V t="existence">
+                  <U n="existence">
+                    <E n="participant">StoredSimOrNameData</E>
+                  </U>
+                </V>
+              </L>
+            </L>
+            <L n="tooltip_fields">
+              <U>
+                <E n="key">recipe_description</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x4CE37F7F<!--String: "R.I.P."--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">StoredSim</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <E n="key">recipe_name</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x58FCF93F<!--String: "{0.SimName}"--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">StoredSimOrNameData</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+            </L>
+            <E n="tooltip_style">HOVER_TIP_CUSTOM_OBJECT</E>
+          </U>
+          <U>
+            <L n="object_tests">
+              <L>
+                <V t="custom_name">
+                  <U n="custom_name">
+                    <V n="has_custom_description" t="enabled" />
+                  </U>
+                </V>
+                <V t="existence">
+                  <U n="existence">
+                    <T n="exists">False</T>
+                    <E n="participant">StoredSimOrNameData</E>
+                  </U>
+                </V>
+              </L>
+            </L>
+            <L n="tooltip_fields">
+              <U>
+                <E n="key">recipe_description</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0xE2E9872D<!--String: "{0.ObjectDescription}"--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">Object</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+            </L>
+            <E n="tooltip_style">HOVER_TIP_CUSTOM_OBJECT</E>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V n="unique_object_component" t="enabled">
+      <U n="enabled">
+        <V n="unique_type" t="death_object" />
+      </U>
+    </V>
+  </U>
+  <U n="_components_native">
+    <V n="Slot" t="enabled">
+      <U n="enabled">
+        <T n="overwrite_sim_info_of_parent">True</T>
+      </U>
+    </V>
+  </U>
+  <L n="_super_affordances">
+    <T>13328<!--ImmediateSuperInteraction: debug_Reset--></T>
+    <T>13326<!--ImmediateSuperInteraction: debug_ObjectDestroy--></T>
+    <T>103888<!--ImmediateSuperInteraction: cheat_set_as_head--></T>
+    <T>14498<!--AggregateSuperInteraction: urnstone_MournAggregate--></T>
+    <T>31621<!--SuperInteraction: urnstone_Release--></T>
+    <T>14503<!--SuperInteraction: urnstone_Resurrect--></T>
+    <T>152727<!--SuperInteraction: urnstone_Eulogize--></T>
+    <T>153243<!--SuperInteraction: urnstone_Event_FallChallenge_DoTD--></T>
+    <T>103042<!--RunSituationSuperInteraction: urnstone_CallForth_Debug--></T>
+    <T>102258<!--SuperInteraction: Ghost_Possess--></T>
+    <T>168502<!--SuperInteraction: Ghost_Pet_Possess--></T>
+    <T>324988<!--SuperInteraction: Ghost_Horse_Possess--></T>
+    <T>100430<!--ImmediateSuperInteraction: urnstone_Destroy--></T>
+    <T>103810<!--DeathSuperInteraction: death_Netherworld--></T>
+    <T>103864<!--NPCLeaveLotInteraction: ghost_EnterUrnstone--></T>
+    <T>151840<!--SuperInteraction: si_Gravestone_ReadEpitaph_NoEpitaph--></T>
+    <T>151841<!--SuperInteraction: si_Gravestone_ReadEpitaph_HasEpitaph--></T>
+    <T>159841<!--ImmediateSuperInteraction: cheat_AddToFamily_StoredSim--></T>
+    <T>161432<!--SuperInteraction: urnstone_DelayGhostCulling--></T>
+    <T>339347<!--ImmediateSuperInteraction: cheat_AddToFamily_StoredSim_Scenario_Inheritance--></T>
+    <T>391351<!--SuperInteraction: urnstone_Crypt_Reminisce--></T>
+    <T>380807<!--DeathSuperInteraction: death_MovingOn_MoveOntoTheGreatBeyond--></T>
+    <T>391349<!--SuperInteraction: urnstone_Crypt_Release_Inventory--></T>
+    <T>386119<!--ObjectDefinitionPickerInteraction: objectDefinitionPicker_UrnstonePlus_Grave--></T>
+    <T>383295<!--SuperInteraction: funerals_Eulogize_Lightheartedly_Gravesite--></T>
+    <T>386528<!--ImmediateSuperInteraction: immediate_UrnstonePlus_ToggleAutoswitch--></T>
+    <T>383293<!--SuperInteraction: funerals_Eulogize_Mournfully_Gravesite--></T>
+    <T>386114<!--ObjectDefinitionPickerInteraction: objectDefinitionPicker_UrnstonePlus_Urn--></T>
+    <T>383296<!--SuperInteraction: funerals_Weep--></T>
+    <T>383297<!--SuperInteraction: funerals_Wail--></T>
+    <T>383286<!--SuperInteraction: funerals_Reminisce--></T>
+    <T>383287<!--SuperInteraction: funerals_SpreadAshes--></T>
+    <T>383289<!--SuperInteraction: funerals_PourOneOut--></T>
+    <T>382837<!--SuperInteraction: urnstone_PlanFuneral--></T>
+    <T>120430<!--StandSuperInteraction: horse_stand--></T>
+    <T>124923<!--SuperInteraction: generic_Cat_layDown--></T>
+    <T>124546<!--SuperInteraction: generic_Dog_layDown--></T>
+    <T>387129<!--SuperInteraction: si_Gravesite_Horse_Mourn--></T>
+    <T>377822<!--SuperInteraction: movingOn_RecognizeFamiliarName--></T>
+    <T>387193<!--SuperInteraction: EP17World_WaylonWarez_ReadEpitaph--></T>
+    <T>389893<!--ImmediateSuperInteraction: immediate_GhostUpdates_AddGhostToHousehold--></T>
+    <T>391350<!--SuperInteraction: urnstone_Crypt_Mourn_Inventory--></T>
+    <T>391352<!--SuperInteraction: urnstone_Crypt_MomentOfSilence--></T>
+    <T>391353<!--SuperInteraction: urnstone_Crypt_LightCandle--></T>
+    <T>391347<!--SuperInteraction: urnstone_Crypt_DelayGhostCulling_Inventory--></T>
+    <T>425824<!--CreateCarriedObjectSuperInteraction: Funerals_ToastSim_CreateDrink--></T>
+    <T>394340<!--SuperInteraction: urnstone_BurialCasket_DelayGhostCulling_Inventory--></T>
+    <T>394341<!--SuperInteraction: urnstone_BurialCasket_LightCandle--></T>
+    <T>394342<!--SuperInteraction: urnstone_BurialCasket_MomentOfSilence--></T>
+    <T>394343<!--SuperInteraction: urnstone_BurialCasket_Mourn_Inventory--></T>
+    <T>394344<!--SuperInteraction: urnstone_BurialCasket_Release_Inventory--></T>
+    <T>394345<!--SuperInteraction: urnstone_BurialCasket_Reminisce--></T>
+    <T>412528<!--DeathSuperInteraction: death_MovingOn_MoveOntoTheGreatBeyond_Child--></T>
+    <T>383283<!--SuperInteraction: funerals_LightCandle--></T>
+    <T>390164<!--SuperInteraction: funerals_MomentOfSilence--></T>
+    <T>420461<!--SuperInteraction: funerals_CallGuestsOver--></T>
+  </L>
+  <U n="aop_forward_data">
+    <T n="should_search_forwarded_parent_aop">True</T>
+  </U>
+  <U n="recycling_data">
+    <L n="recycling_loot">
+      <T>240919<!--LootActions: loot_Recycler_ObjectLoot_Urn--></T>
+    </L>
+    <L n="recycling_values">
+      <U>
+        <E n="Bucks Type">RecycleBitsBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+      <U>
+        <E n="Bucks Type">RecyclePiecesBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+    </L>
+  </U>
+</I>

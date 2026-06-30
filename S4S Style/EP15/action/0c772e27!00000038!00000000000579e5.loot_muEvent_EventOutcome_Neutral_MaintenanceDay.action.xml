@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_muEvent_EventOutcome_Neutral_MaintenanceDay" s="358885">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InGame\UI\Icons\Notifications\notification_screwdriver.png">2f7d0004:00000000:9f47ee424c6eaf1f</T>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x62D75129<!--String: "Maintenance day has come to an end! We hope to see increased participation from you in the next one."--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x780EC6F6<!--String: "Maintenance Day"--></T>
+            </V>
+          </U>
+        </V>
+        <E n="subject">ActiveHousehold</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="is_active_sim" t="enabled" />
+              </U>
+            </V>
+          </L>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="location">
+              <U n="location">
+                <U n="location_tests">
+                  <V n="is_venue_type" t="enabled">
+                    <U n="enabled">
+                      <T n="venue_type">341299<!--Venue: venue_MultiUnit--></T>
+                    </U>
+                  </V>
+                </U>
+                <E n="subject">ActiveHousehold</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="actions">
+      <T n="actions">357102<!--LootActions: loot_UnitRating_Progression_PickedUnit_ActiveLot_NoSims_Small_Gain--></T>
+    </V>
+    <V t="actions">
+      <T n="actions">348471<!--LootActions: loot_muEventAPM_AddCooldown_MaintenanceDay--></T>
+    </V>
+    <V t="buff_removal">
+      <U n="buff_removal">
+        <L n="buffs_to_remove">
+          <T>353150<!--Buff: buff_muEvent_Hidden_TenantDidFix--></T>
+        </L>
+        <E n="subject">ActiveHousehold</E>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>358889<!--Buff: buff_muEvent_CompletedCommunity--></T>
+          </L>
+          <E n="subject">ActiveHousehold</E>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Buff" i="buff" m="buffs.buff" n="buff_ShadyNPC" s="395141">
+  <L n="_inappropriateness_tags">
+    <E>Appropriateness_Phone</E>
+    <E>Appropriateness_PhoneGame</E>
+    <E>Appropriateness_Workout</E>
+  </L>
+  <L n="_loot_on_removal">
+    <T>399460<!--LootActions: loot_ShadyNPC_TraitRemoved--></T>
+  </L>
+  <V n="appearance_modifier" t="enabled">
+    <U n="enabled">
+      <L n="appearance_modifiers">
+        <L>
+          <U>
+            <V n="modifier" t="set_cas_part">
+              <U n="set_cas_part">
+                <T n="cas_part">450853</T>
+                <T n="expect_invalid_parts">True</T>
+              </U>
+            </V>
+          </U>
+        </L>
+      </L>
+    </U>
+  </V>
+  <T p="InGame\Audio\Stings\sting_buff_gain.propx" n="audio_sting_on_add">39b2aa4a:00000000:8af8b916cf64c646</T>
+  <T p="InGame\Audio\Stings\sting_buff_loss.propx" n="audio_sting_on_remove">39b2aa4a:00000000:3bf33216a25546ea</T>
+  <U n="game_effect_modifier">
+    <L n="_game_effect_modifiers">
+      <V t="autonomy_modifier">
+        <U n="autonomy_modifier">
+          <L n="locked_stats">
+            <T>16655<!--Commodity: motive_Fun--></T>
+            <T>16657<!--Commodity: motive_Hygiene--></T>
+            <T>16658<!--Commodity: motive_Social--></T>
+            <T>16652<!--Commodity: motive_Bladder--></T>
+            <T>16654<!--Commodity: motive_Energy--></T>
+            <T>16656<!--Commodity: motive_Hunger--></T>
+          </L>
+          <L n="relationship_multipliers">
+            <U>
+              <T n="key">16651<!--RelationshipTrack: LTR_Romance_Main--></T>
+              <U n="value">
+                <T n="multiplier">0</T>
+              </U>
+            </U>
+          </L>
+          <L n="stat_use_multiplier">
+            <U>
+              <T n="key">16589<!--Commodity: commodity_Fitness_Fat--></T>
+              <U n="value">
+                <T n="multiplier">0</T>
+              </U>
+            </U>
+            <U>
+              <T n="key">16590<!--Commodity: commodity_Fitness_Fit--></T>
+              <U n="value">
+                <T n="multiplier">0</T>
+              </U>
+            </U>
+          </L>
+        </U>
+      </V>
+      <V t="affordance_filters">
+        <U n="affordance_filters">
+          <V n="as_actor" t="enabled">
+            <U n="enabled">
+              <V n="social_filters" t="enabled">
+                <U n="enabled">
+                  <V n="mixer_affordance_filter" t="enabled">
+                    <V n="enabled" t="by_affordance_filter">
+                      <U n="by_affordance_filter">
+                        <V n="affordance_filter" t="literal">
+                          <U n="literal">
+                            <V n="default_inclusion" t="include_all">
+                              <U n="include_all">
+                                <L n="exclude_affordances">
+                                  <T>303686<!--SocialMixerInteraction: idle_Chatting_ListenWithPhone_STC--></T>
+                                </L>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </V>
+                  <V n="super_affordance_filter" t="disabled" />
+                </U>
+              </V>
+            </U>
+          </V>
+          <V n="as_target" t="enabled">
+            <U n="enabled">
+              <V n="social_filters" t="enabled">
+                <U n="enabled">
+                  <V n="mixer_affordance_filter" t="enabled">
+                    <V n="enabled" t="by_affordance_filter">
+                      <U n="by_affordance_filter">
+                        <V n="affordance_filter" t="literal">
+                          <U n="literal">
+                            <V n="default_inclusion" t="include_all">
+                              <U n="include_all">
+                                <L n="exclude_affordances">
+                                  <T>274794<!--SocialMixerInteraction: mixer_social_AskSimToPursueDreamJob_Targeted_Friendly_AlwaysOn--></T>
+                                  <T>384036<!--SocialMixerInteraction: mixer_Social_Targeted_Friendly_Mentorship_Offer--></T>
+                                  <T>120627<!--SocialMixerInteraction: mixer_Social_OfferFootMassage_Targeted_Friendly_AlwaysOn--></T>
+                                  <T>270939<!--SocialMixerInteraction: mixer_Social_OfferPedicure_Targeted_Friendly_AlwaysOn--></T>
+                                  <T>120628<!--SocialMixerInteraction: mixer_Social_OfferHandMassage_Targeted_Friendly_AlwaysOn--></T>
+                                  <T>270937<!--SocialMixerInteraction: mixer_Social_OfferManicure_Targeted_Friendly_AlwaysOn--></T>
+                                </L>
+                                <L n="exclude_lists">
+                                  <T>400951<!--AffordanceList: affordanceList_CrossPackLists_TurnIntoOccult--></T>
+                                </L>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </V>
+                  <V n="super_affordance_filter" t="enabled">
+                    <V n="enabled" t="by_affordance_filter">
+                      <U n="by_affordance_filter">
+                        <V n="affordance_filter" t="literal">
+                          <U n="literal">
+                            <V n="default_inclusion" t="include_all">
+                              <U n="include_all">
+                                <L n="exclude_affordances">
+                                  <T>341209<!--SocialSuperInteraction: social_NeighborTraits_Pry--></T>
+                                  <T>343944<!--SuperInteraction: snooping_Eavesdrop_Sim--></T>
+                                </L>
+                                <L n="exclude_lists">
+                                  <T>400951<!--AffordanceList: affordanceList_CrossPackLists_TurnIntoOccult--></T>
+                                </L>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </V>
+                </U>
+              </V>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="affordance_modifier">
+        <U n="affordance_modifier">
+          <L n="affordances">
+            <T>117755<!--SocialSuperInteraction: massageTable_CustomerSocial--></T>
+          </L>
+          <L n="basic_extras">
+            <V t="buff_fire_and_forget">
+              <U n="buff_fire_and_forget">
+                <U n="buff">
+                  <V n="buff_reason" t="enabled">
+                    <T n="enabled">0x33605845<!--String: "(From Giving Trashley a Massage)"--></T>
+                  </V>
+                  <T n="buff_type">435073<!--Buff: buff_ShadyNPC_LumpyMassage--></T>
+                </U>
+                <E n="participant">TargetSim</E>
+              </U>
+            </V>
+          </L>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T p="InGame\UI\Icons\Debug\missing_image.png" n="icon">2f7d0004:00000000:30f0846c783606f9</T>
+  <V n="interactions" t="enabled">
+    <U n="enabled">
+      <L n="interaction_items">
+        <T>397110<!--MixerInteraction: idle_Buff_ShadyNPC--></T>
+      </L>
+    </U>
+  </V>
+  <L n="static_commodity_to_add">
+    <T>399452<!--StaticCommodity: staticCommodity_ShadyNPC_DoStuff--></T>
+  </L>
+  <L n="super_affordances">
+    <T>397105<!--SuperInteraction: shadyNPC_CreateCandyToEat--></T>
+  </L>
+  <L n="target_super_affordances">
+    <U>
+      <T n="affordance">411774<!--SuperInteraction: shadyNPC_Trashcan_Rummage--></T>
+      <V n="object_filter" t="filter_by_tags">
+        <U n="filter_by_tags">
+          <L n="tags">
+            <E>Func_TrashCan_Outdoor</E>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <T n="affordance">434097<!--SuperInteraction: shadyNPC_Trashcan_Rummage_Indoor--></T>
+      <V n="object_filter" t="filter_by_tags">
+        <U n="filter_by_tags">
+          <L n="tags">
+            <E>Func_TrashCan_Indoor</E>
+          </L>
+        </U>
+      </V>
+    </U>
+  </L>
+  <T n="visible">False</T>
+</I>

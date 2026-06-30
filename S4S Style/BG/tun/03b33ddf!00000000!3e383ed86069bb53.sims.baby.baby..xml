@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<M n="sims.baby.baby" s="4483402528098728787">
+  <C n="Baby">
+    <U n="BABY_AGE_UP">
+      <T n="age_up_affordance">136998<!--SuperInteraction: ageUp_BabySolo--></T>
+      <L n="copy_states">
+        <T>15054<!--ObjectState: Baby_Status--></T>
+        <T>243982<!--ObjectState: Baby_Cloth--></T>
+        <T>114710<!--ObjectState: Baby_Occult--></T>
+      </L>
+      <T n="idle_state_value">35892<!--ObjectStateValue: Baby_AgeUp--></T>
+      <U n="infant_spawn_offset">
+        <U n="offset">
+          <T n="x">0</T>
+          <T n="z">0.5</T>
+        </U>
+        <U n="quaternion">
+          <T n="w">1</T>
+          <T n="y">0</T>
+        </U>
+      </U>
+      <L n="statistics_to_transfer">
+        <T>273816<!--Commodity: commodity_Infant_Attachment--></T>
+      </L>
+    </U>
+    <L n="BABY_MOOD_MAPPING">
+      <U>
+        <T n="key">15044<!--ObjectStateValue: Baby_Crying--></T>
+        <T n="value">14643<!--Mood: Mood_Sad--></T>
+      </U>
+      <U>
+        <T n="key">15046<!--ObjectStateValue: Baby_Happy--></T>
+        <T n="value">14640<!--Mood: Mood_Happy--></T>
+      </U>
+      <U>
+        <T n="key">15048<!--ObjectStateValue: Baby_Sleeping--></T>
+        <T n="value">27149<!--Mood: Mood_Asleep--></T>
+      </U>
+    </L>
+    <L n="BABY_PLACEMENT_TAGS">
+      <E>Func_Bed</E>
+      <E>BuyCatEE_KidFurniture</E>
+      <E>Mailbox</E>
+    </L>
+    <T n="BASSINET_BABY_STATE">39311<!--ObjectStateValue: Baby_On--></T>
+    <L n="BASSINET_BABY_TRAIT_STATES">
+      <U>
+        <T n="key">102785<!--Trait: trait_OccultAlien--></T>
+        <T n="value">114706<!--ObjectStateValue: babyOccult_Alien--></T>
+      </U>
+      <U>
+        <T n="key">289780<!--Trait: trait_OccultWerewolf--></T>
+        <T n="value">297222<!--ObjectStateValue: babyOccult_Werewolf--></T>
+      </U>
+      <U>
+        <T n="key">433287<!--Trait: trait_OccultFairy_AllAges--></T>
+        <T n="value">433294<!--ObjectStateValue: babyOccult_FairyOccult--></T>
+      </U>
+    </L>
+    <T n="BASSINET_EMPTY_STATE">15045<!--ObjectStateValue: Baby_Empty--></T>
+    <T n="DEFAULT_CORNER_POSTION_TOWARDS_CENTER_SCALE">2</T>
+    <U n="FAILED_PLACEMENT_NOTIFICATION">
+      <V n="icon" t="enabled">
+        <V n="enabled" t="participant" />
+      </V>
+      <V n="text" t="single">
+        <T n="single">0x39BDEEBB<!--String: "This lot is too cluttered, and there is no room for {0.SimFirstName}. What a shame! Perhaps once this home is more welcoming {M0.he}{F0.she} can properly move in."--></T>
+      </V>
+    </U>
+    <L n="REMOVAL_MOMENT_STATES">
+      <U>
+        <T n="key">102933<!--ObjectStateValue: babyRemoval_AlienReturn--></T>
+      </U>
+      <U>
+        <T n="key">99101<!--CommodityBasedObjectStateValue: babyHunger_Starved--></T>
+        <U n="value">
+          <V n="buff" t="enabled">
+            <U n="enabled">
+              <V n="buff_reason" t="enabled">
+                <T n="enabled">0x640694EB<!--String: "(From Removed Baby)"--></T>
+              </V>
+              <T n="buff_type">100188<!--Buff: buff_Object_Baby_Mourn--></T>
+            </U>
+          </V>
+          <T n="empty_state">100337<!--CommodityBasedObjectStateValue: BassinetNeglected_JustEmptied--></T>
+          <V n="notification" t="enabled">
+            <V n="enabled" t="literal">
+              <U n="literal">
+                <V n="icon" t="enabled">
+                  <V n="enabled" t="resource_key">
+                    <U n="resource_key">
+                      <T p="InGame\UI\Icons\Headlines\Final\headline_cradle.png" n="key">2f7d0004:00000000:3f5f0185820fc71d</T>
+                    </U>
+                  </V>
+                </V>
+                <V n="text" t="single">
+                  <T n="single">0xE15FE2DF<!--String: "Due to neglect, {0.SimFirstName} is being whisked away to safety. Maybe you should consider a goldfish before jumping into parenthood again."--></T>
+                </V>
+                <E n="urgency">URGENT</E>
+              </U>
+            </V>
+          </V>
+          <V n="vfx" t="enabled">
+            <U n="enabled">
+              <T n="effect_name">s40_Sims_neglected</T>
+            </U>
+          </V>
+        </U>
+      </U>
+    </L>
+    <T n="STATUS_STATE">15054<!--ObjectState: Baby_Status--></T>
+  </C>
+</M>

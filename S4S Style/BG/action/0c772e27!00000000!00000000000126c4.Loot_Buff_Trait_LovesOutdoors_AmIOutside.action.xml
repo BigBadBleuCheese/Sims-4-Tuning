@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="Loot_Buff_Trait_LovesOutdoors_AmIOutside" s="75460">
+  <L n="loot_actions">
+    <V t="statistics">
+      <V n="statistics" t="statistic_remove">
+        <U n="statistic_remove">
+          <T n="advertise">False</T>
+          <T n="stat">98963<!--Commodity: Commodity_Trait_LovesTheOutdoors_TenseTimer--></T>
+          <L n="tests">
+            <L>
+              <V t="location">
+                <U n="location">
+                  <U n="location_tests">
+                    <V n="is_outside" t="enabled" />
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_set_max">
+        <U n="statistic_set_max">
+          <T n="stat">75462<!--Commodity: Commodity_Trait_LovesTheOutdoors_AmIOutside--></T>
+        </U>
+      </V>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_set_max">
+        <U n="statistic_set_max">
+          <T n="advertise">False</T>
+          <T n="stat">29152<!--Commodity: Commodity_Trait_LovesTheOutdoors--></T>
+          <L n="tests">
+            <L>
+              <V t="location">
+                <U n="location">
+                  <U n="location_tests">
+                    <V n="is_outside" t="enabled" />
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_add">
+        <U n="statistic_add">
+          <T n="stat">386817<!--Commodity: commodity_Want_StayOutside_Tracker_UnfinishedBusiness--></T>
+          <L n="tests">
+            <L>
+              <V t="location">
+                <U n="location">
+                  <U n="location_tests">
+                    <V n="is_outside" t="enabled">
+                      <T n="enabled">True</T>
+                    </V>
+                  </U>
+                </U>
+              </V>
+            </L>
+            <L>
+              <V t="unfinished_business_objective_test">
+                <U n="unfinished_business_objective_test">
+                  <V n="test_behavior" t="has_unfinished_business_objective">
+                    <U n="has_unfinished_business_objective">
+                      <T n="objective">382530<!--Objective: objectives_UnfinishedBusiness_Trait_SpendTimeOutside--></T>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_add">
+        <U n="statistic_add">
+          <T n="stat">287430<!--Commodity: commodity_Want_StayOutside_Tracker--></T>
+          <L n="tests">
+            <L>
+              <V t="location">
+                <U n="location">
+                  <U n="location_tests">
+                    <V n="is_outside" t="enabled">
+                      <T n="enabled">True</T>
+                    </V>
+                  </U>
+                </U>
+              </V>
+            </L>
+            <L>
+              <V t="whim">
+                <U n="whim">
+                  <L n="whims">
+                    <T>287460<!--Whim: want_StayOutside--></T>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+    </V>
+    <V t="actions">
+      <T n="actions">287486<!--LootActions: loot_Want_CommodityTracker_StayOutside_Reset--></T>
+    </V>
+  </L>
+</I>

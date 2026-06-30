@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SocialSuperInteraction" i="interaction" m="interactions.social.social_super_interaction" n="SSI_AutoInitRomance_Propose" s="368390">
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>TargetSim</E>
+      </L>
+    </U>
+  </V>
+  <L n="_party_size_weight_tuning">
+    <U>
+      <T n="y">100</T>
+    </U>
+    <U>
+      <T n="x">1</T>
+      <T n="y">100</T>
+    </U>
+    <U>
+      <T n="x">2</T>
+      <T n="y">50</T>
+    </U>
+    <U>
+      <T n="x">3</T>
+      <T n="y">0</T>
+    </U>
+    <U>
+      <T n="x">4</T>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <T n="_social_group_type">74849<!--JigGroup: group_Platonic--></T>
+  <V n="affordance_to_push_on_target" t="push_self_or_none">
+    <T n="push_self_or_none">False</T>
+  </V>
+  <T n="allow_autonomous">False</T>
+  <T n="allow_user_directed">False</T>
+  <T n="attention_cost">0</T>
+  <V n="basic_content" t="one_shot" />
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>162659<!--LootActions: loot_Commodity_Culling_GhostAdd_target--></T>
+        </L>
+      </U>
+    </V>
+    <V t="notification">
+      <U n="notification">
+        <V n="dialog" t="single">
+          <V n="single" t="literal">
+            <U n="literal">
+              <V n="audio_sting" t="enabled">
+                <U n="enabled">
+                  <T n="audio" p="InGame\Audio\Bumper\bumper_tns_positive.propx">39b2aa4a:00000000:930fe9ffd1801772</T>
+                </U>
+              </V>
+              <L n="dialog_options">
+                <E>DISABLE_CLOSE_BUTTON</E>
+              </L>
+              <V n="icon" t="enabled">
+                <V n="enabled" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>TargetSim</E>
+                    </L>
+                  </U>
+                </V>
+              </V>
+              <V n="secondary_icon" t="enabled">
+                <V n="enabled" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>Actor</E>
+                    </L>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x6BF15687<!--String: "{0.SimFirstName} is proposing to {1.SimFirstName}!"--></T>
+              </V>
+              <E n="visual_type">SPECIAL_MOMENT</E>
+            </U>
+          </V>
+        </V>
+        <E n="recipient_subject">TargetSim</E>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+    <V t="broadcaster">
+      <U n="broadcaster">
+        <L n="broadcaster_types">
+          <U>
+            <T n="item">129459<!--Broadcaster: broadcaster_JealousyUpdates_ClubEncouraged_EmotionalExclusivity--></T>
+            <T n="stop_processing">True</T>
+            <L n="test">
+              <L>
+                <V t="test_set_reference">
+                  <T n="test_set_reference">126907<!--TestSetInstance: testSetInstance_InteractionIsEncouragedByClubOrCustomerRulesOrHobbyClassOrDynasty--></T>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="item">76132<!--Broadcaster: broadcaster_JealousyUpdates_EmotionalExclusivity--></T>
+            <L n="test">
+              <L>
+                <V t="club_test">
+                  <U n="club_test">
+                    <V n="affordance_rule" t="enabled">
+                      <V n="enabled" t="is_not_encouraged" />
+                    </V>
+                    <V n="club" t="use_any_club" />
+                  </U>
+                </V>
+              </L>
+              <L>
+                <V t="club_test">
+                  <U n="club_test">
+                    <V n="club" t="use_any_club" />
+                    <V n="club_status" t="enabled">
+                      <V n="enabled" t="Not Member" />
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="item">370444<!--Broadcaster: broadcaster_ReactionToRomanticInteractions_SpecialNPC--></T>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V t="broadcaster">
+      <U n="broadcaster">
+        <L n="broadcaster_types">
+          <U>
+            <T n="item">129459<!--Broadcaster: broadcaster_JealousyUpdates_ClubEncouraged_EmotionalExclusivity--></T>
+            <T n="stop_processing">True</T>
+            <L n="test">
+              <L>
+                <V t="club_test">
+                  <U n="club_test">
+                    <V n="affordance_rule" t="enabled" />
+                    <V n="club" t="use_any_club" />
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="item">76132<!--Broadcaster: broadcaster_JealousyUpdates_EmotionalExclusivity--></T>
+            <L n="test">
+              <L>
+                <V t="club_test">
+                  <U n="club_test">
+                    <V n="affordance_rule" t="enabled">
+                      <V n="enabled" t="is_not_encouraged" />
+                    </V>
+                    <V n="club" t="use_any_club" />
+                  </U>
+                </V>
+              </L>
+              <L>
+                <V t="club_test">
+                  <U n="club_test">
+                    <V n="club" t="use_any_club" />
+                    <V n="club_status" t="enabled">
+                      <V n="enabled" t="Not Member" />
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+        <E n="participant">TargetSim</E>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x9C09275F<!--String: "(From Being in a social group with at least 3 Sims)"--></T>
+          </V>
+          <T n="buff_type">125555<!--Buff: buff_Trait_WithMyFriends--></T>
+        </U>
+        <L n="subject">
+          <E>Actor</E>
+          <E>SocialGroupSims</E>
+          <E>TargetSim</E>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="social_group">
+              <U n="social_group">
+                <V n="threshold" t="enabled">
+                  <U n="enabled">
+                    <T n="value">3</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>165621<!--LootActions: loot_ChildhoodPhase_Clingy_SocialBuffs--></T>
+          <T>278309<!--LootActions: loot_Fear_BeingCheatedOn_RecentlyRanRomance--></T>
+        </L>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>362278<!--LootActions: loot_Attraction_GiveConversationBuff_Embarrassed--></T>
+          <T>362280<!--LootActions: loot_Attraction_GiveConversationBuff_Happy--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="basic_reserve_object" t="disabled" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xC80A5613<!--String: "Propose"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <V n="idle_animation" t="enabled">
+    <U n="enabled">
+      <T n="factory">11570<!--AnimationElement: Listen_Listen_Looping_basic--></T>
+    </U>
+  </V>
+  <T n="ignore_group_socials">False</T>
+  <L n="interaction_category_tags">
+    <E>Interaction_SocialSuper</E>
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+    <E>Interaction_SocialAll</E>
+    <E>Interaction_Social_Contagious</E>
+  </L>
+  <T n="invite_in_after_interaction">True</T>
+  <U n="listen_animation">
+    <T n="factory">11570<!--AnimationElement: Listen_Listen_Looping_basic--></T>
+  </U>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <V n="animation_ref" t="enabled">
+              <U n="enabled">
+                <T n="factory">76555<!--AnimationElement: Socials_LifeMoments_Propose_Success--></T>
+                <U n="overrides">
+                  <V n="balloons" t="enabled">
+                    <L n="enabled">
+                      <U>
+                        <L n="balloon_choices">
+                          <U>
+                            <V n="item" t="balloon_category">
+                              <T n="balloon_category">39019<!--BalloonCategory: BalloonCategory_SetPropose_Speech--></T>
+                            </V>
+                          </U>
+                        </L>
+                        <L n="balloon_target">
+                          <E>Actor</E>
+                        </L>
+                      </U>
+                    </L>
+                  </V>
+                </U>
+              </U>
+            </V>
+            <L n="basic_extras">
+              <V t="audio_sting">
+                <U n="audio_sting">
+                  <U n="audio_sting">
+                    <T n="audio" p="InGame\Audio\Stings\sting_marriage_propose_accept.propx">39b2aa4a:00000000:93e883a194579033</T>
+                  </U>
+                  <V n="timing" t="at_beginning" />
+                </U>
+              </V>
+              <V t="broadcaster">
+                <U n="broadcaster">
+                  <L n="broadcaster_types">
+                    <U>
+                      <T n="item">134003<!--Broadcaster: broadcaster_Reaction_WitnessedCrassAct_Unflirty--></T>
+                    </U>
+                  </L>
+                </U>
+              </V>
+            </L>
+            <L n="loot_list">
+              <T>10766<!--LootActions: Gender_Preference_Loot--></T>
+              <T>10954<!--LootActions: Loot_ForSocialsSocialMotiveMedium--></T>
+              <T>27854<!--LootActions: Loot_Romantic_Affection_50--></T>
+              <T>10854<!--LootActions: Loot_Engaged--></T>
+              <T>34573<!--LootActions: Loot_LTR_Romance_Huge_HighStrength--></T>
+              <T>10854<!--LootActions: Loot_Engaged--></T>
+              <T>100614<!--LootActions: Loot_RemovePromised--></T>
+              <T>23798<!--LootActions: Loot_FlirtySocialCommodity_10--></T>
+              <T>32056<!--LootActions: Loot_SocialContect_Fun_Loss_conditionalBoring_Medium--></T>
+              <T>26059<!--LootActions: Loot_SocialContext_Romance_Gain_cappedAmorous--></T>
+              <T>32056<!--LootActions: Loot_SocialContect_Fun_Loss_conditionalBoring_Medium--></T>
+              <T>76189<!--LootActions: Loot_Commodity_CareerBenefit_Agent_Agent--></T>
+              <T>104567<!--LootActions: loot_Relationship_Bit_KnowsIsAlien--></T>
+              <T>133108<!--LootActions: loot_Buff_Trait_Unflirty_CrassAct--></T>
+              <T>133107<!--LootActions: loot_Buff_Trait_Unflirty_Romance_Success--></T>
+              <T>154622<!--LootActions: target_KnowTrait_Unflirty_Actor--></T>
+              <T>155126<!--LootActions: Loot_KnowTrait_Unflirty--></T>
+              <T>294094<!--LootActions: lootActions_TeenRelationshipDrama_AddCrush_LowChance--></T>
+              <T>311749<!--LootActions: loot_Reaction_Trait_Loyal_Cheating_JealousyUpdates_EmotionalExclusivity--></T>
+              <T>312033<!--LootActions: loot_Reaction_Trait_Loyal_Cheating_Target_JealousyUpdates_EmotionalExclusivity--></T>
+              <T>363550<!--LootActions: loot_RelSat_RelGain_Medium--></T>
+              <T>195100<!--LootActions: loot_Fame_CelebSocial_SuccessHighScore--></T>
+              <T>216558<!--RandomWeightedLoot: randomWeightedLoot_Cauldron_Potion_Luck_RandomBenefit_Social_Romance--></T>
+              <T>195100<!--LootActions: loot_Fame_CelebSocial_SuccessHighScore--></T>
+            </L>
+            <V n="response" t="enabled">
+              <V n="enabled" t="individual">
+                <U n="individual">
+                  <L n="animations">
+                    <U>
+                      <E n="target">Actor</E>
+                      <U n="animation">
+                        <T n="factory">28364<!--AnimationElement: Socials_Responses_Excited_HighIntensity_Giddy--></T>
+                      </U>
+                    </U>
+                    <U>
+                      <E n="target">TargetSim</E>
+                      <U n="animation">
+                        <T n="factory">28359<!--AnimationElement: Socials_Responses_Excited_HighIntensity--></T>
+                      </U>
+                    </U>
+                  </L>
+                </U>
+              </V>
+            </V>
+          </U>
+          <U n="weight">
+            <T n="base_value">5</T>
+          </U>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <T n="relationship_scoring">True</T>
+  <E n="scoring_priority">NORMAL</E>
+  <V n="sim_affinity_posture_scoring_data" t="enabled">
+    <U n="enabled">
+      <L n="my_scoring">
+        <U>
+          <V n="affinity_strategy" t="relationship_based" />
+          <T n="negate_tag">True</T>
+          <E n="running_interaction_tag">Sleeping</E>
+        </U>
+        <U>
+          <V n="affinity_strategy" t="avoid" />
+          <E n="running_interaction_tag">Very_Loud</E>
+        </U>
+      </L>
+      <L n="my_tags">
+        <E>Loud</E>
+        <E>Chat</E>
+      </L>
+    </U>
+  </V>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">TARGET</E>
+  <L n="test_globals" />
+  <T n="time_overhead">30</T>
+</I>

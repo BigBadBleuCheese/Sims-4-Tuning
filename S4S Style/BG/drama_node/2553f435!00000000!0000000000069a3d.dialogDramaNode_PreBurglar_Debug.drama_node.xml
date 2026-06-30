@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="DialogDramaNode" i="drama_node" m="drama_scheduler.dialog_drama_node" n="dialogDramaNode_PreBurglar_Debug" s="432701">
+  <V n="dialog_and_loot" t="loot_only">
+    <U n="loot_only">
+      <L n="on_drama_node_run_loot">
+        <T>432699<!--LootActions: loot_Burglar_ScheduleSituation_Debug--></T>
+        <T>503045<!--LootActions: loot_Burglar_ScheduleSituation_Debug_RobinHood--></T>
+      </L>
+    </U>
+  </V>
+  <U n="min_and_max_times">
+    <T n="lower_bound">0</T>
+    <T n="upper_bound">0.5</T>
+  </U>
+  <L n="pretests" />
+  <V n="scoring" t="disabled" />
+  <V n="sender_sim_info" t="specific_sim_filter">
+    <U n="specific_sim_filter">
+      <T n="sim_filter">503039<!--TunableSimFilter: dramaNodeFilter_Burglar--></T>
+    </U>
+  </V>
+  <E n="sender_sim_info_type">INSTANCED_ALLOWED</E>
+  <V n="time_option" t="schedule">
+    <U n="schedule">
+      <L n="valid_times">
+        <U>
+          <U n="days_available">
+            <T n="0 SUNDAY">True</T>
+            <T n="1 MONDAY">True</T>
+            <T n="2 TUESDAY">True</T>
+            <T n="3 WEDNESDAY">True</T>
+            <T n="4 THURSDAY">True</T>
+            <T n="5 FRIDAY">True</T>
+            <T n="6 SATURDAY">True</T>
+          </U>
+          <T n="duration">24</T>
+          <U n="start_time">
+            <T n="hour">0</T>
+          </U>
+        </U>
+      </L>
+    </U>
+  </V>
+</I>

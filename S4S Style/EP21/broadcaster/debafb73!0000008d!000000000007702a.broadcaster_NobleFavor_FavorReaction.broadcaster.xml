@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Broadcaster" i="broadcaster" m="broadcasters.broadcaster" n="broadcaster_NobleFavor_FavorReaction" s="487466">
+  <V n="allow_sim_test" t="enabled">
+    <L n="enabled">
+      <L>
+        <V t="buff">
+          <U n="buff">
+            <L n="blacklist">
+              <T>483954<!--Buff: buff_Object_SecretPassageway_hidden_Upgrade_SoundProof_Protection--></T>
+            </L>
+          </U>
+        </V>
+        <V t="user_running_interaction">
+          <U n="user_running_interaction">
+            <L n="affordances">
+              <T>480880<!--SuperInteraction: secretPassageway_Explore--></T>
+            </L>
+            <E n="participant">Actor</E>
+            <T n="test_for_not_running">True</T>
+          </U>
+        </V>
+        <V t="buff">
+          <U n="buff">
+            <L n="blacklist">
+              <T>487467<!--Buff: buff_NobleFavor_FavorReaction_Cooldown--></T>
+            </L>
+          </U>
+        </V>
+      </L>
+    </L>
+  </V>
+  <L n="constraints">
+    <V t="line_of_sight" />
+    <V t="circle">
+      <U n="circle">
+        <T n="radius">5</T>
+      </U>
+    </V>
+  </L>
+  <L n="effects">
+    <V t="affordance">
+      <U n="affordance">
+        <T n="actor_can_violate_privacy_from_owning_interaction">False</T>
+        <E n="affordance_priority">Low</E>
+        <V n="affordance_target" t="enabled">
+          <E n="enabled">TargetSim</E>
+        </V>
+        <L n="affordances">
+          <U>
+            <T n="affordance">487468<!--SuperInteraction: reactions_NobleFavor_React--></T>
+          </U>
+        </L>
+        <V n="excluded_participants" t="enabled" />
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <L n="blacklist">
+                  <T>487467<!--Buff: buff_NobleFavor_FavorReaction_Cooldown--></T>
+                </L>
+              </U>
+            </V>
+            <V t="buff">
+              <U n="buff">
+                <L n="blacklist">
+                  <T>487467<!--Buff: buff_NobleFavor_FavorReaction_Cooldown--></T>
+                </L>
+                <E n="subject">TargetSim</E>
+              </U>
+            </V>
+            <V t="trait">
+              <U n="trait">
+                <L n="blacklist_traits">
+                  <T>200510<!--Trait: trait_Hidden_isDisguised--></T>
+                </L>
+                <T n="num_whitelist_required">0</T>
+                <E n="subject">TargetSim</E>
+              </U>
+            </V>
+            <V t="trait">
+              <U n="trait">
+                <L n="blacklist_traits">
+                  <T>200510<!--Trait: trait_Hidden_isDisguised--></T>
+                </L>
+                <T n="num_whitelist_required">0</T>
+                <E n="subject">TargetSim</E>
+              </U>
+            </V>
+            <V t="ensemble">
+              <U n="ensemble">
+                <V n="check_matching_ensemble" t="enabled" />
+                <T n="invert">True</T>
+              </U>
+            </V>
+            <V t="test_set_reference">
+              <T n="test_set_reference">202221<!--TestSetInstance: testSetInstance_ImportantJobTest--></T>
+            </V>
+            <V t="in_same_household">
+              <U n="in_same_household">
+                <T n="subjects_households_match">False</T>
+              </U>
+            </V>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="ages" t="specified">
+                  <L n="specified">
+                    <E>TEEN</E>
+                    <E>YOUNGADULT</E>
+                    <E>ADULT</E>
+                    <E>ELDER</E>
+                  </L>
+                </V>
+                <E n="who">TargetSim</E>
+              </U>
+            </V>
+            <V t="situation_running_test">
+              <U n="situation_running_test">
+                <V n="participant" t="enabled">
+                  <E n="enabled">TargetSim</E>
+                </V>
+                <V n="situation_blacklist" t="enabled">
+                  <L n="enabled">
+                    <T>473670<!--CustomStatesSituation: situation_NobleCareer_HoldCourt--></T>
+                    <T>480951<!--CustomStatesSituation: situation_NobleCareer_HoldPressConference--></T>
+                    <T>469578<!--CustomStatesSituation: situation_CustomState_BallroomDance--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="frequency" t="on_pulse">
+    <U n="on_pulse">
+      <T n="cooldown_time">45</T>
+    </U>
+  </V>
+</I>

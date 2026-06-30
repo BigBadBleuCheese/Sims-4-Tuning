@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Dynasty_ActionFeedback_RivalryStart" s="499467">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="audio_sting" t="enabled">
+              <U n="enabled">
+                <T n="audio" p="InEP21\Audio\music\bumpers\bumper_ep21_start_rivalry.propx">39b2aa4a:00000000:0dd4636fe6eee3c4</T>
+                <T n="immediate_audio">True</T>
+              </U>
+            </V>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="dynasty" />
+            </V>
+            <V n="secondary_icon" t="disabled" />
+            <V n="text" t="single">
+              <T n="single">0x855E7C1C<!--String: "Alas! {1.SimFirstName} and {3.SimFirstName} have declared a Rivalry between the {2.String} and {4.String} Dynasties.\n\nBoth Dynasties have been awarded with a large amount of Prestige. Members of the Dynasties will have a harder time forming friendships together, and any Mean interactions between the Dynasties will give Prestige."--></T>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="participant_type" />
+                  <V t="participant_type">
+                    <U n="participant_type">
+                      <V n="objects" t="from_participant">
+                        <U n="from_participant">
+                          <E n="participant">ActorDynastyHead</E>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                  <V t="dynasty" />
+                  <V t="participant_type">
+                    <U n="participant_type">
+                      <V n="objects" t="from_participant">
+                        <U n="from_participant">
+                          <E n="participant">TargetDynastyHead</E>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                  <V t="dynasty">
+                    <U n="dynasty">
+                      <E n="participant">TargetSim</E>
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x25B0E6B5<!--String: "Dynasty Rivalry Begun"--></T>
+            </V>
+            <L n="ui_responses">
+              <U>
+                <T n="text">0x83EE674A<!--String: "Show Alliances & Rivalries Lesson"--></T>
+                <V n="tutorial_id" t="enabled">
+                  <T n="enabled">488450<!--Tutorial: tutorial_EP21_ProjectGold_AlliancesAndRivalries--></T>
+                </V>
+                <E n="ui_request">SHOW_LESSONS</E>
+              </U>
+            </L>
+          </U>
+        </V>
+        <E n="subject">ActiveHousehold</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="is_active_sim" t="enabled" />
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="dynasty_member">
+        <U n="dynasty_member">
+          <E n="subjects">Actor</E>
+          <E n="targets">ActiveHousehold</E>
+          <V n="test_type" t="same_dynasty_membership" />
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

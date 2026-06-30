@@ -1,0 +1,485 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SocialSuperInteraction" i="interaction" m="interactions.social.social_super_interaction" n="recreationTable_simblesDominoes_playing" s="309209">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="circle">
+            <U n="circle">
+              <T n="radius">1</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Object</E>
+      </L>
+    </U>
+  </V>
+  <L n="_party_size_weight_tuning">
+    <U>
+      <T n="y">100</T>
+    </U>
+    <U>
+      <T n="x">1</T>
+      <T n="y">100</T>
+    </U>
+    <U>
+      <T n="x">2</T>
+      <T n="y">50</T>
+    </U>
+    <U>
+      <T n="x">3</T>
+      <T n="y">0</T>
+    </U>
+    <U>
+      <T n="x">4</T>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <T n="_social_group_type">310615<!--GameGroup: group_recreationTable_simblesDominoes--></T>
+  <L n="_static_commodities">
+    <U>
+      <T n="static_commodity">34451<!--StaticCommodity: staticCommodity_PlayGames--></T>
+    </U>
+  </L>
+  <T n="allow_autonomous">False</T>
+  <T n="allow_user_directed">False</T>
+  <T n="attention_cost">0</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="state_based">
+                <U n="state_based">
+                  <V n="state" t="on_trigger">
+                    <T n="on_trigger">312818<!--ObjectStateValue: recreationTable_simblesDominoes_game_off--></T>
+                  </V>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="group_based">
+                <U n="group_based">
+                  <U n="threshold">
+                    <E n="comparison">LESS</E>
+                    <T n="value">2</T>
+                  </U>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_CANCEL</E>
+            <L n="tests">
+              <L>
+                <V t="game_component">
+                  <U n="game_component">
+                    <V n="game_over" t="enabled">
+                      <T n="enabled">False</T>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </V>
+        <V t="list_reference">
+          <T n="list_reference">40705<!--ExitConditionList: ExitConditionList_MotivesNearFail--></T>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="time_based">
+                <U n="time_based">
+                  <T n="max_time">300</T>
+                  <T n="min_time">300</T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="state_based">
+                <U n="state_based">
+                  <V n="state" t="on_trigger">
+                    <T n="on_trigger">127237<!--ObjectStateValue: gameTable_CardGame--></T>
+                  </V>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_CANCEL</E>
+          </U>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="state_based">
+                <U n="state_based">
+                  <V n="state" t="on_trigger">
+                    <T n="on_trigger">127236<!--ObjectStateValue: gameTable_DontWakeLlamaGame--></T>
+                  </V>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_CANCEL</E>
+          </U>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="state_based">
+                <U n="state_based">
+                  <V n="state" t="on_trigger">
+                    <T n="on_trigger">307772<!--ObjectStateValue: gameTable_recreationTable_puzzle--></T>
+                  </V>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_CANCEL</E>
+          </U>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="buff_based">
+                <U n="buff_based">
+                  <T n="buff">309428<!--Buff: buff_recreationTable_simblesDominoes_lose--></T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+            <L n="loot_actions">
+              <T>310612<!--LootActions: loot_recreationTable_simblesDominoes_lossReaction--></T>
+            </L>
+          </U>
+        </V>
+      </L>
+      <V n="content" t="staging_content">
+        <U n="staging_content">
+          <U n="content_set">
+            <L n="affordance_links">
+              <T>310768<!--SocialMixerInteraction: recreationTable_simblesDominoes_idle--></T>
+              <T>309423<!--SocialMixerInteraction: recreationTable_simblesDominoes_win--></T>
+              <T>309425<!--SocialMixerInteraction: recreationTable_simblesDominoes_waitForWinner--></T>
+              <T>309250<!--SocialMixerInteraction: recreationTable_simblesDominoes_takeTurn--></T>
+            </L>
+          </U>
+          <T n="only_use_mixers_from_SI">False</T>
+        </U>
+      </V>
+      <V n="periodic_stat_change" t="enabled">
+        <U n="enabled">
+          <U n="operation_actions">
+            <T n="alarm_interval">10</T>
+          </U>
+          <L n="operations">
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="amount">3.9</T>
+                <T n="stat">16655<!--Commodity: motive_Fun--></T>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+              </U>
+            </V>
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="amount">5</T>
+                <T n="stat">28786<!--Commodity: commodity_Trait_Genius_MentalStimulation--></T>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+              </U>
+            </V>
+            <V t="dynamic_skill">
+              <U n="dynamic_skill">
+                <U n="skill_loot_data_override">
+                  <E n="effectiveness">SmallPeriodic</E>
+                  <T n="stat">16719<!--Skill: statistic_Skill_Child_Mental--></T>
+                </U>
+                <L n="tests">
+                  <L>
+                    <V t="sim_info">
+                      <U n="sim_info">
+                        <V n="ages" t="specified">
+                          <L n="specified">
+                            <E>CHILD</E>
+                          </L>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </V>
+            <V t="reference">
+              <T n="reference">249721<!--PeriodicStatChangeOperation: periodicStatChangeOperation_Lifestyles_Progress_Sedentary--></T>
+            </V>
+            <V t="reference">
+              <T n="reference">249739<!--PeriodicStatChangeOperation: periodicStatChangeOperation_Lifestyles_Liked_Sedentary--></T>
+            </V>
+            <V t="reference">
+              <T n="reference">249843<!--PeriodicStatChangeOperation: periodicStatChangeOperation_Lifestyles_Progress_AdreanlineSeeker_Mundane--></T>
+            </V>
+            <V t="reference">
+              <T n="reference">250954<!--PeriodicStatChangeOperation: periodicStatChangeOperation_Lifestyles_Disliked_AdrenalineSeeker--></T>
+            </V>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>162659<!--LootActions: loot_Commodity_Culling_GhostAdd_target--></T>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x9C09275F<!--String: "(From Being in a social group with at least 3 Sims)"--></T>
+          </V>
+          <T n="buff_type">125555<!--Buff: buff_Trait_WithMyFriends--></T>
+        </U>
+        <L n="subject">
+          <E>Actor</E>
+          <E>SocialGroupSims</E>
+          <E>TargetSim</E>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="social_group">
+              <U n="social_group">
+                <V n="threshold" t="enabled">
+                  <U n="enabled">
+                    <T n="value">3</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="join_game">
+      <U n="join_game">
+        <T n="ensure_setup">True</T>
+        <T n="game_type">309198<!--GameRules: gameRules_recreationTable_simblesDominoes--></T>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <T n="buff_type">318760<!--Buff: buff_recreationTable_simblesDominoes_trayBackup--></T>
+        </U>
+      </U>
+    </V>
+    <V t="broadcaster">
+      <U n="broadcaster">
+        <L n="broadcaster_types">
+          <U>
+            <T n="item">319389<!--Broadcaster: broadcaster_GainRelWithOthersUsingObject_RecreationTable_SimblesDominoes--></T>
+          </U>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="basic_reserve_object" t="enabled">
+    <U n="enabled">
+      <V n="reserve_type_for_provided_target" t="multi" />
+      <L n="subject_list">
+        <U>
+          <V n="reserve_type" t="multi" />
+          <L n="subject">
+            <E>Object</E>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <V n="canonical_animation" t="enabled">
+    <U n="enabled">
+      <T n="factory">309206<!--AnimationElement: recreationTable_simblesDominoes_play_idles--></T>
+    </U>
+  </V>
+  <V n="content_score" t="enabled">
+    <U n="enabled">
+      <T n="base_score">2</T>
+    </U>
+  </V>
+  <T n="display_name">0xB5D73D65<!--String: "Playing Simbles"--></T>
+  <V n="display_name_overrides" t="testable">
+    <U n="testable">
+      <L n="overrides">
+        <U>
+          <V n="new_display_name" t="enabled">
+            <T n="enabled">0xBDEC22AC<!--String: "Practice Simbles"--></T>
+          </V>
+          <L n="test">
+            <L>
+              <V t="buff">
+                <U n="buff">
+                  <V n="whitelist" t="enabled">
+                    <L n="enabled">
+                      <T>330697<!--Buff: buff_recreationTable_simblesDominoes_practiceText_test--></T>
+                    </L>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <V n="idle_animation" t="enabled">
+    <U n="enabled">
+      <T n="factory">309206<!--AnimationElement: recreationTable_simblesDominoes_play_idles--></T>
+    </U>
+  </V>
+  <T n="ignore_group_socials">False</T>
+  <L n="interaction_category_tags">
+    <E>Interaction_SocialSuper</E>
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+    <E>Interaction_SocialAll</E>
+    <E>Interaction_PlayGame</E>
+    <E>Interaction_Social_Contagious</E>
+  </L>
+  <T n="invite_in_after_interaction">True</T>
+  <L n="joinable">
+    <U />
+  </L>
+  <U n="listen_animation">
+    <T n="factory">11570<!--AnimationElement: Listen_Listen_Looping_basic--></T>
+  </U>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="basic_extras">
+          <V t="destroy_object">
+            <U n="destroy_object">
+              <V n="objects_to_destroy" t="from_participant">
+                <U n="from_participant">
+                  <V n="in_slot" t="by_reference">
+                    <T n="by_reference">slot_TableGameIndividual</T>
+                  </V>
+                  <E n="participant">ActorSurface</E>
+                </U>
+              </V>
+            </U>
+          </V>
+        </L>
+        <T n="force_outcome_on_exit">True</T>
+        <L n="loot_list">
+          <T>330698<!--LootActions: loot_RecreationTable_SimblesDominoes_remove_practice_buff--></T>
+        </L>
+      </U>
+    </U>
+  </V>
+  <U n="posture_preferences">
+    <T n="prefer_clicked_parts">False</T>
+  </U>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <T n="relationship_scoring">True</T>
+  <E n="scoring_priority">HIGH</E>
+  <V n="sim_affinity_posture_scoring_data" t="enabled">
+    <U n="enabled">
+      <L n="my_scoring">
+        <U>
+          <V n="affinity_strategy" t="relationship_based" />
+          <T n="negate_tag">True</T>
+          <E n="running_interaction_tag">Sleeping</E>
+        </U>
+        <U>
+          <V n="affinity_strategy" t="avoid" />
+          <E n="running_interaction_tag">Very_Loud</E>
+        </U>
+      </L>
+      <L n="my_tags">
+        <E>Loud</E>
+        <E>Chat</E>
+      </L>
+    </U>
+  </V>
+  <T n="subaction_selection_weight">14</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="include_all">
+        <U n="include_all">
+          <L n="exclude_affordances">
+            <T>308432<!--CraftingResumeInteraction: craftingResume_recreationTable_puzzles--></T>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+  <T n="use_relationship_bonuses">False</T>
+  <T n="visible">True</T>
+</I>

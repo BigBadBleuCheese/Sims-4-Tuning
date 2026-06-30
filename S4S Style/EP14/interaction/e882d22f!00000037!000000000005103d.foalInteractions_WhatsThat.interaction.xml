@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="foalInteractions_WhatsThat" s="331837">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="relative_circle">
+            <U n="relative_circle">
+              <V n="relative_ideal_radius" t="enabled">
+                <U n="enabled">
+                  <T n="radius">0.75</T>
+                  <T n="width">0.5</T>
+                </U>
+              </V>
+              <T n="relative_radius">2.5</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="value" t="facing">
+            <U n="facing">
+              <T n="range">135</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="value" t="line_of_sight">
+            <U n="line_of_sight">
+              <V n="temporary_los" t="enabled" />
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Object</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <T n="allow_user_directed">True</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="stat_based">
+                <U n="stat_based">
+                  <T n="stat">312268<!--Commodity: motive_Horse_Fun--></T>
+                  <U n="threshold">
+                    <T n="value">100</T>
+                  </U>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="time_based">
+                <U n="time_based">
+                  <T n="max_time">15</T>
+                  <T n="min_time">5</T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+      </L>
+      <V n="content" t="staging_content">
+        <U n="staging_content">
+          <U n="content_set">
+            <L n="affordance_links">
+              <T>331836<!--MixerInteraction: foalMixers_WhatsThat_LookAt--></T>
+              <T>331835<!--MixerInteraction: foalMixers_WhatsThat_Dig--></T>
+              <T>331834<!--MixerInteraction: foalMixers_WhatsThat_Sniff--></T>
+            </L>
+          </U>
+        </U>
+      </V>
+      <V n="periodic_stat_change" t="enabled">
+        <U n="enabled">
+          <L n="operations">
+            <V t="dynamic_skill">
+              <U n="dynamic_skill">
+                <U n="skill_loot_data_override">
+                  <E n="effectiveness">StandardPeriodicHorse</E>
+                  <T n="stat">324631<!--Skill: statistic_Skill_Horse_Temperament--></T>
+                </U>
+              </U>
+            </V>
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="amount">4.16</T>
+                <T n="stat">312268<!--Commodity: motive_Horse_Fun--></T>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+              </U>
+            </V>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <V n="basic_reserve_object" t="disabled" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xF8BE7B19<!--String: "What's That?"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <V n="animation_ref" t="enabled">
+              <U n="enabled">
+                <T n="factory">322527<!--AnimationElement: HorseSocialAnims_Reactions_Happy--></T>
+              </U>
+            </V>
+            <L n="basic_extras">
+              <V t="balloon">
+                <U n="balloon">
+                  <L n="balloon_choices">
+                    <U>
+                      <V n="item" t="balloon_icon">
+                        <U n="balloon_icon">
+                          <V n="icon" t="participant">
+                            <U n="participant">
+                              <L n="participant_type">
+                                <E>Object</E>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </L>
+                  <L n="balloon_target">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+              <V t="buff_fire_and_forget">
+                <U n="buff_fire_and_forget">
+                  <U n="buff">
+                    <T n="buff_type">331853<!--Buff: buff_Horse_Moodlets_Happy_WhatsThat--></T>
+                  </U>
+                  <U n="success_chance">
+                    <T n="base_chance">50</T>
+                    <L n="multipliers">
+                      <U>
+                        <T n="multiplier">1.5</T>
+                        <L n="tests">
+                          <L>
+                            <V t="skill_test">
+                              <U n="skill_test">
+                                <T n="skill">324631<!--Skill: statistic_Skill_Horse_Temperament--></T>
+                                <V n="skill_range" t="threshold">
+                                  <U n="threshold">
+                                    <U n="skill_threshold">
+                                      <T n="value">4</T>
+                                    </U>
+                                  </U>
+                                </V>
+                                <T n="use_effective_skill_level">True</T>
+                              </U>
+                            </V>
+                          </L>
+                        </L>
+                      </U>
+                      <U>
+                        <T n="multiplier">1.3333</T>
+                        <L n="tests">
+                          <L>
+                            <V t="test_set_reference">
+                              <T n="test_set_reference">331855<!--TestSetInstance: testSetInstance_Horses_NotInNegativeMood_Actor--></T>
+                            </V>
+                          </L>
+                        </L>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </U>
+          <U n="weight">
+            <T n="base_value">1</T>
+            <L n="multipliers">
+              <U>
+                <T n="multiplier">2</T>
+                <L n="tests">
+                  <L>
+                    <V t="skill_test">
+                      <U n="skill_test">
+                        <T n="skill">324631<!--Skill: statistic_Skill_Horse_Temperament--></T>
+                        <V n="skill_range" t="threshold">
+                          <U n="threshold">
+                            <U n="skill_threshold">
+                              <T n="value">3</T>
+                            </U>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">2</T>
+                <L n="tests">
+                  <L>
+                    <V t="skill_test">
+                      <U n="skill_test">
+                        <T n="skill">324631<!--Skill: statistic_Skill_Horse_Temperament--></T>
+                        <V n="skill_range" t="threshold">
+                          <U n="threshold">
+                            <U n="skill_threshold">
+                              <T n="value">5</T>
+                            </U>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+      </L>
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">322534<!--AnimationElement: HorseSocialAnims_Reactions_Scared--></T>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <T n="buff_type">331854<!--Buff: buff_Horse_Moodlets_Scared_WhatsThat--></T>
+                      </U>
+                      <U n="success_chance">
+                        <T n="base_chance">100</T>
+                        <L n="multipliers">
+                          <U>
+                            <T n="multiplier">0.5</T>
+                            <L n="tests">
+                              <L>
+                                <V t="skill_test">
+                                  <U n="skill_test">
+                                    <T n="skill">324631<!--Skill: statistic_Skill_Horse_Temperament--></T>
+                                    <V n="skill_range" t="threshold">
+                                      <U n="threshold">
+                                        <U n="skill_threshold">
+                                          <T n="value">4</T>
+                                        </U>
+                                      </U>
+                                    </V>
+                                    <T n="use_effective_skill_level">True</T>
+                                  </U>
+                                </V>
+                              </L>
+                            </L>
+                          </U>
+                          <U>
+                            <T n="multiplier">0.6667</T>
+                            <L n="tests">
+                              <L>
+                                <V t="test_set_reference">
+                                  <T n="test_set_reference">331855<!--TestSetInstance: testSetInstance_Horses_NotInNegativeMood_Actor--></T>
+                                </V>
+                              </L>
+                            </L>
+                          </U>
+                        </L>
+                      </U>
+                    </U>
+                  </V>
+                  <V t="balloon">
+                    <U n="balloon">
+                      <L n="balloon_choices">
+                        <U>
+                          <V n="item" t="balloon_icon">
+                            <U n="balloon_icon">
+                              <V n="icon" t="participant">
+                                <U n="participant">
+                                  <L n="participant_type">
+                                    <E>Object</E>
+                                  </L>
+                                </U>
+                              </V>
+                              <T p="InGame\UI\Icons\Headlines\Final\headline_Prohibit.png" n="overlay">2f7d0004:00000000:ab4a67c934164fb1</T>
+                            </U>
+                          </V>
+                        </U>
+                      </L>
+                      <L n="balloon_target">
+                        <E>Actor</E>
+                      </L>
+                    </U>
+                  </V>
+                </L>
+              </U>
+              <U n="weight">
+                <T n="base_value">1</T>
+              </U>
+            </U>
+          </L>
+        </U>
+      </L>
+      <T n="use_fallback_as_default">True</T>
+    </U>
+  </V>
+  <V n="require_reins_for_formation" t="enabled">
+    <T n="enabled">314817<!--RoutingFormation: routingFormation_HorseRiding_Ride--></T>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="unspecified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E>HORSE</E>
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

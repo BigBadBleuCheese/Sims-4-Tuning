@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Ghost_InfoTNS_NewGhost" s="421581">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+              <E>VERTICAL_NOTIFICATION_BUTTONS</E>
+            </L>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant" />
+            </V>
+            <V n="secondary_icon" t="disabled" />
+            <V n="text" t="single">
+              <T n="single">0x3CA800FE<!--String: "Welcome to life as a Ghost, {0.SimFirstName}! Explore newfound powers with <b>Ghost Mastery</b> and level up to become the most formidable ghost! It's also never too late to embark on the <b>Soul's Journey</b> to take care of any Unfinished Business."--></T>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="participant_type" />
+                </L>
+              </U>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x457D1D8<!--String: "Ghostly Beginnings"--></T>
+            </V>
+            <V n="tns_suppression_group" t="enabled" />
+            <L n="ui_responses">
+              <U>
+                <T n="text">0x2F3C6762<!--String: "Soul's Journey"--></T>
+                <E n="ui_request">SHOW_ASPIRATION_PANEL</E>
+              </U>
+              <U>
+                <T n="text">0x1356B461<!--String: "Ghost Mastery"--></T>
+                <E n="ui_request">SHOW_SUMMARY_PANEL</E>
+              </U>
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified" />
+          <V n="species" t="specified">
+            <U n="specified">
+              <L n="species">
+                <E />
+              </L>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>400267<!--Buff: buff_Hidden_DeathOfSim_NewGhost_DelayedReaction--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

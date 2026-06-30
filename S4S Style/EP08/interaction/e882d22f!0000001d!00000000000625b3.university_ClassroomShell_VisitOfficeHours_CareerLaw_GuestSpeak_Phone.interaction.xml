@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="ImmediateSuperInteraction" i="interaction" m="interactions.base.immediate_interaction" n="university_ClassroomShell_VisitOfficeHours_CareerLaw_GuestSpeak_Phone" s="402867">
+  <V n="_icon" t="career_icon_override">
+    <U n="career_icon_override">
+      <T n="career_reference">223298<!--Career: careers_Adult_Law--></T>
+    </U>
+  </V>
+  <V n="_saveable" t="disabled" />
+  <T n="category">193209<!--PieMenuCategory: phoneCategories_Work--></T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xFD3F3FD4<!--String: "Guest Speak at University about Law"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="career_data">
+        <U n="career_data">
+          <V n="career_data" t="current_level_name" />
+          <T n="career_type">223298<!--Career: careers_Adult_Law--></T>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="basic_extras">
+          <V t="put_sim_in_rabbit_hole">
+            <U n="put_sim_in_rabbit_hole">
+              <T n="rabbit_hole">402863<!--RabbitHole: rabbitHole_University_VisitOfficeHours_CareerLaw_GuestSpeak--></T>
+            </U>
+          </V>
+        </L>
+      </U>
+    </U>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="rabbit_hole">
+      <U n="rabbit_hole">
+        <T n="negate">True</T>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">237832<!--TestSetInstance: testSet_PhoneInteractions_CanUsePhone--></T>
+    </V>
+    <V t="day_and_time">
+      <U n="day_and_time">
+        <V n="days_available" t="enabled">
+          <U n="enabled">
+            <T n="1 MONDAY">True</T>
+            <T n="2 TUESDAY">True</T>
+            <T n="3 WEDNESDAY">True</T>
+            <T n="4 THURSDAY">True</T>
+            <T n="5 FRIDAY">True</T>
+          </U>
+        </V>
+        <V n="time_range" t="enabled">
+          <U n="enabled">
+            <U n="begin_time">
+              <T n="hour">8</T>
+            </U>
+            <U n="duration">
+              <T n="hour">10</T>
+            </U>
+          </U>
+        </V>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x6B749BE5<!--String: "Office hours are open from 11 AM to 3 PM on weekdays (except during lecture or class times.) "--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="career_test">
+        <U n="career_test">
+          <V n="test_type" t="career_track">
+            <U n="career_track">
+              <T n="career_track">223301<!--TunableCareerTrack: Law_Track2_Judge--></T>
+              <V n="user_level" t="enabled">
+                <U n="enabled">
+                  <T n="lower_bound">9</T>
+                </U>
+              </V>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="career_test">
+        <U n="career_test">
+          <V n="test_type" t="career_track">
+            <U n="career_track">
+              <T n="career_track">223302<!--TunableCareerTrack: Law_Track3_PA--></T>
+              <V n="user_level" t="enabled">
+                <U n="enabled">
+                  <T n="lower_bound">9</T>
+                </U>
+              </V>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

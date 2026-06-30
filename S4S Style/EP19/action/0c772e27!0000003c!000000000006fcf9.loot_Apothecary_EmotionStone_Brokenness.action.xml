@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Apothecary_EmotionStone_Brokenness" s="457977">
+  <L n="loot_actions">
+    <V t="statistics">
+      <V n="statistics" t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">-18</T>
+          <T n="stat">457975<!--Commodity: commodity_object_Apothecary_EmotionStone_Brokenness--></T>
+          <L n="subject">
+            <E>Object</E>
+          </L>
+        </U>
+      </V>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Object</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xFF6A31A9<!--String: "Oh no! {0.SimFirstName}'s Emotions Stone has broken from the force of repeated use. {0.SimPronounSubjective|xxUpper} can craft another at an Apothecary table."--></T>
+            </V>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="state">
+              <U n="state">
+                <T n="value">457974<!--CommodityBasedObjectStateValue: EmotionStone_Brokenness_Broken--></T>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Object</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xCF29C97<!--String: "{0.SimFirstName}'s Emotion Stone appears to be getting stress cracks along its surface. While useful, these stones are fragile and prone to break after repeated use. {0.SimPronounSubjective|xxUpper} will need to craft a new one soon!"--></T>
+            </V>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <L n="blacklist_traits">
+                  <T>458395<!--Trait: trait_Hidden_Apothecary_EmotionStone_Brokenness--></T>
+                </L>
+              </U>
+            </V>
+            <V t="state">
+              <U n="state">
+                <T n="value">457973<!--CommodityBasedObjectStateValue: EmotionStone_Brokenness_AlmostBroken--></T>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

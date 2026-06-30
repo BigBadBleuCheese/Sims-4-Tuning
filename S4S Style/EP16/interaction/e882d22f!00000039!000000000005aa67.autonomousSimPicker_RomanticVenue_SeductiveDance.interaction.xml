@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="AutonomousSimPickerSuperInteraction" i="interaction" m="interactions.base.picker_interaction" n="autonomousSimPicker_RomanticVenue_SeductiveDance" s="371303">
+  <V n="_saveable" t="enabled" />
+  <L n="actor_continuation">
+    <U>
+      <T n="affordance">370724<!--SocialMixerInteraction: mixer_Social_RomanticVenue_AskToSeductiveDance--></T>
+      <T n="si_affordance_override">13991<!--SocialSuperInteraction: sim_BeAffectionate--></T>
+      <E n="target">PickedSim</E>
+    </U>
+  </L>
+  <T n="allow_autonomous">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xE5EC0DFF<!--String: "Offer Seductive Dance to"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T n="include_uninstantiated_sims">False</T>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="route_start_balloon" t="enabled">
+    <U n="enabled">
+      <U n="balloon">
+        <L n="balloon_choices">
+          <U>
+            <V n="item" t="balloon_icon">
+              <U n="balloon_icon">
+                <V n="icon" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>Object</E>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </U>
+        </L>
+        <L n="balloon_target">
+          <E>Actor</E>
+        </L>
+      </U>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <V n="sim_filter" t="sim_filter_selected">
+    <T n="sim_filter_selected">377963<!--TunableSimFilter: SimPickerFilter_RomanticVenue_SeductiveDance--></T>
+  </V>
+  <L n="sim_tests">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>99711<!--Buff: buff_GettingMarried--></T>
+          </L>
+          <E n="subject">PickedSim</E>
+        </U>
+      </V>
+      <V t="test_set_reference">
+        <T n="test_set_reference">104046<!--TestSetInstance: testSet_TeenANDTeenORAdultANDAdult_Picker--></T>
+      </V>
+      <V t="test_set_reference">
+        <T n="test_set_reference">365797<!--TestSetInstance: testSet_FlowerArrangement_FaithfulTulipScent_FromFaithfulReceiver_PickedSim--></T>
+      </V>
+    </L>
+  </L>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="npc" t="enabled" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="mood">
+      <U n="mood">
+        <T n="disallow">True</T>
+        <T n="mood">14643<!--Mood: Mood_Sad--></T>
+      </U>
+    </V>
+    <V t="mood">
+      <U n="mood">
+        <T n="disallow">True</T>
+        <T n="mood">14632<!--Mood: Mood_Angry--></T>
+      </U>
+    </V>
+    <V t="trait">
+      <U n="trait">
+        <L n="blacklist_traits">
+          <T>175972<!--Trait: trait_Hidden_Skeleton--></T>
+          <T>177810<!--Trait: trait_Hidden_Skeleton_ServiceSkeleton--></T>
+          <T>178437<!--Trait: trait_Hidden_Skeleton_TempleSkeleton--></T>
+          <T>259314<!--Trait: trait_Hidden_CottageWorld_NPC_AgnesCrumplebottom--></T>
+        </L>
+      </U>
+    </V>
+    <V t="state">
+      <U n="state">
+        <V n="fallback_behavior" t="always_pass" />
+        <T n="value">153364<!--ObjectStateValue: stereoOnOff_CanDance_True--></T>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">147681<!--TestSetInstance: testSet_UnflityTraitEmbarrassedMood--></T>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+  <T n="visible">True</T>
+</I>

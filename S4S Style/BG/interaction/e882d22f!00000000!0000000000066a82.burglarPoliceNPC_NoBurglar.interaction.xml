@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="burglarPoliceNPC_NoBurglar" s="420482">
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Actor</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <L n="_static_commodities">
+    <U>
+      <T n="static_commodity">421846<!--StaticCommodity: staticCommodity_Police--></T>
+    </U>
+  </L>
+  <T n="allow_autonomous">True</T>
+  <T n="allow_user_directed">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xFE983BAD<!--String: "Careers"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <V n="animation_ref" t="enabled">
+              <U n="enabled">
+                <T n="factory">28357<!--AnimationElement: Socials_Responses_Embarrassed_HighIntensity--></T>
+                <U n="overrides">
+                  <V n="balloons" t="enabled">
+                    <L n="enabled">
+                      <U>
+                        <L n="balloon_choices">
+                          <U>
+                            <V n="item" t="balloon_category">
+                              <T n="balloon_category">31966<!--BalloonCategory: balloonCategory_EmotionEmbarassed_Thought--></T>
+                            </V>
+                          </U>
+                        </L>
+                        <L n="balloon_target">
+                          <E>Actor</E>
+                        </L>
+                      </U>
+                    </L>
+                  </V>
+                </U>
+              </U>
+            </V>
+            <L n="basic_extras">
+              <V t="notification">
+                <U n="notification">
+                  <V n="dialog" t="single">
+                    <V n="single" t="literal">
+                      <U n="literal">
+                        <V n="icon" t="enabled">
+                          <V n="enabled" t="participant" />
+                        </V>
+                        <V n="text" t="single">
+                          <T n="single">0x6AD709B1<!--String: "Well, this is embarrassing. The burglar slipped right through my fingers. Not my best work... Stay safe out there!"--></T>
+                        </V>
+                        <E n="visual_type">SPEECH</E>
+                      </U>
+                    </V>
+                  </V>
+                  <T n="limit_to_one_notification">True</T>
+                  <E n="recipient_subject">ActiveHousehold</E>
+                </U>
+              </V>
+            </L>
+            <L n="loot_list">
+              <T>435041<!--LootActions: loot_Burglar_PoliceCleanupBuffs--></T>
+            </L>
+          </U>
+        </U>
+      </L>
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">11804<!--AnimationElement: Social_Responses_Annoyed_Random--></T>
+                  </U>
+                </V>
+                <L n="loot_list">
+                  <T>430507<!--LootActions: loot_Burglar_PrankPolice--></T>
+                  <T>435041<!--LootActions: loot_Burglar_PoliceCleanupBuffs--></T>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="buff">
+                <U n="buff">
+                  <T n="apply_whitelist_on_individual_basis">False</T>
+                  <E n="subject">ActiveHousehold</E>
+                  <V n="whitelist" t="enabled">
+                    <L n="enabled">
+                      <T>435040<!--Buff: buff_Burglar_Hidden_PrankCall--></T>
+                    </L>
+                  </V>
+                </U>
+              </V>
+              <V t="buff">
+                <U n="buff">
+                  <T n="apply_whitelist_on_individual_basis">False</T>
+                  <L n="blacklist">
+                    <T>422832<!--Buff: buff_Burglar_Hidden_SpottedBurglar--></T>
+                  </L>
+                  <E n="subject">ActiveHousehold</E>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">ACTOR</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="identity">
+      <U n="identity">
+        <T n="subjects_match">True</T>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>426353<!--Buff: buff_Burglar_Hidden_DistractedByPlayer--></T>
+        </L>
+      </U>
+    </V>
+    <V t="participant_running_interaction">
+      <U n="participant_running_interaction">
+        <L n="affordances">
+          <T>422137<!--SuperInteraction: burglarPoliceNPC_Arrival--></T>
+          <T>435039<!--SuperInteraction: burglarPoliceNPC_Arrival_NoBurglar--></T>
+          <T>423152<!--SocialSuperInteraction: si_Touching_Burglar--></T>
+          <T>445552<!--SuperInteraction: burglarPoliceNPC_Arrival_IncomingBurglar--></T>
+        </L>
+        <T n="test_for_not_running">True</T>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="situation_running_test">
+        <U n="situation_running_test">
+          <V n="situation_blacklist" t="enabled">
+            <L n="enabled">
+              <T>424927<!--BurglarSituation: situation_Burglar--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <V n="whitelist" t="enabled">
+            <L n="enabled">
+              <T>422063<!--Buff: buff_BurglarPolice_Role_PostFight--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

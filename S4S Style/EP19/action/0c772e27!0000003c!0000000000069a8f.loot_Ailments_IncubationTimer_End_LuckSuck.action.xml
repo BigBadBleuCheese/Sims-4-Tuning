@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Ailments_IncubationTimer_End_LuckSuck" s="432783">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x87E1D9B3<!--String: "(From Resisting an Ailment)"--></T>
+          </V>
+          <T n="buff_type">436479<!--Buff: buff_Career_Naturopathic_Trait_NaturalProtection--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <L n="whitelist_traits">
+                  <T>443590<!--Trait: trait_HolisticHealer--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0xE9CB1ABC<!--String: "(From Contagious Spread)"--></T>
+          </V>
+          <V n="buff_source" t="enabled">
+            <V n="enabled" t="from_loot">
+              <T n="from_loot">432783<!--LootActions: loot_Ailments_IncubationTimer_End_LuckSuck--></T>
+            </V>
+          </V>
+          <T n="buff_type">432793<!--Buff: buff_Ailments_MainBuff_LuckSuck--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <L n="blacklist_traits">
+                  <T>443590<!--Trait: trait_HolisticHealer--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="actions">
+      <T n="actions">434450<!--LootActions: loot_BalanceSys_RemoveMajorEffects--></T>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InGame\UI\Icons\Notifications\notification_tense.png">2f7d0004:00000000:b19fef6acaa744b8</T>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xC8663D5D<!--String: "{0.SimFirstName} felt a little queasy earlier and hoped it was nothing, but now it's obvious {0.SimPronounSubjective} {S0.has}{P0.have} a full-blown Ailment. Maybe {0.SimPronounSubjective} didn't wash {0.SimPronounPossessiveDependent} hands enough, or maybe it was from that odd-looking Sim {0.SimPronounSubjective} introduced {0.SimPronounReflexive} to recently. Whatever the case, now {0.SimFirstName} has to deal with it."--></T>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="test_set_reference">
+        <T n="test_set_reference">440766<!--TestSetInstance: testSet_Ailments_HasNoAilment_Actor--></T>
+      </V>
+      <V t="test_set_reference">
+        <T n="test_set_reference">484210<!--TestSetInstance: testSet_Ailments_GameOptions_IsEnabled--></T>
+      </V>
+    </L>
+  </L>
+</I>

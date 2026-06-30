@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="EP19Quests_Gnome_React" s="444038">
+  <V n="_saveable" t="enabled" />
+  <T n="allow_user_directed">False</T>
+  <T n="allowed_to_combine">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">444040<!--AnimationElement: anim_EP19Quests_givegift_react--></T>
+      </U>
+    </U>
+  </V>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x5D930414<!--String: "Appease"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">444035<!--AnimationElement: anim_EP19Quests_givegift_pos--></T>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <T n="buff_type">444101<!--Buff: buff_EP19Quests_Gnome_cooldown--></T>
+                      </U>
+                    </U>
+                  </V>
+                </L>
+                <L n="loot_list">
+                  <T>444110<!--LootActions: loot_EP19Quests_Rewards_Gnome_Coffee--></T>
+                  <T>444318<!--LootActions: loot_EP19Quests_GreatGnome_cleanup--></T>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="buff">
+                <U n="buff">
+                  <V n="whitelist" t="enabled">
+                    <L n="enabled">
+                      <T>444099<!--Buff: buff_EP19Quests_Gnome_successcoffee--></T>
+                    </L>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">444036<!--AnimationElement: anim_EP19Quests_givegift_neg--></T>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="notification">
+                    <U n="notification">
+                      <V n="dialog" t="single">
+                        <V n="single" t="literal">
+                          <U n="literal">
+                            <L n="dialog_options">
+                              <E>DISABLE_CLOSE_BUTTON</E>
+                            </L>
+                            <V n="icon" t="enabled">
+                              <V n="enabled" t="resource_key">
+                                <U n="resource_key">
+                                  <T p="InEP19\UI\Icons\Quests\quests_GnomeQuest.png" n="key">2f7d0004:00000000:209d55751aefbe61</T>
+                                </U>
+                              </V>
+                            </V>
+                            <V n="text" t="single">
+                              <T n="single">0xBFF8DA0E<!--String: "The Great Gnome is displeased with {0.SimFirstName}'s offer. An Ailment has been bestowed!"--></T>
+                            </V>
+                          </U>
+                        </V>
+                      </V>
+                    </U>
+                  </V>
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <V n="buff_reason" t="enabled">
+                          <T n="enabled">0x9CEC7862<!--String: "(From Displeasing The Great Gnome)"--></T>
+                        </V>
+                        <T n="buff_type">432795<!--Buff: buff_Ailments_MainBuff_GnomeMagnet--></T>
+                      </U>
+                    </U>
+                  </V>
+                </L>
+                <L n="loot_list">
+                  <T>444318<!--LootActions: loot_EP19Quests_GreatGnome_cleanup--></T>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="buff">
+                <U n="buff">
+                  <V n="whitelist" t="enabled">
+                    <L n="enabled">
+                      <T>444100<!--Buff: buff_EP19Quests_Gnome_failcoffee--></T>
+                    </L>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">444035<!--AnimationElement: anim_EP19Quests_givegift_pos--></T>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <T n="buff_type">444101<!--Buff: buff_EP19Quests_Gnome_cooldown--></T>
+                      </U>
+                    </U>
+                  </V>
+                </L>
+                <L n="loot_list">
+                  <T>444111<!--LootActions: loot_EP19Quests_Rewards_Gnome_Pie--></T>
+                  <T>444318<!--LootActions: loot_EP19Quests_GreatGnome_cleanup--></T>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="buff">
+                <U n="buff">
+                  <V n="whitelist" t="enabled">
+                    <L n="enabled">
+                      <T>444106<!--Buff: buff_EP19Quests_Gnome_successpie--></T>
+                    </L>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">444036<!--AnimationElement: anim_EP19Quests_givegift_neg--></T>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="notification">
+                    <U n="notification">
+                      <V n="dialog" t="single">
+                        <V n="single" t="literal">
+                          <U n="literal">
+                            <L n="dialog_options">
+                              <E>DISABLE_CLOSE_BUTTON</E>
+                            </L>
+                            <V n="icon" t="enabled">
+                              <V n="enabled" t="resource_key">
+                                <U n="resource_key">
+                                  <T p="InEP19\UI\Icons\Quests\quests_GnomeQuest.png" n="key">2f7d0004:00000000:209d55751aefbe61</T>
+                                </U>
+                              </V>
+                            </V>
+                            <V n="text" t="single">
+                              <T n="single">0xBFF8DA0E<!--String: "The Great Gnome is displeased with {0.SimFirstName}'s offer. An Ailment has been bestowed!"--></T>
+                            </V>
+                          </U>
+                        </V>
+                      </V>
+                    </U>
+                  </V>
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <V n="buff_reason" t="enabled">
+                          <T n="enabled">0x9CEC7862<!--String: "(From Displeasing The Great Gnome)"--></T>
+                        </V>
+                        <T n="buff_type">432793<!--Buff: buff_Ailments_MainBuff_LuckSuck--></T>
+                      </U>
+                    </U>
+                  </V>
+                </L>
+                <L n="loot_list">
+                  <T>432779<!--LootActions: loot_Ailments_IncubationTimer_Start_LuckSuck--></T>
+                  <T>444318<!--LootActions: loot_EP19Quests_GreatGnome_cleanup--></T>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="buff">
+                <U n="buff">
+                  <V n="whitelist" t="enabled">
+                    <L n="enabled">
+                      <T>444104<!--Buff: buff_EP19Quests_Gnome_failpie--></T>
+                    </L>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">444035<!--AnimationElement: anim_EP19Quests_givegift_pos--></T>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <T n="buff_type">444101<!--Buff: buff_EP19Quests_Gnome_cooldown--></T>
+                      </U>
+                    </U>
+                  </V>
+                </L>
+                <L n="loot_list">
+                  <T>444318<!--LootActions: loot_EP19Quests_GreatGnome_cleanup--></T>
+                  <T>462271<!--LootActions: loot_EP19Quests_Rewards_Gnome_Toy--></T>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="buff">
+                <U n="buff">
+                  <V n="whitelist" t="enabled">
+                    <L n="enabled">
+                      <T>444107<!--Buff: buff_EP19Quests_Gnome_successtoy--></T>
+                    </L>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

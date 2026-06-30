@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_SmallBusiness_Reputation_Consequences_Ultimatum" s="417264">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>SignificantOtherActor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xF1DBCF21<!--String: "{0.SimFirstName} has 3 days to change the Alignment of {0.SimPronounPossessiveDependent} Small Business, otherwise {1.SimFirstName} will leave the relationship!"--></T>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="participant_type">
+                    <U n="participant_type">
+                      <V n="objects" t="from_participant" />
+                    </U>
+                  </V>
+                  <V t="participant_type">
+                    <U n="participant_type">
+                      <V n="objects" t="from_participant">
+                        <U n="from_participant">
+                          <E n="participant">SignificantOtherActor</E>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </V>
+          </U>
+        </V>
+        <E n="subject">SignificantOtherActor</E>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0xAA9D2355<!--String: "(From Asking for Second Chance)"--></T>
+          </V>
+          <T n="buff_type">404106<!--Buff: buff_SmallBusiness_Reputation_Consequences_Ultimatum--></T>
+        </U>
+      </U>
+    </V>
+    <V t="trait_remove">
+      <U n="trait_remove">
+        <V n="trait" t="specific_trait">
+          <U n="specific_trait">
+            <T n="specific_trait">441915<!--Trait: trait_SmallBusiness_Reputation_Consequences_Ultimatum_FirstWarningGiven_Hidden--></T>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="trait_add">
+      <U n="trait_add">
+        <T n="trait">441917<!--Trait: trait_SmallBusiness_Reputation_Consequences_Ultimatum_Unaddressed_Hidden--></T>
+      </U>
+    </V>
+    <V t="buff_removal">
+      <U n="buff_removal">
+        <L n="buffs_to_remove">
+          <T>404105<!--Buff: buff_SmallBusiness_Reputation_Consequences_ConflictingValues--></T>
+        </L>
+        <E n="subject">SignificantOtherActor</E>
+      </U>
+    </V>
+  </L>
+</I>

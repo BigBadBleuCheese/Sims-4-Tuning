@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="islandCanoe_RideAround_Fake" s="498063">
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <T n="allow_from_object_inventory">True</T>
+  <T n="allow_from_sim_inventory">True</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xEBE2B2A9<!--String: "Sail Around"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="include_all">
+        <U n="include_all">
+          <L n="exclude_affordances">
+            <T>271032<!--SuperInteraction: socialSuperInteraction_CarryPickUp_Infant--></T>
+            <T>271090<!--SuperInteraction: socialSuperInteraction_CarryPickUp_Infant_Back--></T>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_autonomous">
+    <L>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>218444<!--Trait: trait_Humanoid_Robots_MainTrait--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="location">
+      <U n="location">
+        <U n="location_tests">
+          <V n="valid_surface_types" t="Test_Surface_Types">
+            <U n="Test_Surface_Types">
+              <V n="whitelist" t="specify">
+                <U n="specify">
+                  <L n="whitelist">
+                    <E>SURFACETYPE_POOL</E>
+                  </L>
+                </U>
+              </V>
+            </U>
+          </V>
+        </U>
+        <E n="subject">Object</E>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xEB0C5A58<!--String: "To sail, place the vessel in your inventory and select Sail on any swimmable water. If your house is by the sea, you can also place the vessel close to water in Build Mode."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="test_set_reference">
+        <T n="test_set_reference">215306<!--TestSetInstance: testSetInstance_IslandCanoe_Ownership--></T>
+      </V>
+      <V t="location">
+        <U n="location">
+          <U n="location_tests">
+            <V n="valid_surface_types" t="Test_Surface_Types">
+              <U n="Test_Surface_Types">
+                <V n="blacklist" t="specify">
+                  <U n="specify">
+                    <L n="blacklist">
+                      <E>SURFACETYPE_POOL</E>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </U>
+          <E n="subject">Object</E>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="test_set_reference">
+        <T n="test_set_reference">215306<!--TestSetInstance: testSetInstance_IslandCanoe_Ownership--></T>
+      </V>
+      <V t="in_inventory" />
+    </L>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

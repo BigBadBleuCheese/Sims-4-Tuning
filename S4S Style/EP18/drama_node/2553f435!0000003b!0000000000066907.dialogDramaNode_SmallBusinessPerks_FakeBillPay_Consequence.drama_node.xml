@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="DialogDramaNode" i="drama_node" m="drama_scheduler.dialog_drama_node" n="dialogDramaNode_SmallBusinessPerks_FakeBillPay_Consequence" s="420103">
+  <V n="dialog_and_loot" t="dialog_ok">
+    <U n="dialog_ok">
+      <U n="dialog">
+        <V n="custom_mask_target_sim" t="enabled">
+          <U n="enabled">
+            <V n="alert_icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InGame\UI\Icons\Dialog\phone_anonymous_caller_icon.png">2f7d0004:00000000:257c708573e63faf</T>
+                </U>
+              </V>
+            </V>
+            <V n="alert_sim_name" t="enabled">
+              <T n="enabled">0x3A766D1D<!--String: "Business Bureau"--></T>
+            </V>
+            <V n="header_icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InGame\UI\Icons\Dialog\phone_anonymous_caller_icon.png">2f7d0004:00000000:257c708573e63faf</T>
+                </U>
+              </V>
+            </V>
+          </U>
+        </V>
+        <E n="phone_ring_type">RING</E>
+        <V n="text" t="single">
+          <T n="single">0xA3FF8475<!--String: "This is a courtesy call to inform you that a recent payment you've made has been flagged as fraudulent. We at the Business Bureau will be checking your recent payments and imposing a fine. The more suspicious transactions we find, the greater the fine will be!"--></T>
+        </V>
+        <T n="text_ok">0x7151EFE5<!--String: "Oh no."--></T>
+      </U>
+      <L n="on_dialog_complete_loot_list">
+        <T>420308<!--LootActions: lootActions_SmallBusinessPerks_FakeBillPay_AddDiscoveredTempRelbits--></T>
+        <T>420104<!--LootActions: lootActions_SmallBusinessPerks_FakeBillPay_PayFineWithTNS--></T>
+        <T>420099<!--LootActions: lootActions_SmallBusinessPerks_FakeBillPay_CounterReset--></T>
+      </L>
+    </U>
+  </V>
+  <U n="min_and_max_times">
+    <T n="upper_bound">1</T>
+  </U>
+  <E n="sender_sim_info_type">INSTANCED_ALLOWED</E>
+  <V n="time_option" t="schedule">
+    <U n="schedule">
+      <L n="valid_times">
+        <U>
+          <U n="days_available">
+            <T n="0 SUNDAY">True</T>
+            <T n="1 MONDAY">True</T>
+            <T n="2 TUESDAY">True</T>
+            <T n="3 WEDNESDAY">True</T>
+            <T n="4 THURSDAY">True</T>
+            <T n="5 FRIDAY">True</T>
+            <T n="6 SATURDAY">True</T>
+          </U>
+          <T n="duration">24</T>
+        </U>
+      </L>
+    </U>
+  </V>
+</I>

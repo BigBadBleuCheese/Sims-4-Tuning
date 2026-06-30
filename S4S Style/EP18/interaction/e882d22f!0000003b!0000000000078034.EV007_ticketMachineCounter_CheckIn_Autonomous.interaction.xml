@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="EV007_ticketMachineCounter_CheckIn_Autonomous" s="491572">
+  <V n="_saveable" t="enabled" />
+  <L n="_static_commodities">
+    <U>
+      <T n="desire">4</T>
+      <T n="static_commodity">376431<!--StaticCommodity: staticCommodity_RoleAutonomy_SmallBusiness_Customer_CheckIn--></T>
+    </U>
+  </L>
+  <T n="allow_user_directed">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">491570<!--AnimationElement: anim_EV007_TicketMachineCounter_CheckIn--></T>
+      </U>
+    </U>
+  </V>
+  <V n="basic_reserve_object" t="enabled" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x3FD69899<!--String: "Buy Entry into {2.String}"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="small_business">
+        <U n="small_business">
+          <E n="participant">CurrentlyOpenSmallBusinessOwner</E>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <L n="continuation">
+              <U>
+                <T n="affordance">14261<!--SuperInteraction: si_moveAwayCircle--></T>
+                <E n="target">Actor</E>
+              </U>
+            </L>
+            <L n="loot_list">
+              <T>379534<!--LootActions: lootActions_SmallBusinessCustomerStateChange_BusinessVisit--></T>
+              <T>428960<!--LootActions: loot_SmallBusiness_Reputation_Consequences_HappyCustomer_AddBuff--></T>
+            </L>
+          </U>
+        </U>
+      </L>
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="basic_extras">
+                  <V t="payment">
+                    <U n="payment">
+                      <V n="payment" t="literal">
+                        <U n="literal">
+                          <U n="cost_modifiers">
+                            <L n="multipliers">
+                              <U>
+                                <T n="multiplier">2</T>
+                                <L n="tests">
+                                  <L>
+                                    <V t="small_business_dependents_supervised" />
+                                    <V t="situation_sim_count_test">
+                                      <U n="situation_sim_count_test">
+                                        <L n="situation_tags">
+                                          <E>Situation_SmallBusiness_Customer</E>
+                                        </L>
+                                        <U n="threshold">
+                                          <T n="value">2</T>
+                                        </U>
+                                      </U>
+                                    </V>
+                                  </L>
+                                </L>
+                              </U>
+                            </L>
+                          </U>
+                          <V n="payment_cost" t="small_business_fee">
+                            <U n="small_business_fee">
+                              <L n="payment_destinations">
+                                <V t="open_small_business" />
+                              </L>
+                              <V n="payment_type" t="small_business_entry_fee_payment" />
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">14261<!--SuperInteraction: si_moveAwayCircle--></T>
+                    <E n="target">Actor</E>
+                  </U>
+                </L>
+                <L n="loot_list">
+                  <T>379534<!--LootActions: lootActions_SmallBusinessCustomerStateChange_BusinessVisit--></T>
+                  <T>428960<!--LootActions: loot_SmallBusiness_Reputation_Consequences_HappyCustomer_AddBuff--></T>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="small_business_attendance_sale_mode_test">
+                <U n="small_business_attendance_sale_mode_test">
+                  <E n="attendance_sale_mode">ENTRY_FEE</E>
+                  <E n="participant">CurrentlyOpenSmallBusinessOwner</E>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">14261<!--SuperInteraction: si_moveAwayCircle--></T>
+                    <E n="target">Actor</E>
+                  </U>
+                </L>
+                <L n="loot_list">
+                  <T>379534<!--LootActions: lootActions_SmallBusinessCustomerStateChange_BusinessVisit--></T>
+                  <T>372063<!--LootActions: loot_SmallBusiness_HourlyFee--></T>
+                  <T>428960<!--LootActions: loot_SmallBusiness_Reputation_Consequences_HappyCustomer_AddBuff--></T>
+                  <T>439325<!--LootActions: loot_SmallBusiness_HourlyFee_GiveToDependentIfCaregiverLeaving--></T>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="small_business_attendance_sale_mode_test">
+                <U n="small_business_attendance_sale_mode_test">
+                  <E n="attendance_sale_mode">HOURLY_FEE</E>
+                  <E n="participant">CurrentlyOpenSmallBusinessOwner</E>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <L n="rallyable" />
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+          </L>
+        </V>
+        <V n="npc" t="enabled">
+          <T n="enabled">True</T>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="is_small_business_open" />
+    <V t="situation_job_test">
+      <U n="situation_job_test">
+        <L n="situation_jobs">
+          <T>373362<!--SituationJob: job_SmallBusinessCustomer--></T>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>400877<!--Buff: buff_SmallBusiness_CheckedIn--></T>
+        </L>
+      </U>
+    </V>
+    <V t="small_business_attendance_sale_mode_test">
+      <U n="small_business_attendance_sale_mode_test">
+        <E n="attendance_sale_mode">DISABLED</E>
+        <T n="negate">True</T>
+        <E n="participant">CurrentlyOpenSmallBusinessOwner</E>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+  <V n="utility_info" t="enabled">
+    <L n="enabled">
+      <U>
+        <E n="key">POWER</E>
+      </U>
+    </L>
+  </V>
+</I>

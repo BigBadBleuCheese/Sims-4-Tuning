@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SimPickerInteraction" i="interaction" m="interactions.base.picker_interaction" n="simPicker_Marbles_PlayAgainst" s="347799">
+  <V n="_saveable" t="disabled" />
+  <L n="actor_continuation">
+    <U>
+      <T n="affordance">360022<!--SuperInteraction: marblesGame_Start_Normal--></T>
+    </U>
+  </L>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x9021B4E7<!--String: "Play Marbles with"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T n="include_uninstantiated_sims">False</T>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <L n="picked_continuation">
+    <U>
+      <T n="affordance">360022<!--SuperInteraction: marblesGame_Start_Normal--></T>
+    </U>
+  </L>
+  <V n="picker_dialog" t="sim_picker">
+    <U n="sim_picker">
+      <L n="custom_filters">
+        <V t="reference">
+          <T n="reference">499295<!--CustomSimFilter: customSimFilter_NobleCareer--></T>
+        </V>
+      </L>
+      <V n="max_selectable" t="static_count">
+        <U n="static_count">
+          <T n="number_selectable">3</T>
+        </U>
+      </V>
+    </U>
+  </V>
+  <V n="pie_menu_test_tooltip" t="enabled">
+    <T n="enabled">0x2B06C938<!--String: "There aren't any other Children available nearby to play with."--></T>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <V n="radius" t="enabled">
+    <T n="enabled">20</T>
+  </V>
+  <V n="sim_filter" t="sim_filter_selected">
+    <T n="sim_filter_selected">421883<!--TunableSimFilter: filter_SimPicker_HasMet_C--></T>
+  </V>
+  <L n="sim_tests">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>26171<!--Buff: buff_Sim_IsDying--></T>
+            <T>12856<!--Buff: MoodBuff_Hidden_Stressed--></T>
+            <T>12847<!--Buff: MoodBuff_Hidden_Miserable--></T>
+            <T>347885<!--Buff: buff_Marbles_SoreThumb--></T>
+          </L>
+          <E n="subject">PickedSim</E>
+        </U>
+      </V>
+      <V t="participant_running_interaction">
+        <U n="participant_running_interaction">
+          <L n="affordances">
+            <T>347801<!--SocialSuperInteraction: socialSI_MarblesGame_Normal--></T>
+            <T>347802<!--SocialSuperInteraction: socialSI_MarblesGame_ForKeeps--></T>
+            <T>354790<!--SuperInteraction: marblesGame_Practice--></T>
+          </L>
+          <E n="participant">PickedSim</E>
+          <T n="test_for_not_running">True</T>
+          <T n="test_interaction_queue">True</T>
+        </U>
+      </V>
+    </L>
+  </L>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="state_white_black">
+      <U n="state_white_black">
+        <U n="states">
+          <V n="blacklist" t="specify">
+            <U n="specify">
+              <L n="blacklist">
+                <T>346995<!--ObjectStateValue: marblesRug_MatchInProgress_Values--></T>
+              </L>
+            </U>
+          </V>
+        </U>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">28305<!--TestSetInstance: testSet_EmotionNotMiserable--></T>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>347885<!--Buff: buff_Marbles_SoreThumb--></T>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x69B287CB<!--String: "This Sim has a sore thumb and needs a break from Marbles."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+</I>

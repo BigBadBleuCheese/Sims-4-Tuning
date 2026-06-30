@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_SpinningBike_Class_LeaveClass" s="464066">
+  <L n="loot_actions">
+    <V t="interaction">
+      <U n="interaction">
+        <E n="affordance_priority">High</E>
+        <L n="affordances">
+          <T>464065<!--SuperInteraction: spinningBike_Class_LeaveClass--></T>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="situation_job_test">
+              <U n="situation_job_test">
+                <L n="situation_jobs">
+                  <T>447912<!--SituationJob: job_SpinningClass_classMember--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="interaction">
+      <U n="interaction">
+        <E n="affordance_priority">High</E>
+        <L n="affordances">
+          <T>463355<!--ImmediateSuperInteraction: spinningClass_EndClass--></T>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="situation_job_test">
+              <U n="situation_job_test">
+                <L n="situation_jobs">
+                  <T>447911<!--SituationJob: job_SpinningClass_Instructor--></T>
+                  <T>461025<!--SituationJob: job_SpinningClass_Instructor_PlayerLed--></T>
+                </L>
+              </U>
+            </V>
+            <V t="situation_job_test">
+              <U n="situation_job_test">
+                <T n="negate">True</T>
+                <L n="situation_jobs">
+                  <T>446574<!--SituationJob: jobs_SpinningClass_Instructor_Service--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

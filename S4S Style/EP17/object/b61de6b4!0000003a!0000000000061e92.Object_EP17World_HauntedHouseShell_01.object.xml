@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="GameObject" i="object" m="objects.game_object" n="Object_EP17World_HauntedHouseShell_01" s="401042">
+  <U n="_components">
+    <V n="focus" t="enabled">
+      <U n="enabled">
+        <V n="_focus_score" t="globally">
+          <U n="globally">
+            <E n="base">LOW</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V n="state" t="enabled">
+      <U n="enabled">
+        <L n="states">
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">401039<!--ObjectStateValue: EP17World_HauntedHouseShell_Values_Haunted--></T>
+                <U n="value">
+                  <V n="audio_state" t="apply_new_value">
+                    <V n="apply_new_value" t="start_audio">
+                      <U n="start_audio">
+                        <T n="audio" p="InEP17\Audio\sfx\ep17_world\ep17_world_hauntedhouse1_haunted_state_lp.propx">39b2aa4a:00000000:641bfbcbcefed277</T>
+                      </U>
+                    </V>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">401040<!--ObjectStateValue: EP17World_HauntedHouseShell_Values_NotHaunted--></T>
+              </U>
+              <U>
+                <T n="key">401041<!--ObjectStateValue: EP17World_HauntedHouseShell_Values_Buffer--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">401040<!--ObjectStateValue: EP17World_HauntedHouseShell_Values_NotHaunted--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">405140<!--ObjectStateValue: EP17World_HauntedHouseShell_Values_Haunted_altSFX_on--></T>
+              </U>
+              <U>
+                <T n="key">405141<!--ObjectStateValue: EP17World_HauntedHouseShell_Values_Haunted_altSFX_off--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">405141<!--ObjectStateValue: EP17World_HauntedHouseShell_Values_Haunted_altSFX_off--></T>
+            </V>
+          </U>
+        </L>
+        <V n="timed_state_triggers" t="enabled">
+          <L n="enabled">
+            <U>
+              <T n="key">401041<!--ObjectStateValue: EP17World_HauntedHouseShell_Values_Buffer--></T>
+              <U n="value">
+                <L n="ops">
+                  <U>
+                    <L n="states_to_trigger">
+                      <T>401039<!--ObjectStateValue: EP17World_HauntedHouseShell_Values_Haunted--></T>
+                      <T>405140<!--ObjectStateValue: EP17World_HauntedHouseShell_Values_Haunted_altSFX_on--></T>
+                    </L>
+                    <T n="trigger_time">8</T>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+        </V>
+      </U>
+    </V>
+  </U>
+  <L n="_super_affordances">
+    <T>13328<!--ImmediateSuperInteraction: debug_Reset--></T>
+    <T>13326<!--ImmediateSuperInteraction: debug_ObjectDestroy--></T>
+    <T>103888<!--ImmediateSuperInteraction: cheat_set_as_head--></T>
+    <T>13983<!--StandSuperInteraction: sim-stand--></T>
+    <T>402124<!--ImmediateSuperInteraction: immediate_EP17World_HauntedHouseShell_MakeHaunted_debug--></T>
+    <T>402125<!--ImmediateSuperInteraction: immediate_EP17World_HauntedHouseShell_MakeNotHaunted_debug--></T>
+    <T>401057<!--SuperInteraction: EP17World_HauntedHouseShell_Explore_01--></T>
+    <T>401045<!--SuperInteraction: EP17World_HauntedHouseShell_Haunt_01--></T>
+    <T>401046<!--SuperInteraction: EP17World_HauntedHouseShell_Cleanse_01--></T>
+  </L>
+  <T n="_world_file_object_persists">True</T>
+  <U n="recycling_data">
+    <L n="recycling_values">
+      <U>
+        <E n="Bucks Type">RecycleBitsBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+      <U>
+        <E n="Bucks Type">RecyclePiecesBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+    </L>
+  </U>
+</I>

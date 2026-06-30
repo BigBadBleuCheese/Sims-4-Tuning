@@ -1,0 +1,558 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="super_MovieTheater_Watch_Action" s="305487">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="spawn_points_with_backup">
+            <U n="spawn_points_with_backup">
+              <V n="backup_tags" t="Spawn_Point_Tags">
+                <L n="Spawn_Point_Tags">
+                  <E>Spawn_Walkby</E>
+                </L>
+              </V>
+              <V n="spawn_point_tags" t="tags">
+                <U n="tags">
+                  <L n="tags">
+                    <E>Spawn_Walkby_Shell_01</E>
+                  </L>
+                </U>
+              </V>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="value" t="posture">
+            <U n="posture">
+              <L n="posture_manifest_tuning">
+                <U>
+                  <V n="carry_back" t="None" />
+                  <V n="carry_left" t="None" />
+                  <V n="carry_right" t="None" />
+                </U>
+              </L>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_icon" t="resource_key">
+    <U n="resource_key">
+      <T n="key" p="InEP13\UI\Icons\InteractionQueue\IconQueueAtTheMovies.png">2f7d0004:00000000:5ff2dc362d841e66</T>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="time_based">
+                <U n="time_based">
+                  <T n="max_time">120</T>
+                  <T n="min_time">100</T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="buff_based">
+                <U n="buff_based">
+                  <T n="buff">305952<!--Buff: buff_MovieTheater_Banned--></T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+        <V t="list_reference">
+          <T n="list_reference">40705<!--ExitConditionList: ExitConditionList_MotivesNearFail--></T>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="buff_based">
+                <U n="buff_based">
+                  <T n="buff">75271<!--Buff: buff_Pregnancy_InLabor--></T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+      </L>
+      <V n="content" t="looping_content" />
+      <V n="periodic_stat_change" t="enabled">
+        <U n="enabled">
+          <L n="operations">
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="amount">0.82</T>
+                <T n="stat">16655<!--Commodity: motive_Fun--></T>
+              </U>
+            </V>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="adventure">
+      <U n="adventure">
+        <L n="_adventure_moments">
+          <U>
+            <E n="key">Generic_01</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">305568<!--AdventureMoment: adventureMoment_MovieTheater_Watch_AskedAndAnswered--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Generic_02</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">305571<!--AdventureMoment: adventureMoment_MovieTheater_Watch_IsThatTheMovie--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Generic_03</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">305569<!--AdventureMoment: adventureMoment_MovieTheater_Watch_LetsGoOutToTheLobby--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Generic_04</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">305566<!--AdventureMoment: adventureMoment_MovieTheater_Watch_ShushShamer--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Generic_05</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">305570<!--AdventureMoment: adventureMoment_MovieTheater_Watch_TallTastrophe--></T>
+              </V>
+            </U>
+          </U>
+        </L>
+        <L n="_initial_moments">
+          <U>
+            <E n="adventure_moment_key">Generic_01</E>
+          </U>
+          <U>
+            <E n="adventure_moment_key">Generic_02</E>
+          </U>
+          <U>
+            <E n="adventure_moment_key">Generic_03</E>
+          </U>
+          <U>
+            <E n="adventure_moment_key">Generic_04</E>
+          </U>
+          <U>
+            <E n="adventure_moment_key">Generic_05</E>
+          </U>
+        </L>
+        <T n="_resumable">False</T>
+        <U n="success_chance">
+          <T n="base_chance">20</T>
+        </U>
+        <V n="timing" t="at_beginning">
+          <U n="at_beginning">
+            <V n="offset_time" t="enabled">
+              <T n="enabled">20</T>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="payment">
+      <U n="payment">
+        <V n="payment" t="literal">
+          <U n="literal">
+            <V n="payment_cost" t="amount">
+              <U n="amount">
+                <T n="amount">15</T>
+              </U>
+            </V>
+          </U>
+        </V>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <T n="buff_type">185065<!--Buff: buff_Temperature_Immune_To_Temperature--></T>
+        </U>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <T n="buff_type">333127<!--Buff: buff_MovieTheater_InTheater--></T>
+        </U>
+      </U>
+    </V>
+  </L>
+  <L n="basic_liabilities">
+    <V t="hide_sim_liability" />
+    <V t="remove_buff">
+      <U n="remove_buff">
+        <T n="buff_to_remove">305957<!--Buff: buff_MovieTheater_ChanceCard_EnjoymentDown--></T>
+      </U>
+    </V>
+    <V t="remove_buff">
+      <U n="remove_buff">
+        <T n="buff_to_remove">305956<!--Buff: buff_MovieTheater_ChanceCard_EnjoymentUp--></T>
+      </U>
+    </V>
+  </L>
+  <V n="basic_reserve_object" t="disabled" />
+  <T n="category">307752<!--PieMenuCategory: pieMenuCategory_MovieTheater_Watch--></T>
+  <V n="content_score" t="disabled" />
+  <T n="counts_as_in_shade">True</T>
+  <T n="counts_as_inside">True</T>
+  <T n="display_name">0xE95690D8<!--String: "Watch Movie"--></T>
+  <V n="display_name_overrides" t="testable">
+    <U n="testable">
+      <L n="overrides">
+        <U>
+          <V n="new_display_name" t="enabled">
+            <T n="enabled">0xBE27B284<!--String: "Watch Captain Sigma: Olympus Landing"--></T>
+          </V>
+          <L n="test">
+            <L>
+              <V t="state">
+                <U n="state">
+                  <T n="value">305560<!--ObjectStateValue: state_MovieTheater_TitleVariance_2--></T>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <V n="new_display_name" t="enabled">
+            <T n="enabled">0x6C244656<!--String: "Watch Treasures of Aarbyville"--></T>
+          </V>
+          <L n="test">
+            <L>
+              <V t="state">
+                <U n="state">
+                  <T n="value">305564<!--ObjectStateValue: state_MovieTheater_TitleVariance_3--></T>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <V n="new_display_name" t="enabled">
+            <T n="enabled">0x9D616C59<!--String: "Watch Live and Let Diamond"--></T>
+          </V>
+          <L n="test">
+            <L>
+              <V t="state">
+                <U n="state">
+                  <T n="value">305562<!--ObjectStateValue: state_MovieTheater_TitleVariance_4--></T>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <V n="new_display_name" t="enabled">
+            <T n="enabled">0xDB8D6460<!--String: "Watch The Sheriff from Alpha Centauri"--></T>
+          </V>
+          <L n="test">
+            <L>
+              <V t="state">
+                <U n="state">
+                  <T n="value">305563<!--ObjectStateValue: state_MovieTheater_TitleVariance_1--></T>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <V n="display_tooltip" t="enabled">
+    <T n="enabled">0xBF51F9D8<!--String: "This is an Action movie."--></T>
+  </V>
+  <T n="fade_sim_out">True</T>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="dual">
+    <U n="dual">
+      <U n="failure_actions">
+        <L n="basic_extras">
+          <V t="buff_fire_and_forget">
+            <U n="buff_fire_and_forget">
+              <U n="buff">
+                <V n="buff_reason" t="enabled">
+                  <T n="enabled">0xA86A81B5<!--String: "(From Disliking Movie)"--></T>
+                </V>
+                <T n="buff_type">305729<!--Buff: buff_MovieTheater_WatchedAction_Disliked--></T>
+              </U>
+            </U>
+          </V>
+        </L>
+      </U>
+      <U n="success_actions">
+        <L n="basic_extras">
+          <V t="buff_fire_and_forget">
+            <U n="buff_fire_and_forget">
+              <U n="buff">
+                <V n="buff_reason" t="enabled">
+                  <T n="enabled">0x51A3FB5A<!--String: "(From Liking Movie)"--></T>
+                </V>
+                <T n="buff_type">305572<!--Buff: buff_MovieTheater_WatchedAction_Liked--></T>
+              </U>
+            </U>
+          </V>
+        </L>
+      </U>
+      <U n="success_chance">
+        <T n="base_chance">65</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">2</T>
+            <L n="tests">
+              <L>
+                <V t="buff">
+                  <U n="buff">
+                    <V n="whitelist" t="enabled">
+                      <L n="enabled">
+                        <T>305956<!--Buff: buff_MovieTheater_ChanceCard_EnjoymentUp--></T>
+                      </L>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0.3</T>
+            <L n="tests">
+              <L>
+                <V t="buff">
+                  <U n="buff">
+                    <V n="whitelist" t="enabled">
+                      <L n="enabled">
+                        <T>305957<!--Buff: buff_MovieTheater_ChanceCard_EnjoymentDown--></T>
+                      </L>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="buff">
+                  <U n="buff">
+                    <V n="whitelist" t="enabled">
+                      <L n="enabled">
+                        <T>305952<!--Buff: buff_MovieTheater_Banned--></T>
+                      </L>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">1.25</T>
+            <L n="tests">
+              <L>
+                <V t="trait">
+                  <U n="trait">
+                    <L n="whitelist_traits">
+                      <T>128970<!--Trait: trait_Hidden_FavoriteMovie_Action--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">1.1</T>
+            <L n="tests">
+              <L>
+                <V t="test_set_reference">
+                  <T n="test_set_reference">300885<!--TestSetInstance: testSet_EmotionPositive_Actor--></T>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0.75</T>
+            <L n="tests">
+              <L>
+                <V t="test_set_reference">
+                  <T n="test_set_reference">32760<!--TestSetInstance: testSet_EmotionNegative--></T>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">1.2</T>
+            <L n="tests">
+              <L>
+                <V t="trait">
+                  <U n="trait">
+                    <L n="whitelist_traits">
+                      <T>27419<!--Trait: trait_active--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">1.2</T>
+            <L n="tests">
+              <L>
+                <V t="trait">
+                  <U n="trait">
+                    <L n="whitelist_traits">
+                      <T>16826<!--Trait: trait_Bro--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0.8</T>
+            <L n="tests">
+              <L>
+                <V t="trait">
+                  <U n="trait">
+                    <L n="blacklist_traits">
+                      <T>128970<!--Trait: trait_Hidden_FavoriteMovie_Action--></T>
+                    </L>
+                    <L n="whitelist_traits">
+                      <T>9620<!--Trait: trait_Snob--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T n="key" p="InEP13\UI\Icons\PieMenu\PieMenu_ActionGenre.png">2f7d0004:00000000:47fecbad28eea20a</T>
+      </U>
+    </V>
+  </V>
+  <L n="rallyable">
+    <U>
+      <V n="behavior" t="push_affordance">
+        <U n="push_affordance">
+          <T n="affordance">309371<!--SuperInteraction: super_MovieTheater_Watch_Action_Group--></T>
+        </U>
+      </V>
+      <V n="pie_menu_icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T n="key" p="InGame\UI\Icons\PieMenu\SpecialInteractions\specialinteraction_ensembles_piemenu.png">2f7d0004:00000000:a113281581961bf1</T>
+          </U>
+        </V>
+      </V>
+    </U>
+  </L>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all" />
+    </U>
+  </V>
+  <E n="target_type">ACTOR</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>75271<!--Buff: buff_Pregnancy_InLabor--></T>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>305952<!--Buff: buff_MovieTheater_Banned--></T>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xBBBD49E9<!--String: "{0.SimFirstName} is banned from the theater."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

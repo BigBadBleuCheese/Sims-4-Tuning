@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Notification_Naturopath_HouseCall" s="444298">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="dialog_ok">
+          <U n="dialog_ok">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T p="InEP19\UI\Icons\Career\Career_Naturopath.png" n="key">2f7d0004:00000000:00654becb9d71a40</T>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant" />
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x2CF4F26E<!--String: "Welcome to {0.SimFirstName}'s first day seeing Clients at home!\n\nA Client will arrive at the door immediately and {0.SimFirstName} will have the opportunity to put {0.SimPronounPossessiveDependent} skills to use. <b>Conduct Client Intake</b> to invite the Client inside, and then the fun begins. <b>Assess the Client</b> as thoroughly as possible by <b>Asking</b> questions and <b>Discussing</b> their daily habits in order to <b>Identify the Root Cause</b> of their visit—whether that's an Ailment to Cure, or Imbalance to help correct.\n\nRemember, if {0.SimFirstName} is not sure, continue Assessing the Client to narrow down the possibilities."--></T>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="participant_type" />
+                </L>
+              </U>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x79F008CF<!--String: "Seeing Clients at Home"--></T>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="run_test_first">False</T>
+  <L n="tests">
+    <L>
+      <V t="career_test">
+        <U n="career_test">
+          <V n="test_type" t="days_worked">
+            <U n="days_worked">
+              <T n="active_only">True</T>
+              <U n="career_source">
+                <V n="career_source" t="single_career">
+                  <U n="single_career">
+                    <T n="career">439108<!--WorkFromHomeCareer: workFromHomeCareer_Naturopath--></T>
+                  </U>
+                </V>
+              </U>
+              <U n="threshold">
+                <E n="comparison">EQUAL</E>
+                <T n="value">1</T>
+              </U>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

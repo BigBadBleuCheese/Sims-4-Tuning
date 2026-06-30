@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="BasicFestivalOpenStreetDirector" i="open_street_director" m="open_street_director.basic_festival" n="festival_EP17_OpenStreetDirector_FamilyDay" s="384139">
+  <U n="cleanup_festival_state">
+    <L n="_conditional_layers">
+      <T>384143<!--ConditionalLayer: conditionalLayer_EP17Festival_FamilyDay--></T>
+      <T>420576<!--ConditionalLayer: conditionalLayer_EP17Festival_FamilyDay_Client--></T>
+    </L>
+  </U>
+  <U n="cooldown_festival_state">
+    <V n="notification" t="enabled">
+      <V n="enabled" t="literal">
+        <U n="literal">
+          <V n="text" t="single">
+            <T n="single">0x8A4DBD8<!--String: "The festival will end in 1 hour. Finish up any activities before it closes. Be sure to come back the next time the festival is in town!"--></T>
+          </V>
+        </U>
+      </V>
+    </V>
+  </U>
+  <U n="main_festival_state">
+    <T n="_duration">420</T>
+    <L n="_situations">
+      <U>
+        <T n="number_of_situations">2</T>
+        <L n="situations">
+          <U>
+            <T n="situation">385358<!--MultiSimFestivalSituation: EP17_Festival_FamilyDay_Family--></T>
+          </U>
+        </L>
+      </U>
+      <U>
+        <L n="situations">
+          <U>
+            <T n="situation">385590<!--EmployeeFestivalSituationState: EP17Festival_Employee_FamilyDay_Lawyer--></T>
+          </U>
+        </L>
+      </U>
+      <U>
+        <L n="situations">
+          <U>
+            <T n="situation">389822<!--EmployeeFestivalSituationState: EP17Festival_Employee_CrowHandler--></T>
+          </U>
+        </L>
+      </U>
+      <U>
+        <L n="situations">
+          <U>
+            <T n="situation">402469<!--EmployeeFestivalSituationState: EP17Festival_Employee_Collector--></T>
+          </U>
+          <U>
+            <T n="situation">427102<!--EmployeeFestivalSituationState: eP17Festival_Employee_Collector_Tarot--></T>
+            <T n="weight">2</T>
+          </U>
+        </L>
+      </U>
+      <U>
+        <L n="situations">
+          <U>
+            <T n="situation">402468<!--EmployeeFestivalSituationState: EP17Festival_Employee_FamilyDay_Griller--></T>
+          </U>
+        </L>
+      </U>
+      <U>
+        <L n="situations">
+          <U>
+            <T n="situation">389874<!--SelectableSimFestivalSituation: festival_EP17_FamilyDay_PlayerSituation--></T>
+          </U>
+        </L>
+      </U>
+    </L>
+  </U>
+  <L n="npc_summoning_behavior">
+    <U>
+      <E n="key">DEFAULT</E>
+      <V n="value" t="create_situation">
+        <U n="create_situation">
+          <T n="situation_job">208913<!--SituationJob: OpenStreetEvent_PlayerSim--></T>
+          <T n="situation_to_create">208912<!--SingleJobSituation: OpenStreetEvent_TravelWithNPC--></T>
+        </U>
+      </V>
+    </U>
+  </L>
+  <V n="reactionary_whim_set" t="enabled">
+    <T n="enabled">384279<!--ObjectivelessWhimSet: whimSet_EP17Festival_FamilyDay--></T>
+  </V>
+  <U n="spinup_festival_state">
+    <L n="_conditional_layers">
+      <T>384143<!--ConditionalLayer: conditionalLayer_EP17Festival_FamilyDay--></T>
+      <T>420576<!--ConditionalLayer: conditionalLayer_EP17Festival_FamilyDay_Client--></T>
+    </L>
+    <L n="_situations">
+      <U>
+        <V n="object_tag_requirement" t="enabled">
+          <E n="enabled">BuyCatSS_Desk</E>
+        </V>
+        <L n="situations">
+          <U>
+            <T n="situation">385590<!--EmployeeFestivalSituationState: EP17Festival_Employee_FamilyDay_Lawyer--></T>
+          </U>
+        </L>
+      </U>
+      <U>
+        <L n="situations">
+          <U>
+            <T n="situation">389822<!--EmployeeFestivalSituationState: EP17Festival_Employee_CrowHandler--></T>
+          </U>
+        </L>
+      </U>
+      <U>
+        <L n="situations">
+          <U>
+            <T n="situation">402468<!--EmployeeFestivalSituationState: EP17Festival_Employee_FamilyDay_Griller--></T>
+          </U>
+        </L>
+      </U>
+      <U>
+        <L n="situations">
+          <U>
+            <T n="situation">427102<!--EmployeeFestivalSituationState: eP17Festival_Employee_Collector_Tarot--></T>
+            <T n="weight">2</T>
+          </U>
+          <U>
+            <T n="situation">402469<!--EmployeeFestivalSituationState: EP17Festival_Employee_Collector--></T>
+          </U>
+        </L>
+      </U>
+    </L>
+  </U>
+</I>

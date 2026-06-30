@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="ImmediateSuperInteraction" i="interaction" m="interactions.base.immediate_interaction" n="immediate_SwimmingWoohoo_PickerContinuation" s="470339">
+  <V n="_saveable" t="disabled" />
+  <L n="basic_extras">
+    <V t="save_participant">
+      <U n="save_participant">
+        <E n="participant">PickedSim</E>
+        <E n="saved_participant">SavedActor2</E>
+      </U>
+    </V>
+  </L>
+  <V n="content_score" t="disabled" />
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <L n="continuation">
+              <U>
+                <T n="affordance">470341<!--SocialMixerInteraction: mixer_Social_SwimmingWooHoo_targeted_romance_transition_InWater--></T>
+                <T n="si_affordance_override">13998<!--SocialSuperInteraction: sim_Chat--></T>
+                <E n="target">PickedSim</E>
+              </U>
+            </L>
+          </U>
+        </U>
+      </L>
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">470340<!--SocialMixerInteraction: mixer_Social_SwimmingWooHoo_targeted_romance_transition_OnLand--></T>
+                    <T n="si_affordance_override">13991<!--SocialSuperInteraction: sim_BeAffectionate--></T>
+                    <E n="target">PickedSim</E>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="posture">
+                <U n="posture">
+                  <L n="prohibited_postures">
+                    <T>39398<!--MobilePosture: posture_Swim--></T>
+                  </L>
+                </U>
+              </V>
+              <V t="posture">
+                <U n="posture">
+                  <L n="prohibited_postures">
+                    <T>39398<!--MobilePosture: posture_Swim--></T>
+                  </L>
+                  <E n="subject">TargetSim</E>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="continuation">
+                  <U>
+                    <E n="actor">PickedSim</E>
+                    <T n="affordance">473833<!--SocialSuperInteraction: social_SwimmingWoohoo_TargetRouteToActor--></T>
+                    <E n="target">Actor</E>
+                  </U>
+                </L>
+                <T n="force_outcome_on_exit">False</T>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="posture">
+                <U n="posture">
+                  <L n="required_postures">
+                    <T>39398<!--MobilePosture: posture_Swim--></T>
+                  </L>
+                </U>
+              </V>
+              <V t="posture">
+                <U n="posture">
+                  <L n="prohibited_postures">
+                    <T>39398<!--MobilePosture: posture_Swim--></T>
+                  </L>
+                  <E n="subject">TargetSim</E>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+            <E>TODDLER</E>
+            <E>BABY</E>
+            <E>INFANT</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+  </L>
+</I>

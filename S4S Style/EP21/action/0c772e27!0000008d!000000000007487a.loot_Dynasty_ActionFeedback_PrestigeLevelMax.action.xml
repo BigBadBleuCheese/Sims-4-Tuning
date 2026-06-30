@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Dynasty_ActionFeedback_PrestigeLevelMax" s="477306">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="audio_sting" t="enabled">
+              <U n="enabled">
+                <T n="audio" p="InEP21\Audio\music\bumpers\bumper_ep21_dynasty_level_increased.propx">39b2aa4a:00000000:808f90b1675b0624</T>
+                <T n="immediate_audio">True</T>
+              </U>
+            </V>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="dynasty" />
+            </V>
+            <V n="secondary_icon" t="disabled" />
+            <V n="text" t="single">
+              <T n="single">0x3A3CF86D<!--String: "Congratulations, the {2.String} Dynasty has reached the highest possible Prestige Level!\n\nFor this achievement, they have been awarded Dynasty Perk Points to purchase the remaining Dynasty Perks. Keep earning Prestige to stay at the top!"--></T>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="participant_type" />
+                  <V t="participant_type">
+                    <U n="participant_type">
+                      <V n="objects" t="from_participant">
+                        <U n="from_participant">
+                          <E n="participant">ActorDynastyHead</E>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                  <V t="dynasty" />
+                </L>
+              </U>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x9FE2336C<!--String: "Maximum Dynasty Prestige Level Reached"--></T>
+            </V>
+            <L n="ui_responses">
+              <U>
+                <T n="text">0x66FE6DE4<!--String: "View Dynasty Perks"--></T>
+                <E n="ui_request">SHOW_DYNASTY_PERKS_PANEL</E>
+              </U>
+            </L>
+          </U>
+        </V>
+        <E n="subject">ActiveHousehold</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="is_active_sim" t="enabled" />
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="dynasty_member">
+        <U n="dynasty_member">
+          <E n="subjects">Actor</E>
+          <E n="targets">ActiveHousehold</E>
+          <V n="test_type" t="same_dynasty_membership" />
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

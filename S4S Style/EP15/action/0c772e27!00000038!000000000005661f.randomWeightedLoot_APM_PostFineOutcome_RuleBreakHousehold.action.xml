@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="RandomWeightedLoot" i="action" m="interactions.utils.loot" n="randomWeightedLoot_APM_PostFineOutcome_RuleBreakHousehold" s="353823">
+  <L n="random_loot_actions">
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">353831<!--LootActions: loot_APM_EventOutcome_Success_RuleBreakHousehold--></T>
+      </V>
+      <U n="weight">
+        <T n="base_value">1</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">2.5</T>
+            <L n="tests">
+              <L>
+                <V t="rental_unit_star_rating_test">
+                  <U n="rental_unit_star_rating_test">
+                    <U n="star_rating">
+                      <T n="lower_bound">5</T>
+                      <T n="upper_bound">5</T>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0.75</T>
+            <L n="tests">
+              <L>
+                <V t="rental_unit_star_rating_test">
+                  <U n="rental_unit_star_rating_test">
+                    <U n="star_rating">
+                      <T n="lower_bound">0</T>
+                      <T n="upper_bound">0</T>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0.5</T>
+            <L n="tests">
+              <L>
+                <V t="zone">
+                  <U n="zone">
+                    <V n="zone_source" t="use_picked_zone_ids" />
+                    <U n="zone_tests">
+                      <V n="zone_modifiers" t="enabled">
+                        <U n="enabled">
+                          <V n="whitelist" t="specify">
+                            <U n="specify">
+                              <L n="whitelist">
+                                <T>350228<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasSocialSim--></T>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">353826<!--LootActions: loot_APM_EventOutcome_Failure_RuleBreakHousehold--></T>
+      </V>
+      <U n="weight">
+        <T n="base_value">1.5</T>
+      </U>
+    </U>
+  </L>
+</I>

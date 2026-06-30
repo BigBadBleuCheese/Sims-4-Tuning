@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalObjectInteraction" i="situation_goal" m="situations.situation_goal_object_interaction" n="situationGoalObjectInteraction_CommunalEvents_Animal_Day_Guests_PlayWith_GoatorSheep" s="331811">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T n="enabled" p="InEP14\UI\Icons\Events\EventGoal_HaveGuestsInteractWithAnimals.png">2f7d0004:00000000:929823cc75395385</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0xC57FA0CA<!--String: "Have Guests Play with a Mini Goat or Mini Sheep"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0x932D0B9A<!--String: "Guests will automatically Play with Mini Goats and Mini Sheep when they are present on the lot."--></T>
+      </V>
+    </U>
+  </V>
+  <U n="_goal_test">
+    <L n="affordances">
+      <T>325632<!--SocialObjectSuperInteraction: sI_AnimalObjects_Socials_Friendly_Goat_Play_Failure--></T>
+      <T>325631<!--SocialObjectSuperInteraction: sI_AnimalObjects_Socials_Friendly_Goat_Play_Success--></T>
+      <T>325634<!--SocialObjectSuperInteraction: sI_AnimalObjects_Socials_Friendly_Sheep_Play_Failure--></T>
+      <T>325633<!--SocialObjectSuperInteraction: sI_AnimalObjects_Socials_Friendly_Sheep_Play_Success--></T>
+    </L>
+    <E n="test_event">InteractionComplete</E>
+  </U>
+  <T n="_iterations">2</T>
+  <L n="_post_tests">
+    <V t="situation_job">
+      <U n="situation_job">
+        <L n="situation_jobs">
+          <T>330679<!--SituationJob: communalEvents_Job_Guests--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T n="_score">30</T>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+</I>

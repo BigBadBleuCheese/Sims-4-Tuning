@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="lootActions_FairyOccult_HelpManangeEmotions_IncreaseCounter" s="434073">
+  <L n="loot_actions">
+    <V t="statistics">
+      <V n="statistics" t="statistic_change">
+        <U n="statistic_change">
+          <T n="advertise">False</T>
+          <T n="amount">1</T>
+          <T n="stat">434067<!--Statistic: statistic_FairyOccult_ManageEmotionsCounter--></T>
+          <L n="subject">
+            <E>TargetSim</E>
+          </L>
+        </U>
+      </V>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">434072<!--Buff: buff_FairyOccult_HelpManageEmotions_Cooldown--></T>
+        </U>
+        <E n="subject">TargetSim</E>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">460584<!--Buff: buff_FairyOccult_EmotionalStruggles_SuppressAfterHelpManageEmotions--></T>
+        </U>
+        <E n="subject">TargetSim</E>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>TargetSim</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant" />
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x201FA8F9<!--String: "{0.SimFirstName} helped {1.SimFirstName} regulate {1.SimPronounPossessiveDependent} Emotion bursts. {1.SimFirstName} needs more coaching before {1.SimPronounSubjective} can handle it independently, but for now the bursts are under control.\n\n{1.SimFirstName} will not trigger any further destructive bursts until the next time {1.SimPronounSubjective} {S1.wake}{P1.wakes} up with Emotional Struggles."--></T>
+            </V>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">434067<!--Statistic: statistic_FairyOccult_ManageEmotionsCounter--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">LESS</E>
+                    <T n="value">3</T>
+                  </U>
+                </V>
+                <E n="who">TargetSim</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>TargetSim</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xC485150E<!--String: "{0.SimFirstName} has helped {1.SimFirstName} learn to regulate {1.SimPronounPossessiveDependent} bursts of emotional energy! Instead of breaking objects, the bursts from {1.SimFirstName} will give nearby Sims a Happy feeling."--></T>
+            </V>
+            <L n="ui_responses">
+              <U>
+                <T n="text">0xEABE5948<!--String: "View Lessons"--></T>
+                <V n="tutorial_id" t="enabled">
+                  <T n="enabled">460208<!--Tutorial: tutorial_EP19_FairyOccultChildrenToddler--></T>
+                </V>
+                <E n="ui_request">SHOW_LESSONS</E>
+              </U>
+            </L>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">434067<!--Statistic: statistic_FairyOccult_ManageEmotionsCounter--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <T n="value">3</T>
+                  </U>
+                </V>
+                <E n="who">TargetSim</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

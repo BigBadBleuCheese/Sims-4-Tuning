@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="TraitPickerSuperInteraction" i="interaction" m="traits.trait_tracker" n="traitPicker_MasteryPerkRemover_Potion" s="372002">
+  <V n="_saveable" t="disabled" />
+  <T n="allow_from_sim_inventory">True</T>
+  <T n="automation">True</T>
+  <T o="true" n="category" />
+  <V n="content_score" t="disabled" />
+  <V n="continuation" t="enabled">
+    <L n="enabled">
+      <U>
+        <T n="affordance">435042<!--SuperInteraction: generic_consume_drink_nonbar_potion_noCancel--></T>
+      </U>
+    </L>
+  </V>
+  <T n="debug">False</T>
+  <T n="display_name">0x77E171F9<!--String: "Drink"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <V n="filter_by_types" t="enabled">
+    <U n="enabled">
+      <V n="whitelist" t="specify">
+        <U n="specify">
+          <L n="whitelist">
+            <E>MASTERY_PERK</E>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <T n="is_add">False</T>
+  <U n="picker_dialog">
+    <T n="force_done_button">True</T>
+    <T n="is_sortable">True</T>
+  </U>
+  <E n="picker_target">Actor</E>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="state">
+      <U n="state">
+        <E n="operator">NOTEQUAL</E>
+        <T n="value">15108<!--CommodityBasedObjectStateValue: Consumable_Empty--></T>
+      </U>
+    </V>
+    <V t="trait">
+      <U n="trait">
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xED7EB39A<!--String: "{0.SimFirstName} has no Mastery Perks to remove."--></T>
+        </V>
+        <L n="whitelist_trait_types">
+          <E>MASTERY_PERK</E>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

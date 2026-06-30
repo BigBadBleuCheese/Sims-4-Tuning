@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="solo_EmitGrouchAura" s="428633">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="current_position">
+            <U n="current_position">
+              <T n="radius">0</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Actor</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="allowed_to_combine">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">28338<!--AnimationElement: Socials_Responses_Angry_HighIntensity_YellAt--></T>
+        <U n="overrides">
+          <V n="balloons" t="enabled">
+            <L n="enabled">
+              <U>
+                <L n="balloon_choices">
+                  <U>
+                    <V n="item" t="balloon_icon">
+                      <U n="balloon_icon">
+                        <E n="balloon_type">SENTIMENT</E>
+                        <V n="icon" t="resource_key">
+                          <U n="resource_key">
+                            <T p="InGame\UI\Icons\Sentiments\sentiment_furious_ST_generic.png" n="key">2f7d0004:00000000:8a10ee314dd58e32</T>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </U>
+                  <U>
+                    <V n="item" t="balloon_icon">
+                      <U n="balloon_icon">
+                        <E n="balloon_type">SENTIMENT</E>
+                        <V n="icon" t="resource_key">
+                          <U n="resource_key">
+                            <T n="key" p="InGame\UI\Icons\Sentiments\sentiment_Furious_ST_RomanticallyUpstaged.png">2f7d0004:00000000:238cdac567096ba9</T>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </U>
+                  <U>
+                    <V n="item" t="balloon_icon">
+                      <U n="balloon_icon">
+                        <E n="balloon_type">SENTIMENT</E>
+                        <V n="icon" t="resource_key">
+                          <U n="resource_key">
+                            <T n="key" p="InGame\UI\Icons\Sentiments\sentiment_Furious_ST_YouDied.png">2f7d0004:00000000:ec029277b1bbca92</T>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </U>
+                </L>
+                <L n="balloon_target">
+                  <E>Actor</E>
+                </L>
+              </U>
+            </L>
+          </V>
+        </U>
+      </U>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="balloon">
+      <U n="balloon">
+        <L n="balloon_choices">
+          <U>
+            <V n="item" t="balloon_icon">
+              <U n="balloon_icon">
+                <E n="balloon_type">DISTRESS</E>
+                <V n="icon" t="resource_key">
+                  <U n="resource_key">
+                    <T p="InGame\UI\Icons\traits\trait_Grouch.png" n="key">2f7d0004:00000000:135cc4cb2c1271f0</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </U>
+        </L>
+        <L n="balloon_target">
+          <E>Actor</E>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x3776BA83<!--String: "Emit Grouch Aura"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+    <E>Interaction_Mean</E>
+    <E>interaction_Grouch</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="basic_extras">
+          <V t="buff_fire_and_forget">
+            <U n="buff_fire_and_forget">
+              <U n="buff">
+                <V n="buff_reason" t="enabled">
+                  <T n="enabled">0x48E812E1<!--String: "(From Grouch Trait)"--></T>
+                </V>
+                <T n="buff_type">429881<!--Buff: buff_Trait_Grouch_Aura--></T>
+              </U>
+            </U>
+          </V>
+          <V t="buff_fire_and_forget">
+            <U n="buff_fire_and_forget">
+              <U n="buff">
+                <V n="buff_reason" t="enabled">
+                  <T n="enabled">0x48E812E1<!--String: "(From Grouch Trait)"--></T>
+                </V>
+                <T n="buff_type">429882<!--Buff: buff_Trait_Grouch_ElderAura--></T>
+              </U>
+            </U>
+          </V>
+          <V t="loot">
+            <U n="loot">
+              <L n="loot_list">
+                <T>429880<!--LootActions: loot_Buff_Trait_Grouch_GrouchAura--></T>
+              </L>
+            </U>
+          </V>
+        </L>
+      </U>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T n="key" p="InGame\UI\Icons\PieMenu\Traits\trait_grouch_cas_piemenu.png">2f7d0004:00000000:9239045613731e68</T>
+      </U>
+    </V>
+  </V>
+  <T n="pie_menu_priority">2</T>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">ACTOR</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <V n="whitelist" t="enabled">
+          <L n="enabled">
+            <T>427492<!--Buff: buff_Trait_Grouch_PeopleTireMe--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+    <V t="identity">
+      <U n="identity">
+        <T n="subjects_match">True</T>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

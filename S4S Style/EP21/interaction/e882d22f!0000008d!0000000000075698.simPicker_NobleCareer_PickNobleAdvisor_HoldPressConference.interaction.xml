@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SimPickerInteraction" i="interaction" m="interactions.base.picker_interaction" n="simPicker_NobleCareer_PickNobleAdvisor_HoldPressConference" s="480920">
+  <V n="_saveable" t="disabled" />
+  <V n="cell_enabled_tests" t="enabled">
+    <L n="enabled">
+      <L>
+        <V t="at_work">
+          <U n="at_work">
+            <T n="is_at_work">False</T>
+            <E n="subject">PickedSim</E>
+            <V n="tooltip" t="enabled">
+              <T n="enabled">0xEF3915A1<!--String: "{1.SimFirstName} is not available right now."--></T>
+            </V>
+          </U>
+        </V>
+        <V t="rabbit_hole">
+          <U n="rabbit_hole">
+            <T n="negate">True</T>
+            <E n="subject">PickedSim</E>
+            <V n="tooltip" t="enabled">
+              <T n="enabled">0xEF3915A1<!--String: "{1.SimFirstName} is not available right now."--></T>
+            </V>
+          </U>
+        </V>
+      </L>
+    </L>
+  </V>
+  <T n="collapsible">True</T>
+  <V n="content_score" t="enabled">
+    <U n="enabled">
+      <L n="active_career_assignments">
+        <U>
+          <T n="key">486740<!--AspirationAssignment: careerAssignment_Noble_HoldSpeechPressConference--></T>
+          <T n="value">1000</T>
+        </U>
+      </L>
+    </U>
+  </V>
+  <T n="display_name">0x3CD440AF<!--String: "Hold Press Conference"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">PickedSim</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T n="include_rabbithole_sims">True</T>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <V n="picker_dialog" t="sim_picker">
+    <U n="sim_picker">
+      <L n="custom_filters">
+        <V t="reference">
+          <T n="reference">499295<!--CustomSimFilter: customSimFilter_NobleCareer--></T>
+        </V>
+      </L>
+      <V n="text" t="enabled">
+        <V n="enabled" t="single">
+          <T n="single">0xC14499EC<!--String: "Choose a Noble Advisor to assist with your duties, a trusted ally is important."--></T>
+        </V>
+      </V>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T n="key" p="InGame\UI\Icons\PieMenu\Interactions\icon_pieMenu_immediateInteraction.png">2f7d0004:00000000:25eea5cdba6a6fd6</T>
+      </U>
+    </V>
+  </V>
+  <T n="pie_menu_priority">2</T>
+  <V n="pie_menu_test_tooltip" t="enabled">
+    <T n="enabled">0x9C6024A1<!--String: "{0.SimFirstName} doesn't know anyone {0.SimPronounSubjective} could pick as a Noble Advisor."--></T>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <V n="sim_filter" t="sim_filter_selected">
+    <T n="sim_filter_selected">189739<!--TunableSimFilter: filter_SimPicker_HasMet_TYAE--></T>
+  </V>
+  <L n="success_loot_actions">
+    <T>498876<!--LootActions: loot_NobleCareer_NobleAdvisor_AssignNobleAdvisor_PickedSim--></T>
+    <T>480949<!--LootActions: loot_NobleCareer_HoldPressConference_StartSituation--></T>
+  </L>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="situation_running_test">
+      <U n="situation_running_test">
+        <V n="situation_blacklist" t="enabled">
+          <L n="enabled">
+            <T>480951<!--CustomStatesSituation: situation_NobleCareer_HoldPressConference--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+    <V t="relationship_bit_count">
+      <U n="relationship_bit_count">
+        <T n="rel_bit">498670<!--RelationshipBit: relbit_NobleCareer_NobleAdvisor--></T>
+        <T n="relationship_count">0</T>
+      </U>
+    </V>
+    <V t="in_home_region">
+      <U n="in_home_region">
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xE2ED99EC<!--String: "Noble Actions cannot be performed outside the Kingdom {0.SimFirstName} lives in."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="career_test">
+      <U n="career_test">
+        <V n="test_type" t="career_reference">
+          <U n="career_reference">
+            <V n="career" t="specific_career">
+              <T n="specific_career">466304<!--NobleCareer: career_Noble--></T>
+            </V>
+            <V n="user_level" t="enabled">
+              <U n="enabled">
+                <T n="lower_bound">4</T>
+              </U>
+            </V>
+          </U>
+        </V>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xCEFACDD0<!--String: "{0.SimFirstName} has to be Level 4 in the Noble Career to do this interaction."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="can_create_user_facing_situation">
+      <U n="can_create_user_facing_situation">
+        <T n="allow_non_prestige_is_exempt">True</T>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x3FCBD256<!--String: "You cannot start this while a Social Event is already in progress."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+</I>

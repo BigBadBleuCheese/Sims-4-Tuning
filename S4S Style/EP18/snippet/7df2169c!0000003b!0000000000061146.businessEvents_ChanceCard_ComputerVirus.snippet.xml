@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="AdventureMoment" i="snippet" m="snippets" n="businessEvents_ChanceCard_ComputerVirus" s="397638">
+  <U n="value">
+    <L n="_finish_actions">
+      <U>
+        <L n="action_results">
+          <U>
+            <L n="loot_actions">
+              <T>398729<!--LootActions: loot_BusinessEvents_Rewards_Simoleon_MediumLoss--></T>
+              <T>398710<!--LootActions: loot_BusinessEvents_Reputation_Loss_Medium--></T>
+              <T>399045<!--LootActions: loot_BusinessEvents_ReputationAlignment_SchemerAligned--></T>
+              <T>399044<!--LootActions: loot_BusinessEvents_ReputationAlignment_DreamerMisaligned--></T>
+            </L>
+            <V n="notification" t="enabled">
+              <V n="enabled" t="literal">
+                <U n="literal">
+                  <V n="icon" t="enabled">
+                    <V n="enabled" t="small_business" />
+                  </V>
+                  <V n="primary_icon_response" t="enabled">
+                    <U n="enabled">
+                      <E n="ui_request">SHOW_SMALL_BUSINESS_PANEL</E>
+                    </U>
+                  </V>
+                  <V n="secondary_icon" t="enabled">
+                    <V n="enabled" t="participant" />
+                  </V>
+                  <V n="text" t="single">
+                    <T n="single">0x6857DDAF<!--String: "Ignoring the problem has surely made it worse! All of {0.SimFirstName}'s Small Business customer data was stolen, and a large sum of money is missing from the business account. {0.SimFirstName}'s customers are not happy..."--></T>
+                  </V>
+                </U>
+              </V>
+            </V>
+          </U>
+        </L>
+        <V n="display_subtext" t="single">
+          <T n="single">0x8D23C576<!--String: "Lose Simoleons, Gain Schemer Alignment"--></T>
+        </V>
+        <V n="display_text" t="single">
+          <T n="single">0x8D8D79A<!--String: "Ignore the Problem"--></T>
+        </V>
+      </U>
+      <U>
+        <L n="action_results">
+          <U>
+            <L n="loot_actions">
+              <T>399043<!--LootActions: loot_BusinessEvents_ReputationAlignment_DreamerAligned--></T>
+              <T>398682<!--LootActions: loot_BusinessEvents_Reputation_Gain_Medium--></T>
+              <T>399046<!--LootActions: loot_BusinessEvents_ReputationAlignment_SchemerMisaligned--></T>
+            </L>
+            <V n="notification" t="enabled">
+              <V n="enabled" t="literal">
+                <U n="literal">
+                  <V n="icon" t="enabled">
+                    <V n="enabled" t="small_business" />
+                  </V>
+                  <V n="primary_icon_response" t="enabled">
+                    <U n="enabled">
+                      <E n="ui_request">SHOW_SMALL_BUSINESS_PANEL</E>
+                    </U>
+                  </V>
+                  <V n="secondary_icon" t="enabled">
+                    <V n="enabled" t="participant" />
+                  </V>
+                  <V n="text" t="single">
+                    <T n="single">0x5FFDEE<!--String: "Security comes first! {0.SimFirstName} spent some hard-earned cash and hired someone to investigate, and the problems were fixed. Who knows what could've happened if {0.SimPronounSubjective} had ignored it!"--></T>
+                  </V>
+                </U>
+              </V>
+            </V>
+          </U>
+        </L>
+        <L n="availability_tests">
+          <L>
+            <V t="simoleon_value">
+              <U n="simoleon_value">
+                <E n="test_event">AllSimoloenEvents</E>
+                <V n="value_context" t="total_cash" />
+                <U n="value_threshold">
+                  <E n="comparison">GREATER_OR_EQUAL</E>
+                  <T n="value">500</T>
+                </U>
+              </U>
+            </V>
+          </L>
+        </L>
+        <V n="cost" t="simoleon_cost">
+          <U n="simoleon_cost">
+            <T n="amount">500</T>
+          </U>
+        </V>
+        <V n="disabled_text" t="enabled">
+          <T n="enabled">0x3CF3831F<!--String: "{0.SimFirstName} does not have enough funds."--></T>
+        </V>
+        <V n="display_subtext" t="single">
+          <T n="single">0x4E1E4B75<!--String: "Gain Dreamer Alignment"--></T>
+        </V>
+        <V n="display_text" t="single">
+          <T n="single">0x2C65C25F<!--String: "Hire Technician"--></T>
+        </V>
+      </U>
+    </L>
+    <V n="_visibility" t="show_dialog">
+      <U n="show_dialog">
+        <V n="audio_sting" t="enabled">
+          <U n="enabled">
+            <T n="audio" p="InEP18\Audio\music\bumpers\bumper_ep18_business_bump.propx">39b2aa4a:00000000:0023fe365819d957</T>
+            <T n="immediate_audio">False</T>
+          </U>
+        </V>
+        <E n="dialog_style">LARGE_ICON</E>
+        <V n="icon" t="enabled">
+          <V n="enabled" t="resource_key">
+            <U n="resource_key">
+              <T n="key" p="InEP18\UI\Icons\ChanceCard\ChanceCard_ComputerVirus.png">2f7d0004:00000000:aa81e26f73eed098</T>
+            </U>
+          </V>
+        </V>
+        <V n="text" t="single">
+          <T n="single">0x31AB512A<!--String: "{0.SimFirstName}'s business computer systems have picked up a virus! Should {0.SimFirstName} hire someone to fix it, or continue with the business as usual?"--></T>
+        </V>
+        <V n="title" t="enabled">
+          <T n="enabled">0xA01E17E4<!--String: "Computer Virus!"--></T>
+        </V>
+      </U>
+    </V>
+  </U>
+</I>

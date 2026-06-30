@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="funerals_Eulogize_Lightheartedly_Self" s="390175">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="current_position">
+            <U n="current_position">
+              <T n="radius">0</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_icon" t="resource_key">
+    <U n="resource_key">
+      <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_gravestone.png">2f7d0004:00000000:7c70ef2a230cf012</T>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <V n="_situation_participant_provider" t="enabled">
+    <U n="enabled">
+      <L n="provided_participant_type_to_job_map">
+        <U>
+          <E n="key">SituationParticipants1</E>
+          <L n="value">
+            <U>
+              <T n="job">381374<!--SituationJob: job_Funeral_DepartedSim--></T>
+              <V n="sim_info_source" t="from_guest_list" />
+              <E n="situation_participant">Actor</E>
+              <V n="situations" t="by_definition">
+                <U n="by_definition">
+                  <L n="situations">
+                    <T>381372<!--CustomStateFuneralSituation: Situation_Funeral--></T>
+                  </L>
+                </U>
+              </V>
+            </U>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="time_based">
+                <U n="time_based">
+                  <T n="max_time">70</T>
+                  <T n="min_time">50</T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+      </L>
+      <V n="content" t="looping_content">
+        <U n="looping_content">
+          <U n="animation_ref">
+            <T n="factory">383303<!--AnimationElement: Funerals_Eulogize_Eulogize_Lighthearted--></T>
+          </U>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="balloon">
+      <U n="balloon">
+        <L n="balloon_choices">
+          <U>
+            <V n="item" t="balloon_category">
+              <T n="balloon_category">420467<!--BalloonCategory: balloonCategory_SetDeath_Funeral_Speech--></T>
+            </V>
+          </U>
+          <U>
+            <V n="item" t="balloon_icon">
+              <U n="balloon_icon">
+                <E n="balloon_type">SPEECH</E>
+                <V n="icon" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>SituationParticipants1</E>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </U>
+        </L>
+        <L n="balloon_target">
+          <E>Actor</E>
+        </L>
+      </U>
+    </V>
+    <V t="broadcaster">
+      <U n="broadcaster">
+        <L n="broadcaster_types">
+          <U>
+            <T n="item">389813<!--Broadcaster: broadcaster_Funerals_Eulogize_Lightheartedly_Listen--></T>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <T n="buff_type">394824<!--Buff: buff_Funerals_Hidden_Eulogize_Lightheartedly--></T>
+        </U>
+      </U>
+    </V>
+    <V t="save_participant">
+      <U n="save_participant">
+        <E n="participant">SituationParticipants1</E>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+  </L>
+  <T n="category">383557<!--PieMenuCategory: pieMenuCategory_Funeral--></T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x6CEB0BED<!--String: "Eulogize Lightheartedly"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <L n="basic_extras">
+              <V t="buff_fire_and_forget">
+                <U n="buff_fire_and_forget">
+                  <U n="buff">
+                    <T n="buff_type">394657<!--Buff: buff_Funerals_EndListen--></T>
+                  </U>
+                </U>
+              </V>
+            </L>
+            <T n="force_outcome_on_exit">True</T>
+          </U>
+        </U>
+      </L>
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="basic_extras">
+                  <V t="broadcaster">
+                    <U n="broadcaster">
+                      <L n="broadcaster_types">
+                        <U>
+                          <T n="item">393692<!--Broadcaster: broadcaster_Funerals_Eulogize_Lightheartedly_Gravesite_React--></T>
+                        </U>
+                      </L>
+                    </U>
+                  </V>
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <T n="buff_type">394657<!--Buff: buff_Funerals_EndListen--></T>
+                      </U>
+                    </U>
+                  </V>
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <V n="buff_reason" t="enabled">
+                          <T n="enabled">0xBC2C4250<!--String: "(From Attending a Funeral)"--></T>
+                        </V>
+                        <T n="buff_type">392953<!--Buff: buff_Funerals_Visible_OwnBestCritic--></T>
+                      </U>
+                      <U n="success_chance">
+                        <L n="multipliers">
+                          <U>
+                            <T n="multiplier">0</T>
+                            <L n="tests">
+                              <L>
+                                <V t="identity">
+                                  <U n="identity">
+                                    <E n="subject_b">SavedActor1</E>
+                                  </U>
+                                </V>
+                              </L>
+                            </L>
+                          </U>
+                        </L>
+                      </U>
+                    </U>
+                  </V>
+                </L>
+                <L n="loot_list">
+                  <T>394655<!--LootActions: loot_Funerals_Eulogize_Lighteartedly_Podium_Self--></T>
+                </L>
+              </U>
+            </U>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">ACTOR</E>
+  <L n="test_autonomous">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>394826<!--Buff: buff_Funerals_Hidden_Eulogize_Cooldown_Short--></T>
+            <T>394827<!--Buff: buff_Funerals_Hidden_Eulogize_Cooldown_Long--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <V n="whitelist" t="enabled">
+          <L n="enabled">
+            <T>392382<!--Buff: buff_Funerals_RoleBuffs_Speeches--></T>
+            <T>392383<!--Buff: buff_Funerals_RoleBuffs_Celebration--></T>
+            <T>392384<!--Buff: buff_Funerals_RoleBuffs_Mingle--></T>
+            <T>392381<!--Buff: buff_Funerals_RoleBuffs_Mourn--></T>
+            <T>401343<!--Buff: buff_EP17Festival_FuneralBBQ_Player--></T>
+            <T>401427<!--Buff: buff_EP17Festival_AutonomyMod_FuneralBBQ_NPC--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+    <V t="identity">
+      <U n="identity">
+        <E n="subject_b">Object</E>
+        <T n="subjects_match">True</T>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

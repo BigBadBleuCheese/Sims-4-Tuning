@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_NobleCareer_LeaveCareer_Notification" s="487556">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x70F4026<!--String: "{0.SimFirstName} has left the Noble Career and had not <b>Promised Anyone to Inherit</b> {0.SimPronounPossessiveDependent} Noble rank and title! Any spouse or child to {0.SimFirstName} can still claim {0.SimPronounPossessiveDependent} Career Rank for the next 24 hours. To be eligible, they must reside in the Kingdom and be in the Noble Career. Then select the Throne and <b>Claim Lost Career Rank</b>."--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x69C6F348<!--String: "Noble Title Up for Grabs!"--></T>
+            </V>
+            <V n="tns_suppression_group" t="enabled">
+              <E n="enabled">GenericForTick</E>
+            </V>
+          </U>
+        </V>
+        <E n="subject">TargetSim</E>
+        <L n="tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="ages" t="specified" />
+                <E n="who">TargetSim</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

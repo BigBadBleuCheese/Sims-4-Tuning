@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="CareerEventZoneDirector" i="zone_director" m="careers.career_event_zone_director" n="careerEventZoneDirector_Reaper_HQSabotage" s="400897">
+  <L n="background_situations">
+    <T>393408<!--SituationSimple: situation_Career_Reaper_GrimOffice--></T>
+    <T>383225<!--SituationSimple: situation_Career_Reaper_Coworker--></T>
+    <T>401366<!--SituationSimple: situation_Career_Reaper_HQSabotage_MischieviousGhost--></T>
+  </L>
+  <V n="fan_situation_support" t="disabled" />
+  <L n="lot_preparations">
+    <U>
+      <V n="action" t="set_state">
+        <U n="set_state">
+          <T n="cleanup_state">15078<!--CommodityBasedObjectStateValue: Brokenness_Unbroken--></T>
+          <T n="prepare_state">15076<!--CommodityBasedObjectStateValue: Brokenness_Broken--></T>
+        </U>
+      </V>
+      <U n="number_of_changes">
+        <T n="lower_bound">1</T>
+        <T n="upper_bound">1</T>
+      </U>
+      <L n="tests">
+        <L>
+          <V t="object_definition">
+            <U n="object_definition">
+              <V n="item" t="actual_item">
+                <U n="actual_item">
+                  <L n="items_to_check">
+                    <T>418157</T>
+                  </L>
+                </U>
+              </V>
+            </U>
+          </V>
+        </L>
+      </L>
+    </U>
+    <U>
+      <V n="action" t="set_state">
+        <U n="set_state">
+          <T n="cleanup_state">15078<!--CommodityBasedObjectStateValue: Brokenness_Unbroken--></T>
+          <T n="prepare_state">15076<!--CommodityBasedObjectStateValue: Brokenness_Broken--></T>
+          <T n="require_connectivity">False</T>
+        </U>
+      </V>
+      <U n="number_of_changes">
+        <T n="lower_bound">1</T>
+        <T n="upper_bound">1</T>
+      </U>
+      <T n="on_lot_only">False</T>
+      <L n="tests">
+        <L>
+          <V t="object_definition">
+            <U n="object_definition">
+              <V n="item" t="actual_item">
+                <U n="actual_item">
+                  <L n="items_to_check">
+                    <T>418201</T>
+                  </L>
+                </U>
+              </V>
+            </U>
+          </V>
+        </L>
+      </L>
+    </U>
+    <U>
+      <V n="action" t="create_random_object_nearby">
+        <U n="create_random_object_nearby">
+          <L n="objects_to_choose_from">
+            <T>422874<!--SituationGoalSet: goalSet_ReaperCareer_Reaping_Social--></T>
+            <T>422877<!--SuperInteraction: career_Reaper_Objects_Investigate--></T>
+          </L>
+        </U>
+      </V>
+      <U n="number_of_changes">
+        <T n="lower_bound">4</T>
+        <T n="upper_bound">4</T>
+      </U>
+    </U>
+  </L>
+  <L n="situation_shifts" />
+  <V n="tested_spawn_point_override" t="disabled" />
+  <T n="use_object_provided_situations_schedule">False</T>
+  <T n="use_object_situation_scheduler_component">False</T>
+</I>

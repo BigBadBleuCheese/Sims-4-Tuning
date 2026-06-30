@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_SmallBusiness_LightRetailSurface_ActiveStateCleanup" s="427411">
+  <L n="loot_actions">
+    <V t="apply_loot_to_all_lot_level_objects">
+      <U n="apply_loot_to_all_lot_level_objects">
+        <L n="loot_list">
+          <T>427410<!--LootActions: loot_SmallBusiness_LightRetailSurface_SetStateToInactive--></T>
+        </L>
+        <V n="object_loot" t="enabled">
+          <U n="enabled">
+            <V n="objects" t="tagged_objects">
+              <U n="tagged_objects">
+                <L n="tags">
+                  <E>Func_LightRetailSurface</E>
+                </L>
+              </U>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="small_business_ownership_test">
+        <U n="small_business_ownership_test">
+          <T n="negate">True</T>
+          <E n="participant">ActorHouseholdMembers</E>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

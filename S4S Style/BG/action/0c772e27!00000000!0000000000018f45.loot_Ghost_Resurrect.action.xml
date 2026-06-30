@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Ghost_Resurrect" s="102213">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">329409<!--Buff: buff_LifeMilestone_Hidden_JustResurrected_NoBit--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <L n="whitelist_trait_types">
+                  <E>GHOST</E>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="trait_remove">
+      <U n="trait_remove">
+        <V n="trait" t="traits_of_type">
+          <U n="traits_of_type">
+            <L n="trait_types">
+              <E>GHOST</E>
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_remove">
+        <U n="statistic_remove">
+          <T n="stat">102501<!--Commodity: commodity_buff_Ghost_Playful--></T>
+        </U>
+      </V>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_remove">
+        <U n="statistic_remove">
+          <T n="stat">102473<!--Commodity: commodity_buff_ghost_Angry--></T>
+        </U>
+      </V>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_remove">
+        <U n="statistic_remove">
+          <T n="stat">102525<!--Commodity: commodity_buff_Ghost_Embarrassment--></T>
+        </U>
+      </V>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_remove">
+        <U n="statistic_remove">
+          <T n="stat">382011<!--Commodity: commodity_Buff_Ghost_BrokenHeart--></T>
+          <L n="subject">
+            <E>Actor</E>
+          </L>
+        </U>
+      </V>
+    </V>
+    <V t="actions">
+      <T n="actions">402995<!--LootActions: loot_UnfinishedBusiness_RemoveGhostGoals--></T>
+    </V>
+    <V t="actions">
+      <T n="actions">472705<!--LootActions: lootActions_FairyOccult_RemoveOverloadOnResurrect--></T>
+    </V>
+  </L>
+</I>

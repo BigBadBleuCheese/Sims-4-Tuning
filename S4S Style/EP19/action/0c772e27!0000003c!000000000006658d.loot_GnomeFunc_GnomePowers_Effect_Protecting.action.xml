@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_GnomeFunc_GnomePowers_Effect_Protecting" s="419213">
+  <L n="loot_actions">
+    <V t="state_change">
+      <U n="state_change">
+        <T n="state_value">429962<!--ObjectStateValue: gnomeFuncStates_BringToLife_Destroyed--></T>
+        <L n="tests">
+          <L>
+            <V t="object_criteria">
+              <U n="object_criteria">
+                <V n="identity_test" t="tags">
+                  <U n="tags">
+                    <L n="tag_set">
+                      <E>Func_Gnome_Evil</E>
+                    </L>
+                  </U>
+                </V>
+                <T n="owned">False</T>
+                <V n="subject_specific_tests" t="single_object">
+                  <U n="single_object">
+                    <E n="target">Actor</E>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="destroy_situation">
+      <U n="destroy_situation">
+        <L n="required_participant">
+          <E>Actor</E>
+        </L>
+        <L n="situation_tags">
+          <E>Situation_VisitorNPCs</E>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="npc" t="enabled">
+                  <T n="enabled">True</T>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">434401<!--Buff: buff_GnomeFunc_GrimScared--></T>
+        </U>
+        <E n="subject">ActiveHousehold</E>
+      </U>
+    </V>
+    <V t="vfx">
+      <U n="vfx">
+        <U n="vfx">
+          <T n="effect_name">ep19_gnome_object_glow</T>
+          <V n="joint_name" t="Current_Position" />
+        </U>
+      </U>
+    </V>
+  </L>
+</I>

@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Buff" i="buff" m="buffs.buff" n="buff_Trait_Horses_Age_Child" s="321105">
+  <L n="_loot_on_instance" />
+  <T p="InGame\Audio\Stings\sting_buff_gain.propx" n="audio_sting_on_add">39b2aa4a:00000000:8af8b916cf64c646</T>
+  <T p="InGame\Audio\Stings\sting_buff_loss.propx" n="audio_sting_on_remove">39b2aa4a:00000000:3bf33216a25546ea</T>
+  <U n="game_effect_modifier">
+    <L n="_game_effect_modifiers">
+      <V t="autonomy_modifier">
+        <U n="autonomy_modifier">
+          <L n="decay_modifiers">
+            <U>
+              <T n="key">312265<!--Commodity: motive_Horse_Hunger--></T>
+              <T n="value">1.335</T>
+            </U>
+            <U>
+              <T n="key">312266<!--Commodity: motive_Horse_Energy--></T>
+              <T n="value">1.5</T>
+            </U>
+          </L>
+          <L n="interaction_score_modifier">
+            <U>
+              <L n="affordances">
+                <T>328440<!--SuperInteraction: horseInteractions_HorseToObject_HorseToy_PlayWithBall--></T>
+                <T>328129<!--SuperInteraction: horseInteractions_RunAround_Frolic--></T>
+              </L>
+              <T n="modifier">1.5</T>
+            </U>
+          </L>
+          <V n="override_convergence_value" t="Set_new_convergence_value">
+            <L n="Set_new_convergence_value">
+              <U>
+                <T n="key">312268<!--Commodity: motive_Horse_Fun--></T>
+                <T n="value">-74</T>
+              </U>
+            </L>
+          </V>
+          <L n="relationship_score_multiplier_with_buff_on_target">
+            <U>
+              <T n="key">321105<!--Buff: buff_Trait_Horses_Age_Child--></T>
+              <T n="value">1.5</T>
+            </U>
+            <U>
+              <T n="key">321106<!--Buff: buff_Trait_Horses_Age_Adult--></T>
+              <T n="value">1.2</T>
+            </U>
+          </L>
+          <L n="score_multipliers">
+            <U>
+              <T n="key">312268<!--Commodity: motive_Horse_Fun--></T>
+              <T n="value">2</T>
+            </U>
+            <U>
+              <T n="key">312270<!--Commodity: motive_Horse_Social--></T>
+              <T n="value">1.5</T>
+            </U>
+          </L>
+          <L n="stat_use_multiplier">
+            <U>
+              <T n="key">312266<!--Commodity: motive_Horse_Energy--></T>
+              <U n="value">
+                <E n="apply_direction">INCREASE</E>
+                <T n="multiplier">0.75</T>
+              </U>
+            </U>
+          </L>
+        </U>
+      </V>
+      <V t="autonomy_modifier">
+        <U n="autonomy_modifier">
+          <L n="commodities_to_add">
+            <T>351376<!--Commodity: commodity_Horse_MoveAround--></T>
+          </L>
+          <V n="off_lot_autonomy_rule" t="enabled">
+            <V n="enabled" t="default_behavior">
+              <U n="default_behavior">
+                <T n="radius">15</T>
+                <T n="tolerance">3.5</T>
+              </U>
+            </V>
+          </V>
+          <L n="stat_use_multiplier">
+            <U>
+              <T n="key">16655<!--Commodity: motive_Fun--></T>
+              <U n="value">
+                <E n="apply_direction">INCREASE</E>
+                <T n="multiplier">1.2</T>
+              </U>
+            </U>
+            <U>
+              <T n="key">324631<!--Skill: statistic_Skill_Horse_Temperament--></T>
+              <U n="value">
+                <T n="multiplier">1</T>
+              </U>
+            </U>
+          </L>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T p="InGame\UI\Icons\Debug\missing_image.png" n="icon">2f7d0004:00000000:30f0846c783606f9</T>
+  <T n="refresh_on_add">True</T>
+  <T n="show_timeout">False</T>
+  <T n="success_modifier">0</T>
+  <L n="super_affordances">
+    <T>250338<!--SuperInteraction: droid_Zap_Target_Sim_Home_Cheat--></T>
+    <T>164020<!--SuperInteraction: parameterizedAutonomy_RouteFails--></T>
+    <T>211625<!--WaypointInteraction: ocean-swim_Autonomous--></T>
+    <T>233500<!--SuperInteraction: sim_GetOut_Self--></T>
+    <T>502981<!--AggregateSuperInteraction: aggregate_SocialObservation_Chat--></T>
+    <T>334904<!--ObjectInInventoryPickerInteraction: objectInInventory_HorseTreat_AgeUp--></T>
+    <T>334905<!--ObjectInInventoryPickerInteraction: objectInInventory_HorseTreat_Resurrect--></T>
+    <T>346047<!--AutonomousObjectTaggedPickerInteraction: autonomous_ObjectPicker_Horses_Foal_WhatsThat--></T>
+  </L>
+  <L n="target_super_affordances">
+    <U>
+      <T n="affordance">179604<!--CheatSetStatSuperInteraction: cheat_SetStatisticOnObject--></T>
+      <T n="allow_self">True</T>
+      <V n="object_filter" t="allow_all" />
+    </U>
+    <U>
+      <T n="affordance">233575<!--SuperInteraction: sim_GetOut_Target--></T>
+    </U>
+    <U>
+      <T n="affordance">319844<!--SocialSuperInteraction: HorseSocials_HorseToSim_Touching_Friendly_Nuzzle--></T>
+    </U>
+    <U>
+      <T n="affordance">328827<!--SocialSuperInteraction: horseSocials_HorseToSim_Touching_Friendly_Sniff--></T>
+    </U>
+    <U>
+      <T n="affordance">322230<!--SocialSuperInteraction: horseSocials_HorseToSim_Touching_Mean_BiteAt--></T>
+    </U>
+    <U>
+      <T n="affordance">321329<!--SocialSuperInteraction: HorseSocials_HorseToSim_NonTouching--></T>
+    </U>
+    <U>
+      <T n="affordance">339458<!--SocialSuperInteraction: horseSocials_HorseToPet_Friendly--></T>
+    </U>
+    <U>
+      <T n="affordance">339460<!--SocialSuperInteraction: horseSocials_HorseToPet_Curious--></T>
+    </U>
+    <U>
+      <T n="affordance">339459<!--SocialSuperInteraction: horseSocials_HorseToPet_Mean--></T>
+    </U>
+  </L>
+  <T n="ui_sort_order">1</T>
+  <T n="visible">False</T>
+  <V n="walkstyle" t="disabled" />
+</I>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Objective" i="objective" m="event_testing.objective_tuning" n="career_RomanceConsultant_ReadRomanceNovel" s="367388">
+  <L n="completion_loot">
+    <T>273586<!--LootActions: loot_Want_WorkTaskCompleted--></T>
+  </L>
+  <T n="display_text">0x19EB775D<!--String: "Read Romance Novel"--></T>
+  <V n="objective_test" t="ran_interaction_test">
+    <U n="ran_interaction_test">
+      <L n="affordances">
+        <T>39360<!--ObjectInInventoryPickerInteraction: bookshelf_Read_Picker--></T>
+        <T>13117<!--SuperInteraction: book_read--></T>
+      </L>
+      <V n="running_time" t="enabled">
+        <T n="enabled">30</T>
+      </V>
+      <U n="target_filters">
+        <V n="object_tags" t="enabled">
+          <U n="enabled">
+            <L n="tag_set">
+              <E>Genre_Book_Romance</E>
+            </L>
+          </U>
+        </V>
+      </U>
+      <E n="test_event">InteractionUpdate</E>
+    </U>
+  </V>
+  <T n="relative_to_unlock_moment">True</T>
+  <T n="resettable">True</T>
+  <T n="tooltip">0x63E1EF72<!--String: "Click on any bookshelf or bookcase and select a book of the romance genre to read. "--></T>
+</I>

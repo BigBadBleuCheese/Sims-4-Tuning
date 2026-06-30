@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_APM_EventOutcome_LapsedFailure_TrashOverload" s="348748">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T p="InGame\UI\Icons\Notifications\notification_trashbags.png" n="key">2f7d0004:00000000:4b4fdc8bb650aefa</T>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x194E383<!--String: "Looks like you ignored the Trash Overload problem in {1.String}. The Unit Rating went down."--></T>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="participant_type_special">
+                    <U n="participant_type_special">
+                      <V n="participant_type" t="zone">
+                        <U n="zone">
+                          <V n="attribute" t="occupant_household_name" />
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                  <V t="participant_type_special">
+                    <U n="participant_type_special">
+                      <V n="participant_type" t="zone" />
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0xE94D92DB<!--String: "Trash Overload"--></T>
+            </V>
+          </U>
+        </V>
+        <E n="subject">ActiveHousehold</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="is_active_sim" t="enabled" />
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="actions">
+      <T n="actions">357092<!--LootActions: loot_UnitRating_Progression_PickedUnit_ActiveLot_NoSims_Large_Loss--></T>
+    </V>
+    <V t="actions">
+      <T n="actions">348475<!--LootActions: loot_muEventAPM_AddCooldown_TrashOverload--></T>
+    </V>
+    <V t="actions">
+      <T n="actions">349813<!--LootActions: loot_muEventAPM_AddEventOutcomeBuff_Failed--></T>
+    </V>
+  </L>
+</I>

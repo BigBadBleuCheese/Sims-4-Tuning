@@ -1,0 +1,461 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SocialSuperInteraction" i="interaction" m="interactions.social.social_super_interaction" n="social_EP20_IF_GoodbyeForever" s="462679">
+  <V n="_cancelable_by_user" t="prohibit_cancelation" />
+  <L n="_constraints">
+    <U>
+      <E n="constrained_participant">TargetSim</E>
+      <L n="constraints">
+        <U>
+          <V n="value" t="facing" />
+        </U>
+      </L>
+    </U>
+  </L>
+  <E n="_constraints_actor">Actor</E>
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>TargetSim</E>
+      </L>
+    </U>
+  </V>
+  <T n="_must_run">True</T>
+  <L n="_party_size_weight_tuning">
+    <U>
+      <T n="y">100</T>
+    </U>
+    <U>
+      <T n="x">1</T>
+      <T n="y">100</T>
+    </U>
+    <U>
+      <T n="x">2</T>
+      <T n="y">50</T>
+    </U>
+    <U>
+      <T n="x">3</T>
+      <T n="y">0</T>
+    </U>
+    <U>
+      <T n="x">4</T>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <T n="_social_group_type">74849<!--JigGroup: group_Platonic--></T>
+  <V n="affordance_to_push_on_target" t="push_self_or_none">
+    <T n="push_self_or_none">False</T>
+  </V>
+  <T n="allow_autonomous">False</T>
+  <T n="attention_cost">0</T>
+  <V n="basic_content" t="one_shot" />
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>162659<!--LootActions: loot_Commodity_Culling_GhostAdd_target--></T>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x9C09275F<!--String: "(From Being in a social group with at least 3 Sims)"--></T>
+          </V>
+          <T n="buff_type">125555<!--Buff: buff_Trait_WithMyFriends--></T>
+        </U>
+        <L n="subject">
+          <E>Actor</E>
+          <E>SocialGroupSims</E>
+          <E>TargetSim</E>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="social_group">
+              <U n="social_group">
+                <V n="threshold" t="enabled">
+                  <U n="enabled">
+                    <T n="value">3</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="camera_focus">
+      <U n="camera_focus">
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+    <V t="set_game_speed">
+      <U n="set_game_speed">
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>463485<!--LootActions: loot_Sentiment_AddSentiment_Guilty_ChildhoodSentiment_FictitiousFriendNoMore--></T>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>475041<!--LootActions: loot_EP20_IF_Child_MovingOn_CleanUp--></T>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>464192<!--LootActions: loot_EP20_IF_Inactive--></T>
+        </L>
+      </U>
+    </V>
+    <V t="buff_fire_and_forget">
+      <U n="buff_fire_and_forget">
+        <U n="buff">
+          <T n="buff_type">485763<!--Buff: buff_EP20_IF_Hidden_SayGoodByeForever_Check--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="ages" t="specified">
+                  <L n="specified">
+                    <E>CHILD</E>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="basic_reserve_object" t="disabled" />
+  <T n="category">456723<!--PieMenuCategory: pieMenuCategory_EP20_IF_Interact--></T>
+  <T n="collapsible">True</T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x84C55CDA<!--String: "Say Goodbye Forever"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <V n="display_tooltip" t="enabled">
+    <T n="enabled">0x9671D5E6<!--String: "This will send {0.SimPronounPossessiveDependent} Imaginary Friend back to Imagination Land <b>forever</b>."--></T>
+  </V>
+  <V n="idle_animation" t="enabled">
+    <U n="enabled">
+      <T n="factory">11570<!--AnimationElement: Listen_Listen_Looping_basic--></T>
+    </U>
+  </V>
+  <T n="ignore_group_socials">False</T>
+  <L n="interaction_category_tags">
+    <E>Interaction_SocialSuper</E>
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+    <E>Interaction_SocialAll</E>
+    <E>Interaction_Social_Contagious</E>
+  </L>
+  <T n="invite_in_after_interaction">True</T>
+  <U n="listen_animation">
+    <T n="factory">11570<!--AnimationElement: Listen_Listen_Looping_basic--></T>
+  </U>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <V n="animation_ref" t="enabled">
+              <U n="enabled">
+                <T n="factory">462712<!--AnimationElement: eP20_IF_SayGoodbyeForever_Good--></T>
+              </U>
+            </V>
+            <L n="basic_extras">
+              <V t="buff_fire_and_forget">
+                <U n="buff_fire_and_forget">
+                  <U n="buff">
+                    <V n="buff_reason" t="enabled">
+                      <T n="enabled">0xE82676D4<!--String: "(From Saying Goodbye Forever to an Imaginary Friend)"--></T>
+                    </V>
+                    <T n="buff_type">462707<!--Buff: buff_EP20_IF_GoodbyeForever_Good--></T>
+                  </U>
+                </U>
+              </V>
+              <V t="notification">
+                <U n="notification">
+                  <V n="dialog" t="single">
+                    <V n="single" t="literal">
+                      <U n="literal">
+                        <L n="dialog_options">
+                          <E>DISABLE_CLOSE_BUTTON</E>
+                        </L>
+                        <V n="icon" t="enabled">
+                          <V n="enabled" t="participant">
+                            <U n="participant">
+                              <L n="participant_type">
+                                <E>TargetSim</E>
+                              </L>
+                            </U>
+                          </V>
+                        </V>
+                        <V n="secondary_icon" t="enabled">
+                          <V n="enabled" t="participant">
+                            <U n="participant">
+                              <L n="participant_type">
+                                <E>Actor</E>
+                              </L>
+                            </U>
+                          </V>
+                        </V>
+                        <V n="text" t="single">
+                          <T n="single">0x351884FE<!--String: "Oh wow! Is it already time to say goodbye? Being your friend has been a blast! I'm going to return to Imaginary Land for good, but I'll <i>never</i> forget all the fun we had. You've been the <i>best</i> real friend an Imaginary Friend could ask for, and I'll miss you! Bye bye..."--></T>
+                        </V>
+                        <V n="title" t="enabled">
+                          <T n="enabled">0xAA41DDDA<!--String: "Goodbye Forever!"--></T>
+                        </V>
+                        <E n="visual_type">SPEECH</E>
+                      </U>
+                    </V>
+                  </V>
+                  <V n="timing" t="at_beginning" />
+                </U>
+              </V>
+              <V t="loot">
+                <U n="loot">
+                  <L n="loot_list">
+                    <T>481666<!--LootActions: loot_EP20_IF_MovingOnMoment_Audio_GoodbyeForever_Good--></T>
+                  </L>
+                </U>
+              </V>
+              <V t="set_visibility_state">
+                <U n="set_visibility_state">
+                  <T n="fade">False</T>
+                  <E n="subject">TargetSim</E>
+                  <T n="visibility">False</T>
+                </U>
+              </V>
+            </L>
+            <L n="continuation">
+              <U>
+                <E n="actor">TargetSim</E>
+                <T n="affordance">485117<!--SuperInteraction: sI_EP20_IF_SpawnEvent_Poof_Out_GoodbyeForever_Good--></T>
+                <E n="target">Actor</E>
+              </U>
+            </L>
+            <V n="response" t="enabled">
+              <V n="enabled" t="individual">
+                <U n="individual">
+                  <L n="animations">
+                    <U>
+                      <E n="target">Actor</E>
+                      <U n="animation">
+                        <T n="factory">12079<!--AnimationElement: Soc_Solo_NT_SadCry_Succeed_basic--></T>
+                      </U>
+                    </U>
+                  </L>
+                </U>
+              </V>
+            </V>
+          </U>
+        </U>
+      </L>
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">129903<!--AnimationElement: Shoo_KickOut--></T>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <V n="buff_reason" t="enabled">
+                          <T n="enabled">0xE82676D4<!--String: "(From Saying Goodbye Forever to an Imaginary Friend)"--></T>
+                        </V>
+                        <T n="buff_type">462708<!--Buff: buff_EP20_IF_GoodbyeForever_Bad--></T>
+                      </U>
+                    </U>
+                  </V>
+                  <V t="loot">
+                    <U n="loot">
+                      <L n="loot_list">
+                        <T>481667<!--LootActions: loot_EP20_IF_MovingOnMoment_Audio_GoodbyeForever_Bad--></T>
+                      </L>
+                    </U>
+                  </V>
+                  <V t="notification">
+                    <U n="notification">
+                      <V n="dialog" t="single">
+                        <V n="single" t="literal">
+                          <U n="literal">
+                            <L n="dialog_options">
+                              <E>DISABLE_CLOSE_BUTTON</E>
+                            </L>
+                            <V n="icon" t="enabled">
+                              <V n="enabled" t="participant">
+                                <U n="participant">
+                                  <L n="participant_type">
+                                    <E>TargetSim</E>
+                                  </L>
+                                </U>
+                              </V>
+                            </V>
+                            <V n="secondary_icon" t="enabled">
+                              <V n="enabled" t="participant">
+                                <U n="participant">
+                                  <L n="participant_type">
+                                    <E>Actor</E>
+                                  </L>
+                                </U>
+                              </V>
+                            </V>
+                            <V n="text" t="single">
+                              <T n="single">0x89E69567<!--String: "Oh wow! You're finally letting me go—I mean, oh nooooo...that's <i>terrible</i>! I'm super gonna miss you... Yep... Guess I'll just scoot on back to Imaginary Land. Have a...terrific life, kid."--></T>
+                            </V>
+                            <V n="title" t="enabled">
+                              <T n="enabled">0xAA41DDDA<!--String: "Goodbye Forever!"--></T>
+                            </V>
+                            <E n="visual_type">SPEECH</E>
+                          </U>
+                        </V>
+                      </V>
+                      <V n="timing" t="at_beginning" />
+                    </U>
+                  </V>
+                </L>
+                <L n="continuation">
+                  <U>
+                    <E n="actor">TargetSim</E>
+                    <T n="affordance">464196<!--SuperInteraction: sI_EP20_IF_SpawnEvent_Poof_Out_GoodbyeForever--></T>
+                    <E n="target">Actor</E>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="relationship">
+                <U n="relationship">
+                  <U n="required_relationship_bits">
+                    <L n="match_any">
+                      <T>15792<!--RelationshipBit: friendship-acquaintances--></T>
+                      <T>15796<!--RelationshipBit: friendship-despised--></T>
+                      <T>15802<!--RelationshipBit: friendship-disliked--></T>
+                      <T>15801<!--RelationshipBit: friendship-nemesis--></T>
+                    </L>
+                  </U>
+                  <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T p="InEP20\UI\Icons\PieMenu\Interactions\PieMenu_ImaginaryFriend.png" n="key">2f7d0004:00000000:9eadf868d4fa1232</T>
+      </U>
+    </V>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <T n="relationship_scoring">True</T>
+  <E n="scoring_priority">NORMAL</E>
+  <V n="sim_affinity_posture_scoring_data" t="enabled">
+    <U n="enabled">
+      <L n="my_scoring">
+        <U>
+          <V n="affinity_strategy" t="relationship_based" />
+          <T n="negate_tag">True</T>
+          <E n="running_interaction_tag">Sleeping</E>
+        </U>
+        <U>
+          <V n="affinity_strategy" t="avoid" />
+          <E n="running_interaction_tag">Very_Loud</E>
+        </U>
+      </L>
+      <L n="my_tags">
+        <E>Loud</E>
+        <E>Chat</E>
+      </L>
+    </U>
+  </V>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all" />
+    </U>
+  </V>
+  <E n="target_type">TARGET</E>
+  <V n="test_disallow_while_running" t="enabled">
+    <U n="enabled">
+      <L n="affordances">
+        <T>484999<!--ImmediateSuperInteraction: immediateSI_EP20_IF_Confirmation_Popup_GoodbyeForever_KraftyKid--></T>
+        <T>485005<!--ImmediateSuperInteraction: immediateSI_EP20_IF_Confirmation_Popup_GoodbyeForever_LilMonster--></T>
+        <T>485016<!--ImmediateSuperInteraction: immediateSI_EP20_IF_Confirmation_Popup_GoodbyeForever_Pegacorn--></T>
+        <T>485017<!--ImmediateSuperInteraction: immediateSI_EP20_IF_Confirmation_Popup_GoodbyeForever_WildChild--></T>
+        <T>462679<!--SocialSuperInteraction: social_EP20_IF_GoodbyeForever--></T>
+        <T>464326<!--SuperInteraction: sI_EP20_IF_SayGoodbyeForever_Teen--></T>
+        <T>462675<!--SuperInteraction: sI_EP20_IF_SayGoodbyeForever--></T>
+        <T>485026<!--ImmediateSuperInteraction: immediateSI_EP20_IF_Confirmation_Popup_GoodbyeForever_TargetSim_KraftyKid--></T>
+        <T>485023<!--ImmediateSuperInteraction: immediateSI_EP20_IF_Confirmation_Popup_GoodbyeForever_TargetSim_LilMonster--></T>
+        <T>485024<!--ImmediateSuperInteraction: immediateSI_EP20_IF_Confirmation_Popup_GoodbyeForever_TargetSim_Pegacorn--></T>
+        <T>485025<!--ImmediateSuperInteraction: immediateSI_EP20_IF_Confirmation_Popup_GoodbyeForever_TargetSim_WildChild--></T>
+      </L>
+    </U>
+  </V>
+  <L n="test_globals">
+    <V t="relationship">
+      <U n="relationship">
+        <U n="required_relationship_bits">
+          <L n="match_any">
+            <T>456062<!--RelationshipBit: relationshipBit_EP20_IF_Friendship--></T>
+          </L>
+        </U>
+      </U>
+    </V>
+    <V t="user_running_interaction">
+      <U n="user_running_interaction">
+        <L n="affordances">
+          <T>462680<!--SocialSuperInteraction: socialSI_EP20_IF_OfferMakeReal--></T>
+          <T>462714<!--SuperInteraction: sI_EP20_IF_OfferMakeReal--></T>
+        </L>
+        <E n="participant">Actor</E>
+        <T n="test_for_not_running">True</T>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalObjectInteraction" i="situation_goal" m="situations.situation_goal_object_interaction" n="situationGoalObjectInteraction_LiveEvent_EVTSept25_GoToSchool" s="458656">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T p="InGame\UI\Icons\Headlines\Final\headline_schoolbus.png" n="enabled">2f7d0004:00000000:6bf27494c54ef486</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0xA57198D8<!--String: "Go to School"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0xA3BF030<!--String: "School happens Monday to Friday and starts in the morning. Wait until that time, and have a Sim go to school when given the option.\n\nTip: You can also have an older Sim go to work."--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>447711<!--SituationGoalLootActions: liveEvent_GoalLoot_CompleteQuestGoal--></T>
+  </L>
+  <U n="_goal_test">
+    <L n="affordances">
+      <T>14245<!--CareerSuperInteraction: si_Career_GradeSchool--></T>
+      <T>9542<!--CareerSuperInteraction: si_Career_HighSchool--></T>
+    </L>
+    <L n="tags">
+      <E>Interaction_Career_Work_RabbitHole</E>
+    </L>
+    <E n="test_event">InteractionComplete</E>
+  </U>
+  <L n="_post_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+      </U>
+    </V>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+  <V n="goal_completion_notification" t="enabled">
+    <U n="enabled">
+      <V n="icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T n="key" p="InGame\UI\Icons\Headlines\Events\ImaginationEvent_EventTNS.png">2f7d0004:00000000:a7d998e23b3c9bc3</T>
+          </U>
+        </V>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0x1267EF4E<!--String: "School time! Another day in class, another grade next year.\n\n{0.SimFirstName} has a place to meet more real-life friends, while never forgetting the friend {0.SimPronounSubjective} left at home."--></T>
+      </V>
+    </U>
+  </V>
+  <V n="tutorial_tip_group" t="enabled">
+    <T n="enabled">468834<!--TutorialTipGroup: tutorialTipGroup_LiveEvent_EVTSept25_GoToSchool--></T>
+  </V>
+</I>

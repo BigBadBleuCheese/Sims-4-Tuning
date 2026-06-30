@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_muEvent_FixByTenant_Repair" s="353163">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">353150<!--Buff: buff_muEvent_Hidden_TenantDidFix--></T>
+        </U>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="zone">
+        <U n="zone">
+          <U n="zone_tests">
+            <V n="venue_type" t="enabled">
+              <U n="enabled">
+                <V n="whitelist" t="specify">
+                  <U n="specify">
+                    <L n="whitelist">
+                      <T>341299<!--Venue: venue_MultiUnit--></T>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </U>
+        </U>
+      </V>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="npc" t="enabled" />
+        </U>
+      </V>
+      <V t="situation_running_test">
+        <U n="situation_running_test">
+          <V n="situation_whitelist" t="enabled">
+            <L n="enabled">
+              <T>343473<!--MultiUnitEventSituation: situation_muEvent_Electrical--></T>
+              <T>343680<!--MultiUnitEventSituation: situation_muEvent_Explosion--></T>
+              <T>344498<!--MultiUnitEventSituation: situation_muEvent_SewageLeak--></T>
+              <T>343434<!--MultiUnitEventSituation: situation_muEvent_WaterLeak--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+      <V t="test_set_reference">
+        <T n="test_set_reference">352605<!--TestSetInstance: testSet_MultiUnit_isTenantNotOwner_CurrentLot--></T>
+      </V>
+    </L>
+  </L>
+</I>

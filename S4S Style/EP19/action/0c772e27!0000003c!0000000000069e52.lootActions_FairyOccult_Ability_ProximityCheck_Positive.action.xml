@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="lootActions_FairyOccult_Ability_ProximityCheck_Positive" s="433746">
+  <L n="loot_actions">
+    <V t="statistics">
+      <V n="statistics" t="relationship_change">
+        <U n="relationship_change">
+          <T n="amount">5</T>
+          <V n="relationship_multiplier" t="enabled">
+            <U n="enabled">
+              <L n="multipliers">
+                <U>
+                  <T n="multiplier">0</T>
+                  <L n="tests">
+                    <L>
+                      <V t="buff">
+                        <U n="buff">
+                          <V n="whitelist" t="enabled">
+                            <L n="enabled">
+                              <T>440464<!--Buff: buff_FairyOccult_Ability_Passive_NegateRelationshipChanges--></T>
+                            </L>
+                          </V>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+                <U>
+                  <T n="multiplier">1.5</T>
+                  <L n="tests">
+                    <L>
+                      <V t="buff">
+                        <U n="buff">
+                          <V n="whitelist" t="enabled">
+                            <L n="enabled">
+                              <T>440463<!--Buff: buff_FairyOccult_Ability_Passive_EmbraceRelationshipChanges--></T>
+                            </L>
+                          </V>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+              </L>
+            </U>
+          </V>
+          <L n="subject">
+            <E>Actor</E>
+          </L>
+          <L n="target_participant_type">
+            <E>TargetSim</E>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="distance">
+                <U n="distance">
+                  <U n="distance_threshold">
+                    <E n="comparison">LESS_OR_EQUAL</E>
+                    <T n="value">5</T>
+                  </U>
+                  <V n="target" t="participant_type">
+                    <U n="participant_type">
+                      <E n="participant">TargetSim</E>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+          <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+        </U>
+      </V>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified">
+            <L n="specified">
+              <E>TEEN</E>
+              <E>YOUNGADULT</E>
+              <E>ADULT</E>
+              <E>ELDER</E>
+              <E>CHILD</E>
+            </L>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

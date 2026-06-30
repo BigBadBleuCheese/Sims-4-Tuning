@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="si_StreetFoodTable_TendTable" s="336346">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="cone">
+            <U n="cone">
+              <T n="angle">140</T>
+              <T n="ideal_angle">0</T>
+              <T n="ideal_radius_max">0.1</T>
+              <T n="ideal_radius_min">0</T>
+              <T n="max_radius">2.2</T>
+              <T n="offset">180</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+    <U>
+      <E n="constrained_participant">Actor</E>
+      <L n="constraints">
+        <U>
+          <V n="value" t="posture">
+            <U n="posture">
+              <L n="posture_manifest_tuning">
+                <U>
+                  <V n="posture_type" t="enabled">
+                    <T n="enabled">15537<!--MobilePosture: posture_Stand--></T>
+                  </V>
+                </U>
+              </L>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <L n="_static_commodities">
+    <U>
+      <T n="static_commodity">145288<!--StaticCommodity: staticCommodity_CraftSalesTable_Tend--></T>
+    </U>
+  </L>
+  <T n="_super_affordance_can_share_target">True</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="list_reference">
+          <T n="list_reference">40705<!--ExitConditionList: ExitConditionList_MotivesNearFail--></T>
+        </V>
+        <V t="list_reference">
+          <T n="list_reference">40144<!--ExitConditionList: ExitConditionList_EmotionMiserable--></T>
+        </V>
+        <V t="list_reference">
+          <T n="list_reference">40702<!--ExitConditionList: ExitConditionList_EmotionStressed--></T>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="situation_based">
+                <U n="situation_based">
+                  <L n="situation_types">
+                    <T>334544<!--YardSaleSituation: Situation_StreetFoodTable_FoodSale--></T>
+                    <T>334545<!--YardSaleSituation: Situation_StreetFoodTable_FoodSale_OpenStreet--></T>
+                    <T>350779<!--YardSaleSituation: situation_StreetFoodTable_FoodSale_Indoors--></T>
+                  </L>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+      </L>
+      <V n="content" t="staging_content">
+        <U n="staging_content">
+          <U n="content_set">
+            <L n="affordance_links">
+              <T>337943<!--MixerInteraction: mixer_StreetFoodTable_Tend--></T>
+              <T>337960<!--MixerInteraction: mixer_StreetFoodTable_Tend_AutoStock--></T>
+              <T>337944<!--MixerInteraction: mixer_StreetFoodTable_Tend_ComeBuy--></T>
+              <T>338315<!--MixerInteraction: mixer_StreetFoodTable_Tend_Passive--></T>
+              <T>337945<!--MixerInteraction: mixer_StreetFoodTable_Tend_ShowOffWares--></T>
+            </L>
+          </U>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="state_change">
+      <U n="state_change">
+        <V n="new_value" t="single_value">
+          <U n="single_value">
+            <T n="new_value">227577<!--ObjectStateValue: salesTable_Tend_Open--></T>
+          </U>
+        </V>
+        <V n="timing" t="immediately" />
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>349674<!--LootActions: loot_CraftSalesTable_TenderBonusState--></T>
+          <T>352632<!--LootActions: loot_StreetFoodTable_500MarkupReset--></T>
+        </L>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+  </L>
+  <V n="basic_reserve_object" t="enabled">
+    <U n="enabled">
+      <L n="subject_list">
+        <U>
+          <V n="reserve_type" t="all" />
+        </U>
+      </L>
+    </U>
+  </V>
+  <V n="canonical_animation" t="disabled" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xC6E781DA<!--String: "Tend Table"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+    <E>Interaction_Tend</E>
+  </L>
+  <L n="joinable">
+    <U>
+      <V n="invite_available" t="enabled">
+        <U n="enabled">
+          <V n="loc_custom_invite_name" t="enabled">
+            <T n="enabled">0xA0B19F59<!--String: "Convince to Buy"--></T>
+          </V>
+        </U>
+      </V>
+      <V n="join_affordance" t="affordance">
+        <U n="affordance">
+          <V n="value" t="custom">
+            <T n="custom">336354<!--ObjectInSlotPickerInteraction: objectInSlotPickerInteraction_StreetFoodTable_ConvinceToBuy--></T>
+          </V>
+        </U>
+      </V>
+      <V n="join_available" t="disabled" />
+      <T n="link_joinable">True</T>
+    </U>
+  </L>
+  <T n="joinable_proxy">True</T>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="basic_extras">
+          <V t="state_change">
+            <U n="state_change">
+              <V n="new_value" t="single_value">
+                <U n="single_value">
+                  <T n="new_value">227578<!--ObjectStateValue: salesTable_Tend_Closed--></T>
+                </U>
+              </V>
+            </U>
+          </V>
+        </L>
+        <T n="force_outcome_on_exit">True</T>
+        <L n="loot_list">
+          <T>231313<!--LootActions: loot_CivicPolicy_InfluencePoints_Small--></T>
+        </L>
+      </U>
+    </U>
+  </V>
+  <T n="pie_menu_priority">9</T>
+  <L n="provided_affordances">
+    <U>
+      <T n="affordance">145220<!--SocialSuperInteraction: social_CraftSalesTable_Haggle--></T>
+    </U>
+    <U>
+      <T n="affordance">237103<!--SocialSuperInteraction: social_Haggle_Freegan_CraftSalesTable--></T>
+    </U>
+    <U>
+      <T n="affordance">249835<!--SocialSuperInteraction: social_NegotiateDiscount_WorldlyKnowledge_Other--></T>
+    </U>
+  </L>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="include_all">
+        <U n="include_all">
+          <L n="exclude_affordances">
+            <T>145247<!--SuperInteraction: si_CraftSalesTable_Tend--></T>
+            <T>152179<!--SuperInteraction: si_CraftSalesTable_Tend_Paintings--></T>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <V n="test_disallow_while_running" t="enabled">
+    <U n="enabled">
+      <T n="test_self">True</T>
+    </U>
+  </V>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="in_use">
+      <U n="in_use">
+        <T n="negate">True</T>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">179945<!--TestSetInstance: testSet_CraftSalesTable_CanOperate--></T>
+    </V>
+    <V t="situation_count_test">
+      <U n="situation_count_test">
+        <L n="additional_situations">
+          <T>334545<!--YardSaleSituation: Situation_StreetFoodTable_FoodSale_OpenStreet--></T>
+          <T>350779<!--YardSaleSituation: situation_StreetFoodTable_FoodSale_Indoors--></T>
+        </L>
+        <T n="situation">334544<!--YardSaleSituation: Situation_StreetFoodTable_FoodSale--></T>
+        <U n="test">
+          <T n="value">1</T>
+        </U>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">336344<!--TestSetInstance: testSet_AllDecoSlots_HasUsedSlotOrAutoStock_StreetFoodTable--></T>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">28305<!--TestSetInstance: testSet_EmotionNotMiserable--></T>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">28176<!--TestSetInstance: testSet_EmotionNotStressed--></T>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

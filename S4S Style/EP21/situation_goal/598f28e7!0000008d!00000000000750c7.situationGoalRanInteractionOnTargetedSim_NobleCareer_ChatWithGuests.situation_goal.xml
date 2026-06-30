@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalRanInteractionOnTargetedSim" i="situation_goal" m="situations.situation_goal_targeted_sim" n="situationGoalRanInteractionOnTargetedSim_NobleCareer_ChatWithGuests" s="479431">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T n="enabled" p="InGame\UI\Icons\Events\EventGoal_Socialize.png">2f7d0004:00000000:21835a4b8238b2fa</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x6E5D24F<!--String: "Chat with Guests"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0x99D31241<!--String: "It's time to mingle! Socialize with the guests and make some new friends!"--></T>
+      </V>
+    </U>
+  </V>
+  <U n="_goal_test">
+    <L n="tags">
+      <E>Interaction_Chat</E>
+    </L>
+    <E n="test_event">InteractionStart</E>
+  </U>
+  <T n="_iterations">3</T>
+  <T n="_score">10</T>
+  <L n="_target_tests">
+    <V t="situation_job">
+      <U n="situation_job">
+        <L n="situation_jobs">
+          <T>473912<!--SituationJob: job_Career_Noble_GuestCommoner_Court--></T>
+          <T>473913<!--SituationJob: job_Career_Noble_GuestNoble_Court--></T>
+          <T>473915<!--SituationJob: job_Career_Noble_NobleAdvisor--></T>
+          <T>473612<!--SituationJob: job_Career_Noble_Coronator--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+  <L n="role_tags">
+    <E>Role_Host</E>
+  </L>
+</I>

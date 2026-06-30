@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="EP17World_WellOfSouls_MakeAWish_life" s="385016">
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <L n="basic_extras">
+    <V t="payment">
+      <U n="payment">
+        <V n="payment" t="literal">
+          <U n="literal">
+            <V n="payment_cost" t="amount">
+              <U n="amount">
+                <T n="amount">1</T>
+              </U>
+            </V>
+          </U>
+        </V>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+    <V t="balloon">
+      <U n="balloon">
+        <L n="balloon_choices">
+          <U>
+            <V n="item" t="balloon_icon">
+              <U n="balloon_icon">
+                <V n="icon" t="resource_key">
+                  <U n="resource_key">
+                    <T p="InGame\UI\Icons\Headlines\Final\headline_MarkedForDeathBaseGame.png" n="key">2f7d0004:00000000:85b9f5eca8afda9c</T>
+                  </U>
+                </V>
+                <T p="InGame\UI\Icons\Headlines\Final\headline_Prohibit.png" n="overlay">2f7d0004:00000000:ab4a67c934164fb1</T>
+              </U>
+            </V>
+          </U>
+        </L>
+        <L n="balloon_target">
+          <E>Actor</E>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T n="category">385018<!--PieMenuCategory: EP17World_Categories_WellOfSouls_WishFor--></T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xFD332169<!--String: "A Long Life"--></T>
+  <V n="display_name_overrides" t="random">
+    <U n="random">
+      <L n="overrides">
+        <U>
+          <V n="new_display_name" t="disabled" />
+          <V n="new_pie_menu_icon" t="enabled">
+            <V n="enabled" t="resource_key">
+              <U n="resource_key">
+                <T n="key" p="InEP17\UI\Icons\PieMenu\Interactions\icon_pieMenu_MarkofEdith.png">2f7d0004:00000000:5c8398d3a6f25fa5</T>
+              </U>
+            </V>
+          </V>
+          <L n="test">
+            <L>
+              <V t="buff">
+                <U n="buff">
+                  <V n="whitelist" t="enabled">
+                    <L n="enabled">
+                      <T>385019<!--Buff: buff_EP17World_WellOfSouls_MarkOfEdith--></T>
+                    </L>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">381684<!--AnimationElement: EP17World_WellOfSouls_MakeAWish_Success--></T>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <T n="buff_type">382683<!--Buff: buff_EP17World_WellOfSouls_WishCooldown--></T>
+                      </U>
+                    </U>
+                  </V>
+                  <V t="notification">
+                    <U n="notification">
+                      <V n="dialog" t="single">
+                        <V n="single" t="literal">
+                          <U n="literal">
+                            <V n="icon" t="enabled">
+                              <V n="enabled" t="resource_key">
+                                <U n="resource_key">
+                                  <T n="key" p="InEP17\UI\Icons\Notifications\notification_WellofSouls.png">2f7d0004:00000000:c53a3782a4d61154</T>
+                                </U>
+                              </V>
+                            </V>
+                            <V n="secondary_icon" t="enabled">
+                              <V n="enabled" t="participant" />
+                            </V>
+                            <V n="text" t="single">
+                              <T n="single">0x2C3270F<!--String: "{0.SimFirstName} tosses a coin in the well and walks away feeling just a little bit younger!"--></T>
+                            </V>
+                            <V n="title" t="enabled">
+                              <T n="enabled">0x582D5561<!--String: "A Wish Fulfilled"--></T>
+                            </V>
+                          </U>
+                        </V>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+                <L n="loot_list">
+                  <T>385023<!--LootActions: loot_EP17World_WellOfSouls_Life_Success_Small--></T>
+                </L>
+              </U>
+            </U>
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">381685<!--AnimationElement: EP17World_WellOfSouls_MakeAWish_Failure--></T>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <T n="buff_type">382683<!--Buff: buff_EP17World_WellOfSouls_WishCooldown--></T>
+                      </U>
+                    </U>
+                  </V>
+                  <V t="notification">
+                    <U n="notification">
+                      <V n="dialog" t="single">
+                        <V n="single" t="literal">
+                          <U n="literal">
+                            <L n="dialog_options">
+                              <E>DISABLE_CLOSE_BUTTON</E>
+                            </L>
+                            <V n="icon" t="enabled">
+                              <V n="enabled" t="resource_key">
+                                <U n="resource_key">
+                                  <T n="key" p="InEP17\UI\Icons\Notifications\notification_WellofSouls.png">2f7d0004:00000000:c53a3782a4d61154</T>
+                                </U>
+                              </V>
+                            </V>
+                            <V n="secondary_icon" t="enabled">
+                              <V n="enabled" t="participant">
+                                <U n="participant">
+                                  <L n="participant_type">
+                                    <E>Actor</E>
+                                  </L>
+                                </U>
+                              </V>
+                            </V>
+                            <V n="text" t="single">
+                              <T n="single">0x307AEE6F<!--String: "That wish didn't quite go as {0.SimFirstName} planned. {0.SimPronounSubjective|xxUpper} may actually feel <i>even older</i>."--></T>
+                            </V>
+                            <V n="title" t="enabled">
+                              <T n="enabled">0x36DE6EEE<!--String: "Oh No!"--></T>
+                            </V>
+                          </U>
+                        </V>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+                <L n="loot_list">
+                  <T>385021<!--LootActions: loot_EP17World_WellOfSouls_Life_Failure--></T>
+                </L>
+                <E n="outcome_result">FAILURE</E>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="buff">
+                <U n="buff">
+                  <L n="blacklist">
+                    <T>385019<!--Buff: buff_EP17World_WellOfSouls_MarkOfEdith--></T>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">381684<!--AnimationElement: EP17World_WellOfSouls_MakeAWish_Success--></T>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <T n="buff_type">382683<!--Buff: buff_EP17World_WellOfSouls_WishCooldown--></T>
+                      </U>
+                    </U>
+                  </V>
+                  <V t="notification">
+                    <U n="notification">
+                      <V n="dialog" t="single">
+                        <V n="single" t="literal">
+                          <U n="literal">
+                            <L n="dialog_options">
+                              <E>DISABLE_CLOSE_BUTTON</E>
+                            </L>
+                            <V n="icon" t="enabled">
+                              <V n="enabled" t="resource_key">
+                                <U n="resource_key">
+                                  <T n="key" p="InEP17\UI\Icons\Notifications\notification_WellofSouls.png">2f7d0004:00000000:c53a3782a4d61154</T>
+                                </U>
+                              </V>
+                            </V>
+                            <V n="secondary_icon" t="enabled">
+                              <V n="enabled" t="participant">
+                                <U n="participant">
+                                  <L n="participant_type">
+                                    <E>Actor</E>
+                                  </L>
+                                </U>
+                              </V>
+                            </V>
+                            <V n="text" t="single">
+                              <T n="single">0xABB15C83<!--String: "With the Mark of Edith on {0.SimPronounPossessiveDependent} side, {0.SimFirstName} tosses a coin in the well. Vitality and youth course through {0.SimPronounPossessiveDependent} body, giving {0.SimPronounObjective} a new lease on life! It's like {0.SimFirstName} hasn't aged a day!"--></T>
+                            </V>
+                            <V n="title" t="enabled">
+                              <T n="enabled">0x31C7078A<!--String: "A Greatly Fulfilled Wish"--></T>
+                            </V>
+                          </U>
+                        </V>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+                <L n="loot_list">
+                  <T>385022<!--LootActions: loot_EP17World_WellOfSouls_Life_Success_Large--></T>
+                  <T>385024<!--LootActions: loot_EP17World_WellOfSouls_RemoveMarkOfEdith--></T>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="buff">
+                <U n="buff">
+                  <V n="whitelist" t="enabled">
+                    <L n="enabled">
+                      <T>385019<!--Buff: buff_EP17World_WellOfSouls_MarkOfEdith--></T>
+                    </L>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all" />
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="trait">
+      <U n="trait">
+        <L n="blacklist_trait_types">
+          <E>GHOST</E>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>382683<!--Buff: buff_EP17World_WellOfSouls_WishCooldown--></T>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x84BD8140<!--String: "{0.SimFirstName} needs to wait awhile before {0.SimPronounSubjective} can do this again!"--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

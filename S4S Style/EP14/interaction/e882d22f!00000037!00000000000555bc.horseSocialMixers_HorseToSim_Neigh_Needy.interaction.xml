@@ -1,0 +1,608 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SocialMixerInteraction" i="interaction" m="interactions.social.social_mixer_interaction" n="horseSocialMixers_HorseToSim_Neigh_Needy" s="349628">
+  <T n="_acquire_listeners_as_resource">True</T>
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>TargetSim</E>
+      </L>
+    </U>
+  </V>
+  <T n="allow_user_directed">True</T>
+  <L n="asm_actor_overrides">
+    <U>
+      <T n="actor_name">x1</T>
+      <E n="actor_participant">RoutingSlaves</E>
+    </U>
+  </L>
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>162659<!--LootActions: loot_Commodity_Culling_GhostAdd_target--></T>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>328657<!--LootActions: loot_Trait_HorseLover_RemoveMissingHorsesBuff_Target--></T>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>328658<!--LootActions: loot_Trait_HorseLover_ResetNeedHorseInteractionTimer_Target--></T>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>328947<!--LootActions: loot_Trait_HorseLover_HorseEmpathy_Target--></T>
+        </L>
+        <U n="success_chance">
+          <T n="base_chance">30</T>
+        </U>
+      </U>
+    </V>
+  </L>
+  <V n="content_score" t="enabled">
+    <U n="enabled">
+      <T n="base_score">1</T>
+    </U>
+  </V>
+  <T n="display_name">0x59C6FC18<!--String: "Chat With"--></T>
+  <T n="display_name_target">0x8C71C8F7<!--String: "Listen to {1.SimFirstName}'s Question"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Mixer</E>
+    <E>Interaction_All</E>
+    <E>Interaction_SocialAll</E>
+    <E>Interaction_SocialMixer</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <V n="animation_ref" t="enabled">
+              <U n="enabled">
+                <T n="factory">322532<!--AnimationElement: HorseSocialAnims_Reactions_Positive--></T>
+                <U n="overrides">
+                  <V n="balloons" t="enabled">
+                    <L n="enabled">
+                      <U>
+                        <L n="balloon_choices">
+                          <U>
+                            <V n="item" t="balloon_icon">
+                              <U n="balloon_icon">
+                                <V n="icon" t="resource_key">
+                                  <U n="resource_key">
+                                    <T n="key" p="InEP14\UI\Icons\Headlines\headline_HorseTrait_Needy.png">2f7d0004:00000000:99ad76622f2c22f1</T>
+                                  </U>
+                                </V>
+                              </U>
+                            </V>
+                          </U>
+                        </L>
+                        <L n="balloon_target">
+                          <E>Actor</E>
+                        </L>
+                      </U>
+                    </L>
+                  </V>
+                </U>
+              </U>
+            </V>
+            <V n="cancel_si" t="enabled">
+              <L n="enabled">
+                <E>Actor</E>
+                <E>TargetSim</E>
+              </L>
+            </V>
+            <L n="loot_list">
+              <T>322256<!--LootActions: loot_Relationship_SimToPet_Gain_Small--></T>
+              <T>322598<!--LootActions: loot_Commodity_HorseSocials_SocialMotive_Med--></T>
+              <T>327025<!--LootActions: loot_Commodity_HorseSocials_SocialMotive_Large_Independent--></T>
+              <T>331445<!--LootActions: loot_Commodity_Trait_Horse_Needy--></T>
+            </L>
+            <E n="outcome_result">SUCCESS</E>
+          </U>
+          <U n="weight">
+            <T n="base_value">1.3</T>
+            <L n="multipliers">
+              <U>
+                <T n="multiplier">0.8</T>
+                <L n="tests">
+                  <L>
+                    <V t="buff">
+                      <U n="buff">
+                        <V n="whitelist" t="enabled">
+                          <L n="enabled">
+                            <T>321118<!--Buff: moodBuffs_Horses_Hidden_VeryAngry--></T>
+                            <T>319703<!--Buff: moodBuffs_Horses_Hidden_Angry--></T>
+                            <T>319712<!--Buff: moodBuffs_Horses_Hidden_Sad--></T>
+                            <T>321122<!--Buff: moodBuffs_Horses_Hidden_VerySad--></T>
+                            <T>319711<!--Buff: moodBuffs_Horses_Hidden_Dazed--></T>
+                            <T>321120<!--Buff: moodBuffs_Horses_Hidden_VeryDazed--></T>
+                            <T>319710<!--Buff: moodBuffs_Horses_Hidden_Scared--></T>
+                            <T>321123<!--Buff: moodBuffs_Horses_Hidden_VeryScared--></T>
+                            <T>319707<!--Buff: moodBuffs_Horses_Hidden_Tense--></T>
+                            <T>321124<!--Buff: moodBuffs_Horses_Hidden_VeryTense--></T>
+                            <T>319706<!--Buff: moodBuffs_Horses_Hidden_Uncomfortable--></T>
+                            <T>321125<!--Buff: moodBuffs_Horses_Hidden_VeryUncomfortable--></T>
+                          </L>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">1.25</T>
+                <L n="tests">
+                  <L>
+                    <V t="buff">
+                      <U n="buff">
+                        <L n="blacklist">
+                          <T>321118<!--Buff: moodBuffs_Horses_Hidden_VeryAngry--></T>
+                          <T>319703<!--Buff: moodBuffs_Horses_Hidden_Angry--></T>
+                          <T>319712<!--Buff: moodBuffs_Horses_Hidden_Sad--></T>
+                          <T>321122<!--Buff: moodBuffs_Horses_Hidden_VerySad--></T>
+                          <T>319711<!--Buff: moodBuffs_Horses_Hidden_Dazed--></T>
+                          <T>321120<!--Buff: moodBuffs_Horses_Hidden_VeryDazed--></T>
+                          <T>319710<!--Buff: moodBuffs_Horses_Hidden_Scared--></T>
+                          <T>321123<!--Buff: moodBuffs_Horses_Hidden_VeryScared--></T>
+                          <T>319707<!--Buff: moodBuffs_Horses_Hidden_Tense--></T>
+                          <T>321124<!--Buff: moodBuffs_Horses_Hidden_VeryTense--></T>
+                          <T>319706<!--Buff: moodBuffs_Horses_Hidden_Uncomfortable--></T>
+                          <T>321125<!--Buff: moodBuffs_Horses_Hidden_VeryUncomfortable--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">0.8</T>
+                <L n="tests">
+                  <L>
+                    <V t="buff">
+                      <U n="buff">
+                        <E n="subject">TargetSim</E>
+                        <V n="whitelist" t="enabled">
+                          <L n="enabled">
+                            <T>12831<!--Buff: MoodBuff_Hidden_Angry--></T>
+                            <T>12840<!--Buff: MoodBuff_Hidden_Enraged--></T>
+                            <T>12827<!--Buff: MoodBuff_Hidden_Furious--></T>
+                            <T>12857<!--Buff: MoodBuff_Hidden_Tense--></T>
+                            <T>12856<!--Buff: MoodBuff_Hidden_Stressed--></T>
+                            <T>12858<!--Buff: MoodBuff_Hidden_Uncomfortable--></T>
+                            <T>12847<!--Buff: MoodBuff_Hidden_Miserable--></T>
+                          </L>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">1.25</T>
+                <L n="tests">
+                  <L>
+                    <V t="buff">
+                      <U n="buff">
+                        <L n="blacklist">
+                          <T>12831<!--Buff: MoodBuff_Hidden_Angry--></T>
+                          <T>12840<!--Buff: MoodBuff_Hidden_Enraged--></T>
+                          <T>12827<!--Buff: MoodBuff_Hidden_Furious--></T>
+                          <T>12857<!--Buff: MoodBuff_Hidden_Tense--></T>
+                          <T>12856<!--Buff: MoodBuff_Hidden_Stressed--></T>
+                          <T>12858<!--Buff: MoodBuff_Hidden_Uncomfortable--></T>
+                          <T>12847<!--Buff: MoodBuff_Hidden_Miserable--></T>
+                        </L>
+                        <E n="subject">TargetSim</E>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">0.4</T>
+                <L n="tests">
+                  <L>
+                    <V t="relationship">
+                      <U n="relationship">
+                        <U n="required_relationship_bits">
+                          <L n="match_all">
+                            <T>159231<!--RelationshipBit: simToPet_RelationshipBit_00_Despised--></T>
+                          </L>
+                        </U>
+                        <L n="subject">
+                          <E>Actor</E>
+                        </L>
+                        <L n="target_sim">
+                          <E>TargetSim</E>
+                        </L>
+                        <T n="track">159228<!--RelationshipTrack: LTR_SimToPet_Friendship_Main--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">0.7</T>
+                <L n="tests">
+                  <L>
+                    <V t="relationship">
+                      <U n="relationship">
+                        <U n="required_relationship_bits">
+                          <L n="match_all">
+                            <T>159232<!--RelationshipBit: simToPet_RelationshipBit_01_Disliked--></T>
+                          </L>
+                        </U>
+                        <L n="subject">
+                          <E>Actor</E>
+                        </L>
+                        <L n="target_sim">
+                          <E>TargetSim</E>
+                        </L>
+                        <T n="track">159228<!--RelationshipTrack: LTR_SimToPet_Friendship_Main--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">1.2</T>
+                <L n="tests">
+                  <L>
+                    <V t="relationship">
+                      <U n="relationship">
+                        <U n="required_relationship_bits">
+                          <L n="match_all">
+                            <T>159236<!--RelationshipBit: simToPet_RelationshipBit_03_Friend--></T>
+                          </L>
+                        </U>
+                        <L n="subject">
+                          <E>Actor</E>
+                        </L>
+                        <L n="target_sim">
+                          <E>TargetSim</E>
+                        </L>
+                        <T n="track">159228<!--RelationshipTrack: LTR_SimToPet_Friendship_Main--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">1.7</T>
+                <L n="tests">
+                  <L>
+                    <V t="relationship">
+                      <U n="relationship">
+                        <U n="required_relationship_bits">
+                          <L n="match_all">
+                            <T>159234<!--RelationshipBit: simToPet_RelationshipBit_04_GoodFriend--></T>
+                          </L>
+                        </U>
+                        <L n="subject">
+                          <E>Actor</E>
+                        </L>
+                        <L n="target_sim">
+                          <E>TargetSim</E>
+                        </L>
+                        <T n="track">159228<!--RelationshipTrack: LTR_SimToPet_Friendship_Main--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">0.75</T>
+                <L n="tests">
+                  <L>
+                    <V t="trait">
+                      <U n="trait">
+                        <L n="whitelist_traits">
+                          <T>323824<!--Trait: trait_Horse_Personality_Aggressive--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">1.33</T>
+                <L n="tests">
+                  <L>
+                    <V t="trait">
+                      <U n="trait">
+                        <L n="whitelist_traits">
+                          <T>322836<!--Trait: trait_Horse_Personality_Friendly--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">1.8</T>
+                <L n="tests">
+                  <L>
+                    <V t="trait">
+                      <U n="trait">
+                        <E n="subject">TargetSim</E>
+                        <L n="whitelist_traits">
+                          <T>320965<!--Trait: trait_HorseLover--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">1.1</T>
+                <L n="tests">
+                  <L>
+                    <V t="skill_test">
+                      <U n="skill_test">
+                        <T n="skill">324631<!--Skill: statistic_Skill_Horse_Temperament--></T>
+                        <V n="skill_range" t="interval">
+                          <U n="interval">
+                            <U n="skill_interval">
+                              <T n="lower_bound">2</T>
+                              <T n="upper_bound">4</T>
+                            </U>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">1.8</T>
+                <L n="tests">
+                  <L>
+                    <V t="skill_test">
+                      <U n="skill_test">
+                        <T n="skill">324631<!--Skill: statistic_Skill_Horse_Temperament--></T>
+                        <V n="skill_range" t="interval">
+                          <U n="interval">
+                            <U n="skill_interval">
+                              <T n="lower_bound">5</T>
+                              <T n="upper_bound">7</T>
+                            </U>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">2.4</T>
+                <L n="tests">
+                  <L>
+                    <V t="skill_test">
+                      <U n="skill_test">
+                        <T n="skill">324631<!--Skill: statistic_Skill_Horse_Temperament--></T>
+                        <V n="skill_range" t="interval">
+                          <U n="interval">
+                            <U n="skill_interval">
+                              <T n="lower_bound">8</T>
+                              <T n="upper_bound">10</T>
+                            </U>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">1.1</T>
+                <L n="tests">
+                  <L>
+                    <V t="skill_test">
+                      <U n="skill_test">
+                        <T n="skill">322708<!--Skill: statistic_Skill_AdultMajor_EquestrianSkill--></T>
+                        <V n="skill_range" t="interval">
+                          <U n="interval">
+                            <U n="skill_interval">
+                              <T n="lower_bound">1</T>
+                              <T n="upper_bound">4</T>
+                            </U>
+                          </U>
+                        </V>
+                        <E n="subject">TargetSim</E>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">1.5</T>
+                <L n="tests">
+                  <L>
+                    <V t="skill_test">
+                      <U n="skill_test">
+                        <T n="skill">322708<!--Skill: statistic_Skill_AdultMajor_EquestrianSkill--></T>
+                        <V n="skill_range" t="interval">
+                          <U n="interval">
+                            <U n="skill_interval">
+                              <T n="lower_bound">5</T>
+                              <T n="upper_bound">9</T>
+                            </U>
+                          </U>
+                        </V>
+                        <E n="subject">TargetSim</E>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">1.8</T>
+                <L n="tests">
+                  <L>
+                    <V t="skill_test">
+                      <U n="skill_test">
+                        <T n="skill">322708<!--Skill: statistic_Skill_AdultMajor_EquestrianSkill--></T>
+                        <V n="skill_range" t="interval">
+                          <U n="interval">
+                            <U n="skill_interval">
+                              <T n="lower_bound">10</T>
+                              <T n="upper_bound">10</T>
+                            </U>
+                          </U>
+                        </V>
+                        <E n="subject">TargetSim</E>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">1.25</T>
+                <L n="tests">
+                  <L>
+                    <V t="buff">
+                      <U n="buff">
+                        <E n="subject">TargetSim</E>
+                        <V n="whitelist" t="enabled">
+                          <L n="enabled">
+                            <T>323866<!--Buff: buff_Object_RanchNectar_Trash--></T>
+                            <T>323772<!--Buff: buff_Fear_Horses_GetAdvice_Sucess--></T>
+                          </L>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+      </L>
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">322529<!--AnimationElement: HorseSocialAnims_Reactions_Negative--></T>
+                    <U n="overrides">
+                      <V n="balloons" t="enabled">
+                        <L n="enabled">
+                          <U>
+                            <L n="balloon_choices">
+                              <U>
+                                <V n="item" t="balloon_icon">
+                                  <U n="balloon_icon">
+                                    <V n="icon" t="resource_key">
+                                      <U n="resource_key">
+                                        <T n="key" p="InEP14\UI\Icons\Headlines\headline_HorseTrait_Needy.png">2f7d0004:00000000:99ad76622f2c22f1</T>
+                                      </U>
+                                    </V>
+                                  </U>
+                                </V>
+                              </U>
+                            </L>
+                            <L n="balloon_target">
+                              <E>Actor</E>
+                            </L>
+                          </U>
+                        </L>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+                <V n="cancel_si" t="enabled">
+                  <L n="enabled">
+                    <E>Actor</E>
+                    <E>TargetSim</E>
+                  </L>
+                </V>
+                <L n="loot_list">
+                  <T>322253<!--LootActions: loot_Relationship_SimToPet_Loss_Small--></T>
+                  <T>322597<!--LootActions: loot_Commodity_HorseSocials_SocialMotive_Small--></T>
+                  <T>331445<!--LootActions: loot_Commodity_Trait_Horse_Needy--></T>
+                </L>
+                <E n="outcome_result">FAILURE</E>
+              </U>
+              <U n="weight">
+                <T n="base_value">1</T>
+              </U>
+            </U>
+          </L>
+        </U>
+      </L>
+      <T n="use_fallback_as_default">True</T>
+    </U>
+  </V>
+  <V n="require_reins_for_formation" t="enabled">
+    <T n="enabled">314817<!--RoutingFormation: routingFormation_HorseRiding_Ride--></T>
+  </V>
+  <U n="skill_loot_data">
+    <V n="level_range" t="disabled" />
+    <T o="true" n="stat" />
+  </U>
+  <U n="sub_action">
+    <T n="base_weight">2</T>
+  </U>
+  <E n="target_type">TARGET</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E>HUMAN</E>
+            </L>
+          </U>
+        </V>
+        <E n="who">TargetSim</E>
+      </U>
+    </V>
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E>HORSE</E>
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+  </L>
+  <T n="visible">False</T>
+</I>

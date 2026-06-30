@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="lootActions_SmallBusinessPerks_SimoCoin_Failure" s="419275">
+  <L n="loot_actions">
+    <V t="money_loot">
+      <U n="money_loot">
+        <V n="amount" t="random_in_range">
+          <U n="random_in_range">
+            <T n="lower_bound">100</T>
+            <T n="upper_bound">300</T>
+          </U>
+        </V>
+        <V n="notification" t="enabled">
+          <V n="enabled" t="literal">
+            <U n="literal">
+              <V n="icon" t="enabled">
+                <V n="enabled" t="resource_key">
+                  <U n="resource_key">
+                    <T n="key" p="InEP18\UI\Icons\Notifications\CryptoEarnings_TNS.png">2f7d0004:00000000:7fc3bfba8fb5ca37</T>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x4732669E<!--String: "The computer has finished mining SimoCoin, earning {1.Money}."--></T>
+              </V>
+              <V n="text_tokens" t="enabled">
+                <U n="enabled">
+                  <L n="tokens">
+                    <V t="participant_type">
+                      <U n="participant_type">
+                        <V n="objects" t="from_participant">
+                          <U n="from_participant">
+                            <E n="participant">ActiveHousehold</E>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </U>
+              </V>
+              <V n="title" t="enabled">
+                <T n="enabled">0x1470F58<!--String: "SimoCoin Earnings"--></T>
+              </V>
+              <V n="tns_suppression_group" t="enabled">
+                <E n="enabled">Milestones</E>
+              </V>
+            </U>
+          </V>
+        </V>
+        <E n="subject">ActiveHousehold</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="is_active_sim" t="enabled" />
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x496E511C<!--String: "(From Low SimoCoin Mining Payout)"--></T>
+          </V>
+          <T n="buff_type">419274<!--Buff: buff_SmallBusinessPerks_SimoCoin_Angry--></T>
+        </U>
+        <E n="subject">ActiveHousehold</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <L n="whitelist_traits">
+                  <T>405254<!--Trait: trait_SmallBusiness_Perks_SimoCoin--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="state_change">
+      <U n="state_change">
+        <T n="state_value">419266<!--CommodityBasedObjectStateValue: smallBusinessPerks_SimoCoin_Value_NotMining--></T>
+        <V n="subject" t="participant">
+          <E n="participant">Object</E>
+        </V>
+      </U>
+    </V>
+    <V t="state_change">
+      <U n="state_change">
+        <T n="state_value">15106<!--VideoChannel: Computer_Off--></T>
+      </U>
+    </V>
+  </L>
+</I>

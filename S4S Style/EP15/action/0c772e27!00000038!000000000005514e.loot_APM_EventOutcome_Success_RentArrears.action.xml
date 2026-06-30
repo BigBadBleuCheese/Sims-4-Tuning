@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_APM_EventOutcome_Success_RentArrears" s="348494">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="audio_sting" t="disabled" />
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InEP15\UI\Icons\Notification\Notification_RentArrears.png">2f7d0004:00000000:f396e144015fdf94</T>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x76A590D8<!--String: "Good job with the rent demand!"--></T>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="participant_type_special">
+                    <U n="participant_type_special">
+                      <V n="participant_type" t="zone">
+                        <U n="zone">
+                          <V n="attribute" t="occupant_household_name" />
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                  <V t="participant_type_special">
+                    <U n="participant_type_special">
+                      <V n="participant_type" t="zone" />
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0xB5FC9E66<!--String: "Rent Overdue"--></T>
+            </V>
+          </U>
+        </V>
+        <E n="subject">ActiveHousehold</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="is_active_sim" t="enabled" />
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="payment_loot">
+      <U n="payment_loot">
+        <V n="payment" t="literal">
+          <U n="literal">
+            <V n="payment_cost" t="amount">
+              <U n="amount">
+                <L n="payment_destinations">
+                  <V t="rental_unit_property_owner" />
+                </L>
+              </U>
+            </V>
+            <V n="payment_source" t="no_source" />
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="set_rent_arrears">
+      <U n="set_rent_arrears">
+        <E n="subject">PickedZoneId</E>
+      </U>
+    </V>
+    <V t="actions">
+      <T n="actions">348479<!--LootActions: loot_muEventAPM_AddCooldown_RentArrears--></T>
+    </V>
+  </L>
+</I>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_OpenableWindow_TriggerEvent_CollegeParty" s="373123">
+  <L n="loot_actions">
+    <V t="sim_interaction_dialog">
+      <U n="sim_interaction_dialog">
+        <U n="dialog">
+          <V n="text" t="single">
+            <T n="single">0xE2B81923<!--String: "Some connections of mine heard of a party going down with some college students. This could be our chance to show the world how cool we are."--></T>
+          </V>
+        </U>
+        <L n="possible_responses">
+          <U>
+            <U n="item">
+              <L n="loot">
+                <T>282989<!--LootActions: loot_OpenableWindow_AcceptedEvent_CollegeParty--></T>
+              </L>
+              <T n="text">0xD977B872<!--String: "OK"--></T>
+            </U>
+          </U>
+          <U>
+            <U n="item">
+              <L n="loot">
+                <T>284878<!--LootActions: loot_Trait_PartyAnimal_CancelledInvite--></T>
+              </L>
+              <T n="text">0xD078441A<!--String: "Cancel"--></T>
+            </U>
+          </U>
+        </L>
+        <E n="target_participant_type">PickedSim</E>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">373479<!--Buff: buff_OpenableWindow_CollegePartyTriggerCooldown--></T>
+        </U>
+      </U>
+    </V>
+    <V t="cancel_scheduled_drama_node">
+      <U n="cancel_scheduled_drama_node">
+        <L n="drama_nodes">
+          <T>282997<!--DialogDramaNode: dialogDramaNode_OpenableWindow_CollegeParty--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

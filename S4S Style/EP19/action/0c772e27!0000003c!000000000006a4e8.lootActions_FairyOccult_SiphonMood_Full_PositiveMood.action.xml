@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="lootActions_FairyOccult_SiphonMood_Full_PositiveMood" s="435432">
+  <L n="loot_actions">
+    <V t="statistics">
+      <V n="statistics" t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">100</T>
+          <T n="stat">420035<!--Commodity: commodity_Motive_FairyOccult_EmotionalAppetite--></T>
+          <L n="tunable_multipliers">
+            <U>
+              <T n="base_value">1</T>
+              <L n="multipliers">
+                <U>
+                  <T n="multiplier">1.5</T>
+                  <L n="tests">
+                    <L>
+                      <V t="buff">
+                        <U n="buff">
+                          <V n="whitelist" t="enabled">
+                            <L n="enabled">
+                              <T>439942<!--Buff: buff_FairyOccult_Ability_Passive_EmotionalEnergyFromSiphonPositiveMoods--></T>
+                              <T>457469<!--Buff: buff_Apothecary_EmotionStone_InInventory--></T>
+                            </L>
+                          </V>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+              </L>
+            </U>
+          </L>
+        </U>
+      </V>
+    </V>
+    <V t="actions">
+      <T n="actions">10954<!--LootActions: Loot_ForSocialsSocialMotiveMedium--></T>
+    </V>
+    <V t="actions">
+      <T n="actions">475094<!--LootActions: rel_Loss_Medium_TargetSim_FairyOccult_Abilities--></T>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InEP19\UI\Icons\Headlines\headline_ImpendingOverload.png">2f7d0004:00000000:a38894045804a6b5</T>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant" />
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x333DC2E1<!--String: "{0.SimFirstName} needs to be careful; if {0.SimPronounSubjective} {S0.continues}{P0.continue} to Absorb Emotions that are too powerful, {0.SimPronounSubjective} will become Overloaded."--></T>
+            </V>
+            <L n="ui_responses">
+              <U>
+                <T n="text">0xEABE5948<!--String: "View Lessons"--></T>
+                <V n="tutorial_id" t="enabled">
+                  <T n="enabled">459941<!--Tutorial: tutorial_EP19_FairyDeath--></T>
+                </V>
+                <E n="ui_request">SHOW_LESSONS</E>
+              </U>
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x9A11F196<!--String: "(From Absorbing an Emotion That Is Too Powerful)"--></T>
+          </V>
+          <T n="buff_type">435241<!--Buff: buff_FairyOccult_ImpendingOverload--></T>
+        </U>
+      </U>
+    </V>
+  </L>
+</I>

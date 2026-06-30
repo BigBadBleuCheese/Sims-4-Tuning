@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="CustomStatesSituation" i="situation" m="situations.custom_states.custom_states_situation" n="situation_MultiUnitCommunity_BasicAmenities" s="343455">
+  <L n="_situation_states">
+    <U>
+      <T n="Situation State Key">cook</T>
+      <V n="Situation State" t="literal">
+        <U n="literal">
+          <L n="job_and_role_changes">
+            <U>
+              <T n="Situation Job">343456<!--SituationJob: job_MultiUnitCommunity_BasicAmenities--></T>
+              <T n="Role State">343461<!--RoleState: roleState_MultiUnitCommunity_UseBasicAmenities_Cook--></T>
+            </U>
+          </L>
+          <L n="triggers">
+            <U>
+              <V n="effect" t="change_state">
+                <U n="change_state">
+                  <U n="possible_states">
+                    <L n="possible_state_keys">
+                      <U>
+                        <T n="situation_key">eat</T>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+              </V>
+              <L n="triggers">
+                <V t="test_event">
+                  <U n="test_event">
+                    <V n="test" t="ran_interaction_test">
+                      <U n="ran_interaction_test">
+                        <L n="affordance_lists">
+                          <T>240883<!--AffordanceList: al_StartCooking_All--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </U>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <T n="Situation State Key">eat</T>
+      <V n="Situation State" t="literal">
+        <U n="literal">
+          <L n="job_and_role_changes">
+            <U>
+              <T n="Situation Job">343456<!--SituationJob: job_MultiUnitCommunity_BasicAmenities--></T>
+              <T n="Role State">351299<!--RoleState: roleState_MultiUnitCommunity_Eat--></T>
+            </U>
+          </L>
+          <L n="triggers">
+            <U>
+              <V n="effect" t="change_state">
+                <U n="change_state">
+                  <U n="possible_states">
+                    <L n="possible_state_keys">
+                      <U>
+                        <T n="situation_key">rest</T>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+              </V>
+              <L n="triggers">
+                <V t="test_event">
+                  <U n="test_event">
+                    <V n="test" t="ran_interaction_test">
+                      <U n="ran_interaction_test">
+                        <L n="affordance_lists">
+                          <T>97324<!--AffordanceList: affordanceList_EatOrDrink--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </U>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <T n="Situation State Key">rest</T>
+      <V n="Situation State" t="literal">
+        <U n="literal">
+          <L n="job_and_role_changes">
+            <U>
+              <T n="Situation Job">343456<!--SituationJob: job_MultiUnitCommunity_BasicAmenities--></T>
+              <T n="Role State">343066<!--RoleState: roleState_MultiUnitCommunity_Chat--></T>
+            </U>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <T n="Situation State Key">shower</T>
+      <V n="Situation State" t="literal">
+        <U n="literal">
+          <L n="job_and_role_changes">
+            <U>
+              <T n="Situation Job">343456<!--SituationJob: job_MultiUnitCommunity_BasicAmenities--></T>
+              <T n="Role State">343457<!--RoleState: roleState_MultiUnitCommunity_UseBasicAmenities_Shower--></T>
+            </U>
+          </L>
+          <L n="triggers">
+            <U>
+              <V n="effect" t="change_state">
+                <U n="change_state">
+                  <U n="possible_states">
+                    <L n="possible_state_keys">
+                      <U>
+                        <T n="situation_key">rest</T>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+              </V>
+              <L n="triggers">
+                <V t="test_event">
+                  <U n="test_event">
+                    <V n="test" t="ran_interaction_test">
+                      <U n="ran_interaction_test">
+                        <L n="affordance_lists">
+                          <T>261814<!--AffordanceList: affordanceList_TakeShower--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </U>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <T n="Situation State Key">toilet</T>
+      <V n="Situation State" t="literal">
+        <U n="literal">
+          <L n="job_and_role_changes">
+            <U>
+              <T n="Situation Job">343456<!--SituationJob: job_MultiUnitCommunity_BasicAmenities--></T>
+              <T n="Role State">343460<!--RoleState: roleState_MultiUnitCommunity_UseBasicAmenities_Toilet--></T>
+            </U>
+          </L>
+          <L n="triggers">
+            <U>
+              <V n="effect" t="change_state">
+                <U n="change_state">
+                  <U n="possible_states">
+                    <L n="possible_state_keys">
+                      <U>
+                        <T n="situation_key">rest</T>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+              </V>
+              <L n="triggers">
+                <V t="test_event">
+                  <U n="test_event">
+                    <V n="test" t="ran_interaction_test">
+                      <U n="ran_interaction_test">
+                        <L n="affordance_lists">
+                          <T>16387<!--AffordanceList: toilet_All--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </U>
+          </L>
+        </U>
+      </V>
+    </U>
+  </L>
+  <V n="_starting_state" t="random_starting_state">
+    <U n="random_starting_state">
+      <L n="possible_state_keys">
+        <U>
+          <T n="situation_key">toilet</T>
+          <U n="weight">
+            <L n="multipliers">
+              <U>
+                <T n="multiplier">5</T>
+                <L n="tests">
+                  <L>
+                    <V t="object_criteria">
+                      <U n="object_criteria">
+                        <V n="identity_test" t="tags">
+                          <U n="tags">
+                            <L n="tag_set">
+                              <E>Func_Toilet</E>
+                            </L>
+                          </U>
+                        </V>
+                        <T n="on_active_lot">True</T>
+                        <T n="owned">False</T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+        <U>
+          <T n="situation_key">shower</T>
+          <U n="weight">
+            <L n="multipliers">
+              <U>
+                <T n="multiplier">5</T>
+                <L n="tests">
+                  <L>
+                    <V t="object_criteria">
+                      <U n="object_criteria">
+                        <V n="identity_test" t="tags">
+                          <U n="tags">
+                            <L n="tag_set">
+                              <E>Func_Shower</E>
+                            </L>
+                          </U>
+                        </V>
+                        <T n="on_active_lot">True</T>
+                        <T n="owned">False</T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+        <U>
+          <T n="situation_key">cook</T>
+          <U n="weight">
+            <L n="multipliers">
+              <U>
+                <T n="multiplier">5</T>
+                <L n="tests">
+                  <L>
+                    <V t="object_criteria">
+                      <U n="object_criteria">
+                        <V n="identity_test" t="tags">
+                          <U n="tags">
+                            <L n="tag_set">
+                              <E>Func_Fridge</E>
+                            </L>
+                          </U>
+                        </V>
+                        <T n="on_active_lot">True</T>
+                        <T n="owned">False</T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+      </L>
+    </U>
+  </V>
+  <T p="InGame\Audio\Bumper\bumper_event_start.propx" n="audio_sting_on_start">39b2aa4a:00000000:78b903461d47e4fc</T>
+  <T n="can_remove_sims_from_work">False</T>
+  <L n="compatible_venues">
+    <T>341299<!--Venue: venue_MultiUnit--></T>
+  </L>
+  <L n="default_job_and_roles">
+    <U>
+      <T n="Situation Job">343456<!--SituationJob: job_MultiUnitCommunity_BasicAmenities--></T>
+      <T n="Role State">343066<!--RoleState: roleState_MultiUnitCommunity_Chat--></T>
+    </U>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_major_complete.propx" n="main_goal_audio_sting">39b2aa4a:00000000:10b476550150a33f</T>
+  <T n="max_participants">20</T>
+  <T n="should_send_on_lot_home_in_super_speed_3">True</T>
+  <V n="situation_end_time_string" t="show_end_time">
+    <T n="show_end_time">0xA3E17143<!--String: "Work day ends at {0.TimeShort}"--></T>
+  </V>
+</I>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Trait_PlantLover_TalktoPlant" s="455127">
+  <L n="loot_actions">
+    <V t="statistics">
+      <V n="statistics" t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">10</T>
+          <T n="stat">16658<!--Commodity: motive_Social--></T>
+          <L n="subject">
+            <E>Actor</E>
+          </L>
+        </U>
+      </V>
+    </V>
+    <V t="actions">
+      <T n="actions">455128<!--RandomWeightedLoot: randomWeightedLoot_PlantLover_TalktoPlantBuffs--></T>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_remove_by_category">
+        <U n="statistic_remove_by_category">
+          <E n="statistic_category">Angry_Buffs</E>
+          <L n="tests">
+            <L>
+              <V t="buff">
+                <U n="buff">
+                  <L n="require_categories">
+                    <E>Angry_Buffs</E>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+    </V>
+    <V t="actions">
+      <T n="actions">454406<!--LootActions: loot_Trait_PlantLover_SocialMax--></T>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="trait">
+        <U n="trait">
+          <L n="whitelist_traits">
+            <T>453551<!--Trait: trait_PlantLover--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

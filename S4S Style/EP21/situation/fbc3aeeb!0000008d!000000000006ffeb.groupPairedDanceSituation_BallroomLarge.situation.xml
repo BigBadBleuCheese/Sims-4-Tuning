@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="GroupPairedDanceSituation" i="situation" m="situations.complex.group_dance.group_paired_dance_situation" n="groupPairedDanceSituation_BallroomLarge" s="458731">
+  <T n="_allow_external_autonomy">False</T>
+  <U n="_buff">
+    <T n="buff_type">474078<!--Buff: buff_Ballroom_Hidden_SupressAutonomy--></T>
+  </U>
+  <T p="InGame\Audio\Bumper\bumper_event_start.propx" n="audio_sting_on_start">39b2aa4a:00000000:78b903461d47e4fc</T>
+  <L n="choreography">
+    <U>
+      <E n="choreography_state">LEFT</E>
+      <T n="duration">6</T>
+      <V n="loot" t="enabled">
+        <T n="enabled">475269<!--LootActions: loot_Ballroom_GrandWaltz_AwkwardWaltz--></T>
+      </V>
+    </U>
+    <U>
+      <E n="choreography_state">RIGHT</E>
+      <T n="duration">6</T>
+    </U>
+    <U>
+      <E n="choreography_state">BIGMOMENT</E>
+      <T n="duration">8</T>
+      <V n="loot" t="enabled">
+        <T n="enabled">471888<!--LootActions: loot_Ballroom_GrandWaltz_BigMoment--></T>
+      </V>
+    </U>
+    <U>
+      <E n="choreography_state">FINAL</E>
+      <T n="duration">8</T>
+    </U>
+  </L>
+  <L n="compatible_venues">
+    <T>28614<!--Venue: venue_residential--></T>
+  </L>
+  <T n="constraint_affordance">458751<!--JigPartConstraintInteraction: ballroomDancing_PairedDancing_jigPartConstraintInteraction--></T>
+  <T n="dance_affordance">469570<!--SocialSuperInteraction: social_BallroomDancing_Group_Start--></T>
+  <U n="dance_state">
+    <T n="max_duration_to_paired_posture">20</T>
+    <T n="mixer_interactions_category">470874<!--PieMenuCategory: pieMenuCategory_Ballroom_GroupWaltzMixers--></T>
+    <T n="super_interaction_category">470875<!--PieMenuCategory: pieMenuCategory_Ballroom_GroupWaltzSI--></T>
+  </U>
+  <L n="dance_transition_interaction_definition">
+    <U>
+      <E n="current_state">BIGMOMENT</E>
+      <L n="transition_states">
+        <U>
+          <E n="key">FINAL</E>
+          <L n="transition_interaction_possibilities">
+            <U>
+              <T n="interaction">469566<!--SocialMixerInteraction: mixer_BallroomDancing_Group_Center_Success--></T>
+              <L n="tests">
+                <L>
+                  <V t="buff">
+                    <U n="buff">
+                      <V n="whitelist" t="enabled">
+                        <L n="enabled">
+                          <T>471758<!--Buff: buff_Ballroom_Hidden_GrandWaltzOutcomes_Success--></T>
+                        </L>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+            <U>
+              <T n="interaction">469567<!--SocialMixerInteraction: mixer_BallroomDancing_Group_Center_Fail--></T>
+              <L n="tests">
+                <L>
+                  <V t="buff">
+                    <U n="buff">
+                      <V n="whitelist" t="enabled">
+                        <L n="enabled">
+                          <T>471759<!--Buff: buff_Ballroom_Hidden_GrandWaltzOutcomes_Failure--></T>
+                        </L>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+            <U>
+              <T n="interaction">483487<!--SocialMixerInteraction: mixer_BallroomDancing_Group_Center_SuperSuccess--></T>
+              <L n="tests">
+                <L>
+                  <V t="buff">
+                    <U n="buff">
+                      <V n="whitelist" t="enabled">
+                        <L n="enabled">
+                          <T>482618<!--Buff: buff_Ballroom_Hidden_GrandWaltzOutcomes_SuperSuccess--></T>
+                        </L>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+          </L>
+        </U>
+      </L>
+    </U>
+    <U>
+      <E n="current_state">LEFT</E>
+      <L n="transition_states">
+        <U>
+          <E n="key">RIGHT</E>
+          <L n="transition_interaction_possibilities">
+            <U>
+              <T n="interaction">469561<!--SocialMixerInteraction: mixer_BallroomDancing_Group_Right--></T>
+            </U>
+          </L>
+        </U>
+      </L>
+    </U>
+    <U>
+      <E n="current_state">NONE</E>
+      <L n="transition_states">
+        <U>
+          <E n="key">LEFT</E>
+          <L n="transition_interaction_possibilities">
+            <U>
+              <T n="interaction">469559<!--SocialMixerInteraction: mixer_BallroomDancing_Group_Left--></T>
+            </U>
+          </L>
+        </U>
+      </L>
+    </U>
+    <U>
+      <E n="current_state">RIGHT</E>
+      <L n="transition_states">
+        <U>
+          <E n="key">BIGMOMENT</E>
+          <L n="transition_interaction_possibilities">
+            <U>
+              <T n="interaction">469563<!--SocialMixerInteraction: mixer_BallroomDancing_Group_Center_BigMoment--></T>
+            </U>
+          </L>
+        </U>
+      </L>
+    </U>
+  </L>
+  <T n="duration">480</T>
+  <T n="force_jig_position_on_object">True</T>
+  <T n="group_paired_dance_jig">486056</T>
+  <V n="invite_init_job" t="specify_job">
+    <T n="specify_job">187206<!--SituationJob: situationJob_GroupInteraction_Leader--></T>
+  </V>
+  <T p="InGame\Audio\Bumper\bumper_event_major_complete.propx" n="main_goal_audio_sting">39b2aa4a:00000000:10b476550150a33f</T>
+  <T n="max_duration_route_to_position">75</T>
+  <T n="max_participants">20</T>
+  <T n="posture_transition_to_dance">502940<!--MultiSimSocialPosture: posture_BallroomDancing_Waltz--></T>
+  <U n="pre_situation_state">
+    <U n="situation_state">
+      <L n="job_and_role_changes">
+        <U>
+          <T n="Situation Job">187206<!--SituationJob: situationJob_GroupInteraction_Leader--></T>
+          <T n="Role State">187214<!--RoleState: roleState_GroupInteraction_Leader_preInteraction--></T>
+        </U>
+      </L>
+    </U>
+  </U>
+  <U n="sim_pairing">
+    <L n="criteria">
+      <U>
+        <U n="random_score">
+          <T n="lower_bound">2</T>
+          <T n="upper_bound">2</T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="relationship">
+              <U n="relationship">
+                <U n="required_relationship_bits">
+                  <L n="match_any">
+                    <T>462977<!--RelationshipBit: ballroomParty_Relbit_DancePartner--></T>
+                    <T>462978<!--RelationshipBit: ballroomParty_Relbit_RomancePartner--></T>
+                    <T>462979<!--RelationshipBit: ballroomParty_Relbit_StatusPartner--></T>
+                  </L>
+                </U>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+      <U>
+        <U n="random_score">
+          <T n="lower_bound">-1</T>
+          <T n="upper_bound">-1</T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="relationship_bit_count">
+              <U n="relationship_bit_count">
+                <E n="comparison_operator">GREATER</E>
+                <T n="rel_bit">471517<!--RelationshipBit: ballroomParty_Relbit_RejectionCooldown--></T>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+              </U>
+            </V>
+            <V t="relationship">
+              <U n="relationship">
+                <U n="prohibited_relationship_bits">
+                  <L n="match_any">
+                    <T>462977<!--RelationshipBit: ballroomParty_Relbit_DancePartner--></T>
+                    <T>462978<!--RelationshipBit: ballroomParty_Relbit_RomancePartner--></T>
+                    <T>462979<!--RelationshipBit: ballroomParty_Relbit_StatusPartner--></T>
+                  </L>
+                </U>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+                <L n="target_sim">
+                  <E>TargetSim</E>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </L>
+  </U>
+  <V n="situation_end_time_string" t="show_end_time">
+    <T n="show_end_time">0xA3E17143<!--String: "Work day ends at {0.TimeShort}"--></T>
+  </V>
+</I>

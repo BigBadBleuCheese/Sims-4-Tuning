@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Dynasty_MarketFund_CloseAccount" s="464808">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InEP21\UI\Icons\Notifications\notification_StockInvestmentAccount.png">2f7d0004:00000000:a1e15be2795f53d9</T>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x6E95DD54<!--String: "{0.SimFirstName}'s investment account is now closed. The remaining balance of {1.Money} has been returned to {0.SimPronounPossessiveDependent} household."--></T>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="participant_type" />
+                  <V t="statistic_value">
+                    <U n="statistic_value">
+                      <T n="clamp_value_to_floor">True</T>
+                      <T n="statistic">465471<!--Statistic: statistic_Dynasty_MarketFund--></T>
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="money_loot">
+      <U n="money_loot">
+        <V n="amount" t="literal">
+          <U n="literal">
+            <T n="value">1</T>
+          </U>
+        </V>
+        <L n="statistic_multipliers">
+          <U>
+            <T n="statistic">465471<!--Statistic: statistic_Dynasty_MarketFund--></T>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_remove">
+        <U n="statistic_remove">
+          <T n="stat">465470<!--Commodity: commodity_Dynasty_MarketFundTimer--></T>
+        </U>
+      </V>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_remove">
+        <U n="statistic_remove">
+          <T n="stat">465471<!--Statistic: statistic_Dynasty_MarketFund--></T>
+        </U>
+      </V>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_remove">
+        <U n="statistic_remove">
+          <T n="stat">465476<!--Statistic: statistic_Dynasty_MarketFund_NetChangeSinceLastReport--></T>
+        </U>
+      </V>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_remove">
+        <U n="statistic_remove">
+          <T n="stat">465475<!--Statistic: statistic_Dynasty_MarketFund_AmtChange--></T>
+        </U>
+      </V>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_remove">
+        <U n="statistic_remove">
+          <T n="stat">464807<!--Statistic: statistic_Dynasty_MarketFund_PercentChange--></T>
+        </U>
+      </V>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_remove">
+        <U n="statistic_remove">
+          <T n="stat">465643<!--Statistic: statistic_Dynasty_MarketFund_RiskLevel--></T>
+        </U>
+      </V>
+    </V>
+  </L>
+</I>

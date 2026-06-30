@@ -1,0 +1,700 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="DeathSuperInteraction" i="interaction" m="interactions.utils.death_interactions" n="death_Pet_AnimalCareWorker_Neglected" s="164885">
+  <V n="_cancelable_by_user" t="prohibit_cancelation" />
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="facing">
+            <U n="facing">
+              <T n="range">15</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Actor</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">True</T>
+  <T n="allow_user_directed">False</T>
+  <T n="attention_cost">0.5</T>
+  <T n="automation">True</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">161418<!--AnimationElement: Pet_Quirks_Investigate--></T>
+      </U>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="leave_situation">
+      <U n="leave_situation">
+        <T n="allow_solo_situations">False</T>
+        <L n="situation_types">
+          <T>365364<!--CustomStatesSituation: situation_CAD_Hangout--></T>
+          <T>373553<!--CustomStatesSituation: situation_CAD_BlindDate_Date_Adult--></T>
+          <T>375209<!--CustomStatesSituation: situation_CAD_BlindDate_Date_Adult_Catfish--></T>
+          <T>357767<!--CustomStatesSituation: situation_CAD_GetToKnow_Date_Adult--></T>
+          <T>365241<!--CustomStatesSituation: situation_CAD_Recovery_Date_Adult--></T>
+          <T>357530<!--CustomStatesSituation: situation_CAD_Romantic_Date_Adult--></T>
+          <T>362238<!--CustomStatesSituation: situation_CAD_GetToKnow_Date_Teen--></T>
+          <T>365242<!--CustomStatesSituation: situation_CAD_Recovery_Date_Teen--></T>
+          <T>362239<!--CustomStatesSituation: situation_CAD_Romantic_Date_Adult_Teen--></T>
+        </L>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+    <V t="camera_focus">
+      <U n="camera_focus">
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+    <V t="set_visibility_state">
+      <U n="set_visibility_state">
+        <T n="fade">True</T>
+        <V n="timing" t="at_beginning" />
+        <T n="visibility">False</T>
+      </U>
+    </V>
+    <V t="set_game_speed">
+      <U n="set_game_speed">
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+    <V t="notification">
+      <U n="notification">
+        <V n="dialog" t="single">
+          <V n="single" t="literal">
+            <U n="literal">
+              <V n="icon" t="enabled">
+                <V n="enabled" t="resource_key">
+                  <U n="resource_key">
+                    <T n="key" p="InEP04\UI\Icons\Headlines\headline_PetCareCrate.png">2f7d0004:00000000:8ed578de6179aad1</T>
+                  </U>
+                </V>
+              </V>
+              <V n="secondary_icon" t="enabled">
+                <V n="enabled" t="participant" />
+              </V>
+              <V n="text" t="single">
+                <T n="single">0xBC0FB9B3<!--String: "{0.SimFirstName} was taken away by the Pet Care Worker!"--></T>
+              </V>
+              <E n="visual_type">SPECIAL_MOMENT</E>
+            </U>
+          </V>
+        </V>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+    <V t="remove_from_ensemble">
+      <U n="remove_from_ensemble">
+        <T n="ensemble_type">127285<!--Ensemble: ensemble_Generic--></T>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>215553<!--LootActions: loot_Familiars_Ressurect_Setup--></T>
+        </L>
+        <U n="success_chance">
+          <L n="multipliers">
+            <U>
+              <T n="multiplier">0</T>
+              <L n="tests">
+                <L>
+                  <V t="familiar">
+                    <U n="familiar">
+                      <T n="negate">True</T>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+            <U>
+              <T n="multiplier">0</T>
+              <L n="tests">
+                <L>
+                  <V t="buff">
+                    <U n="buff">
+                      <V n="whitelist" t="enabled">
+                        <L n="enabled">
+                          <T>215225<!--Buff: buff_Familiar_Ressurect_Cooldown--></T>
+                        </L>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+          </L>
+        </U>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+    <V t="remove_from_travel_group">
+      <U n="remove_from_travel_group">
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+    <V t="broadcaster">
+      <U n="broadcaster">
+        <L n="broadcaster_types">
+          <U>
+            <T n="item">165464<!--Broadcaster: broadcaster_RescuedPet--></T>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V t="audio_sting">
+      <U n="audio_sting">
+        <U n="audio_sting">
+          <T n="audio" p="InEP04\Audio\Bumpers\bumper_pet_care_worker.propx">39b2aa4a:00000000:1b6c765796fe04ff</T>
+        </U>
+      </U>
+    </V>
+    <V t="stat_increment_decrement">
+      <U n="stat_increment_decrement">
+        <T n="stat">425480<!--Statistic: statistic_GrimReaper_NonReincarnationCount--></T>
+        <L n="subject">
+          <E>Lot</E>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <L n="blacklist_traits">
+                  <T>377828<!--Trait: trait_MovingOn_Hidden_DreamsFulfilled--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>184202<!--LootActions: loot_Temperature_VFX_ColdBreath_Removal--></T>
+        </L>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+  </L>
+  <T n="can_shoo">False</T>
+  <T n="category">26027<!--PieMenuCategory: pieMenuCategory_Death--></T>
+  <V n="content_score" t="disabled" />
+  <U n="death_dialog">
+    <V n="audio_sting" t="enabled">
+      <U n="enabled">
+        <T n="audio" p="InGame\Audio\Bumper\bumper_game_over.propx">39b2aa4a:00000000:e4380625f832c48e</T>
+      </U>
+    </V>
+    <V n="icon" t="enabled">
+      <V n="enabled" t="resource_key">
+        <U n="resource_key">
+          <T n="key" p="InEP04\UI\Icons\Headlines\headline_PetCareCrate.png">2f7d0004:00000000:8ed578de6179aad1</T>
+        </U>
+      </V>
+    </V>
+    <U n="text">
+      <V n="empty_household" t="enabled">
+        <V n="enabled" t="single">
+          <T n="single">0x4D48CC9E<!--String: "Or is it? The last Sim in this household has died, but you can create more Sims, choose an existing household to play, or move another household in from The Gallery."--></T>
+        </V>
+      </V>
+      <V n="fallback" t="single">
+        <T n="single">0x290909F9<!--String: "Oh no! {1.SimFirstName} is dead and there are no more adult Sims alive! Sim Social Services will take it from here to care for the Children. "--></T>
+      </V>
+      <V n="pets" t="enabled">
+        <U n="enabled">
+          <V n="multiple_pets" t="single">
+            <T n="single">0xD791194F<!--String: "Adoption Services will take care of {0.SimFirstNameList}. A good, loving family will be found for {M0.them}{F0.them}{U0.them}."--></T>
+          </V>
+          <V n="single_pet" t="single">
+            <T n="single">0x8AEC03D6<!--String: "Adoption Services will take care of {0.SimFirstName} and find a good home for {M0.him}{F0.her}."--></T>
+          </V>
+        </U>
+      </V>
+      <V n="single_sim" t="enabled">
+        <V n="enabled" t="single">
+          <T n="single">0xEC5C00FD<!--String: "Oh no! {1.SimFirstName} is dead. Don't worry about {0.SimFirstName}, though. Sim Social Services will take good care of {M0.him}{F0.her}. "--></T>
+        </V>
+      </V>
+    </U>
+    <V n="title" t="enabled">
+      <T n="enabled">0x992A95D2<!--String: "Game Over!"--></T>
+    </V>
+    <L n="ui_responses">
+      <U>
+        <T n="text">0x2B08947E<!--String: "Save and Manage Worlds"--></T>
+        <E n="ui_request">TRANSITION_TO_NEIGHBORHOOD_SAVE</E>
+      </U>
+      <U>
+        <T n="text">0xF9E584E6<!--String: "Exit to Main Menu"--></T>
+        <E n="ui_request">TRANSITION_TO_MAIN_MENU_NO_SAVE</E>
+      </U>
+    </L>
+  </U>
+  <U n="death_element">
+    <T n="cancel_on_destroy">False</T>
+    <V n="cancel_on_inaccessible_placement" t="no" />
+    <T n="create_urnstone">False</T>
+    <V n="location" t="position">
+      <U n="position">
+        <T n="allow_off_lot_placement">True</T>
+        <T n="ignore_bb_footprints">False</T>
+        <U n="initial_location_offset">
+          <U n="default_offset">
+            <T n="z">0.75</T>
+          </U>
+        </U>
+        <T n="skip_plex_starting_position_validation">True</T>
+        <V n="surface_type_override" t="enabled" />
+      </U>
+    </V>
+    <V n="timing" t="on_xevt">
+      <U n="on_xevt">
+        <E n="criticality">OnCancelOrException</E>
+        <T n="xevt_id">101</T>
+      </U>
+    </V>
+  </U>
+  <V n="death_info" t="Set_To_Minimum_LOD" />
+  <V n="death_options_dialog" t="enabled">
+    <U n="enabled">
+      <U n="dialog">
+        <V n="audio_sting" t="enabled">
+          <U n="enabled">
+            <T n="audio" p="InGame\Audio\UI\ui_ep17_movingon_death_bell.propx">39b2aa4a:00000000:4efda74876fb9786</T>
+            <T n="immediate_audio">True</T>
+          </U>
+        </V>
+        <E n="dialog_bg_style">BG_DEATH</E>
+        <L n="dialog_options">
+          <E>DISABLE_CLOSE_BUTTON</E>
+        </L>
+        <E n="dialog_style">LARGE_ICON_WIDE</E>
+        <V n="icon" t="enabled">
+          <V n="enabled" t="resource_key">
+            <U n="resource_key">
+              <T n="key" p="InGame\UI\Icons\ChanceCards\ChanceCard_MomentofDeath.png">2f7d0004:00000000:c4e1470fcd890e49</T>
+            </U>
+          </V>
+        </V>
+        <V n="icon_override_participant" t="enabled">
+          <E n="enabled">Actor</E>
+        </V>
+        <V n="secondary_icon" t="enabled">
+          <V n="enabled" t="participant">
+            <U n="participant">
+              <L n="participant_type">
+                <E>Actor</E>
+              </L>
+            </U>
+          </V>
+        </V>
+        <V n="text" t="concatenation">
+          <U n="concatenation">
+            <L n="concatenations">
+              <V t="literal">
+                <T n="literal">0x1B3325D<!--String: "Begin a new chapter of Life by becoming a Ghost! Exciting Ghostly Powers await in the Afterlife. Perhaps {0.SimFirstName} has some Unfinished Business to attend to? You can also choose to relinquish control of {0.SimFirstName} and allow {0.SimPronounObjective} to stick around as a Freeroaming Ghost."--></T>
+              </V>
+              <V t="reference">
+                <T n="reference">376609<!--LocalizedString: DeathOptionsDialogText_ReincarnationText_EP17--></T>
+              </V>
+            </L>
+          </U>
+        </V>
+        <V n="text_tokens" t="enabled">
+          <U n="enabled">
+            <L n="tokens">
+              <V t="participant_type" />
+            </L>
+          </U>
+        </V>
+        <V n="title" t="enabled">
+          <T n="enabled">0xF6AFD420<!--String: "{0.SimFirstNameWithPrefix} has passed away!"--></T>
+        </V>
+      </U>
+      <V n="reincarnation_confirmation_dialog" t="enabled">
+        <U n="enabled">
+          <V n="audio_sting" t="enabled">
+            <U n="enabled">
+              <T n="audio" p="InGame\Audio\UI\ui_ep17_movingon_resurrect_chime.propx">39b2aa4a:00000000:36af33411593f7ac</T>
+              <T n="immediate_audio">False</T>
+            </U>
+          </V>
+          <E n="dialog_bg_style">BG_DEATH</E>
+          <E n="dialog_style">LARGE_ICON_WIDE</E>
+          <V n="icon" t="enabled">
+            <V n="enabled" t="resource_key">
+              <U n="resource_key">
+                <T n="key" p="InGame\UI\Icons\ChanceCards\ChanceCard_Reincarnation.png">2f7d0004:00000000:d61529f25c7edec3</T>
+              </U>
+            </V>
+          </V>
+          <V n="icon_override_participant" t="enabled">
+            <E n="enabled">Actor</E>
+          </V>
+          <V n="text" t="single">
+            <T n="single">0x519CDC74<!--String: "<i><b>Is your soul ready to embrace the next chapter?</b></i>\n\nBy choosing to Rebirth, you will set forth on a new journey as a new Sim, leaving your current life behind with no chance of return. You will be taken to Manage Worlds to select the household where your new life will unfold and will have the opportunity to fully customize your reborn self in Create a Sim. While funds, relationships, and achievements from this life will be lost, if you have already unlocked the coveted <b>Burning Soul</b> trait, you’ll be able to retain one personality trait with the <b>Recall Past Life</b> self-interaction, along with certain others using the <b>Peer Into Soul</b> interaction available on mirrors. If you choose to Rebirth as a younger Sim, certain developmental skills will be immediately unlocked!\n\nNow the threads of fate lie before you. The choice to weave a new destiny can be made when you are ready. <b><i>Will you choose to Rebirth now?</b></i>"--></T>
+          </V>
+          <T n="text_cancel">0x7492D540<!--String: "No, do not Rebirth now."--></T>
+          <T n="text_ok">0xFCD61ECC<!--String: "Yes, Rebirth now."--></T>
+          <V n="title" t="enabled">
+            <T n="enabled">0x81F0543C<!--String: "Rebirth"--></T>
+          </V>
+          <V n="tooltip_text_cancel" t="enabled">
+            <T n="enabled">0x6A691CBE<!--String: "Cancel the Rebirth flow."--></T>
+          </V>
+        </U>
+      </V>
+      <L n="responses">
+        <V t="literal">
+          <U n="literal">
+            <V n="disabled_text" t="single">
+              <U n="single">
+                <T n="item">0xC474A3AD<!--String: "Remain a Playable Ghost\nThe Sim will stay in the Household and continue to be playable as a Ghostly presence in the current Household."--></T>
+              </U>
+            </V>
+            <L n="loot">
+              <T>380998<!--LootActions: loot_Ghost_InfoTNS_MomentofDeath--></T>
+              <T>400266<!--LootActions: loot_Reaction_NewGhost_DelayedReactionBuff--></T>
+              <T>412520<!--LootActions: loot_MovingOn_RebirthTrait_Remove--></T>
+              <T>419426<!--LootActions: loot_Ghost_InfoTNS_MomentofDeath_Child--></T>
+            </L>
+            <V n="text" t="single">
+              <U n="single">
+                <T n="item">0xD8DC56C9<!--String: "Become a Playable Ghost"--></T>
+              </U>
+            </V>
+            <V n="tooltip_text" t="single">
+              <U n="single">
+                <T n="item">0xC474A3AD<!--String: "Remain a Playable Ghost\nThe Sim will stay in the Household and continue to be playable as a Ghostly presence in the current Household."--></T>
+              </U>
+            </V>
+          </U>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <V n="disabled_text" t="tested">
+              <U n="tested">
+                <L n="records">
+                  <U>
+                    <T n="item">0xEA481D18<!--String: "Become a Freeroaming Ghost\nThe Sim becomes a Ghostly presence around the Household and in the World. They will no longer be playable.\n<font color='#FF0000'><b>Warning! This will lead to a Game Over state, as this Sim is the only Sim in this Household.</b></font>"--></T>
+                    <L n="tests">
+                      <L>
+                        <V t="household_size">
+                          <U n="household_size">
+                            <V n="test_type" t="test_sim_infos">
+                              <U n="test_sim_infos">
+                                <U n="count">
+                                  <E n="comparison">LESS_OR_EQUAL</E>
+                                  <T n="value">1</T>
+                                </U>
+                                <V n="test" t="sim_info">
+                                  <U n="sim_info">
+                                    <V n="ages" t="specified">
+                                      <L n="specified">
+                                        <E>TEEN</E>
+                                        <E>YOUNGADULT</E>
+                                        <E>ADULT</E>
+                                        <E>ELDER</E>
+                                      </L>
+                                    </V>
+                                    <V n="species" t="specified">
+                                      <U n="specified">
+                                        <L n="species">
+                                          <E />
+                                        </L>
+                                      </U>
+                                    </V>
+                                  </U>
+                                </V>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                        <V t="sim_info">
+                          <U n="sim_info">
+                            <V n="ages" t="specified">
+                              <L n="specified">
+                                <E>TEEN</E>
+                                <E>YOUNGADULT</E>
+                                <E>ADULT</E>
+                                <E>ELDER</E>
+                              </L>
+                            </V>
+                            <V n="species" t="specified">
+                              <U n="specified">
+                                <L n="species">
+                                  <E />
+                                </L>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                  <U>
+                    <T n="item">0x1FA2902F<!--String: "Become a Freeroaming Ghost\nThe Sim becomes a Ghostly presence around the Household and in the World. They will no longer be playable."--></T>
+                  </U>
+                </L>
+              </U>
+            </V>
+            <L n="loot">
+              <T>412520<!--LootActions: loot_MovingOn_RebirthTrait_Remove--></T>
+            </L>
+            <E n="response_type">FREEROAMING_GHOST</E>
+            <V n="text" t="single">
+              <U n="single">
+                <T n="item">0x60B365F3<!--String: "Become a Freeroaming Ghost"--></T>
+              </U>
+            </V>
+            <V n="tooltip_text" t="tested">
+              <U n="tested">
+                <L n="records">
+                  <U>
+                    <T n="item">0xEA481D18<!--String: "Become a Freeroaming Ghost\nThe Sim becomes a Ghostly presence around the Household and in the World. They will no longer be playable.\n<font color='#FF0000'><b>Warning! This will lead to a Game Over state, as this Sim is the only Sim in this Household.</b></font>"--></T>
+                    <L n="tests">
+                      <L>
+                        <V t="household_size">
+                          <U n="household_size">
+                            <V n="test_type" t="test_sim_infos">
+                              <U n="test_sim_infos">
+                                <U n="count">
+                                  <E n="comparison">LESS_OR_EQUAL</E>
+                                  <T n="value">1</T>
+                                </U>
+                                <V n="test" t="sim_info">
+                                  <U n="sim_info">
+                                    <V n="ages" t="specified" />
+                                    <V n="species" t="specified">
+                                      <U n="specified">
+                                        <L n="species">
+                                          <E />
+                                        </L>
+                                      </U>
+                                    </V>
+                                  </U>
+                                </V>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                        <V t="sim_info">
+                          <U n="sim_info">
+                            <V n="ages" t="specified" />
+                            <V n="species" t="specified">
+                              <U n="specified">
+                                <L n="species">
+                                  <E />
+                                </L>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                  <U>
+                    <T n="item">0x1FA2902F<!--String: "Become a Freeroaming Ghost\nThe Sim becomes a Ghostly presence around the Household and in the World. They will no longer be playable."--></T>
+                  </U>
+                </L>
+              </U>
+            </V>
+          </U>
+        </V>
+        <V t="reference">
+          <T n="reference">373347<!--DeathOptionResponse: deathOptionResponse_Reincarnation--></T>
+        </V>
+      </L>
+      <L n="test">
+        <L>
+          <V t="sim_info">
+            <U n="sim_info">
+              <V n="ages" t="specified">
+                <L n="specified">
+                  <E>TEEN</E>
+                  <E>YOUNGADULT</E>
+                  <E>ADULT</E>
+                  <E>ELDER</E>
+                  <E>CHILD</E>
+                </L>
+              </V>
+              <V n="npc" t="enabled" />
+              <V n="species" t="specified">
+                <U n="specified">
+                  <L n="species">
+                    <E />
+                  </L>
+                </U>
+              </V>
+            </U>
+          </V>
+          <V t="trait">
+            <U n="trait">
+              <L n="blacklist_traits">
+                <T>218444<!--Trait: trait_Humanoid_Robots_MainTrait--></T>
+              </L>
+            </U>
+          </V>
+        </L>
+      </L>
+    </U>
+  </V>
+  <T n="debug">True</T>
+  <T n="display_name">0x761ED6A9<!--String: "Be Taken Away"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Death</E>
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="off_lot_death_notification" t="enabled">
+    <U n="enabled">
+      <V n="icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_gravestone.png">2f7d0004:00000000:7c70ef2a230cf012</T>
+          </U>
+        </V>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0x2CE3AF5<!--String: "Oh no! {0.SimFirstName} has died away from home. {M0.His}{F0.Her} urn is at {1.String}."--></T>
+      </V>
+      <V n="text_tokens" t="enabled">
+        <U n="enabled">
+          <L n="tokens">
+            <V t="participant_type" />
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <E n="outcome_result">FAILURE</E>
+      </U>
+    </U>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <L n="provided_affordances">
+    <U>
+      <T n="affordance">378482<!--SuperInteraction: reaction_Death_Bawling--></T>
+    </U>
+    <U>
+      <T n="affordance">378476<!--SuperInteraction: reaction_Death_Confused--></T>
+    </U>
+    <U>
+      <T n="affordance">378480<!--SuperInteraction: reaction_Death_Crying--></T>
+    </U>
+    <U>
+      <T n="affordance">378471<!--SuperInteraction: reaction_Death_SadisticGlee--></T>
+    </U>
+    <U>
+      <T n="affordance">378474<!--SuperInteraction: reaction_Death_Stoic--></T>
+    </U>
+    <U>
+      <T n="affordance">378481<!--SuperInteraction: reaction_Death_Weeping--></T>
+    </U>
+    <U>
+      <T n="affordance">378473<!--SuperInteraction: reaction_Death_AngryYelling--></T>
+    </U>
+    <U>
+      <T n="affordance">378478<!--SuperInteraction: reaction_Death_Awkward--></T>
+    </U>
+    <U>
+      <T n="affordance">378475<!--SuperInteraction: reaction_Death_Disgusted--></T>
+    </U>
+    <U>
+      <T n="affordance">378477<!--SuperInteraction: reaction_Death_Indifference--></T>
+    </U>
+    <U>
+      <T n="affordance">378472<!--SuperInteraction: reaction_Death_Smirk--></T>
+    </U>
+    <U>
+      <T n="affordance">378479<!--SuperInteraction: reaction_Death_Sniffling--></T>
+    </U>
+  </L>
+  <T n="save_lock_tooltip">0xCB9BC3D7<!--String: "You cannot do this while a pet is being rescued!"--></T>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all" />
+    </U>
+  </V>
+  <E n="target_type">ACTOR</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E>CAT</E>
+              <E>DOG</E>
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>360603<!--Buff: buff_Death_WontDoDeathInteractions--></T>
+          <T>117010<!--Buff: buff_Death_WontDoDeathSoloInteractions--></T>
+        </L>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">464033<!--TestSetInstance: testSetInstance_EP20_IF_Disallow--></T>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">228130<!--TestSetInstance: testSet_NoRobots--></T>
+    </V>
+  </L>
+  <L n="tests" />
+  <T n="time_overhead">30</T>
+</I>

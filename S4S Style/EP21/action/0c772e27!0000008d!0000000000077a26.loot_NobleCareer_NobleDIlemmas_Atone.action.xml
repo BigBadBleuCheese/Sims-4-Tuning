@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_NobleCareer_NobleDIlemmas_Atone" s="490022">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">478454<!--Buff: buff_NobleCareer_NobleLeadership--></T>
+        </U>
+        <U n="chance">
+          <T n="base_chance">100</T>
+        </U>
+        <E n="subject">TargetSim</E>
+      </U>
+    </V>
+    <V t="actions">
+      <T n="actions">130277<!--LootActions: rel_Loss_Small_TargetSim--></T>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">501043<!--Buff: buff_NobleCareer_DilemmaCooldown11--></T>
+        </U>
+        <E n="subject">TargetSim</E>
+        <L n="tests">
+          <L>
+            <V t="career_test">
+              <U n="career_test">
+                <V n="test_type" t="career_reference">
+                  <U n="career_reference">
+                    <V n="career" t="specific_career">
+                      <T n="specific_career">466304<!--NobleCareer: career_Noble--></T>
+                    </V>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">490339<!--Buff: buff_NobleCareer_Hidden_AtonementStart--></T>
+        </U>
+        <E n="subject">TargetSim</E>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">500982<!--Buff: buff_NobleCareer_DilemmaCooldown12--></T>
+        </U>
+        <E n="subject">TargetSim</E>
+        <L n="tests">
+          <L>
+            <V t="career_test">
+              <U n="career_test">
+                <T n="negate">True</T>
+                <V n="test_type" t="career_reference">
+                  <U n="career_reference">
+                    <V n="career" t="specific_career">
+                      <T n="specific_career">466304<!--NobleCareer: career_Noble--></T>
+                    </V>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="interaction">
+      <U n="interaction">
+        <E n="affordance_priority">High</E>
+        <V n="affordance_run_priority" t="enabled">
+          <E n="enabled">High</E>
+        </V>
+        <L n="affordances">
+          <T>502070<!--SocialSuperInteraction: socialSI_NobleCareer_Atone--></T>
+        </L>
+        <V n="override_interaction_source" t="enabled">
+          <E n="enabled">SCRIPT_WITH_USER_INTENT</E>
+        </V>
+        <E n="subject">TargetSim</E>
+        <E n="target_participant_type">Actor</E>
+      </U>
+    </V>
+  </L>
+</I>

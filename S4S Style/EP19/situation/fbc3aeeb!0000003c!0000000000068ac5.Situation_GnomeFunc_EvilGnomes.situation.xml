@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="MovingObjectsSituation" i="situation" m="situations.complex.moving_objects_situation" n="Situation_GnomeFunc_EvilGnomes" s="428741">
+  <L n="_tests_to_continue">
+    <L>
+      <V t="holiday_tradition">
+        <U n="holiday_tradition">
+          <U n="tradition_filter">
+            <V n="blacklist" t="specify">
+              <U n="specify">
+                <L n="blacklist">
+                  <T>182136<!--HolidayTradition: holidayTradition_GiveGiftToGnomes--></T>
+                </L>
+              </U>
+            </V>
+          </U>
+        </U>
+      </V>
+    </L>
+  </L>
+  <U n="_waiting_to_move_state">
+    <V n="time_out" t="enabled">
+      <T n="enabled">15</T>
+    </V>
+  </U>
+  <T n="duration">120</T>
+  <V n="fade" t="enabled" />
+  <L n="object_tags">
+    <E>Func_Gnome_Evil</E>
+  </L>
+  <L n="placement_strategy_locations">
+    <U>
+      <U n="placement_strategy">
+        <V n="facing" t="enabled" />
+        <T n="ignore_bb_footprints">False</T>
+        <T n="ignore_sim_positions">False</T>
+        <V n="initial_location" t="from_tags">
+          <U n="from_tags">
+            <L n="tag_test_sets">
+              <U>
+                <L n="tags">
+                  <E>Func_ObjectHasBrokenness</E>
+                  <E>Func_Bed</E>
+                  <E>Func_Couch</E>
+                  <E>Func_GardeningSkillPlant</E>
+                  <E>Func_Gnome_Cleaning</E>
+                  <E>Func_Gnome_Gardening</E>
+                  <E>Func_Gnome_Protecting</E>
+                  <E>Func_Gnome_Repairing</E>
+                  <E>Func_Carpenter</E>
+                  <E>Func_ObjectHasDirtiness</E>
+                </L>
+              </U>
+            </L>
+          </U>
+        </V>
+        <L n="reference_obj_hidden_flags">
+          <E>RABBIT_HOLE</E>
+        </L>
+        <L n="search_flag_set">
+          <E>STAY_IN_CONNECTED_CONNECTIVITY_GROUP</E>
+          <E>CALCULATE_RESULT_TERRAIN_HEIGHTS</E>
+          <E>DONE_ON_MAX_RESULTS</E>
+        </L>
+      </U>
+      <U n="weight">
+        <T n="base_value">1</T>
+      </U>
+    </U>
+    <U>
+      <U n="placement_strategy">
+        <V n="facing" t="enabled" />
+        <T n="ignore_bb_footprints">False</T>
+        <T n="ignore_sim_positions">False</T>
+        <V n="initial_location" t="from_sim_filter">
+          <U n="from_sim_filter">
+            <T n="sim_filter">100343<!--TunableSimFilter: filter_SimPicker_Basic_InHousehold--></T>
+          </U>
+        </V>
+        <L n="reference_obj_hidden_flags">
+          <E>RABBIT_HOLE</E>
+        </L>
+        <L n="search_flag_set">
+          <E>STAY_IN_CONNECTED_CONNECTIVITY_GROUP</E>
+          <E>CALCULATE_RESULT_TERRAIN_HEIGHTS</E>
+          <E>DONE_ON_MAX_RESULTS</E>
+        </L>
+      </U>
+      <U n="weight">
+        <T n="base_value">1</T>
+      </U>
+    </U>
+  </L>
+  <L n="situation_end_loots_to_apply_on_objects">
+    <T>433970<!--LootActions: loot_GnomeFunc_EvilGnomesEnd--></T>
+  </L>
+  <V n="situation_end_time_string" t="show_end_time">
+    <T n="show_end_time">0xA3E17143<!--String: "Work day ends at {0.TimeShort}"--></T>
+  </V>
+  <L n="starting_requirements">
+    <L>
+      <V t="holiday_tradition">
+        <U n="holiday_tradition">
+          <U n="tradition_filter">
+            <V n="blacklist" t="specify">
+              <U n="specify">
+                <L n="blacklist">
+                  <T>182136<!--HolidayTradition: holidayTradition_GiveGiftToGnomes--></T>
+                </L>
+              </U>
+            </V>
+          </U>
+        </U>
+      </V>
+    </L>
+  </L>
+  <L n="tags">
+    <E>Situation_Gnome_Evil</E>
+  </L>
+  <V n="vfx_on_move" t="enabled">
+    <U n="enabled">
+      <T n="effect_name">ep05_holiday_gnome_teleport</T>
+    </U>
+  </V>
+</I>

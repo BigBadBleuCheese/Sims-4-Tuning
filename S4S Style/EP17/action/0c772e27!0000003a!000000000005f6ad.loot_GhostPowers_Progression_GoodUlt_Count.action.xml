@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_GhostPowers_Progression_GoodUlt_Count" s="390829">
+  <L n="loot_actions">
+    <V t="statistics">
+      <V n="statistics" t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">1</T>
+          <T n="stat">384631<!--Statistic: statistic_GhostPowers_Good--></T>
+        </U>
+      </V>
+    </V>
+    <V t="actions">
+      <T n="actions">395023<!--LootActions: loot_GhostPowers_Progression_GoodUlt_Unlock--></T>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="audio_sting" t="enabled">
+              <U n="enabled">
+                <T n="audio" p="InEP17\Audio\music\bumpers\bumper_ep17_ghost_powers_good_max.propx">39b2aa4a:00000000:a2a05aa9b340ad34</T>
+              </U>
+            </V>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T p="InGame\UI\Icons\Ranks\ghostRank05.png" n="key">2f7d0004:00000000:69445dc2369b0661</T>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant" />
+            </V>
+            <V n="subtitle" t="enabled">
+              <T n="enabled">0x9D1938C2<!--String: "Benevolent Blessing"--></T>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x6D0741B1<!--String: "{0.SimFirstName}'s recent good-natured actions towards the living have earned {0.SimPronounObjective} the ability to bestow an ultimate <b>Benevolent Blessing</b> on living Sims. To officially access and use this ability, reach the <b>Transcendent Wraith</b> tier of Ghost Mastery!"--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0xA8122788<!--String: "Ultimate Unlocked!"--></T>
+            </V>
+            <L n="ui_responses">
+              <U>
+                <T n="text">0x1356B461<!--String: "Ghost Mastery"--></T>
+                <E n="ui_request">SHOW_GHOST_POWERS_PERKS_PANEL</E>
+              </U>
+            </L>
+            <E n="visual_type">SPECIAL_MOMENT</E>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="must_have_stat">True</T>
+                <T n="stat">384631<!--Statistic: statistic_GhostPowers_Good--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <T n="value">100</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="statistic">
+        <U n="statistic">
+          <T n="stat">384631<!--Statistic: statistic_GhostPowers_Good--></T>
+          <V n="threshold" t="value_threshold">
+            <U n="value_threshold">
+              <E n="comparison">LESS</E>
+              <T n="value">100</T>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

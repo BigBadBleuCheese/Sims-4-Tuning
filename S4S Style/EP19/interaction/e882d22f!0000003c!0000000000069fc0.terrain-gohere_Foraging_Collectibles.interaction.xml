@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="GoHereSuperInteraction" i="interaction" m="objects.terrain" n="terrain-gohere_Foraging_Collectibles" s="434112">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="circle">
+            <U n="circle">
+              <T n="ideal_radius">0</T>
+              <T n="radius">1.25</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="posture">
+            <U n="posture">
+              <L n="posture_manifest_tuning">
+                <U>
+                  <V n="carry_left" t="None" />
+                  <V n="carry_right" t="None" />
+                  <V n="posture_type" t="enabled">
+                    <T n="enabled">15537<!--MobilePosture: posture_Stand--></T>
+                  </V>
+                  <V n="surface" t="None" />
+                </U>
+                <U>
+                  <V n="carry_left" t="None" />
+                  <V n="carry_right" t="None" />
+                  <V n="posture_type" t="enabled">
+                    <T n="enabled">39398<!--MobilePosture: posture_Swim--></T>
+                  </V>
+                  <V n="surface" t="None" />
+                </U>
+              </L>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_icon" t="resource_key">
+    <U n="resource_key">
+      <T n="key" p="InGame\UI\Icons\InteractionQueue\IconQueueGoHere.png">2f7d0004:00000000:97d318ad9e4da2b3</T>
+    </U>
+  </V>
+  <T n="_multi_surface">False</T>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <T n="allowed_to_combine">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="no_content">
+    <U n="no_content">
+      <V n="allow_holster" t="override">
+        <T n="override">False</T>
+      </V>
+    </U>
+  </V>
+  <V n="canonical_animation" t="disabled" />
+  <V n="carry_back_compatibility_override" t="enabled">
+    <U n="enabled">
+      <T n="infant">False</T>
+    </U>
+  </V>
+  <T n="category">434119<!--PieMenuCategory: pieMenuCategory_Foraging--></T>
+  <T n="collapsible">False</T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x2CC1C528<!--String: "Forage for Collectibles"--></T>
+  <V n="display_name_in_queue" t="enabled">
+    <T n="enabled">0x2CC1C528<!--String: "Forage for Collectibles"--></T>
+  </V>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T n="ignore_group_socials">False</T>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="continuation">
+          <U>
+            <T n="affordance">434115<!--SuperInteraction: sI_Foraging_Collectibles--></T>
+          </U>
+        </L>
+      </U>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T n="key" p="InEP19\UI\Icons\PieMenu\Interactions\icon_pieMenu_foraging.png">2f7d0004:00000000:76bd7f46df60d19c</T>
+      </U>
+    </V>
+  </V>
+  <T n="pie_menu_priority">8</T>
+  <L n="rallyable" />
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_klobberers" t="enabled">
+    <V n="enabled" t="literal">
+      <U n="literal">
+        <V n="default_inclusion" t="exclude_all">
+          <U n="exclude_all">
+            <L n="include_affordances">
+              <T>182954<!--GoHereSuperInteraction: terrain-rakeLeaf--></T>
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="pick_info_test">
+      <U n="pick_info_test">
+        <V n="pick_type_test" t="pick_terrain">
+          <U n="pick_terrain">
+            <E n="terrain_location">IS_OUTSIDE</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="pick_info_test">
+      <U n="pick_info_test">
+        <V n="pick_type_test" t="pick_type">
+          <U n="pick_type">
+            <L n="whitelist">
+              <E>PICK_TERRAIN</E>
+              <E>PICK_FLOOR</E>
+              <E>PICK_OBJECT</E>
+              <E>PICK_SIM</E>
+              <E>PICK_POOL_EDGE</E>
+              <E>PICK_POOL_SURFACE</E>
+              <E>PICK_POOL_TRIM</E>
+              <E>PICK_WATER_TERRAIN</E>
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="skill_test">
+      <U n="skill_test">
+        <T n="skill">434909<!--Skill: statistic_Skill_NLS--></T>
+        <V n="skill_range" t="interval">
+          <U n="interval">
+            <U n="skill_interval">
+              <T n="lower_bound">5</T>
+            </U>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="region">
+      <U n="region">
+        <V n="blacklist" t="enabled">
+          <L n="enabled">
+            <T>231104<!--Region: region_Destination_Batuu--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+    <V t="wading_interval_test">
+      <U n="wading_interval_test">
+        <T n="negate">True</T>
+        <V n="test" t="custom">
+          <U n="custom">
+            <U n="height_range">
+              <T n="lower_bound">0</T>
+              <T n="upper_bound">1000</T>
+            </U>
+          </U>
+        </V>
+        <V n="tooltip" t="disabled" />
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">439530<!--TestSetInstance: testSetInstance_Foraging_SandFleas--></T>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>437567<!--Buff: buffs_Foraging_CreepyCrawlies--></T>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xDF38D82C<!--String: "{0.SimFirstName} is too scared to Forage right now!"--></T>
+        </V>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>437570<!--Buff: buffs_Foraging_FreezingFingers--></T>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x37C37105<!--String: "{0.SimFirstName}'s fingers are too freezing from recent Foraging!"--></T>
+        </V>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">28176<!--TestSetInstance: testSet_EmotionNotStressed--></T>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">28305<!--TestSetInstance: testSet_EmotionNotMiserable--></T>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+  <U n="visual_type_override_data">
+    <T n="icon" p="InGame\UI\Icons\InteractionQueue\IconQueueWalking.png">2f7d0004:00000000:7c3ee3d732a8ea1c</T>
+  </U>
+</I>

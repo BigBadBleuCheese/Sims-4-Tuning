@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="DialogDramaNode" i="drama_node" m="drama_scheduler.dialog_drama_node" n="dialogDramaNode_AutoInitRomance_RelChanges_AskToBecomeEngaged" s="361855">
+  <V n="cooldown_data" t="group_cooldown">
+    <U n="group_cooldown">
+      <E n="group">AutoInitRomanceCooldown</E>
+    </U>
+  </V>
+  <V n="dialog_and_loot" t="dialog_ok_cancel">
+    <U n="dialog_ok_cancel">
+      <U n="dialog">
+        <V n="icon" t="enabled">
+          <V n="enabled" t="participant">
+            <U n="participant">
+              <L n="participant_type">
+                <E>PickedSim</E>
+              </L>
+            </U>
+          </V>
+        </V>
+        <V n="text" t="single">
+          <T n="single">0x6D585BC3<!--String: "{2.SimFirstName} is head over heels for {0.SimFirstName} and wants to propose! Do you want this to happen?"--></T>
+        </V>
+        <T n="text_cancel">0xAB36EA39<!--String: "Not Right Now"--></T>
+        <T n="text_ok">0xCAC2DEB7<!--String: "Become Engaged"--></T>
+      </U>
+      <L n="on_dialog_accepted_loot_list">
+        <T>362222<!--LootActions: loot_AutoInitRomance_RelChanges_AskToBecomeEngaged_Accept--></T>
+      </L>
+    </U>
+  </V>
+  <U n="min_and_max_times">
+    <T n="lower_bound">0</T>
+    <T n="upper_bound">0</T>
+  </U>
+  <V n="picked_sim_info" t="participant_type">
+    <U n="participant_type">
+      <E n="participant_type">TargetSim</E>
+    </U>
+  </V>
+  <L n="pretests">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified">
+            <L n="specified">
+              <E>YOUNGADULT</E>
+              <E>ADULT</E>
+              <E>ELDER</E>
+            </L>
+          </V>
+          <V n="npc" t="enabled" />
+        </U>
+      </V>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified">
+            <L n="specified">
+              <E>YOUNGADULT</E>
+              <E>ADULT</E>
+              <E>ELDER</E>
+            </L>
+          </V>
+          <E n="who">PickedSim</E>
+        </U>
+      </V>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="prohibited_relationship_bits">
+            <L n="match_any">
+              <T>15822<!--RelationshipBit: romantic-Married--></T>
+              <T>15816<!--RelationshipBit: romantic-Engaged--></T>
+            </L>
+          </U>
+          <U n="required_relationship_bits">
+            <L n="match_any">
+              <T>15825<!--RelationshipBit: romantic-Significant_Other--></T>
+            </L>
+          </U>
+          <L n="subject">
+            <E>Actor</E>
+          </L>
+          <L n="target_sim">
+            <E>PickedSim</E>
+          </L>
+        </U>
+      </V>
+      <V t="relationship_bit_count">
+        <U n="relationship_bit_count">
+          <E n="comparison_operator">EQUAL</E>
+          <T n="rel_bit">15822<!--RelationshipBit: romantic-Married--></T>
+          <T n="relationship_count">0</T>
+          <L n="subject">
+            <E>Actor</E>
+          </L>
+        </U>
+      </V>
+      <V t="relationship_bit_count">
+        <U n="relationship_bit_count">
+          <E n="comparison_operator">EQUAL</E>
+          <T n="rel_bit">15816<!--RelationshipBit: romantic-Engaged--></T>
+          <T n="relationship_count">0</T>
+          <L n="subject">
+            <E>Actor</E>
+          </L>
+        </U>
+      </V>
+      <V t="relationship_bit_count">
+        <U n="relationship_bit_count">
+          <E n="comparison_operator">EQUAL</E>
+          <T n="rel_bit">15822<!--RelationshipBit: romantic-Married--></T>
+          <T n="relationship_count">0</T>
+          <L n="subject">
+            <E>PickedSim</E>
+          </L>
+        </U>
+      </V>
+      <V t="relationship_bit_count">
+        <U n="relationship_bit_count">
+          <E n="comparison_operator">EQUAL</E>
+          <T n="rel_bit">15816<!--RelationshipBit: romantic-Engaged--></T>
+          <T n="relationship_count">0</T>
+          <L n="subject">
+            <E>PickedSim</E>
+          </L>
+        </U>
+      </V>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>16851<!--Trait: trait_isGrimReaper--></T>
+            <T>260169<!--Trait: trait_Hidden_CottageWorld_NPC_AgathaCrumplebottom--></T>
+            <T>259314<!--Trait: trait_Hidden_CottageWorld_NPC_AgnesCrumplebottom--></T>
+          </L>
+          <E n="subject">PickedSim</E>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="sender_sim_info" t="no_participant" />
+  <E n="sender_sim_info_type">INSTANCED_ALLOWED</E>
+  <V n="time_option" t="single_time" />
+</I>

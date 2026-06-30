@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SocialObjectSuperInteraction" i="interaction" m="interactions.social.social_object_super_interaction" n="sI_AnimalObjects_Pet_Sheep_Free_Start_MoodImprovement_Scared" s="326623">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="cone">
+            <U n="cone">
+              <T n="ideal_radius_max">0.2</T>
+              <T n="ideal_radius_min">0.1</T>
+              <T n="max_radius">5</T>
+              <T n="min_radius">1</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="value" t="facing" />
+        </U>
+      </L>
+    </U>
+  </L>
+  <L n="_false_advertisements">
+    <V t="statistic_set_max">
+      <U n="statistic_set_max">
+        <T n="stat">265709<!--Commodity: commodity_Trait_Autonomy_AnimalEnthusiast--></T>
+      </U>
+    </V>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <L n="_static_commodities">
+    <U>
+      <T n="static_commodity">331508<!--StaticCommodity: staticCommodity_CommunalEvents_AnimalDay_Guests--></T>
+    </U>
+  </L>
+  <T n="allow_autonomous">True</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>266867<!--LootActions: loot_animalObjects_Relationship_CritterTenderMax--></T>
+        </L>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>265728<!--LootActions: Commodity_Trait_AnimalEnthusiast_SatisfyAutonomy--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="basic_focus" t="tunable_focus" />
+  <T o="true" n="category" />
+  <V n="content_score" t="enabled">
+    <U n="enabled">
+      <T n="base_score">10</T>
+    </U>
+  </V>
+  <T n="display_name">0xEF1A3179<!--String: "Hug the Fear Away"--></T>
+  <V n="display_name_overrides" t="testable">
+    <U n="testable">
+      <L n="overrides">
+        <U>
+          <V n="new_display_name" t="disabled" />
+          <T n="new_pie_menu_category">260969<!--PieMenuCategory: pieMenuCategory_AnimalObjects_Socialize--></T>
+          <L n="test">
+            <L>
+              <V t="mood">
+                <U n="mood">
+                  <T n="disallow">True</T>
+                  <T n="mood">251719<!--Mood: Mood_Scared--></T>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+    <E>Interaction_Animal</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <V n="animation_ref" t="enabled">
+          <U n="enabled">
+            <T n="factory">215393<!--AnimationElement: soc_Chat_Talk_Talk_oneShot_basic--></T>
+            <U n="overrides">
+              <V n="balloons" t="enabled">
+                <L n="enabled">
+                  <U>
+                    <L n="balloon_choices">
+                      <U>
+                        <V n="item" t="balloon_category">
+                          <T n="balloon_category">30971<!--BalloonCategory: balloonCategory_SetAnimals_Speech--></T>
+                        </V>
+                      </U>
+                    </L>
+                    <T n="balloon_delay">0.1</T>
+                    <L n="balloon_target">
+                      <E>Actor</E>
+                    </L>
+                  </U>
+                  <U>
+                    <L n="balloon_choices">
+                      <U>
+                        <V n="item" t="balloon_category">
+                          <T n="balloon_category">326399<!--BalloonCategory: balloonCategory_AnimalObjects_GoatSheep_ResponsePositive--></T>
+                        </V>
+                      </U>
+                    </L>
+                    <T n="balloon_delay">-0.1</T>
+                    <L n="balloon_target">
+                      <E>Object</E>
+                    </L>
+                  </U>
+                </L>
+              </V>
+            </U>
+          </U>
+        </V>
+        <L n="continuation">
+          <U>
+            <T n="affordance">347234<!--SocialObjectSuperInteraction: sI_AnimalObjects_Hug_Sheep_Outcome_Success_TYAE_MoodImprovement_Scared--></T>
+          </U>
+        </L>
+      </U>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T n="key" p="InGame\UI\Icons\PieMenu\Category\icon_piemenu_category_friendly.png">2f7d0004:00000000:ea4aa419d39866ff</T>
+      </U>
+    </V>
+  </V>
+  <T n="pie_menu_priority">10</T>
+  <E n="scoring_priority">NORMAL</E>
+  <V n="state_value_exit" t="enabled">
+    <V n="enabled" t="value_from_test_list">
+      <U n="value_from_test_list">
+        <V n="fallback_value" t="enabled">
+          <T n="enabled">262374<!--ObjectStateValue: animalObjects_Generic_MasterController_Free--></T>
+        </V>
+      </U>
+    </V>
+  </V>
+  <V n="state_value_prepare" t="enabled">
+    <V n="enabled" t="value_from_test_list">
+      <U n="value_from_test_list">
+        <V n="fallback_value" t="enabled">
+          <T n="enabled">262375<!--ObjectStateValue: animalObjects_Generic_MasterController_Socializing--></T>
+        </V>
+      </U>
+    </V>
+  </V>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all" />
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_autonomous">
+    <L>
+      <V t="distance">
+        <U n="distance">
+          <U n="distance_threshold">
+            <E n="comparison">LESS_OR_EQUAL</E>
+            <T n="value">20</T>
+          </U>
+          <V n="level_modifier" t="infinite" />
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="location">
+        <U n="location">
+          <U n="location_tests">
+            <V n="is_on_active_lot" t="Is_or_is_not_on_active_lot" />
+          </U>
+        </U>
+      </V>
+      <V t="location">
+        <U n="location">
+          <U n="location_tests">
+            <V n="is_on_active_lot" t="Is_or_is_not_on_active_lot" />
+          </U>
+          <E n="subject">Object</E>
+        </U>
+      </V>
+    </L>
+  </L>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="state_white_black">
+      <U n="state_white_black">
+        <U n="states">
+          <V n="blacklist" t="specify">
+            <U n="specify">
+              <L n="blacklist">
+                <T>259456<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_BeIn0--></T>
+                <T>264797<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_Disappear--></T>
+                <T>262324<!--ObjectStateValue: animalObjects_Generic_MasterController_InSlot_Sleep--></T>
+                <T>262477<!--ObjectStateValue: animalObjects_Generic_MasterController_Missing--></T>
+                <T>271105<!--ObjectStateValue: animalObjects_Generic_Location_InHome--></T>
+              </L>
+            </U>
+          </V>
+        </U>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">326635<!--TestSetInstance: testSet_AnimalObjects_Relationship_Friend_Tooltip--></T>
+    </V>
+    <V t="mood">
+      <U n="mood">
+        <T n="mood">251719<!--Mood: Mood_Scared--></T>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xB441B740<!--String: "{0.SimFirstName} must be in a scared mood to perform this!"--></T>
+        </V>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">327759<!--TestSetInstance: testSet_AnimalObjects_GoatSheep_ImproveMoodCooldown--></T>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

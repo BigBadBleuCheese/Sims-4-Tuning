@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_JobLoss_LayoffPeriod_DebugStart" s="324895">
+  <L n="loot_actions">
+    <V t="trait_add">
+      <U n="trait_add">
+        <E n="subject">TargetSim</E>
+        <T n="trait">306064<!--Trait: trait_JobLoss_InLayoffPeriod--></T>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InGame\UI\Icons\Notifications\notification_unemployed.png">2f7d0004:00000000:c81267fdc9e90a9b</T>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x72521B4F<!--String: "Oh no! Alongside profit warnings and dire predictions of financial calamity, {0.SimFirstName} finds that {0.SimPronounPossessiveDependent} job is at serious risk of layoffs. Might be that working hard helps {0.SimFirstName} dodge the layoff bullet, but who knows?"--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x7B8DF0D1<!--String: "Looming Layoff"--></T>
+            </V>
+            <E n="urgency">URGENT</E>
+          </U>
+        </V>
+        <E n="subject">TargetSim</E>
+      </U>
+    </V>
+  </L>
+</I>

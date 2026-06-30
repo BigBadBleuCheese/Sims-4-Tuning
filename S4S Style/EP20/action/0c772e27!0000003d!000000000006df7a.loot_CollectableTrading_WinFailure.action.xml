@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_CollectableTrading_WinFailure" s="450426">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">450425<!--Buff: buff_CollectableTrading_RetryAvailable--></T>
+        </U>
+        <U n="chance">
+          <T n="base_chance">30</T>
+          <L n="multipliers">
+            <U>
+              <T n="multiplier">2</T>
+              <L n="tests">
+                <L>
+                  <V t="relationship">
+                    <U n="relationship">
+                      <U n="relationship_score_interval">
+                        <T n="lower_bound">35</T>
+                      </U>
+                      <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+          </L>
+        </U>
+        <E n="subject">TargetSim</E>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xE87EC910<!--String: "What a lucky day for {0.SimFirstName}! {1.SimFirstName} will let {0.SimPronounPossessiveDependent} try again to win the collectable."--></T>
+            </V>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <E n="subject">TargetSim</E>
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>450425<!--Buff: buff_CollectableTrading_RetryAvailable--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="actions">
+      <T n="actions">450452<!--LootActions: loot_CollectableTrading_ResetSuccessCount--></T>
+    </V>
+  </L>
+</I>

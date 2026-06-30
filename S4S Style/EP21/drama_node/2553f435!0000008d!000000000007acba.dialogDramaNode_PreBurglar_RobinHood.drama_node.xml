@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="DialogDramaNode" i="drama_node" m="drama_scheduler.dialog_drama_node" n="dialogDramaNode_PreBurglar_RobinHood" s="502970">
+  <V n="dialog_and_loot" t="loot_only">
+    <U n="loot_only">
+      <L n="on_drama_node_run_loot">
+        <T>484457<!--LootActions: loot_Burglar_ScheduleSituation_RobinHood_Chest--></T>
+        <T>484759<!--LootActions: loot_Burglar_ScheduleSituation_RobinHood_Rob--></T>
+      </L>
+    </U>
+  </V>
+  <U n="min_and_max_times">
+    <T n="lower_bound">0</T>
+    <T n="upper_bound">0.5</T>
+  </U>
+  <L n="pretests">
+    <L>
+      <V t="game_option">
+        <U n="game_option">
+          <E n="gameplay_option">BURGLAR_ENABLED</E>
+        </U>
+      </V>
+      <V t="drama_node">
+        <U n="drama_node">
+          <L n="drama_nodes">
+            <T>424170<!--SituationDramaNode: situationDramaNode_Burglar--></T>
+            <T>431905<!--SituationDramaNode: situationDramaNode_Burglar_LotTrait--></T>
+            <T>484458<!--SituationDramaNode: situationDramaNode_Burglar_RobinHood_Chest--></T>
+          </L>
+          <T n="exists">False</T>
+          <V n="receiver_sim" t="enabled">
+            <E n="enabled">ActorHouseholdMembers</E>
+          </V>
+        </U>
+      </V>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>426803<!--Buff: buff_Burglar_Hidden_VisitCooldown--></T>
+            <T>432110<!--Buff: buff_Burglar_Hidden_VisitCooldown_LotTrait--></T>
+            <T>432396<!--Buff: buff_Burglar_Hidden_VisitCooldown_CopWonFight--></T>
+            <T>432395<!--Buff: buff_Burglar_Hidden_VisitCooldown_WonFight--></T>
+          </L>
+          <E n="subject">ActiveHousehold</E>
+        </U>
+      </V>
+      <V t="home_region">
+        <U n="home_region">
+          <T n="negate">False</T>
+          <T n="region">465280<!--Region: region_Residential_EP21World--></T>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="zone">
+        <U n="zone">
+          <U n="zone_tests">
+            <V n="zone_modifiers" t="enabled">
+              <U n="enabled">
+                <V n="whitelist" t="specify">
+                  <U n="specify">
+                    <V n="threshold" t="threshold" />
+                    <L n="whitelist">
+                      <T>431901<!--ZoneModifier: zoneModifier_lotTrait_BurglarTime--></T>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </U>
+        </U>
+      </V>
+      <V t="drama_node">
+        <U n="drama_node">
+          <L n="drama_nodes">
+            <T>424170<!--SituationDramaNode: situationDramaNode_Burglar--></T>
+            <T>431905<!--SituationDramaNode: situationDramaNode_Burglar_LotTrait--></T>
+            <T>484458<!--SituationDramaNode: situationDramaNode_Burglar_RobinHood_Chest--></T>
+          </L>
+          <T n="exists">False</T>
+          <V n="receiver_sim" t="enabled">
+            <E n="enabled">ActorHouseholdMembers</E>
+          </V>
+        </U>
+      </V>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>432110<!--Buff: buff_Burglar_Hidden_VisitCooldown_LotTrait--></T>
+          </L>
+          <E n="subject">ActiveHousehold</E>
+        </U>
+      </V>
+      <V t="home_region">
+        <U n="home_region">
+          <T n="negate">False</T>
+          <T n="region">465280<!--Region: region_Residential_EP21World--></T>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="scoring" t="enabled">
+    <U n="enabled">
+      <E n="bucket">Burglar</E>
+    </U>
+  </V>
+  <V n="sender_sim_info" t="specific_sim_filter">
+    <U n="specific_sim_filter">
+      <T n="sim_filter">484493<!--TunableSimFilter: filter_RobinHood--></T>
+    </U>
+  </V>
+  <E n="sender_sim_info_type">INSTANCED_ALLOWED</E>
+  <V n="time_option" t="schedule">
+    <U n="schedule">
+      <L n="valid_times">
+        <U>
+          <U n="days_available">
+            <T n="0 SUNDAY">True</T>
+            <T n="1 MONDAY">True</T>
+            <T n="2 TUESDAY">True</T>
+            <T n="3 WEDNESDAY">True</T>
+            <T n="4 THURSDAY">True</T>
+            <T n="5 FRIDAY">True</T>
+            <T n="6 SATURDAY">True</T>
+          </U>
+          <T n="duration">24</T>
+          <U n="start_time">
+            <T n="hour">0</T>
+          </U>
+        </U>
+      </L>
+    </U>
+  </V>
+</I>

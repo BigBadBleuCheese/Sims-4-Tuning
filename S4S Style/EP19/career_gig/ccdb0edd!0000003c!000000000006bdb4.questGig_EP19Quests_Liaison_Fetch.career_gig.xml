@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="QuestGig" i="career_gig" m="careers.missions.mission_gig" n="questGig_EP19Quests_Liaison_Fetch" s="441780">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_description" t="enabled">
+        <T n="enabled">0xFC4AD8E9<!--String: "<i>A family who owned everything in the world had not finished grabbing their share. And these Sims you should know, up in their chateau, had money to spend without care. Now, Geoffrey thought schools, but dear Nancy thought pools, should become their next big endeavor. But they both had such pride and could not decide on just whose idea was more clever...</i>\n\n<font color="#1E81E6">Ask Fairies for an Item to Deliver.</font>\n"--></T>
+      </V>
+      <V n="instance_display_icon" t="enabled">
+        <T p="InEP19\UI\Icons\Quests\quests_FetchQuest03.png" n="enabled">2f7d0004:00000000:c7eb2f97867449ae</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0xE73A996A<!--String: "Stubborn Misfortune"--></T>
+      </V>
+    </U>
+  </V>
+  <T n="career">424758<!--Career: career_EP19Quests--></T>
+  <L n="cycling_display_data">
+    <U>
+      <T n="customer_description">0xFC4AD8E9<!--String: "<i>A family who owned everything in the world had not finished grabbing their share. And these Sims you should know, up in their chateau, had money to spend without care. Now, Geoffrey thought schools, but dear Nancy thought pools, should become their next big endeavor. But they both had such pride and could not decide on just whose idea was more clever...</i>\n\n<font color="#1E81E6">Ask Fairies for an Item to Deliver.</font>\n"--></T>
+      <T n="mission_name">0xF1EE640D<!--String: "Stubborn Misfortune"--></T>
+    </U>
+  </L>
+  <T n="gig_assignment_aspiration">441782<!--AspirationGig: aspirationGig_EP19Quests_Liaison_Fetch--></T>
+  <V n="gig_pay" t="flat_amount">
+    <U n="flat_amount">
+      <T n="value">222</T>
+    </U>
+  </V>
+  <T n="hide_inactive_objectives">True</T>
+  <L n="mission_objective_data">
+    <U>
+      <L n="weighted_objectives">
+        <U>
+          <T n="objective">441803<!--Objective: objective_EP19Quests_Liaison_Fetch_AskA--></T>
+        </U>
+        <U>
+          <T n="objective">441804<!--Objective: objective_EP19Quests_Liaison_Fetch_AskB--></T>
+        </U>
+        <U>
+          <T n="objective">441805<!--Objective: objective_EP19Quests_Liaison_Fetch_AskC--></T>
+        </U>
+        <U>
+          <T n="objective">441806<!--Objective: objective_EP19Quests_Liaison_Fetch_AskD--></T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="pick_objective_when_activated">False</T>
+      <T n="requires_previous_objective_complete">False</T>
+      <L n="weighted_objectives">
+        <U>
+          <T n="objective">441807<!--Objective: objective_EP19Quests_Liaison_Fetch_Deliver--></T>
+        </U>
+      </L>
+    </U>
+  </L>
+  <T n="mission_rewards_description">0x3B18AFDC<!--String: "{0.String}\n<font color='#199C2C'>{1.String}</font>"--></T>
+  <V n="mission_rewards_text" t="enabled">
+    <T n="enabled">0x5C00CA4<!--String: "Reward: Starseed Teleporter, Emotion Potion, Randomized Fruit or Seed, End of Fable"--></T>
+  </V>
+  <V n="mission_trait" t="enabled">
+    <T n="enabled">441770<!--Trait: trait_Hidden_EP19Quests_OnQuest_LiaisonFetch--></T>
+  </V>
+  <U n="objective_completion_audio">
+    <T n="audio" p="InGame\Audio\Bumper\bumper_other_goal_complete.propx">39b2aa4a:00000000:ea1687e36b0b32f3</T>
+  </U>
+  <E n="on_pick_behavior">REMOVE</E>
+  <T n="open_career_panel">True</T>
+  <V n="picker_associated_sim_filter" t="enabled">
+    <T n="enabled">441776<!--TunableSimFilter: situationFilters_EP19World_NPC_EP19QuestsLiaison--></T>
+  </V>
+  <T n="picker_description_text">0x3B18AFDC<!--String: "{0.String}\n<font color='#199C2C'>{1.String}</font>"--></T>
+  <T n="picker_disable_if_visibility_tests_fail_with_tooltip">True</T>
+  <T n="picker_replace_if_removed">True</T>
+  <V n="picker_scheduling_behavior" t="enabled">
+    <V n="enabled" t="schedule_career_gig">
+      <U n="schedule_career_gig">
+        <T n="allow_add_career">True</T>
+      </U>
+    </V>
+  </V>
+  <V n="picker_scoring" t="enabled">
+    <U n="enabled">
+      <E n="bucket">EP19Quest_Liaison</E>
+    </U>
+  </V>
+  <L n="picker_visibility_tests">
+    <L>
+      <V t="career_gig_test">
+        <U n="career_gig_test">
+          <T n="career">424758<!--Career: career_EP19Quests--></T>
+          <T n="negate">True</T>
+          <V n="test_type" t="specific_gigs">
+            <U n="specific_gigs">
+              <L n="gigs">
+                <T>441780<!--QuestGig: questGig_EP19Quests_Liaison_Fetch--></T>
+              </L>
+            </U>
+          </V>
+          <V n="tooltip" t="enabled">
+            <T n="enabled">0x67109623<!--String: "This Fable is currently in progress."--></T>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="result_based_loots" t="enabled">
+    <L n="enabled">
+      <U>
+        <E n="key">CANCELED</E>
+        <L n="value">
+          <T>441785<!--LootActions: loot_EP19Quests_Cleanup_LiaisonFetch--></T>
+        </L>
+      </U>
+      <U>
+        <E n="key">SUCCESS</E>
+        <L n="value">
+          <T>441787<!--LootActions: loot_EP19Quests_Rewards_LiaisonFetch--></T>
+        </L>
+      </U>
+    </L>
+  </V>
+</I>

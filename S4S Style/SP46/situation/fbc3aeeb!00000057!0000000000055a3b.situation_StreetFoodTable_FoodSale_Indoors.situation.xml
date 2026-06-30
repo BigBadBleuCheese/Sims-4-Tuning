@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="YardSaleSituation" i="situation" m="situations.ambient.yard_sale_situation" n="situation_StreetFoodTable_FoodSale_Indoors" s="350779">
+  <T n="_display_name">0x36511CA<!--String: "Food Sale"--></T>
+  <T n="_hidden_scoring_override">True</T>
+  <T n="_implies_greeted_status">False</T>
+  <T p="InGame\Audio\Bumper\bumper_event_start.propx" n="audio_sting_on_start">39b2aa4a:00000000:78b903461d47e4fc</T>
+  <L n="compatible_venues">
+    <T>28614<!--Venue: venue_residential--></T>
+  </L>
+  <T n="customer_situation">351229<!--YardSaleCustomerSituation: Situation_StreetFoodTable_FoodSaleCustomer_Indoors--></T>
+  <T n="duration">300</T>
+  <V n="end_sale_dialog_notification" t="enabled">
+    <U n="enabled">
+      <U n="notification">
+        <E n="expand_behavior">FORCE_EXPAND</E>
+        <V n="title" t="enabled">
+          <T n="enabled">0xFE103C04<!--String: "Food Sale Complete"--></T>
+        </V>
+      </U>
+      <T n="notification_header">0x890D0C89<!--String: "{0.String} made {1.Money}\n"--></T>
+      <T n="notification_header_default">0x2B5050B<!--String: "Food sales {0.Money}\n"--></T>
+      <T n="notification_line">0xFFD50620<!--String: "{0.Number} x {1.String} - {2.Money}"--></T>
+    </U>
+  </V>
+  <E n="exclusivity">VENUE_EMPLOYEE</E>
+  <V n="initiating_sim_on_end_naturally_rewards" t="enabled">
+    <L n="enabled">
+      <T>346940<!--LootActions: loot_StreetFoodTable_EndOfSaleRewards--></T>
+    </L>
+  </V>
+  <V n="initiating_sim_on_end_rewards" t="enabled">
+    <L n="enabled">
+      <T>339001<!--LootActions: loot_Aspiration_MarketMagnate_EarnSimoleons_SingleBake_Reset--></T>
+    </L>
+  </V>
+  <V n="initiating_sim_on_sell_rewards" t="enabled">
+    <L n="enabled">
+      <T>335238<!--LootActions: loot_Aspiration_MarketMagnate_EarnSimoleons_SingleBake--></T>
+      <T>353739<!--LootActions: loot_StreetFoodTable_Kaching--></T>
+    </L>
+  </V>
+  <V n="initiating_sim_on_start_rewards" t="enabled">
+    <L n="enabled">
+      <T>339001<!--LootActions: loot_Aspiration_MarketMagnate_EarnSimoleons_SingleBake_Reset--></T>
+    </L>
+  </V>
+  <T p="InGame\Audio\Bumper\bumper_event_major_complete.propx" n="main_goal_audio_sting">39b2aa4a:00000000:10b476550150a33f</T>
+  <U n="manage_customers_state">
+    <T n="time_between_customer_checks">20</T>
+  </U>
+  <T n="max_participants">20</T>
+  <U n="number_of_expected_customers">
+    <T n="lower_bound">8</T>
+    <T n="upper_bound">8</T>
+  </U>
+  <V n="purchase_interaction_tags" t="enabled">
+    <L n="enabled">
+      <E>Situation_StreetFoodSale</E>
+    </L>
+  </V>
+  <T n="situation_description">0x9B678821<!--String: "Sales on! Sims are heading to this lot to look for deals. Put out your best items for sale!"--></T>
+  <V n="situation_end_time_string" t="show_end_time">
+    <T n="show_end_time">0xA3E17143<!--String: "Work day ends at {0.TimeShort}"--></T>
+  </V>
+  <V n="tending_sim_on_sell_rewards" t="enabled">
+    <U n="enabled">
+      <L n="on_sell_loot_actions">
+        <T>335236<!--LootActions: loot_Aspiration_MarketMagnate_SellNObjects--></T>
+        <T>335237<!--LootActions: loot_Aspiration_MarketMagnate_EarnSimoleons--></T>
+        <T>343755<!--LootActions: loot_StreetFoodTable_Buff_PoorQualitySold--></T>
+        <T>337606<!--LootActions: loot_StreetFoodTable_Buff_MarketMagnate_ItemSimoleonGain--></T>
+        <T>345287<!--LootActions: loot_StreetFoodTable_Buff_TenderOnSituationSell--></T>
+        <T>336210<!--LootActions: loot_StreetFoodTable_Buff_SatisfiedCustomer--></T>
+      </L>
+      <L n="tend_interactions">
+        <T>336346<!--SuperInteraction: si_StreetFoodTable_TendTable--></T>
+        <T>346331<!--SuperInteraction: si_StreetFoodTable_TendTable_Child--></T>
+      </L>
+    </U>
+  </V>
+  <U n="user_job">
+    <T n="role_state">155036<!--RoleState: roleState_CraftSalesTable_Owner--></T>
+    <T n="situation_job">155035<!--SituationJob: situationJob_CraftSalesTable_Owner--></T>
+  </U>
+</I>

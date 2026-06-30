@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalObjectInteraction" i="situation_goal" m="situations.situation_goal_object_interaction" n="situationGoalObjectInteraction_LiveEvent_EV008_LookCordeliasBust" s="493806">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T n="enabled" p="InGame\UI\Icons\Events\EventGoal_bustsculpture.png">2f7d0004:00000000:b253d483f641bd9c</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x78E2B1CB<!--String: "Inspect Cordelia's Statue"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0x2C91CBE5<!--String: "Find the statue of Cordelia at the Municipal Muses Museum, and inspect it."--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>447711<!--SituationGoalLootActions: liveEvent_GoalLoot_CompleteQuestGoal--></T>
+  </L>
+  <U n="_goal_test">
+    <L n="affordances">
+      <T>493992<!--SuperInteraction: art_View_EV008_InvestigateSculpture--></T>
+    </L>
+    <E n="test_event">InteractionComplete</E>
+  </U>
+  <L n="_post_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+      </U>
+    </V>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+  <V n="goal_completion_notification" t="enabled">
+    <U n="enabled">
+      <V n="icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T n="key" p="InGame\UI\Icons\Notifications\notification_bustsculpture.png">2f7d0004:00000000:27525acefa1b360a</T>
+          </U>
+        </V>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0xB71B6AFB<!--String: "{0.SimFirstName} examined Cordelia's Statue closely...and discovered a hidden code cleverly concealed on the bottom of the artwork!"--></T>
+      </V>
+    </U>
+  </V>
+  <V n="tutorial_tip_group" t="enabled">
+    <T n="enabled">498739<!--TutorialTipGroup: tutorialTipGroup_LiveEvent_EV008_InvestigateBust--></T>
+  </V>
+</I>

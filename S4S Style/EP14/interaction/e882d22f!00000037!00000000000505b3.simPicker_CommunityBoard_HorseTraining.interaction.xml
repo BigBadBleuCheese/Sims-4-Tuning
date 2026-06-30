@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SimPickerInteraction" i="interaction" m="interactions.base.picker_interaction" n="simPicker_CommunityBoard_HorseTraining" s="329139">
+  <V n="_saveable" t="disabled" />
+  <L n="actor_continuation">
+    <U>
+      <T n="affordance">329138<!--InteractionPickerSuperInteraction: interactionPickerSI_CommunityBoard_HorseTraining--></T>
+      <E n="target">Actor</E>
+    </U>
+  </L>
+  <L n="basic_extras">
+    <V t="save_participant">
+      <U n="save_participant">
+        <E n="participant">Object</E>
+      </U>
+    </V>
+  </L>
+  <V n="cell_enabled_tests" t="enabled">
+    <L n="enabled">
+      <L>
+        <V t="buff">
+          <U n="buff">
+            <L n="blacklist">
+              <T>323052<!--Buff: buff_Pregnancy_HorseBreeding_Trimester1--></T>
+              <T>323053<!--Buff: buff_Pregnancy_HorseBreeding_Trimester2--></T>
+              <T>323054<!--Buff: buff_Pregnancy_HorseBreeding_Trimester3--></T>
+              <T>323055<!--Buff: buff_Pregnancy_HorseBreeding_InLabor--></T>
+            </L>
+            <E n="subject">PickedSim</E>
+            <V n="tooltip" t="enabled">
+              <T n="enabled">0x2601AD0<!--String: "This horse is pregnant."--></T>
+            </V>
+          </U>
+        </V>
+        <V t="buff">
+          <U n="buff">
+            <L n="blacklist">
+              <T>327961<!--Buff: buff_HorseTraining_Fatigue--></T>
+            </L>
+            <E n="subject">PickedSim</E>
+            <V n="tooltip" t="enabled">
+              <T n="enabled">0x94728BB2<!--String: "This Horse is too Fatigued to do this. Check back in {2.Timespan}."--></T>
+            </V>
+          </U>
+        </V>
+      </L>
+    </L>
+  </V>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x41CFC440<!--String: "Horse Training"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="buff_duration_remaining">
+        <U n="buff_duration_remaining">
+          <T n="buff">327961<!--Buff: buff_HorseTraining_Fatigue--></T>
+          <E n="participant">PickedSim</E>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T n="include_uninstantiated_sims">False</T>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <V n="picker_dialog" t="skills_sim_picker">
+    <U n="skills_sim_picker">
+      <T n="display_filter">False</T>
+      <T n="should_show_names">False</T>
+      <L n="skills">
+        <T>324632<!--Skill: statistic_Skill_Horse_Agility--></T>
+        <T>324634<!--Skill: statistic_Skill_Horse_Endurance--></T>
+        <T>324633<!--Skill: statistic_Skill_Horse_Jumping--></T>
+        <T>324631<!--Skill: statistic_Skill_Horse_Temperament--></T>
+      </L>
+    </U>
+  </V>
+  <V n="pie_menu_test_tooltip" t="enabled">
+    <T n="enabled">0x2CAE8479<!--String: "Requires an available Horse in the Sim's household."--></T>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <V n="sim_filter" t="sim_filter_selected">
+    <T n="sim_filter_selected">336168<!--TunableSimFilter: simPickerFilter_Horses_AE_CompatibleRegion_InFamily--></T>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">341569<!--TestSetInstance: testSetInstance_EquestrianCenter_IsOpen--></T>
+    </V>
+  </L>
+</I>

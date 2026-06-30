@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="QuestGig" i="career_gig" m="careers.missions.mission_gig" n="questGig_TarotNPCHelp_Nyon_Grim" s="388239">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_description" t="enabled">
+        <T n="enabled">0xF3817C05<!--String: "Estranged or just strange? Grim is as mystifying as the Baleful Bog itself! But I'm no fool, I know he'd be around more if he could, but he's got a business to run. Could you do me a favor? Deliver this for me. It's our own inside joke, "You never gnome when death will come!" Funny, right?"--></T>
+      </V>
+      <V n="instance_display_icon" t="enabled">
+        <T n="enabled" p="InEP17\UI\Icons\Career\Gigs\gig_GrimBeginningsGnomeOneHome.png">2f7d0004:00000000:12b4ba99be6553ef</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0xC84CE10E<!--String: "Grim Beginnings"--></T>
+      </V>
+    </U>
+  </V>
+  <T n="career">388211<!--Career: career_Tarot_NPCHelp--></T>
+  <V n="end_of_gig_notifications" t="enabled">
+    <L n="enabled">
+      <U>
+        <E n="key">SUCCESS</E>
+        <U n="value">
+          <V n="text" t="single">
+            <T n="single">0x635498D4<!--String: "{0.SimFirstName} has succeeded in helping a member of the Order of Lenore. The delivery was made without issue, though no more than a 'Thank you' was returned. {0.SimFirstName} must not be fooled by the path ahead. Keep the eyes on the prize.\n\n<b><i>Let the bell toll, nevermore.</i></b>"--></T>
+          </V>
+        </U>
+      </U>
+    </L>
+  </V>
+  <T n="gig_assignment_aspiration">388237<!--AspirationGig: aspirationGig_TarotNPCHelp_Grim--></T>
+  <V n="gig_pay" t="flat_amount">
+    <U n="flat_amount">
+      <T n="value">75</T>
+    </U>
+  </V>
+  <T n="hide_inactive_objectives">True</T>
+  <L n="loots_on_schedule">
+    <T>388242<!--LootActions: loot_Tarot_NPCHelp_NyonStarter--></T>
+  </L>
+  <L n="mission_objective_data">
+    <U>
+      <L n="weighted_objectives">
+        <U>
+          <T n="objective">388584<!--Objective: objective_Tarot_NPCHelp_Nyon_Grim--></T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <L n="weighted_objectives">
+        <U>
+          <T n="objective">388586<!--Objective: objective_Tarot_NPCHelp_Nyon_Deliver--></T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <L n="weighted_objectives">
+        <U>
+          <T n="objective">388612<!--Objective: objective_Tarot_NPCHelp_Nyon_Report02--></T>
+        </U>
+      </L>
+    </U>
+  </L>
+  <T n="mission_rewards_description">0xFC630C01<!--String: "{0.String}\n<font color='#199C2C'>{1.String}</font>"--></T>
+  <V n="mission_rewards_text" t="enabled">
+    <T n="enabled">0xC93B6E58<!--String: "Reward: The Fool Tarot Card"--></T>
+  </V>
+  <V n="mission_trait" t="enabled">
+    <T n="enabled">388582<!--Trait: trait_Hidden_TarotCollectible_OnQuest_Nyon02--></T>
+  </V>
+  <U n="objective_completion_audio">
+    <T n="audio" p="InGame\Audio\Bumper\bumper_other_goal_complete.propx">39b2aa4a:00000000:ea1687e36b0b32f3</T>
+  </U>
+  <E n="on_pick_behavior">REMOVE</E>
+  <T n="open_career_panel">True</T>
+  <V n="picker_associated_sim_filter" t="enabled">
+    <T n="enabled">387380<!--TunableSimFilter: situationFilters_Tarot_NPC_Nyon--></T>
+  </V>
+  <T n="picker_description_text">0x44B03088<!--String: "{0.String}\n<font color='#199C2C'>{1.String}</font>"--></T>
+  <T n="picker_disable_if_visibility_tests_fail_with_tooltip">True</T>
+  <T n="picker_replace_if_removed">True</T>
+  <V n="picker_scheduling_behavior" t="enabled">
+    <V n="enabled" t="schedule_career_gig">
+      <U n="schedule_career_gig">
+        <T n="allow_add_career">True</T>
+      </U>
+    </V>
+  </V>
+  <V n="picker_scoring" t="enabled">
+    <U n="enabled">
+      <E n="bucket">TarotHelp_Nyon</E>
+    </U>
+  </V>
+  <L n="picker_visibility_tests">
+    <L>
+      <V t="unlock_earned">
+        <U n="unlock_earned">
+          <V n="tooltip" t="enabled">
+            <T n="enabled">0x97DCDE01<!--String: "This favor has already been completed."--></T>
+          </V>
+          <V n="unlock_to_test" t="aspiration">
+            <U n="aspiration">
+              <T n="aspiration">388237<!--AspirationGig: aspirationGig_TarotNPCHelp_Grim--></T>
+              <T n="negate">True</T>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="career_gig_test">
+        <U n="career_gig_test">
+          <T n="career">388211<!--Career: career_Tarot_NPCHelp--></T>
+          <T n="negate">True</T>
+          <V n="test_type" t="specific_gigs">
+            <U n="specific_gigs">
+              <L n="gigs">
+                <T>388239<!--QuestGig: questGig_TarotNPCHelp_Nyon_Grim--></T>
+              </L>
+            </U>
+          </V>
+          <V n="tooltip" t="enabled">
+            <T n="enabled">0xB3B76E64<!--String: "This favor is currently in progress."--></T>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="result_based_loots" t="enabled">
+    <L n="enabled">
+      <U>
+        <E n="key">CANCELED</E>
+        <L n="value">
+          <T>426681<!--LootActions: loot_Tarot_NPCHelp_ObjectiveTracker_Cleanup_NyonGrim--></T>
+        </L>
+      </U>
+      <U>
+        <E n="key">SUCCESS</E>
+        <L n="value">
+          <T>388662<!--LootActions: loot_Tarot_Cards_Fool--></T>
+        </L>
+      </U>
+    </L>
+  </V>
+</I>

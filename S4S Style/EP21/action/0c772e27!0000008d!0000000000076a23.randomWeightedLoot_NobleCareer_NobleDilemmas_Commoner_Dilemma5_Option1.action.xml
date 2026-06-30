@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="RandomWeightedLoot" i="action" m="interactions.utils.loot" n="randomWeightedLoot_NobleCareer_NobleDilemmas_Commoner_Dilemma5_Option1" s="485923">
+  <L n="random_loot_actions">
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">485920<!--LootActions: loot_NobleCareer_NobleDIlemmas5_Option1_Success--></T>
+      </V>
+      <U n="weight">
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">1.2</T>
+            <L n="tests">
+              <L>
+                <V t="relationship">
+                  <U n="relationship">
+                    <U n="relationship_score_interval">
+                      <T n="lower_bound">30</T>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">1.5</T>
+            <L n="tests">
+              <L>
+                <V t="test_set_reference">
+                  <T n="test_set_reference">472717<!--TestSetInstance: testSet_NobleFavor_FavorAlignment--></T>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">1.5</T>
+            <L n="tests">
+              <L>
+                <V t="trait">
+                  <U n="trait">
+                    <E n="subject">TargetSim</E>
+                    <L n="whitelist_traits">
+                      <T>453551<!--Trait: trait_PlantLover--></T>
+                      <T>162668<!--Trait: trait_PlantSim--></T>
+                      <T>35511<!--Trait: trait_SuperGreenThumb--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">485919<!--LootActions: loot_NobleCareer_NobleDIlemmas5_Option1_Failure--></T>
+      </V>
+      <U n="weight">
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">1.2</T>
+            <L n="tests">
+              <L>
+                <V t="relationship">
+                  <U n="relationship">
+                    <U n="relationship_score_interval">
+                      <T n="lower_bound">-100</T>
+                      <T n="upper_bound">30</T>
+                    </U>
+                    <L n="subject">
+                      <E>Actor</E>
+                    </L>
+                    <L n="target_sim">
+                      <E>TargetSim</E>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">1.5</T>
+            <L n="tests">
+              <L>
+                <V t="test_set_reference">
+                  <T n="test_set_reference">476705<!--TestSetInstance: testSet_NobleFavor_NOTFavorAlignment--></T>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">1.5</T>
+            <L n="tests">
+              <L>
+                <V t="trait">
+                  <U n="trait">
+                    <E n="subject">TargetSim</E>
+                    <L n="whitelist_traits">
+                      <T>453551<!--Trait: trait_PlantLover--></T>
+                      <T>162668<!--Trait: trait_PlantSim--></T>
+                      <T>35511<!--Trait: trait_SuperGreenThumb--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+  </L>
+</I>

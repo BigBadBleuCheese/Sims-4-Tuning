@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="ExitCondition" i="snippet" m="snippets" n="exitCondition_MotiveNearFailBladder" s="40707">
+  <U n="value">
+    <L n="conditions">
+      <V t="stat_based">
+        <U n="stat_based">
+          <T n="stat">16652<!--Commodity: motive_Bladder--></T>
+          <U n="threshold">
+            <E n="comparison">LESS_OR_EQUAL</E>
+            <T n="value">-85</T>
+          </U>
+        </U>
+      </V>
+      <V t="time_based">
+        <U n="time_based">
+          <T n="max_time">5</T>
+          <T n="min_time">5</T>
+        </U>
+      </V>
+    </L>
+    <E n="interaction_action">GO_INERTIAL</E>
+    <L n="tests">
+      <L>
+        <V t="trait">
+          <U n="trait">
+            <L n="blacklist_traits">
+              <T>218444<!--Trait: trait_Humanoid_Robots_MainTrait--></T>
+              <T>153867<!--Trait: trait_OccultVampire_Manifested--></T>
+              <T>133125<!--Trait: trait_toddler--></T>
+              <T>266297<!--Trait: trait_infant--></T>
+              <T>34314<!--Trait: trait_baby--></T>
+              <T>162668<!--Trait: trait_PlantSim--></T>
+            </L>
+          </U>
+        </V>
+      </L>
+    </L>
+  </U>
+</I>

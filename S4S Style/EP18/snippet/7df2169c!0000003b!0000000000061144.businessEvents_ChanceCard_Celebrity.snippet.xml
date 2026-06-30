@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="AdventureMoment" i="snippet" m="snippets" n="businessEvents_ChanceCard_Celebrity" s="397636">
+  <U n="value">
+    <L n="_finish_actions">
+      <U>
+        <L n="action_results">
+          <U>
+            <L n="loot_actions">
+              <T>398722<!--LootActions: loot_BusinessEvents_Rank_Gain_Medium--></T>
+              <T>398682<!--LootActions: loot_BusinessEvents_Reputation_Gain_Medium--></T>
+              <T>399043<!--LootActions: loot_BusinessEvents_ReputationAlignment_DreamerAligned--></T>
+              <T>399046<!--LootActions: loot_BusinessEvents_ReputationAlignment_SchemerMisaligned--></T>
+            </L>
+            <V n="notification" t="enabled">
+              <V n="enabled" t="literal">
+                <U n="literal">
+                  <V n="icon" t="enabled">
+                    <V n="enabled" t="small_business" />
+                  </V>
+                  <V n="primary_icon_response" t="enabled">
+                    <U n="enabled">
+                      <E n="ui_request">SHOW_SMALL_BUSINESS_PANEL</E>
+                    </U>
+                  </V>
+                  <V n="secondary_icon" t="enabled">
+                    <V n="enabled" t="participant" />
+                  </V>
+                  <V n="text" t="single">
+                    <T n="single">0x6E41C7D1<!--String: "Well, that worked! A refresh to the site brought more traffic, and it's picked up some traction!"--></T>
+                  </V>
+                </U>
+              </V>
+            </V>
+          </U>
+        </L>
+        <V n="display_subtext" t="single">
+          <T n="single">0xA3AF2BF7<!--String: "Gain Renown and Dreamer Alignment"--></T>
+        </V>
+        <V n="display_text" t="single">
+          <T n="single">0x80DB199D<!--String: "Yes to Free Stuff!"--></T>
+        </V>
+      </U>
+      <U>
+        <L n="action_results">
+          <U>
+            <L n="loot_actions">
+              <T>398710<!--LootActions: loot_BusinessEvents_Reputation_Loss_Medium--></T>
+              <T>398722<!--LootActions: loot_BusinessEvents_Rank_Gain_Medium--></T>
+              <T>399045<!--LootActions: loot_BusinessEvents_ReputationAlignment_SchemerAligned--></T>
+              <T>399044<!--LootActions: loot_BusinessEvents_ReputationAlignment_DreamerMisaligned--></T>
+            </L>
+            <V n="notification" t="enabled">
+              <V n="enabled" t="literal">
+                <U n="literal">
+                  <V n="icon" t="enabled">
+                    <V n="enabled" t="small_business" />
+                  </V>
+                  <V n="primary_icon_response" t="enabled">
+                    <U n="enabled">
+                      <E n="ui_request">SHOW_SMALL_BUSINESS_PANEL</E>
+                    </U>
+                  </V>
+                  <V n="secondary_icon" t="enabled">
+                    <V n="enabled" t="participant" />
+                  </V>
+                  <V n="text" t="single">
+                    <T n="single">0x192456EA<!--String: "With the full package deal, {0.SimFirstName}'s Small Business site is refreshed and was purged of any negative reviews. The past is in the past, right?"--></T>
+                  </V>
+                </U>
+              </V>
+            </V>
+          </U>
+        </L>
+        <L n="availability_tests">
+          <L>
+            <V t="simoleon_value">
+              <U n="simoleon_value">
+                <E n="test_event">AllSimoloenEvents</E>
+                <V n="value_context" t="total_cash" />
+                <U n="value_threshold">
+                  <E n="comparison">GREATER_OR_EQUAL</E>
+                  <T n="value">750</T>
+                </U>
+              </U>
+            </V>
+          </L>
+        </L>
+        <V n="cost" t="simoleon_cost">
+          <U n="simoleon_cost">
+            <T n="amount">750</T>
+          </U>
+        </V>
+        <V n="disabled_text" t="enabled">
+          <T n="enabled">0x3CF3831F<!--String: "{0.SimFirstName} does not have enough funds."--></T>
+        </V>
+        <V n="display_subtext" t="single">
+          <T n="single">0x91CA8774<!--String: "Gain Renown and Schemer Alignment"--></T>
+        </V>
+        <V n="display_text" t="single">
+          <T n="single">0xC47C52C4<!--String: "Pay for Full Package"--></T>
+        </V>
+      </U>
+    </L>
+    <V n="_visibility" t="show_dialog">
+      <U n="show_dialog">
+        <V n="audio_sting" t="enabled">
+          <U n="enabled">
+            <T n="audio" p="InEP18\Audio\music\bumpers\bumper_ep18_business_boon.propx">39b2aa4a:00000000:00100036580933ed</T>
+            <T n="immediate_audio">False</T>
+          </U>
+        </V>
+        <E n="dialog_style">LARGE_ICON</E>
+        <V n="icon" t="enabled">
+          <V n="enabled" t="resource_key">
+            <U n="resource_key">
+              <T n="key" p="InEP18\UI\Icons\ChanceCard\ChanceCard_WebsitePerformanceBoost.png">2f7d0004:00000000:7272923a588500a2</T>
+            </U>
+          </V>
+        </V>
+        <V n="text" t="single">
+          <T n="single">0xB1109F29<!--String: "A freelance web creator has reached out offering to optimize {0.SimFirstName}'s business site for free. With a little more investment, {0.SimPronounSubjective} could get the full package deal, which includes a clean-slate of any negative reviews. Oddly specific..."--></T>
+        </V>
+        <V n="title" t="enabled">
+          <T n="enabled">0x1904D01B<!--String: "Website Performance Boost"--></T>
+        </V>
+      </U>
+    </V>
+  </U>
+</I>

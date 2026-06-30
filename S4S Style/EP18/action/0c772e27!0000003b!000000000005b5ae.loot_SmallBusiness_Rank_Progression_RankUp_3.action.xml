@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_SmallBusiness_Rank_Progression_RankUp_3" s="374190">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0xA872B1E<!--String: "(From Increasing Renown)"--></T>
+          </V>
+          <T n="buff_type">374198<!--Buff: buff_SmallBusiness_Rank_Progression_RankUp_3--></T>
+        </U>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T p="InGame\UI\Icons\Ranks\BusinessRank_03_128.png" n="key">2f7d0004:00000000:57dd20a88bca965d</T>
+                </U>
+              </V>
+            </V>
+            <V n="primary_icon_response" t="enabled">
+              <U n="enabled">
+                <E n="ui_request">SHOW_SMALL_BUSINESS_PERKS_PANEL</E>
+              </U>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xF7DF8A94<!--String: "{0.SimFirstName}'s Small Business is now a Neighborhood Gem!\n\n{0.SimFirstName} has earned 2 Business Perk Points to purchase Business Perks. {0.SimPronounPossessiveDependent|xxUpper} Small Business will now see an increased base price for Entry and Hourly Fees, as well as allowing more Customers to attend."--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x5EEDDAF5<!--String: "Neighborhood Gem"--></T>
+            </V>
+            <L n="ui_responses">
+              <U>
+                <T n="text">0x2525E970<!--String: "Open Small Business Perks"--></T>
+                <E n="ui_request">SHOW_SMALL_BUSINESS_PERKS_PANEL</E>
+              </U>
+            </L>
+            <E n="visual_type">SPECIAL_MOMENT</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="bucks_loot">
+      <U n="bucks_loot">
+        <T n="amount">2</T>
+        <E n="bucks_type">BusinessPerkBucks</E>
+      </U>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">200</T>
+          <T n="stat">384512<!--Statistic: statistic_OwnableSmallBusiness_BusinessValue--></T>
+        </U>
+      </V>
+    </V>
+    <V t="schedule_drama_node">
+      <U n="schedule_drama_node">
+        <T n="drama_node">388823<!--DialogDramaNode: dialogDramaNode_SmallBusiness_Perks_PointsNotUsed--></T>
+        <L n="tests">
+          <L>
+            <V t="drama_node">
+              <U n="drama_node">
+                <T n="check_active_nodes">True</T>
+                <L n="drama_nodes">
+                  <T>388823<!--DialogDramaNode: dialogDramaNode_SmallBusiness_Perks_PointsNotUsed--></T>
+                </L>
+                <T n="exists">False</T>
+                <V n="receiver_sim" t="enabled">
+                  <E n="enabled">Actor</E>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+        <V n="time_delay" t="enabled">
+          <U n="enabled">
+            <T n="days">1</T>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="trait">
+        <U n="trait">
+          <T n="apply_thresholds_on_individual_basis">True</T>
+          <L n="blacklist_traits">
+            <T>444235<!--Trait: trait_SmallBusiness_Rank_Transferred--></T>
+          </L>
+          <T n="num_blacklist_allowed">0</T>
+          <T n="num_whitelist_required">0</T>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

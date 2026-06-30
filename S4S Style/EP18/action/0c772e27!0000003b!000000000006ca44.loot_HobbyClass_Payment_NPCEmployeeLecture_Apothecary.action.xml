@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_HobbyClass_Payment_NPCEmployeeLecture_Apothecary" s="444996">
+  <L n="loot_actions">
+    <V t="payment_loot">
+      <U n="payment_loot">
+        <V n="payment" t="literal">
+          <U n="literal">
+            <U n="cost_modifiers">
+              <T n="base_value">20</T>
+              <L n="multipliers">
+                <U>
+                  <T n="multiplier">1.2</T>
+                  <L n="tests">
+                    <L>
+                      <V t="skill_test">
+                        <U n="skill_test">
+                          <T n="skill">439222<!--Skill: statistic_Skill_AdultMajor_Apothecary--></T>
+                          <V n="skill_range" t="interval">
+                            <U n="interval">
+                              <U n="skill_interval">
+                                <T n="lower_bound">6</T>
+                                <T n="upper_bound">6</T>
+                              </U>
+                            </U>
+                          </V>
+                          <E n="subject">Actor</E>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+                <U>
+                  <T n="multiplier">1.45</T>
+                  <L n="tests">
+                    <L>
+                      <V t="skill_test">
+                        <U n="skill_test">
+                          <T n="skill">439222<!--Skill: statistic_Skill_AdultMajor_Apothecary--></T>
+                          <V n="skill_range" t="interval">
+                            <U n="interval">
+                              <U n="skill_interval">
+                                <T n="lower_bound">7</T>
+                                <T n="upper_bound">7</T>
+                              </U>
+                            </U>
+                          </V>
+                          <E n="subject">Actor</E>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+                <U>
+                  <T n="multiplier">1.8</T>
+                  <L n="tests">
+                    <L>
+                      <V t="skill_test">
+                        <U n="skill_test">
+                          <T n="skill">439222<!--Skill: statistic_Skill_AdultMajor_Apothecary--></T>
+                          <V n="skill_range" t="interval">
+                            <U n="interval">
+                              <U n="skill_interval">
+                                <T n="lower_bound">8</T>
+                                <T n="upper_bound">8</T>
+                              </U>
+                            </U>
+                          </V>
+                          <E n="subject">Actor</E>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+                <U>
+                  <T n="multiplier">2.4</T>
+                  <L n="tests">
+                    <L>
+                      <V t="skill_test">
+                        <U n="skill_test">
+                          <T n="skill">439222<!--Skill: statistic_Skill_AdultMajor_Apothecary--></T>
+                          <V n="skill_range" t="interval">
+                            <U n="interval">
+                              <U n="skill_interval">
+                                <T n="lower_bound">9</T>
+                                <T n="upper_bound">9</T>
+                              </U>
+                            </U>
+                          </V>
+                          <E n="subject">Actor</E>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+                <U>
+                  <T n="multiplier">3</T>
+                  <L n="tests">
+                    <L>
+                      <V t="skill_test">
+                        <U n="skill_test">
+                          <T n="skill">439222<!--Skill: statistic_Skill_AdultMajor_Apothecary--></T>
+                          <V n="skill_range" t="interval">
+                            <U n="interval">
+                              <U n="skill_interval">
+                                <T n="lower_bound">10</T>
+                                <T n="upper_bound">10</T>
+                              </U>
+                            </U>
+                          </V>
+                          <E n="subject">Actor</E>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+              </L>
+            </U>
+            <V n="payment_cost" t="statistic_on_sim">
+              <U n="statistic_on_sim">
+                <L n="payment_destinations">
+                  <V t="open_small_business" />
+                </L>
+                <T n="statistic">414027<!--Statistic: statistic_HobbyClass_NPCEmployeeLectureListeningTime--></T>
+              </U>
+            </V>
+            <V n="payment_source" t="no_source" />
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">414027<!--Statistic: statistic_HobbyClass_NPCEmployeeLectureListeningTime--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <T n="value">1</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_remove">
+        <U n="statistic_remove">
+          <T n="stat">414027<!--Statistic: statistic_HobbyClass_NPCEmployeeLectureListeningTime--></T>
+          <L n="tests">
+            <L>
+              <V t="statistic">
+                <U n="statistic">
+                  <T n="stat">414027<!--Statistic: statistic_HobbyClass_NPCEmployeeLectureListeningTime--></T>
+                  <V n="threshold" t="value_threshold">
+                    <U n="value_threshold">
+                      <T n="value">1</T>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="situation_job_test">
+        <U n="situation_job_test">
+          <L n="situation_jobs">
+            <T>399327<!--SituationJob: jobs_SmallBusinessEmployee_Work--></T>
+            <T>401789<!--SituationJob: jobs_SmallBusinessEmployee_Work_Owner--></T>
+          </L>
+        </U>
+      </V>
+      <V t="situation_job_test">
+        <U n="situation_job_test">
+          <T n="negate">True</T>
+          <L n="situation_jobs">
+            <T>397235<!--SituationJob: job_HobbyClass_Instructor--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="reciteBook_Microphone" s="474983">
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="time_based">
+                <U n="time_based">
+                  <T n="max_time">30</T>
+                  <T n="min_time">25</T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+      </L>
+      <V n="content" t="looping_content">
+        <U n="looping_content">
+          <U n="animation_ref">
+            <T n="factory">474982<!--AnimationElement: reciteBook_Microphone_Loop--></T>
+            <U n="overrides">
+              <L n="props">
+                <U>
+                  <T n="key">book</T>
+                  <U n="value">
+                    <V n="alternative_prop_definitions" t="enabled">
+                      <U n="enabled">
+                        <V n="object_by_participant" t="enabled" />
+                      </U>
+                    </V>
+                    <T n="definition">32513</T>
+                  </U>
+                </U>
+              </L>
+            </U>
+          </U>
+        </U>
+      </V>
+      <V n="periodic_stat_change" t="enabled">
+        <U n="enabled">
+          <L n="operations">
+            <V t="dynamic_skill">
+              <U n="dynamic_skill">
+                <U n="skill_loot_data_override">
+                  <E n="effectiveness">Tiny</E>
+                  <T n="stat">16699<!--Skill: statistic_Skill_AdultMajor_Charisma--></T>
+                </U>
+              </U>
+            </V>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="trigger_reaction">
+      <U n="trigger_reaction">
+        <T n="reaction_affordance">477230<!--SuperInteraction: sI_Recite_Watch--></T>
+        <L n="reaction_constraints">
+          <V t="circle">
+            <U n="circle">
+              <T n="ideal_radius">3</T>
+              <T n="ideal_radius_width">3</T>
+              <T n="radius">6</T>
+            </U>
+          </V>
+        </L>
+        <V n="timing" t="at_beginning" />
+        <T n="trigger_on_late_arrivals">True</T>
+      </U>
+    </V>
+  </L>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xAC14C3A0<!--String: "Recite"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T n="ignore_autonomy_rules_if_user_directed">True</T>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <V n="animation_ref" t="enabled">
+              <U n="enabled">
+                <T n="factory">474984<!--AnimationElement: reciteBook_Microphone_Success--></T>
+              </U>
+            </V>
+          </U>
+        </U>
+        <U>
+          <U n="outcome">
+            <V n="animation_ref" t="enabled">
+              <U n="enabled">
+                <T n="factory">474988<!--AnimationElement: reciteBook_Microphone_Failure--></T>
+              </U>
+            </V>
+            <E n="outcome_result">FAILURE</E>
+          </U>
+        </U>
+      </L>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

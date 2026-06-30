@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_EP19NPC_LiaisonLoop_Pay" s="445389">
+  <L n="loot_actions">
+    <V t="trait_remove">
+      <U n="trait_remove">
+        <V n="trait" t="specific_trait">
+          <U n="specific_trait">
+            <T n="specific_trait">443901<!--Trait: trait_ProblemFairy--></T>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0xFA332B5C<!--String: "(From Paying Restitution)"--></T>
+          </V>
+          <T n="buff_type">445390<!--Buff: buff_EP19NPCs_tense--></T>
+        </U>
+      </U>
+    </V>
+    <V t="money_loot">
+      <U n="money_loot">
+        <V n="amount" t="literal">
+          <U n="literal">
+            <T n="value">-100</T>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="relationship_bits_with_filter">
+      <U n="relationship_bits_with_filter">
+        <U n="filter_settings">
+          <T n="sim_filter">441776<!--TunableSimFilter: situationFilters_EP19World_NPC_EP19QuestsLiaison--></T>
+        </U>
+        <L n="rel_bits">
+          <T>15809<!--RelationshipBit: relationshipBits_Friendship_NeutralBit--></T>
+        </L>
+        <T n="relationship_score">5</T>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>TargetSim</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x54CB2E30<!--String: "The Council appreciates your payment and your status has been absolved. Stay out of trouble, would ya?"--></T>
+            </V>
+            <E n="visual_type">SPEECH</E>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+</I>

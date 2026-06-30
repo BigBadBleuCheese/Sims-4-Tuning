@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="sI_WaterTrough_Sim_To_Horse_AskToDrink_TargetSim" s="341922">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="circle">
+            <U n="circle">
+              <T n="radius">5</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="value" t="facing" />
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">322537<!--AnimationElement: horseSocialAnims_Sim2Horse_TalkTo_Neutral--></T>
+      </U>
+    </U>
+  </V>
+  <V n="basic_reserve_object" t="disabled" />
+  <T n="category">324137<!--PieMenuCategory: pieMenuCategory_PetCare_Horses--></T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xC17271A3<!--String: "Call Horse to Drink"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <L n="basic_extras">
+              <V t="balloon">
+                <U n="balloon">
+                  <L n="balloon_choices">
+                    <U>
+                      <V n="item" t="balloon_icon">
+                        <U n="balloon_icon">
+                          <V n="icon" t="participant">
+                            <U n="participant">
+                              <L n="participant_type">
+                                <E>Object</E>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </L>
+                  <L n="balloon_target">
+                    <E>PickedSim</E>
+                  </L>
+                </U>
+              </V>
+            </L>
+            <L n="continuation">
+              <U>
+                <E n="actor">TargetSim</E>
+                <T n="affordance">341923<!--AutonomousObjectTaggedPickerInteraction: autonomous_ObjectPicker_Horses_WaterTrough--></T>
+              </U>
+            </L>
+            <L n="loot_list">
+              <T>324515<!--LootActions: loot_Relationship_SimToPet_Gain_Small_PickedSim--></T>
+            </L>
+          </U>
+          <U n="weight">
+            <T n="base_value">1</T>
+          </U>
+        </U>
+      </L>
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="basic_extras">
+                  <V t="balloon">
+                    <U n="balloon">
+                      <L n="balloon_choices">
+                        <U>
+                          <V n="item" t="balloon_icon">
+                            <U n="balloon_icon">
+                              <V n="icon" t="participant">
+                                <U n="participant">
+                                  <L n="participant_type">
+                                    <E>Object</E>
+                                  </L>
+                                </U>
+                              </V>
+                            </U>
+                          </V>
+                        </U>
+                      </L>
+                      <L n="balloon_target">
+                        <E>PickedSim</E>
+                      </L>
+                    </U>
+                  </V>
+                </L>
+                <L n="continuation">
+                  <U>
+                    <E n="actor">PickedSim</E>
+                    <T n="affordance">340961<!--SuperInteraction: sI_WaterTrough_Horse_Drink--></T>
+                  </U>
+                  <U>
+                    <E n="actor">TargetSim</E>
+                    <T n="affordance">328110<!--SuperInteraction: reaction_Horse_Outcome_Failure--></T>
+                    <E n="target">Invalid</E>
+                  </U>
+                </L>
+                <L n="loot_list">
+                  <T>324515<!--LootActions: loot_Relationship_SimToPet_Gain_Small_PickedSim--></T>
+                </L>
+              </U>
+              <U n="weight">
+                <T n="base_value">1</T>
+              </U>
+            </U>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="basic_extras">
+                  <V t="balloon">
+                    <U n="balloon">
+                      <L n="balloon_choices">
+                        <U>
+                          <V n="item" t="balloon_icon">
+                            <U n="balloon_icon">
+                              <V n="icon" t="participant">
+                                <U n="participant">
+                                  <L n="participant_type">
+                                    <E>Object</E>
+                                  </L>
+                                </U>
+                              </V>
+                            </U>
+                          </V>
+                        </U>
+                      </L>
+                      <L n="balloon_target">
+                        <E>PickedSim</E>
+                      </L>
+                    </U>
+                  </V>
+                </L>
+                <L n="continuation">
+                  <U>
+                    <E n="actor">TargetSim</E>
+                    <T n="affordance">341923<!--AutonomousObjectTaggedPickerInteraction: autonomous_ObjectPicker_Horses_WaterTrough--></T>
+                  </U>
+                </L>
+                <L n="loot_list">
+                  <T>324515<!--LootActions: loot_Relationship_SimToPet_Gain_Small_PickedSim--></T>
+                </L>
+              </U>
+              <U n="weight">
+                <T n="base_value">4</T>
+              </U>
+            </U>
+          </L>
+        </U>
+      </L>
+      <T n="use_fallback_as_default">True</T>
+    </U>
+  </V>
+  <T n="pie_menu_priority">16</T>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>317537<!--Buff: buff_HorseRiding_SimMounted--></T>
+        </L>
+      </U>
+    </V>
+    <V t="object_criteria">
+      <U n="object_criteria">
+        <V n="identity_test" t="tags">
+          <U n="tags">
+            <L n="tag_set">
+              <E>Func_WaterTrough</E>
+            </L>
+          </U>
+        </V>
+        <T n="on_active_lot">True</T>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

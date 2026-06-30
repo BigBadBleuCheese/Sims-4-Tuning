@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="EP16World_WallOfLove_WriteDeclarationOfLove" s="369202">
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">369257<!--AnimationElement: EP16World_WallOfLove_Attach--></T>
+      </U>
+    </U>
+  </V>
+  <V n="canonical_animation" t="enabled">
+    <U n="enabled">
+      <T n="factory">369257<!--AnimationElement: EP16World_WallOfLove_Attach--></T>
+    </U>
+  </V>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xC9BC338<!--String: "Write Love Declarations"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="basic_extras">
+          <V t="buff_fire_and_forget">
+            <U n="buff_fire_and_forget">
+              <U n="buff">
+                <V n="buff_reason" t="enabled">
+                  <T n="enabled">0x3CFEEEBD<!--String: "(From Writing a Declaration of Love)"--></T>
+                </V>
+                <T n="buff_type">369299<!--Buff: buff_EP16World_WallOfLove_SymbolOfLoveAttached--></T>
+              </U>
+              <V n="timing" t="at_beginning" />
+            </U>
+          </V>
+          <V t="notification">
+            <U n="notification">
+              <V n="dialog" t="single">
+                <V n="single" t="literal">
+                  <U n="literal">
+                    <V n="icon" t="enabled">
+                      <V n="enabled" t="participant">
+                        <U n="participant">
+                          <L n="participant_type">
+                            <E>Object</E>
+                          </L>
+                        </U>
+                      </V>
+                    </V>
+                    <V n="secondary_icon" t="enabled">
+                      <V n="enabled" t="participant" />
+                    </V>
+                    <V n="text" t="single">
+                      <T n="single">0x1A767170<!--String: "{0.SimFirstName} wrote on the Wall of Love expressing just how much {0.SimPronounSubjective} loves a special you know who. You don't know who? Well secrets are secrets. Too bad you can't read Simlish."--></T>
+                    </V>
+                  </U>
+                </V>
+              </V>
+              <V n="timing" t="at_beginning" />
+            </U>
+          </V>
+        </L>
+        <L n="loot_list">
+          <T>369485<!--LootActions: loot_EP16World_WallOfLove_WriteDeclaration--></T>
+        </L>
+      </U>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <V n="whitelist" t="enabled">
+          <L n="enabled">
+            <T>374159<!--Buff: buff_inRelationship--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+    <V t="in_use">
+      <U n="in_use">
+        <T n="negate">True</T>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x48FA29BB<!--String: "Someone else is currently writing on the wall."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

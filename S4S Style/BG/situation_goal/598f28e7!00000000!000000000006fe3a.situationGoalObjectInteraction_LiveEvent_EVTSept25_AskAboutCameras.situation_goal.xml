@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalObjectInteraction" i="situation_goal" m="situations.situation_goal_object_interaction" n="situationGoalObjectInteraction_LiveEvent_EVTSept25_AskAboutCameras" s="458298">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T n="enabled" p="InGame\UI\Icons\Headlines\Events\ImaginationEvent_EventBuddy.png">2f7d0004:00000000:925412d5170ec59a</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x2C630D4F<!--String: "Ask a Stuffed Animal about Cameras"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0x27C45B41<!--String: "Maybe a Stuffed Animal knows something new about cameras never thought of before."--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>447711<!--SituationGoalLootActions: liveEvent_GoalLoot_CompleteQuestGoal--></T>
+    <T>478545<!--SituationGoalLootActions: liveEvent_GoalLoot_EVTSept25_Autonomy_SocialsRemove--></T>
+  </L>
+  <U n="_goal_test">
+    <L n="affordances">
+      <T>458299<!--SuperInteraction: stuffedAnimal_Talk_AskAboutCameras_EVTSept25--></T>
+    </L>
+    <E n="test_event">InteractionComplete</E>
+  </U>
+  <L n="_post_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+      </U>
+    </V>
+  </L>
+  <L n="_pre_goal_loot_list">
+    <T>478544<!--SituationGoalLootActions: liveEvent_GoalLoot_EVTSept25_Autonomy_Socials--></T>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+  <V n="goal_completion_notification" t="enabled">
+    <U n="enabled">
+      <V n="icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T n="key" p="InGame\UI\Icons\Headlines\Events\ImaginationEvent_EventTNS.png">2f7d0004:00000000:a7d998e23b3c9bc3</T>
+          </U>
+        </V>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0x520BEDC7<!--String: "The Stuffed Animal said "A camera is a window to the imagination", and {0.SimFirstName} is eager to explore the world through this special lens!"--></T>
+      </V>
+    </U>
+  </V>
+  <V n="tutorial_tip_group" t="enabled">
+    <T n="enabled">468681<!--TutorialTipGroup: tutorialTipGroup_LiveEvent_EVTSept25_InteractWithStuffedAnimal--></T>
+  </V>
+</I>

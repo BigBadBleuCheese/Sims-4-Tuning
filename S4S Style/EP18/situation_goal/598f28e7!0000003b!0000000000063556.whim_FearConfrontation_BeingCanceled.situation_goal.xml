@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalActor" i="situation_goal" m="situations.situation_goal_actor" n="whim_FearConfrontation_BeingCanceled" s="406870">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T n="enabled" p="InEP18\UI\Icons\Whims\whims_FearofBeingCancelled.png">2f7d0004:00000000:2297c382247b2dff</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x7E07324D<!--String: "Get Mentored while Confident"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0xCA452FE7<!--String: "Get Mentored in any skill while feeling Confident."--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>272907<!--SituationGoalLootActions: goalLoot_WantFear_Fulfillment_Gain--></T>
+    <T>291795<!--SituationGoalLootActions: goalLoot_Want_Fulfilled_BuffGain_Happy--></T>
+    <T>421976<!--SituationGoalLootActions: situationGoalLootActions_Fear_BeingCanceled_Progress--></T>
+  </L>
+  <V n="_goal_test" t="buff">
+    <U n="buff">
+      <V n="whitelist" t="enabled">
+        <L n="enabled">
+          <T>408832<!--Buff: buff_SmallBusiness_Reputation_Consequences_BeingMentored_Hidden--></T>
+        </L>
+      </V>
+    </U>
+  </V>
+  <L n="_post_tests">
+    <V t="buff">
+      <U n="buff">
+        <V n="whitelist" t="enabled">
+          <L n="enabled">
+            <T>12830<!--Buff: MoodBuff_Hidden_Confident--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+  </L>
+  <L n="_pre_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="trait">
+      <U n="trait">
+        <L n="blacklist_traits">
+          <T>421975<!--Trait: trait_SmallBusiness_Reputation_Consequences_FearWhimCompleted_Hidden--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T n="_score">25</T>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+  <V n="goal_completion_notification" t="enabled">
+    <U n="enabled">
+      <V n="icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T n="key" p="InEP18\UI\Icons\Notifications\FearofBeingCanceled_TNS.png">2f7d0004:00000000:a2bc898357a7db88</T>
+          </U>
+        </V>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0xBE1A6FB9<!--String: "{0.SimFirstName} has taken a step towards gaining trust of the community! There is still some work to do, but this is a good start."--></T>
+      </V>
+      <V n="title" t="enabled">
+        <T n="enabled">0xFD2950EB<!--String: "Overcoming Fear in Progress"--></T>
+      </V>
+    </U>
+  </V>
+</I>

@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SimPickerInteraction" i="interaction" m="interactions.base.picker_interaction" n="simPicker_RomanticBlanket_PicnicTogether_FlirtyHeartCookies" s="368342">
+  <V n="_saveable" t="disabled" />
+  <L n="actor_continuation">
+    <U>
+      <T n="affordance">368332<!--SuperInteraction: romanticBlanket_Picnic_StartSituation_FlirtyHeartCookies--></T>
+    </U>
+  </L>
+  <L n="basic_extras">
+    <V t="payment">
+      <U n="payment">
+        <T n="display_only">True</T>
+        <V n="payment" t="literal">
+          <U n="literal">
+            <V n="payment_cost" t="amount">
+              <U n="amount">
+                <T n="amount">50</T>
+              </U>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="category">368302<!--PieMenuCategory: pieMenuCategory_RomanticBlanket_Picnic--></T>
+  <V n="cell_enabled_tests" t="enabled">
+    <L n="enabled">
+      <L>
+        <V t="buff">
+          <U n="buff">
+            <L n="blacklist">
+              <T>272014<!--Buff: buff_Infants_CarryBack_Hidden--></T>
+              <T>276004<!--Buff: buff_Infant_CarryRight_Hidden--></T>
+            </L>
+            <E n="subject">PickedSim</E>
+            <V n="tooltip" t="enabled">
+              <T n="enabled">0x41C90CEF<!--String: "Cannot do this while holding an Infant"--></T>
+            </V>
+          </U>
+        </V>
+      </L>
+    </L>
+  </V>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x56325A62<!--String: "Flirty Heart Cookies"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <V n="display_tooltip" t="enabled">
+    <T n="enabled">0xF95B3BC0<!--String: "Vegetarian-Safe"--></T>
+  </V>
+  <T n="include_uninstantiated_sims">False</T>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <V n="picker_dialog" t="sim_picker">
+    <U n="sim_picker">
+      <L n="custom_filters">
+        <V t="reference">
+          <T n="reference">499295<!--CustomSimFilter: customSimFilter_NobleCareer--></T>
+        </V>
+      </L>
+      <V n="max_selectable" t="static_count" />
+      <T n="min_selectable">0</T>
+      <V n="subtitle" t="enabled">
+        <T n="enabled">0xC4E41A06<!--String: "Picking another Sim is optional"--></T>
+      </V>
+      <V n="title" t="enabled">
+        <T n="enabled">0x3D99956C<!--String: "Set Up Picnic"--></T>
+      </V>
+    </U>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <V n="sim_filter" t="sim_filter_selected">
+    <T n="sim_filter_selected">363642<!--TunableSimFilter: filter_SimPicker_HasMet_CTYAE--></T>
+  </V>
+  <L n="sim_tests">
+    <L>
+      <V t="situation_job_test">
+        <U n="situation_job_test">
+          <T n="negate">True</T>
+          <E n="participant">PickedSim</E>
+          <L n="role_tags">
+            <E>Role_ExcludeFromYogaAndMeditationClass</E>
+          </L>
+          <L n="situation_jobs">
+            <T>145805<!--SituationJob: job_Butler--></T>
+            <T>303809<!--SituationJob: jobs_Service_NPC_RanchHand--></T>
+            <T>141842<!--SituationJob: jobs_nanny--></T>
+            <T>262354<!--SituationJob: job_Deliveries_FoodDelivery--></T>
+            <T>130543<!--SituationJob: job_Gardener_Service--></T>
+            <T>16175<!--SituationJob: job_mailman--></T>
+            <T>9830<!--SituationJob: job_pizzaDelivery--></T>
+            <T>247868<!--SituationJob: jobs_OnsenEmployee--></T>
+            <T>270310<!--SituationJob: jobs_YogaInstructor_Service--></T>
+            <T>118593<!--SituationJob: jobs_MassageTherapist_Service--></T>
+            <T>216315<!--SituationJob: jobs_NightStalker--></T>
+            <T>262353<!--SituationJob: job_Deliveries_GroceryDelivery--></T>
+            <T>129478<!--SituationJob: job_Repair--></T>
+            <T>247546<!--SituationJob: job_Repair_Batuu--></T>
+            <T>16174<!--SituationJob: job_maid--></T>
+            <T>221343<!--SituationJob: job_maid_UniversityHousing--></T>
+            <T>253235<!--SituationJob: job_maid_Bonehilda--></T>
+            <T>16180<!--SituationJob: job_GrimReaper--></T>
+            <T>356962<!--SituationJob: job_GrimReaper_Visitor--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="situation_job_test">
+      <U n="situation_job_test">
+        <T n="negate">True</T>
+        <L n="situation_jobs">
+          <T>363613<!--SituationJob: situationJob_RomanticBlanket_Picnic_Guest--></T>
+          <T>363612<!--SituationJob: situationJob_RomanticBlanket_Picnic_Host--></T>
+        </L>
+      </U>
+    </V>
+    <V t="object_relationship">
+      <U n="object_relationship">
+        <E n="sims">AllInstancedSims</E>
+        <U n="threshold">
+          <E n="comparison">EQUAL</E>
+          <T n="value">0</T>
+        </U>
+      </U>
+    </V>
+    <V t="posture">
+      <U n="posture">
+        <L n="prohibited_postures">
+          <T>132169<!--CarryingSim: posture_CarrySim--></T>
+          <T>271210<!--CarryingSim: posture_CarrySim_Back--></T>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x41C90CEF<!--String: "Cannot do this while holding an Infant"--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+</I>

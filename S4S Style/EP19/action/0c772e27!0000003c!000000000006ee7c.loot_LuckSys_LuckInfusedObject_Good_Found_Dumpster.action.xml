@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_LuckSys_LuckInfusedObject_Good_Found_Dumpster" s="454268">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x2401C358<!--String: "(From Diving for Deals)"--></T>
+          </V>
+          <T n="buff_type">452771<!--Buff: buff_LuckSys_LuckInfusedObject_Found_Good--></T>
+        </U>
+      </U>
+    </V>
+    <V t="create_object">
+      <U n="create_object">
+        <V n="creation_data" t="recipe">
+          <U n="recipe">
+            <T n="recipe">452221<!--Recipe: recipe_Apothecary_LuckSys_LuckInfusedObject_FreezerBunnyFoot--></T>
+            <T n="show_crafted_by_text">False</T>
+          </U>
+        </V>
+        <L n="initial_states">
+          <U>
+            <T n="state">452250<!--CommodityBasedObjectStateValue: luckInfusedObjects_LuckSys_Values_Active_Yes--></T>
+            <V n="tests" t="enabled">
+              <L n="enabled">
+                <L>
+                  <V t="test_set_reference">
+                    <T n="test_set_reference">449545<!--TestSetInstance: testSetInstance_LuckSys_HasLuck--></T>
+                  </V>
+                </L>
+              </L>
+            </V>
+          </U>
+          <U>
+            <T n="state">467012<!--ObjectStateValue: luckSys_LuckInfusedObject_Values_LuckEnabled_No--></T>
+            <V n="tests" t="enabled">
+              <L n="enabled">
+                <L>
+                  <V t="test_set_reference">
+                    <T n="test_set_reference">449547<!--TestSetInstance: testSetInstance_LuckSys_HasNoLuck--></T>
+                  </V>
+                </L>
+              </L>
+            </V>
+          </U>
+        </L>
+        <V n="location" t="inventory" />
+        <V n="notification_inventory" t="enabled">
+          <U n="enabled">
+            <U n="household_inventory">
+              <V n="icon" t="enabled">
+                <V n="enabled" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>CreatedObject</E>
+                    </L>
+                  </U>
+                </V>
+              </V>
+              <V n="secondary_icon" t="enabled">
+                <V n="enabled" t="participant" />
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x97AAECD2<!--String: "{0.SimFirstName} found {1.ObjectName|enAn} in the dumpster. Check {0.SimPronounPossessiveDependent} inventory to see it!"--></T>
+              </V>
+              <V n="text_tokens" t="enabled">
+                <U n="enabled">
+                  <L n="tokens">
+                    <V t="participant_type">
+                      <U n="participant_type">
+                        <V n="objects" t="from_participant">
+                          <U n="from_participant">
+                            <E n="participant">CreatedObject</E>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </U>
+              </V>
+            </U>
+            <U n="participant_inventory">
+              <V n="icon" t="enabled">
+                <V n="enabled" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>CreatedObject</E>
+                    </L>
+                  </U>
+                </V>
+              </V>
+              <V n="secondary_icon" t="enabled">
+                <V n="enabled" t="participant" />
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x97AAECD2<!--String: "{0.SimFirstName} found {1.ObjectName|enAn} in the dumpster. Check {0.SimPronounPossessiveDependent} inventory to see it!"--></T>
+              </V>
+              <V n="text_tokens" t="enabled">
+                <U n="enabled">
+                  <L n="tokens">
+                    <V t="participant_type" />
+                    <V t="participant_type">
+                      <U n="participant_type">
+                        <V n="objects" t="from_participant">
+                          <U n="from_participant">
+                            <E n="participant">CreatedObject</E>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </U>
+              </V>
+            </U>
+          </U>
+        </V>
+        <E n="owner_sim">Actor</E>
+        <V n="success_loots" t="enabled">
+          <L n="enabled">
+            <T>460614<!--LootActions: loot_LuckSys_LuckInfusedObject_OnboardingTNS_Object--></T>
+          </L>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="npc" t="enabled" />
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="test_set_reference">
+        <T n="test_set_reference">449545<!--TestSetInstance: testSetInstance_LuckSys_HasLuck--></T>
+      </V>
+    </L>
+  </L>
+</I>

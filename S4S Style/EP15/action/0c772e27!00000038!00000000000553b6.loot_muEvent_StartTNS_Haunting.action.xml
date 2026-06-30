@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_muEvent_StartTNS_Haunting" s="349110">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="audio_sting" t="enabled">
+              <U n="enabled">
+                <T n="audio" p="InEP15\Audio\music\bumpers\bumper_ep15_multiunit_event_emergency.propx">39b2aa4a:00000000:b360f7a6ada84f01</T>
+              </U>
+            </V>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T p="InGame\UI\Icons\Notifications\notification_ghost.png" n="key">2f7d0004:00000000:f2e111ed87b9e5b8</T>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xD44C9942<!--String: "Oooo, a lingering Ghost is haunting the unit! Try to placate the possessing pest!"--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x92163F9D<!--String: "Haunting"--></T>
+            </V>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="multi_unit_role_test">
+              <U n="multi_unit_role_test">
+                <V n="lot_source" t="enabled" />
+                <V n="role_to_check" t="is_property_owner" />
+                <E n="subject">ActiveHousehold</E>
+              </U>
+            </V>
+            <V t="test_set_reference">
+              <T n="test_set_reference">357023<!--TestSetInstance: testSet_APM_EventInactive--></T>
+            </V>
+          </L>
+          <L>
+            <V t="location">
+              <U n="location">
+                <U n="location_tests">
+                  <V n="is_venue_type" t="enabled">
+                    <U n="enabled">
+                      <T n="negate">True</T>
+                      <T n="venue_type">341299<!--Venue: venue_MultiUnit--></T>
+                    </U>
+                  </V>
+                </U>
+              </U>
+            </V>
+            <V t="test_set_reference">
+              <T n="test_set_reference">357023<!--TestSetInstance: testSet_APM_EventInactive--></T>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="audio_sting" t="enabled">
+              <U n="enabled">
+                <T n="audio" p="InEP15\Audio\music\bumpers\bumper_ep15_multiunit_event_emergency.propx">39b2aa4a:00000000:b360f7a6ada84f01</T>
+              </U>
+            </V>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T p="InGame\UI\Icons\Notifications\notification_ghost.png" n="key">2f7d0004:00000000:f2e111ed87b9e5b8</T>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xA28EDB9E<!--String: "Oooo, a lingering Ghost is haunting the unit! Call the Property Owner to sort out the problem or attempt to get rid of the Ghost yourself!"--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x92163F9D<!--String: "Haunting"--></T>
+            </V>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="test_set_reference">
+              <T n="test_set_reference">357023<!--TestSetInstance: testSet_APM_EventInactive--></T>
+            </V>
+            <V t="test_set_reference">
+              <T n="test_set_reference">356930<!--TestSetInstance: testSet_APM_IsTenantOnly--></T>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_set">
+        <U n="statistic_set">
+          <T n="stat">351590<!--Statistic: statistic_muEvent_EventType--></T>
+          <L n="subject">
+            <E>Lot</E>
+          </L>
+          <T n="value">8</T>
+        </U>
+      </V>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="is_active_sim" t="enabled" />
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

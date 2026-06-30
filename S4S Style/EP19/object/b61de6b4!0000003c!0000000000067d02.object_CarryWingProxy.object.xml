@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="GameObject" i="object" m="objects.game_object" n="object_CarryWingProxy" s="425218">
+  <U n="_components">
+    <V n="carryable" t="enabled">
+      <U n="enabled">
+        <U n="allowed_hands_data">
+          <V n="biped_allowed_hands" t="back_only" />
+        </U>
+        <V n="carry_affordances" t="use_custom_affordances">
+          <L n="use_custom_affordances">
+            <T>422837<!--HoldObject: carry_HoldWingProxyObject_Back--></T>
+          </L>
+        </V>
+        <T n="defer_putdown">True</T>
+        <L n="portal_key_mask_flags">
+          <E>REQUIRE_NO_CARRY_BACK</E>
+        </L>
+        <V n="transient_putdown_affordance_override" t="enabled">
+          <T n="enabled">449364<!--PutDownHereInteraction: terrain_putdown_wings--></T>
+        </V>
+      </U>
+    </V>
+    <V n="focus" t="disabled" />
+    <V n="inventory_item" t="disabled" />
+  </U>
+  <L n="_super_affordances">
+    <T>13328<!--ImmediateSuperInteraction: debug_Reset--></T>
+    <T>13326<!--ImmediateSuperInteraction: debug_ObjectDestroy--></T>
+    <T>103888<!--ImmediateSuperInteraction: cheat_set_as_head--></T>
+  </L>
+  <T n="_transient_tuning">True</T>
+  <U n="recycling_data">
+    <L n="recycling_values">
+      <U>
+        <E n="Bucks Type">RecycleBitsBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+      <U>
+        <E n="Bucks Type">RecyclePiecesBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+    </L>
+  </U>
+  <T n="set_ico_as_carry_target">False</T>
+</I>

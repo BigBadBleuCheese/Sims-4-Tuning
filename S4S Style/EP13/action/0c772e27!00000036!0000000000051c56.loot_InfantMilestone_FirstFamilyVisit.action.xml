@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_InfantMilestone_FirstFamilyVisit" s="334934">
+  <L n="loot_actions">
+    <V t="event">
+      <U n="event">
+        <E n="test_event">event_InfantMilestones_FamilyVisit</E>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified">
+            <L n="specified">
+              <E>INFANT</E>
+            </L>
+          </V>
+        </U>
+      </V>
+      <V t="relationship">
+        <U n="relationship">
+          <T n="num_relations">1</T>
+          <U n="required_relationship_bits">
+            <L n="match_any">
+              <T>15806<!--RelationshipBitCollection: rbc_Family_IncludingSpouseAndDistantAndStep--></T>
+            </L>
+          </U>
+          <L n="subject">
+            <E>Actor</E>
+          </L>
+          <L n="target_sim">
+            <E>LotOwnersOrRenters</E>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

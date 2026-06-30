@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_ChildhoodInspiration_SeekInspiration" s="455944">
+  <L n="loot_actions">
+    <V t="actions">
+      <T n="actions">453936<!--RandomWeightedLoot: childhoodInspiration_AddWeightedRandomSuggestedChallenge_Actor--></T>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant" />
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x1F850B49<!--String: "{0.SimFirstName} wanted to challenge {0.SimPronounReflexive} and thought long and hard before striking inspiration!\n\nA new Formative Moments Challenge has been suggested in {0.SimPronounPossessiveDependent} Aspiration Panel."--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0xE8683E05<!--String: "Formative Moments"--></T>
+            </V>
+            <L n="ui_responses">
+              <U>
+                <T n="text">0xD4FDE2F<!--String: "Open Aspirations Panel"--></T>
+                <E n="ui_request">SHOW_ASPIRATION_PANEL</E>
+              </U>
+            </L>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="childhood_inspiration">
+              <U n="childhood_inspiration">
+                <V n="test_behavior" t="is_suggested_childhood_inspiration_full">
+                  <U n="is_suggested_childhood_inspiration_full">
+                    <T n="invert">True</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="buff">
+              <U n="buff">
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>475321<!--Buff: buff_ChildhoodInspiration_SuggestedBySeekInspiration--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x75C1D32<!--String: "{0.SimFirstName} wanted to challenge {0.SimPronounReflexive} and thought long and hard before striking inspiration!\n\nSince the Suggested Challenge list is full, this Formative Moments Challenge will appear when another slot becomes available. Try Removing or Accepting an existing Suggested Challenge in the Aspiration Panel."--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0xE8683E05<!--String: "Formative Moments"--></T>
+            </V>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="childhood_inspiration">
+              <U n="childhood_inspiration">
+                <V n="test_behavior" t="is_suggested_childhood_inspiration_full" />
+              </U>
+            </V>
+            <V t="buff">
+              <U n="buff">
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>475321<!--Buff: buff_ChildhoodInspiration_SuggestedBySeekInspiration--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x3AB91E34<!--String: "There are no new Formative Moments Challenges to suggest right now."--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x8306DE05<!--String: "Formative Moments"--></T>
+            </V>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <L n="blacklist">
+                  <T>475321<!--Buff: buff_ChildhoodInspiration_SuggestedBySeekInspiration--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified">
+            <L n="specified">
+              <E>CHILD</E>
+            </L>
+          </V>
+          <V n="is_active_sim" t="enabled" />
+          <V n="species" t="specified">
+            <U n="specified">
+              <L n="species">
+                <E />
+              </L>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

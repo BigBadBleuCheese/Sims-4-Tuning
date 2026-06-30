@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_LuckSys_CraftingQuality" s="427520">
+  <L n="loot_actions">
+    <V t="actions">
+      <T n="actions">453259<!--RandomWeightedLoot: randomWeightedLoot_LuckSys_CraftingQuality_Good--></T>
+    </V>
+    <V t="actions">
+      <T n="actions">453537<!--RandomWeightedLoot: randomWeightedLoot_LuckSys_CraftingQuality_Bad--></T>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="test_set_reference">
+        <T n="test_set_reference">449545<!--TestSetInstance: testSetInstance_LuckSys_HasLuck--></T>
+      </V>
+      <V t="object_definition_criteria">
+        <U n="object_definition_criteria">
+          <V n="identity_test" t="tags">
+            <U n="tags">
+              <L n="tag_set">
+                <E>Func_Ingredient_BottledEmotion_Negative</E>
+                <E>Func_Ingredient_BottledEmotion_Positive</E>
+                <E>Func_ApothecaryCuresAndElixirs_Cure</E>
+                <E>Func_LuckSys_LuckCharm</E>
+              </L>
+              <E n="test_type">CONTAINS_NO_TAGS_IN_SET</E>
+            </U>
+          </V>
+          <E n="participant">CreatedObject</E>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

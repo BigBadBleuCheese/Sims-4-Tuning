@@ -1,0 +1,495 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="GameObject" i="object" m="objects.game_object" n="object_surpriseCake" s="401992">
+  <U n="_components">
+    <V n="focus" t="enabled">
+      <U n="enabled">
+        <V n="_focus_score" t="globally">
+          <U n="globally">
+            <E n="base">LOW</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V n="object_age" t="enabled" />
+    <V n="spawn_point" t="enabled" />
+    <V n="spawner_component" t="disabled" />
+    <V n="state" t="enabled">
+      <U n="enabled">
+        <L n="state_triggers">
+          <U>
+            <L n="at_states">
+              <T>15190<!--CommodityBasedObjectStateValue: Freshness_Spoiled--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>15083<!--ObjectStateValue: Candles_Off--></T>
+              </L>
+            </V>
+            <V n="trigger_chance" t="enabled" />
+          </U>
+          <U>
+            <L n="at_states">
+              <T>421227<!--CommodityBasedObjectStateValue: surpriseCake_multiServeEmpty--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>76723<!--CommodityBasedObjectStateValue: Trash_Consumable_Empty--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>15190<!--CommodityBasedObjectStateValue: Freshness_Spoiled--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>99629<!--ObjectStateValue: Reaction_Low--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>420728<!--ObjectStateValue: surpriseCake_hasCandles_true--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>420731<!--ObjectStateValue: surpriseCake_candlesLit_true--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>420729<!--ObjectStateValue: surpriseCake_hasCandles_false--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>420732<!--ObjectStateValue: surpriseCake_candlesLit_false--></T>
+              </L>
+            </V>
+          </U>
+        </L>
+        <L n="states">
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">15189<!--CommodityBasedObjectStateValue: Freshness_Fresh--></T>
+              </U>
+              <U>
+                <T n="key">15190<!--CommodityBasedObjectStateValue: Freshness_Spoiled--></T>
+                <U n="value">
+                  <V n="vfx_state" t="apply_new_value">
+                    <V n="apply_new_value" t="start_vfx">
+                      <V n="start_vfx" t="single_effect">
+                        <U n="single_effect">
+                          <T n="effect_name">Obj_food_rotten</T>
+                        </U>
+                      </V>
+                    </V>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">15191<!--CommodityBasedObjectStateValue: Freshness_Untouched--></T>
+                <U n="value">
+                  <V n="autonomy_modifiers" t="apply_new_value">
+                    <V n="apply_new_value" t="apply_statistic_modifiers">
+                      <U n="apply_statistic_modifiers">
+                        <L n="autonomy_modifiers">
+                          <U>
+                            <L n="locked_stats">
+                              <T>16591<!--Commodity: commodity_freshness--></T>
+                            </L>
+                          </U>
+                        </L>
+                      </U>
+                    </V>
+                  </V>
+                  <V n="vfx_state" t="apply_new_value" />
+                </U>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">15191<!--CommodityBasedObjectStateValue: Freshness_Untouched--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">414494<!--ObjectStateValue: object_surpriseCake_sim_inCake--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">Occupied</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">414495<!--ObjectStateValue: object_surpriseCake_sim_notInCake--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value" />
+                </U>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">414495<!--ObjectStateValue: object_surpriseCake_sim_notInCake--></T>
+            </V>
+            <V n="tested_states_post_load" t="enabled">
+              <U n="enabled">
+                <L n="tested_states">
+                  <U>
+                    <T n="state">414495<!--ObjectStateValue: object_surpriseCake_sim_notInCake--></T>
+                    <L n="tests">
+                      <L>
+                        <V t="user_running_interaction">
+                          <U n="user_running_interaction">
+                            <L n="affordances">
+                              <T>401988<!--SuperInteraction: birthdayCake_Hide--></T>
+                            </L>
+                            <T n="test_for_not_running">True</T>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                </L>
+              </U>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">420728<!--ObjectStateValue: surpriseCake_hasCandles_true--></T>
+              </U>
+              <U>
+                <T n="key">420729<!--ObjectStateValue: surpriseCake_hasCandles_false--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">420729<!--ObjectStateValue: surpriseCake_hasCandles_false--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">420731<!--ObjectStateValue: surpriseCake_candlesLit_true--></T>
+                <U n="value">
+                  <V n="vfx_state" t="apply_new_value">
+                    <V n="apply_new_value" t="start_vfx">
+                      <V n="start_vfx" t="single_effect">
+                        <U n="single_effect">
+                          <T n="effect_name">eng62_surprise_cake_candles</T>
+                        </U>
+                      </V>
+                    </V>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">420732<!--ObjectStateValue: surpriseCake_candlesLit_false--></T>
+                <U n="value">
+                  <V n="vfx_state" t="apply_new_value">
+                    <V n="apply_new_value" t="no_vfx" />
+                  </V>
+                </U>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">420732<!--ObjectStateValue: surpriseCake_candlesLit_false--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">39478<!--CommodityBasedObjectStateValue: FireState_Burn_Incinerate_Burning--></T>
+              </U>
+              <U>
+                <T n="key">39479<!--CommodityBasedObjectStateValue: FireState_Burn_Incinerate--></T>
+              </U>
+              <U>
+                <T n="key">39612<!--CommodityBasedObjectStateValue: FireState_Burn_Incinerate_Not_Burning--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">39612<!--CommodityBasedObjectStateValue: FireState_Burn_Incinerate_Not_Burning--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">99629<!--ObjectStateValue: Reaction_Low--></T>
+              </U>
+              <U>
+                <T n="key">99631<!--ObjectStateValue: Reaction_Med--></T>
+              </U>
+              <U>
+                <T n="key">99632<!--ObjectStateValue: Reaction_High--></T>
+                <U n="value">
+                  <V n="broadcaster" t="apply_new_value">
+                    <V n="apply_new_value" t="start_broadcaster">
+                      <U n="start_broadcaster">
+                        <L n="broadcaster_types">
+                          <U>
+                            <T n="item">74253<!--Broadcaster: broadcaster_Reaction_GoodSmell--></T>
+                          </U>
+                        </L>
+                      </U>
+                    </V>
+                  </V>
+                </U>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">99631<!--ObjectStateValue: Reaction_Med--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">421831<!--ObjectStateValue: surpriseCake_surprised_false--></T>
+              </U>
+              <U>
+                <T n="key">421832<!--ObjectStateValue: surpriseCake_surprised_true--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">421831<!--ObjectStateValue: surpriseCake_surprised_false--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">421222<!--CommodityBasedObjectStateValue: surpriseCake_multiServeLarge--></T>
+                <U n="value">
+                  <V n="autonomy_modifiers" t="apply_new_value" />
+                  <V n="geometry_state" t="apply_new_value">
+                    <V n="apply_new_value" t="set_to_custom_value">
+                      <T n="set_to_custom_value">multiServeLarge</T>
+                    </V>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">421223<!--CommodityBasedObjectStateValue: surpriseCake_multiServeSmall--></T>
+                <U n="value">
+                  <V n="geometry_state" t="apply_new_value">
+                    <V n="apply_new_value" t="set_to_custom_value">
+                      <T n="set_to_custom_value">multiServeSmall</T>
+                    </V>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">421224<!--CommodityBasedObjectStateValue: surpriseCake_multiServeSmaller--></T>
+                <U n="value">
+                  <V n="geometry_state" t="apply_new_value">
+                    <V n="apply_new_value" t="set_to_custom_value">
+                      <T n="set_to_custom_value">multiServeSmaller</T>
+                    </V>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">421227<!--CommodityBasedObjectStateValue: surpriseCake_multiServeEmpty--></T>
+                <U n="value">
+                  <V n="geometry_state" t="apply_new_value">
+                    <V n="apply_new_value" t="set_to_custom_value">
+                      <T n="set_to_custom_value">multiServeEmpty</T>
+                    </V>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">421834<!--CommodityBasedObjectStateValue: surpriseCake_multiServeFull--></T>
+                <U n="value">
+                  <V n="autonomy_modifiers" t="apply_new_value">
+                    <V n="apply_new_value" t="apply_statistic_modifiers">
+                      <U n="apply_statistic_modifiers">
+                        <L n="autonomy_modifiers">
+                          <U>
+                            <V n="provided_affordance_compatibility" t="literal">
+                              <U n="literal">
+                                <V n="default_inclusion" t="include_all">
+                                  <U n="include_all">
+                                    <L n="exclude_affordances">
+                                      <T>421993<!--SuperInteraction: surpriseCake_TakePiece--></T>
+                                    </L>
+                                  </U>
+                                </V>
+                              </U>
+                            </V>
+                          </U>
+                        </L>
+                      </U>
+                    </V>
+                  </V>
+                </U>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">421834<!--CommodityBasedObjectStateValue: surpriseCake_multiServeFull--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">427546<!--ObjectStateValue: surpriseCake_readyBranch_true--></T>
+              </U>
+              <U>
+                <T n="key">427547<!--ObjectStateValue: surpriseCake_readyBranch_false--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">427547<!--ObjectStateValue: surpriseCake_readyBranch_false--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">427549<!--ObjectStateValue: surpriseCake_blowCandlesBranch_true--></T>
+                <U n="value">
+                  <V n="broadcaster" t="apply_new_value">
+                    <V n="apply_new_value" t="start_broadcaster">
+                      <U n="start_broadcaster">
+                        <L n="broadcaster_types">
+                          <U>
+                            <T n="item">427542<!--Broadcaster: broadcaster_surpriseCake_nowBranch--></T>
+                          </U>
+                        </L>
+                      </U>
+                    </V>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">427550<!--ObjectStateValue: surpriseCake_blowCandlesBranch_false--></T>
+                <U n="value">
+                  <V n="broadcaster" t="apply_new_value" />
+                </U>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">427550<!--ObjectStateValue: surpriseCake_blowCandlesBranch_false--></T>
+            </V>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V n="tooltip_component" t="enabled">
+      <U n="enabled">
+        <L n="custom_tooltips">
+          <U>
+            <L n="tooltip_fields">
+              <U>
+                <E n="key">recipe_description</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0xD6740541<!--String: "{0.ObjectDescription}"--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">Object</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <E n="key">recipe_name</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x4F918F8<!--String: "{0.ObjectName}"--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">Object</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <E n="key">subtext</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0xDFE93B39<!--String: "{0.Number} {S0.Serving}{P0.Servings} Left"--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="statistic_value">
+                          <U n="statistic_value">
+                            <E n="participant">Object</E>
+                            <T n="statistic">421228<!--Statistic: statistic_Object_surpriseCake--></T>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+            </L>
+            <E n="tooltip_style">HOVER_TIP_COLLECTION</E>
+          </U>
+        </L>
+        <T n="update_if_stat_or_buck_changes">True</T>
+      </U>
+    </V>
+  </U>
+  <L n="_super_affordances">
+    <T>13328<!--ImmediateSuperInteraction: debug_Reset--></T>
+    <T>13326<!--ImmediateSuperInteraction: debug_ObjectDestroy--></T>
+    <T>103888<!--ImmediateSuperInteraction: cheat_set_as_head--></T>
+    <T>13983<!--StandSuperInteraction: sim-stand--></T>
+    <T>402761<!--SuperInteraction: generic_SurpriseCake--></T>
+    <T>417357<!--SuperInteraction: surpriseBirthdayCake_surprise_shown--></T>
+    <T>401988<!--SuperInteraction: birthdayCake_Hide--></T>
+    <T>421993<!--SuperInteraction: surpriseCake_TakePiece--></T>
+    <T>420726<!--SuperInteraction: surpriseCake_BlowOutCandles--></T>
+    <T>419378<!--SuperInteraction: surpriseCake_TasteFrosting--></T>
+    <T>420727<!--SuperInteraction: surpriseCake_MakeWish--></T>
+    <T>37295<!--SimPickerInteraction: BirthdayCake_AgeUpAnotherSim--></T>
+    <T>156021<!--SimPickerInteraction: birthdayCake_AgeUp_Toddler_Sim--></T>
+    <T>156025<!--SimPickerInteraction: birthdayCake_Toddler_AskToBe_AgedUp--></T>
+    <T>427530<!--SuperInteraction: surpriseCake_TasteFrosting_surprise--></T>
+    <T>420723<!--SuperInteraction: surpriseCake_Celebrate--></T>
+    <T>419375<!--SuperInteraction: surpriseCake_AddCandles--></T>
+    <T>427551<!--SuperInteraction: surpriseCake_BlowOutCandles_surprise--></T>
+    <T>428991<!--SuperInteraction: surpriseCake_MakeWish_surprise--></T>
+    <T>429890<!--CollectManyInteraction: Collect_Clean_Dish_As_Trash_Only_surpriseCake--></T>
+    <T>432924<!--CraftingPhaseCreateCarriedObjectSuperInteraction: surpriseCake_Createfood--></T>
+    <T>421703<!--SuperInteraction: surpriseCake_RemoveCandles--></T>
+  </L>
+  <U n="recycling_data">
+    <L n="recycling_values">
+      <U>
+        <E n="Bucks Type">RecycleBitsBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+      <U>
+        <E n="Bucks Type">RecyclePiecesBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+    </L>
+  </U>
+</I>

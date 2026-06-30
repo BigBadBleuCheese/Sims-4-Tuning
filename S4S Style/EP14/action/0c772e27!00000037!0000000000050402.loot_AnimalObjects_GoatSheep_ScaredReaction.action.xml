@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_AnimalObjects_GoatSheep_ScaredReaction" s="328706">
+  <L n="loot_actions">
+    <V t="state_change">
+      <U n="state_change">
+        <T n="state_value">261615<!--ObjectStateValue: animalObjects_Generic_IdleStateValues_Scared--></T>
+        <L n="tests">
+          <L>
+            <V t="object_definition_criteria">
+              <U n="object_definition_criteria">
+                <V n="identity_test" t="tags">
+                  <U n="tags">
+                    <L n="tag_set">
+                      <E>Func_AnimalObject_Livestock_Goat</E>
+                    </L>
+                  </U>
+                </V>
+                <E n="participant">Actor</E>
+              </U>
+            </V>
+            <V t="state">
+              <U n="state">
+                <T n="value">256709<!--ObjectStateValue: animalObjects_Generic_IdleStateValues_Stand--></T>
+                <E n="who">Actor</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="set_routing_info_and_state">
+      <U n="set_routing_info_and_state">
+        <V n="routing_owner" t="enabled">
+          <E n="enabled">Object</E>
+        </V>
+        <V n="routing_state_to_change" t="enabled">
+          <T n="enabled">327585<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_RunAway_Fire--></T>
+        </V>
+        <V n="routing_target" t="enabled">
+          <E n="enabled">Object</E>
+        </V>
+        <E n="subject">Actor</E>
+        <L n="tests">
+          <L>
+            <V t="object_definition_criteria">
+              <U n="object_definition_criteria">
+                <V n="identity_test" t="tags">
+                  <U n="tags">
+                    <L n="tag_set">
+                      <E>Func_AnimalObject_Livestock_Sheep</E>
+                    </L>
+                  </U>
+                </V>
+                <E n="participant">Actor</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="test_set_reference">
+        <T n="test_set_reference">268220<!--TestSetInstance: testSet_AnimalObjects_Chickens_FreeToRoam--></T>
+      </V>
+    </L>
+  </L>
+</I>

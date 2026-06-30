@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="DialogDramaNode" i="drama_node" m="drama_scheduler.dialog_drama_node" n="dialogDramaNode_AutoInitRomance_RelChanges_AskOnDate" s="361853">
+  <V n="cooldown_data" t="group_cooldown">
+    <U n="group_cooldown">
+      <E n="group">AutoInitRomanceCooldown</E>
+    </U>
+  </V>
+  <V n="dialog_and_loot" t="dialog_ok_cancel">
+    <U n="dialog_ok_cancel">
+      <U n="dialog">
+        <V n="icon" t="enabled">
+          <V n="enabled" t="participant">
+            <U n="participant">
+              <L n="participant_type">
+                <E>PickedSim</E>
+              </L>
+            </U>
+          </V>
+        </V>
+        <V n="text" t="single">
+          <T n="single">0x4C7DEBE1<!--String: "{2.SimFirstName} is feeling a romantic connection for {0.SimFirstName} and wants to suggest a date. Do you want this to happen?"--></T>
+        </V>
+        <T n="text_cancel">0xAB36EA39<!--String: "Not Right Now"--></T>
+        <T n="text_ok">0xE217CAB9<!--String: "Go on a Date"--></T>
+      </U>
+      <L n="on_dialog_accepted_loot_list">
+        <T>362219<!--LootActions: loot_AutoInitRomance_RelChanges_AskOnDate_Accept--></T>
+      </L>
+    </U>
+  </V>
+  <U n="min_and_max_times">
+    <T n="lower_bound">0</T>
+    <T n="upper_bound">0</T>
+  </U>
+  <V n="picked_sim_info" t="participant_type">
+    <U n="participant_type">
+      <E n="participant_type">TargetSim</E>
+    </U>
+  </V>
+  <L n="pretests">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="npc" t="enabled" />
+        </U>
+      </V>
+      <V t="can_create_user_facing_situation">
+        <U n="can_create_user_facing_situation">
+          <T n="allow_non_prestige_is_exempt">True</T>
+        </U>
+      </V>
+    </L>
+  </L>
+  <L n="run_tests">
+    <L>
+      <V t="location">
+        <U n="location">
+          <U n="location_tests">
+            <V n="is_venue_type" t="enabled">
+              <U n="enabled">
+                <T n="negate">True</T>
+                <T n="venue_type">111611<!--Venue: venue_HiddenAlienWorld--></T>
+              </U>
+            </V>
+          </U>
+        </U>
+      </V>
+      <V t="region">
+        <U n="region">
+          <V n="blacklist" t="enabled">
+            <L n="enabled">
+              <T>231104<!--Region: region_Destination_Batuu--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="sender_sim_info" t="no_participant" />
+  <E n="sender_sim_info_type">INSTANCED_ALLOWED</E>
+  <V n="time_option" t="single_time" />
+</I>

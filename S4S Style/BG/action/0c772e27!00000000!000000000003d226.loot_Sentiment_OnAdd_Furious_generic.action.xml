@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Sentiment_OnAdd_Furious_generic" s="250406">
+  <L n="loot_actions">
+    <V t="reaction">
+      <U n="reaction">
+        <E n="subject">TargetSim</E>
+      </U>
+    </V>
+    <V t="actions">
+      <T n="actions">250718<!--LootActions: loot_Sentiment_Modify_Increase_Negative_medium_LT_OnAdd--></T>
+    </V>
+    <V t="actions">
+      <T n="actions">250720<!--LootActions: loot_Sentiment_Modify_Decrease_Positive_medium_LT_OnAdd--></T>
+    </V>
+    <V t="reaction">
+      <U n="reaction">
+        <U n="chance">
+          <T n="base_chance">80</T>
+        </U>
+        <V n="si_reaction" t="enabled">
+          <U n="enabled">
+            <T n="affordance">363252<!--ImmediateSuperInteraction: immediateSuperInteraction_RomanceTrope_Adventure_Strained--></T>
+            <E n="affordance_priority">High</E>
+            <V n="affordance_run_priority" t="disabled" />
+            <V n="affordance_target" t="enabled">
+              <E n="enabled">TargetSim</E>
+            </V>
+          </U>
+        </V>
+        <E n="subject">Actor</E>
+        <L n="tests">
+          <L>
+            <V t="relationship">
+              <U n="relationship">
+                <U n="prohibited_relationship_bits">
+                  <L n="match_all">
+                    <T>97332<!--RelationshipBit: ShortTerm_JustBrokeUpOrDivorced--></T>
+                  </L>
+                </U>
+                <U n="required_relationship_bits">
+                  <L n="match_any">
+                    <T>15816<!--RelationshipBit: romantic-Engaged--></T>
+                    <T>15822<!--RelationshipBit: romantic-Married--></T>
+                    <T>99429<!--RelationshipBit: romantic-Promised--></T>
+                    <T>15825<!--RelationshipBit: romantic-Significant_Other--></T>
+                    <T>274846<!--RelationshipBit: romantic-Married_Newlywed--></T>
+                  </L>
+                </U>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+                <L n="target_sim">
+                  <E>TargetSim</E>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T n="run_test_first">True</T>
+</I>

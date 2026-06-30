@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="GameObject" i="object" m="objects.game_object" n="drink_FairyJourney_EmotionPotion" s="441513">
+  <V n="_anim_overrides" t="enabled">
+    <U n="enabled">
+      <L n="params">
+        <U>
+          <T n="name">carryObject</T>
+          <V n="value" t="string">
+            <T n="string">drinkTumbler</T>
+          </V>
+        </U>
+        <U>
+          <T n="name">items</T>
+          <V n="value" t="string">
+            <T n="string">drinkTumbler</T>
+          </V>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="_components">
+    <V n="affordance_tuning" t="enabled">
+      <U n="enabled">
+        <L n="affordance_map">
+          <U>
+            <T n="key">100291<!--SuperInteraction: generic_consume_drink_nonbar_potion--></T>
+            <U n="value">
+              <L n="loot_list">
+                <T>445511<!--LootActions: loot_FairyJourney_ConsumePotion--></T>
+              </L>
+            </U>
+          </U>
+          <U>
+            <T n="key">26172<!--PutDownAnywhereInteraction: put_down_anywhere--></T>
+            <U n="value">
+              <L n="basic_extras">
+                <V t="destroy_object">
+                  <U n="destroy_object">
+                    <L n="tests">
+                      <L>
+                        <V t="state">
+                          <U n="state">
+                            <T n="value">15108<!--CommodityBasedObjectStateValue: Consumable_Empty--></T>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </U>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V n="carryable" t="enabled">
+      <U n="enabled">
+        <T n="prefer_owning_sim_inventory_when_not_on_home_lot">False</T>
+        <L n="provided_affordances">
+          <U>
+            <T n="affordance">28156<!--SocialSuperInteraction: sim_MakeToast--></T>
+          </U>
+        </L>
+        <V n="put_down_tuning" t="reference">
+          <L n="reference">
+            <U>
+              <T n="value">35852<!--PutDownStrategy: PutDownStrategy_Drink--></T>
+            </U>
+          </L>
+        </V>
+        <L n="state_based_put_down_tuning">
+          <U>
+            <T n="State">15108<!--CommodityBasedObjectStateValue: Consumable_Empty--></T>
+            <V n="PutDownStrategy" t="reference">
+              <L n="reference">
+                <U>
+                  <T n="value">97304<!--PutDownStrategy: PutDownStrategy_Drink_Empty--></T>
+                </U>
+              </L>
+            </V>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V n="consumable" t="enabled">
+      <U n="enabled">
+        <L n="consumption_statistics" />
+        <T n="consumption_turns">1</T>
+        <U n="fitness_info">
+          <T n="calories">0</T>
+        </U>
+      </U>
+    </V>
+    <V n="focus" t="enabled">
+      <U n="enabled">
+        <V n="_focus_score" t="globally">
+          <U n="globally">
+            <E n="base">LOW</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V n="inventory_item" t="enabled">
+      <U n="enabled">
+        <T n="remove_from_npc_inventory">True</T>
+        <E n="stack_scheme">DEFINITION</E>
+        <L n="valid_inventory_types">
+          <E>SIM</E>
+          <E>STORAGE_CHEST_DORM</E>
+        </L>
+      </U>
+    </V>
+    <V n="object_age" t="enabled" />
+    <V n="retail_component" t="disabled" />
+    <V n="state" t="enabled">
+      <U n="enabled">
+        <L n="state_triggers">
+          <U>
+            <L n="at_states">
+              <T>15108<!--CommodityBasedObjectStateValue: Consumable_Empty--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>76723<!--CommodityBasedObjectStateValue: Trash_Consumable_Empty--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>15306<!--CommodityBasedObjectStateValue: Quality_Poor--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>99629<!--ObjectStateValue: Reaction_Low--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>15304<!--CommodityBasedObjectStateValue: Quality_Normal--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>99631<!--ObjectStateValue: Reaction_Med--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>15305<!--CommodityBasedObjectStateValue: Quality_Outstanding--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>99632<!--ObjectStateValue: Reaction_High--></T>
+              </L>
+            </V>
+          </U>
+        </L>
+        <L n="states">
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">135212<!--CommodityBasedObjectStateValue: Consumable_Restaurant_Untouched--></T>
+                <U n="value">
+                  <V n="geometry_state" t="apply_new_value">
+                    <V n="apply_new_value" t="set_to_custom_value" />
+                  </V>
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value" />
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">15108<!--CommodityBasedObjectStateValue: Consumable_Empty--></T>
+                <U n="value">
+                  <V n="geometry_state" t="apply_new_value">
+                    <V n="apply_new_value" t="set_to_default_value" />
+                  </V>
+                  <V n="material_state" t="apply_new_value" />
+                </U>
+              </U>
+              <U>
+                <T n="key">15109<!--CommodityBasedObjectStateValue: Consumable_Full--></T>
+                <U n="value">
+                  <V n="geometry_state" t="apply_new_value">
+                    <V n="apply_new_value" t="set_to_custom_value">
+                      <T n="set_to_custom_value">full</T>
+                    </V>
+                  </V>
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">materialState</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">15110<!--CommodityBasedObjectStateValue: Consumable_HalfFull--></T>
+                <U n="value">
+                  <V n="geometry_state" t="apply_new_value">
+                    <V n="apply_new_value" t="set_to_custom_value">
+                      <T n="set_to_custom_value">geometryState</T>
+                    </V>
+                  </V>
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">materialState</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">15113<!--CommodityBasedObjectStateValue: Consumable_Untouched--></T>
+                <U n="value">
+                  <V n="geometry_state" t="apply_new_value">
+                    <V n="apply_new_value" t="set_to_custom_value" />
+                  </V>
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value" />
+                    </U>
+                  </V>
+                </U>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">15108<!--CommodityBasedObjectStateValue: Consumable_Empty--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">28125<!--ObjectStateValue: Consuming_Eating--></T>
+              </U>
+              <U>
+                <T n="key">28126<!--ObjectStateValue: Consuming_NotEating--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">28126<!--ObjectStateValue: Consuming_NotEating--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">15359<!--CommodityBasedObjectStateValue: Trash_Amount_Default--></T>
+              </U>
+              <U>
+                <T n="key">15361<!--CommodityBasedObjectStateValue: Trash_Amount_Small--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">15359<!--CommodityBasedObjectStateValue: Trash_Amount_Default--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">74879<!--CommodityBasedObjectStateValue: Consumable_Collect_After_Eating--></T>
+              </U>
+              <U>
+                <T n="key">74880<!--CommodityBasedObjectStateValue: Consumable_Ignore_After_Eating--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">74880<!--CommodityBasedObjectStateValue: Consumable_Ignore_After_Eating--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">76723<!--CommodityBasedObjectStateValue: Trash_Consumable_Empty--></T>
+              </U>
+              <U>
+                <T n="key">76724<!--CommodityBasedObjectStateValue: Trash_Consumable_HasFood--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">76723<!--CommodityBasedObjectStateValue: Trash_Consumable_Empty--></T>
+            </V>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V n="tooltip_component" t="enabled">
+      <U n="enabled">
+        <L n="custom_tooltips">
+          <U>
+            <L n="tooltip_fields">
+              <U>
+                <E n="key">recipe_name</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x4F918F8<!--String: "{0.ObjectName}"--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">Object</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <E n="key">subtext</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0xE2E9872D<!--String: "{0.ObjectDescription}"--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">Object</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+            </L>
+          </U>
+        </L>
+      </U>
+    </V>
+  </U>
+  <L n="_super_affordances">
+    <T>13328<!--ImmediateSuperInteraction: debug_Reset--></T>
+    <T>13326<!--ImmediateSuperInteraction: debug_ObjectDestroy--></T>
+    <T>103888<!--ImmediateSuperInteraction: cheat_set_as_head--></T>
+    <T>100291<!--SuperInteraction: generic_consume_drink_nonbar_potion--></T>
+    <T>99067<!--ImmediateSuperInteraction: Cheat_EmptyConsumable--></T>
+  </L>
+  <T n="_transient_tuning">False</T>
+  <U n="recycling_data">
+    <L n="recycling_loot">
+      <T>239237<!--LootActions: loot_Recycler_FoodLoot_DrinkBar--></T>
+    </L>
+    <L n="recycling_values">
+      <U>
+        <E n="Bucks Type">RecycleBitsBucks</E>
+        <T n="Value">0</T>
+      </U>
+      <U>
+        <E n="Bucks Type">RecyclePiecesBucks</E>
+        <T n="Value">1</T>
+      </U>
+    </L>
+  </U>
+</I>

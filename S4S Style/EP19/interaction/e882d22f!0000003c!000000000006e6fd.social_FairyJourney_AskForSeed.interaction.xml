@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SocialSuperInteraction" i="interaction" m="interactions.social.social_super_interaction" n="social_FairyJourney_AskForSeed" s="452349">
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>TargetSim</E>
+      </L>
+    </U>
+  </V>
+  <L n="_party_size_weight_tuning">
+    <U>
+      <T n="y">100</T>
+    </U>
+    <U>
+      <T n="x">1</T>
+      <T n="y">100</T>
+    </U>
+    <U>
+      <T n="x">2</T>
+      <T n="y">50</T>
+    </U>
+    <U>
+      <T n="x">3</T>
+      <T n="y">0</T>
+    </U>
+    <U>
+      <T n="x">4</T>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <T n="_social_group_type">153754<!--SocialGroup: SocialGroup_Basic_SuperSocial--></T>
+  <V n="affordance_to_push_on_target" t="push_affordance">
+    <T n="push_affordance">453242<!--SocialSuperInteraction: social_FairyJourney_BeingAsked--></T>
+  </V>
+  <T n="allow_autonomous">False</T>
+  <T n="attention_cost">0</T>
+  <V n="basic_content" t="one_shot" />
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>162659<!--LootActions: loot_Commodity_Culling_GhostAdd_target--></T>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x9C09275F<!--String: "(From Being in a social group with at least 3 Sims)"--></T>
+          </V>
+          <T n="buff_type">125555<!--Buff: buff_Trait_WithMyFriends--></T>
+        </U>
+        <L n="subject">
+          <E>Actor</E>
+          <E>SocialGroupSims</E>
+          <E>TargetSim</E>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="social_group">
+              <U n="social_group">
+                <V n="threshold" t="enabled">
+                  <U n="enabled">
+                    <T n="value">3</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff_fire_and_forget">
+      <U n="buff_fire_and_forget">
+        <U n="buff">
+          <T n="buff_type">452353<!--Buff: buff_FairyJourney_SeedGift_Cooldown--></T>
+        </U>
+        <E n="participant">TargetSim</E>
+      </U>
+    </V>
+  </L>
+  <V n="basic_reserve_object" t="disabled" />
+  <T n="category">460678<!--PieMenuCategory: pieMenuCategory_FairyOccult_Socials--></T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x631C8777<!--String: "Ask for Fairy Seedling"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <V n="idle_animation" t="enabled">
+    <U n="enabled">
+      <T n="factory">11570<!--AnimationElement: Listen_Listen_Looping_basic--></T>
+    </U>
+  </V>
+  <T n="ignore_group_socials">False</T>
+  <L n="interaction_category_tags">
+    <E>Interaction_SocialSuper</E>
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+    <E>Interaction_SocialAll</E>
+    <E>Interaction_Social_Contagious</E>
+  </L>
+  <T n="invite_in_after_interaction">True</T>
+  <U n="listen_animation">
+    <T n="factory">11570<!--AnimationElement: Listen_Listen_Looping_basic--></T>
+  </U>
+  <V n="outcome" t="dual">
+    <U n="dual">
+      <U n="failure_actions">
+        <V n="animation_ref" t="enabled">
+          <U n="enabled">
+            <T n="factory">453609<!--AnimationElement: soc_Generic_NT_ShareAdvice_Fail--></T>
+          </U>
+        </V>
+        <L n="basic_extras">
+          <V t="notification">
+            <U n="notification">
+              <V n="dialog" t="single">
+                <V n="single" t="literal">
+                  <U n="literal">
+                    <V n="icon" t="enabled">
+                      <V n="enabled" t="participant">
+                        <U n="participant">
+                          <L n="participant_type">
+                            <E>TargetSim</E>
+                          </L>
+                        </U>
+                      </V>
+                    </V>
+                    <V n="text" t="single">
+                      <T n="single">0x8A605FA9<!--String: "Apologies! I don't seem to have any Seedlings on me."--></T>
+                    </V>
+                    <E n="visual_type">SPEECH</E>
+                  </U>
+                </V>
+              </V>
+            </U>
+          </V>
+        </L>
+      </U>
+      <U n="success_actions">
+        <V n="animation_ref" t="enabled">
+          <U n="enabled">
+            <T n="factory">453611<!--AnimationElement: soc_Generic_NT_ShareAdvice_Success--></T>
+          </U>
+        </V>
+        <L n="continuation">
+          <U>
+            <E n="actor">TargetSim</E>
+            <T n="affordance">452008<!--SocialSuperInteraction: social_FairyJourney_GiveSeed--></T>
+            <E n="target">Actor</E>
+          </U>
+        </L>
+        <L n="loot_list">
+          <T>11036<!--LootActions: Rel_Gain_Small--></T>
+        </L>
+      </U>
+      <U n="success_chance">
+        <T n="base_chance">40</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">1.5</T>
+            <L n="tests">
+              <L>
+                <V t="statistic">
+                  <U n="statistic">
+                    <T n="must_have_stat">True</T>
+                    <T n="stat">452005<!--Statistic: statistic_FairyJourney_Unlock--></T>
+                    <V n="threshold" t="value_threshold">
+                      <U n="value_threshold">
+                        <E n="comparison">GREATER</E>
+                        <T n="value">1</T>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+              <L>
+                <V t="relationship">
+                  <U n="relationship">
+                    <T n="must_have_track">True</T>
+                    <U n="relationship_score_interval">
+                      <T n="lower_bound">30</T>
+                    </U>
+                    <L n="subject">
+                      <E>Actor</E>
+                    </L>
+                    <L n="target_sim">
+                      <E>TargetSim</E>
+                    </L>
+                    <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">1.2</T>
+            <L n="tests">
+              <L>
+                <V t="trait">
+                  <U n="trait">
+                    <L n="whitelist_traits">
+                      <T>414620<!--Trait: trait_OccultFairy_TYAE--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T n="key" p="InEP19\UI\Icons\PieMenu\Category\icon_piemenu_category_fairyjourney.png">2f7d0004:00000000:29eaf26ed3d0c567</T>
+      </U>
+    </V>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <T n="relationship_scoring">True</T>
+  <E n="scoring_priority">NORMAL</E>
+  <V n="sim_affinity_posture_scoring_data" t="enabled">
+    <U n="enabled">
+      <L n="my_scoring">
+        <U>
+          <V n="affinity_strategy" t="relationship_based" />
+          <T n="negate_tag">True</T>
+          <E n="running_interaction_tag">Sleeping</E>
+        </U>
+        <U>
+          <V n="affinity_strategy" t="avoid" />
+          <E n="running_interaction_tag">Very_Loud</E>
+        </U>
+      </L>
+      <L n="my_tags">
+        <E>Loud</E>
+        <E>Chat</E>
+      </L>
+    </U>
+  </V>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all" />
+    </U>
+  </V>
+  <E n="target_type">TARGET</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">TargetSim</E>
+      </U>
+    </V>
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">129700<!--TestSetInstance: testSet_HasMet--></T>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>452353<!--Buff: buff_FairyJourney_SeedGift_Cooldown--></T>
+        </L>
+        <E n="subject">TargetSim</E>
+      </U>
+    </V>
+    <V t="in_same_household">
+      <U n="in_same_household">
+        <T n="subjects_households_match">False</T>
+      </U>
+    </V>
+    <V t="trait">
+      <U n="trait">
+        <E n="subject">TargetSim</E>
+        <L n="whitelist_traits">
+          <T>414620<!--Trait: trait_OccultFairy_TYAE--></T>
+        </L>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">452352<!--TestSetInstance: testSetInstance_FairyJourney_AskFor--></T>
+    </V>
+    <V t="inventory">
+      <U n="inventory">
+        <V n="contents_check" t="has_object_with_def">
+          <U n="has_object_with_def">
+            <T n="definition">467076</T>
+          </U>
+        </V>
+        <U n="required_count">
+          <E n="comparison">EQUAL</E>
+          <T n="value">0</T>
+        </U>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x2C331B1C<!--String: "Only one Seedling can be asked for at a time."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

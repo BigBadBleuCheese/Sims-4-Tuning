@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Notification_Naturopath_GiveCure_Succeed" s="458260">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>TargetSim</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x21EF3EA0<!--String: "I knew coming here was the right idea! I feel so much better."--></T>
+            </V>
+            <E n="visual_type">SPEECH</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="career_loot">
+      <U n="career_loot">
+        <V n="career" t="career_reference">
+          <U n="career_reference">
+            <T n="reference">439108<!--WorkFromHomeCareer: workFromHomeCareer_Naturopath--></T>
+          </U>
+        </V>
+        <L n="operations">
+          <V t="performance">
+            <U n="performance">
+              <T n="amount">10</T>
+            </U>
+          </V>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">443200<!--Buff: buff_Role_NaturopathCareer_AfflictedState_Treated--></T>
+        </U>
+        <E n="subject">TargetSim</E>
+      </U>
+    </V>
+    <V t="destroy_situation">
+      <U n="destroy_situation">
+        <L n="required_participant">
+          <E>Actor</E>
+        </L>
+        <L n="situation_tags">
+          <E>Situation_Career_Naturopath</E>
+        </L>
+      </U>
+    </V>
+    <V t="actions">
+      <T n="actions">469306<!--LootActions: loot_Career_Naturopathic_Cleanup_Target--></T>
+    </V>
+    <V t="actions">
+      <T n="actions">469307<!--LootActions: loot_Career_Naturopathic_Actor--></T>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="career_test">
+        <U n="career_test">
+          <V n="test_type" t="career_reference">
+            <U n="career_reference">
+              <V n="career" t="specific_career">
+                <T n="specific_career">439108<!--WorkFromHomeCareer: workFromHomeCareer_Naturopath--></T>
+              </V>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="situation_running_test">
+        <U n="situation_running_test">
+          <V n="participant" t="enabled">
+            <E n="enabled">TargetSim</E>
+          </V>
+          <V n="situation_whitelist" t="enabled">
+            <L n="enabled">
+              <T>449166<!--CareerEventSituation: careerEventSituation_NaturopathCareer_Low_Ailments--></T>
+              <T>443195<!--CustomStatesSituation: situation_Career_Naturopathic_Afflicted--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

@@ -1,0 +1,556 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SocialSuperInteraction" i="interaction" m="interactions.social.social_super_interaction" n="si_touching_Getaway_FormAlliance" s="472154">
+  <T n="_add_actor_sim_as_listener">True</T>
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>TargetSim</E>
+      </L>
+    </U>
+  </V>
+  <L n="_party_size_weight_tuning">
+    <U>
+      <T n="y">100</T>
+    </U>
+    <U>
+      <T n="x">1</T>
+      <T n="y">100</T>
+    </U>
+    <U>
+      <T n="x">2</T>
+      <T n="y">50</T>
+    </U>
+    <U>
+      <T n="x">3</T>
+      <T n="y">0</T>
+    </U>
+    <U>
+      <T n="x">4</T>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <T n="_social_group_type">74849<!--JigGroup: group_Platonic--></T>
+  <L n="_static_commodities">
+    <U>
+      <T n="static_commodity">123949<!--StaticCommodity: StaticCommodity_TwinRoses--></T>
+    </U>
+  </L>
+  <V n="affordance_to_push_on_target" t="push_self_or_none" />
+  <T n="attention_cost">1</T>
+  <V n="basic_content" t="one_shot" />
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>162659<!--LootActions: loot_Commodity_Culling_GhostAdd_target--></T>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x9C09275F<!--String: "(From Being in a social group with at least 3 Sims)"--></T>
+          </V>
+          <T n="buff_type">125555<!--Buff: buff_Trait_WithMyFriends--></T>
+        </U>
+        <L n="subject">
+          <E>Actor</E>
+          <E>SocialGroupSims</E>
+          <E>TargetSim</E>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="social_group">
+              <U n="social_group">
+                <V n="threshold" t="enabled">
+                  <U n="enabled">
+                    <T n="value">3</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>157124<!--LootActions: loot_Toddler_RemovedLeftBehind--></T>
+        </L>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+  </L>
+  <V n="basic_focus" t="tunable_focus">
+    <U n="tunable_focus">
+      <L n="subject">
+        <E>TargetSim</E>
+      </L>
+    </U>
+  </V>
+  <V n="basic_reserve_object" t="disabled" />
+  <T n="category">457483<!--PieMenuCategory: pieMenuCategory_Getaway--></T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xC9B549EF<!--String: "Form an Alliance"--></T>
+  <V n="display_name_overrides" t="testable">
+    <U n="testable">
+      <L n="overrides">
+        <U>
+          <V n="new_display_name" t="enabled">
+            <T n="enabled">0xB7EF730B<!--String: "Pretend to Form an Alliance"--></T>
+          </V>
+          <L n="test">
+            <L>
+              <V t="trait">
+                <U n="trait">
+                  <L n="whitelist_traits">
+                    <T>443222<!--Trait: trait_Competitive--></T>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <V n="idle_animation" t="disabled" />
+  <T n="ignore_group_socials">False</T>
+  <L n="interaction_category_tags">
+    <E>Interaction_SocialSuper</E>
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+    <E>Interaction_SocialAll</E>
+    <E>Interaction_Social_Touching</E>
+    <E>Interaction_Social_Contagious</E>
+  </L>
+  <T n="invite_in_after_interaction">True</T>
+  <U n="listen_animation">
+    <T n="factory">11570<!--AnimationElement: Listen_Listen_Looping_basic--></T>
+  </U>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <V n="animation_ref" t="enabled">
+              <U n="enabled">
+                <T n="factory">470082<!--AnimationElement: animationElement_Getaway_FormAlliance--></T>
+                <U n="overrides">
+                  <V n="balloons" t="enabled">
+                    <L n="enabled">
+                      <U>
+                        <L n="balloon_choices">
+                          <U>
+                            <V n="item" t="balloon_icon">
+                              <U n="balloon_icon">
+                                <E n="balloon_type">SPEECH</E>
+                                <V n="icon" t="resource_key">
+                                  <U n="resource_key">
+                                    <T n="key" p="InEP20\UI\Icons\Headlines\headline_FormAnAlliance.png">2f7d0004:00000000:a8a075ed1e2693fc</T>
+                                  </U>
+                                </V>
+                              </U>
+                            </V>
+                          </U>
+                        </L>
+                        <T n="balloon_delay">3</T>
+                        <L n="balloon_target">
+                          <E>TargetSim</E>
+                        </L>
+                      </U>
+                      <U>
+                        <L n="balloon_choices">
+                          <U>
+                            <V n="item" t="balloon_icon">
+                              <U n="balloon_icon">
+                                <E n="balloon_type">SPEECH</E>
+                                <V n="icon" t="resource_key">
+                                  <U n="resource_key">
+                                    <T n="key" p="InEP20\UI\Icons\Headlines\headline_FormAnAlliance.png">2f7d0004:00000000:a8a075ed1e2693fc</T>
+                                  </U>
+                                </V>
+                              </U>
+                            </V>
+                          </U>
+                        </L>
+                        <L n="balloon_target">
+                          <E>Actor</E>
+                        </L>
+                      </U>
+                    </L>
+                  </V>
+                </U>
+              </U>
+            </V>
+            <L n="basic_extras">
+              <V t="buff_fire_and_forget">
+                <U n="buff_fire_and_forget">
+                  <U n="buff">
+                    <T n="buff_type">471334<!--Buff: buff_Getaway_PowerInNumbers--></T>
+                  </U>
+                </U>
+              </V>
+              <V t="relationship_bit">
+                <U n="relationship_bit">
+                  <U n="relationship_bits_end">
+                    <L n="bit_operations">
+                      <U>
+                        <T n="allow_readdition">False</T>
+                        <T n="bit">15803<!--RelationshipBit: has_met--></T>
+                        <E n="operation">ADD</E>
+                        <E n="recipients">TargetSim</E>
+                        <E n="targets">Actor</E>
+                      </U>
+                    </L>
+                    <L n="tests">
+                      <L>
+                        <V t="relationship">
+                          <U n="relationship">
+                            <U n="prohibited_relationship_bits">
+                              <L n="match_any">
+                                <T>15803<!--RelationshipBit: has_met--></T>
+                              </L>
+                            </U>
+                            <L n="subject">
+                              <E>Actor</E>
+                            </L>
+                            <L n="target_sim">
+                              <E>TargetSim</E>
+                            </L>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                </U>
+              </V>
+            </L>
+            <L n="loot_list">
+              <T>11030<!--LootActions: Rel_Gain_Large--></T>
+              <T>24123<!--LootActions: Loot_SocialContext_Friendship_Gain--></T>
+              <T>36121<!--LootActions: Skill_Loot_Dynamic_Small_ChildrenOnly_Social--></T>
+              <T>10954<!--LootActions: Loot_ForSocialsSocialMotiveMedium--></T>
+              <T>369793<!--LootActions: loot_BasicSocialOutcome_Friendly_All--></T>
+              <T>369794<!--LootActions: loot_BasicSocialOutcome_Friendly_Success--></T>
+              <T>399757<!--LootActions: loot_HobbyClass_SetFriendSentiment--></T>
+              <T>109228<!--LootActions: loot_Commodity_CareerBenefit_Agent_Main_Level--></T>
+              <T>472943<!--LootActions: loot_Sentiment_AddSentiment_Close_Getaway_Alliance_TargettoActor--></T>
+              <T>472942<!--LootActions: loot_Sentiment_AddSentiment_Close_Getaway_Alliance_ActortoTarget--></T>
+              <T>104567<!--LootActions: loot_Relationship_Bit_KnowsIsAlien--></T>
+              <T>216556<!--RandomWeightedLoot: randomWeightedLoot_Cauldron_Potion_Luck_RandomBenefit_Social_Friendly--></T>
+              <T>294094<!--LootActions: lootActions_TeenRelationshipDrama_AddCrush_LowChance--></T>
+            </L>
+          </U>
+          <U n="weight">
+            <T n="base_value">0.5</T>
+            <L n="multipliers">
+              <U>
+                <T n="multiplier">0.5</T>
+                <L n="tests">
+                  <L>
+                    <V t="trait">
+                      <U n="trait">
+                        <L n="whitelist_traits">
+                          <T>443222<!--Trait: trait_Competitive--></T>
+                          <T>29571<!--Trait: trait_Outgoing--></T>
+                          <T>370886<!--Trait: trait_PracticeMakesPerfect_Tracking_Creative--></T>
+                        </L>
+                      </U>
+                    </V>
+                    <V t="trait">
+                      <U n="trait">
+                        <L n="blacklist_traits">
+                          <T>9599<!--Trait: trait_Lazy--></T>
+                        </L>
+                        <E n="subject">TargetSim</E>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">0.5</T>
+                <L n="tests">
+                  <L>
+                    <V t="relationship">
+                      <U n="relationship">
+                        <U n="relationship_score_interval">
+                          <T n="lower_bound">20</T>
+                        </U>
+                        <L n="target_sim">
+                          <E>TargetSim</E>
+                        </L>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+        <U>
+          <U n="outcome">
+            <V n="animation_ref" t="enabled">
+              <U n="enabled">
+                <T n="factory">470083<!--AnimationElement: animationElement_Getaway_FormAlliance_Fail--></T>
+                <U n="overrides">
+                  <V n="balloons" t="enabled">
+                    <L n="enabled">
+                      <U>
+                        <L n="balloon_choices">
+                          <U>
+                            <V n="item" t="balloon_icon">
+                              <U n="balloon_icon">
+                                <E n="balloon_type">SPEECH</E>
+                                <T p="InGame\UI\Icons\Headlines\Final\headline_Prohibit.png" n="debug_overlay_override">2f7d0004:00000000:ab4a67c934164fb1</T>
+                                <V n="icon" t="resource_key">
+                                  <U n="resource_key">
+                                    <T n="key" p="InEP20\UI\Icons\Headlines\headline_FormAnAlliance.png">2f7d0004:00000000:a8a075ed1e2693fc</T>
+                                  </U>
+                                </V>
+                              </U>
+                            </V>
+                          </U>
+                        </L>
+                        <T n="balloon_delay">4</T>
+                        <L n="balloon_target">
+                          <E>Actor</E>
+                        </L>
+                      </U>
+                      <U>
+                        <L n="balloon_choices">
+                          <U>
+                            <V n="item" t="balloon_icon">
+                              <U n="balloon_icon">
+                                <E n="balloon_type">SPEECH</E>
+                                <V n="icon" t="resource_key">
+                                  <U n="resource_key">
+                                    <T n="key" p="InEP20\UI\Icons\Headlines\headline_FormAnAlliance.png">2f7d0004:00000000:a8a075ed1e2693fc</T>
+                                  </U>
+                                </V>
+                              </U>
+                            </V>
+                          </U>
+                        </L>
+                        <L n="balloon_target">
+                          <E>Actor</E>
+                        </L>
+                      </U>
+                    </L>
+                  </V>
+                </U>
+              </U>
+            </V>
+            <L n="loot_list">
+              <T>10954<!--LootActions: Loot_ForSocialsSocialMotiveMedium--></T>
+              <T>11038<!--LootActions: Rel_Loss_Large--></T>
+              <T>24124<!--LootActions: Loot_SocialContext_Friendship_Loss--></T>
+              <T>36121<!--LootActions: Skill_Loot_Dynamic_Small_ChildrenOnly_Social--></T>
+              <T>369793<!--LootActions: loot_BasicSocialOutcome_Friendly_All--></T>
+              <T>369795<!--LootActions: loot_BasicSocialOutcome_Friendly_Failure_Basic--></T>
+              <T>258936<!--LootActions: loot_Trait_Mean_ReactBroadcaster--></T>
+              <T>99714<!--LootActions: Loot_DidNegativeSocial--></T>
+              <T>109228<!--LootActions: loot_Commodity_CareerBenefit_Agent_Main_Level--></T>
+              <T>104567<!--LootActions: loot_Relationship_Bit_KnowsIsAlien--></T>
+              <T>273714<!--LootActions: loot_Trait_SociallyAwkward_PushIdle--></T>
+              <T>311364<!--LootActions: loot_SelfDiscovery_Progress_Social_Min_Small--></T>
+            </L>
+            <E n="outcome_result">FAILURE</E>
+          </U>
+          <U n="weight">
+            <T n="base_value">0.5</T>
+            <L n="multipliers">
+              <U>
+                <L n="tests">
+                  <L>
+                    <V t="trait">
+                      <U n="trait">
+                        <L n="blacklist_traits">
+                          <T>443222<!--Trait: trait_Competitive--></T>
+                          <T>16823<!--Trait: trait_Ambitious--></T>
+                        </L>
+                        <L n="whitelist_traits">
+                          <T>427231<!--Trait: trait_Grouch--></T>
+                          <T>16845<!--Trait: trait_HotHeaded--></T>
+                          <T>9599<!--Trait: trait_Lazy--></T>
+                          <T>272629<!--Trait: trait_SociallyAwkward--></T>
+                          <T>341153<!--Trait: trait_Cringe--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+      </L>
+      <T n="use_fallback_as_default">True</T>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T n="key" p="InEP20\UI\Icons\Headlines\headline_FormAnAlliance.png">2f7d0004:00000000:a8a075ed1e2693fc</T>
+      </U>
+    </V>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <T n="relationship_scoring">True</T>
+  <E n="scoring_priority">NORMAL</E>
+  <V n="sim_affinity_posture_scoring_data" t="enabled">
+    <U n="enabled">
+      <L n="my_scoring">
+        <U>
+          <V n="affinity_strategy" t="relationship_based" />
+          <T n="negate_tag">True</T>
+          <E n="running_interaction_tag">Sleeping</E>
+        </U>
+        <U>
+          <V n="affinity_strategy" t="avoid" />
+          <E n="running_interaction_tag">Very_Loud</E>
+        </U>
+      </L>
+      <L n="my_tags">
+        <E>Loud</E>
+        <E>Chat</E>
+      </L>
+    </U>
+  </V>
+  <T n="subaction_selection_weight">1</T>
+  <L n="supported_posture_type_filter">
+    <U>
+      <E n="participant_type">Actor</E>
+      <T n="posture_type">15537<!--MobilePosture: posture_Stand--></T>
+    </U>
+    <U>
+      <E n="participant_type">TargetSim</E>
+      <T n="posture_type">15537<!--MobilePosture: posture_Stand--></T>
+    </U>
+  </L>
+  <E n="target_type">TARGET</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">TargetSim</E>
+      </U>
+    </V>
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="relationship">
+      <U n="relationship">
+        <U n="prohibited_relationship_bits">
+          <L n="match_all">
+            <T>472941<!--RelationshipBit: sentimentBit_Actor_CloseTo_Target_ST_Getaway_Alliance--></T>
+          </L>
+        </U>
+        <L n="subject">
+          <E>Actor</E>
+        </L>
+        <L n="target_sim">
+          <E>TargetSim</E>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <V n="whitelist" t="enabled">
+          <L n="enabled">
+            <T>463603<!--Buff: buff_Getaway_Hidden_ModifierRules_EveryoneHatesEachOther--></T>
+            <T>463604<!--Buff: buff_Getaway_Hidden_ModifierRules_FreeLove--></T>
+            <T>463617<!--Buff: buff_Getaway_Hidden_ModifierRules_GrindsetMindset--></T>
+            <T>463616<!--Buff: buff_Getaway_Hidden_ModifierRules_HardcoreMode--></T>
+            <T>463602<!--Buff: buff_Getaway_Hidden_ModifierRules_LoveIsInTheAir--></T>
+            <T>463615<!--Buff: buff_Getaway_Hidden_ModifierRules_RenaissanceHouse--></T>
+            <T>474555<!--Buff: buff_Getaway_Hidden_ModifierRules_Romance--></T>
+            <T>474554<!--Buff: buff_Getaway_Hidden_ModifierRules_Friendship--></T>
+            <T>484241<!--Buff: buff_Getaway_Hidden_ModifierRules_ActivityShuffle--></T>
+            <T>484240<!--Buff: buff_Getaway_Hidden_ModifierRules_PlayerChoice--></T>
+            <T>483862<!--Buff: buff_Getaway_EliminationCandidate--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">490636<!--TestSetInstance: testSetInstance_Getaways_ActorAndTargetSim_InGetawayTravelGroup--></T>
+    </V>
+    <V t="relationship">
+      <U n="relationship">
+        <U n="prohibited_relationship_bits">
+          <L n="match_all">
+            <T>472941<!--RelationshipBit: sentimentBit_Actor_CloseTo_Target_ST_Getaway_Alliance--></T>
+          </L>
+        </U>
+        <L n="subject">
+          <E>TargetSim</E>
+        </L>
+        <L n="target_sim">
+          <E>Actor</E>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<M n="carry.carry_tuning" s="16463085885990451084">
+  <C n="CarryPostureStaticTuning">
+    <T n="POSTURE_CARRY_NOTHING">15521<!--CarryingNothing: posture_CarryNothing--></T>
+    <T n="POSTURE_CARRY_OBJECT">15522<!--CarryingObject: posture_CarryObject--></T>
+  </C>
+  <C n="CarryTuning">
+    <T n="CARRIED_SIM_PROXY_AFFORDANCE">325780<!--CarriedSimProxyInteraction: si_CarriedSimProxy--></T>
+    <U n="CARRYABLE_SIMS_FIXUP_RULES">
+      <L n="carry_hand_affordance_mappings">
+        <U>
+          <E n="key">BACK</E>
+          <L n="value">
+            <U>
+              <T n="owning_affordance">271090<!--SuperInteraction: socialSuperInteraction_CarryPickUp_Infant_Back--></T>
+              <T n="parenting_joint">b__ROOT__</T>
+            </U>
+          </L>
+        </U>
+        <U>
+          <E n="key">RIGHT</E>
+          <L n="value">
+            <U>
+              <T n="owning_affordance">271032<!--SuperInteraction: socialSuperInteraction_CarryPickUp_Infant--></T>
+              <T n="parenting_joint">b__ROOT__</T>
+            </U>
+            <U>
+              <T n="owning_affordance">134423<!--SuperInteraction: socialSuperInteraction_CarryPickUp--></T>
+              <T n="parenting_joint">b__ROOT__</T>
+              <T n="parenting_joint_pet">b__R_Stigmata</T>
+            </U>
+          </L>
+        </U>
+      </L>
+      <L n="carryable_sim_eligibility_tests">
+        <L>
+          <V t="sim_info">
+            <U n="sim_info">
+              <V n="ages" t="specified">
+                <L n="specified">
+                  <E>INFANT</E>
+                  <E>TODDLER</E>
+                </L>
+              </V>
+            </U>
+          </V>
+          <V t="test_set_reference">
+            <T n="test_set_reference">421494<!--TestSetInstance: testSetInstance_MovingOn_InfantStartup--></T>
+          </V>
+        </L>
+        <L>
+          <V t="sim_info">
+            <U n="sim_info">
+              <V n="ages" t="specified">
+                <L n="specified">
+                  <E>CHILD</E>
+                </L>
+              </V>
+              <V n="species" t="specified">
+                <U n="specified">
+                  <L n="species">
+                    <E>CAT</E>
+                    <E>DOG</E>
+                  </L>
+                </U>
+              </V>
+            </U>
+          </V>
+        </L>
+      </L>
+      <L n="carrying_sim_eligibility_tests">
+        <L>
+          <V t="sim_info">
+            <U n="sim_info">
+              <V n="species" t="specified">
+                <U n="specified">
+                  <L n="species">
+                    <E />
+                  </L>
+                </U>
+              </V>
+            </U>
+          </V>
+        </L>
+      </L>
+    </U>
+    <U n="FAIRY_SIM_CARRYING_PORTAL_FLAGS">
+      <T n="apply_to_back_carries">True</T>
+      <T n="apply_to_front_carries">True</T>
+      <T n="flying_walkstyle_trait">433288<!--Trait: trait_OccultFairy_FlyingWalkstyle--></T>
+      <V n="set_flags" t="enabled">
+        <U n="enabled">
+          <L n="portal_allowance_flags">
+            <E>SimBuildLadderClimb</E>
+            <E>SimBuildLadderSlide</E>
+          </L>
+        </U>
+      </V>
+      <V n="unset_flags" t="enabled">
+        <U n="enabled">
+          <L n="portal_allowance_flags">
+            <E>SimBuildLadderFairyFly</E>
+          </L>
+        </U>
+      </V>
+    </U>
+    <T n="HORSE_SATISFY_CONSTRAINTS_INTERACTION">340614<!--HorseSatisfyConstraintSuperInteraction: si_SatisfyConstraint_Horse--></T>
+    <T n="MAXIMUM_PUTDOWN_DERAILMENT">2</T>
+    <L n="PERSIST_CARRIED_SIMS_FIXUP_RULES">
+      <U>
+        <E n="species">HORSE</E>
+        <U n="carry_rules">
+          <E n="carry_track_hand">LEFT</E>
+          <T n="owning_affordance">312885<!--SuperInteraction: socialSuperInteraction_CarryPickUp_HorseRiding--></T>
+          <T n="parenting_joint">b__ROOT__</T>
+        </U>
+      </U>
+    </L>
+    <L n="PUTDOWN_DERAILMENT_INTERACTION_MAP">
+      <U>
+        <T n="key">193172<!--SuperInteraction: ageUp_AutoAge--></T>
+        <T n="value">2</T>
+      </U>
+      <U>
+        <T n="key">196291<!--SuperInteraction: ageUp_IPCTYAE_Debug--></T>
+        <T n="value">2</T>
+      </U>
+    </L>
+    <U n="RALLY_INTERACTION_CARRY_RULES">
+      <T n="wait_to_carry_affordance">307905<!--SuperInteraction: si_GoHere_Together_CarryingSim_Waiting--></T>
+    </U>
+  </C>
+</M>

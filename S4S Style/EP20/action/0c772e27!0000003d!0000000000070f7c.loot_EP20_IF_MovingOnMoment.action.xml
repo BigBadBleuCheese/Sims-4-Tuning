@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_EP20_IF_MovingOnMoment" s="462716">
+  <L n="loot_actions">
+    <V t="schedule_drama_node">
+      <U n="schedule_drama_node">
+        <T n="drama_node">462912<!--DialogDramaNode: dialogDramaNode_EP20_IF_AutoMoveOnMoment--></T>
+        <L n="tests">
+          <L>
+            <V t="imaginary_friend">
+              <U n="imaginary_friend">
+                <V n="test_type" t="imaginary_friend_exists">
+                  <U n="imaginary_friend_exists">
+                    <T n="include_inactive">True</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="imaginary_friend">
+      <U n="imaginary_friend">
+        <V n="operation" t="update_status">
+          <U n="update_status">
+            <E n="status">INACTIVE</E>
+          </U>
+        </V>
+        <E n="target">ActorImaginaryFriend</E>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="imaginary_friend">
+        <U n="imaginary_friend">
+          <V n="test_type" t="imaginary_friend_exists" />
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

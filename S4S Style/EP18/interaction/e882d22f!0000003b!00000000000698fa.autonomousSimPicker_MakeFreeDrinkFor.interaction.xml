@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="AutonomousSimPickerSuperInteraction" i="interaction" m="interactions.base.picker_interaction" n="autonomousSimPicker_MakeFreeDrinkFor" s="432378">
+  <L n="_false_advertisements">
+    <V t="statistic_change">
+      <U n="statistic_change">
+        <T n="amount">5</T>
+        <T n="stat">16623<!--Commodity: commodity_Motive_Role_Bartender--></T>
+      </U>
+    </V>
+    <V t="statistic_change">
+      <U n="statistic_change">
+        <T n="amount">25</T>
+        <T n="stat">16655<!--Commodity: motive_Fun--></T>
+      </U>
+    </V>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <L n="_static_commodities">
+    <U>
+      <T n="static_commodity">16403<!--StaticCommodity: Crafting--></T>
+    </U>
+    <U>
+      <T n="static_commodity">26279<!--StaticCommodity: StaticCommodity_MakeDrink--></T>
+    </U>
+    <U>
+      <T n="static_commodity">142574<!--StaticCommodity: staticCommodity_ApartmentNeighborSituations_Hangout_keyGroup_preParty--></T>
+    </U>
+    <U>
+      <T n="static_commodity">343453<!--StaticCommodity: staticCommodity_MultiUnitCommunity_UseObjects--></T>
+    </U>
+  </L>
+  <L n="actor_continuation">
+    <U>
+      <T n="affordance">424103<!--SocialSuperInteraction: bar_Social_MakeFreeDrinkFor--></T>
+      <E n="target">PickedSim</E>
+    </U>
+  </L>
+  <T n="attention_cost">0.1</T>
+  <V n="basic_content" t="one_shot" />
+  <V n="content_score" t="disabled" />
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T n="include_uninstantiated_sims">False</T>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="route_start_balloon" t="enabled">
+    <U n="enabled">
+      <U n="balloon">
+        <L n="balloon_choices">
+          <U>
+            <V n="item" t="balloon_icon">
+              <U n="balloon_icon">
+                <V n="icon" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>Object</E>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </U>
+        </L>
+        <L n="balloon_target">
+          <E>Actor</E>
+        </L>
+      </U>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <L n="sim_tests">
+    <L>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>133798<!--Trait: trait_Hidden_IsEventNPC_Challenge--></T>
+          </L>
+          <E n="subject">PickedSim</E>
+        </U>
+      </V>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified">
+            <L n="specified">
+              <E>TEEN</E>
+              <E>YOUNGADULT</E>
+              <E>ADULT</E>
+              <E>ELDER</E>
+            </L>
+          </V>
+          <V n="species" t="specified">
+            <U n="specified">
+              <L n="species">
+                <E />
+              </L>
+            </U>
+          </V>
+          <E n="who">PickedSim</E>
+        </U>
+      </V>
+      <V t="distance">
+        <U n="distance">
+          <U n="distance_threshold">
+            <E n="comparison">LESS_OR_EQUAL</E>
+            <T n="value">30</T>
+          </U>
+          <V n="level_modifier" t="infinite" />
+          <V n="target" t="participant_type">
+            <U n="participant_type">
+              <E n="participant">PickedSim</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">ACTOR</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>424108<!--Buff: buff_EP18World_FreeDrinkServe_Hidden--></T>
+        </L>
+        <V n="whitelist" t="enabled">
+          <L n="enabled">
+            <T>29363<!--Buff: buff_Sim_IsBarTending--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+  <T n="visible">False</T>
+</I>

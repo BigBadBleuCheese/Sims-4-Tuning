@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<M n="wills.will_service" s="4098638083903083621">
+  <C n="WillService">
+    <T n="ACTIVE_HOUSEHOLD_WILL_HEADER_TEXT">0x740979CE<!--String: "<i>The following actions will take effect when <b>all Sims aged Teen and older</b> in the {0.String} Household die:</i>\n"--></T>
+    <T n="ACTIVE_SIM_WILL_TEXT">0x69285A4<!--String: "<i>The following actions will take effect when {0.SimFirstName} dies:</i>\n\n{1.String}"--></T>
+    <U n="DELIVER_WILL_DELAY">
+      <T n="minutes">10</T>
+    </U>
+    <T n="DELIVER_WILL_TO_RECIPIENT_LOOT">384553<!--ScheduledDeliveryLoot: scheduledDeliveryLoot_Wills_DeliverWill--></T>
+    <V n="DELIVERY_NOTIFICATION_LOOT" t="enabled">
+      <T n="enabled">424526<!--LootActions: loot_Wills_scheduleDramaNode_WillRecipient_WillArrived--></T>
+    </V>
+    <U n="DEPENDENT_INHERITANCE_FAIL_NOTIFICATION">
+      <V n="text" t="single">
+        <T n="single">0xFD760377<!--String: "The {1.String} Household dependents could not be placed in the {2.String} Household because there are too many Sims. Go to <b>Manage Worlds</b> and use <b>Manage Households</b> to merge the dependents into another household."--></T>
+      </V>
+    </U>
+    <T n="EXECUTED_WILL_READING_TEXT">0x18ACC086<!--String: "{0.SimFirstName}'s Will has arrived!\n\n{1.String}"--></T>
+    <T n="HEIRLOOM_INHERITANCE_LOOT">385129<!--LootActions: loot_Heirlooms_AddInheritedStatus--></T>
+    <T n="HH_WILL_DEPENDENT_DISTRIBUTION_ITEM_TEXT">0x9CF8799<!--String: "{0.SimName} goes to the {1.String} Household.\n"--></T>
+    <T n="HH_WILL_SIMOLEON_CHARITY_RECIPIENT_ITEM_TEXT">0x25F6CE54<!--String: "{0.Number}% of Simoleons will be donated to charity.\n"--></T>
+    <T n="HH_WILL_SIMOLEON_HH_RECIPIENT_ITEM_TEXT">0x9A1F47BC<!--String: "{0.Number}% of Simoleons go to the {1.String} Household.\n"--></T>
+    <U n="SHADY_MERCHANT_TUNING">
+      <L n="burial_object_def_list">
+        <T>18590</T>
+        <T>18592</T>
+      </L>
+      <L n="funeral_activities_list">
+        <T>383563<!--SituationActivity: situationActivity_Funerals_BringFood--></T>
+        <T>383607<!--SituationActivity: situationActivity_Funerals_Dance--></T>
+        <T>383611<!--SituationActivity: situationActivity_Funerals_GiveHappyEulogy--></T>
+        <T>383630<!--SituationActivity: situationActivity_Funerals_GiveSadEulogy--></T>
+        <T>383612<!--SituationActivity: situationActivity_Funerals_GiveSpeech--></T>
+        <T>383566<!--SituationActivity: situationActivity_Funerals_GiveToasts--></T>
+        <T>383613<!--SituationActivity: situationActivity_Funerals_HaveMusic--></T>
+        <T>383565<!--SituationActivity: situationActivity_Funerals_LightCandles--></T>
+        <T>383564<!--SituationActivity: situationActivity_Funerals_MomentOfSilence--></T>
+        <T>383614<!--SituationActivity: situationActivity_Funerals_PlantSomething--></T>
+        <T>383610<!--SituationActivity: situationActivity_Funerals_PlayInstrument--></T>
+        <T>383609<!--SituationActivity: situationActivity_Funerals_UseBadGhostPowers--></T>
+        <T>383608<!--SituationActivity: situationActivity_Funerals_UseGoodGhostPowers--></T>
+      </L>
+      <T n="will_note_text">0xB4AEA13F<!--String: "Note: So long, suckers!"--></T>
+    </U>
+    <T n="SIM_WILL_BURIAL_PREFERENCE_TEXT">0x1D54DD51<!--String: "<b>Sim Remains Preference</b>: {0.ObjectCatalogName}\n"--></T>
+    <T n="SIM_WILL_FUNERAL_ACTIVITY_PREFERENCE_MAX">14</T>
+    <T n="SIM_WILL_FUNERAL_ACTIVITY_PREFERENCE_TEXT">0xD7708239<!--String: "<b>Preferred Funeral Activities</b>: {0.String}.\n"--></T>
+    <T n="SIM_WILL_HEIRLOOM_DISTRIBUTION_ITEM_TEXT">0x2EF41A54<!--String: "<b>Heirloom</b>: <i>{0.ObjectName}</i> will be given to {1.SimName}.\n"--></T>
+    <T n="SIM_WILL_MOOD_TEXT">0xD38FF385<!--String: "<i>This will was written in a way that makes Sims feel {0.String}!</i>\n"--></T>
+    <T n="SIM_WILL_NOTE_TEXT">0x31B8F572<!--String: "Personal Note: {0.String}"--></T>
+    <U n="WILL_READING_NOTIFICATION">
+      <V n="icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T n="key" p="InGame\UI\Icons\Notifications\notification_wills.png">2f7d0004:00000000:518e1275655a7a96</T>
+          </U>
+        </V>
+      </V>
+      <V n="secondary_icon" t="enabled">
+        <V n="enabled" t="participant">
+          <U n="participant">
+            <L n="participant_type">
+              <E>Actor</E>
+            </L>
+          </U>
+        </V>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0xCA053AC1<!--String: "{1.String}"--></T>
+      </V>
+      <V n="title" t="enabled">
+        <T n="enabled">0x84E9B3B3<!--String: "The Will of {0.SimName}"--></T>
+      </V>
+    </U>
+  </C>
+</M>

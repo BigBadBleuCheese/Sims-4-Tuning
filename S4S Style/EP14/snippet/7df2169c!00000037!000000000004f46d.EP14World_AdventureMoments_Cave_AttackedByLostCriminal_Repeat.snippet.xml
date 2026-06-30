@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="AdventureMoment" i="snippet" m="snippets" n="EP14World_AdventureMoments_Cave_AttackedByLostCriminal_Repeat" s="324717">
+  <U n="value">
+    <L n="_finish_actions">
+      <U>
+        <L n="action_results">
+          <U>
+            <L n="loot_actions">
+              <T>324769<!--LootActions: Loot_EP14World_Rabbithole_Cave_AttackedByLostCriminal_AttackIt_Success--></T>
+              <T>325355<!--LootActions: loot_EP14World_Rabbithole_Cave_ResetCreatureHealth--></T>
+              <T>325356<!--LootActions: loot_EP14World_Rabbithole_Cave_ResetAttackDamage_Sim--></T>
+              <T>325775<!--LootActions: loot_EP14World_Rabbithole_Cave_ResetAttackDamage_Creature--></T>
+            </L>
+            <L n="next_moments">
+              <E>Cave_Explore</E>
+            </L>
+            <L n="weight_modifiers">
+              <U>
+                <V n="test" t="relative_statistic">
+                  <U n="relative_statistic">
+                    <E n="comparison">LESS</E>
+                    <E n="source">Object</E>
+                    <T n="stat">325167<!--Statistic: statistic_EP14World_Cave_AttackDamage_Sim--></T>
+                    <E n="target">Object</E>
+                    <L n="target_stats">
+                      <T>325166<!--Statistic: statistic_EP14World_Cave_CreatureHealth--></T>
+                    </L>
+                  </U>
+                </V>
+                <T n="weight_multiplier">0</T>
+              </U>
+            </L>
+          </U>
+          <U>
+            <L n="loot_actions">
+              <T>324768<!--LootActions: loot_EP14World_Rabbithole_Cave_AttackedByLostCriminal_AttackIt_Neutral--></T>
+              <T>325357<!--LootActions: loot_EP14World_Rabbithole_Cave_Damage_Creature--></T>
+              <T>325360<!--LootActions: loot_EP14World_Rabbithole_Cave_Heal_Sim--></T>
+              <T>325356<!--LootActions: loot_EP14World_Rabbithole_Cave_ResetAttackDamage_Sim--></T>
+              <T>325775<!--LootActions: loot_EP14World_Rabbithole_Cave_ResetAttackDamage_Creature--></T>
+            </L>
+            <L n="next_moments">
+              <E>Cave_BossCreature4_Repeat</E>
+            </L>
+            <L n="weight_modifiers">
+              <U>
+                <V n="test" t="relative_statistic">
+                  <U n="relative_statistic">
+                    <E n="comparison">GREATER_OR_EQUAL</E>
+                    <E n="source">Object</E>
+                    <T n="stat">325167<!--Statistic: statistic_EP14World_Cave_AttackDamage_Sim--></T>
+                    <E n="target">Object</E>
+                    <L n="target_stats">
+                      <T>325166<!--Statistic: statistic_EP14World_Cave_CreatureHealth--></T>
+                    </L>
+                  </U>
+                </V>
+                <T n="weight_multiplier">0</T>
+              </U>
+            </L>
+          </U>
+          <U>
+            <L n="loot_actions">
+              <T>324767<!--LootActions: loot_EP14World_Rabbithole_Cave_AttackedByLostCriminal_AttackIt_Fail--></T>
+              <T>325359<!--LootActions: loot_EP14World_Rabbithole_Cave_Damage_Sim--></T>
+              <T>325810<!--LootActions: loot_EP14World_Rabbithole_Cave_Heal_Creature--></T>
+              <T>325356<!--LootActions: loot_EP14World_Rabbithole_Cave_ResetAttackDamage_Sim--></T>
+              <T>325775<!--LootActions: loot_EP14World_Rabbithole_Cave_ResetAttackDamage_Creature--></T>
+            </L>
+            <L n="next_moments">
+              <E>Cave_BossCreature4_Repeat</E>
+            </L>
+            <L n="weight_modifiers">
+              <U>
+                <V n="test" t="relative_statistic">
+                  <U n="relative_statistic">
+                    <E n="comparison">GREATER_OR_EQUAL</E>
+                    <E n="source">Object</E>
+                    <T n="stat">325773<!--Statistic: statistic_EP14World_Cave_AttackDamage_Creature--></T>
+                    <E n="target">Object</E>
+                    <L n="target_stats">
+                      <T>325175<!--Statistic: statistic_EP14World_Cave_SimHealth--></T>
+                    </L>
+                  </U>
+                </V>
+                <T n="weight_multiplier">0</T>
+              </U>
+            </L>
+          </U>
+          <U>
+            <L n="loot_actions">
+              <T>324770<!--LootActions: loot_EP14World_Rabbithole_Cave_AttackedByLostCriminal_AttackIt_SuperFail--></T>
+            </L>
+            <L n="weight_modifiers">
+              <U>
+                <V n="test" t="relative_statistic">
+                  <U n="relative_statistic">
+                    <E n="comparison">LESS</E>
+                    <E n="source">Object</E>
+                    <T n="stat">325773<!--Statistic: statistic_EP14World_Cave_AttackDamage_Creature--></T>
+                    <E n="target">Object</E>
+                    <L n="target_stats">
+                      <T>325175<!--Statistic: statistic_EP14World_Cave_SimHealth--></T>
+                    </L>
+                  </U>
+                </V>
+                <T n="weight_multiplier">0</T>
+              </U>
+            </L>
+          </U>
+        </L>
+        <L n="availability_tests">
+          <L>
+            <V t="simoleon_value">
+              <U n="simoleon_value">
+                <V n="value_context" t="total_cash" />
+                <U n="value_threshold">
+                  <T n="value">100</T>
+                </U>
+              </U>
+            </V>
+          </L>
+        </L>
+        <V n="cost" t="simoleon_cost">
+          <U n="simoleon_cost">
+            <T n="amount">100</T>
+          </U>
+        </V>
+        <V n="disabled_text" t="enabled">
+          <T n="enabled">0x94A16578<!--String: "This Sim needs at least 20 Simoleons!"--></T>
+        </V>
+        <V n="display_subtext" t="single">
+          <T n="single">0x725CDC4<!--String: "Consumes Special Item"--></T>
+        </V>
+        <V n="display_text" t="single">
+          <T n="single">0xAE452EE9<!--String: "Thumb War Wager"--></T>
+        </V>
+      </U>
+      <U>
+        <L n="action_results">
+          <U>
+            <L n="loot_actions">
+              <T>325022<!--LootActions: loot_EP14World_Rabbithole_Cave_AttackedByLostCriminal_RunAway_Neutral--></T>
+              <T>325360<!--LootActions: loot_EP14World_Rabbithole_Cave_Heal_Sim--></T>
+              <T>325356<!--LootActions: loot_EP14World_Rabbithole_Cave_ResetAttackDamage_Sim--></T>
+              <T>325775<!--LootActions: loot_EP14World_Rabbithole_Cave_ResetAttackDamage_Creature--></T>
+            </L>
+            <L n="next_moments">
+              <E>Cave_BossCreature4_Repeat</E>
+            </L>
+            <L n="weight_modifiers">
+              <U>
+                <T n="weight_multiplier">1</T>
+              </U>
+            </L>
+          </U>
+          <U>
+            <L n="loot_actions">
+              <T>325023<!--LootActions: loot_EP14World_Rabbithole_Cave_AttackedByLostCriminal_RunAway_Fail--></T>
+            </L>
+            <L n="weight_modifiers">
+              <U>
+                <T n="weight_multiplier">1</T>
+              </U>
+            </L>
+          </U>
+          <U>
+            <L n="loot_actions">
+              <T>325540<!--LootActions: loot_EP14World_Rabbithole_Cave_AttackedByLostCriminal_RunAway_Success--></T>
+              <T>325355<!--LootActions: loot_EP14World_Rabbithole_Cave_ResetCreatureHealth--></T>
+              <T>325356<!--LootActions: loot_EP14World_Rabbithole_Cave_ResetAttackDamage_Sim--></T>
+              <T>325775<!--LootActions: loot_EP14World_Rabbithole_Cave_ResetAttackDamage_Creature--></T>
+            </L>
+            <L n="next_moments">
+              <E>Cave_Explore</E>
+            </L>
+            <L n="weight_modifiers">
+              <U>
+                <T n="weight_multiplier">1</T>
+              </U>
+            </L>
+          </U>
+        </L>
+        <L n="availability_tests">
+          <L>
+            <V t="simoleon_value">
+              <U n="simoleon_value">
+                <V n="value_context" t="current_value">
+                  <U n="current_value">
+                    <E n="subject">Actor</E>
+                  </U>
+                </V>
+                <U n="value_threshold">
+                  <E n="comparison">GREATER_OR_EQUAL</E>
+                  <T n="value">100</T>
+                </U>
+              </U>
+            </V>
+          </L>
+        </L>
+        <V n="display_text" t="single">
+          <T n="single">0xFF1BD1F5<!--String: "Defense"--></T>
+        </V>
+      </U>
+      <U>
+        <L n="action_results">
+          <U>
+            <L n="loot_actions">
+              <T>324981<!--LootActions: loot_EP14World_Rabbithole_Cave_AttackedByBat_RunAway_Fail--></T>
+            </L>
+            <L n="weight_modifiers">
+              <U>
+                <T n="weight_multiplier">1</T>
+              </U>
+            </L>
+          </U>
+        </L>
+        <L n="availability_tests">
+          <L>
+            <V t="simoleon_value">
+              <U n="simoleon_value">
+                <V n="value_context" t="current_value">
+                  <U n="current_value">
+                    <E n="subject">Actor</E>
+                  </U>
+                </V>
+                <U n="value_threshold">
+                  <E n="comparison">LESS</E>
+                  <T n="value">100</T>
+                </U>
+              </U>
+            </V>
+          </L>
+        </L>
+        <V n="display_text" t="single">
+          <T n="single">0x4F7A3607<!--String: "Run Away!"--></T>
+        </V>
+      </U>
+    </L>
+    <V n="_visibility" t="show_dialog">
+      <U n="show_dialog">
+        <V n="audio_sting" t="disabled" />
+        <E n="dialog_bg_style">BG_CHANCE_CARD</E>
+        <E n="dialog_style">LARGE_ICON</E>
+        <V n="icon" t="enabled">
+          <V n="enabled" t="resource_key">
+            <U n="resource_key">
+              <T n="key" p="InEP14\UI\Icons\Dialog\ChanceCard_AttackedByCriminal.png">2f7d0004:00000000:bb046a6ea6db18d5</T>
+            </U>
+          </V>
+        </V>
+        <V n="text" t="variation">
+          <U n="variation">
+            <L n="variations">
+              <T>0xD493FD29<!--String: "The Mysterious Challenger is not persuaded and needs more Simoleons. What kind of thumb war is this?!\n\n<b>Challenger Simoleons: {1.Number}</b>\n<b>{0.SimFirstName}'s Simoleons: {2.Number}</b>\n<b>Cave Progress: {3.Number}/100</b>"--></T>
+              <T>0xA2C71A63<!--String: "{0.SimFirstName}'s thumb is starting to cramp. The appendage battle continues.\n\n<b>Challenger Simoleons: {1.Number}</b>\n<b>{0.SimFirstName}'s Simoleons: {2.Number} </b>\n<b>Cave Progress: {3.Number}/100</b>"--></T>
+              <T>0xDC4502D2<!--String: "{0.SimFirstName} tries to distract the Mysterious Challenger with no luck.\n\n<b>Challenger Simoleons: {1.Number}</b>\n<b>{0.SimFirstName}'s Simoleons: {2.Number}</b>\n<b>Cave Progress: {3.Number}/100</b>"--></T>
+            </L>
+          </U>
+        </V>
+        <V n="text_tokens" t="enabled">
+          <U n="enabled">
+            <L n="tokens">
+              <V t="participant_type" />
+              <V t="statistic_value">
+                <U n="statistic_value">
+                  <E n="participant">Object</E>
+                  <T n="statistic">325166<!--Statistic: statistic_EP14World_Cave_CreatureHealth--></T>
+                </U>
+              </V>
+              <V t="statistic_value">
+                <U n="statistic_value">
+                  <E n="participant">Object</E>
+                  <T n="statistic">325175<!--Statistic: statistic_EP14World_Cave_SimHealth--></T>
+                </U>
+              </V>
+              <V t="statistic_value">
+                <U n="statistic_value">
+                  <E n="participant">Actor</E>
+                  <T n="statistic">325538<!--Statistic: statistic_EP14World_Cave_Progress--></T>
+                </U>
+              </V>
+              <V t="statistic_value">
+                <U n="statistic_value">
+                  <E n="participant">Actor</E>
+                  <T n="statistic">325362<!--Statistic: statistic_EP14World_Cave_Level--></T>
+                </U>
+              </V>
+            </L>
+          </U>
+        </V>
+        <V n="title" t="enabled">
+          <T n="enabled">0x2FBEF214<!--String: "Mysterious Challenger"--></T>
+        </V>
+      </U>
+    </V>
+  </U>
+</I>

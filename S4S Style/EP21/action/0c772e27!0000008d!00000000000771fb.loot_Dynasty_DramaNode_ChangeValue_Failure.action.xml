@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Dynasty_DramaNode_ChangeValue_Failure" s="487931">
+  <L n="loot_actions">
+    <V t="actions">
+      <T n="actions">470997<!--LootActions: loot_Dynasty_Membership_Leave_Failure--></T>
+    </V>
+    <V t="actions">
+      <T n="actions">146094<!--LootActions: rel_Loss_Large_Target--></T>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>TargetSim</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x952B2BE0<!--String: "Your time is up, {0.SimFirstName}. I should've known you're too obsessed with the past to make the right choice for the {1.String} Dynasty's future. I'm out."--></T>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="participant_type">
+                    <U n="participant_type">
+                      <V n="objects" t="from_participant">
+                        <U n="from_participant">
+                          <E n="participant">TargetSim</E>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                  <V t="dynasty">
+                    <U n="dynasty">
+                      <E n="participant">TargetSim</E>
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </V>
+            <E n="visual_type">SPEECH</E>
+          </U>
+        </V>
+        <E n="subject">TargetSim</E>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="required_relationship_bits">
+            <L n="match_any">
+              <T>487898<!--RelationshipBit: shortTermBit_Dynasty_ChangeValue--></T>
+            </L>
+          </U>
+          <L n="subject">
+            <E>TargetSim</E>
+          </L>
+          <L n="target_sim">
+            <E>Actor</E>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

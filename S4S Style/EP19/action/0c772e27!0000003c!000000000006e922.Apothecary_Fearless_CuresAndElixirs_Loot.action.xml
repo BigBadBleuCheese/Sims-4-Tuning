@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="Apothecary_Fearless_CuresAndElixirs_Loot" s="452898">
+  <L n="loot_actions">
+    <V t="reaction">
+      <U n="reaction">
+        <V n="mixer_reaction" t="enabled">
+          <U n="enabled">
+            <T n="affordance">466468<!--MixerInteraction: apothecary_CuresandElixirs_Cured_Reaction--></T>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <L n="whitelist_trait_types">
+                  <E>FEAR</E>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="dynamic_skill_loot">
+      <U n="dynamic_skill_loot">
+        <U n="skill_loot_data_override">
+          <E n="effectiveness">Small</E>
+          <T n="stat">439222<!--Skill: statistic_Skill_AdultMajor_Apothecary--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <L n="blacklist_trait_types">
+                  <E>FEAR</E>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="actions">
+      <T n="actions">454946<!--RandomWeightedLoot: randomLoot_Apothecary_CuresandElixirs_TastedTheGoods_Fearless--></T>
+    </V>
+    <V t="buff_removal">
+      <U n="buff_removal">
+        <L n="buffs_to_remove">
+          <T>278005<!--Buff: buff_Fear_Dark_Trait_Effects--></T>
+          <T>287760<!--Buff: buff_Fear_CrowdedPlaces_Effects_Level2--></T>
+          <T>287761<!--Buff: buff_Fear_CrowdedPlaces_Effects_Level1--></T>
+          <T>278014<!--Buff: buff_Fear_Dark_Effects_ScaredOutside--></T>
+        </L>
+      </U>
+    </V>
+    <V t="trait_remove">
+      <U n="trait_remove">
+        <V n="trait" t="traits_of_type">
+          <U n="traits_of_type">
+            <L n="trait_types">
+              <E>FEAR</E>
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="run_test_first">False</T>
+</I>

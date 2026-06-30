@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalObjectInteraction" i="situation_goal" m="situations.situation_goal_object_interaction" n="r5Event_ObjectInteraction_SleepInTent" s="448176">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T p="InGame\UI\Icons\Headlines\Final\headline_moonfull.png" n="enabled">2f7d0004:00000000:450291da50e9f540</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x5891DC4B<!--String: "Sleep in a Tent"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0x5E9ABF65<!--String: "Enjoy a night under the stars. Select a Tent and choose Sleep.\n\nSelect to learn more."--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>447711<!--SituationGoalLootActions: liveEvent_GoalLoot_CompleteQuestGoal--></T>
+  </L>
+  <U n="_goal_test">
+    <L n="affordances">
+      <T>104118<!--SuperInteraction: Tent_Sleep--></T>
+      <T>257412<!--SuperInteraction: kidsTent_Sleep--></T>
+      <T>104117<!--SuperInteraction: Tent_Nap--></T>
+      <T>257477<!--SuperInteraction: kidsTent_Nap--></T>
+    </L>
+    <E n="test_event">InteractionComplete</E>
+  </U>
+  <L n="_post_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+      </U>
+    </V>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+  <T n="mandatory">False</T>
+  <V n="mtx_bundle" t="enabled">
+    <T n="enabled">246596<!--SocialMixerInteraction: mixer_Social_Skiing_OfferSkiExpertise_Continued_Friendly_NT--></T>
+  </V>
+  <V n="tutorial_tip_group" t="enabled">
+    <T n="enabled">448178<!--TutorialTipGroup: tutorialTipGroup_LiveEvent_R5Event_SleepInTent--></T>
+  </V>
+</I>

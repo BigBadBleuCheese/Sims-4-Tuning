@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="TestSetInstance" i="snippet" m="event_testing.tests" n="testSet_Dynasty_NoPermissionToMarry_ActorFromTarget" s="487277">
+  <L n="test">
+    <L>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="required_relationship_bits">
+            <L n="match_any">
+              <T>481096<!--RelationshipBit: shortTermBit_Dynasty_MarriageNotApprovedByTargetFamily--></T>
+            </L>
+          </U>
+        </U>
+      </V>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>469882<!--Trait: trait_Dynasty_BlackSheep_Resentful--></T>
+            <T>362090<!--Trait: trait_LoveStruck--></T>
+          </L>
+          <E n="subject">TargetSim</E>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="prohibited_relationship_bits">
+            <L n="match_any">
+              <T>481094<!--RelationshipBit: shortTermBit_Dynasty_MarriageApprovedByTargetFamily--></T>
+              <T>481096<!--RelationshipBit: shortTermBit_Dynasty_MarriageNotApprovedByTargetFamily--></T>
+            </L>
+          </U>
+        </U>
+      </V>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>466527<!--Trait: trait_Dynasty_Head--></T>
+          </L>
+          <L n="whitelist_traits">
+            <T>466524<!--Trait: trait_Dynasty_Member--></T>
+          </L>
+        </U>
+      </V>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>466527<!--Trait: trait_Dynasty_Head--></T>
+          </L>
+          <E n="subject">TargetSim</E>
+          <L n="whitelist_traits">
+            <T>466524<!--Trait: trait_Dynasty_Member--></T>
+          </L>
+        </U>
+      </V>
+      <V t="dynasty_member">
+        <U n="dynasty_member">
+          <V n="test_type" t="same_dynasty_membership" />
+        </U>
+      </V>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>469882<!--Trait: trait_Dynasty_BlackSheep_Resentful--></T>
+            <T>362090<!--Trait: trait_LoveStruck--></T>
+          </L>
+          <E n="subject">TargetSim</E>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="prohibited_relationship_bits">
+            <L n="match_any">
+              <T>481094<!--RelationshipBit: shortTermBit_Dynasty_MarriageApprovedByTargetFamily--></T>
+              <T>481096<!--RelationshipBit: shortTermBit_Dynasty_MarriageNotApprovedByTargetFamily--></T>
+            </L>
+          </U>
+        </U>
+      </V>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>466527<!--Trait: trait_Dynasty_Head--></T>
+          </L>
+          <E n="subject">TargetSim</E>
+          <L n="whitelist_traits">
+            <T>466524<!--Trait: trait_Dynasty_Member--></T>
+          </L>
+        </U>
+      </V>
+      <V t="dynasty_member">
+        <U n="dynasty_member">
+          <T n="negate">True</T>
+          <V n="test_type" t="same_dynasty_membership" />
+        </U>
+      </V>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>469882<!--Trait: trait_Dynasty_BlackSheep_Resentful--></T>
+            <T>362090<!--Trait: trait_LoveStruck--></T>
+          </L>
+          <E n="subject">TargetSim</E>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

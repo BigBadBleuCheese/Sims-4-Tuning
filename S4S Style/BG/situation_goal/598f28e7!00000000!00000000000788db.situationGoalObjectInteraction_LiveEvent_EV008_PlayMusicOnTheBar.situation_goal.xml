@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalObjectInteraction" i="situation_goal" m="situations.situation_goal_object_interaction" n="situationGoalObjectInteraction_LiveEvent_EV008_PlayMusicOnTheBar" s="493787">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T p="InGame\UI\Icons\Headlines\Final\headline_BaroqueMusic_bg.png" n="enabled">2f7d0004:00000000:204f9477a4b7a398</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x2018C190<!--String: "Play Music at the Nightclub"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0x9EEB4958<!--String: "It's time to put those music Skills to the test.\n\nFind a piano at a nightclub and play it!"--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>447711<!--SituationGoalLootActions: liveEvent_GoalLoot_CompleteQuestGoal--></T>
+  </L>
+  <U n="_goal_test">
+    <L n="affordances">
+      <T>13809<!--PlayAudioSuperInteractionNonTieredMenu: piano_Practice--></T>
+      <T>75835<!--PlayAudioSuperInteractionNonTieredMenu: piano_Practice_Scales--></T>
+      <T>75872<!--PlayAudioSuperInteractionNonTieredMenu: piano_Practice_Child_Scales--></T>
+      <T>37969<!--PlayAudioSuperInteractionNonTieredMenu: piano_Practice_Child--></T>
+      <T>144737<!--PlayAudioSuperInteractionNonTieredMenu: portableKeyboard_Practice--></T>
+      <T>144739<!--PlayAudioSuperInteractionNonTieredMenu: portableKeyboard_Practice_Scales--></T>
+      <T>144740<!--PlayAudioSuperInteractionNonTieredMenu: portableKeyboard_Practice_Scales_Child--></T>
+      <T>144738<!--PlayAudioSuperInteractionNonTieredMenu: portableKeyboard_Practice_Child--></T>
+      <T>13808<!--PlayAudioSuperInteractionTieredMenu: piano_Play_Song--></T>
+      <T>149929<!--PlayAudioSuperInteractionNonTieredMenu: PipeOrgan_Practice--></T>
+      <T>149948<!--PlayAudioSuperInteractionNonTieredMenu: pipeOrgan_Practice_Child_Scales--></T>
+      <T>149946<!--PlayAudioSuperInteractionNonTieredMenu: pipeOrgan_Practice_Scales--></T>
+      <T>149947<!--PlayAudioSuperInteractionNonTieredMenu: pipeOrgan_Practice_Child--></T>
+      <T>151301<!--PlayAudioSuperInteractionTieredMenu: pipeOrgan_Play_Song--></T>
+    </L>
+    <V n="running_time" t="enabled" />
+    <E n="test_event">InteractionUpdate</E>
+  </U>
+  <L n="_post_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+      </U>
+    </V>
+    <V t="location">
+      <U n="location">
+        <U n="location_tests">
+          <V n="is_venue_type" t="enabled">
+            <U n="enabled">
+              <T n="venue_type">16870<!--Venue: venue_club--></T>
+            </U>
+          </V>
+        </U>
+      </U>
+    </V>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+  <V n="goal_completion_notification" t="enabled">
+    <U n="enabled">
+      <V n="icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T n="key" p="InGame\UI\Icons\Notifications\notification_musicFestival.png">2f7d0004:00000000:a70bcd5dc7f5d0dc</T>
+          </U>
+        </V>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0xD4F12D76<!--String: "Emotions get channeled into the melody, and the fireplace flame dances with the rhythm. Something can be seen flickering through the flames."--></T>
+      </V>
+    </U>
+  </V>
+  <V n="tutorial_tip_group" t="enabled">
+    <T n="enabled">498724<!--TutorialTipGroup: tutorialTipGroup_LiveEvent_EV008_InteractPiano--></T>
+  </V>
+</I>

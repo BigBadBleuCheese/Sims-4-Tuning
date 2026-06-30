@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_UnitRating_Progression_PickedUnit_ActiveLot_RentChange_NotGracePeriod_Small_Loss" s="359586">
+  <L n="loot_actions">
+    <V t="modify_dynamic_unit_rating">
+      <U n="modify_dynamic_unit_rating">
+        <E n="change_value">SMALL_LOSS</E>
+      </U>
+    </V>
+    <V t="modify_dynamic_unit_rating">
+      <U n="modify_dynamic_unit_rating">
+        <E n="change_value">BONUS_SMALL</E>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <L n="whitelist_traits">
+                  <T>352408<!--Trait: trait_MultiUnitGuide_KnowledgeableLeaser--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="modify_dynamic_unit_rating">
+      <U n="modify_dynamic_unit_rating">
+        <E n="change_value">BONUS_SMALL</E>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <L n="whitelist_traits">
+                  <T>341148<!--Trait: trait_MultiUnit_Aspiration_LegendaryLandlord--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="rental_business_is_grace_period">
+        <U n="rental_business_is_grace_period">
+          <T n="negate">True</T>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

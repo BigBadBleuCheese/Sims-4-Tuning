@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_ChattyCall" s="319535">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0xE201ECC5<!--String: "(From Chatting with Close Family Member)"--></T>
+          </V>
+          <T n="buff_type">319531<!--Buff: buff_FamilyDynamics_ChattyCallHappy--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="relationship">
+              <U n="relationship">
+                <U n="required_relationship_bits">
+                  <L n="match_any">
+                    <T>306293<!--RelationshipBit: familyTrope_close--></T>
+                  </L>
+                </U>
+                <L n="target_sim">
+                  <E>PickedSim</E>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0xEB790D6A<!--String: "(From Chatting with Supportive Family Member)"--></T>
+          </V>
+          <T n="buff_type">319532<!--Buff: buff_FamilyDynamics_ChattyCallConfident--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="relationship">
+              <U n="relationship">
+                <U n="required_relationship_bits">
+                  <L n="match_any">
+                    <T>306356<!--RelationshipBit: familyTrope_loving_target_IsAuthorityOf_actor--></T>
+                    <T>306357<!--RelationshipBit: familyTrope_loving_target_isSubordinateOf_actor--></T>
+                  </L>
+                </U>
+                <L n="target_sim">
+                  <E>PickedSim</E>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0xD8CE9D9A<!--String: "(From Chatting with Jokester Family Member)"--></T>
+          </V>
+          <T n="buff_type">319534<!--Buff: buff_FamilyDynamics_ChattyCallPlayful--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="relationship">
+              <U n="relationship">
+                <U n="required_relationship_bits">
+                  <L n="match_any">
+                    <T>306279<!--RelationshipBit: familyTrope_Jokesters--></T>
+                  </L>
+                </U>
+                <L n="target_sim">
+                  <E>PickedSim</E>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

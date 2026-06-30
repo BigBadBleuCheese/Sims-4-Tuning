@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="GuidanceTip" i="guidance_tip" m="guidance.guidance_tip" n="guidanceTip_MultiUnit_Landlord_Live_SingleUnitOwner_End" s="358929">
+  <L n="activation_rules">
+    <U>
+      <L n="criteria">
+        <U>
+          <V n="criterion" t="guidance_mode" />
+        </U>
+        <U>
+          <V n="criterion" t="game_state">
+            <E n="game_state">LIVE_MODE</E>
+          </V>
+        </U>
+        <U>
+          <V n="criterion" t="guidance_tip_group_satisfied">
+            <L n="guidance_tip_group_satisfied">
+              <T>355151<!--GuidanceTipGroup: guidanceTipGroup_MultiUnit_Live_02--></T>
+            </L>
+          </V>
+        </U>
+      </L>
+    </U>
+    <U>
+      <L n="criteria">
+        <U>
+          <V n="criterion" t="game_option_setting">
+            <U n="game_option_setting">
+              <T n="setting_name">PackGuidanceEnabled</T>
+              <T n="setting_value">1</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="criterion" t="game_option_setting">
+            <U n="game_option_setting">
+              <T n="setting_name">GuidancePack</T>
+              <T n="setting_value">1</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <T p="InEP15\UI\Icons\GuidanceSystem\Poses\VaneshaPose_Gift.png" n="icon">2f7d0004:00000000:bdc5d8e7fd2f2a1f</T>
+  <L n="options">
+    <U>
+      <U n="actions">
+        <L n="actions_on_success">
+          <V t="satisfy_guidance_item_group">
+            <T n="satisfy_guidance_item_group">358266<!--GuidanceTipGroup: guidanceTipGroup_MultiUnit_All--></T>
+          </V>
+        </L>
+        <T n="satisfy_on_action_cancel">True</T>
+        <T n="satisfy_on_activate">True</T>
+      </U>
+      <T n="text">0xC66265D9<!--String: "Sounds good!"--></T>
+    </U>
+    <U>
+      <U n="actions">
+        <L n="actions_on_activate">
+          <V t="ui_message">
+            <U n="ui_message">
+              <V n="ui_message_cmn" t="enabled">
+                <U n="enabled">
+                  <T n="message_name">ShowTutorial</T>
+                  <L n="parameters">
+                    <U>
+                      <T n="key">source</T>
+                      <V n="value" t="raw_string">
+                        <T n="raw_string">quiz</T>
+                      </V>
+                    </U>
+                    <U>
+                      <T n="key">tutorial_id</T>
+                      <V n="value" t="raw_string">
+                        <T n="raw_string">354010<!--Tutorial: tutorial_EP15_RealEstateOnboarding--></T>
+                      </V>
+                    </U>
+                  </L>
+                </U>
+              </V>
+            </U>
+          </V>
+        </L>
+        <L n="actions_on_success">
+          <V t="satisfy_guidance_item_group">
+            <T n="satisfy_guidance_item_group">358266<!--GuidanceTipGroup: guidanceTipGroup_MultiUnit_All--></T>
+          </V>
+        </L>
+        <T n="satisfy_on_action_success">False</T>
+      </U>
+      <T n="suppress_hide_on_activate">True</T>
+      <T n="text">0xEABE5948<!--String: "View Lessons"--></T>
+    </U>
+  </L>
+  <L n="relaunch_rules" />
+  <T n="relaunch_text">0x42B391F8<!--String: "Tutorial: Residential Rental"--></T>
+  <T n="satisfy_on_timeout">True</T>
+  <T n="text">0x1D174E74<!--String: "And there you have it, now you've become a Property Owner! The up and down arrows on the 'Owned Businesses' panel shows you any Unit Rating changes happening for that unit. Oh, and as a token of appreciation, I've given you the <b>Knowledgeable Leaser</b> reward trait viewable under the Simology panel! Thanks for learning!"--></T>
+  <T n="timeout">3600</T>
+  <T n="title">0x6FBB1827<!--String: "Thank you!"--></T>
+</I>

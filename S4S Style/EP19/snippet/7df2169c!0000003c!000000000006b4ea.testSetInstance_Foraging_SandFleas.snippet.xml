@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="TestSetInstance" i="snippet" m="event_testing.tests" n="testSetInstance_Foraging_SandFleas" s="439530">
+  <V n="invert_test" t="disabled" />
+  <L n="test">
+    <L>
+      <V t="zone">
+        <U n="zone">
+          <V n="tooltip" t="enabled">
+            <T n="enabled">0xD9ACBE43<!--String: "Cannot Forage on this ground! Try grass, dirt, or sand."--></T>
+          </V>
+          <U n="zone_tests">
+            <V n="world_tests" t="enabled">
+              <U n="enabled">
+                <V n="whitelist" t="specify">
+                  <U n="specify">
+                    <L n="whitelist">
+                      <T>248698</T>
+                      <T>247198<!--Buff: buff_ClimbingRoute_SlowAndSteady_Average--></T>
+                      <T>247835<!--Recipe: recipe_Food_Homestyle_CasseroleTaco_Healthy-Single--></T>
+                      <T>247967<!--SentimentTrack: sentimentTrack_Actor_HurtBy_Target_ST_saddened--></T>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </U>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="pick_info_test">
+        <U n="pick_info_test">
+          <V n="pick_type_test" t="pick_type">
+            <U n="pick_type">
+              <V n="terrain_tags" t="enabled">
+                <L n="enabled">
+                  <E>DIRT</E>
+                  <E>GRASS</E>
+                </L>
+              </V>
+              <T n="test_floor_tiles">True</T>
+              <V n="tooltip" t="enabled">
+                <T n="enabled">0xD9ACBE43<!--String: "Cannot Forage on this ground! Try grass, dirt, or sand."--></T>
+              </V>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="pick_info_test">
+        <U n="pick_info_test">
+          <V n="pick_type_test" t="pick_type">
+            <U n="pick_type">
+              <V n="terrain_tags" t="enabled">
+                <L n="enabled">
+                  <E>SAND</E>
+                </L>
+              </V>
+              <T n="test_floor_tiles">True</T>
+            </U>
+          </V>
+          <V n="tooltip" t="enabled">
+            <T n="enabled">0x6F82E3C9<!--String: "{0.SimFirstName} is too scared of sand fleas to Forage on sand right now!"--></T>
+          </V>
+        </U>
+      </V>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>437569<!--Buff: buffs_Foraging_SandFleas--></T>
+          </L>
+          <V n="tooltip" t="enabled">
+            <T n="enabled">0x6F82E3C9<!--String: "{0.SimFirstName} is too scared of sand fleas to Forage on sand right now!"--></T>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

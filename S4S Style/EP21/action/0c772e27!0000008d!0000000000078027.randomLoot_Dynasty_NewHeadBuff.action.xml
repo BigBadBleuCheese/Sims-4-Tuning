@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="RandomWeightedLoot" i="action" m="interactions.utils.loot" n="randomLoot_Dynasty_NewHeadBuff" s="491559">
+  <L n="random_loot_actions">
+    <U>
+      <V n="action" t="buff">
+        <U n="buff">
+          <U n="buff">
+            <T n="buff_type">491557<!--Buff: buff_Dynasty_NewHeadTense--></T>
+          </U>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">1</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="relationship_bit_count">
+                  <U n="relationship_bit_count">
+                    <E n="comparison_operator">GREATER_OR_EQUAL</E>
+                    <T n="rel_bit">466623<!--RelationshipBit: sentimentBit_Actor_MotivatedBy_Target_LT_Dynasty_ProudHeir--></T>
+                    <T n="relationship_count">1</T>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">25</T>
+            <L n="tests">
+              <L>
+                <V t="test_based_score_threshold">
+                  <U n="test_based_score_threshold">
+                    <T n="test_based_score">491560<!--TestBasedScore: testBasedScore_Dynasty_Titles_Heir_ActorBecomesHead--></T>
+                    <U n="threshold">
+                      <E n="comparison">LESS_OR_EQUAL</E>
+                      <T n="value">-25</T>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="buff">
+        <U n="buff">
+          <U n="buff">
+            <T n="buff_type">491558<!--Buff: buff_Dynasty_NewHeadConfident--></T>
+          </U>
+        </U>
+      </V>
+      <U n="luck_option_config">
+        <T n="player_perception">2</T>
+      </U>
+      <U n="weight">
+        <T n="base_value">4</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="relationship_bit_count">
+                  <U n="relationship_bit_count">
+                    <E n="comparison_operator">GREATER_OR_EQUAL</E>
+                    <T n="rel_bit">466807<!--RelationshipBit: sentimentBit_Actor_BitterAt_Target_LT_Dynasty_PressuredHeir--></T>
+                    <T n="relationship_count">1</T>
+                    <L n="subject">
+                      <E>Actor</E>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">3</T>
+            <L n="tests">
+              <L>
+                <V t="test_based_score_threshold">
+                  <U n="test_based_score_threshold">
+                    <T n="test_based_score">491560<!--TestBasedScore: testBasedScore_Dynasty_Titles_Heir_ActorBecomesHead--></T>
+                    <U n="threshold">
+                      <T n="value">25</T>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+  </L>
+</I>

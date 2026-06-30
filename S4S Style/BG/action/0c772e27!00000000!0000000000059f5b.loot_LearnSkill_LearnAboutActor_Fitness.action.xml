@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_LearnSkill_LearnAboutActor_Fitness" s="368475">
+  <L n="loot_actions">
+    <V t="know_other_sims_statistics">
+      <U n="know_other_sims_statistics">
+        <V n="notification" t="enabled">
+          <U n="enabled">
+            <V n="dialog" t="single">
+              <V n="single" t="literal">
+                <U n="literal">
+                  <V n="icon" t="enabled">
+                    <V n="enabled" t="participant" />
+                  </V>
+                  <V n="secondary_icon" t="enabled">
+                    <V n="enabled" t="participant">
+                      <U n="participant">
+                        <L n="participant_type">
+                          <E>TargetSim</E>
+                        </L>
+                      </U>
+                    </V>
+                  </V>
+                  <V n="text" t="single">
+                    <T n="single">0x42DFB2F4<!--String: "{0.SimFirstName} has learned that {1.SimFirstName} has the following skill:\n{2.String}"--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">TargetSim</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                        <V t="participant_type" />
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </V>
+          </U>
+        </V>
+        <L n="statistics">
+          <T>16659<!--Skill: skill_Fitness--></T>
+        </L>
+        <E n="subject">TargetSim</E>
+        <E n="target_participant_type">Actor</E>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <V n="whitelist" t="enabled">
+            <L n="enabled">
+              <T>380149<!--Buff: buff_Attraction_CanLearnAttractionRequiredStuff--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

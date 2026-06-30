@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationWaterScooterWalkby" i="situation" m="situations.situation_water_scooter_walkby" n="situationWaterScooterWalkby_RoyalCanoe" s="498337">
+  <U n="deploy_water_scooter_state">
+    <U n="interaction_of_interest">
+      <L n="affordances">
+        <T>214036<!--SuperInteraction: deployWaterScooterInOcean_Walkby_IslandCanoe--></T>
+      </L>
+    </U>
+    <L n="job_and_role_changes">
+      <U>
+        <T n="Situation Job">498338<!--SituationJob: walkby_jobs_RoyalBoat--></T>
+        <T n="Role State">214032<!--RoleState: role_deploy_IslandCanoe--></T>
+      </U>
+    </L>
+    <V n="time_out" t="enabled">
+      <T n="enabled">240</T>
+    </V>
+  </U>
+  <E n="exclusivity">WALKBY</E>
+  <U n="get_on_water_scooter_state">
+    <U n="interaction_of_interest">
+      <L n="affordances">
+        <T>491451<!--SuperInteraction: generic_RoyalCanoe_Sit--></T>
+      </L>
+    </U>
+    <L n="job_and_role_changes">
+      <U>
+        <T n="Situation Job">498338<!--SituationJob: walkby_jobs_RoyalBoat--></T>
+        <T n="Role State">498339<!--RoleState: role_getOn_RoyalCanoe--></T>
+      </U>
+    </L>
+    <V n="time_out" t="enabled">
+      <T n="enabled">240</T>
+    </V>
+  </U>
+  <U n="job_and_role">
+    <T n="role_state">214032<!--RoleState: role_deploy_IslandCanoe--></T>
+    <T n="situation_job">498338<!--SituationJob: walkby_jobs_RoyalBoat--></T>
+  </U>
+  <U n="leave_state">
+    <L n="job_and_role_changes">
+      <U>
+        <T n="Situation Job">498338<!--SituationJob: walkby_jobs_RoyalBoat--></T>
+        <T n="Role State">24224<!--RoleState: rolestate_leave_now--></T>
+      </U>
+    </L>
+    <V n="time_out" t="enabled">
+      <T n="enabled">240</T>
+    </V>
+  </U>
+  <U n="put_in_inventory_state">
+    <U n="interaction_of_interest">
+      <L n="affordances">
+        <T>213983<!--SuperInteraction: si_SwipeIntoSimInventory_Boat_Swim--></T>
+      </L>
+    </U>
+    <L n="job_and_role_changes">
+      <U>
+        <T n="Situation Job">498338<!--SituationJob: walkby_jobs_RoyalBoat--></T>
+        <T n="Role State">498341<!--RoleState: role_put_in_inventory_RoyalCanoe--></T>
+      </U>
+    </L>
+    <V n="time_out" t="enabled">
+      <T n="enabled">240</T>
+    </V>
+  </U>
+  <U n="ride_around_state">
+    <L n="job_and_role_changes">
+      <U>
+        <T n="Situation Job">498338<!--SituationJob: walkby_jobs_RoyalBoat--></T>
+        <T n="Role State">498340<!--RoleState: role_ride_around_RoyalCanoe--></T>
+      </U>
+    </L>
+    <V n="time_out" t="enabled">
+      <T n="enabled">240</T>
+    </V>
+  </U>
+  <V n="situation_end_time_string" t="show_end_time">
+    <T n="show_end_time">0xA3E17143<!--String: "Work day ends at {0.TimeShort}"--></T>
+  </V>
+  <L n="tags">
+    <E>Situation_Weather_Rain_Heavy</E>
+    <E>Situation_Weather_Rain_Storm</E>
+    <E>Situation_Weather_Snow_Heavy</E>
+    <E>Situation_Weather_Snow_Storm</E>
+  </L>
+  <T n="water_scooter_object_def">492697</T>
+</I>

@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="ImmediateSuperInteraction" i="interaction" m="interactions.base.immediate_interaction" n="immediate_FreeWeights_Start_Public_Paid" s="460694">
+  <V n="_icon" t="resource_key">
+    <U n="resource_key">
+      <T p="InGame\UI\Icons\Headlines\Final\headline_PumpItUpClass.png" n="key">2f7d0004:00000000:1fb213c12c215ce6</T>
+    </U>
+  </V>
+  <V n="_saveable" t="disabled" />
+  <L n="basic_extras">
+    <V t="create_situation">
+      <U n="create_situation">
+        <V n="create_situation" t="situation_start">
+          <U n="situation_start">
+            <V n="actor_init_job" t="specify_job">
+              <T n="specify_job">460465<!--SituationJob: situationJob_FreeWeights_Class_Instructor--></T>
+            </V>
+            <T n="invite_picked_sims">False</T>
+            <T n="invite_target_sim">False</T>
+            <T n="situation">460462<!--GuidedMeditationSituation: situation_FreeWeights_Class_Public_Paid--></T>
+            <V n="situation_default_target" t="enabled" />
+            <T n="user_facing">False</T>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="payment">
+      <U n="payment">
+        <T n="display_only">True</T>
+        <V n="payment" t="literal">
+          <U n="literal">
+            <V n="payment_cost" t="amount">
+              <U n="amount">
+                <T n="amount">-50</T>
+              </U>
+            </V>
+            <V n="payment_source" t="household">
+              <U n="household">
+                <V n="gain_string_override" t="enabled">
+                  <T n="enabled">0xECB0F881<!--String: "{0.String} (<font color='#3AAF69'>+{1.Money}</font> per participant) "--></T>
+                </V>
+              </U>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="notification">
+      <U n="notification">
+        <V n="dialog" t="single">
+          <V n="single" t="literal">
+            <U n="literal">
+              <L n="dialog_options">
+                <E>DISABLE_CLOSE_BUTTON</E>
+              </L>
+              <V n="icon" t="enabled">
+                <V n="enabled" t="resource_key">
+                  <U n="resource_key">
+                    <T p="InGame\UI\Icons\Headlines\Final\headline_PumpItUpClass.png" n="key">2f7d0004:00000000:1fb213c12c215ce6</T>
+                  </U>
+                </V>
+              </V>
+              <V n="secondary_icon" t="enabled">
+                <V n="enabled" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>Actor</E>
+                    </L>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x42DFF763<!--String: "Pump It Up Class is starting soon! "--></T>
+              </V>
+            </U>
+          </V>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="category">460456<!--PieMenuCategory: pieMenuCategory_FreeWeights_Class_Free--></T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x1C27B77C<!--String: "Lead Pump It Up Class"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_All</E>
+  </L>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+  </L>
+</I>

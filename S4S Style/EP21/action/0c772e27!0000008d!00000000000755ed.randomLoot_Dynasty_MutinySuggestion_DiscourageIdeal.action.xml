@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="RandomWeightedLoot" i="action" m="interactions.utils.loot" n="randomLoot_Dynasty_MutinySuggestion_DiscourageIdeal" s="480749">
+  <L n="random_loot_actions">
+    <U>
+      <V n="action" t="trait_add">
+        <U n="trait_add">
+          <T n="trait">475047<!--Trait: trait_Dynasty_DiscourageIdeal--></T>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">5</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">2.5</T>
+            <L n="tests">
+              <L>
+                <V t="relationship">
+                  <U n="relationship">
+                    <U n="relationship_score_interval">
+                      <T n="lower_bound">40</T>
+                      <T n="upper_bound">100</T>
+                    </U>
+                    <L n="subject">
+                      <E>Actor</E>
+                    </L>
+                    <L n="target_sim">
+                      <E>TargetSim</E>
+                    </L>
+                    <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">4</T>
+            <L n="tests">
+              <L>
+                <V t="relationship">
+                  <U n="relationship">
+                    <U n="relationship_score_interval">
+                      <T n="upper_bound">0</T>
+                    </U>
+                    <L n="subject">
+                      <E>Actor</E>
+                    </L>
+                    <L n="target_sim">
+                      <E>ActorDynastyHead</E>
+                    </L>
+                    <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">3</T>
+            <L n="tests">
+              <L>
+                <V t="dynasty_value">
+                  <U n="dynasty_value">
+                    <V n="test_type" t="compare_sim_traits_to_dynasty">
+                      <U n="compare_sim_traits_to_dynasty">
+                        <U n="value_threshold">
+                          <E n="comparison">LESS</E>
+                        </U>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">5</T>
+            <L n="tests">
+              <L>
+                <V t="trait">
+                  <U n="trait">
+                    <L n="whitelist_traits">
+                      <T>427231<!--Trait: trait_Grouch--></T>
+                      <T>16848<!--Trait: trait_Insane--></T>
+                      <T>16857<!--Trait: trait_Mean--></T>
+                      <T>433147<!--Trait: trait_Rogue--></T>
+                      <T>16836<!--Trait: trait_Evil--></T>
+                      <T>396064<!--Trait: trait_Shady--></T>
+                      <T>469882<!--Trait: trait_Dynasty_BlackSheep_Resentful--></T>
+                      <T>492733<!--Trait: trait_EV008_Merciless--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0.2</T>
+            <L n="tests">
+              <L>
+                <V t="trait">
+                  <U n="trait">
+                    <L n="whitelist_traits">
+                      <T>27915<!--Trait: trait_Good--></T>
+                      <T>251970<!--Trait: trait_Proper--></T>
+                      <T>311267<!--Trait: trait_Loyal--></T>
+                      <T>341152<!--Trait: trait_Generous--></T>
+                      <T>469883<!--Trait: trait_Dynasty_BlackSheep_Repentful--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <U n="weight">
+        <T n="base_value">10</T>
+      </U>
+    </U>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified" />
+          <V n="npc" t="enabled">
+            <T n="enabled">True</T>
+          </V>
+        </U>
+      </V>
+      <V t="identity">
+        <U n="identity">
+          <E n="subject_b">TargetSim</E>
+          <T n="subjects_match">False</T>
+        </U>
+      </V>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>466527<!--Trait: trait_Dynasty_Head--></T>
+            <T>475047<!--Trait: trait_Dynasty_DiscourageIdeal--></T>
+          </L>
+        </U>
+      </V>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="relationship_score_interval">
+            <T n="upper_bound">40</T>
+          </U>
+          <L n="target_sim">
+            <E>ActorDynastyHead</E>
+          </L>
+          <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+        </U>
+      </V>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="relationship_score_interval">
+            <T n="lower_bound">0</T>
+            <T n="upper_bound">100</T>
+          </U>
+          <L n="subject">
+            <E>Actor</E>
+          </L>
+          <L n="target_sim">
+            <E>TargetSim</E>
+          </L>
+          <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

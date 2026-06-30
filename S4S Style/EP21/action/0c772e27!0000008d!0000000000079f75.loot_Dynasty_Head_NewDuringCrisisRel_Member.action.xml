@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Dynasty_Head_NewDuringCrisisRel_Member" s="499573">
+  <L n="loot_actions">
+    <V t="statistics">
+      <V n="statistics" t="relationship_change">
+        <U n="relationship_change">
+          <T n="amount">15</T>
+          <L n="target_participant_type">
+            <E>TargetSim</E>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="relationship">
+                <U n="relationship">
+                  <U n="prohibited_relationship_bits">
+                    <L n="match_any">
+                      <T>466803<!--RelationshipBit: sentimentBit_Actor_BitterAt_Target_LT_Dynasty_UnmadeHead--></T>
+                    </L>
+                  </U>
+                  <U n="relationship_score_interval">
+                    <T n="lower_bound">0</T>
+                  </U>
+                  <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+                </U>
+              </V>
+            </L>
+          </L>
+          <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+        </U>
+      </V>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="dynasty_value">
+        <U n="dynasty_value">
+          <V n="test_type" t="compare_sim_traits_to_dynasty" />
+        </U>
+      </V>
+      <V t="dynasty_value">
+        <U n="dynasty_value">
+          <E n="subjects">TargetSim</E>
+          <V n="test_type" t="compare_sim_traits_to_dynasty" />
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="dynasty_value">
+        <U n="dynasty_value">
+          <V n="test_type" t="compare_sim_traits_to_dynasty">
+            <U n="compare_sim_traits_to_dynasty">
+              <U n="value_threshold">
+                <E n="comparison">LESS</E>
+              </U>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="dynasty_value">
+        <U n="dynasty_value">
+          <E n="subjects">TargetSim</E>
+          <V n="test_type" t="compare_sim_traits_to_dynasty">
+            <U n="compare_sim_traits_to_dynasty">
+              <U n="value_threshold">
+                <E n="comparison">LESS</E>
+              </U>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

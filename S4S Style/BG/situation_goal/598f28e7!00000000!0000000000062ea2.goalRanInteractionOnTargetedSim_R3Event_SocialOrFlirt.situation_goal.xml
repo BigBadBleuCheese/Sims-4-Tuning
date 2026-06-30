@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalRanInteractionOnTargetedSim" i="situation_goal" m="situations.situation_goal_targeted_sim" n="goalRanInteractionOnTargetedSim_R3Event_SocialOrFlirt" s="405154">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T p="InGame\UI\Icons\Headlines\Final\headline_flirty_v3.png" n="enabled">2f7d0004:00000000:17f8dc97cd7ea098</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x29B88DEA<!--String: "Flirt or Socialize with the Grim Reaper"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0x9ADAD992<!--String: "Summon the Grim Reaper by using The Grimophone and Flirt or Socialize with the Grim Reaper.\n\n<i>(+25 Event Points)</i>"--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>447711<!--SituationGoalLootActions: liveEvent_GoalLoot_CompleteQuestGoal--></T>
+  </L>
+  <U n="_goal_test">
+    <L n="tags">
+      <E>Interaction_SocialAll</E>
+    </L>
+    <E n="test_event">InteractionComplete</E>
+  </U>
+  <L n="_post_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+      </U>
+    </V>
+  </L>
+  <T n="_score">0</T>
+  <T n="_select_all_instantiated_sims">True</T>
+  <L n="_target_tests">
+    <V t="trait">
+      <U n="trait">
+        <T n="apply_thresholds_on_individual_basis">False</T>
+        <L n="whitelist_traits">
+          <T>16851<!--Trait: trait_isGrimReaper--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+</I>

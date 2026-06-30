@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="super_Ailments_React_LuckSuck" s="433237">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="circle">
+            <U n="circle">
+              <T n="radius">2</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <V n="basic_reserve_object" t="disabled" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xF7CE6FA3<!--String: "Caught in Luck Magnet"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <L n="basic_extras">
+              <V t="buff_fire_and_forget">
+                <U n="buff_fire_and_forget">
+                  <U n="buff">
+                    <V n="buff_reason" t="enabled">
+                      <T n="enabled">0xCBEA45F<!--String: "(From Nearby Sim's Luck Magnet Ailment)"--></T>
+                    </V>
+                    <T n="buff_type">433240<!--Buff: buff_Ailments_PulseEffect_LuckSuck_Target--></T>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </U>
+          <U n="weight">
+            <T n="base_value">24</T>
+            <L n="multipliers">
+              <U>
+                <T n="multiplier">0</T>
+                <L n="tests">
+                  <L>
+                    <V t="buff">
+                      <U n="buff">
+                        <V n="whitelist" t="enabled">
+                          <L n="enabled">
+                            <T>484213<!--Buff: buff_Debug_Ailments_GuaranteedSpread--></T>
+                          </L>
+                        </V>
+                      </U>
+                    </V>
+                    <V t="test_set_reference">
+                      <T n="test_set_reference">484210<!--TestSetInstance: testSet_Ailments_GameOptions_IsEnabled--></T>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+        <U>
+          <U n="outcome">
+            <V n="animation_ref" t="enabled">
+              <U n="enabled">
+                <T n="factory">439213<!--AnimationElement: anim_Ailments_LuckSuck--></T>
+              </U>
+            </V>
+            <L n="basic_extras">
+              <V t="buff_fire_and_forget">
+                <U n="buff_fire_and_forget">
+                  <U n="buff">
+                    <V n="buff_reason" t="enabled">
+                      <T n="enabled">0xCBEA45F<!--String: "(From Nearby Sim's Luck Magnet Ailment)"--></T>
+                    </V>
+                    <T n="buff_type">433240<!--Buff: buff_Ailments_PulseEffect_LuckSuck_Target--></T>
+                  </U>
+                </U>
+              </V>
+            </L>
+            <L n="loot_list">
+              <T>439317<!--LootActions: loot_Ailments_IncubationTimer_Start_Actor_LuckSuck--></T>
+            </L>
+          </U>
+          <U n="weight">
+            <T n="base_value">1</T>
+            <L n="multipliers">
+              <U>
+                <T n="multiplier">0</T>
+                <L n="tests">
+                  <L>
+                    <V t="buff">
+                      <U n="buff">
+                        <V n="whitelist" t="enabled">
+                          <L n="enabled">
+                            <T>452109<!--Buff: buff_Ailments_MainBuff_BurningPassion--></T>
+                            <T>432796<!--Buff: buff_Ailments_MainBuff_CreationImpulse--></T>
+                            <T>427745<!--Buff: buff_Ailments_MainBuff_EmotionalVoid--></T>
+                            <T>432795<!--Buff: buff_Ailments_MainBuff_GnomeMagnet--></T>
+                            <T>432794<!--Buff: buff_Ailments_MainBuff_GreenieMeanie--></T>
+                            <T>432793<!--Buff: buff_Ailments_MainBuff_LuckSuck--></T>
+                            <T>452108<!--Buff: buff_Ailments_MainBuff_SimoleonFever--></T>
+                            <T>452107<!--Buff: buff_Ailments_MainBuff_SonicSinuses--></T>
+                            <T>465523<!--Buff: buff_Ailments_HasAilmentIncubation_BurningPassion--></T>
+                            <T>465530<!--Buff: buff_Ailments_HasAilmentIncubation_CreationImpulse--></T>
+                            <T>465531<!--Buff: buff_Ailments_HasAilmentIncubation_EmotionalVoid--></T>
+                            <T>465528<!--Buff: buff_Ailments_HasAilmentIncubation_GnomeMagnet--></T>
+                            <T>465529<!--Buff: buff_Ailments_HasAilmentIncubation_GreenieMeanie--></T>
+                            <T>465527<!--Buff: buff_Ailments_HasAilmentIncubation_LuckSuck--></T>
+                            <T>465532<!--Buff: buff_Ailments_HasAilmentIncubation_SimoleonFever--></T>
+                            <T>465526<!--Buff: buff_Ailments_HasAilmentIncubation_SonicSinus--></T>
+                            <T>471522<!--Buff: buff_BalanceSys_Hidden_AilmentCooldown--></T>
+                          </L>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                  <L>
+                    <V t="test_set_reference">
+                      <T n="test_set_reference">484211<!--TestSetInstance: testSet_Ailments_GameOptions_IsDisabled--></T>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+      </L>
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">28361<!--AnimationElement: Socials_Responses_Excited_HighIntensity_FiredUp--></T>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <V n="buff_reason" t="enabled">
+                          <T n="enabled">0x1CD51A75<!--String: "(From Resisting an Ailment)"--></T>
+                        </V>
+                        <T n="buff_type">436479<!--Buff: buff_Career_Naturopathic_Trait_NaturalProtection--></T>
+                      </U>
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="trait">
+                <U n="trait">
+                  <L n="whitelist_traits">
+                    <T>443590<!--Trait: trait_HolisticHealer--></T>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

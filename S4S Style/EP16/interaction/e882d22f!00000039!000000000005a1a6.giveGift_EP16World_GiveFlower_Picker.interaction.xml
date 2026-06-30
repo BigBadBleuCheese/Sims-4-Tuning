@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="ObjectInInventoryPickerInteraction" i="interaction" m="interactions.base.picker_interaction" n="giveGift_EP16World_GiveFlower_Picker" s="369062">
+  <V n="_saveable" t="disabled" />
+  <T n="category">308138<!--PieMenuCategory: sim_SubCat_Romantic_Affection--></T>
+  <V n="content_score" t="disabled" />
+  <V n="continuation" t="enabled">
+    <L n="enabled">
+      <U>
+        <T n="affordance">369084<!--SocialSuperInteraction: touching_GiveGift_EP16World_GiveFlower--></T>
+        <E n="target">TargetSim</E>
+      </U>
+    </L>
+  </V>
+  <T n="display_name">0xA5A6F072<!--String: "Give Flowers"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <V n="inventory_item_test" t="tag_set">
+    <U n="tag_set">
+      <L n="tag_set">
+        <E>Func_Flower_Single</E>
+        <E>Func_Flower_Bouquet</E>
+      </L>
+    </U>
+  </V>
+  <V n="picker_dialog" t="object_picker" />
+  <V n="pie_menu_test_tooltip" t="enabled">
+    <T n="enabled">0x29ED479B<!--String: "You have no flowers in your Sim's inventory. Have you tried <b>Isabela's Flower Shop</b> in the Nuevo Corazón and Plaza Mariposa neighborhoods?"--></T>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <V n="suppress_duplicate_objects" t="enabled" />
+  <E n="target_type">TARGET</E>
+  <L n="test_globals">
+    <V t="test_set_reference">
+      <T n="test_set_reference">100790<!--TestSetInstance: testSet_TeenANDTeenORAdultANDAdult_Romance--></T>
+    </V>
+    <V t="relationship">
+      <U n="relationship">
+        <U n="required_relationship_bits">
+          <L n="match_any">
+            <T>15803<!--RelationshipBit: has_met--></T>
+          </L>
+        </U>
+        <L n="subject">
+          <E>Actor</E>
+        </L>
+        <L n="target_sim">
+          <E>TargetSim</E>
+        </L>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">294489<!--TestSetInstance: testSet_SexualOrientation_Compatible_ActorOnly_Romantic--></T>
+    </V>
+    <V t="trait">
+      <U n="trait">
+        <L n="blacklist_traits">
+          <T>175972<!--Trait: trait_Hidden_Skeleton--></T>
+          <T>177810<!--Trait: trait_Hidden_Skeleton_ServiceSkeleton--></T>
+          <T>178437<!--Trait: trait_Hidden_Skeleton_TempleSkeleton--></T>
+        </L>
+      </U>
+    </V>
+    <V t="trait">
+      <U n="trait">
+        <L n="blacklist_traits">
+          <T>175972<!--Trait: trait_Hidden_Skeleton--></T>
+          <T>177810<!--Trait: trait_Hidden_Skeleton_ServiceSkeleton--></T>
+          <T>178437<!--Trait: trait_Hidden_Skeleton_TempleSkeleton--></T>
+        </L>
+        <E n="subject">TargetSim</E>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">294485<!--TestSetInstance: testSet_SexualOrientation_KnowledgeGate_Romantic--></T>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">187992<!--TestSetInstance: testSet_FlowerArrangement_FaithfulTulipScent_FromFaithfulReceiver--></T>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">147681<!--TestSetInstance: testSet_UnflityTraitEmbarrassedMood--></T>
+    </V>
+  </L>
+  <T n="test_incest">True</T>
+</I>

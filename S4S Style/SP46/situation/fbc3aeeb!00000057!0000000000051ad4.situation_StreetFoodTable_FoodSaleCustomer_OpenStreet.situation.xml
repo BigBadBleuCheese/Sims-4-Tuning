@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="YardSaleCustomerSituation" i="situation" m="situations.ambient.yard_sale_customer_situation" n="situation_StreetFoodTable_FoodSaleCustomer_OpenStreet" s="334548">
+  <T p="InGame\Audio\Bumper\bumper_event_start.propx" n="audio_sting_on_start">39b2aa4a:00000000:78b903461d47e4fc</T>
+  <U n="browse_items_state">
+    <U n="interaction_of_interest">
+      <L n="affordances">
+        <T>336455<!--SuperInteraction: si_StreetFoodTable_PurchaseObject_Autonomous--></T>
+        <T>336899<!--SuperInteraction: si_StreetFoodTable_PurchaseEatFood_Autonomous--></T>
+        <T>343214<!--SuperInteraction: si_StreetFoodTable_PurchaseEatFood_Convinced--></T>
+      </L>
+    </U>
+    <V n="time_out" t="enabled">
+      <T n="enabled">120</T>
+    </V>
+    <L n="triggers">
+      <U>
+        <L n="triggers">
+          <V t="test_event">
+            <U n="test_event">
+              <V n="test" t="situation_running_test">
+                <U n="situation_running_test">
+                  <V n="situation_blacklist" t="enabled">
+                    <L n="enabled">
+                      <T>334545<!--YardSaleSituation: Situation_StreetFoodTable_FoodSale_OpenStreet--></T>
+                    </L>
+                  </V>
+                </U>
+              </V>
+            </U>
+          </V>
+        </L>
+      </U>
+    </L>
+  </U>
+  <L n="compatible_venues">
+    <T>28614<!--Venue: venue_residential--></T>
+  </L>
+  <U n="consume_item_state">
+    <U n="interaction_of_interest">
+      <L n="affordances">
+        <T>74855<!--SuperInteraction: cancel_replacement_eat_to_clean--></T>
+        <T>336902<!--SuperInteraction: si_StreetFoodTable_DestroyObject_Autonomous--></T>
+        <T>75242<!--SuperInteraction: eat_to_clean_from_sit--></T>
+      </L>
+    </U>
+  </U>
+  <T n="consume_object">True</T>
+  <U n="customer_job_and_role_state">
+    <T n="role_state">341712<!--RoleState: roleState_StreetFoodTable_OpenStreetCustomer--></T>
+    <T n="situation_job">347771<!--SituationJob: situationJob_StreetFoodTable_Customer_OpenStreet--></T>
+  </U>
+  <T n="duration">180</T>
+  <T n="duration_randomizer">0</T>
+  <T p="InGame\Audio\Bumper\bumper_event_major_complete.propx" n="main_goal_audio_sting">39b2aa4a:00000000:10b476550150a33f</T>
+  <T n="max_participants">20</T>
+  <V n="situation_end_time_string" t="show_end_time">
+    <T n="show_end_time">0xA3E17143<!--String: "Work day ends at {0.TimeShort}"--></T>
+  </V>
+</I>

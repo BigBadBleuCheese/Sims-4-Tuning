@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Want_CommodityTracker_StayOutside_Reset" s="287486">
+  <L n="loot_actions">
+    <V t="statistics">
+      <V n="statistics" t="statistic_remove">
+        <U n="statistic_remove">
+          <T n="stat">386817<!--Commodity: commodity_Want_StayOutside_Tracker_UnfinishedBusiness--></T>
+          <L n="tests">
+            <L>
+              <V t="statistic">
+                <U n="statistic">
+                  <T n="must_have_stat">True</T>
+                  <T n="stat">386817<!--Commodity: commodity_Want_StayOutside_Tracker_UnfinishedBusiness--></T>
+                  <V n="threshold" t="value_threshold">
+                    <U n="value_threshold">
+                      <E n="comparison">GREATER</E>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_remove">
+        <U n="statistic_remove">
+          <T n="stat">287430<!--Commodity: commodity_Want_StayOutside_Tracker--></T>
+          <L n="tests">
+            <L>
+              <V t="statistic">
+                <U n="statistic">
+                  <T n="must_have_stat">True</T>
+                  <T n="stat">287430<!--Commodity: commodity_Want_StayOutside_Tracker--></T>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+    </V>
+  </L>
+  <T n="run_test_first">True</T>
+  <L n="tests">
+    <L>
+      <V t="location">
+        <U n="location">
+          <U n="location_tests">
+            <V n="is_inside_building" t="enabled" />
+          </U>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

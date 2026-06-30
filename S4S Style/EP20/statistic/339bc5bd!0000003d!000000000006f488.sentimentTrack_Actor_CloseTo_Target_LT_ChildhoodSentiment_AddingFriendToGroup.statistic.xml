@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SentimentTrack" i="statistic" m="relationships.sentiment_track" n="sentimentTrack_Actor_CloseTo_Target_LT_ChildhoodSentiment_AddingFriendToGroup" s="455816">
+  <T n="_neutral_bit">455817<!--RelationshipBit: sentimentBit_Actor_CloseTo_Target_LT_ChildhoodSentiment_AddingToFriendGroup--></T>
+  <L n="age_up_map">
+    <U>
+      <E n="key">ADULT</E>
+      <L n="value">
+        <U>
+          <T n="new_sentiment">460905<!--SentimentTrack: sentimentTrack_Actor_AdoringTo_Target_AC_ChildhoodSentiment_StillTheSame--></T>
+          <L n="tests">
+            <L>
+              <V t="relationship">
+                <U n="relationship">
+                  <U n="relationship_score_interval">
+                    <T n="lower_bound">20</T>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <T n="new_sentiment">455928<!--SentimentTrack: sentimentTrack_Actor_HurtBy_Target_LT_Childhoodsentiment_LostFriends--></T>
+          <L n="tests">
+            <L>
+              <V t="relationship">
+                <U n="relationship">
+                  <U n="relationship_score_interval">
+                    <T n="upper_bound">19</T>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <T n="new_sentiment">461733<!--SentimentTrack: sentimentTrack_Negative_LT_ChildhoodSentiment_ForgottenFriend--></T>
+          <L n="tests">
+            <L>
+              <V t="relationship">
+                <U n="relationship">
+                  <U n="relationship_score_interval">
+                    <T n="lower_bound">1</T>
+                    <T n="upper_bound">20</T>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+    <U>
+      <E n="key">ELDER</E>
+      <L n="value">
+        <U>
+          <T n="new_sentiment">461734<!--SentimentTrack: sentimentTrack_Actor_AdoringTo_Target_LT_ChildhoodSentiment_NostalgicAboutFriend--></T>
+          <L n="tests">
+            <L>
+              <V t="relationship">
+                <U n="relationship">
+                  <U n="relationship_score_interval">
+                    <T n="lower_bound">10</T>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </L>
+  <T n="archetype_name">0x3E9D9E94<!--String: "Close Childhood Sentiment"--></T>
+  <T n="decay_rate">0.007</T>
+  <E n="duration">AGE_CHANGING</E>
+  <T n="initial_value">100</T>
+  <L n="loot_on_proximity">
+    <T>460906<!--LootActions: loot_Sentiment_Buffs_Close_ChildhoodSentiment_AddingFriendToGroup--></T>
+  </L>
+  <E n="min_lod_value">INTERACTED</E>
+  <T n="min_value_tuning">0</T>
+  <U n="proximity_loot_chance_weight">
+    <T n="base_value">12</T>
+    <L n="multipliers">
+      <U>
+        <T n="multiplier">0</T>
+        <L n="tests">
+          <L>
+            <V t="test_set_reference">
+              <T n="test_set_reference">254624<!--TestSetInstance: testSet_IsSleepingOrPossessedOrRecharging_Actor--></T>
+            </V>
+          </L>
+        </L>
+      </U>
+    </L>
+  </U>
+  <E n="sign">POSITIVE</E>
+  <V n="species_requirements" t="enabled">
+    <U n="enabled">
+      <L n="species_list_one">
+        <E />
+      </L>
+      <L n="species_list_two">
+        <E />
+      </L>
+    </U>
+  </V>
+</I>

@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="sI_EP20_IF_SpawnEvent_Poof_In_OfferMakeReal" s="464334">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="circle">
+            <U n="circle">
+              <T n="ideal_radius">1</T>
+              <T n="ideal_radius_width">1</T>
+              <T n="radius">1</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <E n="_constraints_actor">Actor</E>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_user_directed">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <L n="basic_extras">
+    <V t="set_visibility_state">
+      <U n="set_visibility_state">
+        <V n="timing" t="at_beginning" />
+        <T n="visibility">False</T>
+      </U>
+    </V>
+    <V t="notification">
+      <U n="notification">
+        <V n="dialog" t="single">
+          <V n="single" t="literal">
+            <U n="literal">
+              <L n="dialog_options">
+                <E>DISABLE_CLOSE_BUTTON</E>
+              </L>
+              <V n="icon" t="enabled">
+                <V n="enabled" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>Actor</E>
+                    </L>
+                  </U>
+                </V>
+              </V>
+              <E n="information_level">PLAYER</E>
+              <V n="text" t="concatenation">
+                <U n="concatenation">
+                  <L n="concatenations">
+                    <V t="literal">
+                      <T n="literal">0x38255EA9<!--String: "{0.SimFirstName} has become a real Sim through the power of Friendship and <i>Imagination</i>! {0.SimPronounSubjective|xxUpper} {S0.is}{P0.are} starting {0.SimPronounPossessiveDependent} journey in life as a Teen and will have much to learn, but {0.SimFirstName}'s future sparkles bright with endless possibility!"--></T>
+                    </V>
+                    <V t="literal">
+                      <T n="literal">0x4C669937<!--String: "The active household is <b>full</b> so {0.SimFirstName} has been added to {0.SimPronounPossessiveDependent} own household! Check <b>Manage Households</b> from <b>Manage Worlds</b> to find {0.SimPronounObjective}."--></T>
+                    </V>
+                  </L>
+                </U>
+              </V>
+              <V n="title" t="enabled">
+                <T n="enabled">0x9117297E<!--String: "A <i>Real</i> Sim!"--></T>
+              </V>
+            </U>
+          </V>
+        </V>
+        <E n="recipient_subject">ActiveHousehold</E>
+        <U n="success_chance">
+          <L n="multipliers">
+            <U>
+              <T n="multiplier">0</T>
+              <L n="tests">
+                <L>
+                  <V t="household_size">
+                    <U n="household_size">
+                      <E n="participant">ActiveHousehold</E>
+                      <V n="test_type" t="count">
+                        <U n="count">
+                          <U n="count">
+                            <E n="comparison">GREATER_OR_EQUAL</E>
+                          </U>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+          </L>
+        </U>
+        <V n="timing" t="on_xevt">
+          <U n="on_xevt">
+            <T n="xevt_id">102</T>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="notification">
+      <U n="notification">
+        <V n="dialog" t="single">
+          <V n="single" t="literal">
+            <U n="literal">
+              <V n="icon" t="enabled">
+                <V n="enabled" t="participant" />
+              </V>
+              <E n="information_level">PLAYER</E>
+              <V n="text" t="concatenation">
+                <U n="concatenation">
+                  <L n="concatenations">
+                    <V t="literal">
+                      <T n="literal">0x38255EA9<!--String: "{0.SimFirstName} has become a real Sim through the power of Friendship and <i>Imagination</i>! {0.SimPronounSubjective|xxUpper} {S0.is}{P0.are} starting {0.SimPronounPossessiveDependent} journey in life as a Teen and will have much to learn, but {0.SimFirstName}'s future sparkles bright with endless possibility!"--></T>
+                    </V>
+                    <V t="literal">
+                      <T n="literal">0xBFCEB2BA<!--String: "{0.SimFirstName} has joined the Household! Welcome to the land of the real, {0.SimFirstName}!"--></T>
+                    </V>
+                  </L>
+                </U>
+              </V>
+              <V n="title" t="enabled">
+                <T n="enabled">0x9117297E<!--String: "A <i>Real</i> Sim!"--></T>
+              </V>
+            </U>
+          </V>
+        </V>
+        <U n="success_chance">
+          <L n="multipliers">
+            <U>
+              <T n="multiplier">0</T>
+              <L n="tests">
+                <L>
+                  <V t="household_size">
+                    <U n="household_size">
+                      <E n="participant">ActiveHousehold</E>
+                      <V n="test_type" t="count">
+                        <U n="count">
+                          <U n="count">
+                            <E n="comparison">LESS</E>
+                          </U>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+          </L>
+        </U>
+        <V n="timing" t="on_xevt">
+          <U n="on_xevt">
+            <T n="xevt_id">102</T>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="add_to_household">
+      <U n="add_to_household">
+        <U n="success_chance">
+          <L n="multipliers">
+            <U>
+              <T n="multiplier">0</T>
+              <L n="tests">
+                <L>
+                  <V t="household_size">
+                    <U n="household_size">
+                      <E n="participant">ActiveHousehold</E>
+                      <V n="test_type" t="count">
+                        <U n="count">
+                          <U n="count">
+                            <E n="comparison">LESS</E>
+                          </U>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+          </L>
+        </U>
+        <E n="target">Actor</E>
+        <V n="timing" t="on_xevt">
+          <U n="on_xevt">
+            <T n="xevt_id">102</T>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="join_situation">
+      <U n="join_situation">
+        <V n="situation" t="by_definition">
+          <U n="by_definition">
+            <L n="situations">
+              <T>464327<!--ImaginaryFriendSituation: situation_EP20_IF_SpawnFriend_OfferMakeReal--></T>
+            </L>
+          </U>
+        </V>
+        <V n="situation_job" t="specify_job">
+          <T n="specify_job">466458<!--SituationJob: jobs_EP20_IF_CorporealTeen--></T>
+        </V>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>481668<!--LootActions: loot_EP20_IF_MovingOnMoment_Audio_BecomeReal--></T>
+        </L>
+        <V n="timing" t="on_xevt">
+          <U n="on_xevt">
+            <T n="xevt_id">102</T>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>452256<!--LootActions: loot_ChildhoodInspiration_AddSuggestedChallenge_HaveBestImaginaryFriend--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="content_score" t="disabled" />
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <V n="animation_ref" t="enabled">
+          <U n="enabled">
+            <T n="factory">463216<!--AnimationElement: eP20_IF_Poof_In_Teen--></T>
+          </U>
+        </V>
+        <L n="basic_extras">
+          <V t="set_visibility_state">
+            <U n="set_visibility_state">
+              <T n="fade">True</T>
+              <V n="timing" t="on_xevt">
+                <U n="on_xevt">
+                  <T n="xevt_id">102</T>
+                </U>
+              </V>
+            </U>
+          </V>
+        </L>
+        <L n="continuation">
+          <U>
+            <T n="affordance">464345<!--SuperInteraction: sI_EP20_IF_CheckOutSelf--></T>
+          </U>
+        </L>
+      </U>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals" />
+  <T n="time_overhead">30</T>
+  <T n="visible">False</T>
+</I>

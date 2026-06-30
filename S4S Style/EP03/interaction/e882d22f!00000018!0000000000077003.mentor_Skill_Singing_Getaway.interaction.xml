@@ -1,0 +1,1086 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="mentor_Skill_Singing_Getaway" s="487427">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="cone">
+            <U n="cone">
+              <T n="angle">180</T>
+              <T n="ideal_radius_max">1</T>
+              <T n="ideal_radius_min">0.7</T>
+              <T n="max_radius">3</T>
+              <T n="offset">0</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="facing" />
+        </U>
+      </L>
+    </U>
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="line_of_sight">
+            <U n="line_of_sight">
+              <V n="temporary_los" t="enabled" />
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>TargetSim</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <L n="_static_commodities">
+    <U>
+      <T n="static_commodity">27654<!--StaticCommodity: StaticCommodity_Tutor--></T>
+    </U>
+    <U>
+      <T n="static_commodity">397256<!--StaticCommodity: staticCommodity_Mentor_AllSkills--></T>
+    </U>
+    <U>
+      <T n="static_commodity">387807<!--StaticCommodity: staticCommodity_Mentor_Singing--></T>
+    </U>
+  </L>
+  <T n="attention_cost">1</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="list_reference">
+          <T n="list_reference">40705<!--ExitConditionList: ExitConditionList_MotivesNearFail--></T>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="time_based">
+                <U n="time_based">
+                  <T n="max_time">20</T>
+                  <T n="min_time">15</T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">NO_ACTION</E>
+            <L n="loot_actions">
+              <T>23739<!--LootActions: Loot_Buff_MentorGiven--></T>
+            </L>
+          </U>
+        </V>
+        <V t="list_reference">
+          <T n="list_reference">40144<!--ExitConditionList: ExitConditionList_EmotionMiserable--></T>
+        </V>
+        <V t="list_reference">
+          <T n="list_reference">40702<!--ExitConditionList: ExitConditionList_EmotionStressed--></T>
+        </V>
+      </L>
+      <V n="content" t="staging_content">
+        <U n="staging_content">
+          <U n="content_set">
+            <L n="affordance_links">
+              <T>13553<!--MixerInteraction: mentor_Passive--></T>
+            </L>
+          </U>
+        </U>
+      </V>
+      <V n="periodic_stat_change" t="enabled">
+        <U n="enabled">
+          <U n="operation_actions">
+            <T n="alarm_interval">1</T>
+          </U>
+          <L n="operations">
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="advertise">True</T>
+                <T n="amount">1</T>
+                <T n="exclusive_to_owning_si">True</T>
+                <T n="stat">16658<!--Commodity: motive_Social--></T>
+              </U>
+            </V>
+            <V t="statistic_set_max">
+              <U n="statistic_set_max">
+                <T n="stat">29121<!--Commodity: commodity_Trait_Autonomy_Good--></T>
+                <L n="tests">
+                  <L>
+                    <V t="trait">
+                      <U n="trait">
+                        <L n="whitelist_traits">
+                          <T>27915<!--Trait: trait_Good--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </V>
+            <V t="dynamic_skill">
+              <U n="dynamic_skill">
+                <U n="skill_loot_data_override">
+                  <E n="effectiveness">StandardPeriodic</E>
+                  <T n="stat">160504<!--Skill: statistic_Skill_AdultMajor_Parenting--></T>
+                </U>
+                <L n="tests">
+                  <L>
+                    <V t="relationship">
+                      <U n="relationship">
+                        <U n="required_relationship_bits">
+                          <L n="match_any">
+                            <T>162483<!--RelationshipBit: CT_notParent_Actor_IsCareDependentOf_Target--></T>
+                            <T>8805<!--RelationshipBit: family_Target_IsSonOrDaughterOf_Actor--></T>
+                            <T>152851<!--RelationshipBit: toddler_notParent_Actor_IsCareDependentOf_Target--></T>
+                          </L>
+                        </U>
+                        <L n="subject">
+                          <E>Actor</E>
+                        </L>
+                        <L n="target_sim">
+                          <E>TargetSim</E>
+                        </L>
+                      </U>
+                    </V>
+                    <V t="sim_info">
+                      <U n="sim_info">
+                        <V n="ages" t="specified">
+                          <L n="specified">
+                            <E>YOUNGADULT</E>
+                            <E>ADULT</E>
+                            <E>ELDER</E>
+                          </L>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </V>
+            <V t="statistic_change_by_category">
+              <U n="statistic_change_by_category">
+                <V n="change" t="stat_change">
+                  <U n="stat_change">
+                    <T n="change_amout">-24</T>
+                  </U>
+                </V>
+                <E n="statistic_category">ChildhoodPhase_Buffs</E>
+                <E n="subject">TargetSim</E>
+                <L n="tests">
+                  <L>
+                    <V t="trait">
+                      <U n="trait">
+                        <E n="subject">TargetSim</E>
+                        <L n="whitelist_traits">
+                          <T>164765<!--Trait: trait_ChildhoodPhase_Rebellious--></T>
+                          <T>164764<!--Trait: trait_ChildhoodPhase_Clingy--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </V>
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="amount">0.25</T>
+                <T n="stat">160760<!--Commodity: commodity_ParentingSkill_SuperParent--></T>
+                <L n="tests">
+                  <L>
+                    <V t="skill_test">
+                      <U n="skill_test">
+                        <T n="skill">160504<!--Skill: statistic_Skill_AdultMajor_Parenting--></T>
+                        <V n="skill_range" t="threshold">
+                          <U n="threshold">
+                            <U n="skill_threshold">
+                              <T n="value">10</T>
+                            </U>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </V>
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="amount">1</T>
+                <T n="exclusive_to_owning_si">False</T>
+                <T n="stat">415629<!--Commodity: commodity_Mentor_TimeMentoringOther--></T>
+                <L n="tests">
+                  <L>
+                    <V t="aspiration_track_complete">
+                      <U n="aspiration_track_complete">
+                        <L n="aspiration_tracks">
+                          <T>406907<!--AspirationTrack: Track_Knowledge_MasterMentor--></T>
+                        </L>
+                        <V n="levels" t="enabled">
+                          <T n="enabled">2</T>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </V>
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="amount">1</T>
+                <T n="exclusive_to_owning_si">False</T>
+                <T n="stat">412444<!--Commodity: commodity_Mentor_TimeBeingMentored--></T>
+                <L n="subject">
+                  <E>TargetSim</E>
+                </L>
+                <L n="tests">
+                  <L>
+                    <V t="aspiration_track_complete">
+                      <U n="aspiration_track_complete">
+                        <L n="aspiration_tracks">
+                          <T>406907<!--AspirationTrack: Track_Knowledge_MasterMentor--></T>
+                        </L>
+                        <V n="levels" t="enabled">
+                          <T n="enabled">1</T>
+                        </V>
+                        <E n="target">TargetSim</E>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </V>
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="amount">1</T>
+                <T n="stat">376088<!--Statistic: statistic_MentorPaymentTime--></T>
+              </U>
+            </V>
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="amount">1</T>
+                <T n="stat">398491<!--Statistic: statistic_MentoringTimeHobbyClass--></T>
+                <L n="subject">
+                  <E>TargetSim</E>
+                </L>
+                <L n="tests">
+                  <L>
+                    <V t="situation_job_test">
+                      <U n="situation_job_test">
+                        <E n="participant">TargetSim</E>
+                        <L n="situation_jobs">
+                          <T>397234<!--SituationJob: job_HobbyClass_ClassMember_CTYAE--></T>
+                          <T>400498<!--SituationJob: job_HobbyClass_ClassMember_TYAE--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </V>
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="amount">1</T>
+                <T n="stat">398491<!--Statistic: statistic_MentoringTimeHobbyClass--></T>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+                <L n="tests">
+                  <L>
+                    <V t="situation_job_test">
+                      <U n="situation_job_test">
+                        <L n="situation_jobs">
+                          <T>397235<!--SituationJob: job_HobbyClass_Instructor--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </V>
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="amount">8</T>
+                <T n="stat">16658<!--Commodity: motive_Social--></T>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+                <L n="tests">
+                  <L>
+                    <V t="relationship">
+                      <U n="relationship">
+                        <U n="required_relationship_bits">
+                          <L n="match_any">
+                            <T>384022<!--RelationshipBit: mentorshipBit_Actor_IsMentorOf_Target--></T>
+                          </L>
+                        </U>
+                        <L n="subject">
+                          <E>Actor</E>
+                        </L>
+                        <L n="target_sim">
+                          <E>TargetSim</E>
+                        </L>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </V>
+          </L>
+        </U>
+      </V>
+      <T n="start_autonomous_inertial">True</T>
+      <T n="start_user_directed_inertial">False</T>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <T n="buff_type">38050<!--Buff: Buff_Hidden_BeingMentored--></T>
+        </U>
+        <L n="subject">
+          <E>TargetSim</E>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x55F2D97<!--String: "(From Being Mentored)"--></T>
+          </V>
+          <T n="buff_type">375360<!--Buff: buffs_Mentoree_Singing--></T>
+        </U>
+        <L n="subject">
+          <E>TargetSim</E>
+        </L>
+        <L n="tests" />
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <V n="buff_reason" t="disabled" />
+          <T n="buff_type">373937<!--Buff: buffs_Mentoree_AdultSkill_HiddenMultipliers_MentorTrait--></T>
+        </U>
+        <L n="subject">
+          <E>TargetSim</E>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <L n="whitelist_traits">
+                  <T>26691<!--Trait: trait_Mentor--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <T n="buff_type">373938<!--Buff: buffs_Mentoree_AdultSkill_HiddenMultipliers_Skill6--></T>
+        </U>
+        <L n="subject">
+          <E>TargetSim</E>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="skill_test">
+              <U n="skill_test">
+                <T n="skill">137811<!--Skill: statistic_Skill_AdultMajor_Singing--></T>
+                <V n="skill_range" t="threshold">
+                  <U n="threshold">
+                    <U n="skill_threshold">
+                      <E n="comparison">EQUAL</E>
+                      <T n="value">6</T>
+                    </U>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <T n="buff_type">373939<!--Buff: buffs_Mentoree_AdultSkill_HiddenMultipliers_Skill7--></T>
+        </U>
+        <L n="subject">
+          <E>TargetSim</E>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="skill_test">
+              <U n="skill_test">
+                <T n="skill">137811<!--Skill: statistic_Skill_AdultMajor_Singing--></T>
+                <V n="skill_range" t="threshold">
+                  <U n="threshold">
+                    <U n="skill_threshold">
+                      <E n="comparison">EQUAL</E>
+                      <T n="value">7</T>
+                    </U>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <T n="buff_type">373941<!--Buff: buffs_Mentoree_AdultSkill_HiddenMultipliers_Skill8--></T>
+        </U>
+        <L n="subject">
+          <E>TargetSim</E>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="skill_test">
+              <U n="skill_test">
+                <T n="skill">137811<!--Skill: statistic_Skill_AdultMajor_Singing--></T>
+                <V n="skill_range" t="threshold">
+                  <U n="threshold">
+                    <U n="skill_threshold">
+                      <E n="comparison">EQUAL</E>
+                      <T n="value">8</T>
+                    </U>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <T n="buff_type">373942<!--Buff: buffs_Mentoree_AdultSkill_HiddenMultipliers_Skill9--></T>
+        </U>
+        <L n="subject">
+          <E>TargetSim</E>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="skill_test">
+              <U n="skill_test">
+                <T n="skill">137811<!--Skill: statistic_Skill_AdultMajor_Singing--></T>
+                <V n="skill_range" t="threshold">
+                  <U n="threshold">
+                    <U n="skill_threshold">
+                      <E n="comparison">EQUAL</E>
+                      <T n="value">9</T>
+                    </U>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <T n="buff_type">373940<!--Buff: buffs_Mentoree_AdultSkill_HiddenMultipliers_Skill10--></T>
+        </U>
+        <L n="subject">
+          <E>TargetSim</E>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="skill_test">
+              <U n="skill_test">
+                <T n="skill">137811<!--Skill: statistic_Skill_AdultMajor_Singing--></T>
+                <V n="skill_range" t="threshold">
+                  <U n="threshold">
+                    <U n="skill_threshold">
+                      <E n="comparison">EQUAL</E>
+                      <T n="value">10</T>
+                    </U>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <T n="buff_type">414129<!--Buff: buffs_Mentoree_AdultSkill_HiddenMultipliers_MentorMenteeRelationship--></T>
+        </U>
+        <L n="subject">
+          <E>TargetSim</E>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="relationship">
+              <U n="relationship">
+                <U n="required_relationship_bits">
+                  <L n="match_all">
+                    <T>384022<!--RelationshipBit: mentorshipBit_Actor_IsMentorOf_Target--></T>
+                  </L>
+                </U>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <T n="buff_type">308833<!--Buff: buff_Trait_ChildSkill_PackAnimal_Mentor--></T>
+        </U>
+        <L n="subject">
+          <E>TargetSim</E>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <E n="subject">TargetSim</E>
+                <L n="whitelist_traits">
+                  <T>308366<!--Trait: trait_ChildSkillReward_PackAnimal--></T>
+                </L>
+              </U>
+            </V>
+            <V t="relationship">
+              <U n="relationship">
+                <U n="relationship_score_interval">
+                  <T n="lower_bound">20</T>
+                </U>
+                <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x2AEE061E<!--String: "(From being Mentored by a Wise Sim)"--></T>
+          </V>
+          <T n="buff_type">356609<!--Buff: buff_Trait_NeighborTraits_Wise_Mentor--></T>
+        </U>
+        <L n="subject">
+          <E>TargetSim</E>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <L n="whitelist_traits">
+                  <T>341151<!--Trait: trait_Wise--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff_fire_and_forget">
+      <U n="buff_fire_and_forget">
+        <U n="buff">
+          <T n="buff_type">408832<!--Buff: buff_SmallBusiness_Reputation_Consequences_BeingMentored_Hidden--></T>
+        </U>
+        <E n="participant">TargetSim</E>
+        <U n="success_chance">
+          <L n="multipliers">
+            <U>
+              <T n="multiplier">0</T>
+              <L n="tests">
+                <L>
+                  <V t="trait">
+                    <U n="trait">
+                      <L n="blacklist_traits">
+                        <T>405291<!--Trait: trait_Fear_BeingCanceled--></T>
+                      </L>
+                      <E n="subject">TargetSim</E>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+          </L>
+        </U>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <T n="buff_type">451203<!--Buff: buff_MentoreeTracker_isPaid--></T>
+        </U>
+        <L n="subject">
+          <E>SavedActor3</E>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <T n="buff_type">451203<!--Buff: buff_MentoreeTracker_isPaid--></T>
+        </U>
+        <L n="subject">
+          <E>Actor</E>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="situation_job_test">
+              <U n="situation_job_test">
+                <L n="situation_jobs">
+                  <T>399327<!--SituationJob: jobs_SmallBusinessEmployee_Work--></T>
+                  <T>401789<!--SituationJob: jobs_SmallBusinessEmployee_Work_Owner--></T>
+                </L>
+              </U>
+            </V>
+            <V t="test_set_reference">
+              <T n="test_set_reference">126907<!--TestSetInstance: testSetInstance_InteractionIsEncouragedByClubOrCustomerRulesOrHobbyClassOrDynasty--></T>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>376290<!--LootActions: loot_MentorTracker_PaidMentoring_RemoveStat--></T>
+        </L>
+        <V n="timing" t="at_end" />
+      </U>
+    </V>
+    <V t="payment">
+      <U n="payment">
+        <T n="display_only">True</T>
+        <V n="payment" t="literal">
+          <U n="literal">
+            <U n="cost_modifiers">
+              <T n="base_value">-80</T>
+              <L n="multipliers">
+                <U>
+                  <T n="multiplier">1.375</T>
+                  <L n="tests">
+                    <L>
+                      <V t="skill_test">
+                        <U n="skill_test">
+                          <T n="skill">137811<!--Skill: statistic_Skill_AdultMajor_Singing--></T>
+                          <V n="skill_range" t="threshold">
+                            <U n="threshold">
+                              <U n="skill_threshold">
+                                <E n="comparison">EQUAL</E>
+                                <T n="value">6</T>
+                              </U>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+                <U>
+                  <T n="multiplier">2</T>
+                  <L n="tests">
+                    <L>
+                      <V t="skill_test">
+                        <U n="skill_test">
+                          <T n="skill">137811<!--Skill: statistic_Skill_AdultMajor_Singing--></T>
+                          <V n="skill_range" t="threshold">
+                            <U n="threshold">
+                              <U n="skill_threshold">
+                                <E n="comparison">EQUAL</E>
+                                <T n="value">7</T>
+                              </U>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+                <U>
+                  <T n="multiplier">2.875</T>
+                  <L n="tests">
+                    <L>
+                      <V t="skill_test">
+                        <U n="skill_test">
+                          <T n="skill">137811<!--Skill: statistic_Skill_AdultMajor_Singing--></T>
+                          <V n="skill_range" t="threshold">
+                            <U n="threshold">
+                              <U n="skill_threshold">
+                                <E n="comparison">EQUAL</E>
+                                <T n="value">8</T>
+                              </U>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+                <U>
+                  <T n="multiplier">4</T>
+                  <L n="tests">
+                    <L>
+                      <V t="skill_test">
+                        <U n="skill_test">
+                          <T n="skill">137811<!--Skill: statistic_Skill_AdultMajor_Singing--></T>
+                          <V n="skill_range" t="threshold">
+                            <U n="threshold">
+                              <U n="skill_threshold">
+                                <E n="comparison">EQUAL</E>
+                                <T n="value">9</T>
+                              </U>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+                <U>
+                  <T n="multiplier">5.375</T>
+                  <L n="tests">
+                    <L>
+                      <V t="skill_test">
+                        <U n="skill_test">
+                          <T n="skill">137811<!--Skill: statistic_Skill_AdultMajor_Singing--></T>
+                          <V n="skill_range" t="threshold">
+                            <U n="threshold">
+                              <U n="skill_threshold">
+                                <E n="comparison">EQUAL</E>
+                                <T n="value">10</T>
+                              </U>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+                <U>
+                  <T n="multiplier">1.2</T>
+                  <L n="tests">
+                    <L>
+                      <V t="trait">
+                        <U n="trait">
+                          <L n="whitelist_traits">
+                            <T>26691<!--Trait: trait_Mentor--></T>
+                          </L>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+                <U>
+                  <T n="multiplier">1.2</T>
+                  <L n="tests">
+                    <L>
+                      <V t="trait">
+                        <U n="trait">
+                          <L n="whitelist_traits">
+                            <T>341151<!--Trait: trait_Wise--></T>
+                          </L>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+                <U>
+                  <T n="multiplier">0</T>
+                  <L n="tests">
+                    <L>
+                      <V t="situation_job_test">
+                        <U n="situation_job_test">
+                          <T n="negate">True</T>
+                          <L n="situation_jobs">
+                            <T>399327<!--SituationJob: jobs_SmallBusinessEmployee_Work--></T>
+                            <T>401789<!--SituationJob: jobs_SmallBusinessEmployee_Work_Owner--></T>
+                          </L>
+                        </U>
+                      </V>
+                    </L>
+                    <L>
+                      <V t="situation_job_test">
+                        <U n="situation_job_test">
+                          <L n="situation_jobs">
+                            <T>397235<!--SituationJob: job_HobbyClass_Instructor--></T>
+                          </L>
+                        </U>
+                      </V>
+                    </L>
+                    <L>
+                      <V t="situation_job_test">
+                        <U n="situation_job_test">
+                          <T n="negate">True</T>
+                          <E n="participant">TargetSim</E>
+                          <L n="situation_jobs">
+                            <T>373362<!--SituationJob: job_SmallBusinessCustomer--></T>
+                          </L>
+                        </U>
+                      </V>
+                    </L>
+                    <L>
+                      <V t="sim_info">
+                        <U n="sim_info">
+                          <V n="npc" t="enabled">
+                            <T n="enabled">False</T>
+                          </V>
+                          <E n="who">TargetSim</E>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+              </L>
+            </U>
+            <V n="payment_cost" t="amount">
+              <U n="amount">
+                <T n="amount">1</T>
+                <L n="payment_destinations">
+                  <V t="active_household" />
+                </L>
+              </U>
+            </V>
+            <V n="payment_source" t="household">
+              <U n="household">
+                <V n="gain_string_override" t="enabled">
+                  <T n="enabled">0xEC78558D<!--String: "{0.String} (+{1.Money}/hour)"--></T>
+                </V>
+              </U>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="relationship_bit">
+      <U n="relationship_bit">
+        <U n="relationship_bits_end">
+          <L n="bit_operations">
+            <U>
+              <T n="allow_readdition">False</T>
+              <T n="bit">15803<!--RelationshipBit: has_met--></T>
+              <E n="operation">ADD</E>
+              <E n="recipients">TargetSim</E>
+              <E n="targets">Actor</E>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="relationship">
+                <U n="relationship">
+                  <U n="prohibited_relationship_bits">
+                    <L n="match_any">
+                      <T>15803<!--RelationshipBit: has_met--></T>
+                    </L>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </U>
+    </V>
+    <V t="broadcaster">
+      <U n="broadcaster">
+        <L n="broadcaster_types">
+          <U>
+            <T n="item">201345<!--Broadcaster: broadcaster_Reputation_SeenLoot_Looping_Gain_Medium--></T>
+          </U>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="basic_liabilities">
+    <V t="critical_priority">
+      <U n="critical_priority">
+        <E n="priority_on_push">High</E>
+      </U>
+    </V>
+  </L>
+  <V n="basic_reserve_object" t="disabled" />
+  <V n="canonical_animation" t="disabled" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x6DD7A225<!--String: "Mentor {2.String}"--></T>
+  <V n="display_name_overrides" t="testable">
+    <U n="testable">
+      <L n="overrides">
+        <U>
+          <V n="new_display_name" t="enabled">
+            <T n="enabled">0xB12C5494<!--String: "Mentor {2.String} for Payment"--></T>
+          </V>
+          <L n="test">
+            <L>
+              <V t="situation_job_test">
+                <U n="situation_job_test">
+                  <T n="negate">False</T>
+                  <L n="situation_jobs">
+                    <T>399327<!--SituationJob: jobs_SmallBusinessEmployee_Work--></T>
+                    <T>401789<!--SituationJob: jobs_SmallBusinessEmployee_Work_Owner--></T>
+                  </L>
+                </U>
+              </V>
+              <V t="situation_job_test">
+                <U n="situation_job_test">
+                  <T n="negate">True</T>
+                  <L n="situation_jobs">
+                    <T>397235<!--SituationJob: job_HobbyClass_Instructor--></T>
+                  </L>
+                </U>
+              </V>
+              <V t="sim_info">
+                <U n="sim_info">
+                  <V n="is_active_sim" t="enabled" />
+                </U>
+              </V>
+              <V t="situation_job_test">
+                <U n="situation_job_test">
+                  <T n="negate">False</T>
+                  <E n="participant">TargetSim</E>
+                  <L n="situation_jobs">
+                    <T>373362<!--SituationJob: job_SmallBusinessCustomer--></T>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <V n="new_display_name" t="enabled">
+            <T n="enabled">0x4587F016<!--String: "Ask for {2.String} Mentoring"--></T>
+          </V>
+          <L n="test">
+            <L>
+              <V t="sim_info">
+                <U n="sim_info">
+                  <V n="is_active_sim" t="enabled" />
+                  <E n="who">TargetSim</E>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="statistic_value">
+        <U n="statistic_value">
+          <T n="statistic">137811<!--Skill: statistic_Skill_AdultMajor_Singing--></T>
+          <T n="use_statistic_name">True</T>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Mentor</E>
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+    <E>Interaction_Burnout_Creative_IncreaseSmall</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <T n="force_outcome_on_exit">True</T>
+        <L n="loot_list">
+          <T>386491<!--RandomWeightedLoot: randomWeightedLoot_AddSentiment_Mentorship--></T>
+          <T>388856<!--LootActions: loot_Mentorship_GetGift--></T>
+          <T>424130<!--LootActions: loot_Mentor_Payment--></T>
+        </L>
+      </U>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T p="InGame\UI\Icons\PieMenu\Skills\skill_singing_piemenu.png" n="key">2f7d0004:00000000:76ff8d7086830ac8</T>
+      </U>
+    </V>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">3</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all" />
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_autonomous" />
+  <V n="test_disallow_while_running" t="enabled">
+    <U n="enabled">
+      <T n="test_self">True</T>
+    </U>
+  </V>
+  <L n="test_globals">
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>38050<!--Buff: Buff_Hidden_BeingMentored--></T>
+        </L>
+        <E n="subject">TargetSim</E>
+      </U>
+    </V>
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">424345<!--TestSetInstance: testSet_PositiveRelationship_or_NPC_or_SmallBusinessWorkerToCustomer--></T>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">483388<!--TestSetInstance: testSetInstance_Getaways_IsInteractionEncouraged--></T>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">28305<!--TestSetInstance: testSet_EmotionNotMiserable--></T>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">28176<!--TestSetInstance: testSet_EmotionNotStressed--></T>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="superInteraction_FairyOccult_Ability_ManipulateObject_NotBroken" s="434641">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="circle">
+            <U n="circle">
+              <T n="ideal_radius">1</T>
+              <T n="radius">8</T>
+              <T n="require_los">False</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="value" t="facing">
+            <U n="facing">
+              <T n="range">90</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="value" t="line_of_sight">
+            <U n="line_of_sight">
+              <V n="temporary_los" t="enabled" />
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Actor</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">434698<!--AnimationElement: Animations_FairyOccult_Ability_ManipulateObject--></T>
+      </U>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>434637<!--LootActions: lootActions_FairyOccult_Ability_ManipulateObject_NotBroken--></T>
+          <T>424739<!--LootActions: lootActions_FairyOccult_Ability_Cost_Medium--></T>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>444656<!--LootActions: loot_EP19World_MagicCoastalBroadcaster_Start--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="basic_reserve_object" t="disabled" />
+  <T n="category">434668<!--PieMenuCategory: pieMenuCategory_FairyOccult_Ability_ManipulateObject--></T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xEB49B04D<!--String: "Set to Not Broken"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T p="InGame\UI\Icons\PieMenu\SpecialInteractions\specialinteraction_consumeemotionalenergy_piemenu.png" n="key">2f7d0004:00000000:063ecf9a6c7efd31</T>
+      </U>
+    </V>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="include_all">
+        <U n="include_all">
+          <L n="exclude_affordances">
+            <T>271032<!--SuperInteraction: socialSuperInteraction_CarryPickUp_Infant--></T>
+            <T>134423<!--SuperInteraction: socialSuperInteraction_CarryPickUp--></T>
+            <T>132162<!--SuperInteraction: socialSuperInteraction_CarryPickUp_Pet--></T>
+            <T>132170<!--HoldObject: carry_HoldSim--></T>
+            <T>271209<!--HoldObject: carry_HoldSim_Back--></T>
+            <T>271090<!--SuperInteraction: socialSuperInteraction_CarryPickUp_Infant_Back--></T>
+            <T>288662<!--SuperInteraction: socialSuperInteraction_CarryPickUp_Infant_Handoff--></T>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="region">
+      <U n="region">
+        <V n="blacklist" t="enabled">
+          <L n="enabled">
+            <T>231104<!--Region: region_Destination_Batuu--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+    <V t="bucks_perks_test">
+      <U n="bucks_perks_test">
+        <T n="bucks_perk">437354<!--BucksPerk: fairyPerks_ManipulateObject--></T>
+      </U>
+    </V>
+    <V t="state">
+      <U n="state">
+        <E n="operator">EQUAL</E>
+        <T n="value">15076<!--CommodityBasedObjectStateValue: Brokenness_Broken--></T>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">436907<!--TestSetInstance: testSetInstance_FairyOccult_Ability_EmotionalAppetite_Cost_Medium--></T>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

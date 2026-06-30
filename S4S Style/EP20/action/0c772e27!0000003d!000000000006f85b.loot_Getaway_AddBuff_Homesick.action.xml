@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Getaway_AddBuff_Homesick" s="456795">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x2C6F1606<!--String: "(From Waking Up Away from Home)"--></T>
+          </V>
+          <T n="buff_type">456792<!--Buff: buff_Getaway_Homesick--></T>
+        </U>
+        <U n="chance">
+          <T n="base_chance">35</T>
+          <L n="multipliers">
+            <U>
+              <T n="multiplier">0.5</T>
+              <L n="tests">
+                <L>
+                  <V t="trait">
+                    <U n="trait">
+                      <L n="whitelist_traits">
+                        <T>16824<!--Trait: trait_SelfAssured--></T>
+                        <T>29571<!--Trait: trait_Outgoing--></T>
+                        <T>252085<!--Trait: trait_Adventurous--></T>
+                      </L>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+          </L>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>456952<!--Buff: buff_Getaway--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+            <V t="lot_owner">
+              <U n="lot_owner">
+                <T n="consider_business_lot_as_owned">False</T>
+                <T n="consider_rented_lot_as_owned">False</T>
+                <T n="invert">True</T>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

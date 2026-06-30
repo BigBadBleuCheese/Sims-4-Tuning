@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="BusinessRule" i="business_rule" m="business.business_rule" n="Rule_PMI_LoudNoises" s="348401">
+  <T n="auto_resolve_time">0</T>
+  <T n="cooldown_time">1300</T>
+  <T n="fine">250</T>
+  <T p="InEP15\UI\Icons\UnitRules\UnitRules_QuietHours.png" n="icon">2f7d0004:00000000:88d9cf2e15e72852</T>
+  <T n="loot_on_auto_resolved">340361<!--LootActions: loot_LandlordTenant_ViolateRules--></T>
+  <T n="loot_on_rule_broken">349353<!--LootActions: loot_PMI_LoudNoises--></T>
+  <T n="rule_description">0x616DD465<!--String: "Tenants will be prohibited from having TVs or stereos on between 10pm and 6am. Beware: Sims love to enjoy loud music or television, so this might make for an unpopular Property Owner."--></T>
+  <T n="rule_name">0xFA449CE0<!--String: "No Loud Noises"--></T>
+  <L n="test_events">
+    <L>
+      <V t="object_criteria">
+        <U n="object_criteria">
+          <V n="desired_state_threshold" t="enabled">
+            <U n="enabled">
+              <E n="comparison">NOTEQUAL</E>
+              <T n="value">24384<!--ObjectStateValue: StereoOnOff_Off--></T>
+            </U>
+          </V>
+          <E n="object_location">PrivateSpaceOnly</E>
+          <L n="test_events">
+            <E>ObjectStateChange</E>
+          </L>
+        </U>
+      </V>
+      <V t="day_and_time">
+        <U n="day_and_time">
+          <V n="days_available" t="enabled">
+            <U n="enabled">
+              <T n="0 SUNDAY">True</T>
+              <T n="1 MONDAY">True</T>
+              <T n="2 TUESDAY">True</T>
+              <T n="3 WEDNESDAY">True</T>
+              <T n="4 THURSDAY">True</T>
+              <T n="5 FRIDAY">True</T>
+              <T n="6 SATURDAY">True</T>
+            </U>
+          </V>
+          <V n="time_range" t="enabled">
+            <U n="enabled">
+              <U n="begin_time">
+                <T n="hour">22</T>
+              </U>
+              <U n="duration">
+                <T n="hour">8</T>
+              </U>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="event_ran">
+        <U n="event_ran">
+          <L n="test_events">
+            <E>LoudNoise</E>
+          </L>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="object_criteria">
+        <U n="object_criteria">
+          <V n="desired_state_threshold" t="enabled">
+            <U n="enabled">
+              <E n="comparison">NOTEQUAL</E>
+              <T n="value">15085<!--VideoChannel: Channel_Off--></T>
+            </U>
+          </V>
+          <E n="object_location">PrivateSpaceOnly</E>
+          <L n="test_events">
+            <E>ObjectStateChange</E>
+          </L>
+        </U>
+      </V>
+      <V t="day_and_time">
+        <U n="day_and_time">
+          <V n="days_available" t="enabled">
+            <U n="enabled">
+              <T n="0 SUNDAY">True</T>
+              <T n="1 MONDAY">True</T>
+              <T n="2 TUESDAY">True</T>
+              <T n="3 WEDNESDAY">True</T>
+              <T n="4 THURSDAY">True</T>
+              <T n="5 FRIDAY">True</T>
+              <T n="6 SATURDAY">True</T>
+            </U>
+          </V>
+          <V n="time_range" t="enabled">
+            <U n="enabled">
+              <U n="begin_time">
+                <T n="hour">22</T>
+              </U>
+              <U n="duration">
+                <T n="hour">8</T>
+              </U>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="event_ran">
+        <U n="event_ran">
+          <L n="test_events">
+            <E>LoudNoise</E>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="HouseholdStoryArc" i="story_arc" m="story_progression.story_progression_arc" n="householdStoryArc_MoveOut" s="279768">
+  <V n="candidate_selection_function" t="household_based_on_culling">
+    <U n="household_based_on_culling">
+      <L n="invalid_household_test">
+        <L>
+          <V t="small_business_ownership_test" />
+        </L>
+        <L>
+          <V t="kingdom">
+            <U n="kingdom">
+              <T n="negate">False</T>
+              <V n="test_type" t="priority">
+                <U n="priority">
+                  <U n="threshold">
+                    <E n="comparison">GREATER</E>
+                  </U>
+                </U>
+              </V>
+            </U>
+          </V>
+        </L>
+      </L>
+    </U>
+  </V>
+  <E n="exclusivity_category">Moving</E>
+  <L n="required_rules">
+    <T>273878<!--StoryProgressionRuleDisplayInfo: storyProgressionRuleDisplayInfo_MoveOut--></T>
+  </L>
+  <T n="starting_chapter">279760<!--HouseholdStoryChapter: householdStoryChapter_MoveOut--></T>
+</I>

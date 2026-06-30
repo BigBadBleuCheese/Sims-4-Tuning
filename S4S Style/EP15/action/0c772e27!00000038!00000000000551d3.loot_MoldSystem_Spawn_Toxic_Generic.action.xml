@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_MoldSystem_Spawn_Toxic_Generic" s="348627">
+  <L n="loot_actions">
+    <V t="create_object">
+      <U n="create_object">
+        <U n="chance">
+          <T n="base_chance">5</T>
+        </U>
+        <V n="creation_data" t="definition">
+          <U n="definition">
+            <T n="definition">363668</T>
+          </U>
+        </V>
+        <T n="destroy_on_placement_failure">True</T>
+        <V n="location" t="position">
+          <U n="position">
+            <T n="enclosed_room_only">True</T>
+            <V n="initial_location" t="from_participant">
+              <U n="from_participant">
+                <E n="participant">Object</E>
+              </U>
+            </V>
+            <U n="initial_location_offset">
+              <V n="x_randomization_range" t="enabled">
+                <U n="enabled">
+                  <T n="lower_bound">-1</T>
+                  <T n="upper_bound">1</T>
+                </U>
+              </V>
+              <V n="z_randomization_range" t="enabled">
+                <U n="enabled">
+                  <T n="lower_bound">-1</T>
+                  <T n="upper_bound">1</T>
+                </U>
+              </V>
+            </U>
+            <L n="search_flag_set">
+              <E>CALCULATE_RESULT_TERRAIN_HEIGHTS</E>
+              <E>DONE_ON_MAX_RESULTS</E>
+            </L>
+            <T n="stay_in_connected_connectivity_group">False</T>
+            <V n="surface_type_override" t="enabled">
+              <E n="enabled">SURFACETYPE_OBJECT</E>
+            </V>
+          </U>
+        </V>
+        <V n="success_loots" t="enabled">
+          <L n="enabled">
+            <T>360573<!--LootActions: loot_UnitRating_InCommonArea_SmallLoss_MoldSystem--></T>
+            <T>360574<!--LootActions: loot_UnitRating_InUnit_SmallLoss_MoldSystem--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="object_criteria">
+        <U n="object_criteria">
+          <V n="identity_test" t="tags">
+            <U n="tags">
+              <L n="tag_set">
+                <E>Func_MoldPile</E>
+              </L>
+              <E n="test_type">CONTAINS_ANY_TAG_IN_SET</E>
+            </U>
+          </V>
+          <T n="on_active_lot">True</T>
+          <T n="owned">False</T>
+          <V n="subject_specific_tests" t="all_objects">
+            <U n="all_objects">
+              <U n="quantity">
+                <E n="comparison">LESS_OR_EQUAL</E>
+                <T n="value">4</T>
+              </U>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SocialMixerInteraction" i="interaction" m="interactions.social.social_mixer_interaction" n="mixer_Naturopath_WFH_Cure_GiveHealingRemedy" s="447368">
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>TargetSim</E>
+      </L>
+    </U>
+  </V>
+  <T n="allow_autonomous">False</T>
+  <T n="allow_user_directed">True</T>
+  <V n="basic_content" t="one_shot" />
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>162659<!--LootActions: loot_Commodity_Culling_GhostAdd_target--></T>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x9C09275F<!--String: "(From Being in a social group with at least 3 Sims)"--></T>
+          </V>
+          <T n="buff_type">125555<!--Buff: buff_Trait_WithMyFriends--></T>
+        </U>
+        <L n="subject">
+          <E>Actor</E>
+          <E>SocialGroupSims</E>
+          <E>TargetSim</E>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="social_group">
+              <U n="social_group">
+                <V n="threshold" t="enabled">
+                  <U n="enabled">
+                    <T n="value">3</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T n="category">447588<!--PieMenuCategory: pieMenuCategory_NaturopathicCareer_Guidance--></T>
+  <T n="display_name">0x3124C809<!--String: "Give Cure"--></T>
+  <T n="display_name_target">0x8C71C8F7<!--String: "Listen to {1.SimFirstName}'s Question"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Mixer</E>
+    <E>Interaction_All</E>
+    <E>Interaction_SocialAll</E>
+    <E>Interaction_SocialMixer</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="continuation">
+          <U>
+            <T n="affordance">444170<!--ObjectInInventoryPickerInteraction: sim_Apothecary_GiveCuresAndElixirs_Picker--></T>
+          </U>
+        </L>
+      </U>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T p="InEP19\UI\Icons\Events\EventGoal_GiveCureOrElixir.png" n="key">2f7d0004:00000000:60e5a57d17f3006f</T>
+      </U>
+    </V>
+  </V>
+  <T n="pie_menu_priority">8</T>
+  <U n="skill_loot_data">
+    <V n="level_range" t="enabled">
+      <U n="enabled">
+        <T n="lower_bound">1</T>
+        <T n="upper_bound">10</T>
+      </U>
+    </V>
+    <T n="stat">16699<!--Skill: statistic_Skill_AdultMajor_Charisma--></T>
+  </U>
+  <U n="sub_action">
+    <T n="base_weight">2</T>
+  </U>
+  <E n="target_type">TARGET</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">TargetSim</E>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>443200<!--Buff: buff_Role_NaturopathCareer_AfflictedState_Treated--></T>
+        </L>
+        <E n="subject">TargetSim</E>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <E n="subject">TargetSim</E>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xD64469B4<!--String: "{0.SimFirstName} needs to Identify a Root Cause before {0.SimPronounSubjective} can provide a Cure or Elixir!"--></T>
+        </V>
+        <V n="whitelist" t="enabled">
+          <L n="enabled">
+            <T>455752<!--Buff: buff_Career_Naturopathic_Diagnosed_Ailment_BurningPassion--></T>
+            <T>455753<!--Buff: buff_Career_Naturopathic_Diagnosed_Ailment_SimoleonFever--></T>
+            <T>455754<!--Buff: buff_Career_Naturopathic_Diagnosed_Ailment_SonicSinuses--></T>
+            <T>439791<!--Buff: buff_Career_Naturopathic_Diagnosed_Ailment_CreationImpulse--></T>
+            <T>439792<!--Buff: buff_Career_Naturopathic_Diagnosed_Ailment_EmotionalVoid--></T>
+            <T>439790<!--Buff: buff_Career_Naturopathic_Diagnosed_Ailment_GnomeMagnet--></T>
+            <T>439793<!--Buff: buff_Career_Naturopathic_Diagnosed_Ailment_GreenieMeanie--></T>
+            <T>439789<!--Buff: buff_Career_Naturopathic_Diagnosed_Ailment_LuckSuck--></T>
+            <T>439788<!--Buff: buff_Career_Naturopathic_Diagnosed_Ailment_None--></T>
+            <T>453312<!--Buff: buff_Career_Naturopathic_Diagnosed_Ailment_Emotional--></T>
+            <T>453311<!--Buff: buff_Career_Naturopathic_Diagnosed_Ailment_Physical--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+    <V t="inventory">
+      <U n="inventory">
+        <V n="contents_check" t="has_object_with_tag">
+          <U n="has_object_with_tag">
+            <L n="tag_set">
+              <E>Func_ApothecaryCuresAndElixirs</E>
+            </L>
+          </U>
+        </V>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x81F51B95<!--String: "Select an Apothecary Table and use Craft to create Cures or Elixirs. Apothecary Tables can be acquired from Build Mode."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="visible">True</T>
+</I>

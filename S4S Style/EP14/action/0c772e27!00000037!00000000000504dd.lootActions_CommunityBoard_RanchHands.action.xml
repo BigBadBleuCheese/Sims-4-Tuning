@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="lootActions_CommunityBoard_RanchHands" s="328925">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="dialog_icon">
+          <U n="dialog_icon">
+            <V n="background_image" t="enabled">
+              <T n="enabled" p="InGame\UI\Icons\DynamicSigns\Backgrounds\EP14_HireARanchHand.png">2f7d0004:00000000:52379a0adc34921c</T>
+            </V>
+            <L n="content_icons" />
+            <E n="dialog_bg_style">BG_DYNAMIC_IMAGE</E>
+            <L n="dialog_options" />
+            <E n="dialog_style">DYNAMIC_SIGN</E>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InEP14\UI\Icons\Dialog\CommunityBoard_RanchHand.png">2f7d0004:00000000:d2193d6a8fc97eb0</T>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xA9490EAA<!--String: "All the top Ranchers know, the bigger the Ranch the harder it is to run all by yourself. Why not hire a Ranch Hand? \nA good Ranch Hand is around from morning to evening and helps out with Livestock care, general repairs, and gardening. If asked, they'll even help bring in the harvest! Any productive, well-oiled machine-of-a-Ranch is going to want one."--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x3ECF6508<!--String: "Ranch Hands for Hire!"--></T>
+            </V>
+            <L n="ui_responses">
+              <U>
+                <V n="button_icon" t="enabled">
+                  <T n="enabled" p="InGame\UI\Icons\PieMenu\Interactions\icon_pieMenu_phone.png">2f7d0004:00000000:0b0a0dbde689645d</T>
+                </V>
+                <V n="response_command" t="enabled">
+                  <V n="enabled" t="literal">
+                    <U n="literal">
+                      <L n="arguments">
+                        <V t="integer" />
+                        <V t="integer" />
+                        <V t="integer" />
+                        <V t="integer" />
+                        <V t="integer">
+                          <U n="integer">
+                            <T n="arg_value">262155<!--ImmediateSuperInteraction: phone_PickServices_Start_Services--></T>
+                          </U>
+                        </V>
+                      </L>
+                      <T n="command">interactions.phone_choices</T>
+                    </U>
+                  </V>
+                </V>
+                <T n="text">0xC3766563<!--String: "Call to Hire Ranch Hand"--></T>
+                <E n="ui_request">SEND_COMMAND</E>
+              </U>
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+</I>

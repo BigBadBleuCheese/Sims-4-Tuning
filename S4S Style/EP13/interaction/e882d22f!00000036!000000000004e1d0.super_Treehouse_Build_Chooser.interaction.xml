@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="super_Treehouse_Build_Chooser" s="319952">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="circle">
+            <U n="circle">
+              <T n="radius">7.5</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="value" t="facing" />
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <V n="basic_reserve_object" t="disabled" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xCFDBF679<!--String: "Build Treehouse"--></T>
+  <V n="display_name_overrides" t="testable">
+    <U n="testable">
+      <L n="overrides">
+        <U>
+          <V n="new_display_name" t="enabled">
+            <T n="enabled">0xB3A8F0D8<!--String: "Join Building Treehouse"--></T>
+          </V>
+          <L n="test">
+            <L>
+              <V t="statistic">
+                <U n="statistic">
+                  <T n="stat">318484<!--Statistic: statistic_Treehouse_Build_SimCount--></T>
+                  <V n="threshold" t="value_threshold">
+                    <U n="value_threshold">
+                      <T n="value">1</T>
+                    </U>
+                  </V>
+                  <E n="who">Object</E>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <V n="new_display_name" t="enabled">
+            <T n="enabled">0xE199E96D<!--String: "Continue Building Treehouse"--></T>
+          </V>
+          <L n="test">
+            <L>
+              <V t="statistic">
+                <U n="statistic">
+                  <T n="stat">318484<!--Statistic: statistic_Treehouse_Build_SimCount--></T>
+                  <V n="threshold" t="value_threshold">
+                    <U n="value_threshold">
+                      <E n="comparison">EQUAL</E>
+                    </U>
+                  </V>
+                  <E n="who">Object</E>
+                </U>
+              </V>
+              <V t="statistic">
+                <U n="statistic">
+                  <T n="stat">306103<!--Statistic: statistic_Treehouse_Build--></T>
+                  <V n="threshold" t="value_threshold">
+                    <U n="value_threshold">
+                      <E n="comparison">GREATER</E>
+                    </U>
+                  </V>
+                  <E n="who">Object</E>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <L n="continuation">
+              <U>
+                <T n="affordance">319950<!--SuperInteraction: super_Treehouse_Build_NonTouching--></T>
+              </U>
+            </L>
+          </U>
+        </U>
+      </L>
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">306095<!--SuperInteraction: super_Treehouse_Build--></T>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="in_use">
+                <U n="in_use">
+                  <V n="number_using" t="enabled">
+                    <U n="enabled">
+                      <T n="lower_bound">0</T>
+                      <T n="upper_bound">1</T>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <L n="rallyable">
+    <U>
+      <V n="behavior" t="push_affordance">
+        <U n="push_affordance">
+          <T n="affordance">319952<!--SuperInteraction: super_Treehouse_Build_Chooser--></T>
+        </U>
+      </V>
+      <V n="pie_menu_icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T n="key" p="InGame\UI\Icons\PieMenu\SpecialInteractions\specialinteraction_ensembles_piemenu.png">2f7d0004:00000000:a113281581961bf1</T>
+          </U>
+        </V>
+      </V>
+    </U>
+  </L>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <V n="test_disallow_while_running" t="enabled">
+    <U n="enabled">
+      <L n="affordances">
+        <T>306095<!--SuperInteraction: super_Treehouse_Build--></T>
+        <T>319950<!--SuperInteraction: super_Treehouse_Build_NonTouching--></T>
+      </L>
+    </U>
+  </V>
+  <L n="test_globals">
+    <V t="state">
+      <U n="state">
+        <E n="operator">NOTEQUAL</E>
+        <T n="value">306101<!--CommodityBasedObjectStateValue: state_Treehouse_Build_3_Completed--></T>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">323562<!--TestSetInstance: testSet_Treehouse_CanBuild--></T>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_EvictionSystem_StaySuccess_Intimidate" s="346427">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="audio_sting" t="enabled">
+              <U n="enabled">
+                <T n="audio" p="InEP15\Audio\music\bumpers\bumper_ep15_tenant_eviction_rescinded.propx">39b2aa4a:00000000:06e9cebd917a235d</T>
+              </U>
+            </V>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InEP15\UI\Icons\Notification\notification_evicted.png">2f7d0004:00000000:cfaf24e8879bbdd5</T>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant" />
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x3FD476F9<!--String: "It's been determined that {0.SimFirstName} can stay for now...so long as there isn't anymore rule breaking! {1.SimFirstName} might not be so generous next time. In the meantime, {0.SimFirstName} still has to pay a §1,000 fine for breaking the rules."--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x29BF7A2B<!--String: "Eviction Rescinded"--></T>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x2CF30592<!--String: "(From Convincing Property Owner to Stay)"--></T>
+          </V>
+          <T n="buff_type">346418<!--Buff: buff_EvictionSystem_StaySuccess_Confident--></T>
+        </U>
+      </U>
+    </V>
+    <V t="destroy_situation">
+      <U n="destroy_situation">
+        <L n="required_participant">
+          <E>Actor</E>
+        </L>
+        <L n="situation_tags">
+          <E>Situation_Eviction</E>
+        </L>
+      </U>
+    </V>
+    <V t="actions">
+      <T n="actions">357183<!--LootActions: loot_LandlordTenant_ResetBrokenRules--></T>
+    </V>
+    <V t="set_rent_arrears">
+      <U n="set_rent_arrears">
+        <E n="subject">ActorZoneId</E>
+        <L n="tests">
+          <L>
+            <V t="rental_unit_has_overdue_status_test" />
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

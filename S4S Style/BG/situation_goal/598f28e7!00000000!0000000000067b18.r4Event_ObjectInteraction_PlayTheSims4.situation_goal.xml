@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalObjectInteraction" i="situation_goal" m="situations.situation_goal_object_interaction" n="r4Event_ObjectInteraction_PlayTheSims4" s="424728">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T p="InGame\UI\Icons\Events\EventGoal_Computer.png" n="enabled">2f7d0004:00000000:0112f79d8b2d699e</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x4D0521FA<!--String: "Look for the Thief by Playing in the Archives"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0xA88DF822<!--String: "Time travel is on the table! Play in the echoes of the past of the archives once more to find the thief in time!\n\nUse a Computer, and select Play Game... and then Play The Sims Archives, vol. 4.\n\n<i>(+35 Event Points)</i>"--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>447711<!--SituationGoalLootActions: liveEvent_GoalLoot_CompleteQuestGoal--></T>
+  </L>
+  <U n="_goal_test">
+    <L n="affordances">
+      <T>424727<!--SuperInteraction: computer_PlayGame_r4Event_Sims4--></T>
+    </L>
+    <E n="test_event">InteractionComplete</E>
+  </U>
+  <L n="_post_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+      </U>
+    </V>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+  <V n="goal_completion_notification" t="enabled">
+    <U n="enabled">
+      <V n="icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_MissingSim.png">2f7d0004:00000000:58a247e73de324a5</T>
+          </U>
+        </V>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0xE1941AF4<!--String: "While playing through the archives, {0.SimFirstName} had that same uneasy feeling as when simulating the various events and was able to catch the thief in the act!\n\nIn doing so, {0.SimFirstName} was able to discover the thief's email address!"--></T>
+      </V>
+      <V n="text_tokens" t="enabled">
+        <U n="enabled">
+          <L n="tokens">
+            <V t="participant_type" />
+          </L>
+        </U>
+      </V>
+      <V n="title" t="enabled">
+        <T n="enabled">0xE80C1BF2<!--String: "Thief Found"--></T>
+      </V>
+    </U>
+  </V>
+  <V n="tutorial_tip_group" t="disabled" />
+</I>

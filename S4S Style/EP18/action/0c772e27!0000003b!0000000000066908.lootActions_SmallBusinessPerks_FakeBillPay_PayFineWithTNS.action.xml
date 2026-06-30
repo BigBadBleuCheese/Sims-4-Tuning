@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="lootActions_SmallBusinessPerks_FakeBillPay_PayFineWithTNS" s="420104">
+  <L n="loot_actions">
+    <V t="payment_loot">
+      <U n="payment_loot">
+        <V n="payment" t="literal">
+          <U n="literal">
+            <U n="cost_modifiers">
+              <L n="multipliers">
+                <U>
+                  <T n="multiplier">2.5</T>
+                  <L n="tests">
+                    <L>
+                      <V t="statistic">
+                        <U n="statistic">
+                          <T n="must_have_stat">True</T>
+                          <T n="stat">420085<!--Statistic: statistic_SmallBusinessPerks_FakeBillPay_ConsequenceCounter--></T>
+                          <V n="threshold" t="value_threshold">
+                            <U n="value_threshold">
+                              <E n="comparison">EQUAL</E>
+                              <T n="value">2</T>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+                <U>
+                  <T n="multiplier">4.5</T>
+                  <L n="tests">
+                    <L>
+                      <V t="statistic">
+                        <U n="statistic">
+                          <T n="must_have_stat">True</T>
+                          <T n="stat">420085<!--Statistic: statistic_SmallBusinessPerks_FakeBillPay_ConsequenceCounter--></T>
+                          <V n="threshold" t="value_threshold">
+                            <U n="value_threshold">
+                              <E n="comparison">EQUAL</E>
+                              <T n="value">3</T>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+                <U>
+                  <T n="multiplier">7</T>
+                  <L n="tests">
+                    <L>
+                      <V t="statistic">
+                        <U n="statistic">
+                          <T n="must_have_stat">True</T>
+                          <T n="stat">420085<!--Statistic: statistic_SmallBusinessPerks_FakeBillPay_ConsequenceCounter--></T>
+                          <V n="threshold" t="value_threshold">
+                            <U n="value_threshold">
+                              <E n="comparison">EQUAL</E>
+                              <T n="value">4</T>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+                <U>
+                  <T n="multiplier">10</T>
+                  <L n="tests">
+                    <L>
+                      <V t="statistic">
+                        <U n="statistic">
+                          <T n="must_have_stat">True</T>
+                          <T n="stat">420085<!--Statistic: statistic_SmallBusinessPerks_FakeBillPay_ConsequenceCounter--></T>
+                          <V n="threshold" t="value_threshold">
+                            <U n="value_threshold">
+                              <E n="comparison">EQUAL</E>
+                              <T n="value">5</T>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+                <U>
+                  <T n="multiplier">15</T>
+                  <L n="tests">
+                    <L>
+                      <V t="statistic">
+                        <U n="statistic">
+                          <T n="must_have_stat">True</T>
+                          <T n="stat">420085<!--Statistic: statistic_SmallBusinessPerks_FakeBillPay_ConsequenceCounter--></T>
+                          <V n="threshold" t="value_threshold">
+                            <U n="value_threshold">
+                              <E n="comparison">EQUAL</E>
+                              <T n="value">6</T>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+                <U>
+                  <T n="multiplier">25</T>
+                  <L n="tests">
+                    <L>
+                      <V t="statistic">
+                        <U n="statistic">
+                          <T n="must_have_stat">True</T>
+                          <T n="stat">420085<!--Statistic: statistic_SmallBusinessPerks_FakeBillPay_ConsequenceCounter--></T>
+                          <V n="threshold" t="value_threshold">
+                            <U n="value_threshold">
+                              <T n="value">7</T>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+              </L>
+            </U>
+            <V n="payment_cost" t="amount">
+              <U n="amount">
+                <T n="amount">200</T>
+                <L n="payment_destinations">
+                  <V t="statistic">
+                    <U n="statistic">
+                      <T n="statistic">420105<!--Statistic: statistic_SmallBusinessPerks_FakeBillPay_FineAmount--></T>
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="audio_sting" t="enabled">
+              <U n="enabled">
+                <T n="audio" p="InEP18\Audio\music\bumpers\bumper_ep18_business_perks_caught.propx">39b2aa4a:00000000:9af93bae3d7bdfdd</T>
+                <T n="immediate_audio">False</T>
+              </U>
+            </V>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InEP18\UI\Icons\Notifications\CrimeConsequences_TNS.png">2f7d0004:00000000:4beee75edb462993</T>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant" />
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x73252F03<!--String: "Trying to pass off a fake payment has caught up to {0.SimFirstName}! The Business Bureau has audited {0.SimPronounPossessiveDependent} finances and levied a {1.Money} fine for falsified records!"--></T>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="participant_type" />
+                  <V t="statistic_value">
+                    <U n="statistic_value">
+                      <T n="statistic">420105<!--Statistic: statistic_SmallBusinessPerks_FakeBillPay_FineAmount--></T>
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x6203B47<!--String: "{0.SimFirstName} Has Been Caught!"--></T>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_set_min">
+        <U n="statistic_set_min">
+          <T n="stat">420105<!--Statistic: statistic_SmallBusinessPerks_FakeBillPay_FineAmount--></T>
+        </U>
+      </V>
+    </V>
+  </L>
+</I>

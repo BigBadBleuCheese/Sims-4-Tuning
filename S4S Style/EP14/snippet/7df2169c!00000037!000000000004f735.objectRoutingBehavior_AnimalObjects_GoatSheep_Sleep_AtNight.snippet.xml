@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="ObjectRoutingBehavior" i="snippet" m="routing.object_routing.object_routing_behavior" n="objectRoutingBehavior_AnimalObjects_GoatSheep_Sleep_AtNight" s="325429">
+  <E n="object_routing_priority">HIGH</E>
+  <V n="route" t="from_target_object">
+    <U n="from_target_object">
+      <L n="constraints">
+        <V t="circle">
+          <U n="circle">
+            <T n="radial_cost_weight">20</T>
+            <T n="radius">0</T>
+          </U>
+        </V>
+      </L>
+      <L n="no_target_loot">
+        <T>263264<!--LootActions: loot_AnimalObjects_StartWalk--></T>
+      </L>
+      <L n="route_fail_loot">
+        <T>263264<!--LootActions: loot_AnimalObjects_StartWalk--></T>
+      </L>
+      <U n="target_action_rules">
+        <L n="actions">
+          <U>
+            <T n="abort_if_applied">True</T>
+            <L n="actions">
+              <V t="play_animation">
+                <U n="play_animation">
+                  <U n="animation">
+                    <T n="loop_time">10</T>
+                    <T n="reference">320922<!--ObjectAnimationElement: animalObjects_Idles_GoatSheep_LayDown--></T>
+                  </U>
+                </U>
+              </V>
+              <V t="play_animation">
+                <U n="play_animation">
+                  <U n="animation">
+                    <L n="loop_exit_conditions">
+                      <U>
+                        <L n="conditions">
+                          <V t="stat_based">
+                            <U n="stat_based">
+                              <T n="stat">327066<!--Commodity: commodity_AnimalObjects_SleepTimer--></T>
+                              <U n="threshold">
+                                <E n="comparison">LESS_OR_EQUAL</E>
+                                <T n="value">5</T>
+                              </U>
+                            </U>
+                          </V>
+                        </L>
+                      </U>
+                    </L>
+                    <T n="loop_time">1000</T>
+                    <T n="reference">320921<!--ObjectAnimationElement: animalObjects_Idles_GoatSheep_Sleep--></T>
+                  </U>
+                </U>
+              </V>
+              <V t="play_animation">
+                <U n="play_animation">
+                  <U n="animation">
+                    <T n="loop_time">10</T>
+                    <T n="reference">320922<!--ObjectAnimationElement: animalObjects_Idles_GoatSheep_LayDown--></T>
+                  </U>
+                </U>
+              </V>
+              <V t="apply_loot">
+                <U n="apply_loot">
+                  <L n="loot_actions">
+                    <T>256635<!--LootActions: loot_animalObjects_Stop--></T>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </U>
+        </L>
+      </U>
+      <V n="target_participant" t="enabled">
+        <E n="enabled">Actor</E>
+      </V>
+      <E n="target_reservation_timing">NEVER</E>
+      <V n="target_type" t="object">
+        <U n="object">
+          <L n="tags" />
+        </U>
+      </V>
+    </U>
+  </V>
+</I>

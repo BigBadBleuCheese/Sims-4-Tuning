@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="QuestGig" i="career_gig" m="careers.missions.mission_gig" n="questGig_EP19Quests_Fairy" s="441670">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_description" t="enabled">
+        <T n="enabled">0x1D58DF7A<!--String: "<i>Two gardens sat fine, across the yard line, of two neighbors who varied in skill. One garden grew tall, with crops ready for fall, and the other was withered and ill. Now that neighbor in need, did not care to weed, and put all the blame on the other. And the cause of their doubt, to the garden’s clear drought, were pixies that came in to smother...</i>\n\n<font color="#1E81E6">Obtain and Deliver an Item.</font>\n"--></T>
+      </V>
+      <V n="instance_display_icon" t="enabled">
+        <T p="InEP19\UI\Icons\Quests\quests_GardenQuest.png" n="enabled">2f7d0004:00000000:b1719d2f15125b96</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x264B9233<!--String: "Plants Lie Here"--></T>
+      </V>
+    </U>
+  </V>
+  <T n="career">424758<!--Career: career_EP19Quests--></T>
+  <L n="cycling_display_data">
+    <U>
+      <T n="customer_description">0x1D58DF7A<!--String: "<i>Two gardens sat fine, across the yard line, of two neighbors who varied in skill. One garden grew tall, with crops ready for fall, and the other was withered and ill. Now that neighbor in need, did not care to weed, and put all the blame on the other. And the cause of their doubt, to the garden’s clear drought, were pixies that came in to smother...</i>\n\n<font color="#1E81E6">Obtain and Deliver an Item.</font>\n"--></T>
+      <T n="mission_name">0x859BFBE<!--String: "Plants Lie Here"--></T>
+    </U>
+  </L>
+  <T n="gig_assignment_aspiration">441671<!--AspirationGig: aspirationGig_EP19Quests_Fairy--></T>
+  <V n="gig_pay" t="flat_amount">
+    <U n="flat_amount">
+      <T n="value">222</T>
+    </U>
+  </V>
+  <T n="hide_inactive_objectives">True</T>
+  <L n="mission_objective_data">
+    <U>
+      <L n="weighted_objectives">
+        <U>
+          <T n="objective">441679<!--Objective: objective_EP19Quests_Fairy_Aura--></T>
+        </U>
+        <U>
+          <T n="objective">441678<!--Objective: objective_EP19Quests_Fairy_BlueBell--></T>
+        </U>
+        <U>
+          <T n="objective">441677<!--Objective: objective_EP19Quests_Fairy_Gnome--></T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="pick_objective_when_activated">False</T>
+      <T n="requires_previous_objective_complete">False</T>
+      <L n="weighted_objectives">
+        <U>
+          <T n="objective">441680<!--Objective: objective_EP19Quests_Fairy_Deliver--></T>
+        </U>
+      </L>
+    </U>
+  </L>
+  <T n="mission_rewards_description">0x3B18AFDC<!--String: "{0.String}\n<font color='#199C2C'>{1.String}</font>"--></T>
+  <V n="mission_rewards_text" t="enabled">
+    <T n="enabled">0x76B6E87F<!--String: "Reward: Aura Blossom Seed, Flower Seed Packet, End of Fable"--></T>
+  </V>
+  <V n="mission_trait" t="enabled">
+    <T n="enabled">441672<!--Trait: trait_Hidden_EP19Quests_OnQuest_Fairy--></T>
+  </V>
+  <U n="objective_completion_audio">
+    <T n="audio" p="InGame\Audio\Bumper\bumper_other_goal_complete.propx">39b2aa4a:00000000:ea1687e36b0b32f3</T>
+  </U>
+  <E n="on_pick_behavior">REMOVE</E>
+  <T n="open_career_panel">True</T>
+  <V n="picker_associated_sim_filter" t="enabled">
+    <T n="enabled">441034<!--TunableSimFilter: situationFilters_EP19World_NPC_Zhaleh--></T>
+  </V>
+  <T n="picker_description_text">0x3B18AFDC<!--String: "{0.String}\n<font color='#199C2C'>{1.String}</font>"--></T>
+  <T n="picker_disable_if_visibility_tests_fail_with_tooltip">True</T>
+  <T n="picker_replace_if_removed">True</T>
+  <V n="picker_scheduling_behavior" t="enabled">
+    <V n="enabled" t="schedule_career_gig">
+      <U n="schedule_career_gig">
+        <T n="allow_add_career">True</T>
+      </U>
+    </V>
+  </V>
+  <V n="picker_scoring" t="enabled">
+    <U n="enabled">
+      <E n="bucket">EP19Quest_Fairy</E>
+    </U>
+  </V>
+  <L n="picker_visibility_tests">
+    <L>
+      <V t="unlock_earned">
+        <U n="unlock_earned">
+          <V n="tooltip" t="enabled">
+            <T n="enabled">0xDFB933A0<!--String: "Complete the Rise and Shine Fable from the Gnome Enthusiast to unlock."--></T>
+          </V>
+          <V n="unlock_to_test" t="aspiration">
+            <U n="aspiration">
+              <T n="aspiration">440749<!--AspirationGig: aspirationGig_EP19Quests_Gnome_Narrative--></T>
+              <T n="negate">False</T>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="career_gig_test">
+        <U n="career_gig_test">
+          <T n="career">424758<!--Career: career_EP19Quests--></T>
+          <T n="negate">True</T>
+          <V n="test_type" t="specific_gigs">
+            <U n="specific_gigs">
+              <L n="gigs">
+                <T>441670<!--QuestGig: questGig_EP19Quests_Fairy--></T>
+              </L>
+            </U>
+          </V>
+          <V n="tooltip" t="enabled">
+            <T n="enabled">0x67109623<!--String: "This Fable is currently in progress."--></T>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="result_based_loots" t="enabled">
+    <L n="enabled">
+      <U>
+        <E n="key">CANCELED</E>
+        <L n="value">
+          <T>441673<!--LootActions: loot_EP19Quests_Cleanup_Fairy--></T>
+        </L>
+      </U>
+      <U>
+        <E n="key">SUCCESS</E>
+        <L n="value">
+          <T>441674<!--LootActions: loot_EP19Quests_Rewards_Fairy--></T>
+        </L>
+      </U>
+    </L>
+  </V>
+</I>

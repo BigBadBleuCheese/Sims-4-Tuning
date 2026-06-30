@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="BurnoutBuff" i="buff" m="buffs.burnout_buff" n="buff_Burnout_BurnedOut" s="306680">
+  <L n="_loot_on_addition">
+    <T>307821<!--LootActions: loot_Burnout_BurnedOut_OnAdd--></T>
+    <T>308565<!--LootActions: loot_Burnout_RemoveModBuffs--></T>
+  </L>
+  <L n="_loot_on_removal">
+    <T>306860<!--LootActions: loot_Burnout_BurnedOut_OnRemoval--></T>
+  </L>
+  <L n="actor_mixers">
+    <U>
+      <T n="key">13998<!--SocialSuperInteraction: sim_Chat--></T>
+      <L n="value">
+        <T>308270<!--SocialMixerInteraction: mixer_social_ComplainAboutBurnout--></T>
+      </L>
+    </U>
+  </L>
+  <T p="InGame\Audio\Stings\sting_buff_gain.propx" n="audio_sting_on_add">39b2aa4a:00000000:8af8b916cf64c646</T>
+  <T p="InGame\Audio\Stings\sting_buff_loss.propx" n="audio_sting_on_remove">39b2aa4a:00000000:3bf33216a25546ea</T>
+  <T n="buff_description">0x79FD9D05<!--String: "It's hard to be productive when you're burnt out. {0.SimFirstName} should really take a break before this becomes a full on Brain Block."--></T>
+  <T n="buff_name">0xC3AED000<!--String: "Burned Out"--></T>
+  <U n="game_effect_modifier">
+    <L n="_game_effect_modifiers">
+      <V t="autonomy_modifier">
+        <U n="autonomy_modifier">
+          <L n="locked_stats">
+            <T>304271<!--Commodity: commodity_Burnout_CreativeTracker--></T>
+            <T>306749<!--Commodity: commodity_Burnout_MentalTracker--></T>
+          </L>
+          <L n="skill_tag_modifiers">
+            <U>
+              <E n="key">Skill_All</E>
+              <T n="value">0.25</T>
+            </U>
+          </L>
+          <L n="stat_use_multiplier">
+            <U>
+              <T n="key">16654<!--Commodity: motive_Energy--></T>
+              <U n="value">
+                <E n="apply_direction">INCREASE</E>
+                <T n="multiplier">0.75</T>
+              </U>
+            </U>
+            <U>
+              <T n="key">16655<!--Commodity: motive_Fun--></T>
+              <U n="value">
+                <E n="apply_direction">INCREASE</E>
+                <T n="multiplier">0.75</T>
+              </U>
+            </U>
+          </L>
+        </U>
+      </V>
+      <V t="affordance_modifier">
+        <U n="affordance_modifier">
+          <L n="basic_extras">
+            <V t="buff">
+              <U n="buff">
+                <U n="buff_type">
+                  <T n="buff_type">324906<!--Buff: buff_Burnout_Hidden_IncreaseLarge_Fog_BurnedOut--></T>
+                </U>
+              </U>
+            </V>
+          </L>
+          <L n="interaction_category_tags">
+            <E>Interaction_Burnout_Creative_IncreaseLarge</E>
+            <E>Interaction_Burnout_Mental_IncreaseLarge</E>
+          </L>
+          <L n="test">
+            <L>
+              <V t="sim_info">
+                <U n="sim_info">
+                  <V n="npc" t="enabled" />
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+      <V t="affordance_modifier">
+        <U n="affordance_modifier">
+          <L n="basic_extras">
+            <V t="buff">
+              <U n="buff">
+                <U n="buff_type">
+                  <T n="buff_type">324907<!--Buff: buff_Burnout_Hidden_IncreaseSmall_Fog_BurnedOut--></T>
+                </U>
+              </U>
+            </V>
+          </L>
+          <L n="interaction_category_tags">
+            <E>Interaction_Burnout_Creative_IncreaseSmall</E>
+            <E>Interaction_Burnout_Mental_IncreaseSmall</E>
+            <E>Interaction_Upgrade</E>
+            <E>Interaction_Repair</E>
+          </L>
+          <L n="test">
+            <L>
+              <V t="sim_info">
+                <U n="sim_info">
+                  <V n="npc" t="enabled" />
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+      <V t="affordance_modifier">
+        <U n="affordance_modifier">
+          <L n="basic_extras">
+            <V t="buff">
+              <U n="buff">
+                <U n="buff_type">
+                  <T n="buff_type">324909<!--Buff: buff_Burnout_Hidden_DecreaseLarge_Fog_BurnedOut_MentalBlock--></T>
+                </U>
+              </U>
+            </V>
+          </L>
+          <L n="interaction_category_tags">
+            <E>Interaction_Burnout_All_DecreaseLarge</E>
+          </L>
+        </U>
+      </V>
+      <V t="affordance_modifier">
+        <U n="affordance_modifier">
+          <L n="affordance_lists">
+            <T>122592<!--AffordanceList: affordanceList_Woohoo--></T>
+            <T>300023<!--AffordanceList: affordanceList_WerewolfFight--></T>
+          </L>
+          <L n="affordances">
+            <T>13838<!--SuperInteraction: Puddle_Stomp--></T>
+            <T>13837<!--SuperInteraction: Puddle_Play--></T>
+            <T>181958<!--SuperInteraction: mudPuddle_Play--></T>
+            <T>13521<!--SuperInteraction: Kick_Over_Outdoor--></T>
+            <T>13340<!--SuperInteraction: DollHouse_Smash--></T>
+          </L>
+          <L n="basic_extras">
+            <V t="buff">
+              <U n="buff">
+                <U n="buff_type">
+                  <T n="buff_type">324908<!--Buff: buff_Burnout_Hidden_DecreaseSmall_Fog_BurnedOut_MentalBlock--></T>
+                </U>
+              </U>
+            </V>
+          </L>
+          <L n="interaction_category_tags">
+            <E>Interaction_Burnout_All_DecreaseSmall</E>
+            <E>Interaction_Sleep</E>
+            <E>Interaction_Social_Fight</E>
+          </L>
+        </U>
+      </V>
+      <V t="affordance_modifier">
+        <U n="affordance_modifier">
+          <L n="basic_extras">
+            <V t="buff">
+              <U n="buff">
+                <U n="buff_type">
+                  <T n="buff_type">324908<!--Buff: buff_Burnout_Hidden_DecreaseSmall_Fog_BurnedOut_MentalBlock--></T>
+                </U>
+              </U>
+            </V>
+          </L>
+          <L n="interaction_category_tags">
+            <E>Interaction_StereoDance</E>
+          </L>
+          <L n="test">
+            <L>
+              <V t="trait">
+                <U n="trait">
+                  <L n="blacklist_traits">
+                    <T>264144<!--Preference: Trait_SimPreference_Dislikes_Activities_Dancing--></T>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T p="InEP13\UI\Icons\buffs\buffs_BurnedOut_neg.png" n="icon">2f7d0004:00000000:284ace1def365767</T>
+  <V n="interactions" t="enabled">
+    <U n="enabled">
+      <L n="interaction_items">
+        <T>308344<!--MixerInteraction: idle_Buff_Burnout_Bored--></T>
+        <T>308274<!--MixerInteraction: idle_Buff_Burnout_Angry--></T>
+      </L>
+    </U>
+  </V>
+  <T n="mood_type">14645<!--Mood: Mood_Stressed--></T>
+  <T n="mood_weight">3</T>
+</I>

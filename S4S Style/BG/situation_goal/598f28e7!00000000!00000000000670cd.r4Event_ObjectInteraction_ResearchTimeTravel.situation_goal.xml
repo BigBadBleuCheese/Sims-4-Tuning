@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalObjectInteraction" i="situation_goal" m="situations.situation_goal_object_interaction" n="r4Event_ObjectInteraction_ResearchTimeTravel" s="422093">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T p="InGame\UI\Icons\Events\EventGoal_Computer.png" n="enabled">2f7d0004:00000000:0112f79d8b2d699e</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0xAAB86825<!--String: "Research Shards of Time"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0x9300708F<!--String: "The internet has the answers to everything! There must be more information on the Shards of Time there!\n\nSelect Web... and then Research... and then Research Shards of Time on a Computer to do one last search.\n\n<i>(+25 Event Points)</i>"--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>447711<!--SituationGoalLootActions: liveEvent_GoalLoot_CompleteQuestGoal--></T>
+  </L>
+  <U n="_goal_test">
+    <L n="affordances">
+      <T>422113<!--SuperInteraction: computer_Browse_Web_r4Event_ResearchTimeTravel--></T>
+    </L>
+    <E n="test_event">InteractionComplete</E>
+  </U>
+  <L n="_post_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+      </U>
+    </V>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+  <V n="goal_completion_notification" t="enabled">
+    <U n="enabled">
+      <V n="icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T p="InGame\UI\Icons\Headlines\Events\headline_ShardOfTimeIcon3_50x50.png" n="key">2f7d0004:00000000:80345fda2cfc2bfd</T>
+          </U>
+        </V>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0x811293A1<!--String: "It's true! It's right there on the internet!\n\nThe shards are echoes form the past and exist everywhere in the world. If {0.SimFirstName} looks hard enough for that faint glow the shards have...\n\n...Maybe {0.SimPronounSubjective} can find some more. This is an amazing development!"--></T>
+      </V>
+      <V n="title" t="enabled">
+        <T n="enabled">0x4CE7E013<!--String: "Shards of Time Research"--></T>
+      </V>
+    </U>
+  </V>
+  <V n="tutorial_tip_group" t="disabled" />
+</I>

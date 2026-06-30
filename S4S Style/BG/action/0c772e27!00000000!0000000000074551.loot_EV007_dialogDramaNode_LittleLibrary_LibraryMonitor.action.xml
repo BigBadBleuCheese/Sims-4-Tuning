@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_EV007_dialogDramaNode_LittleLibrary_LibraryMonitor" s="476497">
+  <L n="loot_actions">
+    <V t="schedule_drama_node">
+      <U n="schedule_drama_node">
+        <T n="drama_node">488639<!--DialogDramaNode: EV007_LittleLibrary_LibraryMonitor_DonatedManyBooks--></T>
+        <E n="subject">ActiveHousehold</E>
+        <L n="tests">
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">476580<!--Statistic: statistic_EV007_LittleLibrary_DonatedBooksTotal--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <T n="value">5</T>
+                  </U>
+                </V>
+                <E n="who">SavedActor1</E>
+              </U>
+            </V>
+            <V t="drama_node">
+              <U n="drama_node">
+                <L n="drama_nodes">
+                  <T>488639<!--DialogDramaNode: EV007_LittleLibrary_LibraryMonitor_DonatedManyBooks--></T>
+                </L>
+                <T n="exists">False</T>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="schedule_drama_node">
+      <U n="schedule_drama_node">
+        <T n="drama_node">488638<!--DialogDramaNode: EV007_LittleLibrary_LibraryMonitor_HonorCode--></T>
+        <E n="subject">ActiveHousehold</E>
+        <L n="tests">
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">476493<!--Commodity: commodity_EV007_LittleLibrary_HonorCode--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">LESS_OR_EQUAL</E>
+                    <T n="value">-6</T>
+                  </U>
+                </V>
+                <E n="who">SavedActor1</E>
+              </U>
+            </V>
+            <V t="drama_node">
+              <U n="drama_node">
+                <L n="drama_nodes">
+                  <T>488638<!--DialogDramaNode: EV007_LittleLibrary_LibraryMonitor_HonorCode--></T>
+                </L>
+                <T n="exists">False</T>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="object_ownership">
+        <U n="object_ownership">
+          <T n="consider_renter_as_household_owner">True</T>
+          <E n="test_object">SavedActor1</E>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

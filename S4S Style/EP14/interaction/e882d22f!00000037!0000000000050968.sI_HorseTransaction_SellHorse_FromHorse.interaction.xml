@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="sI_HorseTransaction_SellHorse_FromHorse" s="330088">
+  <V n="_icon" t="resource_key">
+    <U n="resource_key">
+      <T n="key" p="InEP14\UI\Icons\Headlines\headline_BuyAHorse.png">2f7d0004:00000000:02c12d8ba9e297ec</T>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <L n="basic_extras">
+    <V t="camera_focus">
+      <U n="camera_focus">
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>339286<!--LootActions: loot_Reaction_SellHorse_AddTracker_Broadcaster--></T>
+        </L>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>339379<!--LootActions: loot_Reaction_SellAnimal_SentimentBroadcaster--></T>
+        </L>
+        <V n="timing" t="at_end" />
+      </U>
+    </V>
+    <V t="audio_sting">
+      <U n="audio_sting">
+        <U n="audio_sting">
+          <T n="audio" p="InEP14\Audio\music\bumpers\bumper_ep14_horse_sell.propx">39b2aa4a:00000000:d70fde8ec71a3650</T>
+        </U>
+      </U>
+    </V>
+    <V t="payment">
+      <U n="payment">
+        <T n="display_only">True</T>
+        <V n="payment" t="literal">
+          <U n="literal">
+            <V n="payment_cost" t="statistic_on_sim">
+              <U n="statistic_on_sim">
+                <L n="payment_destinations">
+                  <V t="active_household" />
+                </L>
+                <E n="sim">TargetSim</E>
+                <T n="statistic">323422<!--ModifiableStatistic: statistic_HorseTransaction_HorseValue--></T>
+              </U>
+            </V>
+            <V n="payment_source" t="no_source">
+              <U n="no_source">
+                <T n="advertise_simoleon_delta">True</T>
+                <V n="cost_string_override" t="enabled">
+                  <T n="enabled">0x619D643F<!--String: "{0.String} (<font color='#3AAF69'>+{1.Money}</font>) "--></T>
+                </V>
+              </U>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="category">129388<!--PieMenuCategory: pieMenuCategory_Actions--></T>
+  <V n="confirmation_dialog" t="enabled">
+    <U n="enabled">
+      <U n="dialog">
+        <V n="dialog" t="ok_cancel">
+          <U n="ok_cancel">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Object</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xA0BA933C<!--String: "Are you sure you want to sell {1.SimFirstName}? You will receive payment and this Horse will leave the Household."--></T>
+            </V>
+            <T n="text_cancel">0xD877B6E9<!--String: "No"--></T>
+            <T n="text_ok">0xB7A2CBCD<!--String: "Yes"--></T>
+          </U>
+        </V>
+      </U>
+    </U>
+  </V>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x75C69A1D<!--String: "Sell Horse"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="basic_extras">
+          <V t="save_participant">
+            <U n="save_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </L>
+        <L n="continuation">
+          <U>
+            <T n="affordance">335294<!--SuperInteraction: superInteraction_HorseTransaction_SellHorse_Wave--></T>
+            <E n="target">TargetSim</E>
+          </U>
+        </L>
+      </U>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">TARGET</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+      </U>
+    </V>
+    <V t="in_same_household" />
+    <V t="travel_group">
+      <U n="travel_group">
+        <V n="test_type" t="in_travel_group">
+          <U n="in_travel_group">
+            <T n="exists">False</T>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="travel_group">
+      <U n="travel_group">
+        <E n="participant">TargetSim</E>
+        <V n="test_type" t="in_travel_group">
+          <U n="in_travel_group">
+            <T n="exists">False</T>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

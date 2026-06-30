@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="mailboxWall_APM_PostDonation_Charity" s="345840">
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Object</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.75</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">242063<!--AnimationElement: MailboxWall_MailPackage--></T>
+      </U>
+    </U>
+  </V>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x658DE0E1<!--String: "Post Donation for Charity"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="basic_extras">
+          <V t="loot">
+            <U n="loot">
+              <L n="loot_list">
+                <T>355012<!--LootActions: loot_APM_PostDonation_Charity--></T>
+              </L>
+              <V n="picked_zone_for_multi_unit_event_tuning" t="enabled">
+                <U n="enabled">
+                  <T n="event_drama_node">347287<!--MultiUnitEventDramaNode: dramaNode_APM_Charity--></T>
+                </U>
+              </V>
+            </U>
+          </V>
+        </L>
+      </U>
+    </U>
+  </V>
+  <V n="route_start_balloon" t="enabled">
+    <U n="enabled">
+      <U n="balloon">
+        <L n="balloon_choices">
+          <U>
+            <V n="item" t="balloon_icon">
+              <U n="balloon_icon">
+                <V n="icon" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>Object</E>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </U>
+        </L>
+        <L n="balloon_target">
+          <E>Actor</E>
+        </L>
+      </U>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="situation_running_test">
+      <U n="situation_running_test">
+        <V n="situation_blacklist" t="enabled">
+          <L n="enabled">
+            <T>344502<!--MultiUnitEventSituation: situation_muEvent_Charity--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+    <V t="drama_node">
+      <U n="drama_node">
+        <T n="check_active_nodes">False</T>
+        <L n="drama_nodes">
+          <T>347287<!--MultiUnitEventDramaNode: dramaNode_APM_Charity--></T>
+        </L>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">358462<!--TestSetInstance: testSet_APM_POPostAvailability--></T>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">359719<!--TestSetInstance: testSet_APM_NoCommunityEventCooldown--></T>
+    </V>
+  </L>
+  <T n="time_overhead">5</T>
+</I>

@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="butterflyCollection_Supers_Incubator_View" s="470288">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="circle">
+            <U n="circle">
+              <T n="ideal_radius">1</T>
+              <T n="ideal_radius_width">1</T>
+              <T n="radius">2</T>
+              <T n="require_los">True</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="value" t="facing" />
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <L n="_static_commodities">
+    <U>
+      <T n="static_commodity">487684<!--StaticCommodity: staticCommodity_Entomology--></T>
+    </U>
+  </L>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="time_based">
+                <U n="time_based">
+                  <T n="max_time">30</T>
+                  <T n="min_time">15</T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+        <V t="list_reference">
+          <T n="list_reference">40705<!--ExitConditionList: ExitConditionList_MotivesNearFail--></T>
+        </V>
+        <V t="list_reference">
+          <T n="list_reference">40702<!--ExitConditionList: ExitConditionList_EmotionStressed--></T>
+        </V>
+        <V t="list_reference">
+          <T n="list_reference">40144<!--ExitConditionList: ExitConditionList_EmotionMiserable--></T>
+        </V>
+      </L>
+      <V n="content" t="looping_content">
+        <U n="looping_content">
+          <U n="animation_ref">
+            <T n="factory">12142<!--AnimationElement: View_View_Looping_basic--></T>
+          </U>
+        </U>
+      </V>
+      <V n="periodic_stat_change" t="enabled">
+        <U n="enabled">
+          <L n="operations">
+            <V t="dynamic_skill">
+              <U n="dynamic_skill">
+                <U n="skill_loot_data_override">
+                  <E n="effectiveness">VerySmallPeriodic</E>
+                  <T n="stat">469915<!--Skill: statistic_Skill_All_Ages_Minor_Entomology--></T>
+                </U>
+              </U>
+            </V>
+            <V t="dynamic_skill">
+              <U n="dynamic_skill">
+                <U n="skill_loot_data_override">
+                  <E n="effectiveness">VerySmallPeriodic</E>
+                  <T n="stat">469915<!--Skill: statistic_Skill_All_Ages_Minor_Entomology--></T>
+                </U>
+              </U>
+            </V>
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="advertise">False</T>
+                <T n="amount">0.34</T>
+                <T n="stat">16655<!--Commodity: motive_Fun--></T>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+              </U>
+            </V>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="adventure">
+      <U n="adventure">
+        <L n="_adventure_moments">
+          <U>
+            <E n="key">Career_ChanceCard_01</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">483103<!--AdventureMoment: adventureMoment_SimPreference_Activities_Entomology_Like--></T>
+              </V>
+            </U>
+          </U>
+        </L>
+        <L n="_initial_moments">
+          <U>
+            <E n="adventure_moment_key">Career_ChanceCard_01</E>
+            <U n="weight">
+              <L n="multipliers">
+                <U>
+                  <T n="multiplier">0</T>
+                  <L n="tests">
+                    <L>
+                      <V t="test_set_reference">
+                        <T n="test_set_reference">269223<!--TestSetInstance: testSetInstance_SimPreference_PreferenceDiscovery_MaxOrCooldownOrAge--></T>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+                <U>
+                  <T n="multiplier">0</T>
+                  <L n="tests">
+                    <L>
+                      <V t="trait">
+                        <U n="trait">
+                          <L n="whitelist_traits">
+                            <T>483104<!--Preference: trait_SimPreference_Dislikes_Activities_Entomology--></T>
+                            <T>483105<!--Preference: trait_SimPreference_Likes_Activities_Entomology--></T>
+                            <T>483106<!--Trait: trait_SimPreference_NoOpinion_Activities_Entomology--></T>
+                          </L>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+                <U>
+                  <T n="multiplier">0</T>
+                  <L n="tests">
+                    <L>
+                      <V t="test_set_reference">
+                        <T n="test_set_reference">267815<!--TestSetInstance: testSetInstance_SimPreference_PreferenceDiscovery_EnergizedFocusedInspired--></T>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+              </L>
+            </U>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V t="adventure">
+      <U n="adventure">
+        <L n="_adventure_moments">
+          <U>
+            <E n="key">Career_ChanceCard_01</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">483102<!--AdventureMoment: adventureMoment_SimPreference_Activities_Entomology_Dislike--></T>
+              </V>
+            </U>
+          </U>
+        </L>
+        <L n="_initial_moments">
+          <U>
+            <E n="adventure_moment_key">Career_ChanceCard_01</E>
+            <U n="weight">
+              <L n="multipliers">
+                <U>
+                  <T n="multiplier">0</T>
+                  <L n="tests">
+                    <L>
+                      <V t="test_set_reference">
+                        <T n="test_set_reference">269223<!--TestSetInstance: testSetInstance_SimPreference_PreferenceDiscovery_MaxOrCooldownOrAge--></T>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+                <U>
+                  <T n="multiplier">0</T>
+                  <L n="tests">
+                    <L>
+                      <V t="trait">
+                        <U n="trait">
+                          <L n="whitelist_traits">
+                            <T>483104<!--Preference: trait_SimPreference_Dislikes_Activities_Entomology--></T>
+                            <T>483105<!--Preference: trait_SimPreference_Likes_Activities_Entomology--></T>
+                            <T>483106<!--Trait: trait_SimPreference_NoOpinion_Activities_Entomology--></T>
+                          </L>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+                <U>
+                  <T n="multiplier">0</T>
+                  <L n="tests">
+                    <L>
+                      <V t="test_set_reference">
+                        <T n="test_set_reference">267812<!--TestSetInstance: testSetInstance_SimPreference_PreferenceDiscovery_AngryBoredUncomfortable--></T>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+              </L>
+            </U>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <T n="buff_type">483089<!--Buff: buff_SimPreference_Likes_Activities_Entomology--></T>
+        </U>
+        <L n="subject">
+          <E>Actor</E>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <L n="whitelist_traits">
+                  <T>483105<!--Preference: trait_SimPreference_Likes_Activities_Entomology--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <T n="buff_type">483088<!--Buff: buff_SimPreference_Dislikes_Activities_Entomology--></T>
+        </U>
+        <L n="subject">
+          <E>Actor</E>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <L n="whitelist_traits">
+                  <T>483104<!--Preference: trait_SimPreference_Dislikes_Activities_Entomology--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="broadcaster">
+      <U n="broadcaster">
+        <L n="broadcaster_types">
+          <U>
+            <T n="item">487679<!--Broadcaster: broadcaster_HobbyClass_DemonstrationWatchers_Entomology--></T>
+            <L n="test">
+              <L>
+                <V t="situation_job_test">
+                  <U n="situation_job_test">
+                    <L n="situation_jobs">
+                      <T>397235<!--SituationJob: job_HobbyClass_Instructor--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V t="buff_fire_and_forget">
+      <U n="buff_fire_and_forget">
+        <U n="buff">
+          <T n="buff_type">489555<!--Buff: buff_ButterflyCollection_Hidden_IncubatorView_Cooldown--></T>
+        </U>
+      </U>
+    </V>
+  </L>
+  <V n="basic_focus" t="tunable_focus">
+    <U n="tunable_focus">
+      <L n="subject">
+        <E>Object</E>
+      </L>
+    </U>
+  </V>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xFF54B476<!--String: "View Caterpillar"--></T>
+  <V n="display_name_overrides" t="testable">
+    <U n="testable">
+      <L n="overrides">
+        <U>
+          <V n="new_display_name" t="enabled">
+            <T n="enabled">0xC91315<!--String: "View Cocoon"--></T>
+          </V>
+          <L n="test">
+            <L>
+              <V t="state">
+                <U n="state">
+                  <T n="value">469635<!--CommodityBasedObjectStateValue: commodityStateValue_ButterflyCollection_Incubator_03_Cocoon--></T>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <V n="new_display_name" t="enabled">
+            <T n="enabled">0x653D9F01<!--String: "View Butterfly or Moth"--></T>
+          </V>
+          <L n="test">
+            <L>
+              <V t="state">
+                <U n="state">
+                  <T n="value">469650<!--CommodityBasedObjectStateValue: commodityStateValue_ButterflyCollection_Incubator_04_Hatched--></T>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="basic_extras">
+          <V t="buff_fire_and_forget">
+            <U n="buff_fire_and_forget">
+              <U n="buff">
+                <T n="buff_type">470289<!--Buff: buff_ButterflyCollection_Incubator_View--></T>
+              </U>
+            </U>
+          </V>
+        </L>
+      </U>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all" />
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>489555<!--Buff: buff_ButterflyCollection_Hidden_IncubatorView_Cooldown--></T>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x84BD8140<!--String: "{0.SimFirstName} needs to wait awhile before {0.SimPronounSubjective} can do this again!"--></T>
+        </V>
+      </U>
+    </V>
+    <V t="state">
+      <U n="state">
+        <E n="operator">NOTEQUAL</E>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xF35F5497<!--String: "Literally nothing to see here."--></T>
+        </V>
+        <T n="value">469633<!--CommodityBasedObjectStateValue: commodityStateValue_ButterflyCollection_Incubator_01_Empty--></T>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_EP17Festival_MoonBathing_Stargaze" s="389607">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x6251722<!--String: "(From Stargazing at the Moon Revelry) "--></T>
+          </V>
+          <T n="buff_type">389581<!--Buff: buff_EP17Festival_MoonBathing_Stargaze--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <L n="blacklist">
+                  <T>403261<!--Buff: buff_EP17Festival_MoonBathing_FullMoon_Player_Hidden--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x6251722<!--String: "(From Stargazing at the Moon Revelry) "--></T>
+          </V>
+          <T n="buff_type">403274<!--Buff: buff_EP17Festival_MoonBathing_Stargaze_FullMoon--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>403261<!--Buff: buff_EP17Festival_MoonBathing_FullMoon_Player_Hidden--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="festival_running">
+        <U n="festival_running">
+          <V n="check_if_on_festival_street" t="enabled" />
+          <V n="drama_node" t="enabled">
+            <T n="enabled">385419<!--FestivalDramaNode: festivalDramaNode_EP17_MoonBathing--></T>
+          </V>
+          <U n="valid_time_blocks">
+            <T n="pre_festival">False</T>
+          </U>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

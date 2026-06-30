@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Buff" i="buff" m="buffs.buff" n="buff_Burglar_Role_Arrested" s="422125">
+  <V n="_add_buff_on_remove" t="enabled">
+    <U n="enabled">
+      <U n="buff">
+        <T n="buff_type">423365<!--Buff: buff_Burglar_Hidden_JustLeftSituation--></T>
+      </U>
+      <L n="tests">
+        <L>
+          <V t="situation_job_test">
+            <U n="situation_job_test">
+              <T n="negate">True</T>
+              <L n="situation_jobs">
+                <T>421825<!--SituationJob: job_Burglar--></T>
+              </L>
+            </U>
+          </V>
+        </L>
+      </L>
+    </U>
+  </V>
+  <V n="appearance_modifier" t="enabled">
+    <U n="enabled">
+      <L n="appearance_modifiers">
+        <L>
+          <U>
+            <V n="modifier" t="set_cas_part">
+              <U n="set_cas_part">
+                <T n="cas_part">459995</T>
+              </U>
+            </V>
+          </U>
+        </L>
+        <L>
+          <U>
+            <V n="modifier" t="set_cas_part">
+              <U n="set_cas_part">
+                <T n="cas_part">460816</T>
+              </U>
+            </V>
+          </U>
+        </L>
+      </L>
+    </U>
+  </V>
+  <T p="InGame\Audio\Stings\sting_buff_gain.propx" n="audio_sting_on_add">39b2aa4a:00000000:8af8b916cf64c646</T>
+  <T p="InGame\Audio\Stings\sting_buff_loss.propx" n="audio_sting_on_remove">39b2aa4a:00000000:3bf33216a25546ea</T>
+  <V n="broadcaster" t="enabled">
+    <U n="enabled">
+      <L n="broadcaster_types">
+        <U>
+          <T n="item">435037<!--Broadcaster: broadcaster_Burglar--></T>
+        </U>
+        <U>
+          <T n="item">426977<!--Broadcaster: broadcaster_Burglar_Reaction_NoThreat--></T>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="game_effect_modifier">
+    <L n="_game_effect_modifiers">
+      <V t="autonomy_modifier">
+        <U n="autonomy_modifier">
+          <L n="locked_stats">
+            <T>16655<!--Commodity: motive_Fun--></T>
+            <T>16657<!--Commodity: motive_Hygiene--></T>
+            <T>16658<!--Commodity: motive_Social--></T>
+            <T>16652<!--Commodity: motive_Bladder--></T>
+            <T>16654<!--Commodity: motive_Energy--></T>
+            <T>16656<!--Commodity: motive_Hunger--></T>
+          </L>
+          <V n="only_scored_static_commodities" t="enabled">
+            <L n="enabled">
+              <T>421845<!--StaticCommodity: staticCommodity_Burglar--></T>
+            </L>
+          </V>
+          <V n="provided_affordance_compatibility" t="literal">
+            <U n="literal">
+              <V n="default_inclusion" t="exclude_all">
+                <U n="exclude_all">
+                  <L n="include_affordances">
+                    <T>422070<!--SuperInteraction: burglar_FakeChat--></T>
+                    <T>444542<!--SuperInteraction: burglarNPC_Arrested_CheckForPolice--></T>
+                  </L>
+                </U>
+              </V>
+            </U>
+          </V>
+          <E n="super_affordance_suppression_mode">USE_AFFORDANCE_COMPATIBILITY_AND_WHITELIST</E>
+          <T n="suppress_self_affordances">False</T>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T p="InGame\UI\Icons\Debug\missing_image.png" n="icon">2f7d0004:00000000:30f0846c783606f9</T>
+  <L n="static_commodity_to_add">
+    <T>421845<!--StaticCommodity: staticCommodity_Burglar--></T>
+  </L>
+  <L n="super_affordances">
+    <T>422070<!--SuperInteraction: burglar_FakeChat--></T>
+    <T>443954<!--NPCLeaveLotInteraction: NPCLeaveLot_Burglar_Run--></T>
+    <T>444542<!--SuperInteraction: burglarNPC_Arrested_CheckForPolice--></T>
+  </L>
+  <T n="suppress_social_front_page_when_targeted">True</T>
+  <T n="visible">False</T>
+</I>

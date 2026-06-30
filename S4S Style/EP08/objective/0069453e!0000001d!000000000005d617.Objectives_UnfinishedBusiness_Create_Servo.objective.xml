@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Objective" i="objective" m="event_testing.objective_tuning" n="Objectives_UnfinishedBusiness_Create_Servo" s="382487">
+  <E n="category_type">Create</E>
+  <L n="completion_loot">
+    <T>385159<!--LootActions: loot_UnfinishedBusiness_GoalCompleted--></T>
+  </L>
+  <T n="display_text">0xA9D10072<!--String: ""I'll create the ultimate Servo!""--></T>
+  <L n="loot_on_completion_ui_update">
+    <T>396545<!--LootActions: loot_UnfinishedBusiness_clearCompleteObjective--></T>
+  </L>
+  <V n="objective_test" t="relationship">
+    <U n="relationship">
+      <T n="num_relations">1</T>
+      <U n="required_relationship_bits">
+        <L n="match_all">
+          <T>218722<!--RelationshipBit: relationshipBit_Robot_Target_IsCreationOf_Actor--></T>
+          <T>15799<!--RelationshipBit: friendship-good_friends--></T>
+        </L>
+      </U>
+      <E n="test_event">AddRelationshipBit</E>
+    </U>
+  </V>
+  <L n="tests_for_picker_availability">
+    <L>
+      <V t="relationship_bit_count">
+        <U n="relationship_bit_count">
+          <T n="rel_bit">218722<!--RelationshipBit: relationshipBit_Robot_Target_IsCreationOf_Actor--></T>
+        </U>
+      </V>
+    </L>
+  </L>
+  <T n="tooltip">0x218F65FB<!--String: "<b><font color='#2182E6'>Create and Befriend a Servo</font></b>\nWho wouldn't want a robot best friend? This is going to be fun! Now, to find a Robotics Station so I can get to tinkering..."--></T>
+</I>

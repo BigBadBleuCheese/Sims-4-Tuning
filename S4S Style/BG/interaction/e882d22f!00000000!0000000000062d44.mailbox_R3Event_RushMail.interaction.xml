@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="mailbox_R3Event_RushMail" s="404804">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="circle">
+            <U n="circle">
+              <T n="ideal_radius">0</T>
+              <T n="ideal_radius_width">0</T>
+              <T n="radius">10</T>
+              <T n="require_los">False</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Object</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <T n="attention_cost">0.75</T>
+  <V n="basic_content" t="one_shot" />
+  <L n="basic_extras">
+    <V t="payment">
+      <U n="payment">
+        <T n="display_only">True</T>
+        <V n="payment" t="literal">
+          <U n="literal">
+            <V n="payment_cost" t="amount">
+              <U n="amount">
+                <T n="amount">103</T>
+              </U>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <V n="canonical_animation" t="enabled">
+    <U n="enabled">
+      <T n="factory">344077<!--AnimationElement: Mailbox_BrowseMail--></T>
+    </U>
+  </V>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xB91D560B<!--String: "Expedite Mail Delivery"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="continuation">
+          <U>
+            <T n="affordance">395300<!--SuperInteraction: phone_R3Event_RushMail--></T>
+            <E n="target">Actor</E>
+          </U>
+        </L>
+      </U>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T n="key" p="InGame\UI\Icons\PieMenu\Events\icon_piemenu_category_GrimEvent.png">2f7d0004:00000000:8d0a1ebc75133695</T>
+      </U>
+    </V>
+  </V>
+  <V n="route_start_balloon" t="enabled">
+    <U n="enabled">
+      <U n="balloon">
+        <L n="balloon_choices">
+          <U>
+            <V n="item" t="balloon_icon">
+              <U n="balloon_icon">
+                <V n="icon" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>Object</E>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </U>
+        </L>
+        <L n="balloon_target">
+          <E>Actor</E>
+        </L>
+      </U>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="test_set_reference">
+      <T n="test_set_reference">237832<!--TestSetInstance: testSet_PhoneInteractions_CanUsePhone--></T>
+    </V>
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="inventory">
+      <U n="inventory">
+        <V n="contents_check" t="has_object_with_def">
+          <U n="has_object_with_def">
+            <T n="definition">424092</T>
+          </U>
+        </V>
+        <V n="inventory_location" t="hidden_inventory_objects">
+          <U n="hidden_inventory_objects">
+            <E n="inventory">MAILBOX</E>
+          </U>
+        </V>
+        <U n="required_count">
+          <E n="comparison">GREATER_OR_EQUAL</E>
+          <T n="value">1</T>
+        </U>
+      </U>
+    </V>
+    <V t="inventory">
+      <U n="inventory">
+        <V n="contents_check" t="has_object_with_def">
+          <U n="has_object_with_def">
+            <T n="definition">424092</T>
+          </U>
+        </V>
+        <V n="inventory_location" t="object_inventory_type">
+          <U n="object_inventory_type">
+            <E n="inventory">MAILBOX</E>
+          </U>
+        </V>
+        <U n="required_count">
+          <E n="comparison">EQUAL</E>
+          <T n="value">0</T>
+        </U>
+      </U>
+    </V>
+    <V t="lot_owner">
+      <U n="lot_owner">
+        <T n="consider_business_lot_as_owned">False</T>
+        <T n="consider_rented_lot_as_owned">False</T>
+      </U>
+    </V>
+    <V t="situation_goal_test">
+      <U n="situation_goal_test">
+        <L n="situation_goals">
+          <T>388640<!--SituationGoalObjectCount: goalObjectCount_R3Event_ReceivedMail--></T>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>395302<!--Buff: buff_R3Event_RushedMail--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="object_definition_criteria">
+        <U n="object_definition_criteria">
+          <V n="identity_test" t="tags">
+            <U n="tags">
+              <L n="tag_set">
+                <E>Func_Mailbox_Communal</E>
+              </L>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="object_ownership" />
+    </L>
+  </L>
+  <T n="time_overhead">5</T>
+</I>

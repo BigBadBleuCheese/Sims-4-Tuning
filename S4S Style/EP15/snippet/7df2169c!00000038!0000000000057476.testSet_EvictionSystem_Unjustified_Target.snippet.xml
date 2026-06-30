@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="TestSetInstance" i="snippet" m="event_testing.tests" n="testSet_EvictionSystem_Unjustified_Target" s="357494">
+  <L n="test">
+    <L>
+      <V t="rental_unit_has_overdue_status_test">
+        <U n="rental_unit_has_overdue_status_test">
+          <T n="negate">True</T>
+          <E n="tenant">TargetSim</E>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="business_rule_state">
+        <U n="business_rule_state">
+          <E n="state">BROKEN</E>
+          <V n="target_business" t="sim">
+            <U n="sim">
+              <E n="participant">TargetSim</E>
+            </U>
+          </V>
+          <U n="threshold">
+            <E n="comparison">EQUAL</E>
+            <T n="value">0</T>
+          </U>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="rental_business_is_grace_period">
+        <U n="rental_business_is_grace_period">
+          <T n="negate">True</T>
+          <V n="target_business" t="zone">
+            <U n="zone">
+              <E n="participant">TargetSimZoneId</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

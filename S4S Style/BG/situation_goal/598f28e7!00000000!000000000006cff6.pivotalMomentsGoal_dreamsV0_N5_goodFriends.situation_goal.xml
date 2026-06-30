@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalMultipleSimsCompleted" i="situation_goal" m="situations.situation_goal_multiple_sim_completed" n="pivotalMomentsGoal_dreamsV0_N5_goodFriends" s="446454">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T p="InGame\UI\Icons\Headlines\Final\headline_RelbitPals.png" n="enabled">2f7d0004:00000000:7933079bb0e61ac8</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0xD5FF6C2C<!--String: "Have a Sim Become Good Friends With 3 Other Sims"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0x583CA54C<!--String: "(Objective 5 of 5)\n\nHave household members do Friendly interactions with other Sims to befriend them and increase their Friendship level until they reach the Good Friend state.\n\nOpen the Relationship Panel and open the Profile of another Sim to see the relationship status with them.\n\nReward: 2500 Simoleons"--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>443811<!--SituationGoalLootActions: situationGoalLootActions_dreamsV0_N5_rewardTrigger_large--></T>
+  </L>
+  <V n="_goal_test" t="relationships">
+    <U n="relationships">
+      <T n="num_relations">1</T>
+      <U n="required_relationship_bits">
+        <L n="match_any">
+          <T>15799<!--RelationshipBit: friendship-good_friends--></T>
+          <T>15800<!--RelationshipBit: friendship-good_friends_Evil--></T>
+        </L>
+      </U>
+      <L n="target_sim">
+        <E>TargetSim</E>
+      </L>
+      <E n="test_event">AddRelationshipBit</E>
+    </U>
+  </V>
+  <T n="_iterations_per_sim">3</T>
+  <V n="_number_of_sims_that_must_complete_test" t="enabled" />
+  <L n="_post_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <V n="goal_completion_notification" t="enabled">
+    <U n="enabled">
+      <E n="expand_behavior">FORCE_EXPAND</E>
+      <V n="icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_Cloud.png">2f7d0004:00000000:edaeb925e304cd13</T>
+          </U>
+        </V>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0x65EB2C71<!--String: "<i>Your family is firmly entrenched in the lives of the community. Keep nurturing those relationships to always have someone to hang out with or rely on!</i>\n\nYou completed a Dream goal and earned 2500 Simoleons as a reward!"--></T>
+      </V>
+      <V n="title" t="enabled">
+        <T n="enabled">0x390D8004<!--String: "Dream Update!"--></T>
+      </V>
+    </U>
+  </V>
+</I>

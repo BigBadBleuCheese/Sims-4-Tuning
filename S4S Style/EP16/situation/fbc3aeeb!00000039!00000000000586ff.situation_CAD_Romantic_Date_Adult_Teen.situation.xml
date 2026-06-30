@@ -1,0 +1,647 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="CustomStatesSituation" i="situation" m="situations.custom_states.custom_states_situation" n="situation_CAD_Romantic_Date_Adult_Teen" s="362239">
+  <T n="_allow_external_autonomy">False</T>
+  <T n="_always_run_situation_ended_events">True</T>
+  <T n="_display_name">0xCC9F18C8<!--String: "Romantic Date"--></T>
+  <V n="_ensemble" t="enabled">
+    <U n="enabled">
+      <T n="ensemble_type">127285<!--Ensemble: ensemble_Generic--></T>
+      <T n="ignore_situation_removal">False</T>
+    </U>
+  </V>
+  <T n="_icon" p="InEP16\UI\Icons\Events\Event_Screenshots\EP16_RomanticDate_Teen.png">2f7d0004:00000000:9b9872f06f2064ce</T>
+  <T n="_implies_greeted_status">True</T>
+  <L n="_initiating_sim_tests">
+    <V t="region">
+      <U n="region">
+        <V n="blacklist" t="enabled">
+          <L n="enabled">
+            <T>231104<!--Region: region_Destination_Batuu--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+          </L>
+        </V>
+      </U>
+    </V>
+  </L>
+  <U n="_level_data">
+    <U n="bronze">
+      <T n="audio_sting_on_end" p="InEP16\Audio\music\bumpers\bumper_ep16_date_complete_bronze.propx">39b2aa4a:00000000:335782d8f59ce611</T>
+      <T p="" n="icon" />
+      <T n="level_description">0x9224E9B0<!--String: "Bronze"--></T>
+      <T n="score_delta">90</T>
+    </U>
+    <T n="challenge_reward_override">365354<!--SituationJob: job_CAD_Actor_Date_Teen--></T>
+    <U n="gold">
+      <T n="audio_sting_on_end" p="InEP16\Audio\music\bumpers\bumper_ep16_date_complete_gold.propx">39b2aa4a:00000000:71397d722eb246b3</T>
+      <T p="" n="icon" />
+      <T n="level_description">0x82AD9EEA<!--String: "Gold"--></T>
+      <T n="score_delta">90</T>
+    </U>
+    <U n="silver">
+      <T n="audio_sting_on_end" p="InEP16\Audio\music\bumpers\bumper_ep16_date_complete_silver.propx">39b2aa4a:00000000:36e46d4f9c0f2b8e</T>
+      <T p="" n="icon" />
+      <T n="level_description">0x20CAEAD3<!--String: "Silver"--></T>
+      <T n="score_delta">90</T>
+    </U>
+    <U n="tin">
+      <T n="audio_sting_on_end" p="InEP16\Audio\music\bumpers\bumper_ep16_date_complete_none.propx">39b2aa4a:00000000:33725e720b612a2f</T>
+    </U>
+  </U>
+  <L n="_situation_states">
+    <U>
+      <T n="Situation State Key">Start</T>
+      <V n="Situation State" t="literal">
+        <U n="literal">
+          <L n="job_and_role_changes">
+            <U>
+              <T n="Situation Job">365354<!--SituationJob: job_CAD_Actor_Date_Teen--></T>
+              <T n="Role State">357798<!--RoleState: role_Date_CAD--></T>
+            </U>
+            <U>
+              <T n="Situation Job">365358<!--SituationJob: job_CAD_Target_Date_Teen--></T>
+              <T n="Role State">358286<!--RoleState: role_Date_Target_CAD--></T>
+            </U>
+            <U>
+              <T n="Situation Job">365359<!--SituationJob: job_CAD_Target_Date_Teen_AdditionalDate--></T>
+              <T n="Role State">358286<!--RoleState: role_Date_Target_CAD--></T>
+            </U>
+          </L>
+        </U>
+      </V>
+    </U>
+  </L>
+  <V n="_starting_state" t="random_starting_state">
+    <U n="random_starting_state">
+      <L n="possible_state_keys">
+        <U>
+          <T n="situation_key">Start</T>
+        </U>
+      </L>
+    </U>
+  </V>
+  <T n="_supports_automatic_bronze">False</T>
+  <L n="activity_goals">
+    <U>
+      <T n="Activity">357763<!--SituationActivity: situationActivity_CAD_TV--></T>
+      <L n="value">
+        <U>
+          <T n="goal">357996<!--SituationGoalObjectInteraction: goal_CAD_Interaction_WatchTV--></T>
+          <T n="weight">3</T>
+        </U>
+        <U>
+          <T n="goal">357795<!--SituationGoalRanInteractionOnTargetedSim: goal_CAD_IntSocial_TalkAboutTV--></T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="Activity">357764<!--SituationActivity: situationActivity_CAD_Drinks--></T>
+      <L n="value">
+        <U>
+          <T n="goal">357797<!--SituationGoalRanInteractionOnTargetedSim: goal_CAD_IntSocial_TalkAboutDrinks--></T>
+        </U>
+        <U>
+          <T n="goal">357997<!--SituationGoalObjectInteraction: goal_CAD_Interaction_Drink--></T>
+          <T n="weight">3</T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="Activity">357765<!--SituationActivity: situationActivity_CAD_Food--></T>
+      <L n="value">
+        <U>
+          <T n="goal">357995<!--SituationGoalObjectInteraction: goal_CAD_Interaction_ConsumeFood--></T>
+          <T n="weight">3</T>
+        </U>
+        <U>
+          <T n="goal">357796<!--SituationGoalRanInteractionOnTargetedSim: goal_CAD_IntSocial_TalkAboutFood--></T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="Activity">357922<!--SituationActivity: situationActivity_CAD_Snow--></T>
+      <L n="value">
+        <U>
+          <T n="goal">357998<!--SituationGoalObjectInteraction: goal_CAD_Interaction_PlayInSnow--></T>
+          <T n="weight">3</T>
+        </U>
+        <U>
+          <T n="goal">358054<!--SituationGoalRanInteractionOnTargetedSim: goal_CAD_IntSocial_TalkAboutSnow--></T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="Activity">358917<!--SituationActivity: situationActivity_CAD_Socialize_Romantic--></T>
+      <L n="value">
+        <U>
+          <T n="goal">358828<!--SituationGoalRanInteractionOnTargetedSim: goal_CAD_IntSocial_Affection--></T>
+          <T n="weight">2</T>
+        </U>
+        <U>
+          <T n="goal">357813<!--SituationGoalRanInteractionOnTargetedSim: goal_CAD_IntSocial_Flirt--></T>
+          <T n="weight">2</T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="Activity">361250<!--SituationActivity: situationActivity_CAD_Socialize_Friendly--></T>
+      <L n="value">
+        <U>
+          <T n="goal">361247<!--SituationGoalRanInteractionOnTargetedSim: goal_CAD_IntSocial_SmallTalk--></T>
+          <T n="weight">2</T>
+        </U>
+        <U>
+          <T n="goal">361248<!--SituationGoalRanInteractionOnTargetedSim: goal_CAD_IntSocial_Interests--></T>
+          <T n="weight">2</T>
+        </U>
+        <U>
+          <T n="goal">361249<!--SituationGoalRanInteractionOnTargetedSim: goal_CAD_IntSocial_DeepThoughts--></T>
+          <T n="weight">2</T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="Activity">361251<!--SituationActivity: situationActivity_CAD_Socialize_Funny--></T>
+      <L n="value">
+        <U>
+          <T n="goal">394447<!--SituationGoalCompound: situationGoalCompound_CAD_TellJoke--></T>
+          <T n="weight">2</T>
+        </U>
+        <U>
+          <T n="goal">361253<!--SituationGoalRanInteractionOnTargetedSim: goal_CAD_IntSocial_Stories--></T>
+          <T n="weight">2</T>
+        </U>
+        <U>
+          <T n="goal">361254<!--SituationGoalRanInteractionOnTargetedSim: goal_CAD_IntSocial_SillyBehavior--></T>
+          <T n="weight">2</T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="Activity">361256<!--SituationActivity: situationActivity_CAD_PhysicalIntimacy--></T>
+      <L n="value">
+        <U>
+          <T n="goal">358848<!--SituationGoalRanInteractionOnTargetedSim: goal_CAD_IntSocial_PhysicalIntimacy--></T>
+          <T n="weight">3</T>
+        </U>
+        <U>
+          <T n="goal">393464<!--SituationGoalRanInteractionOnTargetedSim: goal_CAD_IntSocial_TalkAboutPhysicalIntimacy--></T>
+          <T n="weight">1</T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="Activity">363081<!--SituationActivity: situationActivity_CAD_BoardGame--></T>
+      <L n="value">
+        <U>
+          <T n="goal">363082<!--SituationGoalObjectInteraction: goal_CAD_Interaction_BoardGame--></T>
+          <T n="weight">3</T>
+        </U>
+        <U>
+          <T n="goal">363084<!--SituationGoalRanInteractionOnTargetedSim: goal_CAD_IntSocial_TalkAboutBoardGames--></T>
+          <T n="weight">1</T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="Activity">363199<!--SituationActivity: situationActivity_CAD_VideoGame--></T>
+      <L n="value">
+        <U>
+          <T n="goal">363200<!--SituationGoalObjectInteraction: goal_CAD_Interaction_VideoGame--></T>
+          <T n="weight">3</T>
+        </U>
+        <U>
+          <T n="goal">363201<!--SituationGoalRanInteractionOnTargetedSim: goal_CAD_IntSocial_TalkAboutVideoGames--></T>
+          <T n="weight">1</T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="Activity">363557<!--SituationActivity: situationActivity_CAD_Paint--></T>
+      <L n="value">
+        <U>
+          <T n="goal">363559<!--SituationGoalObjectInteraction: goal_CAD_Interaction_Paint--></T>
+          <T n="weight">3</T>
+        </U>
+        <U>
+          <T n="goal">363560<!--SituationGoalRanInteractionOnTargetedSim: goal_CAD_IntSocial_TalkAboutPainting--></T>
+          <T n="weight">1</T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="Activity">363742<!--SituationActivity: situationActivity_CAD_Reminisce--></T>
+      <L n="value">
+        <U>
+          <T n="goal">363743<!--SituationGoalObjectInteraction: goal_CAD_Interaction_SharePhotos--></T>
+          <T n="weight">3</T>
+        </U>
+        <U>
+          <T n="goal">363744<!--SituationGoalRanInteractionOnTargetedSim: goal_CAD_IntSocial_TalkAboutReminisce--></T>
+          <T n="weight">1</T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="Activity">363974<!--SituationActivity: situationActivity_CAD_Skate--></T>
+      <L n="value">
+        <U>
+          <T n="goal">363975<!--SituationGoalObjectInteraction: goal_CAD_Interaction_Skate--></T>
+          <T n="weight">3</T>
+        </U>
+        <U>
+          <T n="goal">363976<!--SituationGoalRanInteractionOnTargetedSim: goal_CAD_IntSocial_TalkAboutSkating--></T>
+          <T n="weight">1</T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="Activity">364168<!--SituationActivity: situationActivity_CAD_SkyWatch--></T>
+      <L n="value">
+        <U>
+          <T n="goal">364169<!--SituationGoalObjectInteraction: goal_CAD_Interaction_SkyWatch--></T>
+          <T n="weight">3</T>
+        </U>
+        <U>
+          <T n="goal">364170<!--SituationGoalRanInteractionOnTargetedSim: goal_CAD_IntSocial_TalkAboutSkyWatching--></T>
+          <T n="weight">1</T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="Activity">364186<!--SituationActivity: situationActivity_CAD_MusicalInstrument--></T>
+      <L n="value">
+        <U>
+          <T n="goal">364190<!--SituationGoalObjectInteraction: goal_CAD_Interaction_PlayInstrument--></T>
+          <T n="weight">3</T>
+        </U>
+        <U>
+          <T n="goal">364199<!--SituationGoalRanInteractionOnTargetedSim: goal_CAD_IntSocial_TalkAboutMusicalInstruments--></T>
+          <T n="weight">1</T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="Activity">364187<!--SituationActivity: situationActivity_CAD_Sing--></T>
+      <L n="value">
+        <U>
+          <T n="goal">364193<!--SituationGoalObjectInteraction: goal_CAD_Interaction_Sing--></T>
+          <T n="weight">3</T>
+        </U>
+        <U>
+          <T n="goal">364198<!--SituationGoalRanInteractionOnTargetedSim: goal_CAD_IntSocial_TalkAboutSinging--></T>
+          <T n="weight">1</T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="Activity">364188<!--SituationActivity: situationActivity_CAD_Animals--></T>
+      <L n="value">
+        <U>
+          <T n="goal">394674<!--SituationGoalCompound: situationGoalCompound_CAD_InteractWithAnimals--></T>
+          <T n="weight">3</T>
+        </U>
+        <U>
+          <T n="goal">364200<!--SituationGoalRanInteractionOnTargetedSim: goal_CAD_IntSocial_TalkAboutAnimals--></T>
+          <T n="weight">1</T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="Activity">364189<!--SituationActivity: situationActivity_CAD_Gardening--></T>
+      <L n="value">
+        <U>
+          <T n="goal">394237<!--SituationGoalCompound: situationGoalCompound_CAD_Garden--></T>
+          <T n="weight">3</T>
+        </U>
+        <U>
+          <T n="goal">394241<!--SituationGoalCompound: situationGoalCompound_CAD_TalkAboutGardening--></T>
+          <T n="weight">1</T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="Activity">364436<!--SituationActivity: situationActivity_CAD_SaveTheMoment--></T>
+      <L n="value">
+        <U>
+          <T n="goal">364437<!--SituationGoalObjectInteraction: goal_CAD_Interaction_TakePhoto--></T>
+          <T n="weight">3</T>
+        </U>
+        <U>
+          <T n="goal">364438<!--SituationGoalRanInteractionOnTargetedSim: goal_CAD_IntSocial_TalkAboutPhotos--></T>
+          <T n="weight">1</T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="Activity">364684<!--SituationActivity: situationActivity_CAD_Dance--></T>
+      <L n="value">
+        <U>
+          <T n="goal">364704<!--SituationGoalObjectInteraction: goal_CAD_Interaction_Dance--></T>
+          <T n="weight">3</T>
+        </U>
+        <U>
+          <T n="goal">364705<!--SituationGoalRanInteractionOnTargetedSim: goal_CAD_IntSocial_TalkAboutDancing--></T>
+          <T n="weight">1</T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="Activity">364754<!--SituationActivity: situationActivity_CAD_Swimming--></T>
+      <L n="value">
+        <U>
+          <T n="goal">390626<!--SituationGoalActor: goal_CAD_SituationGoalActor_Swim--></T>
+          <T n="weight">3</T>
+        </U>
+        <U>
+          <T n="goal">364760<!--SituationGoalRanInteractionOnTargetedSim: goal_CAD_IntSocial_TalkAboutSwimming--></T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="Activity">364755<!--SituationActivity: situationActivity_CAD_Exercise--></T>
+      <L n="value">
+        <U>
+          <T n="goal">364759<!--SituationGoalObjectInteraction: goal_CAD_Interaction_Exercise--></T>
+          <T n="weight">3</T>
+        </U>
+        <U>
+          <T n="goal">364761<!--SituationGoalRanInteractionOnTargetedSim: goal_CAD_IntSocial_TalkAboutExercise--></T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="Activity">365251<!--SituationActivity: situationActivity_CAD_Socialize_Mean--></T>
+      <L n="value">
+        <U>
+          <T n="goal">365255<!--SituationGoalRanInteractionOnTargetedSim: goal_CAD_IntSocial_Argue--></T>
+          <T n="weight">2</T>
+        </U>
+        <U>
+          <T n="goal">365256<!--SituationGoalRanInteractionOnTargetedSim: goal_CAD_IntSocial_BeMalicious--></T>
+          <T n="weight">2</T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="Activity">365252<!--SituationActivity: situationActivity_CAD_Socialize_Mischief--></T>
+      <L n="value">
+        <U>
+          <T n="goal">365257<!--SituationGoalRanInteractionOnTargetedSim: goal_CAD_IntSocial_BeDeceptive--></T>
+          <T n="weight">2</T>
+        </U>
+        <U>
+          <T n="goal">365258<!--SituationGoalRanInteractionOnTargetedSim: goal_CAD_IntSocial_Prank--></T>
+          <T n="weight">2</T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="Activity">374796<!--SituationActivity: situationActivity_CAD_Fishing--></T>
+      <L n="value">
+        <U>
+          <T n="goal">374799<!--SituationGoalRanInteractionOnTargetedSim: goal_CAD_IntSocial_TalkAboutFishing--></T>
+          <T n="weight">1</T>
+        </U>
+        <U>
+          <T n="goal">374798<!--SituationGoalObjectInteraction: goal_CAD_Interaction_Fish--></T>
+          <T n="weight">3</T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="Activity">393463<!--SituationActivity: situationActivity_CAD_MessAround--></T>
+      <L n="value">
+        <U>
+          <T n="goal">393470<!--SituationGoalRanInteractionOnTargetedSim: goal_CAD_IntSocial_MessAround--></T>
+          <T n="weight">3</T>
+        </U>
+        <U>
+          <T n="goal">393468<!--SituationGoalRanInteractionOnTargetedSim: goal_CAD_IntSocial_TalkAboutMessingAround--></T>
+          <T n="weight">1</T>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="activity_selection" t="enabled">
+    <U n="enabled">
+      <L n="available_activities">
+        <T>358917<!--SituationActivity: situationActivity_CAD_Socialize_Romantic--></T>
+        <T>361250<!--SituationActivity: situationActivity_CAD_Socialize_Friendly--></T>
+        <T>361251<!--SituationActivity: situationActivity_CAD_Socialize_Funny--></T>
+        <T>357764<!--SituationActivity: situationActivity_CAD_Drinks--></T>
+        <T>357765<!--SituationActivity: situationActivity_CAD_Food--></T>
+        <T>361256<!--SituationActivity: situationActivity_CAD_PhysicalIntimacy--></T>
+        <T>393463<!--SituationActivity: situationActivity_CAD_MessAround--></T>
+        <T>357763<!--SituationActivity: situationActivity_CAD_TV--></T>
+        <T>364168<!--SituationActivity: situationActivity_CAD_SkyWatch--></T>
+        <T>363081<!--SituationActivity: situationActivity_CAD_BoardGame--></T>
+        <T>363199<!--SituationActivity: situationActivity_CAD_VideoGame--></T>
+        <T>363557<!--SituationActivity: situationActivity_CAD_Paint--></T>
+        <T>363742<!--SituationActivity: situationActivity_CAD_Reminisce--></T>
+        <T>364189<!--SituationActivity: situationActivity_CAD_Gardening--></T>
+        <T>364186<!--SituationActivity: situationActivity_CAD_MusicalInstrument--></T>
+        <T>364187<!--SituationActivity: situationActivity_CAD_Sing--></T>
+        <T>364436<!--SituationActivity: situationActivity_CAD_SaveTheMoment--></T>
+        <T>364684<!--SituationActivity: situationActivity_CAD_Dance--></T>
+        <T>364755<!--SituationActivity: situationActivity_CAD_Exercise--></T>
+        <T>364754<!--SituationActivity: situationActivity_CAD_Swimming--></T>
+        <T>374796<!--SituationActivity: situationActivity_CAD_Fishing--></T>
+        <T>365251<!--SituationActivity: situationActivity_CAD_Socialize_Mean--></T>
+        <T>365252<!--SituationActivity: situationActivity_CAD_Socialize_Mischief--></T>
+        <T>364188<!--SituationActivity: situationActivity_CAD_Animals--></T>
+        <T>357922<!--SituationActivity: situationActivity_CAD_Snow--></T>
+        <T>363974<!--SituationActivity: situationActivity_CAD_Skate--></T>
+      </L>
+      <V n="randomize_activities" t="enabled">
+        <U n="enabled">
+          <L n="randomizable_activities">
+            <T>358917<!--SituationActivity: situationActivity_CAD_Socialize_Romantic--></T>
+            <T>361250<!--SituationActivity: situationActivity_CAD_Socialize_Friendly--></T>
+            <T>361251<!--SituationActivity: situationActivity_CAD_Socialize_Funny--></T>
+            <T>357764<!--SituationActivity: situationActivity_CAD_Drinks--></T>
+            <T>357765<!--SituationActivity: situationActivity_CAD_Food--></T>
+            <T>361256<!--SituationActivity: situationActivity_CAD_PhysicalIntimacy--></T>
+            <T>357763<!--SituationActivity: situationActivity_CAD_TV--></T>
+            <T>364168<!--SituationActivity: situationActivity_CAD_SkyWatch--></T>
+            <T>363081<!--SituationActivity: situationActivity_CAD_BoardGame--></T>
+            <T>363199<!--SituationActivity: situationActivity_CAD_VideoGame--></T>
+            <T>363557<!--SituationActivity: situationActivity_CAD_Paint--></T>
+            <T>363742<!--SituationActivity: situationActivity_CAD_Reminisce--></T>
+            <T>364189<!--SituationActivity: situationActivity_CAD_Gardening--></T>
+            <T>364186<!--SituationActivity: situationActivity_CAD_MusicalInstrument--></T>
+            <T>364187<!--SituationActivity: situationActivity_CAD_Sing--></T>
+            <T>364436<!--SituationActivity: situationActivity_CAD_SaveTheMoment--></T>
+            <T>364684<!--SituationActivity: situationActivity_CAD_Dance--></T>
+            <T>364755<!--SituationActivity: situationActivity_CAD_Exercise--></T>
+            <T>364754<!--SituationActivity: situationActivity_CAD_Swimming--></T>
+            <T>374796<!--SituationActivity: situationActivity_CAD_Fishing--></T>
+            <T>365251<!--SituationActivity: situationActivity_CAD_Socialize_Mean--></T>
+            <T>365252<!--SituationActivity: situationActivity_CAD_Socialize_Mischief--></T>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <T p="InGame\Audio\Bumper\bumper_event_start.propx" n="audio_sting_on_start">39b2aa4a:00000000:78b903461d47e4fc</T>
+  <T p="InEP16\UI\Icons\Events\EventIcons\events_RomanticDate.png" n="calendar_icon">2f7d0004:00000000:895a759593d21a4c</T>
+  <T n="can_be_replaced">True</T>
+  <E n="category">DATE</E>
+  <L n="compatible_venues">
+    <T>28614<!--Venue: venue_residential--></T>
+    <T>16869<!--Venue: venue_bar--></T>
+    <T>205126<!--Venue: venue_beach--></T>
+    <T>16870<!--Venue: venue_club--></T>
+    <T>107453<!--Venue: venue_ForestPark--></T>
+    <T>377555<!--Venue: venue_Cemetery--></T>
+    <T>16873<!--Venue: venue_gym--></T>
+    <T>16874<!--Venue: venue_library--></T>
+    <T>16875<!--Venue: venue_lounge--></T>
+    <T>16876<!--Venue: venue_museum--></T>
+    <T>25847<!--Venue: venue_park--></T>
+    <T>123794<!--Venue: venue_pool--></T>
+    <T>98817<!--Venue: venue_VisitorsAllowed--></T>
+    <T>273016<!--Venue: venue_wedding--></T>
+    <T>125071<!--Venue: venue_OceanBluff--></T>
+    <T>105157<!--Venue: venue_retail--></T>
+    <T>118135<!--Venue: venue_RelaxationCenter--></T>
+    <T>122247<!--Venue: venue_cafe--></T>
+    <T>125223<!--Venue: venue_ChaletGardens--></T>
+    <T>130713<!--Venue: venue_Restaurant--></T>
+    <T>123132<!--Venue: venue_Ruins--></T>
+    <T>144206<!--Venue: venue_artscenter--></T>
+    <T>137844<!--Venue: venue_karaoke--></T>
+    <T>455703<!--Venue: customVenue_Venue--></T>
+    <T>474643<!--Venue: venue_DambeleMarket--></T>
+    <T>471898<!--Venue: venue_Backroom--></T>
+    <T>190058<!--Venue: venue_ActingStudio--></T>
+    <T>223944<!--Venue: venue_CommunityLot--></T>
+    <T>247473<!--Venue: venue_Onsen--></T>
+    <T>281069<!--Venue: venue_Auditorium--></T>
+    <T>278305<!--Venue: venue_HighSchool--></T>
+    <T>278997<!--Venue: venue_ThriftStore--></T>
+    <T>314133<!--Venue: venue_RecCenter--></T>
+    <T>223946<!--Venue: subVenue_Garden--></T>
+    <T>231465<!--Venue: subVenue_MakerSpace--></T>
+    <T>223945<!--Venue: subVenue_Market--></T>
+    <T>292915<!--Venue: subVenue_Auditorium_CareerDay--></T>
+    <T>281068<!--Venue: subVenue_Auditorium_FormalDance--></T>
+    <T>281066<!--Venue: subVenue_Auditorium_Graduation--></T>
+    <T>218858<!--Venue: venue_University_StudentCommons_Science--></T>
+    <T>218857<!--Venue: venue_University_StudentCommons_Arts--></T>
+    <T>138380<!--Venue: venue_MyshunoMeadows--></T>
+    <T>341299<!--Venue: venue_MultiUnit--></T>
+    <T>252380<!--Venue: venue_residential_HauntedHouse--></T>
+    <T>229251<!--Venue: venue_residential_tinyhome--></T>
+  </L>
+  <L n="default_job_and_roles">
+    <U>
+      <T n="Situation Job">365354<!--SituationJob: job_CAD_Actor_Date_Teen--></T>
+      <T n="Role State">357798<!--RoleState: role_Date_CAD--></T>
+    </U>
+    <U>
+      <T n="Situation Job">365358<!--SituationJob: job_CAD_Target_Date_Teen--></T>
+      <T n="Role State">358286<!--RoleState: role_Date_Target_CAD--></T>
+    </U>
+    <U>
+      <T n="Situation Job">365359<!--SituationJob: job_CAD_Target_Date_Teen_AdditionalDate--></T>
+      <T n="Role State">358286<!--RoleState: role_Date_Target_CAD--></T>
+    </U>
+  </L>
+  <E n="display_style">ROMANCE</E>
+  <T n="duration">360</T>
+  <E n="exclusivity">DATE</E>
+  <V n="goal_tracker_type" t="activity_situation_goal_tracker" />
+  <V n="job_display_ordering" t="enabled">
+    <L n="enabled">
+      <T>379086<!--SituationJob: job_CAD_Actor_Date_Recovery--></T>
+      <T>365353<!--SituationJob: job_CAD_Actor_Date_Adult--></T>
+      <T>365356<!--SituationJob: job_CAD_Target_Date_Adult--></T>
+      <T>375556<!--SituationJob: job_CAD_Target_Date_Adult_RecoveryDate--></T>
+      <T>365357<!--SituationJob: job_CAD_Target_Date_Adult_AdditionalDate--></T>
+      <T>365354<!--SituationJob: job_CAD_Actor_Date_Teen--></T>
+      <T>379088<!--SituationJob: job_CAD_Actor_Date_Teen_Recovery--></T>
+      <T>365358<!--SituationJob: job_CAD_Target_Date_Teen--></T>
+      <T>375557<!--SituationJob: job_CAD_Target_Date_Teen_RecoveryDate--></T>
+      <T>365359<!--SituationJob: job_CAD_Target_Date_Teen_AdditionalDate--></T>
+      <T>365355<!--SituationJob: job_CAD_Actor_Hangout--></T>
+      <T>365360<!--SituationJob: job_CAD_Target_Hangout--></T>
+      <T>365361<!--SituationJob: job_CAD_Target_Hangout_AdditionalGuest--></T>
+    </L>
+  </V>
+  <T n="main_goal">362572<!--SituationGoalRanInteractionOnTargetedSim: goal_CAD_IntSocial_MainGoal_Romantic--></T>
+  <T p="InGame\Audio\Bumper\bumper_event_major_complete.propx" n="main_goal_audio_sting">39b2aa4a:00000000:10b476550150a33f</T>
+  <T n="max_participants">20</T>
+  <V n="minimum_activities_required" t="enabled">
+    <U n="enabled">
+      <T n="activities_disabled_tooltip">0xD40661EA<!--String: "Minimum Required Activities: {0.Number}"--></T>
+      <T n="minimum_activities">3</T>
+    </U>
+  </V>
+  <L n="pre_populate_jobs">
+    <U>
+      <T n="job">365354<!--SituationJob: job_CAD_Actor_Date_Teen--></T>
+    </U>
+  </L>
+  <V n="screen_slam_bronze" t="enabled">
+    <V n="enabled" t="reference">
+      <T n="reference">75362<!--ScreenSlam: EventOutcome_Bronze--></T>
+    </V>
+  </V>
+  <V n="screen_slam_gold" t="enabled">
+    <V n="enabled" t="reference">
+      <T n="reference">75364<!--ScreenSlam: EventOutcome_Gold--></T>
+    </V>
+  </V>
+  <V n="screen_slam_no_medal" t="enabled">
+    <V n="enabled" t="reference">
+      <T n="reference">75361<!--ScreenSlam: EventOutcome_Tin--></T>
+    </V>
+  </V>
+  <V n="screen_slam_silver" t="enabled">
+    <V n="enabled" t="reference">
+      <T n="reference">75363<!--ScreenSlam: EventOutcome_Silver--></T>
+    </V>
+  </V>
+  <T n="show_timer_in_scored_situation">False</T>
+  <T n="situation_description">0xDA628EB4<!--String: "Oh la la, it's getting steamy in here! Whether your Sims are rekindling an enduring love or experiencing the butterflies of a new romance, this date is the perfect setting for them to explore their emotions."--></T>
+  <V n="situation_display_type_override" t="enabled">
+    <E n="enabled">ROMANCE</E>
+  </V>
+  <V n="situation_end_time_string" t="show_end_time">
+    <T n="show_end_time">0xA3E17143<!--String: "Work day ends at {0.TimeShort}"--></T>
+  </V>
+  <T n="situation_main_objective">0x4E7AADB0<!--String: "Complete goals during the Romantic Date based on the activities you choose. These can be completed by your Host Sim around the venue of your choosing. "--></T>
+  <L n="tags">
+    <E>Situation_Planned_Date</E>
+  </L>
+  <V n="targeted_situation" t="enabled">
+    <U n="enabled">
+      <T n="actor_job">365354<!--SituationJob: job_CAD_Actor_Date_Teen--></T>
+      <T n="override_targeted_situation">True</T>
+      <T n="target_job">365358<!--SituationJob: job_CAD_Target_Date_Teen--></T>
+      <L n="tests">
+        <L>
+          <V t="relationship">
+            <U n="relationship">
+              <U n="relationship_score_interval">
+                <T n="lower_bound">0</T>
+              </U>
+              <V n="tooltip" t="enabled">
+                <T n="enabled">0xCFB5D43F<!--String: "Must have a positive romantic relationship."--></T>
+              </V>
+              <T n="track">16651<!--RelationshipTrack: LTR_Romance_Main--></T>
+            </U>
+          </V>
+        </L>
+      </L>
+    </U>
+  </V>
+</I>

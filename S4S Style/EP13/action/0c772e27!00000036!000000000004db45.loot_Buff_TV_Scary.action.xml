@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Buff_TV_Scary" s="318277">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0xDA5456C4<!--String: "(From Watching TV)"--></T>
+          </V>
+          <T n="buff_type">318278<!--Buff: buff_Object_TV_Scary_Scared--></T>
+        </U>
+        <U n="chance">
+          <T n="base_chance">30</T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="day_and_time">
+              <U n="day_and_time">
+                <V n="time_range" t="enabled">
+                  <U n="enabled">
+                    <U n="begin_time">
+                      <T n="hour">6</T>
+                    </U>
+                    <U n="duration">
+                      <T n="hour">18</T>
+                    </U>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0xDA5456C4<!--String: "(From Watching TV)"--></T>
+          </V>
+          <T n="buff_type">318279<!--Buff: buff_Object_TV_Scary_ExtraScared--></T>
+        </U>
+        <U n="chance">
+          <T n="base_chance">40</T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="day_and_time">
+              <U n="day_and_time">
+                <V n="time_range" t="enabled">
+                  <U n="enabled">
+                    <U n="duration">
+                      <T n="hour">6</T>
+                    </U>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">318282<!--Buff: buff_Object_TV_Scary_RunAway--></T>
+        </U>
+        <U n="chance">
+          <T n="base_chance">5</T>
+          <L n="multipliers">
+            <U>
+              <T n="multiplier">0</T>
+              <L n="tests">
+                <L>
+                  <V t="buff">
+                    <U n="buff">
+                      <L n="blacklist">
+                        <T>318278<!--Buff: buff_Object_TV_Scary_Scared--></T>
+                        <T>318279<!--Buff: buff_Object_TV_Scary_ExtraScared--></T>
+                      </L>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+            <U>
+              <T n="multiplier">5</T>
+              <L n="tests">
+                <L>
+                  <V t="buff">
+                    <U n="buff">
+                      <V n="whitelist" t="enabled">
+                        <L n="enabled">
+                          <T>318279<!--Buff: buff_Object_TV_Scary_ExtraScared--></T>
+                        </L>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+          </L>
+        </U>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>379635<!--Trait: trait_Macabre--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

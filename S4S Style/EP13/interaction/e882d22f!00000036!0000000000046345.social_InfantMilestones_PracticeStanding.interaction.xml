@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="social_InfantMilestones_PracticeStanding" s="287557">
+  <V n="_animation_actor_map" t="reference">
+    <T n="reference">104045<!--AnimationActorMap: PickupInteractionTarget--></T>
+  </V>
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="jig">
+            <U n="jig">
+              <T n="jig">277493</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">287635<!--AnimationElement: animation_InfantMilestones_PracticeStanding--></T>
+      </U>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="broadcaster">
+      <U n="broadcaster">
+        <L n="broadcaster_types">
+          <U>
+            <T n="item">318100<!--Broadcaster: broadcaster_AttentionJealousy_FindDependents_Immediate--></T>
+            <L n="test">
+              <L>
+                <V t="relationship">
+                  <U n="relationship">
+                    <U n="required_relationship_bits">
+                      <L n="match_any">
+                        <T>8805<!--RelationshipBit: family_Target_IsSonOrDaughterOf_Actor--></T>
+                        <T>152851<!--RelationshipBit: toddler_notParent_Actor_IsCareDependentOf_Target--></T>
+                      </L>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V t="broadcaster">
+      <U n="broadcaster">
+        <L n="broadcaster_types">
+          <U>
+            <T n="item">318101<!--Broadcaster: broadcaster_SiblingJealousy_FindSiblings_Immeditate--></T>
+            <L n="test">
+              <L>
+                <V t="relationship">
+                  <U n="relationship">
+                    <U n="required_relationship_bits">
+                      <L n="match_any">
+                        <T>8805<!--RelationshipBit: family_Target_IsSonOrDaughterOf_Actor--></T>
+                        <T>152851<!--RelationshipBit: toddler_notParent_Actor_IsCareDependentOf_Target--></T>
+                      </L>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+        <E n="participant">TargetSim</E>
+      </U>
+    </V>
+  </L>
+  <V n="basic_reserve_object" t="enabled">
+    <U n="enabled">
+      <V n="reserve_type_for_provided_target" t="basic" />
+    </U>
+  </V>
+  <V n="canonical_animation" t="enabled">
+    <U n="enabled">
+      <T n="factory">287635<!--AnimationElement: animation_InfantMilestones_PracticeStanding--></T>
+    </U>
+  </V>
+  <T n="category">318696<!--PieMenuCategory: sim_SubCat_Friendly_Activities--></T>
+  <V n="content_score" t="enabled">
+    <U n="enabled">
+      <T n="base_score">10</T>
+    </U>
+  </V>
+  <T n="display_name">0x646A6857<!--String: "Practice Standing"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <L n="continuation">
+              <U>
+                <T n="affordance">271032<!--SuperInteraction: socialSuperInteraction_CarryPickUp_Infant--></T>
+              </U>
+            </L>
+            <L n="loot_list">
+              <T>280965<!--LootActions: loot_Infant_Motive_Fun_Gain_Target--></T>
+              <T>166778<!--LootActions: loot_Commodity_Motive_Social_Gain_Med--></T>
+              <T>282691<!--LootActions: loot_Infant_AttentionGain_TargetSim--></T>
+              <T>288659<!--LootActions: loot_InfantMilestone_Tracking_PullToStand_Target--></T>
+              <T>241355<!--LootActions: Rel_Gain_Medium_TargetSim--></T>
+              <T>165339<!--LootActions: loot_ParentingSkill_Tiny--></T>
+              <T>315200<!--LootActions: loot_Sentiment_AddSentiment_Adoring_infantPreferredSim_TargetAboutActor--></T>
+              <T>274019<!--LootActions: loot_Infant_Attachment_Gain_Medium_TargetSim--></T>
+              <T>275650<!--LootActions: loot_Infant_Attachment_PositiveAffection--></T>
+            </L>
+          </U>
+        </U>
+      </L>
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">271032<!--SuperInteraction: socialSuperInteraction_CarryPickUp_Infant--></T>
+                  </U>
+                  <U>
+                    <E n="actor">Object</E>
+                    <T n="affordance">334800<!--SuperInteraction: infantMilestone_PracticeStandingToPullToStand--></T>
+                  </U>
+                </L>
+                <L n="loot_list">
+                  <T>280965<!--LootActions: loot_Infant_Motive_Fun_Gain_Target--></T>
+                  <T>166778<!--LootActions: loot_Commodity_Motive_Social_Gain_Med--></T>
+                  <T>282691<!--LootActions: loot_Infant_AttentionGain_TargetSim--></T>
+                  <T>288659<!--LootActions: loot_InfantMilestone_Tracking_PullToStand_Target--></T>
+                  <T>241355<!--LootActions: Rel_Gain_Medium_TargetSim--></T>
+                  <T>165339<!--LootActions: loot_ParentingSkill_Tiny--></T>
+                  <T>315200<!--LootActions: loot_Sentiment_AddSentiment_Adoring_infantPreferredSim_TargetAboutActor--></T>
+                  <T>274019<!--LootActions: loot_Infant_Attachment_Gain_Medium_TargetSim--></T>
+                  <T>275650<!--LootActions: loot_Infant_Attachment_PositiveAffection--></T>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="statistic">
+                <U n="statistic">
+                  <T n="stat">286580<!--Commodity: commodity_InfantMilestones_PullToStand--></T>
+                  <V n="threshold" t="value_threshold">
+                    <U n="value_threshold">
+                      <T n="value">99</T>
+                    </U>
+                  </V>
+                  <E n="who">TargetSim</E>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T n="key" p="InEP13\UI\Icons\PieMenu\PieMenu_Milestone.png">2f7d0004:00000000:81afa02926deee4b</T>
+      </U>
+    </V>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all" />
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_autonomous">
+    <L>
+      <V t="statistic">
+        <U n="statistic">
+          <T n="stat">16656<!--Commodity: motive_Hunger--></T>
+          <V n="threshold" t="value_threshold">
+            <U n="value_threshold">
+              <T n="value">-50</T>
+            </U>
+          </V>
+          <E n="who">TargetSim</E>
+        </U>
+      </V>
+      <V t="statistic">
+        <U n="statistic">
+          <T n="stat">16654<!--Commodity: motive_Energy--></T>
+          <V n="threshold" t="value_threshold">
+            <U n="value_threshold">
+              <T n="value">-50</T>
+            </U>
+          </V>
+          <E n="who">TargetSim</E>
+        </U>
+      </V>
+    </L>
+  </L>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>INFANT</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">TargetSim</E>
+      </U>
+    </V>
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+      </U>
+    </V>
+    <V t="developmental_milestone">
+      <U n="developmental_milestone">
+        <T n="developmental_milestone">286486<!--DevelopmentalMilestone: infantMilestones_GrossMotor_SitUp--></T>
+        <E n="subject">TargetSim</E>
+      </U>
+    </V>
+    <V t="relationship">
+      <U n="relationship">
+        <U n="required_relationship_bits">
+          <L n="match_any">
+            <T>15803<!--RelationshipBit: has_met--></T>
+          </L>
+        </U>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>280282<!--Buff: buff_AutonomyMod_Posture_Playmat--></T>
+          <T>280281<!--Buff: buff_AutonomyMod_Posture_Crib--></T>
+          <T>280280<!--Buff: buff_AutonomyMod_Posture_HighChair--></T>
+        </L>
+        <E n="subject">TargetSim</E>
+      </U>
+    </V>
+    <V t="posture">
+      <U n="posture">
+        <L n="prohibited_postures">
+          <T>132169<!--CarryingSim: posture_CarrySim--></T>
+          <T>271210<!--CarryingSim: posture_CarrySim_Back--></T>
+        </L>
+        <E n="subject">TargetSim</E>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">331642<!--TestSetInstance: testSetInstance_Infants_TargetNotInWater--></T>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

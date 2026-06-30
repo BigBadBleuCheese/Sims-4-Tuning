@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Broadcaster" i="broadcaster" m="broadcasters.broadcaster" n="broadcaster_NobleCareer_Throne" s="488577">
+  <L n="constraints">
+    <V t="circle">
+      <U n="circle">
+        <T n="ideal_radius">5</T>
+        <T n="radius">5</T>
+      </U>
+    </V>
+    <V t="line_of_sight">
+      <U n="line_of_sight">
+        <V n="temporary_los" t="enabled">
+          <U n="enabled">
+            <T n="max_line_of_sight_radius">5</T>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <L n="effects">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">488578<!--Buff: buff_NobleCareer_ThroneCalling--></T>
+        </U>
+        <T n="remove_buff">False</T>
+        <L n="tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="ages" t="specified" />
+              </U>
+            </V>
+            <V t="buff">
+              <U n="buff">
+                <L n="blacklist">
+                  <T>488579<!--Buff: buff_NobleCareer_Hidden_ThroneCallingCooldown--></T>
+                  <T>488578<!--Buff: buff_NobleCareer_ThroneCalling--></T>
+                </L>
+              </U>
+            </V>
+            <V t="career_test">
+              <U n="career_test">
+                <T n="negate">True</T>
+                <V n="test_type" t="career_reference">
+                  <U n="career_reference">
+                    <V n="career" t="specific_career">
+                      <T n="specific_career">466304<!--NobleCareer: career_Noble--></T>
+                    </V>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="AdventureMoment" i="snippet" m="snippets" n="businessEvents_ChanceCard_Competition" s="397637">
+  <U n="value">
+    <L n="_finish_actions">
+      <U>
+        <L n="action_results">
+          <U>
+            <L n="loot_actions">
+              <T>398682<!--LootActions: loot_BusinessEvents_Reputation_Gain_Medium--></T>
+              <T>399046<!--LootActions: loot_BusinessEvents_ReputationAlignment_SchemerMisaligned--></T>
+              <T>399043<!--LootActions: loot_BusinessEvents_ReputationAlignment_DreamerAligned--></T>
+            </L>
+            <V n="notification" t="enabled">
+              <V n="enabled" t="literal">
+                <U n="literal">
+                  <V n="icon" t="enabled">
+                    <V n="enabled" t="small_business" />
+                  </V>
+                  <V n="primary_icon_response" t="enabled">
+                    <U n="enabled">
+                      <E n="ui_request">SHOW_SMALL_BUSINESS_PANEL</E>
+                    </U>
+                  </V>
+                  <V n="secondary_icon" t="enabled">
+                    <V n="enabled" t="participant" />
+                  </V>
+                  <V n="text" t="single">
+                    <T n="single">0xA19D603D<!--String: "{0.SimFirstName}'s brand is getting lost in the increased noise from {0.SimPronounPossessiveDependent} competitor, and customers are drifting towards them. If {0.SimPronounSubjective} {S0.continues}{P0.continue} to work hard and {S0.stays}{P0.stay} consistent, {0.SimPronounSubjective} will win {0.SimPronounPossessiveDependent} customer base back."--></T>
+                  </V>
+                </U>
+              </V>
+            </V>
+          </U>
+        </L>
+        <V n="display_subtext" t="single">
+          <T n="single">0x79ECA3F9<!--String: "Gain Dreamer Alignment"--></T>
+        </V>
+        <V n="display_text" t="single">
+          <T n="single">0x16EE52F3<!--String: "Leave It Be"--></T>
+        </V>
+      </U>
+      <U>
+        <L n="action_results">
+          <U>
+            <L n="loot_actions">
+              <T>398710<!--LootActions: loot_BusinessEvents_Reputation_Loss_Medium--></T>
+              <T>398721<!--LootActions: loot_BusinessEvents_Rank_Gain_Small--></T>
+              <T>399044<!--LootActions: loot_BusinessEvents_ReputationAlignment_DreamerMisaligned--></T>
+              <T>399045<!--LootActions: loot_BusinessEvents_ReputationAlignment_SchemerAligned--></T>
+            </L>
+            <V n="notification" t="enabled">
+              <V n="enabled" t="literal">
+                <U n="literal">
+                  <V n="icon" t="enabled">
+                    <V n="enabled" t="small_business" />
+                  </V>
+                  <V n="primary_icon_response" t="enabled">
+                    <U n="enabled">
+                      <E n="ui_request">SHOW_SMALL_BUSINESS_PANEL</E>
+                    </U>
+                  </V>
+                  <V n="secondary_icon" t="enabled">
+                    <V n="enabled" t="participant" />
+                  </V>
+                  <V n="text" t="single">
+                    <T n="single">0x51B6FE18<!--String: "Sometimes fighting fire with fire pays off! The hacker {0.SimFirstName} hired successfully halted {0.SimPronounPossessiveDependent} competitor and even threw in a free ad boost. Seems like they really liked {0.SimFirstName}'s business!"--></T>
+                  </V>
+                </U>
+              </V>
+            </V>
+          </U>
+        </L>
+        <L n="availability_tests">
+          <L>
+            <V t="simoleon_value">
+              <U n="simoleon_value">
+                <E n="test_event">AllSimoloenEvents</E>
+                <V n="value_context" t="total_cash" />
+                <U n="value_threshold">
+                  <E n="comparison">GREATER_OR_EQUAL</E>
+                  <T n="value">750</T>
+                </U>
+              </U>
+            </V>
+          </L>
+        </L>
+        <V n="cost" t="simoleon_cost">
+          <U n="simoleon_cost">
+            <T n="amount">750</T>
+          </U>
+        </V>
+        <V n="disabled_text" t="enabled">
+          <T n="enabled">0x3CF3831F<!--String: "{0.SimFirstName} does not have enough funds."--></T>
+        </V>
+        <V n="display_subtext" t="single">
+          <T n="single">0x9A75CAD6<!--String: "Gain Renown and Schemer Alignment"--></T>
+        </V>
+        <V n="display_text" t="single">
+          <T n="single">0x8266A3FA<!--String: "Take Them Down"--></T>
+        </V>
+      </U>
+    </L>
+    <V n="_visibility" t="show_dialog">
+      <U n="show_dialog">
+        <V n="audio_sting" t="enabled">
+          <U n="enabled">
+            <T n="audio" p="InEP18\Audio\music\bumpers\bumper_ep18_business_bump.propx">39b2aa4a:00000000:0023fe365819d957</T>
+            <T n="immediate_audio">False</T>
+          </U>
+        </V>
+        <E n="dialog_style">LARGE_ICON</E>
+        <V n="icon" t="enabled">
+          <V n="enabled" t="resource_key">
+            <U n="resource_key">
+              <T n="key" p="InEP18\UI\Icons\ChanceCard\ChanceCard_FierceCompetitor.png">2f7d0004:00000000:948c10795eb2358e</T>
+            </U>
+          </V>
+        </V>
+        <V n="text" t="single">
+          <T n="single">0x9A2C613F<!--String: "An online competitor is trying to lure away {0.SimFirstName}'s Small Business customers. Should {0.SimPronounSubjective} let it go or consider hiring a hacker to disrupt {0.SimPronounPossessiveDependent} competitor's plans?"--></T>
+        </V>
+        <V n="title" t="enabled">
+          <T n="enabled">0x807CFD5D<!--String: "A Competitor Has Emerged"--></T>
+        </V>
+      </U>
+    </V>
+  </U>
+</I>

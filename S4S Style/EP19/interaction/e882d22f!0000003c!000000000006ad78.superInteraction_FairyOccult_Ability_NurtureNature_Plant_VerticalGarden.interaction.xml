@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="superInteraction_FairyOccult_Ability_NurtureNature_Plant_VerticalGarden" s="437624">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="circle">
+            <U n="circle">
+              <T n="ideal_radius">0</T>
+              <T n="radius">2</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="value" t="facing">
+            <U n="facing">
+              <T n="range">30</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Actor</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">437618<!--AnimationElement: animations_FairyOccult_Ability_NurtureNature_Plant_VerticalGarden--></T>
+      </U>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>424738<!--LootActions: lootActions_FairyOccult_Ability_Cost_Low--></T>
+          <T>435164<!--LootActions: lootActions_FairyOccult_Ability_NurtureNature_Plant--></T>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>444656<!--LootActions: loot_EP19World_MagicCoastalBroadcaster_Start--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T n="category">424680<!--PieMenuCategory: pieMenuCategory_FairyOccult--></T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x2A9D7305<!--String: "Nurture Nature"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T p="InGame\UI\Icons\PieMenu\SpecialInteractions\specialinteraction_consumeemotionalenergy_piemenu.png" n="key">2f7d0004:00000000:063ecf9a6c7efd31</T>
+      </U>
+    </V>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="include_all">
+        <U n="include_all">
+          <L n="exclude_affordances">
+            <T>271032<!--SuperInteraction: socialSuperInteraction_CarryPickUp_Infant--></T>
+            <T>134423<!--SuperInteraction: socialSuperInteraction_CarryPickUp--></T>
+            <T>132162<!--SuperInteraction: socialSuperInteraction_CarryPickUp_Pet--></T>
+            <T>132170<!--HoldObject: carry_HoldSim--></T>
+            <T>271209<!--HoldObject: carry_HoldSim_Back--></T>
+            <T>271090<!--SuperInteraction: socialSuperInteraction_CarryPickUp_Infant_Back--></T>
+            <T>288662<!--SuperInteraction: socialSuperInteraction_CarryPickUp_Infant_Handoff--></T>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="region">
+      <U n="region">
+        <V n="blacklist" t="enabled">
+          <L n="enabled">
+            <T>231104<!--Region: region_Destination_Batuu--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+    <V t="bucks_perks_test">
+      <U n="bucks_perks_test">
+        <T n="bucks_perk">437335<!--BucksPerk: fairyPerks_NurtureNature_1--></T>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">437175<!--TestSetInstance: testSet_EP19Gardening_Pixies_Disallow--></T>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>435992<!--Buff: buff_FairyOccult_EmotionallyRavenous--></T>
+          <T>435991<!--Buff: buff_FairyOccult_EmotionallyStarving--></T>
+        </L>
+      </U>
+    </V>
+    <V t="state">
+      <U n="state">
+        <V n="fallback_behavior" t="always_fail" />
+        <E n="operator">EQUAL</E>
+        <T n="value">234575<!--ObjectStateValue: gardenPlant_OnVerticalGarden_On--></T>
+      </U>
+    </V>
+    <V t="state_white_black">
+      <U n="state_white_black">
+        <U n="states">
+          <V n="blacklist" t="specify">
+            <U n="specify">
+              <L n="blacklist">
+                <T>39330<!--CommodityBasedObjectStateValue: PlantEvolution_0_Death--></T>
+                <T>444783<!--CommodityBasedObjectStateValue: state_HousePlants_Health_0_Dead--></T>
+              </L>
+            </U>
+          </V>
+        </U>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">446777<!--TestSetInstance: testSetInstance_FairyOccult_Ability_NurtureNature_Plant--></T>
+    </V>
+    <V t="state">
+      <U n="state">
+        <E n="operator">NOTEQUAL</E>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x1B56D74A<!--String: "This plant can't be nurtured because it is Enchanted."--></T>
+        </V>
+        <T n="value">434666<!--CommodityBasedObjectStateValue: state_EP19Gardening_Enchanted_2_FullStrength--></T>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">436906<!--TestSetInstance: testSetInstance_FairyOccult_Ability_EmotionalAppetite_Cost_Low--></T>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

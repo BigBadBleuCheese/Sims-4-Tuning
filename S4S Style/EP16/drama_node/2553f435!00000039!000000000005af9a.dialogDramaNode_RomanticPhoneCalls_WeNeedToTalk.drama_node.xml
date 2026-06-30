@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="DialogDramaNode" i="drama_node" m="drama_scheduler.dialog_drama_node" n="dialogDramaNode_RomanticPhoneCalls_WeNeedToTalk" s="372634">
+  <T n="allow_during_work_hours">False</T>
+  <V n="cooldown_data" t="group_cooldown">
+    <U n="group_cooldown">
+      <E n="group">RomancePhoneCallsCooldown</E>
+    </U>
+  </V>
+  <V n="dialog_and_loot" t="dialog_multi_response">
+    <U n="dialog_multi_response">
+      <U n="dialog">
+        <E n="phone_ring_type">RING</E>
+        <V n="text" t="single">
+          <T n="single">0xAA54C10F<!--String: "Listen... I'm not happy. Could you meet me in the park right now? We need to talk."--></T>
+        </V>
+      </U>
+      <L n="possible_responses">
+        <U>
+          <U n="item">
+            <L n="loot">
+              <T>372654<!--LootActions: loot_DramaNode_RomanticPhoneCalls_WeNeedToTalk_YesWithChocolate--></T>
+            </L>
+            <T n="text">0xFC8BCEB9<!--String: "Absolutely! (Bring chocolate)"--></T>
+          </U>
+        </U>
+        <U>
+          <U n="item">
+            <L n="loot">
+              <T>372675<!--LootActions: loot_DramaNode_RomanticPhoneCalls_WeNeedToTalk_Yes--></T>
+            </L>
+            <T n="text">0xDF80D42E<!--String: "Um...okay..."--></T>
+          </U>
+        </U>
+        <U>
+          <U n="item">
+            <L n="loot">
+              <T>372674<!--LootActions: loot_DramaNode_RomanticPhoneCalls_WeNeedToTalk_BreakUp--></T>
+            </L>
+            <T n="text">0xBAF6B4E3<!--String: "Breakup preemptively"--></T>
+          </U>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="min_and_max_times">
+    <T n="lower_bound">1</T>
+    <T n="upper_bound">24</T>
+  </U>
+  <L n="pretests">
+    <L>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="required_relationship_bits">
+            <L n="match_any">
+              <T>362478<!--RelationshipBit: romanceTrope_strained--></T>
+              <T>362102<!--RelationshipBit: relBit_RelSat_1_Actor_VeryUnsatisfiedWith_Target--></T>
+              <T>362103<!--RelationshipBit: relBit_RelSat_2_Actor_UnsatisfiedWith_Target--></T>
+            </L>
+          </U>
+          <L n="subject">
+            <E>SignificantOtherActor</E>
+          </L>
+          <L n="target_sim">
+            <E>Actor</E>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+  <L n="receiver_sim_pretests">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified">
+            <L n="specified">
+              <E>YOUNGADULT</E>
+              <E>ADULT</E>
+              <E>ELDER</E>
+            </L>
+          </V>
+          <V n="species" t="specified">
+            <U n="specified">
+              <L n="species">
+                <E>HUMAN</E>
+              </L>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="reschedule_on_failed_tests" t="reschedule">
+    <U n="reschedule">
+      <T n="lower_bound">2</T>
+      <T n="upper_bound">4</T>
+    </U>
+  </V>
+  <L n="run_tests">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>10094<!--Buff: buff_Sim_IsSleeping--></T>
+            <T>275549<!--Buff: buff_Sim_IsSleeping_Hidden--></T>
+          </L>
+        </U>
+      </V>
+      <V t="existence">
+        <U n="existence">
+          <T n="exists">False</T>
+          <E n="participant">SignificantOtherActor</E>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="scoring" t="enabled">
+    <U n="enabled">
+      <T n="base_score">100</T>
+      <E n="bucket">RomanticPhoneCalls</E>
+    </U>
+  </V>
+  <V n="sender_sim_info" t="participant_type">
+    <U n="participant_type">
+      <E n="participant_type">SignificantOtherActor</E>
+    </U>
+  </V>
+  <E n="sender_sim_info_type">INSTANCED_ALLOWED</E>
+  <V n="time_option" t="schedule">
+    <U n="schedule">
+      <L n="valid_times">
+        <U>
+          <U n="days_available">
+            <T n="0 SUNDAY">True</T>
+            <T n="1 MONDAY">True</T>
+            <T n="2 TUESDAY">True</T>
+            <T n="3 WEDNESDAY">True</T>
+            <T n="4 THURSDAY">True</T>
+            <T n="5 FRIDAY">True</T>
+            <T n="6 SATURDAY">True</T>
+          </U>
+          <T n="duration">8</T>
+          <U n="start_time">
+            <T n="hour">12</T>
+          </U>
+        </U>
+      </L>
+    </U>
+  </V>
+</I>

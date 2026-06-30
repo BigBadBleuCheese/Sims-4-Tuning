@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Mentorship_NPCDialog_End" s="384079">
+  <L n="loot_actions">
+    <V t="sim_interaction_dialog">
+      <U n="sim_interaction_dialog">
+        <U n="dialog">
+          <V n="text" t="single">
+            <T n="single">0xD440E056<!--String: "{1.SimFirstName}, I think you've learned enough to continue this journey on your own. You don't need my mentorship anymore."--></T>
+          </V>
+        </U>
+        <L n="possible_responses">
+          <U>
+            <U n="item">
+              <L n="loot">
+                <T>421306<!--LootActions: loot_Mentorship_NPCDialog_Response_End_Yes--></T>
+              </L>
+              <T n="text">0x8A2F041E<!--String: "Thank you for everything, {0.SimFirstName}!"--></T>
+            </U>
+          </U>
+          <U>
+            <U n="item">
+              <L n="loot">
+                <T>421307<!--LootActions: loot_Mentorship_NPCDialog_Response_End_No--></T>
+              </L>
+              <T n="text">0xDCF5CBDE<!--String: "Why would you abandon me like this?!"--></T>
+            </U>
+          </U>
+        </L>
+        <E n="subject">TargetSim</E>
+        <E n="target_participant_type">Actor</E>
+        <L n="tests">
+          <L>
+            <V t="relationship">
+              <U n="relationship">
+                <U n="required_relationship_bits">
+                  <L n="match_any">
+                    <T>384022<!--RelationshipBit: mentorshipBit_Actor_IsMentorOf_Target--></T>
+                  </L>
+                </U>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="sim_interaction_dialog">
+      <U n="sim_interaction_dialog">
+        <U n="dialog">
+          <V n="text" t="single">
+            <T n="single">0x8472C37B<!--String: "I think I've learned everything you can teach me, {1.SimFirstName}. I no longer need you as my mentor; I have to keep growing on my own."--></T>
+          </V>
+        </U>
+        <L n="possible_responses">
+          <U>
+            <U n="item">
+              <L n="loot">
+                <T>421306<!--LootActions: loot_Mentorship_NPCDialog_Response_End_Yes--></T>
+              </L>
+              <T n="text">0xE25AF7DD<!--String: "I'm proud of you, {0.SimFirstName}!"--></T>
+            </U>
+          </U>
+          <U>
+            <U n="item">
+              <L n="loot">
+                <T>421307<!--LootActions: loot_Mentorship_NPCDialog_Response_End_No--></T>
+              </L>
+              <T n="text">0x199D9D32<!--String: "I've got nothing more to teach you, huh? Ridiculous..."--></T>
+            </U>
+          </U>
+        </L>
+        <E n="subject">TargetSim</E>
+        <E n="target_participant_type">Actor</E>
+        <L n="tests">
+          <L>
+            <V t="relationship">
+              <U n="relationship">
+                <U n="required_relationship_bits">
+                  <L n="match_any">
+                    <T>384023<!--RelationshipBit: mentorshipBit_Actor_IsMenteeOf_Target--></T>
+                  </L>
+                </U>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+                <L n="target_sim">
+                  <E>TargetSim</E>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="actions">
+      <T n="actions">393748<!--LootActions: loot_Mentorship_NPCAskOfferEnd_CleanupBits--></T>
+    </V>
+  </L>
+  <T n="run_test_first">True</T>
+</I>

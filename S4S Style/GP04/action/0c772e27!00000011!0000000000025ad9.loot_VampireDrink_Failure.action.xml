@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_VampireDrink_Failure" s="154329">
+  <L n="loot_actions">
+    <V t="actions">
+      <T n="actions">295322<!--LootActions: loot_Werewolf_DogWater--></T>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x16CF9213<!--String: "(From Resisting a Vampire)"--></T>
+          </V>
+          <T n="buff_type">154327<!--Buff: buff_Vampire_UnwillingSnack--></T>
+        </U>
+        <E n="subject">TargetSim</E>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <L n="blacklist">
+                  <T>442916<!--Buff: Apothecary_CuresAndElixirs_Buff_AuraShield--></T>
+                </L>
+                <E n="subject">TargetSim</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>TargetSim</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xE2ED5220<!--String: "Egads! That Vampire just tried to <i>bite</i> {1.SimFirstName}! Supernatural Shield Elixir came to the rescue this time, repelling that Plasma-sucking fiend.\n\nThe protection from Supernatural Shield has faded, and {1.SimFirstName} will need to drink another."--></T>
+            </V>
+          </U>
+        </V>
+        <E n="subject">TargetSim</E>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <E n="subject">TargetSim</E>
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>442916<!--Buff: Apothecary_CuresAndElixirs_Buff_AuraShield--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff_removal">
+      <U n="buff_removal">
+        <L n="buffs_to_remove">
+          <T>442916<!--Buff: Apothecary_CuresAndElixirs_Buff_AuraShield--></T>
+        </L>
+        <E n="subject">TargetSim</E>
+      </U>
+    </V>
+  </L>
+</I>

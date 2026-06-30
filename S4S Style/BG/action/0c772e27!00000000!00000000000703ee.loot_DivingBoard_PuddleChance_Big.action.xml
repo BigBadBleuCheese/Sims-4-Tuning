@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_DivingBoard_PuddleChance_Big" s="459758">
+  <L n="loot_actions">
+    <V t="create_puddles">
+      <U n="create_puddles">
+        <U n="chance">
+          <T n="base_chance">70</T>
+          <L n="multipliers">
+            <U>
+              <T n="multiplier">0.1</T>
+              <L n="tests">
+                <L>
+                  <V t="situation_running_test">
+                    <U n="situation_running_test">
+                      <V n="situation_whitelist" t="enabled">
+                        <L n="enabled">
+                          <T>464260<!--CustomScheduleBackgroundSituation: customScheduleBackgroundSituation_1--></T>
+                        </L>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+          </L>
+        </U>
+        <U n="default_puddle_factory">
+          <T n="large">5</T>
+          <T n="medium">5</T>
+          <T n="none">0</T>
+        </U>
+        <T n="max_distance">5</T>
+        <E n="target_participant_type">Actor</E>
+        <V n="trait_based_puddle_factory" t="enabled" />
+      </U>
+    </V>
+    <V t="create_puddles">
+      <U n="create_puddles">
+        <U n="chance">
+          <T n="base_chance">70</T>
+        </U>
+        <U n="default_puddle_factory">
+          <T n="large">5</T>
+          <T n="medium">5</T>
+          <T n="none">0</T>
+        </U>
+        <T n="max_distance">5</T>
+        <E n="target_participant_type">Actor</E>
+        <V n="text" t="use_default" />
+      </U>
+    </V>
+    <V t="create_puddles">
+      <U n="create_puddles">
+        <U n="chance">
+          <T n="base_chance">50</T>
+        </U>
+        <U n="default_puddle_factory">
+          <T n="large">5</T>
+          <T n="medium">5</T>
+          <T n="none">0</T>
+        </U>
+        <T n="max_distance">5</T>
+        <E n="target_participant_type">Actor</E>
+        <V n="text" t="use_default" />
+      </U>
+    </V>
+    <V t="create_puddles">
+      <U n="create_puddles">
+        <U n="chance">
+          <T n="base_chance">30</T>
+        </U>
+        <U n="default_puddle_factory">
+          <T n="none">0</T>
+        </U>
+        <T n="max_distance">5</T>
+        <E n="target_participant_type">Actor</E>
+        <V n="text" t="use_default" />
+      </U>
+    </V>
+  </L>
+</I>

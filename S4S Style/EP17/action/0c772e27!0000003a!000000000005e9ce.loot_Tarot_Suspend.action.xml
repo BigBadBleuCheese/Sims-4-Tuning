@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Tarot_Suspend" s="387534">
+  <L n="loot_actions">
+    <V t="create_object">
+      <U n="create_object">
+        <U n="chance">
+          <T n="base_chance">100</T>
+        </U>
+        <V n="creation_data" t="definition">
+          <U n="definition">
+            <T n="definition">427582</T>
+          </U>
+        </V>
+        <V n="location" t="inventory" />
+        <E n="owner_sim">Actor</E>
+        <T n="set_sim_as_owner">True</T>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T p="InEP17\UI\Icons\Whims\Whims_GiveTarotReading.png" n="key">2f7d0004:00000000:89d4867e7317ab9f</T>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x56AA6D2D<!--String: "Relinquish thyself to the power of <b>Suspension</b>! Behold, he now hangs betwixt the threads of time, having sacrificed his soul for greater enlightenment. His serenity can be shared, so long as one surrenders fully. Delays only yield inevitable conclusions."--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x8756F7EF<!--String: "Suspension"--></T>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="inventory">
+        <U n="inventory">
+          <V n="contents_check" t="has_object_with_def">
+            <U n="has_object_with_def">
+              <T n="definition">427582</T>
+            </U>
+          </V>
+          <U n="required_count">
+            <E n="comparison">EQUAL</E>
+            <T n="value">0</T>
+          </U>
+        </U>
+      </V>
+      <V t="trait">
+        <U n="trait">
+          <L n="whitelist_traits">
+            <T>387187<!--Trait: trait_Hidden_Tarot_Quest--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

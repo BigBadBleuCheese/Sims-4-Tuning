@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_ChasedByDeath_ReceiveAnonymousGift_LivingSim" s="397952">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0xF5943B07<!--String: "(From Receiving a Deathly Gift)"--></T>
+          </V>
+          <T n="buff_type">411015<!--Buff: buff_Trait_ChasedByDeath_WhoIsThisFrom--></T>
+        </U>
+      </U>
+    </V>
+    <V t="object_rewards">
+      <U n="object_rewards">
+        <U n="chance">
+          <T n="base_chance">100</T>
+        </U>
+        <V n="notification" t="enabled">
+          <V n="enabled" t="literal">
+            <U n="literal">
+              <V n="icon" t="enabled">
+                <V n="enabled" t="resource_key">
+                  <U n="resource_key">
+                    <T n="key" p="InGame\UI\Icons\Notifications\notification_giftbox.png">2f7d0004:00000000:ca9f7c82e7f59688</T>
+                  </U>
+                </V>
+              </V>
+              <V n="secondary_icon" t="enabled">
+                <V n="enabled" t="participant" />
+              </V>
+              <V n="text" t="variation">
+                <U n="variation">
+                  <L n="variations">
+                    <T>0x36D00F24<!--String: "Someone is ALWAYS watching you <font color='#000000'>♥</font>"--></T>
+                    <T>0x847CC5CE<!--String: "A gift with no sender? Hmmm that's unusual..."--></T>
+                    <T>0x5CFCEC81<!--String: "Can it be from a ghost? Grim? An Angling Ace with an impressive overstock problem? Who knows!"--></T>
+                  </L>
+                </U>
+              </V>
+            </U>
+          </V>
+        </V>
+        <L n="object_rewards">
+          <U>
+            <T n="quantity">1</T>
+            <L n="reward_objects">
+              <U>
+                <V n="quantity" t="specific_amount" />
+                <L n="reward">
+                  <V t="specify_definition">
+                    <U n="specify_definition">
+                      <T n="definition">446178</T>
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </L>
+          </U>
+        </L>
+        <T n="place_in_mailbox">False</T>
+        <V n="store_sim_info_on_reward" t="enabled">
+          <U n="enabled">
+            <E n="participant">Actor</E>
+            <T n="transfer_from_stored_sim_info">False</T>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_set_max">
+        <U n="statistic_set_max">
+          <T n="stat">397950<!--Commodity: commodity_AnonymousGift_ChasedByDeath--></T>
+        </U>
+      </V>
+    </V>
+    <V t="reaction">
+      <U n="reaction">
+        <V n="si_reaction" t="enabled">
+          <U n="enabled">
+            <T n="affordance">422983<!--SuperInteraction: reactions_ChasedByDeath_NearDeathExperience--></T>
+            <V n="affordance_run_priority" t="enabled" />
+            <V n="affordance_target" t="enabled">
+              <E n="enabled">Actor</E>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+</I>

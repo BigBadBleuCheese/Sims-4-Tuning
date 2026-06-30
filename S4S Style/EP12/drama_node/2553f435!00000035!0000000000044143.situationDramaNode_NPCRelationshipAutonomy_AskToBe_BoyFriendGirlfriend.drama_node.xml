@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationDramaNode" i="drama_node" m="drama_scheduler.situation_drama_node" n="situationDramaNode_NPCRelationshipAutonomy_AskToBe_BoyFriendGirlfriend" s="278851">
+  <V n="confirm_dialog" t="enabled">
+    <U n="enabled">
+      <V n="icon" t="enabled">
+        <V n="enabled" t="participant" />
+      </V>
+      <V n="text" t="single">
+        <T n="single">0xA623C36A<!--String: "{1.SimName} would like to come over to hang out. Is that okay?"--></T>
+      </V>
+      <T n="text_cancel">0xD877B6E9<!--String: "No"--></T>
+      <T n="text_ok">0xB7A2CBCD<!--String: "Yes"--></T>
+      <V n="text_tokens" t="enabled">
+        <U n="enabled">
+          <L n="tokens">
+            <V t="participant_type" />
+            <V t="participant_type">
+              <U n="participant_type">
+                <V n="objects" t="from_participant" />
+              </U>
+            </V>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <T n="homelot_only">True</T>
+  <L n="loots_on_start">
+    <T>310197<!--LootActions: lootActions_NPCRelationshipAutonomy_FlagTarget_BoyfriendGirlfriend--></T>
+  </L>
+  <U n="min_and_max_times">
+    <T n="lower_bound">0</T>
+    <T n="upper_bound">24</T>
+  </U>
+  <E n="receiver_sim">TargetSim</E>
+  <L n="run_tests">
+    <L>
+      <V t="test_set_reference">
+        <T n="test_set_reference">100585<!--TestSetInstance: testSet_RomanceAllowedAge--></T>
+      </V>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="prohibited_relationship_bits">
+            <L n="match_any">
+              <T>15825<!--RelationshipBit: romantic-Significant_Other--></T>
+              <T>15822<!--RelationshipBit: romantic-Married--></T>
+              <T>15816<!--RelationshipBit: romantic-Engaged--></T>
+            </L>
+          </U>
+          <U n="relationship_score_interval">
+            <T n="lower_bound">30</T>
+          </U>
+          <T n="track">16651<!--RelationshipTrack: LTR_Romance_Main--></T>
+        </U>
+      </V>
+      <V t="test_based_score_threshold">
+        <U n="test_based_score_threshold">
+          <T n="test_based_score">24566<!--TestBasedScore: scores_socialoutcomes_romance_availability--></T>
+          <U n="threshold">
+            <T n="value">27</T>
+          </U>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="sender_sim_info" t="participant_type" />
+  <V n="sender_sim_info_job" t="enabled">
+    <T n="enabled">16182<!--SituationJob: job_visitor--></T>
+  </V>
+  <E n="sender_sim_info_type">INSTANCED_ALLOWED</E>
+  <T n="situation_to_run">278860<!--GreetedNPCVisitingPlayerSituation: situation_NPCRelationshipAutonomy_AskToBe_BoyfriendGirlfriend--></T>
+  <V n="time_option" t="schedule">
+    <U n="schedule">
+      <L n="valid_times">
+        <U>
+          <U n="days_available">
+            <T n="0 SUNDAY">True</T>
+            <T n="1 MONDAY">True</T>
+            <T n="2 TUESDAY">True</T>
+            <T n="3 WEDNESDAY">True</T>
+            <T n="4 THURSDAY">True</T>
+            <T n="5 FRIDAY">True</T>
+            <T n="6 SATURDAY">True</T>
+          </U>
+          <T n="duration">12</T>
+          <U n="start_time">
+            <T n="hour">8</T>
+          </U>
+        </U>
+      </L>
+    </U>
+  </V>
+</I>

@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="sI_HorseTransaction_SellHorse_FromShell" s="330095">
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Actor</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">322530<!--AnimationElement: HorseSocialAnims_Reactions_Neutral--></T>
+      </U>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="camera_focus">
+      <U n="camera_focus">
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>339378<!--LootActions: loot_Reaction_SellHorse_AddTracker_Broadcaster_FromPicker--></T>
+        </L>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>339380<!--LootActions: loot_Reaction_SellAnimal_SentimentBroadcaster_FromPicker--></T>
+        </L>
+        <V n="timing" t="at_end" />
+      </U>
+    </V>
+    <V t="audio_sting">
+      <U n="audio_sting">
+        <U n="audio_sting">
+          <T n="audio" p="InEP14\Audio\music\bumpers\bumper_ep14_horse_sell.propx">39b2aa4a:00000000:d70fde8ec71a3650</T>
+        </U>
+      </U>
+    </V>
+  </L>
+  <V n="confirmation_dialog" t="enabled">
+    <U n="enabled">
+      <U n="dialog">
+        <V n="dialog" t="ok_cancel">
+          <U n="ok_cancel">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant" />
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x15772C04<!--String: "Are you sure you want to sell {0.SimFirstName}? You will receive payment and this Horse will leave the Household."--></T>
+            </V>
+            <T n="text_cancel">0xD877B6E9<!--String: "No"--></T>
+            <T n="text_ok">0xB7A2CBCD<!--String: "Yes"--></T>
+          </U>
+        </V>
+      </U>
+    </U>
+  </V>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x75C69A1D<!--String: "Sell Horse"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="continuation">
+          <U>
+            <T n="affordance">330368<!--DeathSuperInteraction: death_Horse_SellPicked_FromShell--></T>
+          </U>
+        </L>
+      </U>
+    </U>
+  </V>
+  <V n="require_reins_for_formation" t="enabled">
+    <T n="enabled">314817<!--RoutingFormation: routingFormation_HorseRiding_Ride--></T>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">ACTOR</E>
+  <L n="test_globals" />
+  <T n="time_overhead">30</T>
+</I>

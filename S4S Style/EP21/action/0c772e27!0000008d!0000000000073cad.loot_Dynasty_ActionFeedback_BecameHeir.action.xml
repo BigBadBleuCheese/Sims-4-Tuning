@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Dynasty_ActionFeedback_BecameHeir" s="474285">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="audio_sting" t="disabled" />
+            <V n="icon" t="enabled">
+              <V n="enabled" t="dynasty" />
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant" />
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x6D92BEC4<!--String: "{0.SimFirstName} has been declared the Heir of the {2.String} Dynasty by its Head, {1.SimName}. \n\nWhen {1.SimFirstName} dies or steps down, {0.SimFirstName} will become the new Head of the Dynasty. In the meantime, {0.SimPronounSubjective} will get a bonus to {0.SimPronounPossessiveDependent} Prestige contribution, and be more successful when socializing with other members of the {2.String} Dynasty."--></T>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="participant_type" />
+                  <V t="participant_type">
+                    <U n="participant_type">
+                      <V n="objects" t="from_participant">
+                        <U n="from_participant">
+                          <E n="participant">ActorDynastyHead</E>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                  <V t="dynasty" />
+                </L>
+              </U>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x3E0E9AB5<!--String: "Became Dynasty Heir"--></T>
+            </V>
+            <L n="ui_responses">
+              <U>
+                <T n="text">0x6562F843<!--String: "View Dynasty Head & Heirs Lesson"--></T>
+                <V n="tutorial_id" t="enabled">
+                  <T n="enabled">488447<!--Tutorial: tutorial_EP21_ProjectGold_HeadAndHeir--></T>
+                </V>
+                <E n="ui_request">SHOW_LESSONS</E>
+              </U>
+            </L>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="ages" t="specified">
+                  <L n="specified">
+                    <E>TEEN</E>
+                    <E>YOUNGADULT</E>
+                    <E>ADULT</E>
+                    <E>ELDER</E>
+                    <E>CHILD</E>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="interaction">
+      <U n="interaction">
+        <E n="affordance_priority">High</E>
+        <L n="affordances">
+          <T>474283<!--SuperInteraction: sI_Dynasty_ActionFeedback_BecameHeir--></T>
+        </L>
+        <E n="target_participant_type">Actor</E>
+        <L n="tests">
+          <L>
+            <V t="existence">
+              <U n="existence">
+                <E n="participant">Actor</E>
+              </U>
+            </V>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="ages" t="specified">
+                  <L n="specified">
+                    <E>TEEN</E>
+                    <E>YOUNGADULT</E>
+                    <E>ADULT</E>
+                    <E>ELDER</E>
+                    <E>CHILD</E>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">485455<!--Buff: buff_Dynasty_Hidden_HasHeir--></T>
+        </U>
+        <E n="subject">ActorDynastyHead</E>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="dynasty">
+                <U n="dynasty">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="concatenation">
+              <U n="concatenation">
+                <L n="concatenations">
+                  <V t="literal">
+                    <T n="literal">0x6D92BEC4<!--String: "{0.SimFirstName} has been declared the Heir of the {2.String} Dynasty by its Head, {1.SimName}. \n\nWhen {1.SimFirstName} dies or steps down, {0.SimFirstName} will become the new Head of the Dynasty. In the meantime, {0.SimPronounSubjective} will get a bonus to {0.SimPronounPossessiveDependent} Prestige contribution, and be more successful when socializing with other members of the {2.String} Dynasty."--></T>
+                  </V>
+                  <V t="literal">
+                    <T n="literal">0x36F0896F<!--String: "\nIf {0.SimFirstName} inherits the Headship before {0.SimPronounSubjective} {S0.becomes}{P0.become} a Child, {0.SimPronounSubjective} won't have access to all the powers of a Dynasty Head. If that were to happen, another member may Usurp the Dynasty Headship from {0.SimFirstName} to regain control."--></T>
+                  </V>
+                </L>
+              </U>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="participant_type" />
+                  <V t="participant_type">
+                    <U n="participant_type">
+                      <V n="objects" t="from_participant">
+                        <U n="from_participant">
+                          <E n="participant">ActorDynastyHead</E>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                  <V t="dynasty" />
+                </L>
+              </U>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x3E0E9AB5<!--String: "Became Dynasty Heir"--></T>
+            </V>
+            <L n="ui_responses">
+              <U>
+                <T n="text">0x7CC08378<!--String: "View Dynasty Lesson"--></T>
+                <V n="tutorial_id" t="enabled">
+                  <T n="enabled">488447<!--Tutorial: tutorial_EP21_ProjectGold_HeadAndHeir--></T>
+                </V>
+                <E n="ui_request">SHOW_LESSONS</E>
+              </U>
+            </L>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="ages" t="specified">
+                  <L n="specified">
+                    <E>BABY</E>
+                    <E>INFANT</E>
+                    <E>TODDLER</E>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

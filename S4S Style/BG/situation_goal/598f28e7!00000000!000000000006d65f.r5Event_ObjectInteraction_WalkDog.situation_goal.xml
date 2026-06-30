@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalObjectInteraction" i="situation_goal" m="situations.situation_goal_object_interaction" n="r5Event_ObjectInteraction_WalkDog" s="448095">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T p="InGame\UI\Icons\Headlines\Final\headline_DogFriendly_bg.png" n="enabled">2f7d0004:00000000:5f99d4314faa1d3b</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0xA854027F<!--String: "Take Dog for a Walk or Ask Them to Go Potty"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0xBF8291F1<!--String: "A dog is a Sim's best friend. Interact with a Sim's Dog and select Go for Walk or Ask to Go Potty.\n\n<i>This <b>optional goal</b> requires <b>Cats & Dogs Expansion Pack</b> to complete.</i>\n\nSelect to learn more."--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>447711<!--SituationGoalLootActions: liveEvent_GoalLoot_CompleteQuestGoal--></T>
+  </L>
+  <U n="_goal_test">
+    <L n="affordances">
+      <T>165202<!--SuperInteraction: dogWalking_Situation_GoForJog--></T>
+      <T>165043<!--SuperInteraction: dogWalking_Situation_GoForWalk--></T>
+      <T>166537<!--SuperInteraction: dogWalking_Situation_GoForWalk_Long--></T>
+      <T>166536<!--SuperInteraction: dogWalking_Situation_GoForWalk_Short--></T>
+      <T>178553<!--SocialMixerInteraction: mixerSocial_Targeted_SimToPet_Friendly_AskToPotty--></T>
+    </L>
+    <E n="test_event">InteractionComplete</E>
+  </U>
+  <L n="_post_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+      </U>
+    </V>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+  <T n="mandatory">False</T>
+  <V n="mtx_bundle" t="enabled">
+    <T n="enabled">160075<!--ObjectStateValue: bowlingLane_Values_Results_Sweeper_Left_Child_6_Pins_HL1369--></T>
+  </V>
+  <V n="tutorial_tip_group" t="enabled">
+    <T n="enabled">448099<!--TutorialTipGroup: tutorialTipGroup_LiveEvent_R5Event_WalkDog--></T>
+  </V>
+</I>

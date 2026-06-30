@@ -1,0 +1,455 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="GameObject" i="object" m="objects.game_object" n="object_EV007_LittleLibrary" s="476488">
+  <U n="_components">
+    <V n="focus" t="enabled">
+      <U n="enabled">
+        <V n="_focus_score" t="globally">
+          <U n="globally">
+            <E n="base">LOW</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V n="inventory" t="enabled">
+      <U n="enabled">
+        <T n="allow_putdown_in_inventory">True</T>
+        <V n="count_statistic" t="enabled">
+          <T n="enabled">476581<!--Statistic: statistic_EV007_LittleLibrary_InventoryCapacity--></T>
+        </V>
+        <V n="get_put" t="custom">
+          <U n="custom">
+            <U n="get">
+              <T n="factory">488124<!--AnimationElement: littleLibrary_get--></T>
+            </U>
+            <U n="put">
+              <T n="factory">488125<!--AnimationElement: littleLibrary_put--></T>
+            </U>
+          </U>
+        </V>
+        <E n="inventory_type">LITTLELIBRARY</E>
+        <T n="return_owned_objects">True</T>
+      </U>
+    </V>
+    <V n="live_drag_target" t="enabled">
+      <U n="enabled">
+        <U n="actions_to_run_on_target">
+          <L n="insert_actions">
+            <T>476491<!--LiveDragLootActions: loot_EV007_LiveDrag_LittleLibrary_DonatedBookCount_Add--></T>
+            <T>476501<!--LiveDragLootActions: loot_EV007_LiveDrag_LittleLibrary_HonorCode_Add--></T>
+          </L>
+          <L n="remove_actions">
+            <T>492813<!--LiveDragLootActions: loot_EV007_LiveDrag_LittleLibrary_HonorCode_Sub--></T>
+          </L>
+        </U>
+        <T n="allow_objects_from_other_households">True</T>
+      </U>
+    </V>
+    <V n="ownable_component" t="enabled">
+      <U n="enabled">
+        <T n="add_to_owner_inventory_only">False</T>
+      </U>
+    </V>
+    <V n="situation_scheduler_component" t="enabled">
+      <U n="enabled">
+        <V n="object_situation_shifts" t="enabled">
+          <U n="enabled">
+            <T n="consider_off_lot_objects">False</T>
+            <E n="object_tag">Func_LittleLibrary</E>
+            <T n="schedule_immediate">False</T>
+            <L n="situation_shifts">
+              <U>
+                <V n="shift_curve" t="curve_based">
+                  <U n="curve_based">
+                    <L n="entries">
+                      <U>
+                        <U n="days_of_the_week">
+                          <T n="0 SUNDAY">True</T>
+                          <T n="1 MONDAY">True</T>
+                          <T n="2 TUESDAY">False</T>
+                          <T n="3 WEDNESDAY">True</T>
+                          <T n="4 THURSDAY">False</T>
+                          <T n="5 FRIDAY">True</T>
+                          <T n="6 SATURDAY">False</T>
+                        </U>
+                        <L n="walkby_desire_by_time_of_day">
+                          <U>
+                            <T n="hour_of_day">10</T>
+                            <U n="desired_walkby_situations">
+                              <V n="desired_sim_count" t="literal">
+                                <U n="literal">
+                                  <T n="value">1</T>
+                                </U>
+                              </V>
+                              <T n="disable_churn">True</T>
+                              <L n="weighted_situations">
+                                <U>
+                                  <T n="situation">493226<!--SingleJobSituation: situation_LittleLibrary_GiveWalkby--></T>
+                                  <U n="weight_multipliers">
+                                    <L n="multipliers">
+                                      <U>
+                                        <T n="multiplier">0</T>
+                                        <L n="tests">
+                                          <L>
+                                            <V t="object_criteria">
+                                              <U n="object_criteria">
+                                                <V n="desired_state_threshold" t="enabled">
+                                                  <U n="enabled">
+                                                    <E n="comparison">EQUAL</E>
+                                                    <T n="value">476503<!--CommodityBasedObjectStateValue: littleLibrary_stateValue_full--></T>
+                                                  </U>
+                                                </V>
+                                              </U>
+                                            </V>
+                                          </L>
+                                        </L>
+                                      </U>
+                                      <U>
+                                        <T n="multiplier">0.5</T>
+                                        <L n="tests">
+                                          <L>
+                                            <V t="object_criteria">
+                                              <U n="object_criteria">
+                                                <V n="desired_state_threshold" t="enabled">
+                                                  <U n="enabled">
+                                                    <E n="comparison">EQUAL</E>
+                                                    <T n="value">476547<!--CommodityBasedObjectStateValue: littleLibrary_stateValue_partialEmpty--></T>
+                                                  </U>
+                                                </V>
+                                              </U>
+                                            </V>
+                                          </L>
+                                        </L>
+                                      </U>
+                                      <U>
+                                        <L n="tests">
+                                          <L>
+                                            <V t="object_criteria">
+                                              <U n="object_criteria">
+                                                <V n="desired_state_threshold" t="enabled">
+                                                  <U n="enabled">
+                                                    <E n="comparison">EQUAL</E>
+                                                    <T n="value">476505<!--CommodityBasedObjectStateValue: littleLibrary_stateValue_empty--></T>
+                                                  </U>
+                                                </V>
+                                              </U>
+                                            </V>
+                                          </L>
+                                        </L>
+                                      </U>
+                                    </L>
+                                  </U>
+                                </U>
+                              </L>
+                            </U>
+                          </U>
+                          <U>
+                            <T n="hour_of_day">14</T>
+                            <U n="desired_walkby_situations">
+                              <V n="desired_sim_count" t="literal">
+                                <U n="literal">
+                                  <T n="value">1</T>
+                                </U>
+                              </V>
+                              <T n="disable_churn">True</T>
+                              <L n="weighted_situations">
+                                <U>
+                                  <T n="situation">493227<!--SingleJobSituation: situation_LittleLibrary_TakeWalkby--></T>
+                                  <U n="weight_multipliers">
+                                    <L n="multipliers">
+                                      <U>
+                                        <T n="multiplier">0</T>
+                                        <L n="tests">
+                                          <L>
+                                            <V t="object_criteria">
+                                              <U n="object_criteria">
+                                                <V n="desired_state_threshold" t="enabled">
+                                                  <U n="enabled">
+                                                    <E n="comparison">EQUAL</E>
+                                                    <T n="value">476505<!--CommodityBasedObjectStateValue: littleLibrary_stateValue_empty--></T>
+                                                  </U>
+                                                </V>
+                                              </U>
+                                            </V>
+                                          </L>
+                                        </L>
+                                      </U>
+                                      <U>
+                                        <T n="multiplier">0.5</T>
+                                        <L n="tests">
+                                          <L>
+                                            <V t="object_criteria">
+                                              <U n="object_criteria">
+                                                <V n="desired_state_threshold" t="enabled">
+                                                  <U n="enabled">
+                                                    <E n="comparison">EQUAL</E>
+                                                    <T n="value">476547<!--CommodityBasedObjectStateValue: littleLibrary_stateValue_partialEmpty--></T>
+                                                  </U>
+                                                </V>
+                                              </U>
+                                            </V>
+                                          </L>
+                                        </L>
+                                      </U>
+                                      <U>
+                                        <L n="tests">
+                                          <L>
+                                            <V t="object_criteria">
+                                              <U n="object_criteria">
+                                                <V n="desired_state_threshold" t="enabled">
+                                                  <U n="enabled">
+                                                    <E n="comparison">EQUAL</E>
+                                                    <T n="value">476503<!--CommodityBasedObjectStateValue: littleLibrary_stateValue_full--></T>
+                                                  </U>
+                                                </V>
+                                              </U>
+                                            </V>
+                                          </L>
+                                        </L>
+                                      </U>
+                                    </L>
+                                  </U>
+                                </U>
+                              </L>
+                            </U>
+                          </U>
+                        </L>
+                      </U>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </L>
+            <L n="tests">
+              <L>
+                <V t="object_criteria">
+                  <U n="object_criteria">
+                    <V n="desired_state_threshold" t="enabled">
+                      <U n="enabled">
+                        <E n="comparison">EQUAL</E>
+                        <T n="value">493018<!--ObjectStateValue: littleLibrary_Values_OpenPublic--></T>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V n="state" t="enabled">
+      <U n="enabled">
+        <L n="state_triggers">
+          <U>
+            <L n="at_states">
+              <T>493018<!--ObjectStateValue: littleLibrary_Values_OpenPublic--></T>
+            </L>
+            <L n="statistic_operations">
+              <V t="statistic_add">
+                <U n="statistic_add">
+                  <T n="stat">491679<!--Commodity: commodity_EV007_LittleLibrary_DonatedBooksTotal--></T>
+                </U>
+              </V>
+              <V t="statistic_add">
+                <U n="statistic_add">
+                  <T n="stat">476493<!--Commodity: commodity_EV007_LittleLibrary_HonorCode--></T>
+                </U>
+              </V>
+            </L>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>77532<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Replace--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>39737<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Not_Burning--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>39736<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Burning--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>493019<!--ObjectStateValue: littleLibrary_Values_ClosePublic--></T>
+              </L>
+            </V>
+          </U>
+        </L>
+        <L n="states">
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">476503<!--CommodityBasedObjectStateValue: littleLibrary_stateValue_full--></T>
+                <U n="value">
+                  <V n="geometry_state" t="apply_new_value">
+                    <V n="apply_new_value" t="set_to_custom_value">
+                      <T n="set_to_custom_value">full</T>
+                    </V>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">476505<!--CommodityBasedObjectStateValue: littleLibrary_stateValue_empty--></T>
+                <U n="value">
+                  <V n="geometry_state" t="apply_new_value">
+                    <V n="apply_new_value" t="set_to_custom_value">
+                      <T n="set_to_custom_value">empty</T>
+                    </V>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">476547<!--CommodityBasedObjectStateValue: littleLibrary_stateValue_partialEmpty--></T>
+                <U n="value">
+                  <V n="geometry_state" t="apply_new_value">
+                    <V n="apply_new_value" t="set_to_custom_value">
+                      <T n="set_to_custom_value">partial</T>
+                    </V>
+                  </V>
+                </U>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">476505<!--CommodityBasedObjectStateValue: littleLibrary_stateValue_empty--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">131794<!--ObjectStateValue: Kelpto_Stolen_Object--></T>
+              </U>
+              <U>
+                <T n="key">131795<!--ObjectStateValue: Klepto_Not_Stolen_Object--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">131795<!--ObjectStateValue: Klepto_Not_Stolen_Object--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">39611<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change--></T>
+              </U>
+              <U>
+                <T n="key">39736<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Burning--></T>
+              </U>
+              <U>
+                <T n="key">39737<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Not_Burning--></T>
+              </U>
+              <U>
+                <T n="key">77532<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Replace--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">39737<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Not_Burning--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">35956<!--CommodityBasedObjectStateValue: Materialistic_Admired--></T>
+              </U>
+              <U>
+                <T n="key">35957<!--CommodityBasedObjectStateValue: Materialistic_YetToAdmire--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">35957<!--CommodityBasedObjectStateValue: Materialistic_YetToAdmire--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">493019<!--ObjectStateValue: littleLibrary_Values_ClosePublic--></T>
+            </V>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V n="tooltip_component" t="enabled">
+      <U n="enabled">
+        <L n="custom_tooltips">
+          <U>
+            <V n="display_object_preference" t="enabled">
+              <E n="enabled">BED</E>
+            </V>
+            <L n="object_tests">
+              <L>
+                <V t="object_preference">
+                  <U n="object_preference">
+                    <V n="any_sim" t="enabled">
+                      <E n="enabled">BED</E>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+            <L n="tooltip_fields">
+              <U>
+                <E n="key">recipe_name</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x50B67E1C<!--String: "Single Bed"--></T>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <E n="key">subtext</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0xD7D023D8<!--String: "Assigned to:"--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">StoredSim</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+            </L>
+            <E n="tooltip_style">HOVER_TIP_OBJECT_RELATIONSHIP</E>
+          </U>
+        </L>
+      </U>
+    </V>
+  </U>
+  <L n="_super_affordances">
+    <T>13328<!--ImmediateSuperInteraction: debug_Reset--></T>
+    <T>13326<!--ImmediateSuperInteraction: debug_ObjectDestroy--></T>
+    <T>103888<!--ImmediateSuperInteraction: cheat_set_as_head--></T>
+    <T>74457<!--ImmediateSuperInteraction: fire_ReplaceBurntObject--></T>
+    <T>106859<!--SuperInteraction: simRay_Transform_Object--></T>
+    <T>276518<!--SuperInteraction: infant_WhatsThat--></T>
+    <T>102258<!--SuperInteraction: Ghost_Possess--></T>
+    <T>481082<!--ObjectInInventoryPickerInteraction: EV007_LittleLibrary_BrowseDonations_Picker--></T>
+    <T>481084<!--ObjectInInventoryPickerInteraction: EV007_LittleLibrary_TakeRandomBook--></T>
+    <T>488892<!--ObjectInInventoryPickerInteraction: EV007_LittleLibrary_DonateBook_Picker--></T>
+    <T>496427<!--SuperInteraction: littleLibrary_EV007_Walkby_Give--></T>
+    <T>496428<!--SuperInteraction: littleLibrary_EV007_Walkby_Take--></T>
+  </L>
+  <U n="recycling_data">
+    <L n="recycling_values">
+      <U>
+        <E n="Bucks Type">RecycleBitsBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+      <U>
+        <E n="Bucks Type">RecyclePiecesBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+    </L>
+  </U>
+</I>

@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Business" i="business" m="business.business" n="business_Rental" s="345665">
+  <T n="alert_enabled">True</T>
+  <T n="always_allow_super_speed_3">True</T>
+  <V n="associated_guidance" t="enabled">
+    <E n="enabled">EP15</E>
+  </V>
+  <T p="InGame\Audio\Stings\base_sting.propx" n="audio_sting_close">39b2aa4a:00000000:5d8113c3809b3850</T>
+  <T p="InGame\Audio\Stings\base_sting.propx" n="audio_sting_open">39b2aa4a:00000000:5d8113c3809b3850</T>
+  <L n="available_rules">
+    <T>347342<!--BusinessRule: Rule_PMI_MaxHousehold--></T>
+    <T>343562<!--BusinessRule: Rule_PMI_NoTrash--></T>
+    <T>348401<!--BusinessRule: Rule_PMI_LoudNoises--></T>
+    <T>348400<!--BusinessRule: Rule_PMI_NoEvents--></T>
+    <T>348397<!--BusinessRule: Rule_PMI_NoGhosts--></T>
+    <T>352253<!--BusinessRule: Rule_PMI_NoPets_EP04--></T>
+  </L>
+  <E n="bucks">ClubBucks</E>
+  <T p="InGame\UI\Icons\Debug\missing_image.png" n="business_icon">2f7d0004:00000000:30f0846c783606f9</T>
+  <T n="buy_business_lot_affordance">343959<!--ImmediateSuperInteraction: ownableMultiUnit_Immediate_BuyFromUI--></T>
+  <T n="current_business_lot_transfer_dialog_entry">0xB9DFAC6F<!--String: "Current Rental Unit"--></T>
+  <E n="customer_buffs_to_save_tag">Buff_Business_CustomerStarRating</E>
+  <E n="employee_training_buff_tag">Buff_Business_EmployeeTraining</E>
+  <T n="filter_button_tooltip">0xE770AABF<!--String: "Residential Rental"--></T>
+  <L n="first_time_notifications">
+    <U>
+      <E n="message_type">ANY_RATING_CHANGE</E>
+      <V n="notification" t="literal">
+        <U n="literal">
+          <V n="icon" t="enabled">
+            <V n="enabled" t="resource_key">
+              <U n="resource_key">
+                <T n="key" p="InEP15\UI\Icons\Notification\Notification_UnitRankingGeneric.png">2f7d0004:00000000:b4922a9611c4bfd4</T>
+              </U>
+            </V>
+          </V>
+          <V n="text" t="single">
+            <T n="single">0x1759E1A8<!--String: "A unit's rating has been updated due to changes made from Build Mode, such as the addition or removal of objects, or as a result of a Live Mode situation affecting the unit. Pay careful attention, as a higher rating will result in an increased Max Rent for the unit."--></T>
+          </V>
+          <V n="title" t="enabled">
+            <T n="enabled">0xB86A7F69<!--String: "Unit Rating Change"--></T>
+          </V>
+          <L n="ui_responses">
+            <U>
+              <T n="text">0x84E1C8A4<!--String: "Show Owned Businesses panel"--></T>
+              <V n="ui_message_name" t="enabled">
+                <T n="enabled">OpenHouseholdInfoVenuePanelRental</T>
+              </V>
+              <E n="ui_request">SEND_UI_MESSAGE</E>
+            </U>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <E n="message_type">ANY_RATING_CHANGE_TENANT</E>
+      <V n="notification" t="literal">
+        <U n="literal">
+          <V n="icon" t="enabled">
+            <V n="enabled" t="resource_key">
+              <U n="resource_key">
+                <T n="key" p="InEP15\UI\Icons\Notification\Notification_UnitRankingGeneric.png">2f7d0004:00000000:b4922a9611c4bfd4</T>
+              </U>
+            </V>
+          </V>
+          <V n="text" t="single">
+            <T n="single">0x1759E1A8<!--String: "A unit's rating has been updated due to changes made from Build Mode, such as the addition or removal of objects, or as a result of a Live Mode situation affecting the unit. Pay careful attention, as a higher rating will result in an increased Max Rent for the unit."--></T>
+          </V>
+          <V n="title" t="enabled">
+            <T n="enabled">0xB86A7F69<!--String: "Unit Rating Change"--></T>
+          </V>
+        </U>
+      </V>
+    </U>
+    <U>
+      <E n="message_type">GRACE_PERIOD_OWNER</E>
+      <V n="notification" t="literal">
+        <U n="literal">
+          <V n="audio_sting" t="enabled">
+            <U n="enabled">
+              <T n="audio" p="InEP15\Audio\music\bumpers\bumper_ep15_tenant_agreement_expired.propx">39b2aa4a:00000000:0c0094f2506769b2</T>
+            </U>
+          </V>
+          <V n="icon" t="enabled">
+            <V n="enabled" t="resource_key">
+              <U n="resource_key">
+                <T n="key" p="InEP15\UI\Icons\Notification\notification_TenantAgreement.png">2f7d0004:00000000:b119dec86bde9805</T>
+              </U>
+            </V>
+          </V>
+          <V n="text" t="single">
+            <T n="single">0xF82F072F<!--String: "The Lease Length Cycle for {0.String} has reset and a temporary Grace Period is in effect until 9am on {1.DayOfWeekLong}. Each time a Lease Length Cycle completes, a Grace Period will start at 9am the following day and last for 24 hours. During this time the Property Owner is able to evict tenants or raise rent without impacting the Unit's rating."--></T>
+          </V>
+          <V n="text_tokens" t="enabled">
+            <U n="enabled">
+              <L n="tokens">
+                <V t="participant_type_special">
+                  <U n="participant_type_special">
+                    <V n="participant_type" t="zone" />
+                  </U>
+                </V>
+              </L>
+            </U>
+          </V>
+          <V n="title" t="enabled">
+            <T n="enabled">0xBDE0AFCD<!--String: "Owner Grace Period"--></T>
+          </V>
+          <L n="ui_responses">
+            <U>
+              <V n="response_command" t="enabled">
+                <V n="enabled" t="literal">
+                  <U n="literal">
+                    <L n="arguments">
+                      <V t="integer">
+                        <U n="integer">
+                          <T n="arg_value">-1</T>
+                        </U>
+                      </V>
+                      <V t="integer">
+                        <U n="integer">
+                          <T n="arg_value">-1</T>
+                        </U>
+                      </V>
+                      <V t="boolean" />
+                      <V t="participant_id">
+                        <U n="participant_id">
+                          <E n="participant">TargetSim</E>
+                        </U>
+                      </V>
+                    </L>
+                    <T n="command">multi_unit.show_rental_unit_management</T>
+                  </U>
+                </V>
+              </V>
+              <T n="text">0x9AE11217<!--String: "Show Tenant Agreement"--></T>
+              <E n="ui_request">SEND_COMMAND</E>
+            </U>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <E n="message_type">GRACE_PERIOD_TENANT</E>
+      <V n="notification" t="literal">
+        <U n="literal">
+          <V n="audio_sting" t="enabled">
+            <U n="enabled">
+              <T n="audio" p="InEP15\Audio\music\bumpers\bumper_ep15_tenant_agreement_expired.propx">39b2aa4a:00000000:0c0094f2506769b2</T>
+            </U>
+          </V>
+          <V n="icon" t="enabled">
+            <V n="enabled" t="resource_key">
+              <U n="resource_key">
+                <T n="key" p="InEP15\UI\Icons\Notification\notification_TenantAgreement.png">2f7d0004:00000000:b119dec86bde9805</T>
+              </U>
+            </V>
+          </V>
+          <V n="text" t="single">
+            <T n="single">0x5D1F7467<!--String: "The Lease Length Cycle for {0.String} has reset and a temporary Grace Period is in effect until 9am on {1.DayOfWeekLong}. Each time a Lease Length Cycle completes, a Grace Period will start at 9am the following day and last for 24 hours. During this time Tenants are able to move out without any penalties."--></T>
+          </V>
+          <V n="text_tokens" t="enabled">
+            <U n="enabled">
+              <L n="tokens">
+                <V t="participant_type_special">
+                  <U n="participant_type_special">
+                    <V n="participant_type" t="zone" />
+                  </U>
+                </V>
+              </L>
+            </U>
+          </V>
+          <V n="title" t="enabled">
+            <T n="enabled">0x222FA3E5<!--String: "Tenant Grace Period"--></T>
+          </V>
+          <L n="ui_responses">
+            <U>
+              <V n="response_command" t="enabled">
+                <V n="enabled" t="literal">
+                  <U n="literal">
+                    <L n="arguments">
+                      <V t="integer">
+                        <U n="integer">
+                          <T n="arg_value">-1</T>
+                        </U>
+                      </V>
+                      <V t="integer">
+                        <U n="integer">
+                          <T n="arg_value">-1</T>
+                        </U>
+                      </V>
+                      <V t="boolean" />
+                      <V t="participant_id">
+                        <U n="participant_id">
+                          <E n="participant">TargetSim</E>
+                        </U>
+                      </V>
+                      <V t="boolean">
+                        <U n="boolean">
+                          <T n="arg_value">True</T>
+                        </U>
+                      </V>
+                    </L>
+                    <T n="command">multi_unit.show_rental_unit_management</T>
+                  </U>
+                </V>
+              </V>
+              <T n="text">0x9AE11217<!--String: "Show Tenant Agreement"--></T>
+              <E n="ui_request">SEND_COMMAND</E>
+            </U>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <E n="message_type">STAR_RATING_CHANGE</E>
+      <V n="notification" t="literal">
+        <U n="literal">
+          <V n="icon" t="enabled">
+            <V n="enabled" t="resource_key">
+              <U n="resource_key">
+                <T n="key" p="InEP15\UI\Icons\Notification\Notification_UnitRankingGeneric.png">2f7d0004:00000000:b4922a9611c4bfd4</T>
+              </U>
+            </V>
+          </V>
+          <V n="text" t="single">
+            <T n="single">0x38AB84D7<!--String: "A unit's rating just changed by a whole star! Check out the Owned Businesses panel for more details!"--></T>
+          </V>
+          <V n="title" t="enabled">
+            <T n="enabled">0xB86A7F69<!--String: "Unit Rating Change"--></T>
+          </V>
+          <L n="ui_responses">
+            <U>
+              <T n="text">0x84E1C8A4<!--String: "Show Owned Businesses panel"--></T>
+              <V n="ui_message_name" t="enabled">
+                <T n="enabled">OpenHouseholdInfoVenuePanelRental</T>
+              </V>
+              <E n="ui_request">SEND_UI_MESSAGE</E>
+            </U>
+          </L>
+        </U>
+      </V>
+    </U>
+  </L>
+  <V n="grand_opening_notification" t="enabled">
+    <V n="enabled" t="literal">
+      <U n="literal">
+        <V n="icon" t="enabled">
+          <V n="enabled" t="resource_key">
+            <U n="resource_key">
+              <T n="key" p="InEP15\UI\Icons\Notification\notification_rentalunitgeneric.png">2f7d0004:00000000:cc4cfceb8e800c46</T>
+            </U>
+          </V>
+        </V>
+        <V n="text" t="single">
+          <T n="single">0x226390BF<!--String: "Managing a Residential Rental is hard work. Once your Unit is ready to rent out, fill that vacancy and start collecting rent. Keep an eye on your Unit Rating - bad units attract bad tenants! Rent is collected every week.\nFor more information, please check out the Residential Rentals section in Lessons!"--></T>
+        </V>
+        <V n="title" t="enabled">
+          <T n="enabled">0xAC278DD<!--String: "Residential Rental - Ownership"--></T>
+        </V>
+      </U>
+    </V>
+  </V>
+  <T n="no_business_text">0x425FD6EF<!--String: "You do not own any Residential Rentals right now!"--></T>
+  <V n="no_way_to_make_money_notification" t="literal">
+    <U n="literal">
+      <V n="text" t="single">
+        <T n="single">0xFE983BAD<!--String: "Careers"--></T>
+      </V>
+    </U>
+  </V>
+  <V n="open_business_notification" t="literal">
+    <U n="literal">
+      <V n="text" t="single">
+        <T n="single">0x8B651C8F<!--String: "One of your Sim's units is now occupied with a tenant household! Check the Residential Rental tab of the Owned Businesses panel for more information."--></T>
+      </V>
+    </U>
+  </V>
+  <T n="purchase_business_button_text">0xB8A50824<!--String: "Buy Residential Rental"--></T>
+  <U n="sell_store_dialog">
+    <V n="text" t="single">
+      <T n="single">0xF8D48937<!--String: "Sell this Residential Rental for {0.Money}? The {1.String} household will no longer be the Property Owner household. If they currently live in one of the units, they will be considered a normal Tenant household upon sale."--></T>
+    </V>
+    <V n="title" t="enabled">
+      <T n="enabled">0x7AAA6A75<!--String: "Sell this Residential Rental?"--></T>
+    </V>
+  </U>
+  <U n="sell_store_dialog_property_owner_tenant">
+    <V n="text" t="single">
+      <T n="single">0xF8D48937<!--String: "Sell this Residential Rental for {0.Money}? The {1.String} household will no longer be the Property Owner household. If they currently live in one of the units, they will be considered a normal Tenant household upon sale."--></T>
+    </V>
+    <V n="title" t="enabled">
+      <T n="enabled">0x7AAA6A75<!--String: "Sell this Residential Rental?"--></T>
+    </V>
+  </U>
+  <U n="star_rating_notification_cooldown">
+    <T n="hours">12</T>
+  </U>
+  <L n="star_rating_to_notification_map">
+    <U>
+      <T n="star_rating">1</T>
+      <V n="notification" t="literal">
+        <U n="literal">
+          <V n="audio_sting" t="enabled">
+            <U n="enabled">
+              <T n="audio" p="InEP15\Audio\music\bumpers\bumper_ep15_unit_rating_score_lowest.propx">39b2aa4a:00000000:16d5e6a198eca6e3</T>
+            </U>
+          </V>
+          <V n="icon" t="enabled">
+            <V n="enabled" t="resource_key">
+              <U n="resource_key">
+                <T n="key" p="InEP15\UI\Icons\Notification\Notification_RockBottom.png">2f7d0004:00000000:80a704e1b7a8df4d</T>
+              </U>
+            </V>
+          </V>
+          <V n="text" t="single">
+            <T n="single">0xBF7C91BA<!--String: "Oh no! {0.String} Unit has hit the lowest possible rating and things aren't looking in good shape. Tenants are more likely to move out and are less likely to apply to move into 1-Star units. Check out the Owned Businesses Panel for more details."--></T>
+          </V>
+          <V n="text_tokens" t="enabled">
+            <U n="enabled">
+              <L n="tokens">
+                <V t="participant_type_special">
+                  <U n="participant_type_special">
+                    <V n="participant_type" t="zone" />
+                  </U>
+                </V>
+              </L>
+            </U>
+          </V>
+          <V n="title" t="enabled">
+            <T n="enabled">0x4FC71CB4<!--String: "Rock Bottom"--></T>
+          </V>
+          <L n="ui_responses">
+            <U>
+              <T n="text">0x84E1C8A4<!--String: "Show Owned Businesses panel"--></T>
+              <V n="ui_message_name" t="enabled">
+                <T n="enabled">OpenHouseholdInfoVenuePanelRental</T>
+              </V>
+              <E n="ui_request">SEND_UI_MESSAGE</E>
+            </U>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <T n="star_rating">5</T>
+      <V n="notification" t="literal">
+        <U n="literal">
+          <V n="audio_sting" t="enabled">
+            <U n="enabled">
+              <T n="audio" p="InEP15\Audio\music\bumpers\bumper_ep15_unit_rating_score_highest.propx">39b2aa4a:00000000:92d1de1c03094247</T>
+            </U>
+          </V>
+          <V n="icon" t="enabled">
+            <V n="enabled" t="resource_key">
+              <U n="resource_key">
+                <T n="key" p="InEP15\UI\Icons\Notification\notification_MaxRatingHit.png">2f7d0004:00000000:e09c4b3041073103</T>
+              </U>
+            </V>
+          </V>
+          <V n="text" t="single">
+            <T n="single">0x87758FDA<!--String: "Incredible! {0.String} has ascended to become a 5-star unit! Anticipate an influx of prospective Tenants willing to offer a higher rent amount to live in this epitome of luxury!"--></T>
+          </V>
+          <V n="text_tokens" t="enabled">
+            <U n="enabled">
+              <L n="tokens">
+                <V t="participant_type_special">
+                  <U n="participant_type_special">
+                    <V n="participant_type" t="zone" />
+                  </U>
+                </V>
+              </L>
+            </U>
+          </V>
+          <V n="title" t="enabled">
+            <T n="enabled">0x9E81D4D4<!--String: "Top Tier"--></T>
+          </V>
+          <L n="ui_responses">
+            <U>
+              <T n="text">0x84E1C8A4<!--String: "Show Owned Businesses panel"--></T>
+              <V n="ui_message_name" t="enabled">
+                <T n="enabled">OpenHouseholdInfoVenuePanelRental</T>
+              </V>
+              <E n="ui_request">SEND_UI_MESSAGE</E>
+            </U>
+          </L>
+        </U>
+      </V>
+    </U>
+  </L>
+  <L n="star_rating_value_to_user_facing_rating_curve">
+    <U />
+    <U>
+      <T n="x">5</T>
+      <T n="y">5</T>
+    </U>
+  </L>
+  <T n="summary_dialog_cost_of_ingredients_header">0xFE983BAD<!--String: "Careers"--></T>
+  <T n="summary_dialog_cost_of_ingredients_text">0xFE983BAD<!--String: "Careers"--></T>
+  <T n="summary_dialog_food_profit_header">0xFE983BAD<!--String: "Careers"--></T>
+  <T n="summary_dialog_food_profit_text">0xFE983BAD<!--String: "Careers"--></T>
+  <T n="summary_dialog_icon" p="InGame\UI\Icons\Retail\RetailPanelIcon.png">2f7d0004:00000000:913917bcc59f86b1</T>
+  <T n="summary_dialog_payroll_header">0x370897B4<!--String: "Wages for {0.SimLastName}, {0.SimFirstName}:"--></T>
+  <T n="summary_dialog_payroll_text">0x7FD02F8E<!--String: "{0.String} ({1.Money} / hr) × {2.Number} {S2.hour}{P2.hours}"--></T>
+  <T n="summary_dialog_subtitle">0xBE767299<!--String: "Financial Report"--></T>
+  <T n="summary_dialog_transactions_header">0xC8E627C0<!--String: "Items Sold / Revenue:"--></T>
+  <T n="summary_dialog_transactions_text">0x778C4B2A<!--String: "{0.Number}"--></T>
+  <T n="summary_dialog_wages_advertising_header">0xFE983BAD<!--String: "Careers"--></T>
+  <T n="summary_dialog_wages_advertising_text">0xFE983BAD<!--String: "Careers"--></T>
+  <T n="summary_dialog_wages_net_profit_header">0xFE983BAD<!--String: "Careers"--></T>
+  <T n="summary_dialog_wages_net_profit_text">0xFE983BAD<!--String: "Careers"--></T>
+  <T n="summary_dialog_wages_owed_header">0x622496BE<!--String: "Wages Owed:"--></T>
+  <T n="summary_dialog_wages_owed_text">0x998C34C4<!--String: "Total Wages:"--></T>
+  <T n="tab_button_icon" p="InEP15\UI\Icons\Filters\icon_filter_ResRental_EP15.png">2f7d0004:00000000:1f19506cf97dbd88</T>
+  <E n="tutorial_button_element">HVP_RENTAL_UNIT_PURCHASE</E>
+  <E n="tutorial_panel_element">HVP_RENTAL_UNIT_PANEL</E>
+</I>

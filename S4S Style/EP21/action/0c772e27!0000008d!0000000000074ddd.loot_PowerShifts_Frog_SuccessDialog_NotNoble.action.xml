@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_PowerShifts_Frog_SuccessDialog_NotNoble" s="478685">
+  <L n="loot_actions">
+    <V t="sim_interaction_dialog">
+      <U n="sim_interaction_dialog">
+        <U n="dialog">
+          <V n="icon" t="enabled">
+            <V n="enabled" t="participant">
+              <U n="participant">
+                <L n="participant_type">
+                  <E>Actor</E>
+                </L>
+              </U>
+            </V>
+          </V>
+          <V n="secondary_icon" t="enabled">
+            <V n="enabled" t="participant">
+              <U n="participant">
+                <L n="participant_type">
+                  <E>TargetSim</E>
+                </L>
+              </U>
+            </V>
+          </V>
+          <V n="text" t="single">
+            <T n="single">0x7DBB0167<!--String: "You aren't exactly what I imagined, {1.SimFirstName}, but who says frogs can't compromise? Will you marry me and see where this goes? After all, we only get one chance at true love to break the curse!"--></T>
+          </V>
+        </U>
+        <L n="possible_responses">
+          <U>
+            <U n="item">
+              <L n="loot">
+                <T>479098<!--LootActions: loot_PowerShifts_Frog_StartEngagement--></T>
+              </L>
+              <T n="text">0xE6EFF4F2<!--String: "Let's give this a chance and see where it takes us!"--></T>
+            </U>
+          </U>
+          <U>
+            <U n="item">
+              <L n="loot">
+                <T>479097<!--LootActions: loot_PowerShifts_Frog_BackToFrog_NotNobleTargetSim--></T>
+                <T>479465<!--LootActions: loot_PowerShifts_Frog_BackToFrog_NobleTargetSim--></T>
+              </L>
+              <T n="text">0x4FC4962<!--String: "No thanks! I'm not ready to leap into marriage."--></T>
+            </U>
+          </U>
+        </L>
+        <E n="subject">TargetSim</E>
+        <E n="target_participant_type">Actor</E>
+      </U>
+    </V>
+  </L>
+</I>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Tattooing_RecipientUniformBuff_TargetSim" s="390252">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">390248<!--Buff: buff_TattooingTable_Hidden_RecipientUniform_LowerBody--></T>
+        </U>
+        <E n="subject">TargetSim</E>
+        <L n="tests">
+          <L>
+            <V t="cas_catalog_object_body_type">
+              <U n="cas_catalog_object_body_type">
+                <L n="body_types">
+                  <E>TATTOO_LEG_RIGHT</E>
+                  <E>TATTOO_LEG_LEFT</E>
+                </L>
+                <E n="participant">PickedItemId</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">390249<!--Buff: buff_TattooingTable_Hidden_RecipientUniform_UpperBody--></T>
+        </U>
+        <E n="subject">TargetSim</E>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <L n="blacklist">
+                  <T>390248<!--Buff: buff_TattooingTable_Hidden_RecipientUniform_LowerBody--></T>
+                </L>
+                <E n="subject">TargetSim</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

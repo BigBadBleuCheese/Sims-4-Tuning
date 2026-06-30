@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_GrimRework_DontWakeLlama_StopGame" s="424242">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">130067<!--Buff: buff_Object_DontWakeLlama_StopPlaying--></T>
+        </U>
+        <E n="subject">OtherSimsInteractingWithTarget</E>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">130067<!--Buff: buff_Object_DontWakeLlama_StopPlaying--></T>
+        </U>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="object_definition_criteria">
+        <U n="object_definition_criteria">
+          <V n="identity_test" t="tags">
+            <U n="tags">
+              <L n="tag_set">
+                <E>Func_DontWakeLlama</E>
+              </L>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="buff">
+        <U n="buff">
+          <V n="whitelist" t="enabled">
+            <L n="enabled">
+              <T>424238<!--Buff: buff_GrimRework_Hidden_Challenger_ReactionPrevention--></T>
+              <T>423389<!--Buff: buff_GrimRework_Hidden_Grim_ChallengerTracker--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <V n="whitelist" t="enabled">
+            <L n="enabled">
+              <T>402105<!--Buff: buff_GrimRework_Hidden_Grim_ChallengeFlag_FromSocial--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+      <V t="object_definition_criteria">
+        <U n="object_definition_criteria">
+          <V n="identity_test" t="tags">
+            <U n="tags">
+              <L n="tag_set">
+                <E>Func_DontWakeLlama</E>
+              </L>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

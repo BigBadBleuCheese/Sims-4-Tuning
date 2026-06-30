@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="RandomWeightedLoot" i="action" m="interactions.utils.loot" n="randomWeightedLoot_GhostPowers_MediumScare_PossessInstrument" s="393495">
+  <L n="random_loot_actions">
+    <U>
+      <V n="action" t="reaction">
+        <U n="reaction">
+          <V n="si_reaction" t="enabled">
+            <U n="enabled">
+              <T n="affordance">393493<!--SuperInteraction: reactions_Ghosts_ScaredReaction_Runaway_PossessInstrument--></T>
+              <E n="affordance_priority">Critical</E>
+              <V n="affordance_run_priority" t="enabled">
+                <E n="enabled">Critical</E>
+              </V>
+              <V n="affordance_target" t="disabled" />
+            </U>
+          </V>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">2</T>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="reaction">
+        <U n="reaction">
+          <V n="si_reaction" t="enabled">
+            <U n="enabled">
+              <T n="affordance">393498<!--SuperInteraction: reactions_Ghosts_ScaredReaction_LoseBladder_ObjectManipulation--></T>
+              <E n="affordance_priority">Critical</E>
+              <V n="affordance_run_priority" t="enabled">
+                <E n="enabled">Critical</E>
+              </V>
+              <V n="affordance_target" t="disabled" />
+            </U>
+          </V>
+        </U>
+      </V>
+      <U n="weight">
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="buff">
+                  <U n="buff">
+                    <V n="whitelist" t="enabled">
+                      <L n="enabled">
+                        <T>393521<!--Buff: buff_GhostPowers_Generic_ScaredMyPants--></T>
+                      </L>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">393502<!--LootActions: loot_GhostPowers_WitnessReactions_PossessInstrument_Scared--></T>
+      </V>
+      <U n="weight">
+        <T n="base_value">2</T>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">393503<!--LootActions: loot_GhostPowers_WitnessReactions_PossessInstrument_Tense--></T>
+      </V>
+      <U n="weight">
+        <T n="base_value">2</T>
+      </U>
+    </U>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>442916<!--Buff: Apothecary_CuresAndElixirs_Buff_AuraShield--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

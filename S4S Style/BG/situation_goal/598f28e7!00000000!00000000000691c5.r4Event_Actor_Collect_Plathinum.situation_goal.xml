@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalActor" i="situation_goal" m="situations.situation_goal_actor" n="r4Event_Actor_Collect_Plathinum" s="430533">
+  <T n="_cooldown">0</T>
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T p="InGame\UI\Icons\LiveEvents\AnniversaryEvent\TNS\Objects\TNS_collectMetalPlathnum.png" n="enabled">2f7d0004:00000000:32c5f4615601e6e9</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x3F54E0E8<!--String: "Collect Plathinum"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0x18F87300<!--String: "To find Plathinum, search for rocks or dirt mounds ready to be dug up. Look closely for when they appear, or speed up the process of rock formation by using Ultra Speed from the time controls.\n\nExplore areas like parks, and seek out rocks with crystals or dirt mounds, and select Dig.\n\nA great place to look is Desert Bloom Park in Oasis Springs!\n\n<i>(+35 Event Points)</i>"--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>447711<!--SituationGoalLootActions: liveEvent_GoalLoot_CompleteQuestGoal--></T>
+  </L>
+  <V n="_goal_test" t="inventory">
+    <U n="inventory">
+      <V n="contents_check" t="has_object_with_def">
+        <U n="has_object_with_def">
+          <T n="definition">28772</T>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="_post_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+      </U>
+    </V>
+  </L>
+  <T n="_score">0</T>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+  <V n="goal_completion_notification" t="enabled">
+    <U n="enabled">
+      <V n="icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T p="InGame\UI\Icons\LiveEvents\AnniversaryEvent\TNS\Objects\TNS_collectMetalPlathnum.png" n="key">2f7d0004:00000000:32c5f4615601e6e9</T>
+          </U>
+        </V>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0x94132ADE<!--String: "{0.SimFirstName} has a piece of Plathinum!\n\nPlathinum forms magic and splendor in energy, and it's one of the needed parts used to build a time travel component."--></T>
+      </V>
+      <V n="title" t="enabled">
+        <T n="enabled">0x9102BFB8<!--String: "Plathinum Obtained!"--></T>
+      </V>
+    </U>
+  </V>
+  <V n="tutorial_tip_group" t="disabled" />
+</I>

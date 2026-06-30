@@ -1,0 +1,1286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="GameObject" i="object" m="objects.game_object" n="object_PressureCooker" s="338346">
+  <U n="_components">
+    <V n="affordance_tuning" t="enabled">
+      <U n="enabled">
+        <L n="affordance_map">
+          <U>
+            <T n="key">74457<!--ImmediateSuperInteraction: fire_ReplaceBurntObject--></T>
+            <U n="value">
+              <L n="basic_extras">
+                <V t="state_change">
+                  <U n="state_change">
+                    <V n="new_value" t="single_value">
+                      <U n="single_value">
+                        <T n="new_value">350562<!--CommodityBasedObjectStateValue: pressureCooker_Timer_Off--></T>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </U>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V n="crafting_station" t="enabled">
+      <U n="enabled">
+        <L n="crafting_station_types">
+          <T>350525<!--CraftingObjectType: craftingObjectType_PressureCooker--></T>
+        </L>
+      </U>
+    </V>
+    <V n="focus" t="enabled">
+      <U n="enabled">
+        <V n="_focus_score" t="globally">
+          <U n="globally">
+            <E n="base">LOW</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V n="inventory_item" t="enabled">
+      <U n="enabled">
+        <T n="can_place_in_world">False</T>
+        <V n="no_carry_add_to_sim_inventory_affordances" t="OVERRIDE">
+          <L n="OVERRIDE">
+            <T>342468<!--SuperInteraction: si_SwipeIntoSimInventory_PressureCooker--></T>
+          </L>
+        </V>
+        <T n="skip_carry_pose">True</T>
+        <L n="valid_inventory_types">
+          <E>SIM</E>
+        </L>
+      </U>
+    </V>
+    <V n="retail_component" t="enabled">
+      <V n="enabled" t="reference">
+        <T n="reference">115301<!--RetailComponent: retailComponent_Default_LowAppeal--></T>
+      </V>
+    </V>
+    <V n="state" t="enabled">
+      <U n="enabled">
+        <V n="delinquency_state_changes" t="enabled">
+          <L n="enabled">
+            <U>
+              <E n="key">POWER</E>
+              <L n="value">
+                <T>350562<!--CommodityBasedObjectStateValue: pressureCooker_Timer_Off--></T>
+              </L>
+            </U>
+          </L>
+        </V>
+        <L n="state_triggers">
+          <U>
+            <L n="at_states">
+              <T>181268<!--CommodityBasedObjectStateValue: servings_GrandEmpty--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>350562<!--CommodityBasedObjectStateValue: pressureCooker_Timer_Off--></T>
+                <T>15189<!--CommodityBasedObjectStateValue: Freshness_Fresh--></T>
+                <T>494185<!--ObjectStateValue: Generic_FreshnessDecay_Values_Off--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>15076<!--CommodityBasedObjectStateValue: Brokenness_Broken--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>15080<!--ObjectStateValue: BrokenState_Broken--></T>
+                <T>350562<!--CommodityBasedObjectStateValue: pressureCooker_Timer_Off--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>15078<!--CommodityBasedObjectStateValue: Brokenness_Unbroken--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>15081<!--ObjectStateValue: BrokenState_Unbroken--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>15132<!--CommodityBasedObjectStateValue: Dirty_Clean--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>15130<!--ObjectStateValue: DirtyState_Clean--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>15133<!--CommodityBasedObjectStateValue: Dirty_Dirty--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>15131<!--ObjectStateValue: DirtyState_Dirty--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>350563<!--CommodityBasedObjectStateValue: pressureCooker_Timer_Vented--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>494184<!--ObjectStateValue: Generic_FreshnessDecay_Values_On--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>77532<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Replace--></T>
+            </L>
+            <L n="loot_actions" />
+            <L n="prohibited_states" />
+            <V n="set_on_children" t="leave_children_alone" />
+            <V n="set_random_state" t="No_random_states" />
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>39737<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Not_Burning--></T>
+              </L>
+            </V>
+            <L n="statistic_operations" />
+            <V n="trigger_chance" t="disabled" />
+            <E n="trigger_operation">AND</E>
+          </U>
+        </L>
+        <L n="states">
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">15080<!--ObjectStateValue: BrokenState_Broken--></T>
+                <U n="value">
+                  <V n="vfx_state" t="apply_new_value">
+                    <V n="apply_new_value" t="start_vfx">
+                      <V n="start_vfx" t="single_effect">
+                        <U n="single_effect">
+                          <T n="effect_name">ep15_pressurecooker_broken</T>
+                          <V n="joint_name" t="Current_Position" />
+                          <T n="play_immediate">True</T>
+                        </U>
+                      </V>
+                    </V>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">15081<!--ObjectStateValue: BrokenState_Unbroken--></T>
+                <U n="value">
+                  <V n="vfx_state" t="apply_new_value" />
+                </U>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">15081<!--ObjectStateValue: BrokenState_Unbroken--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">15078<!--CommodityBasedObjectStateValue: Brokenness_Unbroken--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">181267<!--CommodityBasedObjectStateValue: servings_GrandUntouched--></T>
+                <U n="value">
+                  <V n="geometry_state" t="apply_new_value">
+                    <V n="apply_new_value" t="set_to_custom_value">
+                      <T n="set_to_custom_value">full</T>
+                    </V>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">181268<!--CommodityBasedObjectStateValue: servings_GrandEmpty--></T>
+                <U n="value">
+                  <V n="geometry_state" t="apply_new_value">
+                    <V n="apply_new_value" t="set_to_custom_value">
+                      <T n="set_to_custom_value">empty</T>
+                    </V>
+                  </V>
+                </U>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">181268<!--CommodityBasedObjectStateValue: servings_GrandEmpty--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">15132<!--CommodityBasedObjectStateValue: Dirty_Clean--></T>
+              </U>
+              <U>
+                <T n="key">15133<!--CommodityBasedObjectStateValue: Dirty_Dirty--></T>
+              </U>
+              <U>
+                <T n="key">15134<!--CommodityBasedObjectStateValue: Dirty_Neutral--></T>
+              </U>
+              <U>
+                <T n="key">15135<!--CommodityBasedObjectStateValue: Dirty_VeryDirty--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">15132<!--CommodityBasedObjectStateValue: Dirty_Clean--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">101103<!--ObjectStateValue: DirtyState_Neutral--></T>
+              </U>
+              <U>
+                <T n="key">15130<!--ObjectStateValue: DirtyState_Clean--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value" />
+                </U>
+              </U>
+              <U>
+                <T n="key">15131<!--ObjectStateValue: DirtyState_Dirty--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">Dirty</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">15130<!--ObjectStateValue: DirtyState_Clean--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">15304<!--CommodityBasedObjectStateValue: Quality_Normal--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">15189<!--CommodityBasedObjectStateValue: Freshness_Fresh--></T>
+                <U n="value">
+                  <V n="vfx_state" t="apply_new_value" />
+                </U>
+              </U>
+              <U>
+                <T n="key">15190<!--CommodityBasedObjectStateValue: Freshness_Spoiled--></T>
+                <U n="value">
+                  <V n="vfx_state" t="apply_new_value">
+                    <V n="apply_new_value" t="start_vfx">
+                      <V n="start_vfx" t="single_effect">
+                        <U n="single_effect">
+                          <T n="effect_name">s40_drinkStink</T>
+                          <V n="joint_name" t="Slot">
+                            <T n="Slot">_FX_light</T>
+                          </V>
+                        </U>
+                      </V>
+                    </V>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">15191<!--CommodityBasedObjectStateValue: Freshness_Untouched--></T>
+                <U n="value">
+                  <V n="vfx_state" t="apply_new_value" />
+                </U>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">15189<!--CommodityBasedObjectStateValue: Freshness_Fresh--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">185122<!--ObjectStateValue: object_Rain_Outside--></T>
+              </U>
+              <U>
+                <T n="key">185125<!--ObjectStateValue: object_Rain_Inside--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">185125<!--ObjectStateValue: object_Rain_Inside--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">235497<!--ObjectStateValue: ecoFootprint_Object_AcidRain_Outside--></T>
+              </U>
+              <U>
+                <T n="key">235498<!--ObjectStateValue: ecoFootprint_Object_AcidRain_Inside--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">235498<!--ObjectStateValue: ecoFootprint_Object_AcidRain_Inside--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states" />
+            <V n="default_value" t="reference">
+              <T n="reference">26211<!--ObjectStateValue: FreshChef_UnlockFreshness--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">323882<!--ObjectStateValue: genericVariant_Values_0--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">rice</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">323883<!--ObjectStateValue: genericVariant_Values_1--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">soupy</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">323882<!--ObjectStateValue: genericVariant_Values_0--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">348145<!--CommodityBasedObjectStateValue: upgrade_Completed_PressureCooker_SelfCleaning--></T>
+              </U>
+              <U>
+                <T n="key">348218<!--CommodityBasedObjectStateValue: upgrade_NotStarted_PressureCooker_SelfCleaning--></T>
+              </U>
+              <U>
+                <T n="key">348220<!--CommodityBasedObjectStateValue: upgrade_Partial_PressureCooker_SelfCleaning--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">348218<!--CommodityBasedObjectStateValue: upgrade_NotStarted_PressureCooker_SelfCleaning--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">348146<!--CommodityBasedObjectStateValue: upgrade_Completed_PressureCooker_Unbreakable--></T>
+              </U>
+              <U>
+                <T n="key">348217<!--CommodityBasedObjectStateValue: upgrade_NotStarted_PressureCooker_Unbreakable--></T>
+              </U>
+              <U>
+                <T n="key">348219<!--CommodityBasedObjectStateValue: upgrade_Partial_PressureCooker_Unbreakable--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">348217<!--CommodityBasedObjectStateValue: upgrade_NotStarted_PressureCooker_Unbreakable--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">350562<!--CommodityBasedObjectStateValue: pressureCooker_Timer_Off--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">355210<!--CommodityBasedObjectStateValue: upgrade_PressureCooker_Completed_Autovent--></T>
+              </U>
+              <U>
+                <T n="key">355211<!--CommodityBasedObjectStateValue: upgrade_PressureCooker_NotStarted_Autovent--></T>
+              </U>
+              <U>
+                <T n="key">355212<!--CommodityBasedObjectStateValue: upgrade_PressureCooker_Partial_Autovent--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">355211<!--CommodityBasedObjectStateValue: upgrade_PressureCooker_NotStarted_Autovent--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">355353<!--ObjectStateValue: pressureCooker_VFX_Values_Vent_On--></T>
+              </U>
+              <U>
+                <T n="key">355354<!--ObjectStateValue: pressureCooker_VFX_Values_Vent_Off--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">355354<!--ObjectStateValue: pressureCooker_VFX_Values_Vent_Off--></T>
+            </V>
+            <T n="reset_to_default">True</T>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">131794<!--ObjectStateValue: Kelpto_Stolen_Object--></T>
+              </U>
+              <U>
+                <T n="key">131795<!--ObjectStateValue: Klepto_Not_Stolen_Object--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">131795<!--ObjectStateValue: Klepto_Not_Stolen_Object--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">145940<!--ObjectStateValue: LotTrait_Filthy_0_No--></T>
+              </U>
+              <U>
+                <T n="key">145941<!--ObjectStateValue: LotTrait_Filthy_1_Yes--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">145940<!--ObjectStateValue: LotTrait_Filthy_0_No--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">494184<!--ObjectStateValue: Generic_FreshnessDecay_Values_On--></T>
+              </U>
+              <U>
+                <T n="key">494185<!--ObjectStateValue: Generic_FreshnessDecay_Values_Off--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">494185<!--ObjectStateValue: Generic_FreshnessDecay_Values_Off--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">224553<!--ObjectStateValue: utilities_Power_Consumption_On--></T>
+                <U n="value">
+                  <V n="audio_effect_state" t="leave_unchanged" />
+                  <V n="audio_state" t="leave_unchanged" />
+                  <V n="autonomy_modifiers" t="apply_new_value">
+                    <V n="apply_new_value" t="apply_statistic_modifiers">
+                      <U n="apply_statistic_modifiers">
+                        <L n="autonomy_modifiers" />
+                        <L n="lot_level_statistic_modifiers" />
+                        <L n="lot_statistic_modifiers">
+                          <U>
+                            <V n="modifier" t="multipliers">
+                              <U n="multipliers">
+                                <U n="value">
+                                  <T n="base_value">-0.00694</T>
+                                  <L n="multipliers">
+                                    <U>
+                                      <T n="multiplier">0.75</T>
+                                      <L n="tests">
+                                        <L>
+                                          <V t="zone">
+                                            <U n="zone">
+                                              <U n="zone_tests">
+                                                <V n="zone_modifiers" t="enabled">
+                                                  <U n="enabled">
+                                                    <V n="whitelist" t="specify">
+                                                      <U n="specify">
+                                                        <L n="whitelist">
+                                                          <T>353534<!--ZoneModifier: zoneModifier_Hidden_FuseBox_On--></T>
+                                                        </L>
+                                                      </U>
+                                                    </V>
+                                                  </U>
+                                                </V>
+                                              </U>
+                                            </U>
+                                          </V>
+                                        </L>
+                                      </L>
+                                    </U>
+                                    <U>
+                                      <T n="multiplier">0.8</T>
+                                      <L n="tests">
+                                        <L>
+                                          <V t="statistic">
+                                            <U n="statistic">
+                                              <T n="must_have_stat">False</T>
+                                              <V n="score_to_use" t="user_value">
+                                                <U n="user_value">
+                                                  <T n="highest_level_reached_instead">False</T>
+                                                </U>
+                                              </V>
+                                              <T n="stat">187710<!--Statistic: statistic_Object_Thermostat_LotStat_Setting--></T>
+                                              <V n="threshold" t="value_threshold">
+                                                <U n="value_threshold">
+                                                  <E n="comparison">LESS_OR_EQUAL</E>
+                                                  <T n="value">-1</T>
+                                                </U>
+                                              </V>
+                                              <E n="who">Lot</E>
+                                            </U>
+                                          </V>
+                                        </L>
+                                      </L>
+                                    </U>
+                                  </L>
+                                </U>
+                              </U>
+                            </V>
+                            <T n="statistic">233027<!--Commodity: commodity_Utilities_Power--></T>
+                          </U>
+                        </L>
+                        <U n="periodic_statistic_change">
+                          <T n="interval">10</T>
+                          <L n="operations" />
+                        </U>
+                      </U>
+                    </V>
+                  </V>
+                  <V n="awareness" t="leave_unchanged" />
+                  <V n="broadcaster" t="leave_unchanged" />
+                  <V n="change_value" t="disabled" />
+                  <V n="dyed" t="leave_unchanged" />
+                  <V n="environment_score" t="leave_unchanged" />
+                  <V n="flowing_puddle_enabled" t="leave_unchanged" />
+                  <V n="focus_score" t="leave_unchanged" />
+                  <V n="geometry_state" t="leave_unchanged" />
+                  <V n="geometry_state_override" t="leave_unchanged" />
+                  <V n="glow" t="leave_unchanged" />
+                  <V n="grubby" t="leave_unchanged" />
+                  <V n="light_dimmer" t="leave_unchanged" />
+                  <V n="light_haunted_state" t="leave_unchanged" />
+                  <V n="light_material_states" t="leave_unchanged" />
+                  <V n="live_drag_state" t="leave_unchanged" />
+                  <V n="lot_statistic_modifiers" t="leave_unchanged" />
+                  <V n="mannequin_pose" t="leave_unchanged" />
+                  <V n="material_state" t="leave_unchanged" />
+                  <V n="material_variant" t="leave_unchanged" />
+                  <V n="messy_face" t="leave_unchanged" />
+                  <V n="model" t="leave_unchanged" />
+                  <V n="model_suite_state_index" t="leave_unchanged" />
+                  <V n="multicolor" t="leave_unchanged" />
+                  <V n="opacity" t="leave_unchanged" />
+                  <V n="painting_reveal_level" t="leave_unchanged" />
+                  <V n="painting_state" t="leave_unchanged" />
+                  <V n="periodic_loot" t="leave_unchanged" />
+                  <V n="pregnancy_progress" t="leave_unchanged" />
+                  <V n="replace_object" t="disabled" />
+                  <V n="route_event" t="leave_unchanged" />
+                  <V n="scale" t="leave_unchanged" />
+                  <V n="scratched" t="leave_unchanged" />
+                  <V n="set_fire" t="leave_unchanged" />
+                  <V n="singed" t="leave_unchanged" />
+                  <V n="situation" t="leave_unchanged" />
+                  <V n="slots" t="leave_unchanged" />
+                  <V n="tan_level" t="leave_unchanged" />
+                  <V n="tint" t="leave_unchanged" />
+                  <V n="toggle_footprint" t="leave_unchanged" />
+                  <V n="transient" t="leave_unchanged" />
+                  <V n="ui_metadata" t="leave_unchanged" />
+                  <V n="utility_modifiers" t="leave_unchanged" />
+                  <V n="vfx_state" t="leave_unchanged" />
+                  <V n="vfx_state_state" t="leave_unchanged" />
+                  <V n="video_playlist" t="leave_unchanged" />
+                  <V n="video_playlist_looping" t="leave_unchanged" />
+                  <V n="visibility" t="leave_unchanged" />
+                  <V n="visibility_flags" t="leave_unchanged" />
+                  <V n="voice_actor" t="leave_unchanged" />
+                  <V n="walkstyle" t="leave_unchanged" />
+                  <V n="wind_speed_level" t="leave_unchanged" />
+                </U>
+              </U>
+              <U>
+                <T n="key">224564<!--ObjectStateValue: utilities_Power_Consumption_Off--></T>
+                <U n="value">
+                  <V n="audio_effect_state" t="leave_unchanged" />
+                  <V n="audio_state" t="leave_unchanged" />
+                  <V n="autonomy_modifiers" t="apply_new_value">
+                    <V n="apply_new_value" t="no_statistic_to_apply" />
+                  </V>
+                  <V n="awareness" t="leave_unchanged" />
+                  <V n="broadcaster" t="leave_unchanged" />
+                  <V n="change_value" t="disabled" />
+                  <V n="dyed" t="leave_unchanged" />
+                  <V n="environment_score" t="leave_unchanged" />
+                  <V n="flowing_puddle_enabled" t="leave_unchanged" />
+                  <V n="focus_score" t="leave_unchanged" />
+                  <V n="geometry_state" t="leave_unchanged" />
+                  <V n="geometry_state_override" t="leave_unchanged" />
+                  <V n="glow" t="leave_unchanged" />
+                  <V n="grubby" t="leave_unchanged" />
+                  <V n="light_dimmer" t="leave_unchanged" />
+                  <V n="light_haunted_state" t="leave_unchanged" />
+                  <V n="light_material_states" t="leave_unchanged" />
+                  <V n="live_drag_state" t="leave_unchanged" />
+                  <V n="lot_statistic_modifiers" t="leave_unchanged" />
+                  <V n="mannequin_pose" t="leave_unchanged" />
+                  <V n="material_state" t="leave_unchanged" />
+                  <V n="material_variant" t="leave_unchanged" />
+                  <V n="messy_face" t="leave_unchanged" />
+                  <V n="model" t="leave_unchanged" />
+                  <V n="model_suite_state_index" t="leave_unchanged" />
+                  <V n="multicolor" t="leave_unchanged" />
+                  <V n="opacity" t="leave_unchanged" />
+                  <V n="painting_reveal_level" t="leave_unchanged" />
+                  <V n="painting_state" t="leave_unchanged" />
+                  <V n="periodic_loot" t="leave_unchanged" />
+                  <V n="pregnancy_progress" t="leave_unchanged" />
+                  <V n="replace_object" t="disabled" />
+                  <V n="route_event" t="leave_unchanged" />
+                  <V n="scale" t="leave_unchanged" />
+                  <V n="scratched" t="leave_unchanged" />
+                  <V n="set_fire" t="leave_unchanged" />
+                  <V n="singed" t="leave_unchanged" />
+                  <V n="situation" t="leave_unchanged" />
+                  <V n="slots" t="leave_unchanged" />
+                  <V n="tan_level" t="leave_unchanged" />
+                  <V n="tint" t="leave_unchanged" />
+                  <V n="toggle_footprint" t="leave_unchanged" />
+                  <V n="transient" t="leave_unchanged" />
+                  <V n="ui_metadata" t="leave_unchanged" />
+                  <V n="utility_modifiers" t="leave_unchanged" />
+                  <V n="vfx_state" t="leave_unchanged" />
+                  <V n="vfx_state_state" t="leave_unchanged" />
+                  <V n="video_playlist" t="leave_unchanged" />
+                  <V n="video_playlist_looping" t="leave_unchanged" />
+                  <V n="visibility" t="leave_unchanged" />
+                  <V n="visibility_flags" t="leave_unchanged" />
+                  <V n="voice_actor" t="leave_unchanged" />
+                  <V n="walkstyle" t="leave_unchanged" />
+                  <V n="wind_speed_level" t="leave_unchanged" />
+                </U>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">224564<!--ObjectStateValue: utilities_Power_Consumption_Off--></T>
+            </V>
+            <T n="reset_on_load_if_time_passes">False</T>
+            <T n="reset_to_default">False</T>
+            <V n="tested_states_on_add" t="disabled" />
+            <V n="tested_states_on_location_changed" t="disabled" />
+            <V n="tested_states_on_reset" t="disabled" />
+            <V n="tested_states_on_save" t="disabled" />
+            <V n="tested_states_post_load" t="disabled" />
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">39611<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change--></T>
+                <U n="value">
+                  <V n="audio_effect_state" t="leave_unchanged" />
+                  <V n="audio_state" t="leave_unchanged" />
+                  <V n="autonomy_modifiers" t="leave_unchanged" />
+                  <V n="awareness" t="leave_unchanged" />
+                  <V n="broadcaster" t="leave_unchanged" />
+                  <V n="change_value" t="disabled" />
+                  <V n="dyed" t="leave_unchanged" />
+                  <V n="environment_score" t="leave_unchanged" />
+                  <V n="flowing_puddle_enabled" t="leave_unchanged" />
+                  <V n="focus_score" t="leave_unchanged" />
+                  <V n="geometry_state" t="leave_unchanged" />
+                  <V n="geometry_state_override" t="leave_unchanged" />
+                  <V n="glow" t="leave_unchanged" />
+                  <V n="grubby" t="leave_unchanged" />
+                  <V n="light_dimmer" t="leave_unchanged" />
+                  <V n="light_haunted_state" t="leave_unchanged" />
+                  <V n="light_material_states" t="leave_unchanged" />
+                  <V n="live_drag_state" t="leave_unchanged" />
+                  <V n="lot_statistic_modifiers" t="leave_unchanged" />
+                  <V n="mannequin_pose" t="leave_unchanged" />
+                  <V n="material_state" t="leave_unchanged" />
+                  <V n="material_variant" t="leave_unchanged" />
+                  <V n="messy_face" t="leave_unchanged" />
+                  <V n="model" t="leave_unchanged" />
+                  <V n="model_suite_state_index" t="leave_unchanged" />
+                  <V n="multicolor" t="leave_unchanged" />
+                  <V n="opacity" t="leave_unchanged" />
+                  <V n="painting_reveal_level" t="leave_unchanged" />
+                  <V n="painting_state" t="leave_unchanged" />
+                  <V n="periodic_loot" t="leave_unchanged" />
+                  <V n="pregnancy_progress" t="leave_unchanged" />
+                  <V n="replace_object" t="disabled" />
+                  <V n="route_event" t="leave_unchanged" />
+                  <V n="scale" t="leave_unchanged" />
+                  <V n="scratched" t="leave_unchanged" />
+                  <V n="set_fire" t="leave_unchanged" />
+                  <V n="singed" t="leave_unchanged" />
+                  <V n="situation" t="leave_unchanged" />
+                  <V n="slots" t="leave_unchanged" />
+                  <V n="tan_level" t="leave_unchanged" />
+                  <V n="tint" t="leave_unchanged" />
+                  <V n="toggle_footprint" t="leave_unchanged" />
+                  <V n="transient" t="leave_unchanged" />
+                  <V n="ui_metadata" t="leave_unchanged" />
+                  <V n="utility_modifiers" t="leave_unchanged" />
+                  <V n="vfx_state" t="leave_unchanged" />
+                  <V n="vfx_state_state" t="leave_unchanged" />
+                  <V n="video_playlist" t="leave_unchanged" />
+                  <V n="video_playlist_looping" t="leave_unchanged" />
+                  <V n="visibility" t="leave_unchanged" />
+                  <V n="visibility_flags" t="leave_unchanged" />
+                  <V n="voice_actor" t="leave_unchanged" />
+                  <V n="walkstyle" t="leave_unchanged" />
+                  <V n="wind_speed_level" t="leave_unchanged" />
+                </U>
+              </U>
+              <U>
+                <T n="key">39736<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Burning--></T>
+                <U n="value">
+                  <V n="audio_effect_state" t="leave_unchanged" />
+                  <V n="audio_state" t="leave_unchanged" />
+                  <V n="autonomy_modifiers" t="leave_unchanged" />
+                  <V n="awareness" t="leave_unchanged" />
+                  <V n="broadcaster" t="leave_unchanged" />
+                  <V n="change_value" t="disabled" />
+                  <V n="dyed" t="leave_unchanged" />
+                  <V n="environment_score" t="leave_unchanged" />
+                  <V n="flowing_puddle_enabled" t="leave_unchanged" />
+                  <V n="focus_score" t="leave_unchanged" />
+                  <V n="geometry_state" t="leave_unchanged" />
+                  <V n="geometry_state_override" t="leave_unchanged" />
+                  <V n="glow" t="leave_unchanged" />
+                  <V n="grubby" t="leave_unchanged" />
+                  <V n="light_dimmer" t="leave_unchanged" />
+                  <V n="light_haunted_state" t="leave_unchanged" />
+                  <V n="light_material_states" t="leave_unchanged" />
+                  <V n="live_drag_state" t="leave_unchanged" />
+                  <V n="lot_statistic_modifiers" t="leave_unchanged" />
+                  <V n="mannequin_pose" t="leave_unchanged" />
+                  <V n="material_state" t="leave_unchanged" />
+                  <V n="material_variant" t="leave_unchanged" />
+                  <V n="messy_face" t="leave_unchanged" />
+                  <V n="model" t="leave_unchanged" />
+                  <V n="model_suite_state_index" t="leave_unchanged" />
+                  <V n="multicolor" t="leave_unchanged" />
+                  <V n="opacity" t="leave_unchanged" />
+                  <V n="painting_reveal_level" t="leave_unchanged" />
+                  <V n="painting_state" t="leave_unchanged" />
+                  <V n="periodic_loot" t="leave_unchanged" />
+                  <V n="pregnancy_progress" t="leave_unchanged" />
+                  <V n="replace_object" t="disabled" />
+                  <V n="route_event" t="leave_unchanged" />
+                  <V n="scale" t="leave_unchanged" />
+                  <V n="scratched" t="leave_unchanged" />
+                  <V n="set_fire" t="leave_unchanged" />
+                  <V n="singed" t="leave_unchanged" />
+                  <V n="situation" t="leave_unchanged" />
+                  <V n="slots" t="leave_unchanged" />
+                  <V n="tan_level" t="leave_unchanged" />
+                  <V n="tint" t="leave_unchanged" />
+                  <V n="toggle_footprint" t="leave_unchanged" />
+                  <V n="transient" t="leave_unchanged" />
+                  <V n="ui_metadata" t="leave_unchanged" />
+                  <V n="utility_modifiers" t="leave_unchanged" />
+                  <V n="vfx_state" t="leave_unchanged" />
+                  <V n="vfx_state_state" t="leave_unchanged" />
+                  <V n="video_playlist" t="leave_unchanged" />
+                  <V n="video_playlist_looping" t="leave_unchanged" />
+                  <V n="visibility" t="leave_unchanged" />
+                  <V n="visibility_flags" t="leave_unchanged" />
+                  <V n="voice_actor" t="leave_unchanged" />
+                  <V n="walkstyle" t="leave_unchanged" />
+                  <V n="wind_speed_level" t="leave_unchanged" />
+                </U>
+              </U>
+              <U>
+                <T n="key">39737<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Not_Burning--></T>
+                <U n="value">
+                  <V n="audio_effect_state" t="leave_unchanged" />
+                  <V n="audio_state" t="leave_unchanged" />
+                  <V n="autonomy_modifiers" t="leave_unchanged" />
+                  <V n="awareness" t="leave_unchanged" />
+                  <V n="broadcaster" t="leave_unchanged" />
+                  <V n="change_value" t="disabled" />
+                  <V n="dyed" t="leave_unchanged" />
+                  <V n="environment_score" t="leave_unchanged" />
+                  <V n="flowing_puddle_enabled" t="leave_unchanged" />
+                  <V n="focus_score" t="leave_unchanged" />
+                  <V n="geometry_state" t="leave_unchanged" />
+                  <V n="geometry_state_override" t="leave_unchanged" />
+                  <V n="glow" t="leave_unchanged" />
+                  <V n="grubby" t="leave_unchanged" />
+                  <V n="light_dimmer" t="leave_unchanged" />
+                  <V n="light_haunted_state" t="leave_unchanged" />
+                  <V n="light_material_states" t="leave_unchanged" />
+                  <V n="live_drag_state" t="leave_unchanged" />
+                  <V n="lot_statistic_modifiers" t="leave_unchanged" />
+                  <V n="mannequin_pose" t="leave_unchanged" />
+                  <V n="material_state" t="leave_unchanged" />
+                  <V n="material_variant" t="leave_unchanged" />
+                  <V n="messy_face" t="leave_unchanged" />
+                  <V n="model" t="leave_unchanged" />
+                  <V n="model_suite_state_index" t="leave_unchanged" />
+                  <V n="multicolor" t="leave_unchanged" />
+                  <V n="opacity" t="leave_unchanged" />
+                  <V n="painting_reveal_level" t="leave_unchanged" />
+                  <V n="painting_state" t="leave_unchanged" />
+                  <V n="periodic_loot" t="leave_unchanged" />
+                  <V n="pregnancy_progress" t="leave_unchanged" />
+                  <V n="replace_object" t="disabled" />
+                  <V n="route_event" t="leave_unchanged" />
+                  <V n="scale" t="leave_unchanged" />
+                  <V n="scratched" t="leave_unchanged" />
+                  <V n="set_fire" t="leave_unchanged" />
+                  <V n="singed" t="leave_unchanged" />
+                  <V n="situation" t="leave_unchanged" />
+                  <V n="slots" t="leave_unchanged" />
+                  <V n="tan_level" t="leave_unchanged" />
+                  <V n="tint" t="leave_unchanged" />
+                  <V n="toggle_footprint" t="leave_unchanged" />
+                  <V n="transient" t="leave_unchanged" />
+                  <V n="ui_metadata" t="leave_unchanged" />
+                  <V n="utility_modifiers" t="leave_unchanged" />
+                  <V n="vfx_state" t="leave_unchanged" />
+                  <V n="vfx_state_state" t="leave_unchanged" />
+                  <V n="video_playlist" t="leave_unchanged" />
+                  <V n="video_playlist_looping" t="leave_unchanged" />
+                  <V n="visibility" t="leave_unchanged" />
+                  <V n="visibility_flags" t="leave_unchanged" />
+                  <V n="voice_actor" t="leave_unchanged" />
+                  <V n="walkstyle" t="leave_unchanged" />
+                  <V n="wind_speed_level" t="leave_unchanged" />
+                </U>
+              </U>
+              <U>
+                <T n="key">77532<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Replace--></T>
+                <U n="value">
+                  <V n="audio_effect_state" t="leave_unchanged" />
+                  <V n="audio_state" t="leave_unchanged" />
+                  <V n="autonomy_modifiers" t="leave_unchanged" />
+                  <V n="awareness" t="leave_unchanged" />
+                  <V n="broadcaster" t="leave_unchanged" />
+                  <V n="change_value" t="disabled" />
+                  <V n="dyed" t="leave_unchanged" />
+                  <V n="environment_score" t="leave_unchanged" />
+                  <V n="flowing_puddle_enabled" t="leave_unchanged" />
+                  <V n="focus_score" t="leave_unchanged" />
+                  <V n="geometry_state" t="leave_unchanged" />
+                  <V n="geometry_state_override" t="leave_unchanged" />
+                  <V n="glow" t="leave_unchanged" />
+                  <V n="grubby" t="leave_unchanged" />
+                  <V n="light_dimmer" t="leave_unchanged" />
+                  <V n="light_haunted_state" t="leave_unchanged" />
+                  <V n="light_material_states" t="leave_unchanged" />
+                  <V n="live_drag_state" t="leave_unchanged" />
+                  <V n="lot_statistic_modifiers" t="leave_unchanged" />
+                  <V n="mannequin_pose" t="leave_unchanged" />
+                  <V n="material_state" t="leave_unchanged" />
+                  <V n="material_variant" t="leave_unchanged" />
+                  <V n="messy_face" t="leave_unchanged" />
+                  <V n="model" t="leave_unchanged" />
+                  <V n="model_suite_state_index" t="leave_unchanged" />
+                  <V n="multicolor" t="leave_unchanged" />
+                  <V n="opacity" t="leave_unchanged" />
+                  <V n="painting_reveal_level" t="leave_unchanged" />
+                  <V n="painting_state" t="leave_unchanged" />
+                  <V n="periodic_loot" t="leave_unchanged" />
+                  <V n="pregnancy_progress" t="leave_unchanged" />
+                  <V n="replace_object" t="disabled" />
+                  <V n="route_event" t="leave_unchanged" />
+                  <V n="scale" t="leave_unchanged" />
+                  <V n="scratched" t="leave_unchanged" />
+                  <V n="set_fire" t="leave_unchanged" />
+                  <V n="singed" t="leave_unchanged" />
+                  <V n="situation" t="leave_unchanged" />
+                  <V n="slots" t="leave_unchanged" />
+                  <V n="tan_level" t="leave_unchanged" />
+                  <V n="tint" t="leave_unchanged" />
+                  <V n="toggle_footprint" t="leave_unchanged" />
+                  <V n="transient" t="leave_unchanged" />
+                  <V n="ui_metadata" t="leave_unchanged" />
+                  <V n="utility_modifiers" t="leave_unchanged" />
+                  <V n="vfx_state" t="leave_unchanged" />
+                  <V n="vfx_state_state" t="leave_unchanged" />
+                  <V n="video_playlist" t="leave_unchanged" />
+                  <V n="video_playlist_looping" t="leave_unchanged" />
+                  <V n="visibility" t="leave_unchanged" />
+                  <V n="visibility_flags" t="leave_unchanged" />
+                  <V n="voice_actor" t="leave_unchanged" />
+                  <V n="walkstyle" t="leave_unchanged" />
+                  <V n="wind_speed_level" t="leave_unchanged" />
+                </U>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">39737<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Not_Burning--></T>
+            </V>
+            <T n="reset_on_load_if_time_passes">False</T>
+            <T n="reset_to_default">False</T>
+            <V n="tested_states_on_add" t="disabled" />
+            <V n="tested_states_on_location_changed" t="disabled" />
+            <V n="tested_states_on_reset" t="disabled" />
+            <V n="tested_states_on_save" t="disabled" />
+            <V n="tested_states_post_load" t="disabled" />
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">35956<!--CommodityBasedObjectStateValue: Materialistic_Admired--></T>
+                <U n="value">
+                  <V n="audio_effect_state" t="leave_unchanged" />
+                  <V n="audio_state" t="leave_unchanged" />
+                  <V n="autonomy_modifiers" t="leave_unchanged" />
+                  <V n="awareness" t="leave_unchanged" />
+                  <V n="broadcaster" t="leave_unchanged" />
+                  <V n="change_value" t="disabled" />
+                  <V n="dyed" t="leave_unchanged" />
+                  <V n="environment_score" t="leave_unchanged" />
+                  <V n="flowing_puddle_enabled" t="leave_unchanged" />
+                  <V n="focus_score" t="leave_unchanged" />
+                  <V n="geometry_state" t="leave_unchanged" />
+                  <V n="geometry_state_override" t="leave_unchanged" />
+                  <V n="glow" t="leave_unchanged" />
+                  <V n="grubby" t="leave_unchanged" />
+                  <V n="light_dimmer" t="leave_unchanged" />
+                  <V n="light_haunted_state" t="leave_unchanged" />
+                  <V n="light_material_states" t="leave_unchanged" />
+                  <V n="live_drag_state" t="leave_unchanged" />
+                  <V n="lot_statistic_modifiers" t="leave_unchanged" />
+                  <V n="mannequin_pose" t="leave_unchanged" />
+                  <V n="material_state" t="leave_unchanged" />
+                  <V n="material_variant" t="leave_unchanged" />
+                  <V n="messy_face" t="leave_unchanged" />
+                  <V n="model" t="leave_unchanged" />
+                  <V n="model_suite_state_index" t="leave_unchanged" />
+                  <V n="multicolor" t="leave_unchanged" />
+                  <V n="opacity" t="leave_unchanged" />
+                  <V n="painting_reveal_level" t="leave_unchanged" />
+                  <V n="painting_state" t="leave_unchanged" />
+                  <V n="periodic_loot" t="leave_unchanged" />
+                  <V n="pregnancy_progress" t="leave_unchanged" />
+                  <V n="replace_object" t="disabled" />
+                  <V n="route_event" t="leave_unchanged" />
+                  <V n="scale" t="leave_unchanged" />
+                  <V n="scratched" t="leave_unchanged" />
+                  <V n="set_fire" t="leave_unchanged" />
+                  <V n="singed" t="leave_unchanged" />
+                  <V n="situation" t="leave_unchanged" />
+                  <V n="slots" t="leave_unchanged" />
+                  <V n="tan_level" t="leave_unchanged" />
+                  <V n="tint" t="leave_unchanged" />
+                  <V n="toggle_footprint" t="leave_unchanged" />
+                  <V n="transient" t="leave_unchanged" />
+                  <V n="ui_metadata" t="leave_unchanged" />
+                  <V n="utility_modifiers" t="leave_unchanged" />
+                  <V n="vfx_state" t="leave_unchanged" />
+                  <V n="vfx_state_state" t="leave_unchanged" />
+                  <V n="video_playlist" t="leave_unchanged" />
+                  <V n="video_playlist_looping" t="leave_unchanged" />
+                  <V n="visibility" t="leave_unchanged" />
+                  <V n="visibility_flags" t="leave_unchanged" />
+                  <V n="voice_actor" t="leave_unchanged" />
+                  <V n="walkstyle" t="leave_unchanged" />
+                  <V n="wind_speed_level" t="leave_unchanged" />
+                </U>
+              </U>
+              <U>
+                <T n="key">35957<!--CommodityBasedObjectStateValue: Materialistic_YetToAdmire--></T>
+                <U n="value">
+                  <V n="audio_effect_state" t="leave_unchanged" />
+                  <V n="audio_state" t="leave_unchanged" />
+                  <V n="autonomy_modifiers" t="leave_unchanged" />
+                  <V n="awareness" t="leave_unchanged" />
+                  <V n="broadcaster" t="leave_unchanged" />
+                  <V n="change_value" t="disabled" />
+                  <V n="dyed" t="leave_unchanged" />
+                  <V n="environment_score" t="leave_unchanged" />
+                  <V n="flowing_puddle_enabled" t="leave_unchanged" />
+                  <V n="focus_score" t="leave_unchanged" />
+                  <V n="geometry_state" t="leave_unchanged" />
+                  <V n="geometry_state_override" t="leave_unchanged" />
+                  <V n="glow" t="leave_unchanged" />
+                  <V n="grubby" t="leave_unchanged" />
+                  <V n="light_dimmer" t="leave_unchanged" />
+                  <V n="light_haunted_state" t="leave_unchanged" />
+                  <V n="light_material_states" t="leave_unchanged" />
+                  <V n="live_drag_state" t="leave_unchanged" />
+                  <V n="lot_statistic_modifiers" t="leave_unchanged" />
+                  <V n="mannequin_pose" t="leave_unchanged" />
+                  <V n="material_state" t="leave_unchanged" />
+                  <V n="material_variant" t="leave_unchanged" />
+                  <V n="messy_face" t="leave_unchanged" />
+                  <V n="model" t="leave_unchanged" />
+                  <V n="model_suite_state_index" t="leave_unchanged" />
+                  <V n="multicolor" t="leave_unchanged" />
+                  <V n="opacity" t="leave_unchanged" />
+                  <V n="painting_reveal_level" t="leave_unchanged" />
+                  <V n="painting_state" t="leave_unchanged" />
+                  <V n="periodic_loot" t="leave_unchanged" />
+                  <V n="pregnancy_progress" t="leave_unchanged" />
+                  <V n="replace_object" t="disabled" />
+                  <V n="route_event" t="leave_unchanged" />
+                  <V n="scale" t="leave_unchanged" />
+                  <V n="scratched" t="leave_unchanged" />
+                  <V n="set_fire" t="leave_unchanged" />
+                  <V n="singed" t="leave_unchanged" />
+                  <V n="situation" t="leave_unchanged" />
+                  <V n="slots" t="leave_unchanged" />
+                  <V n="tan_level" t="leave_unchanged" />
+                  <V n="tint" t="leave_unchanged" />
+                  <V n="toggle_footprint" t="leave_unchanged" />
+                  <V n="transient" t="leave_unchanged" />
+                  <V n="ui_metadata" t="leave_unchanged" />
+                  <V n="utility_modifiers" t="leave_unchanged" />
+                  <V n="vfx_state" t="leave_unchanged" />
+                  <V n="vfx_state_state" t="leave_unchanged" />
+                  <V n="video_playlist" t="leave_unchanged" />
+                  <V n="video_playlist_looping" t="leave_unchanged" />
+                  <V n="visibility" t="leave_unchanged" />
+                  <V n="visibility_flags" t="leave_unchanged" />
+                  <V n="voice_actor" t="leave_unchanged" />
+                  <V n="walkstyle" t="leave_unchanged" />
+                  <V n="wind_speed_level" t="leave_unchanged" />
+                </U>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">35957<!--CommodityBasedObjectStateValue: Materialistic_YetToAdmire--></T>
+            </V>
+            <T n="reset_on_load_if_time_passes">False</T>
+            <T n="reset_to_default">False</T>
+            <V n="tested_states_on_add" t="disabled" />
+            <V n="tested_states_on_location_changed" t="disabled" />
+            <V n="tested_states_on_reset" t="disabled" />
+            <V n="tested_states_on_save" t="disabled" />
+            <V n="tested_states_post_load" t="disabled" />
+          </U>
+        </L>
+        <V n="timed_state_triggers" t="enabled">
+          <L n="enabled">
+            <U>
+              <T n="key">350560<!--CommodityBasedObjectStateValue: pressureCooker_Timer_Cooked--></T>
+              <U n="value">
+                <L n="ops">
+                  <U>
+                    <L n="states_to_trigger">
+                      <T>355353<!--ObjectStateValue: pressureCooker_VFX_Values_Vent_On--></T>
+                    </L>
+                    <U n="trigger_tests">
+                      <L n="tests">
+                        <L>
+                          <V t="state">
+                            <U n="state">
+                              <T n="value">355210<!--CommodityBasedObjectStateValue: upgrade_PressureCooker_Completed_Autovent--></T>
+                            </U>
+                          </V>
+                        </L>
+                      </L>
+                    </U>
+                    <T n="trigger_time">8</T>
+                  </U>
+                </L>
+              </U>
+            </U>
+            <U>
+              <T n="key">355353<!--ObjectStateValue: pressureCooker_VFX_Values_Vent_On--></T>
+              <U n="value">
+                <L n="ops">
+                  <U>
+                    <L n="states_to_trigger">
+                      <T>355354<!--ObjectStateValue: pressureCooker_VFX_Values_Vent_Off--></T>
+                      <T>350563<!--CommodityBasedObjectStateValue: pressureCooker_Timer_Vented--></T>
+                    </L>
+                    <U n="trigger_tests">
+                      <L n="tests">
+                        <L>
+                          <V t="state">
+                            <U n="state">
+                              <T n="value">355210<!--CommodityBasedObjectStateValue: upgrade_PressureCooker_Completed_Autovent--></T>
+                            </U>
+                          </V>
+                        </L>
+                      </L>
+                    </U>
+                    <T n="trigger_time">3</T>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+        </V>
+        <V n="unique_state_changes" t="disabled" />
+      </U>
+    </V>
+    <V n="stolen" t="disabled" />
+    <V n="tooltip_component" t="enabled">
+      <U n="enabled">
+        <L n="custom_tooltips">
+          <U>
+            <L n="object_tests">
+              <L>
+                <V t="state">
+                  <U n="state">
+                    <T n="value">350561<!--CommodityBasedObjectStateValue: pressureCooker_Timer_Cooking--></T>
+                  </U>
+                </V>
+              </L>
+            </L>
+            <L n="tooltip_fields">
+              <U>
+                <E n="key">header</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0xDE7A5F52<!--String: "Cooking in Progress"--></T>
+                  </V>
+                </U>
+              </U>
+            </L>
+            <V n="tooltip_main_icon" t="enabled">
+              <T n="enabled" p="InGame\UI\Icons\Headlines\Final\headline_cookbook.png">2f7d0004:00000000:a5cd90d6a1f0a0fb</T>
+            </V>
+            <E n="tooltip_style">HOVER_TIP_ICON_TITLE_DESCRIPTION</E>
+          </U>
+          <U>
+            <L n="object_tests">
+              <L>
+                <V t="state">
+                  <U n="state">
+                    <T n="value">350562<!--CommodityBasedObjectStateValue: pressureCooker_Timer_Off--></T>
+                  </U>
+                </V>
+              </L>
+            </L>
+            <E n="tooltip_style">HOVER_TIP_DISABLED</E>
+          </U>
+          <U>
+            <L n="object_tests">
+              <L>
+                <V t="state">
+                  <U n="state">
+                    <T n="value">350563<!--CommodityBasedObjectStateValue: pressureCooker_Timer_Vented--></T>
+                  </U>
+                </V>
+              </L>
+              <L>
+                <V t="state">
+                  <U n="state">
+                    <T n="value">350560<!--CommodityBasedObjectStateValue: pressureCooker_Timer_Cooked--></T>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <L n="object_tests">
+              <L>
+                <V t="in_inventory" />
+              </L>
+            </L>
+            <L n="tooltip_fields">
+              <U>
+                <E n="key">recipe_name</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x144FD666<!--String: "{0.ObjectName}"--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">Object</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+            </L>
+          </U>
+        </L>
+        <T n="update_if_stat_or_buck_changes">True</T>
+      </U>
+    </V>
+    <V n="weather_aware_component" t="enabled">
+      <U n="enabled">
+        <L n="outside_loot">
+          <U>
+            <E n="key">AnyRain</E>
+            <U n="value">
+              <L n="end_loot">
+                <T>185163<!--LootActions: loot_Wetness_Object_Rain_End--></T>
+                <T>235500<!--LootActions: loot_EcoFootprint_Object_AcidRain_End--></T>
+              </L>
+              <L n="start_loot">
+                <T>184964<!--LootActions: Loot_Wetness_Object_Start--></T>
+                <T>235499<!--LootActions: loot_EcoFootprint_Object_AcidRain--></T>
+              </L>
+            </U>
+          </U>
+        </L>
+      </U>
+    </V>
+  </U>
+  <L n="_super_affordances">
+    <T>13328<!--ImmediateSuperInteraction: debug_Reset--></T>
+    <T>13326<!--ImmediateSuperInteraction: debug_ObjectDestroy--></T>
+    <T>103888<!--ImmediateSuperInteraction: cheat_set_as_head--></T>
+    <T>196759<!--SuperInteraction: famePerks_GoodReputation_GivingBack_DonateObject--></T>
+    <T>401385<!--SuperInteraction: ghost_Possess_MischieviousGhost--></T>
+    <T>338059<!--StartCraftingSuperInteraction: pressureCooker_StartRecipes--></T>
+    <T>350526<!--CraftingPhaseTransferCraftingComponentSuperInteraction: pressureCooker_Finish--></T>
+    <T>350523<!--CraftingPhaseCreateObjectFromCarryingSuperInteraction: pressureCooker_Transition--></T>
+    <T>350520<!--CraftingPhaseTransferCraftingComponentSuperInteraction: pressureCooker_Finish_Rice--></T>
+    <T>354226<!--CollectManyInteraction: collect_Trash_PressureCooker--></T>
+    <T>13142<!--ImmediateSuperInteraction: Cheat_MakeDirty--></T>
+    <T>13319<!--ImmediateSuperInteraction: debug_BreakObject--></T>
+    <T>33960<!--ImmediateSuperInteraction: Cheat_MakeClean--></T>
+    <T>13327<!--ImmediateSuperInteraction: debug_RepairObject--></T>
+    <T>99087<!--ImmediateSuperInteraction: object_ReplaceBrokenObject--></T>
+    <T>354145<!--CraftingPhaseCreateObjectFromCarryingSuperInteraction: pressureCooker_Transition_Soup--></T>
+    <T>353634<!--StartCraftingAutonomouslySuperInteraction: pressurecooker_Craft_Autonomously--></T>
+    <T>353900<!--SuperInteraction: pressureCooker_Upgrades_CompletedDisplay_SelfCleaning--></T>
+    <T>353899<!--SuperInteraction: pressureCooker_Upgrades_CompletedDisplay_Unbreakable--></T>
+    <T>354228<!--SuperInteraction: pressureCooker_Vent_Auto--></T>
+    <T>355220<!--SuperInteraction: pressureCooker_Upgrades_CompletedDisplay_Autovent--></T>
+    <T>73832<!--SuperInteraction: object_Knack_FixIt_StereoTV--></T>
+    <T>40055<!--SuperInteraction: object_Bane_Sabotage_StereoTV--></T>
+    <T>129510<!--SuperInteraction: object_Hire_Repair_Service--></T>
+    <T>144099<!--SuperInteraction: generic_Object_Toddler_Check_Out--></T>
+    <T>156936<!--SuperInteraction: generic_Object_Toddler_Check_Out_HighChair--></T>
+    <T>287360<!--SuperInteraction: werewolf_Smash--></T>
+    <T>342467<!--SuperInteraction: PressureCooker_Clean--></T>
+    <T>13983<!--StandSuperInteraction: sim-stand--></T>
+    <T>342463<!--SuperInteraction: object_Repair_PressureCooker--></T>
+    <T>393854<!--SuperInteraction: ghostPowers_Abilities_Scary_SinisterPossess_Autonomous--></T>
+    <T>393663<!--SuperInteraction: ghostPowers_Abilities_Helpful_Instantly_Possess_Repair--></T>
+    <T>393658<!--SuperInteraction: ghostPowers_Abilities_Helpful_NoPossess_Instantly_Clean--></T>
+    <T>74457<!--ImmediateSuperInteraction: fire_ReplaceBurntObject--></T>
+    <T>168502<!--SuperInteraction: Ghost_Pet_Possess--></T>
+    <T>324988<!--SuperInteraction: Ghost_Horse_Possess--></T>
+  </L>
+  <U n="recycling_data">
+    <L n="recycling_values">
+      <U>
+        <E n="Bucks Type">RecycleBitsBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+      <U>
+        <E n="Bucks Type">RecyclePiecesBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+    </L>
+  </U>
+</I>

@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="bills_PayBills_FakeBillPayment" s="373376">
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Object</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_from_sim_inventory">True</T>
+  <T n="attention_cost">0.75</T>
+  <V n="basic_content" t="one_shot" />
+  <L n="basic_extras">
+    <V t="payment">
+      <U n="payment">
+        <T n="display_only">True</T>
+        <U n="insufficient_funds_behavior">
+          <T n="allow_payment_succeed">True</T>
+        </U>
+        <V n="payment" t="literal">
+          <U n="literal">
+            <V n="payment_cost" t="bills" />
+            <V n="payment_source" t="no_source" />
+          </U>
+        </V>
+        <V n="timing" t="at_end">
+          <U n="at_end">
+            <E n="criticality">NotCritical</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>376350<!--LootActions: loot_SmallBusiness_Reputation_Loss_Medium--></T>
+          <T>420100<!--LootActions: lootActions_SmallBusinessPerks_FakeBillPay_ConsequenceChance--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T n="category">379469<!--PieMenuCategory: pieMenuCategory_Bills--></T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xD8493A8C<!--String: "Fake Bill Payment"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="basic_extras">
+          <V t="buff_fire_and_forget">
+            <U n="buff_fire_and_forget">
+              <U n="buff">
+                <V n="buff_reason" t="enabled">
+                  <T n="enabled">0x49887A06<!--String: "(From Faking a Bill Payment)"--></T>
+                </V>
+                <T n="buff_type">373712<!--Buff: buff_SmallBusinessPerks_FakeBillPayment--></T>
+              </U>
+            </U>
+          </V>
+        </L>
+        <L n="loot_list">
+          <T>427180<!--LootActions: loot_Idealist_Guilt--></T>
+        </L>
+      </U>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T n="key" p="InEP18\UI\Icons\PieMenu\PieMenu_Schemer.png">2f7d0004:00000000:f9008fd772d502cc</T>
+      </U>
+    </V>
+  </V>
+  <T n="pie_menu_priority">8</T>
+  <U n="post_run_autonomy_commodities">
+    <L n="requests">
+      <U>
+        <L n="static_commodities">
+          <T>16430<!--StaticCommodity: StaticCommodity_PayBills--></T>
+        </L>
+      </U>
+    </L>
+  </U>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="bills">
+      <U n="bills">
+        <V n="payment_due" t="enabled" />
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>163657<!--Buff: buff_Irresponsible_IgnoreBills--></T>
+        </L>
+      </U>
+    </V>
+    <V t="bucks_perks_test">
+      <U n="bucks_perks_test">
+        <T n="bucks_perk">373035<!--BucksPerk: smallBusinessPerks_Schemer_FakeBillPayment--></T>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">5</T>
+</I>

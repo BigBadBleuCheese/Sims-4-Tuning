@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalObjectInteraction" i="situation_goal" m="situations.situation_goal_object_interaction" n="whim_Swordsmanship_WinDuel" s="500177">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T n="enabled" p="InEP21\UI\Icons\Whims\whim_WinRevengeDuel.png">2f7d0004:00000000:74355739aa13a03b</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x13F93F33<!--String: "Win a Duel"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0x9188BCBD<!--String: "Acquire a Sword and build the Swordsmanship Skill, then challenge another Sim via the Duel Social Category and win!"--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>272907<!--SituationGoalLootActions: goalLoot_WantFear_Fulfillment_Gain--></T>
+    <T>291792<!--SituationGoalLootActions: goalLoot_Want_Fulfilled_BuffGain_Energized--></T>
+  </L>
+  <U n="_goal_test">
+    <L n="affordance_lists">
+      <T>486646<!--AffordanceList: affordanceList_Swordsmanship_Duels--></T>
+    </L>
+    <T n="consider_all_cancelled_as_failure">True</T>
+    <T n="consider_user_cancelled_as_failure">True</T>
+    <V n="interaction_outcome" t="enabled">
+      <E n="enabled">SUCCESS</E>
+    </V>
+    <E n="test_event">InteractionComplete</E>
+  </U>
+  <L n="_pre_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="skill_test">
+      <U n="skill_test">
+        <T n="skill">458742<!--Skill: statistic_Skill_AdultMajor_Swordsmanship--></T>
+      </U>
+    </V>
+  </L>
+  <T n="_score">25</T>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+</I>

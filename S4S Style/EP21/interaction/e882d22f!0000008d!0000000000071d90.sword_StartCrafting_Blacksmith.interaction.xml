@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="StartCraftingSuperInteraction" i="interaction" m="crafting.crafting_interactions" n="sword_StartCrafting_Blacksmith" s="466320">
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Object</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="disabled" />
+  <U n="basic_reserve_object">
+    <L n="subject_list">
+      <U>
+        <V n="reserve_type" t="basic" />
+        <L n="subject">
+          <E>CraftingObject</E>
+          <E>CarriedObject</E>
+        </L>
+      </U>
+    </L>
+  </U>
+  <T n="check_fridge_shared_inventory">False</T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x604737D4<!--String: "Ask Blacksmith to Craft a Sword"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <V n="picker_dialog" t="recipe_picker">
+    <U n="recipe_picker">
+      <V n="column_sort_priorities" t="enabled">
+        <L n="enabled">
+          <T>2</T>
+        </L>
+      </V>
+      <T n="display_ingredient_check">True</T>
+      <V n="display_ingredients_text_override" t="enabled">
+        <T n="enabled">0x9E1CDB64<!--String: "Use Materials"--></T>
+      </V>
+      <L n="picker_columns">
+        <U>
+          <V n="label" t="enabled">
+            <T n="enabled">0xB39914F3<!--String: "Name"--></T>
+          </V>
+          <T n="width">200</T>
+        </U>
+        <U>
+          <E n="column_data_name">INGREDIENTS</E>
+          <E n="column_icon_name">ICON</E>
+          <E n="column_type">TEXT</E>
+          <V n="label" t="enabled">
+            <T n="enabled">0x50F30F62<!--String: "Materials"--></T>
+          </V>
+          <V n="tooltip" t="enabled">
+            <T n="enabled">0xFA987AD1<!--String: "If the required materials are in the inventory of the Sim who is ordering the Sword, those materials will be used, and the price will be discounted."--></T>
+          </V>
+        </U>
+        <U>
+          <E n="column_data_name">SKILL_LEVEL</E>
+          <E n="column_icon_name">SKILL_LEVEL</E>
+          <E n="column_type">TEXT</E>
+          <V n="label" t="enabled">
+            <T n="enabled">0x2590CCB1<!--String: "Skill"--></T>
+          </V>
+          <T n="width">80</T>
+        </U>
+        <U>
+          <E n="column_data_name">PRICE</E>
+          <E n="column_icon_name">PRICE</E>
+          <E n="column_type">TEXT</E>
+          <V n="label" t="enabled">
+            <T n="enabled">0x34FC1D31<!--String: "Cost"--></T>
+          </V>
+        </U>
+      </L>
+      <V n="skill" t="enabled">
+        <T n="enabled">458742<!--Skill: statistic_Skill_AdultMajor_Swordsmanship--></T>
+      </V>
+    </U>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <L n="recipes">
+    <T>466831<!--Recipe: recipe_Sword_BellacordeRapier--></T>
+    <T>466830<!--Recipe: recipe_Sword_ClassicLongsword--></T>
+    <T>466829<!--Recipe: recipe_Sword_DambeleSaber--></T>
+    <T>466828<!--Recipe: recipe_sword_VerdemarFalcata--></T>
+    <T>466832<!--Recipe: recipe_Sword_WoodenSword--></T>
+  </L>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+  </L>
+  <T n="use_ingredients_default_value">False</T>
+</I>

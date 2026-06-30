@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="CareerEventSituation" i="situation" m="careers.career_event_situation" n="eventSituation_ReaperCareer_High_Capture" s="381765">
+  <T p="InGame\Audio\Bumper\bumper_event_start.propx" n="audio_sting_on_start">39b2aa4a:00000000:78b903461d47e4fc</T>
+  <V n="build_buy_lock_reason" t="enabled">
+    <T n="enabled">0x2E9C7D1F<!--String: "You cannot modify a lot while your Sim is working."--></T>
+  </V>
+  <V n="end_situation_dialog" t="enabled">
+    <U n="enabled">
+      <L n="dialog_options">
+        <E>SMALL_TITLE</E>
+      </L>
+      <T n="is_special_dialog">False</T>
+      <V n="text" t="single">
+        <T n="single">0xEE43B3C9<!--String: "What would you like {M0.him}{F0.her} to do?\n(Note: Ending the day early will result in a penalty.)"--></T>
+      </V>
+      <V n="text_alt_action" t="enabled">
+        <U n="enabled">
+          <T n="disable">True</T>
+          <T n="text_alt">0xE162ABC2<!--String: "Stay late"--></T>
+        </U>
+      </V>
+      <T n="text_ok">0x520A9B3F<!--String: "Leave work early"--></T>
+      <V n="title" t="enabled">
+        <T n="enabled">0xBE9B7DC1<!--String: "{0.SimName} has {1.TimespanShort} left in {M0.his}{F0.her} workday."--></T>
+      </V>
+      <L n="ui_responses" />
+    </U>
+  </V>
+  <T p="InGame\Audio\Bumper\bumper_event_major_complete.propx" n="main_goal_audio_sting">39b2aa4a:00000000:10b476550150a33f</T>
+  <L n="minor_goal_chains">
+    <T>403592<!--SituationGoalSet: goalSet_ReaperCareer_Capture01_HiddenStart1--></T>
+    <T>403593<!--SituationGoalSet: goalSet_ReaperCareer_Capture01_HiddenStart2--></T>
+    <T>393070<!--SituationGoalSet: goalSet_ReaperCareer_CaptureHigh_Assign--></T>
+  </L>
+  <V n="situation_end_time_string" t="show_end_time">
+    <T n="show_end_time">0xA3E17143<!--String: "Work day ends at {0.TimeShort}"--></T>
+  </V>
+  <L n="tags">
+    <E>Situation_ActiveCareer</E>
+    <E>Situation_ActiveCareer_Adult</E>
+  </L>
+  <U n="travel_request_behavior">
+    <V n="dialog" t="enabled">
+      <U n="enabled">
+        <V n="icon" t="enabled">
+          <V n="enabled" t="participant" />
+        </V>
+        <V n="text" t="single">
+          <T n="single">0xA19B9708<!--String: "{0.SimFirstName} should wrap up what {M0.he}{F0.she}'s doing here before leaving."--></T>
+        </V>
+        <V n="title" t="enabled">
+          <T n="enabled">0x3EC9A8F6<!--String: "On the Job!"--></T>
+        </V>
+      </U>
+    </V>
+  </U>
+  <U n="user_job">
+    <T n="role_state">381788<!--RoleState: role_Career_Reaper_Player--></T>
+    <T n="situation_job">381790<!--SituationJob: job_Career_Reaper_Player--></T>
+  </U>
+</I>

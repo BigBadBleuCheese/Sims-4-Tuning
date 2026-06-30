@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="sI_EP20_IF_SpawnEvent_Poof_Out_GoodbyeForever_Good" s="485117">
+  <E n="_constraints_actor">Actor</E>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <T n="allow_user_directed">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <L n="basic_extras">
+    <V t="leave_situation">
+      <U n="leave_situation">
+        <T n="allow_solo_situations">False</T>
+        <L n="situation_types">
+          <T>464190<!--ImaginaryFriendSituation: situation_EP20_IF_SpawnFriend_GoodbyeForever--></T>
+          <T>460865<!--ImaginaryFriendSituation: situation_EP20_IF_SpawnFriend--></T>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>462709<!--LootActions: loot_EP20_IF_GoodbyeForever--></T>
+        </L>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+    <V t="set_visibility_state">
+      <U n="set_visibility_state">
+        <V n="timing" t="at_beginning" />
+        <T n="visibility">False</T>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>452256<!--LootActions: loot_ChildhoodInspiration_AddSuggestedChallenge_HaveBestImaginaryFriend--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="content_score" t="disabled" />
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <V n="animation_ref" t="disabled" />
+        <L n="basic_extras" />
+        <L n="continuation">
+          <U>
+            <T n="affordance">24309<!--NPCLeaveLotInteraction: npc_leave_lot_now_must_run--></T>
+          </U>
+        </L>
+      </U>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">ACTOR</E>
+  <L n="test_globals" />
+  <T n="time_overhead">30</T>
+  <T n="visible">False</T>
+</I>

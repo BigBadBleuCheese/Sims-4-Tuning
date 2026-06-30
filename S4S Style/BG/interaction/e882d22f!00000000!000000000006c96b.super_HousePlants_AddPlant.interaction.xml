@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="super_HousePlants_AddPlant" s="444779">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="circle">
+            <U n="circle">
+              <T n="radius">2</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="value" t="facing" />
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">230308<!--AnimationElement: generic_PutDown_StandOnly--></T>
+      </U>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="notification">
+      <U n="notification">
+        <V n="dialog" t="single">
+          <V n="single" t="literal">
+            <U n="literal">
+              <V n="icon" t="enabled">
+                <V n="enabled" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>Object</E>
+                    </L>
+                  </U>
+                </V>
+              </V>
+              <V n="secondary_icon" t="enabled">
+                <V n="enabled" t="participant" />
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x854B823<!--String: "The household has acquired a Live Houseplant!\n\nLive Houseplants look fabulous in any space, both outdoors and in, with far less commitment than Gardening plants. Houseplants won't grow larger or produce harvestables, but caring for them is easier and more pleasurable for most Sims. Just don't neglect them! "Easy" care doesn't mean no care, and Sims will feel guilty about letting Live Houseplants die."--></T>
+              </V>
+              <V n="title" t="enabled">
+                <T n="enabled">0x992283B1<!--String: "Live Houseplants"--></T>
+              </V>
+              <V n="tns_suppression_group" t="enabled">
+                <E n="enabled">HousePlants_FirstHousePlant</E>
+              </V>
+              <L n="ui_responses">
+                <U>
+                  <T n="text">0xEABE5948<!--String: "View Lessons"--></T>
+                  <V n="tutorial_id" t="enabled">
+                    <T n="enabled">472548<!--Tutorial: tutorial_EP19_TabletopPlants&Houseplants--></T>
+                  </V>
+                  <E n="ui_request">SHOW_LESSONS</E>
+                </U>
+              </L>
+            </U>
+          </V>
+        </V>
+      </U>
+    </V>
+    <V t="payment">
+      <U n="payment">
+        <V n="payment" t="literal">
+          <U n="literal">
+            <V n="payment_cost" t="amount">
+              <U n="amount">
+                <T n="amount">240</T>
+              </U>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <V n="basic_reserve_object" t="disabled" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x3BF65A7C<!--String: "Purchase a Live Houseplant"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <V n="goal_height_limit" t="enabled">
+    <T n="enabled">2</T>
+  </V>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="basic_extras">
+                  <V t="create_object">
+                    <U n="create_object">
+                      <V n="creation_data" t="from_participant" />
+                      <V n="location" t="slot">
+                        <U n="slot">
+                          <V n="parent_slot" t="by_reference">
+                            <T n="by_reference">slot_PlantPotMed</T>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="object_definition_criteria">
+                <U n="object_definition_criteria">
+                  <V n="identity_test" t="tags">
+                    <U n="tags">
+                      <L n="tag_set">
+                        <E>Func_PottedPlants_PotMed</E>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="basic_extras">
+                  <V t="create_object">
+                    <U n="create_object">
+                      <V n="creation_data" t="from_participant" />
+                      <V n="location" t="slot">
+                        <U n="slot">
+                          <V n="parent_slot" t="by_reference">
+                            <T n="by_reference">slot_PlantSmall</T>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="object_definition_criteria">
+                <U n="object_definition_criteria">
+                  <V n="identity_test" t="tags">
+                    <U n="tags">
+                      <L n="tag_set">
+                        <E>Func_PlanterBox</E>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="basic_extras">
+                  <V t="create_object">
+                    <U n="create_object">
+                      <V n="creation_data" t="from_participant" />
+                      <V n="location" t="slot">
+                        <U n="slot">
+                          <V n="parent_slot" t="by_reference">
+                            <T n="by_reference">slot_PlantSmall</T>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="object_definition_criteria">
+                <U n="object_definition_criteria">
+                  <V n="identity_test" t="tags">
+                    <U n="tags">
+                      <L n="tag_set">
+                        <E>func_GardeningPatch</E>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="slot_test">
+        <U n="slot_test">
+          <V n="child_slot" t="by_reference">
+            <T n="by_reference">slot_PlantSmall</T>
+          </V>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="slot_test">
+        <U n="slot_test">
+          <V n="child_slot" t="by_reference">
+            <T n="by_reference">slot_PlantPotMed</T>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

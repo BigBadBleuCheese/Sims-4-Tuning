@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="dirtMound_Dig_R4Event" s="428906">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U />
+        <U>
+          <V n="value" t="facing" />
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_icon" t="resource_key">
+    <U n="resource_key">
+      <T n="key" p="InGame\UI\Icons\InteractionQueue\IconQueueSalvage.png">2f7d0004:00000000:35f791e45cf6a042</T>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="list_reference">
+          <T n="list_reference">40705<!--ExitConditionList: ExitConditionList_MotivesNearFail--></T>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="time_based">
+                <U n="time_based">
+                  <T n="max_time">4</T>
+                  <T n="min_time">3</T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+      </L>
+      <V n="content" t="looping_content">
+        <U n="looping_content">
+          <U n="animation_ref">
+            <T n="factory">29554<!--AnimationElement: Salvage_Trash_Pile--></T>
+            <U n="overrides">
+              <L n="vfx">
+                <U>
+                  <T n="original_effect">fx_salvage_l</T>
+                  <U n="replacement_effect">
+                    <V n="effect" t="play_effect">
+                      <T n="play_effect">sim_salvage_dust</T>
+                    </V>
+                  </U>
+                </U>
+                <U>
+                  <T n="original_effect">fx_salvage_r</T>
+                  <U n="replacement_effect">
+                    <V n="effect" t="play_effect">
+                      <T n="play_effect">sim_salvage_dust</T>
+                    </V>
+                  </U>
+                </U>
+              </L>
+            </U>
+          </U>
+        </U>
+      </V>
+      <V n="periodic_stat_change" t="enabled">
+        <U n="enabled">
+          <L n="operations">
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="advertise">False</T>
+                <T n="amount">-2</T>
+                <T n="stat">16657<!--Commodity: motive_Hygiene--></T>
+              </U>
+            </V>
+            <V t="dynamic_skill">
+              <U n="dynamic_skill">
+                <U n="skill_loot_data_override">
+                  <E n="effectiveness">VerySmallPeriodic</E>
+                  <V n="level_range" t="enabled">
+                    <U n="enabled">
+                      <T n="lower_bound">6</T>
+                      <T n="upper_bound">10</T>
+                    </U>
+                  </V>
+                  <T n="stat">434909<!--Skill: statistic_Skill_NLS--></T>
+                </U>
+              </U>
+            </V>
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="amount">-5</T>
+                <T n="stat">16616<!--Commodity: commodity_Motive_HygieneHands--></T>
+              </U>
+            </V>
+          </L>
+        </U>
+      </V>
+      <T n="start_autonomous_inertial">False</T>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="destroy_object" />
+  </L>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x8F1A6187<!--String: "Dig for Special Time Capsule"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="basic_extras">
+          <V t="create_object">
+            <U n="create_object">
+              <V n="creation_data" t="definition">
+                <U n="definition">
+                  <T n="definition">463384</T>
+                </U>
+              </V>
+              <V n="location" t="inventory" />
+              <E n="owner_sim">Actor</E>
+            </U>
+          </V>
+        </L>
+        <L n="loot_list">
+          <T>96887<!--LootActions: loot_Commodity_HygieneHands_ReduceHigh--></T>
+        </L>
+        <V n="response" t="enabled">
+          <V n="enabled" t="individual">
+            <U n="individual">
+              <L n="animations">
+                <U>
+                  <E n="target">Actor</E>
+                  <U n="animation">
+                    <T n="factory">28358<!--AnimationElement: Socials_Responses_Excited_LowIntensity--></T>
+                  </U>
+                </U>
+              </L>
+            </U>
+          </V>
+        </V>
+      </U>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T n="key" p="InGame\UI\Icons\PieMenu\Events\icon_piemenu_category_AnniversaryEvent.png">2f7d0004:00000000:0d7f83a067aad3b8</T>
+      </U>
+    </V>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="situation_goal_test">
+      <U n="situation_goal_test">
+        <L n="situation_goals">
+          <T>428856<!--SituationGoalObjectInteraction: r4Event_ObjectInteraction_TimeCapsuleDig--></T>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <V n="whitelist" t="enabled">
+          <L n="enabled">
+            <T>410922<!--Buff: buff_R4Event_QuestActive--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

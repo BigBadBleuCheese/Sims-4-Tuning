@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SimPickerInteraction" i="interaction" m="interactions.base.picker_interaction" n="simPicker_Mentoring_Offer_UnPaid_VideoGaming_Computer" s="375281">
+  <V n="_saveable" t="disabled" />
+  <L n="actor_continuation">
+    <U>
+      <T n="affordance">375810<!--SocialMixerInteraction: socials_Targeted_Friendly_AlwaysOn_STC_Mentoring_Offer_Unpaid_VideoGaming_Computer--></T>
+      <T n="si_affordance_override">13998<!--SocialSuperInteraction: sim_Chat--></T>
+      <E n="target">PickedSim</E>
+    </U>
+  </L>
+  <L n="basic_extras">
+    <V t="save_participant">
+      <U n="save_participant">
+        <E n="participant">Object</E>
+        <E n="saved_participant">SavedActor1</E>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+  </L>
+  <T n="category">376065<!--PieMenuCategory: pieMenuCategory_Mentor--></T>
+  <V n="cell_enabled_tests" t="enabled">
+    <L n="enabled">
+      <L>
+        <V t="buff">
+          <U n="buff">
+            <L n="blacklist">
+              <T>12856<!--Buff: MoodBuff_Hidden_Stressed--></T>
+            </L>
+            <E n="subject">PickedSim</E>
+            <V n="tooltip" t="enabled">
+              <T n="enabled">0xA562738C<!--String: "{1.SimFirstName} is far too Tense to do this."--></T>
+            </V>
+          </U>
+        </V>
+        <V t="buff">
+          <U n="buff">
+            <L n="blacklist">
+              <T>12847<!--Buff: MoodBuff_Hidden_Miserable--></T>
+            </L>
+            <E n="subject">PickedSim</E>
+            <V n="tooltip" t="enabled">
+              <T n="enabled">0xE4B41B3D<!--String: "{1.SimFirstName} is far too Uncomfortable to do this."--></T>
+            </V>
+          </U>
+        </V>
+        <V t="relative_statistic">
+          <U n="relative_statistic">
+            <E n="comparison">GREATER</E>
+            <T n="stat">16712<!--Skill: statistic_Skill_AdultMajor_VideoGaming--></T>
+            <E n="target">PickedSim</E>
+            <V n="tooltip" t="enabled">
+              <T n="enabled">0x93996037<!--String: "{0.SimFirstName} must have higher Skill level than {1.SimFirstName}."--></T>
+            </V>
+          </U>
+        </V>
+      </L>
+    </L>
+  </V>
+  <V n="content_score" t="disabled" />
+  <V n="display_name_overrides" t="testable">
+    <U n="testable">
+      <L n="overrides">
+        <U>
+          <V n="new_display_name" t="enabled">
+            <T n="enabled">0x6D29E170<!--String: "Offer {2.String} Mentoring"--></T>
+          </V>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">PickedSim</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="statistic_value">
+        <U n="statistic_value">
+          <E n="participant">Actor</E>
+          <T n="statistic">16712<!--Skill: statistic_Skill_AdultMajor_VideoGaming--></T>
+          <T n="use_statistic_name">True</T>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T n="include_uninstantiated_sims">False</T>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <V n="picker_dialog" t="sim_picker">
+    <U n="sim_picker">
+      <L n="custom_filters">
+        <V t="reference">
+          <T n="reference">499295<!--CustomSimFilter: customSimFilter_NobleCareer--></T>
+        </V>
+      </L>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T n="key" p="InGame\UI\Icons\PieMenu\Skills\skill_videogaming_piemenu.png">2f7d0004:00000000:43673df930857bc9</T>
+      </U>
+    </V>
+  </V>
+  <V n="pie_menu_test_tooltip" t="enabled">
+    <T n="enabled">0x4A3A334D<!--String: "No valid Sims to Mentor nearby."--></T>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <V n="radius" t="enabled">
+    <T n="enabled">30</T>
+  </V>
+  <V n="sim_filter" t="sim_filter_selected">
+    <T n="sim_filter_selected">441091<!--TunableSimFilter: filter_Mentoring_CTYAE--></T>
+  </V>
+  <L n="sim_tests">
+    <L>
+      <V t="test_set_reference">
+        <T n="test_set_reference">448708<!--TestSetInstance: testSet_Mentor_HasMetOrHobbyClassInstructor--></T>
+      </V>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>38877<!--Buff: buff_Skill_VideoGaming_GoodSession--></T>
+            <T>31758<!--Buff: buff_Skill_VideoGaming_GamedOut--></T>
+          </L>
+          <E n="subject">PickedSim</E>
+        </U>
+      </V>
+    </L>
+  </L>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="state">
+      <U n="state">
+        <V n="fallback_behavior" t="always_pass" />
+        <E n="operator">NOTEQUAL</E>
+        <T n="value">15076<!--CommodityBasedObjectStateValue: Brokenness_Broken--></T>
+      </U>
+    </V>
+    <V t="skill_test">
+      <U n="skill_test">
+        <T n="skill">16712<!--Skill: statistic_Skill_AdultMajor_VideoGaming--></T>
+        <V n="skill_range" t="threshold">
+          <U n="threshold">
+            <U n="skill_threshold">
+              <T n="value">5</T>
+            </U>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">28305<!--TestSetInstance: testSet_EmotionNotMiserable--></T>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">28176<!--TestSetInstance: testSet_EmotionNotStressed--></T>
+    </V>
+    <V t="in_use">
+      <U n="in_use">
+        <T n="negate">True</T>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x51C90F98<!--String: "Object is already in use."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <V n="utility_info" t="enabled">
+    <L n="enabled">
+      <U>
+        <E n="key">POWER</E>
+      </U>
+    </L>
+  </V>
+</I>

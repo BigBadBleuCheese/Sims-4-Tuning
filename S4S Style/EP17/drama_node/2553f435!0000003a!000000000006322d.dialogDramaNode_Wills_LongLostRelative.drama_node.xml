@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="DialogDramaNode" i="drama_node" m="drama_scheduler.dialog_drama_node" n="dialogDramaNode_Wills_LongLostRelative" s="406061">
+  <V n="cooldown_data" t="node_cooldown">
+    <U n="node_cooldown">
+      <V n="duration" t="permanent" />
+    </U>
+  </V>
+  <V n="dialog_and_loot" t="dialog_ok_cancel">
+    <U n="dialog_ok_cancel">
+      <U n="dialog">
+        <V n="icon" t="enabled">
+          <V n="enabled" t="resource_key">
+            <U n="resource_key">
+              <T p="InGame\UI\Icons\Notifications\notification_wills.png" n="key">2f7d0004:00000000:518e1275655a7a96</T>
+            </U>
+          </V>
+        </V>
+        <E n="phone_ring_type">NO_RING</E>
+        <V n="text" t="single">
+          <T n="single">0xE561A2D0<!--String: "Hello from the other side! You don't know me, so this might sound weird, but you're going to inherit from me, kid! Why, you might ask? Let's just say it's better for both of us if you don't ask questions. The money needs to go somewhere, and quick! And I heard through the grapevine that you were a good, upstanding Sim. So, you're about to inherit a chunk of my "hard-earned" Simoleons.\n\nListen, buddy, part of life is planning for your death. You should write up a Will when you're ready to choose who's gonna inherit your Simoleons, your heirlooms, and your kids! I did mine on the Computer, but you can call an Inheritance Lawyer to help you write one too, if you want. Just, uh, make good choices in life, kid! I sure didn't!"--></T>
+        </V>
+        <T n="text_cancel">0x3CD42FE4<!--String: "No, thanks. Sounds sketchy..."--></T>
+        <T n="text_ok">0x260E6DB0<!--String: "Free money? Yes, please!"--></T>
+      </U>
+      <L n="on_dialog_accepted_loot_list">
+        <T>406062<!--LootActions: Gain_Will_Money--></T>
+      </L>
+    </U>
+  </V>
+  <U n="min_and_max_times">
+    <T n="upper_bound">12</T>
+  </U>
+  <L n="pretests">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified">
+            <L n="specified">
+              <E>YOUNGADULT</E>
+              <E>ADULT</E>
+              <E>ELDER</E>
+            </L>
+          </V>
+          <V n="species" t="specified">
+            <U n="specified">
+              <L n="species">
+                <E />
+              </L>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_trait_types">
+            <E>GHOST</E>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="scoring" t="enabled">
+    <U n="enabled">
+      <T n="base_score">999</T>
+      <E n="bucket">DEFAULT</E>
+    </U>
+  </V>
+  <V n="sender_sim_info" t="sim_filter">
+    <U n="sim_filter">
+      <T n="sim_filter">425139<!--TunableSimFilter: Filter_DramaNode_Basic_GhostOnly--></T>
+    </U>
+  </V>
+  <E n="sender_sim_info_type">INSTANCED_ALLOWED</E>
+  <V n="time_option" t="schedule">
+    <U n="schedule">
+      <L n="valid_times">
+        <U>
+          <U n="days_available">
+            <T n="0 SUNDAY">True</T>
+            <T n="1 MONDAY">True</T>
+            <T n="2 TUESDAY">True</T>
+            <T n="3 WEDNESDAY">True</T>
+            <T n="4 THURSDAY">True</T>
+            <T n="5 FRIDAY">True</T>
+            <T n="6 SATURDAY">True</T>
+          </U>
+          <T n="duration">12</T>
+          <U n="start_time">
+            <T n="hour">9</T>
+          </U>
+        </U>
+      </L>
+    </U>
+  </V>
+</I>

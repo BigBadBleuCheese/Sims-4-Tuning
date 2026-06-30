@@ -1,0 +1,802 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="superInteraction_EP20Festival_SpinningBike_Student" s="463762">
+  <V n="_saveable" t="enabled" />
+  <L n="_static_commodities">
+    <U>
+      <T n="static_commodity">463980<!--StaticCommodity: staticCommodity_RoleAutonomy_EP20Festival_FashionAndFitness_Student--></T>
+    </U>
+  </L>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="list_reference">
+          <T n="list_reference">40705<!--ExitConditionList: ExitConditionList_MotivesNearFail--></T>
+        </V>
+        <V t="list_reference">
+          <T n="list_reference">40144<!--ExitConditionList: ExitConditionList_EmotionMiserable--></T>
+        </V>
+        <V t="list_reference">
+          <T n="list_reference">97351<!--ExitConditionList: ExitConditionList_GoodWorkout--></T>
+        </V>
+        <V t="list_reference">
+          <T n="list_reference">97354<!--ExitConditionList: ExitConditionList_Fatigued--></T>
+        </V>
+        <V t="list_reference">
+          <T n="list_reference">97352<!--ExitConditionList: ExitConditionList_PulledMuscle--></T>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="time_based">
+                <U n="time_based">
+                  <T n="max_time">10</T>
+                  <T n="min_time">8</T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">NO_ACTION</E>
+            <L n="loot_actions">
+              <T>300505<!--LootActions: loot_HighSchool_Active_Event_WorkOut_Treadmill--></T>
+            </L>
+          </U>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="buff_based">
+                <U n="buff_based">
+                  <T n="buff">226416<!--Buff: buff_Generic_CancelInteraction--></T>
+                  <E n="timing">HAS_BUFF</E>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_CANCEL</E>
+          </U>
+        </V>
+      </L>
+      <V n="content" t="staging_content">
+        <U n="staging_content">
+          <U n="content_set">
+            <L n="affordance_links">
+              <T>449271<!--MixerInteraction: spinningBikeMixers_Actions_Break--></T>
+              <T>449272<!--MixerInteraction: spinningBikeMixers_Actions_Instructor--></T>
+              <T>449273<!--MixerInteraction: spinningBikeMixers_Actions_MuscleFailure--></T>
+              <T>449274<!--MixerInteraction: spinningBikeMixers_Actions_Seated_HighSkill--></T>
+              <T>449276<!--MixerInteraction: spinningBikeMixers_Actions_Seated_LowSkill--></T>
+              <T>449275<!--MixerInteraction: spinningBikeMixers_Actions_Seated_MidSkill--></T>
+            </L>
+          </U>
+        </U>
+      </V>
+      <V n="periodic_stat_change" t="enabled">
+        <U n="enabled">
+          <U n="operation_actions">
+            <L n="actions">
+              <T>9317<!--LootActions: loot_Death_ElderExhaustion_Periodic--></T>
+              <T>39350<!--LootActions: Loot_Commodity_Fitness_FatigueGain--></T>
+              <T>97349<!--LootActions: Loot_Commodity_Fitness_GoodWorkout--></T>
+              <T>97350<!--LootActions: Loot_Commodity_Fitness_PulledMuscle--></T>
+              <T>104297<!--LootActions: loot_Commodity_Fireleaf_ElixirOfBurning--></T>
+              <T>311302<!--LootActions: loot_SelfDiscovery_Progress_Active_Max_Small--></T>
+              <T>108522<!--LootActions: loot_Career_Scientist_Breakthrough_Progress_Low_Periodic--></T>
+              <T>386102<!--LootActions: loot_Grief_PositiveCoping_Increase_Periodic_Anger--></T>
+            </L>
+          </U>
+          <L n="operations">
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="advertise">False</T>
+                <T n="amount">-0.733333333333333</T>
+                <T n="exclusive_to_owning_si">False</T>
+                <T n="stat">16657<!--Commodity: motive_Hygiene--></T>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+                <L n="tests">
+                  <L>
+                    <V t="skill_test">
+                      <U n="skill_test">
+                        <T n="skill">16659<!--Skill: skill_Fitness--></T>
+                        <V n="skill_range" t="interval">
+                          <U n="interval">
+                            <U n="skill_interval">
+                              <T n="lower_bound">0</T>
+                              <T n="upper_bound">3</T>
+                            </U>
+                          </U>
+                        </V>
+                        <T n="use_effective_skill_level">True</T>
+                      </U>
+                    </V>
+                    <V t="trait">
+                      <U n="trait">
+                        <L n="blacklist_traits">
+                          <T>26427<!--Trait: trait_GymRat--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </V>
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="advertise">False</T>
+                <T n="amount">-0.466666666666667</T>
+                <T n="exclusive_to_owning_si">False</T>
+                <T n="stat">16657<!--Commodity: motive_Hygiene--></T>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+                <L n="tests">
+                  <L>
+                    <V t="skill_test">
+                      <U n="skill_test">
+                        <T n="skill">16659<!--Skill: skill_Fitness--></T>
+                        <V n="skill_range" t="interval">
+                          <U n="interval">
+                            <U n="skill_interval">
+                              <T n="lower_bound">4</T>
+                              <T n="upper_bound">7</T>
+                            </U>
+                          </U>
+                        </V>
+                        <T n="use_effective_skill_level">True</T>
+                      </U>
+                    </V>
+                    <V t="trait">
+                      <U n="trait">
+                        <L n="blacklist_traits">
+                          <T>26427<!--Trait: trait_GymRat--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </V>
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="advertise">False</T>
+                <T n="amount">-0.329166666666667</T>
+                <T n="exclusive_to_owning_si">False</T>
+                <T n="stat">16657<!--Commodity: motive_Hygiene--></T>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+                <L n="tests">
+                  <L>
+                    <V t="skill_test">
+                      <U n="skill_test">
+                        <T n="skill">16659<!--Skill: skill_Fitness--></T>
+                        <V n="skill_range" t="interval">
+                          <U n="interval">
+                            <U n="skill_interval">
+                              <T n="lower_bound">8</T>
+                              <T n="upper_bound">20</T>
+                            </U>
+                          </U>
+                        </V>
+                        <T n="use_effective_skill_level">True</T>
+                      </U>
+                    </V>
+                    <V t="trait">
+                      <U n="trait">
+                        <L n="blacklist_traits">
+                          <T>26427<!--Trait: trait_GymRat--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </V>
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="amount">-1</T>
+                <T n="exclusive_to_owning_si">False</T>
+                <T n="stat">10020<!--Commodity: commodity_Motive_Thirst--></T>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+              </U>
+            </V>
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="advertise">False</T>
+                <T n="amount">-10</T>
+                <T n="exclusive_to_owning_si">False</T>
+                <T n="stat">99491<!--Commodity: Commodity_Trait_Active_TenseTimer--></T>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+                <L n="tests">
+                  <L>
+                    <V t="buff">
+                      <U n="buff">
+                        <V n="whitelist" t="enabled">
+                          <L n="enabled">
+                            <T>27457<!--Buff: Buff_Trait_Active_Antsy--></T>
+                          </L>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </V>
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="amount">-0.1</T>
+                <T n="exclusive_to_owning_si">False</T>
+                <T n="stat">16589<!--Commodity: commodity_Fitness_Fat--></T>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+              </U>
+            </V>
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="amount">20</T>
+                <T n="stat">29105<!--Commodity: commodity_Trait_Autonomy_Active--></T>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+              </U>
+            </V>
+            <V t="dynamic_skill">
+              <U n="dynamic_skill">
+                <T n="exclusive_to_owning_si">False</T>
+                <U n="skill_loot_data_override">
+                  <E n="effectiveness">StandardPeriodic</E>
+                  <T n="stat">16659<!--Skill: skill_Fitness--></T>
+                </U>
+              </U>
+            </V>
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="advertise">False</T>
+                <T n="amount">0.39</T>
+                <T n="exclusive_to_owning_si">False</T>
+                <T n="stat">16655<!--Commodity: motive_Fun--></T>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+                <L n="tests">
+                  <L>
+                    <V t="trait">
+                      <U n="trait">
+                        <L n="whitelist_traits">
+                          <T>26427<!--Trait: trait_GymRat--></T>
+                          <T>27419<!--Trait: trait_active--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </V>
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="advertise">False</T>
+                <T n="amount">10</T>
+                <T n="exclusive_to_owning_si">False</T>
+                <T n="stat">27458<!--Commodity: commodity_Trait_Active_Activity--></T>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+              </U>
+            </V>
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="amount">1</T>
+                <T n="exclusive_to_owning_si">False</T>
+                <T n="stat">76227<!--Commodity: commodity_CareerBenefit_Astronaut--></T>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+                <L n="tests">
+                  <L>
+                    <V t="career_test">
+                      <U n="career_test">
+                        <V n="test_type" t="career_reference">
+                          <U n="career_reference">
+                            <V n="career" t="specific_career">
+                              <T n="specific_career">12893<!--Career: career_Adult_Astronaut--></T>
+                            </V>
+                            <V n="user_level" t="enabled">
+                              <U n="enabled">
+                                <T n="lower_bound">4</T>
+                                <T n="upper_bound">7</T>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </V>
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="amount">1</T>
+                <T n="stat">106738<!--Commodity: commodity_CareerBenefit_Athlete--></T>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+                <L n="tests">
+                  <L>
+                    <V t="career_test">
+                      <U n="career_test">
+                        <V n="test_type" t="career_reference">
+                          <U n="career_reference">
+                            <V n="career" t="specific_career">
+                              <T n="specific_career">106458<!--Career: career_Adult_Athletic--></T>
+                            </V>
+                            <V n="user_level" t="enabled">
+                              <U n="enabled">
+                                <T n="upper_bound">4</T>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </V>
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="amount">1</T>
+                <T n="stat">202507<!--Statistic: statistic_Career_Performance_Military--></T>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+                <L n="tests">
+                  <L>
+                    <V t="career_test">
+                      <U n="career_test">
+                        <V n="test_type" t="career_reference">
+                          <U n="career_reference">
+                            <V n="career" t="specific_career">
+                              <T n="specific_career">202483<!--Career: careers_Adult_Military--></T>
+                            </V>
+                            <V n="user_level" t="enabled">
+                              <U n="enabled">
+                                <T n="upper_bound">1</T>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                  <L>
+                    <V t="career_test">
+                      <U n="career_test">
+                        <V n="test_type" t="career_reference">
+                          <U n="career_reference">
+                            <V n="career" t="specific_career">
+                              <T n="specific_career">202483<!--Career: careers_Adult_Military--></T>
+                            </V>
+                            <V n="user_level" t="enabled">
+                              <U n="enabled">
+                                <T n="lower_bound">5</T>
+                                <T n="upper_bound">5</T>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </V>
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="amount">1</T>
+                <T n="stat">417324<!--Statistic: statistic_HobbyClass_SkillInteractionTime--></T>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+                <L n="tests">
+                  <L>
+                    <V t="situation_job_test">
+                      <U n="situation_job_test">
+                        <L n="situation_jobs">
+                          <T>397234<!--SituationJob: job_HobbyClass_ClassMember_CTYAE--></T>
+                          <T>400498<!--SituationJob: job_HobbyClass_ClassMember_TYAE--></T>
+                        </L>
+                      </U>
+                    </V>
+                    <V t="situation_running_test">
+                      <U n="situation_running_test">
+                        <V n="situation_whitelist" t="enabled">
+                          <L n="enabled">
+                            <T>398249<!--HobbyClassSituation: situation_HobbyClass_ClassMember_Fitness--></T>
+                          </L>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </V>
+            <V t="reference">
+              <T n="reference">249740<!--PeriodicStatChangeOperation: periodicStatChangeOperation_Lifestyles_Liked_Energetic--></T>
+            </V>
+            <V t="reference">
+              <T n="reference">249720<!--PeriodicStatChangeOperation: periodicStatChangeOperation_Lifestyles_Progress_Energetic--></T>
+            </V>
+            <V t="reference">
+              <T n="reference">251310<!--PeriodicStatChangeOperation: periodicStatChangeOperation_Lifestyles_Liked_Indoorsy--></T>
+            </V>
+            <V t="reference">
+              <T n="reference">249764<!--PeriodicStatChangeOperation: periodicStatChangeOperation_Lifestyles_Progress_Indoorsy--></T>
+            </V>
+            <V t="reference">
+              <T n="reference">289143<!--PeriodicStatChangeOperation: periodicStatChange_WerewolfPackValue_SelfImprovement--></T>
+            </V>
+            <V t="statistic_set_max">
+              <U n="statistic_set_max">
+                <T n="stat">16463<!--Commodity: commodity_Emotion_Autonomy_Energized--></T>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+              </U>
+            </V>
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="amount">0.166666666666667</T>
+                <T n="stat">286270<!--Statistic: statistic_PubertyChanges_Acne--></T>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+                <L n="tests">
+                  <L>
+                    <V t="sim_info">
+                      <U n="sim_info">
+                        <V n="ages" t="specified">
+                          <L n="specified">
+                            <E>TEEN</E>
+                            <E>YOUNGADULT</E>
+                            <E>ADULT</E>
+                            <E>ELDER</E>
+                          </L>
+                        </V>
+                        <V n="species" t="specified">
+                          <U n="specified">
+                            <L n="species">
+                              <E />
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </V>
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="amount">-10</T>
+                <T n="exclusive_to_owning_si">False</T>
+                <T n="stat">38437<!--Commodity: Commodity_Age_Elder--></T>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+              </U>
+            </V>
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="amount">10</T>
+                <T n="exclusive_to_owning_si">False</T>
+                <T n="stat">38440<!--Commodity: Commodity_Age_Teen--></T>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+              </U>
+            </V>
+          </L>
+        </U>
+      </V>
+      <T n="start_autonomous_inertial">False</T>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0xBFEA0585<!--String: "(From Disliking Fitness)"--></T>
+          </V>
+          <T n="buff_type">258769<!--Buff: buff_SimPreference_Dislikes_Activities_Fitness--></T>
+        </U>
+        <L n="subject">
+          <E>Actor</E>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <L n="whitelist_traits">
+                  <T>258759<!--Preference: trait_SimPreference_Dislikes_Activities_Fitness--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0xE100C391<!--String: "(From Liking Fitness)"--></T>
+          </V>
+          <T n="buff_type">258773<!--Buff: buff_SimPreference_Likes_Activities_Fitness--></T>
+        </U>
+        <L n="subject">
+          <E>Actor</E>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <L n="whitelist_traits">
+                  <T>258765<!--Preference: trait_SimPreference_Likes_Activities_Fitness--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="adventure">
+      <U n="adventure">
+        <L n="_adventure_moments">
+          <U>
+            <E n="key">Career_ChanceCard_01</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">265945<!--AdventureMoment: adventureMoment_SimPreference_Activities_Fitness_Like--></T>
+              </V>
+            </U>
+          </U>
+        </L>
+        <L n="_initial_moments">
+          <U>
+            <E n="adventure_moment_key">Career_ChanceCard_01</E>
+            <U n="weight">
+              <L n="multipliers">
+                <U>
+                  <T n="multiplier">0</T>
+                  <L n="tests">
+                    <L>
+                      <V t="test_set_reference">
+                        <T n="test_set_reference">269650<!--TestSetInstance: testSetInstance_SimPreference_PreferenceDiscovery_MaxOrCoolOrAgeChildAllowed--></T>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+                <U>
+                  <T n="multiplier">0</T>
+                  <L n="tests">
+                    <L>
+                      <V t="trait">
+                        <U n="trait">
+                          <L n="whitelist_traits">
+                            <T>266802<!--Trait: trait_SimPreference_NoOpinion_Activities_Fitness--></T>
+                            <T>258765<!--Preference: trait_SimPreference_Likes_Activities_Fitness--></T>
+                            <T>258759<!--Preference: trait_SimPreference_Dislikes_Activities_Fitness--></T>
+                          </L>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+                <U>
+                  <T n="multiplier">0</T>
+                  <L n="tests">
+                    <L>
+                      <V t="test_set_reference">
+                        <T n="test_set_reference">268213<!--TestSetInstance: testSetInstance_SimPreference_PreferenceDiscovery_ConfidentEnergizedFocused--></T>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+              </L>
+            </U>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V t="adventure">
+      <U n="adventure">
+        <L n="_adventure_moments">
+          <U>
+            <E n="key">Career_ChanceCard_01</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">265946<!--AdventureMoment: adventureMoment_SimPreference_Activities_Fitness_Dislike--></T>
+              </V>
+            </U>
+          </U>
+        </L>
+        <L n="_initial_moments">
+          <U>
+            <E n="adventure_moment_key">Career_ChanceCard_01</E>
+            <U n="weight">
+              <L n="multipliers">
+                <U>
+                  <T n="multiplier">0</T>
+                  <L n="tests">
+                    <L>
+                      <V t="test_set_reference">
+                        <T n="test_set_reference">269650<!--TestSetInstance: testSetInstance_SimPreference_PreferenceDiscovery_MaxOrCoolOrAgeChildAllowed--></T>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+                <U>
+                  <T n="multiplier">0</T>
+                  <L n="tests">
+                    <L>
+                      <V t="trait">
+                        <U n="trait">
+                          <L n="whitelist_traits">
+                            <T>266802<!--Trait: trait_SimPreference_NoOpinion_Activities_Fitness--></T>
+                            <T>258765<!--Preference: trait_SimPreference_Likes_Activities_Fitness--></T>
+                            <T>258759<!--Preference: trait_SimPreference_Dislikes_Activities_Fitness--></T>
+                          </L>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+                <U>
+                  <T n="multiplier">0</T>
+                  <L n="tests">
+                    <L>
+                      <V t="test_set_reference">
+                        <T n="test_set_reference">267812<!--TestSetInstance: testSetInstance_SimPreference_PreferenceDiscovery_AngryBoredUncomfortable--></T>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+              </L>
+            </U>
+          </U>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x90F47C0B<!--String: "Sometimes only a spinning bike can satisfy the need for speed.  "--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <L n="loot_list">
+              <T>23988<!--LootActions: loot_Buff_PotentiallySore--></T>
+              <T>100293<!--LootActions: loot_Workout_PuddleChance_Slob--></T>
+            </L>
+          </U>
+        </U>
+      </L>
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="loot_list">
+                  <T>23988<!--LootActions: loot_Buff_PotentiallySore--></T>
+                  <T>100293<!--LootActions: loot_Workout_PuddleChance_Slob--></T>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="mood">
+                <U n="mood">
+                  <T n="mood">14646<!--Mood: Mood_Uncomfortable--></T>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">10186<!--MixerInteraction: mixer_Stand_EnergizedResponse--></T>
+                    <E n="target">Object</E>
+                  </U>
+                </L>
+                <L n="loot_list">
+                  <T>23988<!--LootActions: loot_Buff_PotentiallySore--></T>
+                  <T>100293<!--LootActions: loot_Workout_PuddleChance_Slob--></T>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="mood">
+                <U n="mood">
+                  <T n="mood">14636<!--Mood: Mood_Energized--></T>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <V n="whitelist" t="enabled">
+            <L n="enabled">
+              <T>463787<!--Buff: buff_Situation_EP20Festival_Autonomy_FashionAndFitness_SpinningStudent--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

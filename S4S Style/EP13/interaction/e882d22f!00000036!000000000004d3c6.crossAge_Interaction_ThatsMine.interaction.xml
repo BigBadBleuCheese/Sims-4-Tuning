@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="crossAge_Interaction_ThatsMine" s="316358">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="circle">
+            <U n="circle">
+              <T n="radius">5</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="value" t="facing" />
+        </U>
+      </L>
+    </U>
+  </L>
+  <L n="_false_advertisements">
+    <V t="statistic_set_max">
+      <U n="statistic_set_max">
+        <T n="stat">143231<!--Commodity: commodity_Trait_Toddler_Autonomy_Fussy--></T>
+      </U>
+    </V>
+    <V t="statistic_set_max">
+      <U n="statistic_set_max">
+        <T n="stat">29104<!--Commodity: commodity_Trait_Autonomy_HotHeaded--></T>
+      </U>
+    </V>
+    <V t="statistic_set_max">
+      <U n="statistic_set_max">
+        <T n="stat">29112<!--Commodity: commodity_Trait_Autonomy_Mean--></T>
+      </U>
+    </V>
+    <V t="statistic_set_max">
+      <U n="statistic_set_max">
+        <T n="stat">16455<!--Commodity: commodity_Emotion_Autonomy_Angry--></T>
+      </U>
+    </V>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">316227<!--AnimationElement: crossAge_ThatsMine--></T>
+      </U>
+    </U>
+  </V>
+  <V n="content_score" t="enabled">
+    <U n="enabled">
+      <V n="cross_age_preferences" t="enabled">
+        <V n="enabled" t="reference">
+          <T n="reference">309975<!--CrossAgeTuning: crossAgeTuning_Pie_Menu_Score--></T>
+        </V>
+      </V>
+      <L n="relationship_bit_collection_preference">
+        <U>
+          <T n="key">306282<!--RelationshipBit: familyTrope_distant--></T>
+          <T n="value">10</T>
+        </U>
+        <U>
+          <T n="key">306293<!--RelationshipBit: familyTrope_close--></T>
+          <T n="value">-10</T>
+        </U>
+        <U>
+          <T n="key">306356<!--RelationshipBit: familyTrope_loving_target_IsAuthorityOf_actor--></T>
+          <T n="value">-25</T>
+        </U>
+        <U>
+          <T n="key">310888<!--RelationshipBit: familyTrope_difficult--></T>
+          <T n="value">25</T>
+        </U>
+      </L>
+    </U>
+  </V>
+  <T n="display_name">0x7EBD415E<!--String: "That's Mine!"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="loot_list">
+          <T>130277<!--LootActions: rel_Loss_Small_TargetSim--></T>
+          <T>316440<!--LootActions: loot_AngrySocialCommodity_ForSI--></T>
+          <T>161450<!--LootActions: loot_Statistic_LifeSkill_Manners_Loss_Small--></T>
+          <T>320542<!--LootActions: loot_CrossAge_MaxAutonomyCommodities--></T>
+        </L>
+      </U>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TODDLER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

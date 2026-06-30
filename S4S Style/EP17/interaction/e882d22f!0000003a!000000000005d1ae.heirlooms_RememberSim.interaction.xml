@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="heirlooms_RememberSim" s="381358">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U />
+        <U>
+          <V n="value" t="facing" />
+        </U>
+      </L>
+    </U>
+  </L>
+  <L n="_false_advertisements">
+    <V t="statistic_set_max">
+      <U n="statistic_set_max">
+        <T n="stat">466791<!--Commodity: commodity_Heirlooms_RememberSim--></T>
+      </U>
+    </V>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_from_sim_inventory">True</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <L n="basic_extras">
+    <V t="balloon">
+      <U n="balloon">
+        <L n="balloon_choices">
+          <U>
+            <V n="item" t="balloon_icon">
+              <U n="balloon_icon">
+                <V n="icon" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>HeirloomCreatorSim</E>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </U>
+        </L>
+        <L n="balloon_target">
+          <E>Actor</E>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>466977<!--LootActions: loot_Heirlooms_RememberSim--></T>
+        </L>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+  </L>
+  <V n="basic_reserve_object" t="disabled" />
+  <T n="category">395098<!--PieMenuCategory: pieMenuCategory_Heirlooms--></T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xB6B148B9<!--String: "Think about Original Owner"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <V n="animation_ref" t="enabled">
+              <U n="enabled">
+                <T n="factory">381296<!--AnimationElement: heirlooms_RememberSim_Positive--></T>
+              </U>
+            </V>
+            <L n="basic_extras">
+              <V t="buff_fire_and_forget">
+                <U n="buff_fire_and_forget">
+                  <U n="buff">
+                    <V n="buff_reason" t="enabled">
+                      <T n="enabled">0x60512146<!--String: "(From Remembering Heirloom's Original Owner)"--></T>
+                    </V>
+                    <T n="buff_type">381431<!--Buff: buff_Heirlooms_ThinkOfThemFondly--></T>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </U>
+        </U>
+      </L>
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">381300<!--AnimationElement: heirlooms_RememberSim_Negative--></T>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <V n="buff_reason" t="enabled">
+                          <T n="enabled">0x60512146<!--String: "(From Remembering Heirloom's Original Owner)"--></T>
+                        </V>
+                        <T n="buff_type">381432<!--Buff: buff_Heirlooms_DeadToMe--></T>
+                      </U>
+                    </U>
+                  </V>
+                </L>
+                <E n="outcome_result">FAILURE</E>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="relationship">
+                <U n="relationship">
+                  <U n="relationship_score_interval">
+                    <T n="lower_bound">-100</T>
+                    <T n="upper_bound">0</T>
+                  </U>
+                  <L n="target_sim">
+                    <E>HeirloomCreatorSim</E>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T p="InEP17\UI\Icons\PieMenu\Interactions\icon_pieMenu_Heirloom.png" n="key">2f7d0004:00000000:8581aa691a6b5e94</T>
+      </U>
+    </V>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all" />
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_autonomous">
+    <L>
+      <V t="mood">
+        <U n="mood">
+          <T n="mood">14640<!--Mood: Mood_Happy--></T>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="mood">
+        <U n="mood">
+          <T n="mood">14643<!--Mood: Mood_Sad--></T>
+        </U>
+      </V>
+    </L>
+  </L>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">395099<!--TestSetInstance: testSetInstance_Heirlooms_NotActorsHeirloom--></T>
+    </V>
+    <V t="heirloom">
+      <U n="heirloom">
+        <V n="is_heirloom_object" t="enabled" />
+      </U>
+    </V>
+    <V t="object_ownership">
+      <U n="object_ownership">
+        <T n="test_household_owner">True</T>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">15</T>
+</I>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_LotTrait_EV008_RegalResidence_PropertyValue_00" s="495194">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">495188<!--Buff: buff_Trait_Lot_EV008_RegalResidence_Threshold_00--></T>
+        </U>
+        <E n="subject">AllInstancedActiveHouseholdSims</E>
+      </U>
+    </V>
+    <V t="buff_removal">
+      <U n="buff_removal">
+        <L n="buffs_to_remove">
+          <T>495182<!--Buff: buff_Trait_Lot_EV008_RegalResidence_Threshold_2--></T>
+          <T>495183<!--Buff: buff_Trait_Lot_EV008_RegalResidence_Threshold_3--></T>
+          <T>495184<!--Buff: buff_Trait_Lot_EV008_RegalResidence_Threshold_4--></T>
+          <T>495181<!--Buff: buff_Trait_Lot_EV008_RegalResidence_Threshold_1--></T>
+        </L>
+        <E n="subject">AllInstancedActiveHouseholdSims</E>
+      </U>
+    </V>
+  </L>
+  <T n="run_test_first">False</T>
+  <L n="tests">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>495188<!--Buff: buff_Trait_Lot_EV008_RegalResidence_Threshold_00--></T>
+            <T>495181<!--Buff: buff_Trait_Lot_EV008_RegalResidence_Threshold_1--></T>
+            <T>495182<!--Buff: buff_Trait_Lot_EV008_RegalResidence_Threshold_2--></T>
+            <T>495183<!--Buff: buff_Trait_Lot_EV008_RegalResidence_Threshold_3--></T>
+            <T>495184<!--Buff: buff_Trait_Lot_EV008_RegalResidence_Threshold_4--></T>
+            <T>495410<!--Buff: buff_Trait_Lot_EV008_RegalResidence_Threshold_5--></T>
+          </L>
+          <E n="subject">Actor</E>
+        </U>
+      </V>
+      <V t="simoleon_value">
+        <U n="simoleon_value">
+          <V n="value_context" t="property_only" />
+          <U n="value_threshold">
+            <E n="comparison">LESS</E>
+            <T n="value">25000</T>
+          </U>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

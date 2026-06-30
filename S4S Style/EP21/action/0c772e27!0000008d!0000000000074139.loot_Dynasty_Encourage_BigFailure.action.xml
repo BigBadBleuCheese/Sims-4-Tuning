@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Dynasty_Encourage_BigFailure" s="475449">
+  <L n="loot_actions">
+    <V t="sim_interaction_dialog">
+      <U n="sim_interaction_dialog">
+        <U n="chance">
+          <T n="base_chance">35</T>
+        </U>
+        <U n="dialog">
+          <V n="text" t="variation">
+            <U n="variation">
+              <L n="variations">
+                <T>0xBDE51A42<!--String: "Stop putting so much pressure on me, I'm just trying to live my life!"--></T>
+                <T>0xA5D1FB68<!--String: "With respect, please let me make my own decisions. This family needs a foundation of trust."--></T>
+                <T>0x8A39DD7F<!--String: "Stop trying to control my every move. Let me make my own choices or I'm leaving this Dynasty!"--></T>
+              </L>
+            </U>
+          </V>
+        </U>
+        <L n="possible_responses">
+          <U>
+            <U n="item">
+              <L n="loot">
+                <T>475671<!--LootActions: loot_Dynasty_Encourage_BigFailure_Yes--></T>
+              </L>
+              <T n="text">0x66E50F55<!--String: "I understand."--></T>
+            </U>
+          </U>
+          <U>
+            <U n="item">
+              <L n="loot">
+                <T>475672<!--LootActions: loot_Dynasty_Encourage_BigFailure_No--></T>
+              </L>
+              <T n="text">0xDEF3ABF2<!--String: "You're out of this Dynasty!"--></T>
+            </U>
+          </U>
+        </L>
+        <E n="target_participant_type">TargetSim</E>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="npc" t="enabled">
+            <T n="enabled">True</T>
+          </V>
+          <E n="who">TargetSim</E>
+        </U>
+      </V>
+      <V t="trait">
+        <U n="trait">
+          <L n="whitelist_traits">
+            <T>466527<!--Trait: trait_Dynasty_Head--></T>
+          </L>
+        </U>
+      </V>
+      <V t="test_based_score_threshold">
+        <U n="test_based_score_threshold">
+          <T n="test_based_score">249138<!--TestBasedScore: scores_socialoutcomes_friendly_AlwaysOn--></T>
+          <U n="threshold">
+            <E n="comparison">LESS</E>
+            <T n="value">10</T>
+          </U>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

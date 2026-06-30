@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="crossStitch_NPC_CreateHoopOffKit_ClubGathering" s="348578">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="circle">
+            <U n="circle">
+              <T n="ideal_radius">1</T>
+              <T n="radius">2</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="value" t="facing" />
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <L n="_static_commodities">
+    <U>
+      <T n="static_commodity">377252<!--StaticCommodity: staticCommodity_BuildSkill_MasteryPerk_SkillfulSleepClone--></T>
+    </U>
+    <U>
+      <T n="static_commodity">399149<!--StaticCommodity: staticCommodity_CrossStitch_Craft_NPC--></T>
+    </U>
+  </L>
+  <T n="allow_autonomous">True</T>
+  <T n="allow_user_directed">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">23926<!--AnimationElement: Generic_PickUp--></T>
+      </U>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="create_object">
+      <U n="create_object">
+        <V n="creation_data" t="definition_tested">
+          <U n="definition_tested">
+            <L n="definitions">
+              <U>
+                <T n="definition">271491</T>
+              </U>
+            </L>
+          </U>
+        </V>
+        <V n="location" t="inventory" />
+        <E n="owner_sim">Actor</E>
+        <T n="require_claim">True</T>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+  </L>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x28E286B2<!--String: "Cross-stitch"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="basic_extras">
+          <V t="transience_change">
+            <U n="transience_change">
+              <E n="criticality">OnCancelOrException</E>
+              <V n="new_value_beginning" t="make_transient" />
+              <V n="new_value_ending" t="make_transient" />
+              <E n="who">CreatedObject</E>
+            </U>
+          </V>
+        </L>
+        <L n="continuation">
+          <U>
+            <T n="affordance">348579<!--StartCraftingAutonomouslySuperInteraction: crossStitch_NPCStartCrafting_Autonomously_ClubFromHoop--></T>
+            <E n="target">CreatedObject</E>
+          </U>
+        </L>
+        <T n="force_outcome_on_exit">True</T>
+      </U>
+    </U>
+  </V>
+  <U n="posture_preferences">
+    <T n="apply_posture_costs">True</T>
+    <L n="posture_cost_overrides">
+      <U>
+        <T n="key">15527<!--Posture: posture_Kneel--></T>
+        <T n="value">50</T>
+      </U>
+      <U>
+        <T n="key">15535<!--Posture: posture_Sit--></T>
+      </U>
+      <U>
+        <T n="key">240809<!--Posture: posture_Sit_RockingChair--></T>
+      </U>
+      <U>
+        <T n="key">283170<!--Posture: posture_CrossLegged--></T>
+        <T n="value">40</T>
+      </U>
+    </L>
+  </U>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_autonomous">
+    <L>
+      <V t="test_set_reference">
+        <T n="test_set_reference">126907<!--TestSetInstance: testSetInstance_InteractionIsEncouragedByClubOrCustomerRulesOrHobbyClassOrDynasty--></T>
+      </V>
+    </L>
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <V n="whitelist" t="enabled">
+            <L n="enabled">
+              <T>377847<!--Buff: buff_MasteryPerk_Hidden_SkillfulSleep_Clone--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="test_disallow_while_running" t="enabled">
+    <U n="enabled">
+      <L n="affordances">
+        <T>260234<!--CraftingPhaseStagingSuperInteraction: crossStitch_CraftingPhase_Stitch--></T>
+        <T>348579<!--StartCraftingAutonomouslySuperInteraction: crossStitch_NPCStartCrafting_Autonomously_ClubFromHoop--></T>
+      </L>
+    </U>
+  </V>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="npc" t="enabled">
+          <T n="enabled">True</T>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="inventory">
+      <U n="inventory">
+        <V n="contents_check" t="has_object_with_states">
+          <U n="has_object_with_states">
+            <L n="state_set">
+              <T>261161<!--ObjectStateValue: crossStitch_Values_Crafting_NotStarted--></T>
+            </L>
+          </U>
+        </V>
+        <U n="required_count">
+          <E n="comparison">EQUAL</E>
+          <T n="value">0</T>
+        </U>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

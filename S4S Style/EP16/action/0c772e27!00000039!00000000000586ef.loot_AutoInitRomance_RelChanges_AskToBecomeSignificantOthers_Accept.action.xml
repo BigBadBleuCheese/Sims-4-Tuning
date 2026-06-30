@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_AutoInitRomance_RelChanges_AskToBecomeSignificantOthers_Accept" s="362223">
+  <L n="loot_actions">
+    <V t="audio">
+      <U n="audio">
+        <U n="audio">
+          <T n="audio" p="InEP16\Audio\music\bumpers\bumper_ep16_ask_to_be_significant_other_success.propx">39b2aa4a:00000000:d0fd94e96d59458c</T>
+          <T n="immediate_audio">True</T>
+        </U>
+      </U>
+    </V>
+    <V t="actions">
+      <T n="actions">368148<!--LootActions: loot_SignificantOther_AddBoth_AutoInitRomance--></T>
+    </V>
+    <V t="reaction">
+      <U n="reaction">
+        <V n="si_reaction" t="enabled">
+          <U n="enabled">
+            <T n="affordance">368391<!--SocialSuperInteraction: SSI_AutoInitRomance_BecomeSignificantOthers--></T>
+            <E n="affordance_priority">Critical</E>
+            <V n="affordance_target" t="enabled">
+              <E n="enabled">Actor</E>
+            </V>
+          </U>
+        </V>
+        <E n="subject">PickedSim</E>
+        <L n="tests">
+          <L>
+            <V t="existence">
+              <U n="existence">
+                <E n="participant">Actor</E>
+              </U>
+            </V>
+            <V t="existence">
+              <U n="existence">
+                <E n="participant">PickedSim</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

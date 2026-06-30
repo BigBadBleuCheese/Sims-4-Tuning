@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalMultipleSimsWithBuff" i="situation_goal" m="situations.situation_goal_multi_sim" n="situationGoalMultipleSimsWithBuff_CommunalEvents_MeetAllGuests" s="331488">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T n="enabled" p="InGame\UI\Icons\Events\EventGoal_Friendly.png">2f7d0004:00000000:cdd3c75256b4c308</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0xE70FA17A<!--String: "Meet Guests"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0xADC7D2A2<!--String: "Have an Active Sim Introduce themselves to Guests or socialize with them if they've already met before."--></T>
+      </V>
+    </U>
+  </V>
+  <U n="_goal_test">
+    <T n="buff_type">331489<!--Buff: buff_CommunalEvents_Guests_HaveMetHost--></T>
+    <V n="sim_count" t="fixed" />
+  </U>
+  <L n="_post_tests">
+    <V t="situation_job">
+      <U n="situation_job">
+        <L n="situation_jobs">
+          <T>330679<!--SituationJob: communalEvents_Job_Guests--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+</I>

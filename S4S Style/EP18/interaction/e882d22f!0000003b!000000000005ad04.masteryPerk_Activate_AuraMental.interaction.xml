@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="masteryPerk_Activate_AuraMental" s="371972">
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Actor</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">380916<!--AnimationElement: masteryPerk_AuraMental--></T>
+      </U>
+    </U>
+  </V>
+  <T n="category">389592<!--PieMenuCategory: pieMenuCategory_MasteryPerk_Self--></T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x3C817019<!--String: "Activate Mental Aura"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="basic_extras">
+          <V t="buff_fire_and_forget">
+            <U n="buff_fire_and_forget">
+              <U n="buff">
+                <V n="buff_reason" t="enabled">
+                  <T n="enabled">0x3383D608<!--String: "(From Activating Aura Mastery Perk)"--></T>
+                </V>
+                <T n="buff_type">372008<!--Buff: buff_MasteryPerk_AuraMental--></T>
+              </U>
+            </U>
+          </V>
+        </L>
+      </U>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">ACTOR</E>
+  <L n="test_globals">
+    <V t="identity">
+      <U n="identity">
+        <T n="subjects_match">True</T>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>372009<!--Buff: buff_MasteryPerk_AuraActive--></T>
+          <T>371216<!--Buff: buff_MasteryPerk_AuraCreative--></T>
+          <T>372008<!--Buff: buff_MasteryPerk_AuraMental--></T>
+        </L>
+      </U>
+    </V>
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x929784EA<!--String: "{0.SimFirstName} is not old enough to do this."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>389283<!--Buff: buff_MasteryPerk_Hidden_AuraCooldown--></T>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xE5BE4079<!--String: "{0.SimFirstName} needs to wait a moment before {0.SimPronounSubjective} can do this again."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

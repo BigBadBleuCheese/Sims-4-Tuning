@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalObjectInteraction" i="situation_goal" m="situations.situation_goal_object_interaction" n="r4Event_ObjectInteraction_AskAboutEmit" s="406948">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T n="enabled" p="InGame\UI\Icons\Events\EventGoal_Socialize.png">2f7d0004:00000000:21835a4b8238b2fa</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x89F2D20<!--String: "Ask other Sims about Emit"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0x1673C4E8<!--String: "Blue hair, believer in time travel...who else could it be but Emit Relevart? Maybe others might know more.\n\nSelect Ask about Emit on other Sims.\n\n(Make sure to introduce yourself first, if you haven't already)\n\n<i>(+25 Event Points)</i>"--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>447711<!--SituationGoalLootActions: liveEvent_GoalLoot_CompleteQuestGoal--></T>
+  </L>
+  <U n="_goal_test">
+    <L n="affordances">
+      <T>406957<!--SocialMixerInteraction: socials_Targeted_Friendly_AlwaysOn_STC_Events_R4Event_AskAboutEmit--></T>
+    </L>
+    <E n="test_event">InteractionComplete</E>
+  </U>
+  <T n="_iterations">3</T>
+  <L n="_post_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+      </U>
+    </V>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+  <V n="goal_completion_notification" t="enabled">
+    <U n="enabled">
+      <V n="icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T p="InGame\UI\Icons\BuildBuy\Venues\icon_Park.png" n="key">2f7d0004:00000000:32f4042830ee8eb5</T>
+          </U>
+        </V>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0x405E1606<!--String: "Despite being mere gossip, the information from the news and your own inquiries suggest Emit might be found at Magnolia Blossom Park in Willow Creek.\n\nSurely, he's there!"--></T>
+      </V>
+      <V n="title" t="enabled">
+        <T n="enabled">0x2308410A<!--String: "Emit's Location"--></T>
+      </V>
+    </U>
+  </V>
+  <V n="tutorial_tip_group" t="disabled" />
+</I>

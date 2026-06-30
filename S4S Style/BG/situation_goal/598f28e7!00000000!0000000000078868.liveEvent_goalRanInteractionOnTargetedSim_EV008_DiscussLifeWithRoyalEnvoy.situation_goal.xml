@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalRanInteractionOnTargetedSim" i="situation_goal" m="situations.situation_goal_targeted_sim" n="liveEvent_goalRanInteractionOnTargetedSim_EV008_DiscussLifeWithRoyalEnvoy" s="493672">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T n="enabled" p="InGame\UI\Icons\Events\EventGoal_Socialize.png">2f7d0004:00000000:21835a4b8238b2fa</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0xD5B6068<!--String: "Ask the Envoy about the Library"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0x5763A7D0<!--String: "The Envoy should be at the Willow Creek Library. Find them, and surprise them with a question!\n\nTo travel to the library, open the Phone Menu and choose Travel.\n\nThen, find the Willow Creek Archive Library in Willow Creek.\n\nHint: If the Envoy is not around, you can easily call them over using the self-interaction 'Call the Envoy to Current Lot'. Don't see that option? That means they are nearby! Just select the objective to locate the Envoy on the lot."--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>447711<!--SituationGoalLootActions: liveEvent_GoalLoot_CompleteQuestGoal--></T>
+  </L>
+  <U n="_goal_test">
+    <L n="affordances">
+      <T>493818<!--SocialMixerInteraction: socials_Targeted_Friendly_AlwaysOn_STC_Events_EV008_RoyalEnvoyDiscussAboutLife--></T>
+    </L>
+    <E n="test_event">InteractionComplete</E>
+  </U>
+  <L n="_post_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+      </U>
+    </V>
+  </L>
+  <L n="_pre_goal_loot_list">
+    <T>495219<!--SituationGoalLootActions: liveEvent_GoalLoot_EV008_SpawnRoyalEnvoy--></T>
+  </L>
+  <T n="_select_all_instantiated_sims">True</T>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+  <V n="tutorial_tip_group" t="enabled">
+    <T n="enabled">498428<!--TutorialTipGroup: tutorialTipGroup_LiveEvent_EV008_InteractWithRoyalEnvoy--></T>
+  </V>
+</I>

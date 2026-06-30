@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Buff_UnlockFamilyRecipes_WoohooFood_Retro" s="431192">
+  <L n="loot_actions">
+    <V t="unlock_item">
+      <U n="unlock_item">
+        <V n="unlock_item" t="unlock_buff">
+          <T n="unlock_buff">387638<!--Buff: buff_FamilyRecipes_WoohooFood--></T>
+        </V>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InEP18\UI\Icons\Notifications\notification_Family_Recipes.png">2f7d0004:00000000:84cfa4f64766a3cb</T>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x5B9FA0FC<!--String: "{0.SimFirstName} has unlocked the <b>Fertility Unleashed</b> Special Touch for Family Recipes from becoming a parent to a newborn in the past."--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0xBF718698<!--String: "Family Recipe Special Touch Unlocked"--></T>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="relationship">
+        <U n="relationship">
+          <T n="num_relations">1</T>
+          <U n="prohibited_relationship_bits">
+            <L n="match_any">
+              <T>310897<!--RelationshipBit: relbit_AdoptedSim--></T>
+            </L>
+          </U>
+          <U n="required_relationship_bits">
+            <L n="match_any">
+              <T>8805<!--RelationshipBit: family_Target_IsSonOrDaughterOf_Actor--></T>
+            </L>
+          </U>
+          <L n="target_sim">
+            <E>AllRelationships</E>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="ImmediateSuperInteraction" i="interaction" m="interactions.base.immediate_interaction" n="immediate_APM_SetPORemedyType" s="350123">
+  <V n="_saveable" t="disabled" />
+  <V n="content_score" t="disabled" />
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <L n="loot_list">
+              <T>350143<!--LootActions: loot_APM_SetPORemedyPrimary--></T>
+            </L>
+          </U>
+          <U n="weight">
+            <L n="multipliers">
+              <U>
+                <T n="multiplier">3</T>
+                <L n="tests">
+                  <L>
+                    <V t="test_set_reference">
+                      <T n="test_set_reference">345135<!--TestSetInstance: testSet_APM_PrimaryPO--></T>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">0.5</T>
+                <L n="tests">
+                  <L>
+                    <V t="test_set_reference">
+                      <T n="test_set_reference">345136<!--TestSetInstance: testSet_APM_SecondaryPO--></T>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+        <U>
+          <U n="outcome">
+            <L n="loot_list">
+              <T>350144<!--LootActions: loot_APM_SetPORemedySecondary--></T>
+            </L>
+          </U>
+          <U n="weight">
+            <L n="multipliers">
+              <U>
+                <T n="multiplier">0</T>
+                <L n="tests">
+                  <L>
+                    <V t="situation_running_test">
+                      <U n="situation_running_test">
+                        <V n="situation_whitelist" t="enabled">
+                          <L n="enabled">
+                            <T>343473<!--MultiUnitEventSituation: situation_muEvent_Electrical--></T>
+                            <T>343680<!--MultiUnitEventSituation: situation_muEvent_Explosion--></T>
+                            <T>344502<!--MultiUnitEventSituation: situation_muEvent_Charity--></T>
+                            <T>343855<!--MultiUnitEventSituation: situation_muEvent_MaintenanceDay--></T>
+                            <T>347389<!--MultiUnitEventSituation: situation_muEvent_PetDay--></T>
+                            <T>343792<!--MultiUnitEventSituation: situation_muEvent_Blight--></T>
+                          </L>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">3</T>
+                <L n="tests">
+                  <L>
+                    <V t="test_set_reference">
+                      <T n="test_set_reference">345136<!--TestSetInstance: testSet_APM_SecondaryPO--></T>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">0.5</T>
+                <L n="tests">
+                  <L>
+                    <V t="test_set_reference">
+                      <T n="test_set_reference">345135<!--TestSetInstance: testSet_APM_PrimaryPO--></T>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+            <E>TODDLER</E>
+            <E>BABY</E>
+            <E>INFANT</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+  </L>
+</I>

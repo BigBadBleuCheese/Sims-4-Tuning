@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="si_EP17Festival_FamilyDay_SearchforFrog" s="402275">
+  <V n="_saveable" t="enabled" />
+  <L n="_static_commodities">
+    <U>
+      <T n="static_commodity">402292<!--StaticCommodity: staticCommodity_RoleAutonomy_EP17Festival_FamilyDay_FrogFinder--></T>
+    </U>
+  </L>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="time_based">
+                <U n="time_based">
+                  <T n="max_time">20</T>
+                  <T n="min_time">10</T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+        <V t="list_reference">
+          <T n="list_reference">40705<!--ExitConditionList: ExitConditionList_MotivesNearFail--></T>
+        </V>
+      </L>
+      <V n="content" t="looping_content">
+        <U n="looping_content">
+          <U n="animation_ref">
+            <T n="factory">402279<!--AnimationElement: Object_ParkFountain_EP17Festival_ExamineWater_Loop--></T>
+          </U>
+        </U>
+      </V>
+      <V n="periodic_stat_change" t="enabled">
+        <U n="enabled">
+          <L n="operations">
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="advertise">False</T>
+                <T n="amount">0.78</T>
+                <T n="stat">16655<!--Commodity: motive_Fun--></T>
+              </U>
+            </V>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x2D03945<!--String: "Search for Frogs"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <V n="animation_ref" t="enabled">
+              <U n="enabled">
+                <T n="factory">402278<!--AnimationElement: Object_ParkFountain_EP17Festival_CatchFrog_Succeed--></T>
+              </U>
+            </V>
+            <L n="loot_list">
+              <T>402289<!--RandomWeightedLoot: randomWeightedLoot_EP17Festival_SearchForFrog_Success--></T>
+            </L>
+          </U>
+          <U n="weight">
+            <L n="multipliers">
+              <U>
+                <T n="multiplier">3</T>
+                <L n="tests">
+                  <L>
+                    <V t="test_set_reference">
+                      <T n="test_set_reference">179129<!--TestSetInstance: testSetInstance_NoEmotionNegative_MoodBuffs--></T>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+        <U>
+          <U n="outcome">
+            <V n="animation_ref" t="enabled">
+              <U n="enabled">
+                <T n="factory">402277<!--AnimationElement: Object_ParkFountain_EP17Festival_CatchFrog_Fail--></T>
+              </U>
+            </V>
+            <L n="basic_extras">
+              <V t="buff_fire_and_forget">
+                <U n="buff_fire_and_forget">
+                  <U n="buff">
+                    <T n="buff_type">402287<!--Buff: buff_EP17Festival_Hidden_FamilyDay_FrogFinder_Cooldown--></T>
+                  </U>
+                </U>
+              </V>
+            </L>
+            <L n="loot_list">
+              <T>402281<!--RandomWeightedLoot: randomWeightedLoot_EP17Festival_SearchforFrog_Fail--></T>
+            </L>
+            <E n="outcome_result">FAILURE</E>
+          </U>
+          <U n="weight">
+            <T n="base_value">2</T>
+          </U>
+        </U>
+      </L>
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">402278<!--AnimationElement: Object_ParkFountain_EP17Festival_CatchFrog_Succeed--></T>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <T n="buff_type">402287<!--Buff: buff_EP17Festival_Hidden_FamilyDay_FrogFinder_Cooldown--></T>
+                      </U>
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </U>
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">402277<!--AnimationElement: Object_ParkFountain_EP17Festival_CatchFrog_Fail--></T>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <T n="buff_type">402287<!--Buff: buff_EP17Festival_Hidden_FamilyDay_FrogFinder_Cooldown--></T>
+                      </U>
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="sim_info">
+                <U n="sim_info">
+                  <V n="npc" t="enabled">
+                    <T n="enabled">True</T>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>402286<!--Buff: buff_EP17Festival_Hidden_FamilyDay_FrogFinder_Complete--></T>
+        </L>
+      </U>
+    </V>
+    <V t="festival_running">
+      <U n="festival_running">
+        <V n="check_if_on_festival_street" t="enabled" />
+        <V n="drama_node" t="enabled">
+          <T n="enabled">384136<!--FestivalDramaNode: festivalDramaNode_EP17_FamilyDay--></T>
+        </V>
+        <U n="valid_time_blocks">
+          <T n="pre_festival">False</T>
+        </U>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>402287<!--Buff: buff_EP17Festival_Hidden_FamilyDay_FrogFinder_Cooldown--></T>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xA5E80369<!--String: "{0.SimFirstName} must wait before attempting the Frog Finder Contest again"--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SimPickerInteraction" i="interaction" m="interactions.base.picker_interaction" n="game_ChallengeGrim_Bowling" s="391551">
+  <V n="_saveable" t="disabled" />
+  <L n="actor_continuation">
+    <U>
+      <T n="affordance">391549<!--SocialSuperInteraction: grimReaper_Social_Challenge_FromObject_Bowling--></T>
+      <E n="target">PickedSim</E>
+    </U>
+  </L>
+  <L n="basic_extras">
+    <V t="save_participant">
+      <U n="save_participant">
+        <E n="participant">Object</E>
+      </U>
+    </V>
+  </L>
+  <V n="content_score" t="disabled" />
+  <U n="continuation_linking">
+    <E n="continuations_to_cancel">ALL</E>
+  </U>
+  <T n="display_name">0xE4270EA5<!--String: "Challenge Sim"--></T>
+  <V n="display_name_overrides" t="testable">
+    <U n="testable">
+      <L n="overrides">
+        <U>
+          <V n="new_display_name" t="disabled" />
+          <V n="new_pie_menu_icon" t="enabled">
+            <V n="enabled" t="tradition" />
+          </V>
+          <L n="test">
+            <L>
+              <V t="holiday_tradition">
+                <U n="holiday_tradition">
+                  <U n="tradition_filter">
+                    <V n="whitelist" t="specify">
+                      <U n="specify">
+                        <L n="whitelist">
+                          <T>185431<!--HolidayTradition: holidayTradition_Play--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T n="include_uninstantiated_sims">False</T>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <V n="picker_dialog" t="sim_picker">
+    <U n="sim_picker">
+      <L n="custom_filters">
+        <V t="reference">
+          <T n="reference">499295<!--CustomSimFilter: customSimFilter_NobleCareer--></T>
+        </V>
+      </L>
+    </U>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <V n="sim_filter" t="sim_filter_selected">
+    <T n="sim_filter_selected">15931<!--TunableSimFilter: filter_GrimReaper--></T>
+  </V>
+  <L n="sim_tests">
+    <L>
+      <V t="test_set_reference">
+        <T n="test_set_reference">98960<!--TestSetInstance: testSet_NearbySim_NotAlreadyUsing_Picker--></T>
+      </V>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>12847<!--Buff: MoodBuff_Hidden_Miserable--></T>
+          </L>
+          <E n="subject">PickedSim</E>
+        </U>
+      </V>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>12856<!--Buff: MoodBuff_Hidden_Stressed--></T>
+          </L>
+          <E n="subject">PickedSim</E>
+        </U>
+      </V>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>421792<!--Buff: buff_GrimRework_ChallengeCooldown--></T>
+          </L>
+          <E n="subject">PickedSim</E>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="single_choice_display_name" t="enabled">
+    <T n="enabled">0xAE28C017<!--String: "Challenge Grim to Spare Life"--></T>
+  </V>
+  <V n="super_affordance_klobberers" t="enabled" />
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="in_use">
+      <U n="in_use">
+        <T n="negate">True</T>
+      </U>
+    </V>
+    <V t="situation_running_test">
+      <U n="situation_running_test">
+        <V n="situation_whitelist" t="enabled">
+          <L n="enabled">
+            <T>16195<!--WorkerNpcSituation: situation_GrimReaper--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+    <V t="statistic">
+      <U n="statistic">
+        <T n="stat">16665<!--Statistic: statistic_GrimReaper_DeathCount--></T>
+        <V n="threshold" t="value_threshold">
+          <U n="value_threshold">
+            <E n="comparison">GREATER</E>
+          </U>
+        </V>
+        <E n="who">Lot</E>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">28305<!--TestSetInstance: testSet_EmotionNotMiserable--></T>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">28176<!--TestSetInstance: testSet_EmotionNotStressed--></T>
+    </V>
+  </L>
+</I>

@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_BladderFailure_PuddleChance" s="9642">
+  <L n="loot_actions">
+    <V t="create_puddles">
+      <U n="create_puddles">
+        <U n="chance">
+          <L n="multipliers">
+            <U>
+              <T n="multiplier">0.1</T>
+              <L n="tests">
+                <L>
+                  <V t="situation_running_test">
+                    <U n="situation_running_test">
+                      <V n="situation_whitelist" t="enabled">
+                        <L n="enabled">
+                          <T>464260<!--CustomScheduleBackgroundSituation: customScheduleBackgroundSituation_1--></T>
+                        </L>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+          </L>
+        </U>
+        <U n="default_puddle_factory">
+          <T n="large">1</T>
+          <T n="medium">2</T>
+          <T n="none">0</T>
+          <T n="small">1</T>
+        </U>
+        <V n="sim_puddle_offsets" t="enabled">
+          <L n="enabled">
+            <U>
+              <U n="offset">
+                <T n="forward">-1.5</T>
+              </U>
+            </U>
+            <U>
+              <E n="age">ADULT</E>
+              <U n="offset">
+                <T n="forward">-2.5</T>
+              </U>
+            </U>
+            <U>
+              <E n="age">ELDER</E>
+              <U n="offset">
+                <T n="forward">-2.5</T>
+              </U>
+            </U>
+            <U>
+              <E n="gender">MALE</E>
+              <U n="offset">
+                <T n="forward">-0.5</T>
+              </U>
+            </U>
+            <U>
+              <E n="age">ADULT</E>
+              <E n="gender">MALE</E>
+              <U n="offset">
+                <T n="forward">-1.375</T>
+              </U>
+            </U>
+            <U>
+              <E n="age">ELDER</E>
+              <E n="gender">MALE</E>
+              <U n="offset">
+                <T n="forward">-1.375</T>
+              </U>
+            </U>
+          </L>
+        </V>
+        <E n="target_participant_type">Actor</E>
+        <V n="trait_based_puddle_factory" t="enabled">
+          <U n="enabled">
+            <E n="subject">Actor</E>
+            <L n="trait_puddle_factory">
+              <U>
+                <U n="puddle_factory">
+                  <T n="none">0</T>
+                  <T n="small">1</T>
+                </U>
+                <T n="trait">16858<!--Trait: trait_Neat--></T>
+              </U>
+              <U>
+                <U n="puddle_factory">
+                  <T n="large">1</T>
+                  <T n="none">0</T>
+                  <T n="small">0</T>
+                </U>
+                <T n="trait">16860<!--Trait: trait_Slob--></T>
+              </U>
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+</I>

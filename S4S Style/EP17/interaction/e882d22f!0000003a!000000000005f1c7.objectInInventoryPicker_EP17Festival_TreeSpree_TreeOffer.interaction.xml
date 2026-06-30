@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="ObjectInInventoryPickerInteraction" i="interaction" m="interactions.base.picker_interaction" n="objectInInventoryPicker_EP17Festival_TreeSpree_TreeOffer" s="389575">
+  <V n="_saveable" t="disabled" />
+  <V n="content_score" t="disabled" />
+  <V n="continuation" t="enabled">
+    <L n="enabled">
+      <U>
+        <T n="affordance">389258<!--SuperInteraction: si_EP17Festival_OfferTreeGift--></T>
+      </U>
+    </L>
+  </V>
+  <T n="display_name">0x7C694E99<!--String: "Offer Gift"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <V n="inventory_item_test" t="tag_set">
+    <U n="tag_set">
+      <L n="tag_set">
+        <E>Func_Trash</E>
+        <E>Func_Urnstone</E>
+        <E>Func_GiveGift_NotGiftable</E>
+      </L>
+      <E n="test_type">CONTAINS_NO_TAGS_IN_SET</E>
+    </U>
+  </V>
+  <V n="picker_dialog" t="object_picker">
+    <U n="object_picker">
+      <V n="text" t="enabled">
+        <V n="enabled" t="single">
+          <T n="single">0xB402B9E8<!--String: "Select an item to gift to the Guardian Tree, and potentially receive something in return!"--></T>
+        </V>
+      </V>
+    </U>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="festival_running">
+      <U n="festival_running">
+        <V n="drama_node" t="enabled">
+          <T n="enabled">385420<!--FestivalDramaNode: festivalDramaNode_EP17_TreeSpree--></T>
+        </V>
+        <U n="valid_time_blocks">
+          <T n="pre_festival">False</T>
+        </U>
+      </U>
+    </V>
+    <V t="inventory">
+      <U n="inventory">
+        <V n="contents_check" t="has_object_with_tag">
+          <U n="has_object_with_tag">
+            <L n="tag_set">
+              <E>Func_Trash</E>
+              <E>Func_Urnstone</E>
+              <E>Func_GiveGift_NotGiftable</E>
+            </L>
+            <E n="test_type">CONTAINS_NO_TAGS_IN_SET</E>
+          </U>
+        </V>
+        <E n="test_hidden">NON_HIDDEN_ONLY</E>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x40F7F5EF<!--String: "There isn't an item that can be gifted in this Sim's inventory."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+</I>

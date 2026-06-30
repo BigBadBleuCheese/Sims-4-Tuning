@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="BurglarSituation" i="situation" m="situations.complex.burglar_situation" n="situation_Burglar" s="424927">
+  <T n="_is_unique">True</T>
+  <T n="allowed_in_super_speed_3">True</T>
+  <T n="blocks_super_speed_three">True</T>
+  <V n="build_buy_lock_reason" t="enabled">
+    <T n="enabled">0x24C2B04B<!--String: "You cannot modify a lot while the burglar is here."--></T>
+  </V>
+  <U n="burglar_job_and_role_state">
+    <T n="role_state">430033<!--RoleState: role_Burglar_WaitForSpawn--></T>
+    <T n="situation_job">421825<!--SituationJob: job_Burglar--></T>
+  </U>
+  <T n="duration">600</T>
+  <U n="find_object_state">
+    <L n="job_and_role_changes">
+      <U>
+        <T n="Situation Job">421825<!--SituationJob: job_Burglar--></T>
+        <T n="Role State">426974<!--RoleState: role_Burglar_FindObject--></T>
+      </U>
+    </L>
+  </U>
+  <U n="holding_state">
+    <L n="job_and_role_changes">
+      <U>
+        <T n="Situation Job">421825<!--SituationJob: job_Burglar--></T>
+        <T n="Role State">424928<!--RoleState: role_Burglar_Holding--></T>
+      </U>
+    </L>
+  </U>
+  <U n="idle_at_object_state">
+    <U n="interaction_of_interest">
+      <L n="affordances">
+        <T>421733<!--SuperInteraction: burglarNPC_Idle--></T>
+      </L>
+    </U>
+    <L n="job_and_role_changes">
+      <U>
+        <T n="Situation Job">421825<!--SituationJob: job_Burglar--></T>
+        <T n="Role State">422072<!--RoleState: role_Burglar_Idle--></T>
+      </U>
+    </L>
+    <V n="time_out" t="enabled">
+      <T n="enabled">30</T>
+    </V>
+  </U>
+  <U n="leave_state">
+    <L n="job_and_role_changes">
+      <U>
+        <T n="Situation Job">421825<!--SituationJob: job_Burglar--></T>
+        <T n="Role State">422010<!--RoleState: role_Burglar_Leave--></T>
+      </U>
+    </L>
+    <L n="triggers">
+      <U>
+        <L n="triggers">
+          <V t="duration">
+            <U n="duration">
+              <U n="duration">
+                <T n="minutes">30</T>
+              </U>
+            </U>
+          </V>
+        </L>
+      </U>
+    </L>
+  </U>
+  <T n="max_money_amount">10000</T>
+  <T n="maximum_objects_to_steal">4</T>
+  <L n="objects_returned_loot">
+    <T>430399<!--LootActions: loot_Burglar_ReturnedObjects--></T>
+  </L>
+  <U n="objects_returned_tns">
+    <V n="icon" t="enabled">
+      <V n="enabled" t="resource_key">
+        <U n="resource_key">
+          <T n="key" p="InGame\UI\Icons\Notifications\notification_ObjectsWereReturned.png">2f7d0004:00000000:0ed6376d3b7176d7</T>
+        </U>
+      </V>
+    </V>
+    <V n="text" t="single">
+      <T n="single">0xE3E34728<!--String: "The following items were returned to the Household Inventory:\n{0.String}"--></T>
+    </V>
+    <V n="title" t="enabled">
+      <T n="enabled">0x6A10F196<!--String: "Objects Retrieved!"--></T>
+    </V>
+  </U>
+  <L n="objects_stolen_loot">
+    <T>430119<!--LootActions: loot_Burglar_StolenObjects--></T>
+  </L>
+  <U n="objects_stolen_tns">
+    <V n="icon" t="enabled">
+      <V n="enabled" t="resource_key">
+        <U n="resource_key">
+          <T n="key" p="InGame\UI\Icons\Notifications\notification_BurglarLeftwithThings.png">2f7d0004:00000000:0d3b7ce14b1909be</T>
+        </U>
+      </V>
+    </V>
+    <V n="text" t="single">
+      <T n="single">0x68FF26A8<!--String: "The following objects were stolen:\n{0.String}"--></T>
+    </V>
+    <V n="title" t="enabled">
+      <T n="enabled">0xA029D16<!--String: "Objects Stolen!"--></T>
+    </V>
+  </U>
+  <E n="return_objects_event">event_BurglarReturnObjects</E>
+  <U n="sad_leave_state">
+    <L n="job_and_role_changes">
+      <U>
+        <T n="Situation Job">421825<!--SituationJob: job_Burglar--></T>
+        <T n="Role State">422009<!--RoleState: role_Burglar_ArrestedLeave--></T>
+      </U>
+    </L>
+    <L n="triggers">
+      <U>
+        <L n="triggers">
+          <V t="duration">
+            <U n="duration">
+              <U n="duration">
+                <T n="hours">4</T>
+              </U>
+            </U>
+          </V>
+        </L>
+      </U>
+    </L>
+  </U>
+  <T n="save_lock_tooltip">0x6AA97482<!--String: "You cannot do this while the burglar is on the lot."--></T>
+  <T n="situation_cancelable">False</T>
+  <L n="situation_end_loot">
+    <T>438805<!--LootActions: loot_Burglar_SituationEnd--></T>
+  </L>
+  <V n="situation_end_time_string" t="show_end_time">
+    <T n="show_end_time">0xA3E17143<!--String: "Work day ends at {0.TimeShort}"--></T>
+  </V>
+  <L n="situation_start_loot">
+    <T>438804<!--LootActions: loot_Burglar_SituationStart--></T>
+  </L>
+  <U n="steal_object_state">
+    <U n="interaction_of_interest">
+      <L n="affordances">
+        <T>421734<!--SuperInteraction: burglarNPC_Steal--></T>
+      </L>
+    </U>
+    <L n="job_and_role_changes">
+      <U>
+        <T n="Situation Job">421825<!--SituationJob: job_Burglar--></T>
+        <T n="Role State">422123<!--RoleState: role_Burglar_Steal--></T>
+      </U>
+    </L>
+    <V n="time_out" t="enabled">
+      <T n="enabled">30</T>
+    </V>
+  </U>
+  <L n="triggers_holding">
+    <V t="buff_added">
+      <U n="buff_added">
+        <L n="acceptable_buffs">
+          <T>426975<!--Buff: buff_Burglar_Hidden_GoToHolding--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="triggers_leave">
+    <V t="ran_interaction_test">
+      <U n="ran_interaction_test">
+        <L n="affordances">
+          <T>443954<!--NPCLeaveLotInteraction: NPCLeaveLot_Burglar_Run--></T>
+          <T>443956<!--NPCLeaveLotInteraction: NPCLeaveLot_Burglar_Panic--></T>
+        </L>
+        <E n="test_event">InteractionStart</E>
+      </U>
+    </V>
+    <V t="situation_running_test">
+      <U n="situation_running_test">
+        <V n="situation_whitelist" t="enabled">
+          <L n="enabled">
+            <T>73821<!--FireSituation: situation_fire--></T>
+          </L>
+        </V>
+        <E n="test_event">SituationStarted</E>
+      </U>
+    </V>
+  </L>
+  <L n="triggers_sad_leave">
+    <V t="ran_interaction_test">
+      <U n="ran_interaction_test">
+        <L n="affordances">
+          <T>421852<!--SuperInteraction: burglarNPC_Arrested_Formation--></T>
+        </L>
+        <E n="test_event">InteractionStart</E>
+      </U>
+    </V>
+  </L>
+  <L n="valid_object_tests">
+    <L>
+      <V t="object_definition_criteria">
+        <U n="object_definition_criteria">
+          <V n="identity_test" t="tags">
+            <U n="tags">
+              <L n="tag_set">
+                <E>Func_CantRepo</E>
+                <E>Func_BurglarCantSteal</E>
+                <E>Func_AnimalObject</E>
+                <E>Func_AnimalObject_Livestock_Coop</E>
+                <E>Func_AnimalObject_Livestock_Pen</E>
+                <E>Func_AnimalObject_Wild_RabbitHome</E>
+                <E>Func_AnimalObject_Wild_BirdHome</E>
+              </L>
+              <E n="test_type">CONTAINS_NO_TAGS_IN_SET</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="object_definition_criteria">
+        <U n="object_definition_criteria">
+          <V n="identity_test" t="tags">
+            <U n="tags">
+              <L n="tag_set">
+                <E>Func_Lightning_CanStrike</E>
+              </L>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="object_criteria">
+        <U n="object_criteria">
+          <V n="subject_specific_tests" t="single_object" />
+          <V n="value" t="enabled">
+            <U n="enabled">
+              <U n="threshold">
+                <T n="value">25</T>
+              </U>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+  <U n="wait_for_burglar_state">
+    <U n="interaction_of_interest">
+      <L n="affordances">
+        <T>427446<!--SuperInteraction: burglarNPC_Spawn--></T>
+      </L>
+    </U>
+    <L n="job_and_role_changes">
+      <U>
+        <T n="Situation Job">421825<!--SituationJob: job_Burglar--></T>
+        <T n="Role State">430033<!--RoleState: role_Burglar_WaitForSpawn--></T>
+      </U>
+    </L>
+  </U>
+</I>

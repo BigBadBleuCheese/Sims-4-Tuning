@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_PowerShifts_SpiderWell_TrialOutcome_Four_Success" s="496652">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">496602<!--Buff: buff_PowerShifts_SpiderWell_DestinySpun--></T>
+        </U>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InEP21\UI\Icons\Notifications\notification_AnansisWell.png">2f7d0004:00000000:521e84daf86d49aa</T>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant" />
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xA7489A48<!--String: "{0.SimFirstName} walks the story {0.SimPronounSubjective} claimed.\n\nAnansi has rewarded {0.SimPronounObjective} with the <b>Threadshifter Trait</b>! Now {0.SimPronounSubjective} can move between courts and crowds, shifting Favor like thread in the wind, with the power to rewrite social standing."--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x8654C85D<!--String: "Anansi's Trial: Approval"--></T>
+            </V>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="career_test">
+              <U n="career_test">
+                <V n="test_type" t="has_career">
+                  <U n="has_career">
+                    <T n="has_career">False</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+          <L>
+            <V t="career_test">
+              <U n="career_test">
+                <V n="test_type" t="career_reference">
+                  <U n="career_reference">
+                    <V n="career" t="specific_career">
+                      <T n="specific_career">466304<!--NobleCareer: career_Noble--></T>
+                    </V>
+                    <V n="user_level" t="enabled">
+                      <U n="enabled">
+                        <T n="lower_bound">9</T>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InEP21\UI\Icons\Notifications\notification_AnansisWell.png">2f7d0004:00000000:521e84daf86d49aa</T>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xE69EC3C8<!--String: "{0.SimFirstName} walks the story {0.SimPronounSubjective} claimed. \n\nAnansi has rewarded {0.SimPronounObjective} with the <b>Threadshifter Trait</b> and a Career Promotion! Now {0.SimPronounSubjective} can move between courts and crowds, shifting Favor like thread in the wind, with the power to rewrite social standing."--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x8654C85D<!--String: "Anansi's Trial: Approval"--></T>
+            </V>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="career_test">
+              <U n="career_test">
+                <T n="negate">True</T>
+                <V n="test_type" t="career_reference">
+                  <U n="career_reference">
+                    <V n="career" t="specific_career">
+                      <T n="specific_career">466304<!--NobleCareer: career_Noble--></T>
+                    </V>
+                    <V n="user_level" t="enabled">
+                      <U n="enabled">
+                        <T n="lower_bound">9</T>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="career_test">
+              <U n="career_test">
+                <T n="negate">False</T>
+                <V n="test_type" t="has_career" />
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff_removal">
+      <U n="buff_removal">
+        <L n="buffs_to_remove">
+          <T>496601<!--Buff: buff_PowerShifts_SpiderWell_TrialWalkerMilestone--></T>
+        </L>
+      </U>
+    </V>
+    <V t="interaction">
+      <U n="interaction">
+        <E n="affordance_priority">Critical</E>
+        <L n="affordances">
+          <T>496790<!--SuperInteraction: powerShifts_SuperInteractions_SpiderWell_Reaction_Success--></T>
+        </L>
+      </U>
+    </V>
+    <V t="trait_add">
+      <U n="trait_add">
+        <T n="trait">496743<!--Trait: trait_Threadshifter--></T>
+      </U>
+    </V>
+    <V t="career_loot">
+      <U n="career_loot">
+        <V n="career" t="all_careers" />
+        <L n="operations">
+          <V t="promote" />
+        </L>
+        <L n="tests">
+          <L>
+            <V t="career_test">
+              <U n="career_test">
+                <T n="negate">True</T>
+                <V n="test_type" t="career_reference">
+                  <U n="career_reference">
+                    <V n="career" t="specific_career">
+                      <T n="specific_career">466304<!--NobleCareer: career_Noble--></T>
+                    </V>
+                    <V n="user_level" t="enabled">
+                      <U n="enabled">
+                        <T n="lower_bound">9</T>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="career_test">
+              <U n="career_test">
+                <T n="negate">False</T>
+                <V n="test_type" t="has_career" />
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="payment_loot">
+      <U n="payment_loot">
+        <V n="payment" t="literal">
+          <U n="literal">
+            <V n="payment_cost" t="amount">
+              <U n="amount">
+                <T n="amount">8025</T>
+                <L n="payment_destinations">
+                  <V t="active_household" />
+                </L>
+              </U>
+            </V>
+            <V n="payment_source" t="no_source" />
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="career_test">
+              <U n="career_test">
+                <V n="test_type" t="has_career">
+                  <U n="has_career">
+                    <T n="has_career">False</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+          <L>
+            <V t="career_test">
+              <U n="career_test">
+                <V n="test_type" t="career_reference">
+                  <U n="career_reference">
+                    <V n="career" t="specific_career">
+                      <T n="specific_career">466304<!--NobleCareer: career_Noble--></T>
+                    </V>
+                    <V n="user_level" t="enabled">
+                      <U n="enabled">
+                        <T n="lower_bound">9</T>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="vfx">
+      <U n="vfx">
+        <U n="vfx">
+          <T n="effect_name">ep21_anansi_trial_succeed</T>
+          <V n="joint_name" t="Slot">
+            <T n="Slot">b__ROOT__</T>
+          </V>
+        </U>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <V n="whitelist" t="enabled">
+            <L n="enabled">
+              <T>496601<!--Buff: buff_PowerShifts_SpiderWell_TrialWalkerMilestone--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+      <V t="state">
+        <U n="state">
+          <E n="operator">GREATER_OR_EQUAL</E>
+          <T n="value">15305<!--CommodityBasedObjectStateValue: Quality_Outstanding--></T>
+          <E n="who">CraftingObject</E>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

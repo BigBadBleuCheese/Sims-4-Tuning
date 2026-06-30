@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="horseRiding_GoForRide_Chooser" s="339266">
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="buff_based">
+                <U n="buff_based">
+                  <T n="buff">339267<!--Buff: buff_HorseRiding_Horse_CarryingSim--></T>
+                  <E n="timing">HAS_BUFF</E>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+      </L>
+    </U>
+  </V>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x475A2B95<!--String: "Go for a Ride"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+    <E>Interaction_Animal</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="continuation">
+                  <U>
+                    <E n="actor">TargetSim</E>
+                    <T n="affordance">326884<!--SuperInteraction: horseRiding_RideAround_LeisureRide--></T>
+                    <E n="target">Actor</E>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="buff">
+                <U n="buff">
+                  <V n="whitelist" t="enabled">
+                    <L n="enabled">
+                      <T>345113<!--Buff: buff_HorseRiding_Walkstyle_Ghost_Walk--></T>
+                      <T>345114<!--Buff: buff_HorseRiding_Walkstyle_Ghost_Walk_LowSkill--></T>
+                      <T>326966<!--Buff: buff_HorseRiding_Walkstyle_Walk--></T>
+                      <T>331995<!--Buff: buff_HorseRiding_Walkstyle_Walk_LowSkill--></T>
+                    </L>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="continuation">
+                  <U>
+                    <E n="actor">TargetSim</E>
+                    <T n="affordance">326883<!--SuperInteraction: horseRiding_RideAround_EnergeticRide--></T>
+                    <E n="target">Actor</E>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="buff">
+                <U n="buff">
+                  <V n="whitelist" t="enabled">
+                    <L n="enabled">
+                      <T>345115<!--Buff: buff_HorseRiding_Walkstyle_Ghost_Trot--></T>
+                      <T>345116<!--Buff: buff_HorseRiding_Walkstyle_Ghost_Trot_LowSkill--></T>
+                      <T>326967<!--Buff: buff_HorseRiding_Walkstyle_Trot--></T>
+                      <T>331993<!--Buff: buff_HorseRiding_Walkstyle_Trot_LowSkill--></T>
+                      <T>331997<!--Buff: buff_HorseRiding_Walkstyle_Trot_LowSkill_BuckWild--></T>
+                    </L>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="continuation">
+                  <U>
+                    <E n="actor">TargetSim</E>
+                    <T n="affordance">326882<!--SuperInteraction: horseRiding_RideAround_EnduranceRide--></T>
+                    <E n="target">Actor</E>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="buff">
+                <U n="buff">
+                  <V n="whitelist" t="enabled">
+                    <L n="enabled">
+                      <T>326965<!--Buff: buff_HorseRiding_Walkstyle_Canter--></T>
+                      <T>345117<!--Buff: buff_HorseRiding_Walkstyle_Ghost_Canter--></T>
+                      <T>331991<!--Buff: buff_HorseRiding_Walkstyle_Canter_LowSkill--></T>
+                      <T>331996<!--Buff: buff_HorseRiding_Walkstyle_Canter_LowSkill_BuckWild--></T>
+                      <T>345118<!--Buff: buff_HorseRiding_Walkstyle_Ghost_Canter_LowSkill--></T>
+                    </L>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E>HORSE</E>
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>332086<!--Buff: buff_HorseRiding_ThrowRider--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

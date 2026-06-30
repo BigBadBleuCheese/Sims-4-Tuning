@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="CustomStatesSituation" i="situation" m="situations.custom_states.custom_states_situation" n="situation_NobleFavor_NobleGifts_Negative_Royal" s="485069">
+  <T n="_display_name">0xFBB90DBD<!--String: "Noble Favor"--></T>
+  <L n="_relationship_between_job_members">
+    <U>
+      <T n="job_x">128964<!--SituationJob: jobs_NPCInvites_InviteOver_Actor_Target--></T>
+      <T n="job_y">485061<!--SituationJob: jobs_NobleFavor_NobleGifts_Royal_Negative--></T>
+      <L n="relationship_bits_to_add">
+        <T>486470<!--RelationshipBit: situation_bit_generic--></T>
+      </L>
+    </U>
+  </L>
+  <L n="_situation_states">
+    <U>
+      <T n="Situation State Key">drop_gift</T>
+      <V n="Situation State" t="literal">
+        <U n="literal">
+          <L n="job_and_role_changes">
+            <U>
+              <T n="Situation Job">485061<!--SituationJob: jobs_NobleFavor_NobleGifts_Royal_Negative--></T>
+              <T n="Role State">485268<!--RoleState: roleState_NobleGift_DropGift--></T>
+            </U>
+          </L>
+          <L n="triggers">
+            <U>
+              <V n="effect" t="change_state">
+                <U n="change_state">
+                  <U n="possible_states">
+                    <L n="possible_state_keys">
+                      <U>
+                        <T n="situation_key">leave_lot</T>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+              </V>
+              <L n="triggers">
+                <V t="test_event">
+                  <U n="test_event">
+                    <V n="test" t="ran_interaction_test">
+                      <U n="ran_interaction_test">
+                        <L n="affordances">
+                          <T>100449<!--AddToWorldSuperInteraction: Add_To_World_OnLot--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </U>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <T n="Situation State Key">knock_wait</T>
+      <V n="Situation State" t="literal">
+        <U n="literal">
+          <L n="job_and_role_changes">
+            <U>
+              <T n="Situation Job">485061<!--SituationJob: jobs_NobleFavor_NobleGifts_Royal_Negative--></T>
+              <T n="Role State">485256<!--RoleState: roleState_NobleGift_Intro_KnockOnDoor--></T>
+            </U>
+          </L>
+          <L n="triggers">
+            <U>
+              <V n="effect" t="change_state">
+                <U n="change_state">
+                  <U n="possible_states">
+                    <L n="possible_state_keys">
+                      <U>
+                        <T n="situation_key">drop_gift</T>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+              </V>
+              <L n="triggers">
+                <V t="test_event">
+                  <U n="test_event">
+                    <T n="only_trigger_for_situation_sims">False</T>
+                    <V n="test" t="ran_interaction_test">
+                      <U n="ran_interaction_test">
+                        <L n="affordances">
+                          <T>25211<!--SuperInteraction: door_RingDoorbell--></T>
+                          <T>201065<!--SuperInteraction: door_RingDoorbell_Sliding--></T>
+                          <T>139307<!--SuperInteraction: door_Apartment_NPCRingDoorbell--></T>
+                        </L>
+                        <E n="test_event">InteractionStart</E>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </U>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <T n="Situation State Key">leave_lot</T>
+      <V n="Situation State" t="literal">
+        <U n="literal">
+          <L n="job_and_role_changes">
+            <U>
+              <T n="Situation Job">485061<!--SituationJob: jobs_NobleFavor_NobleGifts_Royal_Negative--></T>
+              <T n="Role State">486468<!--RoleState: roleState_NobleGift_LeaveLot--></T>
+            </U>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <T n="Situation State Key">mailbox_wait</T>
+      <V n="Situation State" t="literal">
+        <U n="literal">
+          <L n="job_and_role_changes">
+            <U>
+              <T n="Situation Job">485061<!--SituationJob: jobs_NobleFavor_NobleGifts_Royal_Negative--></T>
+              <T n="Role State">485257<!--RoleState: roleState_NobleGift_Intro_WaitAtMailbox--></T>
+            </U>
+          </L>
+          <L n="triggers">
+            <U>
+              <V n="effect" t="change_state">
+                <U n="change_state">
+                  <U n="possible_states">
+                    <L n="possible_state_keys">
+                      <U>
+                        <T n="situation_key">drop_gift</T>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+              </V>
+              <L n="triggers">
+                <V t="test_event">
+                  <U n="test_event">
+                    <T n="only_trigger_for_situation_sims">False</T>
+                    <V n="test" t="ran_interaction_test">
+                      <U n="ran_interaction_test">
+                        <L n="affordances">
+                          <T>24821<!--SuperInteraction: mailbox_visit--></T>
+                        </L>
+                        <E n="test_event">InteractionStart</E>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </U>
+          </L>
+        </U>
+      </V>
+    </U>
+  </L>
+  <V n="_starting_state" t="random_starting_state">
+    <U n="random_starting_state">
+      <L n="possible_state_keys">
+        <U>
+          <T n="situation_key">knock_wait</T>
+          <U n="weight">
+            <L n="multipliers">
+              <U>
+                <T n="multiplier">0</T>
+                <L n="tests">
+                  <L>
+                    <V t="lot_has_front_door">
+                      <U n="lot_has_front_door">
+                        <T n="invert">True</T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+        <U>
+          <T n="situation_key">mailbox_wait</T>
+          <U n="weight">
+            <L n="multipliers">
+              <U>
+                <T n="multiplier">0</T>
+                <L n="tests">
+                  <L>
+                    <V t="lot_has_front_door" />
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+      </L>
+    </U>
+  </V>
+  <T p="InGame\Audio\Bumper\bumper_event_start.propx" n="audio_sting_on_start">39b2aa4a:00000000:78b903461d47e4fc</T>
+  <T n="blocks_super_speed_three">True</T>
+  <T n="can_remove_sims_from_work">False</T>
+  <L n="compatible_venues">
+    <T>28614<!--Venue: venue_residential--></T>
+  </L>
+  <E n="creation_ui_option">NOT_AVAILABLE</E>
+  <L n="default_job_and_roles">
+    <U>
+      <T n="Situation Job">128964<!--SituationJob: jobs_NPCInvites_InviteOver_Actor_Target--></T>
+      <T n="Role State">324590<!--RoleState: role_Empty--></T>
+    </U>
+    <U>
+      <T n="Situation Job">485061<!--SituationJob: jobs_NobleFavor_NobleGifts_Royal_Negative--></T>
+      <T n="Role State">485259<!--RoleState: roleState_NobleGift_Default--></T>
+    </U>
+  </L>
+  <T n="duration">200</T>
+  <T p="InGame\Audio\Bumper\bumper_event_major_complete.propx" n="main_goal_audio_sting">39b2aa4a:00000000:10b476550150a33f</T>
+  <T n="max_participants">20</T>
+  <V n="situation_end_time_string" t="show_end_time">
+    <T n="show_end_time">0xA3E17143<!--String: "Work day ends at {0.TimeShort}"--></T>
+  </V>
+  <T n="suppress_scoring_progress_bar">True</T>
+  <L n="tags">
+    <E>Situation_VisitorNPCs</E>
+  </L>
+</I>

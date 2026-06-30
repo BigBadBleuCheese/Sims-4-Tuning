@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<M n="custom_schedules.custom_schedule_tuning" s="4245221439514793865">
+  <C n="CustomScheduleTuning">
+    <L n="BLACKLIST_INTERACTIONS_FROM_GETAWAY_CANCEL">
+      <T>74855<!--SuperInteraction: cancel_replacement_eat_to_clean--></T>
+      <T>38520<!--SuperInteraction: sim_ReturnToLot--></T>
+      <T>13169<!--CollectManyInteraction: Collect_Dish--></T>
+      <T>74918<!--CollectManyInteraction: Collect_Dish_After_Eating--></T>
+      <T>74920<!--CollectManyInteraction: Collect_Dish_After_Eating_Continuation--></T>
+      <T>13172<!--CollectManyInteraction: Collect_Dish_Continuation--></T>
+      <T>13169<!--CollectManyInteraction: Collect_Dish--></T>
+      <T>36758<!--CollectManyInteraction: Dish_Collection_From_Object_As_Dish--></T>
+      <T>36759<!--CollectManyInteraction: Dish_Collection_From_Object_As_Trash--></T>
+      <T>36760<!--CollectManyInteraction: Dish_Collection_From_Sim_As_Dish--></T>
+      <T>36761<!--CollectManyInteraction: Dish_Collection_From_Sim_As_Trash--></T>
+      <T>13170<!--CollectManyInteraction: Collect_Dish_As_Trash--></T>
+      <T>13171<!--CollectManyInteraction: Collect_Dish_As_Trash_Continuation--></T>
+      <T>13173<!--CollectManyInteraction: Collect_Clean_Dish--></T>
+      <T>13174<!--CollectManyInteraction: Collect_Clean_Dish_As_Trash--></T>
+      <T>24871<!--CollectManyInteraction: Collect_Clean_Dish_As_Trash_Autonomous--></T>
+      <T>76947<!--CollectManyInteraction: Collect_Clean_Dish_As_Trash_Only--></T>
+      <T>13169<!--CollectManyInteraction: Collect_Dish--></T>
+      <T>14421<!--SuperInteraction: Throw_Away_Indoor--></T>
+      <T>122028<!--SuperInteraction: dishwasher_LoadDishes--></T>
+      <T>126860<!--SuperInteraction: dishwasher_LoadDishes_AfterEating--></T>
+      <T>74885<!--SuperInteraction: sink_washDish_After_Eat--></T>
+      <T>100109<!--SuperInteraction: sink_washDish_After_Eat_Counter--></T>
+      <T>100104<!--SuperInteraction: sink_washDishes_Counter--></T>
+      <T>14240<!--SuperInteraction: sink_washDishes--></T>
+      <T>14242<!--SuperInteraction: sink_washSingleDish--></T>
+    </L>
+    <L n="CAN_CHANGE_OUTFIT_TESTS">
+      <L>
+        <V t="sim_info">
+          <U n="sim_info">
+            <V n="ages" t="specified">
+              <L n="specified">
+                <E>TEEN</E>
+                <E>YOUNGADULT</E>
+                <E>ADULT</E>
+                <E>ELDER</E>
+                <E>CHILD</E>
+                <E>TODDLER</E>
+              </L>
+            </V>
+            <V n="species" t="specified">
+              <U n="specified">
+                <L n="species">
+                  <E />
+                </L>
+              </U>
+            </V>
+          </U>
+        </V>
+        <V t="trait">
+          <U n="trait">
+            <L n="blacklist_traits">
+              <T>218444<!--Trait: trait_Humanoid_Robots_MainTrait--></T>
+            </L>
+          </U>
+        </V>
+        <V t="test_set_reference">
+          <T n="test_set_reference">181655<!--TestSetInstance: testSetInstance_Skeleton_Disallow--></T>
+        </V>
+        <V t="test_set_reference">
+          <T n="test_set_reference">230389<!--TestSetInstance: testSetInstance_MechanicalSuit_Disallow--></T>
+        </V>
+        <V t="test_set_reference">
+          <T n="test_set_reference">464035<!--TestSetInstance: testSetInstance_EP20_IF_Disallow_Tooltip--></T>
+        </V>
+      </L>
+    </L>
+    <U n="DEFAULT_MANNEQUIN_DATA">
+      <T p="InGame\Sims\SimInfos\Mannequins\yfMannequinDefaultStyle.siminfo" n="female_adult">025ed6f4:00000000:c274c0b44ec47662</T>
+      <T n="female_child" p="InGame\Sims\SimInfos\Mannequins\cfMannequinDefaultStyle.siminfo">025ed6f4:00000000:823686b2edbb5a30</T>
+      <T p="InGame\Sims\SimInfos\Mannequins\ymMannequinDefaultStyle.siminfo" n="male_adult">025ed6f4:00000000:7411df4aef90ae93</T>
+      <T n="male_child" p="InGame\Sims\SimInfos\Mannequins\cmMannequinDefaultStyle.siminfo">025ed6f4:00000000:0adfc85bfff17325</T>
+    </U>
+    <T n="GETAWAY_ELIMINATION_CANDIDATE_BUFF">483862<!--Buff: buff_Getaway_EliminationCandidate--></T>
+    <V n="GETAWAY_ELIMINATION_MINIMUM_START" t="enabled">
+      <U n="enabled">
+        <T n="hours">2</T>
+      </U>
+    </V>
+    <T n="GETAWAY_SIMS_OF_INTEREST_BUFF">462158<!--Buff: buff_Getaway_SimOfInterest--></T>
+    <T n="GETAWAY_TRACK_CHALLENGE_STAT">458970<!--Statistic: statistic_Getaway_Rules_Elimination_Delta--></T>
+    <V n="INCOMPATIBLE_VENUE_DIALOG" t="dialog_ok">
+      <U n="dialog_ok">
+        <V n="text" t="single">
+          <T n="single">0x779A6F00<!--String: "Lot "{1.String}" has been changed to the "{2.String}" venue type, which is not compatible with Getaways. Selecting OK will cancel all scheduled Getaways on this lot."--></T>
+        </V>
+      </U>
+    </V>
+    <V n="MAX_ROLE_COUNT_TO_PRE_FILL" t="enabled">
+      <T n="enabled">4</T>
+    </V>
+    <T n="MINIMUM_CRITERIA_SKILL_LEVEL">5</T>
+    <U n="NO_COMPATIBLE_SIMS_WITH_CRITERIA_TNS">
+      <V n="text" t="single">
+        <T n="single">0xF47BA8DA<!--String: "Uh oh! There are no Sims that match the criteria specified for {1.String}.  Open the Getaway planner and edit the {1.String} role criteria to ensure proper Sims to appear."--></T>
+      </V>
+    </U>
+    <L n="PREMADE_CUSTOM_ASSIGNMENTS">
+      <T>455500<!--CustomScheduleAssignment: customScheduleAssignment_PremadeRoles_EP20World_CampCounselor--></T>
+      <T>455499<!--CustomScheduleAssignment: customScheduleAssignment_PremadeRoles_EP20World_CampDirector--></T>
+      <T>455501<!--CustomScheduleAssignment: customScheduleAssignment_PremadeRoles_EP20World_FitnessGuest--></T>
+      <T>455498<!--CustomScheduleAssignment: customScheduleAssignment_PremadeRoles_EP20World_Campers_Kids--></T>
+      <T>455502<!--CustomScheduleAssignment: customScheduleAssignment_PremadeRoles_EP20World_FitnessHost--></T>
+      <T>455503<!--CustomScheduleAssignment: customScheduleAssignment_PremadeRoles_EP20World_FitnessTrainer--></T>
+      <T>455506<!--CustomScheduleAssignment: customScheduleAssignment_PremadeRoles_EP20World_RomanticHost--></T>
+      <T>455505<!--CustomScheduleAssignment: customScheduleAssignment_PremadeRoles_EP20World_RomanticSingles--></T>
+      <T>486156<!--CustomScheduleAssignment: customScheduleAssignment_PremadeRoles_Teens_Athletic--></T>
+      <T>455528<!--CustomScheduleAssignment: customScheduleAssignment_PremadeRoles_Bartender--></T>
+      <T>455508<!--CustomScheduleAssignment: customScheduleAssignment_PremadeRoles_Campers_TYAE--></T>
+      <T>455523<!--CustomScheduleAssignment: customScheduleAssignment_PremadeRoles_Children--></T>
+      <T>486168<!--CustomScheduleAssignment: customScheduleAssignment_PremadeRoles_Comedians--></T>
+      <T>486169<!--CustomScheduleAssignment: customScheduleAssignment_PremadeRoles_DJ--></T>
+      <T>486161<!--CustomScheduleAssignment: customScheduleAssignment_PremadeRoles_Entertainers--></T>
+      <T>486151<!--CustomScheduleAssignment: customScheduleAssignment_PremadeRoles_Fisherman--></T>
+      <T>486167<!--CustomScheduleAssignment: customScheduleAssignment_PremadeRoles_Gamers--></T>
+      <T>486170<!--CustomScheduleAssignment: customScheduleAssignment_PremadeRoles_OutdoorCollector--></T>
+      <T>486159<!--CustomScheduleAssignment: customScheduleAssignment_PremadeRoles_Seniors--></T>
+      <T>455524<!--CustomScheduleAssignment: customScheduleAssignment_PremadeRoles_Teacher--></T>
+      <T>455525<!--CustomScheduleAssignment: customScheduleAssignment_PremadeRoles_Artist--></T>
+      <T>456125<!--CustomScheduleAssignment: customScheduleAssignment_PremadeRoles_General_Host--></T>
+      <T>455510<!--CustomScheduleAssignment: customScheduleAssignment_PremadeRoles_Guests--></T>
+      <T>455526<!--CustomScheduleAssignment: customScheduleAssignment_PremadeRoles_Musician--></T>
+      <T>455507<!--CustomScheduleAssignment: customScheduleAssignment_PremadeRoles_ParkRanger--></T>
+      <T>455504<!--CustomScheduleAssignment: customScheduleAssignment_PremadeRoles_Staff--></T>
+      <T>486160<!--CustomScheduleAssignment: customScheduleAssignment_PremadeRoles_Visitors--></T>
+      <T>486158<!--CustomScheduleAssignment: customScheduleAssignment_PremadeRoles_Writers--></T>
+      <T>455529<!--CustomScheduleAssignment: customScheduleAssignment_PremadeRoles_Chef--></T>
+      <T>486148<!--CustomScheduleAssignment: customScheduleAssignment_PremadeRoles_Chef_Mean--></T>
+      <T>486150<!--CustomScheduleAssignment: customScheduleAssignment_PremadeRoles_Contestant_Cooking--></T>
+      <T>486155<!--CustomScheduleAssignment: customScheduleAssignment_PremadeRoles_Teens_Brainy--></T>
+      <T>486153<!--CustomScheduleAssignment: customScheduleAssignment_PremadeRoles_Teens_Friendly--></T>
+      <T>486154<!--CustomScheduleAssignment: customScheduleAssignment_PremadeRoles_Teens_Popular--></T>
+      <T>486157<!--CustomScheduleAssignment: customScheduleAssignment_PremadeRoles_Teens_Rebel--></T>
+    </L>
+    <L n="PREMADE_CUSTOM_SCHEDULES">
+      <T>455474<!--CustomSchedulePreset: customSchedulePreset_PremadeGetaways_EP20World_OutdoorKidsCamp--></T>
+      <T>455475<!--CustomSchedulePreset: customSchedulePreset_PremadeGetaways_EP20World_FitnessRetreat--></T>
+      <T>455476<!--CustomSchedulePreset: customSchedulePreset_PremadeGetaways_EP20World_RomanticCompetition--></T>
+      <T>455493<!--CustomSchedulePreset: customSchedulePreset_PremadeGetaways_ArtsandCrafts--></T>
+      <T>455477<!--CustomSchedulePreset: customSchedulePreset_PremadeGetaways_CookingCompetition--></T>
+      <T>455479<!--CustomSchedulePreset: customSchedulePreset_PremadeGetaways_CozyBNB--></T>
+      <T>486163<!--CustomSchedulePreset: customSchedulePreset_PremadeGetaways_MeanTeens--></T>
+      <T>486164<!--CustomSchedulePreset: customSchedulePreset_PremadeGetaways_RetirementHome--></T>
+    </L>
+    <L n="PREMADE_SCHEDULE_MAP">
+      <U>
+        <T n="key">479407</T>
+        <T n="value">455476<!--CustomSchedulePreset: customSchedulePreset_PremadeGetaways_EP20World_RomanticCompetition--></T>
+      </U>
+      <U>
+        <T n="key">479410</T>
+        <T n="value">455475<!--CustomSchedulePreset: customSchedulePreset_PremadeGetaways_EP20World_FitnessRetreat--></T>
+      </U>
+      <U>
+        <T n="key">479415</T>
+        <T n="value">455474<!--CustomSchedulePreset: customSchedulePreset_PremadeGetaways_EP20World_OutdoorKidsCamp--></T>
+      </U>
+    </L>
+    <T n="RETURN_TO_LOT_AFFORDANCE">38520<!--SuperInteraction: sim_ReturnToLot--></T>
+    <T n="SCHEDULE_DEFAULT_BEHAVIOR_ENCOURAGEMENT_AD_DATA">64</T>
+    <T n="SCHEDULE_ENCOURAGEMENT_AD_DATA">96</T>
+    <T n="SCHEDULE_ENCOURAGEMENT_FALLBACK_ACTION_MULTIPLIER">4.25</T>
+    <T n="SCHEDULE_ENCOURAGEMENT_MULTIPLIER">4.25</T>
+    <T n="SCHEDULE_PLAYER_FACING_SITUATION">456972<!--GetawayPlayerFacingSituation: getawayPlayerFacingSituation--></T>
+    <T n="SCHEDULE_RANDOM_ATTENDEE_FILTER">451880<!--DynamicSimFilter: dynamicSimFilter_customSchedule--></T>
+    <T n="SCHEDULE_SIMULATION_SITUATION">464260<!--CustomScheduleBackgroundSituation: customScheduleBackgroundSituation_1--></T>
+    <U n="SIM_PICKER">
+      <T n="known_filter">468950<!--DynamicSimFilter: dynamicSimFilter_customScheduleHasMet--></T>
+      <T n="unknown_filter">451880<!--DynamicSimFilter: dynamicSimFilter_customSchedule--></T>
+    </U>
+  </C>
+</M>

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="DialogDramaNode" i="drama_node" m="drama_scheduler.dialog_drama_node" n="dialogDramaNode_ChildhoodInspiration_DiscoveryPhoneCall" s="470981">
+  <V n="dialog_and_loot" t="dialog_ok_cancel">
+    <U n="dialog_ok_cancel">
+      <U n="dialog">
+        <E n="phone_ring_type">RING</E>
+        <V n="text" t="single">
+          <T n="single">0xA78A919B<!--String: "Sometimes it seems like you just sprang up out of nowhere! We've never discussed your childhood before... What sorts of things inspired you when you were a kid?"--></T>
+        </V>
+        <T n="text_cancel">0x3DE1206D<!--String: "How nosy! I don't really want to talk about that."--></T>
+        <T n="text_ok">0x4A18F529<!--String: "It's all a bit dim now... Let me recall."--></T>
+      </U>
+      <L n="on_dialog_accepted_loot_list">
+        <T>473559<!--LootActions: loot_ChildhoodInspiration_PushRecallLostInspirationReaction--></T>
+      </L>
+      <L n="on_dialog_canceled_loot_list">
+        <T>470715<!--LootActions: loot_ChildhoodInspiration_AddDiscoveryTrait--></T>
+      </L>
+      <L n="on_dialog_no_response_loot_list">
+        <T>470715<!--LootActions: loot_ChildhoodInspiration_AddDiscoveryTrait--></T>
+      </L>
+    </U>
+  </V>
+  <U n="min_and_max_times">
+    <T n="lower_bound">0</T>
+    <T n="upper_bound">0.5</T>
+  </U>
+  <L n="run_tests">
+    <L>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>470711<!--Trait: trait_Hidden_ChildhoodInspiration_Discovery--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="sender_sim_info" t="sim_filter">
+    <U n="sim_filter">
+      <T n="sim_filter">388329<!--TunableSimFilter: filter_IsFriend_TYAE--></T>
+    </U>
+  </V>
+  <E n="sender_sim_info_type">INSTANCED_ALLOWED</E>
+  <V n="time_option" t="schedule">
+    <U n="schedule">
+      <L n="valid_times">
+        <U>
+          <U n="days_available">
+            <T n="0 SUNDAY">True</T>
+            <T n="1 MONDAY">True</T>
+            <T n="2 TUESDAY">True</T>
+            <T n="3 WEDNESDAY">True</T>
+            <T n="4 THURSDAY">True</T>
+            <T n="5 FRIDAY">True</T>
+            <T n="6 SATURDAY">True</T>
+          </U>
+          <T n="duration">24</T>
+          <U n="start_time">
+            <T n="hour">0</T>
+          </U>
+        </U>
+      </L>
+    </U>
+  </V>
+</I>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Getaway_ScheduleDramaNode_RomanticGetaway" s="458002">
+  <L n="loot_actions">
+    <V t="schedule_drama_node">
+      <U n="schedule_drama_node">
+        <T n="drama_node">457998<!--DialogDramaNode: dialogDramaNode_GetawayPhoneCall_RomanticGetaway--></T>
+        <V n="time_delay" t="enabled">
+          <U n="enabled">
+            <T n="hours">2</T>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="relationship_bits_loot">
+      <U n="relationship_bits_loot">
+        <L n="bit_operations">
+          <U>
+            <T n="bit">483539<!--RelationshipBit: relbit_Getaway_SuggestedRomanticGetaway--></T>
+            <E n="operation">ADD</E>
+            <E n="recipients">Actor</E>
+            <E n="targets">TargetSim</E>
+          </U>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="situation_running_test">
+        <U n="situation_running_test">
+          <V n="situation_blacklist" t="enabled">
+            <L n="enabled">
+              <T>456972<!--GetawayPlayerFacingSituation: getawayPlayerFacingSituation--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="npc" t="enabled">
+            <T n="enabled">True</T>
+          </V>
+        </U>
+      </V>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="npc" t="enabled" />
+          <E n="who">TargetSim</E>
+        </U>
+      </V>
+      <V t="drama_node">
+        <U n="drama_node">
+          <L n="drama_nodes">
+            <T>457998<!--DialogDramaNode: dialogDramaNode_GetawayPhoneCall_RomanticGetaway--></T>
+          </L>
+          <T n="exists">False</T>
+        </U>
+      </V>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="prohibited_relationship_bits">
+            <L n="match_all">
+              <T>483539<!--RelationshipBit: relbit_Getaway_SuggestedRomanticGetaway--></T>
+            </L>
+          </U>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

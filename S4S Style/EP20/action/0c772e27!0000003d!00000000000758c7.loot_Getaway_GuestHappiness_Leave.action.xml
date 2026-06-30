@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Getaway_GuestHappiness_Leave" s="481479">
+  <L n="loot_actions">
+    <V t="reaction">
+      <U n="reaction">
+        <V n="si_reaction" t="enabled">
+          <U n="enabled">
+            <T n="affordance">481475<!--SuperInteraction: sI_Getaway_LeaveGetaway_Upset--></T>
+            <E n="affordance_priority">High</E>
+            <V n="affordance_run_priority" t="enabled">
+              <E n="enabled">High</E>
+            </V>
+            <V n="affordance_target" t="enabled">
+              <E n="enabled">Actor</E>
+            </V>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <L n="blacklist">
+                  <T>481518<!--Buff: buff_Getaway_GuestHappiness_Enthuse_HighMotives--></T>
+                  <T>481519<!--Buff: buff_Getaway_GuestHappiness_Enthuse_HighRel--></T>
+                </L>
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>12818<!--Buff: Buff_Motives_Energy_Exhausted--></T>
+                    <T>12821<!--Buff: Buff_Motives_Hunger_Starving--></T>
+                    <T>12823<!--Buff: Buff_Motives_Hygiene_Filthy--></T>
+                    <T>12826<!--Buff: Buff_Motives_Social_Desolate--></T>
+                    <T>481522<!--Buff: buff_Getaway_GuestHappiness_Complain_Motives--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <L n="blacklist">
+                  <T>481518<!--Buff: buff_Getaway_GuestHappiness_Enthuse_HighMotives--></T>
+                  <T>481519<!--Buff: buff_Getaway_GuestHappiness_Enthuse_HighRel--></T>
+                </L>
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>481528<!--Buff: buff_Getaway_GuestHappiness_Complain_Rel--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="npc" t="enabled">
+            <T n="enabled">True</T>
+          </V>
+        </U>
+      </V>
+      <V t="buff">
+        <U n="buff">
+          <V n="whitelist" t="enabled">
+            <L n="enabled">
+              <T>456952<!--Buff: buff_Getaway--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

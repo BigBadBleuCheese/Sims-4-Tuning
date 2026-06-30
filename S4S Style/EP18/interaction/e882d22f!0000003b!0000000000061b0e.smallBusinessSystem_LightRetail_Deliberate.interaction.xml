@@ -1,0 +1,812 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="smallBusinessSystem_LightRetail_Deliberate" s="400142">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="circle">
+            <U n="circle">
+              <T n="ideal_radius_width">0</T>
+              <T n="radius">1</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="value" t="facing" />
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Actor</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_user_directed">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="time_based">
+                <U n="time_based">
+                  <T n="max_time">4</T>
+                  <T n="min_time">2</T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+      </L>
+      <V n="content" t="looping_content">
+        <U n="looping_content">
+          <U n="animation_ref">
+            <T n="factory">428597<!--AnimationElement: smallBusiness_Deliberate_thinking_loop--></T>
+          </U>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="save_participant">
+      <U n="save_participant">
+        <E n="participant">Object</E>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+  </L>
+  <V n="content_score" t="disabled" />
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <V n="animation_ref" t="enabled">
+              <U n="enabled">
+                <T n="factory">385474<!--AnimationElement: smallBusiness_Deliberate_Succeed--></T>
+              </U>
+            </V>
+            <L n="continuation">
+              <U>
+                <T n="affordance">421611<!--ImmediateSuperInteraction: smallBusiness_LightRetail_PurchaseOrBarter_Immediate--></T>
+              </U>
+            </L>
+            <L n="loot_list">
+              <T>403664<!--LootActions: loot_LightRetail_AutonomousBuyCooldown--></T>
+            </L>
+          </U>
+          <U n="weight">
+            <T n="base_value">7</T>
+            <L n="multipliers">
+              <U>
+                <T n="multiplier">6</T>
+                <L n="tests">
+                  <L>
+                    <V t="object_purchase_test" />
+                    <V t="object_purchase_test">
+                      <U n="object_purchase_test">
+                        <U n="value_threshold">
+                          <E n="comparison">LESS_OR_EQUAL</E>
+                          <T n="value">25</T>
+                        </U>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">3</T>
+                <L n="tests">
+                  <L>
+                    <V t="object_purchase_test">
+                      <U n="object_purchase_test">
+                        <U n="value_threshold">
+                          <E n="comparison">GREATER</E>
+                          <T n="value">25</T>
+                        </U>
+                      </U>
+                    </V>
+                  </L>
+                  <L>
+                    <V t="object_purchase_test">
+                      <U n="object_purchase_test">
+                        <U n="value_threshold">
+                          <E n="comparison">LESS_OR_EQUAL</E>
+                          <T n="value">50</T>
+                        </U>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">2</T>
+                <L n="tests">
+                  <L>
+                    <V t="object_purchase_test">
+                      <U n="object_purchase_test">
+                        <U n="value_threshold">
+                          <E n="comparison">GREATER</E>
+                          <T n="value">50</T>
+                        </U>
+                      </U>
+                    </V>
+                  </L>
+                  <L>
+                    <V t="object_purchase_test">
+                      <U n="object_purchase_test">
+                        <U n="value_threshold">
+                          <E n="comparison">LESS_OR_EQUAL</E>
+                          <T n="value">100</T>
+                        </U>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <L n="tests">
+                  <L>
+                    <V t="object_purchase_test">
+                      <U n="object_purchase_test">
+                        <U n="value_threshold">
+                          <E n="comparison">GREATER</E>
+                          <T n="value">100</T>
+                        </U>
+                      </U>
+                    </V>
+                  </L>
+                  <L>
+                    <V t="object_purchase_test">
+                      <U n="object_purchase_test">
+                        <U n="value_threshold">
+                          <E n="comparison">LESS_OR_EQUAL</E>
+                          <T n="value">250</T>
+                        </U>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">0.5</T>
+                <L n="tests">
+                  <L>
+                    <V t="object_purchase_test">
+                      <U n="object_purchase_test">
+                        <U n="value_threshold">
+                          <E n="comparison">GREATER</E>
+                          <T n="value">250</T>
+                        </U>
+                      </U>
+                    </V>
+                  </L>
+                  <L>
+                    <V t="object_purchase_test">
+                      <U n="object_purchase_test">
+                        <U n="value_threshold">
+                          <E n="comparison">LESS_OR_EQUAL</E>
+                          <T n="value">500</T>
+                        </U>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">0.4</T>
+                <L n="tests">
+                  <L>
+                    <V t="object_purchase_test">
+                      <U n="object_purchase_test">
+                        <U n="value_threshold">
+                          <E n="comparison">GREATER</E>
+                          <T n="value">500</T>
+                        </U>
+                      </U>
+                    </V>
+                  </L>
+                  <L>
+                    <V t="object_purchase_test">
+                      <U n="object_purchase_test">
+                        <U n="value_threshold">
+                          <E n="comparison">LESS_OR_EQUAL</E>
+                          <T n="value">750</T>
+                        </U>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">0.3</T>
+                <L n="tests">
+                  <L>
+                    <V t="object_purchase_test">
+                      <U n="object_purchase_test">
+                        <U n="value_threshold">
+                          <E n="comparison">GREATER</E>
+                          <T n="value">750</T>
+                        </U>
+                      </U>
+                    </V>
+                  </L>
+                  <L>
+                    <V t="object_purchase_test">
+                      <U n="object_purchase_test">
+                        <U n="value_threshold">
+                          <E n="comparison">LESS_OR_EQUAL</E>
+                          <T n="value">1000</T>
+                        </U>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">0.2</T>
+                <L n="tests">
+                  <L>
+                    <V t="object_purchase_test">
+                      <U n="object_purchase_test">
+                        <U n="value_threshold">
+                          <E n="comparison">GREATER</E>
+                          <T n="value">1000</T>
+                        </U>
+                      </U>
+                    </V>
+                  </L>
+                  <L>
+                    <V t="object_purchase_test">
+                      <U n="object_purchase_test">
+                        <U n="value_threshold">
+                          <E n="comparison">LESS_OR_EQUAL</E>
+                          <T n="value">1250</T>
+                        </U>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">0.15</T>
+                <L n="tests">
+                  <L>
+                    <V t="object_purchase_test">
+                      <U n="object_purchase_test">
+                        <U n="value_threshold">
+                          <E n="comparison">GREATER</E>
+                          <T n="value">1250</T>
+                        </U>
+                      </U>
+                    </V>
+                  </L>
+                  <L>
+                    <V t="object_purchase_test">
+                      <U n="object_purchase_test">
+                        <U n="value_threshold">
+                          <E n="comparison">LESS_OR_EQUAL</E>
+                          <T n="value">1500</T>
+                        </U>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">0.1</T>
+                <L n="tests">
+                  <L>
+                    <V t="object_purchase_test">
+                      <U n="object_purchase_test">
+                        <U n="value_threshold">
+                          <E n="comparison">GREATER</E>
+                          <T n="value">1500</T>
+                        </U>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">0.5</T>
+                <L n="tests">
+                  <L>
+                    <V t="small_business_markup_test">
+                      <U n="small_business_markup_test">
+                        <V n="markup_test" t="compare">
+                          <U n="compare">
+                            <E n="comparison_operator">GREATER_OR_EQUAL</E>
+                            <T n="markup_multiplier">1.9</T>
+                          </U>
+                        </V>
+                        <E n="participant">CurrentlyOpenSmallBusinessOwner</E>
+                      </U>
+                    </V>
+                    <V t="relationship">
+                      <U n="relationship">
+                        <U n="prohibited_relationship_bits">
+                          <L n="match_any">
+                            <T>404920<!--RelationshipBit: sentimentBit_Actor_AdoringTo_Target_LT_HappyCustomer--></T>
+                          </L>
+                        </U>
+                        <L n="target_sim">
+                          <E>CurrentlyOpenSmallBusinessOwner</E>
+                        </L>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">0.75</T>
+                <L n="tests">
+                  <L>
+                    <V t="small_business_markup_test">
+                      <U n="small_business_markup_test">
+                        <V n="markup_test" t="between">
+                          <U n="between">
+                            <U n="markup_multiplier_interval">
+                              <T n="lower_bound">1.4</T>
+                              <T n="upper_bound">1.9</T>
+                            </U>
+                          </U>
+                        </V>
+                        <E n="participant">CurrentlyOpenSmallBusinessOwner</E>
+                      </U>
+                    </V>
+                    <V t="relationship">
+                      <U n="relationship">
+                        <U n="prohibited_relationship_bits">
+                          <L n="match_any">
+                            <T>404920<!--RelationshipBit: sentimentBit_Actor_AdoringTo_Target_LT_HappyCustomer--></T>
+                          </L>
+                        </U>
+                        <L n="target_sim">
+                          <E>CurrentlyOpenSmallBusinessOwner</E>
+                        </L>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <L n="tests">
+                  <L>
+                    <V t="small_business_markup_test">
+                      <U n="small_business_markup_test">
+                        <V n="markup_test" t="between">
+                          <U n="between">
+                            <U n="markup_multiplier_interval">
+                              <T n="lower_bound">0.9</T>
+                              <T n="upper_bound">1.1</T>
+                            </U>
+                          </U>
+                        </V>
+                        <E n="participant">CurrentlyOpenSmallBusinessOwner</E>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">1.25</T>
+                <L n="tests">
+                  <L>
+                    <V t="small_business_markup_test">
+                      <U n="small_business_markup_test">
+                        <V n="markup_test" t="between">
+                          <U n="between">
+                            <U n="markup_multiplier_interval">
+                              <T n="lower_bound">0.6</T>
+                              <T n="upper_bound">0.9</T>
+                            </U>
+                          </U>
+                        </V>
+                        <E n="participant">CurrentlyOpenSmallBusinessOwner</E>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">1.5</T>
+                <L n="tests">
+                  <L>
+                    <V t="small_business_markup_test">
+                      <U n="small_business_markup_test">
+                        <V n="markup_test" t="compare">
+                          <U n="compare">
+                            <E n="comparison_operator">LESS</E>
+                            <T n="markup_multiplier">0.6</T>
+                          </U>
+                        </V>
+                        <E n="participant">CurrentlyOpenSmallBusinessOwner</E>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">1.2</T>
+                <L n="tests">
+                  <L>
+                    <V t="ranked_statistic">
+                      <U n="ranked_statistic">
+                        <T n="ranked_stat">374179<!--RankedStatistic: rankedStatistic_SmallBusiness_Rank--></T>
+                        <V n="threshold" t="value_threshold">
+                          <U n="value_threshold">
+                            <E n="comparison">EQUAL</E>
+                            <T n="value">1</T>
+                          </U>
+                        </V>
+                        <E n="who">CurrentlyOpenSmallBusinessOwner</E>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">1.4</T>
+                <L n="tests">
+                  <L>
+                    <V t="ranked_statistic">
+                      <U n="ranked_statistic">
+                        <T n="ranked_stat">374179<!--RankedStatistic: rankedStatistic_SmallBusiness_Rank--></T>
+                        <V n="threshold" t="value_threshold">
+                          <U n="value_threshold">
+                            <E n="comparison">EQUAL</E>
+                            <T n="value">2</T>
+                          </U>
+                        </V>
+                        <E n="who">CurrentlyOpenSmallBusinessOwner</E>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">1.6</T>
+                <L n="tests">
+                  <L>
+                    <V t="ranked_statistic">
+                      <U n="ranked_statistic">
+                        <T n="ranked_stat">374179<!--RankedStatistic: rankedStatistic_SmallBusiness_Rank--></T>
+                        <V n="threshold" t="value_threshold">
+                          <U n="value_threshold">
+                            <E n="comparison">EQUAL</E>
+                            <T n="value">3</T>
+                          </U>
+                        </V>
+                        <E n="who">CurrentlyOpenSmallBusinessOwner</E>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">1.8</T>
+                <L n="tests">
+                  <L>
+                    <V t="ranked_statistic">
+                      <U n="ranked_statistic">
+                        <T n="ranked_stat">374179<!--RankedStatistic: rankedStatistic_SmallBusiness_Rank--></T>
+                        <V n="threshold" t="value_threshold">
+                          <U n="value_threshold">
+                            <E n="comparison">EQUAL</E>
+                            <T n="value">4</T>
+                          </U>
+                        </V>
+                        <E n="who">CurrentlyOpenSmallBusinessOwner</E>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">2</T>
+                <L n="tests">
+                  <L>
+                    <V t="ranked_statistic">
+                      <U n="ranked_statistic">
+                        <T n="ranked_stat">374179<!--RankedStatistic: rankedStatistic_SmallBusiness_Rank--></T>
+                        <V n="threshold" t="value_threshold">
+                          <U n="value_threshold">
+                            <E n="comparison">GREATER_OR_EQUAL</E>
+                            <T n="value">5</T>
+                          </U>
+                        </V>
+                        <E n="who">CurrentlyOpenSmallBusinessOwner</E>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">1.5</T>
+                <L n="tests">
+                  <L>
+                    <V t="relationship">
+                      <U n="relationship">
+                        <U n="relationship_score_interval">
+                          <T n="lower_bound">50</T>
+                          <T n="upper_bound">75</T>
+                        </U>
+                        <L n="target_sim">
+                          <E>CurrentlyOpenSmallBusinessOwner</E>
+                        </L>
+                        <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">2</T>
+                <L n="tests">
+                  <L>
+                    <V t="relationship">
+                      <U n="relationship">
+                        <U n="relationship_score_interval">
+                          <T n="lower_bound">76</T>
+                          <T n="upper_bound">100</T>
+                        </U>
+                        <L n="subject">
+                          <E>Actor</E>
+                        </L>
+                        <L n="target_sim">
+                          <E>CurrentlyOpenSmallBusinessOwner</E>
+                        </L>
+                        <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">1.5</T>
+                <L n="tests">
+                  <L>
+                    <V t="relationship">
+                      <U n="relationship">
+                        <U n="required_relationship_bits">
+                          <L n="match_any">
+                            <T>404920<!--RelationshipBit: sentimentBit_Actor_AdoringTo_Target_LT_HappyCustomer--></T>
+                          </L>
+                        </U>
+                        <L n="target_sim">
+                          <E>CurrentlyOpenSmallBusinessOwner</E>
+                        </L>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">0.75</T>
+                <L n="tests">
+                  <L>
+                    <V t="small_business_markup_test">
+                      <U n="small_business_markup_test">
+                        <V n="markup_test" t="compare">
+                          <U n="compare">
+                            <E n="comparison_operator">GREATER_OR_EQUAL</E>
+                            <T n="markup_multiplier">1.9</T>
+                          </U>
+                        </V>
+                        <E n="participant">CurrentlyOpenSmallBusinessOwner</E>
+                      </U>
+                    </V>
+                    <V t="relationship">
+                      <U n="relationship">
+                        <U n="required_relationship_bits">
+                          <L n="match_any">
+                            <T>404920<!--RelationshipBit: sentimentBit_Actor_AdoringTo_Target_LT_HappyCustomer--></T>
+                          </L>
+                        </U>
+                        <L n="target_sim">
+                          <E>CurrentlyOpenSmallBusinessOwner</E>
+                        </L>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">0.9</T>
+                <L n="tests">
+                  <L>
+                    <V t="small_business_markup_test">
+                      <U n="small_business_markup_test">
+                        <V n="markup_test" t="between">
+                          <U n="between">
+                            <U n="markup_multiplier_interval">
+                              <T n="lower_bound">1.4</T>
+                              <T n="upper_bound">1.9</T>
+                            </U>
+                          </U>
+                        </V>
+                        <E n="participant">CurrentlyOpenSmallBusinessOwner</E>
+                      </U>
+                    </V>
+                    <V t="relationship">
+                      <U n="relationship">
+                        <U n="required_relationship_bits">
+                          <L n="match_any">
+                            <T>404920<!--RelationshipBit: sentimentBit_Actor_AdoringTo_Target_LT_HappyCustomer--></T>
+                          </L>
+                        </U>
+                        <L n="target_sim">
+                          <E>CurrentlyOpenSmallBusinessOwner</E>
+                        </L>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+        <U>
+          <U n="outcome">
+            <V n="animation_ref" t="enabled">
+              <U n="enabled">
+                <T n="factory">385475<!--AnimationElement: smallBusiness_Deliberate_Fail--></T>
+              </U>
+            </V>
+            <L n="loot_list">
+              <T>403664<!--LootActions: loot_LightRetail_AutonomousBuyCooldown--></T>
+            </L>
+            <E n="outcome_result">FAILURE</E>
+          </U>
+          <U n="weight">
+            <T n="base_value">7</T>
+            <L n="multipliers">
+              <U>
+                <T n="multiplier">2</T>
+                <L n="tests">
+                  <L>
+                    <V t="relationship">
+                      <U n="relationship">
+                        <U n="relationship_score_interval">
+                          <T n="lower_bound">-50</T>
+                          <T n="upper_bound">-25</T>
+                        </U>
+                        <L n="subject">
+                          <E>Actor</E>
+                        </L>
+                        <L n="target_sim">
+                          <E>CurrentlyOpenSmallBusinessOwner</E>
+                        </L>
+                        <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">4</T>
+                <L n="tests">
+                  <L>
+                    <V t="relationship">
+                      <U n="relationship">
+                        <U n="relationship_score_interval">
+                          <T n="lower_bound">-100</T>
+                          <T n="upper_bound">-51</T>
+                        </U>
+                        <L n="subject">
+                          <E>Actor</E>
+                        </L>
+                        <L n="target_sim">
+                          <E>CurrentlyOpenSmallBusinessOwner</E>
+                        </L>
+                        <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+      </L>
+      <T n="use_fallback_as_default">True</T>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="npc" t="enabled">
+          <T n="enabled">True</T>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="state">
+      <U n="state">
+        <E n="operator">NOTEQUAL</E>
+        <T n="value">39611<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change--></T>
+        <E n="who">ObjectParent</E>
+      </U>
+    </V>
+    <V t="statistic">
+      <U n="statistic">
+        <T n="stat">403663<!--Commodity: commodity_LightRetail_AutonomyBuy_Timer--></T>
+        <V n="threshold" t="value_threshold">
+          <U n="value_threshold">
+            <E n="comparison">LESS_OR_EQUAL</E>
+            <T n="value">1</T>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="travel_group">
+      <U n="travel_group">
+        <V n="test_type" t="in_travel_group">
+          <U n="in_travel_group">
+            <T n="exists">False</T>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="state">
+      <U n="state">
+        <T n="value">404765<!--ObjectStateValue: smallBusiness_LightRetail_SalesEnabled--></T>
+        <E n="who">ObjectParent</E>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+  <T n="visible">False</T>
+</I>

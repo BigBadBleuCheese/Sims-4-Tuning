@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalActorCareer" i="situation_goal" m="situations.situation_goal_actor" n="pivotalMomentsGoal_actor_dreamsV0_N5_career_join_general" s="446960">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T p="InGame\UI\Icons\Headlines\Final\headline_briefcase.png" n="enabled">2f7d0004:00000000:6635328a30c30234</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0xEE56D386<!--String: "Join Any Career"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0xF89EA616<!--String: "(Objective 1 of 6)\n\nOpen the Career Panel and select the Join a Career button to open the Career selection window. You can also use the Phone, go to the Business section, and then select Find a Job.\n\nReward: 100 Simoleons"--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>454834<!--SituationGoalLootActions: situationGoalLootActions_dreamsV0_N5_rewardTrigger_tiny--></T>
+  </L>
+  <V n="_goal_test" t="career">
+    <U n="career">
+      <V n="test_type" t="has_career" />
+    </U>
+  </V>
+  <L n="_post_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+      </U>
+    </V>
+    <V t="career">
+      <U n="career">
+        <V n="test_type" t="career_reference">
+          <U n="career_reference">
+            <L n="blacklist">
+              <T>12895<!--Career: career_Child_GradeSchool--></T>
+              <T>9541<!--Career: career_Teen_HighSchool--></T>
+              <T>209979<!--UniversityCourseCareerSlot: university_CourseSlot_A--></T>
+              <T>209984<!--UniversityCourseCareerSlot: university_CourseSlot_B--></T>
+              <T>209988<!--UniversityCourseCareerSlot: university_CourseSlot_C--></T>
+              <T>209989<!--UniversityCourseCareerSlot: university_CourseSlot_D--></T>
+              <T>223698<!--UniversityCourseCareerSlot: University_BaseCareer--></T>
+              <T>206791<!--Career: careers_Adult_Freelancer_No_Agency--></T>
+              <T>186513<!--Career: career_Volunteer_Scouting--></T>
+              <T>199274<!--Career: career_Volunteer_DramaClub--></T>
+              <T>220913<!--Career: careers_Volunteer_SoccerTeam--></T>
+              <T>217092<!--Career: career_Volunteer_E-Sports--></T>
+              <T>276604<!--Career: careers_Volunteer_HSTeam_CheerTeam--></T>
+              <T>276602<!--Career: careers_Volunteer_HSTeam_ChessTeam--></T>
+              <T>276603<!--Career: careers_Volunteer_HSTeam_ComputerTeam--></T>
+              <T>276605<!--Career: careers_Volunteer_HSTeam_FootballTeam--></T>
+              <T>207004<!--Career: career_OddJob--></T>
+              <T>260893<!--Career: careers_VillagerHelp--></T>
+              <T>231099<!--Career: career_Batuu--></T>
+              <T>386484<!--Career: career_AliceTree_AliceQuest--></T>
+              <T>388211<!--Career: career_Tarot_NPCHelp--></T>
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+  <V n="goal_completion_notification" t="enabled">
+    <U n="enabled">
+      <L n="dialog_options">
+        <E>DISABLE_CLOSE_BUTTON</E>
+      </L>
+      <E n="expand_behavior">FORCE_EXPAND</E>
+      <V n="icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_Cloud.png">2f7d0004:00000000:edaeb925e304cd13</T>
+          </U>
+        </V>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0xAEC31081<!--String: "You completed a Dreams goal and earned 100 Simoleons as a reward!"--></T>
+      </V>
+      <V n="title" t="enabled">
+        <T n="enabled">0x390D8004<!--String: "Dream Update!"--></T>
+      </V>
+    </U>
+  </V>
+  <T n="should_reevaluate_on_load">True</T>
+</I>

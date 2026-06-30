@@ -1,0 +1,654 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SocialSuperInteraction" i="interaction" m="interactions.social.social_super_interaction" n="social_Career_Naturopathic_HolisticAssessment" s="437420">
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>TargetSim</E>
+      </L>
+    </U>
+  </V>
+  <L n="_party_size_weight_tuning">
+    <U>
+      <T n="y">100</T>
+    </U>
+    <U>
+      <T n="x">1</T>
+      <T n="y">100</T>
+    </U>
+    <U>
+      <T n="x">2</T>
+      <T n="y">50</T>
+    </U>
+    <U>
+      <T n="x">3</T>
+      <T n="y">0</T>
+    </U>
+    <U>
+      <T n="x">4</T>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <T n="_social_group_type">153754<!--SocialGroup: SocialGroup_Basic_SuperSocial--></T>
+  <V n="affordance_to_push_on_target" t="push_self_or_none">
+    <T n="push_self_or_none">False</T>
+  </V>
+  <T n="allow_autonomous">False</T>
+  <T n="attention_cost">0</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="time_based">
+                <U n="time_based">
+                  <T n="max_time">7</T>
+                  <T n="min_time">5</T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+      </L>
+      <V n="content" t="looping_content">
+        <U n="looping_content">
+          <U n="animation_ref">
+            <T n="factory">437414<!--AnimationElement: career_Naturopathic_HolisticAssessment_Examine--></T>
+          </U>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>162659<!--LootActions: loot_Commodity_Culling_GhostAdd_target--></T>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x9C09275F<!--String: "(From Being in a social group with at least 3 Sims)"--></T>
+          </V>
+          <T n="buff_type">125555<!--Buff: buff_Trait_WithMyFriends--></T>
+        </U>
+        <L n="subject">
+          <E>Actor</E>
+          <E>SocialGroupSims</E>
+          <E>TargetSim</E>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="social_group">
+              <U n="social_group">
+                <V n="threshold" t="enabled">
+                  <U n="enabled">
+                    <T n="value">3</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="basic_reserve_object" t="disabled" />
+  <T n="category">447588<!--PieMenuCategory: pieMenuCategory_NaturopathicCareer_Guidance--></T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x692E91D9<!--String: "Holistically Examine {1.SimFirstName}"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <V n="idle_animation" t="enabled">
+    <U n="enabled">
+      <T n="factory">11570<!--AnimationElement: Listen_Listen_Looping_basic--></T>
+    </U>
+  </V>
+  <T n="ignore_group_socials">False</T>
+  <L n="interaction_category_tags">
+    <E>Interaction_SocialSuper</E>
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+    <E>Interaction_SocialAll</E>
+    <E>Interaction_Social_Contagious</E>
+  </L>
+  <T n="invite_in_after_interaction">True</T>
+  <U n="listen_animation">
+    <T n="factory">11570<!--AnimationElement: Listen_Listen_Looping_basic--></T>
+  </U>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <V n="animation_ref" t="enabled">
+              <U n="enabled">
+                <T n="factory">437412<!--AnimationElement: career_Naturopathic_HolisticAssessment_Success--></T>
+              </U>
+            </V>
+            <L n="basic_extras">
+              <V t="buff_fire_and_forget">
+                <U n="buff_fire_and_forget">
+                  <U n="buff">
+                    <V n="buff_reason" t="enabled">
+                      <T n="enabled">0x2919B92D<!--String: "(From Naturopath Career)"--></T>
+                    </V>
+                    <T n="buff_type">436480<!--Buff: buff_Career_Naturopathic_TheRightApproach--></T>
+                  </U>
+                </U>
+              </V>
+              <V t="notification">
+                <U n="notification">
+                  <V n="dialog" t="tested">
+                    <U n="tested">
+                      <L n="records">
+                        <U>
+                          <V n="item" t="literal">
+                            <U n="literal">
+                              <V n="icon" t="enabled">
+                                <V n="enabled" t="participant">
+                                  <U n="participant">
+                                    <L n="participant_type">
+                                      <E>TargetSim</E>
+                                    </L>
+                                  </U>
+                                </V>
+                              </V>
+                              <V n="text" t="single">
+                                <T n="single">0xBE820A16<!--String: "I fear that I will require all the healing that a Sim can receive. My inner fire has grown to the point where it poses a threat for anyone nearby—even objects. Last week, I nearly set my kitchen on fire! I'm so hot, literally."--></T>
+                              </V>
+                              <E n="visual_type">SPEECH</E>
+                            </U>
+                          </V>
+                          <L n="tests">
+                            <L>
+                              <V t="buff">
+                                <U n="buff">
+                                  <E n="subject">TargetSim</E>
+                                  <V n="whitelist" t="enabled">
+                                    <L n="enabled">
+                                      <T>452109<!--Buff: buff_Ailments_MainBuff_BurningPassion--></T>
+                                    </L>
+                                  </V>
+                                </U>
+                              </V>
+                            </L>
+                          </L>
+                        </U>
+                        <U>
+                          <V n="item" t="literal">
+                            <U n="literal">
+                              <V n="icon" t="enabled">
+                                <V n="enabled" t="participant">
+                                  <U n="participant">
+                                    <L n="participant_type">
+                                      <E>TargetSim</E>
+                                    </L>
+                                  </U>
+                                </V>
+                              </V>
+                              <V n="text" t="single">
+                                <T n="single">0xBEE88E36<!--String: "I feel like I need to create almost all the time, which is a really strange feeling. I mean, I'm doing anything—painting, woodworking, whatever—but I can't sleep until I satisfy the itch! I mean literally, it's an itch."--></T>
+                              </V>
+                              <E n="visual_type">SPEECH</E>
+                            </U>
+                          </V>
+                          <L n="tests">
+                            <L>
+                              <V t="buff">
+                                <U n="buff">
+                                  <E n="subject">TargetSim</E>
+                                  <V n="whitelist" t="enabled">
+                                    <L n="enabled">
+                                      <T>432796<!--Buff: buff_Ailments_MainBuff_CreationImpulse--></T>
+                                    </L>
+                                  </V>
+                                </U>
+                              </V>
+                            </L>
+                          </L>
+                        </U>
+                        <U>
+                          <V n="item" t="literal">
+                            <U n="literal">
+                              <V n="icon" t="enabled">
+                                <V n="enabled" t="participant">
+                                  <U n="participant">
+                                    <L n="participant_type">
+                                      <E>TargetSim</E>
+                                    </L>
+                                  </U>
+                                </V>
+                              </V>
+                              <V n="text" t="single">
+                                <T n="single">0x17DC864E<!--String: "I've been feeling so down recently that I haven't been able to leave the bed. My heart is heavy, like a weight keeping me in place. I really want to get out of this rut. Am I <i>just</i> sad or is there something more happening?"--></T>
+                              </V>
+                              <E n="visual_type">SPEECH</E>
+                            </U>
+                          </V>
+                          <L n="tests">
+                            <L>
+                              <V t="buff">
+                                <U n="buff">
+                                  <E n="subject">TargetSim</E>
+                                  <V n="whitelist" t="enabled">
+                                    <L n="enabled">
+                                      <T>455199<!--Buff: buff_Career_Naturopathic_NoAilment_Emotional--></T>
+                                    </L>
+                                  </V>
+                                </U>
+                              </V>
+                            </L>
+                          </L>
+                        </U>
+                        <U>
+                          <V n="item" t="literal">
+                            <U n="literal">
+                              <V n="icon" t="enabled">
+                                <V n="enabled" t="participant">
+                                  <U n="participant">
+                                    <L n="participant_type">
+                                      <E>TargetSim</E>
+                                    </L>
+                                  </U>
+                                </V>
+                              </V>
+                              <V n="text" t="single">
+                                <T n="single">0x74B8D6CF<!--String: "I am feeling...nothing, emotionally. Now that I think about it, everyone I've come into contact with also seem emotionless. Now I don't normally mind but eating a grilled cheese no longer brings me joy. "--></T>
+                              </V>
+                              <E n="visual_type">SPEECH</E>
+                            </U>
+                          </V>
+                          <L n="tests">
+                            <L>
+                              <V t="buff">
+                                <U n="buff">
+                                  <E n="subject">TargetSim</E>
+                                  <V n="whitelist" t="enabled">
+                                    <L n="enabled">
+                                      <T>427745<!--Buff: buff_Ailments_MainBuff_EmotionalVoid--></T>
+                                    </L>
+                                  </V>
+                                </U>
+                              </V>
+                            </L>
+                          </L>
+                        </U>
+                        <U>
+                          <V n="item" t="literal">
+                            <U n="literal">
+                              <V n="icon" t="enabled">
+                                <V n="enabled" t="participant">
+                                  <U n="participant">
+                                    <L n="participant_type">
+                                      <E>TargetSim</E>
+                                    </L>
+                                  </U>
+                                </V>
+                              </V>
+                              <V n="text" t="single">
+                                <T n="single">0x7AA3CAA1<!--String: "Every once in a while I catch a whiff of something kind of funny and I think...it might be me? and I hope this doesn't sound crazy but every time this happens, there are suddenly Gnomes <i>everywhere</i>. They just keep popping up around my home and I was told this was a problem you could fix. I want them <i>gone</i>."--></T>
+                              </V>
+                              <E n="visual_type">SPEECH</E>
+                            </U>
+                          </V>
+                          <L n="tests">
+                            <L>
+                              <V t="buff">
+                                <U n="buff">
+                                  <E n="subject">TargetSim</E>
+                                  <V n="whitelist" t="enabled">
+                                    <L n="enabled">
+                                      <T>432795<!--Buff: buff_Ailments_MainBuff_GnomeMagnet--></T>
+                                    </L>
+                                  </V>
+                                </U>
+                              </V>
+                            </L>
+                          </L>
+                        </U>
+                        <U>
+                          <V n="item" t="literal">
+                            <U n="literal">
+                              <V n="icon" t="enabled">
+                                <V n="enabled" t="participant">
+                                  <U n="participant">
+                                    <L n="participant_type">
+                                      <E>TargetSim</E>
+                                    </L>
+                                  </U>
+                                </V>
+                              </V>
+                              <V n="text" t="single">
+                                <T n="single">0x53FD7F71<!--String: "My friends recommended I come see you, but I'm fine really. I honestly think it's jealousy on their part because my Gardening abilities have been really elevated lately. You should see my plants! Though, I have been having sudden angry outbursts."--></T>
+                              </V>
+                              <E n="visual_type">SPEECH</E>
+                            </U>
+                          </V>
+                          <L n="tests">
+                            <L>
+                              <V t="buff">
+                                <U n="buff">
+                                  <E n="subject">TargetSim</E>
+                                  <V n="whitelist" t="enabled">
+                                    <L n="enabled">
+                                      <T>432794<!--Buff: buff_Ailments_MainBuff_GreenieMeanie--></T>
+                                    </L>
+                                  </V>
+                                </U>
+                              </V>
+                            </L>
+                          </L>
+                        </U>
+                        <U>
+                          <V n="item" t="literal">
+                            <U n="literal">
+                              <V n="icon" t="enabled">
+                                <V n="enabled" t="participant">
+                                  <U n="participant">
+                                    <L n="participant_type">
+                                      <E>TargetSim</E>
+                                    </L>
+                                  </U>
+                                </V>
+                              </V>
+                              <V n="text" t="single">
+                                <T n="single">0xB8550EC6<!--String: "I just feel like everyone around me has had Bad Luck but mine has never been better...it's almost like I'm pulling all their Luck away. Is there something wrong with me?"--></T>
+                              </V>
+                              <E n="visual_type">SPEECH</E>
+                            </U>
+                          </V>
+                          <L n="tests">
+                            <L>
+                              <V t="buff">
+                                <U n="buff">
+                                  <E n="subject">TargetSim</E>
+                                  <V n="whitelist" t="enabled">
+                                    <L n="enabled">
+                                      <T>432793<!--Buff: buff_Ailments_MainBuff_LuckSuck--></T>
+                                    </L>
+                                  </V>
+                                </U>
+                              </V>
+                            </L>
+                          </L>
+                        </U>
+                        <U>
+                          <V n="item" t="literal">
+                            <U n="literal">
+                              <V n="icon" t="enabled">
+                                <V n="enabled" t="participant">
+                                  <U n="participant">
+                                    <L n="participant_type">
+                                      <E>TargetSim</E>
+                                    </L>
+                                  </U>
+                                </V>
+                              </V>
+                              <V n="text" t="single">
+                                <T n="single">0x73E9BFD3<!--String: "I formed a fitness club with my buddies, and we've been working out a few times a week. It's been fantastic, and I love the company, but my body has been aching. I'm not sure if that's the cause or if there's a more serious issue!"--></T>
+                              </V>
+                              <E n="visual_type">SPEECH</E>
+                            </U>
+                          </V>
+                          <L n="tests">
+                            <L>
+                              <V t="buff">
+                                <U n="buff">
+                                  <E n="subject">TargetSim</E>
+                                  <V n="whitelist" t="enabled">
+                                    <L n="enabled">
+                                      <T>455198<!--Buff: buff_Career_Naturopathic_NoAilment_Physical--></T>
+                                    </L>
+                                  </V>
+                                </U>
+                              </V>
+                            </L>
+                          </L>
+                        </U>
+                        <U>
+                          <V n="item" t="literal">
+                            <U n="literal">
+                              <V n="icon" t="enabled">
+                                <V n="enabled" t="participant">
+                                  <U n="participant">
+                                    <L n="participant_type">
+                                      <E>TargetSim</E>
+                                    </L>
+                                  </U>
+                                </V>
+                              </V>
+                              <V n="text" t="single">
+                                <T n="single">0x227EF3A1<!--String: "I hate being the one who whines about earning money, especially when I don't have to do any work, but I'm sick of coughing and the discomfort that goes along with it."--></T>
+                              </V>
+                              <E n="visual_type">SPEECH</E>
+                            </U>
+                          </V>
+                          <L n="tests">
+                            <L>
+                              <V t="buff">
+                                <U n="buff">
+                                  <E n="subject">TargetSim</E>
+                                  <V n="whitelist" t="enabled">
+                                    <L n="enabled">
+                                      <T>452108<!--Buff: buff_Ailments_MainBuff_SimoleonFever--></T>
+                                    </L>
+                                  </V>
+                                </U>
+                              </V>
+                            </L>
+                          </L>
+                        </U>
+                        <U>
+                          <V n="item" t="literal">
+                            <U n="literal">
+                              <V n="icon" t="enabled">
+                                <V n="enabled" t="participant">
+                                  <U n="participant">
+                                    <L n="participant_type">
+                                      <E>TargetSim</E>
+                                    </L>
+                                  </U>
+                                </V>
+                              </V>
+                              <V n="text" t="single">
+                                <T n="single">0x6BD2D0F0<!--String: "I fix things for people who are less skilled than me on a daily basis. It's fulfilling, and recently, I've been finishing tasks far more quickly than usual! But it also seems like things have been broken more often lately. Hm."--></T>
+                              </V>
+                            </U>
+                          </V>
+                          <L n="tests">
+                            <L>
+                              <V t="buff">
+                                <U n="buff">
+                                  <E n="subject">TargetSim</E>
+                                  <V n="whitelist" t="enabled">
+                                    <L n="enabled">
+                                      <T>452107<!--Buff: buff_Ailments_MainBuff_SonicSinuses--></T>
+                                    </L>
+                                  </V>
+                                </U>
+                              </V>
+                            </L>
+                          </L>
+                        </U>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+            <L n="loot_list">
+              <T>11036<!--LootActions: Rel_Gain_Small--></T>
+              <T>436154<!--LootActions: loot_JobPerformance_Gain_Small_Naturopathic--></T>
+              <T>453308<!--LootActions: loot_Commodity_Career_Naturopath_AilmentDiagnosis_Increment--></T>
+              <T>445228<!--LootActions: loot_NatureMeds_HealsWithPills_Balance--></T>
+            </L>
+          </U>
+          <U n="weight">
+            <T n="base_value">10</T>
+          </U>
+        </U>
+        <U>
+          <U n="outcome">
+            <V n="animation_ref" t="enabled">
+              <U n="enabled">
+                <T n="factory">437413<!--AnimationElement: career_Naturopathic_HolisticAssessment_Failure--></T>
+              </U>
+            </V>
+            <L n="basic_extras">
+              <V t="notification">
+                <U n="notification">
+                  <V n="dialog" t="single">
+                    <V n="single" t="literal">
+                      <U n="literal">
+                        <V n="icon" t="enabled">
+                          <V n="enabled" t="participant">
+                            <U n="participant">
+                              <L n="participant_type">
+                                <E>TargetSim</E>
+                              </L>
+                            </U>
+                          </V>
+                        </V>
+                        <V n="text" t="variation">
+                          <U n="variation">
+                            <L n="variations">
+                              <T>0x365906F3<!--String: "Wow, your questions are pretty invasive. If I knew what was wrong with me, would I be here? Absolutely not."--></T>
+                              <T>0xC1752EBA<!--String: "Ouch! Ooh! Could you be a bit more gentle when examining me?!"--></T>
+                            </L>
+                          </U>
+                        </V>
+                        <E n="visual_type">SPEECH</E>
+                      </U>
+                    </V>
+                  </V>
+                </U>
+              </V>
+            </L>
+            <L n="loot_list">
+              <T>11042<!--LootActions: Rel_Loss_Small--></T>
+              <T>436157<!--LootActions: loot_JobPerformance_Loss_Small_Naturopathic--></T>
+              <T>445228<!--LootActions: loot_NatureMeds_HealsWithPills_Balance--></T>
+            </L>
+            <E n="outcome_result">FAILURE</E>
+          </U>
+        </U>
+      </L>
+      <T n="use_fallback_as_default">True</T>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T p="InGame\UI\Icons\Events\EventGoal_search_bg.png" n="key">2f7d0004:00000000:75f395462e2b4dcd</T>
+      </U>
+    </V>
+  </V>
+  <T n="pie_menu_priority">1</T>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <T n="relationship_scoring">True</T>
+  <E n="scoring_priority">NORMAL</E>
+  <V n="sim_affinity_posture_scoring_data" t="enabled">
+    <U n="enabled">
+      <L n="my_scoring">
+        <U>
+          <V n="affinity_strategy" t="relationship_based" />
+          <T n="negate_tag">True</T>
+          <E n="running_interaction_tag">Sleeping</E>
+        </U>
+        <U>
+          <V n="affinity_strategy" t="avoid" />
+          <E n="running_interaction_tag">Very_Loud</E>
+        </U>
+      </L>
+      <L n="my_tags">
+        <E>Loud</E>
+        <E>Chat</E>
+      </L>
+    </U>
+  </V>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="include_all" />
+    </U>
+  </V>
+  <E n="target_type">TARGET</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">TargetSim</E>
+      </U>
+    </V>
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="situation_running_test">
+      <U n="situation_running_test">
+        <V n="participant" t="enabled">
+          <E n="enabled">TargetSim</E>
+        </V>
+        <V n="situation_whitelist" t="enabled">
+          <L n="enabled">
+            <T>449166<!--CareerEventSituation: careerEventSituation_NaturopathCareer_Low_Ailments--></T>
+            <T>443195<!--CustomStatesSituation: situation_Career_Naturopathic_Afflicted--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+    <V t="situation_goal_test">
+      <U n="situation_goal_test">
+        <L n="situation_goals">
+          <T>439381<!--SituationGoalRanInteractionOnTargetedSim: career_Naturopath_HolisticAssessment--></T>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x9DAD15AE<!--String: "{0.SimFirstName} will need to Ask and Discuss more with the Client before {0.SimPronounSubjective} can use this."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="QuestGig" i="career_gig" m="careers.missions.mission_gig" n="questGig_TarotNPCHelp_Ekade_DeadEnd" s="393776">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_description" t="enabled">
+        <T n="enabled">0x8ACB59C3<!--String: "Looking into the hood of a Reaper can really make you reevaluate what matters most. Maybe you understand, maybe you don't. But you look like the type who can lead the way. Earn your keep in this community by helping me sustain some family joy, and I might be willing to part with my treasure."--></T>
+      </V>
+      <V n="instance_display_icon" t="enabled">
+        <T n="enabled" p="InEP17\UI\Icons\Career\Gigs\gig_DeadEnd.png">2f7d0004:00000000:a2d12f9044b455e0</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x3DF00088<!--String: "The Small Things"--></T>
+      </V>
+    </U>
+  </V>
+  <T n="career">388211<!--Career: career_Tarot_NPCHelp--></T>
+  <V n="end_of_gig_notifications" t="enabled">
+    <L n="enabled">
+      <U>
+        <E n="key">SUCCESS</E>
+        <U n="value">
+          <L n="dialog_options">
+            <E>DISABLE_CLOSE_BUTTON</E>
+          </L>
+          <V n="text" t="single">
+            <T n="single">0x104A412D<!--String: "{0.SimFirstName} has succeeded in helping a member of the Order of Lenore. Avast ye and allow the Emperor to take the lead.\n\n<b><i>Let the bell toll, nevermore.</i></b>"--></T>
+          </V>
+        </U>
+      </U>
+    </L>
+  </V>
+  <T n="gig_assignment_aspiration">393800<!--AspirationGig: aspirationGig_TarotNPCHelp_Ekade_DeadEnd--></T>
+  <V n="gig_pay" t="flat_amount">
+    <U n="flat_amount">
+      <T n="value">50</T>
+    </U>
+  </V>
+  <T n="hide_inactive_objectives">True</T>
+  <L n="mission_objective_data">
+    <U>
+      <L n="weighted_objectives">
+        <U>
+          <T n="objective">393712<!--Objective: objective_Tarot_NPCHelp_Ekade_Attend--></T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <L n="weighted_objectives">
+        <U>
+          <T n="objective">393713<!--Objective: objective_Tarot_NPCHelp_Ekade_PurchaseToys--></T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="completes_mission">False</T>
+      <L n="weighted_objectives">
+        <U>
+          <T n="objective">393714<!--Objective: objective_Tarot_NPCHelp_Ekade_DeliverToys--></T>
+        </U>
+      </L>
+    </U>
+  </L>
+  <T n="mission_rewards_description">0x185E6E1E<!--String: "{0.String}\n<font color='#199C2C'>{1.String}</font>"--></T>
+  <V n="mission_rewards_text" t="enabled">
+    <T n="enabled">0xB0070EEA<!--String: "Reward: The Emperor Tarot Card"--></T>
+  </V>
+  <V n="mission_trait" t="enabled">
+    <T n="enabled">393846<!--Trait: trait_Hidden_TarotCollectible_OnQuest_Ekade01--></T>
+  </V>
+  <U n="objective_completion_audio">
+    <T n="audio" p="InGame\Audio\Bumper\bumper_other_goal_complete.propx">39b2aa4a:00000000:ea1687e36b0b32f3</T>
+  </U>
+  <E n="on_pick_behavior">REMOVE</E>
+  <T n="open_career_panel">True</T>
+  <V n="picker_associated_sim_filter" t="enabled">
+    <T n="enabled">387345<!--TunableSimFilter: situationFilters_Tarot_NPC_Ekade--></T>
+  </V>
+  <T n="picker_description_text">0x8237E183<!--String: "{0.String}\n<font color='#199C2C'>{1.String}</font>"--></T>
+  <T n="picker_disable_if_visibility_tests_fail_with_tooltip">True</T>
+  <T n="picker_replace_if_removed">True</T>
+  <V n="picker_scheduling_behavior" t="enabled">
+    <V n="enabled" t="schedule_career_gig">
+      <U n="schedule_career_gig">
+        <T n="allow_add_career">True</T>
+      </U>
+    </V>
+  </V>
+  <V n="picker_scoring" t="enabled">
+    <U n="enabled">
+      <E n="bucket">TarotHelp_Ekade</E>
+    </U>
+  </V>
+  <L n="picker_visibility_tests">
+    <L>
+      <V t="unlock_earned">
+        <U n="unlock_earned">
+          <V n="tooltip" t="enabled">
+            <T n="enabled">0x97DCDE01<!--String: "This favor has already been completed."--></T>
+          </V>
+          <V n="unlock_to_test" t="aspiration">
+            <U n="aspiration">
+              <T n="aspiration">393800<!--AspirationGig: aspirationGig_TarotNPCHelp_Ekade_DeadEnd--></T>
+              <T n="negate">True</T>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="career_gig_test">
+        <U n="career_gig_test">
+          <T n="career">388211<!--Career: career_Tarot_NPCHelp--></T>
+          <T n="negate">True</T>
+          <V n="test_type" t="specific_gigs">
+            <U n="specific_gigs">
+              <L n="gigs">
+                <T>393776<!--QuestGig: questGig_TarotNPCHelp_Ekade_DeadEnd--></T>
+              </L>
+            </U>
+          </V>
+          <V n="tooltip" t="enabled">
+            <T n="enabled">0xB3B76E64<!--String: "This favor is currently in progress."--></T>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="result_based_loots" t="enabled">
+    <L n="enabled">
+      <U>
+        <E n="key">CANCELED</E>
+        <L n="value">
+          <T>426666<!--LootActions: loot_Tarot_NPCHelp_ObjectiveTracker_Cleanup_EkadeDeadEnd--></T>
+        </L>
+      </U>
+      <U>
+        <E n="key">SUCCESS</E>
+        <L n="value">
+          <T>393804<!--LootActions: loot_Tarot_Cards_Emperor--></T>
+        </L>
+      </U>
+    </L>
+  </V>
+</I>

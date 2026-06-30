@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="ImaginaryFriendSituation" i="situation" m="imaginary_friends.imaginary_friend_situation" n="situation_EP20_IF_SpawnFriend" s="460865">
+  <T n="_use_spawner_tags_on_travel">True</T>
+  <T n="can_remove_sims_from_work">False</T>
+  <U n="child_job_and_role_state">
+    <T n="role_state">455728<!--RoleState: roleState_EP20_IF_SpawnEvent_Target--></T>
+    <T n="situation_job">455722<!--SituationJob: jobs_EP20_IF_Creator--></T>
+  </U>
+  <U n="dismiss_state">
+    <T n="allow_join_situation">False</T>
+    <V n="time_out" t="enabled">
+      <T n="enabled">1</T>
+    </V>
+  </U>
+  <T n="duration">0</T>
+  <U n="fun_motive_state">
+    <U n="interact_with_friend_test">
+      <T n="stat">16655<!--Commodity: motive_Fun--></T>
+      <V n="threshold" t="value_threshold">
+        <U n="value_threshold">
+          <T n="value">99</T>
+        </U>
+      </V>
+    </U>
+    <L n="job_and_role_changes">
+      <U>
+        <T n="Situation Job">455653<!--SituationJob: jobs_EP20_IF_ImaginaryFriend--></T>
+        <T n="Role State">455786<!--RoleState: roleState_EP20_IF_SpawnEvent_ImaginaryFriend_Help_Fun--></T>
+      </U>
+    </L>
+  </U>
+  <U n="greet_friend_state">
+    <U n="interaction_of_interest">
+      <L n="affordances">
+        <T>463220<!--SocialSuperInteraction: social_EP20_IF_Wave--></T>
+      </L>
+    </U>
+    <L n="job_and_role_changes">
+      <U>
+        <T n="Situation Job">455722<!--SituationJob: jobs_EP20_IF_Creator--></T>
+        <T n="Role State">456066<!--RoleState: roleState_EP20_IF_Greet_Waiting--></T>
+      </U>
+    </L>
+    <V n="time_out" t="enabled">
+      <T n="enabled">10</T>
+    </V>
+  </U>
+  <U n="imaginary_friend_job_and_role_state">
+    <T n="role_state">465535<!--RoleState: roleState_EP20_IF_SpawnEvent_ImaginaryFriend_Spawn--></T>
+    <T n="situation_job">455653<!--SituationJob: jobs_EP20_IF_ImaginaryFriend--></T>
+  </U>
+  <U n="interact_with_friend_state">
+    <U n="fun_motive_state_test">
+      <T n="stat">16655<!--Commodity: motive_Fun--></T>
+      <V n="threshold" t="value_threshold">
+        <U n="value_threshold">
+          <E n="comparison">LESS_OR_EQUAL</E>
+          <T n="value">95</T>
+        </U>
+      </V>
+    </U>
+    <L n="job_and_role_changes">
+      <U>
+        <T n="Situation Job">455653<!--SituationJob: jobs_EP20_IF_ImaginaryFriend--></T>
+        <T n="Role State">455724<!--RoleState: roleState_EP20_IF_SpawnEvent_ImaginaryFriend_Idle_MovingOnMoment--></T>
+      </U>
+      <U>
+        <T n="Situation Job">455722<!--SituationJob: jobs_EP20_IF_Creator--></T>
+        <T n="Role State">475540<!--RoleState: roleState_EP20_IF_SpawnEvent_ImaginaryFriend_Idle_Regular--></T>
+      </U>
+    </L>
+    <L n="leave_state_tests">
+      <L>
+        <V t="statistic">
+          <U n="statistic">
+            <T n="must_have_stat">True</T>
+            <T n="stat">455732<!--Commodity: commodity_EP20_IF_SpawnEvent--></T>
+            <V n="threshold" t="value_threshold">
+              <U n="value_threshold">
+                <E n="comparison">LESS_OR_EQUAL</E>
+              </U>
+            </V>
+            <E n="who">ActorImaginaryFriend</E>
+          </U>
+        </V>
+      </L>
+    </L>
+    <U n="social_motive_state_test">
+      <T n="stat">16658<!--Commodity: motive_Social--></T>
+      <V n="threshold" t="value_threshold">
+        <U n="value_threshold">
+          <E n="comparison">LESS_OR_EQUAL</E>
+          <T n="value">95</T>
+        </U>
+      </V>
+    </U>
+  </U>
+  <U n="leave_state">
+    <T n="allow_join_situation">False</T>
+    <U n="interaction_of_interest">
+      <L n="affordances">
+        <T>463929<!--SuperInteraction: sI_EP20_IF_SpawnEvent_Poof_Out--></T>
+      </L>
+    </U>
+    <L n="job_and_role_changes">
+      <U>
+        <T n="Situation Job">455653<!--SituationJob: jobs_EP20_IF_ImaginaryFriend--></T>
+        <T n="Role State">455727<!--RoleState: roleState_EP20_IF_SpawnEvent_ImaginaryFriend_Leave--></T>
+      </U>
+    </L>
+    <V n="time_out" t="enabled">
+      <T n="enabled">10</T>
+    </V>
+  </U>
+  <L n="situation_end_loot">
+    <T>485765<!--LootActions: loot_EP20_IF_MovingOnMoment_Doll_StateUpdates_ChildSGBF--></T>
+    <T>485764<!--LootActions: loot_EP20_IF_RelStatus_Determined_ChildSGBF--></T>
+  </L>
+  <V n="situation_end_time_string" t="show_end_time">
+    <T n="show_end_time">0xA3E17143<!--String: "Work day ends at {0.TimeShort}"--></T>
+  </V>
+  <L n="situation_start_loot" />
+  <U n="social_motive_state">
+    <U n="interact_with_friend_test">
+      <T n="stat">16658<!--Commodity: motive_Social--></T>
+      <V n="threshold" t="value_threshold">
+        <U n="value_threshold">
+          <E n="comparison">GREATER_OR_EQUAL</E>
+          <T n="value">99</T>
+        </U>
+      </V>
+    </U>
+    <L n="job_and_role_changes">
+      <U>
+        <T n="Situation Job">455653<!--SituationJob: jobs_EP20_IF_ImaginaryFriend--></T>
+        <T n="Role State">455726<!--RoleState: roleState_EP20_IF_SpawnEvent_ImaginaryFriend_Help_Social--></T>
+      </U>
+    </L>
+  </U>
+  <L n="tags">
+    <E>Situation_EP20_IF_SpawnEvent</E>
+  </L>
+  <L n="triggers_leave">
+    <V t="situation_sim_count_test">
+      <U n="situation_sim_count_test">
+        <L n="situation_tags">
+          <E>Situation_EP20_IF_SpawnEvent</E>
+        </L>
+        <U n="threshold">
+          <E n="comparison">LESS_OR_EQUAL</E>
+        </U>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <V n="whitelist" t="enabled">
+          <L n="enabled">
+            <T>475537<!--Buff: buff_EP20_IF_Hidden_IF_Mean_AutoDespawn--></T>
+            <T>10094<!--Buff: buff_Sim_IsSleeping--></T>
+            <T>275549<!--Buff: buff_Sim_IsSleeping_Hidden--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+    <V t="trait">
+      <U n="trait">
+        <L n="whitelist_traits">
+          <T>34317<!--Trait: trait_teen--></T>
+        </L>
+      </U>
+    </V>
+    <V t="participant_running_interaction">
+      <U n="participant_running_interaction">
+        <L n="affordance_lists">
+          <T>261814<!--AffordanceList: affordanceList_TakeShower--></T>
+          <T>302367<!--AffordanceList: affordanceList_TakeShowerNoShave--></T>
+        </L>
+        <L n="affordances">
+          <T>13073<!--SuperInteraction: bathtub_Nap--></T>
+          <T>13084<!--SuperInteraction: bathtub_TakeBath--></T>
+          <T>13087<!--SuperInteraction: bathtub_TakeBubbleBath--></T>
+          <T>120340<!--SuperInteraction: bathtub_TakeBathWithSoak_CitrusSoak--></T>
+          <T>120341<!--SuperInteraction: bathtub_TakeBathWithSoak_LavenderFoam--></T>
+          <T>120339<!--SuperInteraction: bathtub_TakeBathWithSoak_MuscleReleaseSoak--></T>
+          <T>120337<!--SuperInteraction: bathtub_TakeBathWithSoak_RosePetalSoak--></T>
+          <T>120342<!--SuperInteraction: bathtub_TakeBathWithSoak_MilkHoneySoak--></T>
+          <T>121575<!--SuperInteraction: bathtub_TakeBathWithSoak_MilkHoneySoak_DirtyBath--></T>
+          <T>120336<!--SuperInteraction: bathtub_TakeMudBath--></T>
+          <T>121573<!--SuperInteraction: bathtub_TakeMudBath_DirtyBath--></T>
+          <T>355169<!--SuperInteraction: bathtub_TakeBath_WaterHeater_Cold--></T>
+          <T>239038<!--SuperInteraction: bathtub_TakeBath_OfftheGrid--></T>
+          <T>213938<!--SuperInteraction: bathtub_TakeBath_Mermaid--></T>
+          <T>343777<!--SuperInteraction: bathtub_TakeBath_MoldSystem--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <U n="wait_for_friend_state">
+    <L n="imaginary_friend_creation_loot">
+      <T>464234<!--LootActions: loot_EP20_IF_StoreIFOnDoll--></T>
+    </L>
+    <U n="interaction_of_interest">
+      <L n="affordances">
+        <T>463219<!--SuperInteraction: sI_EP20_IF_SpawnEvent_Child_Wait--></T>
+      </L>
+    </U>
+    <L n="job_and_role_changes">
+      <U>
+        <T n="Situation Job">455722<!--SituationJob: jobs_EP20_IF_Creator--></T>
+        <T n="Role State">455728<!--RoleState: roleState_EP20_IF_SpawnEvent_Target--></T>
+      </U>
+    </L>
+    <V n="time_out" t="enabled">
+      <T n="enabled">5</T>
+    </V>
+  </U>
+</I>

@@ -1,0 +1,548 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SocialSuperInteraction" i="interaction" m="interactions.social.social_super_interaction" n="si_Touching_KeepsakeBox_EntrustKeepsake" s="320565">
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>TargetSim</E>
+      </L>
+    </U>
+  </V>
+  <L n="_party_size_weight_tuning">
+    <U>
+      <T n="y">100</T>
+    </U>
+    <U>
+      <T n="x">1</T>
+      <T n="y">100</T>
+    </U>
+    <U>
+      <T n="x">2</T>
+      <T n="y">50</T>
+    </U>
+    <U>
+      <T n="x">3</T>
+      <T n="y">0</T>
+    </U>
+    <U>
+      <T n="x">4</T>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <T n="_social_group_type">74849<!--JigGroup: group_Platonic--></T>
+  <L n="_static_commodities" />
+  <V n="affordance_to_push_on_target" t="push_self_or_none">
+    <T n="push_self_or_none">False</T>
+  </V>
+  <T n="allow_from_sim_inventory">True</T>
+  <T n="allow_user_directed">False</T>
+  <T n="attention_cost">1</T>
+  <V n="basic_content" t="one_shot" />
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>162659<!--LootActions: loot_Commodity_Culling_GhostAdd_target--></T>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x9C09275F<!--String: "(From Being in a social group with at least 3 Sims)"--></T>
+          </V>
+          <T n="buff_type">125555<!--Buff: buff_Trait_WithMyFriends--></T>
+        </U>
+        <L n="subject">
+          <E>Actor</E>
+          <E>SocialGroupSims</E>
+          <E>TargetSim</E>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="social_group">
+              <U n="social_group">
+                <V n="threshold" t="enabled">
+                  <U n="enabled">
+                    <T n="value">3</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>157124<!--LootActions: loot_Toddler_RemovedLeftBehind--></T>
+        </L>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+    <V t="send_to_inventory">
+      <U n="send_to_inventory">
+        <T n="give_sim_ownership">True</T>
+        <V n="inventory" t="participant_inventory">
+          <U n="participant_inventory">
+            <E n="participant">PickedSim</E>
+          </U>
+        </V>
+        <E n="participant">SavedActor1</E>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>320760<!--LootActions: loot_KeepsakeBox_EntrustBox--></T>
+          <T>162764<!--LootActions: loot_Statistic_LifeSkill_Responsibility_Gain_Medium_Target--></T>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>320758<!--LootActions: loot_OwnershipTransfer_KeepsakeBox--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="basic_reserve_object" t="disabled" />
+  <T n="category">457483<!--PieMenuCategory: pieMenuCategory_Getaway--></T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x7988D82E<!--String: "Entrust Keepsake Box to"--></T>
+  <V n="display_name_in_queue" t="disabled" />
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <V n="idle_animation" t="enabled">
+    <U n="enabled">
+      <T n="factory">11570<!--AnimationElement: Listen_Listen_Looping_basic--></T>
+    </U>
+  </V>
+  <T n="ignore_group_socials">False</T>
+  <L n="interaction_category_tags">
+    <E>Interaction_SocialSuper</E>
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+    <E>Interaction_SocialAll</E>
+    <E>Interaction_Social_Touching</E>
+    <E>Interaction_Social_Contagious</E>
+  </L>
+  <T n="invite_in_after_interaction">True</T>
+  <U n="listen_animation">
+    <T n="factory">11570<!--AnimationElement: Listen_Listen_Looping_basic--></T>
+  </U>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">321233<!--AnimationElement: Keepsakebox_GiveBox_02--></T>
+                  </U>
+                </V>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="object_criteria">
+                <U n="object_criteria">
+                  <V n="identity_test" t="definition_id">
+                    <U n="definition_id">
+                      <T n="actual_object">342306</T>
+                    </U>
+                  </V>
+                  <T n="owned">False</T>
+                  <V n="subject_specific_tests" t="single_object">
+                    <U n="single_object">
+                      <E n="target">SavedActor1</E>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">321233<!--AnimationElement: Keepsakebox_GiveBox_02--></T>
+                  </U>
+                </V>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="object_criteria">
+                <U n="object_criteria">
+                  <V n="identity_test" t="definition_id">
+                    <U n="definition_id">
+                      <T n="actual_object">342987</T>
+                    </U>
+                  </V>
+                  <T n="owned">False</T>
+                  <V n="subject_specific_tests" t="single_object">
+                    <U n="single_object">
+                      <E n="target">SavedActor1</E>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">321233<!--AnimationElement: Keepsakebox_GiveBox_02--></T>
+                  </U>
+                </V>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="object_criteria">
+                <U n="object_criteria">
+                  <V n="identity_test" t="definition_id">
+                    <U n="definition_id">
+                      <T n="actual_object">342988</T>
+                    </U>
+                  </V>
+                  <T n="owned">False</T>
+                  <V n="subject_specific_tests" t="single_object">
+                    <U n="single_object">
+                      <E n="target">SavedActor1</E>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">321232<!--AnimationElement: Keepsakebox_GiveBox_01--></T>
+                    <U n="overrides">
+                      <L n="props">
+                        <U>
+                          <T n="key">gift</T>
+                          <U n="value">
+                            <T n="definition">342307</T>
+                          </U>
+                        </U>
+                      </L>
+                    </U>
+                  </U>
+                </V>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="object_criteria">
+                <U n="object_criteria">
+                  <V n="identity_test" t="definition_id">
+                    <U n="definition_id">
+                      <T n="actual_object">342307</T>
+                    </U>
+                  </V>
+                  <T n="owned">False</T>
+                  <V n="subject_specific_tests" t="single_object">
+                    <U n="single_object">
+                      <E n="target">SavedActor1</E>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">321232<!--AnimationElement: Keepsakebox_GiveBox_01--></T>
+                    <U n="overrides">
+                      <L n="props">
+                        <U>
+                          <T n="key">gift</T>
+                          <U n="value">
+                            <T n="definition">342989</T>
+                          </U>
+                        </U>
+                      </L>
+                    </U>
+                  </U>
+                </V>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="object_criteria">
+                <U n="object_criteria">
+                  <V n="identity_test" t="definition_id">
+                    <U n="definition_id">
+                      <T n="actual_object">342989</T>
+                    </U>
+                  </V>
+                  <T n="owned">False</T>
+                  <V n="subject_specific_tests" t="single_object">
+                    <U n="single_object">
+                      <E n="target">SavedActor1</E>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">321232<!--AnimationElement: Keepsakebox_GiveBox_01--></T>
+                    <U n="overrides">
+                      <L n="props">
+                        <U>
+                          <T n="key">gift</T>
+                          <U n="value">
+                            <T n="definition">342990</T>
+                          </U>
+                        </U>
+                      </L>
+                    </U>
+                  </U>
+                </V>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="object_criteria">
+                <U n="object_criteria">
+                  <V n="identity_test" t="definition_id">
+                    <U n="definition_id">
+                      <T n="actual_object">342990</T>
+                    </U>
+                  </V>
+                  <T n="owned">False</T>
+                  <V n="subject_specific_tests" t="single_object">
+                    <U n="single_object">
+                      <E n="target">SavedActor1</E>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">321234<!--AnimationElement: Keepsakebox_GiveBox_03--></T>
+                    <U n="overrides">
+                      <L n="props">
+                        <U>
+                          <T n="key">gift</T>
+                          <U n="value">
+                            <T n="definition">342308</T>
+                          </U>
+                        </U>
+                      </L>
+                    </U>
+                  </U>
+                </V>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="object_criteria">
+                <U n="object_criteria">
+                  <V n="identity_test" t="definition_id">
+                    <U n="definition_id">
+                      <T n="actual_object">342308</T>
+                    </U>
+                  </V>
+                  <T n="owned">False</T>
+                  <V n="subject_specific_tests" t="single_object">
+                    <U n="single_object">
+                      <E n="target">SavedActor1</E>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">321234<!--AnimationElement: Keepsakebox_GiveBox_03--></T>
+                    <U n="overrides">
+                      <L n="props">
+                        <U>
+                          <T n="key">gift</T>
+                          <U n="value">
+                            <T n="definition">342991</T>
+                          </U>
+                        </U>
+                      </L>
+                    </U>
+                  </U>
+                </V>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="object_criteria">
+                <U n="object_criteria">
+                  <V n="identity_test" t="definition_id">
+                    <U n="definition_id">
+                      <T n="actual_object">342991</T>
+                    </U>
+                  </V>
+                  <T n="owned">False</T>
+                  <V n="subject_specific_tests" t="single_object">
+                    <U n="single_object">
+                      <E n="target">SavedActor1</E>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">321234<!--AnimationElement: Keepsakebox_GiveBox_03--></T>
+                    <U n="overrides">
+                      <L n="props">
+                        <U>
+                          <T n="key">gift</T>
+                          <U n="value">
+                            <T n="definition">342992</T>
+                          </U>
+                        </U>
+                      </L>
+                    </U>
+                  </U>
+                </V>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="object_criteria">
+                <U n="object_criteria">
+                  <V n="identity_test" t="definition_id">
+                    <U n="definition_id">
+                      <T n="actual_object">342992</T>
+                    </U>
+                  </V>
+                  <T n="owned">False</T>
+                  <V n="subject_specific_tests" t="single_object">
+                    <U n="single_object">
+                      <E n="target">SavedActor1</E>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <T n="relationship_scoring">True</T>
+  <E n="scoring_priority">NORMAL</E>
+  <V n="sim_affinity_posture_scoring_data" t="enabled">
+    <U n="enabled">
+      <L n="my_scoring">
+        <U>
+          <V n="affinity_strategy" t="relationship_based" />
+          <T n="negate_tag">True</T>
+          <E n="running_interaction_tag">Sleeping</E>
+        </U>
+        <U>
+          <V n="affinity_strategy" t="avoid" />
+          <E n="running_interaction_tag">Very_Loud</E>
+        </U>
+      </L>
+      <L n="my_tags">
+        <E>Loud</E>
+        <E>Chat</E>
+      </L>
+    </U>
+  </V>
+  <T n="subaction_selection_weight">1</T>
+  <L n="supported_posture_type_filter">
+    <U>
+      <E n="participant_type">Actor</E>
+      <T n="posture_type">15537<!--MobilePosture: posture_Stand--></T>
+    </U>
+    <U>
+      <E n="participant_type">TargetSim</E>
+      <T n="posture_type">15537<!--MobilePosture: posture_Stand--></T>
+    </U>
+  </L>
+  <E n="target_type">TARGET</E>
+  <L n="test_globals" />
+  <T n="time_overhead">30</T>
+</I>

@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="Sim_Horse_HungerDistress" s="328029">
+  <V n="_cancelable_by_user" t="prohibit_cancelation" />
+  <V n="_icon" t="resource_key">
+    <U n="resource_key">
+      <T n="key" p="InGame\UI\Icons\Commodities\commodity_hunger_neutral.png">2f7d0004:00000000:b8da4bdc487dd98a</T>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <T n="allow_user_directed">False</T>
+  <L n="asm_actor_overrides">
+    <U>
+      <T n="actor_name">y</T>
+      <E n="actor_participant">RoutingSlaves</E>
+    </U>
+  </L>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">322521<!--AnimationElement: HorseSocialAnims_Reactions_Anxious--></T>
+        <U n="overrides">
+          <V n="balloons" t="enabled">
+            <L n="enabled">
+              <U>
+                <L n="balloon_choices">
+                  <U>
+                    <V n="item" t="balloon_icon">
+                      <U n="balloon_icon">
+                        <V n="icon" t="resource_key">
+                          <U n="resource_key">
+                            <T n="key" p="InEP14\UI\Icons\Headlines\headline_HorseHungerDistress.png">2f7d0004:00000000:38a425e992a052ff</T>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                    <L n="tests">
+                      <L>
+                        <V t="sim_info">
+                          <U n="sim_info">
+                            <V n="ages" t="specified" />
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                  <U>
+                    <V n="item" t="balloon_icon">
+                      <U n="balloon_icon">
+                        <V n="icon" t="resource_key">
+                          <U n="resource_key">
+                            <T n="key" p="InEP14\UI\Icons\Headlines\headline_Hunger_BottleFeed.png">2f7d0004:00000000:b5f121cdb6ec2c80</T>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                    <L n="tests">
+                      <L>
+                        <V t="sim_info">
+                          <U n="sim_info">
+                            <V n="ages" t="specified">
+                              <L n="specified">
+                                <E>CHILD</E>
+                              </L>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                </L>
+                <L n="balloon_target">
+                  <E>Actor</E>
+                </L>
+              </U>
+            </L>
+          </V>
+        </U>
+      </U>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="notification">
+      <U n="notification">
+        <V n="dialog" t="tested">
+          <U n="tested">
+            <L n="records">
+              <U>
+                <V n="item" t="literal">
+                  <U n="literal">
+                    <V n="icon" t="enabled">
+                      <V n="enabled" t="resource_key">
+                        <U n="resource_key">
+                          <T n="key" p="InEP14\UI\Icons\Notifications\notification_Hunger_BottleFeed.png">2f7d0004:00000000:de4b4dbe1ee55441</T>
+                        </U>
+                      </V>
+                    </V>
+                    <V n="secondary_icon" t="enabled">
+                      <V n="enabled" t="participant" />
+                    </V>
+                    <V n="text" t="single">
+                      <T n="single">0x110CF331<!--String: "{0.SimFirstName} is very hungry and, if not fed soon, {0.SimPronounSubjective} will be taken away!\n\nUntil {0.SimFirstName} is trained to eat Hay, {0.SimPronounSubjective} must be bottle-fed or be nursed by a Mare.\n"--></T>
+                    </V>
+                  </U>
+                </V>
+                <L n="tests">
+                  <L>
+                    <V t="sim_info">
+                      <U n="sim_info">
+                        <V n="ages" t="specified">
+                          <L n="specified">
+                            <E>CHILD</E>
+                          </L>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <V n="item" t="literal">
+                  <U n="literal">
+                    <V n="icon" t="enabled">
+                      <V n="enabled" t="resource_key">
+                        <U n="resource_key">
+                          <T n="key" p="InEP14\UI\Icons\Notifications\notification_HorseHungerDistress.png">2f7d0004:00000000:bd46817a959617de</T>
+                        </U>
+                      </V>
+                    </V>
+                    <V n="secondary_icon" t="enabled">
+                      <V n="enabled" t="participant" />
+                    </V>
+                    <V n="text" t="single">
+                      <T n="single">0x9794874F<!--String: "{0.SimFirstName} is very hungry and, if not fed soon, {0.SimPronounSubjective} will be taken away!\n\nMake sure {0.SimPronounSubjective} can reach a full Animal Feeder or a patch of Prairie Grass to graze. For a bite on the go, bring some harvested Prairie Grass Hay for hand-feeding.\n\nIf more assistance is needed, hiring a Ranch Hand will help ensure Horses are cared for."--></T>
+                    </V>
+                  </U>
+                </V>
+                <L n="tests">
+                  <L>
+                    <V t="sim_info">
+                      <U n="sim_info">
+                        <V n="ages" t="specified" />
+                      </U>
+                    </V>
+                    <V t="object_criteria">
+                      <U n="object_criteria">
+                        <V n="identity_test" t="tags">
+                          <U n="tags">
+                            <L n="tag_set">
+                              <E>Func_AnimalObject_Feeder</E>
+                            </L>
+                          </U>
+                        </V>
+                        <T n="on_active_lot">True</T>
+                      </U>
+                    </V>
+                  </L>
+                  <L>
+                    <V t="sim_info">
+                      <U n="sim_info">
+                        <V n="ages" t="specified" />
+                      </U>
+                    </V>
+                    <V t="object_criteria">
+                      <U n="object_criteria">
+                        <V n="identity_test" t="tags">
+                          <U n="tags">
+                            <L n="tag_set">
+                              <E>Func_WildGrass</E>
+                            </L>
+                          </U>
+                        </V>
+                        <T n="on_active_lot">True</T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <V n="item" t="literal">
+                  <U n="literal">
+                    <V n="icon" t="enabled">
+                      <V n="enabled" t="resource_key">
+                        <U n="resource_key">
+                          <T n="key" p="InEP14\UI\Icons\Notifications\notification_HorseHungerDistress.png">2f7d0004:00000000:bd46817a959617de</T>
+                        </U>
+                      </V>
+                    </V>
+                    <V n="secondary_icon" t="enabled">
+                      <V n="enabled" t="participant" />
+                    </V>
+                    <V n="text" t="single">
+                      <T n="single">0x922EDE6C<!--String: "{0.SimFirstName} is very hungry and, if not fed soon, {0.SimPronounSubjective} will be taken away!\n\nBuy an Animal Feeder and stock it with Hay to keep Horses happy and full. Horses may also graze on Prairie Grass which can be purchased through Build Mode. For a bite on the go, bring some harvested Prairie Grass Hay for hand-feeding.\n\nIf more assistance is needed, hiring a Ranch Hand will help ensure Horses are cared for.\n\n⚒ <b>Animal Feeder</b>"--></T>
+                    </V>
+                  </U>
+                </V>
+                <L n="tests">
+                  <L>
+                    <V t="sim_info">
+                      <U n="sim_info">
+                        <V n="ages" t="specified" />
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </V>
+        <U n="success_chance">
+          <L n="multipliers" />
+        </U>
+      </U>
+    </V>
+    <V t="audio_sting">
+      <U n="audio_sting">
+        <U n="audio_sting">
+          <T n="audio" p="InEP14\Audio\music\bumpers\bumper_ep14_animal_neglect_warning.propx">39b2aa4a:00000000:1a556212cb0bfc00</T>
+        </U>
+        <V n="timing" t="at_end" />
+      </U>
+    </V>
+  </L>
+  <V n="carry_cancel_override_for_displaced_interactions" t="enabled">
+    <T n="enabled">99868<!--PutDownQuicklySuperInteraction: put_down_quickly_cancel_aop--></T>
+  </V>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x34C0C78B<!--String: "Complain about Hunger"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single" />
+  <U n="post_run_autonomy_commodities">
+    <L n="requests">
+      <U>
+        <L n="commodities">
+          <T>312265<!--Commodity: motive_Horse_Hunger--></T>
+        </L>
+        <T n="retain_carry_target">False</T>
+        <L n="static_commodities">
+          <T>328102<!--StaticCommodity: staticCommodity_Horse_HungerDistress--></T>
+        </L>
+        <T n="test_connectivity_to_target">False</T>
+      </U>
+    </L>
+  </U>
+  <U n="posture_preferences">
+    <T n="apply_posture_costs">False</T>
+  </U>
+  <V n="require_reins_for_formation" t="enabled">
+    <T n="enabled">314817<!--RoutingFormation: routingFormation_HorseRiding_Ride--></T>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all">
+        <U n="exclude_all">
+          <L n="include_affordances">
+            <T>132170<!--HoldObject: carry_HoldSim--></T>
+            <T>312885<!--SuperInteraction: socialSuperInteraction_CarryPickUp_HorseRiding--></T>
+          </L>
+          <L n="include_lists">
+            <T>139888<!--AffordanceList: affordanceList_Restaurants_WaitInteractions--></T>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <E n="target_type">ACTOR</E>
+  <V n="test_disallow_while_running" t="enabled">
+    <U n="enabled">
+      <L n="affordances">
+        <T>13449<!--CareerSuperInteraction: si_Career_Astronaut--></T>
+      </L>
+    </U>
+  </V>
+  <L n="test_globals">
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>328034<!--Buff: buff_Horse_IsSleepingSS3--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">10</T>
+</I>

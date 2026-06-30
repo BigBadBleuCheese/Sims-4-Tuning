@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="CareerEvent" i="career_event" m="careers.career_event" n="careerEvent_Reaper_AltLocations_SoloPlea" s="392127">
+  <T n="loot_on_start">392796<!--LootActions: loot_Career_Reaper_ReapingPleaWarn--></T>
+  <V n="required_zone" t="random_lot">
+    <U n="random_lot">
+      <V n="household_weighting" t="enabled">
+        <U n="enabled">
+          <T n="primary_filter">412838<!--TunableSimFilter: filter_Ages_HH_ReaperCareer_ReapingPlea--></T>
+        </U>
+      </V>
+      <L n="random_weight_terms">
+        <U>
+          <V n="test" t="belongs_to_active_player" />
+          <V n="weight" t="forbid" />
+        </U>
+        <U>
+          <V n="test" t="is_plex" />
+          <V n="weight" t="forbid" />
+        </U>
+        <U>
+          <V n="test" t="venue_type">
+            <U n="venue_type">
+              <L n="venues">
+                <T>110576<!--Venue: venue_DoctorClinic--></T>
+                <T>109774<!--Venue: venue_PoliceStation--></T>
+                <T>107487<!--Venue: venue_ScientistLab--></T>
+                <T>98133<!--Venue: venue_HiddenCave--></T>
+                <T>98132<!--Venue: venue_HiddenGlade--></T>
+                <T>111611<!--Venue: venue_HiddenAlienWorld--></T>
+                <T>107453<!--Venue: venue_ForestPark--></T>
+                <T>25847<!--Venue: venue_park--></T>
+                <T>173492<!--Venue: venue_Temple--></T>
+                <T>278305<!--Venue: venue_HighSchool--></T>
+                <T>247473<!--Venue: venue_Onsen--></T>
+                <T>202003<!--Venue: venue_SecretLab--></T>
+                <T>247118<!--Venue: venue_MountainExcursion--></T>
+                <T>158847<!--Venue: venue_Vet--></T>
+                <T>377555<!--Venue: venue_Cemetery--></T>
+              </L>
+            </U>
+          </V>
+          <V n="weight" t="forbid" />
+        </U>
+        <U>
+          <V n="test" t="is_owned_by_any_household" />
+          <V n="weight" t="add_weight">
+            <T n="add_weight">999</T>
+          </V>
+        </U>
+        <U>
+          <V n="test" t="venue_type">
+            <U n="venue_type">
+              <L n="venues">
+                <T>231964<!--Venue: venue_FirstOrderOutpost--></T>
+                <T>233449<!--Venue: venue_OgasCantina--></T>
+                <T>231965<!--Venue: venue_ResistanceCamp--></T>
+              </L>
+            </U>
+          </V>
+          <V n="weight" t="forbid" />
+        </U>
+      </L>
+    </U>
+  </V>
+  <V n="scorable_situation" t="sub_event" />
+  <L n="tests">
+    <L>
+      <V t="career_test">
+        <U n="career_test">
+          <V n="test_type" t="career_reference">
+            <U n="career_reference">
+              <V n="career" t="specific_career">
+                <T n="specific_career">377623<!--Career: careers_Adult_Active_Reaper--></T>
+              </V>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="zone_director" t="enabled">
+    <T n="enabled">392126<!--CareerEventZoneDirector: careerEventZoneDirector_Reaper_AltLoc_SoloPlea--></T>
+  </V>
+</I>

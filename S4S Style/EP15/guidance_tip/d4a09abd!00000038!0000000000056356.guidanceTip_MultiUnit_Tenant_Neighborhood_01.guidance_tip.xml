@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="GuidanceTip" i="guidance_tip" m="guidance.guidance_tip" n="guidanceTip_MultiUnit_Tenant_Neighborhood_01" s="353110">
+  <L n="activation_rules">
+    <U>
+      <E n="children_condition">AND</E>
+      <L n="criteria">
+        <U>
+          <V n="criterion" t="ui_element_visible">
+            <L n="ui_element_visible">
+              <E>NHV_MULTI_UNIT_WORLD_TENANT</E>
+            </L>
+          </V>
+        </U>
+        <U>
+          <V n="criterion" t="guidance_mode">
+            <E n="guidance_mode">STANDARD</E>
+          </V>
+        </U>
+      </L>
+    </U>
+    <U>
+      <L n="criteria">
+        <U>
+          <V n="criterion" t="game_option_setting">
+            <U n="game_option_setting">
+              <T n="setting_name">PackGuidanceEnabled</T>
+              <T n="setting_value">1</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="criterion" t="game_option_setting">
+            <U n="game_option_setting">
+              <T n="setting_name">GuidancePack</T>
+              <T n="setting_value">1</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <T n="auto_select_on_activate">False</T>
+  <T p="InEP15\UI\Icons\GuidanceSystem\Poses\VaneshaPose_Wave.png" n="icon">2f7d0004:00000000:342248e7af7e2ef6</T>
+  <L n="options">
+    <U>
+      <U n="actions">
+        <L n="actions_on_activate">
+          <V t="tutorial_tip_group">
+            <T n="tutorial_tip_group">352404<!--TutorialTipGroup: tutorialTipGroup_MultiUnitGuide_Tenant_Neighborhood--></T>
+          </V>
+        </L>
+        <L n="actions_on_cancel">
+          <V t="activate_guidance_item">
+            <T n="activate_guidance_item">352407<!--GuidanceTip: guidanceTip_MultiUnit_Reminder--></T>
+          </V>
+        </L>
+        <L n="actions_on_success">
+          <V t="satisfy_guidance_item_group">
+            <T n="satisfy_guidance_item_group">353113<!--GuidanceTipGroup: guidanceTipGroup_MultiUnit_Tenant_Neighborhood_01--></T>
+          </V>
+        </L>
+      </U>
+      <T n="text">0x2D9EB75<!--String: "Let's do this!"--></T>
+    </U>
+    <U>
+      <U n="actions">
+        <L n="actions_on_activate">
+          <V t="ui_message">
+            <U n="ui_message">
+              <V n="ui_message_cmn" t="enabled">
+                <U n="enabled">
+                  <T n="message_name">ShowTutorial</T>
+                  <L n="parameters">
+                    <U>
+                      <T n="key">source</T>
+                      <V n="value" t="raw_string">
+                        <T n="raw_string">quiz</T>
+                      </V>
+                    </U>
+                    <U>
+                      <T n="key">tutorial_id</T>
+                      <V n="value" t="raw_string">
+                        <T n="raw_string">354010<!--Tutorial: tutorial_EP15_RealEstateOnboarding--></T>
+                      </V>
+                    </U>
+                  </L>
+                </U>
+              </V>
+            </U>
+          </V>
+        </L>
+        <T n="satisfy_on_action_success">False</T>
+      </U>
+      <T n="suppress_hide_on_activate">True</T>
+      <T n="text">0xEABE5948<!--String: "View Lessons"--></T>
+    </U>
+    <U>
+      <U n="actions">
+        <L n="actions_on_activate">
+          <V t="activate_guidance_item">
+            <T n="activate_guidance_item">352407<!--GuidanceTip: guidanceTip_MultiUnit_Reminder--></T>
+          </V>
+        </L>
+      </U>
+      <T n="text">0x6A484AD1<!--String: "No thanks!"--></T>
+    </U>
+  </L>
+  <L n="relaunch_rules" />
+  <T n="relaunch_text">0x42B391F8<!--String: "Tutorial: Residential Rental"--></T>
+  <T n="satisfy_on_timeout">True</T>
+  <T n="text">0xA401FA42<!--String: "I'm Vanesha, your trusty guide to the world of Residential Rentals! If you've set your sights on becoming a Tenant, I'm thrilled for you. The world is brimming with opportunities, and your neighbors await your arrival. Let's dive in and make the most of it!"--></T>
+  <T n="timeout">3600</T>
+  <T n="title">0x18422113<!--String: "Vanesha is here to help!"--></T>
+</I>

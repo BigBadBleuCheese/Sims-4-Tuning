@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_LandlordTenant_MoveHousehold_Payment" s="359177">
+  <L n="loot_actions">
+    <V t="payment_loot">
+      <U n="payment_loot">
+        <V n="payment" t="literal">
+          <U n="literal">
+            <V n="payment_cost" t="amount">
+              <U n="amount">
+                <T n="amount">500</T>
+              </U>
+            </V>
+            <V n="payment_source" t="household">
+              <U n="household">
+                <T n="require_full_amount">False</T>
+              </U>
+            </V>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <T n="apply_whitelist_on_individual_basis">False</T>
+                <E n="subject">ActiveHousehold</E>
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>359178<!--Buff: buff_LandlordTenant_Hidden_MoveHousehold_OwesFee--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="payment_loot">
+      <U n="payment_loot">
+        <V n="payment" t="literal">
+          <U n="literal">
+            <V n="payment_cost" t="housing_costs" />
+            <V n="payment_source" t="household">
+              <U n="household">
+                <T n="require_full_amount">False</T>
+              </U>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InEP15\UI\Icons\Notification\notification_TenantAgreement.png">2f7d0004:00000000:b119dec86bde9805</T>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xF14FAF2D<!--String: "{0.SimName}'s household moved out of a unit outside of the Grace Period and was charged a Lease Break fee. In the future, this fee can be avoided by waiting to move out until the 24-hour Grace Period window."--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0xEB2928AA<!--String: "Broke Lease!"--></T>
+            </V>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <T n="apply_whitelist_on_individual_basis">False</T>
+                <E n="subject">ActiveHousehold</E>
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>359178<!--Buff: buff_LandlordTenant_Hidden_MoveHousehold_OwesFee--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff_removal">
+      <U n="buff_removal">
+        <L n="buffs_to_remove">
+          <T>359178<!--Buff: buff_LandlordTenant_Hidden_MoveHousehold_OwesFee--></T>
+        </L>
+        <E n="subject">ActiveHousehold</E>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="is_active_sim" t="enabled" />
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

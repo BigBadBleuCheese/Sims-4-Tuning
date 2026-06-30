@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_MasteryPerk_ToggleAuraVFX" s="371989">
+  <L n="loot_actions">
+    <V t="trait_add">
+      <U n="trait_add">
+        <E n="subject">TargetSim</E>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <L n="blacklist_traits">
+                  <T>371982<!--Trait: trait_MasteryPerk_DisableAuraVFX--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+        <T n="trait">371982<!--Trait: trait_MasteryPerk_DisableAuraVFX--></T>
+      </U>
+    </V>
+    <V t="trait_remove">
+      <U n="trait_remove">
+        <E n="subject">TargetSim</E>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <L n="whitelist_traits">
+                  <T>371982<!--Trait: trait_MasteryPerk_DisableAuraVFX--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+        <V n="trait" t="specific_trait">
+          <U n="specific_trait">
+            <T n="specific_trait">371982<!--Trait: trait_MasteryPerk_DisableAuraVFX--></T>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="run_test_first">True</T>
+</I>

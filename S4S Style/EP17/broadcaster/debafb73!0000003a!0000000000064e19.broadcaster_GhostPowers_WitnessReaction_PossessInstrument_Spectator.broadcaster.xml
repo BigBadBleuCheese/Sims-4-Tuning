@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Broadcaster" i="broadcaster" m="broadcasters.broadcaster" n="broadcaster_GhostPowers_WitnessReaction_PossessInstrument_Spectator" s="413209">
+  <V n="allow_sim_test" t="enabled">
+    <L n="enabled">
+      <L>
+        <V t="trait">
+          <U n="trait">
+            <L n="blacklist_traits">
+              <T>16851<!--Trait: trait_isGrimReaper--></T>
+            </L>
+          </U>
+        </V>
+        <V t="participant_running_interaction">
+          <U n="participant_running_interaction">
+            <L n="affordances">
+              <T>192581<!--SuperInteraction: celebrity_Fan_Faint--></T>
+              <T>294210<!--SuperInteraction: werewolf_FaintReaction--></T>
+              <T>385198<!--SuperInteraction: reactions_Ghosts_ScaredReaction_Faint--></T>
+            </L>
+            <T n="test_for_not_running">True</T>
+          </U>
+        </V>
+        <V t="buff">
+          <U n="buff">
+            <L n="blacklist">
+              <T>132895<!--Buff: buff_AutonomyMod_MarketStalls_TendStall--></T>
+            </L>
+          </U>
+        </V>
+      </L>
+    </L>
+  </V>
+  <L n="constraints">
+    <V t="circle">
+      <U n="circle">
+        <T n="radius">10</T>
+      </U>
+    </V>
+    <V t="line_of_sight">
+      <U n="line_of_sight">
+        <V n="temporary_los" t="enabled" />
+      </U>
+    </V>
+  </L>
+  <L n="effects">
+    <V t="affordance">
+      <U n="affordance">
+        <L n="affordances">
+          <U>
+            <T n="affordance">413208<!--SuperInteraction: ghostPowers_WitnessReactions_PossessInstrument_Listen--></T>
+          </U>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <L n="whitelist_traits">
+                  <T>381402<!--Trait: trait_IsGhost--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>442953<!--LootActions: Apothecary_AuraShield_CuresAndElixirs_Loot_Remove_Buff--></T>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>442916<!--Buff: Apothecary_CuresAndElixirs_Buff_AuraShield--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="frequency" t="on_enter">
+    <U n="on_enter">
+      <T n="allow_multiple">True</T>
+    </U>
+  </V>
+</I>

@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SimPickerInteraction" i="interaction" m="interactions.base.picker_interaction" n="a2a_simPickerInteraction_SmallBusinessPerks_SwayToBuy_Ticket" s="379879">
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>PickedSim</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="disabled" />
+  <L n="actor_continuation">
+    <U>
+      <T n="affordance">380263<!--SocialSuperInteraction: social_a2a_SmallBusinessPerks_SwayToBuy_Ticket--></T>
+      <E n="target">PickedSim</E>
+    </U>
+  </L>
+  <T n="category">420438<!--PieMenuCategory: pieMenuCategory_BusinessPerk--></T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x7A35C83F<!--String: "Sway Sim to Buy"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="small_business" />
+    </L>
+  </U>
+  <T n="include_uninstantiated_sims">False</T>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <V n="picker_dialog" t="sim_picker">
+    <U n="sim_picker">
+      <L n="custom_filters">
+        <V t="reference">
+          <T n="reference">499295<!--CustomSimFilter: customSimFilter_NobleCareer--></T>
+        </V>
+      </L>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T n="key" p="InEP18\UI\Icons\PieMenu\PieMenu_Schemer.png">2f7d0004:00000000:f9008fd772d502cc</T>
+      </U>
+    </V>
+  </V>
+  <V n="pie_menu_test_tooltip" t="enabled">
+    <T n="enabled">0xA93896FB<!--String: "No Customers available to Sway."--></T>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <L n="sim_tests">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified" />
+          <V n="species" t="specified">
+            <U n="specified">
+              <L n="species">
+                <E />
+              </L>
+            </U>
+          </V>
+          <E n="who">PickedSim</E>
+        </U>
+      </V>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>380241<!--Buff: buff_SmallBusinessPerks_CustomerSway_TargetSuccess--></T>
+          </L>
+          <E n="subject">PickedSim</E>
+          <V n="whitelist" t="disabled" />
+        </U>
+      </V>
+      <V t="buff">
+        <U n="buff">
+          <E n="subject">PickedSim</E>
+          <V n="whitelist" t="enabled">
+            <L n="enabled">
+              <T>376403<!--Buff: buff_AutonomyMod_SmallBusinessCustomer_Deliberate--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="small_business_ownership_test" />
+    <V t="lot_owner" />
+    <V t="bucks_perks_test">
+      <U n="bucks_perks_test">
+        <T n="bucks_perk">373036<!--BucksPerk: smallBusinessPerks_Schemer_CustomerSway--></T>
+      </U>
+    </V>
+    <V t="small_business_attendance_sale_mode_test">
+      <U n="small_business_attendance_sale_mode_test">
+        <T n="negate">True</T>
+      </U>
+    </V>
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+          </L>
+        </V>
+      </U>
+    </V>
+    <V t="is_small_business_open">
+      <U n="is_small_business_open">
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x39AF980<!--String: "This can only be done while {2.String} is open."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>380240<!--Buff: buff_SmallBusinessPerks_CustomerSway_ActorFailure--></T>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x1292B5A3<!--String: "{0.SimFirstName} is too Embarrassed to do this."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="small_business_is_zone_assigned_allowed">
+        <U n="small_business_is_zone_assigned_allowed">
+          <E n="participant">Actor</E>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

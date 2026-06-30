@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="RouteEvent" i="snippet" m="routing.route_events.route_event" n="routeEvent_groupWalkingTrail_walk_painReaction" s="311677">
+  <U n="chance">
+    <T n="base_chance">5</T>
+  </U>
+  <V n="event_type" t="animation">
+    <U n="animation">
+      <L n="animation_elements">
+        <U>
+          <T n="factory">311599<!--AnimationElement: groupWalkingTrail_routeEvent_walk_painReaction--></T>
+        </U>
+      </L>
+    </U>
+  </V>
+  <L n="tests">
+    <L>
+      <V t="skill_test">
+        <U n="skill_test">
+          <T n="skill">16659<!--Skill: skill_Fitness--></T>
+          <V n="skill_range" t="threshold">
+            <U n="threshold">
+              <U n="skill_threshold">
+                <E n="comparison">LESS_OR_EQUAL</E>
+                <T n="value">4</T>
+              </U>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>27419<!--Trait: trait_active--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>
