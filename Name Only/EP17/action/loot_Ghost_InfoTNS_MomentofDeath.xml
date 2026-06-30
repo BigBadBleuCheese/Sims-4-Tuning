@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Ghost_InfoTNS_MomentofDeath" s="380998">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+              <E>VERTICAL_NOTIFICATION_BUTTONS</E>
+            </L>
+            <E n="dialog_style">DEFAULT</E>
+            <E n="expand_behavior">USER_SETTING</E>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InEP17\UI\Icons\Notifications\notification_grim.png">2f7d0004:00000000:50fe382caefc421a</T>
+                </U>
+              </V>
+            </V>
+            <E n="information_level">SIM</E>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant" />
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xF7C41A84<!--String: "Welcome to the afterlife {0.SimFirstName}! Your Soul's Journey is still unfolding, and there’s so much left to explore. Keep discovering what the afterlife has to offer, and don’t forget to check the Ghost Mastery panel to unlock powerful new abilities along the way."--></T>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="participant_type" />
+                </L>
+              </U>
+            </V>
+            <V n="timeout_duration" t="disabled" />
+            <V n="tns_suppression_group" t="enabled">
+              <E n="enabled">Moment_of_Death</E>
+            </V>
+            <L n="ui_responses">
+              <U>
+                <T n="text">0x2F3C6762<!--String: "Soul's Journey"--></T>
+                <E n="ui_request">SHOW_ASPIRATION_PANEL</E>
+              </U>
+              <U>
+                <T n="text">0x1356B461<!--String: "Ghost Mastery"--></T>
+                <E n="ui_request">SHOW_SUMMARY_PANEL</E>
+              </U>
+            </L>
+            <E n="urgency">URGENT</E>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="run_test_first">False</T>
+  <L n="tests">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified" />
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

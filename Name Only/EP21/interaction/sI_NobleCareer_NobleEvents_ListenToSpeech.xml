@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="sI_NobleCareer_NobleEvents_ListenToSpeech" s="482110">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="cone">
+            <U n="cone">
+              <T n="angle">120</T>
+              <T n="angular_cost_weight">1</T>
+              <T n="ideal_radius_max">0.6</T>
+              <T n="max_radius">8</T>
+              <T n="min_radius">1</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="value" t="line_of_sight" />
+        </U>
+        <U>
+          <V n="value" t="facing" />
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_forwarding" t="Forward" />
+  <V n="_saveable" t="enabled" />
+  <L n="_static_commodities">
+    <U>
+      <T n="desire">10</T>
+      <T n="static_commodity">498182<!--StaticCommodity: staticCommodity_NobleCareer_HoldPressConference--></T>
+    </U>
+  </L>
+  <T n="_super_affordance_can_share_target">True</T>
+  <T n="acquire_targets_as_resource">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="buff_based">
+                <U n="buff_based">
+                  <T n="buff">482111<!--Buff: buff_NobleCareer_NobleSpeechComplete_Hidden--></T>
+                  <E n="participant">TargetSim</E>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="time_based">
+                <U n="time_based">
+                  <T n="max_time">90</T>
+                  <T n="min_time">20</T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="situation_based">
+                <U n="situation_based">
+                  <L n="situation_types">
+                    <T>480951<!--CustomStatesSituation: situation_NobleCareer_HoldPressConference--></T>
+                  </L>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+      </L>
+      <V n="content" t="staging_content">
+        <U n="staging_content">
+          <U n="content_set">
+            <L n="affordance_links">
+              <T>482114<!--MixerInteraction: mixer_NobleCareer_Podium_Listener_View--></T>
+              <T>502847<!--MixerInteraction: mixer_NobleCareer_Podium_Listener_Cheer--></T>
+            </L>
+          </U>
+        </U>
+      </V>
+    </U>
+  </V>
+  <V n="basic_focus" t="tunable_focus" />
+  <V n="basic_reserve_object" t="disabled" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xEA5FBC53<!--String: "Listen to Noble Speech"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <V n="animation_ref" t="enabled">
+          <U n="enabled">
+            <T n="factory">134076<!--AnimationElement: reactionlets_Audience_CheerRandom--></T>
+          </U>
+        </V>
+        <T n="force_outcome_on_exit">True</T>
+      </U>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T p="InEP21\UI\Icons\PieMenu\PieMenu_NobleCareer.png" n="key">2f7d0004:00000000:9b49aa0d1eb08413</T>
+      </U>
+    </V>
+  </V>
+  <T n="pie_menu_priority">8</T>
+  <U n="posture_preferences">
+    <T n="apply_posture_costs">True</T>
+    <L n="posture_cost_overrides">
+      <U>
+        <T n="key">15535<!--Posture: posture_Sit--></T>
+        <T n="value">-10</T>
+      </U>
+    </L>
+  </U>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="include_all">
+        <U n="include_all">
+          <L n="exclude_affordances">
+            <T>13998<!--SocialSuperInteraction: sim_Chat--></T>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <V n="test_disallow_while_running" t="enabled">
+    <U n="enabled">
+      <T n="test_self">True</T>
+    </U>
+  </V>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

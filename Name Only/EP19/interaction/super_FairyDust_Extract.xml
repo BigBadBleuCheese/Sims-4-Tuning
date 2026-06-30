@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="super_FairyDust_Extract" s="444052">
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Actor</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">444053<!--AnimationElement: anim_FairyDust_Extract--></T>
+      </U>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="notification">
+      <U n="notification">
+        <V n="dialog" t="single">
+          <V n="single" t="literal">
+            <U n="literal">
+              <V n="icon" t="enabled">
+                <V n="enabled" t="resource_key">
+                  <U n="resource_key">
+                    <T n="key" p="InEP19\UI\Icons\Notifications\notification_FairyDust.png">2f7d0004:00000000:70609ce81777536a</T>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x5D0BE9F5<!--String: "{0.SimFirstName} has brushed off some Fairy Dust! It can be found in {0.SimPronounPossessiveDependent} Inventory."--></T>
+              </V>
+              <L n="ui_responses">
+                <U>
+                  <T n="text">0xEABE5948<!--String: "View Lessons"--></T>
+                  <V n="tutorial_id" t="enabled">
+                    <T n="enabled">460534<!--Tutorial: tutorial_EP19_FairyDust--></T>
+                  </V>
+                  <E n="ui_request">SHOW_LESSONS</E>
+                </U>
+              </L>
+            </U>
+          </V>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="category">424680<!--PieMenuCategory: pieMenuCategory_FairyOccult--></T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xFA8A512B<!--String: "Brush Off Fairy Dust"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="buff_duration_remaining">
+        <U n="buff_duration_remaining">
+          <T n="buff">460275<!--Buff: buff_FairyDust_ExtractCooldown--></T>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="basic_extras">
+          <V t="buff_fire_and_forget">
+            <U n="buff_fire_and_forget">
+              <U n="buff">
+                <T n="buff_type">460275<!--Buff: buff_FairyDust_ExtractCooldown--></T>
+              </U>
+            </U>
+          </V>
+        </L>
+        <L n="loot_list">
+          <T>444060<!--LootActions: loot_FairyDust_GetFairyDust_Extract--></T>
+          <T>438375<!--LootActions: lootActions_FairyOccult_Progression_XP_Small--></T>
+        </L>
+      </U>
+    </U>
+  </V>
+  <T n="pie_menu_priority">28</T>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">ACTOR</E>
+  <L n="test_globals">
+    <V t="identity">
+      <U n="identity">
+        <T n="subjects_match">True</T>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">472928<!--TestSetInstance: testSetInstance_DeepWaterPostures_Disallow_Actor--></T>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>460275<!--Buff: buff_FairyDust_ExtractCooldown--></T>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xFF39E652<!--String: "{0.SimFirstName} does not have any Fairy Dust to brush off right now. Try again in {2.Timespan}."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

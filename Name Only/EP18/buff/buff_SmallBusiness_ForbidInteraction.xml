@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Buff" i="buff" m="buffs.buff" n="buff_SmallBusiness_ForbidInteraction" s="372156">
+  <L n="_loot_on_addition">
+    <T>442937<!--LootActions: loot_SmallBusiness_AllTicketMachines_GlowOn--></T>
+  </L>
+  <L n="_loot_on_removal">
+    <T>442940<!--LootActions: loot_SmallBusiness_AllTicketMachines_GlowOff--></T>
+  </L>
+  <T p="InGame\Audio\Stings\sting_buff_gain.propx" n="audio_sting_on_add">39b2aa4a:00000000:8af8b916cf64c646</T>
+  <T p="InGame\Audio\Stings\sting_buff_loss.propx" n="audio_sting_on_remove">39b2aa4a:00000000:3bf33216a25546ea</T>
+  <U n="game_effect_modifier">
+    <L n="_game_effect_modifiers">
+      <V t="forbid_by_object_tags_pie_menu_modifier">
+        <U n="forbid_by_object_tags_pie_menu_modifier">
+          <L n="forbidden_object_tags">
+            <E>DynamicArea_Business_Public</E>
+          </L>
+          <V n="suppression_tooltip" t="enabled">
+            <T n="enabled">0x8B0680DA<!--String: "{0.SimFirstName} must check in at a Ticket Kiosk to do this."--></T>
+          </V>
+          <L n="tests">
+            <L>
+              <V t="bucks_perks_test">
+                <U n="bucks_perks_test">
+                  <T n="bucks_perk">405243<!--BucksPerk: smallBusinessPerks_Schemer_WhiteCollarRobbery--></T>
+                </U>
+              </V>
+            </L>
+          </L>
+          <L n="whitelisted_object_tags">
+            <E>Func_TicketMachine</E>
+            <E>Build_Door</E>
+            <E>Build_Elevator</E>
+            <E>Build_IsShellBuilding</E>
+            <E>Func_SmallBusiness_AllowedInteractions</E>
+          </L>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T p="InGame\UI\Icons\Debug\missing_image.png" n="icon">2f7d0004:00000000:30f0846c783606f9</T>
+  <T n="visible">False</T>
+</I>

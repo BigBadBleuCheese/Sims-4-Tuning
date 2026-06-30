@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SimPickerInteraction" i="interaction" m="interactions.base.picker_interaction" n="simPicker_Swordsmanship_AskForDuel_SimHeart_Teen" s="482367">
+  <V n="_saveable" t="disabled" />
+  <L n="actor_continuation">
+    <U>
+      <T n="affordance">482365<!--SocialSuperInteraction: social_Swordsmanship_AskForDuel_SimHeart--></T>
+      <E n="target">TargetSim</E>
+    </U>
+  </L>
+  <T n="category">460839<!--PieMenuCategory: sim_Swordsmanship_Duel--></T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x1B5D5128<!--String: "Duel for a Sim's Heart"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">PickedSim</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <V n="picker_dialog" t="sim_picker">
+    <U n="sim_picker">
+      <L n="custom_filters">
+        <V t="reference">
+          <T n="reference">499295<!--CustomSimFilter: customSimFilter_NobleCareer--></T>
+        </V>
+      </L>
+    </U>
+  </V>
+  <T n="pie_menu_priority">10</T>
+  <V n="pie_menu_test_tooltip" t="enabled">
+    <T n="enabled">0x35DE4DA3<!--String: "These two Sims are not romantically involved with the same Sim."--></T>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <V n="sim_filter" t="sim_filter_selected">
+    <T n="sim_filter_selected">499495<!--TunableSimFilter: filter_Swordsmanship_AskDuel_SimHeart_Teen--></T>
+  </V>
+  <L n="sim_tests">
+    <L>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="required_relationship_bits">
+            <L n="match_any">
+              <T>369543<!--RelationshipBitCollection: rbc_Romantic_HasRelationship--></T>
+            </L>
+          </U>
+          <L n="subject">
+            <E>PickedSim</E>
+          </L>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="relationship_score_interval">
+            <T n="lower_bound">30</T>
+          </U>
+          <L n="subject">
+            <E>TargetSim</E>
+          </L>
+          <L n="target_sim">
+            <E>PickedSim</E>
+          </L>
+          <T n="track">16651<!--RelationshipTrack: LTR_Romance_Main--></T>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="single_choice_display_name" t="enabled">
+    <T n="enabled">0x4BDF6A8B<!--String: "Duel for {2.SimName}'s heart"--></T>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">TargetSim</E>
+      </U>
+    </V>
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>285807<!--Buff: buff_Werewolf_Fury_Rampage--></T>
+        </L>
+      </U>
+    </V>
+    <V t="relationship">
+      <U n="relationship">
+        <U n="required_relationship_bits">
+          <L n="match_all">
+            <T>15803<!--RelationshipBit: has_met--></T>
+          </L>
+        </U>
+      </U>
+    </V>
+    <V t="inventory">
+      <U n="inventory">
+        <V n="contents_check" t="has_object_with_tag">
+          <U n="has_object_with_tag">
+            <L n="tag_set">
+              <E>Func_Swords</E>
+            </L>
+          </U>
+        </V>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x9AC767EF<!--String: "{0.SimFirstName} does not have a Sword in {0.SimPronounPossessiveDependent} inventory. Purchase swords at the Practice Dummy, the Blacksmith Workshop in Ondarion, or through the Computer."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>12543<!--Buff: buff_Object_Fitness-Fatigued--></T>
+          <T>28907<!--Buff: buff_Object_Fitness-Fatigued_Lazy--></T>
+          <T>31362<!--Buff: buff_Object_Fitness_VeryFatigued--></T>
+          <T>347885<!--Buff: buff_Marbles_SoreThumb--></T>
+          <T>222028<!--Buff: buff_RoboticsTable_SoreThumb--></T>
+          <T>175098<!--Buff: buff_PathObstacle_SoreHands--></T>
+          <T>159003<!--Buff: buff_Object_BowlingLane_SoreArms--></T>
+          <T>23987<!--Buff: buff_Object_Fitness-Sore--></T>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x2C06B86C<!--String: "{0.SimFirstName} is too unwell to perform any Swordsmanship Duels. Rest a bit and try again later!"--></T>
+        </V>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">221000<!--TestSetInstance: testSet_PregnantDisallow_HumanOnly--></T>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">120538<!--TestSetInstance: testSet_PregnantDisallow_TargetSim--></T>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">28305<!--TestSetInstance: testSet_EmotionNotMiserable--></T>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">97371<!--TestSetInstance: testSet_Fitness_PulledMuscle--></T>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>460493<!--Buff: buff_Swordsmanship_DuelRejected_LowStakes--></T>
+          <T>494310<!--Buff: buff_Swordsmanship_DuelRejected_HighStakes--></T>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x3879A16E<!--String: "{0.SimFirstName} does not feel comfortable about asking again to Duel as {0.SimPronounSubjective} {S0.has}{P0.have} been recently rejected. Try later, when {0.SimPronounSubjective} {S0.is}{P0.are} not as Embarrassed!"--></T>
+        </V>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>485725<!--Buff: buff_Ep21World_TerrifyingWomen--></T>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x46FB4FAF<!--String: "{0.SimFirstName} doesn't feel comfortable asking to Duel again as {0.SimPronounSubjective} {S0.was}{P0.were} recently rejected. Try later, when {0.SimFirstName} is not as Scared!"--></T>
+        </V>
+      </U>
+    </V>
+    <V t="situation_job_test">
+      <U n="situation_job_test">
+        <T n="negate">True</T>
+        <L n="situation_jobs">
+          <T>482376<!--SituationJob: job_SimCompetition_Actor_SwordsmanshipTournament--></T>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xEAE53C1D<!--String: "{0.SimFirstName} is in a tournament. This is no time for other duels!"--></T>
+        </V>
+      </U>
+    </V>
+    <V t="situation_job_test">
+      <U n="situation_job_test">
+        <T n="negate">True</T>
+        <E n="participant">TargetSim</E>
+        <L n="situation_jobs">
+          <T>484622<!--SituationJob: job_SimCompetition_NPC_SwordsmanshipTournament_Level1--></T>
+          <T>484623<!--SituationJob: job_SimCompetition_NPC_SwordsmanshipTournament_Level2--></T>
+          <T>484624<!--SituationJob: job_SimCompetition_NPC_SwordsmanshipTournament_Level3--></T>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xB7071F40<!--String: "{1.SimFirstName} is focused on a swordsmanship tournament."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+</I>

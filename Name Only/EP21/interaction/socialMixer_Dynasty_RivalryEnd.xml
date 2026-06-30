@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SocialMixerInteraction" i="interaction" m="interactions.social.social_mixer_interaction" n="socialMixer_Dynasty_RivalryEnd" s="477497">
+  <V n="_icon" t="resource_key">
+    <U n="resource_key">
+      <T n="key" p="InGame\UI\Icons\InteractionQueueSubInteractions\icon_queuesubinteraction_friendly.png">2f7d0004:00000000:8baf7893abd95bda</T>
+    </U>
+  </V>
+  <T n="allow_autonomous">False</T>
+  <T n="allow_user_directed">True</T>
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>162659<!--LootActions: loot_Commodity_Culling_GhostAdd_target--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T n="category">470461<!--PieMenuCategory: pieMenuCategory_Dynasty--></T>
+  <T n="display_name">0xFF349EC5<!--String: "End Rivalry"--></T>
+  <T n="display_name_target">0x8C71C8F7<!--String: "Listen to {1.SimFirstName}'s Question"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Mixer</E>
+    <E>Interaction_All</E>
+    <E>Interaction_SocialAll</E>
+    <E>Interaction_SocialMixer</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <V n="animation_ref" t="enabled">
+              <U n="enabled">
+                <T n="factory">477502<!--AnimationElement: animation_Dynasty_EndRivalry_Fail--></T>
+                <U n="overrides">
+                  <V n="balloons" t="enabled">
+                    <L n="enabled">
+                      <U>
+                        <L n="balloon_choices">
+                          <U>
+                            <V n="item" t="balloon_icon">
+                              <U n="balloon_icon">
+                                <E n="balloon_type">SPEECH</E>
+                                <V n="icon" t="dynasty">
+                                  <U n="dynasty">
+                                    <L n="participant_type">
+                                      <E>TargetSim</E>
+                                    </L>
+                                  </U>
+                                </V>
+                              </U>
+                            </V>
+                          </U>
+                        </L>
+                        <T n="balloon_delay">1</T>
+                        <L n="balloon_target">
+                          <E>Actor</E>
+                        </L>
+                      </U>
+                    </L>
+                  </V>
+                </U>
+              </U>
+            </V>
+            <L n="basic_extras">
+              <V t="buff_fire_and_forget">
+                <U n="buff_fire_and_forget">
+                  <U n="buff">
+                    <V n="buff_reason" t="enabled">
+                      <T n="enabled">0xAC4FDDAE<!--String: "(From Failing to End Rivalry)"--></T>
+                    </V>
+                    <T n="buff_type">477510<!--Buff: buff_Dynasty_RivalryEndFailActor--></T>
+                  </U>
+                </U>
+              </V>
+              <V t="buff_fire_and_forget">
+                <U n="buff_fire_and_forget">
+                  <U n="buff">
+                    <V n="buff_reason" t="enabled">
+                      <T n="enabled">0xDE35D3D8<!--String: "(From Refusing to End Rivalry)"--></T>
+                    </V>
+                    <T n="buff_type">477511<!--Buff: buff_Dynasty_RivalryEndFailTarget--></T>
+                  </U>
+                  <E n="participant">TargetSim</E>
+                </U>
+              </V>
+              <V t="notification">
+                <U n="notification">
+                  <V n="dialog" t="single">
+                    <V n="single" t="literal">
+                      <U n="literal">
+                        <L n="dialog_options">
+                          <E>DISABLE_CLOSE_BUTTON</E>
+                        </L>
+                        <V n="icon" t="enabled">
+                          <V n="enabled" t="participant">
+                            <U n="participant">
+                              <L n="participant_type">
+                                <E>TargetSim</E>
+                              </L>
+                            </U>
+                          </V>
+                        </V>
+                        <V n="secondary_icon" t="enabled">
+                          <V n="enabled" t="participant">
+                            <U n="participant">
+                              <L n="participant_type">
+                                <E>Actor</E>
+                              </L>
+                            </U>
+                          </V>
+                        </V>
+                        <V n="text" t="variation">
+                          <U n="variation">
+                            <L n="variations">
+                              <T>0x325F11EA<!--String: "No, no, no. We're not done with you yet, {0.SimFirstName}."--></T>
+                              <T>0xB83DBC23<!--String: "There are some things that can't be forgiven so easily, {0.SimFirstName}."--></T>
+                            </L>
+                          </U>
+                        </V>
+                        <E n="visual_type">SPEECH</E>
+                      </U>
+                    </V>
+                  </V>
+                </U>
+              </V>
+              <V t="relationship_bit">
+                <U n="relationship_bit">
+                  <U n="relationship_bits_begin">
+                    <L n="bit_operations">
+                      <U>
+                        <T n="bit">477968<!--RelationshipBit: shortTermBit_Dynasty_RivalryCooldown--></T>
+                        <E n="operation">ADD</E>
+                        <E n="recipients">Actor</E>
+                        <E n="targets">TargetSim</E>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+              </V>
+            </L>
+            <L n="loot_list">
+              <T>11042<!--LootActions: Rel_Loss_Small--></T>
+              <T>24124<!--LootActions: Loot_SocialContext_Friendship_Loss--></T>
+            </L>
+            <E n="outcome_result">FAILURE</E>
+          </U>
+        </U>
+      </L>
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">477501<!--AnimationElement: animation_Dynasty_EndRivalry_Success--></T>
+                    <U n="overrides">
+                      <V n="balloons" t="enabled">
+                        <L n="enabled">
+                          <U>
+                            <L n="balloon_choices">
+                              <U>
+                                <V n="item" t="balloon_icon">
+                                  <U n="balloon_icon">
+                                    <E n="balloon_type">SPEECH</E>
+                                    <V n="icon" t="dynasty">
+                                      <U n="dynasty">
+                                        <L n="participant_type">
+                                          <E>TargetSim</E>
+                                        </L>
+                                      </U>
+                                    </V>
+                                  </U>
+                                </V>
+                              </U>
+                            </L>
+                            <T n="balloon_delay">1</T>
+                            <L n="balloon_target">
+                              <E>Actor</E>
+                            </L>
+                          </U>
+                        </L>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <V n="buff_reason" t="enabled">
+                          <T n="enabled">0xAE289D7F<!--String: "(From Ending a Rivalry)"--></T>
+                        </V>
+                        <T n="buff_type">477509<!--Buff: buff_Dynasty_RivalryEnded--></T>
+                      </U>
+                    </U>
+                  </V>
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <V n="buff_reason" t="enabled">
+                          <T n="enabled">0xAE289D7F<!--String: "(From Ending a Rivalry)"--></T>
+                        </V>
+                        <T n="buff_type">477509<!--Buff: buff_Dynasty_RivalryEnded--></T>
+                      </U>
+                      <E n="participant">TargetSim</E>
+                    </U>
+                  </V>
+                  <V t="notification">
+                    <U n="notification">
+                      <V n="dialog" t="single">
+                        <V n="single" t="literal">
+                          <U n="literal">
+                            <L n="dialog_options">
+                              <E>DISABLE_CLOSE_BUTTON</E>
+                            </L>
+                            <V n="icon" t="enabled">
+                              <V n="enabled" t="participant">
+                                <U n="participant">
+                                  <L n="participant_type">
+                                    <E>TargetSim</E>
+                                  </L>
+                                </U>
+                              </V>
+                            </V>
+                            <V n="secondary_icon" t="enabled">
+                              <V n="enabled" t="participant">
+                                <U n="participant">
+                                  <L n="participant_type">
+                                    <E>Actor</E>
+                                  </L>
+                                </U>
+                              </V>
+                            </V>
+                            <V n="text" t="variation">
+                              <U n="variation">
+                                <L n="variations">
+                                  <T>0xC28DC9B6<!--String: "I agree, it's time to bury the hatchet. This feud just isn't worth it anymore."--></T>
+                                  <T>0xC993684B<!--String: "You...I can't believe I'm saying this, but you're right. Let's end this madness."--></T>
+                                </L>
+                              </U>
+                            </V>
+                            <E n="visual_type">SPEECH</E>
+                          </U>
+                        </V>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+                <L n="loot_list">
+                  <T>11036<!--LootActions: Rel_Gain_Small--></T>
+                  <T>24123<!--LootActions: Loot_SocialContext_Friendship_Gain--></T>
+                  <T>477970<!--LootActions: loot_Dynasty_RivalryEnd--></T>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="test_set_reference">
+                <T n="test_set_reference">480126<!--TestSetInstance: testSet_Dynasty_Rivalry_EndWillingness_TargetSimTowardsActor--></T>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="skill_loot_data">
+    <V n="level_range" t="enabled">
+      <U n="enabled">
+        <T n="lower_bound">1</T>
+        <T n="upper_bound">10</T>
+      </U>
+    </V>
+    <T n="stat">16699<!--Skill: statistic_Skill_AdultMajor_Charisma--></T>
+  </U>
+  <U n="sub_action">
+    <T n="base_weight">2</T>
+  </U>
+  <E n="target_type">TARGET</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+      </U>
+    </V>
+    <V t="relationship">
+      <U n="relationship">
+        <U n="required_relationship_bits">
+          <L n="match_any">
+            <T>15803<!--RelationshipBit: has_met--></T>
+            <T>192631<!--RelationshipBit: relationshipBit_CelebrityAcquaintance--></T>
+          </L>
+        </U>
+      </U>
+    </V>
+    <V t="dynasty_member">
+      <U n="dynasty_member">
+        <T n="negate">True</T>
+        <V n="test_type" t="same_dynasty_membership" />
+      </U>
+    </V>
+    <V t="identity">
+      <U n="identity">
+        <E n="subject_b">TargetSim</E>
+      </U>
+    </V>
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <E n="who">TargetSim</E>
+      </U>
+    </V>
+    <V t="trait">
+      <U n="trait">
+        <E n="subject">TargetSim</E>
+        <L n="whitelist_traits">
+          <T>466527<!--Trait: trait_Dynasty_Head--></T>
+        </L>
+      </U>
+    </V>
+    <V t="dynasty_member">
+      <U n="dynasty_member">
+        <V n="test_type" t="sim_in_rival_dynasty_test" />
+      </U>
+    </V>
+    <V t="relationship">
+      <U n="relationship">
+        <U n="prohibited_relationship_bits">
+          <L n="match_any">
+            <T>477968<!--RelationshipBit: shortTermBit_Dynasty_RivalryCooldown--></T>
+          </L>
+        </U>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x3E5FA4A0<!--String: "Recently failed to end rivalry with {1.SimFirstName}."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="visible">True</T>
+</I>

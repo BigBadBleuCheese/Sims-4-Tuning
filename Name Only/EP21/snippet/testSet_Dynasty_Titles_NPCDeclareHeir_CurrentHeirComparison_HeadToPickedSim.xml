@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="TestSetInstance" i="snippet" m="event_testing.tests" n="testSet_Dynasty_Titles_NPCDeclareHeir_CurrentHeirComparison_HeadToPickedSim" s="477701">
+  <L n="test">
+    <L>
+      <V t="existence">
+        <U n="existence">
+          <T n="exists">False</T>
+          <E n="participant">ActorDynastyHeir</E>
+          <T n="require_instantiated">False</T>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="existence">
+        <U n="existence">
+          <T n="exists">True</T>
+          <E n="participant">ActorDynastyHeir</E>
+          <T n="require_instantiated">False</T>
+        </U>
+      </V>
+      <V t="relationship_comparative">
+        <U n="relationship_comparative">
+          <L n="subject_a">
+            <E>PickedSim</E>
+          </L>
+          <L n="subject_b">
+            <E>ActorDynastyHeir</E>
+          </L>
+          <L n="target">
+            <E>ActorDynastyHead</E>
+          </L>
+          <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+        </U>
+      </V>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="prohibited_relationship_bits">
+            <L n="match_any">
+              <T>466807<!--RelationshipBit: sentimentBit_Actor_BitterAt_Target_LT_Dynasty_PressuredHeir--></T>
+              <T>466623<!--RelationshipBit: sentimentBit_Actor_MotivatedBy_Target_LT_Dynasty_ProudHeir--></T>
+            </L>
+          </U>
+          <L n="subject">
+            <E>ActorDynastyHeir</E>
+          </L>
+          <L n="target_sim">
+            <E>ActorDynastyHead</E>
+          </L>
+        </U>
+      </V>
+      <V t="dynasty_rank">
+        <U n="dynasty_rank">
+          <E n="subjects">PickedSim</E>
+          <V n="test_type" t="dynasty_rank_compare_test">
+            <U n="dynasty_rank_compare_test">
+              <E n="comparison_operator">GREATER</E>
+              <E n="target">ActorDynastyHeir</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

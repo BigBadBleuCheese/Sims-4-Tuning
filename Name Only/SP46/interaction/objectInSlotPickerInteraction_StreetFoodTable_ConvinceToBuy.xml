@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="ObjectInSlotPickerInteraction" i="interaction" m="interactions.base.picker_interaction" n="objectInSlotPickerInteraction_StreetFoodTable_ConvinceToBuy" s="336354">
+  <V n="_saveable" t="disabled" />
+  <V n="content_score" t="disabled" />
+  <V n="continuation" t="enabled">
+    <L n="enabled">
+      <U>
+        <E n="actor">JoinTarget</E>
+        <T n="affordance">345053<!--SocialSuperInteraction: socialSI_StreetFoodTable_ConvinceToBuy--></T>
+        <E n="target">Actor</E>
+      </U>
+      <U>
+        <T n="affordance">345295<!--ImmediateSuperInteraction: si_StreetFoodTable_Immediate_GiveBlockBrowseBuff--></T>
+      </U>
+    </L>
+  </V>
+  <T n="display_name">0xA0B19F59<!--String: "Convince to Buy"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T n="ensemble_scoring">False</T>
+  <V n="idle_animation" t="enabled">
+    <U n="enabled">
+      <T n="factory">11841<!--AnimationElement: Soc_Chat_Talk_Talk_Looping_basic--></T>
+    </U>
+  </V>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <V n="picker_dialog" t="object_picker">
+    <U n="object_picker">
+      <E n="phone_ring_type">NO_RING</E>
+      <E n="picker_type">OBJECT_EXPANDED_INFO</E>
+      <E n="row_description_display">DEFAULT</E>
+    </U>
+  </V>
+  <T n="pie_menu_priority">1</T>
+  <V n="pie_menu_test_tooltip" t="enabled">
+    <T n="enabled">0x3770BD2A<!--String: "Nothing is stocked on the table."--></T>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <T n="show_rarity">True</T>
+  <L n="slot_obj_test">
+    <L>
+      <V t="location">
+        <U n="location">
+          <U n="location_tests">
+            <V n="is_in_slot" t="enabled">
+              <U n="enabled">
+                <V n="slot_test_type" t="specific_slot">
+                  <U n="specific_slot">
+                    <T n="specific_slot_set">slotSet_Deco</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </U>
+          <E n="subject">Object</E>
+        </U>
+      </V>
+    </L>
+  </L>
+  <E n="subject_with_slots">Object</E>
+  <E n="target_type">TARGET</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="npc" t="enabled">
+          <T n="enabled">True</T>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>341381<!--Buff: buff_StreetFoodTable_ConviceToBuy_Cooldown--></T>
+        </L>
+        <E n="subject">JoinTarget</E>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x6BCF4C19<!--String: "{1.SimFirstName} just used Convince to Buy! {1.SimPronounSubjective} must wait to try again."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+</I>

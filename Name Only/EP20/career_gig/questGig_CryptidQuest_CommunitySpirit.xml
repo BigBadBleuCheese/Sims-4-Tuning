@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="QuestGig" i="career_gig" m="careers.missions.mission_gig" n="questGig_CryptidQuest_CommunitySpirit" s="447411">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_description" t="enabled">
+        <T n="enabled">0x4938E86A<!--String: "Engage more with Gibbi Point Festivals, locate a unique Cave Painting, and connect with the Peculiar Plumbird herself to discover the final puzzle pieces in the Plumbird Mystery."--></T>
+      </V>
+      <V n="instance_display_icon" t="enabled">
+        <T n="enabled" p="InEP20\UI\Icons\Career\Gigs\gig_CommunitySpirit.png">2f7d0004:00000000:2138351278d5fbf1</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x30554483<!--String: "Community Spirit"--></T>
+      </V>
+    </U>
+  </V>
+  <T n="career">447413<!--Career: career_CryptidQuest--></T>
+  <V n="end_of_gig_notifications" t="enabled">
+    <L n="enabled">
+      <U>
+        <E n="key">SUCCESS</E>
+        <U n="value">
+          <V n="audio_sting" t="enabled">
+            <U n="enabled">
+              <T n="audio" p="InEP20\Audio\music\mu_bumpers_ep20\bumper_ep20_cryptid_quest_complete.propx">39b2aa4a:00000000:6b6e4b3af93abc37</T>
+            </U>
+          </V>
+          <L n="dialog_options">
+            <E>DISABLE_CLOSE_BUTTON</E>
+          </L>
+          <V n="text" t="single">
+            <T n="single">0xB6BBDBC6<!--String: "{0.SimFirstName} has completed the final Peculiar Plumbird Quest! Now {0.SimPronounSubjective} can enjoy an enhanced dynamic with the Peculiar Plumbird. Try giving her a SUPERHUG right now!"--></T>
+          </V>
+        </U>
+      </U>
+    </L>
+  </V>
+  <T n="gig_assignment_aspiration">447377<!--AspirationGig: aspirationGig_CryptidQuest_CommunitySpirit--></T>
+  <V n="gig_pay" t="flat_amount">
+    <U n="flat_amount">
+      <T n="value">50</T>
+    </U>
+  </V>
+  <T n="hide_inactive_objectives">True</T>
+  <L n="mission_objective_data">
+    <U>
+      <L n="weighted_objectives">
+        <U>
+          <T n="objective">447439<!--Objective: objective_CryptidQuest_CommunitySpirit_AttendFestival--></T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="requires_previous_objective_complete">False</T>
+      <L n="weighted_objectives">
+        <U>
+          <T n="objective">447444<!--Objective: objective_CryptidQuest_CommunitySpirit_LocateEvidence--></T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <L n="completion_loot">
+        <T>461318<!--LootActions: loot_Cryptid_ReadyforTruth--></T>
+      </L>
+      <T n="requires_previous_objective_complete">True</T>
+      <L n="weighted_objectives">
+        <U>
+          <T n="objective">447445<!--Objective: objective_CryptidQuest_CommunitySpirit_AskLocal--></T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="completes_mission">False</T>
+      <T n="requires_previous_objective_complete">True</T>
+      <L n="weighted_objectives">
+        <U>
+          <T n="objective">447446<!--Objective: objective_CryptidQuest_CommunitySpirit_RevealTruth--></T>
+        </U>
+      </L>
+    </U>
+  </L>
+  <T n="mission_rewards_description">0x2A6D68E8<!--String: "{0.String}\n<font color='#199C2C'>{1.String}</font>"--></T>
+  <V n="mission_rewards_text" t="enabled">
+    <T n="enabled">0x5D50FD03<!--String: "Reward: Simoleons"--></T>
+  </V>
+  <V n="mission_trait" t="enabled">
+    <T n="enabled">447459<!--Trait: trait_Hidden_CryptidQuest_OnQuest_CommunitySpirit--></T>
+  </V>
+  <U n="objective_completion_audio">
+    <T n="audio" p="InGame\Audio\Bumper\bumper_other_goal_complete.propx">39b2aa4a:00000000:ea1687e36b0b32f3</T>
+  </U>
+  <E n="on_pick_behavior">REMOVE</E>
+  <T n="open_career_panel">True</T>
+  <V n="picker_associated_sim_filter" t="enabled">
+    <T n="enabled">447370<!--TunableSimFilter: filter_Cryptid--></T>
+  </V>
+  <T n="picker_description_text">0x8AC19481<!--String: "{0.String}\n<font color='#199C2C'>{1.String}</font>"--></T>
+  <T n="picker_disable_if_visibility_tests_fail_with_tooltip">True</T>
+  <T n="picker_replace_if_removed">True</T>
+  <V n="picker_scheduling_behavior" t="enabled">
+    <V n="enabled" t="schedule_career_gig">
+      <U n="schedule_career_gig">
+        <T n="allow_add_career">True</T>
+      </U>
+    </V>
+  </V>
+  <V n="picker_scoring" t="enabled">
+    <U n="enabled">
+      <E n="bucket">EP20Quest_Cryptid</E>
+    </U>
+  </V>
+  <L n="picker_visibility_tests">
+    <L>
+      <V t="unlock_earned">
+        <U n="unlock_earned">
+          <V n="unlock_to_test" t="aspiration">
+            <U n="aspiration">
+              <T n="aspiration">447375<!--AspirationGig: aspirationGig_CryptidQuest_FeedingFrenzy--></T>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="unlock_earned">
+        <U n="unlock_earned">
+          <V n="unlock_to_test" t="aspiration">
+            <U n="aspiration">
+              <T n="aspiration">447374<!--AspirationGig: aspirationGig_CryptidQuest_LocalLegends--></T>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="unlock_earned">
+        <U n="unlock_earned">
+          <V n="unlock_to_test" t="aspiration">
+            <U n="aspiration">
+              <T n="aspiration">447376<!--AspirationGig: aspirationGig_CryptidQuest_TangibleTraces--></T>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="career_gig_test">
+        <U n="career_gig_test">
+          <T n="career">447413<!--Career: career_CryptidQuest--></T>
+          <T n="negate">True</T>
+          <E n="participant">ActiveHousehold</E>
+          <V n="test_type" t="specific_gigs">
+            <U n="specific_gigs">
+              <L n="gigs">
+                <T>447411<!--QuestGig: questGig_CryptidQuest_CommunitySpirit--></T>
+              </L>
+            </U>
+          </V>
+          <V n="tooltip" t="enabled">
+            <T n="enabled">0x45D865CC<!--String: "Another member of the household has already activated this Quest."--></T>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="result_based_loots" t="enabled">
+    <L n="enabled">
+      <U>
+        <E n="key">CANCELED</E>
+        <L n="value">
+          <T>461197<!--LootActions: loot_Cryptid_QuestCompletion_TraitCleanup--></T>
+        </L>
+      </U>
+      <U>
+        <E n="key">FAILURE</E>
+        <L n="value">
+          <T>461197<!--LootActions: loot_Cryptid_QuestCompletion_TraitCleanup--></T>
+        </L>
+      </U>
+      <U>
+        <E n="key">SUCCESS</E>
+        <L n="value">
+          <T>457406<!--LootActions: loot_ButterflyCollection_CryptidQuest_Complete--></T>
+          <T>457912<!--LootActions: loot_ButterflyCollection_Want_CatchCryptidMoth--></T>
+        </L>
+      </U>
+    </L>
+  </V>
+</I>

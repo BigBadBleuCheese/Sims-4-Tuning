@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_TemporaryStay_GrandparentHelp" s="310410">
+  <L n="loot_actions">
+    <V t="statistics">
+      <V n="statistics" t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">-50</T>
+          <T n="stat">303302<!--Commodity: commodity_Trait_Autonomy_TemporaryStay_GuestHelp--></T>
+        </U>
+      </V>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x9D6C87CF<!--String: "(From Grandparent Stay Over)"--></T>
+          </V>
+          <T n="buff_type">307224<!--Buff: buff_TemporaryStay_GrandparentLove--></T>
+        </U>
+        <E n="subject">TargetSim</E>
+        <L n="tests">
+          <L>
+            <V t="relationship">
+              <U n="relationship">
+                <U n="required_relationship_bits">
+                  <L n="match_any">
+                    <T>8807<!--RelationshipBit: family_Target_IsGrandchildOf_Actor--></T>
+                  </L>
+                </U>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+                <L n="target_sim">
+                  <E>TargetSim</E>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="relationship_score_interval">
+            <T n="lower_bound">10</T>
+          </U>
+          <U n="required_relationship_bits">
+            <L n="match_any">
+              <T>8807<!--RelationshipBit: family_Target_IsGrandchildOf_Actor--></T>
+              <T>8805<!--RelationshipBit: family_Target_IsSonOrDaughterOf_Actor--></T>
+            </L>
+          </U>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

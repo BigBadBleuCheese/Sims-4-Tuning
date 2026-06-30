@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Fear_BeingBurgled_Trigger" s="427606">
+  <L n="loot_actions">
+    <V t="trait_add">
+      <U n="trait_add">
+        <U n="chance">
+          <T n="base_chance">20</T>
+          <L n="multipliers">
+            <U>
+              <T n="multiplier">0.25</T>
+              <L n="tests">
+                <L>
+                  <V t="buff">
+                    <U n="buff">
+                      <V n="whitelist" t="enabled">
+                        <L n="enabled">
+                          <T>351440<!--Buff: buff_Gemology_Rainborz_Brave--></T>
+                        </L>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+            <U>
+              <T n="multiplier">1.25</T>
+              <L n="tests">
+                <L>
+                  <V t="buff">
+                    <U n="buff">
+                      <V n="whitelist" t="enabled">
+                        <L n="enabled">
+                          <T>393293<!--Buff: buff_Tarot_Outcomes_Cards_Strength--></T>
+                        </L>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+            <U>
+              <T n="multiplier">0</T>
+              <L n="tests">
+                <L>
+                  <V t="situation_running_test">
+                    <U n="situation_running_test">
+                      <V n="situation_whitelist" t="enabled">
+                        <L n="enabled">
+                          <T>421823<!--CustomStatesSituation: situation_Burglar_Police--></T>
+                        </L>
+                      </V>
+                      <E n="test_event">SituationStarted</E>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+          </L>
+        </U>
+        <T n="trait">427602<!--Trait: trait_Fear_BeingBurgled--></T>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>277115<!--Buff: buff_Fear_Immunity_ResolvedRecently--></T>
+            <T>340980<!--Buff: buff_Sim_BaskedInBravery--></T>
+            <T>446978<!--Buff: Apothecary_CuresAndElixirs_Buff_Timer--></T>
+          </L>
+        </U>
+      </V>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>427602<!--Trait: trait_Fear_BeingBurgled--></T>
+            <T>253268<!--Trait: trait_Brave--></T>
+          </L>
+        </U>
+      </V>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="species" t="specified">
+            <U n="specified">
+              <L n="species">
+                <E />
+              </L>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="test_set_reference">
+        <T n="test_set_reference">216576<!--TestSetInstance: testSet_NoOccult_Actor--></T>
+      </V>
+      <V t="test_set_reference">
+        <T n="test_set_reference">101703<!--TestSetInstance: testSet_ActorIsNotGhost--></T>
+      </V>
+      <V t="situation_job_test">
+        <U n="situation_job_test">
+          <T n="negate">True</T>
+          <L n="situation_jobs">
+            <T>421826<!--SituationJob: job_Police--></T>
+            <T>191861<!--SituationJob: situationJob_VIPRope_Bouncer--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

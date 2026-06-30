@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Dynasty_Prestige_RivalSocial" s="500038">
+  <L n="loot_actions">
+    <V t="dynasty">
+      <U n="dynasty">
+        <V n="operation" t="prestige_loot">
+          <U n="prestige_loot">
+            <T n="amount">0.5</T>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="dynasty_value">
+              <U n="dynasty_value">
+                <T n="negate">True</T>
+                <V n="test_type" t="has_dynasty_value">
+                  <U n="has_dynasty_value">
+                    <T n="dynasty_value">467902<!--DynastyValue: dynastyValue_Ideal_Caring--></T>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="dynasty_value">
+              <U n="dynasty_value">
+                <T n="negate">True</T>
+                <V n="test_type" t="has_dynasty_value">
+                  <U n="has_dynasty_value">
+                    <T n="dynasty_value">467906<!--DynastyValue: dynastyValue_Ideal_Diplomatic--></T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="dynasty">
+      <U n="dynasty">
+        <V n="operation" t="prestige_loot">
+          <U n="prestige_loot">
+            <T n="amount">0.5</T>
+          </U>
+        </V>
+        <E n="subject">TargetSim</E>
+        <L n="tests">
+          <L>
+            <V t="dynasty_value">
+              <U n="dynasty_value">
+                <T n="negate">True</T>
+                <E n="subjects">TargetSim</E>
+                <V n="test_type" t="has_dynasty_value">
+                  <U n="has_dynasty_value">
+                    <T n="dynasty_value">467902<!--DynastyValue: dynastyValue_Ideal_Caring--></T>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="dynasty_value">
+              <U n="dynasty_value">
+                <T n="negate">True</T>
+                <E n="subjects">TargetSim</E>
+                <V n="test_type" t="has_dynasty_value">
+                  <U n="has_dynasty_value">
+                    <T n="dynasty_value">467906<!--DynastyValue: dynastyValue_Ideal_Diplomatic--></T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="dynasty_member">
+        <U n="dynasty_member">
+          <V n="test_type" t="sim_in_rival_dynasty_test" />
+        </U>
+      </V>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified">
+            <L n="specified">
+              <E>TEEN</E>
+              <E>YOUNGADULT</E>
+              <E>ADULT</E>
+              <E>ELDER</E>
+              <E>CHILD</E>
+            </L>
+          </V>
+        </U>
+      </V>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified">
+            <L n="specified">
+              <E>TEEN</E>
+              <E>YOUNGADULT</E>
+              <E>ADULT</E>
+              <E>ELDER</E>
+              <E>CHILD</E>
+            </L>
+          </V>
+          <E n="who">TargetSim</E>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

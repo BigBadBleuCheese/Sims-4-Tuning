@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SetWillNoteImmediateInteraction" i="interaction" m="wills.will_interactions" n="setWillNote_Wills_WriteNote" s="391883">
+  <V n="_saveable" t="disabled" />
+  <T n="allow_from_sim_inventory">True</T>
+  <T n="allow_user_directed">True</T>
+  <T n="category">378282<!--PieMenuCategory: pieMenuCategories_Wills_LeaveNote--></T>
+  <T n="collapsible">True</T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x247A509A<!--String: "Write Personal Note"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <U n="note_dialog">
+    <V n="icon" t="enabled">
+      <V n="enabled" t="resource_key">
+        <U n="resource_key">
+          <T p="InGame\UI\Icons\Notifications\notification_wills.png" n="key">2f7d0004:00000000:518e1275655a7a96</T>
+        </U>
+      </V>
+    </V>
+    <V n="text" t="single">
+      <T n="single">0x57C0BA12<!--String: "Leave a personal note to be read along with the Will."--></T>
+    </V>
+    <U n="text_inputs">
+      <U n="text_input_note">
+        <V n="height" t="enabled">
+          <T n="enabled">54</T>
+        </V>
+        <V n="length_restriction" t="fixed">
+          <U n="fixed">
+            <T n="max_length">100</T>
+          </U>
+        </V>
+      </U>
+    </U>
+  </U>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="basic_extras">
+          <V t="loot">
+            <U n="loot">
+              <L n="loot_list">
+                <T>391885<!--LootActions: loot_Wills_Headline--></T>
+              </L>
+            </U>
+          </V>
+        </L>
+        <L n="continuation">
+          <U>
+            <T n="affordance">391887<!--SuperInteraction: wills_Update_AnimationForImmediates--></T>
+          </U>
+        </L>
+      </U>
+    </U>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+            <E>TODDLER</E>
+            <E>BABY</E>
+            <E>INFANT</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="will">
+      <U n="will">
+        <T n="negate">True</T>
+        <V n="test_type" t="will_finalized" />
+      </U>
+    </V>
+  </L>
+</I>

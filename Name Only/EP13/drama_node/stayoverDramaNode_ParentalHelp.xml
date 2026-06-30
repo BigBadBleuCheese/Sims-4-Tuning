@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="StayoverDramaNode" i="drama_node" m="drama_scheduler.stayover_drama_node" n="stayoverDramaNode_ParentalHelp" s="309231">
+  <V n="cooldown_data" t="node_cooldown">
+    <U n="node_cooldown">
+      <V n="duration" t="duration">
+        <T n="duration">10080</T>
+      </V>
+    </U>
+  </V>
+  <T n="duration">5</T>
+  <V n="invitees" t="participant">
+    <U n="participant">
+      <E n="participant">TargetHouseholdMembers</E>
+    </U>
+  </V>
+  <U n="min_and_max_times">
+    <T n="lower_bound">2</T>
+    <T n="upper_bound">3</T>
+  </U>
+  <L n="receiver_sim_pretests">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified" />
+          <V n="species" t="specified">
+            <U n="specified">
+              <L n="species">
+                <E />
+              </L>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+  <L n="run_tests">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified" />
+          <V n="species" t="specified">
+            <U n="specified">
+              <L n="species">
+                <E />
+              </L>
+            </U>
+          </V>
+          <E n="who">TargetSim</E>
+        </U>
+      </V>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="prohibited_relationship_bits">
+            <L n="match_any">
+              <T>306282<!--RelationshipBit: familyTrope_distant--></T>
+              <T>310888<!--RelationshipBit: familyTrope_difficult--></T>
+            </L>
+          </U>
+        </U>
+      </V>
+      <V t="situation_running_test">
+        <U n="situation_running_test">
+          <V n="situation_blacklist" t="enabled">
+            <L n="enabled">
+              <T>321830<!--AmbientSimSpecificCustomStatesSituation: situation_Stayover_Behavior_InfantIntro--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="scoring" t="disabled" />
+  <V n="sender_sim_info" t="sim_filter">
+    <U n="sim_filter">
+      <T n="sim_filter">309512<!--TunableSimFilter: filter_TemporaryStays_ParentalHelp--></T>
+    </U>
+  </V>
+  <E n="sender_sim_info_type">INSTANCED_ALLOWED</E>
+  <T n="stayover_behavioral_situation">309242<!--AmbientSimSpecificCustomStatesSituation: situation_Stayover_Behavior_ParentalHelp--></T>
+  <L n="stayover_prompt_messages">
+    <U>
+      <U n="dialog">
+        <E n="dialog_bg_style">BG_DEFAULT</E>
+        <L n="dialog_options">
+          <E>DISABLE_CLOSE_BUTTON</E>
+        </L>
+        <E n="phone_ring_type">RING</E>
+        <V n="text" t="single">
+          <T n="single">0x83E40C23<!--String: "Hey, sweetie! We're coming over to see the little one and help out however we can!"--></T>
+        </V>
+      </U>
+    </U>
+  </L>
+  <V n="time_option" t="schedule">
+    <U n="schedule">
+      <L n="valid_times">
+        <U>
+          <U n="days_available">
+            <T n="0 SUNDAY">True</T>
+            <T n="1 MONDAY">True</T>
+            <T n="2 TUESDAY">True</T>
+            <T n="3 WEDNESDAY">True</T>
+            <T n="4 THURSDAY">True</T>
+            <T n="5 FRIDAY">True</T>
+            <T n="6 SATURDAY">True</T>
+          </U>
+          <T n="duration">24</T>
+          <U n="start_time">
+            <T n="hour">0</T>
+            <T n="minute">0</T>
+          </U>
+        </U>
+      </L>
+    </U>
+  </V>
+</I>

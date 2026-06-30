@@ -1,0 +1,871 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<M n="small_business.small_business_tuning" s="18212811149236276670">
+  <C n="SmallBusinessTunables">
+    <U n="ALL_CUSTOMER_MATCHING_CRITERIA_ON_COOLDOWN_TNS">
+      <E n="expand_behavior">FORCE_EXPAND</E>
+      <V n="icon" t="enabled">
+        <V n="enabled" t="small_business" />
+      </V>
+      <V n="primary_icon_response" t="enabled">
+        <U n="enabled">
+          <E n="ui_request">SHOW_SMALL_BUSINESS_PANEL</E>
+        </U>
+      </V>
+      <V n="secondary_icon" t="enabled">
+        <V n="enabled" t="participant" />
+      </V>
+      <V n="text" t="single">
+        <T n="single">0xBDD15BEF<!--String: "All customers that meet the required Target Customer Criteria of {0.String} are either already here or have visited too recently.\n\nConsider expanding the possible Target Customers or making the Criteria not required to encourage more customers to visit {0.String}."--></T>
+      </V>
+      <V n="text_tokens" t="enabled">
+        <U n="enabled">
+          <L n="tokens">
+            <V t="small_business" />
+          </L>
+        </U>
+      </V>
+      <V n="title" t="enabled">
+        <T n="enabled">0x954C4A8D<!--String: "No Currently Available Customers"--></T>
+      </V>
+      <L n="ui_responses">
+        <U>
+          <V n="response_command" t="enabled">
+            <V n="enabled" t="literal">
+              <U n="literal">
+                <L n="arguments">
+                  <V t="boolean">
+                    <U n="boolean">
+                      <T n="arg_value">True</T>
+                    </U>
+                  </V>
+                  <V t="participant_id" />
+                </L>
+                <T n="command">business.request_show_small_business_configurator</T>
+              </U>
+            </V>
+          </V>
+          <T n="text">0x481E9A00<!--String: "Open Business Settings"--></T>
+          <E n="ui_request">SEND_COMMAND</E>
+        </U>
+      </L>
+      <E n="urgency">URGENT</E>
+    </U>
+    <L n="ALWAYS_ACTIVE_RULES">
+      <V t="literal">
+        <U n="literal">
+          <T n="action">389384<!--ClubInteractionGroup: clubInteractionGroup_SmallBusiness_CustomerDefault--></T>
+        </U>
+      </V>
+    </L>
+    <U n="ASSIGN_VENUE_TO_NEW_SMALL_BUSINESS_TNS">
+      <E n="expand_behavior">FORCE_EXPAND</E>
+      <V n="participant" t="enabled">
+        <E n="enabled">Actor</E>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0xE535FC93<!--String: "{0.String} is currently a Small Business Venue with no Small Business! Open the Small Business Settings to assign a household Sim's Small Business to this venue."--></T>
+      </V>
+      <V n="text_tokens" t="enabled">
+        <U n="enabled">
+          <L n="tokens">
+            <V t="participant_type">
+              <U n="participant_type">
+                <V n="objects" t="from_participant">
+                  <U n="from_participant">
+                    <E n="participant">Lot</E>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </U>
+      </V>
+      <V n="title" t="enabled">
+        <T n="enabled">0x85E3F521<!--String: "No Business Assigned!"--></T>
+      </V>
+      <L n="ui_responses">
+        <U>
+          <V n="response_command" t="enabled">
+            <V n="enabled" t="literal">
+              <U n="literal">
+                <L n="arguments">
+                  <V t="boolean">
+                    <U n="boolean">
+                      <T n="arg_value">False</T>
+                    </U>
+                  </V>
+                  <V t="participant_id" />
+                </L>
+                <T n="command">business.request_show_small_business_configurator</T>
+              </U>
+            </V>
+          </V>
+          <T n="text">0x5EDBF2A4<!--String: "Open Small Business Settings"--></T>
+          <V n="ui_message_name" t="disabled" />
+          <E n="ui_request">SEND_COMMAND</E>
+        </U>
+      </L>
+    </U>
+    <U n="ASSIGN_VENUE_TO_SMALL_BUSINESS_TNS">
+      <E n="expand_behavior">FORCE_EXPAND</E>
+      <V n="participant" t="enabled">
+        <E n="enabled">Actor</E>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0xE535FC93<!--String: "{0.String} is currently a Small Business Venue with no Small Business! Open the Small Business Settings to assign a household Sim's Small Business to this venue."--></T>
+      </V>
+      <V n="text_tokens" t="enabled">
+        <U n="enabled">
+          <L n="tokens">
+            <V t="participant_type">
+              <U n="participant_type">
+                <V n="objects" t="from_participant">
+                  <U n="from_participant">
+                    <E n="participant">Lot</E>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </U>
+      </V>
+      <V n="title" t="enabled">
+        <T n="enabled">0x85E3F521<!--String: "No Business Assigned!"--></T>
+      </V>
+      <L n="ui_responses">
+        <U>
+          <V n="response_command" t="enabled">
+            <V n="enabled" t="literal">
+              <U n="literal">
+                <L n="arguments">
+                  <V t="boolean">
+                    <U n="boolean">
+                      <T n="arg_value">True</T>
+                    </U>
+                  </V>
+                  <V t="participant_id" />
+                </L>
+                <T n="command">business.request_show_small_business_configurator</T>
+              </U>
+            </V>
+          </V>
+          <T n="text">0x5EDBF2A4<!--String: "Open Small Business Settings"--></T>
+          <V n="ui_message_name" t="disabled" />
+          <E n="ui_request">SEND_COMMAND</E>
+        </U>
+      </L>
+    </U>
+    <L n="BUSINESS_AREA_TAGS">
+      <E>DynamicArea_Business_Employees_Only</E>
+      <E>DynamicArea_Business_Public</E>
+    </L>
+    <T n="BUSINESS_ENCOURAGEMENT_AD_DATA">32</T>
+    <T n="BUSINESS_ENCOURAGEMENT_AD_DATA_ACTIVE_SIM">16</T>
+    <T n="BUSINESS_EVENTS_COOLDOWN_BUFF">399047<!--Buff: buff_BusinessEvents_Cooldown--></T>
+    <T n="BUSINESS_EVENTS_DRAMA_SCHEDULER">398636<!--DialogDramaNode: dialogDramaNode_ScheduleBusinessEvents--></T>
+    <T n="BUSINESS_EVENTS_INTERACTION">397581<!--ImmediateSuperInteraction: immediateSuperInteraction_BusinessEvents_ChanceCards--></T>
+    <T n="BUSINESS_EVENTS_LOOT">398637<!--LootActions: loot_BusinessEvents_ScheduleBusinessEvents--></T>
+    <L n="BUSINESS_RANK_ENTRY_BASELINES">
+      <T>23</T>
+      <T>33</T>
+      <T>42</T>
+      <T>52</T>
+      <T>64</T>
+      <T>112</T>
+    </L>
+    <L n="BUSINESS_RANK_HOURLY_BASELINES">
+      <T>5</T>
+      <T>7</T>
+      <T>9</T>
+      <T>12</T>
+      <T>16</T>
+      <T>26</T>
+    </L>
+    <L n="BUSINESS_RULES_PRESETS">
+      <T>427682<!--BusinessPreset: smallBusinessPreset_Bar--></T>
+      <T>427683<!--BusinessPreset: smallBusinessPreset_Gym--></T>
+      <T>427684<!--BusinessPreset: smallBusinessPreset_Library--></T>
+      <T>427685<!--BusinessPreset: smallBusinessPreset_Lounge--></T>
+      <T>427686<!--BusinessPreset: smallBusinessPreset_Museum--></T>
+      <T>427687<!--BusinessPreset: smallBusinessPreset_Nightclub--></T>
+      <T>427688<!--BusinessPreset: smallBusinessPreset_Park--></T>
+      <T>427689<!--BusinessPreset: smallBusinessPreset_Pool--></T>
+      <T>427690<!--BusinessPreset: smallBusinessPreset_Shop--></T>
+      <T>401727<!--BusinessPreset: smallBusinessPreset_RelaxationCenter--></T>
+      <T>401720<!--BusinessPreset: smallBusinessPreset_Cafe--></T>
+      <T>401729<!--BusinessPreset: smallBusinessPreset_BowlingAlley--></T>
+      <T>401719<!--BusinessPreset: smallBusinessPreset_ArtsCenter--></T>
+      <T>401724<!--BusinessPreset: smallBusinessPreset_KaraokeBar--></T>
+      <T>401728<!--BusinessPreset: smallBusinessPreset_CatCafe--></T>
+      <T>401723<!--BusinessPreset: smallBusinessPreset_UniversityCommons--></T>
+      <T>401721<!--BusinessPreset: smallBusinessPreset_CommunityGarden--></T>
+      <T>401722<!--BusinessPreset: smallBusinessPreset_MakerSpace--></T>
+      <T>401725<!--BusinessPreset: smallBusinessPreset_OnsenBathhouse--></T>
+      <T>401726<!--BusinessPreset: smallBusinessPreset_RecreationCenter--></T>
+      <T>437250<!--BusinessPreset: smallBusinessPreset_PotteryStudio--></T>
+      <T>437249<!--BusinessPreset: smallBusinessPreset_TattooParlor--></T>
+    </L>
+    <E n="BUSINESS_TAG">Func_Business</E>
+    <T n="BUY_SMALL_BUSINESS_VENUE_LOT_AFFORDANCE">394961<!--SuperInteraction: phone_BuyOwnableSmallBusinessVenue--></T>
+    <U n="BUY_SMALL_BUSINESS_VENUE_TNS">
+      <E n="expand_behavior">FORCE_EXPAND</E>
+      <V n="participant" t="enabled">
+        <E n="enabled">Actor</E>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0x55022EFC<!--String: "{0.String} is currently a Small Business Venue with no Small Business! {1.SimFirstName} can purchase this lot for {1.SimPronounPossessiveDependent} Small Business through the Phone."--></T>
+      </V>
+      <V n="text_tokens" t="enabled">
+        <U n="enabled">
+          <L n="tokens">
+            <V t="participant_type">
+              <U n="participant_type">
+                <V n="objects" t="from_participant">
+                  <U n="from_participant">
+                    <E n="participant">Lot</E>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="participant_type" />
+          </L>
+        </U>
+      </V>
+      <V n="title" t="enabled">
+        <T n="enabled">0x489AF15A<!--String: "Small Business Venue Available!"--></T>
+      </V>
+    </U>
+    <L n="DEPENDENT_PLACEMENT_OBJECT_TAGS">
+      <U>
+        <E n="age">INFANT</E>
+        <L n="object_tags">
+          <E>Func_Infant_Crib</E>
+          <E>Func_Infant_Playmat</E>
+          <E>Func_Toy</E>
+          <E>Func_HighChair</E>
+        </L>
+      </U>
+      <U>
+        <E n="age">TODDLER</E>
+        <L n="object_tags">
+          <E>Func_JungleGym</E>
+          <E>Func_Toddler</E>
+        </L>
+      </U>
+      <U>
+        <L n="object_tags">
+          <E>Func_PetBowl</E>
+          <E>Func_PetToy</E>
+          <E>BuyCatEE_PetToys</E>
+        </L>
+        <E n="species">CAT</E>
+      </U>
+      <U>
+        <L n="object_tags">
+          <E>Func_PetBowl</E>
+          <E>Func_PetToy</E>
+          <E>BuyCatEE_PetToys</E>
+        </L>
+        <E n="species">DOG</E>
+      </U>
+    </L>
+    <T n="EMPLOYEE_RELBIT">414657<!--RelationshipBit: relbit_SmallBusiness_Actor_IsEmployeeOf_Target--></T>
+    <L n="EMPLOYEE_SALARY_DATA">
+      <U>
+        <E n="key">AVERAGE</E>
+        <U n="value">
+          <T n="fake_salary_icon" p="InEP18\UI\Icons\Dialogs\icon_Employees_Salary_Average_Fake.png">2f7d0004:00000000:2f87e3ab56b1ffc7</T>
+          <T n="normal_salary_icon" p="InEP18\UI\Icons\Dialogs\icon_Employees_Salary_Average.png">2f7d0004:00000000:c03c255e4022f009</T>
+        </U>
+      </U>
+      <U>
+        <E n="key">HIGH</E>
+        <U n="value">
+          <T n="fake_salary_icon" p="InEP18\UI\Icons\Dialogs\icon_Employees_Salary_High_Fake.png">2f7d0004:00000000:ea37e29bd3331bc4</T>
+          <T n="normal_salary_icon" p="InEP18\UI\Icons\Dialogs\icon_Employees_Salary_High.png">2f7d0004:00000000:b8e69b0a12dd2140</T>
+        </U>
+      </U>
+      <U>
+        <E n="key">LOW</E>
+        <U n="value">
+          <T n="fake_salary_icon" p="InEP18\UI\Icons\Dialogs\icon_Employees_Salary_Low_Fake.png">2f7d0004:00000000:8dad13cb49bb9136</T>
+          <T n="normal_salary_icon" p="InEP18\UI\Icons\Dialogs\icon_Employees_Salary_Low.png">2f7d0004:00000000:0e826791f8f0a8ea</T>
+        </U>
+      </U>
+    </L>
+    <E n="EMPLOYEE_TYPE">SMALL_BUSINESS_HELP</E>
+    <T n="GHOST_TRAIT">381402<!--Trait: trait_IsGhost--></T>
+    <V n="HIRE_EMPLOYEE_NOTIFICATION" t="reference">
+      <T n="reference">434157<!--Notification: notification_SmallBusiness_Employee_Hire--></T>
+    </V>
+    <L n="HIRED_TEMPORARY_EMPLOYEES_SITUATION_TAGS">
+      <E>Role_HiredNPC</E>
+    </L>
+    <U n="HOBBY_CLASS_CLOSE_BUSINESS_WARNING_DIALOG">
+      <V n="icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_chalkboard.png">2f7d0004:00000000:ce99588276ffc4f7</T>
+          </U>
+        </V>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0x16347D94<!--String: "A Hobby Class is still running! If you close the Small Business now, the Class will cancel without payment."--></T>
+      </V>
+      <T n="text_ok">0xEEBF422C<!--String: "Close Small Business"--></T>
+    </U>
+    <E n="HOBBY_CLASS_SITUATION_TAG">Situation_HobbyClass</E>
+    <U n="INACCESSIBLE_TICKET_MACHINE_TNS">
+      <E n="expand_behavior">FORCE_EXPAND</E>
+      <V n="icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T n="key" p="InGame\UI\Icons\Notifications\Notification_TicketMachine.png">2f7d0004:00000000:f971a188eab79aa2</T>
+          </U>
+        </V>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0x45526E2F<!--String: "No accessible Ticket Kiosks! Close the Small Business and place a new Kiosk or move an existing Kiosk to a location where the customers can reach."--></T>
+      </V>
+      <V n="title" t="enabled">
+        <T n="enabled">0xE7BEECD<!--String: "Ticket Kiosk is Inaccessible"--></T>
+      </V>
+      <E n="urgency">URGENT</E>
+    </U>
+    <U n="INOPERABLE_TICKET_MACHINE_TNS">
+      <E n="expand_behavior">FORCE_EXPAND</E>
+      <V n="icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T n="key" p="InGame\UI\Icons\Notifications\Notification_TicketMachine.png">2f7d0004:00000000:f971a188eab79aa2</T>
+          </U>
+        </V>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0x8CB86B6D<!--String: "No functioning Ticket Kiosks! To collect Ticket Sales from customers, place a new Kiosk, replace any broken Kiosks, and make sure the lot is connected to the utility grid."--></T>
+      </V>
+      <V n="title" t="enabled">
+        <T n="enabled">0xE312EE2F<!--String: "No Working Ticket Kiosks!"--></T>
+      </V>
+      <E n="urgency">URGENT</E>
+    </U>
+    <E n="LIGHT_RETAIL_SURFACE_TAG">Func_LightRetailSurface</E>
+    <T n="LOOT_ON_REGISTER_BUSINESS">428802<!--LootActions: loot_SmallBusiness_RegisterBusiness--></T>
+    <T n="LOOT_ON_UNREGISTER_BUSINESS">428803<!--LootActions: loot_SmallBusiness_UnregisterBusiness--></T>
+    <T n="MIN_RELATIONSHIP_FOR_SMALL_BUSINESS_EMPLOYEE_HIRE">-9</T>
+    <T n="MIN_RELATIONSHIP_FOR_SMALL_BUSINESS_EMPLOYEE_HIRE_FAILED_TOOLTIP_TEXT">0x88EF7844<!--String: "Friendly relationship is too low to be hired."--></T>
+    <T n="NO_CUSTOMER_TNS_COOLDOWN">600</T>
+    <U n="NO_CUSTOMERS_MATCHING_CRITERIA_TNS">
+      <E n="expand_behavior">FORCE_EXPAND</E>
+      <V n="icon" t="enabled">
+        <V n="enabled" t="small_business" />
+      </V>
+      <V n="primary_icon_response" t="enabled">
+        <U n="enabled">
+          <E n="ui_request">SHOW_SMALL_BUSINESS_PANEL</E>
+        </U>
+      </V>
+      <V n="secondary_icon" t="enabled">
+        <V n="enabled" t="participant" />
+      </V>
+      <V n="text" t="single">
+        <T n="single">0xD2D2BD40<!--String: "The current Required Target Customer Criteria of {0.String} are too strict to accept any Sims!\n\nMaking the Criteria not Required will help invite more customers."--></T>
+      </V>
+      <V n="text_tokens" t="enabled">
+        <U n="enabled">
+          <L n="tokens">
+            <V t="small_business" />
+          </L>
+        </U>
+      </V>
+      <V n="title" t="enabled">
+        <T n="enabled">0x528ABE8E<!--String: "No Possible Customers!"--></T>
+      </V>
+      <L n="ui_responses">
+        <U>
+          <V n="response_command" t="enabled">
+            <V n="enabled" t="literal">
+              <U n="literal">
+                <L n="arguments">
+                  <V t="boolean">
+                    <U n="boolean">
+                      <T n="arg_value">True</T>
+                    </U>
+                  </V>
+                  <V t="participant_id" />
+                </L>
+                <T n="command">business.request_show_small_business_configurator</T>
+              </U>
+            </V>
+          </V>
+          <T n="text">0x481E9A00<!--String: "Open Business Settings"--></T>
+          <E n="ui_request">SEND_COMMAND</E>
+        </U>
+      </L>
+      <E n="urgency">URGENT</E>
+    </U>
+    <V n="NO_VALID_LOT_TNS" t="literal">
+      <U n="literal">
+        <E n="dialog_bg_style">BG_DEFAULT</E>
+        <E n="dialog_style">DEFAULT</E>
+        <V n="icon" t="enabled">
+          <V n="enabled" t="small_business" />
+        </V>
+        <V n="primary_icon_response" t="enabled">
+          <U n="enabled">
+            <E n="ui_request">SHOW_SMALL_BUSINESS_PANEL</E>
+          </U>
+        </V>
+        <V n="secondary_icon" t="enabled">
+          <V n="enabled" t="participant" />
+        </V>
+        <V n="text" t="single">
+          <T n="single">0x7F3BCB07<!--String: "{0.String} is no longer assigned to any valid lots. To be able to open, assign a valid lot in the Small Business Settings.\n\nIf there are no currently valid lots, consider purchasing a Small Business Venue to run this business on."--></T>
+        </V>
+        <V n="text_tokens" t="enabled">
+          <U n="enabled">
+            <L n="tokens">
+              <V t="small_business" />
+            </L>
+          </U>
+        </V>
+        <V n="title" t="enabled">
+          <T n="enabled">0x9370AE85<!--String: "Unassigned Small Business"--></T>
+        </V>
+        <L n="ui_responses">
+          <U>
+            <V n="build_buy_filters" t="disabled" />
+            <T n="text">0xEDA1A378<!--String: "Open Small Business Settings"--></T>
+            <E n="ui_request">SHOW_SMALL_BUSINESS_CONFIGURATOR</E>
+          </U>
+        </L>
+        <E n="urgency">URGENT</E>
+      </U>
+    </V>
+    <V n="ON_SOLD_SMALL_BUSINESS_VENUE_LOT_AFFORDANCE" t="enabled">
+      <T n="enabled">421663<!--SuperInteraction: smallBusiness_BusinessVenueLot_OnSellPhoneCallTNS--></T>
+    </V>
+    <U n="PERK_SETTINGS">
+      <V n="customer_appreciation_day" t="enabled">
+        <U n="enabled">
+          <U n="buff">
+            <T n="buff_type">414763<!--Buff: buff_SmallBusinessPerks_PillarOfTheCommunity--></T>
+          </U>
+          <U n="confirmation_dialog">
+            <V n="text" t="single">
+              <T n="single">0x756B2F9F<!--String: "You are currently hosting a Customer Appreciation Day. Closing the Small Business will automatically end this event.\n\nAre you sure you want to close your Small Business now?"--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x65F69C9C<!--String: "End Customer Appreciation Day?"--></T>
+            </V>
+          </U>
+        </U>
+      </V>
+      <V n="eau_the_store_pheromone" t="enabled">
+        <U n="enabled">
+          <T n="perk_trait">405252<!--Trait: trait_SmallBusiness_Perks_StorePheromone--></T>
+        </U>
+      </V>
+      <V n="fake_employee_payment" t="enabled">
+        <T n="enabled">418606<!--RelationshipBit: relbit_SmallBusiness_ActorEmployee_TargetOwner_FakeSalary--></T>
+      </V>
+      <U n="tip_jar">
+        <L n="tip_types">
+          <U>
+            <T n="perk">373042<!--BucksPerk: smallBusinessPerks_Neutral_TipJar_3--></T>
+            <T n="probability">80</T>
+            <T n="tip_percent">20</T>
+          </U>
+          <U>
+            <T n="perk">373041<!--BucksPerk: smallBusinessPerks_Neutral_TipJar_2--></T>
+            <T n="probability">60</T>
+            <T n="tip_percent">15</T>
+          </U>
+          <U>
+            <T n="perk">373032<!--BucksPerk: smallBusinessPerks_Neutral_TipJar_1--></T>
+            <T n="probability">30</T>
+          </U>
+        </L>
+      </U>
+      <U n="ultrasonic_whistle">
+        <T n="perk_name">0x1D3451C5<!--String: "Ultrasonic Whistle"--></T>
+        <T n="trait">405253<!--Trait: trait_SmallBusiness_Perks_UltrasonicWhistle--></T>
+      </U>
+      <U n="viral_on_social_media">
+        <T n="perk">373034<!--BucksPerk: smallBusinessPerks_Neutral_ViralSocialMedia_1--></T>
+        <T n="perk_name">0xEF5BF73F<!--String: "Going Viral"--></T>
+      </U>
+    </U>
+    <U n="PURCHASED_LOT_AUTO_ASSIGNED_TO_SMALL_BUSINESS_TNS">
+      <V n="icon" t="enabled">
+        <V n="enabled" t="small_business" />
+      </V>
+      <V n="primary_icon_response" t="enabled">
+        <U n="enabled">
+          <E n="ui_request">SHOW_SMALL_BUSINESS_PANEL</E>
+        </U>
+      </V>
+      <V n="secondary_icon" t="enabled">
+        <V n="enabled" t="participant" />
+      </V>
+      <V n="text" t="single">
+        <T n="single">0x1B10298C<!--String: "{0.SimFirstName} has purchased {1.String} as a Small Business Venue and can now open {2.String} on this lot.\n\nOther Sims in the household can also assign their Small Businesses here through the Small Business Settings."--></T>
+      </V>
+      <V n="text_tokens" t="enabled">
+        <U n="enabled">
+          <L n="tokens">
+            <V t="participant_type" />
+            <V t="participant_type_special">
+              <U n="participant_type_special">
+                <V n="participant_type" t="zone">
+                  <U n="zone">
+                    <E n="participant">RandomZoneId</E>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="small_business" />
+          </L>
+        </U>
+      </V>
+      <V n="title" t="enabled">
+        <T n="enabled">0xCF9E2EEA<!--String: "Small Business Assigned to the New Lot"--></T>
+      </V>
+    </U>
+    <V n="REGISTER_BUSINESS_NOTIFICATION_TNS" t="literal">
+      <U n="literal">
+        <V n="icon" t="enabled">
+          <V n="enabled" t="small_business" />
+        </V>
+        <V n="primary_icon_response" t="enabled">
+          <U n="enabled">
+            <E n="ui_request">SHOW_SMALL_BUSINESS_PANEL</E>
+          </U>
+        </V>
+        <V n="secondary_icon" t="enabled">
+          <V n="enabled" t="participant" />
+        </V>
+        <V n="text" t="single">
+          <T n="single">0x110FD359<!--String: "{0.SimFirstName} has successfully registered {1.String}, a new Small Business, and can now open it on {0.SimPronounPossessiveDependent} active lot. {0.SimPronounSubjective|xxUpper} {S0.is}{P0.are} ready to start the journey of being a Small Business owner!\n\nOther Sims in the household can also assign lots for their businesses through the Small Business Settings panel. Every Sim can own and run a single Small Business. {0.SimFirstName} can now be assigned tasks to do as owner when the business is open."--></T>
+        </V>
+        <V n="text_tokens" t="enabled">
+          <U n="enabled">
+            <L n="tokens">
+              <V t="participant_type" />
+              <V t="small_business" />
+            </L>
+          </U>
+        </V>
+        <V n="title" t="enabled">
+          <T n="enabled">0xAFAB71D1<!--String: "Small Business Registered!"--></T>
+        </V>
+        <L n="ui_responses">
+          <U>
+            <V n="response_command" t="enabled">
+              <V n="enabled" t="literal">
+                <U n="literal">
+                  <T n="command">business.show_small_business_employee_task_manager</T>
+                </U>
+              </V>
+            </V>
+            <T n="text">0x89031F94<!--String: "Manage Owner Tasks"--></T>
+            <E n="ui_request">SEND_COMMAND</E>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V n="REGISTER_BUSINESS_NOTIFICATION_TNS_ON_INVALID_LOT" t="literal">
+      <U n="literal">
+        <V n="icon" t="enabled">
+          <V n="enabled" t="small_business" />
+        </V>
+        <V n="primary_icon_response" t="enabled">
+          <U n="enabled">
+            <E n="ui_request">SHOW_SMALL_BUSINESS_PANEL</E>
+          </U>
+        </V>
+        <V n="secondary_icon" t="enabled">
+          <V n="enabled" t="participant" />
+        </V>
+        <V n="text" t="single">
+          <T n="single">0x732F8243<!--String: "{0.SimFirstName} has successfully registered {1.String}, a new Small Business! {0.SimPronounSubjective|xxUpper} {S0.is}{P0.are} ready to start the journey of being a Small Business owner!\n\nEvery Sim can own and run a single Small Business. {0.SimFirstName} can now be assigned tasks to do as owner when the business is open."--></T>
+        </V>
+        <V n="text_tokens" t="enabled">
+          <U n="enabled">
+            <L n="tokens">
+              <V t="participant_type" />
+              <V t="small_business" />
+            </L>
+          </U>
+        </V>
+        <V n="title" t="enabled">
+          <T n="enabled">0xAFAB71D1<!--String: "Small Business Registered!"--></T>
+        </V>
+        <L n="ui_responses">
+          <U>
+            <V n="response_command" t="enabled">
+              <V n="enabled" t="literal">
+                <U n="literal">
+                  <T n="command">business.show_small_business_employee_task_manager</T>
+                </U>
+              </V>
+            </V>
+            <T n="text">0x89031F94<!--String: "Manage Owner Tasks"--></T>
+            <E n="ui_request">SEND_COMMAND</E>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V n="SELL_BUSINESS_NOTIFICATION_TNS" t="literal">
+      <U n="literal">
+        <V n="icon" t="enabled">
+          <V n="enabled" t="small_business" />
+        </V>
+        <V n="primary_icon_response" t="enabled">
+          <U n="enabled">
+            <E n="ui_request">SHOW_SMALL_BUSINESS_PANEL</E>
+          </U>
+        </V>
+        <V n="secondary_icon" t="enabled">
+          <V n="enabled" t="participant" />
+        </V>
+        <V n="text" t="single">
+          <T n="single">0x826F62A4<!--String: "{0.SimFirstName} has sold {0.SimPronounPossessiveDependent} Small Business named {1.String}.\n\n{0.SimPronounSubjective|xxUpper} can always register a new one, should the urge to become a Small Business Owner strike in the future!"--></T>
+        </V>
+        <V n="text_tokens" t="enabled">
+          <U n="enabled">
+            <L n="tokens">
+              <V t="participant_type" />
+              <V t="small_business" />
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+    <T n="SMALL_BUSINESS_CUSTOMER_FILTER">402134<!--TunableSimFilter: filter_SmallBusiness_Customers--></T>
+    <L n="SMALL_BUSINESS_CUSTOMER_REPUTATION_FILTER">
+      <U>
+        <T n="key">1</T>
+        <U n="value">
+          <L n="customer_test">
+            <L>
+              <V t="test_based_score_threshold">
+                <U n="test_based_score_threshold">
+                  <T n="test_based_score">434560<!--TestBasedScore: scores_SmallBusiness_Reputation_Trait_Alignment--></T>
+                  <U n="threshold">
+                    <E n="comparison">LESS</E>
+                    <T n="value">-1</T>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+          <T n="probability">70</T>
+        </U>
+      </U>
+      <U>
+        <T n="key">2</T>
+        <U n="value">
+          <L n="customer_test">
+            <L>
+              <V t="test_based_score_threshold">
+                <U n="test_based_score_threshold">
+                  <T n="test_based_score">434560<!--TestBasedScore: scores_SmallBusiness_Reputation_Trait_Alignment--></T>
+                  <U n="threshold">
+                    <E n="comparison">LESS</E>
+                    <T n="value">-1</T>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+          <T n="probability">70</T>
+        </U>
+      </U>
+      <U>
+        <T n="key">3</T>
+        <U n="value">
+          <L n="customer_test">
+            <L>
+              <V t="test_based_score_threshold">
+                <U n="test_based_score_threshold">
+                  <T n="test_based_score">434560<!--TestBasedScore: scores_SmallBusiness_Reputation_Trait_Alignment--></T>
+                  <U n="threshold">
+                    <E n="comparison">LESS</E>
+                    <T n="value">-1</T>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </U>
+      <U>
+        <T n="key">5</T>
+        <U n="value">
+          <L n="customer_test">
+            <L>
+              <V t="test_based_score_threshold">
+                <U n="test_based_score_threshold">
+                  <T n="test_based_score">434560<!--TestBasedScore: scores_SmallBusiness_Reputation_Trait_Alignment--></T>
+                  <U n="threshold">
+                    <E n="comparison">GREATER</E>
+                    <T n="value">1</T>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </U>
+      <U>
+        <T n="key">6</T>
+        <U n="value">
+          <L n="customer_test">
+            <L>
+              <V t="test_based_score_threshold">
+                <U n="test_based_score_threshold">
+                  <T n="test_based_score">434560<!--TestBasedScore: scores_SmallBusiness_Reputation_Trait_Alignment--></T>
+                  <U n="threshold">
+                    <E n="comparison">GREATER</E>
+                    <T n="value">1</T>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+          <T n="probability">70</T>
+        </U>
+      </U>
+      <U>
+        <T n="key">7</T>
+        <U n="value">
+          <L n="customer_test">
+            <L>
+              <V t="test_based_score_threshold">
+                <U n="test_based_score_threshold">
+                  <T n="test_based_score">434560<!--TestBasedScore: scores_SmallBusiness_Reputation_Trait_Alignment--></T>
+                  <U n="threshold">
+                    <E n="comparison">GREATER</E>
+                    <T n="value">1</T>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+          <T n="probability">70</T>
+        </U>
+      </U>
+    </L>
+    <T n="SMALL_BUSINESS_EMPLOYEE_ON_FIRE_LOOT">422157<!--LootActions: loot_SmallBusiness_Employee_Fired--></T>
+    <U n="SMALL_BUSINESS_HIRE_EMPLOYEE_DIALOG">
+      <T n="show_relationship">True</T>
+      <V n="title" t="enabled">
+        <T n="enabled">0x60D90A98<!--String: "Hire Employee"--></T>
+      </V>
+      <T n="top_skills">3</T>
+    </U>
+    <L n="SMALL_BUSINESS_ICONS">
+      <T p="InEP18\UI\Icons\Headlines\headline_Logo_Arts.png">2f7d0004:00000000:7e76ca755f5ca7a6</T>
+      <T p="InEP18\UI\Icons\Headlines\headline_Logo_Bakery.png">2f7d0004:00000000:46e368baa27ac114</T>
+      <T p="InEP18\UI\Icons\Headlines\headline_Logo_Bar.png">2f7d0004:00000000:c9a4430ca0e3fc07</T>
+      <T p="InEP18\UI\Icons\Headlines\headline_Logo_Beauty.png">2f7d0004:00000000:c5b9e49b8d1cafe0</T>
+      <T p="InEP18\UI\Icons\Headlines\headline_Logo_Books.png">2f7d0004:00000000:55a01677efa85086</T>
+      <T p="InEP18\UI\Icons\Headlines\headline_Logo_Cafe.png">2f7d0004:00000000:9070387569ba085f</T>
+      <T p="InEP18\UI\Icons\Headlines\headline_Logo_Candy.png">2f7d0004:00000000:289d1d82a7051e0b</T>
+      <T p="InEP18\UI\Icons\Headlines\headline_Logo_Children.png">2f7d0004:00000000:2a4d0321668345f5</T>
+      <T p="InEP18\UI\Icons\Headlines\headline_Logo_ClassicalMusic.png">2f7d0004:00000000:9500a695b4375054</T>
+      <T p="InEP18\UI\Icons\Headlines\headline_Logo_Cleaning.png">2f7d0004:00000000:f46bc06c99b7a14d</T>
+      <T p="InEP18\UI\Icons\Headlines\headline_Logo_Cooking.png">2f7d0004:00000000:83b7f51264bfbdbc</T>
+      <T p="InEP18\UI\Icons\Headlines\headline_Logo_Crafting.png">2f7d0004:00000000:ff2ffdb4fa9ce45a</T>
+      <T p="InEP18\UI\Icons\Headlines\headline_Logo_ElectronicGames.png">2f7d0004:00000000:1bb4daa220077253</T>
+      <T p="InEP18\UI\Icons\Headlines\headline_Logo_Fashion.png">2f7d0004:00000000:453576db94038374</T>
+      <T p="InEP18\UI\Icons\Headlines\headline_Logo_FastFood.png">2f7d0004:00000000:9aa4dcb82cfa0ada</T>
+      <T p="InEP18\UI\Icons\Headlines\headline_Logo_Floral.png">2f7d0004:00000000:602524d944ad924e</T>
+      <T p="InEP18\UI\Icons\Headlines\headline_Logo_Grocery.png">2f7d0004:00000000:f4b53b98b58e19c5</T>
+      <T p="InEP18\UI\Icons\Headlines\headline_Logo_Gym.png">2f7d0004:00000000:c9b5370ca0f25b29</T>
+      <T p="InEP18\UI\Icons\Headlines\headline_Logo_Jewelry.png">2f7d0004:00000000:f3d5f9f49c490b12</T>
+      <T p="InEP18\UI\Icons\Headlines\headline_Logo_Microphone.png">2f7d0004:00000000:34a7d65e6a0298a8</T>
+      <T p="InEP18\UI\Icons\Headlines\headline_Logo_Outdoor.png">2f7d0004:00000000:065c0432d2aa3714</T>
+      <T p="InEP18\UI\Icons\Headlines\headline_Logo_Pets.png">2f7d0004:00000000:ea3d21750b214762</T>
+      <T p="InEP18\UI\Icons\Headlines\headline_Logo_Pool.png">2f7d0004:00000000:ea5f26750b3e359a</T>
+      <T p="InEP18\UI\Icons\Headlines\headline_Logo_Pottery.png">2f7d0004:00000000:d21a2506bb2b2567</T>
+      <T p="InEP18\UI\Icons\Headlines\headline_Logo_Retro.png">2f7d0004:00000000:4c49e8f3a8cd4790</T>
+      <T p="InEP18\UI\Icons\Headlines\headline_Logo_Tattoo.png">2f7d0004:00000000:ecd2ba94c93f72a7</T>
+      <T p="InEP18\UI\Icons\Headlines\headline_Logo_TraditionalGames.png">2f7d0004:00000000:c16a3baf492237e8</T>
+      <T p="InEP18\UI\Icons\Headlines\headline_Logo_Wellness.png">2f7d0004:00000000:2be378adf28f3991</T>
+      <T p="InEP18\UI\Icons\Headlines\headline_Logo_Winery.png">2f7d0004:00000000:b6438f31396493f0</T>
+      <T p="InEP18\UI\Icons\Headlines\headline_Logo_Woodworking.png">2f7d0004:00000000:a4c5f04c3fa40658</T>
+    </L>
+    <U n="SMALL_BUSINESS_LOT_PURCHASE_DIALOG">
+      <V n="icon" t="enabled">
+        <V n="enabled" t="small_business" />
+      </V>
+      <V n="primary_icon_response" t="enabled">
+        <U n="enabled">
+          <E n="ui_request">SHOW_SMALL_BUSINESS_PANEL</E>
+        </U>
+      </V>
+      <V n="secondary_icon" t="enabled">
+        <V n="enabled" t="participant" />
+      </V>
+      <V n="text" t="single">
+        <T n="single">0x732F8243<!--String: "{0.SimFirstName} has successfully registered {1.String}, a new Small Business! {0.SimPronounSubjective|xxUpper} {S0.is}{P0.are} ready to start the journey of being a Small Business owner!\n\nEvery Sim can own and run a single Small Business. {0.SimFirstName} can now be assigned tasks to do as owner when the business is open."--></T>
+      </V>
+      <V n="text_tokens" t="enabled">
+        <U n="enabled">
+          <L n="tokens">
+            <V t="participant_type">
+              <U n="participant_type">
+                <V n="objects" t="from_participant">
+                  <U n="from_participant">
+                    <E n="participant">Actor</E>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="small_business">
+              <U n="small_business">
+                <E n="participant">Actor</E>
+              </U>
+            </V>
+          </L>
+        </U>
+      </V>
+      <V n="title" t="enabled">
+        <T n="enabled">0xAFAB71D1<!--String: "Small Business Registered!"--></T>
+      </V>
+      <E n="visual_type">INFORMATION</E>
+    </U>
+    <T n="SMALL_BUSINESS_OWNER_ON_DEATH_LOOT">392528<!--LootActions: loot_SmallBusiness_TransferOnDeathDialog--></T>
+    <E n="SMALL_BUSINESS_PERKS_BUCKS_TYPE">BusinessPerkBucks</E>
+    <T n="SMALL_BUSINESS_POTENTIAL_EMPLOYEE_FILTER">189739<!--TunableSimFilter: filter_SimPicker_HasMet_TYAE--></T>
+    <T n="SMALL_BUSINESS_RANK_RANKED_STATISTIC">374179<!--RankedStatistic: rankedStatistic_SmallBusiness_Rank--></T>
+    <T n="SMALL_BUSINESS_REPUTATION_RANKED_STATISTIC">376319<!--RankedStatistic: rankedStatistic_SmallBusiness_Reputation--></T>
+    <T n="SMALL_BUSINESS_VALUE_STATISTIC">384512<!--Statistic: statistic_OwnableSmallBusiness_BusinessValue--></T>
+    <T n="SMALL_BUSINESS_VENUE_TUNING">394911<!--Venue: venue_SmallBusiness--></T>
+    <E n="SMALL_BUSINESS_VISIT_ROLE_TAG">Role_Business_Customer</E>
+    <T n="SUMMARY_DIALOG_AMOUNT_TEXT">0x7CFEF2DC<!--String: "{0.Number}"--></T>
+    <T n="SUMMARY_DIALOG_ATTENDANCE_FEES_HEADER">0x6EF5595B<!--String: "Ticket Sales"--></T>
+    <T n="SUMMARY_DIALOG_ATTENDANCE_SALES_DISABLED_TOOLTIP">0xEAEFFEA5<!--String: "Ticket Sales are disabled."--></T>
+    <T n="SUMMARY_DIALOG_BUCKS_GAINED_TEXT">0x7D931C03<!--String: "<font color='#199C2C'>+▀ {0.Number}</font> Business Renown"--></T>
+    <T n="SUMMARY_DIALOG_BUSINESS_OPENING_FEE_HEADER">0xFE9B4D30<!--String: "Business Opening Fee"--></T>
+    <T n="SUMMARY_DIALOG_CURRENCY_TEXT">0xC353F40B<!--String: "{0.Money}"--></T>
+    <T n="SUMMARY_DIALOG_CURRENCY_WITH_PERK_BOOST_TEXT">0x335CF670<!--String: "<font color='#199C2C'>˄ + {0.Money}</font>"--></T>
+    <T n="SUMMARY_DIALOG_ENTRY_FEES_TEXT">0x48606758<!--String: "{0.Number} {S0.Customer}{P0.Customers}"--></T>
+    <T n="SUMMARY_DIALOG_HOURLY_FEES_TEXT">0x39C28D0B<!--String: "{0.Number} Hours on Average"--></T>
+    <T n="SUMMARY_DIALOG_INTERACTION_SALES_HEADER">0xBBB7CF4D<!--String: "Revenue from Services"--></T>
+    <T n="SUMMARY_DIALOG_LIGHT_RETAIL_SALES_DISABLED_TOOLTIP">0xCAC6698C<!--String: "Retail Sales disabled."--></T>
+    <T n="SUMMARY_DIALOG_LIGHT_RETAIL_SALES_HEADER">0x62FEDC9B<!--String: "Retail Sales"--></T>
+    <T n="SUMMARY_DIALOG_NO_EMPLOYEES_TOOLTIP">0x4CEC32A9<!--String: "This Small Business has no employees. To hire employees select the Manage Employee button in the Small Business panel or choose the Hire Sim interaction from a selected Sim's pie menu."--></T>
+    <T n="SUMMARY_DIALOG_NO_LIGHT_RETAIL_TOOLTIP">0x7B1EBC54<!--String: "No Retail Displays on lot. To enable Small Business Retail Sales, purchase a Retail Display from the Surfaces category in Build Mode."--></T>
+    <T n="SUMMARY_DIALOG_NO_TICKET_MACHINE_TOOLTIP">0xED02C318<!--String: "No Ticket Kiosk on lot. It can be purchased in the Appliances category in Build Mode."--></T>
+    <T n="SUMMARY_DIALOG_PERK_BOOST_TOOLIP_TEXT">0x2757B4<!--String: "Total customer count was boosted today due to the following perks:\n{0.String}"--></T>
+    <T n="SUMMARY_DIALOG_TIP_JAR_HEADER">0xB45EE379<!--String: "Tip Jar"--></T>
+    <L n="SUPPORTED_INTERACTIONLESS_MONEY_LOOT_TAGS">
+      <E>Func_Wellness_Money</E>
+    </L>
+    <E n="TICKET_MACHINE_TAG">Func_TicketMachine</E>
+    <T n="TRAIT_ON_TRANSFER_BUSINESS">444235<!--Trait: trait_SmallBusiness_Rank_Transferred--></T>
+  </C>
+</M>

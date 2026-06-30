@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="RandomWeightedLoot" i="action" m="interactions.utils.loot" n="randomWeightedLoot_Dynasty_MarketFundChange" s="465504">
+  <L n="random_loot_actions">
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">465473<!--LootActions: loot_Dynasty_MarketFund_ChangeIncrease--></T>
+      </V>
+      <U n="luck_option_config">
+        <T n="show_impacts">False</T>
+      </U>
+      <U n="weight">
+        <T n="base_value">3</T>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">465649<!--LootActions: loot_Dynasty_MarketFund_ChangeDecrease--></T>
+      </V>
+      <U n="luck_option_config">
+        <T n="show_impacts">False</T>
+      </U>
+      <U n="weight">
+        <T n="base_value">1</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">2</T>
+            <L n="tests">
+              <L>
+                <V t="statistic">
+                  <U n="statistic">
+                    <T n="stat">465643<!--Statistic: statistic_Dynasty_MarketFund_RiskLevel--></T>
+                    <V n="threshold" t="value_threshold">
+                      <U n="value_threshold">
+                        <E n="comparison">EQUAL</E>
+                        <T n="value">3</T>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+  </L>
+</I>

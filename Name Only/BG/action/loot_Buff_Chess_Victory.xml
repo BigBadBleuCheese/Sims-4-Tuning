@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Buff_Chess_Victory" s="28206">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x2EC72161<!--String: "(From Winning a Chess Match)"--></T>
+          </V>
+          <T n="buff_type">28209<!--Buff: Buff_Object_ChessTableWin--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="skill_test">
+              <U n="skill_test">
+                <T n="skill">16706<!--Skill: statistic_Skill_AdultMajor_Logic--></T>
+                <V n="skill_range" t="interval">
+                  <U n="interval">
+                    <U n="skill_interval">
+                      <T n="upper_bound">8</T>
+                    </U>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x2EC72161<!--String: "(From Winning a Chess Match)"--></T>
+          </V>
+          <T n="buff_type">28210<!--Buff: Buff_Object_ChessTableWin_HighLogic--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="skill_test">
+              <U n="skill_test">
+                <T n="skill">16706<!--Skill: statistic_Skill_AdultMajor_Logic--></T>
+                <V n="skill_range" t="interval">
+                  <U n="interval">
+                    <U n="skill_interval">
+                      <T n="lower_bound">9</T>
+                      <T n="upper_bound">10</T>
+                    </U>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="actions">
+      <T n="actions">391559<!--LootActions: loot_GrimRework_WinGame--></T>
+    </V>
+    <V t="actions">
+      <T n="actions">464610<!--LootActions: loot_GameOutcome_Win--></T>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">492786<!--Buff: buff_Enemy_WonGameAGainstEnemy_Hidden--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="relationship">
+              <U n="relationship">
+                <U n="required_relationship_bits">
+                  <L n="match_any">
+                    <T>26566<!--RelationshipBit: SpecialBits_DeclaredArchEnemy--></T>
+                    <T>26560<!--RelationshipBit: SpecialBits_Enemy--></T>
+                  </L>
+                </U>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">494120<!--Buff: buff_LiveEvent_EV008_PlayerWonChessMatchHidden--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <E n="subject">TargetSim</E>
+                <L n="whitelist_traits">
+                  <T>494827<!--Trait: trait_EV008_RoyalEnvoy--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="interaction">
+      <U n="interaction">
+        <E n="affordance_priority">Critical</E>
+        <L n="affordances">
+          <T>169887<!--ImmediateSuperInteraction: Push_Leave_Lot_Must_Run_Immediate--></T>
+        </L>
+        <E n="subject">TargetSim</E>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <E n="subject">TargetSim</E>
+                <L n="whitelist_traits">
+                  <T>494827<!--Trait: trait_EV008_RoyalEnvoy--></T>
+                </L>
+              </U>
+            </V>
+            <V t="buff">
+              <U n="buff">
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>447710<!--Buff: buff_LiveEvent_CompleteEventGoal--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

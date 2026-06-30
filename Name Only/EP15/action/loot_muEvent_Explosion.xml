@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_muEvent_Explosion" s="341481">
+  <L n="loot_actions">
+    <V t="state_change">
+      <U n="state_change">
+        <T n="state_value">39611<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change--></T>
+        <V n="subject" t="participant">
+          <E n="participant">Object</E>
+        </V>
+      </U>
+    </V>
+    <V t="state_change">
+      <U n="state_change">
+        <T n="state_value">15076<!--CommodityBasedObjectStateValue: Brokenness_Broken--></T>
+        <V n="subject" t="participant">
+          <E n="participant">Object</E>
+        </V>
+      </U>
+    </V>
+    <V t="vfx">
+      <U n="vfx">
+        <E n="subject">Object</E>
+        <U n="vfx">
+          <T n="effect_name">ep15_gas_explosion</T>
+          <V n="joint_name" t="Slot">
+            <T n="Slot">_focus_</T>
+          </V>
+        </U>
+      </U>
+    </V>
+    <V t="oneshot_broadcaster">
+      <U n="oneshot_broadcaster">
+        <U n="broadcaster_request">
+          <L n="broadcaster_types">
+            <U>
+              <T n="item">341482<!--Broadcaster: broadcaster_muEvent_Explosion_SpreadFire--></T>
+            </U>
+            <U>
+              <T n="item">342829<!--Broadcaster: broadcaster_muEvent_Explosion_Reaction--></T>
+            </U>
+          </L>
+        </U>
+        <E n="subject">Object</E>
+      </U>
+    </V>
+  </L>
+</I>

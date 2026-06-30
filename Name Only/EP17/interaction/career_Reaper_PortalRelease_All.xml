@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="career_Reaper_PortalRelease_All" s="422527">
+  <V n="_saveable" t="enabled" />
+  <L n="_static_commodities">
+    <U>
+      <T n="static_commodity">383231<!--StaticCommodity: commodity_RoleAutonomy_ReaperCareer_CoWorker--></T>
+    </U>
+    <U>
+      <T n="static_commodity">383236<!--StaticCommodity: commodity_RoleAutonomy_ReaperCareer_Grim--></T>
+    </U>
+  </L>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">382590<!--AnimationElement: career_Reaper_release--></T>
+        <U n="overrides">
+          <V n="balloons" t="enabled">
+            <L n="enabled">
+              <U>
+                <L n="balloon_choices">
+                  <U>
+                    <V n="item" t="balloon_icon">
+                      <U n="balloon_icon">
+                        <V n="icon" t="participant">
+                          <U n="participant">
+                            <L n="participant_type">
+                              <E>Object</E>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </U>
+                </L>
+                <L n="balloon_target">
+                  <E>Actor</E>
+                </L>
+              </U>
+            </L>
+          </V>
+        </U>
+      </U>
+    </U>
+  </V>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xF520E150<!--String: "Release <b>All</b> Souls to Netherworld"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <L n="basic_extras">
+              <V t="destroy_specified_objects_from_target_inventory">
+                <U n="destroy_specified_objects_from_target_inventory">
+                  <V n="count" t="number" />
+                  <E n="inventory_owner">Actor</E>
+                  <L n="object_tests">
+                    <L>
+                      <V t="object_definition_criteria">
+                        <U n="object_definition_criteria">
+                          <V n="identity_test" t="definition_id">
+                            <U n="definition_id">
+                              <T n="actual_object">419190</T>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+              </V>
+            </L>
+            <L n="loot_list">
+              <T>383967<!--LootActions: loot_Career_Reaper_PerformanceGain_Large--></T>
+              <T>384359<!--RandomWeightedLoot: randomWeightedLoot_Skeptical_AddRandomBuff--></T>
+              <T>400990<!--LootActions: loot_Career_Reaper_IncreaseTarget--></T>
+            </L>
+          </U>
+        </U>
+      </L>
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="basic_extras">
+                  <V t="destroy_specified_objects_from_target_inventory">
+                    <U n="destroy_specified_objects_from_target_inventory">
+                      <V n="count" t="number" />
+                      <E n="inventory_owner">Actor</E>
+                      <L n="object_tests">
+                        <L>
+                          <V t="object_definition_criteria">
+                            <U n="object_definition_criteria">
+                              <V n="identity_test" t="definition_id">
+                                <U n="definition_id">
+                                  <T n="actual_object">419190</T>
+                                </U>
+                              </V>
+                            </U>
+                          </V>
+                        </L>
+                      </L>
+                    </U>
+                  </V>
+                </L>
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">422527<!--SuperInteraction: career_Reaper_PortalRelease_All--></T>
+                  </U>
+                </L>
+                <L n="loot_list">
+                  <T>383967<!--LootActions: loot_Career_Reaper_PerformanceGain_Large--></T>
+                  <T>384359<!--RandomWeightedLoot: randomWeightedLoot_Skeptical_AddRandomBuff--></T>
+                  <T>400990<!--LootActions: loot_Career_Reaper_IncreaseTarget--></T>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="inventory">
+                <U n="inventory">
+                  <V n="contents_check" t="has_object_with_def">
+                    <U n="has_object_with_def">
+                      <T n="definition">419190</T>
+                    </U>
+                  </V>
+                  <V n="inventory_location" t="participant_inventory">
+                    <U n="participant_inventory">
+                      <E n="inventory">Actor</E>
+                    </U>
+                  </V>
+                  <U n="required_count">
+                    <T n="value">2</T>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T p="InEP17\UI\Icons\PieMenu\Interactions\icon_pieMenu_Reaper.png" n="key">2f7d0004:00000000:a95c18ad1ba6103e</T>
+      </U>
+    </V>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="state">
+      <U n="state">
+        <V n="fallback_behavior" t="always_pass" />
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xACB612CF<!--String: "Repairs Needed"--></T>
+        </V>
+        <T n="value">15081<!--ObjectStateValue: BrokenState_Unbroken--></T>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">399186<!--TestSetInstance: testSet_Career_ReaperCareer_PortalRelease--></T>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

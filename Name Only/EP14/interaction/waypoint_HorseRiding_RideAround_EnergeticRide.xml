@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="WaypointInteraction" i="interaction" m="interactions.jog_interaction" n="waypoint_HorseRiding_RideAround_EnergeticRide" s="326811">
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Actor</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="time_based">
+                <U n="time_based">
+                  <T n="max_time">180</T>
+                  <T n="min_time">150</T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+      </L>
+      <V n="content" t="looping_content" />
+      <V n="link_carried_sims" t="enabled" />
+      <V n="periodic_stat_change" t="enabled">
+        <U n="enabled">
+          <U n="operation_actions">
+            <L n="actions">
+              <T>499632<!--LootActions: loot_Dynasty_ValueBasedPrestige_EquestrianSkill_Routing--></T>
+              <T>327964<!--LootActions: loot_Commodity_HorseTraining_Fatigue_Gain_Small--></T>
+            </L>
+          </U>
+          <L n="operations">
+            <V t="reference">
+              <T n="reference">461241<!--PeriodicStatChangeOperation: periodicStatChange_ParkWorker_Daily_OutdoorActivity--></T>
+            </V>
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="amount">2.08</T>
+                <T n="exclusive_to_owning_si">False</T>
+                <T n="stat">312270<!--Commodity: motive_Horse_Social--></T>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+              </U>
+            </V>
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="amount">2.08</T>
+                <T n="exclusive_to_owning_si">False</T>
+                <T n="stat">16658<!--Commodity: motive_Social--></T>
+                <L n="subject">
+                  <E>RoutingSlaves</E>
+                </L>
+              </U>
+            </V>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="buff_fire_and_forget">
+      <U n="buff_fire_and_forget">
+        <U n="buff">
+          <T n="buff_type">340772<!--Buff: buff_Horse_Moodlets_Happy_Energetic_GotExercise--></T>
+        </U>
+        <U n="success_chance">
+          <L n="multipliers">
+            <U>
+              <T n="multiplier">0</T>
+              <L n="tests">
+                <L>
+                  <V t="trait">
+                    <U n="trait">
+                      <L n="blacklist_traits">
+                        <T>322878<!--Trait: trait_Horse_Personality_Energetic--></T>
+                      </L>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+          </L>
+        </U>
+      </U>
+    </V>
+  </L>
+  <L n="basic_liabilities">
+    <V t="remove_buff">
+      <U n="remove_buff">
+        <T n="buff_to_remove">326967<!--Buff: buff_HorseRiding_Walkstyle_Trot--></T>
+      </U>
+    </V>
+    <V t="remove_buff">
+      <U n="remove_buff">
+        <T n="buff_to_remove">331993<!--Buff: buff_HorseRiding_Walkstyle_Trot_LowSkill--></T>
+      </U>
+    </V>
+    <V t="remove_buff">
+      <U n="remove_buff">
+        <T n="buff_to_remove">345115<!--Buff: buff_HorseRiding_Walkstyle_Ghost_Trot--></T>
+      </U>
+    </V>
+    <V t="remove_buff">
+      <U n="remove_buff">
+        <T n="buff_to_remove">331997<!--Buff: buff_HorseRiding_Walkstyle_Trot_LowSkill_BuckWild--></T>
+      </U>
+    </V>
+    <V t="remove_buff">
+      <U n="remove_buff">
+        <T n="buff_to_remove">345116<!--Buff: buff_HorseRiding_Walkstyle_Ghost_Trot_LowSkill--></T>
+      </U>
+    </V>
+  </L>
+  <V n="canonical_animation" t="disabled" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x325A9482<!--String: "Go for Energetic Ride"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+    <E>Interaction_Animal</E>
+  </L>
+  <V n="max_goal_clipping_score_override" t="enabled">
+    <T n="enabled">30</T>
+  </V>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="basic_extras">
+          <V t="buff_fire_and_forget">
+            <U n="buff_fire_and_forget">
+              <U n="buff">
+                <V n="buff_reason" t="enabled">
+                  <T n="enabled">0xD862623A<!--String: "(From Riding a Horse Around the World)"--></T>
+                </V>
+                <T n="buff_type">326887<!--Buff: buff_HorseRiding_Happy_ReinInTheScenery--></T>
+              </U>
+              <E n="participant">RoutingSlaves</E>
+              <V n="timing" t="at_end" />
+            </U>
+          </V>
+        </L>
+        <L n="loot_list">
+          <T>326889<!--LootActions: loot_Relationship_SimToPet_Gain_HorseRiding--></T>
+        </L>
+      </U>
+    </U>
+  </V>
+  <V n="require_reins_for_formation" t="enabled">
+    <T n="enabled">314817<!--RoutingFormation: routingFormation_HorseRiding_Ride--></T>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="include_all" />
+    </U>
+  </V>
+  <E n="target_type">ACTOR</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E>HORSE</E>
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="identity">
+      <U n="identity">
+        <T n="subjects_match">True</T>
+      </U>
+    </V>
+    <V t="participant_running_interaction">
+      <U n="participant_running_interaction">
+        <L n="affordances">
+          <T>312885<!--SuperInteraction: socialSuperInteraction_CarryPickUp_HorseRiding--></T>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <V n="whitelist" t="enabled">
+          <L n="enabled">
+            <T>326967<!--Buff: buff_HorseRiding_Walkstyle_Trot--></T>
+            <T>331993<!--Buff: buff_HorseRiding_Walkstyle_Trot_LowSkill--></T>
+            <T>331997<!--Buff: buff_HorseRiding_Walkstyle_Trot_LowSkill_BuckWild--></T>
+            <T>345115<!--Buff: buff_HorseRiding_Walkstyle_Ghost_Trot--></T>
+            <T>345116<!--Buff: buff_HorseRiding_Walkstyle_Ghost_Trot_LowSkill--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+  <V n="waypoint_constraint" t="spawn_points">
+    <U n="spawn_points">
+      <T n="constraint_radius">10</T>
+      <V n="mobile_posture_override" t="disabled" />
+      <V n="spawn_point_tags" t="enabled">
+        <L n="enabled">
+          <E>Spawn_Walkby</E>
+          <E>Spawn_VisitorArrival</E>
+          <E>Spawn_RearWalkby</E>
+        </L>
+      </V>
+    </U>
+  </V>
+  <T n="waypoint_count">3</T>
+  <V n="waypoint_route_fail_balloon" t="enabled">
+    <U n="enabled">
+      <L n="balloon_choices">
+        <U>
+          <V n="item" t="balloon_icon">
+            <U n="balloon_icon">
+              <V n="icon" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_RouteFail.png">2f7d0004:00000000:97cc3201d9f385cf</T>
+                </U>
+              </V>
+            </U>
+          </V>
+        </U>
+      </L>
+      <L n="balloon_target">
+        <E>Actor</E>
+      </L>
+    </U>
+  </V>
+  <U n="waypoint_walk_style">
+    <E n="priority">INTERACTION</E>
+    <T p="InEP14\Locomotion\Horse_Riding_Trot.walkstyle" n="walkstyle">27c01d95:00000000:0000000002c6f268</T>
+  </U>
+</I>

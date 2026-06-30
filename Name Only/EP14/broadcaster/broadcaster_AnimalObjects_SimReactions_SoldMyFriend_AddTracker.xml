@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Broadcaster" i="broadcaster" m="broadcasters.broadcaster" n="broadcaster_AnimalObjects_SimReactions_SoldMyFriend_AddTracker" s="339287">
+  <V n="allow_objects" t="disallow" />
+  <T n="allow_sims">True</T>
+  <V n="clustering" t="disabled" />
+  <L n="constraints">
+    <V t="circle">
+      <U n="circle">
+        <T n="radius">50</T>
+      </U>
+    </V>
+  </L>
+  <L n="effects">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">339253<!--Buff: buff_AnimalObjects_soldMyfriend_Tracker--></T>
+        </U>
+        <T n="remove_buff">False</T>
+        <L n="tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="ages" t="specified">
+                  <L n="specified">
+                    <E>TEEN</E>
+                    <E>CHILD</E>
+                  </L>
+                </V>
+                <V n="species" t="specified">
+                  <U n="specified">
+                    <L n="species">
+                      <E />
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="species" t="specified">
+                  <U n="specified">
+                    <L n="species">
+                      <E>HORSE</E>
+                    </L>
+                  </U>
+                </V>
+                <E n="who">TargetSim</E>
+              </U>
+            </V>
+            <V t="relationship">
+              <U n="relationship">
+                <U n="relationship_score_interval">
+                  <T n="lower_bound">60</T>
+                </U>
+                <T n="track">159228<!--RelationshipTrack: LTR_SimToPet_Friendship_Main--></T>
+              </U>
+            </V>
+          </L>
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="ages" t="specified">
+                  <L n="specified">
+                    <E>TEEN</E>
+                    <E>CHILD</E>
+                  </L>
+                </V>
+                <V n="species" t="specified">
+                  <U n="specified">
+                    <L n="species">
+                      <E />
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="object_definition_criteria">
+              <U n="object_definition_criteria">
+                <V n="identity_test" t="tags">
+                  <U n="tags">
+                    <L n="tag_set">
+                      <E>Func_AnimalObject_Livestock_Goat</E>
+                      <E>Func_AnimalObject_Livestock_Sheep</E>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="object_relationship">
+              <U n="object_relationship">
+                <V n="relationship_status" t="relationship_range">
+                  <U n="relationship_range">
+                    <U n="value_interval">
+                      <T n="lower_bound">60</T>
+                    </U>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="frequency" t="on_enter" />
+  <T n="immediate">True</T>
+</I>

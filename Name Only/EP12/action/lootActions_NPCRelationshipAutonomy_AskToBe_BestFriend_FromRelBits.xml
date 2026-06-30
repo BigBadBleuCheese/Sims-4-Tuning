@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="lootActions_NPCRelationshipAutonomy_AskToBe_BestFriend_FromRelBits" s="282038">
+  <L n="loot_actions">
+    <V t="actions">
+      <T n="actions">281978<!--RandomWeightedLoot: randomWeightedLoot_NPCRelationshipAutonomy_AskToBe_BestFriend--></T>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified">
+            <L n="specified">
+              <E>YOUNGADULT</E>
+              <E>ADULT</E>
+              <E>ELDER</E>
+            </L>
+          </V>
+          <V n="npc" t="enabled">
+            <T n="enabled">True</T>
+          </V>
+        </U>
+      </V>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified">
+            <L n="specified">
+              <E>YOUNGADULT</E>
+              <E>ADULT</E>
+              <E>ELDER</E>
+            </L>
+          </V>
+          <V n="npc" t="enabled" />
+          <E n="who">TargetSim</E>
+        </U>
+      </V>
+      <V t="game_option">
+        <U n="game_option">
+          <E n="gameplay_option">NPC_AUTONOMY_FRIENDLY</E>
+        </U>
+      </V>
+      <V t="test_set_reference">
+        <T n="test_set_reference">339157<!--TestSetInstance: testSet_Actor_NotSpecialNPC--></T>
+      </V>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="prohibited_relationship_bits">
+            <L n="match_any">
+              <T>15794<!--RelationshipBit: friendship-bff--></T>
+            </L>
+          </U>
+          <L n="target_sim">
+            <E>AllRelationships</E>
+          </L>
+        </U>
+      </V>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="prohibited_relationship_bits">
+            <L n="match_any">
+              <T>15794<!--RelationshipBit: friendship-bff--></T>
+            </L>
+          </U>
+          <L n="subject">
+            <E>TargetSim</E>
+          </L>
+          <L n="target_sim">
+            <E>AllRelationships</E>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

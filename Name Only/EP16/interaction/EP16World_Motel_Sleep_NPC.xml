@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="EP16World_Motel_Sleep_NPC" s="376283">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="spawn_points">
+            <U n="spawn_points">
+              <E n="spawn_point_request_reason">DEFAULT</E>
+              <V n="tags" t="Spawn_Point_Tags">
+                <L n="Spawn_Point_Tags">
+                  <E>Spawn_EP16World_Motel</E>
+                </L>
+              </V>
+              <T n="use_lot_id">False</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <L n="_static_commodities">
+    <U>
+      <T n="static_commodity">376281<!--StaticCommodity: staticCommodity_Role_EP16World_ShellVisitor_Motel--></T>
+    </U>
+  </L>
+  <T n="allow_autonomous">True</T>
+  <T n="allow_user_directed">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="time_based">
+                <U n="time_based">
+                  <T n="max_time">60</T>
+                  <T n="min_time">30</T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+      </L>
+      <V n="content" t="looping_content">
+        <U n="looping_content">
+          <U n="animation_ref">
+            <T n="factory">8749<!--AnimationElement: PostureIdle_Stand--></T>
+          </U>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="set_visibility_state">
+      <U n="set_visibility_state">
+        <T n="fade">True</T>
+        <V n="timing" t="at_beginning" />
+        <T n="visibility">False</T>
+      </U>
+    </V>
+    <V t="set_visibility_state">
+      <U n="set_visibility_state">
+        <T n="fade">True</T>
+        <V n="timing" t="at_end">
+          <U n="at_end">
+            <E n="criticality">OnCancelOrException</E>
+          </U>
+        </V>
+        <T n="visibility">True</T>
+      </U>
+    </V>
+  </L>
+  <V n="basic_reserve_object" t="disabled" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xDB72B029<!--String: "Rent a Room for Sleep"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="basic_extras">
+          <V t="destroy_situations_by_tags">
+            <U n="destroy_situations_by_tags">
+              <L n="situation_tags">
+                <E>Situation_ShellVisitor</E>
+              </L>
+              <V n="timing" t="at_end">
+                <U n="at_end">
+                  <E n="criticality">OnCancelOrException</E>
+                </U>
+              </V>
+            </U>
+          </V>
+        </L>
+      </U>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all" />
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals" />
+  <T n="time_overhead">30</T>
+</I>

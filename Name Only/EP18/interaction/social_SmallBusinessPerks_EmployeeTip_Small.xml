@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SocialSuperInteraction" i="interaction" m="interactions.social.social_super_interaction" n="social_SmallBusinessPerks_EmployeeTip_Small" s="412475">
+  <E n="_constraints_actor">Actor</E>
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>TargetSim</E>
+      </L>
+    </U>
+  </V>
+  <L n="_party_size_weight_tuning">
+    <U>
+      <T n="y">100</T>
+    </U>
+    <U>
+      <T n="x">1</T>
+      <T n="y">100</T>
+    </U>
+    <U>
+      <T n="x">2</T>
+      <T n="y">50</T>
+    </U>
+    <U>
+      <T n="x">3</T>
+      <T n="y">0</T>
+    </U>
+    <U>
+      <T n="x">4</T>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <T n="_social_group_type">74849<!--JigGroup: group_Platonic--></T>
+  <V n="affordance_to_push_on_target" t="push_affordance">
+    <T n="push_affordance">404714<!--SocialSuperInteraction: smallBusiness_Socials_Employee_Listen_Platonic--></T>
+  </V>
+  <T n="allow_autonomous">False</T>
+  <T n="attention_cost">0</T>
+  <V n="basic_content" t="one_shot" />
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>162659<!--LootActions: loot_Commodity_Culling_GhostAdd_target--></T>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x9C09275F<!--String: "(From Being in a social group with at least 3 Sims)"--></T>
+          </V>
+          <T n="buff_type">125555<!--Buff: buff_Trait_WithMyFriends--></T>
+        </U>
+        <L n="subject">
+          <E>Actor</E>
+          <E>SocialGroupSims</E>
+          <E>TargetSim</E>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="social_group">
+              <U n="social_group">
+                <V n="threshold" t="enabled">
+                  <U n="enabled">
+                    <T n="value">3</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="relationship_bit">
+      <U n="relationship_bit">
+        <U n="relationship_bits_begin">
+          <L n="bit_operations">
+            <U>
+              <T n="bit">440197<!--RelationshipBit: shortTermBits_SmallBusinessPerks_ActorOwner_TargetEmployeeTip--></T>
+              <E n="operation">ADD</E>
+              <E n="recipients">Actor</E>
+              <E n="targets">TargetSim</E>
+            </U>
+          </L>
+        </U>
+      </U>
+    </V>
+    <V t="payment">
+      <U n="payment">
+        <T n="display_only">True</T>
+        <V n="payment" t="literal">
+          <U n="literal">
+            <V n="payment_cost" t="amount">
+              <U n="amount">
+                <T n="amount">10</T>
+              </U>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>428980<!--LootActions: loot_Shady_BalancingAct--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="basic_reserve_object" t="disabled" />
+  <T n="category">412474<!--PieMenuCategory: pieMenuCategory_Socials_SmallBusinessPerks_GiveBonus--></T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xA8797C82<!--String: "Give"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <V n="idle_animation" t="enabled">
+    <U n="enabled">
+      <T n="factory">11570<!--AnimationElement: Listen_Listen_Looping_basic--></T>
+    </U>
+  </V>
+  <T n="ignore_group_socials">False</T>
+  <L n="interaction_category_tags">
+    <E>Interaction_SocialSuper</E>
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+    <E>Interaction_SocialAll</E>
+    <E>Interaction_Social_Contagious</E>
+  </L>
+  <T n="invite_in_after_interaction">True</T>
+  <U n="listen_animation">
+    <T n="factory">11570<!--AnimationElement: Listen_Listen_Looping_basic--></T>
+  </U>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <V n="animation_ref" t="enabled">
+              <U n="enabled">
+                <T n="factory">412480<!--AnimationElement: smallBusinessPerks_EmployeeTip--></T>
+              </U>
+            </V>
+            <L n="basic_extras">
+              <V t="buff_fire_and_forget">
+                <U n="buff_fire_and_forget">
+                  <U n="buff">
+                    <V n="buff_reason" t="enabled">
+                      <T n="enabled">0xB76E0953<!--String: "(From Employee Bonus Small Business Perk)"--></T>
+                    </V>
+                    <T n="buff_type">411656<!--Buff: buff_SmallBusinessPerks_EmployeeTip_Failure--></T>
+                  </U>
+                  <E n="participant">Actor</E>
+                </U>
+              </V>
+              <V t="buff_fire_and_forget">
+                <U n="buff_fire_and_forget">
+                  <U n="buff">
+                    <T n="buff_type">426562<!--Buff: buff_SmallBusinessPerks_EmployeeTip_Failure_Hidden--></T>
+                  </U>
+                  <E n="participant">TargetSim</E>
+                </U>
+              </V>
+            </L>
+            <L n="loot_list">
+              <T>130277<!--LootActions: rel_Loss_Small_TargetSim--></T>
+              <T>414109<!--LootActions: lootActions_SmallBusinessPerks_EmployeeTip_Failure_Small--></T>
+            </L>
+            <E n="outcome_result">FAILURE</E>
+          </U>
+        </U>
+      </L>
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">412480<!--AnimationElement: smallBusinessPerks_EmployeeTip--></T>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <V n="buff_reason" t="enabled">
+                          <T n="enabled">0xB76E0953<!--String: "(From Employee Bonus Small Business Perk)"--></T>
+                        </V>
+                        <T n="buff_type">411655<!--Buff: buff_SmallBusinessPerks_EmployeeTip_Success--></T>
+                      </U>
+                      <E n="participant">Actor</E>
+                    </U>
+                  </V>
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <T n="buff_type">426561<!--Buff: buff_SmallBusinessPerks_EmployeeTip_Success_Hidden--></T>
+                      </U>
+                      <E n="participant">TargetSim</E>
+                    </U>
+                  </V>
+                </L>
+                <L n="loot_list">
+                  <T>411659<!--LootActions: lootActions_SmallBusinessPerks_EmployeeTip_Success_Small--></T>
+                  <T>130279<!--LootActions: rel_Gain_Small_TargetSim--></T>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="test_based_score_threshold">
+                <U n="test_based_score_threshold">
+                  <T n="test_based_score">249138<!--TestBasedScore: scores_socialoutcomes_friendly_AlwaysOn--></T>
+                  <U n="threshold">
+                    <T n="value">10</T>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T p="InEP18\UI\Icons\PieMenu\PieMenu_Dreamer.png" n="key">2f7d0004:00000000:87891d7977060f7d</T>
+      </U>
+    </V>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <T n="relationship_scoring">True</T>
+  <E n="scoring_priority">NORMAL</E>
+  <V n="sim_affinity_posture_scoring_data" t="enabled">
+    <U n="enabled">
+      <L n="my_scoring">
+        <U>
+          <V n="affinity_strategy" t="relationship_based" />
+          <T n="negate_tag">True</T>
+          <E n="running_interaction_tag">Sleeping</E>
+        </U>
+        <U>
+          <V n="affinity_strategy" t="avoid" />
+          <E n="running_interaction_tag">Very_Loud</E>
+        </U>
+      </L>
+      <L n="my_tags">
+        <E>Loud</E>
+        <E>Chat</E>
+      </L>
+    </U>
+  </V>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">TARGET</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">TargetSim</E>
+      </U>
+    </V>
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="situation_job_test">
+      <U n="situation_job_test">
+        <T n="negate">False</T>
+        <E n="participant">TargetSim</E>
+        <L n="situation_jobs">
+          <T>399327<!--SituationJob: jobs_SmallBusinessEmployee_Work--></T>
+        </L>
+      </U>
+    </V>
+    <V t="is_small_business_open">
+      <U n="is_small_business_open">
+        <E n="participant">Actor</E>
+      </U>
+    </V>
+    <V t="relationship">
+      <U n="relationship">
+        <U n="prohibited_relationship_bits">
+          <L n="match_all">
+            <T>440197<!--RelationshipBit: shortTermBits_SmallBusinessPerks_ActorOwner_TargetEmployeeTip--></T>
+          </L>
+        </U>
+        <L n="subject">
+          <E>Actor</E>
+        </L>
+        <L n="target_sim">
+          <E>TargetSim</E>
+        </L>
+        <E n="test_event">AllRelationshipEvents</E>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xCA445B66<!--String: "{1.SimFirstName} has recently received a bonus."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="recreationTable_puzzles_framePuzzle" s="309069">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="circle">
+            <U n="circle">
+              <T n="radius">2</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_forwarding" t="Forward" />
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">23926<!--AnimationElement: Generic_PickUp--></T>
+      </U>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="create_object">
+      <U n="create_object">
+        <V n="creation_data" t="clone_object">
+          <U n="clone_object">
+            <V n="definition_override" t="enabled">
+              <T n="enabled">325712</T>
+            </V>
+            <V n="source_object" t="is_participant" />
+          </U>
+        </V>
+        <L n="initial_states">
+          <U>
+            <T n="state">304623<!--CommodityBasedObjectStateValue: recreationTable_puzzleProgress_values_complete_size1--></T>
+          </U>
+        </L>
+        <V n="location" t="inventory" />
+        <V n="notification_inventory" t="disabled" />
+        <E n="owner_sim">Actor</E>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+    <V t="painting_state_transfer">
+      <U n="painting_state_transfer">
+        <E n="_target_participant">CreatedObject</E>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>316346<!--LootActions: loot_recreationTable_puzzles_setFramedPieceSize--></T>
+        </L>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+    <V t="payment">
+      <U n="payment">
+        <V n="payment" t="literal">
+          <U n="literal">
+            <V n="payment_cost" t="amount">
+              <U n="amount">
+                <T n="amount">45</T>
+              </U>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="save_participant">
+      <U n="save_participant">
+        <E n="participant">Object</E>
+      </U>
+    </V>
+  </L>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xEF993A3C<!--String: "Frame Puzzle"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="continuation">
+          <U>
+            <T n="affordance">317115<!--SuperInteraction: recreationTable_puzzles_reset_boxCreate--></T>
+            <E n="target">ObjectParent</E>
+          </U>
+        </L>
+      </U>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="state">
+      <U n="state">
+        <E n="operator">NOTEQUAL</E>
+        <T n="value">318116<!--ObjectStateValue: recreationTable_puzzles_smashed_true--></T>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="state">
+        <U n="state">
+          <T n="value">307997<!--ObjectStateValue: recreationTable_puzzles_crafting_finished--></T>
+          <E n="who">ObjectParent</E>
+        </U>
+      </V>
+    </L>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

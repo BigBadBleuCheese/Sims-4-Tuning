@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Buff" i="buff" m="buffs.buff" n="buff_Role_SmallBusinessEmployee_BusinessWork_Owner" s="424957">
+  <L n="actor_mixers">
+    <U>
+      <T n="key">13998<!--SocialSuperInteraction: sim_Chat--></T>
+      <L n="value">
+        <T>424956<!--SocialMixerInteraction: mixer_Social_Targeted_Friendly_SmallBusiness_WelcomeToBusiness--></T>
+        <T>426470<!--SocialMixerInteraction: socials_Targeted_Friendly_SmallBusiness_ConnectOverPastBusiness--></T>
+      </L>
+    </U>
+  </L>
+  <T p="InGame\Audio\Stings\sting_buff_gain.propx" n="audio_sting_on_add">39b2aa4a:00000000:8af8b916cf64c646</T>
+  <T p="InGame\Audio\Stings\sting_buff_loss.propx" n="audio_sting_on_remove">39b2aa4a:00000000:3bf33216a25546ea</T>
+  <U n="game_effect_modifier">
+    <L n="_game_effect_modifiers">
+      <V t="affordance_modifier">
+        <U n="affordance_modifier">
+          <L n="basic_extras">
+            <V t="relationship_bit">
+              <U n="relationship_bit">
+                <U n="relationship_bits_end">
+                  <L n="bit_operations">
+                    <U>
+                      <T n="allow_readdition">False</T>
+                      <T n="bit">426466<!--RelationshipBit: relbit_SmallBusiness_ActorOwner_HasTalkedTo_TargetCustomer--></T>
+                      <E n="operation">ADD</E>
+                      <E n="recipients">Actor</E>
+                      <E n="targets">TargetSim</E>
+                    </U>
+                  </L>
+                  <L n="tests">
+                    <L>
+                      <V t="situation_job_test">
+                        <U n="situation_job_test">
+                          <E n="participant">TargetSim</E>
+                          <L n="situation_jobs">
+                            <T>373362<!--SituationJob: job_SmallBusinessCustomer--></T>
+                          </L>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+              </U>
+            </V>
+          </L>
+          <L n="interaction_category_tags">
+            <E>Interaction_SocialAll</E>
+          </L>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T p="InGame\UI\Icons\Debug\missing_image.png" n="icon">2f7d0004:00000000:30f0846c783606f9</T>
+  <L n="super_affordances">
+    <T>426472<!--SuperInteraction: smallBusinessSystem_TalkUpBusiness--></T>
+    <T>427290<!--SuperInteraction: spells_PracticeSpellcasting_Autonomous_ClubCustomerRule--></T>
+    <T>431768<!--SuperInteraction: spells_PracticeSpellcasting_Practical_Autonomous_SmallBusinessEmployee_NotNPC--></T>
+  </L>
+  <L n="target_super_affordances">
+    <U>
+      <T n="affordance">426740<!--GoHereSuperInteraction: terrain-gohere_SmallBusiness_TalkUpBusiness--></T>
+      <V n="object_filter" t="filter_by_terrain" />
+    </U>
+    <U>
+      <T n="affordance">428873<!--SocialSuperInteraction: social_SmallBusiness_Customer_SpecialBehavior_AskToStop--></T>
+    </U>
+    <U>
+      <T n="affordance">428874<!--SocialSuperInteraction: social_SmallBusiness_Customer_SpecialBehavior_SendAway--></T>
+    </U>
+    <U>
+      <T n="affordance">440451<!--SocialSuperInteraction: smallBusiness_Socials_Customer_SendAway--></T>
+    </U>
+    <U>
+      <T n="affordance">436619<!--SuperInteraction: sim_Greet_Infant_SmallBusinessOwner--></T>
+    </U>
+    <U>
+      <T n="affordance">391213<!--SocialSuperInteraction: social_Fight_NPC_ClubOrCustomer--></T>
+    </U>
+    <U>
+      <T n="affordance">384874<!--SuperInteraction: sim_Scare_PushMixer_AutonomousOnly--></T>
+    </U>
+    <U>
+      <T n="affordance">386093<!--SuperInteraction: sim_Prank_PushMixer_AutonomousOnly--></T>
+    </U>
+    <U>
+      <T n="affordance">442090<!--SuperInteraction: sim_BeMean_PushMixer_AutonomousOnly--></T>
+    </U>
+    <U>
+      <T n="affordance">442091<!--SuperInteraction: sim_BeFunny_PushMixer_AutonomousOnly--></T>
+    </U>
+    <U>
+      <T n="affordance">442934<!--SocialSuperInteraction: social_EP17World_TarotDeck_Reading_BB_ForSimoleons_SmallBusinessEmployee--></T>
+    </U>
+    <U>
+      <T n="affordance">442716<!--SuperInteraction: sim_Roar_PushMixer_AutonomousOnly--></T>
+    </U>
+  </L>
+  <T n="visible">False</T>
+</I>

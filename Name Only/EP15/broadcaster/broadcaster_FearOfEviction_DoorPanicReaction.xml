@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Broadcaster" i="broadcaster" m="broadcasters.broadcaster" n="broadcaster_FearOfEviction_DoorPanicReaction" s="351566">
+  <L n="constraints">
+    <V t="circle">
+      <U n="circle">
+        <T n="radius">30</T>
+      </U>
+    </V>
+  </L>
+  <L n="effects">
+    <V t="affordance">
+      <U n="affordance">
+        <V n="affected_object_cap" t="enabled">
+          <T n="enabled">2</T>
+        </V>
+        <L n="affordances">
+          <U>
+            <T n="affordance">351669<!--SuperInteraction: fearOfEviction_DoorPanic_Interaction--></T>
+          </U>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="ages" t="specified">
+                  <L n="specified">
+                    <E>TEEN</E>
+                    <E>YOUNGADULT</E>
+                    <E>ADULT</E>
+                    <E>ELDER</E>
+                  </L>
+                </V>
+              </U>
+            </V>
+            <V t="trait">
+              <U n="trait">
+                <L n="whitelist_traits">
+                  <T>342289<!--Trait: trait_Fear_Eviction--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x7D294A2B<!--String: "(From Fear of Eviction)"--></T>
+          </V>
+          <T n="buff_type">351565<!--Buff: buff_FearOfEviction_DoorPanic--></T>
+        </U>
+        <T n="remove_buff">False</T>
+        <L n="tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="ages" t="specified" />
+              </U>
+            </V>
+            <V t="trait">
+              <U n="trait">
+                <L n="whitelist_traits">
+                  <T>342289<!--Trait: trait_Fear_Eviction--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="frequency" t="on_enter" />
+  <T n="immediate">True</T>
+</I>

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Broadcaster" i="broadcaster" m="broadcasters.broadcaster" n="broadcaster_BurglarAlarm_Trigger" s="429872">
+  <V n="allow_sim_test" t="enabled">
+    <L n="enabled">
+      <L>
+        <V t="situation_job_test">
+          <U n="situation_job_test">
+            <L n="situation_jobs">
+              <T>421825<!--SituationJob: job_Burglar--></T>
+            </L>
+          </U>
+        </V>
+      </L>
+    </L>
+  </V>
+  <V n="clustering" t="disabled" />
+  <L n="constraints">
+    <V t="line_of_sight">
+      <U n="line_of_sight">
+        <V n="temporary_los" t="enabled">
+          <U n="enabled">
+            <T n="max_line_of_sight_radius">25</T>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <L n="effects">
+    <V t="self_loot">
+      <U n="self_loot">
+        <T n="apply_loot_on_remove">False</T>
+        <L n="loot_list">
+          <T>429832<!--LootActions: loot_BurglarAlarm_Triggered--></T>
+        </L>
+      </U>
+    </V>
+    <V t="affordance">
+      <U n="affordance">
+        <T n="affordance_must_run_next">True</T>
+        <E n="affordance_priority">Critical</E>
+        <L n="affordances">
+          <U>
+            <T n="affordance">430118<!--SuperInteraction: burglarNPC_AlarmInitialReaction--></T>
+          </U>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="frequency" t="on_enter">
+    <U n="on_enter">
+      <T n="allow_multiple">True</T>
+    </U>
+  </V>
+  <T n="immediate">True</T>
+  <L n="route_events">
+    <T>442729<!--RouteEvent: routeEvent_BurglarAlarm--></T>
+  </L>
+</I>

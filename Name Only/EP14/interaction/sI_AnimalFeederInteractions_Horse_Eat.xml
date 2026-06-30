@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="sI_AnimalFeederInteractions_Horse_Eat" s="310433">
+  <V n="_animation_actor_map" t="literal">
+    <U n="literal">
+      <V n="carry_target" t="enabled">
+        <E n="enabled">CarriedSim</E>
+      </V>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <L n="asm_actor_overrides">
+    <U>
+      <T n="actor_name">y</T>
+      <E n="actor_participant">RoutingSlaves</E>
+    </U>
+  </L>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="stat_based">
+                <U n="stat_based">
+                  <T n="stat">312265<!--Commodity: motive_Horse_Hunger--></T>
+                  <U n="threshold">
+                    <T n="value">100</T>
+                  </U>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+            <L n="loot_actions">
+              <T>324482<!--LootActions: loot_AnimalFeeder_Decrement_FoodRemaining--></T>
+            </L>
+          </U>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="state_based">
+                <U n="state_based">
+                  <V n="state" t="on_trigger">
+                    <T n="on_trigger">324406<!--CommodityBasedObjectStateValue: animalFeeder_CommodityState_Values_FoodRemaining_Empty--></T>
+                  </V>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+      </L>
+      <V n="content" t="looping_content">
+        <U n="looping_content">
+          <U n="animation_ref">
+            <T n="factory">324855<!--AnimationElement: object_AnimalFeeder_Animation_HorseEats--></T>
+          </U>
+        </U>
+      </V>
+      <V n="link_carried_sims" t="enabled" />
+      <V n="periodic_stat_change" t="enabled">
+        <U n="enabled">
+          <L n="operations">
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="advertise">False</T>
+                <T n="amount">3.57</T>
+                <T n="stat">312265<!--Commodity: motive_Horse_Hunger--></T>
+              </U>
+            </V>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>339919<!--LootActions: loot_AnimalFeeder_LowerFatigue_WildGrass--></T>
+        </L>
+        <U n="success_chance">
+          <L n="multipliers">
+            <U>
+              <T n="multiplier">0</T>
+              <L n="tests">
+                <L>
+                  <V t="state">
+                    <U n="state">
+                      <T n="value">338539<!--ObjectStateValue: objectStateValue_AnimalFeeder_Nutrient_Normal--></T>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+          </L>
+        </U>
+      </U>
+    </V>
+  </L>
+  <V n="canonical_animation" t="enabled">
+    <U n="enabled">
+      <T n="factory">324855<!--AnimationElement: object_AnimalFeeder_Animation_HorseEats--></T>
+    </U>
+  </V>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x814428D7<!--String: "{0.SimFirstName} eats at Feeder"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="require_reins_for_formation" t="enabled">
+    <T n="enabled">314817<!--RoutingFormation: routingFormation_HorseRiding_Ride--></T>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all">
+        <U n="exclude_all">
+          <L n="include_affordances">
+            <T>310433<!--SuperInteraction: sI_AnimalFeederInteractions_Horse_Eat--></T>
+            <T>323653<!--MixerInteraction: socialMixerInteraction_Carry_HorseRiding_Idle--></T>
+            <T>312885<!--SuperInteraction: socialSuperInteraction_CarryPickUp_HorseRiding--></T>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="unspecified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E>HORSE</E>
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">343887<!--TestSetInstance: testSetInstance_Horses_CanEatHay--></T>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">324517<!--TestSetInstance: testSetInstance_AnimalFeeder_NOT_Empty--></T>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

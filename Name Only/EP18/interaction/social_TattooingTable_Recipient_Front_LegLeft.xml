@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SocialSuperInteraction" i="interaction" m="interactions.social.social_super_interaction" n="social_TattooingTable_Recipient_Front_LegLeft" s="445521">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="posture">
+            <U n="posture">
+              <L n="posture_manifest_tuning">
+                <U>
+                  <V n="posture_type" t="enabled">
+                    <T n="enabled">378573<!--Posture: posture_TattooingTable_RecipientFront--></T>
+                  </V>
+                </U>
+              </L>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>TargetSim</E>
+      </L>
+    </U>
+  </V>
+  <L n="_party_size_weight_tuning">
+    <U>
+      <T n="y">100</T>
+    </U>
+    <U>
+      <T n="x">1</T>
+      <T n="y">100</T>
+    </U>
+    <U>
+      <T n="x">2</T>
+      <T n="y">50</T>
+    </U>
+    <U>
+      <T n="x">3</T>
+      <T n="y">0</T>
+    </U>
+    <U>
+      <T n="x">4</T>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <V n="_social_group_leader_override" t="enabled">
+    <E n="enabled">TargetSim</E>
+  </V>
+  <T n="_social_group_type">378680<!--SocialGroup: group_TattooTable--></T>
+  <V n="affordance_to_push_on_target" t="push_self_or_none">
+    <T n="push_self_or_none">False</T>
+  </V>
+  <T n="allow_autonomous">False</T>
+  <T n="allow_defer_back_carry">False</T>
+  <T n="allow_user_directed">False</T>
+  <T n="attention_cost">0</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <V n="allow_holster" t="override">
+        <T n="override">False</T>
+      </V>
+      <V n="periodic_stat_change" t="enabled">
+        <U n="enabled">
+          <U n="operation_actions">
+            <L n="actions" />
+          </U>
+        </U>
+      </V>
+      <T n="start_autonomous_inertial">False</T>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>162659<!--LootActions: loot_Commodity_Culling_GhostAdd_target--></T>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x9C09275F<!--String: "(From Being in a social group with at least 3 Sims)"--></T>
+          </V>
+          <T n="buff_type">125555<!--Buff: buff_Trait_WithMyFriends--></T>
+        </U>
+        <L n="subject">
+          <E>Actor</E>
+          <E>SocialGroupSims</E>
+          <E>TargetSim</E>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="social_group">
+              <U n="social_group">
+                <V n="threshold" t="enabled">
+                  <U n="enabled">
+                    <T n="value">3</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <T n="buff_type">395796<!--Buff: buff_TattooingTable_Hidden_BlockAutonomousTargetingInteractions--></T>
+        </U>
+      </U>
+    </V>
+    <V t="buff_fire_and_forget">
+      <U n="buff_fire_and_forget">
+        <U n="buff">
+          <T n="buff_type">404176<!--Buff: buff_Tattooing_RecentCustomerCooldown--></T>
+        </U>
+      </U>
+    </V>
+  </L>
+  <L n="basic_liabilities">
+    <V t="critical_priority">
+      <U n="critical_priority">
+        <E n="priority_on_push">High</E>
+      </U>
+    </V>
+  </L>
+  <V n="basic_reserve_object" t="enabled" />
+  <V n="canonical_animation" t="enabled">
+    <U n="enabled">
+      <T n="factory">378577<!--AnimationElement: tattooingTable_PostureIdles_Recipient--></T>
+    </U>
+  </V>
+  <V n="carry_back_compatibility_override" t="enabled">
+    <U n="enabled">
+      <T n="wings">False</T>
+    </U>
+  </V>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x5145B545<!--String: "Get Tattoo"--></T>
+  <V n="display_name_overrides" t="testable">
+    <U n="testable">
+      <L n="overrides">
+        <U>
+          <V n="new_display_name" t="enabled">
+            <T n="enabled">0x265A665A<!--String: "Get Tattoo Removal"--></T>
+          </V>
+          <L n="test">
+            <L>
+              <V t="participant_running_interaction">
+                <U n="participant_running_interaction">
+                  <L n="affordances">
+                    <T>383005<!--SocialSuperInteraction: social_TattooingTable_Services_Removal_All--></T>
+                    <T>382985<!--SocialSuperInteraction: social_TattooingTable_Services_Removal_ArmLowerLeft--></T>
+                    <T>382986<!--SocialSuperInteraction: social_TattooingTable_Services_Removal_ArmLowerRight--></T>
+                    <T>382987<!--SocialSuperInteraction: social_TattooingTable_Services_Removal_ArmUpperLeft--></T>
+                    <T>382988<!--SocialSuperInteraction: social_TattooingTable_Services_Removal_ArmUpperRight--></T>
+                    <T>383003<!--SocialSuperInteraction: social_TattooingTable_Services_Removal_BackLower--></T>
+                    <T>383004<!--SocialSuperInteraction: social_TattooingTable_Services_Removal_BackUpper--></T>
+                    <T>383001<!--SocialSuperInteraction: social_TattooingTable_Services_Removal_Chest--></T>
+                    <T>382984<!--SocialSuperInteraction: social_TattooingTable_Services_Removal_Head--></T>
+                    <T>382989<!--SocialSuperInteraction: social_TattooingTable_Services_Removal_LegLeft--></T>
+                    <T>383000<!--SocialSuperInteraction: social_TattooingTable_Services_Removal_LegRight--></T>
+                    <T>383002<!--SocialSuperInteraction: social_TattooingTable_Services_Removal_Stomach--></T>
+                  </L>
+                  <E n="participant">TargetSim</E>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <V n="new_display_name" t="enabled">
+            <T n="enabled">0x5C89A696<!--String: "Get Tattoo Touch-up"--></T>
+          </V>
+          <L n="test">
+            <L>
+              <V t="participant_running_interaction">
+                <U n="participant_running_interaction">
+                  <L n="affordances">
+                    <T>423014<!--SocialSuperInteraction: social_TattooingTable_Services_Tattooing_TouchUp_ArmLowerLeft--></T>
+                    <T>423015<!--SocialSuperInteraction: social_TattooingTable_Services_Tattooing_TouchUp_ArmLowerRight--></T>
+                    <T>423016<!--SocialSuperInteraction: social_TattooingTable_Services_Tattooing_TouchUp_ArmUpperLeft--></T>
+                    <T>423017<!--SocialSuperInteraction: social_TattooingTable_Services_Tattooing_TouchUp_ArmUpperRight--></T>
+                    <T>423018<!--SocialSuperInteraction: social_TattooingTable_Services_Tattooing_TouchUp_BackLower--></T>
+                    <T>423019<!--SocialSuperInteraction: social_TattooingTable_Services_Tattooing_TouchUp_BackUpper--></T>
+                    <T>423020<!--SocialSuperInteraction: social_TattooingTable_Services_Tattooing_TouchUp_Chest--></T>
+                    <T>423021<!--SocialSuperInteraction: social_TattooingTable_Services_Tattooing_TouchUp_Head--></T>
+                    <T>423022<!--SocialSuperInteraction: social_TattooingTable_Services_Tattooing_TouchUp_Stomach--></T>
+                    <T>423012<!--SocialSuperInteraction: social_TattooingTable_Services_Tattooing_TouchUp_LegLeft--></T>
+                    <T>423013<!--SocialSuperInteraction: social_TattooingTable_Services_Tattooing_TouchUp_LegRight--></T>
+                  </L>
+                  <E n="participant">TargetSim</E>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <V n="idle_animation" t="disabled" />
+  <T n="ignore_group_socials">False</T>
+  <L n="interaction_category_tags">
+    <E>Interaction_SocialSuper</E>
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+    <E>Interaction_SocialAll</E>
+    <E>Interaction_Social_Contagious</E>
+  </L>
+  <T n="invite_in_after_interaction">True</T>
+  <U n="listen_animation">
+    <T o="true" n="factory" />
+  </U>
+  <U n="posture_preferences">
+    <T n="disable_all_scoring">True</T>
+    <T n="prefer_clicked_parts">False</T>
+  </U>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">True</T>
+    <V n="force_listen_statistic" t="enabled">
+      <U n="enabled">
+        <T n="statistic">434042<!--Commodity: commodity_Tattooing_Progress--></T>
+        <E n="subject">ActorPostureTarget</E>
+        <U n="target_value">
+          <T n="value">100</T>
+        </U>
+      </U>
+    </V>
+  </U>
+  <T n="relationship_scoring">True</T>
+  <T n="relocate_main_group">True</T>
+  <T n="require_shared_body_target">True</T>
+  <E n="scoring_priority">NORMAL</E>
+  <V n="sim_affinity_posture_scoring_data" t="enabled">
+    <U n="enabled">
+      <L n="my_scoring">
+        <U>
+          <V n="affinity_strategy" t="relationship_based" />
+          <T n="negate_tag">True</T>
+          <E n="running_interaction_tag">Sleeping</E>
+        </U>
+        <U>
+          <V n="affinity_strategy" t="avoid" />
+          <E n="running_interaction_tag">Very_Loud</E>
+        </U>
+      </L>
+      <L n="my_tags">
+        <E>Loud</E>
+        <E>Chat</E>
+      </L>
+    </U>
+  </V>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all">
+        <U n="exclude_all">
+          <L n="include_affordances">
+            <T>383848<!--SuperInteraction: si_TattooingTable_Tend_UserDirected--></T>
+            <T>383880<!--SuperInteraction: si_TattooingTable_Tend_Autonomous--></T>
+          </L>
+          <L n="include_lists">
+            <T>33624<!--AffordanceList: AffordanceList_Stereo_Listens--></T>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <E n="target_type">TARGET</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">TargetSim</E>
+      </U>
+    </V>
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

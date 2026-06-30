@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalRanInteractionOnTargetedSim" i="situation_goal" m="situations.situation_goal_targeted_sim" n="pivotalMomentsGoal_DreamsV0_N5_greetNeighbors" s="443810">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T p="InGame\UI\Icons\Headlines\Final\headline_handshake.png" n="enabled">2f7d0004:00000000:50d2460689fc1353</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0xD61E1353<!--String: "Introduce Yourself to Other Sims"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0x693AB45D<!--String: "(Objective 1 of 5)\n\nSelect another Sim in the world and choose an Introduction to meet them. Check the Relationships panel to see how many people your Sim has met.\n\nReward: 500 Simoleons"--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>454832<!--SituationGoalLootActions: situationGoalLootActions_dreamsV0_N5_rewardTrigger_small--></T>
+  </L>
+  <U n="_goal_test">
+    <L n="tags">
+      <E>Interaction_Greeting</E>
+    </L>
+    <E n="test_event">InteractionComplete</E>
+  </U>
+  <T n="_iterations">5</T>
+  <L n="_post_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+      </U>
+    </V>
+  </L>
+  <T n="_select_all_instantiated_sims">True</T>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+  <V n="goal_completion_notification" t="enabled">
+    <U n="enabled">
+      <E n="expand_behavior">FORCE_EXPAND</E>
+      <V n="icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_Cloud.png">2f7d0004:00000000:edaeb925e304cd13</T>
+          </U>
+        </V>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0x208F5B81<!--String: "<i>What better way to get to know the neighbors than throwing a party? Multiple parties!</i>\n\nYou completed a Dream goal and earned 500 Simoleons as a reward!\n\nKeep playing to continue the Dream!"--></T>
+      </V>
+      <V n="title" t="enabled">
+        <T n="enabled">0x390D8004<!--String: "Dream Update!"--></T>
+      </V>
+    </U>
+  </V>
+</I>

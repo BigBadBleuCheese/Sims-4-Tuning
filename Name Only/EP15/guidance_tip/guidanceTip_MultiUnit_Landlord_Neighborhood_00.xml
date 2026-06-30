@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="GuidanceTip" i="guidance_tip" m="guidance.guidance_tip" n="guidanceTip_MultiUnit_Landlord_Neighborhood_00" s="359446">
+  <L n="activation_rules">
+    <U>
+      <E n="children_condition">AND</E>
+      <L n="criteria">
+        <U>
+          <V n="criterion" t="ui_element_visible">
+            <L n="ui_element_visible">
+              <E>NHV_MULTI_UNIT_WORLD</E>
+            </L>
+          </V>
+        </U>
+        <U>
+          <V n="criterion" t="guidance_mode">
+            <E n="guidance_mode">STANDARD</E>
+          </V>
+        </U>
+      </L>
+    </U>
+    <U>
+      <L n="criteria">
+        <U>
+          <V n="criterion" t="game_option_setting">
+            <U n="game_option_setting">
+              <T n="setting_name">PackGuidanceEnabled</T>
+              <T n="setting_value">1</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="criterion" t="game_option_setting">
+            <U n="game_option_setting">
+              <T n="setting_name">GuidancePack</T>
+              <T n="setting_value">1</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <T n="auto_select_on_activate">True</T>
+  <L n="options">
+    <U>
+      <U n="actions">
+        <L n="actions_on_activate">
+          <V t="activate_guidance_item">
+            <T n="activate_guidance_item">349708<!--GuidanceTip: guidanceTip_MultiUnit_A1--></T>
+          </V>
+        </L>
+        <L n="actions_on_cancel">
+          <V t="activate_guidance_item">
+            <T n="activate_guidance_item">352407<!--GuidanceTip: guidanceTip_MultiUnit_Reminder--></T>
+          </V>
+        </L>
+        <T n="satisfy_on_action_cancel">True</T>
+        <T n="satisfy_on_activate">True</T>
+      </U>
+    </U>
+  </L>
+  <L n="relaunch_rules" />
+  <T n="relaunch_text">0x42B391F8<!--String: "Tutorial: Residential Rental"--></T>
+  <T n="satisfy_on_timeout">True</T>
+  <T n="text">0x6CC8CAA<!--String: "I'm Vanesha, your trusty guide to the world of Residential Rentals! If your goal is to become a Property Owner, you've made a fantastic choice. But a bit of preparation is needed. Don't worry; it's a breeze, and I'm confident you'll pick it up in no time!"--></T>
+  <T n="timeout">3600</T>
+  <T n="title">0x18422113<!--String: "Vanesha is here to help!"--></T>
+</I>

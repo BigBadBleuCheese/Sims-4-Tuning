@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="TattooDesignPicker" i="interaction" m="interactions.base.cas_catalog_picker" n="tattooingDesignPicker_Regular_Debug" s="380515">
+  <V n="_saveable" t="disabled" />
+  <L n="basic_extras">
+    <V t="payment">
+      <U n="payment">
+        <T n="display_only">True</T>
+        <V n="payment" t="literal">
+          <U n="literal">
+            <V n="payment_cost" t="amount" />
+            <V n="payment_source" t="household">
+              <U n="household">
+                <T n="allow_credits">True</T>
+              </U>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <L n="basic_liabilities">
+    <V t="critical_priority" />
+  </L>
+  <L n="body_type_tag_map">
+    <U>
+      <E n="key">TATTOO_ARM_LOWER_LEFT</E>
+      <E n="value">TattooCategory_ArmLowerLeft</E>
+    </U>
+    <U>
+      <E n="key">TATTOO_ARM_LOWER_RIGHT</E>
+      <E n="value">TattooCategory_ArmLowerRight</E>
+    </U>
+    <U>
+      <E n="key">TATTOO_ARM_UPPER_LEFT</E>
+      <E n="value">TattooCategory_ArmUpperLeft</E>
+    </U>
+    <U>
+      <E n="key">TATTOO_ARM_UPPER_RIGHT</E>
+      <E n="value">TattooCategory_ArmUpperRight</E>
+    </U>
+    <U>
+      <E n="key">TATTOO_HEAD</E>
+      <E n="value">TattooCategory_Head</E>
+    </U>
+    <U>
+      <E n="key">TATTOO_LEG_LEFT</E>
+      <E n="value">TattooCategory_LegLeft</E>
+    </U>
+    <U>
+      <E n="key">TATTOO_LEG_RIGHT</E>
+      <E n="value">TattooCategory_LegRight</E>
+    </U>
+    <U>
+      <E n="key">TATTOO_TORSO_BACK_LOWER</E>
+      <E n="value">TattooCategory_TorsoBackLower</E>
+    </U>
+    <U>
+      <E n="key">TATTOO_TORSO_BACK_UPPER</E>
+      <E n="value">TattooCategory_TorsoBackUpper</E>
+    </U>
+    <U>
+      <E n="key">TATTOO_TORSO_FRONT_LOWER</E>
+      <E n="value">TattooCategory_TorsoFrontLower</E>
+    </U>
+    <U>
+      <E n="key">TATTOO_TORSO_FRONT_UPPER</E>
+      <E n="value">TattooCategory_TorsoFrontUpper</E>
+    </U>
+  </L>
+  <L n="body_types">
+    <E>TATTOO_ARM_LOWER_LEFT</E>
+    <E>TATTOO_ARM_LOWER_RIGHT</E>
+    <E>TATTOO_ARM_UPPER_LEFT</E>
+    <E>TATTOO_HEAD</E>
+    <E>TATTOO_ARM_UPPER_RIGHT</E>
+    <E>TATTOO_LEG_LEFT</E>
+    <E>TATTOO_LEG_RIGHT</E>
+    <E>TATTOO_TORSO_BACK_LOWER</E>
+    <E>TATTOO_TORSO_BACK_UPPER</E>
+    <E>TATTOO_TORSO_FRONT_LOWER</E>
+    <E>TATTOO_TORSO_FRONT_UPPER</E>
+  </L>
+  <T n="category">391274<!--PieMenuCategory: pieMenuCategory_Cheats_EP18_Tattooing--></T>
+  <V n="cell_enabled_tests" t="enabled">
+    <L n="enabled">
+      <L>
+        <V t="tattooing">
+          <U n="tattooing">
+            <V n="test_type" t="tattooing_has_free_slot_participant_body_type">
+              <U n="tattooing_has_free_slot_participant_body_type">
+                <E n="participant_body_type">Object</E>
+                <E n="subject">Actor</E>
+                <V n="tooltip" t="disabled" />
+              </U>
+            </V>
+            <V n="tooltip" t="enabled">
+              <T n="enabled">0xBDF46C24<!--String: "No available empty layers on chosen body part."--></T>
+            </V>
+          </U>
+        </V>
+      </L>
+    </L>
+  </V>
+  <V n="content_score" t="disabled" />
+  <V n="continuation" t="enabled">
+    <L n="enabled">
+      <U>
+        <T n="affordance">380516<!--ImmediateSuperInteraction: debugImmediate_Tattooing_Apply--></T>
+        <T o="true" n="si_affordance_override" />
+        <E n="target">Actor</E>
+      </U>
+    </L>
+  </V>
+  <T n="debug">True</T>
+  <T n="display_name">0x5483F3F<!--String: "Get Normal Tattoo"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="exclude_tags">
+    <E>CASCategory_MedicalWearable_Body_Torso</E>
+  </L>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <V n="picker_dialog" t="cas_item_picker">
+    <U n="cas_item_picker">
+      <L n="filter_categories">
+        <U>
+          <T n="category_name">0xBDD7DDDE<!--String: "Chest"--></T>
+          <U n="icon">
+            <T p="InGame\UI\Icons\Debug\missing_image.png" n="key">2f7d0004:00000000:30f0846c783606f9</T>
+          </U>
+          <E n="tag">TattooCategory_TorsoFrontUpper</E>
+        </U>
+        <U>
+          <T n="category_name">0x76F2485B<!--String: "Left Upper Arm"--></T>
+          <U n="icon">
+            <T p="InGame\UI\Icons\Debug\missing_image.png" n="key">2f7d0004:00000000:30f0846c783606f9</T>
+          </U>
+          <E n="tag">TattooCategory_ArmUpperLeft</E>
+        </U>
+        <U>
+          <T n="category_name">0x8A07EF32<!--String: "Left Lower Arm"--></T>
+          <U n="icon">
+            <T p="InGame\UI\Icons\Debug\missing_image.png" n="key">2f7d0004:00000000:30f0846c783606f9</T>
+          </U>
+          <E n="tag">TattooCategory_ArmLowerLeft</E>
+        </U>
+        <U>
+          <T n="category_name">0xAC0BF4EA<!--String: "Right Lower Arm"--></T>
+          <U n="icon">
+            <T p="InGame\UI\Icons\Debug\missing_image.png" n="key">2f7d0004:00000000:30f0846c783606f9</T>
+          </U>
+          <E n="tag">TattooCategory_ArmLowerRight</E>
+        </U>
+        <U>
+          <T n="category_name">0x3C1B5510<!--String: "Right Upper Arm"--></T>
+          <U n="icon">
+            <T p="InGame\UI\Icons\Debug\missing_image.png" n="key">2f7d0004:00000000:30f0846c783606f9</T>
+          </U>
+          <E n="tag">TattooCategory_ArmUpperRight</E>
+        </U>
+        <U>
+          <T n="category_name">0x2B2640AC<!--String: "Head"--></T>
+          <U n="icon">
+            <T p="InGame\UI\Icons\Debug\missing_image.png" n="key">2f7d0004:00000000:30f0846c783606f9</T>
+          </U>
+          <E n="tag">TattooCategory_Head</E>
+        </U>
+        <U>
+          <T n="category_name">0x8DC42A01<!--String: "Left Leg"--></T>
+          <U n="icon">
+            <T p="InGame\UI\Icons\Debug\missing_image.png" n="key">2f7d0004:00000000:30f0846c783606f9</T>
+          </U>
+          <E n="tag">TattooCategory_LegLeft</E>
+        </U>
+        <U>
+          <T n="category_name">0x9D8EF9D8<!--String: "Right Leg"--></T>
+          <U n="icon">
+            <T p="InGame\UI\Icons\Debug\missing_image.png" n="key">2f7d0004:00000000:30f0846c783606f9</T>
+          </U>
+          <E n="tag">TattooCategory_LegRight</E>
+        </U>
+        <U>
+          <T n="category_name">0x2C09D7FC<!--String: "Lower Back"--></T>
+          <U n="icon">
+            <T p="InGame\UI\Icons\Debug\missing_image.png" n="key">2f7d0004:00000000:30f0846c783606f9</T>
+          </U>
+          <E n="tag">TattooCategory_TorsoBackLower</E>
+        </U>
+        <U>
+          <T n="category_name">0x2B958A7E<!--String: "Upper Back"--></T>
+          <U n="icon">
+            <T p="InGame\UI\Icons\Debug\missing_image.png" n="key">2f7d0004:00000000:30f0846c783606f9</T>
+          </U>
+          <E n="tag">TattooCategory_TorsoBackUpper</E>
+        </U>
+        <U>
+          <T n="category_name">0xE495D922<!--String: "Stomach"--></T>
+          <U n="icon">
+            <T p="InGame\UI\Icons\Debug\missing_image.png" n="key">2f7d0004:00000000:30f0846c783606f9</T>
+          </U>
+          <E n="tag">TattooCategory_TorsoFrontLower</E>
+        </U>
+      </L>
+      <T n="force_done_button">True</T>
+      <T n="num_columns">3</T>
+      <E n="picker_type">OBJECT_CAS_ICON</E>
+      <T n="use_dropdown_filter">True</T>
+    </U>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>INFANT</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="identity">
+      <U n="identity">
+        <E n="subject_b">TargetSim</E>
+        <T n="subjects_match">True</T>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">28305<!--TestSetInstance: testSet_EmotionNotMiserable--></T>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">28176<!--TestSetInstance: testSet_EmotionNotStressed--></T>
+    </V>
+  </L>
+  <V n="utility_info" t="enabled">
+    <L n="enabled">
+      <U>
+        <E n="key">POWER</E>
+      </U>
+    </L>
+  </V>
+</I>

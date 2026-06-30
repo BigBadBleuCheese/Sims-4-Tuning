@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_EP17World_GossipTNS_Alice" s="380217">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>TargetSim</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="variation">
+              <U n="variation">
+                <L n="variations">
+                  <T>0xA860CF5F<!--String: "Have you had a chance to find my little girl, Edith? You'll find the glowing well that she's made her home over in Crow's Crossing. I don't understand how it happened, but she has such a temper now. I promise you, she was a sweet-tempered, mild little girl before. I feel so sad that I can't travel to see her. If only I could be there to soothe her again."--></T>
+                  <T>0xF09145B9<!--String: "I used to understand what it meant when someone would ring the bell at that Bell Tower; surely it was used to summon the community and bring them all together to talk. But since I can't go to it, I can only imagine. When I hear it, I think of all the gatherings I've missed with my children over all these years. "--></T>
+                  <T>0x92583CCB<!--String: "This tree was long gnarled and elderly, even before I came to find myself tied here somehow. It has a pull to it; it truly does seem like a guarding force that protects and watches over me. Sometimes, Sims will come and offer gifts to it. I've always felt as if trees could communicate with one another somehow, and after all this time...in a way, I think I can communicate with the Guardian Tree myself. "--></T>
+                </L>
+              </U>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0xEBB55930<!--String: "Ravenwood Rumors"--></T>
+            </V>
+            <E n="visual_type">SPEECH</E>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="relationship">
+              <U n="relationship">
+                <U n="required_relationship_bits">
+                  <L n="match_any">
+                    <T>15803<!--RelationshipBit: has_met--></T>
+                  </L>
+                </U>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0xE50B7C4E<!--String: "(From Gossiping with Locals)"--></T>
+          </V>
+          <T n="buff_type">385100<!--Buff: buff_EP17World_NPC_HighRelGossip--></T>
+        </U>
+        <U n="chance">
+          <T n="base_chance">80</T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="relationship">
+              <U n="relationship">
+                <U n="relationship_score_interval">
+                  <T n="lower_bound">66</T>
+                </U>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+                <L n="target_sim">
+                  <E>TargetSim</E>
+                </L>
+                <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="trait">
+        <U n="trait">
+          <E n="subject">TargetSim</E>
+          <L n="whitelist_traits">
+            <T>378520<!--Trait: trait_Hidden_EP17World_NPC_AliceBasu--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

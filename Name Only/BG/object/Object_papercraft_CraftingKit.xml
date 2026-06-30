@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="GameObject" i="object" m="objects.game_object" n="Object_papercraft_CraftingKit" s="450346">
+  <U n="_components">
+    <V n="focus" t="enabled">
+      <U n="enabled">
+        <V n="_focus_score" t="globally">
+          <U n="globally">
+            <E n="base">LOW</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V n="inventory_item" t="enabled">
+      <U n="enabled">
+        <V n="no_carry_add_to_sim_inventory_affordances" t="OVERRIDE">
+          <L n="OVERRIDE">
+            <T>10459<!--SuperInteraction: si_SwipeIntoSimInventory--></T>
+          </L>
+        </V>
+        <V n="no_carry_add_to_world_affordances" t="OVERRIDE">
+          <L n="OVERRIDE">
+            <T>450358<!--SuperInteraction: papercraft_CraftingKit_AddToWorld--></T>
+          </L>
+        </V>
+        <T n="skip_carry_pose">True</T>
+        <L n="valid_inventory_types">
+          <E>SIM</E>
+          <E>STORAGE_CHEST</E>
+        </L>
+      </U>
+    </V>
+    <V n="retail_component" t="enabled">
+      <V n="enabled" t="reference">
+        <T n="reference">110393<!--RetailComponent: retailComponent_Default--></T>
+      </V>
+    </V>
+    <V n="state" t="enabled">
+      <U n="enabled">
+        <L n="states">
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">39611<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change--></T>
+              </U>
+              <U>
+                <T n="key">39736<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Burning--></T>
+              </U>
+              <U>
+                <T n="key">39737<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Not_Burning--></T>
+              </U>
+              <U>
+                <T n="key">77532<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Replace--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">39737<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Not_Burning--></T>
+            </V>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V n="tooltip_component" t="enabled">
+      <U n="enabled">
+        <L n="custom_tooltips">
+          <U>
+            <L n="object_tests">
+              <L>
+                <V t="in_inventory" />
+              </L>
+            </L>
+            <L n="tooltip_fields">
+              <U>
+                <E n="key">recipe_name</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x144FD666<!--String: "{0.ObjectName}"--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">Object</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+            </L>
+          </U>
+        </L>
+      </U>
+    </V>
+  </U>
+  <L n="_preroll_super_affordances">
+    <T>458338<!--StartCraftingAutonomouslySuperInteraction: papercraft_CraftingAutonomously--></T>
+  </L>
+  <L n="_super_affordances">
+    <T>13328<!--ImmediateSuperInteraction: debug_Reset--></T>
+    <T>13326<!--ImmediateSuperInteraction: debug_ObjectDestroy--></T>
+    <T>103888<!--ImmediateSuperInteraction: cheat_set_as_head--></T>
+    <T>328068<!--SuperInteraction: infant_WhatsThat_Immobile_InObject--></T>
+    <T>276518<!--SuperInteraction: infant_WhatsThat--></T>
+    <T>144099<!--SuperInteraction: generic_Object_Toddler_Check_Out--></T>
+    <T>106859<!--SuperInteraction: simRay_Transform_Object--></T>
+    <T>450359<!--StartCraftingSuperInteraction: papercraft_StartCrafting_PaperMache_DerpyAnimal--></T>
+    <T>450443<!--StartCraftingSuperInteraction: papercraft_StartCrafting_Origami_Butterfly--></T>
+    <T>450398<!--CraftingPhaseCreateObjectInInventorySuperInteraction: papercraft_CreateObject_Finished--></T>
+    <T>450399<!--CraftingPhaseCreateObjectInInventorySuperInteraction: papercraft_CreateObject_WorkInProgress--></T>
+    <T>450378<!--CraftingPhaseStagingSuperInteraction: papercraft_CraftingPhase--></T>
+    <T>450634<!--ObjectInInventoryPickerInteraction: inventoryPicker_Papercraft_Resume--></T>
+    <T>450622<!--CraftingResumeInteraction: craftingResume_Papercraft--></T>
+    <T>450636<!--StartCraftingSuperInteraction: papercraft_StartCrafting_Origami_Frog--></T>
+    <T>450647<!--SuperInteraction: super_Papercraft_Scrap--></T>
+    <T>450648<!--ObjectInInventoryPickerInteraction: inventoryPicker_Papercraft_Scrap--></T>
+    <T>450756<!--StartCraftingSuperInteraction: papercraft_StartCrafting_Origami_Crane--></T>
+    <T>450927<!--CraftingPhaseStagingSuperInteraction: papercraft_CraftingPhase_PaperMache--></T>
+    <T>451859<!--StartCraftingSuperInteraction: papercraft_StartCrafting_Origami_ButterflyCollection_UltimateButterfly--></T>
+    <T>452268<!--StartCraftingSuperInteraction: papercraft_StartCrafting_Origami_CootieCatcher--></T>
+    <T>452814<!--StartCraftingSuperInteraction: papercraft_StartCrafting_Origami_PaperAirplane--></T>
+    <T>452906<!--StartCraftingSuperInteraction: papercraft_StartCrafting_PaperMache_LowPolyCritter--></T>
+    <T>453252<!--StartCraftingSuperInteraction: papercraft_StartCrafting_Origami_Jellyfish--></T>
+    <T>453339<!--StartCraftingSuperInteraction: papercraft_StartCrafting_Origami_Llama--></T>
+    <T>453515<!--InteractionPickerSuperInteraction: interactionPicker_Papercraft_CootieCatcher_FortunePicker_debug--></T>
+    <T>453638<!--StartCraftingSuperInteraction: papercraft_StartCrafting_PaperMache_WallMountedHead--></T>
+    <T>454686<!--StartCraftingSuperInteraction: papercraft_StartCrafting_PaperMache_Animal--></T>
+    <T>454918<!--SuperInteraction: super_Papercraft_StartCrafting_FromInventory_Origami_Butterfly--></T>
+    <T>454969<!--SuperInteraction: super_Papercraft_StartCrafting_FromInventory_Origami_CootieCatcher--></T>
+    <T>454919<!--SuperInteraction: super_Papercraft_StartCrafting_FromInventory_Origami_Crane--></T>
+    <T>454920<!--SuperInteraction: super_Papercraft_StartCrafting_FromInventory_Origami_Frog--></T>
+    <T>454966<!--SuperInteraction: super_Papercraft_StartCrafting_FromInventory_Origami_Jellyfish--></T>
+    <T>454967<!--SuperInteraction: super_Papercraft_StartCrafting_FromInventory_Origami_Llama--></T>
+    <T>454970<!--SuperInteraction: super_Papercraft_StartCrafting_FromInventory_Origami_PaperAirplane--></T>
+    <T>454968<!--SuperInteraction: super_Papercraft_StartCrafting_FromInventory_Origami_UltimateButterfly--></T>
+    <T>454971<!--SuperInteraction: super_Papercraft_StartCrafting_FromInventory_PaperMache_Animal--></T>
+    <T>454972<!--SuperInteraction: super_Papercraft_StartCrafting_FromInventory_PaperMache_DerpyAnimal--></T>
+    <T>454973<!--SuperInteraction: super_Papercraft_StartCrafting_FromInventory_PaperMache_LowPolyCritter--></T>
+    <T>454974<!--SuperInteraction: super_Papercraft_StartCrafting_FromInventory_PaperMache_WallMountedHead--></T>
+    <T>456119<!--StartCraftingSuperInteraction: papercraft_StartCrafting_PaperMache_Plant--></T>
+    <T>456182<!--StartCraftingSuperInteraction: papercraft_StartCrafting_Card_Friendship--></T>
+    <T>456183<!--StartCraftingSuperInteraction: papercraft_StartCrafting_Card_Love--></T>
+    <T>456842<!--SuperInteraction: super_Papercraft_StartCrafting_FromInventory_Card_Friendship--></T>
+    <T>456843<!--SuperInteraction: super_Papercraft_StartCrafting_FromInventory_Card_Love--></T>
+    <T>456844<!--SuperInteraction: super_Papercraft_StartCrafting_FromInventory_PaperMache_Plant--></T>
+    <T>456864<!--SuperInteraction: super_Papercraft_StartCrafting_FromInventory_Resume--></T>
+    <T>458338<!--StartCraftingAutonomouslySuperInteraction: papercraft_CraftingAutonomously--></T>
+    <T>461270<!--ImmediateSuperInteraction: immediate_Papercraft_GuaranteePoorQuality_debug--></T>
+    <T>461638<!--SuperInteraction: super_Papercraft_UltimateButterfly_TooltipOnly--></T>
+    <T>461886<!--SuperInteraction: super_Papercraft_Artisans_Crafter_Cleanup--></T>
+    <T>462441<!--SimPickerInteraction: simPicker_Mentoring_Offer_Paid_Papercraft--></T>
+    <T>462446<!--SimPickerInteraction: simPicker_Mentoring_Offer_Unpaid_ChildrenAllowed_Papercraft--></T>
+    <T>462445<!--SimPickerInteraction: simPicker_Mentoring_AskFor_Papercraft--></T>
+    <T>463752<!--ImmediateSuperInteraction: immediate_Papercraft_GetAll_Debug--></T>
+    <T>463896<!--ImmediateSuperInteraction: immediate_Papercraft_CootieCatcher_GuaranteeFortune--></T>
+    <T>465435<!--ImmediateSuperInteraction: immediate_Papercraft_GuaranteeOutstandingQuality_debug--></T>
+    <T>471035<!--StartCraftingSuperInteraction: papercraft_StartCrafting_PaperMache_Mask--></T>
+    <T>471066<!--SuperInteraction: super_Papercraft_StartCrafting_FromInventory_PaperMache_Mask--></T>
+    <T>473460<!--StartCraftingSuperInteraction: papercraft_StartCrafting_Card_Themed--></T>
+    <T>473466<!--SuperInteraction: super_Papercraft_StartCrafting_FromInventory_Card_Themed--></T>
+    <T>475342<!--ImmediateSuperInteraction: immediate_Papercraft_GuaranteeMasterworkQuality_debug--></T>
+    <T>102258<!--SuperInteraction: Ghost_Possess--></T>
+    <T>74457<!--ImmediateSuperInteraction: fire_ReplaceBurntObject--></T>
+  </L>
+  <U n="recycling_data">
+    <L n="recycling_values">
+      <U>
+        <E n="Bucks Type">RecycleBitsBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+      <U>
+        <E n="Bucks Type">RecyclePiecesBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+    </L>
+  </U>
+</I>

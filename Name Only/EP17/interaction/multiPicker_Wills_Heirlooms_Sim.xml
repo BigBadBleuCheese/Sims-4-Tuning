@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="MultiPickerInteraction" i="interaction" m="interactions.base.multi_picker_interaction" n="multiPicker_Wills_Heirlooms_Sim" s="384696">
+  <V n="_saveable" t="disabled" />
+  <T n="allow_from_sim_inventory">True</T>
+  <T n="category">378278<!--PieMenuCategory: pieMenuCategories_Wills_UpdateWill--></T>
+  <V n="content_score" t="disabled" />
+  <V n="continuation" t="enabled">
+    <L n="enabled">
+      <U>
+        <T n="affordance">388593<!--SuperInteraction: wills_Update_Heirloom--></T>
+      </U>
+    </L>
+  </V>
+  <T n="display_name">0xF1FD79C0<!--String: "Heirlooms"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <V n="display_tooltip" t="enabled">
+    <T n="enabled">0x73DC9F38<!--String: "Heirlooms are prized possessions which can be passed down from one Sim to another in their Will. Select an eligible object, then <b>Make Heirloom</b> to make one!"--></T>
+  </V>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <U n="picker_dialog">
+    <L n="pickers">
+      <U>
+        <T n="disabled_tooltip">0xECC75330<!--String: "Designated heirloom required."--></T>
+        <T n="picker_interaction">384697<!--FilteredObjectPickerInteraction: objectPicker_Wills_Heirlooms--></T>
+      </U>
+      <U>
+        <T n="disabled_tooltip">0xD0322213<!--String: "Eligible recipient required."--></T>
+        <T n="picker_interaction">384698<!--SimPickerInteraction: simPicker_Wills_InheritingSim--></T>
+      </U>
+    </L>
+    <V n="text" t="single">
+      <T n="single">0xB5317A1E<!--String: "Choose an Heirloom and Recipient"--></T>
+    </V>
+  </U>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T p="InEP17\UI\Icons\PieMenu\Interactions\icon_pieMenu_Heirloom.png" n="key">2f7d0004:00000000:8581aa691a6b5e94</T>
+      </U>
+    </V>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+            <E>TODDLER</E>
+            <E>BABY</E>
+            <E>INFANT</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="trait">
+      <U n="trait">
+        <L n="blacklist_trait_types">
+          <E>GHOST</E>
+        </L>
+      </U>
+    </V>
+    <V t="will">
+      <U n="will">
+        <T n="negate">True</T>
+        <V n="test_type" t="will_finalized" />
+      </U>
+    </V>
+    <V t="lot_owner">
+      <U n="lot_owner">
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xBF17B5DF<!--String: "{0.SimFirstName} must be on {0.SimPronounPossessiveDependent} home lot to update heirlooms in {0.SimPronounPossessiveDependent} Will."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+</I>

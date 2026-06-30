@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_EP19Gardening_NotebookEntry_AuraBlossom" s="438586">
+  <L n="loot_actions">
+    <V t="create_notebook_entry">
+      <U n="create_notebook_entry">
+        <V n="notebook_entry" t="create_new_entry">
+          <U n="create_new_entry">
+            <T n="notebook_entry">438592<!--NotebookEntryCountryItemSansDefinition: notebookEntry_EP19Gardening_AuraBlossom--></T>
+          </U>
+        </V>
+        <U n="notifications">
+          <V n="unlocked_success_notification" t="enabled">
+            <V n="enabled" t="literal">
+              <U n="literal">
+                <V n="icon" t="enabled">
+                  <V n="enabled" t="resource_key">
+                    <U n="resource_key">
+                      <T n="key" p="InEP19\UI\Icons\Notifications\notification_ObjectAuraBlossom.png">2f7d0004:00000000:a3febfe99840e616</T>
+                    </U>
+                  </V>
+                </V>
+                <V n="secondary_icon" t="enabled">
+                  <V n="enabled" t="participant" />
+                </V>
+                <V n="text" t="single">
+                  <T n="single">0x32CC0827<!--String: "{0.SimFirstName} has discovered a new plant: Aura Blossom.\n\n{0.SimFirstName} recorded information about the discovery in the Notebook. To learn more, select below."--></T>
+                </V>
+                <L n="ui_responses">
+                  <U>
+                    <V n="response_command" t="enabled">
+                      <V n="enabled" t="literal">
+                        <U n="literal">
+                          <L n="arguments">
+                            <V t="special_command_data" />
+                            <V t="integer">
+                              <U n="integer">
+                                <T n="arg_value">129025</T>
+                              </U>
+                            </V>
+                            <V t="integer">
+                              <U n="integer">
+                                <T n="arg_value">129025</T>
+                              </U>
+                            </V>
+                          </L>
+                          <T n="command">notebook.generate_notebook</T>
+                        </U>
+                      </V>
+                    </V>
+                    <T n="text">0xF3022429<!--String: "Open Notebook"--></T>
+                    <E n="ui_request">SEND_COMMAND</E>
+                  </U>
+                </L>
+              </U>
+            </V>
+          </V>
+        </U>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="object_definition_criteria">
+        <U n="object_definition_criteria">
+          <V n="identity_test" t="definition_id">
+            <U n="definition_id">
+              <T n="actual_object">466359</T>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_ChildhoodInspiration_TriggerDiscoveryPhoneCall" s="470774">
+  <L n="loot_actions">
+    <V t="schedule_drama_node">
+      <U n="schedule_drama_node">
+        <T n="drama_node">470981<!--DialogDramaNode: dialogDramaNode_ChildhoodInspiration_DiscoveryPhoneCall--></T>
+        <L n="tests">
+          <L>
+            <V t="test_set_reference">
+              <T n="test_set_reference">470714<!--TestSetInstance: testSet_ChildhoodInspiration_NoneComplete--></T>
+            </V>
+            <V t="relationship">
+              <U n="relationship">
+                <T n="num_relations">1</T>
+                <U n="required_relationship_bits">
+                  <L n="match_any">
+                    <T>273773<!--RelationshipBitCollection: rbc_Friend_AtLeastFriend--></T>
+                  </L>
+                </U>
+                <L n="target_sim">
+                  <E>AllRelationships</E>
+                </L>
+                <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+              </U>
+            </V>
+            <V t="trait">
+              <U n="trait">
+                <L n="blacklist_traits">
+                  <T>470711<!--Trait: trait_Hidden_ChildhoodInspiration_Discovery--></T>
+                </L>
+              </U>
+            </V>
+            <V t="trait">
+              <U n="trait">
+                <L n="blacklist_traits">
+                  <T>218444<!--Trait: trait_Humanoid_Robots_MainTrait--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_set_max">
+        <U n="statistic_set_max">
+          <T n="stat">470716<!--Commodity: commodity_ChildhoodInspiration_DiscoveryPhoneCallTimer--></T>
+          <L n="tests">
+            <L>
+              <V t="test_set_reference">
+                <T n="test_set_reference">470714<!--TestSetInstance: testSet_ChildhoodInspiration_NoneComplete--></T>
+              </V>
+              <V t="relationship_bit_count">
+                <U n="relationship_bit_count">
+                  <T n="rel_bit">273773<!--RelationshipBitCollection: rbc_Friend_AtLeastFriend--></T>
+                </U>
+              </V>
+              <V t="trait">
+                <U n="trait">
+                  <L n="blacklist_traits">
+                    <T>470711<!--Trait: trait_Hidden_ChildhoodInspiration_Discovery--></T>
+                  </L>
+                </U>
+              </V>
+              <V t="trait">
+                <U n="trait">
+                  <L n="blacklist_traits">
+                    <T>218444<!--Trait: trait_Humanoid_Robots_MainTrait--></T>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified">
+            <L n="specified">
+              <E>YOUNGADULT</E>
+              <E />
+              <E>ELDER</E>
+            </L>
+          </V>
+          <V n="is_active_sim" t="enabled" />
+          <V n="species" t="specified">
+            <U n="specified">
+              <L n="species">
+                <E />
+              </L>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

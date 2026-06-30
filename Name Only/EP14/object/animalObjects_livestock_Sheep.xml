@@ -1,0 +1,2731 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="GameObject" i="object" m="objects.game_object" n="animalObjects_livestock_Sheep" s="300208">
+  <V n="_anim_overrides" t="enabled">
+    <U n="enabled">
+      <L n="params">
+        <U>
+          <T n="name">CreatureObject</T>
+          <V n="value" t="string">
+            <T n="string">animalSheepMini</T>
+          </V>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="_components">
+    <V n="affordance_tuning" t="enabled">
+      <U n="enabled">
+        <L n="affordance_map">
+          <U>
+            <T n="key">337999<!--SocialObjectSuperInteraction: sI_AnimalObjects_SimAnimals_Horse_Investigate--></T>
+            <U n="value">
+              <L n="tests">
+                <L>
+                  <V t="sim_info">
+                    <U n="sim_info">
+                      <V n="ages" t="specified">
+                        <L n="specified">
+                          <E>CHILD</E>
+                        </L>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+          </U>
+          <U>
+            <T n="key">338001<!--SocialObjectSuperInteraction: sI_AnimalObjects_SimAnimals_Horse_NeighAt--></T>
+            <U n="value">
+              <L n="tests">
+                <L>
+                  <V t="sim_info">
+                    <U n="sim_info">
+                      <V n="ages" t="specified">
+                        <L n="specified">
+                          <E>CHILD</E>
+                        </L>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V n="animal_object_component" t="enabled">
+      <U n="enabled">
+        <V n="animal_type_tuning" t="sheep">
+          <U n="sheep">
+            <T n="move_to_spawn_point_state_value">262477<!--ObjectStateValue: animalObjects_Generic_MasterController_Missing--></T>
+            <V n="move_to_spawn_point_tags" t="enabled">
+              <L n="enabled">
+                <E>Spawn_VisitorArrival</E>
+              </L>
+            </V>
+            <U n="terrain_control">
+              <U n="control">
+                <T n="control_joint">transformBone</T>
+                <U n="half_dimensions">
+                  <T n="x">0.18</T>
+                  <T n="y">0.835</T>
+                </U>
+              </U>
+              <T n="control_id">sheep_control</T>
+            </U>
+          </U>
+        </V>
+        <U n="catalog_price_modifier">
+          <U n="tested_multipliers">
+            <L n="multipliers">
+              <U>
+                <T n="multiplier">0.5</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">258077<!--ObjectStateValue: animalObjects_Generic_Happiness_Sad--></T>
+                        <E n="who">Object</E>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">0.75</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">258079<!--ObjectStateValue: animalObjects_Generic_Happiness_Fine--></T>
+                        <E n="who">Object</E>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">1</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">258081<!--ObjectStateValue: animalObjects_Generic_Happiness_Happy--></T>
+                        <E n="who">Object</E>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">1.5</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">258082<!--ObjectStateValue: animalObjects_Generic_Happiness_VeryHappy--></T>
+                        <E n="who">Object</E>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+        <V n="save_home_slot_for_gallery" t="enabled">
+          <U n="enabled">
+            <T n="home_slot">slot_AnimalObjects_ChickenCoop_Inside</T>
+            <V n="reset_to_home_slot_tests" t="enabled">
+              <L n="enabled">
+                <L>
+                  <V t="test_set_reference">
+                    <T n="test_set_reference">270868<!--TestSetInstance: testSet_AnimalObjects_Chickens_InHomeWithTransitions--></T>
+                  </V>
+                </L>
+              </L>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V n="focus" t="enabled">
+      <U n="enabled">
+        <V n="_focus_score" t="globally">
+          <U n="globally">
+            <E n="base">HIGH</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V n="idle_component" t="enabled">
+      <U n="enabled">
+        <L n="idle_animation_map">
+          <U>
+            <T n="key">256709<!--ObjectStateValue: animalObjects_Generic_IdleStateValues_Stand--></T>
+            <T n="value">320924<!--ObjectAnimationElement: animalObjects_Idles_GoatSheep_Stand--></T>
+          </U>
+          <U>
+            <T n="key">256710<!--ObjectStateValue: animalObjects_Generic_IdleStateValues_Sit--></T>
+            <T n="value">320922<!--ObjectAnimationElement: animalObjects_Idles_GoatSheep_LayDown--></T>
+          </U>
+          <U>
+            <T n="key">256717<!--ObjectStateValue: animalObjects_Generic_IdleStateValues_Positive--></T>
+            <T n="value">320925<!--ObjectAnimationElement: animalObjects_Idles_GoatSheep_React_Positive--></T>
+          </U>
+          <U>
+            <T n="key">256718<!--ObjectStateValue: animalObjects_Generic_IdleStateValues_Negative--></T>
+            <T n="value">320926<!--ObjectAnimationElement: animalObjects_Idles_GoatSheep_React_Negative--></T>
+          </U>
+          <U>
+            <T n="key">259748<!--ObjectStateValue: animalObjects_Generic_IdleStateValues_MakeSound--></T>
+            <T n="value">320930<!--ObjectAnimationElement: animalObjects_Idles_GoatSheep_React_Noise--></T>
+          </U>
+          <U>
+            <T n="key">260093<!--ObjectStateValue: animalObjects_Generic_IdleStateValues_InHome_Sleep--></T>
+            <T n="value">320921<!--ObjectAnimationElement: animalObjects_Idles_GoatSheep_Sleep--></T>
+          </U>
+          <U>
+            <T n="key">261612<!--ObjectStateValue: animalObjects_Generic_IdleStateValues_Aggressive--></T>
+            <T n="value">320927<!--ObjectAnimationElement: animalObjects_Idles_GoatSheep_React_Aggressive--></T>
+          </U>
+          <U>
+            <T n="key">261613<!--ObjectStateValue: animalObjects_Generic_IdleStateValues_Cute--></T>
+            <T n="value">320925<!--ObjectAnimationElement: animalObjects_Idles_GoatSheep_React_Positive--></T>
+          </U>
+          <U>
+            <T n="key">261614<!--ObjectStateValue: animalObjects_Generic_IdleStateValues_Confused--></T>
+            <T n="value">320926<!--ObjectAnimationElement: animalObjects_Idles_GoatSheep_React_Negative--></T>
+          </U>
+          <U>
+            <T n="key">261615<!--ObjectStateValue: animalObjects_Generic_IdleStateValues_Scared--></T>
+            <T n="value">320928<!--ObjectAnimationElement: animalObjects_Idles_GoatSheep_React_Scared--></T>
+          </U>
+          <U>
+            <T n="key">262088<!--ObjectStateValue: animalObjects_Generic_IdleStateValues_PeckIdle--></T>
+            <T n="value">320919<!--ObjectAnimationElement: animalObjects_Idles_GoatSheep_Eat--></T>
+          </U>
+          <U>
+            <T n="key">264971<!--ObjectStateValue: animalObjects_Generic_IdleStateValues_Sit_Sleep--></T>
+            <T n="value">320921<!--ObjectAnimationElement: animalObjects_Idles_GoatSheep_Sleep--></T>
+          </U>
+          <U>
+            <T n="key">326770<!--ObjectStateValue: animalObjects_Generic_IdleStateValues_Sheep_LovingGaze--></T>
+            <T n="value">326769<!--ObjectAnimationElement: animalObjects_Idles_Sheep_React_LovingGaze--></T>
+          </U>
+          <U>
+            <T n="key">342300<!--ObjectStateValue: animalObjects_Generic_IdleStateValues_Cry--></T>
+            <T n="value">320929<!--ObjectAnimationElement: animalObjects_Idles_GoatSheep_React_Sad--></T>
+          </U>
+          <U>
+            <T n="key">349546<!--ObjectStateValue: animalObjects_Generic_IdleStateValues_WakeUp--></T>
+            <T n="value">349545<!--ObjectAnimationElement: animalObjects_Idles_GoatSheep_WakeUp--></T>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V n="inventory" t="enabled">
+      <U n="enabled">
+        <T n="allow_putdown_in_inventory">False</T>
+        <E n="inventory_type">ANIMALCLOTHES</E>
+        <T n="return_owned_objects">True</T>
+        <T n="score_contained_objects_for_autonomy">False</T>
+        <T n="visible">False</T>
+      </U>
+    </V>
+    <V n="inventory_item" t="enabled">
+      <U n="enabled">
+        <V n="enter_inventory_state_value" t="enabled">
+          <T n="enabled">266319<!--ObjectStateValue: animalObjects_Generic_MasterController_InInventory--></T>
+        </V>
+        <V n="no_carry_add_to_sim_inventory_affordances" t="OVERRIDE">
+          <L n="OVERRIDE">
+            <T>266318<!--SuperInteraction: si_SwipeIntoSimInventory_AnimalObject--></T>
+          </L>
+        </V>
+        <V n="no_carry_add_to_world_affordances" t="OVERRIDE">
+          <L n="OVERRIDE">
+            <T>335890<!--SwipeAddToWorldSuperInteraction: si_SwipeAddToWorld_AnimalObjects_GoatSheep--></T>
+          </L>
+        </V>
+        <V n="register_with_lost_and_found" t="enabled" />
+        <T n="skip_carry_pose">True</T>
+        <E n="stack_scheme">NONE</E>
+        <L n="valid_inventory_types">
+          <E>SIM</E>
+        </L>
+      </U>
+    </V>
+    <V n="line_of_sight" t="enabled" />
+    <V n="name" t="enabled">
+      <U n="enabled">
+        <V n="affordance" t="enabled">
+          <T n="enabled">300215<!--RenameImmediateInteraction: rename_AnimalObjects_Animal_Sheep--></T>
+        </V>
+        <L n="templates">
+          <U>
+            <T n="template_name">0x64A10B35<!--String: "Nana"--></T>
+          </U>
+          <U>
+            <T n="template_name">0x9C1BF6B3<!--String: "Dolly"--></T>
+          </U>
+          <U>
+            <T n="template_name">0x7D105E96<!--String: "Bonabell"--></T>
+          </U>
+          <U>
+            <T n="template_name">0x35F33E43<!--String: "Cotton Ball"--></T>
+          </U>
+          <U>
+            <T n="template_name">0xE1DD40C<!--String: "Pudding"--></T>
+          </U>
+          <U>
+            <T n="template_name">0xBDE3B68F<!--String: "Marshmallow"--></T>
+          </U>
+          <U>
+            <T n="template_name">0x58D04336<!--String: "Daisy"--></T>
+          </U>
+          <U>
+            <T n="template_name">0x3F66318E<!--String: "Mary"--></T>
+          </U>
+          <U>
+            <T n="template_name">0xC5E4634E<!--String: "Croquette"--></T>
+          </U>
+          <U>
+            <T n="template_name">0xCD13CFA0<!--String: "Fluffy"--></T>
+          </U>
+          <U>
+            <T n="template_name">0x9E2C2134<!--String: "Cloud"--></T>
+          </U>
+          <U>
+            <T n="template_name">0x9DFDB8F2<!--String: "Poppy"--></T>
+          </U>
+          <U>
+            <T n="template_name">0xE2A68C15<!--String: "Lily"--></T>
+          </U>
+          <U>
+            <T n="template_name">0x6A2E3909<!--String: "Delilah"--></T>
+          </U>
+          <U>
+            <T n="template_name">0x4673AEFA<!--String: "Jellybean"--></T>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V n="object_relationships" t="enabled">
+      <U n="enabled">
+        <T n="icon_consider_geo_mat_state">True</T>
+        <T n="relationship_stat">268596<!--Commodity: commodity_AnimalObjects_Relationship--></T>
+        <V n="relationship_track_visual" t="enabled">
+          <U n="enabled">
+            <T n="relationship_track">271024<!--RelationshipTrack: LTR_SimToAnimalObject_Friendship_Main--></T>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V n="routing_component" t="enabled">
+      <U n="enabled">
+        <V n="object_routing_component" t="enabled">
+          <U n="enabled">
+            <T n="disable_fake_portals">False</T>
+            <L n="routing_behavior_map">
+              <U>
+                <T n="key">253595<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_Walk--></T>
+                <V n="value" t="Start_Behavior">
+                  <T n="Start_Behavior">267191<!--ObjectRoutingBehavior: objectRoutingBehavior_AnimalObjects_Generic_RandomWalk_FromTarget--></T>
+                </V>
+              </U>
+              <U>
+                <T n="key">253596<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_Stop--></T>
+                <V n="value" t="Stop_All_Behavior" />
+              </U>
+              <U>
+                <T n="key">253707<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_GoHome--></T>
+                <V n="value" t="Start_Behavior">
+                  <T n="Start_Behavior">304880<!--ObjectRoutingBehavior: objectRoutingBehavior_AnimalObjects_GoatSheep_ReturnToBed--></T>
+                </V>
+              </U>
+              <U>
+                <T n="key">256685<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_Find--></T>
+                <V n="value" t="Start_Behavior">
+                  <T n="Start_Behavior">304859<!--ObjectRoutingBehavior: objectRoutingBehavior_AnimalObjects_GoatSheep_EatFromAnimalFeeder--></T>
+                </V>
+              </U>
+              <U>
+                <T n="key">257027<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_Hold--></T>
+                <V n="value" t="Stop_All_Behavior" />
+              </U>
+              <U>
+                <T n="key">258122<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_GoToActor--></T>
+                <V n="value" t="Start_Behavior">
+                  <T n="Start_Behavior">258123<!--ObjectRoutingBehavior: objectRoutingBehavior_AnimalObjects_Generic_CallOver--></T>
+                </V>
+              </U>
+              <U>
+                <T n="key">258127<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_Preen--></T>
+                <V n="value" t="Start_Behavior">
+                  <T n="Start_Behavior">304879<!--ObjectRoutingBehavior: objectRoutingBehavior_AnimalObjects_GoatSheep_Graze--></T>
+                </V>
+              </U>
+              <U>
+                <T n="key">258637<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_CallOut--></T>
+                <V n="value" t="Start_Behavior">
+                  <T n="Start_Behavior">304861<!--ObjectRoutingBehavior: objectRoutingBehavior_AnimalObjects_GoatSheep_CallOut--></T>
+                </V>
+              </U>
+              <U>
+                <T n="key">260599<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_Social--></T>
+                <V n="value" t="Start_Behavior">
+                  <T n="Start_Behavior">260603<!--ObjectRoutingBehavior: objectRoutingBehavior_AnimalObjects_Generic_Social--></T>
+                </V>
+              </U>
+              <U>
+                <T n="key">261363<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_GoHome_Flee--></T>
+                <V n="value" t="Start_Behavior">
+                  <T n="Start_Behavior">304880<!--ObjectRoutingBehavior: objectRoutingBehavior_AnimalObjects_GoatSheep_ReturnToBed--></T>
+                </V>
+              </U>
+              <U>
+                <T n="key">261596<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_GoMissing--></T>
+                <V n="value" t="Start_Behavior">
+                  <T n="Start_Behavior">305247<!--ObjectRoutingBehavior: objectRoutingBehavior_AnimalObjects_GoatSheep_GoMissing--></T>
+                </V>
+              </U>
+              <U>
+                <T n="key">263856<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_Intimidate--></T>
+                <V n="value" t="Start_Behavior">
+                  <T n="Start_Behavior">253590<!--ObjectRoutingBehavior: objectRoutingBehavior_AnimalObjects_Generic_RandomWalk--></T>
+                </V>
+              </U>
+              <U>
+                <T n="key">263874<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_BeCurious--></T>
+                <V n="value" t="Start_Behavior">
+                  <T n="Start_Behavior">304863<!--ObjectRoutingBehavior: objectRoutingBehavior_AnimalObjects_GoatSheep_ReactToThings--></T>
+                </V>
+              </U>
+              <U>
+                <T n="key">263875<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_FollowSim--></T>
+                <V n="value" t="Start_Behavior">
+                  <T n="Start_Behavior">305248<!--ObjectRoutingBehavior: objectRoutingBehavior_AnimalObjects_GoatSheep_FollowSims--></T>
+                </V>
+              </U>
+              <U>
+                <T n="key">268085<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_CallOutFromNest--></T>
+                <V n="value" t="Start_Behavior">
+                  <T n="Start_Behavior">304861<!--ObjectRoutingBehavior: objectRoutingBehavior_AnimalObjects_GoatSheep_CallOut--></T>
+                </V>
+              </U>
+              <U>
+                <T n="key">268890<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_RunAway--></T>
+                <V n="value" t="Start_Behavior">
+                  <T n="Start_Behavior">305252<!--ObjectRoutingBehavior: objectRoutingBehavior_AnimalObjects_GoatSheep_RunAway--></T>
+                </V>
+              </U>
+              <U>
+                <T n="key">269914<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_GoHome_Teleport--></T>
+                <V n="value" t="Start_Behavior">
+                  <T n="Start_Behavior">305250<!--ObjectRoutingBehavior: objectRoutingBehavior_AnimalObjects_GoatSheep_TeleportToBed--></T>
+                </V>
+              </U>
+              <U>
+                <T n="key">269956<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_GoHome_Lot--></T>
+                <V n="value" t="Start_Behavior">
+                  <T n="Start_Behavior">305253<!--ObjectRoutingBehavior: objectRoutingBehavior_AnimalObjects_GoatSheep_GoOnLot--></T>
+                </V>
+              </U>
+              <U>
+                <T n="key">269957<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_GoHome_FromMissing--></T>
+                <V n="value" t="Start_Behavior">
+                  <T n="Start_Behavior">305251<!--ObjectRoutingBehavior: objectRoutingBehavior_AnimalObjects_GoatSheep_ReturnFromMissing--></T>
+                </V>
+              </U>
+              <U>
+                <T n="key">270583<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_GoNearHome--></T>
+                <V n="value" t="Start_Behavior">
+                  <T n="Start_Behavior">304864<!--ObjectRoutingBehavior: objectRoutingBehavior_AnimalObjects_GoatSheep_Sleep--></T>
+                </V>
+              </U>
+              <U>
+                <T n="key">270584<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_SocialAnimal--></T>
+                <V n="value" t="Start_Behavior">
+                  <T n="Start_Behavior">305245<!--ObjectRoutingBehavior: objectRoutingBehavior_AnimalObjects_GoatSheep_ReactToAnimal--></T>
+                </V>
+              </U>
+              <U>
+                <T n="key">324936<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_EatWildGrass--></T>
+                <V n="value" t="Start_Behavior">
+                  <T n="Start_Behavior">304860<!--ObjectRoutingBehavior: objectRoutingBehavior_AnimalObjects_GoatSheep_EatWildGrass--></T>
+                </V>
+              </U>
+              <U>
+                <T n="key">325430<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_SleepAtNight--></T>
+                <V n="value" t="Start_Behavior">
+                  <T n="Start_Behavior">325429<!--ObjectRoutingBehavior: objectRoutingBehavior_AnimalObjects_GoatSheep_Sleep_AtNight--></T>
+                </V>
+              </U>
+              <U>
+                <T n="key">325490<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_EatFromFeederAutonomous--></T>
+                <V n="value" t="Start_Behavior">
+                  <T n="Start_Behavior">325489<!--ObjectRoutingBehavior: objectRoutingBehavior_AnimalObjects_GoatSheep_EatFromAnimalFeeder_Autonomous--></T>
+                </V>
+              </U>
+              <U>
+                <T n="key">326208<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_GardenHelp--></T>
+                <V n="value" t="Start_Behavior">
+                  <T n="Start_Behavior">304878<!--ObjectRoutingBehavior: objectRoutingBehavior_AnimalObjects_GoatSheep_GardenHelp_Sheep--></T>
+                </V>
+              </U>
+              <U>
+                <T n="key">326636<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_LovingGaze--></T>
+                <V n="value" t="Start_Behavior">
+                  <T n="Start_Behavior">326637<!--ObjectRoutingBehavior: objectRoutingBehavior_AnimalObjects_Goat_LovingGaze--></T>
+                </V>
+              </U>
+              <U>
+                <T n="key">327585<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_RunAway_Fire--></T>
+                <V n="value" t="Start_Behavior">
+                  <T n="Start_Behavior">327527<!--ObjectRoutingBehavior: objectRoutingBehavior_AnimalObjects_GoatSheep_RunAway_Fire--></T>
+                </V>
+              </U>
+              <U>
+                <T n="key">337159<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_DrinkPuddle--></T>
+                <V n="value" t="Start_Behavior">
+                  <T n="Start_Behavior">337156<!--ObjectRoutingBehavior: objectRoutingBehavior_AnimalObjects_GoatSheep_DrinkPuddle--></T>
+                </V>
+              </U>
+              <U>
+                <T n="key">349461<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_Sell--></T>
+                <V n="value" t="Start_Behavior">
+                  <T n="Start_Behavior">349462<!--ObjectRoutingBehavior: objectRoutingBehavior_AnimalObjects_GoatSheep_Sell--></T>
+                </V>
+              </U>
+            </L>
+          </U>
+        </V>
+        <U n="plan_context_data">
+          <U n="default_context">
+            <V n="_allowed_portal_flags" t="enabled" />
+          </U>
+        </U>
+        <U n="walkstyle_behavior">
+          <T p="InEP14\Locomotion\animalSheepMini_walk.walkstyle" n="default_walkstyle">27c01d95:00000000:00000000f44a784d</T>
+          <T n="run_required_segment_distance">8</T>
+          <T n="run_required_total_distance">12</T>
+          <T p="InEP14\Locomotion\animalSheepMini_run.walkstyle" n="run_walkstyle">27c01d95:00000000:00000000a630f3bd</T>
+          <T p="InEP14\Locomotion\animalSheepMini_walk.walkstyle" n="short_walkstyle">27c01d95:00000000:00000000f44a784d</T>
+          <T n="short_walkstyle_distance">3.5</T>
+          <V n="wading_walkstyle_buff" t="disabled" />
+        </U>
+      </U>
+    </V>
+    <V n="spawn_point" t="enabled">
+      <U n="enabled">
+        <L n="spawn_points">
+          <U>
+            <T n="bone_name">b__root__</T>
+            <U n="bone_offset">
+              <T n="z">-2</T>
+            </U>
+            <L n="spawner_tags">
+              <E>Spawn_Grim_Reaper</E>
+            </L>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V n="state" t="enabled">
+      <U n="enabled">
+        <L n="state_triggers">
+          <U>
+            <L n="at_states">
+              <T>262374<!--ObjectStateValue: animalObjects_Generic_MasterController_Free--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>256709<!--ObjectStateValue: animalObjects_Generic_IdleStateValues_Stand--></T>
+                <T>253596<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_Stop--></T>
+                <T>261039<!--ObjectStateValue: animalObjects_Generic_Visibility_On--></T>
+                <T>261047<!--ObjectStateValue: animalObjects_Generic_Footprint_On--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>260599<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_Social--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>262375<!--ObjectStateValue: animalObjects_Generic_MasterController_Socializing--></T>
+                <T>256709<!--ObjectStateValue: animalObjects_Generic_IdleStateValues_Stand--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>262375<!--ObjectStateValue: animalObjects_Generic_MasterController_Socializing--></T>
+              <T>266319<!--ObjectStateValue: animalObjects_Generic_MasterController_InInventory--></T>
+            </L>
+            <L n="prohibited_states">
+              <T>260599<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_Social--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>256709<!--ObjectStateValue: animalObjects_Generic_IdleStateValues_Stand--></T>
+                <T>257027<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_Hold--></T>
+              </L>
+            </V>
+            <E n="trigger_operation">OR</E>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>257027<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_Hold--></T>
+              <T>253596<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_Stop--></T>
+              <T>260599<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_Social--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>262408<!--ObjectStateValue: animalObjects_Generic_MasterController_Routing--></T>
+              </L>
+            </V>
+            <E n="trigger_operation">NONE</E>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>256979<!--CommodityBasedObjectStateValue: animalObjects_CommodityStateValues_Hunger_Max--></T>
+              <T>256981<!--CommodityBasedObjectStateValue: animalObjects_CommodityStateValues_Hygiene_Max--></T>
+              <T>256983<!--CommodityBasedObjectStateValue: animalObjects_CommodityStateValues_Activity_Max--></T>
+              <T>261763<!--ObjectStateValue: animalObjects_Generic_SadReasons_None--></T>
+            </L>
+            <L n="prohibited_states">
+              <T>260084<!--CommodityBasedObjectStateValue: animalObjects_CommodityStateValues_VeryHappyTimer_On--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>258081<!--ObjectStateValue: animalObjects_Generic_Happiness_Happy--></T>
+                <T>267880<!--CommodityBasedObjectStateValue: animalObjects_LivestockPen_GoMissing_Start--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>256979<!--CommodityBasedObjectStateValue: animalObjects_CommodityStateValues_Hunger_Max--></T>
+              <T>256981<!--CommodityBasedObjectStateValue: animalObjects_CommodityStateValues_Hygiene_Max--></T>
+              <T>256982<!--CommodityBasedObjectStateValue: animalObjects_CommodityStateValues_Activity_Low--></T>
+              <T>261763<!--ObjectStateValue: animalObjects_Generic_SadReasons_None--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>258079<!--ObjectStateValue: animalObjects_Generic_Happiness_Fine--></T>
+                <T>260083<!--CommodityBasedObjectStateValue: animalObjects_CommodityStateValues_VeryHappyTimer_Off--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>256976<!--CommodityBasedObjectStateValue: animalObjects_CommodityStateValues_Hunger_Low--></T>
+              <T>256980<!--CommodityBasedObjectStateValue: animalObjects_CommodityStateValues_Hygiene_Low--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>258077<!--ObjectStateValue: animalObjects_Generic_Happiness_Sad--></T>
+                <T>260083<!--CommodityBasedObjectStateValue: animalObjects_CommodityStateValues_VeryHappyTimer_Off--></T>
+                <T>267874<!--CommodityBasedObjectStateValue: animalObjects_LivestockPen_GoMissing_Unhappy--></T>
+              </L>
+            </V>
+            <E n="trigger_operation">OR</E>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>260084<!--CommodityBasedObjectStateValue: animalObjects_CommodityStateValues_VeryHappyTimer_On--></T>
+              <T>256983<!--CommodityBasedObjectStateValue: animalObjects_CommodityStateValues_Activity_Max--></T>
+              <T>256979<!--CommodityBasedObjectStateValue: animalObjects_CommodityStateValues_Hunger_Max--></T>
+              <T>256981<!--CommodityBasedObjectStateValue: animalObjects_CommodityStateValues_Hygiene_Max--></T>
+              <T>261763<!--ObjectStateValue: animalObjects_Generic_SadReasons_None--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>258082<!--ObjectStateValue: animalObjects_Generic_Happiness_VeryHappy--></T>
+                <T>267880<!--CommodityBasedObjectStateValue: animalObjects_LivestockPen_GoMissing_Start--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>262477<!--ObjectStateValue: animalObjects_Generic_MasterController_Missing--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>257027<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_Hold--></T>
+                <T>261043<!--ObjectStateValue: animalObjects_Generic_Visibility_Off--></T>
+                <T>256709<!--ObjectStateValue: animalObjects_Generic_IdleStateValues_Stand--></T>
+                <T>261594<!--CommodityBasedObjectStateValue: animalObjects_Generic_GoMissing_Missing--></T>
+                <T>261048<!--ObjectStateValue: animalObjects_Generic_Footprint_Off--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>261614<!--ObjectStateValue: animalObjects_Generic_IdleStateValues_Confused--></T>
+              <T>264713<!--ObjectStateValue: animalObjects_Generic_MasterController_InSlot--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>256709<!--ObjectStateValue: animalObjects_Generic_IdleStateValues_Stand--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>258963<!--ObjectStateValue: animalObjects_Generic_Schedule_Day--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>259516<!--ObjectStateValue: animalObjects_Livestock_HarvestReady_On--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>264713<!--ObjectStateValue: animalObjects_Generic_MasterController_InSlot--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>256710<!--ObjectStateValue: animalObjects_Generic_IdleStateValues_Sit--></T>
+                <T>261039<!--ObjectStateValue: animalObjects_Generic_Visibility_On--></T>
+                <T>261047<!--ObjectStateValue: animalObjects_Generic_Footprint_On--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>264713<!--ObjectStateValue: animalObjects_Generic_MasterController_InSlot--></T>
+              <T>177945<!--ObjectStateValue: objectStateValue_Parented_Unparented--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>262374<!--ObjectStateValue: animalObjects_Generic_MasterController_Free--></T>
+              </L>
+            </V>
+          </U>
+        </L>
+        <L n="states">
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">35296<!--ObjectStateValue: GenericOnOff_On--></T>
+                <U n="value">
+                  <V n="voice_actor" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <L n="actor_audio_suffix_override">
+                        <U>
+                          <E n="key">SUFFIX_ACTOR</E>
+                          <T n="value">AS</T>
+                        </U>
+                        <U>
+                          <E n="key">SUFFIX_SHOE</E>
+                          <T n="value">Sheep</T>
+                        </U>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">35297<!--ObjectStateValue: GenericOnOff_Off--></T>
+                <U n="value">
+                  <V n="replace_object" t="enabled" />
+                </U>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">35296<!--ObjectStateValue: GenericOnOff_On--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">261047<!--ObjectStateValue: animalObjects_Generic_Footprint_On--></T>
+                <U n="value">
+                  <V n="toggle_footprint" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <L n="toggles">
+                        <U>
+                          <T n="enable">True</T>
+                          <T n="footprint_hash">animalSheepMini_ftp_placement_toggleShape</T>
+                          <T n="is_placement_footprint">True</T>
+                          <T n="push_sims">False</T>
+                        </U>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">261048<!--ObjectStateValue: animalObjects_Generic_Footprint_Off--></T>
+                <U n="value">
+                  <V n="toggle_footprint" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <L n="toggles">
+                        <U>
+                          <T n="footprint_hash">animalSheepMini_ftp_placement_toggleShape</T>
+                          <T n="is_placement_footprint">True</T>
+                          <T n="push_sims">False</T>
+                        </U>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">261047<!--ObjectStateValue: animalObjects_Generic_Footprint_On--></T>
+            </V>
+            <T n="reset_on_load_if_time_passes">True</T>
+            <T n="reset_to_default">True</T>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">261039<!--ObjectStateValue: animalObjects_Generic_Visibility_On--></T>
+                <U n="value">
+                  <V n="visibility" t="apply_new_value" />
+                </U>
+              </U>
+              <U>
+                <T n="key">261043<!--ObjectStateValue: animalObjects_Generic_Visibility_Off--></T>
+                <U n="value">
+                  <V n="visibility" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <T n="enable_drop_shadow">False</T>
+                      <T n="inherits">False</T>
+                      <T n="visibility">False</T>
+                    </U>
+                  </V>
+                </U>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">261039<!--ObjectStateValue: animalObjects_Generic_Visibility_On--></T>
+            </V>
+            <T n="reset_on_load_if_time_passes">True</T>
+            <T n="reset_to_default">True</T>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">253596<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_Stop--></T>
+            </V>
+            <T n="reset_on_load_if_time_passes">True</T>
+            <T n="reset_to_default">True</T>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">256998<!--CommodityBasedObjectStateValue: animalObjects_CommodityStateValues_Age_YoungAdult--></T>
+                <U n="value">
+                  <V n="autonomy_modifiers" t="apply_new_value">
+                    <V n="apply_new_value" t="apply_statistic_modifiers">
+                      <U n="apply_statistic_modifiers">
+                        <L n="autonomy_modifiers">
+                          <U>
+                            <L n="decay_modifiers">
+                              <U>
+                                <T n="key">256986<!--Commodity: commodity_AnimalObjects_Motive_Hunger--></T>
+                                <T n="value">0.25</T>
+                              </U>
+                              <U>
+                                <T n="key">256987<!--Commodity: commodity_AnimalObjects_Motive_Activity--></T>
+                                <T n="value">0.25</T>
+                              </U>
+                              <U>
+                                <T n="key">256988<!--Commodity: commodity_AnimalObjects_Motive_Hygiene--></T>
+                                <T n="value">0.125</T>
+                              </U>
+                              <U>
+                                <T n="key">256989<!--Commodity: commodity_AnimalObjects_Age--></T>
+                                <T n="value">0.86</T>
+                              </U>
+                            </L>
+                          </U>
+                        </L>
+                      </U>
+                    </V>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">256999<!--CommodityBasedObjectStateValue: animalObjects_CommodityStateValues_Age_Adult--></T>
+                <U n="value">
+                  <V n="autonomy_modifiers" t="apply_new_value">
+                    <V n="apply_new_value" t="apply_statistic_modifiers">
+                      <U n="apply_statistic_modifiers">
+                        <L n="autonomy_modifiers">
+                          <U>
+                            <L n="decay_modifiers">
+                              <U>
+                                <T n="key">256986<!--Commodity: commodity_AnimalObjects_Motive_Hunger--></T>
+                                <T n="value">0.25</T>
+                              </U>
+                              <U>
+                                <T n="key">256987<!--Commodity: commodity_AnimalObjects_Motive_Activity--></T>
+                                <T n="value">0.25</T>
+                              </U>
+                              <U>
+                                <T n="key">256988<!--Commodity: commodity_AnimalObjects_Motive_Hygiene--></T>
+                                <T n="value">0.125</T>
+                              </U>
+                              <U>
+                                <T n="key">256989<!--Commodity: commodity_AnimalObjects_Age--></T>
+                                <T n="value">0.32</T>
+                              </U>
+                            </L>
+                          </U>
+                        </L>
+                      </U>
+                    </V>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">257001<!--CommodityBasedObjectStateValue: animalObjects_CommodityStateValues_Age_Elder--></T>
+                <U n="value">
+                  <V n="autonomy_modifiers" t="apply_new_value">
+                    <V n="apply_new_value" t="apply_statistic_modifiers">
+                      <U n="apply_statistic_modifiers">
+                        <L n="autonomy_modifiers">
+                          <U>
+                            <L n="decay_modifiers">
+                              <U>
+                                <T n="key">256986<!--Commodity: commodity_AnimalObjects_Motive_Hunger--></T>
+                                <T n="value">0.25</T>
+                              </U>
+                              <U>
+                                <T n="key">256987<!--Commodity: commodity_AnimalObjects_Motive_Activity--></T>
+                                <T n="value">0.25</T>
+                              </U>
+                              <U>
+                                <T n="key">256988<!--Commodity: commodity_AnimalObjects_Motive_Hygiene--></T>
+                                <T n="value">0.125</T>
+                              </U>
+                              <U>
+                                <T n="key">256989<!--Commodity: commodity_AnimalObjects_Age--></T>
+                                <T n="value">0.83</T>
+                              </U>
+                            </L>
+                          </U>
+                        </L>
+                      </U>
+                    </V>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">261266<!--CommodityBasedObjectStateValue: animalObjects_CommodityStateValues_Age_ReadyToDie--></T>
+                <U n="value">
+                  <V n="autonomy_modifiers" t="apply_new_value">
+                    <V n="apply_new_value" t="apply_statistic_modifiers">
+                      <U n="apply_statistic_modifiers">
+                        <L n="autonomy_modifiers">
+                          <U>
+                            <L n="decay_modifiers">
+                              <U>
+                                <T n="key">256986<!--Commodity: commodity_AnimalObjects_Motive_Hunger--></T>
+                              </U>
+                              <U>
+                                <T n="key">256987<!--Commodity: commodity_AnimalObjects_Motive_Activity--></T>
+                              </U>
+                              <U>
+                                <T n="key">256988<!--Commodity: commodity_AnimalObjects_Motive_Hygiene--></T>
+                              </U>
+                            </L>
+                          </U>
+                        </L>
+                      </U>
+                    </V>
+                  </V>
+                </U>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">256998<!--CommodityBasedObjectStateValue: animalObjects_CommodityStateValues_Age_YoungAdult--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">262374<!--ObjectStateValue: animalObjects_Generic_MasterController_Free--></T>
+            </V>
+            <V n="tested_states_on_reset" t="enabled">
+              <U n="enabled">
+                <L n="tested_states">
+                  <U>
+                    <T n="state">262374<!--ObjectStateValue: animalObjects_Generic_MasterController_Free--></T>
+                    <L n="tests">
+                      <L>
+                        <V t="has_parent_object">
+                          <U n="has_parent_object">
+                            <T n="negate">True</T>
+                            <E n="targets">Actor</E>
+                          </U>
+                        </V>
+                        <V t="state_white_black">
+                          <U n="state_white_black">
+                            <U n="states">
+                              <V n="blacklist" t="specify">
+                                <U n="specify">
+                                  <L n="blacklist">
+                                    <T>266319<!--ObjectStateValue: animalObjects_Generic_MasterController_InInventory--></T>
+                                    <T>264713<!--ObjectStateValue: animalObjects_Generic_MasterController_InSlot--></T>
+                                    <T>262477<!--ObjectStateValue: animalObjects_Generic_MasterController_Missing--></T>
+                                  </L>
+                                </U>
+                              </V>
+                            </U>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                  <U>
+                    <T n="state">262324<!--ObjectStateValue: animalObjects_Generic_MasterController_InSlot_Sleep--></T>
+                    <L n="tests">
+                      <L>
+                        <V t="has_parent_object">
+                          <U n="has_parent_object">
+                            <T n="check_part_owner">True</T>
+                            <V n="parent_object" t="enabled">
+                              <E n="enabled">ObjectAnimalHome</E>
+                            </V>
+                            <E n="targets">Actor</E>
+                          </U>
+                        </V>
+                        <V t="state_white_black">
+                          <U n="state_white_black">
+                            <U n="states">
+                              <V n="blacklist" t="specify">
+                                <U n="specify">
+                                  <L n="blacklist">
+                                    <T>266319<!--ObjectStateValue: animalObjects_Generic_MasterController_InInventory--></T>
+                                    <T>264713<!--ObjectStateValue: animalObjects_Generic_MasterController_InSlot--></T>
+                                    <T>262477<!--ObjectStateValue: animalObjects_Generic_MasterController_Missing--></T>
+                                  </L>
+                                </U>
+                              </V>
+                            </U>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                </L>
+              </U>
+            </V>
+            <V n="tested_states_on_save" t="enabled">
+              <U n="enabled">
+                <L n="tested_states">
+                  <U>
+                    <T n="state">262324<!--ObjectStateValue: animalObjects_Generic_MasterController_InSlot_Sleep--></T>
+                    <L n="tests">
+                      <L>
+                        <V t="test_set_reference">
+                          <T n="test_set_reference">270868<!--TestSetInstance: testSet_AnimalObjects_Chickens_InHomeWithTransitions--></T>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                  <U>
+                    <T n="state">262374<!--ObjectStateValue: animalObjects_Generic_MasterController_Free--></T>
+                    <L n="tests">
+                      <L>
+                        <V t="state_white_black">
+                          <U n="state_white_black">
+                            <E n="participant">Actor</E>
+                            <U n="states">
+                              <V n="blacklist" t="specify">
+                                <U n="specify">
+                                  <L n="blacklist">
+                                    <T>271105<!--ObjectStateValue: animalObjects_Generic_Location_InHome--></T>
+                                    <T>268087<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_CallOutFromCrow--></T>
+                                    <T>268085<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_CallOutFromNest--></T>
+                                    <T>262080<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_Nest--></T>
+                                    <T>262081<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_RoosterCrow--></T>
+                                  </L>
+                                </U>
+                              </V>
+                              <V n="whitelist" t="specify">
+                                <U n="specify">
+                                  <L n="whitelist">
+                                    <T>262408<!--ObjectStateValue: animalObjects_Generic_MasterController_Routing--></T>
+                                    <T>262375<!--ObjectStateValue: animalObjects_Generic_MasterController_Socializing--></T>
+                                  </L>
+                                </U>
+                              </V>
+                            </U>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                </L>
+              </U>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">258963<!--ObjectStateValue: animalObjects_Generic_Schedule_Day--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">261461<!--ObjectStateValue: animalObjects_StateValues_AnimalClothing_NoClothing--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">261916<!--ObjectStateValue: foxStalk_Target_Off--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">256979<!--CommodityBasedObjectStateValue: animalObjects_CommodityStateValues_Hunger_Max--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">256980<!--CommodityBasedObjectStateValue: animalObjects_CommodityStateValues_Hygiene_Low--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">Dirty</T>
+                      </V>
+                    </U>
+                  </V>
+                  <V n="vfx_state" t="apply_new_value">
+                    <V n="apply_new_value" t="start_vfx">
+                      <V n="start_vfx" t="single_effect">
+                        <U n="single_effect">
+                          <T n="effect_name">ep14_goat_sheep_stink</T>
+                          <V n="joint_name" t="Slot">
+                            <T n="Slot">b__Pelvis__</T>
+                          </V>
+                        </U>
+                      </V>
+                    </V>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">256981<!--CommodityBasedObjectStateValue: animalObjects_CommodityStateValues_Hygiene_Max--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value" />
+                  <V n="vfx_state" t="apply_new_value" />
+                </U>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">256981<!--CommodityBasedObjectStateValue: animalObjects_CommodityStateValues_Hygiene_Max--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">256982<!--CommodityBasedObjectStateValue: animalObjects_CommodityStateValues_Activity_Low--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">258077<!--ObjectStateValue: animalObjects_Generic_Happiness_Sad--></T>
+                <U n="value">
+                  <V n="autonomy_modifiers" t="apply_new_value">
+                    <V n="apply_new_value" t="apply_statistic_modifiers">
+                      <U n="apply_statistic_modifiers">
+                        <L n="autonomy_modifiers">
+                          <U>
+                            <L n="decay_modifiers">
+                              <U>
+                                <T n="key">256989<!--Commodity: commodity_AnimalObjects_Age--></T>
+                                <T n="value">1.5</T>
+                              </U>
+                            </L>
+                          </U>
+                        </L>
+                      </U>
+                    </V>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">258079<!--ObjectStateValue: animalObjects_Generic_Happiness_Fine--></T>
+                <U n="value">
+                  <V n="autonomy_modifiers" t="apply_new_value">
+                    <V n="apply_new_value" t="apply_statistic_modifiers">
+                      <U n="apply_statistic_modifiers">
+                        <L n="autonomy_modifiers">
+                          <U>
+                            <L n="decay_modifiers">
+                              <U>
+                                <T n="key">256989<!--Commodity: commodity_AnimalObjects_Age--></T>
+                                <T n="value">1</T>
+                              </U>
+                            </L>
+                          </U>
+                        </L>
+                      </U>
+                    </V>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">258081<!--ObjectStateValue: animalObjects_Generic_Happiness_Happy--></T>
+                <U n="value">
+                  <V n="autonomy_modifiers" t="apply_new_value">
+                    <V n="apply_new_value" t="apply_statistic_modifiers">
+                      <U n="apply_statistic_modifiers">
+                        <L n="autonomy_modifiers">
+                          <U>
+                            <L n="decay_modifiers">
+                              <U>
+                                <T n="key">256989<!--Commodity: commodity_AnimalObjects_Age--></T>
+                                <T n="value">1</T>
+                              </U>
+                            </L>
+                            <V n="override_convergence_value" t="Set_new_convergence_value">
+                              <L n="Set_new_convergence_value">
+                                <U>
+                                  <T n="key">260086<!--Commodity: commodity_AnimalObjects_VeryHappyTimer--></T>
+                                  <T n="value">721</T>
+                                </U>
+                              </L>
+                            </V>
+                          </U>
+                        </L>
+                      </U>
+                    </V>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">258082<!--ObjectStateValue: animalObjects_Generic_Happiness_VeryHappy--></T>
+                <U n="value">
+                  <V n="autonomy_modifiers" t="apply_new_value">
+                    <V n="apply_new_value" t="apply_statistic_modifiers">
+                      <U n="apply_statistic_modifiers">
+                        <L n="autonomy_modifiers">
+                          <U>
+                            <L n="decay_modifiers">
+                              <U>
+                                <T n="key">256989<!--Commodity: commodity_AnimalObjects_Age--></T>
+                                <T n="value">0.85</T>
+                              </U>
+                            </L>
+                            <V n="override_convergence_value" t="Set_new_convergence_value">
+                              <L n="Set_new_convergence_value">
+                                <U>
+                                  <T n="key">260086<!--Commodity: commodity_AnimalObjects_VeryHappyTimer--></T>
+                                  <T n="value">721</T>
+                                </U>
+                              </L>
+                            </V>
+                          </U>
+                        </L>
+                      </U>
+                    </V>
+                  </V>
+                </U>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">258079<!--ObjectStateValue: animalObjects_Generic_Happiness_Fine--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">256709<!--ObjectStateValue: animalObjects_Generic_IdleStateValues_Stand--></T>
+            </V>
+            <T n="reset_on_load_if_time_passes">True</T>
+            <T n="reset_to_default">True</T>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">260083<!--CommodityBasedObjectStateValue: animalObjects_CommodityStateValues_VeryHappyTimer_Off--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">261279<!--ObjectStateValue: animalObjects_Generic_SpawnGrimReaper_False--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">261084<!--ObjectStateValue: animalObjects_Livestock_Sold_NotSold--></T>
+              </U>
+              <U>
+                <T n="key">261085<!--ObjectStateValue: animalObjects_Livestock_Sold_SoldForSimoleons--></T>
+              </U>
+              <U>
+                <T n="key">261086<!--ObjectStateValue: animalObjects_Livestock_Sold_SoldForMeat--></T>
+              </U>
+              <U>
+                <T n="key">268069<!--ObjectStateValue: animalObjects_Livestock_Sold_SoldForIngredients--></T>
+              </U>
+              <U>
+                <T n="key">268070<!--ObjectStateValue: animalObjects_Livestock_Sold_SoldForLivestockFeed--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">261084<!--ObjectStateValue: animalObjects_Livestock_Sold_NotSold--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">265336<!--CommodityBasedObjectStateValue: animalObjects_CountryCaretaker_LifeExtensionValues_Off--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">269851<!--ObjectStateValue: villageFair_InCompetition_ON--></T>
+              </U>
+              <U>
+                <T n="key">269852<!--ObjectStateValue: villageFair_InCompetition_OFF--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">269852<!--ObjectStateValue: villageFair_InCompetition_OFF--></T>
+            </V>
+            <T n="reset_on_load_if_time_passes">True</T>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">261595<!--CommodityBasedObjectStateValue: animalObjects_Generic_GoMissing_Home--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">268944<!--ObjectStateValue: animalObjects_Generic_NextPlannedAction_None--></T>
+            </V>
+            <T n="reset_to_default">True</T>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">267872<!--CommodityBasedObjectStateValue: animalObjects_LivestockPen_GoMissing_Warn--></T>
+              </U>
+              <U>
+                <T n="key">267873<!--CommodityBasedObjectStateValue: animalObjects_LivestockPen_GoMissing_Leave--></T>
+              </U>
+              <U>
+                <T n="key">267874<!--CommodityBasedObjectStateValue: animalObjects_LivestockPen_GoMissing_Unhappy--></T>
+              </U>
+              <U>
+                <T n="key">267880<!--CommodityBasedObjectStateValue: animalObjects_LivestockPen_GoMissing_Start--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">267880<!--CommodityBasedObjectStateValue: animalObjects_LivestockPen_GoMissing_Start--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">271107<!--ObjectStateValue: animalObjects_Generic_Location_NotInHome--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">177945<!--ObjectStateValue: objectStateValue_Parented_Unparented--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">259516<!--ObjectStateValue: animalObjects_Livestock_HarvestReady_On--></T>
+              </U>
+              <U>
+                <T n="key">259517<!--ObjectStateValue: animalObjects_Livestock_HarvestReady_Off--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">259516<!--ObjectStateValue: animalObjects_Livestock_HarvestReady_On--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">261115<!--ObjectStateValue: animalObjects_GardeningHelp_Enabled--></T>
+              </U>
+              <U>
+                <T n="key">261116<!--ObjectStateValue: animalObjects_GardeningHelp_Disenabled--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">261116<!--ObjectStateValue: animalObjects_GardeningHelp_Disenabled--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">261763<!--ObjectStateValue: animalObjects_Generic_SadReasons_None--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">337570<!--ObjectStateValue: animalObjects_Generic_Purchased_JustPurchased_InInventory--></T>
+                <U n="value">
+                  <V n="autonomy_modifiers" t="apply_new_value">
+                    <V n="apply_new_value" t="apply_statistic_modifiers">
+                      <U n="apply_statistic_modifiers">
+                        <L n="autonomy_modifiers">
+                          <U>
+                            <L n="decay_modifiers">
+                              <U>
+                                <T n="key">256986<!--Commodity: commodity_AnimalObjects_Motive_Hunger--></T>
+                              </U>
+                              <U>
+                                <T n="key">256987<!--Commodity: commodity_AnimalObjects_Motive_Activity--></T>
+                              </U>
+                              <U>
+                                <T n="key">256988<!--Commodity: commodity_AnimalObjects_Motive_Hygiene--></T>
+                              </U>
+                            </L>
+                          </U>
+                        </L>
+                      </U>
+                    </V>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">337571<!--ObjectStateValue: animalObjects_Generic_Purchased_PlacedInWorld--></T>
+                <U n="value">
+                  <V n="autonomy_modifiers" t="apply_new_value" />
+                </U>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">337570<!--ObjectStateValue: animalObjects_Generic_Purchased_JustPurchased_InInventory--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">258901<!--ObjectStateValue: animalObjects_LivestockFeed_Color_Red--></T>
+              </U>
+              <U>
+                <T n="key">258902<!--ObjectStateValue: animalObjects_LivestockFeed_Color_Blue--></T>
+              </U>
+              <U>
+                <T n="key">258914<!--ObjectStateValue: animalObjects_LivestockFeed_Color_Base--></T>
+              </U>
+              <U>
+                <T n="key">259465<!--ObjectStateValue: animalObjects_LivestockFeed_Color_Pink--></T>
+              </U>
+              <U>
+                <T n="key">259466<!--ObjectStateValue: animalObjects_LivestockFeed_Color_Brown--></T>
+              </U>
+              <U>
+                <T n="key">259467<!--ObjectStateValue: animalObjects_LivestockFeed_Color_Orange--></T>
+              </U>
+              <U>
+                <T n="key">259468<!--ObjectStateValue: animalObjects_LivestockFeed_Color_Green--></T>
+              </U>
+              <U>
+                <T n="key">259469<!--ObjectStateValue: animalObjects_LivestockFeed_Color_Rainbow--></T>
+              </U>
+              <U>
+                <T n="key">259470<!--ObjectStateValue: animalObjects_LivestockFeed_Color_Gold--></T>
+              </U>
+              <U>
+                <T n="key">259471<!--ObjectStateValue: animalObjects_LivestockFeed_Color_Black--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">258914<!--ObjectStateValue: animalObjects_LivestockFeed_Color_Base--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">258903<!--ObjectStateValue: animalObjects_LivestockFeed_HarvestBonus_On--></T>
+              </U>
+              <U>
+                <T n="key">258909<!--ObjectStateValue: animalObjects_LivestockFeed_HarvestBonus_Off--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">258909<!--ObjectStateValue: animalObjects_LivestockFeed_HarvestBonus_Off--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">258745<!--CommodityBasedObjectStateValue: animalObjects_LivestockFeed_Healthy_On--></T>
+              </U>
+              <U>
+                <T n="key">258746<!--CommodityBasedObjectStateValue: animalObjects_LivestockFeed_Healthy_Off--></T>
+                <U n="value">
+                  <V n="autonomy_modifiers" t="apply_new_value">
+                    <V n="apply_new_value" t="apply_statistic_modifiers">
+                      <U n="apply_statistic_modifiers">
+                        <L n="autonomy_modifiers">
+                          <U>
+                            <L n="decay_modifiers">
+                              <U>
+                                <T n="key">256989<!--Commodity: commodity_AnimalObjects_Age--></T>
+                                <T n="value">1</T>
+                              </U>
+                            </L>
+                          </U>
+                        </L>
+                      </U>
+                    </V>
+                  </V>
+                </U>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">258746<!--CommodityBasedObjectStateValue: animalObjects_LivestockFeed_Healthy_Off--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">258959<!--ObjectStateValue: animalObjects_Livestock_Age_LifeExtend_On--></T>
+                <U n="value">
+                  <V n="autonomy_modifiers" t="apply_new_value">
+                    <V n="apply_new_value" t="apply_statistic_modifiers">
+                      <U n="apply_statistic_modifiers">
+                        <L n="autonomy_modifiers">
+                          <U>
+                            <L n="decay_modifiers">
+                              <U>
+                                <T n="key">256989<!--Commodity: commodity_AnimalObjects_Age--></T>
+                                <T n="value">0.8</T>
+                              </U>
+                            </L>
+                          </U>
+                        </L>
+                      </U>
+                    </V>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">258960<!--ObjectStateValue: animalObjects_Livestock_Age_LifeExtend_Off--></T>
+                <U n="value">
+                  <V n="autonomy_modifiers" t="apply_new_value">
+                    <V n="apply_new_value" t="apply_statistic_modifiers">
+                      <U n="apply_statistic_modifiers">
+                        <L n="autonomy_modifiers">
+                          <U>
+                            <L n="decay_modifiers">
+                              <U>
+                                <T n="key">256989<!--Commodity: commodity_AnimalObjects_Age--></T>
+                                <T n="value">1</T>
+                              </U>
+                            </L>
+                          </U>
+                        </L>
+                      </U>
+                    </V>
+                  </V>
+                </U>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">258960<!--ObjectStateValue: animalObjects_Livestock_Age_LifeExtend_Off--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">264939<!--ObjectStateValue: animalObjects_StateValues_AnimalClothing_NoClothing_Clean--></T>
+            </V>
+          </U>
+        </L>
+        <V n="timed_state_triggers" t="enabled">
+          <L n="enabled">
+            <U>
+              <T n="key">177944<!--ObjectStateValue: objectStateValue_Parented_Parented--></T>
+              <U n="value">
+                <L n="ops">
+                  <U>
+                    <L n="random_states_to_trigger">
+                      <U>
+                        <T n="state_value">264713<!--ObjectStateValue: animalObjects_Generic_MasterController_InSlot--></T>
+                        <L n="tests">
+                          <L>
+                            <V t="location">
+                              <U n="location">
+                                <U n="location_tests">
+                                  <V n="is_in_slot" t="enabled">
+                                    <U n="enabled">
+                                      <V n="slot_test_type" t="specific_slot">
+                                        <U n="specific_slot">
+                                          <T n="require_slotted">False</T>
+                                          <T n="specific_slot_set">customSet_AnimalObjects_ChickenCoop_Sleep</T>
+                                        </U>
+                                      </V>
+                                    </U>
+                                  </V>
+                                </U>
+                                <E n="subject">Object</E>
+                              </U>
+                            </V>
+                            <V t="location">
+                              <U n="location">
+                                <U n="location_tests">
+                                  <V n="is_in_slot" t="enabled">
+                                    <U n="enabled">
+                                      <V n="slot_test_type" t="specific_slot">
+                                        <U n="specific_slot">
+                                          <T n="require_slotted">False</T>
+                                          <T n="specific_slot_set">customSet_AnimalObjects_ChickenCoop_Nest</T>
+                                        </U>
+                                      </V>
+                                    </U>
+                                  </V>
+                                </U>
+                                <E n="subject">Object</E>
+                              </U>
+                            </V>
+                            <V t="location">
+                              <U n="location">
+                                <U n="location_tests">
+                                  <V n="is_in_slot" t="enabled">
+                                    <U n="enabled">
+                                      <V n="slot_test_type" t="specific_slot">
+                                        <U n="specific_slot">
+                                          <T n="require_slotted">False</T>
+                                          <T n="specific_slot_set">customSet_AnimalObjects_ChickenCoop_Rooster</T>
+                                        </U>
+                                      </V>
+                                    </U>
+                                  </V>
+                                </U>
+                                <E n="subject">Object</E>
+                              </U>
+                            </V>
+                          </L>
+                        </L>
+                      </U>
+                      <U>
+                        <T n="state_value">262324<!--ObjectStateValue: animalObjects_Generic_MasterController_InSlot_Sleep--></T>
+                        <L n="tests">
+                          <L>
+                            <V t="location">
+                              <U n="location">
+                                <U n="location_tests">
+                                  <V n="is_in_slot" t="enabled">
+                                    <U n="enabled">
+                                      <V n="slot_test_type" t="specific_slot">
+                                        <U n="specific_slot">
+                                          <T n="specific_slot_set">customSet_AnimalObjects_ChickenCoop_Sleep</T>
+                                        </U>
+                                      </V>
+                                    </U>
+                                  </V>
+                                </U>
+                                <E n="subject">Object</E>
+                              </U>
+                            </V>
+                          </L>
+                        </L>
+                      </U>
+                    </L>
+                    <U n="trigger_tests">
+                      <T n="reschedule_on_failure">True</T>
+                      <L n="tests">
+                        <L>
+                          <V t="location">
+                            <U n="location">
+                              <U n="location_tests">
+                                <V n="is_in_slot" t="enabled" />
+                              </U>
+                              <E n="subject">Object</E>
+                            </U>
+                          </V>
+                          <V t="location">
+                            <U n="location">
+                              <U n="location_tests">
+                                <V n="is_in_slot" t="enabled">
+                                  <U n="enabled">
+                                    <V n="slot_test_type" t="specific_slot">
+                                      <U n="specific_slot">
+                                        <T n="require_slotted">False</T>
+                                        <T n="specific_slot_set">customSet_AnimalObjects_ChickenCoop_Sleep</T>
+                                      </U>
+                                    </V>
+                                  </U>
+                                </V>
+                              </U>
+                              <E n="subject">Object</E>
+                            </U>
+                          </V>
+                          <V t="location">
+                            <U n="location">
+                              <U n="location_tests">
+                                <V n="is_in_slot" t="enabled">
+                                  <U n="enabled">
+                                    <V n="slot_test_type" t="specific_slot">
+                                      <U n="specific_slot">
+                                        <T n="require_slotted">False</T>
+                                        <T n="specific_slot_set">customSet_AnimalObjects_ChickenCoop_Nest</T>
+                                      </U>
+                                    </V>
+                                  </U>
+                                </V>
+                              </U>
+                              <E n="subject">Object</E>
+                            </U>
+                          </V>
+                          <V t="location">
+                            <U n="location">
+                              <U n="location_tests">
+                                <V n="is_in_slot" t="enabled">
+                                  <U n="enabled">
+                                    <V n="slot_test_type" t="specific_slot">
+                                      <U n="specific_slot">
+                                        <T n="require_slotted">False</T>
+                                        <T n="specific_slot_set">customSet_AnimalObjects_ChickenCoop_Rooster</T>
+                                      </U>
+                                    </V>
+                                  </U>
+                                </V>
+                              </U>
+                              <E n="subject">Object</E>
+                            </U>
+                          </V>
+                          <V t="state">
+                            <U n="state">
+                              <E n="operator">NOTEQUAL</E>
+                              <T n="value">262408<!--ObjectStateValue: animalObjects_Generic_MasterController_Routing--></T>
+                            </U>
+                          </V>
+                        </L>
+                        <L>
+                          <V t="location">
+                            <U n="location">
+                              <U n="location_tests">
+                                <V n="is_in_slot" t="enabled">
+                                  <U n="enabled">
+                                    <V n="slot_test_type" t="specific_slot">
+                                      <U n="specific_slot">
+                                        <T n="specific_slot_set">customSet_AnimalObjects_ChickenCoop_Sleep</T>
+                                      </U>
+                                    </V>
+                                  </U>
+                                </V>
+                              </U>
+                              <E n="subject">Object</E>
+                            </U>
+                          </V>
+                          <V t="state">
+                            <U n="state">
+                              <E n="operator">NOTEQUAL</E>
+                              <T n="value">262408<!--ObjectStateValue: animalObjects_Generic_MasterController_Routing--></T>
+                            </U>
+                          </V>
+                        </L>
+                      </L>
+                    </U>
+                    <T n="trigger_time">1</T>
+                  </U>
+                </L>
+                <T n="trigger_on_load">True</T>
+              </U>
+            </U>
+            <U>
+              <T n="key">256710<!--ObjectStateValue: animalObjects_Generic_IdleStateValues_Sit--></T>
+              <U n="value">
+                <L n="ops">
+                  <U>
+                    <L n="random_states_to_trigger">
+                      <U>
+                        <T n="state_value">256710<!--ObjectStateValue: animalObjects_Generic_IdleStateValues_Sit--></T>
+                        <L n="tests">
+                          <L>
+                            <V t="state">
+                              <U n="state">
+                                <T n="value">258077<!--ObjectStateValue: animalObjects_Generic_Happiness_Sad--></T>
+                              </U>
+                            </V>
+                          </L>
+                        </L>
+                        <T n="weight">1000</T>
+                      </U>
+                      <U>
+                        <T n="state_value">264971<!--ObjectStateValue: animalObjects_Generic_IdleStateValues_Sit_Sleep--></T>
+                      </U>
+                    </L>
+                    <T n="trigger_time">60</T>
+                    <T n="trigger_time_random_offset">30</T>
+                  </U>
+                </L>
+                <T n="trigger_on_load">True</T>
+              </U>
+            </U>
+            <U>
+              <T n="key">256980<!--CommodityBasedObjectStateValue: animalObjects_CommodityStateValues_Hygiene_Low--></T>
+              <U n="value">
+                <L n="ops">
+                  <U>
+                    <L n="loot_list" />
+                    <L n="states_to_trigger">
+                      <T>256980<!--CommodityBasedObjectStateValue: animalObjects_CommodityStateValues_Hygiene_Low--></T>
+                    </L>
+                    <T n="trigger_time">1</T>
+                  </U>
+                </L>
+                <T n="trigger_on_load">True</T>
+              </U>
+            </U>
+            <U>
+              <T n="key">256981<!--CommodityBasedObjectStateValue: animalObjects_CommodityStateValues_Hygiene_Max--></T>
+              <U n="value">
+                <L n="ops">
+                  <U>
+                    <L n="loot_list" />
+                    <L n="states_to_trigger">
+                      <T>256981<!--CommodityBasedObjectStateValue: animalObjects_CommodityStateValues_Hygiene_Max--></T>
+                    </L>
+                    <T n="trigger_time">1</T>
+                  </U>
+                </L>
+                <T n="trigger_on_load">True</T>
+              </U>
+            </U>
+            <U>
+              <T n="key">257001<!--CommodityBasedObjectStateValue: animalObjects_CommodityStateValues_Age_Elder--></T>
+              <U n="value">
+                <L n="ops">
+                  <U>
+                    <L n="loot_list">
+                      <T>267632<!--LootActions: loot_AnimalObjects_CloseToDeathTNS--></T>
+                    </L>
+                    <L n="states_to_trigger">
+                      <T>35296<!--ObjectStateValue: GenericOnOff_On--></T>
+                    </L>
+                    <U n="trigger_tests">
+                      <T n="reschedule_on_failure">True</T>
+                      <L n="tests">
+                        <L>
+                          <V t="statistic">
+                            <U n="statistic">
+                              <T n="stat">256989<!--Commodity: commodity_AnimalObjects_Age--></T>
+                              <V n="threshold" t="value_threshold">
+                                <U n="value_threshold">
+                                  <E n="comparison">GREATER_OR_EQUAL</E>
+                                  <T n="value">24000</T>
+                                </U>
+                              </V>
+                              <E n="who">Object</E>
+                            </U>
+                          </V>
+                        </L>
+                      </L>
+                    </U>
+                    <T n="trigger_time">360</T>
+                    <T n="trigger_time_random_offset">0</T>
+                  </U>
+                </L>
+                <T n="trigger_on_load">True</T>
+              </U>
+            </U>
+            <U>
+              <T n="key">258962<!--ObjectStateValue: animalObjects_Generic_Schedule_Night--></T>
+              <U n="value">
+                <L n="ops">
+                  <U>
+                    <L n="states_to_trigger">
+                      <T>260093<!--ObjectStateValue: animalObjects_Generic_IdleStateValues_InHome_Sleep--></T>
+                      <T>262324<!--ObjectStateValue: animalObjects_Generic_MasterController_InSlot_Sleep--></T>
+                    </L>
+                    <U n="trigger_tests">
+                      <T n="reschedule_on_failure">True</T>
+                      <L n="tests">
+                        <L>
+                          <V t="state">
+                            <U n="state">
+                              <T n="value">262374<!--ObjectStateValue: animalObjects_Generic_MasterController_Free--></T>
+                            </U>
+                          </V>
+                        </L>
+                        <L>
+                          <V t="state">
+                            <U n="state">
+                              <T n="value">262324<!--ObjectStateValue: animalObjects_Generic_MasterController_InSlot_Sleep--></T>
+                            </U>
+                          </V>
+                          <V t="state">
+                            <U n="state">
+                              <E n="operator">NOTEQUAL</E>
+                              <T n="value">260093<!--ObjectStateValue: animalObjects_Generic_IdleStateValues_InHome_Sleep--></T>
+                            </U>
+                          </V>
+                        </L>
+                      </L>
+                    </U>
+                    <T n="trigger_time_random_offset">5</T>
+                  </U>
+                </L>
+              </U>
+            </U>
+            <U>
+              <T n="key">261266<!--CommodityBasedObjectStateValue: animalObjects_CommodityStateValues_Age_ReadyToDie--></T>
+              <U n="value">
+                <L n="ops">
+                  <U>
+                    <L n="loot_list">
+                      <T>267148<!--LootActions: loot_AnimalObjects_InInventoryTNS_Death--></T>
+                      <T>269415<!--LootActions: loot_AnimalObjects_LivestockDeathInWorld--></T>
+                    </L>
+                    <L n="states_to_trigger">
+                      <T>261266<!--CommodityBasedObjectStateValue: animalObjects_CommodityStateValues_Age_ReadyToDie--></T>
+                    </L>
+                    <T n="trigger_time">1</T>
+                  </U>
+                </L>
+                <T n="trigger_on_load">True</T>
+              </U>
+            </U>
+            <U>
+              <T n="key">261599<!--CommodityBasedObjectStateValue: animalObjects_Generic_GoMissing_Back--></T>
+              <U n="value">
+                <L n="ops">
+                  <U>
+                    <L n="loot_list">
+                      <T>346057<!--LootActions: loot_AnimalObjects_GoatSheep_GoMissing_Return--></T>
+                    </L>
+                    <L n="states_to_trigger">
+                      <T>262374<!--ObjectStateValue: animalObjects_Generic_MasterController_Free--></T>
+                    </L>
+                    <U n="trigger_tests">
+                      <L n="tests">
+                        <L>
+                          <V t="state">
+                            <U n="state">
+                              <T n="value">262477<!--ObjectStateValue: animalObjects_Generic_MasterController_Missing--></T>
+                            </U>
+                          </V>
+                          <V t="state">
+                            <U n="state">
+                              <E n="operator">NOTEQUAL</E>
+                              <T n="value">266319<!--ObjectStateValue: animalObjects_Generic_MasterController_InInventory--></T>
+                            </U>
+                          </V>
+                          <V t="state">
+                            <U n="state">
+                              <E n="operator">NOTEQUAL</E>
+                              <T n="value">271105<!--ObjectStateValue: animalObjects_Generic_Location_InHome--></T>
+                            </U>
+                          </V>
+                          <V t="has_parent_object">
+                            <U n="has_parent_object">
+                              <T n="negate">True</T>
+                            </U>
+                          </V>
+                        </L>
+                      </L>
+                    </U>
+                    <T n="trigger_time">1</T>
+                  </U>
+                </L>
+              </U>
+            </U>
+            <U>
+              <T n="key">262324<!--ObjectStateValue: animalObjects_Generic_MasterController_InSlot_Sleep--></T>
+              <U n="value">
+                <L n="ops">
+                  <U>
+                    <L n="states_to_trigger">
+                      <T>349546<!--ObjectStateValue: animalObjects_Generic_IdleStateValues_WakeUp--></T>
+                      <T>262374<!--ObjectStateValue: animalObjects_Generic_MasterController_Free--></T>
+                    </L>
+                    <U n="trigger_tests">
+                      <T n="reschedule_on_failure">True</T>
+                      <L n="tests">
+                        <L>
+                          <V t="state">
+                            <U n="state">
+                              <T n="value">258963<!--ObjectStateValue: animalObjects_Generic_Schedule_Day--></T>
+                            </U>
+                          </V>
+                        </L>
+                      </L>
+                    </U>
+                    <T n="trigger_time">30</T>
+                  </U>
+                </L>
+              </U>
+            </U>
+            <U>
+              <T n="key">262374<!--ObjectStateValue: animalObjects_Generic_MasterController_Free--></T>
+              <U n="value">
+                <L n="ops">
+                  <U>
+                    <L n="loot_list">
+                      <T>270919<!--LootActions: loot_animalObjects_Chickens_InInventory_Fixup--></T>
+                    </L>
+                    <L n="random_states_to_trigger">
+                      <U>
+                        <T n="state_value">253595<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_Walk--></T>
+                        <T n="weight">5</T>
+                      </U>
+                      <U>
+                        <T n="state_value">325490<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_EatFromFeederAutonomous--></T>
+                        <L n="tests">
+                          <L>
+                            <V t="statistic">
+                              <U n="statistic">
+                                <T n="stat">256986<!--Commodity: commodity_AnimalObjects_Motive_Hunger--></T>
+                                <V n="threshold" t="value_threshold">
+                                  <U n="value_threshold">
+                                    <E n="comparison">LESS_OR_EQUAL</E>
+                                    <T n="value">150</T>
+                                  </U>
+                                </V>
+                                <E n="who">Object</E>
+                              </U>
+                            </V>
+                            <V t="object_criteria">
+                              <U n="object_criteria">
+                                <V n="desired_state_threshold" t="enabled">
+                                  <U n="enabled">
+                                    <T n="value">324405<!--CommodityBasedObjectStateValue: animalFeeder_CommodityState_Values_FoodRemaining_Half--></T>
+                                  </U>
+                                </V>
+                                <V n="identity_test" t="tags">
+                                  <U n="tags">
+                                    <L n="tag_set">
+                                      <E>Func_AnimalObject_Feeder</E>
+                                    </L>
+                                  </U>
+                                </V>
+                                <T n="on_active_lot">True</T>
+                              </U>
+                            </V>
+                          </L>
+                        </L>
+                        <T n="weight">5000</T>
+                      </U>
+                      <U>
+                        <T n="state_value">263874<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_BeCurious--></T>
+                        <T n="weight">10</T>
+                      </U>
+                      <U>
+                        <T n="state_value">263875<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_FollowSim--></T>
+                        <T n="weight">10</T>
+                      </U>
+                      <U>
+                        <T n="state_value">270584<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_SocialAnimal--></T>
+                        <T n="weight">10</T>
+                      </U>
+                      <U>
+                        <T n="state_value">324936<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_EatWildGrass--></T>
+                        <L n="tests">
+                          <L>
+                            <V t="statistic">
+                              <U n="statistic">
+                                <T n="stat">256986<!--Commodity: commodity_AnimalObjects_Motive_Hunger--></T>
+                                <V n="threshold" t="value_threshold">
+                                  <U n="value_threshold">
+                                    <E n="comparison">LESS_OR_EQUAL</E>
+                                    <T n="value">150</T>
+                                  </U>
+                                </V>
+                                <E n="who">Object</E>
+                              </U>
+                            </V>
+                            <V t="object_criteria">
+                              <U n="object_criteria">
+                                <V n="identity_test" t="tags">
+                                  <U n="tags">
+                                    <L n="tag_set">
+                                      <E>Func_WildGrass</E>
+                                    </L>
+                                  </U>
+                                </V>
+                                <T n="on_active_lot">True</T>
+                                <T n="owned">False</T>
+                              </U>
+                            </V>
+                          </L>
+                        </L>
+                        <T n="weight">5000</T>
+                      </U>
+                      <U>
+                        <T n="state_value">270583<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_GoNearHome--></T>
+                        <T n="weight">2</T>
+                      </U>
+                      <U>
+                        <T n="state_value">326208<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_GardenHelp--></T>
+                        <L n="tests">
+                          <L>
+                            <V t="state">
+                              <U n="state">
+                                <T n="value">261115<!--ObjectStateValue: animalObjects_GardeningHelp_Enabled--></T>
+                              </U>
+                            </V>
+                          </L>
+                        </L>
+                        <T n="weight">10</T>
+                      </U>
+                      <U>
+                        <T n="state_value">337159<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_DrinkPuddle--></T>
+                        <L n="tests">
+                          <L>
+                            <V t="object_criteria">
+                              <U n="object_criteria">
+                                <V n="identity_test" t="tags">
+                                  <U n="tags">
+                                    <L n="tag_set">
+                                      <E>Func_Puddle</E>
+                                    </L>
+                                  </U>
+                                </V>
+                                <T n="on_active_lot">True</T>
+                                <T n="owned">False</T>
+                              </U>
+                            </V>
+                          </L>
+                        </L>
+                        <T n="weight">10</T>
+                      </U>
+                      <U>
+                        <T n="state_value">326636<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_LovingGaze--></T>
+                        <L n="tests">
+                          <L>
+                            <V t="object_relationship">
+                              <U n="object_relationship">
+                                <V n="relationship_status" t="relationship_range">
+                                  <U n="relationship_range">
+                                    <U n="value_interval">
+                                      <T n="lower_bound">35</T>
+                                    </U>
+                                  </U>
+                                </V>
+                                <E n="sims">AllInstancedSims</E>
+                              </U>
+                            </V>
+                          </L>
+                        </L>
+                        <T n="weight">10</T>
+                      </U>
+                    </L>
+                    <L n="states_to_trigger">
+                      <T>262408<!--ObjectStateValue: animalObjects_Generic_MasterController_Routing--></T>
+                    </L>
+                    <U n="trigger_tests">
+                      <T n="reschedule_on_failure">True</T>
+                      <L n="tests">
+                        <L>
+                          <V t="has_parent_object">
+                            <U n="has_parent_object">
+                              <T n="negate">True</T>
+                            </U>
+                          </V>
+                          <V t="state_white_black">
+                            <U n="state_white_black">
+                              <U n="states">
+                                <V n="blacklist" t="specify">
+                                  <U n="specify">
+                                    <L n="blacklist">
+                                      <T>262375<!--ObjectStateValue: animalObjects_Generic_MasterController_Socializing--></T>
+                                      <T>260599<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_Social--></T>
+                                    </L>
+                                  </U>
+                                </V>
+                              </U>
+                            </U>
+                          </V>
+                        </L>
+                      </L>
+                    </U>
+                    <T n="trigger_time">15</T>
+                    <T n="trigger_time_random_offset">15</T>
+                  </U>
+                </L>
+                <T n="trigger_on_load">True</T>
+              </U>
+            </U>
+            <U>
+              <T n="key">262408<!--ObjectStateValue: animalObjects_Generic_MasterController_Routing--></T>
+              <U n="value">
+                <L n="ops">
+                  <U>
+                    <L n="states_to_trigger">
+                      <T>262374<!--ObjectStateValue: animalObjects_Generic_MasterController_Free--></T>
+                    </L>
+                    <U n="trigger_tests">
+                      <T n="reschedule_on_failure">True</T>
+                      <L n="tests">
+                        <L>
+                          <V t="test_set_reference">
+                            <T n="test_set_reference">268218<!--TestSetInstance: testSet_AnimalObjects_Chickens_FreeToRoam_Object--></T>
+                          </V>
+                          <V t="state">
+                            <U n="state">
+                              <T n="value">253596<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_Stop--></T>
+                            </U>
+                          </V>
+                        </L>
+                      </L>
+                    </U>
+                    <T n="trigger_time">60</T>
+                  </U>
+                </L>
+                <T n="trigger_on_load">True</T>
+              </U>
+            </U>
+            <U>
+              <T n="key">263813<!--ObjectStateValue: animalObjects_Generic_MasterController_Searching--></T>
+              <U n="value">
+                <L n="ops">
+                  <U>
+                    <L n="random_states_to_trigger">
+                      <U>
+                        <T n="state_value">326208<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_GardenHelp--></T>
+                        <L n="tests">
+                          <L>
+                            <V t="has_parent_object">
+                              <U n="has_parent_object">
+                                <T n="negate">True</T>
+                              </U>
+                            </V>
+                            <V t="state">
+                              <U n="state">
+                                <E n="operator">NOTEQUAL</E>
+                                <T n="value">261043<!--ObjectStateValue: animalObjects_Generic_Visibility_Off--></T>
+                              </U>
+                            </V>
+                            <V t="state">
+                              <U n="state">
+                                <E n="operator">NOTEQUAL</E>
+                                <T n="value">261357<!--CommodityBasedObjectStateValue: animalObjects_CommodityStateValues_ReturnHomeTimer_GoHomeASAP--></T>
+                              </U>
+                            </V>
+                            <V t="state">
+                              <U n="state">
+                                <T n="value">261115<!--ObjectStateValue: animalObjects_GardeningHelp_Enabled--></T>
+                              </U>
+                            </V>
+                          </L>
+                        </L>
+                      </U>
+                      <U>
+                        <T n="state_value">262374<!--ObjectStateValue: animalObjects_Generic_MasterController_Free--></T>
+                        <L n="tests">
+                          <L>
+                            <V t="has_parent_object">
+                              <U n="has_parent_object">
+                                <T n="negate">True</T>
+                              </U>
+                            </V>
+                            <V t="state">
+                              <U n="state">
+                                <E n="operator">NOTEQUAL</E>
+                                <T n="value">261043<!--ObjectStateValue: animalObjects_Generic_Visibility_Off--></T>
+                              </U>
+                            </V>
+                            <V t="state">
+                              <U n="state">
+                                <E n="operator">NOTEQUAL</E>
+                                <T n="value">261115<!--ObjectStateValue: animalObjects_GardeningHelp_Enabled--></T>
+                              </U>
+                            </V>
+                          </L>
+                        </L>
+                      </U>
+                    </L>
+                    <L n="states_to_trigger">
+                      <T>262408<!--ObjectStateValue: animalObjects_Generic_MasterController_Routing--></T>
+                    </L>
+                    <T n="trigger_time">1</T>
+                  </U>
+                </L>
+                <T n="trigger_on_load">True</T>
+              </U>
+            </U>
+            <U>
+              <T n="key">264971<!--ObjectStateValue: animalObjects_Generic_IdleStateValues_Sit_Sleep--></T>
+              <U n="value">
+                <L n="ops">
+                  <U>
+                    <L n="states_to_trigger">
+                      <T>256710<!--ObjectStateValue: animalObjects_Generic_IdleStateValues_Sit--></T>
+                    </L>
+                    <T n="trigger_time">60</T>
+                  </U>
+                </L>
+                <T n="trigger_on_load">True</T>
+              </U>
+            </U>
+            <U>
+              <T n="key">266319<!--ObjectStateValue: animalObjects_Generic_MasterController_InInventory--></T>
+              <U n="value">
+                <L n="ops">
+                  <U>
+                    <L n="loot_list">
+                      <T>266323<!--LootActions: loot_AnimalObjects_InInventoryTNS--></T>
+                    </L>
+                    <L n="states_to_trigger">
+                      <T>266319<!--ObjectStateValue: animalObjects_Generic_MasterController_InInventory--></T>
+                    </L>
+                    <U n="trigger_tests">
+                      <T n="reschedule_on_failure">True</T>
+                      <L n="tests">
+                        <L>
+                          <V t="state">
+                            <U n="state">
+                              <T n="value">258077<!--ObjectStateValue: animalObjects_Generic_Happiness_Sad--></T>
+                            </U>
+                          </V>
+                        </L>
+                      </L>
+                    </U>
+                    <T n="trigger_time">90</T>
+                  </U>
+                </L>
+                <T n="trigger_on_load">True</T>
+              </U>
+            </U>
+            <U>
+              <T n="key">267872<!--CommodityBasedObjectStateValue: animalObjects_LivestockPen_GoMissing_Warn--></T>
+              <U n="value">
+                <L n="ops">
+                  <U>
+                    <L n="loot_list">
+                      <T>333826<!--LootActions: loot_AnimalObjects_GoMissing_Warn_GoatSheep--></T>
+                    </L>
+                    <L n="states_to_trigger">
+                      <T>267872<!--CommodityBasedObjectStateValue: animalObjects_LivestockPen_GoMissing_Warn--></T>
+                    </L>
+                    <U n="trigger_tests">
+                      <L n="tests">
+                        <L>
+                          <V t="state">
+                            <U n="state">
+                              <E n="operator">NOTEQUAL</E>
+                              <T n="value">262477<!--ObjectStateValue: animalObjects_Generic_MasterController_Missing--></T>
+                            </U>
+                          </V>
+                        </L>
+                      </L>
+                    </U>
+                    <T n="trigger_time">5</T>
+                  </U>
+                </L>
+                <T n="trigger_on_load">True</T>
+              </U>
+            </U>
+            <U>
+              <T n="key">267873<!--CommodityBasedObjectStateValue: animalObjects_LivestockPen_GoMissing_Leave--></T>
+              <U n="value">
+                <L n="ops">
+                  <U>
+                    <L n="states_to_trigger">
+                      <T>261596<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_GoMissing--></T>
+                    </L>
+                    <U n="trigger_tests">
+                      <T n="reschedule_on_failure">True</T>
+                      <L n="tests">
+                        <L>
+                          <V t="state">
+                            <U n="state">
+                              <E n="operator">NOTEQUAL</E>
+                              <T n="value">262477<!--ObjectStateValue: animalObjects_Generic_MasterController_Missing--></T>
+                            </U>
+                          </V>
+                          <V t="state">
+                            <U n="state">
+                              <T n="value">262374<!--ObjectStateValue: animalObjects_Generic_MasterController_Free--></T>
+                            </U>
+                          </V>
+                        </L>
+                      </L>
+                    </U>
+                    <T n="trigger_time">1</T>
+                  </U>
+                </L>
+                <T n="trigger_on_load">True</T>
+              </U>
+            </U>
+          </L>
+        </V>
+        <V n="unique_state_changes" t="enabled">
+          <U n="enabled">
+            <L n="slot_placement">
+              <U>
+                <T n="state">258959<!--ObjectStateValue: animalObjects_Livestock_Age_LifeExtend_On--></T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">258181<!--CommodityBasedObjectStateValue: upgrade_AnimalObjects_LivestockPenChickenCoop_Completed_LifeExtend--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="state">177944<!--ObjectStateValue: objectStateValue_Parented_Parented--></T>
+              </U>
+              <U>
+                <T n="state">264713<!--ObjectStateValue: animalObjects_Generic_MasterController_InSlot--></T>
+                <L n="tests">
+                  <L>
+                    <V t="object_criteria">
+                      <U n="object_criteria">
+                        <V n="identity_test" t="tags">
+                          <U n="tags">
+                            <L n="tag_set">
+                              <E>Func_AnimalObject_Livestock_Coop</E>
+                            </L>
+                            <E n="test_type">CONTAINS_NO_TAGS_IN_SET</E>
+                          </U>
+                        </V>
+                        <V n="subject_specific_tests" t="single_object" />
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+            <L n="slot_removal">
+              <U>
+                <T n="state">258960<!--ObjectStateValue: animalObjects_Livestock_Age_LifeExtend_Off--></T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">258181<!--CommodityBasedObjectStateValue: upgrade_AnimalObjects_LivestockPenChickenCoop_Completed_LifeExtend--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="state">177945<!--ObjectStateValue: objectStateValue_Parented_Unparented--></T>
+              </U>
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V n="time_of_day_component" t="enabled">
+      <U n="enabled">
+        <L n="state_changes">
+          <U>
+            <T n="key">258964<!--ObjectState: animalObjects_States_Schedule--></T>
+            <L n="value">
+              <U>
+                <T n="start_time">6</T>
+                <T n="value">258963<!--ObjectStateValue: animalObjects_Generic_Schedule_Day--></T>
+              </U>
+              <U>
+                <T n="start_time">21</T>
+                <T n="value">258962<!--ObjectStateValue: animalObjects_Generic_Schedule_Night--></T>
+              </U>
+            </L>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V n="tooltip_component" t="enabled">
+      <U n="enabled">
+        <L n="custom_tooltips">
+          <U>
+            <L n="tooltip_fields">
+              <U>
+                <E n="key">recipe_name</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x41A0F856<!--String: "{0.ObjectCatalogName}"--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">Object</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+            </L>
+            <E n="tooltip_style">HOVER_TIP_OBJECT_RELATIONSHIP</E>
+          </U>
+          <U>
+            <L n="object_tests">
+              <L>
+                <V t="existence">
+                  <U n="existence">
+                    <E n="participant">ObjectAnimalHome</E>
+                    <T n="require_instantiatable">False</T>
+                  </U>
+                </V>
+                <V t="custom_name">
+                  <U n="custom_name">
+                    <V n="has_custom_name" t="enabled" />
+                    <E n="participant">ObjectAnimalHome</E>
+                  </U>
+                </V>
+              </L>
+            </L>
+            <L n="tooltip_fields">
+              <U>
+                <E n="key">subtext</E>
+                <U n="value">
+                  <V n="override_component_information" t="concatenate_with_component_fields">
+                    <U n="concatenate_with_component_fields">
+                      <E n="concatenation_style">NEW_LINE_SEPARATION</E>
+                      <E n="concatenation_type">CONCATENATE_BEFORE</E>
+                    </U>
+                  </V>
+                  <V n="text" t="single">
+                    <T n="single">0xD12C4743<!--String: "Home: <font color='#1E81E6'>{0.ObjectName}</font>"--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">ObjectAnimalHome</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+            </L>
+            <E n="tooltip_style">HOVER_TIP_OBJECT_RELATIONSHIP</E>
+          </U>
+        </L>
+        <L n="state_value_strings">
+          <L>
+            <U>
+              <T n="state_value">256999<!--CommodityBasedObjectStateValue: animalObjects_CommodityStateValues_Age_Adult--></T>
+              <V n="text" t="single">
+                <T n="single">0x7E952715<!--String: "Adult"--></T>
+              </V>
+              <V n="tooltip_field_override" t="enabled">
+                <E n="enabled">header_subtext</E>
+              </V>
+            </U>
+            <U>
+              <T n="state_value">256998<!--CommodityBasedObjectStateValue: animalObjects_CommodityStateValues_Age_YoungAdult--></T>
+              <V n="text" t="single">
+                <T n="single">0x200487C0<!--String: "Young Adult"--></T>
+              </V>
+              <V n="tooltip_field_override" t="enabled">
+                <E n="enabled">header_subtext</E>
+              </V>
+            </U>
+            <U>
+              <T n="state_value">257001<!--CommodityBasedObjectStateValue: animalObjects_CommodityStateValues_Age_Elder--></T>
+              <V n="text" t="single">
+                <T n="single">0x86E2043F<!--String: "Elder"--></T>
+              </V>
+              <V n="tooltip_field_override" t="enabled">
+                <E n="enabled">header_subtext</E>
+              </V>
+            </U>
+            <U>
+              <T n="state_value">261266<!--CommodityBasedObjectStateValue: animalObjects_CommodityStateValues_Age_ReadyToDie--></T>
+              <V n="text" t="single">
+                <T n="single">0x41912F1F<!--String: "Age: One... Last... Pet..."--></T>
+              </V>
+              <V n="tooltip_field_override" t="enabled">
+                <E n="enabled">header_subtext</E>
+              </V>
+            </U>
+          </L>
+          <L>
+            <U>
+              <T n="state_value">258079<!--ObjectStateValue: animalObjects_Generic_Happiness_Fine--></T>
+              <V n="text" t="single">
+                <T n="single">0x8CE74BD4<!--String: "Happiness: <font color='#1E81E6'>Fine</font>"--></T>
+              </V>
+            </U>
+            <U>
+              <T n="state_value">258077<!--ObjectStateValue: animalObjects_Generic_Happiness_Sad--></T>
+              <V n="text" t="single">
+                <T n="single">0x1E617D21<!--String: "Happiness: <font color='#FF7800'>Unhappy</font>"--></T>
+              </V>
+            </U>
+            <U>
+              <T n="state_value">258081<!--ObjectStateValue: animalObjects_Generic_Happiness_Happy--></T>
+              <V n="text" t="single">
+                <T n="single">0xA99EDC33<!--String: "Happiness: <font color='#1E81E6'>Happy</font>"--></T>
+              </V>
+            </U>
+            <U>
+              <T n="state_value">258082<!--ObjectStateValue: animalObjects_Generic_Happiness_VeryHappy--></T>
+              <V n="text" t="single">
+                <T n="single">0x30BF9D9B<!--String: "Happiness: <font color='#0949AB'>Very Happy</font>"--></T>
+              </V>
+            </U>
+          </L>
+          <L>
+            <U>
+              <T n="state_value">256980<!--CommodityBasedObjectStateValue: animalObjects_CommodityStateValues_Hygiene_Low--></T>
+              <V n="text" t="single">
+                <T n="single">0x596D08A4<!--String: "Hygiene: <font color='#FF7800'>Dirty</font>"--></T>
+              </V>
+            </U>
+            <U>
+              <T n="state_value">256981<!--CommodityBasedObjectStateValue: animalObjects_CommodityStateValues_Hygiene_Max--></T>
+              <V n="text" t="single">
+                <T n="single">0x7D419760<!--String: "Hygiene: <font color='#1E81E6'>Clean</font>"--></T>
+              </V>
+            </U>
+          </L>
+          <L>
+            <U>
+              <T n="state_value">256976<!--CommodityBasedObjectStateValue: animalObjects_CommodityStateValues_Hunger_Low--></T>
+              <V n="text" t="single">
+                <T n="single">0x664F5B84<!--String: "Hunger: <font color='#EC262E'>Starving</font>"--></T>
+              </V>
+            </U>
+            <U>
+              <T n="state_value">256979<!--CommodityBasedObjectStateValue: animalObjects_CommodityStateValues_Hunger_Max--></T>
+              <V n="text" t="single">
+                <T n="single">0x8E139C35<!--String: "Hunger: <font color='#1E81E6'>Full</font>"--></T>
+              </V>
+            </U>
+          </L>
+          <L>
+            <U>
+              <T n="state_value">256982<!--CommodityBasedObjectStateValue: animalObjects_CommodityStateValues_Activity_Low--></T>
+              <V n="text" t="single">
+                <T n="single">0xB0B4D424<!--String: "Attention: <font color='#1E81E6'>Okay</font>"--></T>
+              </V>
+            </U>
+            <U>
+              <T n="state_value">256983<!--CommodityBasedObjectStateValue: animalObjects_CommodityStateValues_Activity_Max--></T>
+              <V n="text" t="single">
+                <T n="single">0x5C6CDA49<!--String: "Attention: <font color='#1E81E6'>Content</font>"--></T>
+              </V>
+            </U>
+          </L>
+          <L>
+            <U>
+              <T n="state_value">259516<!--ObjectStateValue: animalObjects_Livestock_HarvestReady_On--></T>
+              <V n="text" t="single">
+                <T n="single">0xA7F185D7<!--String: "Ready for Shearing"--></T>
+              </V>
+              <V n="tooltip_field_override" t="enabled">
+                <E n="enabled">header_status</E>
+              </V>
+            </U>
+          </L>
+        </L>
+        <T n="update_if_stat_or_buck_changes">True</T>
+      </U>
+    </V>
+  </U>
+  <L n="_super_affordances">
+    <T>13328<!--ImmediateSuperInteraction: debug_Reset--></T>
+    <T>13326<!--ImmediateSuperInteraction: debug_ObjectDestroy--></T>
+    <T>103888<!--ImmediateSuperInteraction: cheat_set_as_head--></T>
+    <T>13983<!--StandSuperInteraction: sim-stand--></T>
+    <T>257164<!--StandSuperInteraction: fox_stand--></T>
+    <T>253632<!--StatePickerSuperInteraction: statePickerSuperInteraction_DebugRouting_AnimalObjects--></T>
+    <T>257034<!--StatePickerSuperInteraction: statePickerSuperInteraction_DebugIdles_AnimalObjects--></T>
+    <T>261412<!--StatePickerSuperInteraction: statePickerSuperInteraction_DebugColor_AnimalObjects_LivestockFeed--></T>
+    <T>261934<!--StatePickerSuperInteraction: statePickerSuperInteraction_DebugHarvestBonus_AnimalObjects_LivestockFeed--></T>
+    <T>257692<!--ImmediateSuperInteraction: debugCheat_animalObjects_forceOutcome_socialSuccess--></T>
+    <T>257693<!--ImmediateSuperInteraction: debugCheat_animalObjects_forceOutcome_socialFail--></T>
+    <T>257041<!--ImmediateSuperInteraction: debugCheat_animalObjects_Relationship_MakeFriend--></T>
+    <T>257044<!--ImmediateSuperInteraction: debugCheat_animalObjects_Relationship_SetAlmostFriend--></T>
+    <T>257043<!--ImmediateSuperInteraction: debugCheat_animalObjects_Relationship_SetMax--></T>
+    <T>257042<!--ImmediateSuperInteraction: debugCheat_animalObjects_Relationship_SetMin--></T>
+    <T>267043<!--ImmediateSuperInteraction: crossStitch_Cheats_AddWoolToInventory--></T>
+    <T>263218<!--ImmediateSuperInteraction: cheats_AnimalObjects_UnlockAllAnimalHomes--></T>
+    <T>264841<!--ImmediateSuperInteraction: cheats_AnimalObjects_AnimalClothing_CreateAllAnimalClothes--></T>
+    <T>264964<!--PurchasePickerWithFailureOptionInteraction: purchasePickerInteraction_AnimalObjects_AnimalClothing_Debug--></T>
+    <T>264990<!--SocialObjectSuperInteraction: SI_AnimalObjects_SimAnimals_Cat_MeowAt--></T>
+    <T>264994<!--SocialObjectSuperInteraction: SI_AnimalObjects_SimAnimals_Cat_Watch--></T>
+    <T>264989<!--SocialObjectSuperInteraction: SI_AnimalObjects_SimAnimals_Dog_BarkAt--></T>
+    <T>264995<!--SocialObjectSuperInteraction: SI_AnimalObjects_SimAnimals_Dog_Watch--></T>
+    <T>337999<!--SocialObjectSuperInteraction: sI_AnimalObjects_SimAnimals_Horse_Investigate--></T>
+    <T>338001<!--SocialObjectSuperInteraction: sI_AnimalObjects_SimAnimals_Horse_NeighAt--></T>
+    <T>276517<!--SuperInteraction: infant_WatchObject--></T>
+    <T>326869<!--SuperInteraction: infant_WatchObject_Immobile_InObject--></T>
+    <T>326380<!--SocialObjectSuperInteraction: super_AnimalObjects_Socials_Infant_SmileAt--></T>
+    <T>321851<!--SocialSuperInteraction: social_Infant_WaveAt_Pet--></T>
+    <T>332776<!--SuperInteraction: super_Infant_CooAt_Animal--></T>
+    <T>259304<!--ImmediateSuperInteraction: cheats_AnimalObjects_LivestockFeed_CreateAllRecipes--></T>
+    <T>305174<!--ImmediateSuperInteraction: immediate_AnimalObjects_LockCamera_GoatSheep--></T>
+    <T>305173<!--ImmediateSuperInteraction: immediate_RelPanel_AnimalObjects_LockCamera_GoatSheep--></T>
+    <T>324938<!--SocialObjectSuperInteraction: sI_AnimalObjects_Pet_Death_GoatSheep--></T>
+    <T>326561<!--SuperInteraction: SI_AnimalObjects_Generic_SellForIngredients_GoatSheep--></T>
+    <T>326563<!--SuperInteraction: SI_AnimalObjects_Generic_SellForLivestockFeed_GoatSheep--></T>
+    <T>305244<!--SuperInteraction: sI_AnimalObjects_Generic_SellSimoleons_GoatSheep--></T>
+    <T>267845<!--SuperInteraction: fox_Watch_Object--></T>
+    <T>336753<!--FilteredObjectPickerInteraction: filteredObjectPicker_AnimalObject_GoatSheep_CallOver_All--></T>
+    <T>336877<!--FilteredObjectPickerInteraction: filteredObjectPicker_AnimalObject_GoatSheep_Collect--></T>
+    <T>337826<!--SocialObjectSuperInteraction: sI_AnimalObjects_CallOver_Goat_Autonomous--></T>
+    <T>346487<!--SocialObjectSuperInteraction: sI_AnimalObjects_CallOver_Goat_Sleep--></T>
+    <T>305176<!--SocialObjectSuperInteraction: sI_AnimalObjects_Socials_Mean_Sheep--></T>
+    <T>305178<!--SocialObjectSuperInteraction: sI_AnimalObjects_Socials_Mean_Sheep_Scare--></T>
+    <T>305180<!--SocialObjectSuperInteraction: sI_AnimalObjects_Watch_Sheep--></T>
+    <T>305182<!--SocialObjectSuperInteraction: sI_AnimalObjects_Watch_Sheep_Toddler--></T>
+    <T>300339<!--SocialObjectSuperInteraction: sI_AnimalObjects_Socials_Funny_Sheep_TellJoke--></T>
+    <T>304882<!--SocialObjectSuperInteraction: sI_AnimalObjects_Socials_Friendly_Sheep_Ask--></T>
+    <T>304884<!--SocialObjectSuperInteraction: sI_AnimalObjects_Socials_Friendly_Sheep_Play--></T>
+    <T>300337<!--SocialObjectSuperInteraction: sI_AnimalObjects_Pet_Sheep--></T>
+    <T>300325<!--SocialObjectSuperInteraction: sI_AnimalObjects_Hug_Sheep--></T>
+    <T>303831<!--SocialObjectSuperInteraction: sI_AnimalObjects_HarvestFrom_Sheep--></T>
+    <T>300317<!--SocialObjectSuperInteraction: sI_AnimalObjects_Clean_Sheep--></T>
+    <T>326560<!--SocialObjectSuperInteraction: sI_AnimalObjects_Watch_Sheep_Horse--></T>
+    <T>300314<!--SocialObjectSuperInteraction: sI_AnimalObjects_GardeningHelp_AskToStop_Sheep--></T>
+    <T>300312<!--SocialObjectSuperInteraction: sI_AnimalObjects_GardeningHelp_Ask_Sheep--></T>
+    <T>300310<!--SocialObjectSuperInteraction: sI_AnimalObjects_FeedBasic_Sheep--></T>
+    <T>300308<!--SocialObjectSuperInteraction: sI_AnimalObjects_CallOver_Sheep--></T>
+    <T>325221<!--SocialObjectSuperInteraction: sI_AnimalObjects_Socials_Friendly_Sheep_Trick_RollOver--></T>
+    <T>325222<!--SocialObjectSuperInteraction: sI_AnimalObjects_Socials_Friendly_Sheep_Trick_Shake--></T>
+    <T>325518<!--SocialObjectSuperInteraction: si_AnimalObjects_HarvestFrom_Sheep_Wool--></T>
+    <T>325647<!--SocialObjectSuperInteraction: sI_AnimalObjects_Socials_Friendly_Sheep_CountSheep--></T>
+    <T>325933<!--SocialObjectSuperInteraction: sI_AnimalObjects_FeedBasic_Sheep_Milk--></T>
+    <T>325934<!--SocialObjectSuperInteraction: sI_AnimalObjects_Socials_Friendly_Sheep_TalkTo--></T>
+    <T>325935<!--SocialObjectSuperInteraction: sI_AnimalObjects_Socials_Friendly_Sheep_TalkTo_Child--></T>
+    <T>325936<!--SocialObjectSuperInteraction: sI_AnimalObjects_Socials_Friendly_Sheep_TalkTo_Toddler--></T>
+    <T>326622<!--SocialObjectSuperInteraction: sI_AnimalObjects_Pet_Sheep_Free_Start_MoodImprovement_Sad--></T>
+    <T>326623<!--SocialObjectSuperInteraction: sI_AnimalObjects_Pet_Sheep_Free_Start_MoodImprovement_Scared--></T>
+    <T>328267<!--SocialObjectSuperInteraction: sI_AnimalObjects_Socials_Friendly_Sheep_TalkTo_Horse--></T>
+    <T>332217<!--SocialObjectSuperInteraction: sI_AnimalObjects_HarvestFrom_Sheep_Black--></T>
+    <T>332218<!--SocialObjectSuperInteraction: sI_AnimalObjects_HarvestFrom_Sheep_Colors--></T>
+    <T>337566<!--SocialObjectSuperInteraction: sI_AnimalObjects_Clean_Sheep_All_Start--></T>
+    <T>336604<!--SocialObjectSuperInteraction: sI_AnimalObjects_Clean_Sheep_All--></T>
+    <T>332365<!--SocialObjectSuperInteraction: horseInteractions_HorseToObject_HorseToGoatSheep_Chooser--></T>
+    <T>331520<!--SocialObjectSuperInteraction: sI_AnimalObjects_HorseToObject_HorseToGoatSheep_Curious--></T>
+    <T>331518<!--SocialObjectSuperInteraction: sI_AnimalObjects_HorseToObject_HorseToGoatSheep_Friendly--></T>
+    <T>331519<!--SocialObjectSuperInteraction: sI_AnimalObjects_HorseToObject_HorseToGoatSheep_Mean--></T>
+  </L>
+  <U n="recycling_data">
+    <L n="recycling_values">
+      <U>
+        <E n="Bucks Type">RecycleBitsBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+      <U>
+        <E n="Bucks Type">RecyclePiecesBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+    </L>
+  </U>
+</I>

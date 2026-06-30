@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="CustomStatesSituation" i="situation" m="situations.custom_states.custom_states_situation" n="situation_CustomState_BallroomDance" s="469578">
+  <U n="_buff">
+    <T n="buff_type">474455<!--Buff: buff_Ballroom_Hidden_CleanupTracker--></T>
+  </U>
+  <T n="_cost">500</T>
+  <T n="_display_name">0x2D22D43F<!--String: "Grand Ball"--></T>
+  <T n="_icon" p="InEP21\UI\Icons\Events\Event_Screenshots\EP21_GrandBall.png">2f7d0004:00000000:0c56ef13471d0e51</T>
+  <T n="_implies_greeted_status">True</T>
+  <T n="_is_unique">True</T>
+  <U n="_level_data">
+    <U n="bronze">
+      <T n="level_description">0x9224E9B0<!--String: "Bronze"--></T>
+      <T n="reward">494455<!--HouseholdReward: householdReward_BallroomDance_Bronze--></T>
+    </U>
+    <U n="gold">
+      <T n="level_description">0x82AD9EEA<!--String: "Gold"--></T>
+      <T n="reward">494453<!--HouseholdReward: householdReward_BallroomDance_Gold--></T>
+    </U>
+    <U n="silver">
+      <T n="level_description">0x20CAEAD3<!--String: "Silver"--></T>
+      <T n="reward">494454<!--HouseholdReward: householdReward_BallroomDance_Silver--></T>
+    </U>
+  </U>
+  <T n="_resident_job">461959<!--SituationJob: job_Guest_Ballroom--></T>
+  <L n="_situation_states">
+    <U>
+      <T n="Situation State Key">Start</T>
+      <V n="Situation State" t="literal" />
+    </U>
+  </L>
+  <V n="_starting_state" t="random_starting_state">
+    <U n="random_starting_state">
+      <L n="possible_state_keys">
+        <U>
+          <T n="situation_key">Start</T>
+        </U>
+      </L>
+    </U>
+  </V>
+  <T p="InGame\Audio\Bumper\bumper_event_start.propx" n="audio_sting_on_start">39b2aa4a:00000000:78b903461d47e4fc</T>
+  <T n="blocks_super_speed_three">True</T>
+  <T n="calendar_icon" p="InEP21\UI\Icons\Events\EventIcons\Events_GrandBall.png">2f7d0004:00000000:37d00269996b278e</T>
+  <E n="category">Social Events</E>
+  <L n="compatible_venues">
+    <T>25847<!--Venue: venue_park--></T>
+    <T>16875<!--Venue: venue_lounge--></T>
+    <T>28614<!--Venue: venue_residential--></T>
+    <T>123794<!--Venue: venue_pool--></T>
+    <T>125223<!--Venue: venue_ChaletGardens--></T>
+    <T>123132<!--Venue: venue_Ruins--></T>
+    <T>125071<!--Venue: venue_OceanBluff--></T>
+    <T>138380<!--Venue: venue_MyshunoMeadows--></T>
+    <T>9279<!--Venue: venue_generic--></T>
+    <T>223944<!--Venue: venue_CommunityLot--></T>
+    <T>223946<!--Venue: subVenue_Garden--></T>
+    <T>314133<!--Venue: venue_RecCenter--></T>
+    <T>377555<!--Venue: venue_Cemetery--></T>
+    <T>468880<!--Venue: venue_Playground--></T>
+  </L>
+  <V n="customizable_style" t="enabled">
+    <T n="enabled">461606<!--SituationStyleData: situationStyleData_Ballroom--></T>
+  </V>
+  <L n="default_job_and_roles">
+    <U>
+      <T n="Situation Job">461959<!--SituationJob: job_Guest_Ballroom--></T>
+      <T n="Role State">462007<!--RoleState: role_Ballroom_Guest--></T>
+    </U>
+    <U>
+      <T n="Situation Job">461960<!--SituationJob: job_Host_Ballroom--></T>
+      <T n="Role State">462006<!--RoleState: role_Ballroom_Host--></T>
+    </U>
+    <U>
+      <T n="Situation Job">468291<!--SituationJob: job_bartender_Expensive--></T>
+      <T n="Role State">15878<!--RoleState: role_bartender_tendBar_makeDrinks_cleanBar--></T>
+    </U>
+  </L>
+  <V n="default_situation_job" t="enabled">
+    <T n="enabled">461959<!--SituationJob: job_Guest_Ballroom--></T>
+  </V>
+  <T n="duration">480</T>
+  <T n="force_invite_only">True</T>
+  <U n="job_cell_padding">
+    <T n="right">5</T>
+  </U>
+  <V n="job_display_ordering" t="enabled">
+    <L n="enabled">
+      <T>461960<!--SituationJob: job_Host_Ballroom--></T>
+      <T>461959<!--SituationJob: job_Guest_Ballroom--></T>
+      <T>16159<!--SituationJob: job_bartender--></T>
+    </L>
+  </V>
+  <U n="lot_priority_and_sorting">
+    <T n="object_tags_string">dance_floor</T>
+    <T n="requires_objects_text">0xBC08A6F1<!--String: "Requires:\n• Dancefloor"--></T>
+    <T n="world_with_top_priority">465280<!--Region: region_Residential_EP21World--></T>
+  </U>
+  <T n="main_goal">461961<!--SituationGoalObjectInteraction: Goal_BallroomParty_StartGrandWaltz--></T>
+  <T p="InGame\Audio\Bumper\bumper_event_major_complete.propx" n="main_goal_audio_sting">39b2aa4a:00000000:10b476550150a33f</T>
+  <T n="max_participants">20</T>
+  <L n="minor_goal_chains">
+    <T>461964<!--SituationGoalSet: goalSet_BallroomParty_Host1--></T>
+    <T>461963<!--SituationGoalSet: goalSet_BallroomParty_Host2--></T>
+    <T>498979<!--SituationGoalSet: goalSet_BallroomParty_Host3--></T>
+  </L>
+  <T n="offer_completed_goals">False</T>
+  <L n="pre_populate_jobs">
+    <U>
+      <T n="job">461960<!--SituationJob: job_Host_Ballroom--></T>
+    </U>
+  </L>
+  <T n="recommended_job_object_text">0x7E73F37A<!--String: "Some tips for a more successful event:\n{0.String}"--></T>
+  <V n="screen_slam_bronze" t="enabled">
+    <V n="enabled" t="reference">
+      <T n="reference">75362<!--ScreenSlam: EventOutcome_Bronze--></T>
+    </V>
+  </V>
+  <V n="screen_slam_gold" t="enabled">
+    <V n="enabled" t="reference">
+      <T n="reference">75364<!--ScreenSlam: EventOutcome_Gold--></T>
+    </V>
+  </V>
+  <V n="screen_slam_no_medal" t="enabled">
+    <V n="enabled" t="reference">
+      <T n="reference">75361<!--ScreenSlam: EventOutcome_Tin--></T>
+    </V>
+  </V>
+  <V n="screen_slam_silver" t="enabled">
+    <V n="enabled" t="reference">
+      <T n="reference">75363<!--ScreenSlam: EventOutcome_Silver--></T>
+    </V>
+  </V>
+  <T n="situation_description">0x3D8468F3<!--String: "A high-class social event, where securing an excellent Dance Partner is of great importance. Your Dance Partner will join you during the pinnacle moment of the Grand Waltz, where all guests pair-up for a beautifully synchronised dance. "--></T>
+  <V n="situation_end_time_string" t="show_end_time">
+    <T n="show_end_time">0xA3E17143<!--String: "Work day ends at {0.TimeShort}"--></T>
+  </V>
+  <L n="tags">
+    <E>Situation_PlayerFacing_CanHost</E>
+  </L>
+</I>

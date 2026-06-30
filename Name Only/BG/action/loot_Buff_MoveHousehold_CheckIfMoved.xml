@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Buff_MoveHousehold_CheckIfMoved" s="359474">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">359176<!--Buff: buff_MoveHousehold_RecentMove--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="is_last_played_home_zone">
+              <U n="is_last_played_home_zone">
+                <T n="negate">True</T>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff_removal">
+      <U n="buff_removal">
+        <L n="buffs_to_remove">
+          <T>359179<!--Buff: buff_MoveHousehold_PreMove--></T>
+          <T>359178<!--Buff: buff_LandlordTenant_Hidden_MoveHousehold_OwesFee--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

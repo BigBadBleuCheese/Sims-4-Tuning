@@ -1,0 +1,2076 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SocialMixerInteraction" i="interaction" m="interactions.social.social_mixer_interaction" n="triviabox_thumbsUp_activePlayer_guess_thinking" s="365314">
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>TargetSim</E>
+      </L>
+    </U>
+  </V>
+  <T n="acquire_social_group_as_resource">False</T>
+  <T n="allow_user_directed">False</T>
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>162659<!--LootActions: loot_Commodity_Culling_GhostAdd_target--></T>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>366019<!--LootActions: loot_triviaBox_thumbsUp_tenseTracker_increment--></T>
+        </L>
+        <U n="success_chance">
+          <L n="multipliers">
+            <U>
+              <T n="multiplier">0</T>
+              <L n="tests">
+                <L>
+                  <V t="trait">
+                    <U n="trait">
+                      <L n="blacklist_traits">
+                        <T>16845<!--Trait: trait_HotHeaded--></T>
+                      </L>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+          </L>
+        </U>
+      </U>
+    </V>
+  </L>
+  <L n="basic_liabilities">
+    <V t="animation_overrides">
+      <U n="animation_overrides">
+        <U n="animation_overrides">
+          <L n="prop_state_values">
+            <U>
+              <T n="key">card</T>
+              <L n="value">
+                <T>361966<!--ObjectStateValue: triviaBox_thumbsUp_chosenCardState_thinking--></T>
+              </L>
+            </U>
+          </L>
+        </U>
+      </U>
+    </V>
+  </L>
+  <T n="display_name">0x477DD999<!--String: "Playing Thumbs-Up! Game"--></T>
+  <T n="display_name_target">0x8C71C8F7<!--String: "Listen to {1.SimFirstName}'s Question"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Mixer</E>
+    <E>Interaction_All</E>
+    <E>Interaction_SocialAll</E>
+    <E>Interaction_SocialMixer</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">359325<!--AnimationElement: triviaBox_thumbsUp_activePlayer_guess--></T>
+                    <U n="overrides">
+                      <V n="balloons" t="enabled">
+                        <L n="enabled">
+                          <U>
+                            <L n="balloon_choices">
+                              <U>
+                                <V n="item" t="balloon_icon">
+                                  <U n="balloon_icon">
+                                    <E n="balloon_type">SPEECH</E>
+                                    <V n="icon" t="resource_key">
+                                      <U n="resource_key">
+                                        <T n="key" p="InEP16\UI\Icons\Headlines\headline_ThumbsUp_Question_Sweatsmile.png">2f7d0004:00000000:d42cbe473ea9af5e</T>
+                                      </U>
+                                    </V>
+                                  </U>
+                                </V>
+                              </U>
+                            </L>
+                            <L n="balloon_target">
+                              <E>Actor</E>
+                            </L>
+                          </U>
+                          <U>
+                            <L n="balloon_choices">
+                              <U>
+                                <V n="item" t="balloon_icon">
+                                  <U n="balloon_icon">
+                                    <E n="balloon_type">SPEECH</E>
+                                    <V n="icon" t="resource_key">
+                                      <U n="resource_key">
+                                        <T n="key" p="InEP16\UI\Icons\Headlines\headline_ThumbsUp_Answer_ThumbUp.png">2f7d0004:00000000:003546a1b26ac123</T>
+                                      </U>
+                                    </V>
+                                  </U>
+                                </V>
+                              </U>
+                            </L>
+                            <T n="balloon_delay">3.25</T>
+                            <T n="balloon_delay_random_offset">0.5</T>
+                            <L n="balloon_target">
+                              <E>OtherSimsInCurrentGame</E>
+                            </L>
+                          </U>
+                        </L>
+                      </V>
+                      <L n="params">
+                        <U>
+                          <T n="name">TriviaBox_Emoji</T>
+                          <V n="value" t="string">
+                            <T n="string">SweatSmile</T>
+                          </V>
+                        </U>
+                      </L>
+                      <V n="reactionlet" t="enabled">
+                        <U n="enabled">
+                          <V n="selector" t="participant">
+                            <U n="participant">
+                              <L n="groups">
+                                <U>
+                                  <U n="animation_ref">
+                                    <T n="factory">361022<!--AnimationElement: triviaBox_thumbsUp_otherResponse_correct--></T>
+                                  </U>
+                                  <L n="group">
+                                    <E>OtherSimsInCurrentGame</E>
+                                  </L>
+                                </U>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="state_change">
+                    <U n="state_change">
+                      <V n="new_value" t="single_value">
+                        <U n="single_value">
+                          <T n="new_value">358360<!--ObjectStateValue: triviaBox_thumbsUp_guessedCardState_correct--></T>
+                        </U>
+                      </V>
+                      <V n="timing" t="immediately" />
+                    </U>
+                  </V>
+                  <V t="state_change">
+                    <U n="state_change">
+                      <V n="new_value" t="single_value">
+                        <U n="single_value">
+                          <T n="new_value">357636<!--ObjectStateValue: triviaBox_thumbsUp_wooWho_gameState_answered--></T>
+                        </U>
+                      </V>
+                      <V n="timing" t="immediately" />
+                    </U>
+                  </V>
+                </L>
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">362427<!--SocialMixerInteraction: triviabox_thumbsUp_activePlayer_react--></T>
+                  </U>
+                </L>
+              </U>
+              <U n="weight">
+                <L n="multipliers">
+                  <U>
+                    <T n="multiplier">0</T>
+                    <L n="tests">
+                      <L>
+                        <V t="state">
+                          <U n="state">
+                            <E n="operator">NOTEQUAL</E>
+                            <T n="value">358358<!--ObjectStateValue: triviaBox_thumbsUp_chosenCardState_sweatSmile--></T>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                </L>
+              </U>
+            </U>
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">359325<!--AnimationElement: triviaBox_thumbsUp_activePlayer_guess--></T>
+                    <U n="overrides">
+                      <V n="balloons" t="enabled">
+                        <L n="enabled">
+                          <U>
+                            <L n="balloon_choices">
+                              <U>
+                                <V n="item" t="balloon_icon">
+                                  <U n="balloon_icon">
+                                    <E n="balloon_type">SPEECH</E>
+                                    <V n="icon" t="resource_key">
+                                      <U n="resource_key">
+                                        <T n="key" p="InEP16\UI\Icons\Headlines\headline_ThumbsUp_Question_Sweatsmile.png">2f7d0004:00000000:d42cbe473ea9af5e</T>
+                                      </U>
+                                    </V>
+                                  </U>
+                                </V>
+                              </U>
+                            </L>
+                            <L n="balloon_target">
+                              <E>Actor</E>
+                            </L>
+                          </U>
+                        </L>
+                      </V>
+                      <L n="params">
+                        <U>
+                          <T n="name">TriviaBox_Emoji</T>
+                          <V n="value" t="string">
+                            <T n="string">SweatSmile</T>
+                          </V>
+                        </U>
+                      </L>
+                      <V n="reactionlet" t="enabled">
+                        <U n="enabled">
+                          <V n="selector" t="participant">
+                            <U n="participant">
+                              <L n="groups">
+                                <U>
+                                  <U n="animation_ref">
+                                    <T n="factory">361023<!--AnimationElement: triviaBox_thumbsUp_otherResponse_incorrect--></T>
+                                  </U>
+                                  <L n="group">
+                                    <E>OtherSimsInCurrentGame</E>
+                                  </L>
+                                </U>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <T n="buff_type">358496<!--Buff: buff_TriviaBox_GuessTracking_sweatSmile--></T>
+                      </U>
+                    </U>
+                  </V>
+                </L>
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">362427<!--SocialMixerInteraction: triviabox_thumbsUp_activePlayer_react--></T>
+                  </U>
+                </L>
+                <L n="loot_list">
+                  <T>383781<!--LootActions: loot_triviaBox_thumbsUp_incorrectGuess--></T>
+                </L>
+              </U>
+              <U n="weight">
+                <L n="multipliers">
+                  <U>
+                    <T n="multiplier">0</T>
+                    <L n="tests">
+                      <L>
+                        <V t="state">
+                          <U n="state">
+                            <T n="value">358358<!--ObjectStateValue: triviaBox_thumbsUp_chosenCardState_sweatSmile--></T>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="statistic">
+                <U n="statistic">
+                  <T n="stat">383780<!--Statistic: triviaBox_thumbsUp_guess_counter--></T>
+                  <V n="threshold" t="value_threshold">
+                    <U n="value_threshold">
+                      <E n="comparison">LESS</E>
+                      <T n="value">2</T>
+                    </U>
+                  </V>
+                  <E n="who">Object</E>
+                </U>
+              </V>
+              <V t="buff">
+                <U n="buff">
+                  <L n="blacklist">
+                    <T>358496<!--Buff: buff_TriviaBox_GuessTracking_sweatSmile--></T>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">359325<!--AnimationElement: triviaBox_thumbsUp_activePlayer_guess--></T>
+                    <U n="overrides">
+                      <V n="balloons" t="enabled">
+                        <L n="enabled">
+                          <U>
+                            <L n="balloon_choices">
+                              <U>
+                                <V n="item" t="balloon_icon">
+                                  <U n="balloon_icon">
+                                    <E n="balloon_type">SPEECH</E>
+                                    <V n="icon" t="resource_key">
+                                      <U n="resource_key">
+                                        <T n="key" p="InEP16\UI\Icons\Headlines\headline_ThumbsUp_Question_Scream.png">2f7d0004:00000000:331ef7cb3cc03595</T>
+                                      </U>
+                                    </V>
+                                  </U>
+                                </V>
+                              </U>
+                            </L>
+                            <L n="balloon_target">
+                              <E>Actor</E>
+                            </L>
+                          </U>
+                          <U>
+                            <L n="balloon_choices">
+                              <U>
+                                <V n="item" t="balloon_icon">
+                                  <U n="balloon_icon">
+                                    <E n="balloon_type">SPEECH</E>
+                                    <V n="icon" t="resource_key">
+                                      <U n="resource_key">
+                                        <T n="key" p="InEP16\UI\Icons\Headlines\headline_ThumbsUp_Answer_ThumbUp.png">2f7d0004:00000000:003546a1b26ac123</T>
+                                      </U>
+                                    </V>
+                                  </U>
+                                </V>
+                              </U>
+                            </L>
+                            <T n="balloon_delay">3.25</T>
+                            <T n="balloon_delay_random_offset">0.5</T>
+                            <L n="balloon_target">
+                              <E>OtherSimsInCurrentGame</E>
+                            </L>
+                          </U>
+                        </L>
+                      </V>
+                      <L n="params">
+                        <U>
+                          <T n="name">TriviaBox_Emoji</T>
+                          <V n="value" t="string">
+                            <T n="string">Scream</T>
+                          </V>
+                        </U>
+                      </L>
+                      <V n="reactionlet" t="enabled">
+                        <U n="enabled">
+                          <V n="selector" t="participant">
+                            <U n="participant">
+                              <L n="groups">
+                                <U>
+                                  <U n="animation_ref">
+                                    <T n="factory">361022<!--AnimationElement: triviaBox_thumbsUp_otherResponse_correct--></T>
+                                  </U>
+                                  <L n="group">
+                                    <E>OtherSimsInCurrentGame</E>
+                                  </L>
+                                </U>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="state_change">
+                    <U n="state_change">
+                      <V n="new_value" t="single_value">
+                        <U n="single_value">
+                          <T n="new_value">358360<!--ObjectStateValue: triviaBox_thumbsUp_guessedCardState_correct--></T>
+                        </U>
+                      </V>
+                      <V n="timing" t="immediately" />
+                    </U>
+                  </V>
+                  <V t="state_change">
+                    <U n="state_change">
+                      <V n="new_value" t="single_value">
+                        <U n="single_value">
+                          <T n="new_value">357636<!--ObjectStateValue: triviaBox_thumbsUp_wooWho_gameState_answered--></T>
+                        </U>
+                      </V>
+                      <V n="timing" t="immediately" />
+                    </U>
+                  </V>
+                </L>
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">362427<!--SocialMixerInteraction: triviabox_thumbsUp_activePlayer_react--></T>
+                  </U>
+                </L>
+                <V n="response" t="disabled" />
+              </U>
+              <U n="weight">
+                <L n="multipliers">
+                  <U>
+                    <T n="multiplier">0</T>
+                    <L n="tests">
+                      <L>
+                        <V t="state">
+                          <U n="state">
+                            <E n="operator">NOTEQUAL</E>
+                            <T n="value">361968<!--ObjectStateValue: triviaBox_thumbsUp_chosenCardState_scream--></T>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                </L>
+              </U>
+            </U>
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">359325<!--AnimationElement: triviaBox_thumbsUp_activePlayer_guess--></T>
+                    <U n="overrides">
+                      <V n="balloons" t="enabled">
+                        <L n="enabled">
+                          <U>
+                            <L n="balloon_choices">
+                              <U>
+                                <V n="item" t="balloon_icon">
+                                  <U n="balloon_icon">
+                                    <E n="balloon_type">SPEECH</E>
+                                    <V n="icon" t="resource_key">
+                                      <U n="resource_key">
+                                        <T n="key" p="InEP16\UI\Icons\Headlines\headline_ThumbsUp_Question_Scream.png">2f7d0004:00000000:331ef7cb3cc03595</T>
+                                      </U>
+                                    </V>
+                                  </U>
+                                </V>
+                              </U>
+                            </L>
+                            <L n="balloon_target">
+                              <E>Actor</E>
+                            </L>
+                          </U>
+                        </L>
+                      </V>
+                      <L n="params">
+                        <U>
+                          <T n="name">TriviaBox_Emoji</T>
+                          <V n="value" t="string">
+                            <T n="string">Scream</T>
+                          </V>
+                        </U>
+                      </L>
+                      <V n="reactionlet" t="enabled">
+                        <U n="enabled">
+                          <V n="selector" t="participant">
+                            <U n="participant">
+                              <L n="groups">
+                                <U>
+                                  <U n="animation_ref">
+                                    <T n="factory">361023<!--AnimationElement: triviaBox_thumbsUp_otherResponse_incorrect--></T>
+                                  </U>
+                                  <L n="group">
+                                    <E>OtherSimsInCurrentGame</E>
+                                  </L>
+                                </U>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <T n="buff_type">358497<!--Buff: buff_TriviaBox_GuessTracking_scream--></T>
+                      </U>
+                    </U>
+                  </V>
+                </L>
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">362427<!--SocialMixerInteraction: triviabox_thumbsUp_activePlayer_react--></T>
+                  </U>
+                </L>
+                <L n="loot_list">
+                  <T>383781<!--LootActions: loot_triviaBox_thumbsUp_incorrectGuess--></T>
+                </L>
+              </U>
+              <U n="weight">
+                <L n="multipliers">
+                  <U>
+                    <T n="multiplier">0</T>
+                    <L n="tests">
+                      <L>
+                        <V t="state">
+                          <U n="state">
+                            <T n="value">361968<!--ObjectStateValue: triviaBox_thumbsUp_chosenCardState_scream--></T>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="statistic">
+                <U n="statistic">
+                  <T n="stat">383780<!--Statistic: triviaBox_thumbsUp_guess_counter--></T>
+                  <V n="threshold" t="value_threshold">
+                    <U n="value_threshold">
+                      <E n="comparison">LESS</E>
+                      <T n="value">2</T>
+                    </U>
+                  </V>
+                  <E n="who">Object</E>
+                </U>
+              </V>
+              <V t="buff">
+                <U n="buff">
+                  <L n="blacklist">
+                    <T>358497<!--Buff: buff_TriviaBox_GuessTracking_scream--></T>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">359325<!--AnimationElement: triviaBox_thumbsUp_activePlayer_guess--></T>
+                    <U n="overrides">
+                      <V n="balloons" t="enabled">
+                        <L n="enabled">
+                          <U>
+                            <L n="balloon_choices">
+                              <U>
+                                <V n="item" t="balloon_icon">
+                                  <U n="balloon_icon">
+                                    <E n="balloon_type">SPEECH</E>
+                                    <V n="icon" t="resource_key">
+                                      <U n="resource_key">
+                                        <T n="key" p="InEP16\UI\Icons\Headlines\headline_ThumbsUp_Question_Surprised.png">2f7d0004:00000000:a2055cc595aca649</T>
+                                      </U>
+                                    </V>
+                                  </U>
+                                </V>
+                              </U>
+                            </L>
+                            <L n="balloon_target">
+                              <E>Actor</E>
+                            </L>
+                          </U>
+                          <U>
+                            <L n="balloon_choices">
+                              <U>
+                                <V n="item" t="balloon_icon">
+                                  <U n="balloon_icon">
+                                    <E n="balloon_type">SPEECH</E>
+                                    <V n="icon" t="resource_key">
+                                      <U n="resource_key">
+                                        <T n="key" p="InEP16\UI\Icons\Headlines\headline_ThumbsUp_Answer_ThumbUp.png">2f7d0004:00000000:003546a1b26ac123</T>
+                                      </U>
+                                    </V>
+                                  </U>
+                                </V>
+                              </U>
+                            </L>
+                            <T n="balloon_delay">3.25</T>
+                            <T n="balloon_delay_random_offset">0.5</T>
+                            <L n="balloon_target">
+                              <E>OtherSimsInCurrentGame</E>
+                            </L>
+                          </U>
+                        </L>
+                      </V>
+                      <L n="params">
+                        <U>
+                          <T n="name">TriviaBox_Emoji</T>
+                          <V n="value" t="string">
+                            <T n="string">Surprised</T>
+                          </V>
+                        </U>
+                      </L>
+                      <V n="reactionlet" t="enabled">
+                        <U n="enabled">
+                          <V n="selector" t="participant">
+                            <U n="participant">
+                              <L n="groups">
+                                <U>
+                                  <U n="animation_ref">
+                                    <T n="factory">361022<!--AnimationElement: triviaBox_thumbsUp_otherResponse_correct--></T>
+                                  </U>
+                                  <L n="group">
+                                    <E>OtherSimsInCurrentGame</E>
+                                  </L>
+                                </U>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="state_change">
+                    <U n="state_change">
+                      <V n="new_value" t="single_value">
+                        <U n="single_value">
+                          <T n="new_value">358360<!--ObjectStateValue: triviaBox_thumbsUp_guessedCardState_correct--></T>
+                        </U>
+                      </V>
+                      <V n="timing" t="immediately" />
+                    </U>
+                  </V>
+                  <V t="state_change">
+                    <U n="state_change">
+                      <V n="new_value" t="single_value">
+                        <U n="single_value">
+                          <T n="new_value">357636<!--ObjectStateValue: triviaBox_thumbsUp_wooWho_gameState_answered--></T>
+                        </U>
+                      </V>
+                      <V n="timing" t="immediately" />
+                    </U>
+                  </V>
+                </L>
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">362427<!--SocialMixerInteraction: triviabox_thumbsUp_activePlayer_react--></T>
+                  </U>
+                </L>
+              </U>
+              <U n="weight">
+                <L n="multipliers">
+                  <U>
+                    <T n="multiplier">0</T>
+                    <L n="tests">
+                      <L>
+                        <V t="state">
+                          <U n="state">
+                            <E n="operator">NOTEQUAL</E>
+                            <T n="value">358356<!--ObjectStateValue: triviaBox_thumbsUp_chosenCardState_surprised--></T>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                </L>
+              </U>
+            </U>
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">359325<!--AnimationElement: triviaBox_thumbsUp_activePlayer_guess--></T>
+                    <U n="overrides">
+                      <V n="balloons" t="enabled">
+                        <L n="enabled">
+                          <U>
+                            <L n="balloon_choices">
+                              <U>
+                                <V n="item" t="balloon_icon">
+                                  <U n="balloon_icon">
+                                    <E n="balloon_type">SPEECH</E>
+                                    <V n="icon" t="resource_key">
+                                      <U n="resource_key">
+                                        <T n="key" p="InEP16\UI\Icons\Headlines\headline_ThumbsUp_Question_Surprised.png">2f7d0004:00000000:a2055cc595aca649</T>
+                                      </U>
+                                    </V>
+                                  </U>
+                                </V>
+                              </U>
+                            </L>
+                            <L n="balloon_target">
+                              <E>Actor</E>
+                            </L>
+                          </U>
+                        </L>
+                      </V>
+                      <L n="params">
+                        <U>
+                          <T n="name">TriviaBox_Emoji</T>
+                          <V n="value" t="string">
+                            <T n="string">Surprised</T>
+                          </V>
+                        </U>
+                      </L>
+                      <V n="reactionlet" t="enabled">
+                        <U n="enabled">
+                          <V n="selector" t="participant">
+                            <U n="participant">
+                              <L n="groups">
+                                <U>
+                                  <U n="animation_ref">
+                                    <T n="factory">361023<!--AnimationElement: triviaBox_thumbsUp_otherResponse_incorrect--></T>
+                                  </U>
+                                  <L n="group">
+                                    <E>OtherSimsInCurrentGame</E>
+                                  </L>
+                                </U>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <T n="buff_type">358498<!--Buff: buff_TriviaBox_GuessTracking_surprised--></T>
+                      </U>
+                    </U>
+                  </V>
+                </L>
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">362427<!--SocialMixerInteraction: triviabox_thumbsUp_activePlayer_react--></T>
+                  </U>
+                </L>
+                <L n="loot_list">
+                  <T>383781<!--LootActions: loot_triviaBox_thumbsUp_incorrectGuess--></T>
+                </L>
+                <V n="response" t="disabled" />
+              </U>
+              <U n="weight">
+                <L n="multipliers">
+                  <U>
+                    <T n="multiplier">0</T>
+                    <L n="tests">
+                      <L>
+                        <V t="state">
+                          <U n="state">
+                            <T n="value">358356<!--ObjectStateValue: triviaBox_thumbsUp_chosenCardState_surprised--></T>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="statistic">
+                <U n="statistic">
+                  <T n="stat">383780<!--Statistic: triviaBox_thumbsUp_guess_counter--></T>
+                  <V n="threshold" t="value_threshold">
+                    <U n="value_threshold">
+                      <E n="comparison">LESS</E>
+                      <T n="value">2</T>
+                    </U>
+                  </V>
+                  <E n="who">Object</E>
+                </U>
+              </V>
+              <V t="buff">
+                <U n="buff">
+                  <L n="blacklist">
+                    <T>358498<!--Buff: buff_TriviaBox_GuessTracking_surprised--></T>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">359325<!--AnimationElement: triviaBox_thumbsUp_activePlayer_guess--></T>
+                    <U n="overrides">
+                      <V n="balloons" t="enabled">
+                        <L n="enabled">
+                          <U>
+                            <L n="balloon_choices">
+                              <U>
+                                <V n="item" t="balloon_icon">
+                                  <U n="balloon_icon">
+                                    <E n="balloon_type">SPEECH</E>
+                                    <V n="icon" t="resource_key">
+                                      <U n="resource_key">
+                                        <T n="key" p="InEP16\UI\Icons\Headlines\headline_ThumbsUp_Question_Crying.png">2f7d0004:00000000:4d4ee27bf6b31d26</T>
+                                      </U>
+                                    </V>
+                                  </U>
+                                </V>
+                              </U>
+                            </L>
+                            <L n="balloon_target">
+                              <E>Actor</E>
+                            </L>
+                          </U>
+                          <U>
+                            <L n="balloon_choices">
+                              <U>
+                                <V n="item" t="balloon_icon">
+                                  <U n="balloon_icon">
+                                    <E n="balloon_type">SPEECH</E>
+                                    <V n="icon" t="resource_key">
+                                      <U n="resource_key">
+                                        <T n="key" p="InEP16\UI\Icons\Headlines\headline_ThumbsUp_Answer_ThumbUp.png">2f7d0004:00000000:003546a1b26ac123</T>
+                                      </U>
+                                    </V>
+                                  </U>
+                                </V>
+                              </U>
+                            </L>
+                            <T n="balloon_delay">3.25</T>
+                            <T n="balloon_delay_random_offset">0.5</T>
+                            <L n="balloon_target">
+                              <E>OtherSimsInCurrentGame</E>
+                            </L>
+                          </U>
+                        </L>
+                      </V>
+                      <L n="params">
+                        <U>
+                          <T n="name">TriviaBox_Emoji</T>
+                          <V n="value" t="string">
+                            <T n="string">Crying</T>
+                          </V>
+                        </U>
+                      </L>
+                      <V n="reactionlet" t="enabled">
+                        <U n="enabled">
+                          <V n="selector" t="participant">
+                            <U n="participant">
+                              <L n="groups">
+                                <U>
+                                  <U n="animation_ref">
+                                    <T n="factory">361022<!--AnimationElement: triviaBox_thumbsUp_otherResponse_correct--></T>
+                                  </U>
+                                  <L n="group">
+                                    <E>OtherSimsInCurrentGame</E>
+                                  </L>
+                                </U>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="state_change">
+                    <U n="state_change">
+                      <V n="new_value" t="single_value">
+                        <U n="single_value">
+                          <T n="new_value">358360<!--ObjectStateValue: triviaBox_thumbsUp_guessedCardState_correct--></T>
+                        </U>
+                      </V>
+                      <V n="timing" t="immediately" />
+                    </U>
+                  </V>
+                  <V t="state_change">
+                    <U n="state_change">
+                      <V n="new_value" t="single_value">
+                        <U n="single_value">
+                          <T n="new_value">357636<!--ObjectStateValue: triviaBox_thumbsUp_wooWho_gameState_answered--></T>
+                        </U>
+                      </V>
+                      <V n="timing" t="immediately" />
+                    </U>
+                  </V>
+                </L>
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">362427<!--SocialMixerInteraction: triviabox_thumbsUp_activePlayer_react--></T>
+                  </U>
+                </L>
+              </U>
+              <U n="weight">
+                <L n="multipliers">
+                  <U>
+                    <T n="multiplier">0</T>
+                    <L n="tests">
+                      <L>
+                        <V t="state">
+                          <U n="state">
+                            <E n="operator">NOTEQUAL</E>
+                            <T n="value">361965<!--ObjectStateValue: triviaBox_thumbsUp_chosenCardState_crying--></T>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                </L>
+              </U>
+            </U>
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">359325<!--AnimationElement: triviaBox_thumbsUp_activePlayer_guess--></T>
+                    <U n="overrides">
+                      <V n="balloons" t="enabled">
+                        <L n="enabled">
+                          <U>
+                            <L n="balloon_choices">
+                              <U>
+                                <V n="item" t="balloon_icon">
+                                  <U n="balloon_icon">
+                                    <E n="balloon_type">SPEECH</E>
+                                    <V n="icon" t="resource_key">
+                                      <U n="resource_key">
+                                        <T n="key" p="InEP16\UI\Icons\Headlines\headline_ThumbsUp_Question_Crying.png">2f7d0004:00000000:4d4ee27bf6b31d26</T>
+                                      </U>
+                                    </V>
+                                  </U>
+                                </V>
+                              </U>
+                            </L>
+                            <L n="balloon_target">
+                              <E>Actor</E>
+                            </L>
+                          </U>
+                        </L>
+                      </V>
+                      <L n="params">
+                        <U>
+                          <T n="name">TriviaBox_Emoji</T>
+                          <V n="value" t="string">
+                            <T n="string">Crying</T>
+                          </V>
+                        </U>
+                      </L>
+                      <V n="reactionlet" t="enabled">
+                        <U n="enabled">
+                          <V n="selector" t="participant">
+                            <U n="participant">
+                              <L n="groups">
+                                <U>
+                                  <U n="animation_ref">
+                                    <T n="factory">361023<!--AnimationElement: triviaBox_thumbsUp_otherResponse_incorrect--></T>
+                                  </U>
+                                  <L n="group">
+                                    <E>OtherSimsInCurrentGame</E>
+                                  </L>
+                                </U>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <T n="buff_type">365307<!--Buff: buff_TriviaBox_GuessTracking_cry--></T>
+                      </U>
+                    </U>
+                  </V>
+                </L>
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">362427<!--SocialMixerInteraction: triviabox_thumbsUp_activePlayer_react--></T>
+                  </U>
+                </L>
+                <L n="loot_list">
+                  <T>383781<!--LootActions: loot_triviaBox_thumbsUp_incorrectGuess--></T>
+                </L>
+              </U>
+              <U n="weight">
+                <L n="multipliers">
+                  <U>
+                    <T n="multiplier">0</T>
+                    <L n="tests">
+                      <L>
+                        <V t="state">
+                          <U n="state">
+                            <T n="value">361965<!--ObjectStateValue: triviaBox_thumbsUp_chosenCardState_crying--></T>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="statistic">
+                <U n="statistic">
+                  <T n="stat">383780<!--Statistic: triviaBox_thumbsUp_guess_counter--></T>
+                  <V n="threshold" t="value_threshold">
+                    <U n="value_threshold">
+                      <E n="comparison">LESS</E>
+                      <T n="value">2</T>
+                    </U>
+                  </V>
+                  <E n="who">Object</E>
+                </U>
+              </V>
+              <V t="buff">
+                <U n="buff">
+                  <L n="blacklist">
+                    <T>365307<!--Buff: buff_TriviaBox_GuessTracking_cry--></T>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">359325<!--AnimationElement: triviaBox_thumbsUp_activePlayer_guess--></T>
+                    <U n="overrides">
+                      <V n="balloons" t="enabled">
+                        <L n="enabled">
+                          <U>
+                            <L n="balloon_choices">
+                              <U>
+                                <V n="item" t="balloon_icon">
+                                  <U n="balloon_icon">
+                                    <E n="balloon_type">SPEECH</E>
+                                    <V n="icon" t="resource_key">
+                                      <U n="resource_key">
+                                        <T n="key" p="InEP16\UI\Icons\Headlines\headline_ThumbsUp_Question_MindBlown.png">2f7d0004:00000000:604d857f33707c40</T>
+                                      </U>
+                                    </V>
+                                  </U>
+                                </V>
+                              </U>
+                            </L>
+                            <L n="balloon_target">
+                              <E>Actor</E>
+                            </L>
+                          </U>
+                          <U>
+                            <L n="balloon_choices">
+                              <U>
+                                <V n="item" t="balloon_icon">
+                                  <U n="balloon_icon">
+                                    <E n="balloon_type">SPEECH</E>
+                                    <V n="icon" t="resource_key">
+                                      <U n="resource_key">
+                                        <T n="key" p="InEP16\UI\Icons\Headlines\headline_ThumbsUp_Answer_ThumbUp.png">2f7d0004:00000000:003546a1b26ac123</T>
+                                      </U>
+                                    </V>
+                                  </U>
+                                </V>
+                              </U>
+                            </L>
+                            <T n="balloon_delay">3.25</T>
+                            <T n="balloon_delay_random_offset">0.5</T>
+                            <L n="balloon_target">
+                              <E>OtherSimsInCurrentGame</E>
+                            </L>
+                          </U>
+                        </L>
+                      </V>
+                      <L n="params">
+                        <U>
+                          <T n="name">TriviaBox_Emoji</T>
+                          <V n="value" t="string">
+                            <T n="string">MindBlown</T>
+                          </V>
+                        </U>
+                      </L>
+                      <V n="reactionlet" t="enabled">
+                        <U n="enabled">
+                          <V n="selector" t="participant">
+                            <U n="participant">
+                              <L n="groups">
+                                <U>
+                                  <U n="animation_ref">
+                                    <T n="factory">361022<!--AnimationElement: triviaBox_thumbsUp_otherResponse_correct--></T>
+                                  </U>
+                                  <L n="group">
+                                    <E>OtherSimsInCurrentGame</E>
+                                  </L>
+                                </U>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="state_change">
+                    <U n="state_change">
+                      <V n="new_value" t="single_value">
+                        <U n="single_value">
+                          <T n="new_value">358360<!--ObjectStateValue: triviaBox_thumbsUp_guessedCardState_correct--></T>
+                        </U>
+                      </V>
+                      <V n="timing" t="immediately" />
+                    </U>
+                  </V>
+                  <V t="state_change">
+                    <U n="state_change">
+                      <V n="new_value" t="single_value">
+                        <U n="single_value">
+                          <T n="new_value">357636<!--ObjectStateValue: triviaBox_thumbsUp_wooWho_gameState_answered--></T>
+                        </U>
+                      </V>
+                      <V n="timing" t="immediately" />
+                    </U>
+                  </V>
+                </L>
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">362427<!--SocialMixerInteraction: triviabox_thumbsUp_activePlayer_react--></T>
+                  </U>
+                </L>
+              </U>
+              <U n="weight">
+                <L n="multipliers">
+                  <U>
+                    <T n="multiplier">0</T>
+                    <L n="tests">
+                      <L>
+                        <V t="state">
+                          <U n="state">
+                            <E n="operator">NOTEQUAL</E>
+                            <T n="value">361969<!--ObjectStateValue: triviaBox_thumbsUp_chosenCardState_mindBlown--></T>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                </L>
+              </U>
+            </U>
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">359325<!--AnimationElement: triviaBox_thumbsUp_activePlayer_guess--></T>
+                    <U n="overrides">
+                      <V n="balloons" t="enabled">
+                        <L n="enabled">
+                          <U>
+                            <L n="balloon_choices">
+                              <U>
+                                <V n="item" t="balloon_icon">
+                                  <U n="balloon_icon">
+                                    <E n="balloon_type">SPEECH</E>
+                                    <V n="icon" t="resource_key">
+                                      <U n="resource_key">
+                                        <T n="key" p="InEP16\UI\Icons\Headlines\headline_ThumbsUp_Question_MindBlown.png">2f7d0004:00000000:604d857f33707c40</T>
+                                      </U>
+                                    </V>
+                                  </U>
+                                </V>
+                              </U>
+                            </L>
+                            <L n="balloon_target">
+                              <E>Actor</E>
+                            </L>
+                          </U>
+                        </L>
+                      </V>
+                      <L n="params">
+                        <U>
+                          <T n="name">TriviaBox_Emoji</T>
+                          <V n="value" t="string">
+                            <T n="string">MindBlown</T>
+                          </V>
+                        </U>
+                      </L>
+                      <V n="reactionlet" t="enabled">
+                        <U n="enabled">
+                          <V n="selector" t="participant">
+                            <U n="participant">
+                              <L n="groups">
+                                <U>
+                                  <U n="animation_ref">
+                                    <T n="factory">361023<!--AnimationElement: triviaBox_thumbsUp_otherResponse_incorrect--></T>
+                                  </U>
+                                  <L n="group">
+                                    <E>OtherSimsInCurrentGame</E>
+                                  </L>
+                                </U>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <T n="buff_type">365308<!--Buff: buff_TriviaBox_GuessTracking_mindBlown--></T>
+                      </U>
+                    </U>
+                  </V>
+                </L>
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">362427<!--SocialMixerInteraction: triviabox_thumbsUp_activePlayer_react--></T>
+                  </U>
+                </L>
+                <L n="loot_list">
+                  <T>383781<!--LootActions: loot_triviaBox_thumbsUp_incorrectGuess--></T>
+                </L>
+              </U>
+              <U n="weight">
+                <L n="multipliers">
+                  <U>
+                    <T n="multiplier">0</T>
+                    <L n="tests">
+                      <L>
+                        <V t="state">
+                          <U n="state">
+                            <T n="value">361969<!--ObjectStateValue: triviaBox_thumbsUp_chosenCardState_mindBlown--></T>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="statistic">
+                <U n="statistic">
+                  <T n="stat">383780<!--Statistic: triviaBox_thumbsUp_guess_counter--></T>
+                  <V n="threshold" t="value_threshold">
+                    <U n="value_threshold">
+                      <E n="comparison">LESS</E>
+                      <T n="value">2</T>
+                    </U>
+                  </V>
+                  <E n="who">Object</E>
+                </U>
+              </V>
+              <V t="buff">
+                <U n="buff">
+                  <L n="blacklist">
+                    <T>365308<!--Buff: buff_TriviaBox_GuessTracking_mindBlown--></T>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">359325<!--AnimationElement: triviaBox_thumbsUp_activePlayer_guess--></T>
+                    <U n="overrides">
+                      <V n="balloons" t="enabled">
+                        <L n="enabled">
+                          <U>
+                            <L n="balloon_choices">
+                              <U>
+                                <V n="item" t="balloon_icon">
+                                  <U n="balloon_icon">
+                                    <E n="balloon_type">SPEECH</E>
+                                    <V n="icon" t="resource_key">
+                                      <U n="resource_key">
+                                        <T n="key" p="InEP16\UI\Icons\Headlines\headline_ThumbsUp_Question_Thinking.png">2f7d0004:00000000:04fa7ba94624e806</T>
+                                      </U>
+                                    </V>
+                                  </U>
+                                </V>
+                              </U>
+                            </L>
+                            <L n="balloon_target">
+                              <E>Actor</E>
+                            </L>
+                          </U>
+                          <U>
+                            <L n="balloon_choices">
+                              <U>
+                                <V n="item" t="balloon_icon">
+                                  <U n="balloon_icon">
+                                    <E n="balloon_type">SPEECH</E>
+                                    <V n="icon" t="resource_key">
+                                      <U n="resource_key">
+                                        <T n="key" p="InEP16\UI\Icons\Headlines\headline_ThumbsUp_Answer_ThumbUp.png">2f7d0004:00000000:003546a1b26ac123</T>
+                                      </U>
+                                    </V>
+                                  </U>
+                                </V>
+                              </U>
+                            </L>
+                            <T n="balloon_delay">3.25</T>
+                            <T n="balloon_delay_random_offset">0.5</T>
+                            <L n="balloon_target">
+                              <E>OtherSimsInCurrentGame</E>
+                            </L>
+                          </U>
+                        </L>
+                      </V>
+                      <L n="params">
+                        <U>
+                          <T n="name">TriviaBox_Emoji</T>
+                          <V n="value" t="string">
+                            <T n="string">Thinking</T>
+                          </V>
+                        </U>
+                      </L>
+                      <V n="reactionlet" t="enabled">
+                        <U n="enabled">
+                          <V n="selector" t="participant">
+                            <U n="participant">
+                              <L n="groups">
+                                <U>
+                                  <U n="animation_ref">
+                                    <T n="factory">361022<!--AnimationElement: triviaBox_thumbsUp_otherResponse_correct--></T>
+                                  </U>
+                                  <L n="group">
+                                    <E>OtherSimsInCurrentGame</E>
+                                  </L>
+                                </U>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="state_change">
+                    <U n="state_change">
+                      <V n="new_value" t="single_value">
+                        <U n="single_value">
+                          <T n="new_value">358360<!--ObjectStateValue: triviaBox_thumbsUp_guessedCardState_correct--></T>
+                        </U>
+                      </V>
+                      <V n="timing" t="immediately" />
+                    </U>
+                  </V>
+                  <V t="state_change">
+                    <U n="state_change">
+                      <V n="new_value" t="single_value">
+                        <U n="single_value">
+                          <T n="new_value">357636<!--ObjectStateValue: triviaBox_thumbsUp_wooWho_gameState_answered--></T>
+                        </U>
+                      </V>
+                      <V n="timing" t="immediately" />
+                    </U>
+                  </V>
+                </L>
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">362427<!--SocialMixerInteraction: triviabox_thumbsUp_activePlayer_react--></T>
+                  </U>
+                </L>
+              </U>
+              <U n="weight">
+                <L n="multipliers">
+                  <U>
+                    <T n="multiplier">0</T>
+                    <L n="tests">
+                      <L>
+                        <V t="state">
+                          <U n="state">
+                            <E n="operator">NOTEQUAL</E>
+                            <T n="value">361966<!--ObjectStateValue: triviaBox_thumbsUp_chosenCardState_thinking--></T>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                </L>
+              </U>
+            </U>
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">359325<!--AnimationElement: triviaBox_thumbsUp_activePlayer_guess--></T>
+                    <U n="overrides">
+                      <V n="balloons" t="enabled">
+                        <L n="enabled">
+                          <U>
+                            <L n="balloon_choices">
+                              <U>
+                                <V n="item" t="balloon_icon">
+                                  <U n="balloon_icon">
+                                    <E n="balloon_type">SPEECH</E>
+                                    <V n="icon" t="resource_key">
+                                      <U n="resource_key">
+                                        <T n="key" p="InEP16\UI\Icons\Headlines\headline_ThumbsUp_Question_Thinking.png">2f7d0004:00000000:04fa7ba94624e806</T>
+                                      </U>
+                                    </V>
+                                  </U>
+                                </V>
+                              </U>
+                            </L>
+                            <L n="balloon_target">
+                              <E>Actor</E>
+                            </L>
+                          </U>
+                        </L>
+                      </V>
+                      <L n="params">
+                        <U>
+                          <T n="name">TriviaBox_Emoji</T>
+                          <V n="value" t="string">
+                            <T n="string">Thinking</T>
+                          </V>
+                        </U>
+                      </L>
+                      <V n="reactionlet" t="enabled">
+                        <U n="enabled">
+                          <V n="selector" t="participant">
+                            <U n="participant">
+                              <L n="groups">
+                                <U>
+                                  <U n="animation_ref">
+                                    <T n="factory">361023<!--AnimationElement: triviaBox_thumbsUp_otherResponse_incorrect--></T>
+                                  </U>
+                                  <L n="group">
+                                    <E>OtherSimsInCurrentGame</E>
+                                  </L>
+                                </U>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <T n="buff_type">365309<!--Buff: buff_TriviaBox_GuessTracking_thinking--></T>
+                      </U>
+                    </U>
+                  </V>
+                </L>
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">362427<!--SocialMixerInteraction: triviabox_thumbsUp_activePlayer_react--></T>
+                  </U>
+                </L>
+                <L n="loot_list">
+                  <T>383781<!--LootActions: loot_triviaBox_thumbsUp_incorrectGuess--></T>
+                </L>
+              </U>
+              <U n="weight">
+                <L n="multipliers">
+                  <U>
+                    <T n="multiplier">0</T>
+                    <L n="tests">
+                      <L>
+                        <V t="state">
+                          <U n="state">
+                            <T n="value">361966<!--ObjectStateValue: triviaBox_thumbsUp_chosenCardState_thinking--></T>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="buff">
+                <U n="buff">
+                  <L n="blacklist">
+                    <T>365309<!--Buff: buff_TriviaBox_GuessTracking_thinking--></T>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">359325<!--AnimationElement: triviaBox_thumbsUp_activePlayer_guess--></T>
+                    <U n="overrides">
+                      <V n="balloons" t="enabled">
+                        <L n="enabled">
+                          <U>
+                            <L n="balloon_choices">
+                              <U>
+                                <V n="item" t="balloon_icon">
+                                  <U n="balloon_icon">
+                                    <E n="balloon_type">SPEECH</E>
+                                    <V n="icon" t="resource_key">
+                                      <U n="resource_key">
+                                        <T n="key" p="InEP16\UI\Icons\Headlines\headline_ThumbsUp_Question_Vomiting.png">2f7d0004:00000000:d681cca36e59b9b5</T>
+                                      </U>
+                                    </V>
+                                  </U>
+                                </V>
+                              </U>
+                            </L>
+                            <L n="balloon_target">
+                              <E>Actor</E>
+                            </L>
+                          </U>
+                          <U>
+                            <L n="balloon_choices">
+                              <U>
+                                <V n="item" t="balloon_icon">
+                                  <U n="balloon_icon">
+                                    <E n="balloon_type">SPEECH</E>
+                                    <V n="icon" t="resource_key">
+                                      <U n="resource_key">
+                                        <T n="key" p="InEP16\UI\Icons\Headlines\headline_ThumbsUp_Answer_ThumbUp.png">2f7d0004:00000000:003546a1b26ac123</T>
+                                      </U>
+                                    </V>
+                                  </U>
+                                </V>
+                              </U>
+                            </L>
+                            <T n="balloon_delay">3.25</T>
+                            <T n="balloon_delay_random_offset">0.5</T>
+                            <L n="balloon_target">
+                              <E>OtherSimsInCurrentGame</E>
+                            </L>
+                          </U>
+                        </L>
+                      </V>
+                      <L n="params">
+                        <U>
+                          <T n="name">TriviaBox_Emoji</T>
+                          <V n="value" t="string">
+                            <T n="string">Vomiting</T>
+                          </V>
+                        </U>
+                      </L>
+                      <V n="reactionlet" t="enabled">
+                        <U n="enabled">
+                          <V n="selector" t="participant">
+                            <U n="participant">
+                              <L n="groups">
+                                <U>
+                                  <U n="animation_ref">
+                                    <T n="factory">361022<!--AnimationElement: triviaBox_thumbsUp_otherResponse_correct--></T>
+                                  </U>
+                                  <L n="group">
+                                    <E>OtherSimsInCurrentGame</E>
+                                  </L>
+                                </U>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="state_change">
+                    <U n="state_change">
+                      <V n="new_value" t="single_value">
+                        <U n="single_value">
+                          <T n="new_value">358360<!--ObjectStateValue: triviaBox_thumbsUp_guessedCardState_correct--></T>
+                        </U>
+                      </V>
+                      <V n="timing" t="immediately" />
+                    </U>
+                  </V>
+                  <V t="state_change">
+                    <U n="state_change">
+                      <V n="new_value" t="single_value">
+                        <U n="single_value">
+                          <T n="new_value">357636<!--ObjectStateValue: triviaBox_thumbsUp_wooWho_gameState_answered--></T>
+                        </U>
+                      </V>
+                      <V n="timing" t="immediately" />
+                    </U>
+                  </V>
+                </L>
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">362427<!--SocialMixerInteraction: triviabox_thumbsUp_activePlayer_react--></T>
+                  </U>
+                </L>
+              </U>
+              <U n="weight">
+                <L n="multipliers">
+                  <U>
+                    <T n="multiplier">0</T>
+                    <L n="tests">
+                      <L>
+                        <V t="state">
+                          <U n="state">
+                            <E n="operator">NOTEQUAL</E>
+                            <T n="value">361967<!--ObjectStateValue: triviaBox_thumbsUp_chosenCardState_vomiting--></T>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                </L>
+              </U>
+            </U>
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">359325<!--AnimationElement: triviaBox_thumbsUp_activePlayer_guess--></T>
+                    <U n="overrides">
+                      <V n="balloons" t="enabled">
+                        <L n="enabled">
+                          <U>
+                            <L n="balloon_choices">
+                              <U>
+                                <V n="item" t="balloon_icon">
+                                  <U n="balloon_icon">
+                                    <E n="balloon_type">SPEECH</E>
+                                    <V n="icon" t="resource_key">
+                                      <U n="resource_key">
+                                        <T n="key" p="InEP16\UI\Icons\Headlines\headline_ThumbsUp_Question_Vomiting.png">2f7d0004:00000000:d681cca36e59b9b5</T>
+                                      </U>
+                                    </V>
+                                  </U>
+                                </V>
+                              </U>
+                            </L>
+                            <L n="balloon_target">
+                              <E>Actor</E>
+                            </L>
+                          </U>
+                        </L>
+                      </V>
+                      <L n="params">
+                        <U>
+                          <T n="name">TriviaBox_Emoji</T>
+                          <V n="value" t="string">
+                            <T n="string">Vomiting</T>
+                          </V>
+                        </U>
+                      </L>
+                      <V n="reactionlet" t="enabled">
+                        <U n="enabled">
+                          <V n="selector" t="participant">
+                            <U n="participant">
+                              <L n="groups">
+                                <U>
+                                  <U n="animation_ref">
+                                    <T n="factory">361023<!--AnimationElement: triviaBox_thumbsUp_otherResponse_incorrect--></T>
+                                  </U>
+                                  <L n="group">
+                                    <E>OtherSimsInCurrentGame</E>
+                                  </L>
+                                </U>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <T n="buff_type">365310<!--Buff: buff_TriviaBox_GuessTracking_vomit--></T>
+                      </U>
+                    </U>
+                  </V>
+                </L>
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">362427<!--SocialMixerInteraction: triviabox_thumbsUp_activePlayer_react--></T>
+                  </U>
+                </L>
+                <L n="loot_list">
+                  <T>383781<!--LootActions: loot_triviaBox_thumbsUp_incorrectGuess--></T>
+                </L>
+              </U>
+              <U n="weight">
+                <L n="multipliers">
+                  <U>
+                    <T n="multiplier">0</T>
+                    <L n="tests">
+                      <L>
+                        <V t="state">
+                          <U n="state">
+                            <T n="value">361967<!--ObjectStateValue: triviaBox_thumbsUp_chosenCardState_vomiting--></T>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="statistic">
+                <U n="statistic">
+                  <T n="stat">383780<!--Statistic: triviaBox_thumbsUp_guess_counter--></T>
+                  <V n="threshold" t="value_threshold">
+                    <U n="value_threshold">
+                      <E n="comparison">LESS</E>
+                      <T n="value">2</T>
+                    </U>
+                  </V>
+                  <E n="who">Object</E>
+                </U>
+              </V>
+              <V t="buff">
+                <U n="buff">
+                  <L n="blacklist">
+                    <T>365310<!--Buff: buff_TriviaBox_GuessTracking_vomit--></T>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">359325<!--AnimationElement: triviaBox_thumbsUp_activePlayer_guess--></T>
+                    <U n="overrides">
+                      <V n="balloons" t="enabled">
+                        <L n="enabled">
+                          <U>
+                            <L n="balloon_choices">
+                              <U>
+                                <V n="item" t="balloon_icon">
+                                  <U n="balloon_icon">
+                                    <E n="balloon_type">SPEECH</E>
+                                    <V n="icon" t="resource_key">
+                                      <U n="resource_key">
+                                        <T n="key" p="InEP16\UI\Icons\Headlines\headline_ThumbsUp_Question_ZipperMouth.png">2f7d0004:00000000:adbf015fbeab6979</T>
+                                      </U>
+                                    </V>
+                                  </U>
+                                </V>
+                              </U>
+                            </L>
+                            <L n="balloon_target">
+                              <E>Actor</E>
+                            </L>
+                          </U>
+                          <U>
+                            <L n="balloon_choices">
+                              <U>
+                                <V n="item" t="balloon_icon">
+                                  <U n="balloon_icon">
+                                    <E n="balloon_type">SPEECH</E>
+                                    <V n="icon" t="resource_key">
+                                      <U n="resource_key">
+                                        <T n="key" p="InEP16\UI\Icons\Headlines\headline_ThumbsUp_Answer_ThumbUp.png">2f7d0004:00000000:003546a1b26ac123</T>
+                                      </U>
+                                    </V>
+                                  </U>
+                                </V>
+                              </U>
+                            </L>
+                            <T n="balloon_delay">3.25</T>
+                            <T n="balloon_delay_random_offset">0.5</T>
+                            <L n="balloon_target">
+                              <E>OtherSimsInCurrentGame</E>
+                            </L>
+                          </U>
+                        </L>
+                      </V>
+                      <L n="params">
+                        <U>
+                          <T n="name">TriviaBox_Emoji</T>
+                          <V n="value" t="string">
+                            <T n="string">ZipperMouth</T>
+                          </V>
+                        </U>
+                      </L>
+                      <V n="reactionlet" t="enabled">
+                        <U n="enabled">
+                          <V n="selector" t="participant">
+                            <U n="participant">
+                              <L n="groups">
+                                <U>
+                                  <U n="animation_ref">
+                                    <T n="factory">361022<!--AnimationElement: triviaBox_thumbsUp_otherResponse_correct--></T>
+                                  </U>
+                                  <L n="group">
+                                    <E>OtherSimsInCurrentGame</E>
+                                  </L>
+                                </U>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="state_change">
+                    <U n="state_change">
+                      <V n="new_value" t="single_value">
+                        <U n="single_value">
+                          <T n="new_value">358360<!--ObjectStateValue: triviaBox_thumbsUp_guessedCardState_correct--></T>
+                        </U>
+                      </V>
+                      <V n="timing" t="immediately" />
+                    </U>
+                  </V>
+                  <V t="state_change">
+                    <U n="state_change">
+                      <V n="new_value" t="single_value">
+                        <U n="single_value">
+                          <T n="new_value">357636<!--ObjectStateValue: triviaBox_thumbsUp_wooWho_gameState_answered--></T>
+                        </U>
+                      </V>
+                      <V n="timing" t="immediately" />
+                    </U>
+                  </V>
+                </L>
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">362427<!--SocialMixerInteraction: triviabox_thumbsUp_activePlayer_react--></T>
+                  </U>
+                </L>
+              </U>
+              <U n="weight">
+                <L n="multipliers">
+                  <U>
+                    <T n="multiplier">0</T>
+                    <L n="tests">
+                      <L>
+                        <V t="state">
+                          <U n="state">
+                            <E n="operator">NOTEQUAL</E>
+                            <T n="value">358357<!--ObjectStateValue: triviaBox_thumbsUp_chosenCardState_zipperMouth--></T>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                </L>
+              </U>
+            </U>
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">359325<!--AnimationElement: triviaBox_thumbsUp_activePlayer_guess--></T>
+                    <U n="overrides">
+                      <V n="balloons" t="enabled">
+                        <L n="enabled">
+                          <U>
+                            <L n="balloon_choices">
+                              <U>
+                                <V n="item" t="balloon_icon">
+                                  <U n="balloon_icon">
+                                    <E n="balloon_type">SPEECH</E>
+                                    <V n="icon" t="resource_key">
+                                      <U n="resource_key">
+                                        <T n="key" p="InEP16\UI\Icons\Headlines\headline_ThumbsUp_Question_ZipperMouth.png">2f7d0004:00000000:adbf015fbeab6979</T>
+                                      </U>
+                                    </V>
+                                  </U>
+                                </V>
+                              </U>
+                            </L>
+                            <L n="balloon_target">
+                              <E>Actor</E>
+                            </L>
+                          </U>
+                        </L>
+                      </V>
+                      <L n="params">
+                        <U>
+                          <T n="name">TriviaBox_Emoji</T>
+                          <V n="value" t="string">
+                            <T n="string">ZipperMouth</T>
+                          </V>
+                        </U>
+                      </L>
+                      <V n="reactionlet" t="enabled">
+                        <U n="enabled">
+                          <V n="selector" t="participant">
+                            <U n="participant">
+                              <L n="groups">
+                                <U>
+                                  <U n="animation_ref">
+                                    <T n="factory">361023<!--AnimationElement: triviaBox_thumbsUp_otherResponse_incorrect--></T>
+                                  </U>
+                                  <L n="group">
+                                    <E>OtherSimsInCurrentGame</E>
+                                  </L>
+                                </U>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <T n="buff_type">365311<!--Buff: buff_TriviaBox_GuessTracking_zipperMouth--></T>
+                      </U>
+                    </U>
+                  </V>
+                </L>
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">362427<!--SocialMixerInteraction: triviabox_thumbsUp_activePlayer_react--></T>
+                  </U>
+                </L>
+                <L n="loot_list">
+                  <T>383781<!--LootActions: loot_triviaBox_thumbsUp_incorrectGuess--></T>
+                </L>
+              </U>
+              <U n="weight">
+                <L n="multipliers">
+                  <U>
+                    <T n="multiplier">0</T>
+                    <L n="tests">
+                      <L>
+                        <V t="state">
+                          <U n="state">
+                            <T n="value">358357<!--ObjectStateValue: triviaBox_thumbsUp_chosenCardState_zipperMouth--></T>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="statistic">
+                <U n="statistic">
+                  <T n="stat">383780<!--Statistic: triviaBox_thumbsUp_guess_counter--></T>
+                  <V n="threshold" t="value_threshold">
+                    <U n="value_threshold">
+                      <E n="comparison">LESS</E>
+                      <T n="value">2</T>
+                    </U>
+                  </V>
+                  <E n="who">Object</E>
+                </U>
+              </V>
+              <V t="buff">
+                <U n="buff">
+                  <L n="blacklist">
+                    <T>365311<!--Buff: buff_TriviaBox_GuessTracking_zipperMouth--></T>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="skill_loot_data">
+    <V n="level_range" t="enabled">
+      <U n="enabled">
+        <T n="lower_bound">1</T>
+        <T n="upper_bound">10</T>
+      </U>
+    </V>
+    <T n="stat">16699<!--Skill: statistic_Skill_AdultMajor_Charisma--></T>
+  </U>
+  <U n="sub_action">
+    <T n="base_weight">8</T>
+  </U>
+  <E n="target_type">GROUP</E>
+  <L n="test_globals">
+    <V t="state">
+      <U n="state">
+        <T n="value">361966<!--ObjectStateValue: triviaBox_thumbsUp_chosenCardState_thinking--></T>
+      </U>
+    </V>
+    <V t="game_component">
+      <U n="game_component">
+        <V n="is_sim_turn" t="enabled">
+          <T n="enabled">True</T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="visible">False</T>
+</I>

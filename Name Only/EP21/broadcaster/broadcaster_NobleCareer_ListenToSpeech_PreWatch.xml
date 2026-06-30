@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Broadcaster" i="broadcaster" m="broadcasters.broadcaster" n="broadcaster_NobleCareer_ListenToSpeech_PreWatch" s="502837">
+  <V n="allow_sim_test" t="enabled">
+    <L n="enabled">
+      <L>
+        <V t="mood">
+          <U n="mood">
+            <T n="disallow">True</T>
+            <T n="mood">201531<!--Mood: Mood_Possessed--></T>
+          </U>
+        </V>
+        <V t="situation_running_test">
+          <U n="situation_running_test">
+            <V n="participant" t="enabled" />
+            <V n="situation_whitelist" t="enabled">
+              <L n="enabled">
+                <T>480951<!--CustomStatesSituation: situation_NobleCareer_HoldPressConference--></T>
+              </L>
+            </V>
+          </U>
+        </V>
+      </L>
+    </L>
+  </V>
+  <L n="constraints">
+    <V t="circle">
+      <U n="circle">
+        <T n="radius">20</T>
+      </U>
+    </V>
+  </L>
+  <L n="effects">
+    <V t="affordance">
+      <U n="affordance">
+        <L n="affordances">
+          <U>
+            <T n="affordance">502819<!--SuperInteraction: sI_NobleCareer_PressConference_SpeechPreWatch--></T>
+          </U>
+        </L>
+        <V n="excluded_participants" t="enabled" />
+        <L n="tests">
+          <L>
+            <V t="participant_running_interaction">
+              <U n="participant_running_interaction">
+                <L n="affordances">
+                  <T>482110<!--SuperInteraction: sI_NobleCareer_NobleEvents_ListenToSpeech--></T>
+                  <T>480948<!--SuperInteraction: sI_NobleCareer_HoldPressConference_GiveNobleSpeech--></T>
+                  <T>502704<!--SuperInteraction: sI_NobleCareer_PressConference_SpeechStart--></T>
+                  <T>502819<!--SuperInteraction: sI_NobleCareer_PressConference_SpeechPreWatch--></T>
+                </L>
+                <T n="test_for_not_running">True</T>
+                <T n="test_interaction_queue">True</T>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

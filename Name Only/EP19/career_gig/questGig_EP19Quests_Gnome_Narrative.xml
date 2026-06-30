@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="QuestGig" i="career_gig" m="careers.missions.mission_gig" n="questGig_EP19Quests_Gnome_Narrative" s="440746">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_description" t="enabled">
+        <T n="enabled">0xEEF6F5AA<!--String: "<i>Down by a Creek, alongside a road, sat a house like a true short stack. The man who resides, was searching for guides, to fix his marriage which was <b>wack</b>. So during the day, he decided to stay and clean up the house—make it shine! But after an hour, he took a long shower, and stated the mess should be fine. Then deep in the night, from sparkle or might, the house was made all neat and clean. And when they awoke, that syrupy bloke took credit for scrubbing the scene...</i>\n\n<font color="#1E81E6">Talk to Sims and Find a Fairy Ring to Use.</font>\n"--></T>
+      </V>
+      <V n="instance_display_icon" t="enabled">
+        <T p="InEP19\UI\Icons\Quests\quests_NarrativeQuest.png" n="enabled">2f7d0004:00000000:a1b2be2030c0865b</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x5AC66FC3<!--String: "Rise and Shine"--></T>
+      </V>
+    </U>
+  </V>
+  <T n="career">424758<!--Career: career_EP19Quests--></T>
+  <T n="gig_assignment_aspiration">440749<!--AspirationGig: aspirationGig_EP19Quests_Gnome_Narrative--></T>
+  <V n="gig_pay" t="flat_amount">
+    <U n="flat_amount">
+      <T n="value">222</T>
+    </U>
+  </V>
+  <T n="hide_inactive_objectives">True</T>
+  <L n="mission_objective_data">
+    <U>
+      <L n="weighted_objectives">
+        <U>
+          <T n="objective">440855<!--Objective: objective_EP19Quests_GnomeNarrative_Stories--></T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="requires_previous_objective_complete">True</T>
+      <L n="weighted_objectives">
+        <U>
+          <T n="objective">440854<!--Objective: objective_EP19Quests_GnomeNarrative_Ring--></T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="requires_previous_objective_complete">True</T>
+      <L n="weighted_objectives">
+        <U>
+          <T n="objective">440856<!--Objective: objective_EP19Quests_GnomeNarrative_Claim--></T>
+        </U>
+      </L>
+    </U>
+  </L>
+  <T n="mission_rewards_description">0x3B18AFDC<!--String: "{0.String}\n<font color='#199C2C'>{1.String}</font>"--></T>
+  <V n="mission_rewards_text" t="enabled">
+    <T n="enabled">0x6E40962F<!--String: "Reward: End of Fable, the Fairy Ring will decide the additional reward"--></T>
+  </V>
+  <V n="mission_trait" t="enabled">
+    <T n="enabled">440751<!--Trait: trait_Hidden_EP19Quests_OnQuest_GnomeNarrative--></T>
+  </V>
+  <U n="objective_completion_audio">
+    <T n="audio" p="InGame\Audio\Bumper\bumper_other_goal_complete.propx">39b2aa4a:00000000:ea1687e36b0b32f3</T>
+  </U>
+  <E n="on_pick_behavior">REMOVE</E>
+  <T n="open_career_panel">True</T>
+  <V n="picker_associated_sim_filter" t="enabled">
+    <T n="enabled">440786<!--TunableSimFilter: situationFilters_EP19World_NPC_EP19QuestGnome--></T>
+  </V>
+  <T n="picker_description_text">0x3B18AFDC<!--String: "{0.String}\n<font color='#199C2C'>{1.String}</font>"--></T>
+  <T n="picker_disable_if_visibility_tests_fail_with_tooltip">True</T>
+  <T n="picker_replace_if_removed">True</T>
+  <V n="picker_scheduling_behavior" t="enabled">
+    <V n="enabled" t="schedule_career_gig">
+      <U n="schedule_career_gig">
+        <T n="allow_add_career">True</T>
+      </U>
+    </V>
+  </V>
+  <V n="picker_scoring" t="enabled">
+    <U n="enabled">
+      <E n="bucket">EP19Quest_Gnome</E>
+    </U>
+  </V>
+  <L n="picker_visibility_tests">
+    <L>
+      <V t="unlock_earned">
+        <U n="unlock_earned">
+          <V n="tooltip" t="enabled">
+            <T n="enabled">0x641708A6<!--String: "This Fable has already been completed."--></T>
+          </V>
+          <V n="unlock_to_test" t="aspiration">
+            <U n="aspiration">
+              <T n="aspiration">440749<!--AspirationGig: aspirationGig_EP19Quests_Gnome_Narrative--></T>
+              <T n="negate">True</T>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="career_gig_test">
+        <U n="career_gig_test">
+          <T n="career">424758<!--Career: career_EP19Quests--></T>
+          <T n="negate">True</T>
+          <V n="test_type" t="specific_gigs">
+            <U n="specific_gigs">
+              <L n="gigs">
+                <T>440746<!--QuestGig: questGig_EP19Quests_Gnome_Narrative--></T>
+              </L>
+            </U>
+          </V>
+          <V n="tooltip" t="enabled">
+            <T n="enabled">0x67109623<!--String: "This Fable is currently in progress."--></T>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="result_based_loots" t="enabled">
+    <L n="enabled">
+      <U>
+        <E n="key">CANCELED</E>
+        <L n="value">
+          <T>440868<!--LootActions: loot_EP19Quests_Cleanup_GnomeNarrative--></T>
+        </L>
+      </U>
+      <U>
+        <E n="key">SUCCESS</E>
+        <L n="value">
+          <T>440869<!--LootActions: loot_EP19Quests_Rewards_GnomeNarrative--></T>
+        </L>
+      </U>
+    </L>
+  </V>
+</I>

@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Rug" i="object" m="objects.decorative.rug" n="object_YogaMat_Instructor" s="118691">
+  <U n="_components">
+    <V n="focus" t="enabled">
+      <U n="enabled">
+        <V n="_focus_score" t="globally">
+          <U n="globally">
+            <E n="base">LOW</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V n="inventory_item" t="enabled">
+      <U n="enabled">
+        <V n="no_carry_add_to_sim_inventory_affordances" t="OVERRIDE">
+          <L n="OVERRIDE">
+            <T>117877<!--SuperInteraction: si_SwipeIntoSimInventory_YogaMat--></T>
+          </L>
+        </V>
+        <V n="register_with_lost_and_found" t="enabled" />
+        <T n="skip_carry_pose">True</T>
+        <L n="valid_inventory_types">
+          <E>SIM</E>
+          <E>STORAGE_CHEST_DORM</E>
+          <E>BACKPACK</E>
+        </L>
+      </U>
+    </V>
+    <V n="line_of_sight" t="enabled" />
+    <V n="live_drag_target" t="enabled" />
+    <V n="object_relationships" t="enabled">
+      <U n="enabled">
+        <V n="number_of_allowed_relationships" t="enabled" />
+        <T n="relationship_stat">119087<!--Statistic: statistic_Object_Staff_Assigned_Relationship--></T>
+      </U>
+    </V>
+    <V n="retail_component" t="enabled">
+      <V n="enabled" t="reference">
+        <T n="reference">110393<!--RetailComponent: retailComponent_Default--></T>
+      </V>
+    </V>
+    <V n="state" t="enabled">
+      <U n="enabled">
+        <L n="state_triggers" />
+        <L n="states">
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">39478<!--CommodityBasedObjectStateValue: FireState_Burn_Incinerate_Burning--></T>
+              </U>
+              <U>
+                <T n="key">39479<!--CommodityBasedObjectStateValue: FireState_Burn_Incinerate--></T>
+              </U>
+              <U>
+                <T n="key">39612<!--CommodityBasedObjectStateValue: FireState_Burn_Incinerate_Not_Burning--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">39612<!--CommodityBasedObjectStateValue: FireState_Burn_Incinerate_Not_Burning--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">117353<!--ObjectStateValue: yogaMat_InUse_NotInUse--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">272116<!--ObjectStateValue: yogaMat_IsStaffed_No--></T>
+            </V>
+            <T n="reset_on_load_if_time_passes">True</T>
+            <T n="reset_to_default">True</T>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">272548<!--ObjectStateValue: wellness_ActivityPromoted_Yes--></T>
+              </U>
+              <U>
+                <T n="key">272549<!--ObjectStateValue: wellness_ActivityPromoted_No--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">272549<!--ObjectStateValue: wellness_ActivityPromoted_No--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">39478<!--CommodityBasedObjectStateValue: FireState_Burn_Incinerate_Burning--></T>
+              </U>
+              <U>
+                <T n="key">39479<!--CommodityBasedObjectStateValue: FireState_Burn_Incinerate--></T>
+              </U>
+              <U>
+                <T n="key">39612<!--CommodityBasedObjectStateValue: FireState_Burn_Incinerate_Not_Burning--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">39612<!--CommodityBasedObjectStateValue: FireState_Burn_Incinerate_Not_Burning--></T>
+            </V>
+          </U>
+        </L>
+        <V n="timed_state_triggers" t="enabled">
+          <L n="enabled">
+            <U>
+              <T n="key">272548<!--ObjectStateValue: wellness_ActivityPromoted_Yes--></T>
+              <U n="value">
+                <L n="ops">
+                  <U>
+                    <L n="states_to_trigger">
+                      <T>272549<!--ObjectStateValue: wellness_ActivityPromoted_No--></T>
+                    </L>
+                    <T n="trigger_time">600</T>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+        </V>
+      </U>
+    </V>
+    <V n="tooltip_component" t="enabled">
+      <U n="enabled">
+        <L n="custom_tooltips">
+          <U>
+            <L n="object_tests">
+              <L>
+                <V t="in_inventory" />
+              </L>
+            </L>
+            <L n="tooltip_fields">
+              <U>
+                <E n="key">recipe_name</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x144FD666<!--String: "{0.ObjectName}"--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">Object</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+            </L>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V n="zone_modifier_component" t="enabled">
+      <U n="enabled">
+        <L n="zone_modifiers">
+          <U>
+            <T n="key">272553<!--ZoneModifier: zoneModifiers_Hidden_WellnessActivityPromoted--></T>
+            <L n="value">
+              <V t="state">
+                <U n="state">
+                  <U n="state_value_test">
+                    <U n="states">
+                      <V n="whitelist" t="specify">
+                        <U n="specify">
+                          <L n="whitelist">
+                            <T>272548<!--ObjectStateValue: wellness_ActivityPromoted_Yes--></T>
+                          </L>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </U>
+        </L>
+      </U>
+    </V>
+  </U>
+  <L n="_part_data">
+    <U>
+      <L n="overlapping_parts" />
+      <T n="part_definition">117355<!--ObjectPart: part_YogaMat_Front--></T>
+    </U>
+  </L>
+  <L n="_super_affordances">
+    <T>13328<!--ImmediateSuperInteraction: debug_Reset--></T>
+    <T>13326<!--ImmediateSuperInteraction: debug_ObjectDestroy--></T>
+    <T>103888<!--ImmediateSuperInteraction: cheat_set_as_head--></T>
+    <T>117359<!--SuperInteraction: generic_Yoga--></T>
+    <T>118700<!--SuperInteraction: si_yogaClassMember_Class_Idle--></T>
+    <T>13983<!--StandSuperInteraction: sim-stand--></T>
+    <T>118699<!--SuperInteraction: si_instructorYogaMat_Class_idle--></T>
+    <T>120008<!--SuperInteraction: si_yogaInstructor_WaitForWork--></T>
+    <T>121311<!--SuperInteraction: si_yogaClassMember_FindMat--></T>
+    <T>121353<!--SuperInteraction: si_YogaInstructor_ReadMagazine--></T>
+    <T>120020<!--SuperInteraction: si_yogaClassMember_CreateMat--></T>
+    <T>270303<!--RunSituationSuperInteraction: object_HireNPC_YogaInstructor--></T>
+    <T>271086<!--ImmediateSuperInteraction: yogaClass_PlayerLed_Start_BrainBoosting_Private_Free--></T>
+    <T>271087<!--ImmediateSuperInteraction: yogaClass_PlayerLed_Start_BrainBoosting_Private_Paid--></T>
+    <T>271088<!--ImmediateSuperInteraction: yogaClass_PlayerLed_Start_BrainBoosting_Public_Free--></T>
+    <T>271089<!--ImmediateSuperInteraction: yogaClass_PlayerLed_Start_BrainBoosting_Public_Paid--></T>
+    <T>271663<!--SimPickerInteraction: simPicker_YogaClass_PlayerLed_Private_Free_BrainBoosting--></T>
+    <T>271667<!--SimPickerInteraction: simPicker_YogaClass_PlayerLed_Private_Paid_BrainBoosting--></T>
+    <T>272050<!--SimPickerInteraction: simPicker_YogaClass_PlayerLed_Private_Free_ChildFriendly--></T>
+    <T>272084<!--SimPickerInteraction: simPicker_YogaClass_PlayerLed_Private_Free_EnergyCentering--></T>
+    <T>272083<!--SimPickerInteraction: simPicker_YogaClass_PlayerLed_Private_Free_MindConcentrating--></T>
+    <T>272043<!--SimPickerInteraction: simPicker_YogaClass_PlayerLed_Private_Paid_ChildFriendly--></T>
+    <T>272077<!--SimPickerInteraction: simPicker_YogaClass_PlayerLed_Private_Paid_EnergyCentering--></T>
+    <T>272078<!--SimPickerInteraction: simPicker_YogaClass_PlayerLed_Private_Paid_MindConcentrating--></T>
+    <T>272029<!--ImmediateSuperInteraction: yogaClass_PlayerLed_Start_ChildFriendly_Private_Free--></T>
+    <T>272030<!--ImmediateSuperInteraction: yogaClass_PlayerLed_Start_ChildFriendly_Private_Paid--></T>
+    <T>272031<!--ImmediateSuperInteraction: yogaClass_PlayerLed_Start_ChildFriendly_Public_Free--></T>
+    <T>272032<!--ImmediateSuperInteraction: yogaClass_PlayerLed_Start_ChildFriendly_Public_Paid--></T>
+    <T>272070<!--ImmediateSuperInteraction: yogaClass_PlayerLed_Start_EnergyCentering_Private_Free--></T>
+    <T>272072<!--ImmediateSuperInteraction: yogaClass_PlayerLed_Start_EnergyCentering_Private_Paid--></T>
+    <T>272069<!--ImmediateSuperInteraction: yogaClass_PlayerLed_Start_EnergyCentering_Public_Free--></T>
+    <T>272071<!--ImmediateSuperInteraction: yogaClass_PlayerLed_Start_EnergyCentering_Public_Paid--></T>
+    <T>272075<!--ImmediateSuperInteraction: yogaClass_PlayerLed_Start_MindConcentrating_Private_Free--></T>
+    <T>272076<!--ImmediateSuperInteraction: yogaClass_PlayerLed_Start_MindConcentrating_Private_Paid--></T>
+    <T>272073<!--ImmediateSuperInteraction: yogaClass_PlayerLed_Start_MindConcentrating_Public_Free--></T>
+    <T>272074<!--ImmediateSuperInteraction: yogaClass_PlayerLed_Start_MindConcentrating_Public_Paid--></T>
+    <T>272546<!--SuperInteraction: phone_Wellness_PromoteActivity--></T>
+    <T>106859<!--SuperInteraction: simRay_Transform_Object--></T>
+    <T>74457<!--ImmediateSuperInteraction: fire_ReplaceBurntObject--></T>
+  </L>
+  <U n="recycling_data">
+    <L n="recycling_values">
+      <U>
+        <E n="Bucks Type">RecycleBitsBucks</E>
+        <T n="Value">0.75</T>
+      </U>
+      <U>
+        <E n="Bucks Type">RecyclePiecesBucks</E>
+        <T n="Value">0.25</T>
+      </U>
+    </L>
+  </U>
+</I>

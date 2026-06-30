@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="GameObject" i="object" m="objects.game_object" n="object_WorldPOI_Geyser" s="452053">
+  <U n="_components">
+    <V n="focus" t="enabled">
+      <U n="enabled">
+        <V n="_focus_score" t="globally">
+          <U n="globally">
+            <E n="base">LOW</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V n="state" t="enabled">
+      <U n="enabled">
+        <L n="state_triggers">
+          <U>
+            <L n="at_states">
+              <T>452566<!--ObjectStateValue: WorldPOI_Geyser_lavaBlow--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>35296<!--ObjectStateValue: GenericOnOff_On--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>461428<!--ObjectStateValue: worldPOI_Geyser_lavaWarning--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>452563<!--ObjectStateValue: WorldPOI_Geyser_inactive--></T>
+              </L>
+            </V>
+          </U>
+        </L>
+        <L n="states">
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">452563<!--ObjectStateValue: WorldPOI_Geyser_inactive--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">489674<!--ObjectStateValue: worldPOI_Geyser_lavaInactive--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">35296<!--ObjectStateValue: GenericOnOff_On--></T>
+                <U n="value">
+                  <V n="periodic_loot" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <L n="periodic_loots">
+                        <U>
+                          <T n="frequency_interval">8</T>
+                          <T n="initial_delay">1</T>
+                          <L n="loots_to_apply">
+                            <T>457991<!--LootActions: loot_ButterflyCollection_SpawnButterflies_RedAdmiral--></T>
+                          </L>
+                        </U>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">35297<!--ObjectStateValue: GenericOnOff_Off--></T>
+                <U n="value">
+                  <V n="periodic_loot" t="apply_new_value" />
+                </U>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">35297<!--ObjectStateValue: GenericOnOff_Off--></T>
+            </V>
+          </U>
+        </L>
+        <V n="timed_state_triggers" t="enabled">
+          <L n="enabled">
+            <U>
+              <T n="key">35296<!--ObjectStateValue: GenericOnOff_On--></T>
+              <U n="value">
+                <L n="ops">
+                  <U>
+                    <L n="states_to_trigger">
+                      <T>35297<!--ObjectStateValue: GenericOnOff_Off--></T>
+                    </L>
+                    <T n="trigger_time">30</T>
+                  </U>
+                </L>
+              </U>
+            </U>
+            <U>
+              <T n="key">452564<!--ObjectStateValue: WorldPOI_Geyser_warning--></T>
+              <U n="value">
+                <L n="ops">
+                  <U>
+                    <L n="states_to_trigger">
+                      <T>452565<!--ObjectStateValue: WorldPOI_Geyser_regularBlow--></T>
+                    </L>
+                    <T n="trigger_time">30</T>
+                  </U>
+                </L>
+              </U>
+            </U>
+            <U>
+              <T n="key">452565<!--ObjectStateValue: WorldPOI_Geyser_regularBlow--></T>
+              <U n="value">
+                <L n="ops">
+                  <U>
+                    <L n="states_to_trigger">
+                      <T>452563<!--ObjectStateValue: WorldPOI_Geyser_inactive--></T>
+                    </L>
+                    <T n="trigger_time">30</T>
+                  </U>
+                </L>
+              </U>
+            </U>
+            <U>
+              <T n="key">452566<!--ObjectStateValue: WorldPOI_Geyser_lavaBlow--></T>
+              <U n="value">
+                <L n="ops">
+                  <U>
+                    <L n="states_to_trigger">
+                      <T>489674<!--ObjectStateValue: worldPOI_Geyser_lavaInactive--></T>
+                    </L>
+                    <T n="trigger_time">30</T>
+                  </U>
+                </L>
+              </U>
+            </U>
+            <U>
+              <T n="key">461428<!--ObjectStateValue: worldPOI_Geyser_lavaWarning--></T>
+              <U n="value">
+                <L n="ops">
+                  <U>
+                    <L n="states_to_trigger">
+                      <T>452566<!--ObjectStateValue: WorldPOI_Geyser_lavaBlow--></T>
+                    </L>
+                    <T n="trigger_time">10</T>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+        </V>
+      </U>
+    </V>
+    <V n="time_of_day_component" t="enabled">
+      <U n="enabled">
+        <L n="state_changes">
+          <U>
+            <T n="key">452477<!--ObjectState: WorldPOI_Geyser_blowStates--></T>
+            <L n="value">
+              <U>
+                <T n="start_time">5</T>
+                <L n="tests">
+                  <L>
+                    <V t="day_and_time">
+                      <U n="day_and_time">
+                        <V n="days_available" t="enabled">
+                          <U n="enabled">
+                            <T n="0 SUNDAY">True</T>
+                            <T n="1 MONDAY">True</T>
+                            <T n="2 TUESDAY">True</T>
+                            <T n="3 WEDNESDAY">True</T>
+                            <T n="4 THURSDAY">True</T>
+                            <T n="5 FRIDAY">True</T>
+                            <T n="6 SATURDAY">True</T>
+                          </U>
+                        </V>
+                        <V n="time_range" t="enabled">
+                          <U n="enabled">
+                            <U n="begin_time">
+                              <T n="hour">5</T>
+                            </U>
+                            <U n="duration">
+                              <T n="hour">0</T>
+                              <T n="minute">30</T>
+                            </U>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">489674<!--ObjectStateValue: worldPOI_Geyser_lavaInactive--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">452564<!--ObjectStateValue: WorldPOI_Geyser_warning--></T>
+              </U>
+              <U>
+                <T n="start_time">11</T>
+                <L n="tests">
+                  <L>
+                    <V t="day_and_time">
+                      <U n="day_and_time">
+                        <V n="days_available" t="enabled">
+                          <U n="enabled">
+                            <T n="0 SUNDAY">True</T>
+                            <T n="1 MONDAY">True</T>
+                            <T n="2 TUESDAY">True</T>
+                            <T n="3 WEDNESDAY">True</T>
+                            <T n="4 THURSDAY">True</T>
+                            <T n="5 FRIDAY">True</T>
+                            <T n="6 SATURDAY">True</T>
+                          </U>
+                        </V>
+                        <V n="time_range" t="enabled">
+                          <U n="enabled">
+                            <U n="begin_time">
+                              <T n="hour">11</T>
+                            </U>
+                            <U n="duration">
+                              <T n="hour">0</T>
+                              <T n="minute">30</T>
+                            </U>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">489674<!--ObjectStateValue: worldPOI_Geyser_lavaInactive--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">452564<!--ObjectStateValue: WorldPOI_Geyser_warning--></T>
+              </U>
+              <U>
+                <T n="start_time">17</T>
+                <L n="tests">
+                  <L>
+                    <V t="day_and_time">
+                      <U n="day_and_time">
+                        <V n="days_available" t="enabled">
+                          <U n="enabled">
+                            <T n="0 SUNDAY">True</T>
+                            <T n="1 MONDAY">True</T>
+                            <T n="2 TUESDAY">True</T>
+                            <T n="3 WEDNESDAY">True</T>
+                            <T n="4 THURSDAY">True</T>
+                            <T n="5 FRIDAY">True</T>
+                            <T n="6 SATURDAY">True</T>
+                          </U>
+                        </V>
+                        <V n="time_range" t="enabled">
+                          <U n="enabled">
+                            <U n="begin_time">
+                              <T n="hour">17</T>
+                            </U>
+                            <U n="duration">
+                              <T n="hour">0</T>
+                              <T n="minute">30</T>
+                            </U>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">489674<!--ObjectStateValue: worldPOI_Geyser_lavaInactive--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">452564<!--ObjectStateValue: WorldPOI_Geyser_warning--></T>
+              </U>
+              <U>
+                <T n="start_time">23</T>
+                <L n="tests">
+                  <L>
+                    <V t="day_and_time">
+                      <U n="day_and_time">
+                        <V n="days_available" t="enabled">
+                          <U n="enabled">
+                            <T n="0 SUNDAY">True</T>
+                            <T n="1 MONDAY">True</T>
+                            <T n="2 TUESDAY">True</T>
+                            <T n="3 WEDNESDAY">True</T>
+                            <T n="4 THURSDAY">True</T>
+                            <T n="5 FRIDAY">True</T>
+                            <T n="6 SATURDAY">True</T>
+                          </U>
+                        </V>
+                        <V n="time_range" t="enabled">
+                          <U n="enabled">
+                            <U n="begin_time">
+                              <T n="hour">23</T>
+                            </U>
+                            <U n="duration">
+                              <T n="hour">0</T>
+                              <T n="minute">30</T>
+                            </U>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">489674<!--ObjectStateValue: worldPOI_Geyser_lavaInactive--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">452564<!--ObjectStateValue: WorldPOI_Geyser_warning--></T>
+              </U>
+            </L>
+          </U>
+        </L>
+      </U>
+    </V>
+  </U>
+  <L n="_super_affordances">
+    <T>13328<!--ImmediateSuperInteraction: debug_Reset--></T>
+    <T>13326<!--ImmediateSuperInteraction: debug_ObjectDestroy--></T>
+    <T>103888<!--ImmediateSuperInteraction: cheat_set_as_head--></T>
+    <T>464638<!--SuperInteraction: worldPOI_Geyser_SI_LookatGeyser--></T>
+    <T>13983<!--StandSuperInteraction: sim-stand--></T>
+  </L>
+  <T n="_world_file_object_persists">True</T>
+  <U n="recycling_data">
+    <L n="recycling_values">
+      <U>
+        <E n="Bucks Type">RecycleBitsBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+      <U>
+        <E n="Bucks Type">RecyclePiecesBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+    </L>
+  </U>
+</I>

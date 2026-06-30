@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="GameObject" i="object" m="objects.game_object" n="object_RanchNectarRack" s="338914">
+  <U n="_components">
+    <V n="focus" t="enabled">
+      <U n="enabled">
+        <V n="_focus_score" t="globally">
+          <U n="globally">
+            <E n="base">LOW</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V n="inventory" t="enabled">
+      <U n="enabled">
+        <T n="allow_putdown_in_inventory">False</T>
+        <V n="count_statistic" t="enabled">
+          <T n="enabled">338897<!--Statistic: statistic_Object_RanchNectarRack_InventoryCount--></T>
+        </V>
+        <E n="inventory_type">NECTAR_RACK_EP14</E>
+        <T n="score_contained_objects_for_autonomy">False</T>
+      </U>
+    </V>
+    <V n="live_drag_target" t="enabled">
+      <U n="enabled">
+        <L n="drop_tests_and_actions">
+          <U>
+            <E n="drop_type">NECTAR_RACK_EP14</E>
+            <L n="test_set">
+              <V t="state">
+                <U n="state">
+                  <V n="fallback_behavior" t="always_fail" />
+                  <E n="operator">EQUAL</E>
+                  <T n="value">39737<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Not_Burning--></T>
+                  <E n="who">LiveDragTarget</E>
+                </U>
+              </V>
+              <V t="state">
+                <U n="state">
+                  <T n="value">15191<!--CommodityBasedObjectStateValue: Freshness_Untouched--></T>
+                  <E n="who">LiveDragActor</E>
+                </U>
+              </V>
+            </L>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V n="name" t="enabled" />
+    <V n="retail_component" t="enabled">
+      <V n="enabled" t="reference">
+        <T n="reference">115301<!--RetailComponent: retailComponent_Default_LowAppeal--></T>
+      </V>
+    </V>
+    <V n="state" t="enabled">
+      <U n="enabled">
+        <L n="state_triggers">
+          <U>
+            <L n="at_states">
+              <T>77532<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Replace--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>39737<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Not_Burning--></T>
+              </L>
+            </V>
+          </U>
+        </L>
+        <L n="states">
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">338900<!--CommodityBasedObjectStateValue: ranchNectarRack_InventoryCount_0--></T>
+              </U>
+              <U>
+                <T n="key">338901<!--CommodityBasedObjectStateValue: ranchNectarRack_InventoryCount_1--></T>
+              </U>
+              <U>
+                <T n="key">338902<!--CommodityBasedObjectStateValue: ranchNectarRack_InventoryCount_2--></T>
+              </U>
+              <U>
+                <T n="key">338903<!--CommodityBasedObjectStateValue: ranchNectarRack_InventoryCount_3--></T>
+              </U>
+              <U>
+                <T n="key">338904<!--CommodityBasedObjectStateValue: ranchNectarRack_InventoryCount_4--></T>
+              </U>
+              <U>
+                <T n="key">338905<!--CommodityBasedObjectStateValue: ranchNectarRack_InventoryCount_5--></T>
+              </U>
+              <U>
+                <T n="key">338906<!--CommodityBasedObjectStateValue: ranchNectarRack_InventoryCount_6--></T>
+              </U>
+              <U>
+                <T n="key">338907<!--CommodityBasedObjectStateValue: ranchNectarRack_InventoryCount_7--></T>
+              </U>
+              <U>
+                <T n="key">338908<!--CommodityBasedObjectStateValue: ranchNectarRack_InventoryCount_8--></T>
+              </U>
+              <U>
+                <T n="key">338909<!--CommodityBasedObjectStateValue: ranchNectarRack_InventoryCount_9--></T>
+              </U>
+              <U>
+                <T n="key">338910<!--CommodityBasedObjectStateValue: ranchNectarRack_InventoryCount_10--></T>
+              </U>
+              <U>
+                <T n="key">338911<!--CommodityBasedObjectStateValue: ranchNectarRack_InventoryCount_11--></T>
+              </U>
+              <U>
+                <T n="key">338912<!--CommodityBasedObjectStateValue: ranchNectarRack_InventoryCount_12--></T>
+              </U>
+              <U>
+                <T n="key">338913<!--CommodityBasedObjectStateValue: ranchNectarRack_InventoryCount_13--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">338900<!--CommodityBasedObjectStateValue: ranchNectarRack_InventoryCount_0--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">131794<!--ObjectStateValue: Kelpto_Stolen_Object--></T>
+              </U>
+              <U>
+                <T n="key">131795<!--ObjectStateValue: Klepto_Not_Stolen_Object--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">131795<!--ObjectStateValue: Klepto_Not_Stolen_Object--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">39611<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change--></T>
+              </U>
+              <U>
+                <T n="key">39736<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Burning--></T>
+              </U>
+              <U>
+                <T n="key">39737<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Not_Burning--></T>
+              </U>
+              <U>
+                <T n="key">77532<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Replace--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">39737<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Not_Burning--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">35956<!--CommodityBasedObjectStateValue: Materialistic_Admired--></T>
+              </U>
+              <U>
+                <T n="key">35957<!--CommodityBasedObjectStateValue: Materialistic_YetToAdmire--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">35957<!--CommodityBasedObjectStateValue: Materialistic_YetToAdmire--></T>
+            </V>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V n="tooltip_component" t="enabled">
+      <U n="enabled">
+        <L n="custom_tooltips">
+          <U>
+            <L n="tooltip_fields">
+              <U>
+                <E n="key">recipe_name</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x4F918F8<!--String: "{0.ObjectName}"--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">Object</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <E n="key">subtext</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x68BA8AE9<!--String: "Bottle Count: {0.Number} / 13"--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="statistic_value">
+                          <U n="statistic_value">
+                            <E n="participant">Object</E>
+                            <T n="statistic">338897<!--Statistic: statistic_Object_RanchNectarRack_InventoryCount--></T>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+            </L>
+          </U>
+        </L>
+        <T n="update_if_stat_or_buck_changes">True</T>
+      </U>
+    </V>
+  </U>
+  <L n="_super_affordances">
+    <T>13983<!--StandSuperInteraction: sim-stand--></T>
+    <T>13328<!--ImmediateSuperInteraction: debug_Reset--></T>
+    <T>13326<!--ImmediateSuperInteraction: debug_ObjectDestroy--></T>
+    <T>103888<!--ImmediateSuperInteraction: cheat_set_as_head--></T>
+    <T>196759<!--SuperInteraction: famePerks_GoodReputation_GivingBack_DonateObject--></T>
+    <T>401385<!--SuperInteraction: ghost_Possess_MischieviousGhost--></T>
+    <T>337550<!--SuperInteraction: ranchNectarRack_Storage_Init_StoreAll--></T>
+    <T>337584<!--SuperInteraction: ranchNectarRack_Storage_Init_StoreAllNotAged--></T>
+    <T>337601<!--SuperInteraction: ranchNectarRack_Storage_Init_Grab--></T>
+    <T>340213<!--SuperInteraction: ranchNectarRack_Storage_Init_GrabAged--></T>
+    <T>337585<!--SuperInteraction: ranchNectarRack_Storage_Init_GrabAll--></T>
+    <T>337597<!--SuperInteraction: ranchNectarRack_Storage_Init_GrabAllAged--></T>
+    <T>393854<!--SuperInteraction: ghostPowers_Abilities_Scary_SinisterPossess_Autonomous--></T>
+    <T>74457<!--ImmediateSuperInteraction: fire_ReplaceBurntObject--></T>
+    <T>102258<!--SuperInteraction: Ghost_Possess--></T>
+    <T>168502<!--SuperInteraction: Ghost_Pet_Possess--></T>
+    <T>324988<!--SuperInteraction: Ghost_Horse_Possess--></T>
+  </L>
+  <U n="recycling_data">
+    <L n="recycling_values">
+      <U>
+        <E n="Bucks Type">RecycleBitsBucks</E>
+        <T n="Value">0.9</T>
+      </U>
+      <U>
+        <E n="Bucks Type">RecyclePiecesBucks</E>
+        <T n="Value">0.1</T>
+      </U>
+    </L>
+  </U>
+</I>

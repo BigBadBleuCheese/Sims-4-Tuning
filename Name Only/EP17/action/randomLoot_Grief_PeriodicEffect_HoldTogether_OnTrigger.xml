@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="RandomWeightedLoot" i="action" m="interactions.utils.loot" n="randomLoot_Grief_PeriodicEffect_HoldTogether_OnTrigger" s="420872">
+  <L n="random_loot_actions">
+    <U>
+      <V n="action" t="buff">
+        <U n="buff">
+          <U n="buff">
+            <V n="buff_reason" t="enabled">
+              <T n="enabled">0x6E0111C8<!--String: "(From Grieving)"--></T>
+            </V>
+            <T n="buff_type">381555<!--Buff: buff_Grief_HoldTogether_Periodic_Sad--></T>
+          </U>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">4</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="buff">
+                  <U n="buff">
+                    <V n="whitelist" t="enabled">
+                      <L n="enabled">
+                        <T>381540<!--Buff: buff_Grief_Counselor_Success_Inspired--></T>
+                        <T>381557<!--Buff: buff_Grief_Counselor_Success_Confident--></T>
+                        <T>381564<!--Buff: buff_Grief_Coping_Positive_Confident--></T>
+                        <T>381565<!--Buff: buff_Grief_Coping_Positive_Energized--></T>
+                        <T>381567<!--Buff: buff_Grief_Coping_Positive_Happy--></T>
+                        <T>381566<!--Buff: buff_Grief_Coping_Positive_Inspired--></T>
+                      </L>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">2</T>
+            <L n="tests">
+              <L>
+                <V t="statistic">
+                  <U n="statistic">
+                    <T n="stat">381524<!--Commodity: commodity_Grief_Timer--></T>
+                    <V n="threshold" t="value_threshold">
+                      <U n="value_threshold">
+                        <T n="value">6480</T>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">2</T>
+            <L n="tests">
+              <L>
+                <V t="statistic">
+                  <U n="statistic">
+                    <T n="stat">381526<!--Commodity: commodity_Grief_Coping--></T>
+                    <V n="threshold" t="value_threshold">
+                      <U n="value_threshold">
+                        <E n="comparison">LESS_OR_EQUAL</E>
+                        <T n="value">-10</T>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="buff">
+        <U n="buff">
+          <U n="buff">
+            <V n="buff_reason" t="enabled">
+              <T n="enabled">0x6E0111C8<!--String: "(From Grieving)"--></T>
+            </V>
+            <T n="buff_type">381556<!--Buff: buff_Grief_HoldTogether_Periodic_Confident--></T>
+          </U>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">4</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">3</T>
+            <L n="tests">
+              <L>
+                <V t="statistic">
+                  <U n="statistic">
+                    <T n="stat">381526<!--Commodity: commodity_Grief_Coping--></T>
+                    <V n="threshold" t="value_threshold">
+                      <U n="value_threshold">
+                        <T n="value">30</T>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">2</T>
+            <L n="tests">
+              <L>
+                <V t="statistic">
+                  <U n="statistic">
+                    <T n="stat">381524<!--Commodity: commodity_Grief_Timer--></T>
+                    <V n="threshold" t="value_threshold">
+                      <U n="value_threshold">
+                        <E n="comparison">LESS_OR_EQUAL</E>
+                        <T n="value">2880</T>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+  </L>
+</I>

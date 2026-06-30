@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_EP19Gardening_Pixies_SetMaxTimer_Area" s="466763">
+  <L n="loot_actions">
+    <V t="statistics">
+      <V n="statistics" t="statistic_set_max">
+        <U n="statistic_set_max">
+          <T n="stat">435648<!--Commodity: commodity_EP19Gardening_PixieTimer--></T>
+          <L n="subject">
+            <E>Object</E>
+          </L>
+        </U>
+      </V>
+    </V>
+    <V t="vfx">
+      <U n="vfx">
+        <E n="subject">Object</E>
+        <L n="tests">
+          <L>
+            <V t="object_definition_criteria">
+              <U n="object_definition_criteria">
+                <V n="identity_test" t="tags">
+                  <U n="tags">
+                    <L n="tag_set">
+                      <E>Func_GardeningSkillPlant_Tree</E>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+        <U n="vfx">
+          <T n="effect_name">ep19_fairy_plant_pixies_flyaway_lrg</T>
+        </U>
+      </U>
+    </V>
+    <V t="vfx">
+      <U n="vfx">
+        <E n="subject">Object</E>
+        <L n="tests">
+          <L>
+            <V t="state">
+              <U n="state">
+                <T n="value">432857<!--ObjectStateValue: state_PottedPlants_OnPot_True--></T>
+              </U>
+            </V>
+          </L>
+          <L>
+            <V t="state">
+              <U n="state">
+                <T n="value">234575<!--ObjectStateValue: gardenPlant_OnVerticalGarden_On--></T>
+              </U>
+            </V>
+          </L>
+        </L>
+        <U n="vfx">
+          <T n="effect_name">ep19_fairy_plant_pixies_flyaway_sm</T>
+        </U>
+      </U>
+    </V>
+    <V t="vfx">
+      <U n="vfx">
+        <E n="subject">Object</E>
+        <L n="tests">
+          <L>
+            <V t="object_definition_criteria">
+              <U n="object_definition_criteria">
+                <V n="identity_test" t="tags">
+                  <U n="tags">
+                    <L n="tag_set">
+                      <E>Func_GardeningSkillPlant_Tree</E>
+                    </L>
+                    <E n="test_type">CONTAINS_NO_TAGS_IN_SET</E>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="state">
+              <U n="state">
+                <T n="value">234576<!--ObjectStateValue: gardenPlant_OnVerticalGarden_Off--></T>
+              </U>
+            </V>
+            <V t="state">
+              <U n="state">
+                <T n="value">432856<!--ObjectStateValue: state_PottedPlants_OnPot_False--></T>
+              </U>
+            </V>
+          </L>
+        </L>
+        <U n="vfx">
+          <T n="effect_name">ep19_fairy_plant_pixies_flyaway_med</T>
+        </U>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="skill_test">
+        <U n="skill_test">
+          <T n="skill">16700<!--Skill: statistic_Skill_AdultMajor_Gardening--></T>
+          <V n="skill_range" t="threshold">
+            <U n="threshold">
+              <U n="skill_threshold">
+                <T n="value">9</T>
+              </U>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="state">
+        <U n="state">
+          <T n="value">437168<!--ObjectStateValue: state_EP19Gardening_Pixies_Gameplay_On--></T>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_EP17World_NPC_LayneEvil" s="380216">
+  <L n="loot_actions">
+    <V t="trait_remove">
+      <U n="trait_remove">
+        <E n="subject">TargetSim</E>
+        <V n="trait" t="specific_trait">
+          <U n="specific_trait">
+            <T n="specific_trait">27915<!--Trait: trait_Good--></T>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="trait_add">
+      <U n="trait_add">
+        <T n="trait">380628<!--Trait: trait_Hidden_EP17World_NPC_LayneTraits_LayneEvil--></T>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>TargetSim</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x1AC9A71<!--String: "Yeah, so, I noticed the grave for Hugh Thanasia a while before I even started seeing Olive. Did you know: more than anything, I want to be a Ghost, too! So the thought of Olive "helping" me is, well, kismet, right?\n\nCuz you see, while I didn't really lie to you about who I am... I also didn't quite tell you the truth. I was hiding the fact that I'm an Evil Sim, but now you know. It doesn't mean we're not still close friends; if anything, I feel closer to you than ever! I hope I'm not <i>too</i> Evil for ya, though."--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0xEBB55930<!--String: "Ravenwood Rumors"--></T>
+            </V>
+            <E n="visual_type">SPEECH</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x2D2E4443<!--String: "(From Layne's Evil Secret)"--></T>
+          </V>
+          <T n="buff_type">385101<!--Buff: buff_EP17World_NPC_LayneEvil--></T>
+        </U>
+      </U>
+    </V>
+    <V t="trait_add">
+      <U n="trait_add">
+        <E n="subject">TargetSim</E>
+        <T n="trait">16836<!--Trait: trait_Evil--></T>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="trait">
+        <U n="trait">
+          <E n="subject">TargetSim</E>
+          <L n="whitelist_traits">
+            <T>372947<!--Trait: trait_Hidden_EP17World_NPC_LayneCoffin--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

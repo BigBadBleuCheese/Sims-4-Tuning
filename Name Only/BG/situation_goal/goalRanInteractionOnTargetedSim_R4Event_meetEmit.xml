@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalRanInteractionOnTargetedSim" i="situation_goal" m="situations.situation_goal_targeted_sim" n="goalRanInteractionOnTargetedSim_R4Event_meetEmit" s="422787">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T n="enabled" p="InGame\UI\Icons\Events\EventGoal_Socialize.png">2f7d0004:00000000:21835a4b8238b2fa</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0xA09BBCBA<!--String: "Introduce Yourself to Emit Relevart"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0xC35CF2E2<!--String: "You arrived at Magnolia Blossom Park in Willow Creek. Now, find Emit!\n\nWith his bright blue hair, he shouldn't be too hard to spot.\n\nSelect Emit and choose an Introduction.\n\n<i>(+15 Event Points)</i>"--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>447711<!--SituationGoalLootActions: liveEvent_GoalLoot_CompleteQuestGoal--></T>
+  </L>
+  <U n="_goal_test">
+    <L n="affordance_lists">
+      <T>201373<!--AffordanceList: affordanceList_Greets--></T>
+      <T>36156<!--AffordanceList: AffordanceList_Socialize--></T>
+    </L>
+    <L n="affordances">
+      <T>435789<!--SocialMixerInteraction: mixer_Social_GetToKnow_R4Event_Friendly_MeetEmit--></T>
+    </L>
+    <T n="consider_all_cancelled_as_failure">False</T>
+    <L n="tags" />
+    <E n="test_event">InteractionComplete</E>
+  </U>
+  <L n="_post_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+      </U>
+    </V>
+  </L>
+  <T n="_score">0</T>
+  <T n="_select_all_instantiated_sims">True</T>
+  <L n="_target_tests">
+    <V t="trait">
+      <U n="trait">
+        <L n="whitelist_traits">
+          <T>406958<!--Trait: trait_isEmit--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+  <V n="goal_completion_notification" t="enabled">
+    <U n="enabled">
+      <V n="icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T n="key" p="InGame\UI\Icons\Headlines\Events\headline_ThemedEventIcon30x30.png">2f7d0004:00000000:b3d456252603abf2</T>
+          </U>
+        </V>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0x6B4AB9F4<!--String: "Hey {0.SimFirstName}, great to meet you! Why yes, I am Emit Relevart! Technology expert and time traveler extraordinaire!\n\nI've been jumping around through time on a bit of mystery, and I'm kind of stuck. Have you noticed any unexplained missing items around here? I'm trying to figure out what's going on."--></T>
+      </V>
+      <V n="title" t="enabled">
+        <T n="enabled">0xA9B952F2<!--String: "Emit's Introduction"--></T>
+      </V>
+      <E n="visual_type">SPEECH</E>
+    </U>
+  </V>
+</I>

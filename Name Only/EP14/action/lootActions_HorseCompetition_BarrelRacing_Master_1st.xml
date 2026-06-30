@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="lootActions_HorseCompetition_BarrelRacing_Master_1st" s="332496">
+  <L n="loot_actions">
+    <V t="trait_add">
+      <U n="trait_add">
+        <E n="subject">TargetSim</E>
+        <T n="trait">332613<!--Trait: trait_Horse_HorseCompetition_BarrelRacing_Master_1st--></T>
+      </U>
+    </V>
+    <V t="create_object">
+      <U n="create_object">
+        <V n="creation_data" t="definition">
+          <U n="definition">
+            <T n="definition">349002</T>
+          </U>
+        </V>
+        <V n="location" t="inventory" />
+        <E n="owner_sim">Actor</E>
+        <T n="set_sim_as_owner">True</T>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">335314<!--Buff: buff_Horse_HorseCompetition_EnteredACompetition--></T>
+        </U>
+        <E n="subject">TargetSim</E>
+      </U>
+    </V>
+    <V t="state_change">
+      <U n="state_change">
+        <T n="state_value">327479<!--ObjectStateValue: EP14World_EquestrianCenter_States_OpenClose_Closed--></T>
+        <V n="subject" t="all_objects_with_tag">
+          <E n="all_objects_with_tag">Func_EquestrianCenter</E>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="day_and_time">
+              <U n="day_and_time">
+                <V n="time_range" t="enabled">
+                  <U n="enabled">
+                    <U n="begin_time">
+                      <T n="hour">19</T>
+                    </U>
+                    <U n="duration">
+                      <T n="hour">7</T>
+                    </U>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="state_change">
+      <U n="state_change">
+        <T n="state_value">327478<!--ObjectStateValue: EP14World_EquestrianCenter_States_OpenClose_Open--></T>
+        <V n="subject" t="all_objects_with_tag">
+          <E n="all_objects_with_tag">Func_EquestrianCenter</E>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="day_and_time">
+              <U n="day_and_time">
+                <V n="time_range" t="enabled">
+                  <U n="enabled">
+                    <U n="begin_time">
+                      <T n="hour">7</T>
+                    </U>
+                    <U n="duration">
+                      <T n="hour">12</T>
+                    </U>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">348347<!--Buff: buff_Hidden_HorseCompetition_Winner_Horse_Reaction--></T>
+        </U>
+        <E n="subject">TargetSim</E>
+      </U>
+    </V>
+    <V t="trait_add">
+      <U n="trait_add">
+        <E n="subject">TargetSim</E>
+        <T n="trait">350467<!--Trait: trait_Hidden_HorseCompetition_BarrelRacing_Master_Complete--></T>
+      </U>
+    </V>
+    <V t="trait_add">
+      <U n="trait_add">
+        <E n="subject">TargetSim</E>
+        <T n="trait">331651<!--Trait: trait_Horse_Gameplay_EquestrianCenter_ChampionHorse--></T>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">340311<!--Buff: buff_Hidden_HorseCompetition_WinMasterorUltimateCompetition--></T>
+        </U>
+      </U>
+    </V>
+    <V t="actions">
+      <T n="actions">338954<!--LootActions: loot_Sentiment_AddSentiment_Motivating_ChampionPartner--></T>
+    </V>
+    <V t="actions">
+      <T n="actions">465062<!--LootActions: loot_Competitive_Reaction_Game_BuffOnly_Win_NoAffordanceList--></T>
+    </V>
+  </L>
+</I>

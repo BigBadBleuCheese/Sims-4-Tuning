@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Buff_Waffle(Un)Pleasant" s="340209">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0xE73DE4BF<!--String: "(From Eating Pleasantly-Unpleasant Waffles)"--></T>
+          </V>
+          <T n="buff_type">340185<!--Buff: buff_Food_WafflePositivePleasant--></T>
+        </U>
+        <U n="chance">
+          <T n="base_chance">50</T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <L n="blacklist">
+                  <T>340186<!--Buff: buff_Food_WaffleNegativePleasant--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0xE73DE4BF<!--String: "(From Eating Pleasantly-Unpleasant Waffles)"--></T>
+          </V>
+          <T n="buff_type">340186<!--Buff: buff_Food_WaffleNegativePleasant--></T>
+        </U>
+        <U n="chance">
+          <T n="base_chance">100</T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <L n="blacklist">
+                  <T>340185<!--Buff: buff_Food_WafflePositivePleasant--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

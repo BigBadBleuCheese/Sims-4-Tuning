@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_GnomeFunc_GnomePowers_Effect_Cleaning" s="419212">
+  <L n="loot_actions">
+    <V t="statistics">
+      <V n="statistics" t="statistic_set_max">
+        <U n="statistic_set_max">
+          <T n="stat">16575<!--Commodity: commodity_dirtiness--></T>
+          <L n="subject">
+            <E>Actor</E>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="statistic">
+                <U n="statistic">
+                  <T n="must_have_stat">True</T>
+                  <T n="stat">16575<!--Commodity: commodity_dirtiness--></T>
+                  <V n="threshold" t="value_threshold">
+                    <U n="value_threshold">
+                      <E n="comparison">LESS_OR_EQUAL</E>
+                      <T n="value">50</T>
+                    </U>
+                  </V>
+                  <E n="who">Actor</E>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+    </V>
+    <V t="destroy_target_objects">
+      <U n="destroy_target_objects">
+        <E n="object_source">IN_WORLD</E>
+        <E n="subject">Actor</E>
+        <L n="tests">
+          <L>
+            <V t="object_definition_criteria">
+              <U n="object_definition_criteria">
+                <V n="identity_test" t="tags">
+                  <U n="tags">
+                    <L n="tag_set">
+                      <E>Func_TrashPile</E>
+                      <E>Func_Puddle</E>
+                      <E>Func_MoldPile</E>
+                    </L>
+                  </U>
+                </V>
+                <E n="participant">Actor</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_set_min">
+        <U n="statistic_set_min">
+          <T n="stat">16681<!--Statistic: statistic_Object_Trash-Capacity--></T>
+          <L n="subject">
+            <E>Actor</E>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="statistic">
+                <U n="statistic">
+                  <T n="must_have_stat">True</T>
+                  <T n="stat">16681<!--Statistic: statistic_Object_Trash-Capacity--></T>
+                  <V n="threshold" t="value_threshold">
+                    <U n="value_threshold">
+                      <E n="comparison">GREATER_OR_EQUAL</E>
+                      <T n="value">1</T>
+                    </U>
+                  </V>
+                  <E n="who">Actor</E>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+    </V>
+    <V t="destroy_target_objects">
+      <U n="destroy_target_objects">
+        <E n="object_source">IN_WORLD</E>
+        <E n="subject">Actor</E>
+        <L n="tests">
+          <L>
+            <V t="state">
+              <U n="state">
+                <T n="value">15108<!--CommodityBasedObjectStateValue: Consumable_Empty--></T>
+                <E n="who">Actor</E>
+              </U>
+            </V>
+          </L>
+          <L>
+            <V t="state">
+              <U n="state">
+                <T n="value">15190<!--CommodityBasedObjectStateValue: Freshness_Spoiled--></T>
+                <E n="who">Actor</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_set_max">
+        <U n="statistic_set_max">
+          <T n="stat">16657<!--Commodity: motive_Hygiene--></T>
+          <L n="subject">
+            <E>Actor</E>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="statistic">
+                <U n="statistic">
+                  <T n="must_have_stat">True</T>
+                  <T n="stat">16657<!--Commodity: motive_Hygiene--></T>
+                  <V n="threshold" t="value_threshold">
+                    <U n="value_threshold">
+                      <E n="comparison">LESS_OR_EQUAL</E>
+                      <T n="value">99</T>
+                    </U>
+                  </V>
+                  <E n="who">Actor</E>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_set_max">
+        <U n="statistic_set_max">
+          <T n="stat">254463<!--Commodity: commodity_Dust--></T>
+          <L n="subject">
+            <E>ActorLotLevel</E>
+          </L>
+        </U>
+      </V>
+    </V>
+    <V t="buff_removal">
+      <U n="buff_removal">
+        <L n="buffs_to_remove">
+          <T>342347<!--Buff: buff_MoldSystem_Toxic_T1_Mild--></T>
+          <T>342348<!--Buff: buff_MoldSystem_Toxic_T2_Severe--></T>
+          <T>342349<!--Buff: buff_MoldSystem_Toxic_T3_Deadly--></T>
+          <T>342350<!--Buff: buff_MoldSystem_SporeSickness--></T>
+          <T>357354<!--Buff: buff_MoldSystem_PetSickness--></T>
+          <T>345833<!--Buff: buff_MoldSystem_Toxic_Children--></T>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="ages" t="specified">
+                  <L n="specified">
+                    <E>TEEN</E>
+                    <E>YOUNGADULT</E>
+                    <E>ADULT</E>
+                    <E>ELDER</E>
+                    <E>CHILD</E>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="vfx">
+      <U n="vfx">
+        <U n="vfx">
+          <T n="effect_name">ep19_gnome_object_glow</T>
+          <V n="joint_name" t="Current_Position" />
+        </U>
+      </U>
+    </V>
+  </L>
+</I>

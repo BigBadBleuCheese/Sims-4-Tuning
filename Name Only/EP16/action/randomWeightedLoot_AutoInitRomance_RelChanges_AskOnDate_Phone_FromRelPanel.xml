@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="RandomWeightedLoot" i="action" m="interactions.utils.loot" n="randomWeightedLoot_AutoInitRomance_RelChanges_AskOnDate_Phone_FromRelPanel" s="382601">
+  <L n="random_loot_actions">
+    <U>
+      <V n="action" t="schedule_drama_node">
+        <U n="schedule_drama_node">
+          <T n="drama_node">380000<!--DialogDramaNode: dialogDramaNode_AutoInitRomance_RelChanges_AskOnDate_FromRelPanel--></T>
+          <V n="time_delay" t="enabled">
+            <U n="enabled">
+              <T n="minutes">1</T>
+            </U>
+          </V>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">5</T>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="do_nothing" />
+      <U n="weight">
+        <T n="base_value">2</T>
+      </U>
+    </U>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>16851<!--Trait: trait_isGrimReaper--></T>
+            <T>455031<!--Trait: trait_Hidden_EP20World_NPC_ToshiAkamine--></T>
+            <T>455030<!--Trait: trait_Hidden_EP20World_NPC_LaxmiKunal--></T>
+            <T>147121<!--Trait: trait_isButler--></T>
+            <T>187088<!--Trait: trait_Scarecrow--></T>
+            <T>186785<!--Trait: trait_FlowerBunny--></T>
+            <T>378502<!--Trait: trait_Hidden_EP17World_NPC_EdithBasu--></T>
+            <T>378520<!--Trait: trait_Hidden_EP17World_NPC_AliceBasu--></T>
+            <T>372976<!--Trait: trait_Hidden_EP17World_NPC_WaylonWarez--></T>
+            <T>372977<!--Trait: trait_Hidden_EP17World_NPC_RavendancerGoth--></T>
+            <T>431929<!--Trait: trait_Hidden_EP19_NPC_GreenMan--></T>
+          </L>
+          <E n="subject">PickedSim</E>
+        </U>
+      </V>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="npc" t="enabled" />
+        </U>
+      </V>
+      <V t="can_create_user_facing_situation">
+        <U n="can_create_user_facing_situation">
+          <T n="allow_non_prestige_is_exempt">True</T>
+        </U>
+      </V>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="required_relationship_bits">
+            <L n="match_any">
+              <T>15829<!--RelationshipBit: RomanticCombo_Lovebirds--></T>
+              <T>15837<!--RelationshipBit: RomanticCombo_Lovers--></T>
+              <T>15839<!--RelationshipBit: RomanticCombo_Soulmates--></T>
+              <T>15840<!--RelationshipBit: RomanticCombo_Sweethearts--></T>
+            </L>
+          </U>
+          <L n="subject">
+            <E>Actor</E>
+          </L>
+          <L n="target_sim">
+            <E>PickedSim</E>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

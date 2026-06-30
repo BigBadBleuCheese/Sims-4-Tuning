@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="RandomWeightedLoot" i="action" m="interactions.utils.loot" n="randomWeightedLoot_GhostPowers_MediumScare_SinisterPossess" s="393494">
+  <L n="random_loot_actions">
+    <U>
+      <V n="action" t="reaction">
+        <U n="reaction">
+          <V n="si_reaction" t="enabled">
+            <U n="enabled">
+              <T n="affordance">393492<!--SuperInteraction: reactions_Ghosts_ScaredReaction_Runaway_SinisterPossess--></T>
+              <E n="affordance_priority">Critical</E>
+              <V n="affordance_run_priority" t="enabled">
+                <E n="enabled">Critical</E>
+              </V>
+              <V n="affordance_target" t="disabled" />
+            </U>
+          </V>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">2</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="state">
+                  <U n="state">
+                    <T n="value">15301<!--CommodityBasedObjectStateValue: Pregnant_SecondTrimester--></T>
+                    <E n="who">Actor</E>
+                  </U>
+                </V>
+              </L>
+              <L>
+                <V t="state">
+                  <U n="state">
+                    <T n="value">15302<!--CommodityBasedObjectStateValue: Pregnant_ThirdTrimester--></T>
+                    <E n="who">Actor</E>
+                  </U>
+                </V>
+              </L>
+              <L>
+                <V t="state">
+                  <U n="state">
+                    <T n="value">75273<!--CommodityBasedObjectStateValue: Pregnant_InLabor--></T>
+                    <E n="who">Actor</E>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="reaction">
+        <U n="reaction">
+          <V n="si_reaction" t="enabled">
+            <U n="enabled">
+              <T n="affordance">393498<!--SuperInteraction: reactions_Ghosts_ScaredReaction_LoseBladder_ObjectManipulation--></T>
+              <E n="affordance_priority">Critical</E>
+              <V n="affordance_run_priority" t="enabled">
+                <E n="enabled">Critical</E>
+              </V>
+              <V n="affordance_target" t="disabled" />
+            </U>
+          </V>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">1</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="buff">
+                  <U n="buff">
+                    <V n="whitelist" t="enabled">
+                      <L n="enabled">
+                        <T>393521<!--Buff: buff_GhostPowers_Generic_ScaredMyPants--></T>
+                      </L>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">393499<!--LootActions: loot_GhostPowers_WitnessReactions_SinisterPossess_Scared--></T>
+      </V>
+      <U n="weight">
+        <T n="base_value">2</T>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">393500<!--LootActions: loot_GhostPowers_WitnessReactions_SinisterPossess_Tense--></T>
+      </V>
+      <U n="weight">
+        <T n="base_value">2</T>
+      </U>
+    </U>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>442916<!--Buff: Apothecary_CuresAndElixirs_Buff_AuraShield--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

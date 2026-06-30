@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalRanInteractionOnTargetedSim" i="situation_goal" m="situations.situation_goal_targeted_sim" n="whim_BeFriendlyWith_RomanticInterest" s="371270">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T n="enabled" p="InEP16\UI\Icons\Whims\whim_Perform5FriendlyWithRomanticInterest.png">2f7d0004:00000000:fb906808f58b6b77</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x76EFE0F8<!--String: "Be Friendly 5 Times with {2.SimFirstName}"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0x5F0276D0<!--String: "Click on {2.SimFirstName} and perform 5 Socials from the Friendly category."--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>272907<!--SituationGoalLootActions: goalLoot_WantFear_Fulfillment_Gain--></T>
+    <T>291795<!--SituationGoalLootActions: goalLoot_Want_Fulfilled_BuffGain_Happy--></T>
+  </L>
+  <U n="_goal_test">
+    <L n="tags">
+      <E>Interaction_Friendly</E>
+    </L>
+    <E n="test_event">InteractionComplete</E>
+  </U>
+  <T n="_iterations">5</T>
+  <L n="_pre_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="_score">25</T>
+  <T n="_select_all_instantiated_sims">True</T>
+  <E n="_target_option">GoalSystemChoice</E>
+  <L n="_target_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="relationship">
+      <U n="relationship">
+        <U n="required_relationship_bits">
+          <L n="match_any">
+            <T>369543<!--RelationshipBitCollection: rbc_Romantic_HasRelationship--></T>
+            <T>15838<!--RelationshipBit: RomanticCombo_RomanticInterest--></T>
+            <T>10150<!--RelationshipBit: romantic_FirstKiss--></T>
+            <T>34619<!--RelationshipBit: romantic-HaveDoneWooHoo--></T>
+            <T>15829<!--RelationshipBit: RomanticCombo_Lovebirds--></T>
+            <T>15839<!--RelationshipBit: RomanticCombo_Soulmates--></T>
+            <T>15840<!--RelationshipBit: RomanticCombo_Sweethearts--></T>
+            <T>15837<!--RelationshipBit: RomanticCombo_Lovers--></T>
+          </L>
+        </U>
+      </U>
+    </V>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+</I>

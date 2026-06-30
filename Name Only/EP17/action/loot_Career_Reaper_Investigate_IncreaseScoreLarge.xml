@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Career_Reaper_Investigate_IncreaseScoreLarge" s="400626">
+  <L n="loot_actions">
+    <V t="statistics">
+      <V n="statistics" t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">3</T>
+          <T n="stat">400621<!--Statistic: statistic_Career_Reaper_InvestigationScore--></T>
+        </U>
+      </V>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">1</T>
+          <T n="stat">400620<!--Statistic: statistic_Career_Reaper_InvestigationCount--></T>
+          <L n="subject">
+            <E>Actor</E>
+          </L>
+        </U>
+      </V>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant" />
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x27B54D4C<!--String: "{0.SimFirstName} makes an incredible deduction."--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x8DBA2838<!--String: "Investigation Findings"--></T>
+            </V>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">400621<!--Statistic: statistic_Career_Reaper_InvestigationScore--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">LESS</E>
+                    <T n="value">4</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xC132E981<!--String: "Great forensics! {0.SimFirstName} has investigated the Sim and surrounding evidence thoroughly. Determine Cause of Death is now available for {0.SimPronounObjective} to confidently prescribe."--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x6BE59E4C<!--String: "Investigation Report"--></T>
+            </V>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">400621<!--Statistic: statistic_Career_Reaper_InvestigationScore--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">GREATER_OR_EQUAL</E>
+                    <T n="value">4</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

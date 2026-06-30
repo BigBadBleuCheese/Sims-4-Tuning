@@ -1,0 +1,408 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="GameObject" i="object" m="objects.game_object" n="papercraft_Creations_PaperMache_Mask" s="471034">
+  <U n="_components">
+    <V n="focus" t="enabled">
+      <U n="enabled">
+        <V n="_focus_score" t="globally">
+          <U n="globally">
+            <E n="base">LOW</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V n="inventory_item" t="enabled">
+      <U n="enabled">
+        <T n="allow_compaction">False</T>
+        <T n="can_place_in_world">False</T>
+        <T n="inventory_only">True</T>
+        <V n="no_carry_add_to_sim_inventory_affordances" t="OVERRIDE">
+          <L n="OVERRIDE">
+            <T>456863<!--SuperInteraction: si_SwipeIntoSimInventory_Papercraft_Creations--></T>
+          </L>
+        </V>
+        <V n="no_carry_add_to_world_affordances" t="OVERRIDE">
+          <L n="OVERRIDE">
+            <T>456845<!--SwipeAddToWorldSuperInteraction: si_SwipeAddToWorld_Papercraft_Creations--></T>
+          </L>
+        </V>
+        <T n="persist_in_hidden_storage">True</T>
+        <T n="skip_carry_pose">True</T>
+        <E n="stack_scheme">NONE</E>
+        <L n="target_super_affordances">
+          <U>
+            <T n="affordance">456279<!--ObjectInInventoryPickerInteraction: inventoryPicker_Papercraft_Gift_Creation_OnSim--></T>
+          </U>
+          <U>
+            <T n="affordance">484515<!--ObjectInInventoryPickerInteraction: inventoryPicker_Papercraft_PaperMache_Mask_Self_Equip--></T>
+            <T n="allow_self">True</T>
+          </U>
+        </L>
+        <L n="valid_inventory_types">
+          <E>SIM</E>
+          <E>STORAGE_CHEST</E>
+          <E>CRAFT_SALES_TABLE_EP03</E>
+        </L>
+      </U>
+    </V>
+    <V n="name" t="enabled">
+      <U n="enabled">
+        <V n="affordance" t="enabled">
+          <T n="enabled">454687<!--RenameImmediateInteraction: rename_Papercraft--></T>
+        </V>
+        <T n="allow_description">True</T>
+      </U>
+    </V>
+    <V n="retail_component" t="enabled">
+      <V n="enabled" t="reference">
+        <T n="reference">110393<!--RetailComponent: retailComponent_Default--></T>
+      </V>
+    </V>
+    <V n="state" t="enabled">
+      <U n="enabled">
+        <L n="states">
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">15304<!--CommodityBasedObjectStateValue: Quality_Normal--></T>
+                <U n="value">
+                  <V n="environment_score" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <U n="base_modifiers">
+                        <V n="positive_modifiers" t="enabled">
+                          <U n="enabled">
+                            <T n="add_modifier">5</T>
+                          </U>
+                        </V>
+                      </U>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">15305<!--CommodityBasedObjectStateValue: Quality_Outstanding--></T>
+                <U n="value">
+                  <V n="environment_score" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <U n="base_modifiers">
+                        <V n="positive_modifiers" t="enabled">
+                          <U n="enabled">
+                            <T n="add_modifier">10</T>
+                          </U>
+                        </V>
+                      </U>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">15306<!--CommodityBasedObjectStateValue: Quality_Poor--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">15304<!--CommodityBasedObjectStateValue: Quality_Normal--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">15247<!--ObjectStateValue: Masterwork_Masterwork--></T>
+              </U>
+              <U>
+                <T n="key">15248<!--ObjectStateValue: Masterwork_Normalwork--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">15248<!--ObjectStateValue: Masterwork_Normalwork--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">39478<!--CommodityBasedObjectStateValue: FireState_Burn_Incinerate_Burning--></T>
+              </U>
+              <U>
+                <T n="key">39479<!--CommodityBasedObjectStateValue: FireState_Burn_Incinerate--></T>
+              </U>
+              <U>
+                <T n="key">39612<!--CommodityBasedObjectStateValue: FireState_Burn_Incinerate_Not_Burning--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">39612<!--CommodityBasedObjectStateValue: FireState_Burn_Incinerate_Not_Burning--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">239691<!--ObjectStateValue: plopsy_Values_NotListed--></T>
+              </U>
+              <U>
+                <T n="key">239692<!--ObjectStateValue: plopsy_Values_Listed--></T>
+              </U>
+              <U>
+                <T n="key">239693<!--ObjectStateValue: plopsy_Values_ShipReady--></T>
+              </U>
+              <U>
+                <T n="key">241757<!--ObjectStateValue: plopsy_Values_Purchased--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">239691<!--ObjectStateValue: plopsy_Values_NotListed--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">455051<!--ObjectStateValue: papercraft_Values_Origami_Wet--></T>
+                <U n="value">
+                  <V n="material_state" t="leave_unchanged" />
+                </U>
+              </U>
+              <U>
+                <T n="key">455052<!--ObjectStateValue: papercraft_Values_Origami_Dry--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">455052<!--ObjectStateValue: papercraft_Values_Origami_Dry--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">489205<!--CommodityBasedObjectStateValue: papercraft_CommodityValues_Destruction_01_Default--></T>
+              </U>
+              <U>
+                <T n="key">489206<!--CommodityBasedObjectStateValue: papercraft_CommodityValues_Destruction_02_Countdown--></T>
+              </U>
+              <U>
+                <T n="key">489207<!--CommodityBasedObjectStateValue: papercraft_CommodityValues_Destruction_03_Destroy--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">489205<!--CommodityBasedObjectStateValue: papercraft_CommodityValues_Destruction_01_Default--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">476458<!--ObjectStateValue: papercraft_Values_Failed_Recent--></T>
+              </U>
+              <U>
+                <T n="key">476459<!--ObjectStateValue: papercraft_Values_Failed_NA--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">476459<!--ObjectStateValue: papercraft_Values_Failed_NA--></T>
+            </V>
+            <V n="tested_states_on_add" t="enabled">
+              <U n="enabled">
+                <V n="fallback_state" t="enabled">
+                  <T n="enabled">476459<!--ObjectStateValue: papercraft_Values_Failed_NA--></T>
+                </V>
+                <L n="tested_states">
+                  <U>
+                    <T n="state">476458<!--ObjectStateValue: papercraft_Values_Failed_Recent--></T>
+                    <L n="tests">
+                      <L>
+                        <V t="object_definition_criteria">
+                          <U n="object_definition_criteria">
+                            <V n="identity_test" t="definition_id">
+                              <U n="definition_id">
+                                <T n="actual_object">482462</T>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                      <L>
+                        <V t="object_definition_criteria">
+                          <U n="object_definition_criteria">
+                            <V n="identity_test" t="definition_id">
+                              <U n="definition_id">
+                                <T n="actual_object">482471</T>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                </L>
+              </U>
+            </V>
+            <V n="tested_states_post_load" t="enabled">
+              <U n="enabled">
+                <L n="tested_states">
+                  <U>
+                    <T n="state">476459<!--ObjectStateValue: papercraft_Values_Failed_NA--></T>
+                  </U>
+                </L>
+              </U>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">482693<!--ObjectStateValue: papercraft_Values_Rain_Inside--></T>
+              </U>
+              <U>
+                <T n="key">482694<!--ObjectStateValue: papercraft_Values_Rain_Outside--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">482693<!--ObjectStateValue: papercraft_Values_Rain_Inside--></T>
+            </V>
+          </U>
+        </L>
+        <V n="timed_state_triggers" t="enabled">
+          <L n="enabled">
+            <U>
+              <T n="key">476458<!--ObjectStateValue: papercraft_Values_Failed_Recent--></T>
+              <U n="value">
+                <L n="ops">
+                  <U>
+                    <L n="states_to_trigger">
+                      <T>476459<!--ObjectStateValue: papercraft_Values_Failed_NA--></T>
+                    </L>
+                    <T n="trigger_time">5</T>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+        </V>
+      </U>
+    </V>
+    <V n="tooltip_component" t="enabled">
+      <U n="enabled">
+        <L n="custom_tooltips">
+          <U>
+            <L n="tooltip_fields">
+              <U>
+                <E n="key">recipe_description</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0xE2E9872D<!--String: "{0.ObjectDescription}"--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">Object</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <E n="key">recipe_name</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x4F918F8<!--String: "{0.ObjectName}"--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">Object</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+            </L>
+            <E n="tooltip_style">HOVER_TIP_CUSTOM_OBJECT</E>
+          </U>
+        </L>
+        <L n="state_value_strings">
+          <L>
+            <U>
+              <E n="state_concatenation_style">NEW_LINE_SEPARATION</E>
+              <T n="state_value">455051<!--ObjectStateValue: papercraft_Values_Origami_Wet--></T>
+              <V n="text" t="single">
+                <T n="single">0xF797D44D<!--String: "<b>(Ruined)</b>"--></T>
+              </V>
+            </U>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V n="weather_aware_component" t="enabled">
+      <U n="enabled">
+        <L n="outside_loot">
+          <U>
+            <E n="key">AnyRain</E>
+            <U n="value">
+              <L n="end_loot">
+                <T>482696<!--LootActions: loot_Papercraft_Rain_End--></T>
+              </L>
+              <L n="start_loot">
+                <T>482697<!--LootActions: loot_Papercraft_Rain_Start--></T>
+              </L>
+            </U>
+          </U>
+          <U>
+            <E n="key">AnySnow</E>
+            <U n="value">
+              <L n="end_loot">
+                <T>482696<!--LootActions: loot_Papercraft_Rain_End--></T>
+              </L>
+              <L n="start_loot">
+                <T>482697<!--LootActions: loot_Papercraft_Rain_Start--></T>
+              </L>
+            </U>
+          </U>
+        </L>
+      </U>
+    </V>
+  </U>
+  <L n="_super_affordances">
+    <T>13328<!--ImmediateSuperInteraction: debug_Reset--></T>
+    <T>13326<!--ImmediateSuperInteraction: debug_ObjectDestroy--></T>
+    <T>103888<!--ImmediateSuperInteraction: cheat_set_as_head--></T>
+    <T>328068<!--SuperInteraction: infant_WhatsThat_Immobile_InObject--></T>
+    <T>276518<!--SuperInteraction: infant_WhatsThat--></T>
+    <T>276517<!--SuperInteraction: infant_WatchObject--></T>
+    <T>144099<!--SuperInteraction: generic_Object_Toddler_Check_Out--></T>
+    <T>106859<!--SuperInteraction: simRay_Transform_Object--></T>
+    <T>239269<!--ImmediateSuperInteraction: cheat_SetQuality_Normal--></T>
+    <T>239268<!--ImmediateSuperInteraction: cheat_SetQuality_Outstanding--></T>
+    <T>239270<!--ImmediateSuperInteraction: cheat_SetQuality_Poor--></T>
+    <T>456232<!--SimPickerInteraction: simPicker_Papercraft_Gift_Creation_OnObject--></T>
+    <T>463627<!--SimPickerInteraction: simPicker_Papercraft_Gift_Creation_OnObject_FromWorld--></T>
+    <T>239680<!--SuperInteraction: plopsy_List--></T>
+    <T>242149<!--SuperInteraction: si_SwipeIntoSimInventory_Plopsy_List--></T>
+    <T>485147<!--SuperInteraction: super_Papercraft_ViewCreations--></T>
+    <T>213491<!--SuperInteraction: spells_Object_Duplicate--></T>
+    <T>216918<!--SuperInteraction: spells_Object_Duplicate_SpectralReach--></T>
+    <T>471078<!--SuperInteraction: super_Papercraft_PaperMache_Mask_Equip--></T>
+    <T>471189<!--ObjectInInventoryPickerInteraction: inventoryPicker_Papercraft_PaperMache_Mask_Equip--></T>
+    <T>473079<!--ImmediateSuperInteraction: immediate_Papercraft_PaperMache_Mask_AddToWardrobe--></T>
+  </L>
+  <U n="recycling_data">
+    <L n="recycling_values">
+      <U>
+        <E n="Bucks Type">RecycleBitsBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+      <U>
+        <E n="Bucks Type">RecyclePiecesBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+    </L>
+  </U>
+</I>

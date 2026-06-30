@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="BusinessRule" i="business_rule" m="business.business_rule" n="Rule_PMI_NoTrash" s="343562">
+  <T n="auto_resolve_time">0</T>
+  <T n="cooldown_time">1300</T>
+  <T n="fine">600</T>
+  <T p="InEP15\UI\Icons\UnitRules\UnitRules_CleanlinessInspector.png" n="icon">2f7d0004:00000000:9fe31d03af537cc9</T>
+  <T n="loot_on_auto_resolved">340361<!--LootActions: loot_LandlordTenant_ViolateRules--></T>
+  <T n="loot_on_rule_broken">349358<!--LootActions: loot_PMI_NoTrash--></T>
+  <T n="rule_description">0xCC8642DA<!--String: "Tenants must maintain a tidy living space; clean appliances are a must, and accumulating trash or trash piles will not be tolerated."--></T>
+  <T n="rule_name">0x176E9805<!--String: "No Trash Overload"--></T>
+  <L n="test_events">
+    <L>
+      <V t="object_criteria">
+        <U n="object_criteria">
+          <V n="desired_state_threshold" t="enabled">
+            <U n="enabled">
+              <E n="comparison">LESS_OR_EQUAL</E>
+              <T n="value">15133<!--CommodityBasedObjectStateValue: Dirty_Dirty--></T>
+            </U>
+          </V>
+          <E n="object_location">PrivateSpaceOnly</E>
+          <T n="on_active_lot">True</T>
+          <T n="owned">False</T>
+          <V n="subject_specific_tests" t="all_objects">
+            <U n="all_objects">
+              <U n="quantity">
+                <T n="value">2</T>
+              </U>
+            </U>
+          </V>
+          <L n="test_events">
+            <E>ObjectStateChange</E>
+          </L>
+          <V n="tooltip" t="disabled" />
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="object_criteria">
+        <U n="object_criteria">
+          <V n="desired_state_threshold" t="enabled">
+            <U n="enabled">
+              <E n="comparison">LESS_OR_EQUAL</E>
+              <T n="value">230975<!--CommodityBasedObjectStateValue: trashPile_Age_Old--></T>
+            </U>
+          </V>
+          <E n="object_location">PrivateSpaceOnly</E>
+          <T n="on_active_lot">True</T>
+          <T n="owned">False</T>
+          <V n="subject_specific_tests" t="all_objects">
+            <U n="all_objects">
+              <U n="quantity">
+                <T n="value">2</T>
+              </U>
+            </U>
+          </V>
+          <L n="test_events">
+            <E>ObjectStateChange</E>
+          </L>
+          <V n="tooltip" t="disabled" />
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="object_criteria">
+        <U n="object_criteria">
+          <V n="desired_state_threshold" t="enabled">
+            <U n="enabled">
+              <E n="comparison">LESS_OR_EQUAL</E>
+              <T n="value">15350<!--CommodityBasedObjectStateValue: Trashcan_Capacity_Overflowing--></T>
+            </U>
+          </V>
+          <E n="object_location">PrivateSpaceOnly</E>
+          <T n="on_active_lot">True</T>
+          <T n="owned">False</T>
+          <V n="subject_specific_tests" t="all_objects">
+            <U n="all_objects">
+              <U n="quantity">
+                <T n="value">2</T>
+              </U>
+            </U>
+          </V>
+          <L n="test_events">
+            <E>ObjectStateChange</E>
+          </L>
+          <V n="tooltip" t="disabled" />
+          <V n="value" t="enabled">
+            <U n="enabled">
+              <U n="threshold">
+                <T n="value">2</T>
+              </U>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

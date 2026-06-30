@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="FriendshipElimination" i="getaway_challenge" m="custom_schedules.getaway_challenge_tuning" n="getawayRules_Elimination_RelationshipFriendship" s="462155">
+  <U n="daily_timer">
+    <T n="hour">11</T>
+  </U>
+  <V n="daily_timer_notification" t="disabled" />
+  <T n="description_tooltip">0x617E7B9C<!--String: "Choose a role for <font color="#0096FF"><b>Sims to Befriend</b></font> to define which Sims are meant to build friendships during the Getaway. Then, select a role for <font color="#0096FF"><b>Elimination Candidates</b></font> to determine which Sims will be eligible for elimination. Each day, the Sim with the lowest score or progress in friendships will be sent home, until only one most-liked Sim remains.\n\nOnly Sims in the selected roles are eligible, and participation is limited to teens and older."--></T>
+  <T n="display_name">0x49A0C73A<!--String: "Popularity Elimination"--></T>
+  <L n="groups">
+    <U>
+      <L n="associated_buff">
+        <U>
+          <T n="buff_type">474554<!--Buff: buff_Getaway_Hidden_ModifierRules_Friendship--></T>
+        </U>
+        <U>
+          <T n="buff_type">477385<!--Buff: buff_Trait_Competitive_Hidden_Getaway_RelContest_RelationshipFriendship--></T>
+        </U>
+        <U>
+          <T n="buff_type">462158<!--Buff: buff_Getaway_SimOfInterest--></T>
+        </U>
+      </L>
+      <L n="disallowed_ages">
+        <E />
+        <E>INFANT</E>
+        <E>TODDLER</E>
+        <E>CHILD</E>
+      </L>
+      <L n="disallowed_species">
+        <E>CAT</E>
+        <E>DOG</E>
+        <E>FOX</E>
+        <E>HORSE</E>
+        <E>SMALLDOG</E>
+      </L>
+      <T n="group_name">0x8121DA84<!--String: "Sims to Befriend"--></T>
+    </U>
+    <U>
+      <L n="associated_buff">
+        <U>
+          <T n="buff_type">483862<!--Buff: buff_Getaway_EliminationCandidate--></T>
+        </U>
+      </L>
+      <L n="disallowed_ages">
+        <E />
+        <E>INFANT</E>
+        <E>TODDLER</E>
+        <E>CHILD</E>
+      </L>
+      <L n="disallowed_species">
+        <E>CAT</E>
+        <E>DOG</E>
+        <E>FOX</E>
+        <E>HORSE</E>
+        <E>SMALLDOG</E>
+      </L>
+      <T n="group_name">0x36F2FADF<!--String: "Elimination Candidates"--></T>
+    </U>
+  </L>
+  <T n="icon" p="InEP20\UI\Icons\GetawayRules\getaway_rules_FriendRelationshipElimination.png">2f7d0004:00000000:109e1f9053ca400d</T>
+  <L n="loots_after_daily_timer">
+    <T>486063<!--LootActions: loot_Getaway_Elimination_Friendship--></T>
+    <T>487113<!--LootActions: loot_Getaway_Elimination_Friendship_2_Remaining--></T>
+    <T>487112<!--LootActions: loot_Getaway_Elimination_Friendship_3_Remaining--></T>
+    <T>487111<!--LootActions: loot_Getaway_Elimination_Friendship_4_Remaining--></T>
+    <T>487114<!--LootActions: loot_Getaway_Elimination_Friendship_FinalElimination--></T>
+    <T>489167<!--LootActions: loot_Getaway_Elimination_Friendship_2_Remaining_EndEarly--></T>
+  </L>
+  <L n="tests_blocking_daily_timer_behavior">
+    <L>
+      <V t="count">
+        <U n="count">
+          <V n="participant" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">GetawayEliminationCandidates</E>
+            </U>
+          </V>
+          <V n="threshold" t="from_value">
+            <U n="from_value">
+              <E n="comparison">LESS_OR_EQUAL</E>
+              <T n="value">1</T>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="PickServiceNpcSuperInteraction" i="interaction" m="situations.service_npcs.service_npc_interactions" n="phone_pickServiceToHire_Adoption_Horse_GoatSheep" s="338357">
+  <V n="_saveable" t="disabled" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xD4733B25<!--String: "Call Ranch Animal Exchange"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T n="display_price_fee_and_hourly_cost">0x8AC131AC<!--String: "for {0.Money} plus {1.Money}/hour"--></T>
+  <T n="display_price_flat_rate">0xDB9A41FF<!--String: "for {0.Money}"--></T>
+  <T n="display_price_free">0xBD244FD6<!--String: "No cost."--></T>
+  <T n="display_price_hourly_cost">0x289F3717<!--String: "for {0.Money}/hour"--></T>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <L n="non_service_npcs">
+    <U>
+      <V n="cost_string" t="cost_amount">
+        <T n="cost_amount">250</T>
+      </V>
+      <L n="free_service_traits">
+        <T>196358<!--Trait: trait_Hidden_Fame_Quirk_StarTreatment--></T>
+      </L>
+      <T n="hire_interaction">324114<!--SuperInteraction: phone_HorseTransaction_AdoptHorse--></T>
+      <T n="icon" p="InEP14\UI\Icons\Headlines\headline_RescueAHorse.png">2f7d0004:00000000:98b2eb99e72c1c87</T>
+      <T n="name">0xF02053C3<!--String: "Rescue Horse"--></T>
+      <L n="tests">
+        <V t="zone">
+          <U n="zone">
+            <V n="zone_source" t="use_participant_home_zone" />
+            <U n="zone_tests">
+              <V n="venue_type" t="enabled">
+                <U n="enabled">
+                  <V n="blacklist" t="specify">
+                    <U n="specify">
+                      <L n="blacklist">
+                        <T>208182<!--Venue: venue_rentable_universityHousing--></T>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </U>
+          </U>
+        </V>
+        <V t="travel_group">
+          <U n="travel_group">
+            <V n="test_type" t="in_travel_group">
+              <U n="in_travel_group">
+                <T n="exists">False</T>
+              </U>
+            </V>
+          </U>
+        </V>
+        <V t="trait">
+          <U n="trait">
+            <L n="blacklist_traits">
+              <T>196358<!--Trait: trait_Hidden_Fame_Quirk_StarTreatment--></T>
+            </L>
+            <E n="subject">Actor</E>
+          </U>
+        </V>
+        <V t="situation_running_test">
+          <U n="situation_running_test">
+            <V n="situation_blacklist" t="enabled">
+              <L n="enabled">
+                <T>169806<!--PetCareSituation: petCareSituation_SellAdopt--></T>
+                <T>170954<!--PetCareSituation: petCareSituation_SellAdopt_Sell--></T>
+                <T>166801<!--SituationComplexAdoptionPet: situation_PetAdoption--></T>
+              </L>
+            </V>
+            <V n="tooltip" t="enabled">
+              <T n="enabled">0xFDF9E0E8<!--String: "An adoption event is already in progress!"--></T>
+            </V>
+          </U>
+        </V>
+        <V t="household_size">
+          <U n="household_size">
+            <V n="tooltip" t="enabled">
+              <T n="enabled">0xD089C07F<!--String: "Household is already at maximum size."--></T>
+            </V>
+          </U>
+        </V>
+        <V t="simoleon_value">
+          <U n="simoleon_value">
+            <V n="tooltip" t="enabled">
+              <T n="enabled">0x131C561<!--String: "You have insufficient funds!"--></T>
+            </V>
+            <V n="value_context" t="total_cash" />
+            <U n="value_threshold">
+              <T n="value">200</T>
+            </U>
+          </U>
+        </V>
+        <V t="lot_owner">
+          <U n="lot_owner">
+            <T n="consider_business_lot_as_owned">False</T>
+            <T n="consider_rented_lot_as_owned">True</T>
+            <V n="tooltip" t="enabled">
+              <T n="enabled">0xB0628C91<!--String: "This can only be done at a Home Lot."--></T>
+            </V>
+          </U>
+        </V>
+        <V t="sim_info">
+          <U n="sim_info">
+            <V n="ages" t="specified" />
+            <V n="tooltip" t="enabled">
+              <T n="enabled">0x88F2A5A6<!--String: "Children cannot Purchase or Sell Horses."--></T>
+            </V>
+          </U>
+        </V>
+      </L>
+    </U>
+    <U>
+      <V n="cost_string" t="cost_amount">
+        <T n="cost_amount">1000</T>
+      </V>
+      <L n="free_service_traits">
+        <T>196358<!--Trait: trait_Hidden_Fame_Quirk_StarTreatment--></T>
+      </L>
+      <T n="hire_interaction">324115<!--SuperInteraction: phone_HorseTransaction_BuyHorse--></T>
+      <T n="icon" p="InEP14\UI\Icons\Headlines\headline_BuyAHorse.png">2f7d0004:00000000:02c12d8ba9e297ec</T>
+      <T n="name">0x409D2CBD<!--String: "Purchase Horse"--></T>
+      <L n="tests">
+        <V t="zone">
+          <U n="zone">
+            <V n="zone_source" t="use_participant_home_zone" />
+            <U n="zone_tests">
+              <V n="venue_type" t="enabled">
+                <U n="enabled">
+                  <V n="blacklist" t="specify">
+                    <U n="specify">
+                      <L n="blacklist">
+                        <T>208182<!--Venue: venue_rentable_universityHousing--></T>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </U>
+          </U>
+        </V>
+        <V t="travel_group">
+          <U n="travel_group">
+            <V n="test_type" t="in_travel_group">
+              <U n="in_travel_group">
+                <T n="exists">False</T>
+              </U>
+            </V>
+          </U>
+        </V>
+        <V t="trait">
+          <U n="trait">
+            <L n="blacklist_traits">
+              <T>196358<!--Trait: trait_Hidden_Fame_Quirk_StarTreatment--></T>
+            </L>
+            <E n="subject">Actor</E>
+          </U>
+        </V>
+        <V t="situation_running_test">
+          <U n="situation_running_test">
+            <V n="situation_blacklist" t="enabled">
+              <L n="enabled">
+                <T>169806<!--PetCareSituation: petCareSituation_SellAdopt--></T>
+                <T>170954<!--PetCareSituation: petCareSituation_SellAdopt_Sell--></T>
+                <T>166801<!--SituationComplexAdoptionPet: situation_PetAdoption--></T>
+              </L>
+            </V>
+            <V n="tooltip" t="enabled">
+              <T n="enabled">0xFDF9E0E8<!--String: "An adoption event is already in progress!"--></T>
+            </V>
+          </U>
+        </V>
+        <V t="household_size">
+          <U n="household_size">
+            <V n="tooltip" t="enabled">
+              <T n="enabled">0xD089C07F<!--String: "Household is already at maximum size."--></T>
+            </V>
+          </U>
+        </V>
+        <V t="simoleon_value">
+          <U n="simoleon_value">
+            <V n="tooltip" t="enabled">
+              <T n="enabled">0x131C561<!--String: "You have insufficient funds!"--></T>
+            </V>
+            <V n="value_context" t="total_cash" />
+            <U n="value_threshold">
+              <T n="value">1000</T>
+            </U>
+          </U>
+        </V>
+        <V t="lot_owner">
+          <U n="lot_owner">
+            <T n="consider_business_lot_as_owned">False</T>
+            <T n="consider_rented_lot_as_owned">True</T>
+            <V n="tooltip" t="enabled">
+              <T n="enabled">0xB0628C91<!--String: "This can only be done at a Home Lot."--></T>
+            </V>
+          </U>
+        </V>
+        <V t="sim_info">
+          <U n="sim_info">
+            <V n="ages" t="specified" />
+            <V n="tooltip" t="enabled">
+              <T n="enabled">0x88F2A5A6<!--String: "Children cannot Purchase or Sell Horses."--></T>
+            </V>
+          </U>
+        </V>
+      </L>
+    </U>
+    <U>
+      <V n="cost_string" t="no_cost_string">
+        <T n="no_cost_string">0xA0193B41<!--String: "No cost."--></T>
+      </V>
+      <T n="hire_interaction">330090<!--SuperInteraction: phone_HorseTransaction_SellHorse--></T>
+      <T n="icon" p="InEP14\UI\Icons\Headlines\headline_SellingAHorse.png">2f7d0004:00000000:5ea24132f79ebcd0</T>
+      <T n="name">0x620618B<!--String: "Sell Horse"--></T>
+      <L n="tests">
+        <V t="zone">
+          <U n="zone">
+            <V n="zone_source" t="use_participant_home_zone" />
+            <U n="zone_tests">
+              <V n="venue_type" t="enabled">
+                <U n="enabled">
+                  <V n="blacklist" t="specify">
+                    <U n="specify">
+                      <L n="blacklist">
+                        <T>208182<!--Venue: venue_rentable_universityHousing--></T>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </U>
+          </U>
+        </V>
+        <V t="travel_group">
+          <U n="travel_group">
+            <V n="test_type" t="in_travel_group">
+              <U n="in_travel_group">
+                <T n="exists">False</T>
+              </U>
+            </V>
+          </U>
+        </V>
+        <V t="household_size">
+          <U n="household_size">
+            <V n="test_type" t="test_sim_infos">
+              <U n="test_sim_infos">
+                <V n="test" t="sim_info">
+                  <U n="sim_info">
+                    <V n="species" t="specified">
+                      <U n="specified">
+                        <L n="species">
+                          <E>HORSE</E>
+                        </L>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V n="tooltip" t="enabled">
+              <T n="enabled">0xAA2291AD<!--String: "There aren't any Horses in this Household."--></T>
+            </V>
+          </U>
+        </V>
+        <V t="situation_running_test">
+          <U n="situation_running_test">
+            <V n="situation_blacklist" t="enabled">
+              <L n="enabled">
+                <T>169806<!--PetCareSituation: petCareSituation_SellAdopt--></T>
+                <T>170954<!--PetCareSituation: petCareSituation_SellAdopt_Sell--></T>
+                <T>166801<!--SituationComplexAdoptionPet: situation_PetAdoption--></T>
+              </L>
+            </V>
+            <V n="tooltip" t="enabled">
+              <T n="enabled">0xFDF9E0E8<!--String: "An adoption event is already in progress!"--></T>
+            </V>
+          </U>
+        </V>
+        <V t="filter_test">
+          <U n="filter_test">
+            <V n="filter_target" t="disabled" />
+            <T n="in_current_zone">True</T>
+            <T n="sim_filter">337461<!--TunableSimFilter: simPickerFilter_Horses_AllAges_CompatibleRegion_InFamily--></T>
+            <V n="threshold_matched" t="enabled" />
+            <V n="tooltip" t="enabled">
+              <T n="enabled">0x3DCBEC22<!--String: "Either there aren't any Horses in this Household or a Household Horse isn't present on this lot."--></T>
+            </V>
+          </U>
+        </V>
+        <V t="sim_info">
+          <U n="sim_info">
+            <V n="ages" t="specified" />
+            <V n="tooltip" t="enabled">
+              <T n="enabled">0x88F2A5A6<!--String: "Children cannot Purchase or Sell Horses."--></T>
+            </V>
+          </U>
+        </V>
+      </L>
+    </U>
+    <U>
+      <T n="hire_interaction">311069<!--PurchasePickerWithFailureOptionInteraction: purchasePickerInteraction_AnimalObjects_GoatSheep_FromPhone--></T>
+      <T n="icon" p="InEP14\UI\Icons\Headlines\headline_BuyMiniAnimal.png">2f7d0004:00000000:8df7b79b2e091881</T>
+      <T n="name">0xB078E4CB<!--String: "Buy Mini Goats & Mini Sheep"--></T>
+      <L n="tag_list">
+        <E>Func_Service_Outdoor</E>
+      </L>
+    </U>
+    <U>
+      <T n="hire_interaction">320945<!--FilteredObjectPickerInteraction: filteredObjectPicker_AnimalObject_SellGoatSheep--></T>
+      <T n="icon" p="InEP14\UI\Icons\Headlines\headline_SellMiniAnimal.png">2f7d0004:00000000:7bff318bd7549a3d</T>
+      <T n="name">0xB98E69DB<!--String: "Sell Mini Goats & Mini Sheep"--></T>
+      <L n="tests">
+        <V t="object_criteria">
+          <U n="object_criteria">
+            <V n="identity_test" t="tags">
+              <U n="tags">
+                <L n="tag_set">
+                  <E>Func_AnimalObject_Livestock_Goat</E>
+                  <E>Func_AnimalObject_Livestock_Sheep</E>
+                </L>
+              </U>
+            </V>
+          </U>
+        </V>
+      </L>
+    </U>
+  </L>
+  <V n="picker_dialog" t="object_picker" />
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <L n="service_npcs" />
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+            <E>TODDLER</E>
+            <E>BABY</E>
+            <E>INFANT</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+  </L>
+</I>

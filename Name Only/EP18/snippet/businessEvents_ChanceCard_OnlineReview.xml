@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="AdventureMoment" i="snippet" m="snippets" n="businessEvents_ChanceCard_OnlineReview" s="397642">
+  <U n="value">
+    <L n="_finish_actions">
+      <U>
+        <L n="action_results">
+          <U>
+            <L n="loot_actions">
+              <T>398710<!--LootActions: loot_BusinessEvents_Reputation_Loss_Medium--></T>
+              <T>398721<!--LootActions: loot_BusinessEvents_Rank_Gain_Small--></T>
+              <T>399045<!--LootActions: loot_BusinessEvents_ReputationAlignment_SchemerAligned--></T>
+              <T>399044<!--LootActions: loot_BusinessEvents_ReputationAlignment_DreamerMisaligned--></T>
+            </L>
+            <V n="notification" t="enabled">
+              <V n="enabled" t="literal">
+                <U n="literal">
+                  <V n="icon" t="enabled">
+                    <V n="enabled" t="small_business" />
+                  </V>
+                  <V n="primary_icon_response" t="enabled">
+                    <U n="enabled">
+                      <E n="ui_request">SHOW_SMALL_BUSINESS_PANEL</E>
+                    </U>
+                  </V>
+                  <V n="secondary_icon" t="enabled">
+                    <V n="enabled" t="participant" />
+                  </V>
+                  <V n="text" t="single">
+                    <T n="single">0xE4C23FDC<!--String: "The review is gone. {0.SimFirstName}'s Small Business is squeaky clean...sort of!"--></T>
+                  </V>
+                </U>
+              </V>
+            </V>
+          </U>
+        </L>
+        <L n="availability_tests">
+          <L>
+            <V t="simoleon_value">
+              <U n="simoleon_value">
+                <E n="test_event">AllSimoloenEvents</E>
+                <V n="value_context" t="total_cash" />
+                <U n="value_threshold">
+                  <E n="comparison">GREATER_OR_EQUAL</E>
+                  <T n="value">750</T>
+                </U>
+              </U>
+            </V>
+          </L>
+        </L>
+        <V n="cost" t="simoleon_cost">
+          <U n="simoleon_cost">
+            <T n="amount">750</T>
+          </U>
+        </V>
+        <V n="disabled_text" t="enabled">
+          <T n="enabled">0x3CF3831F<!--String: "{0.SimFirstName} does not have enough funds."--></T>
+        </V>
+        <V n="display_subtext" t="single">
+          <T n="single">0x93936C8D<!--String: "Gain Renown and Schemer Alignment"--></T>
+        </V>
+        <V n="display_text" t="single">
+          <T n="single">0x7E310FC7<!--String: "Easy, Delete the Review!"--></T>
+        </V>
+      </U>
+      <U>
+        <L n="action_results">
+          <U>
+            <L n="loot_actions">
+              <T>398682<!--LootActions: loot_BusinessEvents_Reputation_Gain_Medium--></T>
+              <T>399043<!--LootActions: loot_BusinessEvents_ReputationAlignment_DreamerAligned--></T>
+              <T>399046<!--LootActions: loot_BusinessEvents_ReputationAlignment_SchemerMisaligned--></T>
+            </L>
+            <V n="notification" t="enabled">
+              <V n="enabled" t="literal">
+                <U n="literal">
+                  <V n="icon" t="enabled">
+                    <V n="enabled" t="small_business" />
+                  </V>
+                  <V n="primary_icon_response" t="enabled">
+                    <U n="enabled">
+                      <E n="ui_request">SHOW_SMALL_BUSINESS_PANEL</E>
+                    </U>
+                  </V>
+                  <V n="secondary_icon" t="enabled">
+                    <V n="enabled" t="participant" />
+                  </V>
+                  <V n="text" t="single">
+                    <T n="single">0xD6648199<!--String: "{0.SimFirstName}'s honest reply worked! The reviewer loved that the business took the feedback seriously. There's a bright future for your business, one bad review isn't going to mess it up!"--></T>
+                  </V>
+                </U>
+              </V>
+            </V>
+          </U>
+        </L>
+        <V n="display_subtext" t="single">
+          <T n="single">0xE0774E22<!--String: "Gain Dreamer Alignment"--></T>
+        </V>
+        <V n="display_text" t="single">
+          <T n="single">0xB8F4BEB6<!--String: "Respond with Plan"--></T>
+        </V>
+      </U>
+    </L>
+    <V n="_visibility" t="show_dialog">
+      <U n="show_dialog">
+        <V n="audio_sting" t="enabled">
+          <U n="enabled">
+            <T n="audio" p="InEP18\Audio\music\bumpers\bumper_ep18_business_bump.propx">39b2aa4a:00000000:0023fe365819d957</T>
+            <T n="immediate_audio">False</T>
+          </U>
+        </V>
+        <E n="dialog_style">LARGE_ICON</E>
+        <V n="icon" t="enabled">
+          <V n="enabled" t="resource_key">
+            <U n="resource_key">
+              <T n="key" p="InEP18\UI\Icons\ChanceCard\ChanceCard_NegativeOnlineReviews.png">2f7d0004:00000000:6cb826b343048821</T>
+            </U>
+          </V>
+        </V>
+        <V n="text" t="single">
+          <T n="single">0xAB4A65D3<!--String: "{0.SimFirstName} has received a bad online review, targeting {0.SimPronounPossessiveDependent} Small Business. Will {0.SimPronounSubjective} respond amicably, or hire someone to get rid of it?"--></T>
+        </V>
+        <V n="title" t="enabled">
+          <T n="enabled">0x78CE3C61<!--String: "Negative Online Review"--></T>
+        </V>
+      </U>
+    </V>
+  </U>
+</I>

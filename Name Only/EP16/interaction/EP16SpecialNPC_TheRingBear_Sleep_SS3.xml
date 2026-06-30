@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="EP16SpecialNPC_TheRingBear_Sleep_SS3" s="370597">
+  <V n="_saveable" t="enabled" />
+  <L n="_static_commodities">
+    <U>
+      <T n="desire">100</T>
+      <T n="static_commodity">369763<!--StaticCommodity: commodity_RoleAutonomy_EP16SpecialNPC_TheRingBear_HangOut--></T>
+    </U>
+  </L>
+  <T n="allow_autonomous">False</T>
+  <T n="allow_user_directed">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <V n="content" t="looping_content">
+        <U n="looping_content">
+          <U n="animation_ref">
+            <T n="factory">11793<!--AnimationElement: Sit_Nap_Idle--></T>
+          </U>
+        </U>
+      </V>
+      <V n="periodic_stat_change" t="enabled">
+        <U n="enabled">
+          <L n="operations">
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="amount">2.5</T>
+                <T n="stat">16654<!--Commodity: motive_Energy--></T>
+              </U>
+            </V>
+          </L>
+        </U>
+      </V>
+      <T n="start_user_directed_inertial">True</T>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="set_sim_sleeping" />
+  </L>
+  <V n="basic_focus" t="disable_focus" />
+  <L n="basic_liabilities" />
+  <V n="basic_reserve_object" t="enabled" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x25B715AE<!--String: "Sleep"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <U n="posture_preferences">
+    <T n="apply_posture_costs">True</T>
+    <L n="posture_cost_overrides">
+      <U>
+        <T n="key">15535<!--Posture: posture_Sit--></T>
+        <T n="value">5</T>
+      </U>
+    </L>
+  </U>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all">
+        <U n="exclude_all">
+          <L n="exclude_affordances">
+            <T>28880<!--SuperInteraction: generic_SofaNap--></T>
+          </L>
+          <L n="include_lists">
+            <T>139888<!--AffordanceList: affordanceList_Restaurants_WaitInteractions--></T>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals" />
+  <T n="time_overhead">240</T>
+  <T n="use_best_scoring_aop">False</T>
+</I>

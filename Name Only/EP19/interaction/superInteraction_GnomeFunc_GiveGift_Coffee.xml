@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="superInteraction_GnomeFunc_GiveGift_Coffee" s="433431">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="circle">
+            <U n="circle">
+              <T n="radius">2</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="value" t="facing" />
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">433444<!--AnimationElement: GnomeFunc_GiveGift--></T>
+      </U>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="create_object">
+      <U n="create_object">
+        <V n="creation_data" t="recipe">
+          <U n="recipe">
+            <T n="recipe">15669<!--Recipe: recipe_Drink_Brewed_Coffee_Single_Coffee--></T>
+          </U>
+        </V>
+        <T n="destroy_on_placement_failure">True</T>
+        <L n="initial_states">
+          <U>
+            <T n="state">15113<!--CommodityBasedObjectStateValue: Consumable_Untouched--></T>
+          </U>
+        </L>
+        <V n="location" t="position">
+          <U n="position">
+            <T n="allow_off_lot_placement">True</T>
+            <V n="initial_location" t="from_participant">
+              <U n="from_participant">
+                <E n="participant">Object</E>
+              </U>
+            </V>
+            <U n="initial_location_offset">
+              <U n="default_offset">
+                <T n="z">0.2</T>
+              </U>
+            </U>
+          </U>
+        </V>
+        <V n="timing" t="on_xevt">
+          <U n="on_xevt">
+            <T n="xevt_id">600</T>
+          </U>
+        </V>
+        <T n="transient">True</T>
+      </U>
+    </V>
+  </L>
+  <V n="basic_focus" t="tunable_focus">
+    <U n="tunable_focus">
+      <T n="focus_bone_override">transformBone</T>
+      <T n="layer">5</T>
+      <L n="subject">
+        <E>Object</E>
+      </L>
+    </U>
+  </V>
+  <T n="category">433442<!--PieMenuCategory: pieMenuCategory_GnomeFunc_GiveGift--></T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xC15FDC1<!--String: "Give Coffee"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <V n="animation_ref" t="enabled">
+              <U n="enabled">
+                <T n="factory">433446<!--AnimationElement: gnomeFunc_GiveGift_Idle--></T>
+              </U>
+            </V>
+            <L n="continuation">
+              <U>
+                <T n="affordance">433438<!--SuperInteraction: superInteraction_GnomeFunc_GiveGift_React--></T>
+              </U>
+            </L>
+            <L n="loot_list">
+              <T>433445<!--LootActions: loot_GnomeFunc_GiveGift_Good--></T>
+            </L>
+          </U>
+        </U>
+        <U>
+          <U n="outcome">
+            <V n="animation_ref" t="enabled">
+              <U n="enabled">
+                <T n="factory">433446<!--AnimationElement: gnomeFunc_GiveGift_Idle--></T>
+              </U>
+            </V>
+            <L n="continuation">
+              <U>
+                <T n="affordance">433438<!--SuperInteraction: superInteraction_GnomeFunc_GiveGift_React--></T>
+              </U>
+            </L>
+            <L n="loot_list">
+              <T>433447<!--LootActions: loot_GnomeFunc_GiveGift_Bad--></T>
+            </L>
+          </U>
+          <U n="weight">
+            <L n="multipliers">
+              <U>
+                <T n="multiplier">0</T>
+                <L n="tests">
+                  <L>
+                    <V t="object_criteria">
+                      <U n="object_criteria">
+                        <V n="identity_test" t="tags">
+                          <U n="tags">
+                            <L n="tag_set">
+                              <E>Func_HolidayGnome_Group01</E>
+                              <E>Func_HolidayGnome_Group02</E>
+                              <E>Func_HolidayGnome_Group03</E>
+                            </L>
+                          </U>
+                        </V>
+                        <T n="owned">False</T>
+                        <V n="subject_specific_tests" t="single_object" />
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+      </L>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="holiday_tradition">
+      <U n="holiday_tradition">
+        <U n="tradition_filter">
+          <V n="blacklist" t="specify">
+            <U n="specify">
+              <L n="blacklist">
+                <T>182136<!--HolidayTradition: holidayTradition_GiveGiftToGnomes--></T>
+              </L>
+            </U>
+          </V>
+        </U>
+      </U>
+    </V>
+    <V t="state">
+      <U n="state">
+        <E n="operator">NOTEQUAL</E>
+        <T n="value">419125<!--ObjectStateValue: gnomeFuncStates_BringToLife_Evil--></T>
+      </U>
+    </V>
+    <V t="state">
+      <U n="state">
+        <E n="operator">NOTEQUAL</E>
+        <T n="value">419126<!--ObjectStateValue: gnomeFuncStates_BringToLife_Dead--></T>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

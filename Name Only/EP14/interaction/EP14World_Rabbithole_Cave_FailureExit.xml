@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="EP14World_Rabbithole_Cave_FailureExit" s="325771">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="posture">
+            <U n="posture">
+              <L n="posture_manifest_tuning">
+                <U>
+                  <V n="posture_type" t="enabled">
+                    <T n="enabled">15537<!--MobilePosture: posture_Stand--></T>
+                  </V>
+                </U>
+              </L>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Actor</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <T n="allow_user_directed">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <L n="basic_extras" />
+  <L n="basic_liabilities" />
+  <T n="can_acquire_posture_ownership">False</T>
+  <V n="canonical_animation" t="disabled" />
+  <V n="content_score" t="disabled" />
+  <T n="counts_as_inside">True</T>
+  <T n="display_name">0x536B8204<!--String: "Explore Dreadhorse Caverns"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="statistic_value">
+        <U n="statistic_value">
+          <E n="participant">Actor</E>
+          <T n="statistic">325538<!--Statistic: statistic_EP14World_Cave_Progress--></T>
+        </U>
+      </V>
+      <V t="statistic_value">
+        <U n="statistic_value">
+          <E n="participant">Actor</E>
+          <T n="statistic">325362<!--Statistic: statistic_EP14World_Cave_Level--></T>
+        </U>
+      </V>
+    </L>
+  </U>
+  <V n="display_tooltip" t="enabled">
+    <T n="enabled">0x5BEF436F<!--String: "Cave Progress: {2.Number} / 100\nCave Level: {3.Number}"--></T>
+  </V>
+  <T n="fade_sim_out">False</T>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="continuation">
+          <U>
+            <T n="affordance">166961<!--SuperInteraction: si_RabbitHole_MoveAway--></T>
+            <E n="target">Actor</E>
+          </U>
+        </L>
+      </U>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals" />
+  <T n="time_overhead">30</T>
+  <L n="transition_global_asm_params">
+    <U>
+      <T n="param_name">isFailure</T>
+      <T n="param_value">true</T>
+    </U>
+  </L>
+</I>

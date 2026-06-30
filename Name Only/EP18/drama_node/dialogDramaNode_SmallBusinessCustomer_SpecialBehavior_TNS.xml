@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="DialogDramaNode" i="drama_node" m="drama_scheduler.dialog_drama_node" n="dialogDramaNode_SmallBusinessCustomer_SpecialBehavior_TNS" s="438981">
+  <V n="cooldown_data" t="node_cooldown">
+    <U n="node_cooldown">
+      <E n="cooldown_option">ON_RUN</E>
+      <V n="duration" t="permanent" />
+    </U>
+  </V>
+  <V n="dialog_and_loot" t="notification">
+    <U n="notification">
+      <U n="notification">
+        <V n="icon" t="enabled">
+          <V n="enabled" t="small_business">
+            <U n="small_business">
+              <L n="participant_type">
+                <E>CurrentlyOpenSmallBusinessOwner</E>
+              </L>
+            </U>
+          </V>
+        </V>
+        <V n="primary_icon_response" t="enabled">
+          <U n="enabled">
+            <E n="ui_request">SHOW_SMALL_BUSINESS_PANEL</E>
+          </U>
+        </V>
+        <V n="secondary_icon" t="enabled">
+          <V n="enabled" t="participant">
+            <U n="participant">
+              <L n="participant_type">
+                <E>CurrentlyOpenSmallBusinessOwner</E>
+              </L>
+            </U>
+          </V>
+        </V>
+        <V n="text" t="single">
+          <T n="single">0x9D11CB94<!--String: "It looks like a disruptive customer has made their way into {0.SimFirstName}'s business. While {0.SimPronounSubjective} can always ignore the disruption and wait for the customer to leave, dealing directly with the customer is another valid option."--></T>
+        </V>
+        <V n="text_tokens" t="enabled">
+          <U n="enabled">
+            <L n="tokens">
+              <V t="participant_type">
+                <U n="participant_type">
+                  <V n="objects" t="from_participant">
+                    <U n="from_participant">
+                      <E n="participant">CurrentlyOpenSmallBusinessOwner</E>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </U>
+        </V>
+        <V n="title" t="enabled">
+          <T n="enabled">0xA8980212<!--String: "A Disruptive Customer!"--></T>
+        </V>
+      </U>
+    </U>
+  </V>
+  <T n="is_simless">True</T>
+  <U n="min_and_max_times">
+    <T n="lower_bound">0</T>
+    <T n="upper_bound">0.25</T>
+  </U>
+  <E n="receiver_sim">CurrentlyOpenSmallBusinessOwner</E>
+  <L n="run_tests">
+    <L>
+      <V t="is_small_business_open" />
+    </L>
+  </L>
+  <V n="time_option" t="schedule">
+    <U n="schedule">
+      <L n="valid_times">
+        <U>
+          <U n="days_available">
+            <T n="0 SUNDAY">True</T>
+            <T n="1 MONDAY">True</T>
+            <T n="2 TUESDAY">True</T>
+            <T n="3 WEDNESDAY">True</T>
+            <T n="4 THURSDAY">True</T>
+            <T n="5 FRIDAY">True</T>
+            <T n="6 SATURDAY">True</T>
+          </U>
+          <T n="duration">24</T>
+        </U>
+      </L>
+    </U>
+  </V>
+</I>

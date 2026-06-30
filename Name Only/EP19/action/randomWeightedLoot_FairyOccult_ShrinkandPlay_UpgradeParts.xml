@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="RandomWeightedLoot" i="action" m="interactions.utils.loot" n="randomWeightedLoot_FairyOccult_ShrinkandPlay_UpgradeParts" s="455670">
+  <L n="random_loot_actions">
+    <U>
+      <V n="action" t="do_nothing" />
+      <U n="weight">
+        <T n="base_value">4</T>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="create_object">
+        <U n="create_object">
+          <V n="creation_data" t="random_by_tags">
+            <U n="random_by_tags">
+              <L n="filter_tags">
+                <E>Func_Object_Upgrade_Part</E>
+              </L>
+            </U>
+          </V>
+          <V n="location" t="inventory" />
+          <V n="notification_inventory" t="enabled">
+            <U n="enabled">
+              <U n="household_inventory">
+                <V n="icon" t="enabled">
+                  <V n="enabled" t="participant">
+                    <U n="participant">
+                      <L n="participant_type">
+                        <E>Object</E>
+                      </L>
+                    </U>
+                  </V>
+                </V>
+                <V n="secondary_icon" t="enabled">
+                  <V n="enabled" t="participant" />
+                </V>
+                <V n="text" t="single">
+                  <T n="single">0xC0A413E6<!--String: "While going on a Tiny Adventure, {0.SimFirstName} found:\n{2.String}\n\nThis item can be found in {0.SimPronounPossessiveDependent} inventory."--></T>
+                </V>
+              </U>
+              <U n="participant_inventory">
+                <V n="icon" t="enabled">
+                  <V n="enabled" t="participant">
+                    <U n="participant">
+                      <L n="participant_type">
+                        <E>Object</E>
+                      </L>
+                    </U>
+                  </V>
+                </V>
+                <V n="secondary_icon" t="enabled">
+                  <V n="enabled" t="participant" />
+                </V>
+                <V n="text" t="single">
+                  <T n="single">0xC0A413E6<!--String: "While going on a Tiny Adventure, {0.SimFirstName} found:\n{2.String}\n\nThis item can be found in {0.SimPronounPossessiveDependent} inventory."--></T>
+                </V>
+              </U>
+            </U>
+          </V>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">6</T>
+      </U>
+    </U>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="object_definition_criteria">
+        <U n="object_definition_criteria">
+          <V n="identity_test" t="tags">
+            <U n="tags">
+              <L n="tag_set">
+                <E>Func_TV</E>
+                <E>Func_Stereo</E>
+              </L>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

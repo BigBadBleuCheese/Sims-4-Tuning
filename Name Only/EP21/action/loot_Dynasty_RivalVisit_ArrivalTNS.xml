@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Dynasty_RivalVisit_ArrivalTNS" s="480228">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant" />
+            </V>
+            <V n="text" t="variation">
+              <U n="variation">
+                <L n="variations">
+                  <T>0x2124EF5F<!--String: "Thought I'd pop by on behalf of the {0.String} Dynasty and see what our "esteemed" rivals are up to, hah!"--></T>
+                  <T>0xE1171162<!--String: "Hey from the {0.String} Dynasty. Sweet place...NOT."--></T>
+                </L>
+              </U>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="dynasty" />
+                </L>
+              </U>
+            </V>
+            <E n="visual_type">SPEECH</E>
+          </U>
+        </V>
+        <E n="subject">LotOwnerSingleAndInstanced</E>
+        <L n="tests">
+          <L>
+            <V t="situation_job_test">
+              <U n="situation_job_test">
+                <T n="negate">True</T>
+                <L n="situation_jobs">
+                  <T>480226<!--SituationJob: job_Dynasty_RivalPartyCrasher--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="variation">
+              <U n="variation">
+                <L n="variations">
+                  <T>0xD9AA1FBA<!--String: "The party don't start til the {0.String} Dynasty walks in."--></T>
+                  <T>0x139CE0BD<!--String: "Dang, {0.String} dynasty parties are so much better than this."--></T>
+                </L>
+              </U>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="dynasty" />
+                </L>
+              </U>
+            </V>
+            <E n="visual_type">SPEECH</E>
+          </U>
+        </V>
+        <E n="subject">LotOwnerSingleAndInstanced</E>
+        <L n="tests">
+          <L>
+            <V t="situation_job_test">
+              <U n="situation_job_test">
+                <L n="situation_jobs">
+                  <T>480226<!--SituationJob: job_Dynasty_RivalPartyCrasher--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

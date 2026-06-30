@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="GameObject" i="object" m="objects.game_object" n="object_recreationTable_puzzles_center_size02" s="316296">
+  <U n="_components">
+    <V n="canvas" t="enabled">
+      <V n="enabled" t="canvas_component">
+        <U n="canvas_component">
+          <L n="canvas_types">
+            <E>Puzzles</E>
+          </L>
+        </U>
+      </V>
+    </V>
+    <V n="focus" t="enabled">
+      <U n="enabled">
+        <V n="_focus_score" t="globally">
+          <U n="globally">
+            <E n="base">LOW</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V n="linked_object_component" t="enabled">
+      <U n="enabled">
+        <E n="_child_tag">Func_Puzzles_Pieces</E>
+        <T n="_count">5</T>
+        <T n="_distance">1</T>
+      </U>
+    </V>
+    <V n="object_relationships" t="enabled">
+      <U n="enabled">
+        <T n="relationship_stat">317387<!--Statistic: statistic_Object_recreationTable_puzzles_thiefRel--></T>
+      </U>
+    </V>
+    <V n="retail_component" t="enabled">
+      <V n="enabled" t="reference">
+        <T n="reference">115301<!--RetailComponent: retailComponent_Default_LowAppeal--></T>
+      </V>
+    </V>
+    <V n="state" t="enabled">
+      <U n="enabled">
+        <L n="state_triggers">
+          <U>
+            <L n="at_states">
+              <T>315680<!--CommodityBasedObjectStateValue: recreationTable_puzzleProgress_values_40_percent_size2--></T>
+              <T>315683<!--CommodityBasedObjectStateValue: recreationTable_puzzleProgress_values_55_percent_size2--></T>
+              <T>315686<!--CommodityBasedObjectStateValue: recreationTable_puzzleProgress_values_70_percent_size2--></T>
+              <T>319563<!--CommodityBasedObjectStateValue: recreationTable_puzzleProgress_values_85_percent_size2--></T>
+              <T>315689<!--CommodityBasedObjectStateValue: recreationTable_puzzleProgress_values_95_percent_size2--></T>
+              <T>315692<!--CommodityBasedObjectStateValue: recreationTable_puzzleProgress_values_99_percent_size2--></T>
+              <T>315695<!--CommodityBasedObjectStateValue: recreationTable_puzzleProgress_values_complete_size2--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>35296<!--ObjectStateValue: GenericOnOff_On--></T>
+              </L>
+            </V>
+            <E n="trigger_operation">OR</E>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>77532<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Replace--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>39737<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Not_Burning--></T>
+              </L>
+            </V>
+          </U>
+        </L>
+        <L n="states">
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">39612<!--CommodityBasedObjectStateValue: FireState_Burn_Incinerate_Not_Burning--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">318115<!--ObjectStateValue: recreationTable_puzzles_smashed_false--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">200358<!--ObjectStateValue: simstagramUploadStatus_NotUploaded--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">315529<!--CommodityBasedObjectStateValue: recreationTable_puzzleProgress_values_0_percent_shuffle_size2--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">305435<!--ObjectStateValue: recreationTable_puzzles_size02--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">35297<!--ObjectStateValue: GenericOnOff_Off--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">318108<!--ObjectStateValue: recreationTable_puzzles_pieceStolen_false--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">35956<!--CommodityBasedObjectStateValue: Materialistic_Admired--></T>
+              </U>
+              <U>
+                <T n="key">35957<!--CommodityBasedObjectStateValue: Materialistic_YetToAdmire--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">35957<!--CommodityBasedObjectStateValue: Materialistic_YetToAdmire--></T>
+            </V>
+          </U>
+        </L>
+        <V n="timed_state_triggers" t="enabled">
+          <L n="enabled">
+            <U>
+              <T n="key">35296<!--ObjectStateValue: GenericOnOff_On--></T>
+              <U n="value">
+                <L n="ops">
+                  <U>
+                    <L n="loot_list">
+                      <T>314301<!--LootActions: loot_recreationTable_puzzles_pileBroadcasterCreate--></T>
+                    </L>
+                    <L n="states_to_trigger">
+                      <T>35297<!--ObjectStateValue: GenericOnOff_Off--></T>
+                    </L>
+                    <T n="trigger_time">5</T>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+        </V>
+      </U>
+    </V>
+    <V n="tooltip_component" t="enabled" />
+  </U>
+  <L n="_super_affordances">
+    <T>13328<!--ImmediateSuperInteraction: debug_Reset--></T>
+    <T>13326<!--ImmediateSuperInteraction: debug_ObjectDestroy--></T>
+    <T>103888<!--ImmediateSuperInteraction: cheat_set_as_head--></T>
+    <T>196759<!--SuperInteraction: famePerks_GoodReputation_GivingBack_DonateObject--></T>
+    <T>401385<!--SuperInteraction: ghost_Possess_MischieviousGhost--></T>
+    <T>156936<!--SuperInteraction: generic_Object_Toddler_Check_Out_HighChair--></T>
+    <T>276518<!--SuperInteraction: infant_WhatsThat--></T>
+    <T>328068<!--SuperInteraction: infant_WhatsThat_Immobile_InObject--></T>
+    <T>317699<!--SuperInteraction: recreationTable_puzzles_replacePiece--></T>
+    <T>317847<!--SuperInteraction: recreationTable_puzzles_smashPuzzle--></T>
+    <T>318298<!--SuperInteraction: recreationTable_puzzles_shareToSimstagram--></T>
+    <T>318468<!--SuperInteraction: recreationTable_puzzles_replacePiece_standing--></T>
+    <T>308765<!--SuperInteraction: gameTable_changeGame_recreationTable_puzzles_reset_onPuzzle--></T>
+    <T>307999<!--CraftingPhaseStagingSuperInteraction: recreationTable_puzzles_craftingPhase_progress--></T>
+    <T>305428<!--SuperInteraction: recreationTable_puzzles_craftingProgress_joinNoCraft--></T>
+    <T>309069<!--SuperInteraction: recreationTable_puzzles_framePuzzle--></T>
+    <T>317386<!--SuperInteraction: recreationTable_puzzles_steal_piece--></T>
+    <T>318467<!--SuperInteraction: recreationTable_puzzles_steal_piece_standing--></T>
+    <T>106859<!--SuperInteraction: simRay_Transform_Object--></T>
+    <T>393854<!--SuperInteraction: ghostPowers_Abilities_Scary_SinisterPossess_Autonomous--></T>
+    <T>144099<!--SuperInteraction: generic_Object_Toddler_Check_Out--></T>
+    <T>74457<!--ImmediateSuperInteraction: fire_ReplaceBurntObject--></T>
+    <T>102258<!--SuperInteraction: Ghost_Possess--></T>
+    <T>168502<!--SuperInteraction: Ghost_Pet_Possess--></T>
+    <T>324988<!--SuperInteraction: Ghost_Horse_Possess--></T>
+  </L>
+  <U n="recycling_data">
+    <L n="recycling_values">
+      <U>
+        <E n="Bucks Type">RecycleBitsBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+      <U>
+        <E n="Bucks Type">RecyclePiecesBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+    </L>
+  </U>
+</I>

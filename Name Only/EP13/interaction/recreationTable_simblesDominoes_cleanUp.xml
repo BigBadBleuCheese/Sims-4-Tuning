@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="recreationTable_simblesDominoes_cleanUp" s="313410">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="circle">
+            <U n="circle">
+              <T n="radius">2</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="value" t="facing" />
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <L n="_static_commodities">
+    <U>
+      <T n="static_commodity">317527<!--StaticCommodity: staticCommodity_RecreationTable_CleanUp--></T>
+    </U>
+  </L>
+  <T n="allow_autonomous">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">23926<!--AnimationElement: Generic_PickUp--></T>
+      </U>
+    </U>
+  </V>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x84B7AF6B<!--String: "Clean Up "--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="basic_extras">
+          <V t="destroy_object">
+            <U n="destroy_object">
+              <V n="objects_to_destroy" t="from_participant">
+                <U n="from_participant">
+                  <E n="participant">ObjectChildren</E>
+                </U>
+              </V>
+              <V n="tag_restriction" t="add_restriction">
+                <L n="add_restriction">
+                  <E>Func_AshPile</E>
+                  <E>Func_Game</E>
+                </L>
+              </V>
+              <V n="timing" t="at_beginning" />
+            </U>
+          </V>
+        </L>
+        <L n="loot_list">
+          <T>309426<!--LootActions: loot_recreationTable_simblesDominoes_clearTable--></T>
+        </L>
+      </U>
+    </U>
+  </V>
+  <U n="posture_preferences">
+    <T n="prefer_clicked_parts">False</T>
+  </U>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="state">
+      <U n="state">
+        <T n="value">309197<!--ObjectStateValue: gameTable_recreationTable_simblesDominoes--></T>
+      </U>
+    </V>
+    <V t="state_white_black">
+      <U n="state_white_black">
+        <U n="states">
+          <V n="blacklist" t="specify">
+            <U n="specify">
+              <L n="blacklist">
+                <T>312819<!--ObjectStateValue: recreationTable_simblesDominoes_game_almostOver--></T>
+                <T>313411<!--ObjectStateValue: recreationTable_simblesDominoes_game_putAway--></T>
+                <T>334480<!--ObjectStateValue: recreationTable_simblesDominoes_game_shuffle--></T>
+              </L>
+            </U>
+          </V>
+        </U>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="game_component">
+        <U n="game_component">
+          <V n="number_of_players" t="enabled" />
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="game_component">
+        <U n="game_component">
+          <V n="is_sim_turn" t="enabled" />
+          <V n="number_of_players" t="enabled">
+            <U n="enabled">
+              <T n="lower_bound">1</T>
+              <T n="upper_bound">1</T>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

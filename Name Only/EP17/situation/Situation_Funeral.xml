@@ -1,0 +1,954 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="CustomStateFuneralSituation" i="situation" m="grieving_rituals.situations.custom_states_funeral_situation" n="Situation_Funeral" s="381372">
+  <T n="_allow_external_autonomy">False</T>
+  <T n="_always_run_situation_ended_events">True</T>
+  <T n="_cost">0</T>
+  <T n="_display_name">0x861D4A3<!--String: "Funeral"--></T>
+  <T n="_icon" p="InGame\UI\Icons\Events\Event_Screenshots\Funeral_Event.png">2f7d0004:00000000:dfb5823c061df9d3</T>
+  <T n="_implies_greeted_status">True</T>
+  <T n="_is_unique">False</T>
+  <U n="_level_data">
+    <U n="bronze">
+      <T n="level_description">0x9224E9B0<!--String: "Bronze"--></T>
+      <T n="score_delta">100</T>
+    </U>
+    <U n="gold">
+      <T n="level_description">0x82AD9EEA<!--String: "Gold"--></T>
+    </U>
+    <U n="silver">
+      <T n="level_description">0x20CAEAD3<!--String: "Silver"--></T>
+    </U>
+  </U>
+  <T n="_maintain_sims_consistency">False</T>
+  <L n="_situation_states">
+    <U>
+      <T n="Situation State Key">Celebration</T>
+      <V n="Situation State" t="literal">
+        <U n="literal">
+          <L n="job_and_role_changes">
+            <U>
+              <T n="Situation Job">381375<!--SituationJob: job_Funeral_Host--></T>
+              <T n="Role State">392376<!--RoleState: role_Funeral_Celebration_Host--></T>
+            </U>
+            <U>
+              <T n="Situation Job">381376<!--SituationJob: job_Funeral_Guest--></T>
+              <T n="Role State">392374<!--RoleState: role_Funeral_Celebration_Guest--></T>
+            </U>
+            <U>
+              <T n="Situation Job">381377<!--SituationJob: job_Funeral_HiredMourner--></T>
+              <T n="Role State">392375<!--RoleState: role_Funeral_Celebration_HiredMourner--></T>
+            </U>
+            <U>
+              <T n="Situation Job">381378<!--SituationJob: job_Funeral_Entertainer--></T>
+              <T n="Role State">392373<!--RoleState: role_Funeral_Celebration_Entertainer--></T>
+            </U>
+            <U>
+              <T n="Situation Job">381379<!--SituationJob: job_Funeral_Uninvited_GrimReaper--></T>
+              <T n="Role State">392378<!--RoleState: role_Funeral_Celebration_Uninvited_GrimReaper--></T>
+            </U>
+            <U>
+              <T n="Situation Job">381380<!--SituationJob: job_Funeral_Uninvited_Stranger--></T>
+              <T n="Role State">392380<!--RoleState: role_Funeral_Celebration_Uninvited_Stranger--></T>
+            </U>
+            <U>
+              <T n="Situation Job">381381<!--SituationJob: job_Funeral_Uninvited_Macabre--></T>
+              <T n="Role State">392379<!--RoleState: role_Funeral_Celebration_Uninvited_Macabre--></T>
+            </U>
+            <U>
+              <T n="Situation Job">381382<!--SituationJob: job_Funeral_Uninvited_DepartedSimGhost--></T>
+              <T n="Role State">392377<!--RoleState: role_Funeral_Celebration_Uninvited_DepartedSimGhost--></T>
+            </U>
+          </L>
+          <L n="triggers">
+            <U>
+              <V n="effect" t="change_state">
+                <U n="change_state">
+                  <U n="possible_states">
+                    <L n="possible_state_keys">
+                      <U>
+                        <T n="situation_key">Mingle</T>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+              </V>
+              <L n="triggers">
+                <V t="duration">
+                  <U n="duration">
+                    <U n="duration">
+                      <T n="hours">1</T>
+                      <T n="minutes">20</T>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </U>
+            <U>
+              <V n="effect" t="change_state">
+                <U n="change_state">
+                  <U n="possible_states">
+                    <L n="possible_state_keys">
+                      <U>
+                        <T n="situation_key">Mourn</T>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+              </V>
+              <L n="triggers">
+                <V t="test_event">
+                  <U n="test_event">
+                    <V n="test" t="ran_interaction_test">
+                      <U n="ran_interaction_test">
+                        <L n="affordances">
+                          <T>391350<!--SuperInteraction: urnstone_Crypt_Mourn_Inventory--></T>
+                          <T>14499<!--SuperInteraction: urnstone_MournEnemy--></T>
+                          <T>14500<!--SuperInteraction: urnstone_MournFriend--></T>
+                          <T>103192<!--SuperInteraction: urnstone_MournLovedOne--></T>
+                          <T>14501<!--SuperInteraction: urnstone_MournNeutral--></T>
+                          <T>166842<!--SuperInteraction: urnstone_MournFriend_pets--></T>
+                          <T>383283<!--SuperInteraction: funerals_LightCandle--></T>
+                          <T>383289<!--SuperInteraction: funerals_PourOneOut--></T>
+                          <T>383286<!--SuperInteraction: funerals_Reminisce--></T>
+                          <T>390168<!--SuperInteraction: funerals_PourOneOut_Self--></T>
+                        </L>
+                        <E n="test_event">InteractionComplete</E>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </U>
+            <U>
+              <V n="effect" t="change_state">
+                <U n="change_state">
+                  <U n="possible_states">
+                    <L n="possible_state_keys">
+                      <U>
+                        <T n="situation_key">Speeches</T>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+              </V>
+              <L n="triggers">
+                <V t="test_event">
+                  <U n="test_event">
+                    <V n="test" t="ran_interaction_test">
+                      <U n="ran_interaction_test">
+                        <L n="affordances">
+                          <T>390175<!--SuperInteraction: funerals_Eulogize_Lightheartedly_Self--></T>
+                          <T>390178<!--SuperInteraction: funerals_Eulogize_Mournfully_Self--></T>
+                          <T>383295<!--SuperInteraction: funerals_Eulogize_Lightheartedly_Gravesite--></T>
+                          <T>383291<!--SuperInteraction: funerals_Eulogize_Lightheartedly_Podium--></T>
+                          <T>383293<!--SuperInteraction: funerals_Eulogize_Mournfully_Gravesite--></T>
+                          <T>383290<!--SuperInteraction: funerals_Eulogize_Mournfully_Podium--></T>
+                          <T>390164<!--SuperInteraction: funerals_MomentOfSilence--></T>
+                          <T>390167<!--SuperInteraction: funerals_MomentOfSilence_Self--></T>
+                        </L>
+                        <E n="test_event">InteractionComplete</E>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </U>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <T n="Situation State Key">Mingle</T>
+      <V n="Situation State" t="literal">
+        <U n="literal">
+          <L n="job_and_role_changes">
+            <U>
+              <T n="Situation Job">381375<!--SituationJob: job_Funeral_Host--></T>
+              <T n="Role State">381385<!--RoleState: role_Funeral_Host--></T>
+            </U>
+            <U>
+              <T n="Situation Job">381376<!--SituationJob: job_Funeral_Guest--></T>
+              <T n="Role State">381386<!--RoleState: role_Funeral_Guest--></T>
+            </U>
+            <U>
+              <T n="Situation Job">381377<!--SituationJob: job_Funeral_HiredMourner--></T>
+              <T n="Role State">381387<!--RoleState: role_Funeral_HiredMourner--></T>
+            </U>
+            <U>
+              <T n="Situation Job">381378<!--SituationJob: job_Funeral_Entertainer--></T>
+              <T n="Role State">381388<!--RoleState: role_Funeral_Entertainer--></T>
+            </U>
+            <U>
+              <T n="Situation Job">381379<!--SituationJob: job_Funeral_Uninvited_GrimReaper--></T>
+              <T n="Role State">381389<!--RoleState: role_Funeral_Uninvited_GrimReaper--></T>
+            </U>
+            <U>
+              <T n="Situation Job">381380<!--SituationJob: job_Funeral_Uninvited_Stranger--></T>
+              <T n="Role State">381390<!--RoleState: role_Funeral_Uninvited_Stranger--></T>
+            </U>
+            <U>
+              <T n="Situation Job">381381<!--SituationJob: job_Funeral_Uninvited_Macabre--></T>
+              <T n="Role State">381391<!--RoleState: role_Funeral_Uninvited_Macabre--></T>
+            </U>
+            <U>
+              <T n="Situation Job">381382<!--SituationJob: job_Funeral_Uninvited_DepartedSimGhost--></T>
+              <T n="Role State">381392<!--RoleState: role_Funeral_Uninvited_DepartedSimGhost--></T>
+            </U>
+          </L>
+          <L n="triggers">
+            <U>
+              <V n="effect" t="change_state">
+                <U n="change_state">
+                  <U n="possible_states">
+                    <L n="possible_state_keys">
+                      <U>
+                        <T n="situation_key">Mourn</T>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+              </V>
+              <L n="triggers">
+                <V t="test_event">
+                  <U n="test_event">
+                    <V n="test" t="ran_interaction_test">
+                      <U n="ran_interaction_test">
+                        <L n="affordances">
+                          <T>391350<!--SuperInteraction: urnstone_Crypt_Mourn_Inventory--></T>
+                          <T>14499<!--SuperInteraction: urnstone_MournEnemy--></T>
+                          <T>14500<!--SuperInteraction: urnstone_MournFriend--></T>
+                          <T>103192<!--SuperInteraction: urnstone_MournLovedOne--></T>
+                          <T>14501<!--SuperInteraction: urnstone_MournNeutral--></T>
+                          <T>166842<!--SuperInteraction: urnstone_MournFriend_pets--></T>
+                          <T>383283<!--SuperInteraction: funerals_LightCandle--></T>
+                          <T>383289<!--SuperInteraction: funerals_PourOneOut--></T>
+                          <T>383286<!--SuperInteraction: funerals_Reminisce--></T>
+                          <T>390168<!--SuperInteraction: funerals_PourOneOut_Self--></T>
+                        </L>
+                        <E n="test_event">InteractionComplete</E>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </U>
+            <U>
+              <V n="effect" t="change_state">
+                <U n="change_state">
+                  <U n="possible_states">
+                    <L n="possible_state_keys">
+                      <U>
+                        <T n="situation_key">Speeches</T>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+              </V>
+              <L n="triggers">
+                <V t="test_event">
+                  <U n="test_event">
+                    <V n="test" t="ran_interaction_test">
+                      <U n="ran_interaction_test">
+                        <L n="affordances">
+                          <T>390175<!--SuperInteraction: funerals_Eulogize_Lightheartedly_Self--></T>
+                          <T>390178<!--SuperInteraction: funerals_Eulogize_Mournfully_Self--></T>
+                          <T>383295<!--SuperInteraction: funerals_Eulogize_Lightheartedly_Gravesite--></T>
+                          <T>383291<!--SuperInteraction: funerals_Eulogize_Lightheartedly_Podium--></T>
+                          <T>383293<!--SuperInteraction: funerals_Eulogize_Mournfully_Gravesite--></T>
+                          <T>383290<!--SuperInteraction: funerals_Eulogize_Mournfully_Podium--></T>
+                          <T>390164<!--SuperInteraction: funerals_MomentOfSilence--></T>
+                          <T>390167<!--SuperInteraction: funerals_MomentOfSilence_Self--></T>
+                        </L>
+                        <E n="test_event">InteractionComplete</E>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </U>
+            <U>
+              <V n="effect" t="change_state">
+                <U n="change_state">
+                  <U n="possible_states">
+                    <L n="possible_state_keys">
+                      <U>
+                        <T n="situation_key">Celebration</T>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+              </V>
+              <L n="triggers">
+                <V t="test_event">
+                  <U n="test_event">
+                    <V n="test" t="ran_interaction_test">
+                      <U n="ran_interaction_test">
+                        <L n="affordances">
+                          <T>388262<!--SuperInteraction: memorialCannon_Launch--></T>
+                          <T>383284<!--SuperInteraction: funerals_ToastSim--></T>
+                          <T>383287<!--SuperInteraction: funerals_SpreadAshes--></T>
+                        </L>
+                        <E n="test_event">InteractionComplete</E>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </U>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <T n="Situation State Key">Mourn</T>
+      <V n="Situation State" t="literal">
+        <U n="literal">
+          <L n="job_and_role_changes">
+            <U>
+              <T n="Situation Job">381375<!--SituationJob: job_Funeral_Host--></T>
+              <T n="Role State">392354<!--RoleState: role_Funeral_Mourn_Host--></T>
+            </U>
+            <U>
+              <T n="Situation Job">381376<!--SituationJob: job_Funeral_Guest--></T>
+              <T n="Role State">392352<!--RoleState: role_Funeral_Mourn_Guest--></T>
+            </U>
+            <U>
+              <T n="Situation Job">381377<!--SituationJob: job_Funeral_HiredMourner--></T>
+              <T n="Role State">392353<!--RoleState: role_Funeral_Mourn_HiredMourner--></T>
+            </U>
+            <U>
+              <T n="Situation Job">381378<!--SituationJob: job_Funeral_Entertainer--></T>
+              <T n="Role State">392351<!--RoleState: role_Funeral_Mourn_Entertainer--></T>
+            </U>
+            <U>
+              <T n="Situation Job">381379<!--SituationJob: job_Funeral_Uninvited_GrimReaper--></T>
+              <T n="Role State">392356<!--RoleState: role_Funeral_Mourn_Uninvited_GrimReaper--></T>
+            </U>
+            <U>
+              <T n="Situation Job">381380<!--SituationJob: job_Funeral_Uninvited_Stranger--></T>
+              <T n="Role State">392358<!--RoleState: role_Funeral_Mourn_Uninvited_Stranger--></T>
+            </U>
+            <U>
+              <T n="Situation Job">381381<!--SituationJob: job_Funeral_Uninvited_Macabre--></T>
+              <T n="Role State">392357<!--RoleState: role_Funeral_Mourn_Uninvited_Macabre--></T>
+            </U>
+            <U>
+              <T n="Situation Job">381382<!--SituationJob: job_Funeral_Uninvited_DepartedSimGhost--></T>
+              <T n="Role State">392355<!--RoleState: role_Funeral_Mourn_Uninvited_DepartedSimGhost--></T>
+            </U>
+          </L>
+          <L n="triggers">
+            <U>
+              <V n="effect" t="change_state">
+                <U n="change_state">
+                  <U n="possible_states">
+                    <L n="possible_state_keys">
+                      <U>
+                        <T n="situation_key">Mingle</T>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+              </V>
+              <L n="triggers">
+                <V t="duration">
+                  <U n="duration">
+                    <U n="duration">
+                      <T n="hours">1</T>
+                      <T n="minutes">20</T>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </U>
+            <U>
+              <V n="effect" t="change_state">
+                <U n="change_state">
+                  <U n="possible_states">
+                    <L n="possible_state_keys">
+                      <U>
+                        <T n="situation_key">Speeches</T>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+              </V>
+              <L n="triggers">
+                <V t="test_event">
+                  <U n="test_event">
+                    <V n="test" t="ran_interaction_test">
+                      <U n="ran_interaction_test">
+                        <L n="affordances">
+                          <T>390175<!--SuperInteraction: funerals_Eulogize_Lightheartedly_Self--></T>
+                          <T>390178<!--SuperInteraction: funerals_Eulogize_Mournfully_Self--></T>
+                          <T>383295<!--SuperInteraction: funerals_Eulogize_Lightheartedly_Gravesite--></T>
+                          <T>383291<!--SuperInteraction: funerals_Eulogize_Lightheartedly_Podium--></T>
+                          <T>383293<!--SuperInteraction: funerals_Eulogize_Mournfully_Gravesite--></T>
+                          <T>383290<!--SuperInteraction: funerals_Eulogize_Mournfully_Podium--></T>
+                          <T>390164<!--SuperInteraction: funerals_MomentOfSilence--></T>
+                          <T>390167<!--SuperInteraction: funerals_MomentOfSilence_Self--></T>
+                        </L>
+                        <E n="test_event">InteractionComplete</E>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </U>
+            <U>
+              <V n="effect" t="change_state">
+                <U n="change_state">
+                  <U n="possible_states">
+                    <L n="possible_state_keys">
+                      <U>
+                        <T n="situation_key">Celebration</T>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+              </V>
+              <L n="triggers">
+                <V t="test_event">
+                  <U n="test_event">
+                    <V n="test" t="ran_interaction_test">
+                      <U n="ran_interaction_test">
+                        <L n="affordances">
+                          <T>388262<!--SuperInteraction: memorialCannon_Launch--></T>
+                          <T>383284<!--SuperInteraction: funerals_ToastSim--></T>
+                          <T>383287<!--SuperInteraction: funerals_SpreadAshes--></T>
+                        </L>
+                        <E n="test_event">InteractionComplete</E>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </U>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <T n="Situation State Key">Speeches</T>
+      <V n="Situation State" t="literal">
+        <U n="literal">
+          <L n="job_and_role_changes">
+            <U>
+              <T n="Situation Job">381375<!--SituationJob: job_Funeral_Host--></T>
+              <T n="Role State">392366<!--RoleState: role_Funeral_Speeches_Host--></T>
+            </U>
+            <U>
+              <T n="Situation Job">381376<!--SituationJob: job_Funeral_Guest--></T>
+              <T n="Role State">392364<!--RoleState: role_Funeral_Speeches_Guest--></T>
+            </U>
+            <U>
+              <T n="Situation Job">381377<!--SituationJob: job_Funeral_HiredMourner--></T>
+              <T n="Role State">392365<!--RoleState: role_Funeral_Speeches_HiredMourner--></T>
+            </U>
+            <U>
+              <T n="Situation Job">381378<!--SituationJob: job_Funeral_Entertainer--></T>
+              <T n="Role State">392363<!--RoleState: role_Funeral_Speeches_Entertainer--></T>
+            </U>
+            <U>
+              <T n="Situation Job">381379<!--SituationJob: job_Funeral_Uninvited_GrimReaper--></T>
+              <T n="Role State">392368<!--RoleState: role_Funeral_Speeches_Uninvited_GrimReaper--></T>
+            </U>
+            <U>
+              <T n="Situation Job">381380<!--SituationJob: job_Funeral_Uninvited_Stranger--></T>
+              <T n="Role State">392370<!--RoleState: role_Funeral_Speeches_Uninvited_Stranger--></T>
+            </U>
+            <U>
+              <T n="Situation Job">381381<!--SituationJob: job_Funeral_Uninvited_Macabre--></T>
+              <T n="Role State">392369<!--RoleState: role_Funeral_Speeches_Uninvited_Macabre--></T>
+            </U>
+            <U>
+              <T n="Situation Job">381382<!--SituationJob: job_Funeral_Uninvited_DepartedSimGhost--></T>
+              <T n="Role State">392367<!--RoleState: role_Funeral_Speeches_Uninvited_DepartedSimGhost--></T>
+            </U>
+          </L>
+          <L n="triggers">
+            <U>
+              <V n="effect" t="change_state">
+                <U n="change_state">
+                  <U n="possible_states">
+                    <L n="possible_state_keys">
+                      <U>
+                        <T n="situation_key">Mingle</T>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+              </V>
+              <L n="triggers">
+                <V t="duration">
+                  <U n="duration">
+                    <U n="duration">
+                      <T n="hours">1</T>
+                      <T n="minutes">20</T>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </U>
+            <U>
+              <V n="effect" t="change_state">
+                <U n="change_state">
+                  <U n="possible_states">
+                    <L n="possible_state_keys">
+                      <U>
+                        <T n="situation_key">Mourn</T>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+              </V>
+              <L n="triggers">
+                <V t="test_event">
+                  <U n="test_event">
+                    <V n="test" t="ran_interaction_test">
+                      <U n="ran_interaction_test">
+                        <L n="affordances">
+                          <T>391350<!--SuperInteraction: urnstone_Crypt_Mourn_Inventory--></T>
+                          <T>14499<!--SuperInteraction: urnstone_MournEnemy--></T>
+                          <T>14500<!--SuperInteraction: urnstone_MournFriend--></T>
+                          <T>103192<!--SuperInteraction: urnstone_MournLovedOne--></T>
+                          <T>14501<!--SuperInteraction: urnstone_MournNeutral--></T>
+                          <T>166842<!--SuperInteraction: urnstone_MournFriend_pets--></T>
+                          <T>383283<!--SuperInteraction: funerals_LightCandle--></T>
+                          <T>383289<!--SuperInteraction: funerals_PourOneOut--></T>
+                          <T>383286<!--SuperInteraction: funerals_Reminisce--></T>
+                          <T>390168<!--SuperInteraction: funerals_PourOneOut_Self--></T>
+                        </L>
+                        <E n="test_event">InteractionComplete</E>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </U>
+            <U>
+              <V n="effect" t="change_state">
+                <U n="change_state">
+                  <U n="possible_states">
+                    <L n="possible_state_keys">
+                      <U>
+                        <T n="situation_key">Celebration</T>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+              </V>
+              <L n="triggers">
+                <V t="test_event">
+                  <U n="test_event">
+                    <V n="test" t="ran_interaction_test">
+                      <U n="ran_interaction_test">
+                        <L n="affordances">
+                          <T>388262<!--SuperInteraction: memorialCannon_Launch--></T>
+                          <T>383284<!--SuperInteraction: funerals_ToastSim--></T>
+                          <T>383287<!--SuperInteraction: funerals_SpreadAshes--></T>
+                        </L>
+                        <E n="test_event">InteractionComplete</E>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </U>
+          </L>
+        </U>
+      </V>
+    </U>
+  </L>
+  <V n="_starting_state" t="random_starting_state">
+    <U n="random_starting_state">
+      <L n="possible_state_keys">
+        <U>
+          <T n="situation_key">Mourn</T>
+        </U>
+      </L>
+    </U>
+  </V>
+  <T n="_supports_automatic_bronze">False</T>
+  <T n="_zone_director">425099<!--SchedulingZoneDirector: zoneDirector_Funerals--></T>
+  <L n="activity_goals">
+    <U>
+      <T n="Activity">383562<!--SituationActivity: situationActivity_Funerals_ViewBody--></T>
+      <L n="value">
+        <U>
+          <T n="goal">383616<!--SituationGoalObjectInteraction: eventActivity_IntObject_Funerals_ViewBody--></T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="Activity">383563<!--SituationActivity: situationActivity_Funerals_BringFood--></T>
+      <L n="value">
+        <U>
+          <T n="goal">425683<!--SituationGoalObjectInteraction: eventActivity_IntObject_Funerals_ServeFood--></T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="Activity">383564<!--SituationActivity: situationActivity_Funerals_MomentOfSilence--></T>
+      <L n="value">
+        <U>
+          <T n="goal">383618<!--SituationGoalObjectInteraction: eventActivity_IntObject_Funerals_MomentOfSilence--></T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="Activity">383565<!--SituationActivity: situationActivity_Funerals_LightCandles--></T>
+      <L n="value">
+        <U>
+          <T n="goal">383619<!--SituationGoalObjectInteraction: eventActivity_IntObject_Funerals_LightCandles--></T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="Activity">383566<!--SituationActivity: situationActivity_Funerals_GiveToasts--></T>
+      <L n="value">
+        <U>
+          <T n="goal">383620<!--SituationGoalObjectInteraction: eventActivity_IntObject_Funerals_GiveToast--></T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="Activity">383607<!--SituationActivity: situationActivity_Funerals_Dance--></T>
+      <L n="value">
+        <U>
+          <T n="goal">383621<!--SituationGoalObjectInteraction: eventActivity_IntObject_Funerals_Dance--></T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="Activity">383608<!--SituationActivity: situationActivity_Funerals_UseGoodGhostPowers--></T>
+      <L n="value">
+        <U>
+          <T n="goal">383622<!--SituationGoalObjectInteraction: eventActivity_IntObject_Funerals_UseGoodGhostPowers--></T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="Activity">383609<!--SituationActivity: situationActivity_Funerals_UseBadGhostPowers--></T>
+      <L n="value">
+        <U>
+          <T n="goal">383623<!--SituationGoalObjectInteraction: eventActivity_IntObject_Funerals_UseBadGhostPowers--></T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="Activity">383610<!--SituationActivity: situationActivity_Funerals_PlayInstrument--></T>
+      <L n="value">
+        <U>
+          <T n="goal">383624<!--SituationGoalObjectInteraction: eventActivity_IntObject_Funerals_PlayInstrument--></T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="Activity">383611<!--SituationActivity: situationActivity_Funerals_GiveHappyEulogy--></T>
+      <L n="value">
+        <U>
+          <T n="goal">383625<!--SituationGoalObjectInteraction: eventActivity_IntObject_Funerals_GiveHappyEulogy--></T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="Activity">383612<!--SituationActivity: situationActivity_Funerals_GiveSpeech--></T>
+      <L n="value">
+        <U>
+          <T n="goal">383626<!--SituationGoalObjectInteraction: eventActivity_IntObject_Funerals_GiveSpeech--></T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="Activity">383613<!--SituationActivity: situationActivity_Funerals_HaveMusic--></T>
+      <L n="value">
+        <U>
+          <T n="goal">383627<!--SituationGoalObjectInteraction: eventActivity_IntObject_Funerals_HaveMusic--></T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="Activity">383614<!--SituationActivity: situationActivity_Funerals_PlantSomething--></T>
+      <L n="value">
+        <U>
+          <T n="goal">383628<!--SituationGoalObjectInteraction: eventActivity_IntObject_Funerals_PlantSomething--></T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="Activity">383630<!--SituationActivity: situationActivity_Funerals_GiveSadEulogy--></T>
+      <L n="value">
+        <U>
+          <T n="goal">383629<!--SituationGoalObjectInteraction: eventActivity_IntObject_Funerals_GiveSadEulogy--></T>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="activity_selection" t="enabled">
+    <U n="enabled">
+      <L n="available_activities">
+        <T>383562<!--SituationActivity: situationActivity_Funerals_ViewBody--></T>
+        <T>383563<!--SituationActivity: situationActivity_Funerals_BringFood--></T>
+        <T>383612<!--SituationActivity: situationActivity_Funerals_GiveSpeech--></T>
+        <T>383613<!--SituationActivity: situationActivity_Funerals_HaveMusic--></T>
+        <T>383614<!--SituationActivity: situationActivity_Funerals_PlantSomething--></T>
+        <T>383564<!--SituationActivity: situationActivity_Funerals_MomentOfSilence--></T>
+        <T>383565<!--SituationActivity: situationActivity_Funerals_LightCandles--></T>
+        <T>383566<!--SituationActivity: situationActivity_Funerals_GiveToasts--></T>
+        <T>383607<!--SituationActivity: situationActivity_Funerals_Dance--></T>
+        <T>383608<!--SituationActivity: situationActivity_Funerals_UseGoodGhostPowers--></T>
+        <T>383609<!--SituationActivity: situationActivity_Funerals_UseBadGhostPowers--></T>
+        <T>383610<!--SituationActivity: situationActivity_Funerals_PlayInstrument--></T>
+        <T>383611<!--SituationActivity: situationActivity_Funerals_GiveHappyEulogy--></T>
+        <T>383630<!--SituationActivity: situationActivity_Funerals_GiveSadEulogy--></T>
+      </L>
+      <T n="preferred_activity_footer">0xD51A0C3C<!--String: "Desired Activity from the Departed"--></T>
+      <T n="preferred_activity_icon" p="InEP17\UI\Icons\Events\events_GrievingRituals_WillSelections.png">2f7d0004:00000000:3864ea479ce3c3d8</T>
+      <V n="role_updates_activity_preferences" t="enabled">
+        <T n="enabled">381374<!--SituationJob: job_Funeral_DepartedSim--></T>
+      </V>
+    </U>
+  </V>
+  <T p="InGame\Audio\Bumper\bumper_event_start.propx" n="audio_sting_on_start">39b2aa4a:00000000:78b903461d47e4fc</T>
+  <T p="InEP17\UI\Icons\Events\events_Funeral.png" n="calendar_icon">2f7d0004:00000000:60d6356c000e5732</T>
+  <E n="category">FUNERAL</E>
+  <L n="compatible_venues">
+    <T>28614<!--Venue: venue_residential--></T>
+    <T>341299<!--Venue: venue_MultiUnit--></T>
+    <T>252380<!--Venue: venue_residential_HauntedHouse--></T>
+    <T>229251<!--Venue: venue_residential_tinyhome--></T>
+    <T>16869<!--Venue: venue_bar--></T>
+    <T>122247<!--Venue: venue_cafe--></T>
+    <T>223944<!--Venue: venue_CommunityLot--></T>
+    <T>9279<!--Venue: venue_generic--></T>
+    <T>16873<!--Venue: venue_gym--></T>
+    <T>137844<!--Venue: venue_karaoke--></T>
+    <T>16874<!--Venue: venue_library--></T>
+    <T>16875<!--Venue: venue_lounge--></T>
+    <T>16876<!--Venue: venue_museum--></T>
+    <T>107453<!--Venue: venue_ForestPark--></T>
+    <T>25847<!--Venue: venue_park--></T>
+    <T>16870<!--Venue: venue_club--></T>
+    <T>247473<!--Venue: venue_Onsen--></T>
+    <T>123794<!--Venue: venue_pool--></T>
+    <T>314133<!--Venue: venue_RecCenter--></T>
+    <T>118135<!--Venue: venue_RelaxationCenter--></T>
+    <T>273016<!--Venue: venue_wedding--></T>
+    <T>278997<!--Venue: venue_ThriftStore--></T>
+    <T>377555<!--Venue: venue_Cemetery--></T>
+    <T>468880<!--Venue: venue_Playground--></T>
+  </L>
+  <V n="customizable_style" t="enabled">
+    <T n="enabled">381401<!--SituationStyleData: situationStyleData_Funeral--></T>
+  </V>
+  <L n="default_job_and_roles">
+    <U>
+      <T n="Situation Job">381374<!--SituationJob: job_Funeral_DepartedSim--></T>
+      <T n="Role State">381384<!--RoleState: role_Funeral_DepartedSim--></T>
+    </U>
+    <U>
+      <T n="Situation Job">381375<!--SituationJob: job_Funeral_Host--></T>
+      <T n="Role State">381385<!--RoleState: role_Funeral_Host--></T>
+    </U>
+    <U>
+      <T n="Situation Job">381376<!--SituationJob: job_Funeral_Guest--></T>
+      <T n="Role State">381386<!--RoleState: role_Funeral_Guest--></T>
+    </U>
+    <U>
+      <T n="Situation Job">381377<!--SituationJob: job_Funeral_HiredMourner--></T>
+      <T n="Role State">381387<!--RoleState: role_Funeral_HiredMourner--></T>
+    </U>
+    <U>
+      <T n="Situation Job">381378<!--SituationJob: job_Funeral_Entertainer--></T>
+      <T n="Role State">381388<!--RoleState: role_Funeral_Entertainer--></T>
+    </U>
+    <U>
+      <T n="Situation Job">381379<!--SituationJob: job_Funeral_Uninvited_GrimReaper--></T>
+      <T n="Role State">381389<!--RoleState: role_Funeral_Uninvited_GrimReaper--></T>
+    </U>
+    <U>
+      <T n="Situation Job">381380<!--SituationJob: job_Funeral_Uninvited_Stranger--></T>
+      <T n="Role State">381390<!--RoleState: role_Funeral_Uninvited_Stranger--></T>
+    </U>
+    <U>
+      <T n="Situation Job">381381<!--SituationJob: job_Funeral_Uninvited_Macabre--></T>
+      <T n="Role State">381391<!--RoleState: role_Funeral_Uninvited_Macabre--></T>
+    </U>
+    <U>
+      <T n="Situation Job">381382<!--SituationJob: job_Funeral_Uninvited_DepartedSimGhost--></T>
+      <T n="Role State">381392<!--RoleState: role_Funeral_Uninvited_DepartedSimGhost--></T>
+    </U>
+  </L>
+  <T n="departed_job">381374<!--SituationJob: job_Funeral_DepartedSim--></T>
+  <T n="duration">480</T>
+  <V n="end_situation_dialog" t="enabled">
+    <U n="enabled">
+      <L n="dialog_options">
+        <E>DISABLE_CLOSE_BUTTON</E>
+      </L>
+      <T n="is_special_dialog">True</T>
+      <V n="text" t="single">
+        <T n="single">0xE22F7E<!--String: "Ending the Funeral early will result in Guests being sent home. Your Sim may still remain on the lot after the event has ended."--></T>
+      </V>
+      <T n="text_cancel">0xED1C0DD2<!--String: "Don't End"--></T>
+      <T n="text_ok">0x3973D33A<!--String: "End Funeral"--></T>
+      <V n="title" t="enabled">
+        <T n="enabled">0x975DE458<!--String: "End Funeral Early?"--></T>
+      </V>
+    </U>
+  </V>
+  <E n="exclusivity">CAREGIVER</E>
+  <E n="funeral_activities_buff_tag">Buff_Funeral_WillActivity</E>
+  <V n="goal_tracker_type" t="activity_situation_goal_tracker" />
+  <U n="job_cell_padding">
+    <T n="right">1</T>
+  </U>
+  <V n="job_display_ordering" t="enabled">
+    <L n="enabled">
+      <T>381374<!--SituationJob: job_Funeral_DepartedSim--></T>
+      <T>381375<!--SituationJob: job_Funeral_Host--></T>
+      <T>381376<!--SituationJob: job_Funeral_Guest--></T>
+      <T>381377<!--SituationJob: job_Funeral_HiredMourner--></T>
+      <T>381378<!--SituationJob: job_Funeral_Entertainer--></T>
+    </L>
+  </V>
+  <T n="jobs_per_row">5</T>
+  <T n="main_goal">424228<!--SituationGoalObjectInteraction: eventActivity_IntObject_Funerals_CategoryInteractions--></T>
+  <T p="InGame\Audio\Bumper\bumper_event_major_complete.propx" n="main_goal_audio_sting">39b2aa4a:00000000:10b476550150a33f</T>
+  <T n="max_participants">20</T>
+  <V n="minimum_activities_required" t="enabled">
+    <U n="enabled">
+      <T n="activities_disabled_tooltip">0x946E2209<!--String: "{0.Number} Activities Required"--></T>
+      <T n="minimum_activities">3</T>
+    </U>
+  </V>
+  <T n="offer_completed_goals">True</T>
+  <L n="pre_populate_jobs">
+    <U>
+      <T n="job">381375<!--SituationJob: job_Funeral_Host--></T>
+    </U>
+  </L>
+  <E n="preferred_outfit_category">FORMAL</E>
+  <V n="scoring_lock_reason" t="enabled">
+    <T n="enabled">0xF6AEBA30<!--String: "This event always has Goals and Rewards."--></T>
+  </V>
+  <V n="screen_slam_bronze" t="enabled">
+    <V n="enabled" t="reference">
+      <T n="reference">75362<!--ScreenSlam: EventOutcome_Bronze--></T>
+    </V>
+  </V>
+  <V n="screen_slam_gold" t="enabled">
+    <V n="enabled" t="reference">
+      <T n="reference">75364<!--ScreenSlam: EventOutcome_Gold--></T>
+    </V>
+  </V>
+  <V n="screen_slam_no_medal" t="enabled">
+    <V n="enabled" t="reference">
+      <T n="reference">75361<!--ScreenSlam: EventOutcome_Tin--></T>
+    </V>
+  </V>
+  <V n="screen_slam_silver" t="enabled">
+    <V n="enabled" t="reference">
+      <T n="reference">75363<!--ScreenSlam: EventOutcome_Silver--></T>
+    </V>
+  </V>
+  <T n="situation_description">0x2AA80957<!--String: "A time for loved one's and acquaintances to remember, grieve, and celebrate the life of a Sim recently departed."--></T>
+  <V n="situation_end_time_string" t="show_end_time">
+    <T n="show_end_time">0xA3E17143<!--String: "Work day ends at {0.TimeShort}"--></T>
+  </V>
+  <L n="tags">
+    <E>Situation_Funeral</E>
+  </L>
+  <V n="targeted_situation" t="enabled">
+    <U n="enabled">
+      <T n="actor_job">381375<!--SituationJob: job_Funeral_Host--></T>
+      <T n="override_targeted_situation">True</T>
+      <T n="target_job">381374<!--SituationJob: job_Funeral_DepartedSim--></T>
+    </U>
+  </V>
+  <V n="travel_request_behavior" t="allow">
+    <U n="allow">
+      <V n="dialog" t="enabled">
+        <U n="enabled">
+          <L n="dialog_options">
+            <E>DISABLE_CLOSE_BUTTON</E>
+          </L>
+          <V n="icon" t="enabled">
+            <V n="enabled" t="resource_key">
+              <U n="resource_key">
+                <T n="key" p="InEP17\UI\Icons\Headlines\headline_genericcrypt.png">2f7d0004:00000000:d9011872e5c6ac85</T>
+              </U>
+            </V>
+          </V>
+          <V n="text" t="single">
+            <T n="single">0x3B0C32E7<!--String: "Traveling now will end the ongoing Wedding."--></T>
+          </V>
+          <V n="title" t="enabled">
+            <T n="enabled">0x7812C665<!--String: "Wedding in Progress!"--></T>
+          </V>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="will_preference_completeness_map">
+    <U>
+      <T n="activity">383562<!--SituationActivity: situationActivity_Funerals_ViewBody--></T>
+      <T n="completed_buff">379143<!--Buff: buff_Wills_Hidden_FuneralActivity_ViewBody--></T>
+    </U>
+    <U>
+      <T n="activity">383563<!--SituationActivity: situationActivity_Funerals_BringFood--></T>
+      <T n="completed_buff">379144<!--Buff: buff_Wills_Hidden_FuneralActivity_BringFood--></T>
+    </U>
+    <U>
+      <T n="activity">383564<!--SituationActivity: situationActivity_Funerals_MomentOfSilence--></T>
+      <T n="completed_buff">379148<!--Buff: buff_Wills_Hidden_FuneralActivity_Silence--></T>
+    </U>
+    <U>
+      <T n="activity">383565<!--SituationActivity: situationActivity_Funerals_LightCandles--></T>
+      <T n="completed_buff">379149<!--Buff: buff_Wills_Hidden_FuneralActivity_Candles--></T>
+    </U>
+    <U>
+      <T n="activity">383566<!--SituationActivity: situationActivity_Funerals_GiveToasts--></T>
+      <T n="completed_buff">379150<!--Buff: buff_Wills_Hidden_FuneralActivity_Toast--></T>
+    </U>
+    <U>
+      <T n="activity">383607<!--SituationActivity: situationActivity_Funerals_Dance--></T>
+      <T n="completed_buff">379151<!--Buff: buff_Wills_Hidden_FuneralActivity_Dance--></T>
+    </U>
+    <U>
+      <T n="activity">383608<!--SituationActivity: situationActivity_Funerals_UseGoodGhostPowers--></T>
+      <T n="completed_buff">379152<!--Buff: buff_Wills_Hidden_FuneralActivity_GhostGood--></T>
+    </U>
+    <U>
+      <T n="activity">383609<!--SituationActivity: situationActivity_Funerals_UseBadGhostPowers--></T>
+      <T n="completed_buff">379153<!--Buff: buff_Wills_Hidden_FuneralActivity_GhostBad--></T>
+    </U>
+    <U>
+      <T n="activity">383610<!--SituationActivity: situationActivity_Funerals_PlayInstrument--></T>
+      <T n="completed_buff">379154<!--Buff: buff_Wills_Hidden_FuneralActivity_Instruments--></T>
+    </U>
+    <U>
+      <T n="activity">383611<!--SituationActivity: situationActivity_Funerals_GiveHappyEulogy--></T>
+      <T n="completed_buff">379156<!--Buff: buff_Wills_Hidden_FuneralActivity_EulogyHappy--></T>
+    </U>
+    <U>
+      <T n="activity">383612<!--SituationActivity: situationActivity_Funerals_GiveSpeech--></T>
+      <T n="completed_buff">379145<!--Buff: buff_Wills_Hidden_FuneralActivity_GiveSpeeches--></T>
+    </U>
+    <U>
+      <T n="activity">383613<!--SituationActivity: situationActivity_Funerals_HaveMusic--></T>
+      <T n="completed_buff">379146<!--Buff: buff_Wills_Hidden_FuneralActivity_HaveMusic--></T>
+    </U>
+    <U>
+      <T n="activity">383614<!--SituationActivity: situationActivity_Funerals_PlantSomething--></T>
+      <T n="completed_buff">379147<!--Buff: buff_Wills_Hidden_FuneralActivity_Plant--></T>
+    </U>
+    <U>
+      <T n="activity">383630<!--SituationActivity: situationActivity_Funerals_GiveSadEulogy--></T>
+      <T n="completed_buff">379155<!--Buff: buff_Wills_Hidden_FuneralActivity_EulogySad--></T>
+    </U>
+  </L>
+  <T n="will_preference_failure_loot">393046<!--LootActions: loot_Wills_Funeral_Failure--></T>
+  <T n="will_preference_success_loot">393045<!--LootActions: loot_Wills_Funeral_Sucess--></T>
+</I>

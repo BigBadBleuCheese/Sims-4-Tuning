@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_EP19Gardening_EnableEnchantment" s="438185">
+  <L n="loot_actions">
+    <V t="statistics">
+      <V n="statistics" t="statistic_set_max">
+        <U n="statistic_set_max">
+          <T n="stat">434664<!--Commodity: commodity_EP19Gardening_Enchanted--></T>
+        </U>
+      </V>
+    </V>
+    <V t="state_change">
+      <U n="state_change">
+        <T n="state_value">98289<!--ObjectStateValue: GardeningWeedFX_Off--></T>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="object_definition_criteria">
+        <U n="object_definition_criteria">
+          <V n="identity_test" t="tags">
+            <U n="tags">
+              <L n="tag_set">
+                <E>Func_GiantCrops_Plant</E>
+                <E>Func_HousePlants_BG</E>
+                <E>Func_Cowplant</E>
+              </L>
+              <E n="test_type">CONTAINS_NO_TAGS_IN_SET</E>
+            </U>
+          </V>
+          <E n="participant">Actor</E>
+        </U>
+      </V>
+      <V t="state_white_black">
+        <U n="state_white_black">
+          <E n="participant">Actor</E>
+          <U n="states">
+            <V n="blacklist" t="specify">
+              <U n="specify">
+                <L n="blacklist">
+                  <T>15211<!--ObjectStateValue: GardeningQuality_00_Wild--></T>
+                  <T>39330<!--CommodityBasedObjectStateValue: PlantEvolution_0_Death--></T>
+                </L>
+              </U>
+            </V>
+          </U>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="object_definition_criteria">
+        <U n="object_definition_criteria">
+          <V n="identity_test" t="tags">
+            <U n="tags">
+              <L n="tag_set">
+                <E>Func_GiantCrops_Plant</E>
+              </L>
+            </U>
+          </V>
+          <E n="participant">Actor</E>
+        </U>
+      </V>
+      <V t="state">
+        <U n="state">
+          <E n="operator">NOTEQUAL</E>
+          <T n="value">260954<!--CommodityBasedObjectStateValue: state_GiantCrops_Plant_Status_Withered--></T>
+          <E n="who">Actor</E>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="object_definition_criteria">
+        <U n="object_definition_criteria">
+          <V n="identity_test" t="tags">
+            <U n="tags">
+              <L n="tag_set">
+                <E>Func_HousePlants_BG</E>
+              </L>
+            </U>
+          </V>
+          <E n="participant">Actor</E>
+        </U>
+      </V>
+      <V t="state">
+        <U n="state">
+          <E n="operator">NOTEQUAL</E>
+          <T n="value">444783<!--CommodityBasedObjectStateValue: state_HousePlants_Health_0_Dead--></T>
+          <E n="who">Actor</E>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="object_definition_criteria">
+        <U n="object_definition_criteria">
+          <V n="identity_test" t="tags">
+            <U n="tags">
+              <L n="tag_set">
+                <E>Func_Cowplant</E>
+              </L>
+            </U>
+          </V>
+          <E n="participant">Actor</E>
+        </U>
+      </V>
+      <V t="state">
+        <U n="state">
+          <E n="operator">NOTEQUAL</E>
+          <T n="value">15232<!--CommodityBasedObjectStateValue: Hunger_4_Withered--></T>
+          <E n="who">Actor</E>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

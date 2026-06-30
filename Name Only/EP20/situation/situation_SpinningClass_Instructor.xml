@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="StaffMemberSituation" i="situation" m="situations.complex.staff_member_situation" n="situation_SpinningClass_Instructor" s="446573">
+  <U n="_actively_working_situation_state">
+    <U n="interaction_of_interest">
+      <L n="affordances">
+        <T>448666<!--SuperInteraction: spinningBike_Class_ClassMember_Idle--></T>
+      </L>
+    </U>
+    <L n="job_and_role_changes">
+      <U>
+        <T n="Situation Job">446574<!--SituationJob: jobs_SpinningClass_Instructor_Service--></T>
+        <T n="Role State">448636<!--RoleState: role_SpinningClass_Instructor_Idle--></T>
+      </U>
+    </L>
+  </U>
+  <U n="_arriving_situation_state">
+    <U n="interaction_of_interest">
+      <L n="affordances">
+        <T>448665<!--SuperInteraction: spinningBike_Class_Instructor_WaitForWork--></T>
+      </L>
+    </U>
+    <L n="job_and_role_changes">
+      <U>
+        <T n="Situation Job">446574<!--SituationJob: jobs_SpinningClass_Instructor_Service--></T>
+        <T n="Role State">448639<!--RoleState: role_SpinningClass_Instructor_Arrival--></T>
+      </U>
+    </L>
+  </U>
+  <U n="_bored_situation_state">
+    <U n="interaction_of_interest">
+      <L n="affordances">
+        <T>448666<!--SuperInteraction: spinningBike_Class_ClassMember_Idle--></T>
+      </L>
+    </U>
+    <L n="job_and_role_changes">
+      <U>
+        <T n="Situation Job">446574<!--SituationJob: jobs_SpinningClass_Instructor_Service--></T>
+        <T n="Role State">491111<!--RoleState: role_SpinningClass_Instructor_Leave--></T>
+      </U>
+    </L>
+    <V n="time_out" t="enabled" />
+  </U>
+  <T n="_implies_greeted_status">True</T>
+  <V n="_object_to_staff_filter" t="object_tags">
+    <U n="object_tags">
+      <L n="tag_set">
+        <E>Func_SpinningBike_InstructorBike</E>
+      </L>
+    </U>
+  </V>
+  <V n="arrival_interaction" t="push_interaction">
+    <T n="push_interaction">448665<!--SuperInteraction: spinningBike_Class_Instructor_WaitForWork--></T>
+  </V>
+  <V n="arrival_notification" t="enabled">
+    <V n="enabled" t="literal">
+      <U n="literal">
+        <V n="icon" t="enabled">
+          <V n="enabled" t="participant">
+            <U n="participant">
+              <L n="participant_type">
+                <E>Actor</E>
+              </L>
+            </U>
+          </V>
+        </V>
+        <V n="text" t="single">
+          <T n="single">0x4D4EB34B<!--String: "Let's get those legs moving! Just let me know when to start the Spinning Class."--></T>
+        </V>
+        <E n="visual_type">SPEECH</E>
+      </U>
+    </V>
+  </V>
+  <V n="bored_timeout" t="enabled">
+    <T n="enabled">120</T>
+  </V>
+  <V n="bored_timeout_notification" t="enabled">
+    <V n="enabled" t="literal">
+      <U n="literal">
+        <V n="icon" t="enabled">
+          <V n="enabled" t="participant">
+            <U n="participant">
+              <L n="participant_type">
+                <E>Actor</E>
+              </L>
+            </U>
+          </V>
+        </V>
+        <V n="text" t="single">
+          <T n="single">0x3498F6AC<!--String: "Time for me to roll out! Hope those legs are feeling the burn!"--></T>
+        </V>
+        <E n="visual_type">SPEECH</E>
+      </U>
+    </V>
+  </V>
+  <T n="duration">0</T>
+  <T n="force_sim_to_leave_lot_on_completion">False</T>
+  <V n="situation_end_time_string" t="show_end_time">
+    <T n="show_end_time">0xA3E17143<!--String: "Work day ends at {0.TimeShort}"--></T>
+  </V>
+  <T n="situation_job">446574<!--SituationJob: jobs_SpinningClass_Instructor_Service--></T>
+  <V n="time_jump" t="allow" />
+</I>

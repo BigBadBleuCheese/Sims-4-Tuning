@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Broadcaster" i="broadcaster" m="broadcasters.broadcaster" n="broadcaster_Werewolf_WerewolfReactions_Fear_GoatSheep" s="328707">
+  <V n="allow_objects" t="from_tags">
+    <U n="from_tags">
+      <L n="tags">
+        <E>Func_AnimalObject_Livestock_Goat</E>
+        <E>Func_AnimalObject_Livestock_Sheep</E>
+      </L>
+    </U>
+  </V>
+  <T n="allow_sims">False</T>
+  <L n="constraints">
+    <V t="circle">
+      <U n="circle">
+        <T n="radius">7</T>
+      </U>
+    </V>
+    <V t="line_of_sight" />
+  </L>
+  <L n="effects">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>328706<!--LootActions: loot_AnimalObjects_GoatSheep_ScaredReaction--></T>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="object_definition_criteria">
+              <U n="object_definition_criteria">
+                <V n="identity_test" t="tags">
+                  <U n="tags">
+                    <L n="tag_set">
+                      <E>Func_AnimalObject_Livestock_Goat</E>
+                      <E>Func_AnimalObject_Livestock_Sheep</E>
+                    </L>
+                  </U>
+                </V>
+                <E n="participant">Actor</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="frequency" t="on_pulse">
+    <U n="on_pulse">
+      <T n="cooldown_time">4</T>
+    </U>
+  </V>
+  <T n="immediate">True</T>
+</I>

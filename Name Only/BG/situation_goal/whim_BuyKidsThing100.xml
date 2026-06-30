@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalPurchasedObject" i="situation_goal" m="situations.situation_goal_purchased_object" n="whim_BuyKidsThing100" s="421017">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T n="enabled" p="InGame\UI\Icons\Whims\whim_Blocks.png">2f7d0004:00000000:428f71716352294b</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x4545D220<!--String: "Buy a Kids Object Worth {0.Money}"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0x9EA51BE8<!--String: "Buy an Object from the Kids category in Build Mode worth at least {0.Money}."--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>272907<!--SituationGoalLootActions: goalLoot_WantFear_Fulfillment_Gain--></T>
+    <T>291795<!--SituationGoalLootActions: goalLoot_Want_Fulfilled_BuffGain_Happy--></T>
+  </L>
+  <L n="_pre_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="_score">50</T>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+  <U n="purchased_object_test">
+    <V n="test_type" t="tag_set">
+      <U n="tag_set">
+        <L n="tag_set">
+          <E>BuyCatLD_KidDecoration</E>
+          <E>BuyCatEE_MiscKids</E>
+          <E>BuyCatEE_KidToy</E>
+          <E>BuyCatEE_KidFurniture</E>
+          <E>BuyCatEE_KidActivity</E>
+          <E>Genre_Book_Toddler_PictureBook</E>
+          <E>BuyCatEE_Toddlers</E>
+        </L>
+      </U>
+    </V>
+    <U n="value_threshold">
+      <E n="comparison">GREATER_OR_EQUAL</E>
+      <T n="value">100</T>
+    </U>
+  </U>
+</I>

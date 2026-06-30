@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="horseInteractions_RunAround_Frolic" s="328129">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="jig">
+            <U n="jig">
+              <T n="jig">361481</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Actor</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">328127<!--AnimationElement: horse_Frolic--></T>
+        <U n="overrides">
+          <V n="balloons" t="enabled">
+            <L n="enabled">
+              <U>
+                <L n="balloon_choices">
+                  <U>
+                    <V n="item" t="balloon_category">
+                      <T n="balloon_category">28746<!--BalloonCategory: SocialBalloons_Party--></T>
+                    </V>
+                  </U>
+                </L>
+                <L n="balloon_target">
+                  <E>Actor</E>
+                </L>
+              </U>
+            </L>
+          </V>
+        </U>
+      </U>
+      <V n="periodic_stat_change" t="enabled">
+        <U n="enabled">
+          <L n="operations">
+            <V t="statistic_set_max">
+              <U n="statistic_set_max">
+                <T n="stat">330330<!--Commodity: commodity_Emotion_Autonomy_Horse_Happy--></T>
+              </U>
+            </V>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="buff_fire_and_forget">
+      <U n="buff_fire_and_forget">
+        <U n="buff">
+          <T n="buff_type">340772<!--Buff: buff_Horse_Moodlets_Happy_Energetic_GotExercise--></T>
+        </U>
+        <U n="success_chance">
+          <L n="multipliers">
+            <U>
+              <T n="multiplier">0</T>
+              <L n="tests">
+                <L>
+                  <V t="trait">
+                    <U n="trait">
+                      <L n="blacklist_traits">
+                        <T>322878<!--Trait: trait_Horse_Personality_Energetic--></T>
+                      </L>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+          </L>
+        </U>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>325148<!--LootActions: loot_Commodity_HorseFun_Small--></T>
+        </L>
+      </U>
+    </V>
+    <V t="buff_fire_and_forget">
+      <U n="buff_fire_and_forget">
+        <U n="buff">
+          <T n="buff_type">352692<!--Buff: buff_Horse_RunAround_Frolic_Cooldown--></T>
+        </U>
+      </U>
+    </V>
+  </L>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x20EC591D<!--String: "Frolic"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <L n="continuation">
+              <U>
+                <T n="affordance">321337<!--WaypointInteraction: waypoint_Horses_RunAround--></T>
+                <E n="target">Actor</E>
+              </U>
+            </L>
+          </U>
+          <U n="weight">
+            <L n="multipliers">
+              <U>
+                <T n="multiplier">0</T>
+                <L n="tests">
+                  <L>
+                    <V t="skill_test">
+                      <U n="skill_test">
+                        <T n="skill">324631<!--Skill: statistic_Skill_Horse_Temperament--></T>
+                        <V n="skill_range" t="threshold">
+                          <U n="threshold">
+                            <U n="skill_threshold">
+                              <T n="value">5</T>
+                            </U>
+                          </U>
+                        </V>
+                        <T n="use_effective_skill_level">True</T>
+                      </U>
+                    </V>
+                    <V t="location">
+                      <U n="location">
+                        <U n="location_tests">
+                          <V n="is_on_active_lot" t="Is_or_is_not_on_active_lot">
+                            <U n="Is_or_is_not_on_active_lot">
+                              <T n="is_or_is_not_on_active_lot">False</T>
+                            </U>
+                          </V>
+                        </U>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+        <U>
+          <U n="weight">
+            <T n="base_value">2</T>
+          </U>
+        </U>
+      </L>
+    </U>
+  </V>
+  <V n="require_reins_for_formation" t="enabled">
+    <T n="enabled">314817<!--RoutingFormation: routingFormation_HorseRiding_Ride--></T>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">ACTOR</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="unspecified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E>HORSE</E>
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>317538<!--Buff: buff_HorseRiding_HorseMounted--></T>
+        </L>
+      </U>
+    </V>
+    <V t="location">
+      <U n="location">
+        <U n="location_tests">
+          <V n="is_inside_building" t="enabled">
+            <T n="enabled">False</T>
+          </V>
+        </U>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="DialogDramaNode" i="drama_node" m="drama_scheduler.dialog_drama_node" n="dialogDramaNode_EP20_IF_AutoMoveOnMoment" s="462912">
+  <V n="dialog_and_loot" t="dialog_multi_response">
+    <U n="dialog_multi_response">
+      <U n="dialog">
+        <V n="icon" t="enabled">
+          <V n="enabled" t="resource_key">
+            <U n="resource_key">
+              <T n="key" p="InEP20\UI\Icons\Headlines\headline_AskToMakeReal.png">2f7d0004:00000000:b654ae5881456236</T>
+            </U>
+          </V>
+        </V>
+        <V n="text" t="single">
+          <T n="single">0xB545DAC1<!--String: "I guess you're all grown up now, huh? That's alright! Everyone grows up, and we had <i>sooo</i> much fun together! I'm <i>never</i> going to forget you, my friend. Am I going back to Imaginary Land with my other friends or..."--></T>
+        </V>
+        <V n="title" t="enabled">
+          <T n="enabled">0xEAB53B3<!--String: "Time to Move On..."--></T>
+        </V>
+      </U>
+      <L n="possible_responses">
+        <U>
+          <U n="item">
+            <L n="loot">
+              <T>464233<!--LootActions: loot_EP20_IF_MovingOnMoment_GoodbyeForever--></T>
+            </L>
+            <T n="text">0x84C55CDA<!--String: "Say Goodbye Forever"--></T>
+          </U>
+        </U>
+        <U>
+          <U n="item">
+            <L n="loot">
+              <T>464350<!--LootActions: loot_EP20_IF_MovingOnMoment_OfferMakeReal--></T>
+            </L>
+            <T n="text">0x88C8851D<!--String: "Offer to Make Real"--></T>
+          </U>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="min_and_max_times">
+    <T n="lower_bound">0</T>
+    <T n="upper_bound">24</T>
+  </U>
+  <L n="receiver_sim_pretests">
+    <L>
+      <V t="relationship">
+        <U n="relationship">
+          <T n="num_relations">1</T>
+          <U n="required_relationship_bits">
+            <L n="match_any">
+              <T>455636<!--RelationshipBit: relationshipBit_EP20_IF_ISImaginaryFriend--></T>
+            </L>
+          </U>
+          <L n="target_sim">
+            <E>AllRelationships</E>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="sender_sim_info" t="no_participant" />
+  <E n="sender_sim_info_type">INSTANCED_ALLOWED</E>
+  <V n="time_option" t="schedule">
+    <U n="schedule">
+      <L n="valid_times">
+        <U>
+          <U n="days_available">
+            <T n="0 SUNDAY">True</T>
+            <T n="1 MONDAY">True</T>
+            <T n="2 TUESDAY">True</T>
+            <T n="3 WEDNESDAY">True</T>
+            <T n="4 THURSDAY">True</T>
+            <T n="5 FRIDAY">True</T>
+            <T n="6 SATURDAY">True</T>
+          </U>
+          <T n="duration">24</T>
+          <U n="start_time">
+            <T n="hour">11</T>
+          </U>
+        </U>
+      </L>
+    </U>
+  </V>
+</I>

@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="lootActions_FairyOccult_SiphonMood_Sad" s="425121">
+  <L n="loot_actions">
+    <V t="buff_removal">
+      <U n="buff_removal">
+        <L n="buff_categories_to_remove">
+          <E>Sad_Buffs</E>
+        </L>
+        <L n="categories_to_ignore">
+          <E>NotSiphonable_Buffs</E>
+        </L>
+        <E n="subject">TargetSim</E>
+      </U>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">100</T>
+          <T n="stat">420035<!--Commodity: commodity_Motive_FairyOccult_EmotionalAppetite--></T>
+          <L n="tunable_multipliers">
+            <U>
+              <T n="base_value">1</T>
+              <L n="multipliers">
+                <U>
+                  <T n="multiplier">1.5</T>
+                  <L n="tests">
+                    <L>
+                      <V t="buff">
+                        <U n="buff">
+                          <V n="whitelist" t="enabled">
+                            <L n="enabled">
+                              <T>439943<!--Buff: buff_FairyOccult_Ability_Passive_EmotionalEnergyFromSiphonNegativeMoods--></T>
+                              <T>457469<!--Buff: buff_Apothecary_EmotionStone_InInventory--></T>
+                            </L>
+                          </V>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+              </L>
+            </U>
+          </L>
+        </U>
+      </V>
+    </V>
+    <V t="actions">
+      <T n="actions">435426<!--RandomWeightedLoot: randomWeightedLoot_FairyOccult_SiphonMood_SpillOver_Overload_Sad--></T>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x73B45FBA<!--String: "(From Absorbing the Emotions of Another Sim)"--></T>
+          </V>
+          <T n="buff_type">435429<!--Buff: buff_FairyOccult_DelightfulSiphon--></T>
+        </U>
+        <U n="chance">
+          <T n="base_chance">66</T>
+        </U>
+      </U>
+    </V>
+    <V t="buff_removal">
+      <U n="buff_removal">
+        <L n="buffs_to_remove">
+          <T>435241<!--Buff: buff_FairyOccult_ImpendingOverload--></T>
+        </L>
+      </U>
+    </V>
+    <V t="actions">
+      <T n="actions">10954<!--LootActions: Loot_ForSocialsSocialMotiveMedium--></T>
+    </V>
+    <V t="actions">
+      <T n="actions">475095<!--LootActions: rel_Gain_Medium_TargetSim_FairyOccult_Abilities--></T>
+    </V>
+  </L>
+</I>

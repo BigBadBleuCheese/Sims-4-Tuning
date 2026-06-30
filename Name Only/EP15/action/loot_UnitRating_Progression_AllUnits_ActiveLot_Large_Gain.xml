@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_UnitRating_Progression_AllUnits_ActiveLot_Large_Gain" s="350132">
+  <L n="loot_actions">
+    <V t="modify_dynamic_unit_rating">
+      <U n="modify_dynamic_unit_rating">
+        <E n="change_value">LARGE_GAIN</E>
+        <E n="receiver">AllUnitZoneIds</E>
+      </U>
+    </V>
+    <V t="modify_dynamic_unit_rating">
+      <U n="modify_dynamic_unit_rating">
+        <E n="change_value">BONUS_LARGE</E>
+        <E n="receiver">AllUnitZoneIds</E>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <L n="whitelist_traits">
+                  <T>341148<!--Trait: trait_MultiUnit_Aspiration_LegendaryLandlord--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="modify_dynamic_unit_rating">
+      <U n="modify_dynamic_unit_rating">
+        <E n="change_value">BONUS_LARGE</E>
+        <E n="receiver">AllUnitZoneIds</E>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <L n="whitelist_traits">
+                  <T>352408<!--Trait: trait_MultiUnitGuide_KnowledgeableLeaser--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="headline_loot">
+      <U n="headline_loot">
+        <T n="headline">356167<!--Headline: headline_UnitRating_LargeGain--></T>
+        <L n="tests">
+          <L>
+            <V t="existence">
+              <U n="existence">
+                <E n="participant">Actor</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

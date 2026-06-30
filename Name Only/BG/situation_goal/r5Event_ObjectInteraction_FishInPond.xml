@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalObjectInteraction" i="situation_goal" m="situations.situation_goal_object_interaction" n="r5Event_ObjectInteraction_FishInPond" s="439459">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T p="InGame\UI\Icons\Headlines\Final\headline_fishingpole.png" n="enabled">2f7d0004:00000000:fb9ff21cc46dc62c</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x61C23F88<!--String: "Go Fishing in a Pond"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0x13820120<!--String: "Time to cast a line! Select any pond and choose Go Fishing.\n\nSelect to learn more."--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>447711<!--SituationGoalLootActions: liveEvent_GoalLoot_CompleteQuestGoal--></T>
+    <T>456478<!--SituationGoalLootActions: r5EventLoot_GoalLoot_Autonomy_RemoveBuff_Fish--></T>
+  </L>
+  <U n="_goal_test">
+    <L n="tags">
+      <E>Interaction_Skill_Fishing</E>
+    </L>
+    <E n="test_event">InteractionUpdate</E>
+  </U>
+  <L n="_post_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+      </U>
+    </V>
+  </L>
+  <L n="_pre_goal_loot_list">
+    <T>456471<!--SituationGoalLootActions: r5EventLoot_GoalLoot_Autonomy_Fish--></T>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+  <V n="tutorial_tip_group" t="enabled">
+    <T n="enabled">448150<!--TutorialTipGroup: tutorialTipGroup_LiveEvent_R5Event_Fish--></T>
+  </V>
+</I>

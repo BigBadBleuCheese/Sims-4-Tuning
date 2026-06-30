@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="CustomStatesSituation" i="situation" m="situations.custom_states.custom_states_situation" n="situation_APM_DoNothing" s="349826">
+  <L n="_situation_states">
+    <U>
+      <T n="Situation State Key">DoNothing</T>
+      <V n="Situation State" t="literal">
+        <U n="literal">
+          <L n="triggers">
+            <U>
+              <V n="effect" t="change_state">
+                <U n="change_state">
+                  <U n="possible_states">
+                    <L n="possible_state_keys">
+                      <U>
+                        <T n="situation_key">End</T>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+              </V>
+              <L n="triggers">
+                <V t="duration">
+                  <U n="duration">
+                    <U n="duration">
+                      <T n="minutes">1</T>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </U>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <T n="Situation State Key">End</T>
+    </U>
+  </L>
+  <V n="_starting_state" t="random_starting_state">
+    <U n="random_starting_state">
+      <L n="possible_state_keys">
+        <U>
+          <T n="situation_key">DoNothing</T>
+        </U>
+      </L>
+    </U>
+  </V>
+  <T p="InGame\Audio\Bumper\bumper_event_start.propx" n="audio_sting_on_start">39b2aa4a:00000000:78b903461d47e4fc</T>
+  <L n="compatible_venues">
+    <T>28614<!--Venue: venue_residential--></T>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_major_complete.propx" n="main_goal_audio_sting">39b2aa4a:00000000:10b476550150a33f</T>
+  <T n="max_participants">20</T>
+  <V n="situation_end_time_string" t="show_end_time">
+    <T n="show_end_time">0xA3E17143<!--String: "Work day ends at {0.TimeShort}"--></T>
+  </V>
+</I>

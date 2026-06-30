@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_APM_StartRulePOVisitCooldown" s="359442">
+  <L n="loot_actions">
+    <V t="schedule_drama_node">
+      <U n="schedule_drama_node">
+        <T n="drama_node">359438<!--DialogDramaNode: dialogDramaNode_APM_RuleVisitCooldown_MaxHousehold--></T>
+        <L n="tests">
+          <L>
+            <V t="business_rule_state">
+              <U n="business_rule_state">
+                <L n="rules">
+                  <T>347342<!--BusinessRule: Rule_PMI_MaxHousehold--></T>
+                </L>
+                <E n="state">BROKEN</E>
+                <V n="target_business" t="zone">
+                  <U n="zone">
+                    <E n="participant">CurrentZoneId</E>
+                  </U>
+                </V>
+                <U n="threshold">
+                  <T n="value">1</T>
+                </U>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="schedule_drama_node">
+      <U n="schedule_drama_node">
+        <T n="drama_node">359437<!--DialogDramaNode: dialogDramaNode_APM_RuleVisitCooldown_NoGhosts--></T>
+        <L n="tests">
+          <L>
+            <V t="business_rule_state">
+              <U n="business_rule_state">
+                <L n="rules">
+                  <T>348397<!--BusinessRule: Rule_PMI_NoGhosts--></T>
+                </L>
+                <E n="state">BROKEN</E>
+                <V n="target_business" t="zone">
+                  <U n="zone">
+                    <E n="participant">CurrentZoneId</E>
+                  </U>
+                </V>
+                <U n="threshold">
+                  <T n="value">1</T>
+                </U>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="schedule_drama_node">
+      <U n="schedule_drama_node">
+        <T n="drama_node">359440<!--DialogDramaNode: dialogDramaNode_APM_RuleVisitCooldown_NoNoise--></T>
+        <L n="tests">
+          <L>
+            <V t="business_rule_state">
+              <U n="business_rule_state">
+                <L n="rules">
+                  <T>348401<!--BusinessRule: Rule_PMI_LoudNoises--></T>
+                </L>
+                <E n="state">BROKEN</E>
+                <V n="target_business" t="zone">
+                  <U n="zone">
+                    <E n="participant">CurrentZoneId</E>
+                  </U>
+                </V>
+                <U n="threshold">
+                  <T n="value">1</T>
+                </U>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="schedule_drama_node">
+      <U n="schedule_drama_node">
+        <T n="drama_node">359436<!--DialogDramaNode: dialogDramaNode_APM_RuleVisitCooldown_NoPets--></T>
+        <L n="tests">
+          <L>
+            <V t="test_set_reference">
+              <T n="test_set_reference">359094<!--TestSetInstance: testSet_PMI_PetRule_CurrentZone_Broken--></T>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="schedule_drama_node">
+      <U n="schedule_drama_node">
+        <T n="drama_node">359441<!--DialogDramaNode: dialogDramaNode_APM_RuleVisitCooldown_NoSocialEvents--></T>
+        <L n="tests">
+          <L>
+            <V t="business_rule_state">
+              <U n="business_rule_state">
+                <L n="rules">
+                  <T>348400<!--BusinessRule: Rule_PMI_NoEvents--></T>
+                </L>
+                <V n="target_business" t="zone">
+                  <U n="zone">
+                    <E n="participant">CurrentZoneId</E>
+                  </U>
+                </V>
+                <U n="threshold">
+                  <T n="value">1</T>
+                </U>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="schedule_drama_node">
+      <U n="schedule_drama_node">
+        <T n="drama_node">359439<!--DialogDramaNode: dialogDramaNode_APM_RuleVisitCooldown_NoTrash--></T>
+        <L n="tests">
+          <L>
+            <V t="business_rule_state">
+              <U n="business_rule_state">
+                <L n="rules">
+                  <T>343562<!--BusinessRule: Rule_PMI_NoTrash--></T>
+                </L>
+                <V n="target_business" t="zone">
+                  <U n="zone">
+                    <E n="participant">CurrentZoneId</E>
+                  </U>
+                </V>
+                <U n="threshold">
+                  <T n="value">1</T>
+                </U>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="situation_running_test">
+        <U n="situation_running_test">
+          <V n="situation_whitelist" t="enabled">
+            <L n="enabled">
+              <T>345211<!--CustomStatesSituation: situation_APM_RulePO_Owned--></T>
+              <T>345212<!--CustomStatesSituation: situation_APM_RulePO_Unowned--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

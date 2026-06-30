@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="RandomWeightedLoot" i="action" m="interactions.utils.loot" n="randomWeightedLoot_APM_EventOutcome_Lapse_Algae" s="347526">
+  <L n="random_loot_actions">
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">348750<!--LootActions: loot_APM_EventOutcome_LapsedSuccess_Algae--></T>
+      </V>
+      <U n="weight">
+        <T n="base_value">1.5</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">2.5</T>
+            <L n="tests">
+              <L>
+                <V t="rental_unit_star_rating_test">
+                  <U n="rental_unit_star_rating_test">
+                    <U n="star_rating">
+                      <T n="lower_bound">5</T>
+                      <T n="upper_bound">5</T>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0.75</T>
+            <L n="tests">
+              <L>
+                <V t="rental_unit_star_rating_test">
+                  <U n="rental_unit_star_rating_test">
+                    <U n="star_rating">
+                      <T n="lower_bound">0</T>
+                      <T n="upper_bound">0</T>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">1.25</T>
+            <L n="tests">
+              <L>
+                <V t="zone">
+                  <U n="zone">
+                    <U n="zone_tests">
+                      <V n="zone_modifiers" t="enabled">
+                        <U n="enabled">
+                          <V n="whitelist" t="specify">
+                            <U n="specify">
+                              <L n="whitelist">
+                                <T>348078<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasNeatSim--></T>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">348734<!--LootActions: loot_APM_EventOutcome_LapsedFailure_Algae--></T>
+      </V>
+      <U n="weight">
+        <T n="base_value">5</T>
+      </U>
+    </U>
+  </L>
+</I>

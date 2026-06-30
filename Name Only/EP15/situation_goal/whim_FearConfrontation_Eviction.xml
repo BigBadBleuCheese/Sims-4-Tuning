@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalRanInteractionOnTargetedSim" i="situation_goal" m="situations.situation_goal_targeted_sim" n="whim_FearConfrontation_Eviction" s="342762">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T n="enabled" p="InEP15\UI\Icons\Whims\whim_landlordConfront.png">2f7d0004:00000000:18f9aae54e64a952</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0xB51BB4AB<!--String: "Successfully Socialize with the Property Owner"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0x41FA0445<!--String: "Interact with your Property Owner and choose to do Friendly or Romance interactions 3 times successfully."--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>342764<!--SituationGoalLootActions: goalLoot_Fear_Eviction_BeingFriendlyWithLandlord_ConfrontationGoal--></T>
+  </L>
+  <U n="_goal_test">
+    <V n="interaction_outcome" t="enabled">
+      <E n="enabled">SUCCESS</E>
+    </V>
+    <L n="tags">
+      <E>Interaction_Friendly</E>
+      <E>Social_Flirty</E>
+    </L>
+    <E n="test_event">InteractionComplete</E>
+  </U>
+  <T n="_iterations">3</T>
+  <L n="_pre_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="_score">25</T>
+  <T n="_select_all_instantiated_sims">True</T>
+  <E n="_target_option">PlayerChoice</E>
+  <L n="_target_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="relationship">
+      <U n="relationship">
+        <U n="required_relationship_bits">
+          <L n="match_any">
+            <T>343628<!--RelationshipBit: relBit_MultiUnit_TenantToLandlord--></T>
+            <T>343629<!--RelationshipBit: relBit_MultiUnit_LandlordToTenant--></T>
+          </L>
+        </U>
+      </U>
+    </V>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+</I>

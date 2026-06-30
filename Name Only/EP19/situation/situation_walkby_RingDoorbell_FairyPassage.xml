@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="WalkbyRingDoorBellSituation" i="situation" m="situations.ambient.walkby_ring_doorbell_situation" n="situation_walkby_RingDoorbell_FairyPassage" s="441145">
+  <L n="can_start_walkby_limiting_tags">
+    <E>Situation_Ring_Doorbell</E>
+  </L>
+  <T n="duration">120</T>
+  <V n="situation_end_time_string" t="show_end_time">
+    <T n="show_end_time">0xA3E17143<!--String: "Work day ends at {0.TimeShort}"--></T>
+  </V>
+  <L n="tags">
+    <E>Situation_Ring_Doorbell</E>
+    <E>Situation_VisitorNPCs</E>
+  </L>
+  <U n="walker_job">
+    <T n="leave_state">24224<!--RoleState: rolestate_leave_now--></T>
+    <T n="mailbox_state">24828<!--RoleState: walkby_visit_mailbox--></T>
+    <T n="ring_doorbell_state">465411<!--RoleState: walkby_ring_doorbell_FairyPassage--></T>
+    <T n="situation_job">441146<!--SituationJob: walker_job_RingDoorbell_FairyPassage--></T>
+    <T n="wait_for_invitation_state">15921<!--RoleState: walkby_wait_for_invitation--></T>
+  </U>
+  <U n="weight_multipliers">
+    <L n="multipliers">
+      <U>
+        <T n="multiplier">5</T>
+        <L n="tests">
+          <L>
+            <V t="test_set_reference">
+              <T n="test_set_reference">466357<!--TestSetInstance: testSetInstance_FairyPassage_LotTrait--></T>
+            </V>
+          </L>
+        </L>
+      </U>
+    </L>
+  </U>
+</I>

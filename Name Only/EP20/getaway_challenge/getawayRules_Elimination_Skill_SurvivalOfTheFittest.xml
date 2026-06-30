@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SkillElimination" i="getaway_challenge" m="custom_schedules.getaway_challenge_tuning" n="getawayRules_Elimination_Skill_SurvivalOfTheFittest" s="462157">
+  <U n="daily_timer">
+    <T n="hour">11</T>
+  </U>
+  <T n="description_tooltip">0x609A4E97<!--String: "Time to break a sweat! Sims with the least progress or lowest score in Fitness Skill will be eliminated. Only selected roles are eligible, and participation is limited to teens and older."--></T>
+  <T n="display_name">0xF4CD2F83<!--String: "Survival of the Fittest Elimination"--></T>
+  <L n="groups">
+    <U>
+      <L n="associated_buff">
+        <U>
+          <T n="buff_type">477375<!--Buff: buff_Trait_Competitive_Hidden_Getaway_SkillContest_SurvivalOfTheFittest--></T>
+        </U>
+        <U>
+          <T n="buff_type">483862<!--Buff: buff_Getaway_EliminationCandidate--></T>
+        </U>
+      </L>
+      <L n="disallowed_ages">
+        <E />
+        <E>INFANT</E>
+        <E>TODDLER</E>
+        <E>CHILD</E>
+      </L>
+      <L n="disallowed_species">
+        <E>CAT</E>
+        <E>DOG</E>
+        <E>FOX</E>
+        <E>HORSE</E>
+        <E>SMALLDOG</E>
+      </L>
+      <T n="group_name">0xD450CE15<!--String: "Competing Sims"--></T>
+    </U>
+  </L>
+  <T n="icon" p="InEP20\UI\Icons\GetawayRules\getaway_rules_SurvivalOfTheFittest.png">2f7d0004:00000000:bfa45fc95598e9f3</T>
+  <L n="loots_after_daily_timer">
+    <T>486065<!--LootActions: loot_Getaway_Elimination_SurvivalFittest--></T>
+    <T>487122<!--LootActions: loot_Getaway_Elimination_SurvivalFittest_2_Remaining--></T>
+    <T>487123<!--LootActions: loot_Getaway_Elimination_SurvivalFittest_3_Remaining--></T>
+    <T>487124<!--LootActions: loot_Getaway_Elimination_SurvivalFittest_4_Remaining--></T>
+    <T>487125<!--LootActions: loot_Getaway_Elimination_SurvivalFittest_FinalElimination--></T>
+  </L>
+  <L n="skills">
+    <T>16659<!--Skill: skill_Fitness--></T>
+  </L>
+  <L n="tests_blocking_daily_timer_behavior">
+    <L>
+      <V t="count">
+        <U n="count">
+          <V n="participant" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">GetawayEliminationCandidates</E>
+            </U>
+          </V>
+          <V n="threshold" t="from_value">
+            <U n="from_value">
+              <E n="comparison">LESS_OR_EQUAL</E>
+              <T n="value">1</T>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

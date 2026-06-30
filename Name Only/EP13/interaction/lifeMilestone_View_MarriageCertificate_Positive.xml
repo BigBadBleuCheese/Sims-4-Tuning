@@ -1,0 +1,398 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="lifeMilestone_View_MarriageCertificate_Positive" s="306380">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="facing" />
+        </U>
+        <U>
+          <V n="value" t="cone">
+            <U n="cone">
+              <T n="angle">70</T>
+              <T n="ideal_radius_max">0.2</T>
+              <T n="ideal_radius_min">0.1</T>
+              <T n="max_radius">5</T>
+              <T n="min_radius">1</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="time_based">
+                <U n="time_based">
+                  <T n="max_time">8</T>
+                  <T n="min_time">6</T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+      </L>
+      <V n="content" t="looping_content">
+        <U n="looping_content">
+          <U n="animation_ref">
+            <T n="factory">306431<!--AnimationElement: LifeMilestone_PositiveReminisceItem--></T>
+            <U n="overrides">
+              <V n="balloons" t="enabled">
+                <L n="enabled">
+                  <U>
+                    <L n="balloon_choices">
+                      <U>
+                        <V n="item" t="balloon_icon">
+                          <U n="balloon_icon">
+                            <V n="icon" t="participant">
+                              <U n="participant">
+                                <L n="participant_type">
+                                  <E>StoredSim</E>
+                                </L>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                        <L n="tests">
+                          <L>
+                            <V t="identity">
+                              <U n="identity">
+                                <E n="subject_b">StoredSim</E>
+                              </U>
+                            </V>
+                          </L>
+                        </L>
+                      </U>
+                      <U>
+                        <V n="item" t="balloon_icon">
+                          <U n="balloon_icon">
+                            <V n="icon" t="resource_key">
+                              <U n="resource_key">
+                                <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_flowerbouquet.png">2f7d0004:00000000:d5cc4605d0263f0c</T>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </U>
+                      <U>
+                        <V n="item" t="balloon_icon">
+                          <U n="balloon_icon">
+                            <V n="icon" t="participant">
+                              <U n="participant">
+                                <L n="participant_type">
+                                  <E>StoredSim2</E>
+                                </L>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                        <L n="tests">
+                          <L>
+                            <V t="identity">
+                              <U n="identity">
+                                <E n="subject_b">StoredSim2</E>
+                              </U>
+                            </V>
+                          </L>
+                        </L>
+                      </U>
+                    </L>
+                    <T n="balloon_delay">2</T>
+                    <T n="balloon_delay_random_offset">2</T>
+                    <L n="balloon_target">
+                      <E>Actor</E>
+                    </L>
+                  </U>
+                </L>
+              </V>
+            </U>
+          </U>
+        </U>
+      </V>
+    </U>
+  </V>
+  <V n="basic_reserve_object" t="disabled" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x75896B37<!--String: "Reminisce"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="prioritized_tested_outcomes">
+        <U>
+          <U n="outcome">
+            <V n="animation_ref" t="enabled">
+              <U n="enabled">
+                <T n="factory">306443<!--AnimationElement: lifeMilestone_PositiveReminisceItem_Happy--></T>
+              </U>
+            </V>
+            <L n="basic_extras">
+              <V t="buff_fire_and_forget">
+                <U n="buff_fire_and_forget">
+                  <U n="buff">
+                    <V n="buff_reason" t="enabled">
+                      <T n="enabled">0x35AEB47D<!--String: "(From Marriage Certificate)"--></T>
+                    </V>
+                    <T n="buff_type">335427<!--Buff: buff_LifeMilestone_MemorabiliaOfDeadSim--></T>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </U>
+          <L n="tests">
+            <L>
+              <V t="trait">
+                <U n="trait">
+                  <E n="subject">StoredSim</E>
+                  <L n="whitelist_trait_types">
+                    <E>GHOST</E>
+                  </L>
+                </U>
+              </V>
+            </L>
+            <L>
+              <V t="trait">
+                <U n="trait">
+                  <E n="subject">StoredSim2</E>
+                  <L n="whitelist_trait_types">
+                    <E>GHOST</E>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">306445<!--AnimationElement: lifeMilestone_PositiveReminisceItem_Flirty--></T>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <V n="buff_reason" t="enabled">
+                          <T n="enabled">0x35AEB47D<!--String: "(From Marriage Certificate)"--></T>
+                        </V>
+                        <T n="buff_type">306160<!--Buff: buff_LifeMilestone_MarriageCertificate_Happy--></T>
+                      </U>
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="relationship">
+                <U n="relationship">
+                  <U n="required_relationship_bits">
+                    <L n="match_any">
+                      <T>15822<!--RelationshipBit: romantic-Married--></T>
+                    </L>
+                  </U>
+                  <L n="target_sim">
+                    <E>StoredSim</E>
+                  </L>
+                </U>
+              </V>
+              <V t="identity">
+                <U n="identity">
+                  <E n="subject_b">StoredSim2</E>
+                  <T n="subjects_match">True</T>
+                </U>
+              </V>
+            </L>
+            <L>
+              <V t="relationship">
+                <U n="relationship">
+                  <U n="required_relationship_bits">
+                    <L n="match_any">
+                      <T>15822<!--RelationshipBit: romantic-Married--></T>
+                    </L>
+                  </U>
+                  <L n="target_sim">
+                    <E>StoredSim2</E>
+                  </L>
+                </U>
+              </V>
+              <V t="identity">
+                <U n="identity">
+                  <E n="subject_b">StoredSim</E>
+                  <T n="subjects_match">True</T>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">306443<!--AnimationElement: lifeMilestone_PositiveReminisceItem_Happy--></T>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <V n="buff_reason" t="enabled">
+                          <T n="enabled">0x35AEB47D<!--String: "(From Marriage Certificate)"--></T>
+                        </V>
+                        <T n="buff_type">306162<!--Buff: buff_LifeMilestone_MarriageCertificate_NotMeantForMarriage--></T>
+                      </U>
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="relationship">
+                <U n="relationship">
+                  <U n="prohibited_relationship_bits">
+                    <L n="match_any">
+                      <T>15822<!--RelationshipBit: romantic-Married--></T>
+                    </L>
+                  </U>
+                  <L n="target_sim">
+                    <E>StoredSim</E>
+                  </L>
+                </U>
+              </V>
+              <V t="identity">
+                <U n="identity">
+                  <E n="subject_b">StoredSim2</E>
+                  <T n="subjects_match">True</T>
+                </U>
+              </V>
+            </L>
+            <L>
+              <V t="relationship">
+                <U n="relationship">
+                  <U n="prohibited_relationship_bits">
+                    <L n="match_any">
+                      <T>15822<!--RelationshipBit: romantic-Married--></T>
+                    </L>
+                  </U>
+                  <L n="target_sim">
+                    <E>StoredSim2</E>
+                  </L>
+                </U>
+              </V>
+              <V t="identity">
+                <U n="identity">
+                  <E n="subject_b">StoredSim</E>
+                  <T n="subjects_match">True</T>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all" />
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="identity">
+        <U n="identity">
+          <E n="subject_b">StoredSim</E>
+          <T n="subjects_match">True</T>
+        </U>
+      </V>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="relationship_score_interval">
+            <T n="lower_bound">0</T>
+          </U>
+          <L n="target_sim">
+            <E>StoredSim2</E>
+          </L>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="identity">
+        <U n="identity">
+          <E n="subject_b">StoredSim2</E>
+          <T n="subjects_match">True</T>
+        </U>
+      </V>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="relationship_score_interval">
+            <T n="lower_bound">0</T>
+          </U>
+          <L n="target_sim">
+            <E>StoredSim</E>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

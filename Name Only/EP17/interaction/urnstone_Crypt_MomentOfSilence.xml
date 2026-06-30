@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="urnstone_Crypt_MomentOfSilence" s="391352">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="cone">
+            <U n="cone">
+              <T n="angle">30</T>
+              <T n="max_radius">3.5</T>
+              <T n="min_radius">1.5</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="value" t="facing" />
+        </U>
+      </L>
+    </U>
+  </L>
+  <E n="_constraints_actor">ObjectInventoryOwner</E>
+  <L n="_false_advertisements">
+    <V t="statistic_set_max">
+      <U n="statistic_set_max">
+        <T n="stat">99668<!--Commodity: commodity_Motive_Mourn_Friend--></T>
+      </U>
+    </V>
+    <V t="statistic_set_max">
+      <U n="statistic_set_max">
+        <T n="stat">99667<!--Commodity: commodity_Motive_Mourn_LovedOne--></T>
+      </U>
+    </V>
+    <V t="statistic_set_max">
+      <U n="statistic_set_max">
+        <T n="stat">99669<!--Commodity: commodity_Motive_Mourn_Nemesis--></T>
+      </U>
+    </V>
+    <V t="statistic_set_max">
+      <U n="statistic_set_max">
+        <T n="stat">29117<!--Commodity: commodity_Trait_Autonomy_Evil--></T>
+      </U>
+    </V>
+    <V t="statistic_set_max">
+      <U n="statistic_set_max">
+        <T n="stat">29121<!--Commodity: commodity_Trait_Autonomy_Good--></T>
+      </U>
+    </V>
+  </L>
+  <V n="_forwarding" t="Don't_Forward" />
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>StoredSim</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <L n="_static_commodities">
+    <U>
+      <T n="desire">8</T>
+      <T n="static_commodity">126949<!--StaticCommodity: staticCommodity_Urnstone_Mourn--></T>
+    </U>
+    <U>
+      <T n="desire">4</T>
+      <T n="static_commodity">400795<!--StaticCommodity: staticCommodity_EP17World_BonehildaCosplay--></T>
+    </U>
+  </L>
+  <T n="allow_autonomous">True</T>
+  <T n="allow_from_object_inventory">True</T>
+  <T n="allow_from_world">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="time_based">
+                <U n="time_based">
+                  <T n="max_time">20</T>
+                  <T n="min_time">10</T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+        <V t="list_reference">
+          <T n="list_reference">395026<!--ExitConditionList: exitConditionList_MotiveFail_ExitCancel--></T>
+        </V>
+      </L>
+      <V n="periodic_stat_change" t="enabled">
+        <U n="enabled">
+          <U n="operation_actions">
+            <L n="actions">
+              <T>250520<!--LootActions: loot_Sentiment_Modify_Increase_Positive_Periodic_small_StoredSim--></T>
+            </L>
+          </U>
+          <L n="operations">
+            <V t="statistic_set_max">
+              <U n="statistic_set_max">
+                <T n="stat">99668<!--Commodity: commodity_Motive_Mourn_Friend--></T>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+              </U>
+            </V>
+            <V t="statistic_set_max">
+              <U n="statistic_set_max">
+                <T n="stat">99667<!--Commodity: commodity_Motive_Mourn_LovedOne--></T>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+              </U>
+            </V>
+            <V t="statistic_set_max">
+              <U n="statistic_set_max">
+                <T n="stat">29118<!--Commodity: commodity_Trait_Autonomy_FamilyOriented--></T>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+              </U>
+            </V>
+            <V t="statistic_set_max">
+              <U n="statistic_set_max">
+                <T n="stat">29121<!--Commodity: commodity_Trait_Autonomy_Good--></T>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+              </U>
+            </V>
+            <V t="statistic_change_by_category">
+              <U n="statistic_change_by_category">
+                <V n="change" t="stat_change">
+                  <U n="stat_change">
+                    <T n="change_amout">-5</T>
+                  </U>
+                </V>
+                <E n="statistic_category">Sad_Buffs</E>
+              </U>
+            </V>
+            <V t="statistic_set_max">
+              <U n="statistic_set_max">
+                <T n="stat">16469<!--Commodity: commodity_Emotion_Autonomy_Sad--></T>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+              </U>
+            </V>
+          </L>
+        </U>
+      </V>
+      <V n="statistic_reduction_by_category" t="enabled">
+        <U n="enabled">
+          <L n="categories">
+            <E>Sad_Buffs</E>
+            <E>BrokenHeart_Death_Buffs</E>
+          </L>
+          <T n="rate">5</T>
+          <L n="subject">
+            <E>Actor</E>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="stat_increment_decrement">
+      <U n="stat_increment_decrement">
+        <T n="stat">395025<!--Statistic: statistic_Object_Generic_InUse_Counter--></T>
+        <L n="subject">
+          <E>ObjectInventoryOwner</E>
+        </L>
+      </U>
+    </V>
+    <V t="balloon">
+      <U n="balloon">
+        <L n="balloon_choices">
+          <U>
+            <V n="item" t="balloon_icon">
+              <U n="balloon_icon">
+                <V n="icon" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>StoredSim</E>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </U>
+        </L>
+        <L n="balloon_target">
+          <E>Object</E>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="basic_liabilities">
+    <V t="hide_sim_liability" />
+  </L>
+  <V n="content_score" t="disabled" />
+  <T n="counts_as_inside">True</T>
+  <T n="display_name">0x28FDE4DB<!--String: "Moment of Silence"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">StoredSim</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="route_start_balloon" t="enabled">
+    <U n="enabled">
+      <U n="balloon">
+        <L n="balloon_choices">
+          <U>
+            <V n="item" t="balloon_icon">
+              <U n="balloon_icon">
+                <V n="icon" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>Object</E>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </U>
+        </L>
+        <L n="balloon_target">
+          <E>Actor</E>
+        </L>
+      </U>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all" />
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="in_inventory">
+      <U n="in_inventory">
+        <L n="inventory_types">
+          <E>CRYPT</E>
+        </L>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">404575<!--TestSetInstance: testSet_FloatingUrn_Disallow--></T>
+    </V>
+    <V t="in_use">
+      <U n="in_use">
+        <T n="negate">True</T>
+        <L n="targets">
+          <E>ObjectInventoryOwner</E>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x3217482C<!--String: "Crypt is currently in use."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">10</T>
+  <U n="visual_type_override_data">
+    <L n="testable_icons">
+      <U>
+        <T p="InEP17\UI\Icons\PieMenu\Interactions\icon_pieMenu_GrievingRituals.png" n="icon">2f7d0004:00000000:ebb869ad9323a3ec</T>
+        <L n="test">
+          <L>
+            <V t="existence">
+              <U n="existence">
+                <T n="exists">False</T>
+                <E n="participant">StoredSim</E>
+                <T n="require_instantiatable">False</T>
+                <T n="require_instantiated">False</T>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </L>
+  </U>
+</I>

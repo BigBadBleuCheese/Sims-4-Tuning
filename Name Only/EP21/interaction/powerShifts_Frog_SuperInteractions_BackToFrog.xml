@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="powerShifts_Frog_SuperInteractions_BackToFrog" s="477954">
+  <V n="_saveable" t="enabled" />
+  <T n="allowed_to_combine">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xE8B6FB2A<!--String: "Kiss Frog"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <V n="animation_ref" t="enabled">
+          <U n="enabled">
+            <T n="factory">474308<!--AnimationElement: powerShifts_Frog_KissFrogTransform--></T>
+          </U>
+        </V>
+        <L n="basic_extras">
+          <V t="destroy_object">
+            <U n="destroy_object">
+              <V n="fade_duration" t="use_custom_fade_duration">
+                <T n="use_custom_fade_duration">0</T>
+              </V>
+              <V n="objects_to_destroy" t="from_participant">
+                <U n="from_participant">
+                  <E n="participant">Actor</E>
+                </U>
+              </V>
+              <V n="timing" t="on_xevt">
+                <U n="on_xevt">
+                  <T n="xevt_id">437</T>
+                </U>
+              </V>
+            </U>
+          </V>
+          <V t="loot">
+            <U n="loot">
+              <L n="loot_list">
+                <T>479686<!--LootActions: loot_PowerShifts_Frog_RemoveSimInfo--></T>
+              </L>
+            </U>
+          </V>
+        </L>
+      </U>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all" />
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

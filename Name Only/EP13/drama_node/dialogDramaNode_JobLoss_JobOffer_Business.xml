@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="DialogDramaNode" i="drama_node" m="drama_scheduler.dialog_drama_node" n="dialogDramaNode_JobLoss_JobOffer_Business" s="308901">
+  <V n="dialog_and_loot" t="dialog_ok_cancel">
+    <U n="dialog_ok_cancel">
+      <U n="dialog">
+        <V n="icon" t="enabled">
+          <V n="enabled" t="participant">
+            <U n="participant">
+              <L n="participant_type">
+                <E>TargetSim</E>
+              </L>
+            </U>
+          </V>
+        </V>
+        <V n="text" t="single">
+          <T n="single">0xBCBE11A9<!--String: "I just heard that there's a new opening in the Business Career. The job is yours if you want it?"--></T>
+        </V>
+        <T n="text_cancel">0xD406304F<!--String: "Erm, not sure that's for me"--></T>
+        <T n="text_ok">0x62BBBA57<!--String: "That sounds great, I'm in!"--></T>
+      </U>
+      <L n="on_dialog_accepted_loot_list">
+        <T>308917<!--RandomWeightedLoot: randomWeightedLoot_JobLoss_AcceptJobOffer_Business--></T>
+      </L>
+    </U>
+  </V>
+  <U n="min_and_max_times">
+    <T n="lower_bound">0</T>
+    <T n="upper_bound">24</T>
+  </U>
+  <T n="override_picked_sim_info_resolver">True</T>
+  <L n="run_tests">
+    <L>
+      <V t="career_test">
+        <U n="career_test">
+          <T n="negate">True</T>
+          <V n="test_type" t="has_career" />
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="sender_sim_info" t="sim_filter">
+    <U n="sim_filter">
+      <L n="blacklist_participants">
+        <E>ActiveHousehold</E>
+      </L>
+      <T n="sim_filter">423981<!--TunableSimFilter: filter_DramaNode_CompatibleRegion_TYAE_HasRelationship_WithRequestor--></T>
+    </U>
+  </V>
+  <E n="sender_sim_info_type">INSTANCED_ALLOWED</E>
+  <V n="time_option" t="schedule">
+    <U n="schedule">
+      <L n="valid_times">
+        <U>
+          <U n="days_available">
+            <T n="0 SUNDAY">True</T>
+            <T n="1 MONDAY">True</T>
+            <T n="2 TUESDAY">True</T>
+            <T n="3 WEDNESDAY">True</T>
+            <T n="4 THURSDAY">True</T>
+            <T n="5 FRIDAY">True</T>
+            <T n="6 SATURDAY">True</T>
+          </U>
+          <T n="duration">0</T>
+          <U n="start_time">
+            <T n="hour">10</T>
+          </U>
+        </U>
+      </L>
+    </U>
+  </V>
+</I>

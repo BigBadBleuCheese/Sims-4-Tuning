@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationJob" i="situation_job" m="situations.situation_job" n="job_CAD_Actor_Date_Recovery" s="379086">
+  <T n="can_be_hired">False</T>
+  <L n="commodities">
+    <V t="statistic_set_in_range">
+      <U n="statistic_set_in_range">
+        <T n="stat">16652<!--Commodity: motive_Bladder--></T>
+        <V n="value_type" t="int_range">
+          <U n="int_range">
+            <U n="value_range">
+              <T n="lower_bound">75</T>
+              <T n="upper_bound">100</T>
+            </U>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="statistic_set_in_range">
+      <U n="statistic_set_in_range">
+        <T n="stat">16654<!--Commodity: motive_Energy--></T>
+        <V n="value_type" t="int_range">
+          <U n="int_range">
+            <U n="value_range">
+              <T n="lower_bound">75</T>
+              <T n="upper_bound">100</T>
+            </U>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="statistic_set_in_range">
+      <U n="statistic_set_in_range">
+        <T n="stat">16655<!--Commodity: motive_Fun--></T>
+        <V n="value_type" t="int_range">
+          <U n="int_range">
+            <U n="value_range">
+              <T n="lower_bound">75</T>
+              <T n="upper_bound">100</T>
+            </U>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="statistic_set_in_range">
+      <U n="statistic_set_in_range">
+        <T n="stat">16656<!--Commodity: motive_Hunger--></T>
+        <V n="value_type" t="int_range">
+          <U n="int_range">
+            <U n="value_range">
+              <T n="lower_bound">75</T>
+              <T n="upper_bound">100</T>
+            </U>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="statistic_set_in_range">
+      <U n="statistic_set_in_range">
+        <T n="stat">16657<!--Commodity: motive_Hygiene--></T>
+        <V n="value_type" t="int_range">
+          <U n="int_range">
+            <U n="value_range">
+              <T n="lower_bound">75</T>
+              <T n="upper_bound">100</T>
+            </U>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="confirm_leave_situation_for_work">True</T>
+  <E n="died_or_left_action">END_SITUATION</E>
+  <T n="display_name">0xD2A6AE00<!--String: "Host"--></T>
+  <L n="emotional_setup">
+    <U>
+      <T n="single_sim_loot_actions">29676<!--WeightedSingleSimLootActions: lootAction_Date_EmotionSetup--></T>
+    </U>
+  </L>
+  <T n="filter">104863<!--TunableSimFilter: filter_ages_YoungAdult_Elder_Allow_Ghosts--></T>
+  <T n="goal_scoring">10</T>
+  <T p="InGame\UI\Icons\Events\EventRoles\EventRole_Date.png" n="icon">2f7d0004:00000000:59df59ef38d9cb7a</T>
+  <T n="job_description">0xE07C6E1<!--String: "It's pretty simple; make sure your date has a good time. And if you can have fun at the same time, all the better!"--></T>
+  <L n="location_based_filter_terms" />
+  <E n="no_show_action">END_SITUATION</E>
+  <T n="participating_npcs_should_ignore_work">True</T>
+  <L n="rewards">
+    <U>
+      <E n="medal">BRONZE</E>
+      <U n="benefit">
+        <L n="loot">
+          <T>365537<!--LootActions: lootActions_CAD_DateComplete_Bronze--></T>
+          <T>375133<!--LootActions: lootActions_DateDebrief_Buff_Fine_Recovery--></T>
+        </L>
+        <V n="loot_target" t="enabled">
+          <T n="enabled">375556<!--SituationJob: job_CAD_Target_Date_Adult_RecoveryDate--></T>
+        </V>
+        <T n="reward">365541<!--HouseholdReward: reward_CAD_Date_Bronze--></T>
+      </U>
+    </U>
+    <U>
+      <E n="medal">GOLD</E>
+      <U n="benefit">
+        <L n="loot">
+          <T>365539<!--LootActions: lootActions_CAD_DateComplete_Gold--></T>
+          <T>432260<!--LootActions: loot_Buff_Trait_Grouch_ThatsNotFunny--></T>
+          <T>375131<!--LootActions: lootActions_DateDebrief_Buff_Amazing_Recovery--></T>
+          <T>381027<!--LootActions: lootActions_PerfectDate--></T>
+        </L>
+        <V n="loot_target" t="enabled">
+          <T n="enabled">375556<!--SituationJob: job_CAD_Target_Date_Adult_RecoveryDate--></T>
+        </V>
+        <T n="reward">365543<!--HouseholdReward: reward_CAD_Date_Gold--></T>
+      </U>
+    </U>
+    <U>
+      <E n="medal">SILVER</E>
+      <U n="benefit">
+        <L n="loot">
+          <T>365538<!--LootActions: lootActions_CAD_DateComplete_Silver--></T>
+          <T>375133<!--LootActions: lootActions_DateDebrief_Buff_Fine_Recovery--></T>
+        </L>
+        <V n="loot_target" t="enabled">
+          <T n="enabled">375556<!--SituationJob: job_CAD_Target_Date_Adult_RecoveryDate--></T>
+        </V>
+        <T n="reward">365542<!--HouseholdReward: reward_CAD_Date_Silver--></T>
+      </U>
+    </U>
+    <U>
+      <E n="medal">TIN</E>
+      <U n="benefit">
+        <L n="loot">
+          <T>375175<!--LootActions: lootActions_DateDebrief_Buff_Terrible_Recovery--></T>
+          <T>378753<!--LootActions: loot_Death_BrokenHeart_Medium--></T>
+        </L>
+        <V n="loot_target" t="enabled">
+          <T n="enabled">375556<!--SituationJob: job_CAD_Target_Date_Adult_RecoveryDate--></T>
+        </V>
+      </U>
+    </U>
+  </L>
+  <L n="sim_spawner_tags">
+    <E>Spawn_VisitorArrival</E>
+  </L>
+  <L n="tags">
+    <E>Role_Date</E>
+  </L>
+  <T n="tooltip_name">0xD2A6AE00<!--String: "Host"--></T>
+  <U n="tooltip_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type" />
+    </L>
+  </U>
+  <L n="zone_modifier_based_filter_terms">
+    <V t="reference">
+      <T n="reference">380099<!--ZoneModifierBasedFilterTerms: zoneModifier_NoGhosts_Filter--></T>
+    </V>
+  </L>
+</I>

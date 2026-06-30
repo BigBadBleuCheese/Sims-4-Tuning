@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="DialogDramaNode" i="drama_node" m="drama_scheduler.dialog_drama_node" n="dialogDramaNode_RelationshipCounseling_Call" s="375602">
+  <V n="cooldown_data" t="node_cooldown">
+    <U n="node_cooldown">
+      <V n="duration" t="duration">
+        <T n="duration">672</T>
+      </V>
+    </U>
+  </V>
+  <V n="dialog_and_loot" t="dialog_ok">
+    <U n="dialog_ok">
+      <U n="dialog">
+        <E n="phone_ring_type">BUZZ</E>
+        <V n="text" t="single">
+          <T n="single">0x4047EA59<!--String: "Relationship on thin ice? Try Cupid’s Counseling by Cupid’s Corner. We have semi-graduated therapists just rearing to give your relationship a boost! You can find Cupid’s Counseling on your phone under the Cupid’s Corner App!"--></T>
+        </V>
+      </U>
+    </U>
+  </V>
+  <U n="min_and_max_times">
+    <T n="lower_bound">0</T>
+    <T n="upper_bound">24</T>
+  </U>
+  <V n="picked_sim_info" t="sim_filter">
+    <U n="sim_filter">
+      <T n="sim_filter">375605<!--TunableSimFilter: dramaNodeFilters_RelationshipCounseling_PickedSim--></T>
+    </U>
+  </V>
+  <L n="pretests">
+    <L>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="required_relationship_bits">
+            <L n="match_any">
+              <T>362478<!--RelationshipBit: romanceTrope_strained--></T>
+              <T>362102<!--RelationshipBit: relBit_RelSat_1_Actor_VeryUnsatisfiedWith_Target--></T>
+              <T>362103<!--RelationshipBit: relBit_RelSat_2_Actor_UnsatisfiedWith_Target--></T>
+              <T>15828<!--RelationshipBit: RomanticCombo_BadMatch--></T>
+              <T>15843<!--RelationshipBit: RomanticCombo_BadRomance--></T>
+              <T>15841<!--RelationshipBit: RomanticCombo_TerribleMatch--></T>
+              <T>15842<!--RelationshipBit: RomanticCombo_TotalOpposites--></T>
+              <T>77648<!--RelationshipBit: RomanticCombo_Despised--></T>
+              <T>77647<!--RelationshipBit: RomanticCombo_Disliked--></T>
+              <T>15833<!--RelationshipBit: RomanticCombo_ItsAwkward--></T>
+              <T>15834<!--RelationshipBit: RomanticCombo_ItsComplicated--></T>
+              <T>15835<!--RelationshipBit: RomanticCombo_ItsVeryAwkward--></T>
+              <T>15836<!--RelationshipBit: RomanticCombo_ItsVeryComplicated--></T>
+            </L>
+          </U>
+          <L n="subject">
+            <E>Actor</E>
+          </L>
+          <L n="target_sim">
+            <E>PickedSim</E>
+          </L>
+        </U>
+      </V>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>375606<!--Buff: buff_RelationshipCounseling_Hidden_CooldownBuff--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="scoring" t="enabled">
+    <U n="enabled">
+      <T n="base_score">100</T>
+      <E n="bucket">DEFAULT</E>
+    </U>
+  </V>
+  <V n="sender_sim_info" t="sim_filter">
+    <U n="sim_filter">
+      <T n="sim_filter">375603<!--TunableSimFilter: dramaNodeFilters_RelationshipCounseling_Call--></T>
+    </U>
+  </V>
+  <V n="time_option" t="schedule">
+    <U n="schedule">
+      <L n="valid_times">
+        <U>
+          <U n="days_available">
+            <T n="0 SUNDAY">True</T>
+            <T n="1 MONDAY">True</T>
+            <T n="2 TUESDAY">True</T>
+            <T n="3 WEDNESDAY">True</T>
+            <T n="4 THURSDAY">True</T>
+            <T n="5 FRIDAY">True</T>
+            <T n="6 SATURDAY">True</T>
+          </U>
+          <T n="duration">8</T>
+          <U n="start_time">
+            <T n="hour">12</T>
+          </U>
+        </U>
+      </L>
+    </U>
+  </V>
+</I>

@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_GhostPowers_WitnessReactions_PossessInstrument_MacabreGhostWhisper" s="393506">
+  <L n="loot_actions">
+    <V t="reaction">
+      <U n="reaction">
+        <V n="mixer_reaction" t="enabled">
+          <U n="enabled">
+            <T n="affordance">123828<!--MixerInteraction: reaction_Mixers_Giggle--></T>
+          </U>
+        </V>
+        <V n="si_reaction" t="enabled">
+          <U n="enabled">
+            <T n="affordance">385291<!--SuperInteraction: reactions_Ghosts_PositiveReaction_Giddy--></T>
+            <E n="affordance_priority">Critical</E>
+            <V n="affordance_run_priority" t="enabled">
+              <E n="enabled">Critical</E>
+            </V>
+            <V n="affordance_target" t="disabled" />
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x85A0723B<!--String: "(From Ghost Whisperer Trait)"--></T>
+          </V>
+          <T n="buff_type">393533<!--Buff: buff_GhostPowers_PossessInstrument_MusicToMyEar--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <L n="whitelist_traits">
+                  <T>381869<!--Trait: trait_GhostWhisperer--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x7E03195F<!--String: "(From Macabre Trait)"--></T>
+          </V>
+          <T n="buff_type">393533<!--Buff: buff_GhostPowers_PossessInstrument_MusicToMyEar--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <L n="whitelist_traits">
+                  <T>379635<!--Trait: trait_Macabre--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">30</T>
+          <T n="stat">16655<!--Commodity: motive_Fun--></T>
+        </U>
+      </V>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>422882<!--Buff: buff_Role_ReaperCareer_Player--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

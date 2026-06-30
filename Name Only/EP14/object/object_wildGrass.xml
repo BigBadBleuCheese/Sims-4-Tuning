@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="GameObject" i="object" m="objects.game_object" n="object_wildGrass" s="326081">
+  <U n="_components">
+    <V n="affordance_tuning" t="enabled">
+      <U n="enabled">
+        <L n="affordance_map">
+          <U>
+            <T n="key">97433<!--CollectManyInteraction: Collect_Trash_Gardening--></T>
+            <U n="value">
+              <L n="basic_extras">
+                <V t="buff_fire_and_forget">
+                  <U n="buff_fire_and_forget">
+                    <U n="buff">
+                      <V n="buff_reason" t="enabled">
+                        <T n="enabled">0x7BF36ABD<!--String: "(From Uprooting Prairie Grass)"--></T>
+                      </V>
+                      <T n="buff_type">326663<!--Buff: buff_Object_WildGrass_Cuts--></T>
+                    </U>
+                    <U n="success_chance">
+                      <T n="base_chance">30</T>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </U>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V n="focus" t="enabled">
+      <U n="enabled">
+        <V n="_focus_score" t="globally">
+          <U n="globally">
+            <E n="base">LOW</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V n="state" t="enabled">
+      <U n="enabled">
+        <L n="state_triggers">
+          <U>
+            <L n="at_states">
+              <T>77532<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Replace--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>39737<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Not_Burning--></T>
+              </L>
+            </V>
+          </U>
+        </L>
+        <L n="states">
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">39478<!--CommodityBasedObjectStateValue: FireState_Burn_Incinerate_Burning--></T>
+              </U>
+              <U>
+                <T n="key">39479<!--CommodityBasedObjectStateValue: FireState_Burn_Incinerate--></T>
+              </U>
+              <U>
+                <T n="key">39612<!--CommodityBasedObjectStateValue: FireState_Burn_Incinerate_Not_Burning--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">39612<!--CommodityBasedObjectStateValue: FireState_Burn_Incinerate_Not_Burning--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">39611<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change--></T>
+              </U>
+              <U>
+                <T n="key">39736<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Burning--></T>
+              </U>
+              <U>
+                <T n="key">39737<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Not_Burning--></T>
+              </U>
+              <U>
+                <T n="key">77532<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Replace--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">39737<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Not_Burning--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">339109<!--ObjectStateValue: objectStateValue_WildGrass_Search_Values_Unsearched--></T>
+              </U>
+              <U>
+                <T n="key">339110<!--ObjectStateValue: objectStateValue_WildGrass_Search_Values_Searched--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">339109<!--ObjectStateValue: objectStateValue_WildGrass_Search_Values_Unsearched--></T>
+            </V>
+            <T n="reset_to_default">True</T>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">326163<!--CommodityBasedObjectStateValue: wildGrass_Values_BarelyGrown--></T>
+              </U>
+              <U>
+                <T n="key">326164<!--CommodityBasedObjectStateValue: wildGrass_Values_FullyGrown--></T>
+              </U>
+              <U>
+                <T n="key">326165<!--CommodityBasedObjectStateValue: wildGrass_Values_Overgrown--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">326164<!--CommodityBasedObjectStateValue: wildGrass_Values_FullyGrown--></T>
+            </V>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V n="time_of_day_component" t="enabled">
+      <U n="enabled">
+        <L n="state_changes">
+          <U>
+            <T n="key">339107<!--ObjectState: objectState_WildGrass_Search_States--></T>
+            <L n="value">
+              <U>
+                <T n="start_time">3</T>
+                <T n="value">339109<!--ObjectStateValue: objectStateValue_WildGrass_Search_Values_Unsearched--></T>
+              </U>
+            </L>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V n="tooltip_component" t="enabled">
+      <U n="enabled">
+        <L n="state_value_strings">
+          <L>
+            <U>
+              <T n="state_value">326163<!--CommodityBasedObjectStateValue: wildGrass_Values_BarelyGrown--></T>
+              <V n="text" t="single">
+                <T n="single">0x9851F7EE<!--String: "Barely Grown"--></T>
+              </V>
+            </U>
+          </L>
+          <L>
+            <U>
+              <T n="state_value">326164<!--CommodityBasedObjectStateValue: wildGrass_Values_FullyGrown--></T>
+              <V n="text" t="single">
+                <T n="single">0xEE41C219<!--String: "Fully Grown "--></T>
+              </V>
+            </U>
+          </L>
+          <L>
+            <U>
+              <T n="state_value">326165<!--CommodityBasedObjectStateValue: wildGrass_Values_Overgrown--></T>
+              <V n="text" t="single">
+                <T n="single">0xD98C4EA<!--String: "Overgrown"--></T>
+              </V>
+            </U>
+          </L>
+        </L>
+      </U>
+    </V>
+  </U>
+  <L n="_super_affordances">
+    <T>13328<!--ImmediateSuperInteraction: debug_Reset--></T>
+    <T>13326<!--ImmediateSuperInteraction: debug_ObjectDestroy--></T>
+    <T>97433<!--CollectManyInteraction: Collect_Trash_Gardening--></T>
+    <T>326664<!--SuperInteraction: Harvest_WildGrass--></T>
+    <T>326373<!--SuperInteraction: Harvest_All_WildGrass--></T>
+    <T>13983<!--StandSuperInteraction: sim-stand--></T>
+    <T>74457<!--ImmediateSuperInteraction: fire_ReplaceBurntObject--></T>
+    <T>329520<!--SuperInteraction: harvest_WildGrass_RanchHand--></T>
+    <T>330049<!--SimPickerInteraction: horsePickerInteraction_WildGrass_SimToFoal_WeanToHay--></T>
+    <T>330051<!--SuperInteraction: sI_WildGrass_Foal_TryHay--></T>
+    <T>331184<!--ImmediateSuperInteraction: notebook_View_RanchLiving_WildGrass--></T>
+    <T>338887<!--SuperInteraction: sI_AnimalFeederInteractions_SimOnHorseback_Horse_Graze--></T>
+    <T>330777<!--SuperInteraction: sI_AnimalFeederInteractions_Horse_Graze--></T>
+    <T>339112<!--SuperInteraction: sI_WildGrass_SimOnHorseback_Horse_Search--></T>
+    <T>349718<!--SuperInteraction: sI_WildGrass_Foal_Graze--></T>
+  </L>
+  <U n="recycling_data">
+    <L n="recycling_values">
+      <U>
+        <E n="Bucks Type">RecycleBitsBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+      <U>
+        <E n="Bucks Type">RecyclePiecesBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+    </L>
+  </U>
+</I>

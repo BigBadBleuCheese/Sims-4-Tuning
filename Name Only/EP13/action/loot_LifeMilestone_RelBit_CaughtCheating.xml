@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_LifeMilestone_RelBit_CaughtCheating" s="305894">
+  <L n="loot_actions">
+    <V t="relationship_bits_loot">
+      <U n="relationship_bits_loot">
+        <L n="bit_operations">
+          <U>
+            <T n="bit">306133<!--RelationshipBit: lifeMilestoneBit_JustCaughtSimCheating--></T>
+            <E n="operation">ADD</E>
+            <E n="recipients">Actor</E>
+            <E n="targets">TargetSim</E>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V t="relationship_bits_loot">
+      <U n="relationship_bits_loot">
+        <L n="bit_operations">
+          <U>
+            <T n="bit">306132<!--RelationshipBit: lifeMilestoneBit_JustCaughtCheatingBySim--></T>
+            <E n="operation">ADD</E>
+            <E n="recipients">TargetSim</E>
+            <E n="targets">Actor</E>
+          </U>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="required_relationship_bits">
+            <L n="match_any">
+              <T>15816<!--RelationshipBit: romantic-Engaged--></T>
+              <T>15822<!--RelationshipBit: romantic-Married--></T>
+              <T>99429<!--RelationshipBit: romantic-Promised--></T>
+              <T>15825<!--RelationshipBit: romantic-Significant_Other--></T>
+            </L>
+          </U>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

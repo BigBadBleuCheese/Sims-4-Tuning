@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="AdventureMoment" i="snippet" m="snippets" n="EP14World_AdventureMoments_Cave_AttackedBySkeleton_Repeat" s="324710">
+  <U n="value">
+    <L n="_finish_actions">
+      <U>
+        <L n="action_results">
+          <U>
+            <L n="loot_actions">
+              <T>324754<!--LootActions: Loot_EP14World_Rabbithole_Cave_AttackedBySkeleton_AttackIt_Success--></T>
+              <T>325355<!--LootActions: loot_EP14World_Rabbithole_Cave_ResetCreatureHealth--></T>
+              <T>325356<!--LootActions: loot_EP14World_Rabbithole_Cave_ResetAttackDamage_Sim--></T>
+              <T>325775<!--LootActions: loot_EP14World_Rabbithole_Cave_ResetAttackDamage_Creature--></T>
+            </L>
+            <L n="next_moments">
+              <E>Cave_Explore</E>
+            </L>
+            <L n="weight_modifiers">
+              <U>
+                <V n="test" t="mood">
+                  <U n="mood">
+                    <T n="mood">14634<!--Mood: Mood_Confident--></T>
+                  </U>
+                </V>
+                <T n="weight_multiplier">4</T>
+              </U>
+              <U>
+                <V n="test" t="relative_statistic">
+                  <U n="relative_statistic">
+                    <E n="comparison">LESS</E>
+                    <E n="source">Object</E>
+                    <T n="stat">325167<!--Statistic: statistic_EP14World_Cave_AttackDamage_Sim--></T>
+                    <E n="target">Object</E>
+                    <L n="target_stats">
+                      <T>325166<!--Statistic: statistic_EP14World_Cave_CreatureHealth--></T>
+                    </L>
+                  </U>
+                </V>
+                <T n="weight_multiplier">0</T>
+              </U>
+              <U>
+                <T n="weight_multiplier">2</T>
+              </U>
+            </L>
+          </U>
+          <U>
+            <L n="loot_actions">
+              <T>324753<!--LootActions: loot_EP14World_Rabbithole_Cave_AttackedBySkeleton_AttackIt_Neutral--></T>
+              <T>325357<!--LootActions: loot_EP14World_Rabbithole_Cave_Damage_Creature--></T>
+              <T>325356<!--LootActions: loot_EP14World_Rabbithole_Cave_ResetAttackDamage_Sim--></T>
+              <T>325775<!--LootActions: loot_EP14World_Rabbithole_Cave_ResetAttackDamage_Creature--></T>
+            </L>
+            <L n="next_moments">
+              <E>Cave_Creature3_Repeat</E>
+            </L>
+            <L n="weight_modifiers">
+              <U>
+                <V n="test" t="relative_statistic">
+                  <U n="relative_statistic">
+                    <E n="comparison">GREATER_OR_EQUAL</E>
+                    <E n="source">Object</E>
+                    <T n="stat">325167<!--Statistic: statistic_EP14World_Cave_AttackDamage_Sim--></T>
+                    <E n="target">Object</E>
+                    <L n="target_stats">
+                      <T>325166<!--Statistic: statistic_EP14World_Cave_CreatureHealth--></T>
+                    </L>
+                  </U>
+                </V>
+                <T n="weight_multiplier">0</T>
+              </U>
+              <U>
+                <V n="test" t="mood">
+                  <U n="mood">
+                    <T n="mood">14634<!--Mood: Mood_Confident--></T>
+                  </U>
+                </V>
+                <T n="weight_multiplier">4</T>
+              </U>
+              <U>
+                <T n="weight_multiplier">2</T>
+              </U>
+            </L>
+          </U>
+          <U>
+            <L n="loot_actions">
+              <T>324752<!--LootActions: loot_EP14World_Rabbithole_Cave_AttackedBySkeleton_AttackIt_Fail--></T>
+              <T>325359<!--LootActions: loot_EP14World_Rabbithole_Cave_Damage_Sim--></T>
+              <T>325356<!--LootActions: loot_EP14World_Rabbithole_Cave_ResetAttackDamage_Sim--></T>
+              <T>325775<!--LootActions: loot_EP14World_Rabbithole_Cave_ResetAttackDamage_Creature--></T>
+            </L>
+            <L n="next_moments">
+              <E>Cave_Creature3_Repeat</E>
+            </L>
+            <L n="weight_modifiers">
+              <U>
+                <V n="test" t="relative_statistic">
+                  <U n="relative_statistic">
+                    <E n="comparison">GREATER_OR_EQUAL</E>
+                    <E n="source">Object</E>
+                    <T n="stat">325773<!--Statistic: statistic_EP14World_Cave_AttackDamage_Creature--></T>
+                    <E n="target">Object</E>
+                    <L n="target_stats">
+                      <T>325175<!--Statistic: statistic_EP14World_Cave_SimHealth--></T>
+                    </L>
+                  </U>
+                </V>
+                <T n="weight_multiplier">0</T>
+              </U>
+              <U>
+                <V n="test" t="mood">
+                  <U n="mood">
+                    <T n="mood">14645<!--Mood: Mood_Stressed--></T>
+                  </U>
+                </V>
+                <T n="weight_multiplier">2</T>
+              </U>
+            </L>
+          </U>
+          <U>
+            <L n="loot_actions">
+              <T>324755<!--LootActions: loot_EP14World_Rabbithole_Cave_AttackedBySkeleton_AttackIt_SuperFail--></T>
+            </L>
+            <L n="weight_modifiers">
+              <U>
+                <V n="test" t="relative_statistic">
+                  <U n="relative_statistic">
+                    <E n="comparison">LESS</E>
+                    <E n="source">Object</E>
+                    <T n="stat">325773<!--Statistic: statistic_EP14World_Cave_AttackDamage_Creature--></T>
+                    <E n="target">Object</E>
+                    <L n="target_stats">
+                      <T>325175<!--Statistic: statistic_EP14World_Cave_SimHealth--></T>
+                    </L>
+                  </U>
+                </V>
+                <T n="weight_multiplier">0</T>
+              </U>
+              <U>
+                <V n="test" t="mood">
+                  <U n="mood">
+                    <T n="mood">14645<!--Mood: Mood_Stressed--></T>
+                  </U>
+                </V>
+                <T n="weight_multiplier">2</T>
+              </U>
+            </L>
+          </U>
+        </L>
+        <V n="display_subtext" t="single">
+          <T n="single">0xE7D739F1<!--String: "Chance for Damage"--></T>
+        </V>
+        <V n="display_text" t="single">
+          <T n="single">0xAD7B40A2<!--String: "Offense"--></T>
+        </V>
+      </U>
+      <U>
+        <L n="action_results">
+          <U>
+            <L n="loot_actions">
+              <T>325004<!--LootActions: loot_EP14World_Rabbithole_Cave_AttackedBySkeleton_RunAway_Neutral--></T>
+              <T>325360<!--LootActions: loot_EP14World_Rabbithole_Cave_Heal_Sim--></T>
+              <T>325356<!--LootActions: loot_EP14World_Rabbithole_Cave_ResetAttackDamage_Sim--></T>
+              <T>325775<!--LootActions: loot_EP14World_Rabbithole_Cave_ResetAttackDamage_Creature--></T>
+            </L>
+            <L n="next_moments">
+              <E>Cave_Creature3_Repeat</E>
+            </L>
+            <L n="weight_modifiers">
+              <U>
+                <T n="weight_multiplier">4</T>
+              </U>
+              <U>
+                <V n="test" t="mood">
+                  <U n="mood">
+                    <T n="mood">14640<!--Mood: Mood_Happy--></T>
+                  </U>
+                </V>
+                <T n="weight_multiplier">3</T>
+              </U>
+            </L>
+          </U>
+          <U>
+            <L n="loot_actions">
+              <T>325005<!--LootActions: loot_EP14World_Rabbithole_Cave_AttackedBySkeleton_RunAway_Fail--></T>
+            </L>
+            <L n="weight_modifiers">
+              <U>
+                <T n="weight_multiplier">2</T>
+              </U>
+            </L>
+          </U>
+          <U>
+            <L n="loot_actions">
+              <T>325353<!--LootActions: loot_EP14World_Rabbithole_Cave_AttackedBySkeleton_RunAway_Success--></T>
+              <T>325355<!--LootActions: loot_EP14World_Rabbithole_Cave_ResetCreatureHealth--></T>
+              <T>325356<!--LootActions: loot_EP14World_Rabbithole_Cave_ResetAttackDamage_Sim--></T>
+              <T>325775<!--LootActions: loot_EP14World_Rabbithole_Cave_ResetAttackDamage_Creature--></T>
+            </L>
+            <L n="next_moments">
+              <E>Cave_Explore</E>
+            </L>
+            <L n="weight_modifiers">
+              <U>
+                <T n="weight_multiplier">1</T>
+              </U>
+              <U>
+                <V n="test" t="mood">
+                  <U n="mood">
+                    <T n="mood">14636<!--Mood: Mood_Energized--></T>
+                  </U>
+                </V>
+                <T n="weight_multiplier">4</T>
+              </U>
+            </L>
+          </U>
+        </L>
+        <V n="display_subtext" t="single">
+          <T n="single">0x310153BF<!--String: "Chance to Heal"--></T>
+        </V>
+        <V n="display_text" t="single">
+          <T n="single">0xFF1BD1F5<!--String: "Defense"--></T>
+        </V>
+      </U>
+    </L>
+    <V n="_visibility" t="show_dialog">
+      <U n="show_dialog">
+        <E n="dialog_bg_style">BG_CHANCE_CARD</E>
+        <E n="dialog_style">LARGE_ICON</E>
+        <V n="icon" t="enabled">
+          <V n="enabled" t="resource_key">
+            <U n="resource_key">
+              <T n="key" p="InEP14\UI\Icons\Dialog\ChanceCard_AttackedBySkeleton.png">2f7d0004:00000000:f8e64dc7191cc1b3</T>
+            </U>
+          </V>
+        </V>
+        <V n="text" t="variation">
+          <U n="variation">
+            <L n="variations">
+              <T>0x74AC3BAE<!--String: "The skeleton is surprisingly nimble! Tibia honest, {0.SimFirstName} wasn't expecting a skeleton to have such a way with words.\n\n<b>Skeleton Health: {1.Number}</b>\n<b>{0.SimFirstName}'s Health: {2.Number}</b>\n<b>Cave Progress: {3.Number}/100</b>"--></T>
+              <T>0x8EC59F22<!--String: "{0.SimFirstName} hopes to survive the Skeleton's furious beats and prose! The situation is growing less humerus by the second!\n\n<b>Skeleton Health: {1.Number}</b>\n<b>{0.SimFirstName}'s Health: {2.Number}</b>\n<b>Cave Progress: {3.Number}/100</b>"--></T>
+              <T>0x2F0866D0<!--String: "{0.SimFirstName} would rather be back home! But alas, the Skeleton has no skin for {0.SimFirstName} to get under. The struggle continues!\n\n<b>Skeleton Health: {1.Number}</b>\n<b>{0.SimFirstName}'s Health: {2.Number}</b>\n<b>Cave Progress: {3.Number}/100</b>"--></T>
+            </L>
+          </U>
+        </V>
+        <V n="text_tokens" t="enabled">
+          <U n="enabled">
+            <L n="tokens">
+              <V t="participant_type" />
+              <V t="statistic_value">
+                <U n="statistic_value">
+                  <E n="participant">Object</E>
+                  <T n="statistic">325166<!--Statistic: statistic_EP14World_Cave_CreatureHealth--></T>
+                </U>
+              </V>
+              <V t="statistic_value">
+                <U n="statistic_value">
+                  <E n="participant">Object</E>
+                  <T n="statistic">325175<!--Statistic: statistic_EP14World_Cave_SimHealth--></T>
+                </U>
+              </V>
+              <V t="statistic_value">
+                <U n="statistic_value">
+                  <E n="participant">Actor</E>
+                  <T n="statistic">325538<!--Statistic: statistic_EP14World_Cave_Progress--></T>
+                </U>
+              </V>
+              <V t="statistic_value">
+                <U n="statistic_value">
+                  <E n="participant">Actor</E>
+                  <T n="statistic">325362<!--Statistic: statistic_EP14World_Cave_Level--></T>
+                </U>
+              </V>
+            </L>
+          </U>
+        </V>
+        <V n="title" t="enabled">
+          <T n="enabled">0xCDADC96C<!--String: "Level {4.Number} M.C. Skeleton!"--></T>
+        </V>
+      </U>
+    </V>
+  </U>
+</I>

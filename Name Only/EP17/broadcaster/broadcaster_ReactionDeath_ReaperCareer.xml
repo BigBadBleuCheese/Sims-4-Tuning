@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Broadcaster" i="broadcaster" m="broadcasters.broadcaster" n="broadcaster_ReactionDeath_ReaperCareer" s="393948">
+  <V n="allow_sim_test" t="enabled">
+    <L n="enabled">
+      <L>
+        <V t="sim_info">
+          <U n="sim_info">
+            <V n="ages" t="specified">
+              <L n="specified">
+                <E>TEEN</E>
+                <E>YOUNGADULT</E>
+                <E>ADULT</E>
+                <E>ELDER</E>
+              </L>
+            </V>
+          </U>
+        </V>
+      </L>
+    </L>
+  </V>
+  <L n="constraints">
+    <V t="circle">
+      <U n="circle">
+        <T n="ideal_radius_width">3</T>
+        <T n="radius">30</T>
+      </U>
+    </V>
+    <V t="line_of_sight" />
+  </L>
+  <L n="effects">
+    <V t="loot">
+      <U n="loot">
+        <V n="excluded_participants" t="enabled" />
+        <L n="loot_list">
+          <T>393949<!--LootActions: loot_Reaction_Death_ReaperCareer--></T>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="species" t="specified">
+                  <U n="specified">
+                    <L n="species">
+                      <E />
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="trait">
+              <U n="trait">
+                <L n="blacklist_traits">
+                  <T>16851<!--Trait: trait_isGrimReaper--></T>
+                </L>
+              </U>
+            </V>
+            <V t="trait">
+              <U n="trait">
+                <L n="blacklist_traits">
+                  <T>412114<!--Trait: trait_Hidden_ReaperCareer_DeadSim_Find--></T>
+                </L>
+              </U>
+            </V>
+            <V t="career_test">
+              <U n="career_test">
+                <T n="negate">True</T>
+                <V n="test_type" t="career_reference">
+                  <U n="career_reference">
+                    <V n="career" t="specific_career">
+                      <T n="specific_career">377623<!--Career: careers_Adult_Active_Reaper--></T>
+                    </V>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="frequency" t="on_enter">
+    <U n="on_enter">
+      <T n="allow_multiple">True</T>
+    </U>
+  </V>
+  <T n="immediate">True</T>
+</I>

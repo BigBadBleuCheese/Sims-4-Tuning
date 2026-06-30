@@ -1,0 +1,1756 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="lootActions_Scenario_Inheritance_Goals_ReadLetter" s="339350">
+  <L n="loot_actions">
+    <V t="money_loot">
+      <U n="money_loot">
+        <V n="amount" t="random_in_range">
+          <U n="random_in_range">
+            <T n="lower_bound">5000</T>
+            <T n="upper_bound">15000</T>
+          </U>
+        </V>
+        <V n="notification" t="enabled">
+          <V n="enabled" t="literal">
+            <U n="literal">
+              <E n="dialog_bg_style">BG_CELEBRATION_LARGE</E>
+              <L n="dialog_options">
+                <E>DISABLE_CLOSE_BUTTON</E>
+              </L>
+              <E n="dialog_style">DEFAULT</E>
+              <V n="icon" t="enabled">
+                <V n="enabled" t="resource_key">
+                  <U n="resource_key">
+                    <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_Agency_Writing.png">2f7d0004:00000000:6f247bd3bb4cdcf8</T>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x68678BF8<!--String: "Dear {0.SimName},\n\nI leave to you the sum of {1.Money} as a reminder of the hard work and dedication that your grandfather and I put into amassing our wealth. However, I have concerns that if I left too much to you and your siblings, it may only serve to encourage your reckless behavior. This small sum is meant to help you stay afloat, but it is also a reminder that you must take responsibility for your own success.\n\nI implore you to cherish your siblings and work together to establish a legacy of your own. Do not rely solely on the wealth that has been left to you, but use it wisely and in a way that benefits both yourself and your family. It is time to grow up and prove yourself as a responsible and productive member of society.\n\nWith cautious optimism for your future,\n\nGrandmother"--></T>
+              </V>
+              <V n="text_tokens" t="enabled">
+                <U n="enabled">
+                  <L n="tokens">
+                    <V t="participant_type" />
+                  </L>
+                </U>
+              </V>
+              <V n="title" t="enabled">
+                <T n="enabled">0xBBF82132<!--String: "The Last Will and Testament of the Family's Estate"--></T>
+              </V>
+              <E n="urgency">URGENT</E>
+              <E n="visual_type">SPECIAL_MOMENT</E>
+            </U>
+          </V>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">343552<!--Statistic: statistic_Scenario_InheritanceScoreTracker--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">LESS</E>
+                    <T n="value">3</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="scenario_sim_status">
+              <U n="scenario_sim_status">
+                <T n="role">337317<!--ScenarioRole: scenarioRole_Inheritance_Sibling_1_Mean--></T>
+              </U>
+            </V>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">347068<!--Statistic: statistic_Scenario_InheritanceMoney--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">EQUAL</E>
+                    <T n="value">0</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="money_loot">
+      <U n="money_loot">
+        <V n="amount" t="random_in_range">
+          <U n="random_in_range">
+            <T n="lower_bound">100000</T>
+            <T n="upper_bound">150000</T>
+          </U>
+        </V>
+        <V n="notification" t="enabled">
+          <V n="enabled" t="literal">
+            <U n="literal">
+              <E n="dialog_bg_style">BG_CELEBRATION_LARGE</E>
+              <E n="dialog_style">DEFAULT</E>
+              <V n="icon" t="enabled">
+                <V n="enabled" t="resource_key">
+                  <U n="resource_key">
+                    <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_Agency_Writing.png">2f7d0004:00000000:6f247bd3bb4cdcf8</T>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x246327FE<!--String: "Dear {0.SimName},\n\nIt is with great pleasure that I bequeath to you the sum of {1.Money}. Your grandfather and I worked tirelessly for many years to amass this wealth, and it gives me great comfort to know that it will be put to good use. Despite the occasional disagreements and moments of tension, I have witnessed your capacity for kindness, determination, and hard work. I am proud of the person you have become, {0.SimFirstName}, and I trust that you will use this money to continue to contribute positively to our family and society as a whole.\n\nWith love and best wishes,\n\nGrandmother"--></T>
+              </V>
+              <V n="text_tokens" t="enabled">
+                <U n="enabled">
+                  <L n="tokens">
+                    <V t="participant_type" />
+                  </L>
+                </U>
+              </V>
+              <V n="title" t="enabled">
+                <T n="enabled">0xBBF82132<!--String: "The Last Will and Testament of the Family's Estate"--></T>
+              </V>
+              <E n="urgency">URGENT</E>
+              <E n="visual_type">SPECIAL_MOMENT</E>
+            </U>
+          </V>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">343552<!--Statistic: statistic_Scenario_InheritanceScoreTracker--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">GREATER_OR_EQUAL</E>
+                    <T n="value">3</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="scenario_sim_status">
+              <U n="scenario_sim_status">
+                <T n="role">337317<!--ScenarioRole: scenarioRole_Inheritance_Sibling_1_Mean--></T>
+              </U>
+            </V>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">347068<!--Statistic: statistic_Scenario_InheritanceMoney--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">EQUAL</E>
+                    <T n="value">0</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="money_loot">
+      <U n="money_loot">
+        <V n="amount" t="random_in_range">
+          <U n="random_in_range">
+            <T n="lower_bound">5000</T>
+            <T n="upper_bound">15000</T>
+          </U>
+        </V>
+        <V n="notification" t="enabled">
+          <V n="enabled" t="literal">
+            <U n="literal">
+              <E n="dialog_bg_style">BG_CELEBRATION_LARGE</E>
+              <L n="dialog_options">
+                <E>DISABLE_CLOSE_BUTTON</E>
+              </L>
+              <E n="dialog_style">DEFAULT</E>
+              <V n="icon" t="enabled">
+                <V n="enabled" t="resource_key">
+                  <U n="resource_key">
+                    <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_Agency_Writing.png">2f7d0004:00000000:6f247bd3bb4cdcf8</T>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x68678BF8<!--String: "Dear {0.SimName},\n\nI leave to you the sum of {1.Money} as a reminder of the hard work and dedication that your grandfather and I put into amassing our wealth. However, I have concerns that if I left too much to you and your siblings, it may only serve to encourage your reckless behavior. This small sum is meant to help you stay afloat, but it is also a reminder that you must take responsibility for your own success.\n\nI implore you to cherish your siblings and work together to establish a legacy of your own. Do not rely solely on the wealth that has been left to you, but use it wisely and in a way that benefits both yourself and your family. It is time to grow up and prove yourself as a responsible and productive member of society.\n\nWith cautious optimism for your future,\n\nGrandmother"--></T>
+              </V>
+              <V n="text_tokens" t="enabled">
+                <U n="enabled">
+                  <L n="tokens">
+                    <V t="participant_type" />
+                  </L>
+                </U>
+              </V>
+              <V n="title" t="enabled">
+                <T n="enabled">0xBBF82132<!--String: "The Last Will and Testament of the Family's Estate"--></T>
+              </V>
+              <E n="urgency">URGENT</E>
+              <E n="visual_type">SPECIAL_MOMENT</E>
+            </U>
+          </V>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">343552<!--Statistic: statistic_Scenario_InheritanceScoreTracker--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">LESS</E>
+                    <T n="value">3</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="scenario_sim_status">
+              <U n="scenario_sim_status">
+                <T n="role">337318<!--ScenarioRole: scenarioRole_Inheritance_Sibling_2_HotHeaded--></T>
+              </U>
+            </V>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">347068<!--Statistic: statistic_Scenario_InheritanceMoney--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">EQUAL</E>
+                    <T n="value">0</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="money_loot">
+      <U n="money_loot">
+        <V n="amount" t="random_in_range">
+          <U n="random_in_range">
+            <T n="lower_bound">100000</T>
+            <T n="upper_bound">150000</T>
+          </U>
+        </V>
+        <V n="notification" t="enabled">
+          <V n="enabled" t="literal">
+            <U n="literal">
+              <E n="dialog_bg_style">BG_CELEBRATION_LARGE</E>
+              <L n="dialog_options">
+                <E>DISABLE_CLOSE_BUTTON</E>
+              </L>
+              <E n="dialog_style">DEFAULT</E>
+              <V n="icon" t="enabled">
+                <V n="enabled" t="resource_key">
+                  <U n="resource_key">
+                    <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_Agency_Writing.png">2f7d0004:00000000:6f247bd3bb4cdcf8</T>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x246327FE<!--String: "Dear {0.SimName},\n\nIt is with great pleasure that I bequeath to you the sum of {1.Money}. Your grandfather and I worked tirelessly for many years to amass this wealth, and it gives me great comfort to know that it will be put to good use. Despite the occasional disagreements and moments of tension, I have witnessed your capacity for kindness, determination, and hard work. I am proud of the person you have become, {0.SimFirstName}, and I trust that you will use this money to continue to contribute positively to our family and society as a whole.\n\nWith love and best wishes,\n\nGrandmother"--></T>
+              </V>
+              <V n="text_tokens" t="enabled">
+                <U n="enabled">
+                  <L n="tokens">
+                    <V t="participant_type" />
+                  </L>
+                </U>
+              </V>
+              <V n="title" t="enabled">
+                <T n="enabled">0xBBF82132<!--String: "The Last Will and Testament of the Family's Estate"--></T>
+              </V>
+              <E n="urgency">URGENT</E>
+              <E n="visual_type">SPECIAL_MOMENT</E>
+            </U>
+          </V>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">343552<!--Statistic: statistic_Scenario_InheritanceScoreTracker--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">GREATER_OR_EQUAL</E>
+                    <T n="value">3</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="scenario_sim_status">
+              <U n="scenario_sim_status">
+                <T n="role">337318<!--ScenarioRole: scenarioRole_Inheritance_Sibling_2_HotHeaded--></T>
+              </U>
+            </V>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">347068<!--Statistic: statistic_Scenario_InheritanceMoney--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">EQUAL</E>
+                    <T n="value">0</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="money_loot">
+      <U n="money_loot">
+        <V n="amount" t="random_in_range">
+          <U n="random_in_range">
+            <T n="lower_bound">5000</T>
+            <T n="upper_bound">15000</T>
+          </U>
+        </V>
+        <V n="notification" t="enabled">
+          <V n="enabled" t="literal">
+            <U n="literal">
+              <E n="dialog_bg_style">BG_CELEBRATION_LARGE</E>
+              <L n="dialog_options">
+                <E>DISABLE_CLOSE_BUTTON</E>
+              </L>
+              <E n="dialog_style">DEFAULT</E>
+              <V n="icon" t="enabled">
+                <V n="enabled" t="resource_key">
+                  <U n="resource_key">
+                    <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_Agency_Writing.png">2f7d0004:00000000:6f247bd3bb4cdcf8</T>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x68678BF8<!--String: "Dear {0.SimName},\n\nI leave to you the sum of {1.Money} as a reminder of the hard work and dedication that your grandfather and I put into amassing our wealth. However, I have concerns that if I left too much to you and your siblings, it may only serve to encourage your reckless behavior. This small sum is meant to help you stay afloat, but it is also a reminder that you must take responsibility for your own success.\n\nI implore you to cherish your siblings and work together to establish a legacy of your own. Do not rely solely on the wealth that has been left to you, but use it wisely and in a way that benefits both yourself and your family. It is time to grow up and prove yourself as a responsible and productive member of society.\n\nWith cautious optimism for your future,\n\nGrandmother"--></T>
+              </V>
+              <V n="text_tokens" t="enabled">
+                <U n="enabled">
+                  <L n="tokens">
+                    <V t="participant_type" />
+                  </L>
+                </U>
+              </V>
+              <V n="title" t="enabled">
+                <T n="enabled">0xBBF82132<!--String: "The Last Will and Testament of the Family's Estate"--></T>
+              </V>
+              <E n="urgency">URGENT</E>
+              <E n="visual_type">SPECIAL_MOMENT</E>
+            </U>
+          </V>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">343552<!--Statistic: statistic_Scenario_InheritanceScoreTracker--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">LESS</E>
+                    <T n="value">3</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="scenario_sim_status">
+              <U n="scenario_sim_status">
+                <T n="role">337316<!--ScenarioRole: scenarioRole_Inheritance_Sibling_3_Lazy--></T>
+              </U>
+            </V>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">347068<!--Statistic: statistic_Scenario_InheritanceMoney--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">EQUAL</E>
+                    <T n="value">0</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="money_loot">
+      <U n="money_loot">
+        <V n="amount" t="random_in_range">
+          <U n="random_in_range">
+            <T n="lower_bound">100000</T>
+            <T n="upper_bound">150000</T>
+          </U>
+        </V>
+        <V n="notification" t="enabled">
+          <V n="enabled" t="literal">
+            <U n="literal">
+              <E n="dialog_bg_style">BG_CELEBRATION_LARGE</E>
+              <L n="dialog_options">
+                <E>DISABLE_CLOSE_BUTTON</E>
+              </L>
+              <E n="dialog_style">DEFAULT</E>
+              <V n="icon" t="enabled">
+                <V n="enabled" t="resource_key">
+                  <U n="resource_key">
+                    <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_Agency_Writing.png">2f7d0004:00000000:6f247bd3bb4cdcf8</T>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x246327FE<!--String: "Dear {0.SimName},\n\nIt is with great pleasure that I bequeath to you the sum of {1.Money}. Your grandfather and I worked tirelessly for many years to amass this wealth, and it gives me great comfort to know that it will be put to good use. Despite the occasional disagreements and moments of tension, I have witnessed your capacity for kindness, determination, and hard work. I am proud of the person you have become, {0.SimFirstName}, and I trust that you will use this money to continue to contribute positively to our family and society as a whole.\n\nWith love and best wishes,\n\nGrandmother"--></T>
+              </V>
+              <V n="text_tokens" t="enabled">
+                <U n="enabled">
+                  <L n="tokens">
+                    <V t="participant_type" />
+                  </L>
+                </U>
+              </V>
+              <V n="title" t="enabled">
+                <T n="enabled">0xBBF82132<!--String: "The Last Will and Testament of the Family's Estate"--></T>
+              </V>
+              <E n="urgency">URGENT</E>
+              <E n="visual_type">SPECIAL_MOMENT</E>
+            </U>
+          </V>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">343552<!--Statistic: statistic_Scenario_InheritanceScoreTracker--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">GREATER_OR_EQUAL</E>
+                    <T n="value">3</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="scenario_sim_status">
+              <U n="scenario_sim_status">
+                <T n="role">337316<!--ScenarioRole: scenarioRole_Inheritance_Sibling_3_Lazy--></T>
+              </U>
+            </V>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">347068<!--Statistic: statistic_Scenario_InheritanceMoney--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">EQUAL</E>
+                    <T n="value">0</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="trait_add">
+      <U n="trait_add">
+        <T n="trait">345458<!--Trait: trait_Scenario_Inheritance_Goal_ReadWill--></T>
+      </U>
+    </V>
+    <V t="money_loot">
+      <U n="money_loot">
+        <V n="amount" t="random_in_range">
+          <U n="random_in_range">
+            <T n="lower_bound">21667</T>
+            <T n="upper_bound">31667</T>
+          </U>
+        </V>
+        <V n="notification" t="enabled">
+          <V n="enabled" t="literal">
+            <U n="literal">
+              <E n="dialog_bg_style">BG_CELEBRATION_LARGE</E>
+              <L n="dialog_options">
+                <E>DISABLE_CLOSE_BUTTON</E>
+              </L>
+              <E n="dialog_style">DEFAULT</E>
+              <V n="icon" t="enabled">
+                <V n="enabled" t="resource_key">
+                  <U n="resource_key">
+                    <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_Agency_Writing.png">2f7d0004:00000000:6f247bd3bb4cdcf8</T>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x68678BF8<!--String: "Dear {0.SimName},\n\nI leave to you the sum of {1.Money} as a reminder of the hard work and dedication that your grandfather and I put into amassing our wealth. However, I have concerns that if I left too much to you and your siblings, it may only serve to encourage your reckless behavior. This small sum is meant to help you stay afloat, but it is also a reminder that you must take responsibility for your own success.\n\nI implore you to cherish your siblings and work together to establish a legacy of your own. Do not rely solely on the wealth that has been left to you, but use it wisely and in a way that benefits both yourself and your family. It is time to grow up and prove yourself as a responsible and productive member of society.\n\nWith cautious optimism for your future,\n\nGrandmother"--></T>
+              </V>
+              <V n="text_tokens" t="enabled">
+                <U n="enabled">
+                  <L n="tokens">
+                    <V t="participant_type" />
+                  </L>
+                </U>
+              </V>
+              <V n="title" t="enabled">
+                <T n="enabled">0xBBF82132<!--String: "The Last Will and Testament of the Family's Estate"--></T>
+              </V>
+              <E n="urgency">URGENT</E>
+              <E n="visual_type">SPECIAL_MOMENT</E>
+            </U>
+          </V>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">343552<!--Statistic: statistic_Scenario_InheritanceScoreTracker--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">LESS</E>
+                    <T n="value">3</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="scenario_sim_status">
+              <U n="scenario_sim_status">
+                <T n="role">337317<!--ScenarioRole: scenarioRole_Inheritance_Sibling_1_Mean--></T>
+              </U>
+            </V>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">347068<!--Statistic: statistic_Scenario_InheritanceMoney--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">EQUAL</E>
+                    <T n="value">50000</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="money_loot">
+      <U n="money_loot">
+        <V n="amount" t="random_in_range">
+          <U n="random_in_range">
+            <T n="lower_bound">21666</T>
+            <T n="upper_bound">31666</T>
+          </U>
+        </V>
+        <V n="notification" t="enabled">
+          <V n="enabled" t="literal">
+            <U n="literal">
+              <E n="dialog_bg_style">BG_CELEBRATION_LARGE</E>
+              <L n="dialog_options">
+                <E>DISABLE_CLOSE_BUTTON</E>
+              </L>
+              <E n="dialog_style">DEFAULT</E>
+              <V n="icon" t="enabled">
+                <V n="enabled" t="resource_key">
+                  <U n="resource_key">
+                    <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_Agency_Writing.png">2f7d0004:00000000:6f247bd3bb4cdcf8</T>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x68678BF8<!--String: "Dear {0.SimName},\n\nI leave to you the sum of {1.Money} as a reminder of the hard work and dedication that your grandfather and I put into amassing our wealth. However, I have concerns that if I left too much to you and your siblings, it may only serve to encourage your reckless behavior. This small sum is meant to help you stay afloat, but it is also a reminder that you must take responsibility for your own success.\n\nI implore you to cherish your siblings and work together to establish a legacy of your own. Do not rely solely on the wealth that has been left to you, but use it wisely and in a way that benefits both yourself and your family. It is time to grow up and prove yourself as a responsible and productive member of society.\n\nWith cautious optimism for your future,\n\nGrandmother"--></T>
+              </V>
+              <V n="text_tokens" t="enabled">
+                <U n="enabled">
+                  <L n="tokens">
+                    <V t="participant_type" />
+                  </L>
+                </U>
+              </V>
+              <V n="title" t="enabled">
+                <T n="enabled">0xBBF82132<!--String: "The Last Will and Testament of the Family's Estate"--></T>
+              </V>
+              <E n="urgency">URGENT</E>
+              <E n="visual_type">SPECIAL_MOMENT</E>
+            </U>
+          </V>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">343552<!--Statistic: statistic_Scenario_InheritanceScoreTracker--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">LESS</E>
+                    <T n="value">3</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="scenario_sim_status">
+              <U n="scenario_sim_status">
+                <T n="role">337318<!--ScenarioRole: scenarioRole_Inheritance_Sibling_2_HotHeaded--></T>
+              </U>
+            </V>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">347068<!--Statistic: statistic_Scenario_InheritanceMoney--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">EQUAL</E>
+                    <T n="value">50000</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="money_loot">
+      <U n="money_loot">
+        <V n="amount" t="random_in_range">
+          <U n="random_in_range">
+            <T n="lower_bound">21666</T>
+            <T n="upper_bound">31666</T>
+          </U>
+        </V>
+        <V n="notification" t="enabled">
+          <V n="enabled" t="literal">
+            <U n="literal">
+              <E n="dialog_bg_style">BG_CELEBRATION_LARGE</E>
+              <L n="dialog_options">
+                <E>DISABLE_CLOSE_BUTTON</E>
+              </L>
+              <E n="dialog_style">DEFAULT</E>
+              <V n="icon" t="enabled">
+                <V n="enabled" t="resource_key">
+                  <U n="resource_key">
+                    <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_Agency_Writing.png">2f7d0004:00000000:6f247bd3bb4cdcf8</T>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x68678BF8<!--String: "Dear {0.SimName},\n\nI leave to you the sum of {1.Money} as a reminder of the hard work and dedication that your grandfather and I put into amassing our wealth. However, I have concerns that if I left too much to you and your siblings, it may only serve to encourage your reckless behavior. This small sum is meant to help you stay afloat, but it is also a reminder that you must take responsibility for your own success.\n\nI implore you to cherish your siblings and work together to establish a legacy of your own. Do not rely solely on the wealth that has been left to you, but use it wisely and in a way that benefits both yourself and your family. It is time to grow up and prove yourself as a responsible and productive member of society.\n\nWith cautious optimism for your future,\n\nGrandmother"--></T>
+              </V>
+              <V n="text_tokens" t="enabled">
+                <U n="enabled">
+                  <L n="tokens">
+                    <V t="participant_type" />
+                  </L>
+                </U>
+              </V>
+              <V n="title" t="enabled">
+                <T n="enabled">0xBBF82132<!--String: "The Last Will and Testament of the Family's Estate"--></T>
+              </V>
+              <E n="urgency">URGENT</E>
+              <E n="visual_type">SPECIAL_MOMENT</E>
+            </U>
+          </V>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">343552<!--Statistic: statistic_Scenario_InheritanceScoreTracker--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">LESS</E>
+                    <T n="value">3</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="scenario_sim_status">
+              <U n="scenario_sim_status">
+                <T n="role">337316<!--ScenarioRole: scenarioRole_Inheritance_Sibling_3_Lazy--></T>
+              </U>
+            </V>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">347068<!--Statistic: statistic_Scenario_InheritanceMoney--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">EQUAL</E>
+                    <T n="value">50000</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="money_loot">
+      <U n="money_loot">
+        <V n="amount" t="random_in_range">
+          <U n="random_in_range">
+            <T n="lower_bound">116667</T>
+            <T n="upper_bound">166667</T>
+          </U>
+        </V>
+        <V n="notification" t="enabled">
+          <V n="enabled" t="literal">
+            <U n="literal">
+              <E n="dialog_bg_style">BG_CELEBRATION_LARGE</E>
+              <E n="dialog_style">DEFAULT</E>
+              <V n="icon" t="enabled">
+                <V n="enabled" t="resource_key">
+                  <U n="resource_key">
+                    <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_Agency_Writing.png">2f7d0004:00000000:6f247bd3bb4cdcf8</T>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x246327FE<!--String: "Dear {0.SimName},\n\nIt is with great pleasure that I bequeath to you the sum of {1.Money}. Your grandfather and I worked tirelessly for many years to amass this wealth, and it gives me great comfort to know that it will be put to good use. Despite the occasional disagreements and moments of tension, I have witnessed your capacity for kindness, determination, and hard work. I am proud of the person you have become, {0.SimFirstName}, and I trust that you will use this money to continue to contribute positively to our family and society as a whole.\n\nWith love and best wishes,\n\nGrandmother"--></T>
+              </V>
+              <V n="text_tokens" t="enabled">
+                <U n="enabled">
+                  <L n="tokens">
+                    <V t="participant_type" />
+                  </L>
+                </U>
+              </V>
+              <V n="title" t="enabled">
+                <T n="enabled">0xBBF82132<!--String: "The Last Will and Testament of the Family's Estate"--></T>
+              </V>
+              <E n="urgency">URGENT</E>
+              <E n="visual_type">SPECIAL_MOMENT</E>
+            </U>
+          </V>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">343552<!--Statistic: statistic_Scenario_InheritanceScoreTracker--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">GREATER_OR_EQUAL</E>
+                    <T n="value">3</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="scenario_sim_status">
+              <U n="scenario_sim_status">
+                <T n="role">337317<!--ScenarioRole: scenarioRole_Inheritance_Sibling_1_Mean--></T>
+              </U>
+            </V>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">347068<!--Statistic: statistic_Scenario_InheritanceMoney--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">EQUAL</E>
+                    <T n="value">50000</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="money_loot">
+      <U n="money_loot">
+        <V n="amount" t="random_in_range">
+          <U n="random_in_range">
+            <T n="lower_bound">116666</T>
+            <T n="upper_bound">166666</T>
+          </U>
+        </V>
+        <V n="notification" t="enabled">
+          <V n="enabled" t="literal">
+            <U n="literal">
+              <E n="dialog_bg_style">BG_CELEBRATION_LARGE</E>
+              <E n="dialog_style">DEFAULT</E>
+              <V n="icon" t="enabled">
+                <V n="enabled" t="resource_key">
+                  <U n="resource_key">
+                    <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_Agency_Writing.png">2f7d0004:00000000:6f247bd3bb4cdcf8</T>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x246327FE<!--String: "Dear {0.SimName},\n\nIt is with great pleasure that I bequeath to you the sum of {1.Money}. Your grandfather and I worked tirelessly for many years to amass this wealth, and it gives me great comfort to know that it will be put to good use. Despite the occasional disagreements and moments of tension, I have witnessed your capacity for kindness, determination, and hard work. I am proud of the person you have become, {0.SimFirstName}, and I trust that you will use this money to continue to contribute positively to our family and society as a whole.\n\nWith love and best wishes,\n\nGrandmother"--></T>
+              </V>
+              <V n="text_tokens" t="enabled">
+                <U n="enabled">
+                  <L n="tokens">
+                    <V t="participant_type" />
+                  </L>
+                </U>
+              </V>
+              <V n="title" t="enabled">
+                <T n="enabled">0xBBF82132<!--String: "The Last Will and Testament of the Family's Estate"--></T>
+              </V>
+              <E n="urgency">URGENT</E>
+              <E n="visual_type">SPECIAL_MOMENT</E>
+            </U>
+          </V>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">343552<!--Statistic: statistic_Scenario_InheritanceScoreTracker--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">GREATER_OR_EQUAL</E>
+                    <T n="value">3</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="scenario_sim_status">
+              <U n="scenario_sim_status">
+                <T n="role">337318<!--ScenarioRole: scenarioRole_Inheritance_Sibling_2_HotHeaded--></T>
+              </U>
+            </V>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">347068<!--Statistic: statistic_Scenario_InheritanceMoney--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">EQUAL</E>
+                    <T n="value">50000</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="money_loot">
+      <U n="money_loot">
+        <V n="amount" t="random_in_range">
+          <U n="random_in_range">
+            <T n="lower_bound">116666</T>
+            <T n="upper_bound">166666</T>
+          </U>
+        </V>
+        <V n="notification" t="enabled">
+          <V n="enabled" t="literal">
+            <U n="literal">
+              <E n="dialog_bg_style">BG_CELEBRATION_LARGE</E>
+              <E n="dialog_style">DEFAULT</E>
+              <V n="icon" t="enabled">
+                <V n="enabled" t="resource_key">
+                  <U n="resource_key">
+                    <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_Agency_Writing.png">2f7d0004:00000000:6f247bd3bb4cdcf8</T>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x246327FE<!--String: "Dear {0.SimName},\n\nIt is with great pleasure that I bequeath to you the sum of {1.Money}. Your grandfather and I worked tirelessly for many years to amass this wealth, and it gives me great comfort to know that it will be put to good use. Despite the occasional disagreements and moments of tension, I have witnessed your capacity for kindness, determination, and hard work. I am proud of the person you have become, {0.SimFirstName}, and I trust that you will use this money to continue to contribute positively to our family and society as a whole.\n\nWith love and best wishes,\n\nGrandmother"--></T>
+              </V>
+              <V n="text_tokens" t="enabled">
+                <U n="enabled">
+                  <L n="tokens">
+                    <V t="participant_type" />
+                  </L>
+                </U>
+              </V>
+              <V n="title" t="enabled">
+                <T n="enabled">0xBBF82132<!--String: "The Last Will and Testament of the Family's Estate"--></T>
+              </V>
+              <E n="urgency">URGENT</E>
+              <E n="visual_type">SPECIAL_MOMENT</E>
+            </U>
+          </V>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">343552<!--Statistic: statistic_Scenario_InheritanceScoreTracker--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">GREATER_OR_EQUAL</E>
+                    <T n="value">3</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="scenario_sim_status">
+              <U n="scenario_sim_status">
+                <T n="role">337316<!--ScenarioRole: scenarioRole_Inheritance_Sibling_3_Lazy--></T>
+              </U>
+            </V>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">347068<!--Statistic: statistic_Scenario_InheritanceMoney--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">EQUAL</E>
+                    <T n="value">50000</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="money_loot">
+      <U n="money_loot">
+        <V n="amount" t="random_in_range">
+          <U n="random_in_range">
+            <T n="lower_bound">8333</T>
+            <T n="upper_bound">18333</T>
+          </U>
+        </V>
+        <V n="notification" t="enabled">
+          <V n="enabled" t="literal">
+            <U n="literal">
+              <E n="dialog_bg_style">BG_CELEBRATION_LARGE</E>
+              <L n="dialog_options">
+                <E>DISABLE_CLOSE_BUTTON</E>
+              </L>
+              <E n="dialog_style">DEFAULT</E>
+              <V n="icon" t="enabled">
+                <V n="enabled" t="resource_key">
+                  <U n="resource_key">
+                    <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_Agency_Writing.png">2f7d0004:00000000:6f247bd3bb4cdcf8</T>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x68678BF8<!--String: "Dear {0.SimName},\n\nI leave to you the sum of {1.Money} as a reminder of the hard work and dedication that your grandfather and I put into amassing our wealth. However, I have concerns that if I left too much to you and your siblings, it may only serve to encourage your reckless behavior. This small sum is meant to help you stay afloat, but it is also a reminder that you must take responsibility for your own success.\n\nI implore you to cherish your siblings and work together to establish a legacy of your own. Do not rely solely on the wealth that has been left to you, but use it wisely and in a way that benefits both yourself and your family. It is time to grow up and prove yourself as a responsible and productive member of society.\n\nWith cautious optimism for your future,\n\nGrandmother"--></T>
+              </V>
+              <V n="text_tokens" t="enabled">
+                <U n="enabled">
+                  <L n="tokens">
+                    <V t="participant_type" />
+                  </L>
+                </U>
+              </V>
+              <V n="title" t="enabled">
+                <T n="enabled">0xBBF82132<!--String: "The Last Will and Testament of the Family's Estate"--></T>
+              </V>
+              <E n="urgency">URGENT</E>
+              <E n="visual_type">SPECIAL_MOMENT</E>
+            </U>
+          </V>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">343552<!--Statistic: statistic_Scenario_InheritanceScoreTracker--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">LESS</E>
+                    <T n="value">3</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="scenario_sim_status">
+              <U n="scenario_sim_status">
+                <T n="role">337317<!--ScenarioRole: scenarioRole_Inheritance_Sibling_1_Mean--></T>
+              </U>
+            </V>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">347068<!--Statistic: statistic_Scenario_InheritanceMoney--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">EQUAL</E>
+                    <T n="value">10000</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="money_loot">
+      <U n="money_loot">
+        <V n="amount" t="random_in_range">
+          <U n="random_in_range">
+            <T n="lower_bound">8333</T>
+            <T n="upper_bound">18333</T>
+          </U>
+        </V>
+        <V n="notification" t="enabled">
+          <V n="enabled" t="literal">
+            <U n="literal">
+              <E n="dialog_bg_style">BG_CELEBRATION_LARGE</E>
+              <L n="dialog_options">
+                <E>DISABLE_CLOSE_BUTTON</E>
+              </L>
+              <E n="dialog_style">DEFAULT</E>
+              <V n="icon" t="enabled">
+                <V n="enabled" t="resource_key">
+                  <U n="resource_key">
+                    <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_Agency_Writing.png">2f7d0004:00000000:6f247bd3bb4cdcf8</T>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x68678BF8<!--String: "Dear {0.SimName},\n\nI leave to you the sum of {1.Money} as a reminder of the hard work and dedication that your grandfather and I put into amassing our wealth. However, I have concerns that if I left too much to you and your siblings, it may only serve to encourage your reckless behavior. This small sum is meant to help you stay afloat, but it is also a reminder that you must take responsibility for your own success.\n\nI implore you to cherish your siblings and work together to establish a legacy of your own. Do not rely solely on the wealth that has been left to you, but use it wisely and in a way that benefits both yourself and your family. It is time to grow up and prove yourself as a responsible and productive member of society.\n\nWith cautious optimism for your future,\n\nGrandmother"--></T>
+              </V>
+              <V n="text_tokens" t="enabled">
+                <U n="enabled">
+                  <L n="tokens">
+                    <V t="participant_type" />
+                  </L>
+                </U>
+              </V>
+              <V n="title" t="enabled">
+                <T n="enabled">0xBBF82132<!--String: "The Last Will and Testament of the Family's Estate"--></T>
+              </V>
+              <E n="urgency">URGENT</E>
+              <E n="visual_type">SPECIAL_MOMENT</E>
+            </U>
+          </V>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">343552<!--Statistic: statistic_Scenario_InheritanceScoreTracker--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">LESS</E>
+                    <T n="value">3</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="scenario_sim_status">
+              <U n="scenario_sim_status">
+                <T n="role">337318<!--ScenarioRole: scenarioRole_Inheritance_Sibling_2_HotHeaded--></T>
+              </U>
+            </V>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">347068<!--Statistic: statistic_Scenario_InheritanceMoney--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">EQUAL</E>
+                    <T n="value">10000</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="money_loot">
+      <U n="money_loot">
+        <V n="amount" t="random_in_range">
+          <U n="random_in_range">
+            <T n="lower_bound">8333</T>
+            <T n="upper_bound">18333</T>
+          </U>
+        </V>
+        <V n="notification" t="enabled">
+          <V n="enabled" t="literal">
+            <U n="literal">
+              <E n="dialog_bg_style">BG_CELEBRATION_LARGE</E>
+              <L n="dialog_options">
+                <E>DISABLE_CLOSE_BUTTON</E>
+              </L>
+              <E n="dialog_style">DEFAULT</E>
+              <V n="icon" t="enabled">
+                <V n="enabled" t="resource_key">
+                  <U n="resource_key">
+                    <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_Agency_Writing.png">2f7d0004:00000000:6f247bd3bb4cdcf8</T>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x68678BF8<!--String: "Dear {0.SimName},\n\nI leave to you the sum of {1.Money} as a reminder of the hard work and dedication that your grandfather and I put into amassing our wealth. However, I have concerns that if I left too much to you and your siblings, it may only serve to encourage your reckless behavior. This small sum is meant to help you stay afloat, but it is also a reminder that you must take responsibility for your own success.\n\nI implore you to cherish your siblings and work together to establish a legacy of your own. Do not rely solely on the wealth that has been left to you, but use it wisely and in a way that benefits both yourself and your family. It is time to grow up and prove yourself as a responsible and productive member of society.\n\nWith cautious optimism for your future,\n\nGrandmother"--></T>
+              </V>
+              <V n="text_tokens" t="enabled">
+                <U n="enabled">
+                  <L n="tokens">
+                    <V t="participant_type" />
+                  </L>
+                </U>
+              </V>
+              <V n="title" t="enabled">
+                <T n="enabled">0xBBF82132<!--String: "The Last Will and Testament of the Family's Estate"--></T>
+              </V>
+              <E n="urgency">URGENT</E>
+              <E n="visual_type">SPECIAL_MOMENT</E>
+            </U>
+          </V>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">343552<!--Statistic: statistic_Scenario_InheritanceScoreTracker--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">LESS</E>
+                    <T n="value">3</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="scenario_sim_status">
+              <U n="scenario_sim_status">
+                <T n="role">337316<!--ScenarioRole: scenarioRole_Inheritance_Sibling_3_Lazy--></T>
+              </U>
+            </V>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">347068<!--Statistic: statistic_Scenario_InheritanceMoney--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">EQUAL</E>
+                    <T n="value">10000</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="money_loot">
+      <U n="money_loot">
+        <V n="amount" t="random_in_range">
+          <U n="random_in_range">
+            <T n="lower_bound">103333</T>
+            <T n="upper_bound">153333</T>
+          </U>
+        </V>
+        <V n="notification" t="enabled">
+          <V n="enabled" t="literal">
+            <U n="literal">
+              <E n="dialog_bg_style">BG_CELEBRATION_LARGE</E>
+              <E n="dialog_style">DEFAULT</E>
+              <V n="icon" t="enabled">
+                <V n="enabled" t="resource_key">
+                  <U n="resource_key">
+                    <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_Agency_Writing.png">2f7d0004:00000000:6f247bd3bb4cdcf8</T>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x246327FE<!--String: "Dear {0.SimName},\n\nIt is with great pleasure that I bequeath to you the sum of {1.Money}. Your grandfather and I worked tirelessly for many years to amass this wealth, and it gives me great comfort to know that it will be put to good use. Despite the occasional disagreements and moments of tension, I have witnessed your capacity for kindness, determination, and hard work. I am proud of the person you have become, {0.SimFirstName}, and I trust that you will use this money to continue to contribute positively to our family and society as a whole.\n\nWith love and best wishes,\n\nGrandmother"--></T>
+              </V>
+              <V n="text_tokens" t="enabled">
+                <U n="enabled">
+                  <L n="tokens">
+                    <V t="participant_type" />
+                  </L>
+                </U>
+              </V>
+              <V n="title" t="enabled">
+                <T n="enabled">0xBBF82132<!--String: "The Last Will and Testament of the Family's Estate"--></T>
+              </V>
+              <E n="urgency">URGENT</E>
+              <E n="visual_type">SPECIAL_MOMENT</E>
+            </U>
+          </V>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">343552<!--Statistic: statistic_Scenario_InheritanceScoreTracker--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">GREATER_OR_EQUAL</E>
+                    <T n="value">3</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="scenario_sim_status">
+              <U n="scenario_sim_status">
+                <T n="role">337317<!--ScenarioRole: scenarioRole_Inheritance_Sibling_1_Mean--></T>
+              </U>
+            </V>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">347068<!--Statistic: statistic_Scenario_InheritanceMoney--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">EQUAL</E>
+                    <T n="value">10000</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="money_loot">
+      <U n="money_loot">
+        <V n="amount" t="random_in_range">
+          <U n="random_in_range">
+            <T n="lower_bound">103333</T>
+            <T n="upper_bound">153333</T>
+          </U>
+        </V>
+        <V n="notification" t="enabled">
+          <V n="enabled" t="literal">
+            <U n="literal">
+              <E n="dialog_bg_style">BG_CELEBRATION_LARGE</E>
+              <E n="dialog_style">DEFAULT</E>
+              <V n="icon" t="enabled">
+                <V n="enabled" t="resource_key">
+                  <U n="resource_key">
+                    <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_Agency_Writing.png">2f7d0004:00000000:6f247bd3bb4cdcf8</T>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x246327FE<!--String: "Dear {0.SimName},\n\nIt is with great pleasure that I bequeath to you the sum of {1.Money}. Your grandfather and I worked tirelessly for many years to amass this wealth, and it gives me great comfort to know that it will be put to good use. Despite the occasional disagreements and moments of tension, I have witnessed your capacity for kindness, determination, and hard work. I am proud of the person you have become, {0.SimFirstName}, and I trust that you will use this money to continue to contribute positively to our family and society as a whole.\n\nWith love and best wishes,\n\nGrandmother"--></T>
+              </V>
+              <V n="text_tokens" t="enabled">
+                <U n="enabled">
+                  <L n="tokens">
+                    <V t="participant_type" />
+                  </L>
+                </U>
+              </V>
+              <V n="title" t="enabled">
+                <T n="enabled">0xBBF82132<!--String: "The Last Will and Testament of the Family's Estate"--></T>
+              </V>
+              <E n="urgency">URGENT</E>
+              <E n="visual_type">SPECIAL_MOMENT</E>
+            </U>
+          </V>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">343552<!--Statistic: statistic_Scenario_InheritanceScoreTracker--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">GREATER_OR_EQUAL</E>
+                    <T n="value">3</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="scenario_sim_status">
+              <U n="scenario_sim_status">
+                <T n="role">337318<!--ScenarioRole: scenarioRole_Inheritance_Sibling_2_HotHeaded--></T>
+              </U>
+            </V>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">347068<!--Statistic: statistic_Scenario_InheritanceMoney--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">EQUAL</E>
+                    <T n="value">10000</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="money_loot">
+      <U n="money_loot">
+        <V n="amount" t="random_in_range">
+          <U n="random_in_range">
+            <T n="lower_bound">103333</T>
+            <T n="upper_bound">153333</T>
+          </U>
+        </V>
+        <V n="notification" t="enabled">
+          <V n="enabled" t="literal">
+            <U n="literal">
+              <E n="dialog_bg_style">BG_CELEBRATION_LARGE</E>
+              <E n="dialog_style">DEFAULT</E>
+              <V n="icon" t="enabled">
+                <V n="enabled" t="resource_key">
+                  <U n="resource_key">
+                    <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_Agency_Writing.png">2f7d0004:00000000:6f247bd3bb4cdcf8</T>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x246327FE<!--String: "Dear {0.SimName},\n\nIt is with great pleasure that I bequeath to you the sum of {1.Money}. Your grandfather and I worked tirelessly for many years to amass this wealth, and it gives me great comfort to know that it will be put to good use. Despite the occasional disagreements and moments of tension, I have witnessed your capacity for kindness, determination, and hard work. I am proud of the person you have become, {0.SimFirstName}, and I trust that you will use this money to continue to contribute positively to our family and society as a whole.\n\nWith love and best wishes,\n\nGrandmother"--></T>
+              </V>
+              <V n="text_tokens" t="enabled">
+                <U n="enabled">
+                  <L n="tokens">
+                    <V t="participant_type" />
+                  </L>
+                </U>
+              </V>
+              <V n="title" t="enabled">
+                <T n="enabled">0xBBF82132<!--String: "The Last Will and Testament of the Family's Estate"--></T>
+              </V>
+              <E n="urgency">URGENT</E>
+              <E n="visual_type">SPECIAL_MOMENT</E>
+            </U>
+          </V>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">343552<!--Statistic: statistic_Scenario_InheritanceScoreTracker--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">GREATER_OR_EQUAL</E>
+                    <T n="value">3</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="scenario_sim_status">
+              <U n="scenario_sim_status">
+                <T n="role">337316<!--ScenarioRole: scenarioRole_Inheritance_Sibling_3_Lazy--></T>
+              </U>
+            </V>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">347068<!--Statistic: statistic_Scenario_InheritanceMoney--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">EQUAL</E>
+                    <T n="value">10000</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="money_loot">
+      <U n="money_loot">
+        <V n="amount" t="random_in_range">
+          <U n="random_in_range">
+            <T n="lower_bound">25000</T>
+            <T n="upper_bound">35000</T>
+          </U>
+        </V>
+        <V n="notification" t="enabled">
+          <V n="enabled" t="literal">
+            <U n="literal">
+              <E n="dialog_bg_style">BG_CELEBRATION_LARGE</E>
+              <L n="dialog_options">
+                <E>DISABLE_CLOSE_BUTTON</E>
+              </L>
+              <E n="dialog_style">DEFAULT</E>
+              <V n="icon" t="enabled">
+                <V n="enabled" t="resource_key">
+                  <U n="resource_key">
+                    <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_Agency_Writing.png">2f7d0004:00000000:6f247bd3bb4cdcf8</T>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x68678BF8<!--String: "Dear {0.SimName},\n\nI leave to you the sum of {1.Money} as a reminder of the hard work and dedication that your grandfather and I put into amassing our wealth. However, I have concerns that if I left too much to you and your siblings, it may only serve to encourage your reckless behavior. This small sum is meant to help you stay afloat, but it is also a reminder that you must take responsibility for your own success.\n\nI implore you to cherish your siblings and work together to establish a legacy of your own. Do not rely solely on the wealth that has been left to you, but use it wisely and in a way that benefits both yourself and your family. It is time to grow up and prove yourself as a responsible and productive member of society.\n\nWith cautious optimism for your future,\n\nGrandmother"--></T>
+              </V>
+              <V n="text_tokens" t="enabled">
+                <U n="enabled">
+                  <L n="tokens">
+                    <V t="participant_type" />
+                  </L>
+                </U>
+              </V>
+              <V n="title" t="enabled">
+                <T n="enabled">0xBBF82132<!--String: "The Last Will and Testament of the Family's Estate"--></T>
+              </V>
+              <E n="urgency">URGENT</E>
+              <E n="visual_type">SPECIAL_MOMENT</E>
+            </U>
+          </V>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">343552<!--Statistic: statistic_Scenario_InheritanceScoreTracker--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">LESS</E>
+                    <T n="value">3</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="scenario_sim_status">
+              <U n="scenario_sim_status">
+                <T n="role">337317<!--ScenarioRole: scenarioRole_Inheritance_Sibling_1_Mean--></T>
+              </U>
+            </V>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">347068<!--Statistic: statistic_Scenario_InheritanceMoney--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">EQUAL</E>
+                    <T n="value">60000</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="money_loot">
+      <U n="money_loot">
+        <V n="amount" t="random_in_range">
+          <U n="random_in_range">
+            <T n="lower_bound">25000</T>
+            <T n="upper_bound">35000</T>
+          </U>
+        </V>
+        <V n="notification" t="enabled">
+          <V n="enabled" t="literal">
+            <U n="literal">
+              <E n="dialog_bg_style">BG_CELEBRATION_LARGE</E>
+              <L n="dialog_options">
+                <E>DISABLE_CLOSE_BUTTON</E>
+              </L>
+              <E n="dialog_style">DEFAULT</E>
+              <V n="icon" t="enabled">
+                <V n="enabled" t="resource_key">
+                  <U n="resource_key">
+                    <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_Agency_Writing.png">2f7d0004:00000000:6f247bd3bb4cdcf8</T>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x68678BF8<!--String: "Dear {0.SimName},\n\nI leave to you the sum of {1.Money} as a reminder of the hard work and dedication that your grandfather and I put into amassing our wealth. However, I have concerns that if I left too much to you and your siblings, it may only serve to encourage your reckless behavior. This small sum is meant to help you stay afloat, but it is also a reminder that you must take responsibility for your own success.\n\nI implore you to cherish your siblings and work together to establish a legacy of your own. Do not rely solely on the wealth that has been left to you, but use it wisely and in a way that benefits both yourself and your family. It is time to grow up and prove yourself as a responsible and productive member of society.\n\nWith cautious optimism for your future,\n\nGrandmother"--></T>
+              </V>
+              <V n="text_tokens" t="enabled">
+                <U n="enabled">
+                  <L n="tokens">
+                    <V t="participant_type" />
+                  </L>
+                </U>
+              </V>
+              <V n="title" t="enabled">
+                <T n="enabled">0xBBF82132<!--String: "The Last Will and Testament of the Family's Estate"--></T>
+              </V>
+              <E n="urgency">URGENT</E>
+              <E n="visual_type">SPECIAL_MOMENT</E>
+            </U>
+          </V>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">343552<!--Statistic: statistic_Scenario_InheritanceScoreTracker--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">LESS</E>
+                    <T n="value">3</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="scenario_sim_status">
+              <U n="scenario_sim_status">
+                <T n="role">337318<!--ScenarioRole: scenarioRole_Inheritance_Sibling_2_HotHeaded--></T>
+              </U>
+            </V>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">347068<!--Statistic: statistic_Scenario_InheritanceMoney--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">EQUAL</E>
+                    <T n="value">60000</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="money_loot">
+      <U n="money_loot">
+        <V n="amount" t="random_in_range">
+          <U n="random_in_range">
+            <T n="lower_bound">25000</T>
+            <T n="upper_bound">35000</T>
+          </U>
+        </V>
+        <V n="notification" t="enabled">
+          <V n="enabled" t="literal">
+            <U n="literal">
+              <E n="dialog_bg_style">BG_CELEBRATION_LARGE</E>
+              <L n="dialog_options">
+                <E>DISABLE_CLOSE_BUTTON</E>
+              </L>
+              <E n="dialog_style">DEFAULT</E>
+              <V n="icon" t="enabled">
+                <V n="enabled" t="resource_key">
+                  <U n="resource_key">
+                    <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_Agency_Writing.png">2f7d0004:00000000:6f247bd3bb4cdcf8</T>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x68678BF8<!--String: "Dear {0.SimName},\n\nI leave to you the sum of {1.Money} as a reminder of the hard work and dedication that your grandfather and I put into amassing our wealth. However, I have concerns that if I left too much to you and your siblings, it may only serve to encourage your reckless behavior. This small sum is meant to help you stay afloat, but it is also a reminder that you must take responsibility for your own success.\n\nI implore you to cherish your siblings and work together to establish a legacy of your own. Do not rely solely on the wealth that has been left to you, but use it wisely and in a way that benefits both yourself and your family. It is time to grow up and prove yourself as a responsible and productive member of society.\n\nWith cautious optimism for your future,\n\nGrandmother"--></T>
+              </V>
+              <V n="text_tokens" t="enabled">
+                <U n="enabled">
+                  <L n="tokens">
+                    <V t="participant_type" />
+                  </L>
+                </U>
+              </V>
+              <V n="title" t="enabled">
+                <T n="enabled">0xBBF82132<!--String: "The Last Will and Testament of the Family's Estate"--></T>
+              </V>
+              <E n="urgency">URGENT</E>
+              <E n="visual_type">SPECIAL_MOMENT</E>
+            </U>
+          </V>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">343552<!--Statistic: statistic_Scenario_InheritanceScoreTracker--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">LESS</E>
+                    <T n="value">3</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="scenario_sim_status">
+              <U n="scenario_sim_status">
+                <T n="role">337316<!--ScenarioRole: scenarioRole_Inheritance_Sibling_3_Lazy--></T>
+              </U>
+            </V>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">347068<!--Statistic: statistic_Scenario_InheritanceMoney--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">EQUAL</E>
+                    <T n="value">60000</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="money_loot">
+      <U n="money_loot">
+        <V n="amount" t="random_in_range">
+          <U n="random_in_range">
+            <T n="lower_bound">120000</T>
+            <T n="upper_bound">170000</T>
+          </U>
+        </V>
+        <V n="notification" t="enabled">
+          <V n="enabled" t="literal">
+            <U n="literal">
+              <E n="dialog_bg_style">BG_CELEBRATION_LARGE</E>
+              <E n="dialog_style">DEFAULT</E>
+              <V n="icon" t="enabled">
+                <V n="enabled" t="resource_key">
+                  <U n="resource_key">
+                    <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_Agency_Writing.png">2f7d0004:00000000:6f247bd3bb4cdcf8</T>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x246327FE<!--String: "Dear {0.SimName},\n\nIt is with great pleasure that I bequeath to you the sum of {1.Money}. Your grandfather and I worked tirelessly for many years to amass this wealth, and it gives me great comfort to know that it will be put to good use. Despite the occasional disagreements and moments of tension, I have witnessed your capacity for kindness, determination, and hard work. I am proud of the person you have become, {0.SimFirstName}, and I trust that you will use this money to continue to contribute positively to our family and society as a whole.\n\nWith love and best wishes,\n\nGrandmother"--></T>
+              </V>
+              <V n="text_tokens" t="enabled">
+                <U n="enabled">
+                  <L n="tokens">
+                    <V t="participant_type" />
+                  </L>
+                </U>
+              </V>
+              <V n="title" t="enabled">
+                <T n="enabled">0xBBF82132<!--String: "The Last Will and Testament of the Family's Estate"--></T>
+              </V>
+              <E n="urgency">URGENT</E>
+              <E n="visual_type">SPECIAL_MOMENT</E>
+            </U>
+          </V>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">343552<!--Statistic: statistic_Scenario_InheritanceScoreTracker--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">GREATER_OR_EQUAL</E>
+                    <T n="value">3</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="scenario_sim_status">
+              <U n="scenario_sim_status">
+                <T n="role">337317<!--ScenarioRole: scenarioRole_Inheritance_Sibling_1_Mean--></T>
+              </U>
+            </V>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">347068<!--Statistic: statistic_Scenario_InheritanceMoney--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">EQUAL</E>
+                    <T n="value">60000</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="money_loot">
+      <U n="money_loot">
+        <V n="amount" t="random_in_range">
+          <U n="random_in_range">
+            <T n="lower_bound">120000</T>
+            <T n="upper_bound">170000</T>
+          </U>
+        </V>
+        <V n="notification" t="enabled">
+          <V n="enabled" t="literal">
+            <U n="literal">
+              <E n="dialog_bg_style">BG_CELEBRATION_LARGE</E>
+              <E n="dialog_style">DEFAULT</E>
+              <V n="icon" t="enabled">
+                <V n="enabled" t="resource_key">
+                  <U n="resource_key">
+                    <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_Agency_Writing.png">2f7d0004:00000000:6f247bd3bb4cdcf8</T>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x246327FE<!--String: "Dear {0.SimName},\n\nIt is with great pleasure that I bequeath to you the sum of {1.Money}. Your grandfather and I worked tirelessly for many years to amass this wealth, and it gives me great comfort to know that it will be put to good use. Despite the occasional disagreements and moments of tension, I have witnessed your capacity for kindness, determination, and hard work. I am proud of the person you have become, {0.SimFirstName}, and I trust that you will use this money to continue to contribute positively to our family and society as a whole.\n\nWith love and best wishes,\n\nGrandmother"--></T>
+              </V>
+              <V n="text_tokens" t="enabled">
+                <U n="enabled">
+                  <L n="tokens">
+                    <V t="participant_type" />
+                  </L>
+                </U>
+              </V>
+              <V n="title" t="enabled">
+                <T n="enabled">0xBBF82132<!--String: "The Last Will and Testament of the Family's Estate"--></T>
+              </V>
+              <E n="urgency">URGENT</E>
+              <E n="visual_type">SPECIAL_MOMENT</E>
+            </U>
+          </V>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">343552<!--Statistic: statistic_Scenario_InheritanceScoreTracker--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">GREATER_OR_EQUAL</E>
+                    <T n="value">3</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="scenario_sim_status">
+              <U n="scenario_sim_status">
+                <T n="role">337318<!--ScenarioRole: scenarioRole_Inheritance_Sibling_2_HotHeaded--></T>
+              </U>
+            </V>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">347068<!--Statistic: statistic_Scenario_InheritanceMoney--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">EQUAL</E>
+                    <T n="value">60000</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="money_loot">
+      <U n="money_loot">
+        <V n="amount" t="random_in_range">
+          <U n="random_in_range">
+            <T n="lower_bound">120000</T>
+            <T n="upper_bound">170000</T>
+          </U>
+        </V>
+        <V n="notification" t="enabled">
+          <V n="enabled" t="literal">
+            <U n="literal">
+              <E n="dialog_bg_style">BG_CELEBRATION_LARGE</E>
+              <E n="dialog_style">DEFAULT</E>
+              <V n="icon" t="enabled">
+                <V n="enabled" t="resource_key">
+                  <U n="resource_key">
+                    <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_Agency_Writing.png">2f7d0004:00000000:6f247bd3bb4cdcf8</T>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x246327FE<!--String: "Dear {0.SimName},\n\nIt is with great pleasure that I bequeath to you the sum of {1.Money}. Your grandfather and I worked tirelessly for many years to amass this wealth, and it gives me great comfort to know that it will be put to good use. Despite the occasional disagreements and moments of tension, I have witnessed your capacity for kindness, determination, and hard work. I am proud of the person you have become, {0.SimFirstName}, and I trust that you will use this money to continue to contribute positively to our family and society as a whole.\n\nWith love and best wishes,\n\nGrandmother"--></T>
+              </V>
+              <V n="text_tokens" t="enabled">
+                <U n="enabled">
+                  <L n="tokens">
+                    <V t="participant_type" />
+                  </L>
+                </U>
+              </V>
+              <V n="title" t="enabled">
+                <T n="enabled">0xBBF82132<!--String: "The Last Will and Testament of the Family's Estate"--></T>
+              </V>
+              <E n="urgency">URGENT</E>
+              <E n="visual_type">SPECIAL_MOMENT</E>
+            </U>
+          </V>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">343552<!--Statistic: statistic_Scenario_InheritanceScoreTracker--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">GREATER_OR_EQUAL</E>
+                    <T n="value">3</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="scenario_sim_status">
+              <U n="scenario_sim_status">
+                <T n="role">337316<!--ScenarioRole: scenarioRole_Inheritance_Sibling_3_Lazy--></T>
+              </U>
+            </V>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">347068<!--Statistic: statistic_Scenario_InheritanceMoney--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">EQUAL</E>
+                    <T n="value">60000</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

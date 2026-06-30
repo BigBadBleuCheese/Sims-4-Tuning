@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Broadcaster" i="broadcaster" m="broadcasters.broadcaster" n="broadcaster_GhostPowers_Reaction_Material_Produce" s="393116">
+  <V n="allow_sim_test" t="enabled">
+    <L n="enabled">
+      <L>
+        <V t="trait">
+          <U n="trait">
+            <L n="blacklist_traits">
+              <T>16851<!--Trait: trait_isGrimReaper--></T>
+            </L>
+          </U>
+        </V>
+        <V t="participant_running_interaction">
+          <U n="participant_running_interaction">
+            <L n="affordances">
+              <T>192581<!--SuperInteraction: celebrity_Fan_Faint--></T>
+              <T>294210<!--SuperInteraction: werewolf_FaintReaction--></T>
+              <T>385198<!--SuperInteraction: reactions_Ghosts_ScaredReaction_Faint--></T>
+            </L>
+            <T n="test_for_not_running">True</T>
+          </U>
+        </V>
+        <V t="buff">
+          <U n="buff">
+            <L n="blacklist">
+              <T>132895<!--Buff: buff_AutonomyMod_MarketStalls_TendStall--></T>
+            </L>
+          </U>
+        </V>
+      </L>
+    </L>
+  </V>
+  <L n="constraints">
+    <V t="circle">
+      <U n="circle">
+        <T n="radius">8</T>
+      </U>
+    </V>
+    <V t="line_of_sight">
+      <U n="line_of_sight">
+        <V n="temporary_los" t="enabled" />
+      </U>
+    </V>
+  </L>
+  <L n="effects">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>393118<!--LootActions: loot_GhostPowers_Abilities_Reaction_Material_Produce--></T>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="ages" t="specified">
+                  <L n="specified">
+                    <E>TEEN</E>
+                    <E>YOUNGADULT</E>
+                    <E>ADULT</E>
+                    <E>ELDER</E>
+                  </L>
+                </V>
+                <V n="species" t="specified">
+                  <U n="specified">
+                    <L n="species">
+                      <E />
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>11042<!--LootActions: Rel_Loss_Small--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="frequency" t="on_enter" />
+</I>

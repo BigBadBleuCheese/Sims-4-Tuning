@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_AilmentNaturopath_CureMinorImbalance" s="451005">
+  <L n="loot_actions">
+    <V t="actions">
+      <T n="actions">451622<!--LootActions: loot_BalanceSys_Statistic_MaxBalance_Actor--></T>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">451360<!--Buff: prototype_AilmentNaturopath_FeelingBrandNew--></T>
+        </U>
+      </U>
+    </V>
+    <V t="buff_removal">
+      <U n="buff_removal">
+        <L n="buffs_to_remove">
+          <T>432796<!--Buff: buff_Ailments_MainBuff_CreationImpulse--></T>
+          <T>427745<!--Buff: buff_Ailments_MainBuff_EmotionalVoid--></T>
+          <T>432795<!--Buff: buff_Ailments_MainBuff_GnomeMagnet--></T>
+          <T>432794<!--Buff: buff_Ailments_MainBuff_GreenieMeanie--></T>
+          <T>432793<!--Buff: buff_Ailments_MainBuff_LuckSuck--></T>
+          <T>452109<!--Buff: buff_Ailments_MainBuff_BurningPassion--></T>
+          <T>452108<!--Buff: buff_Ailments_MainBuff_SimoleonFever--></T>
+          <T>452107<!--Buff: buff_Ailments_MainBuff_SonicSinuses--></T>
+        </L>
+      </U>
+    </V>
+    <V t="object_rewards">
+      <U n="object_rewards">
+        <V n="notification" t="enabled">
+          <V n="enabled" t="literal">
+            <U n="literal">
+              <V n="icon" t="enabled">
+                <V n="enabled" t="resource_key">
+                  <U n="resource_key">
+                    <T p="InEP19\UI\Icons\Career\Career_Naturopath_Main.png" n="key">2f7d0004:00000000:3353d21e88bf6ba0</T>
+                  </U>
+                </V>
+              </V>
+              <V n="secondary_icon" t="enabled">
+                <V n="enabled" t="participant" />
+              </V>
+              <V n="text" t="single">
+                <T n="single">0xA889DE74<!--String: "After visiting a Naturopath, {0.SimFirstName} is Balanced once again! Thanks to that, {0.SimPronounSubjective} {S0.is}{P0.are} no longer Imbalanced and feeling better overall. Any lingering Ailments were also cured.\n\nAs a thanks for {0.SimFirstName}'s visit, the Naturopath sent {0.SimPronounObjective} home with the following freebies:\n\n{2.String}"--></T>
+              </V>
+              <V n="text_tokens" t="enabled">
+                <U n="enabled">
+                  <L n="tokens">
+                    <V t="participant_type" />
+                    <V t="participant_type" />
+                  </L>
+                </U>
+              </V>
+            </U>
+          </V>
+        </V>
+        <L n="object_rewards">
+          <U>
+            <T n="quantity">1</T>
+            <L n="reward_objects">
+              <U>
+                <V n="quantity" t="specific_amount" />
+                <L n="reward">
+                  <V t="specify_definition">
+                    <U n="specify_definition">
+                      <T n="definition">466473</T>
+                    </U>
+                  </V>
+                </L>
+                <U n="weight">
+                  <T n="base_value">0.6</T>
+                </U>
+              </U>
+              <U>
+                <V n="quantity" t="specific_amount" />
+                <L n="reward">
+                  <V t="specify_definition">
+                    <U n="specify_definition">
+                      <T n="definition">466476</T>
+                    </U>
+                  </V>
+                </L>
+                <U n="weight">
+                  <T n="base_value">0.25</T>
+                </U>
+              </U>
+              <U>
+                <V n="quantity" t="specific_amount" />
+                <L n="reward">
+                  <V t="specify_definition">
+                    <U n="specify_definition">
+                      <T n="definition">466252</T>
+                    </U>
+                  </V>
+                </L>
+                <U n="weight">
+                  <T n="base_value">0.15</T>
+                </U>
+              </U>
+            </L>
+          </U>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="test_set_reference">
+        <T n="test_set_reference">458448<!--TestSetInstance: testSetInstance_BalanceSys_States_InMinorImbalance--></T>
+      </V>
+    </L>
+  </L>
+</I>

@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="RandomWeightedLoot" i="action" m="interactions.utils.loot" n="randomWeightedLoot_EP14World_Cave_Rewards_Gnome" s="325819">
+  <L n="random_loot_actions">
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">325815<!--LootActions: loot_EP14World_Rabbithole_Cave_Gameplay_ObjectRewards_Gnome--></T>
+      </V>
+      <U n="weight">
+        <T n="base_value">20</T>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="money_loot">
+        <U n="money_loot">
+          <V n="amount" t="random_in_range">
+            <U n="random_in_range">
+              <T n="lower_bound">100</T>
+              <T n="upper_bound">500</T>
+            </U>
+          </V>
+          <V n="notification" t="enabled">
+            <V n="enabled" t="literal">
+              <U n="literal">
+                <L n="dialog_options">
+                  <E>DISABLE_CLOSE_BUTTON</E>
+                </L>
+                <V n="icon" t="enabled">
+                  <V n="enabled" t="participant">
+                    <U n="participant">
+                      <L n="participant_type">
+                        <E>Object</E>
+                      </L>
+                    </U>
+                  </V>
+                </V>
+                <V n="secondary_icon" t="enabled">
+                  <V n="enabled" t="participant" />
+                </V>
+                <V n="text" t="single">
+                  <T n="single">0xA879D9F8<!--String: "{0.SimFirstName} picked up {4.Money} Simoleons!"--></T>
+                </V>
+              </U>
+            </V>
+          </V>
+          <L n="statistic_multipliers">
+            <U>
+              <V n="multiplier" t="value_curve">
+                <L n="value_curve">
+                  <U>
+                    <T n="x">1</T>
+                    <T n="y">1</T>
+                  </U>
+                  <U>
+                    <T n="x">20</T>
+                    <T n="y">10</T>
+                  </U>
+                  <U>
+                    <T n="x">30</T>
+                    <T n="y">15</T>
+                  </U>
+                  <U>
+                    <T n="x">40</T>
+                    <T n="y">20</T>
+                  </U>
+                </L>
+              </V>
+              <T n="statistic">325362<!--Statistic: statistic_EP14World_Cave_Level--></T>
+              <E n="subject">Actor</E>
+            </U>
+          </L>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">1</T>
+      </U>
+    </U>
+  </L>
+</I>

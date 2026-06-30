@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_NLS_SleepOnGround_Uncomfortable_BadWeather_ExitCondition" s="448410">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0xC53922E8<!--String: "(From Sleeping on the Ground in Bad Weather)"--></T>
+          </V>
+          <T n="buff_type">440147<!--Buff: buff_NLS_NotUsedToThis--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="skill_test">
+              <U n="skill_test">
+                <T n="skill">434909<!--Skill: statistic_Skill_NLS--></T>
+                <V n="skill_range" t="interval">
+                  <U n="interval">
+                    <U n="skill_interval">
+                      <T n="upper_bound">5</T>
+                    </U>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InGame\UI\Icons\Notifications\notification_muscle.png">2f7d0004:00000000:4d127bd23735e51e</T>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant" />
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x7C9ED43E<!--String: "Bed or dirt? Hot or cold? It's all the same for {0.SimFirstName}. Cultivating {0.SimPronounPossessiveDependent} Natural Living Skill has enabled {0.SimPronounObjective} to sleep through conditions that most Sims can't tolerate while awake!"--></T>
+            </V>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="skill_test">
+              <U n="skill_test">
+                <T n="skill">434909<!--Skill: statistic_Skill_NLS--></T>
+                <V n="skill_range" t="interval">
+                  <U n="interval">
+                    <U n="skill_interval">
+                      <T n="lower_bound">6</T>
+                      <T n="upper_bound">10</T>
+                    </U>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InGame\UI\Icons\Notifications\notification_sad_v2.png">2f7d0004:00000000:cf731f3a50dbfbb0</T>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x81E796F<!--String: "{0.SimFirstName}'s outdoor snooze was cut short by bad weather!\n\nSims with higher Natural Living Skill gain the resilience to sleep through rain, snow, and extreme temperatures. In the meantime, {0.SimFirstName} will need to rest under shelter or somewhere with milder weather."--></T>
+            </V>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="skill_test">
+              <U n="skill_test">
+                <T n="skill">434909<!--Skill: statistic_Skill_NLS--></T>
+                <V n="skill_range" t="interval">
+                  <U n="interval">
+                    <U n="skill_interval">
+                      <T n="upper_bound">5</T>
+                    </U>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

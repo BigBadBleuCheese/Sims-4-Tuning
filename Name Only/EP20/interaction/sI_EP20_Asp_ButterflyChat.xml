@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="sI_EP20_Asp_ButterflyChat" s="454898">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="circle">
+            <U n="circle">
+              <T n="radius">1.5</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="value" t="facing" />
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_icon" t="resource_key">
+    <U n="resource_key">
+      <T n="key" p="InEP20\UI\Icons\ButterflyPicker\RandomButterflyPicker.png">2f7d0004:00000000:26c09cad21d6cc93</T>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="stat_based">
+                <U n="stat_based">
+                  <T n="stat">16658<!--Commodity: motive_Social--></T>
+                  <U n="threshold">
+                    <T n="value">100</T>
+                  </U>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="buff_based">
+                <U n="buff_based">
+                  <T n="buff">454892<!--Buff: buff_EP20_Asp_ButterflyAngry--></T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="buff_based">
+                <U n="buff_based">
+                  <T n="buff">454893<!--Buff: buff_EP20_Asp_ButterflySad--></T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="time_based">
+                <U n="time_based">
+                  <T n="max_time">30</T>
+                  <T n="min_time">20</T>
+                </U>
+              </V>
+              <V t="stat_based">
+                <U n="stat_based">
+                  <T n="stat">16658<!--Commodity: motive_Social--></T>
+                  <U n="threshold">
+                    <T n="value">0</T>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </U>
+        </V>
+        <V t="list_reference">
+          <T n="list_reference">40705<!--ExitConditionList: ExitConditionList_MotivesNearFail--></T>
+        </V>
+      </L>
+      <V n="content" t="staging_content">
+        <U n="staging_content">
+          <U n="content_set">
+            <L n="affordance_links">
+              <T>454906<!--MixerInteraction: mixer_EP20_Asp_ButterflyChat--></T>
+            </L>
+          </U>
+        </U>
+      </V>
+      <V n="periodic_stat_change" t="enabled">
+        <U n="enabled">
+          <L n="operations">
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="amount">0.78</T>
+                <T n="stat">16658<!--Commodity: motive_Social--></T>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+              </U>
+            </V>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="buff_fire_and_forget">
+      <U n="buff_fire_and_forget">
+        <U n="buff">
+          <T n="buff_type">483602<!--Buff: buff_EP20_Asp_Hidden_NoInitialBalloon_Butterfly--></T>
+        </U>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+  </L>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xE16A2713<!--String: "Chat with Butterfly"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <V n="display_tooltip" t="enabled">
+    <T n="enabled">0xAA396A6C<!--String: "From <b>Critter Enthusiast</b> Trait"--></T>
+  </V>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <V n="animation_ref" t="enabled">
+              <U n="enabled">
+                <T n="factory">11934<!--AnimationElement: Soc_Greet_NT_Wave_basic--></T>
+              </U>
+            </V>
+            <L n="basic_extras">
+              <V t="balloon">
+                <U n="balloon">
+                  <L n="balloon_choices">
+                    <U>
+                      <V n="item" t="balloon_icon">
+                        <U n="balloon_icon">
+                          <V n="icon" t="resource_key">
+                            <U n="resource_key">
+                              <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_QuestionMark.png">2f7d0004:00000000:873da6c8ff732f1f</T>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                    <U>
+                      <V n="item" t="balloon_icon">
+                        <U n="balloon_icon">
+                          <V n="icon" t="resource_key">
+                            <U n="resource_key">
+                              <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_Sentiment_Close.png">2f7d0004:00000000:68eb070f458a0ece</T>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </L>
+                  <L n="balloon_target">
+                    <E>Object</E>
+                  </L>
+                  <V n="balloon_view_offset" t="enabled">
+                    <U n="enabled">
+                      <T n="y">0.2</T>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </U>
+        </U>
+      </L>
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">11799<!--AnimationElement: Social_Responses_Angry_WaveOff--></T>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="balloon">
+                    <U n="balloon">
+                      <L n="balloon_choices">
+                        <U>
+                          <V n="item" t="balloon_icon">
+                            <U n="balloon_icon">
+                              <V n="icon" t="resource_key">
+                                <U n="resource_key">
+                                  <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_LoudNoise_bg.png">2f7d0004:00000000:d2fb13de93a97f28</T>
+                                </U>
+                              </V>
+                              <T p="InGame\UI\Icons\Headlines\Final\headline_Prohibit.png" n="overlay">2f7d0004:00000000:ab4a67c934164fb1</T>
+                            </U>
+                          </V>
+                        </U>
+                        <U>
+                          <V n="item" t="balloon_icon">
+                            <U n="balloon_icon">
+                              <V n="icon" t="resource_key">
+                                <U n="resource_key">
+                                  <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_Chatty.png">2f7d0004:00000000:2b16c23e26366277</T>
+                                </U>
+                              </V>
+                              <T p="InGame\UI\Icons\Headlines\Final\headline_Prohibit.png" n="overlay">2f7d0004:00000000:ab4a67c934164fb1</T>
+                            </U>
+                          </V>
+                        </U>
+                      </L>
+                      <L n="balloon_target">
+                        <E>Object</E>
+                      </L>
+                      <V n="balloon_view_offset" t="enabled">
+                        <U n="enabled">
+                          <T n="y">0.2</T>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="buff">
+                <U n="buff">
+                  <V n="whitelist" t="enabled">
+                    <L n="enabled">
+                      <T>454892<!--Buff: buff_EP20_Asp_ButterflyAngry--></T>
+                    </L>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">11836<!--AnimationElement: Social_Responses_Sad_Random--></T>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="balloon">
+                    <U n="balloon">
+                      <L n="balloon_choices">
+                        <U>
+                          <V n="item" t="balloon_icon">
+                            <U n="balloon_icon">
+                              <V n="icon" t="resource_key">
+                                <U n="resource_key">
+                                  <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_LoudNoise_bg.png">2f7d0004:00000000:d2fb13de93a97f28</T>
+                                </U>
+                              </V>
+                              <T p="InGame\UI\Icons\Headlines\Final\headline_Prohibit.png" n="overlay">2f7d0004:00000000:ab4a67c934164fb1</T>
+                            </U>
+                          </V>
+                        </U>
+                        <U>
+                          <V n="item" t="balloon_icon">
+                            <U n="balloon_icon">
+                              <V n="icon" t="resource_key">
+                                <U n="resource_key">
+                                  <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_Chatty.png">2f7d0004:00000000:2b16c23e26366277</T>
+                                </U>
+                              </V>
+                              <T p="InGame\UI\Icons\Headlines\Final\headline_Prohibit.png" n="overlay">2f7d0004:00000000:ab4a67c934164fb1</T>
+                            </U>
+                          </V>
+                        </U>
+                        <U>
+                          <V n="item" t="balloon_icon">
+                            <U n="balloon_icon">
+                              <V n="icon" t="resource_key">
+                                <U n="resource_key">
+                                  <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_thumbdown.png">2f7d0004:00000000:db83aa2bc456491c</T>
+                                </U>
+                              </V>
+                            </U>
+                          </V>
+                        </U>
+                      </L>
+                      <L n="balloon_target">
+                        <E>Object</E>
+                      </L>
+                      <V n="balloon_view_offset" t="enabled">
+                        <U n="enabled">
+                          <T n="y">0.2</T>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="buff">
+                <U n="buff">
+                  <V n="whitelist" t="enabled">
+                    <L n="enabled">
+                      <T>454893<!--Buff: buff_EP20_Asp_ButterflySad--></T>
+                    </L>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T n="key" p="InEP20\UI\Icons\PieMenu\Traits\trait_CritterEnthusiast_piemenu.png">2f7d0004:00000000:445d9b1472cbbbc3</T>
+      </U>
+    </V>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="include_all">
+        <U n="include_all">
+          <L n="exclude_affordances">
+            <T>13998<!--SocialSuperInteraction: sim_Chat--></T>
+            <T>246156<!--SocialSuperInteraction: sim_Chat_SNPC--></T>
+            <T>274023<!--SocialSuperInteraction: sim_Infant_Chat--></T>
+            <T>322997<!--SocialSuperInteraction: sim_Infant_Chat_NoCarry--></T>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="in_inventory">
+      <U n="in_inventory">
+        <T n="negate">True</T>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x280C3B1E<!--String: "Drag this item into the world or a planter to run this interaction"--></T>
+        </V>
+      </U>
+    </V>
+    <V t="trait">
+      <U n="trait">
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xD39331B6<!--String: "Unlock by completing the <b>Critter Hunter Aspiration</b>."--></T>
+        </V>
+        <L n="whitelist_traits">
+          <T>452451<!--Trait: trait_Nature_EP20_Asp_CritterHunter_CritterEnthusiast--></T>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>454892<!--Buff: buff_EP20_Asp_ButterflyAngry--></T>
+          <T>454893<!--Buff: buff_EP20_Asp_ButterflySad--></T>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x82DCE31F<!--String: "{0.SimFirstName} had a rough chat with a butterfly recently and needs some time to recover."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

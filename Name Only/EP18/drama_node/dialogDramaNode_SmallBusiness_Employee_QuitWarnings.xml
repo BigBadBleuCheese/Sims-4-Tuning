@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="DialogDramaNode" i="drama_node" m="drama_scheduler.dialog_drama_node" n="dialogDramaNode_SmallBusiness_Employee_QuitWarnings" s="405113">
+  <V n="dialog_and_loot" t="dialog_ok">
+    <U n="dialog_ok">
+      <U n="dialog">
+        <V n="audio_sting" t="enabled">
+          <U n="enabled">
+            <T n="audio" p="InEP18\Audio\music\bumpers\bumper_ep18_employee_rules_sentiment_low.propx">39b2aa4a:00000000:563aa266bec46fef</T>
+          </U>
+        </V>
+        <E n="phone_ring_type">BUZZ</E>
+        <V n="text" t="single">
+          <T n="single">0x4B5BBC93<!--String: "I've just about had enough! Our relationship seems to be getting worse, and that's making me consider quitting from {0.String} if things keep going the way they have been."--></T>
+        </V>
+        <V n="text_tokens" t="enabled">
+          <U n="enabled">
+            <L n="tokens">
+              <V t="small_business" />
+            </L>
+          </U>
+        </V>
+      </U>
+      <L n="on_dialog_complete_loot_list">
+        <T>405545<!--LootActions: loot_Career_SmallBusiness_Employee_QuitWarningCooldown--></T>
+      </L>
+    </U>
+  </V>
+  <U n="min_and_max_times">
+    <T n="upper_bound">24</T>
+  </U>
+  <L n="pretests">
+    <L>
+      <V t="is_business_employee" />
+    </L>
+  </L>
+  <L n="receiver_sim_pretests">
+    <L>
+      <V t="small_business_ownership_test" />
+      <V t="business_employee_count">
+        <U n="business_employee_count">
+          <T n="employee_count">0</T>
+          <T n="negate">True</T>
+        </U>
+      </V>
+    </L>
+  </L>
+  <L n="run_tests">
+    <L>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="relationship_score_interval">
+            <T n="upper_bound">-12</T>
+          </U>
+          <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+        </U>
+      </V>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="required_relationship_bits">
+            <L n="match_all">
+              <T>407279<!--RelationshipBit: shortTermBits_SmallBusinessEmployee_QuitWarningCooldown--></T>
+            </L>
+          </U>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="scoring" t="enabled">
+    <U n="enabled">
+      <E n="bucket">EP18SmallBusiness_Employee_Quit</E>
+    </U>
+  </V>
+  <V n="sender_sim_info" t="sim_filter">
+    <U n="sim_filter">
+      <T n="sim_filter">405114<!--TunableSimFilter: dramaNodeFilter_SmallBusiness_Employee_QuitWarning--></T>
+    </U>
+  </V>
+  <V n="time_option" t="schedule">
+    <U n="schedule">
+      <L n="valid_times">
+        <U>
+          <U n="days_available">
+            <T n="0 SUNDAY">True</T>
+            <T n="1 MONDAY">True</T>
+            <T n="2 TUESDAY">True</T>
+            <T n="3 WEDNESDAY">True</T>
+            <T n="4 THURSDAY">True</T>
+            <T n="5 FRIDAY">True</T>
+            <T n="6 SATURDAY">True</T>
+          </U>
+          <T n="duration">10</T>
+        </U>
+      </L>
+    </U>
+  </V>
+</I>

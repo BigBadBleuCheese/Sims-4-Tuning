@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_MovingOn_ReincarnateReactionBuff" s="404162">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x4871E9A3<!--String: "(From Reborn Sim Appearing)"--></T>
+          </V>
+          <T n="buff_type">404164<!--Buff: buff_MovingOn_ReincarnationReaction_ANewSim--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="ages" t="specified" />
+              </U>
+            </V>
+            <V t="buff">
+              <U n="buff">
+                <L n="blacklist">
+                  <T>423817<!--Buff: buff_MovingOn_Hidden_IsReincarnating--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x61E4A058<!--String: "(From a Reborn Sim Falling)"--></T>
+          </V>
+          <T n="buff_type">404186<!--Buff: buff_MovingOn_ReincarnationReaction_SimsAreMade--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="ages" t="specified">
+                  <L n="specified">
+                    <E>TODDLER</E>
+                    <E>CHILD</E>
+                  </L>
+                </V>
+              </U>
+            </V>
+            <V t="buff">
+              <U n="buff">
+                <L n="blacklist">
+                  <T>423817<!--Buff: buff_MovingOn_Hidden_IsReincarnating--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x4871E9A3<!--String: "(From Reborn Sim Appearing)"--></T>
+          </V>
+          <T n="buff_type">404165<!--Buff: buff_MovingOn_ReincarnationReaction_Reincarnated--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <L n="whitelist_traits">
+                  <T>377779<!--Trait: trait_MovingOn_Reincarnated--></T>
+                </L>
+              </U>
+            </V>
+            <V t="buff">
+              <U n="buff">
+                <L n="blacklist">
+                  <T>423817<!--Buff: buff_MovingOn_Hidden_IsReincarnating--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

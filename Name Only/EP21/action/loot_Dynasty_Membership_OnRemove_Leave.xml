@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Dynasty_Membership_OnRemove_Leave" s="473324">
+  <L n="loot_actions">
+    <V t="actions">
+      <T n="actions">473278<!--LootActions: loot_Dynasty_ActionFeedback_Left--></T>
+    </V>
+    <V t="looping_loot_ops_with_target">
+      <U n="looping_loot_ops_with_target">
+        <L n="loots_to_apply">
+          <T>471470<!--RandomWeightedLoot: randomLoot_Dynasty_Membership_LeaveSocialEffects--></T>
+        </L>
+        <E n="subject">ActorDynastyMembers</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="ages" t="specified">
+                  <L n="specified">
+                    <E>TEEN</E>
+                    <E>YOUNGADULT</E>
+                    <E>ADULT</E>
+                    <E>ELDER</E>
+                  </L>
+                </V>
+              </U>
+            </V>
+            <V t="buff">
+              <U n="buff">
+                <L n="blacklist">
+                  <T>471740<!--Buff: buff_Dynasty_HeadApprovedLeave--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="ages" t="specified">
+                  <L n="specified">
+                    <E>TEEN</E>
+                    <E>YOUNGADULT</E>
+                    <E>ADULT</E>
+                    <E>ELDER</E>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

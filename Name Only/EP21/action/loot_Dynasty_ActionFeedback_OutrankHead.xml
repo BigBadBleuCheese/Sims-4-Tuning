@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Dynasty_ActionFeedback_OutrankHead" s="488687">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="audio_sting" t="disabled" />
+            <V n="icon" t="enabled">
+              <V n="enabled" t="dynasty" />
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant" />
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x300D9E03<!--String: "{0.SimFirstName} now outranks the current {2.String} Dynasty Head, {1.SimFirstName}. {0.SimPronounSubjective|xxUpper} can now claim the leadership from {1.SimPronounObjective} by using the Usurp Dynasty Headship social interaction under the Dynasty category."--></T>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="participant_type" />
+                  <V t="participant_type">
+                    <U n="participant_type">
+                      <V n="objects" t="from_participant">
+                        <U n="from_participant">
+                          <E n="participant">ActorDynastyHead</E>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                  <V t="dynasty" />
+                </L>
+              </U>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x700809B1<!--String: "Outranked Dynasty Head"--></T>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="show_balloon">
+      <U n="show_balloon">
+        <U n="balloon">
+          <L n="balloon_choices">
+            <U>
+              <V n="item" t="balloon_icon">
+                <U n="balloon_icon">
+                  <V n="category_icon" t="show_category_icon">
+                    <V n="show_category_icon" t="dynasty" />
+                  </V>
+                  <V n="icon" t="resource_key">
+                    <U n="resource_key">
+                      <T n="key" p="InEP21\UI\Icons\Headlines\headline_Insurrection.png">2f7d0004:00000000:6e9763d832e99d97</T>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </U>
+          </L>
+          <L n="balloon_target">
+            <E>Actor</E>
+          </L>
+        </U>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">489029<!--Buff: buff_Dynasty_Hidden_OutrankHeadTNSCooldown--></T>
+        </U>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>489029<!--Buff: buff_Dynasty_Hidden_OutrankHeadTNSCooldown--></T>
+          </L>
+        </U>
+      </V>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>466527<!--Trait: trait_Dynasty_Head--></T>
+          </L>
+        </U>
+      </V>
+      <V t="dynasty_rank">
+        <U n="dynasty_rank">
+          <V n="test_type" t="dynasty_rank_compare_test">
+            <U n="dynasty_rank_compare_test">
+              <E n="comparison_operator">GREATER</E>
+              <E n="target">ActorDynastyHead</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified">
+            <L n="specified">
+              <E>TEEN</E>
+              <E>YOUNGADULT</E>
+              <E>ADULT</E>
+              <E>ELDER</E>
+              <E>CHILD</E>
+            </L>
+          </V>
+          <E n="who">ActorDynastyHead</E>
+        </U>
+      </V>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified" />
+          <E n="who">Actor</E>
+        </U>
+      </V>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>503131<!--Buff: buff_Dynasty_HeadJustFounded--></T>
+          </L>
+          <E n="subject">ActorDynastyHead</E>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

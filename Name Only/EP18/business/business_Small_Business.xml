@@ -1,0 +1,797 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Business" i="business" m="business.business" n="business_Small_Business" s="373396">
+  <T p="InGame\Audio\Stings\base_sting.propx" n="audio_sting_close">39b2aa4a:00000000:5d8113c3809b3850</T>
+  <T p="InGame\Audio\Stings\base_sting.propx" n="audio_sting_open">39b2aa4a:00000000:5d8113c3809b3850</T>
+  <E n="bucks">BusinessPerkBucks</E>
+  <T p="InGame\UI\Icons\Debug\missing_image.png" n="business_icon">2f7d0004:00000000:30f0846c783606f9</T>
+  <V n="business_summary_tooltip" t="enabled">
+    <T n="enabled">0x497C832B<!--String: "Growth opportunities are the areas to improve on. Consider working on them first if they are leaving dissatisfied.\n\nExcellence is what the customers enjoyed the most about the Small Business. Keep up the good work!"--></T>
+  </V>
+  <T n="buy_business_lot_affordance">373397<!--ImmediateSuperInteraction: ownableSmallBusiness_immediate_BuyFromUI--></T>
+  <T n="current_business_lot_transfer_dialog_entry">0x481E26D1<!--String: "**DEBUG**"--></T>
+  <T n="customer_always_get_starting_star_value">True</T>
+  <L n="customer_buffs_to_remove_tags">
+    <E>Buff_Business_CustomerStarRating</E>
+  </L>
+  <E n="customer_buffs_to_save_tag">Buff_Business_CustomerStarRating</E>
+  <L n="customer_final_vfx_satisfaction">
+    <U>
+      <T n="Star Rating">1</T>
+      <U n="Vfx">
+        <T n="effect_name">ep18_customer_satisfaction_negative</T>
+        <V n="joint_name" t="Slot">
+          <T n="Slot">b__Head__</T>
+        </V>
+      </U>
+    </U>
+    <U>
+      <T n="Star Rating">2</T>
+      <U n="Vfx">
+        <T n="effect_name">ep18_customer_satisfaction_neutral</T>
+        <V n="joint_name" t="Slot">
+          <T n="Slot">b__Head__</T>
+        </V>
+      </U>
+    </U>
+    <U>
+      <T n="Star Rating">3</T>
+      <U n="Vfx">
+        <T n="effect_name">ep18_customer_satisfaction_happy</T>
+        <V n="joint_name" t="Slot">
+          <T n="Slot">b__Head__</T>
+        </V>
+      </U>
+    </U>
+    <U>
+      <T n="Star Rating">4</T>
+      <U n="Vfx">
+        <T n="effect_name">ep18_customer_satisfaction_happy</T>
+        <V n="joint_name" t="Slot">
+          <T n="Slot">b__Head__</T>
+        </V>
+      </U>
+    </U>
+    <U>
+      <T n="Star Rating">5</T>
+      <U n="Vfx">
+        <T n="effect_name">ep18_customer_satisfaction_happy</T>
+        <V n="joint_name" t="Slot">
+          <T n="Slot">b__Head__</T>
+        </V>
+      </U>
+    </U>
+  </L>
+  <L n="customer_rating_delta_to_business_star_rating_value_change_curve">
+    <U>
+      <T n="x">1</T>
+      <T n="y">1</T>
+    </U>
+    <U>
+      <T n="x">5</T>
+      <T n="y">5</T>
+    </U>
+  </L>
+  <L n="customer_star_buff_bucket_to_rating_curve">
+    <U>
+      <T n="x">-25</T>
+      <T n="y">1</T>
+    </U>
+    <U>
+      <T n="x">0</T>
+      <T n="y">2</T>
+    </U>
+    <U>
+      <T n="x">50</T>
+      <T n="y">3</T>
+    </U>
+    <U>
+      <T n="x">125</T>
+      <T n="y">4</T>
+    </U>
+    <U>
+      <T n="x">250</T>
+      <T n="y">5</T>
+    </U>
+  </L>
+  <L n="customer_star_rating_buff_bucket_data">
+    <U>
+      <E n="Star_Rating_Buff_Bucket">ACTIVITIES_COMPLETED</E>
+      <U n="Star_Rating_Buff_Bucket_Data">
+        <V n="bucket_excellence_text" t="single">
+          <T n="single">0x71FAF738<!--String: "Customers are very happy for doing the activities at your Small Business."--></T>
+        </V>
+        <T n="bucket_excellence_threshold">75</T>
+        <V n="bucket_growth_opportunity_text" t="single">
+          <T n="single">0x244A61FD<!--String: "Try adding more activities for the customers."--></T>
+        </V>
+        <T n="bucket_growth_opportunity_threshold">75</T>
+        <T n="bucket_icon" p="InEP18\UI\Icons\Headlines\Headline_ActivityComplete.png">2f7d0004:00000000:46ad5fa9b8cf4506</T>
+        <V n="bucket_negative_text" t="single">
+          <T n="single">0x57548226<!--String: "I wasn't able to do the activity."--></T>
+        </V>
+        <V n="bucket_positive_text" t="single">
+          <T n="single">0xCB2A0800<!--String: "I just completed an activity!"--></T>
+        </V>
+        <T n="bucket_title">0x501A6F18<!--String: "Business Activities"--></T>
+        <T n="bucket_value_maximum">100</T>
+        <T n="bucket_value_median">0</T>
+        <T n="bucket_value_minimum">0</T>
+        <U n="negative_bucket_vfx">
+          <T n="effect_name">ep18_smallbusiness_indicator_icon_bad_activities</T>
+          <V n="joint_name" t="Slot">
+            <T n="Slot">b__Head__</T>
+          </V>
+        </U>
+        <U n="positive_bucket_vfx">
+          <T n="effect_name">ep18_smallbusiness_indicator_icon_good_activities</T>
+          <V n="joint_name" t="Slot">
+            <T n="Slot">b__Head__</T>
+          </V>
+        </U>
+      </U>
+    </U>
+    <U>
+      <E n="Star_Rating_Buff_Bucket">AMBIANCE</E>
+      <U n="Star_Rating_Buff_Bucket_Data">
+        <V n="bucket_excellence_text" t="single">
+          <T n="single">0x9B2723B1<!--String: "Customers are enjoying the atmosphere at your Small Business!"--></T>
+        </V>
+        <T n="bucket_excellence_threshold">5</T>
+        <V n="bucket_growth_opportunity_text" t="single">
+          <T n="single">0x93A87647<!--String: "Try keeping the Business Venue tidy and well-decorated, add some good lighting, a cozy fireplace, and/or some nice music."--></T>
+        </V>
+        <T n="bucket_growth_opportunity_threshold">7</T>
+        <T n="bucket_icon" p="InEP18\UI\Icons\Headlines\Headline_Ambience.png">2f7d0004:00000000:5022c6f6aab1a648</T>
+        <V n="bucket_negative_text" t="single">
+          <T n="single">0xF7539BDE<!--String: "This place could use a touch-up..."--></T>
+        </V>
+        <V n="bucket_positive_text" t="single">
+          <T n="single">0x74C52A98<!--String: "This place has a nice vibe!"--></T>
+        </V>
+        <T n="bucket_title">0xF19ED3D3<!--String: "Ambiance"--></T>
+        <T n="bucket_value_maximum">50</T>
+        <T n="bucket_value_median">0</T>
+        <T n="bucket_value_minimum">-75</T>
+        <U n="negative_bucket_vfx">
+          <T n="effect_name">ep18_smallbusiness_indicator_icon_bad_ambiance</T>
+          <V n="joint_name" t="Slot">
+            <T n="Slot">b__Head__</T>
+          </V>
+        </U>
+        <U n="positive_bucket_vfx">
+          <T n="effect_name">ep18_smallbusiness_indicator_icon_good_ambiance</T>
+          <V n="joint_name" t="Slot">
+            <T n="Slot">b__Head__</T>
+          </V>
+        </U>
+      </U>
+    </U>
+    <U>
+      <E n="Star_Rating_Buff_Bucket">CUSTOMER_RELATIONSHIP</E>
+      <U n="Star_Rating_Buff_Bucket_Data">
+        <V n="bucket_excellence_text" t="single">
+          <T n="single">0xEFACE9BC<!--String: "You have a good relationship with your Customers, and they appreciate your care!"--></T>
+        </V>
+        <T n="bucket_excellence_threshold">5</T>
+        <V n="bucket_growth_opportunity_text" t="single">
+          <T n="single">0xA820236E<!--String: "Try doing some friendly interactions with your Customers to improve your relationship with them."--></T>
+        </V>
+        <T n="bucket_growth_opportunity_threshold">7</T>
+        <T p="InEP18\UI\Icons\Headlines\Headline_OwnerRelationship.png" n="bucket_icon">2f7d0004:00000000:b3239ad62a7d17e7</T>
+        <V n="bucket_negative_text" t="single">
+          <T n="single">0x97D2384C<!--String: "I don't like the Business owner here!"--></T>
+        </V>
+        <V n="bucket_positive_text" t="single">
+          <T n="single">0x28266BE9<!--String: "I really like the owner of this Small Business!"--></T>
+        </V>
+        <T n="bucket_title">0xA551A25C<!--String: "Customer Relationship"--></T>
+        <T n="bucket_value_maximum">50</T>
+        <T n="bucket_value_minimum">-100</T>
+        <U n="negative_bucket_vfx">
+          <T n="effect_name">ep18_smallbusiness_indicator_icon_bad_customer_relationship</T>
+          <V n="joint_name" t="Slot">
+            <T n="Slot">b__Head__</T>
+          </V>
+        </U>
+        <U n="positive_bucket_vfx">
+          <T n="effect_name">ep18_smallbusiness_indicator_icon_good_customer_relationship</T>
+          <V n="joint_name" t="Slot">
+            <T n="Slot">b__Head__</T>
+          </V>
+        </U>
+      </U>
+    </U>
+    <U>
+      <E n="Star_Rating_Buff_Bucket">MISC</E>
+      <U n="Star_Rating_Buff_Bucket_Data">
+        <V n="bucket_excellence_text" t="single">
+          <T n="single">0xE9AD5C3D<!--String: "*** DEBUG ***"--></T>
+        </V>
+        <T n="bucket_excellence_threshold">50</T>
+        <V n="bucket_growth_opportunity_text" t="single">
+          <T n="single">0xE9AD5C3D<!--String: "*** DEBUG ***"--></T>
+        </V>
+        <T n="bucket_growth_opportunity_threshold">10</T>
+        <T n="bucket_hidden_review">True</T>
+        <T p="InGame\UI\Icons\Debug\missing_image.png" n="bucket_icon">2f7d0004:00000000:30f0846c783606f9</T>
+        <V n="bucket_negative_text" t="single">
+          <T n="single">0xE9AD5C3D<!--String: "*** DEBUG ***"--></T>
+        </V>
+        <V n="bucket_positive_text" t="single">
+          <T n="single">0xE9AD5C3D<!--String: "*** DEBUG ***"--></T>
+        </V>
+        <T n="bucket_title">0xE9AD5C3D<!--String: "*** DEBUG ***"--></T>
+        <T n="bucket_value_maximum">90</T>
+        <T n="bucket_value_median">0</T>
+        <T n="bucket_value_minimum">0</T>
+        <U n="negative_bucket_vfx">
+          <T n="effect_name">ep18_smallbusiness_indicator_icon_bad_ambiance</T>
+          <V n="joint_name" t="Slot">
+            <T n="Slot">b__Head__</T>
+          </V>
+        </U>
+        <U n="positive_bucket_vfx">
+          <T n="effect_name">ep18_smallbusiness_indicator_icon_good_ambiance</T>
+          <V n="joint_name" t="Slot">
+            <T n="Slot">b__Head__</T>
+          </V>
+        </U>
+      </U>
+    </U>
+    <U>
+      <E n="Star_Rating_Buff_Bucket">PRICING</E>
+      <U n="Star_Rating_Buff_Bucket_Data">
+        <V n="bucket_excellence_text" t="single">
+          <T n="single">0x24338798<!--String: "The customers felt the prices here were fair!"--></T>
+        </V>
+        <T n="bucket_excellence_threshold">5</T>
+        <V n="bucket_growth_opportunity_text" t="single">
+          <T n="single">0xBBACE8E8<!--String: "Try lowering the prices of your services and goods."--></T>
+        </V>
+        <T n="bucket_growth_opportunity_threshold">7</T>
+        <T p="InEP18\UI\Icons\Headlines\Headline_Price.png" n="bucket_icon">2f7d0004:00000000:16e8b39127191597</T>
+        <V n="bucket_negative_text" t="single">
+          <T n="single">0xE0B4DA59<!--String: "This was expensive!"--></T>
+        </V>
+        <V n="bucket_positive_text" t="single">
+          <T n="single">0x801CFA32<!--String: "The value of this was great!"--></T>
+        </V>
+        <T n="bucket_title">0xC8D28E44<!--String: "Pricing"--></T>
+        <T n="bucket_value_maximum">50</T>
+        <T n="bucket_value_minimum">-50</T>
+        <U n="negative_bucket_vfx">
+          <T n="effect_name">ep18_smallbusiness_indicator_icon_bad_pricing</T>
+          <V n="joint_name" t="Slot">
+            <T n="Slot">b__Head__</T>
+          </V>
+        </U>
+        <U n="positive_bucket_vfx">
+          <T n="effect_name">ep18_smallbusiness_indicator_icon_good_pricing</T>
+          <V n="joint_name" t="Slot">
+            <T n="Slot">b__Head__</T>
+          </V>
+        </U>
+      </U>
+    </U>
+    <U>
+      <E n="Star_Rating_Buff_Bucket">QUALITY</E>
+      <U n="Star_Rating_Buff_Bucket_Data">
+        <V n="bucket_excellence_text" t="single">
+          <T n="single">0x8F9F687F<!--String: "Your Customers are very impressed by the high-quality services and goods at your business."--></T>
+        </V>
+        <T n="bucket_excellence_threshold">5</T>
+        <V n="bucket_growth_opportunity_text" t="single">
+          <T n="single">0x3FB0590C<!--String: "Offer goods and services that are of Excellent quality to your Customers, and avoid offering anything that is of Poor quality."--></T>
+        </V>
+        <T n="bucket_growth_opportunity_threshold">7</T>
+        <T n="bucket_icon" p="InEP18\UI\Icons\Headlines\Headline_ServiceQuality.png">2f7d0004:00000000:7bb442b45fb7f110</T>
+        <V n="bucket_negative_text" t="single">
+          <T n="single">0x4F04298<!--String: "The quality of this was not great."--></T>
+        </V>
+        <V n="bucket_positive_text" t="single">
+          <T n="single">0x2FFD5E70<!--String: "Wow, what a high quality offering!"--></T>
+        </V>
+        <T n="bucket_title">0xC5B5C203<!--String: "Quality"--></T>
+        <T n="bucket_value_maximum">50</T>
+        <T n="bucket_value_minimum">-50</T>
+        <U n="negative_bucket_vfx">
+          <T n="effect_name">ep18_smallbusiness_indicator_icon_bad_quality</T>
+          <V n="joint_name" t="Slot">
+            <T n="Slot">b__Head__</T>
+          </V>
+        </U>
+        <U n="positive_bucket_vfx">
+          <T n="effect_name">ep18_smallbusiness_indicator_icon_good_quality</T>
+          <V n="joint_name" t="Slot">
+            <T n="Slot">b__Head__</T>
+          </V>
+        </U>
+      </U>
+    </U>
+  </L>
+  <L n="customer_star_rating_buff_data">
+    <U>
+      <T n="Buff">143307<!--Buff: buff_OwnableBusiness_Customer_Environment_GoodMusic--></T>
+      <U n="Buff Data">
+        <E n="buff_bucket">AMBIANCE</E>
+        <T n="buff_bucket_delta">0.67</T>
+      </U>
+    </U>
+    <U>
+      <T n="Buff">143308<!--Buff: buff_OwnableBusiness_Customer_Environment_NearHeatSource--></T>
+      <U n="Buff Data">
+        <E n="buff_bucket">AMBIANCE</E>
+        <T n="buff_bucket_delta">0.33</T>
+      </U>
+    </U>
+    <U>
+      <T n="Buff">143310<!--Buff: buff_OwnableBusiness_Customer_Environment_NicelyDecorated--></T>
+      <U n="Buff Data">
+        <E n="buff_bucket">AMBIANCE</E>
+        <T n="buff_bucket_delta">0.67</T>
+      </U>
+    </U>
+    <U>
+      <T n="Buff">143311<!--Buff: buff_OwnableBusiness_Customer_Environment_Decorated--></T>
+      <U n="Buff Data">
+        <E n="buff_bucket">AMBIANCE</E>
+        <T n="buff_bucket_delta">0.33</T>
+      </U>
+    </U>
+    <U>
+      <T n="Buff">143312<!--Buff: buff_OwnableBusiness_Customer_Environment_BeautifullyDecorated--></T>
+      <U n="Buff Data">
+        <E n="buff_bucket">AMBIANCE</E>
+        <T n="buff_bucket_delta">1</T>
+      </U>
+    </U>
+    <U>
+      <T n="Buff">143313<!--Buff: buff_OwnableBusiness_Customer_Environment_BadSurroundings--></T>
+      <U n="Buff Data">
+        <E n="buff_bucket">AMBIANCE</E>
+        <T n="buff_bucket_delta">-0.67</T>
+      </U>
+    </U>
+    <U>
+      <T n="Buff">143314<!--Buff: buff_OwnableBusiness_Customer_Environment_UnpleasantSurroundings--></T>
+      <U n="Buff Data">
+        <E n="buff_bucket">AMBIANCE</E>
+        <T n="buff_bucket_delta">-0.33</T>
+      </U>
+    </U>
+    <U>
+      <T n="Buff">143315<!--Buff: buff_OwnableBusiness_Customer_Environment_WretchedSurroundings--></T>
+      <U n="Buff Data">
+        <E n="buff_bucket">AMBIANCE</E>
+        <T n="buff_bucket_delta">-1</T>
+      </U>
+    </U>
+    <U>
+      <T n="Buff">143316<!--Buff: buff_OwnableBusiness_Customer_Environment_StereoMusic--></T>
+      <U n="Buff Data">
+        <E n="buff_bucket">AMBIANCE</E>
+        <T n="buff_bucket_delta">0.33</T>
+      </U>
+    </U>
+    <U>
+      <T n="Buff">381654<!--Buff: buff_SmallBusiness_CustomerSatisfaction_Relationship_Great--></T>
+      <U n="Buff Data">
+        <E n="buff_bucket">CUSTOMER_RELATIONSHIP</E>
+        <T n="buff_bucket_delta">1</T>
+      </U>
+    </U>
+    <U>
+      <T n="Buff">381663<!--Buff: buff_SmallBusiness_CustomerSatisfaction_Relationship_Good--></T>
+      <U n="Buff Data">
+        <E n="buff_bucket">CUSTOMER_RELATIONSHIP</E>
+        <T n="buff_bucket_delta">0.5</T>
+      </U>
+    </U>
+    <U>
+      <T n="Buff">381664<!--Buff: buff_SmallBusiness_CustomerSatisfaction_Relationship_Bad--></T>
+      <U n="Buff Data">
+        <E n="buff_bucket">CUSTOMER_RELATIONSHIP</E>
+        <T n="buff_bucket_delta">-0.5</T>
+      </U>
+    </U>
+    <U>
+      <T n="Buff">381665<!--Buff: buff_SmallBusiness_CustomerSatisfaction_Relationship_Terrible--></T>
+      <U n="Buff Data">
+        <E n="buff_bucket">CUSTOMER_RELATIONSHIP</E>
+        <T n="buff_bucket_delta">-1</T>
+      </U>
+    </U>
+    <U>
+      <T n="Buff">382115<!--Buff: buff_SmallBusinessPerks_ViralSocialMedia_1--></T>
+      <U n="Buff Data">
+        <E n="buff_bucket">MISC</E>
+        <T n="buff_bucket_delta">0.2</T>
+        <T n="update_star_rating_on_customer_enter">True</T>
+      </U>
+    </U>
+    <U>
+      <T n="Buff">382116<!--Buff: buff_SmallBusinessPerks_ViralSocialMedia_2--></T>
+      <U n="Buff Data">
+        <E n="buff_bucket">MISC</E>
+        <T n="buff_bucket_delta">0.4</T>
+        <T n="update_star_rating_on_customer_enter">True</T>
+      </U>
+    </U>
+    <U>
+      <T n="Buff">382117<!--Buff: buff_SmallBusinessPerks_ViralSocialMedia_3--></T>
+      <U n="Buff Data">
+        <E n="buff_bucket">MISC</E>
+        <T n="buff_bucket_delta">0.6</T>
+        <T n="update_star_rating_on_customer_enter">True</T>
+      </U>
+    </U>
+    <U>
+      <T n="Buff">392660<!--Buff: buff_SmallBusiness_CustomerSatisfaction_InteractionCount_0--></T>
+      <U n="Buff Data">
+        <E n="buff_bucket">ACTIVITIES_COMPLETED</E>
+        <T n="buff_bucket_delta">0.2</T>
+      </U>
+    </U>
+    <U>
+      <T n="Buff">392661<!--Buff: buff_SmallBusiness_CustomerSatisfaction_InteractionCount_1--></T>
+      <U n="Buff Data">
+        <E n="buff_bucket">ACTIVITIES_COMPLETED</E>
+        <T n="buff_bucket_delta">0.2</T>
+      </U>
+    </U>
+    <U>
+      <T n="Buff">393620<!--Buff: buff_SmallBusiness_CustomerSatisfaction_InteractionCount_4--></T>
+      <U n="Buff Data">
+        <E n="buff_bucket">ACTIVITIES_COMPLETED</E>
+        <T n="buff_bucket_delta">0.1</T>
+      </U>
+    </U>
+    <U>
+      <T n="Buff">393621<!--Buff: buff_SmallBusiness_CustomerSatisfaction_InteractionCount_3--></T>
+      <U n="Buff Data">
+        <E n="buff_bucket">ACTIVITIES_COMPLETED</E>
+        <T n="buff_bucket_delta">0.1</T>
+      </U>
+    </U>
+    <U>
+      <T n="Buff">393622<!--Buff: buff_SmallBusiness_CustomerSatisfaction_InteractionCount_2--></T>
+      <U n="Buff Data">
+        <E n="buff_bucket">ACTIVITIES_COMPLETED</E>
+        <T n="buff_bucket_delta">0.1</T>
+      </U>
+    </U>
+    <U>
+      <T n="Buff">417282<!--Buff: buff_SmallBusiness_BelovedBrand_Customer--></T>
+      <U n="Buff Data">
+        <E n="buff_bucket">MISC</E>
+        <T n="buff_bucket_delta">0.3</T>
+        <T n="update_star_rating_on_add">True</T>
+        <T n="update_star_rating_on_customer_enter">True</T>
+        <T n="update_star_rating_on_remove">False</T>
+      </U>
+    </U>
+    <U>
+      <T n="Buff">423291<!--Buff: buff_SmallBusiness_CustomerSatisfaction_Quality_Poor_Small--></T>
+      <U n="Buff Data">
+        <E n="buff_bucket">QUALITY</E>
+        <T n="buff_bucket_delta">-0.2</T>
+        <T n="ignore_remove">True</T>
+      </U>
+    </U>
+    <U>
+      <T n="Buff">423293<!--Buff: buff_SmallBusiness_CustomerSatisfaction_Quality_Excellent_Small--></T>
+      <U n="Buff Data">
+        <E n="buff_bucket">QUALITY</E>
+        <T n="buff_bucket_delta">0.2</T>
+        <T n="ignore_remove">True</T>
+      </U>
+    </U>
+    <U>
+      <T n="Buff">423763<!--Buff: buff_SmallBusinessPerks_CustomerAppreciationDay_Customer_Hidden--></T>
+      <U n="Buff Data">
+        <E n="buff_bucket">MISC</E>
+        <T n="buff_bucket_delta">0.3</T>
+        <T n="update_star_rating_on_customer_enter">True</T>
+      </U>
+    </U>
+    <U>
+      <T n="Buff">424546<!--Buff: buff_SmallBusiness_CustomerSatisfaction_Pricing_Value_Bad--></T>
+      <U n="Buff Data">
+        <E n="buff_bucket">PRICING</E>
+        <T n="buff_bucket_delta">-0.5</T>
+        <T n="update_star_rating_on_remove">True</T>
+      </U>
+    </U>
+    <U>
+      <T n="Buff">424547<!--Buff: buff_SmallBusiness_CustomerSatisfaction_Pricing_Value_Good--></T>
+      <U n="Buff Data">
+        <E n="buff_bucket">PRICING</E>
+        <T n="buff_bucket_delta">0.5</T>
+        <T n="update_star_rating_on_remove">True</T>
+      </U>
+    </U>
+    <U>
+      <T n="Buff">427590<!--Buff: buff_SmallBusiness_Reputation_Consequences_HappyCustomer_Hidden--></T>
+      <U n="Buff Data">
+        <E n="buff_bucket">MISC</E>
+        <T n="buff_bucket_delta">0.3</T>
+        <T n="update_star_rating_on_customer_enter">True</T>
+        <T n="update_star_rating_on_remove">False</T>
+      </U>
+    </U>
+    <U>
+      <T n="Buff">431436<!--Buff: buff_SmallBusiness_CustomerSatisfaction_Quality_Excellent_Big--></T>
+      <U n="Buff Data">
+        <E n="buff_bucket">QUALITY</E>
+        <T n="buff_bucket_delta">0.5</T>
+        <T n="ignore_remove">True</T>
+      </U>
+    </U>
+    <U>
+      <T n="Buff">431437<!--Buff: buff_SmallBusiness_CustomerSatisfaction_Quality_Poor_Big--></T>
+      <U n="Buff Data">
+        <E n="buff_bucket">QUALITY</E>
+        <T n="buff_bucket_delta">-0.5</T>
+        <T n="ignore_remove">True</T>
+      </U>
+    </U>
+    <U>
+      <T n="Buff">433650<!--Buff: buff_SmallBusiness_CustomerSatisfaction_WaitTime_Good--></T>
+      <U n="Buff Data">
+        <E n="buff_bucket">ACTIVITIES_COMPLETED</E>
+        <T n="buff_bucket_delta">0.2</T>
+        <T n="ignore_remove">True</T>
+      </U>
+    </U>
+    <U>
+      <T n="Buff">433866<!--Buff: buff_SmallBusiness_CustomerSatisfaction_InteractionCount_5--></T>
+      <U n="Buff Data">
+        <E n="buff_bucket">ACTIVITIES_COMPLETED</E>
+        <T n="buff_bucket_delta">0.1</T>
+      </U>
+    </U>
+    <U>
+      <T n="Buff">433867<!--Buff: buff_SmallBusiness_CustomerSatisfaction_InteractionCount_6--></T>
+      <U n="Buff Data">
+        <E n="buff_bucket">ACTIVITIES_COMPLETED</E>
+        <T n="buff_bucket_delta">0.1</T>
+      </U>
+    </U>
+    <U>
+      <T n="Buff">433868<!--Buff: buff_SmallBusiness_CustomerSatisfaction_InteractionCount_7--></T>
+      <U n="Buff Data">
+        <E n="buff_bucket">ACTIVITIES_COMPLETED</E>
+        <T n="buff_bucket_delta">0.1</T>
+      </U>
+    </U>
+    <U>
+      <T n="Buff">433869<!--Buff: buff_SmallBusiness_CustomerSatisfaction_InteractionCount_8--></T>
+      <U n="Buff Data">
+        <E n="buff_bucket">ACTIVITIES_COMPLETED</E>
+        <T n="buff_bucket_delta">0.1</T>
+      </U>
+    </U>
+    <U>
+      <T n="Buff">433870<!--Buff: buff_SmallBusiness_CustomerSatisfaction_InteractionCount_9--></T>
+      <U n="Buff Data">
+        <E n="buff_bucket">ACTIVITIES_COMPLETED</E>
+        <T n="buff_bucket_delta">0.1</T>
+      </U>
+    </U>
+  </L>
+  <L n="customer_star_rating_leaving_loot_actions">
+    <U>
+      <T n="Star Rating">1</T>
+      <T n="Loot Actions">385389<!--LootActions: lootActions_SmallBusinessCustomerGiveBusinessXP_Rank1--></T>
+    </U>
+    <U>
+      <T n="Star Rating">2</T>
+      <T n="Loot Actions">394072<!--LootActions: lootActions_SmallBusinessCustomerGiveBusinessXP_Rating_2--></T>
+    </U>
+    <U>
+      <T n="Star Rating">3</T>
+      <T n="Loot Actions">387274<!--LootActions: lootActions_SmallBusinessCustomerGiveBusinessXP_Rating_3--></T>
+    </U>
+    <U>
+      <T n="Star Rating">4</T>
+      <T n="Loot Actions">387275<!--LootActions: lootActions_SmallBusinessCustomerGiveBusinessXP_Rating_4--></T>
+    </U>
+    <U>
+      <T n="Star Rating">5</T>
+      <T n="Loot Actions">387276<!--LootActions: lootActions_SmallBusinessCustomerGiveBusinessXP_Rating_5--></T>
+    </U>
+  </L>
+  <T n="customer_star_rating_statistic">380752<!--Statistic: statistic_OwnableSmallBusiness_Customer_StarRating--></T>
+  <T n="default_customer_star_rating">2</T>
+  <T n="default_markup_multiplier">1</T>
+  <L n="employee_data_map">
+    <U>
+      <E n="key">SMALL_BUSINESS_HELP</E>
+      <V n="value" t="reference">
+        <T n="reference">399028<!--Businessemployeedata: businessEmployee_SmallBusiness--></T>
+      </V>
+    </U>
+  </L>
+  <E n="employee_training_buff_tag">Buff_Business_EmployeeTraining</E>
+  <T n="filter_button_tooltip">0x1A77A11<!--String: "Small Business"--></T>
+  <U n="lighting_helper_close">
+    <V n="dimmer_value" t="specify_dimmer_value" />
+    <V n="light_target" t="specific_lights">
+      <U n="specific_lights">
+        <L n="tags">
+          <E>Func_Business_Light</E>
+        </L>
+      </U>
+    </V>
+  </U>
+  <U n="lighting_helper_open">
+    <V n="dimmer_value" t="specify_dimmer_value">
+      <U n="specify_dimmer_value">
+        <T n="dimmer_value">1</T>
+      </U>
+    </V>
+    <V n="light_target" t="specific_lights">
+      <U n="specific_lights">
+        <L n="tags">
+          <E>Func_Business_Light</E>
+        </L>
+      </U>
+    </V>
+    <V n="state_change" t="disabled" />
+  </U>
+  <L n="loot_list_on_close">
+    <T>382113<!--LootActions: lootActions_SmallBusinessPerks_MuscleMemory_Buff_Removal--></T>
+    <T>385344<!--LootActions: loot_SmallBusiness_System_RunOnClose--></T>
+    <T>405633<!--LootActions: lootActions_SmallBusinessPerks_RemoveUltrasonicWhistle--></T>
+    <T>411679<!--LootActions: lootActions_SmallBusinessPerks_StorePheronome_DestroySituation--></T>
+    <T>420106<!--LootActions: lootActions_SmallBusinessPerks_FakeBillPay_CheckEmployeesOnClose--></T>
+  </L>
+  <L n="loot_list_on_open">
+    <T>382112<!--LootActions: lootActions_SmallBusinessPerks_MuscleMemory_Buff--></T>
+    <T>385345<!--LootActions: loot_SmallBusiness_System_RunOnOpen--></T>
+    <T>398637<!--LootActions: loot_BusinessEvents_ScheduleBusinessEvents--></T>
+    <T>398744<!--RandomWeightedLoot: randomWeightedLoot_ShadyNPC_ReimbursementCheck--></T>
+    <T>405612<!--LootActions: lootActions_SmallBusinessPerks_UltrasonicWhistle--></T>
+    <T>411668<!--LootActions: lootActions_SmallBusinessPerks_StorePheromone_StartSituation--></T>
+    <T>419333<!--LootActions: loot_DramaNode_SmallBusiness_Reputation_Ultimatum--></T>
+  </L>
+  <L n="manage_outfit_affordances">
+    <T>406835<!--OutfitPickerSuperInteraction: smallBusiness_Employee_UniformAssign_Female--></T>
+    <T>406836<!--OutfitPickerSuperInteraction: smallBusiness_Employee_UniformAssign_Male--></T>
+    <T>406832<!--ImmediateSuperInteraction: smallBusiness_Immediate_Employee_UniformCreate_Female--></T>
+    <T>406833<!--ImmediateSuperInteraction: smallBusiness_Immediate_Employee_UniformCreate_Male--></T>
+  </L>
+  <L n="markup_multiplier_data">
+    <U>
+      <T n="markup_multiplier">0.5</T>
+      <T n="name">0xBD4EE632<!--String: "-50%"--></T>
+    </U>
+    <U>
+      <T n="markup_multiplier">0.75</T>
+      <T n="name">0xE5690EE<!--String: "-25%"--></T>
+    </U>
+    <U>
+      <T n="markup_multiplier">1</T>
+      <T n="name">0xB93441B5<!--String: "+0%"--></T>
+    </U>
+    <U>
+      <T n="markup_multiplier">1.5</T>
+      <T n="name">0x9BA17906<!--String: "+50%"--></T>
+    </U>
+    <U>
+      <T n="markup_multiplier">2</T>
+      <T n="name">0x4128FAD7<!--String: "+100%"--></T>
+    </U>
+  </L>
+  <T n="no_business_text">0x442B5C68<!--String: "You do not own a Small Business right now!"--></T>
+  <V n="no_way_to_make_money_notification" t="literal">
+    <U n="literal">
+      <V n="text" t="single">
+        <T n="single">0x481E26D1<!--String: "**DEBUG**"--></T>
+      </V>
+    </U>
+  </V>
+  <V n="open_business_notification" t="literal">
+    <U n="literal">
+      <V n="icon" t="enabled">
+        <V n="enabled" t="small_business">
+          <U n="small_business">
+            <L n="participant_type">
+              <E>CurrentlyOpenSmallBusinessOwner</E>
+            </L>
+          </U>
+        </V>
+      </V>
+      <V n="primary_icon_response" t="enabled">
+        <U n="enabled">
+          <E n="ui_request">SHOW_SMALL_BUSINESS_PANEL</E>
+        </U>
+      </V>
+      <V n="secondary_icon" t="enabled">
+        <V n="enabled" t="participant">
+          <U n="participant">
+            <L n="participant_type">
+              <E>CurrentlyOpenSmallBusinessOwner</E>
+            </L>
+          </U>
+        </V>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0x6024C178<!--String: "{1.String}—{0.SimFirstName}'s Small Business—is now open! Customers will start arriving soon."--></T>
+      </V>
+      <V n="text_tokens" t="enabled">
+        <U n="enabled">
+          <L n="tokens">
+            <V t="participant_type">
+              <U n="participant_type">
+                <V n="objects" t="from_participant">
+                  <U n="from_participant">
+                    <E n="participant">CurrentlyOpenSmallBusinessOwner</E>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="small_business">
+              <U n="small_business">
+                <E n="participant">CurrentlyOpenSmallBusinessOwner</E>
+              </U>
+            </V>
+          </L>
+        </U>
+      </V>
+      <V n="title" t="enabled">
+        <T n="enabled">0xBDDCE766<!--String: "{1.String} is Open!"--></T>
+      </V>
+    </U>
+  </V>
+  <T n="opening_fee">75</T>
+  <T n="purchase_business_button_text">0xB5D5EEF9<!--String: "Register Small Business ({0.Money})"--></T>
+  <T n="register_business_affordance">373397<!--ImmediateSuperInteraction: ownableSmallBusiness_immediate_BuyFromUI--></T>
+  <T n="registration_fee">750</T>
+  <U n="sell_store_dialog">
+    <L n="dialog_options" />
+    <V n="text" t="single">
+      <T n="single">0xA0009BAB<!--String: "Are you sure you want to sell the Small Business {2.String}? {0.String} will earn {1.Money} from this sale, deposited into the household's funds. This action cannot be undone!"--></T>
+    </V>
+    <V n="text_tokens" t="disabled" />
+    <V n="title" t="enabled">
+      <T n="enabled">0x1D694DD0<!--String: "Sell {2.String}?"--></T>
+    </V>
+  </U>
+  <U n="sell_store_dialog_property_owner_tenant">
+    <V n="text" t="single">
+      <T n="single">0x481E26D1<!--String: "**DEBUG**"--></T>
+    </V>
+  </U>
+  <V n="show_settings_button" t="enabled">
+    <T n="enabled">0x48FA1C5C<!--String: "Small Business Settings"--></T>
+  </V>
+  <L n="star_rating_value_to_user_facing_rating_curve">
+    <U>
+      <T n="x">1</T>
+      <T n="y">1</T>
+    </U>
+    <U>
+      <T n="x">5</T>
+      <T n="y">5</T>
+    </U>
+  </L>
+  <T n="summary_dialog_cost_of_ingredients_header">0xFE983BAD<!--String: "Careers"--></T>
+  <T n="summary_dialog_cost_of_ingredients_text">0xFE983BAD<!--String: "Careers"--></T>
+  <T n="summary_dialog_food_profit_header">0xFE983BAD<!--String: "Careers"--></T>
+  <T n="summary_dialog_food_profit_text">0xFE983BAD<!--String: "Careers"--></T>
+  <T n="summary_dialog_icon" p="InGame\UI\Icons\Retail\RetailPanelIcon.png">2f7d0004:00000000:913917bcc59f86b1</T>
+  <T n="summary_dialog_payroll_header">0x370897B4<!--String: "Wages for {0.SimLastName}, {0.SimFirstName}:"--></T>
+  <T n="summary_dialog_payroll_text">0x7FD02F8E<!--String: "{0.String} ({1.Money} / hr) × {2.Number} {S2.hour}{P2.hours}"--></T>
+  <T n="summary_dialog_subtitle">0xBE767299<!--String: "Financial Report"--></T>
+  <T n="summary_dialog_transactions_header">0xC8E627C0<!--String: "Items Sold / Revenue:"--></T>
+  <T n="summary_dialog_transactions_text">0x778C4B2A<!--String: "{0.Number}"--></T>
+  <T n="summary_dialog_wages_advertising_header">0xFE983BAD<!--String: "Careers"--></T>
+  <T n="summary_dialog_wages_advertising_text">0xFE983BAD<!--String: "Careers"--></T>
+  <T n="summary_dialog_wages_net_profit_header">0xAB03BF46<!--String: "Net Profit"--></T>
+  <T n="summary_dialog_wages_net_profit_text">0x35A942D0<!--String: "{0.Money}"--></T>
+  <T n="summary_dialog_wages_owed_header">0xC2B5A2A7<!--String: "Employee Wages"--></T>
+  <T n="summary_dialog_wages_owed_text">0x35A942D0<!--String: "{0.Money}"--></T>
+  <T n="tab_button_icon" p="InEP18\UI\Icons\Filter\Filter_SmallBusiness.png">2f7d0004:00000000:747190935af07c15</T>
+  <T n="vfx_buff_bucket_cooldown">15</T>
+</I>

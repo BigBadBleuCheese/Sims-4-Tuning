@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Broadcaster" i="broadcaster" m="broadcasters.broadcaster" n="broadcaster_NoClustering_closet_reaction_giggle" s="377401">
+  <V n="allow_sim_test" t="enabled">
+    <L n="enabled">
+      <L>
+        <V t="mood">
+          <U n="mood">
+            <T n="disallow">True</T>
+            <T n="mood">201531<!--Mood: Mood_Possessed--></T>
+          </U>
+        </V>
+      </L>
+    </L>
+  </V>
+  <V n="clustering" t="disabled" />
+  <L n="constraints">
+    <V t="line_of_sight">
+      <U n="line_of_sight">
+        <V n="temporary_los" t="enabled" />
+      </U>
+    </V>
+  </L>
+  <L n="effects">
+    <V t="loot">
+      <U n="loot">
+        <V n="excluded_participants" t="enabled">
+          <L n="enabled">
+            <E>Actor</E>
+            <E>TargetSim</E>
+          </L>
+        </V>
+        <L n="loot_list">
+          <T>377402<!--LootActions: loot_reaction_closet_giggle--></T>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="test_set_reference">
+              <T n="test_set_reference">254523<!--TestSetInstance: testSet_JealousyAvailability_Tier1_Inverted--></T>
+            </V>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="ages" t="specified">
+                  <L n="specified">
+                    <E>YOUNGADULT</E>
+                    <E>ADULT</E>
+                    <E>ELDER</E>
+                  </L>
+                </V>
+              </U>
+            </V>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="ages" t="specified">
+                  <L n="specified">
+                    <E>YOUNGADULT</E>
+                    <E>ADULT</E>
+                    <E>ELDER</E>
+                  </L>
+                </V>
+                <E n="who">TargetSim</E>
+              </U>
+            </V>
+          </L>
+          <L>
+            <V t="test_set_reference">
+              <T n="test_set_reference">254523<!--TestSetInstance: testSet_JealousyAvailability_Tier1_Inverted--></T>
+            </V>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="ages" t="specified">
+                  <L n="specified">
+                    <E>TEEN</E>
+                  </L>
+                </V>
+              </U>
+            </V>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="ages" t="specified">
+                  <L n="specified">
+                    <E>TEEN</E>
+                    <E>YOUNGADULT</E>
+                    <E>ADULT</E>
+                    <E>ELDER</E>
+                  </L>
+                </V>
+                <E n="who">TargetSim</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="snooping_Travel_BreakIn_Start_RR" s="358207">
+  <V n="_icon" t="resource_key">
+    <U n="resource_key">
+      <T n="key" p="InGame\UI\Icons\InteractionQueue\IconQueueTravelTo.png">2f7d0004:00000000:447671045d978994</T>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <V n="basic_reserve_object" t="disabled" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xB5B4E967<!--String: "Break In"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="continuation">
+          <U>
+            <T n="affordance">359661<!--SimPickerInteraction: si_SimPicker_Snooping_B&E_BreakIn_RR--></T>
+          </U>
+        </L>
+      </U>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T n="key" p="InGame\UI\Icons\PieMenu\Interactions\icon_travel_sm.png">2f7d0004:00000000:22391d74038c318c</T>
+      </U>
+    </V>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="object_ownership">
+      <U n="object_ownership">
+        <T n="is_not_owner">True</T>
+        <T n="is_owner">False</T>
+      </U>
+    </V>
+    <V t="situation_running_test">
+      <U n="situation_running_test">
+        <V n="situation_blacklist" t="enabled">
+          <L n="enabled">
+            <T>34413<!--GreetedPlayerVisitingNPCSituation: Situation_GreetedPlayerVisitingNPC--></T>
+            <T>110690<!--SituationSimple: situation_Career_Detective_Patrol--></T>
+            <T>256843<!--CustomStatesSituation: situation_Career_InteriorDecorator_Interview--></T>
+            <T>264081<!--CustomStatesSituation: situation_Career_InteriorDecorator_Interview_Commercial--></T>
+            <T>257472<!--SituationSimple: situation_Career_InteriorDecorator_HideClients--></T>
+            <T>264535<!--SituationSimple: situation_Career_InteriorDecorator_HideClients_NoHousehold--></T>
+            <T>346193<!--BreakingAndEnteringPlayerGroupSituation: situation_Snooping_B&E--></T>
+            <T>344272<!--MultiUnitEventSituation: situation_muEvent_Algae--></T>
+            <T>343792<!--MultiUnitEventSituation: situation_muEvent_Blight--></T>
+            <T>344502<!--MultiUnitEventSituation: situation_muEvent_Charity--></T>
+            <T>344501<!--MultiUnitEventSituation: situation_muEvent_Cursed--></T>
+            <T>343473<!--MultiUnitEventSituation: situation_muEvent_Electrical--></T>
+            <T>343680<!--MultiUnitEventSituation: situation_muEvent_Explosion--></T>
+            <T>344499<!--MultiUnitEventSituation: situation_muEvent_Haunting--></T>
+            <T>344500<!--MultiUnitEventSituation: situation_muEvent_Infestation--></T>
+            <T>343855<!--MultiUnitEventSituation: situation_muEvent_MaintenanceDay--></T>
+            <T>344503<!--MultiUnitEventSituation: situation_muEvent_Nuisance--></T>
+            <T>344498<!--MultiUnitEventSituation: situation_muEvent_SewageLeak--></T>
+            <T>344416<!--MultiUnitEventSituation: situation_muEvent_TenantRevolt--></T>
+            <T>343922<!--MultiUnitEventSituation: situation_muEvent_TrashOverload--></T>
+            <T>343434<!--MultiUnitEventSituation: situation_muEvent_WaterLeak--></T>
+            <T>347389<!--MultiUnitEventSituation: situation_muEvent_PetDay--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+    <V t="state">
+      <U n="state">
+        <E n="operator">NOTEQUAL</E>
+        <T n="value">135096<!--ObjectStateValue: FrontDoor_IsFrontDoor--></T>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">97308<!--TestSetInstance: testSet_Travel--></T>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="object_criteria">
+        <U n="object_criteria">
+          <E n="object_location">PrivateSpaceOnly</E>
+          <T n="owned">False</T>
+          <V n="subject_specific_tests" t="single_object" />
+        </U>
+      </V>
+      <V t="zone">
+        <U n="zone">
+          <U n="zone_tests">
+            <V n="venue_type" t="enabled">
+              <U n="enabled">
+                <V n="whitelist" t="specify">
+                  <U n="specify">
+                    <L n="whitelist">
+                      <T>341299<!--Venue: venue_MultiUnit--></T>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </U>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="zone">
+        <U n="zone">
+          <U n="zone_tests">
+            <V n="is_apartment" t="Is_or_is_not_apartment_zone">
+              <U n="Is_or_is_not_apartment_zone">
+                <T n="consider_penthouse_an_apartment">False</T>
+              </U>
+            </V>
+          </U>
+        </U>
+      </V>
+    </L>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

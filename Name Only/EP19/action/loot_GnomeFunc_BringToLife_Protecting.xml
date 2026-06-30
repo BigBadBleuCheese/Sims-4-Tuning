@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_GnomeFunc_BringToLife_Protecting" s="417245">
+  <L n="loot_actions">
+    <V t="apply_tags_to_object">
+      <U n="apply_tags_to_object">
+        <L n="apply_persisted_tags">
+          <E>Func_Gnome_Protecting</E>
+        </L>
+      </U>
+    </V>
+    <V t="create_situation">
+      <U n="create_situation">
+        <U n="create_situation">
+          <T n="invite_actor">False</T>
+          <T n="invite_picked_sims">False</T>
+          <T n="invite_target_sim">False</T>
+          <T n="situation">417250<!--MovingObjectsSituation: situation_GnomeFunc_BringToLife_Protecting--></T>
+          <T n="user_facing">False</T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="situation_running_test">
+              <U n="situation_running_test">
+                <V n="situation_blacklist" t="enabled">
+                  <L n="enabled">
+                    <T>417250<!--MovingObjectsSituation: situation_GnomeFunc_BringToLife_Protecting--></T>
+                    <T>433846<!--MovingObjectsSituation: situation_GnomeFunc_BringToLife_Protecting_CreateGnomes--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="state_change">
+      <U n="state_change">
+        <T n="state_value">415536<!--ObjectStateValue: gnomeFuncStates_BringToLife_Protecting--></T>
+        <V n="subject" t="participant">
+          <E n="participant">Object</E>
+        </V>
+      </U>
+    </V>
+    <V t="actions">
+      <T n="actions">429961<!--LootActions: loot_GnomeFunc_EvilGnomeChance--></T>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_set">
+        <U n="statistic_set">
+          <T n="stat">428743<!--Statistic: statistic_GnomeFunc_PowerCounter--></T>
+          <L n="subject">
+            <E>Object</E>
+          </L>
+          <T n="value">8</T>
+        </U>
+      </V>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Object</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant" />
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x4DF73205<!--String: "{0.SimFirstName} brought a Gnome to life! {0.SimPronounSubjective|xxUpper} should be careful how many times {0.SimPronounSubjective} {S0.brings}{P0.bring} a Gnome to life lest the Evil Gnomes be angered.\n\nEvil Gnomes, if spawned on the lot, will cause:\n• Objects to break\n• Objects to get dirty\n• Trash piles to accumulate\n• Plants to die\n• Sims to get angry\n\nSo be careful! {0.SimFirstName} has been warned."--></T>
+            </V>
+            <V n="tns_suppression_group" t="enabled">
+              <E n="enabled">Onboarding_EvilGnomes</E>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="object_relationship">
+      <U n="object_relationship">
+        <T n="amount_to_add">1</T>
+      </U>
+    </V>
+  </L>
+</I>

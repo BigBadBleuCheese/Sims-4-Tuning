@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalActor" i="situation_goal" m="situations.situation_goal_actor" n="scenarioGoal_Actor_Inheritance_Phase1_TalkToGrandmother" s="338709">
+  <T n="_cooldown">0</T>
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T p="InGame\UI\Icons\Headlines\Final\headline_Friendly.png" n="enabled">2f7d0004:00000000:1938d6109bf1d45d</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0xE19CC838<!--String: "Improve Grandmother's Mood"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0x39080810<!--String: "Try being friendly to your grandmother or have her do fun activities such as watching TV or reading a book until she no longer feels angry or sad."--></T>
+      </V>
+    </U>
+  </V>
+  <V n="_goal_test" t="mood">
+    <U n="mood">
+      <T n="disallow">True</T>
+      <T n="mood">14632<!--Mood: Mood_Angry--></T>
+    </U>
+  </V>
+  <L n="_post_tests">
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>247589<!--Buff: buff_Sentiment_Hurt_Angry_generic--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="_scenario_roles">
+    <T>337315<!--ScenarioRole: scenarioRole_Inheritance_Grandmother--></T>
+  </L>
+  <T n="_score">0</T>
+  <T p="" n="audio_sting_on_complete" />
+  <T n="use_numeric_test_results">True</T>
+</I>

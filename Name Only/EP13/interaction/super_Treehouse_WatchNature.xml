@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="super_Treehouse_WatchNature" s="307413">
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="time_based">
+                <U n="time_based">
+                  <T n="max_time">30</T>
+                  <T n="min_time">25</T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">GO_INERTIAL</E>
+          </U>
+        </V>
+      </L>
+      <V n="content" t="looping_content">
+        <U n="looping_content">
+          <U n="animation_ref">
+            <T n="factory">309766<!--AnimationElement: anim_Treehouse_WatchNature--></T>
+          </U>
+        </U>
+      </V>
+      <V n="periodic_stat_change" t="enabled">
+        <U n="enabled">
+          <L n="operations">
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="amount">0.39</T>
+                <T n="stat">16655<!--Commodity: motive_Fun--></T>
+              </U>
+            </V>
+            <V t="dynamic_skill">
+              <U n="dynamic_skill">
+                <U n="skill_loot_data_override">
+                  <E n="effectiveness">StandardPeriodic</E>
+                  <T n="stat">16719<!--Skill: statistic_Skill_Child_Mental--></T>
+                </U>
+                <L n="tests">
+                  <L>
+                    <V t="sim_info">
+                      <U n="sim_info">
+                        <V n="ages" t="specified">
+                          <L n="specified">
+                            <E>CHILD</E>
+                          </L>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </V>
+            <V t="reference">
+              <T n="reference">249765<!--PeriodicStatChangeOperation: periodicStatChangeOperation_Lifestyles_Progress_Outdoorsy--></T>
+            </V>
+            <V t="reference">
+              <T n="reference">251311<!--PeriodicStatChangeOperation: periodicStatChangeOperation_Lifestyles_Liked_Outdoorsy--></T>
+            </V>
+          </L>
+        </U>
+      </V>
+      <V n="statistic_reduction_by_category" t="enabled">
+        <U n="enabled">
+          <L n="categories">
+            <E>Angry_Buffs</E>
+            <E>Stressed_Buffs</E>
+            <E>Bored_Buffs</E>
+            <E>Sad_Buffs</E>
+            <E>Sloshed_Buffs</E>
+            <E>Uncomfortable_Buffs</E>
+            <E>Embarrassed_Buffs</E>
+            <E>Scared_Buffs</E>
+          </L>
+          <T n="rate">3</T>
+        </U>
+      </V>
+    </U>
+  </V>
+  <V n="basic_reserve_object" t="enabled">
+    <U n="enabled">
+      <V n="reserve_type_for_provided_target" t="basic" />
+    </U>
+  </V>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xE4854FE5<!--String: "Watch Nature"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="state">
+      <U n="state">
+        <T n="value">306101<!--CommodityBasedObjectStateValue: state_Treehouse_Build_3_Completed--></T>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

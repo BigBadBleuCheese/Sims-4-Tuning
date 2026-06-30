@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Dynasty_Membership_OnRemove_ExcludedByHead" s="473325">
+  <L n="loot_actions">
+    <V t="actions">
+      <T n="actions">473279<!--LootActions: loot_Dynasty_ActionFeedback_RemovedByHead--></T>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="relationship_change">
+        <U n="relationship_change">
+          <T n="amount">-20</T>
+          <L n="target_participant_type">
+            <E>ActorDynastyHead</E>
+          </L>
+          <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+        </U>
+      </V>
+    </V>
+    <V t="actions">
+      <T n="actions">470786<!--LootActions: loot_Sentiment_AddSentiment_Bitter_Dynasty_ExcludedFromDynasty--></T>
+    </V>
+    <V t="looping_loot_ops_with_target">
+      <U n="looping_loot_ops_with_target">
+        <L n="loots_to_apply">
+          <T>473034<!--LootActions: loot_Dynasty_Membership_ExcludeMemberSocialEffects--></T>
+        </L>
+        <E n="subject">ActorDynastyMembers</E>
+        <E n="target_participant_type">Actor</E>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>470539<!--Buff: buff_Dynasty_TNS_Membership_RemoveInvalid--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

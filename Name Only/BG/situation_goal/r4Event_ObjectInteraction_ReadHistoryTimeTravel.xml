@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalObjectInteraction" i="situation_goal" m="situations.situation_goal_object_interaction" n="r4Event_ObjectInteraction_ReadHistoryTimeTravel" s="430201">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T p="InGame\UI\Icons\Notifications\notification_book.png" n="enabled">2f7d0004:00000000:7c65232cc797fa90</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0xB498C796<!--String: "Read the History of Time Travel at a Library"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0xECC768E6<!--String: "A little knowledge of time travel might help on where to begin!\n\nGo to a Library Venue, and select Read History of Time Travel from a bookshelf.\n\n<i>(+25 Event Points)</i>"--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>447711<!--SituationGoalLootActions: liveEvent_GoalLoot_CompleteQuestGoal--></T>
+  </L>
+  <U n="_goal_test">
+    <L n="affordances">
+      <T>430200<!--SuperInteraction: bookshelf_R4Event_Read_HistoryTimeTravel--></T>
+    </L>
+    <E n="test_event">InteractionComplete</E>
+  </U>
+  <L n="_post_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+      </U>
+    </V>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+  <V n="goal_completion_notification" t="enabled">
+    <U n="enabled">
+      <V n="icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T p="InGame\UI\Icons\Notifications\notification_book.png" n="key">2f7d0004:00000000:7c65232cc797fa90</T>
+          </U>
+        </V>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0x115E8CC8<!--String: "It is both now and ever, long and short, and started when someone tried to fix past mistakes. In doing so, the fabric of time itself crystalized and became something material.\n\nIt goes on to say that while some believe books, movies, or even video games are merely windows into the past, others believe they may be a form of time travel itself."--></T>
+      </V>
+      <V n="title" t="enabled">
+        <T n="enabled">0x488FCFB6<!--String: "The History of Time Travel"--></T>
+      </V>
+      <E n="visual_type">INFORMATION</E>
+    </U>
+  </V>
+  <V n="tutorial_tip_group" t="disabled" />
+</I>

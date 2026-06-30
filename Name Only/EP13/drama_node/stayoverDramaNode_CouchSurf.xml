@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="StayoverDramaNode" i="drama_node" m="drama_scheduler.stayover_drama_node" n="stayoverDramaNode_CouchSurf" s="311526">
+  <V n="cooldown_data" t="group_cooldown">
+    <U n="group_cooldown">
+      <E n="group">StayOverCooldown</E>
+    </U>
+  </V>
+  <T n="duration">3</T>
+  <U n="min_and_max_times">
+    <T n="lower_bound">0</T>
+    <T n="upper_bound">24</T>
+  </U>
+  <L n="receiver_sim_pretests">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified" />
+          <V n="species" t="specified">
+            <U n="specified">
+              <L n="species">
+                <E />
+              </L>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+  <L n="run_tests">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified" />
+          <V n="species" t="specified">
+            <U n="specified">
+              <L n="species">
+                <E />
+              </L>
+            </U>
+          </V>
+          <E n="who">TargetSim</E>
+        </U>
+      </V>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="prohibited_relationship_bits">
+            <L n="match_any">
+              <T>306282<!--RelationshipBit: familyTrope_distant--></T>
+              <T>310888<!--RelationshipBit: familyTrope_difficult--></T>
+            </L>
+          </U>
+        </U>
+      </V>
+      <V t="situation_running_test">
+        <U n="situation_running_test">
+          <V n="situation_blacklist" t="enabled">
+            <L n="enabled">
+              <T>321830<!--AmbientSimSpecificCustomStatesSituation: situation_Stayover_Behavior_InfantIntro--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="scoring" t="enabled">
+    <U n="enabled">
+      <T n="base_score">100</T>
+      <E n="bucket">StayOver</E>
+    </U>
+  </V>
+  <V n="sender_sim_info" t="sim_filter">
+    <U n="sim_filter">
+      <T n="sim_filter">311528<!--TunableSimFilter: filter_TemporaryStays_CouchSurf--></T>
+    </U>
+  </V>
+  <E n="sender_sim_info_type">INSTANCED_ALLOWED</E>
+  <T n="stayover_behavioral_situation">309237<!--AmbientSimSpecificCustomStatesSituation: situation_Stayover_Behavior_CouchSurf--></T>
+  <L n="stayover_prompt_messages">
+    <U>
+      <U n="dialog">
+        <V n="custom_mask_target_sim" t="enabled">
+          <U n="enabled">
+            <V n="alert_icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InGame\UI\Icons\Dialog\phone_anonymous_caller_icon.png">2f7d0004:00000000:257c708573e63faf</T>
+                </U>
+              </V>
+            </V>
+            <V n="alert_sim_name" t="enabled">
+              <T n="enabled">0x2577C03B<!--String: "Unknown Caller"--></T>
+            </V>
+            <V n="header_icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InGame\UI\Icons\Dialog\phone_anonymous_caller_icon.png">2f7d0004:00000000:257c708573e63faf</T>
+                </U>
+              </V>
+            </V>
+          </U>
+        </V>
+        <E n="dialog_bg_style">BG_DEFAULT</E>
+        <L n="dialog_options">
+          <E>DISABLE_CLOSE_BUTTON</E>
+        </L>
+        <E n="phone_ring_type">RING</E>
+        <V n="text" t="single">
+          <T n="single">0xAA311678<!--String: "Heyyy! Mind if I crash at your place for a few days?"--></T>
+        </V>
+      </U>
+    </U>
+    <U>
+      <U n="dialog">
+        <V n="custom_mask_target_sim" t="enabled">
+          <U n="enabled">
+            <V n="alert_icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InGame\UI\Icons\Dialog\phone_anonymous_caller_icon.png">2f7d0004:00000000:257c708573e63faf</T>
+                </U>
+              </V>
+            </V>
+            <V n="alert_sim_name" t="enabled">
+              <T n="enabled">0x2577C03B<!--String: "Unknown Caller"--></T>
+            </V>
+            <V n="header_icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InGame\UI\Icons\Dialog\phone_anonymous_caller_icon.png">2f7d0004:00000000:257c708573e63faf</T>
+                </U>
+              </V>
+            </V>
+          </U>
+        </V>
+        <E n="dialog_bg_style">BG_DEFAULT</E>
+        <L n="dialog_options">
+          <E>DISABLE_CLOSE_BUTTON</E>
+        </L>
+        <E n="phone_ring_type">RING</E>
+        <V n="text" t="single">
+          <T n="single">0x9C5ECA3F<!--String: "Heya! Things have been sorta crazy lately and I need a place to stay for a while. Mind if I crash at your place for a little bit?"--></T>
+        </V>
+      </U>
+    </U>
+  </L>
+  <V n="time_option" t="schedule">
+    <U n="schedule">
+      <L n="valid_times">
+        <U>
+          <U n="days_available">
+            <T n="0 SUNDAY">True</T>
+            <T n="1 MONDAY">True</T>
+            <T n="2 TUESDAY">True</T>
+            <T n="3 WEDNESDAY">True</T>
+            <T n="4 THURSDAY">True</T>
+            <T n="5 FRIDAY">True</T>
+            <T n="6 SATURDAY">True</T>
+          </U>
+          <T n="duration">10</T>
+          <U n="start_time">
+            <T n="hour">9</T>
+            <T n="minute">0</T>
+          </U>
+        </U>
+      </L>
+    </U>
+  </V>
+</I>

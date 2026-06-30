@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="QuestGig" i="career_gig" m="careers.missions.mission_gig" n="questGig_EP19Quests_GreenMan" s="436764">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_description" t="enabled">
+        <T n="enabled">0x1805D8DA<!--String: "<i>There once was a spirit, grown from soil and love, who spent their days tending a garden. The garden belonged to a mother of nature, who watched over creatures she’d pardon. Now, the spirit’s first error was insecure terror, and their purpose felt more like a chore. So attempting great power, like their beloved flower, they let envy spread like a spore...</i>\n\n<font color="#1E81E6">Solve Riddles.</font>\n"--></T>
+      </V>
+      <V n="instance_display_icon" t="enabled">
+        <T p="InEP19\UI\Icons\Quests\quests_GreenManQuest.png" n="enabled">2f7d0004:00000000:e6c7888e987cf4f2</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0xB49FE493<!--String: "Not Mushroom for Error"--></T>
+      </V>
+    </U>
+  </V>
+  <T n="career">424758<!--Career: career_EP19Quests--></T>
+  <T n="gig_assignment_aspiration">436765<!--AspirationGig: aspirationGig_EP19Quests_GreenMan--></T>
+  <V n="gig_pay" t="flat_amount">
+    <U n="flat_amount">
+      <T n="value">222</T>
+    </U>
+  </V>
+  <T n="hide_inactive_objectives">True</T>
+  <L n="mission_objective_data">
+    <U>
+      <L n="weighted_objectives">
+        <U>
+          <T n="objective">436769<!--Objective: objective_EP19Quests_GreenMan_MushroomBlue--></T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <L n="weighted_objectives">
+        <U>
+          <T n="objective">436768<!--Objective: objective_EP19Quests_GreenMan_MushroomRed--></T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <L n="weighted_objectives">
+        <U>
+          <T n="objective">436770<!--Objective: objective_EP19Quests_GreenMan_MushroomGreen--></T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <L n="weighted_objectives">
+        <U>
+          <T n="objective">436771<!--Objective: objective_EP19Quests_GreenMan_MushroomYellow--></T>
+        </U>
+      </L>
+    </U>
+  </L>
+  <T n="mission_rewards_description">0x3B18AFDC<!--String: "{0.String}\n<font color='#199C2C'>{1.String}</font>"--></T>
+  <V n="mission_rewards_text" t="enabled">
+    <T n="enabled">0xC404585F<!--String: "Reward: Glaswood Tree, Everdew Seeds, End of Fable"--></T>
+  </V>
+  <V n="mission_trait" t="enabled">
+    <T n="enabled">436773<!--Trait: trait_Hidden_EP19Quests_OnQuest_GreenMan--></T>
+  </V>
+  <U n="objective_completion_audio">
+    <T n="audio" p="InGame\Audio\Bumper\bumper_other_goal_complete.propx">39b2aa4a:00000000:ea1687e36b0b32f3</T>
+  </U>
+  <E n="on_pick_behavior">REMOVE</E>
+  <T n="open_career_panel">True</T>
+  <V n="picker_associated_sim_filter" t="enabled">
+    <T n="enabled">436883<!--TunableSimFilter: situationFilters_EP19World_NPC_GreenMan--></T>
+  </V>
+  <T n="picker_description_text">0x3B18AFDC<!--String: "{0.String}\n<font color='#199C2C'>{1.String}</font>"--></T>
+  <T n="picker_disable_if_visibility_tests_fail_with_tooltip">True</T>
+  <T n="picker_replace_if_removed">True</T>
+  <V n="picker_scheduling_behavior" t="enabled">
+    <V n="enabled" t="schedule_career_gig">
+      <U n="schedule_career_gig">
+        <T n="allow_add_career">True</T>
+      </U>
+    </V>
+  </V>
+  <V n="picker_scoring" t="enabled">
+    <U n="enabled">
+      <E n="bucket">EP19Quest_GreenMan</E>
+    </U>
+  </V>
+  <L n="picker_visibility_tests">
+    <L>
+      <V t="unlock_earned">
+        <U n="unlock_earned">
+          <V n="tooltip" t="enabled">
+            <T n="enabled">0x641708A6<!--String: "This Fable has already been completed."--></T>
+          </V>
+          <V n="unlock_to_test" t="aspiration">
+            <U n="aspiration">
+              <T n="aspiration">436765<!--AspirationGig: aspirationGig_EP19Quests_GreenMan--></T>
+              <T n="negate">True</T>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="career_gig_test">
+        <U n="career_gig_test">
+          <T n="career">424758<!--Career: career_EP19Quests--></T>
+          <T n="negate">True</T>
+          <V n="test_type" t="specific_gigs">
+            <U n="specific_gigs">
+              <L n="gigs">
+                <T>436764<!--QuestGig: questGig_EP19Quests_GreenMan--></T>
+              </L>
+            </U>
+          </V>
+          <V n="tooltip" t="enabled">
+            <T n="enabled">0x67109623<!--String: "This Fable is currently in progress."--></T>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="result_based_loots" t="enabled">
+    <L n="enabled">
+      <U>
+        <E n="key">CANCELED</E>
+        <L n="value">
+          <T>436777<!--LootActions: loot_EP19Quests_Cleanup_GreenMan--></T>
+        </L>
+      </U>
+      <U>
+        <E n="key">SUCCESS</E>
+        <L n="value">
+          <T>436778<!--LootActions: loot_EP19Quests_Rewards_GreenMan--></T>
+        </L>
+      </U>
+    </L>
+  </V>
+</I>

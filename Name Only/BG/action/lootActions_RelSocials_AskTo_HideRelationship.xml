@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="lootActions_RelSocials_AskTo_HideRelationship" s="378541">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="dialog_icon">
+          <U n="dialog_icon">
+            <V n="text" t="single">
+              <T n="single">0xA2646648<!--String: "Are you sure you want to hide the relationship between {0.SimName} and {1.SimName}? This Sim will no longer appear in the relationship panel, but their relationship will remain unchanged. A hidden Sim will reappear in the relationship panel if your Sim interacts with them again."--></T>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="participant_type" />
+                  <V t="participant_type">
+                    <U n="participant_type">
+                      <V n="objects" t="from_participant">
+                        <U n="from_participant">
+                          <E n="participant">PickedSim</E>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </V>
+            <L n="ui_responses">
+              <U>
+                <V n="audio_event_name" t="enabled">
+                  <T n="enabled">HideRelationshipDialogConfirm</T>
+                </V>
+                <V n="loots_for_response" t="enabled">
+                  <U n="enabled">
+                    <L n="loots">
+                      <T>378504<!--LootActions: lootActions_RelSocials_HideRelationship--></T>
+                    </L>
+                  </U>
+                </V>
+                <T n="text">0xB7A2CBCD<!--String: "Yes"--></T>
+              </U>
+              <U>
+                <V n="loots_for_response" t="enabled">
+                  <U n="enabled">
+                    <E n="dialog_response_id_override">DIALOG_RESPONSE_CUSTOM_2</E>
+                  </U>
+                </V>
+                <T n="text">0xD877B6E9<!--String: "No"--></T>
+              </U>
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+</I>

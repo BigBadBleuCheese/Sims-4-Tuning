@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="GameObject" i="object" m="objects.game_object" n="object_SpinningBike_Instructor" s="460258">
+  <U n="_components">
+    <V n="focus" t="enabled">
+      <U n="enabled">
+        <V n="_focus_score" t="globally">
+          <U n="globally">
+            <E n="base">LOW</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V n="object_relationships" t="enabled">
+      <U n="enabled">
+        <V n="number_of_allowed_relationships" t="enabled" />
+        <T n="relationship_stat">460256<!--Statistic: statistic_Object_Staff_SpinningClass_Assigned_Relationship--></T>
+      </U>
+    </V>
+    <V n="retail_component" t="enabled">
+      <V n="enabled" t="reference">
+        <T n="reference">115301<!--RetailComponent: retailComponent_Default_LowAppeal--></T>
+      </V>
+    </V>
+    <V n="state" t="enabled">
+      <U n="enabled">
+        <L n="state_triggers">
+          <U>
+            <L n="at_states">
+              <T>77532<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Replace--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>39737<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Not_Burning--></T>
+              </L>
+            </V>
+          </U>
+        </L>
+        <L n="states">
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">131794<!--ObjectStateValue: Kelpto_Stolen_Object--></T>
+              </U>
+              <U>
+                <T n="key">131795<!--ObjectStateValue: Klepto_Not_Stolen_Object--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">131795<!--ObjectStateValue: Klepto_Not_Stolen_Object--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">224553<!--ObjectStateValue: utilities_Power_Consumption_On--></T>
+                <U n="value">
+                  <V n="autonomy_modifiers" t="apply_new_value">
+                    <V n="apply_new_value" t="apply_statistic_modifiers">
+                      <U n="apply_statistic_modifiers">
+                        <L n="lot_statistic_modifiers">
+                          <U>
+                            <V n="modifier" t="multipliers">
+                              <U n="multipliers">
+                                <U n="value">
+                                  <T n="base_value">-0.00694</T>
+                                  <L n="multipliers">
+                                    <U>
+                                      <T n="multiplier">0.75</T>
+                                      <L n="tests">
+                                        <L>
+                                          <V t="zone">
+                                            <U n="zone">
+                                              <U n="zone_tests">
+                                                <V n="zone_modifiers" t="enabled">
+                                                  <U n="enabled">
+                                                    <V n="whitelist" t="specify">
+                                                      <U n="specify">
+                                                        <L n="whitelist">
+                                                          <T>353534<!--ZoneModifier: zoneModifier_Hidden_FuseBox_On--></T>
+                                                        </L>
+                                                      </U>
+                                                    </V>
+                                                  </U>
+                                                </V>
+                                              </U>
+                                            </U>
+                                          </V>
+                                        </L>
+                                      </L>
+                                    </U>
+                                  </L>
+                                </U>
+                              </U>
+                            </V>
+                            <T n="statistic">233027<!--Commodity: commodity_Utilities_Power--></T>
+                          </U>
+                        </L>
+                      </U>
+                    </V>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">224564<!--ObjectStateValue: utilities_Power_Consumption_Off--></T>
+                <U n="value">
+                  <V n="autonomy_modifiers" t="apply_new_value" />
+                </U>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">224564<!--ObjectStateValue: utilities_Power_Consumption_Off--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">39611<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change--></T>
+              </U>
+              <U>
+                <T n="key">39736<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Burning--></T>
+              </U>
+              <U>
+                <T n="key">39737<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Not_Burning--></T>
+              </U>
+              <U>
+                <T n="key">77532<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Replace--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">39737<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Not_Burning--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">35956<!--CommodityBasedObjectStateValue: Materialistic_Admired--></T>
+              </U>
+              <U>
+                <T n="key">35957<!--CommodityBasedObjectStateValue: Materialistic_YetToAdmire--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">35957<!--CommodityBasedObjectStateValue: Materialistic_YetToAdmire--></T>
+            </V>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V n="tooltip_component" t="enabled" />
+  </U>
+  <L n="_preroll_super_affordances">
+    <T>449305<!--SuperInteraction: spinningBike_Workout_Smooth--></T>
+  </L>
+  <L n="_super_affordances">
+    <T>13328<!--ImmediateSuperInteraction: debug_Reset--></T>
+    <T>13326<!--ImmediateSuperInteraction: debug_ObjectDestroy--></T>
+    <T>103888<!--ImmediateSuperInteraction: cheat_set_as_head--></T>
+    <T>196759<!--SuperInteraction: famePerks_GoodReputation_GivingBack_DonateObject--></T>
+    <T>401385<!--SuperInteraction: ghost_Possess_MischieviousGhost--></T>
+    <T>156936<!--SuperInteraction: generic_Object_Toddler_Check_Out_HighChair--></T>
+    <T>276518<!--SuperInteraction: infant_WhatsThat--></T>
+    <T>328068<!--SuperInteraction: infant_WhatsThat_Immobile_InObject--></T>
+    <T>449307<!--SuperInteraction: spinningBike_Workout_Energetic--></T>
+    <T>449306<!--SuperInteraction: spinningBike_Workout_Intense--></T>
+    <T>449308<!--SuperInteraction: spinningBike_Workout_Rage--></T>
+    <T>449305<!--SuperInteraction: spinningBike_Workout_Smooth--></T>
+    <T>449303<!--SuperInteraction: generic_SpinningBike--></T>
+    <T>463355<!--ImmediateSuperInteraction: spinningClass_EndClass--></T>
+    <T>473567<!--SimPickerInteraction: simPicker_Mentoring_AskFor_Fitness_SpinningBike--></T>
+    <T>473568<!--SimPickerInteraction: simPicker_Mentoring_Offer_Paid_Fitness_SpinningBike--></T>
+    <T>473569<!--SimPickerInteraction: simPicker_Mentoring_Offer_Unpaid_Fitness_SpinningBike--></T>
+    <T>446572<!--RunSituationSuperInteraction: object_HireNPC_SpinningClass_Instructor--></T>
+    <T>448664<!--SuperInteraction: spinningBike_Class_FindBike--></T>
+    <T>448641<!--SimPickerInteraction: simPicker_SpinningClass_PlayerLed--></T>
+    <T>448666<!--SuperInteraction: spinningBike_Class_ClassMember_Idle--></T>
+    <T>448665<!--SuperInteraction: spinningBike_Class_Instructor_WaitForWork--></T>
+    <T>463761<!--SuperInteraction: superInteraction_EP20Festival_SpinningBike_Instructor--></T>
+    <T>465921<!--SimPickerInteraction: simPicker_SpinningClass_PlayerLed_Free--></T>
+    <T>485456<!--SimPickerInteraction: simPicker_SpinningClass_PickInstructor--></T>
+    <T>487692<!--SuperInteraction: spinningBike_Class_Instructor_WaitForWork_Read--></T>
+    <T>106859<!--SuperInteraction: simRay_Transform_Object--></T>
+    <T>393854<!--SuperInteraction: ghostPowers_Abilities_Scary_SinisterPossess_Autonomous--></T>
+    <T>144099<!--SuperInteraction: generic_Object_Toddler_Check_Out--></T>
+    <T>74457<!--ImmediateSuperInteraction: fire_ReplaceBurntObject--></T>
+    <T>102258<!--SuperInteraction: Ghost_Possess--></T>
+    <T>168502<!--SuperInteraction: Ghost_Pet_Possess--></T>
+    <T>324988<!--SuperInteraction: Ghost_Horse_Possess--></T>
+  </L>
+  <U n="recycling_data">
+    <L n="recycling_values">
+      <U>
+        <E n="Bucks Type">RecycleBitsBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+      <U>
+        <E n="Bucks Type">RecyclePiecesBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+    </L>
+  </U>
+</I>

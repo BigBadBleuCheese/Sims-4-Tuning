@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="MixerInteraction" i="interaction" m="interactions.base.mixer_interaction" n="horseSocialCarryMixers_SimToRiddenHorse_HorseRiding_Dismount" s="323934">
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>TargetSim</E>
+      </L>
+    </U>
+  </V>
+  <T n="allow_autonomous">False</T>
+  <T n="allow_user_directed">True</T>
+  <V n="basic_content" t="no_content" />
+  <V n="basic_focus" t="disable_focus" />
+  <V n="content_score" t="enabled">
+    <U n="enabled">
+      <T n="base_score">100</T>
+    </U>
+  </V>
+  <T n="display_name">0x32EEE6B5<!--String: "Dismount {1.SimFirstName}"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Mixer</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <V n="cancel_si" t="enabled" />
+        <L n="loot_list">
+          <T>341931<!--LootActions: loot_Trait_Horse_Defiant_RemoveStressedFromMounting--></T>
+        </L>
+      </U>
+    </U>
+  </V>
+  <T n="pie_menu_priority">30</T>
+  <V n="require_reins_for_formation" t="enabled">
+    <T n="enabled">314817<!--RoutingFormation: routingFormation_HorseRiding_Ride--></T>
+  </V>
+  <U n="sub_action">
+    <T n="base_weight">2</T>
+  </U>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E>HORSE</E>
+            </L>
+          </U>
+        </V>
+        <E n="who">TargetSim</E>
+      </U>
+    </V>
+  </L>
+  <T n="visible">True</T>
+  <E n="visual_type_override">SIMPLE</E>
+</I>

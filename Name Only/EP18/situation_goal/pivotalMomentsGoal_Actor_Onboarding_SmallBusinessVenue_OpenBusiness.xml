@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalActor" i="situation_goal" m="situations.situation_goal_actor" n="pivotalMomentsGoal_Actor_Onboarding_SmallBusinessVenue_OpenBusiness" s="430097">
+  <T n="_cooldown">0</T>
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T n="enabled" p="InEP18\UI\Icons\Events\EventGoal_OpenBusiness.png">2f7d0004:00000000:cd50b7db54c7a063</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x1DEFB1EB<!--String: "Open Business at Small Business Venue Lot"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0x4D83585<!--String: "Open your Small Business through the Small Business panel or a Business Sign at the lot with your Small Business."--></T>
+      </V>
+    </U>
+  </V>
+  <V n="_goal_test" t="situation_running">
+    <U n="situation_running">
+      <V n="situation_whitelist" t="enabled">
+        <L n="enabled">
+          <T>400517<!--SmallBusinessEmployeeSituation: SmallBusinessEmployeeSituation_Owner--></T>
+        </L>
+      </V>
+      <E n="test_event">SituationStarted</E>
+    </U>
+  </V>
+  <L n="_post_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+      </U>
+    </V>
+    <V t="location">
+      <U n="location">
+        <U n="location_tests">
+          <V n="is_venue_type" t="enabled">
+            <U n="enabled">
+              <T n="venue_type">394911<!--Venue: venue_SmallBusiness--></T>
+            </U>
+          </V>
+        </U>
+      </U>
+    </V>
+    <V t="lot_owner">
+      <U n="lot_owner">
+        <T n="consider_rented_lot_as_owned">False</T>
+      </U>
+    </V>
+  </L>
+  <T n="_score">0</T>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+  <V n="tutorial_tip_group" t="enabled">
+    <T n="enabled">430306<!--TutorialTipGroup: tutorialTipGroup_PivotalMoments_Onboarding_RunBusiness_OpenBusiness--></T>
+  </V>
+</I>

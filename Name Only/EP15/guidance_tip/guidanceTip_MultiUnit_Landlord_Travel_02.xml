@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="GuidanceTip" i="guidance_tip" m="guidance.guidance_tip" n="guidanceTip_MultiUnit_Landlord_Travel_02" s="352564">
+  <L n="activation_rules">
+    <U>
+      <L n="criteria">
+        <U>
+          <V n="criterion" t="guidance_mode" />
+        </U>
+        <U>
+          <V n="criterion" t="game_state">
+            <E n="game_state">TRAVEL</E>
+          </V>
+        </U>
+        <U>
+          <V n="criterion" t="guidance_tips_satisfied">
+            <L n="guidance_tips_satisfied">
+              <T>352562<!--GuidanceTip: guidanceTip_MultiUnit_Landlord_Travel_01--></T>
+            </L>
+          </V>
+        </U>
+        <U>
+          <V n="criterion" t="ui_element_visible">
+            <L n="ui_element_visible">
+              <E>NHV_WORLD_SELECT</E>
+            </L>
+          </V>
+          <T n="exclude_if_matched">True</T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <L n="criteria">
+        <U>
+          <V n="criterion" t="game_option_setting">
+            <U n="game_option_setting">
+              <T n="setting_name">PackGuidanceEnabled</T>
+              <T n="setting_value">1</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="criterion" t="game_option_setting">
+            <U n="game_option_setting">
+              <T n="setting_name">GuidancePack</T>
+              <T n="setting_value">1</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <T n="auto_select_on_activate">True</T>
+  <L n="options">
+    <U>
+      <U n="actions">
+        <L n="actions_on_activate">
+          <V t="tutorial_tip_group">
+            <T n="tutorial_tip_group">353803<!--TutorialTipGroup: tutorialTipGroup_MultiUnitGuide_Landlord_Travel_02--></T>
+          </V>
+        </L>
+        <L n="actions_on_cancel">
+          <V t="activate_guidance_item">
+            <T n="activate_guidance_item">352407<!--GuidanceTip: guidanceTip_MultiUnit_Reminder--></T>
+          </V>
+        </L>
+      </U>
+      <T n="text">0xFE983BAD<!--String: "Careers"--></T>
+    </U>
+  </L>
+  <L n="relaunch_rules" />
+  <T n="relaunch_text">0x42B391F8<!--String: "Tutorial: Residential Rental"--></T>
+  <T n="satisfy_on_timeout">True</T>
+  <T n="text">0x383F1E9<!--String: "Supports Large and X-Large Curved Walls"--></T>
+  <T n="timeout">3600</T>
+  <T n="title">0x18422113<!--String: "Vanesha is here to help!"--></T>
+</I>

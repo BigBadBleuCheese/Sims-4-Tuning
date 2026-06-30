@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="StartCraftingSuperInteraction" i="interaction" m="crafting.crafting_interactions" n="electricKettle_StartCrafting_Tea" s="346767">
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Object</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="disabled" />
+  <U n="basic_reserve_object">
+    <L n="subject_list">
+      <U>
+        <V n="reserve_type" t="basic" />
+        <L n="subject">
+          <E>CraftingObject</E>
+          <E>CarriedObject</E>
+        </L>
+      </U>
+    </L>
+  </U>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x9A7ECEA1<!--String: "Tea & Hot Water"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <V n="picker_dialog" t="recipe_picker">
+    <U n="recipe_picker">
+      <V n="column_sort_priorities" t="enabled">
+        <L n="enabled">
+          <T>1</T>
+        </L>
+      </V>
+      <T n="display_ingredient_check">True</T>
+      <L n="picker_columns">
+        <U>
+          <V n="label" t="enabled">
+            <T n="enabled">0xB39914F3<!--String: "Name"--></T>
+          </V>
+          <T n="width">200</T>
+        </U>
+        <U>
+          <E n="column_data_name">PRICE</E>
+          <E n="column_type">TEXT</E>
+          <V n="label" t="enabled">
+            <T n="enabled">0x413F43F1<!--String: "Price"--></T>
+          </V>
+          <T n="width">96</T>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <L n="recipes">
+    <T>346503<!--Recipe: recipe_Drink_ElectricKettle_Tea_BlackTea--></T>
+    <T>346506<!--Recipe: recipe_Drink_ElectricKettle_Tea_Chamomile--></T>
+    <T>346504<!--Recipe: recipe_Drink_ElectricKettle_Tea_EarlGrey--></T>
+    <T>346505<!--Recipe: recipe_Drink_ElectricKettle_Tea_Ginseng--></T>
+    <T>346507<!--Recipe: recipe_Drink_ElectricKettle_Tea_GreenTea--></T>
+    <T>346508<!--Recipe: recipe_Drink_ElectricKettle_Tea_Oolong--></T>
+    <T>342152<!--Recipe: recipe_Drink_ElectricKettle_Tea_UnicornGalaxy--></T>
+    <T>346502<!--Recipe: recipe_Drink_ElectricKettle_HotWater--></T>
+    <T>356817<!--Recipe: recipe_Drink_ElectricKettle_Tea_BuildersTea--></T>
+  </L>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="slot_test">
+      <U n="slot_test">
+        <V n="child_slot" t="by_name">
+          <T n="by_name">_ctnm_electricKettleCup</T>
+        </V>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x90DC67B8<!--String: "Another drink cannot be poured until the existing drink has been picked up."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="state">
+      <U n="state">
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x5C8DA989<!--String: "You can't pour a drink until you've brewed a full pot of water."--></T>
+        </V>
+        <T n="value">342208<!--ObjectStateValue: electricKettle_Values_ControlStates_WaterReady--></T>
+      </U>
+    </V>
+  </L>
+  <T n="use_ingredients_default_value">False</T>
+</I>

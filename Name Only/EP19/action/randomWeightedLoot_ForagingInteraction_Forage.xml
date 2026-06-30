@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="RandomWeightedLoot" i="action" m="interactions.utils.loot" n="randomWeightedLoot_ForagingInteraction_Forage" s="434126">
+  <V n="_luck_tuning" t="disabled" />
+  <L n="random_loot_actions">
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">434121<!--RandomWeightedLoot: randomWeightedLoot_Foraging_ApothecaryIngredients--></T>
+      </V>
+      <U n="luck_option_config">
+        <T n="show_impacts">False</T>
+      </U>
+      <U n="weight">
+        <T n="base_value">23.75</T>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">434124<!--RandomWeightedLoot: randomWeightedLoot_Foraging_Collectibles--></T>
+      </V>
+      <U n="luck_option_config">
+        <T n="show_impacts">False</T>
+      </U>
+      <U n="weight">
+        <T n="base_value">23.75</T>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">434123<!--RandomWeightedLoot: randomWeightedLoot_Foraging_FruitVeg--></T>
+      </V>
+      <U n="luck_option_config">
+        <T n="show_impacts">False</T>
+      </U>
+      <U n="weight">
+        <T n="base_value">23.75</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">2</T>
+            <L n="tests">
+              <L>
+                <V t="pick_info_test">
+                  <U n="pick_info_test">
+                    <V n="pick_type_test" t="pick_type">
+                      <U n="pick_type">
+                        <V n="terrain_tags" t="enabled">
+                          <L n="enabled">
+                            <E>DIRT</E>
+                            <E>GRASS</E>
+                          </L>
+                        </V>
+                        <T n="test_floor_tiles">True</T>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0.75</T>
+            <L n="tests">
+              <L>
+                <V t="pick_info_test">
+                  <U n="pick_info_test">
+                    <V n="pick_type_test" t="pick_type">
+                      <U n="pick_type">
+                        <V n="terrain_tags" t="enabled">
+                          <L n="enabled">
+                            <E>SAND</E>
+                          </L>
+                        </V>
+                        <T n="test_floor_tiles">True</T>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">434122<!--RandomWeightedLoot: randomWeightedLoot_Foraging_HerbsFlowers--></T>
+      </V>
+      <U n="luck_option_config">
+        <T n="show_impacts">False</T>
+      </U>
+      <U n="weight">
+        <T n="base_value">23.75</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">2</T>
+            <L n="tests">
+              <L>
+                <V t="pick_info_test">
+                  <U n="pick_info_test">
+                    <V n="pick_type_test" t="pick_type">
+                      <U n="pick_type">
+                        <V n="terrain_tags" t="enabled">
+                          <L n="enabled">
+                            <E>DIRT</E>
+                            <E>GRASS</E>
+                          </L>
+                        </V>
+                        <T n="test_floor_tiles">True</T>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0.75</T>
+            <L n="tests">
+              <L>
+                <V t="pick_info_test">
+                  <U n="pick_info_test">
+                    <V n="pick_type_test" t="pick_type">
+                      <U n="pick_type">
+                        <V n="terrain_tags" t="enabled">
+                          <L n="enabled">
+                            <E>SAND</E>
+                          </L>
+                        </V>
+                        <T n="test_floor_tiles">True</T>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="object_rewards">
+        <U n="object_rewards">
+          <V n="notification" t="enabled">
+            <V n="enabled" t="reference">
+              <T n="reference">465420<!--Notification: notification_ObjectReward_Foraging--></T>
+            </V>
+          </V>
+          <L n="object_rewards">
+            <U>
+              <T n="quantity">1</T>
+              <L n="reward_objects">
+                <U>
+                  <V n="quantity" t="specific_amount" />
+                  <L n="reward">
+                    <V t="specify_definition">
+                      <U n="specify_definition">
+                        <T n="definition">36417</T>
+                      </U>
+                    </V>
+                    <V t="specify_definition">
+                      <U n="specify_definition">
+                        <T n="definition">71094</T>
+                      </U>
+                    </V>
+                    <V t="specify_definition">
+                      <U n="specify_definition">
+                        <T n="definition">35727</T>
+                      </U>
+                    </V>
+                    <V t="specify_definition">
+                      <U n="specify_definition">
+                        <T n="definition">88172</T>
+                      </U>
+                    </V>
+                  </L>
+                </U>
+              </L>
+            </U>
+          </L>
+        </U>
+      </V>
+      <U n="luck_option_config">
+        <T n="player_perception">0</T>
+      </U>
+      <U n="weight">
+        <T n="base_value">2.5</T>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="object_rewards">
+        <U n="object_rewards">
+          <V n="notification" t="enabled">
+            <V n="enabled" t="reference">
+              <T n="reference">465420<!--Notification: notification_ObjectReward_Foraging--></T>
+            </V>
+          </V>
+          <L n="object_rewards">
+            <U>
+              <T n="quantity">1</T>
+              <L n="reward_objects">
+                <U>
+                  <V n="quantity" t="specific_amount" />
+                  <L n="reward">
+                    <V t="specify_definition">
+                      <U n="specify_definition">
+                        <T n="definition">465683</T>
+                      </U>
+                    </V>
+                  </L>
+                </U>
+              </L>
+            </U>
+          </L>
+        </U>
+      </V>
+      <U n="luck_option_config">
+        <T n="player_perception">0</T>
+      </U>
+      <U n="weight">
+        <T n="base_value">20</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="zone">
+                  <U n="zone">
+                    <V n="zone_source" t="use_current_zone" />
+                    <U n="zone_tests">
+                      <V n="world_tests" t="enabled">
+                        <U n="enabled">
+                          <V n="blacklist" t="specify">
+                            <U n="specify">
+                              <L n="blacklist">
+                                <T>456659</T>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+  </L>
+</I>

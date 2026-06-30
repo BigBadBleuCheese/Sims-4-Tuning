@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="TunableSimFilter" i="sim_filter" m="filters.tunable" n="filter_Dynasty_HasMetNotMember" s="497204">
+  <L n="_filter_terms">
+    <V t="species" />
+    <V t="dynasty">
+      <V n="dynasty" t="dynasty_same_dynasty_membership">
+        <U n="dynasty_same_dynasty_membership">
+          <T n="invert_score">True</T>
+        </U>
+      </V>
+    </V>
+    <V t="relationship_bit">
+      <U n="relationship_bit">
+        <L n="white_list">
+          <T>15803<!--RelationshipBit: has_met--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="_household_templates_override" t="enabled">
+    <L n="enabled">
+      <T>98542<!--HouseholdTemplate: HH_template_NPC_adult_single--></T>
+    </L>
+  </V>
+  <T n="use_weighted_random">True</T>
+</I>

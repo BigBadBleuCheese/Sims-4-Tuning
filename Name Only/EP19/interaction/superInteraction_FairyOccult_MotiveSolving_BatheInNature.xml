@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="superInteraction_FairyOccult_MotiveSolving_BatheInNature" s="429290">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="circle">
+            <U n="circle">
+              <T n="ideal_radius">1.3</T>
+              <T n="multi_surface">True</T>
+              <T n="radius">2</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="facing" />
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="time_based">
+                <U n="time_based">
+                  <T n="max_time">7</T>
+                  <T n="min_time">7</T>
+                </U>
+              </V>
+              <V t="stat_based">
+                <U n="stat_based">
+                  <T n="stat">16657<!--Commodity: motive_Hygiene--></T>
+                  <U n="threshold">
+                    <T n="value">100</T>
+                  </U>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+      </L>
+      <V n="content" t="looping_content">
+        <U n="looping_content">
+          <U n="animation_ref">
+            <T n="factory">429291<!--AnimationElement: anim_FairyOccult_MotiveSolving_BatheInNature--></T>
+          </U>
+        </U>
+      </V>
+      <V n="periodic_stat_change" t="enabled">
+        <U n="enabled">
+          <L n="operations">
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="amount">6.5</T>
+                <T n="stat">16657<!--Commodity: motive_Hygiene--></T>
+              </U>
+            </V>
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="advertise">False</T>
+                <T n="amount">50</T>
+                <T n="stat">16616<!--Commodity: commodity_Motive_HygieneHands--></T>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+              </U>
+            </V>
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="advertise">True</T>
+                <T n="amount">30</T>
+                <T n="exclusive_to_owning_si">False</T>
+                <T n="stat">39470<!--Commodity: commodity_object_burning--></T>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+              </U>
+            </V>
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="amount">-0.666666666666667</T>
+                <T n="stat">286270<!--Statistic: statistic_PubertyChanges_Acne--></T>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+                <L n="tests">
+                  <L>
+                    <V t="sim_info">
+                      <U n="sim_info">
+                        <V n="ages" t="specified">
+                          <L n="specified">
+                            <E>TEEN</E>
+                          </L>
+                        </V>
+                        <V n="species" t="specified">
+                          <U n="specified">
+                            <L n="species">
+                              <E />
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </V>
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="amount">0.4</T>
+                <T n="stat">437331<!--RankedStatistic: rankedStatistic_FairyOccult_FairyXP--></T>
+              </U>
+            </V>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>459847<!--LootActions: lootActions_FairyOccult_OnboardingTNS--></T>
+        </L>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+  </L>
+  <T o="true" n="category" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xA825B6E1<!--String: "Cleanse in Nature"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T n="key" p="InEP19\UI\Icons\PieMenu\SpecialInteractions\specialinteraction_fairy_piemenu.png">2f7d0004:00000000:5733ef1fae0d31a6</T>
+      </U>
+    </V>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="region">
+      <U n="region">
+        <V n="blacklist" t="enabled">
+          <L n="enabled">
+            <T>231104<!--Region: region_Destination_Batuu--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+    <V t="state">
+      <U n="state">
+        <V n="fallback_behavior" t="always_pass" />
+        <T n="value">234576<!--ObjectStateValue: gardenPlant_OnVerticalGarden_Off--></T>
+      </U>
+    </V>
+    <V t="state_white_black">
+      <U n="state_white_black">
+        <U n="states">
+          <V n="blacklist" t="specify">
+            <U n="specify">
+              <L n="blacklist">
+                <T>15234<!--CommodityBasedObjectStateValue: Infested_0_BugsHeavyRed--></T>
+                <T>15235<!--CommodityBasedObjectStateValue: Infested_1_BugsLightYellow--></T>
+                <T>15253<!--CommodityBasedObjectStateValue: Moisture_0_VeryDryRed--></T>
+                <T>15254<!--CommodityBasedObjectStateValue: Moisture_1_DryYellow--></T>
+              </L>
+            </U>
+          </V>
+          <V n="whitelist" t="specify">
+            <U n="specify">
+              <V n="threshold" t="threshold" />
+              <L n="whitelist">
+                <T>15295<!--CommodityBasedObjectStateValue: PlantGrowth_2_Mature--></T>
+                <T>77615<!--CommodityBasedObjectStateValue: PlantGrowth_3_Blossoming--></T>
+              </L>
+            </U>
+          </V>
+        </U>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="RandomWeightedLoot" i="action" m="interactions.utils.loot" n="randomWeightedLoot_ForagingInteraction_Consequence" s="439180">
+  <V n="_luck_tuning" t="enabled">
+    <U n="enabled">
+      <L n="loot_actions">
+        <T>459422<!--LootActions: loot_LuckSys_ImpactOnAction_Foraging_Unexpected--></T>
+      </L>
+    </U>
+  </V>
+  <L n="random_loot_actions">
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">439190<!--LootActions: lootActions_Foraging_Unexpected_CreepyCrawlies--></T>
+      </V>
+      <U n="luck_option_config">
+        <T n="player_perception">-91</T>
+      </U>
+      <U n="weight">
+        <T n="base_value">1.25</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="day_and_time">
+                  <U n="day_and_time">
+                    <V n="is_day" t="enabled" />
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">439187<!--LootActions: lootActions_Foraging_Unexpected_StinkBug--></T>
+      </V>
+      <U n="luck_option_config">
+        <T n="player_perception">-86</T>
+      </U>
+      <U n="weight">
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="pick_info_test">
+                  <U n="pick_info_test">
+                    <V n="pick_type_test" t="pick_type">
+                      <U n="pick_type">
+                        <V n="terrain_tags" t="enabled">
+                          <L n="enabled">
+                            <E>SAND</E>
+                          </L>
+                        </V>
+                        <T n="test_floor_tiles">True</T>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">439188<!--LootActions: lootActions_Foraging_Unexpected_FreezerBunny--></T>
+      </V>
+      <U n="luck_option_config">
+        <T n="player_perception">-100</T>
+      </U>
+      <U n="weight">
+        <T n="base_value">0.75</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="pick_info_test">
+                  <U n="pick_info_test">
+                    <V n="pick_type_test" t="pick_type">
+                      <U n="pick_type">
+                        <V n="terrain_tags" t="enabled">
+                          <L n="enabled">
+                            <E>SAND</E>
+                          </L>
+                        </V>
+                        <T n="test_floor_tiles">True</T>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">439189<!--LootActions: lootActions_Foraging_Unexpected_SandFleas--></T>
+      </V>
+      <U n="luck_option_config">
+        <T n="player_perception">-90</T>
+      </U>
+      <U n="weight">
+        <T n="base_value">1.25</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="pick_info_test">
+                  <U n="pick_info_test">
+                    <V n="pick_type_test" t="pick_type">
+                      <U n="pick_type">
+                        <V n="prohibited_terrain_tags" t="enabled">
+                          <L n="enabled">
+                            <E>SAND</E>
+                          </L>
+                        </V>
+                        <T n="test_floor_tiles">True</T>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">439191<!--LootActions: lootActions_Foraging_Unexpected_Trash--></T>
+      </V>
+      <U n="luck_option_config">
+        <T n="player_perception">-84</T>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">439192<!--LootActions: lootActions_Foraging_Unexpected_FrozenFingers--></T>
+      </V>
+      <U n="luck_option_config">
+        <T n="player_perception">-87</T>
+      </U>
+      <U n="weight">
+        <T n="base_value">1.25</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="weather">
+                  <U n="weather">
+                    <V n="temperature" t="enabled">
+                      <U n="enabled">
+                        <T n="invert">True</T>
+                        <L n="temperature">
+                          <E />
+                        </L>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="skill_test">
+        <U n="skill_test">
+          <T n="skill">434909<!--Skill: statistic_Skill_NLS--></T>
+          <V n="skill_range" t="interval">
+            <U n="interval">
+              <U n="skill_interval">
+                <T n="lower_bound">0</T>
+                <T n="upper_bound">4</T>
+              </U>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="test_set_reference">
+        <T n="test_set_reference">425930<!--TestSetInstance: testSetInstance_LuckSys_BadLuck--></T>
+      </V>
+    </L>
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <V n="whitelist" t="enabled">
+            <L n="enabled">
+              <T>290825<!--Buff: buff_Debug_InteractionFail--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

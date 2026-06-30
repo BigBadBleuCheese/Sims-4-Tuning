@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_EP20_IF_LowSocial_Motive_TNS" s="477476">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <U n="chance">
+          <T n="base_chance">5</T>
+        </U>
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InEP20\UI\Icons\Notifications\notification_HaveABestImaginaryFriend.png">2f7d0004:00000000:f2860623a6476937</T>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant" />
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x8CA96E2A<!--String: "{0.SimFirstName} is feeling pretty lonely at the moment. Friends would be nice, but an Imaginary Friend would be <b>even better</b>! Purchase an <i>ImagineMe!</i> doll from Build Mode to take the first step towards making an Imaginary Friend."--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x169013FF<!--String: "How about an Imaginary Friend?"--></T>
+            </V>
+            <V n="tns_suppression_group" t="enabled">
+              <E n="enabled">ImaginaryFriend_LonelyChild</E>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified">
+            <L n="specified">
+              <E>CHILD</E>
+            </L>
+          </V>
+        </U>
+      </V>
+      <V t="imaginary_friend">
+        <U n="imaginary_friend">
+          <T n="negate">True</T>
+          <V n="test_type" t="imaginary_friend_exists" />
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

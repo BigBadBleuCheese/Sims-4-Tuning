@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_KeepsakeBox_PonderMeaning_IsntEverything" s="320569">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">306626<!--Buff: buff_FamilyDynamics_FamilyTropeAdventureCooldown--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="ages" t="specified">
+                  <L n="specified">
+                    <E>TEEN</E>
+                    <E>YOUNGADULT</E>
+                    <E>ADULT</E>
+                    <E>CHILD</E>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">306626<!--Buff: buff_FamilyDynamics_FamilyTropeAdventureCooldown--></T>
+        </U>
+        <E n="subject">TargetSim</E>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant" />
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>TargetSim</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x17A8C3F4<!--String: "After pondering family memories while perusing {0.SimPronounPossessiveDependent} <b>Keepsake Box</b>, {0.SimFirstName} realized that family does not always have to be kept close. With certain family members, a little bit of space is a good thing!\n\n{0.SimPronounPossessiveDependent|xxUpper} relationship with {1.SimFirstName} has evolved. They now have the <b>Distant</b> family dynamic, and won't go out of their way to interact with each other.   "--></T>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="relationship_bits_loot">
+      <U n="relationship_bits_loot">
+        <L n="bit_operations">
+          <U>
+            <T n="bit">306282<!--RelationshipBit: familyTrope_distant--></T>
+            <E n="operation">ADD</E>
+            <E n="recipients">Actor</E>
+            <E n="targets">TargetSim</E>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V t="relationship_bits_loot">
+      <U n="relationship_bits_loot">
+        <L n="bit_operations">
+          <U>
+            <T n="bit">306291<!--RelationshipBit: familyTrope_compliant_target_isAuthorityOf_actor--></T>
+            <E n="operation">REMOVE</E>
+            <E n="recipients">Actor</E>
+            <E n="targets">TargetSim</E>
+          </U>
+          <U>
+            <T n="bit">306291<!--RelationshipBit: familyTrope_compliant_target_isAuthorityOf_actor--></T>
+            <E n="operation">REMOVE</E>
+            <E n="recipients">TargetSim</E>
+            <E n="targets">Actor</E>
+          </U>
+          <U>
+            <T n="bit">306294<!--RelationshipBit: familyTrope_compliant_target_IsSubordinateOf_actor--></T>
+            <E n="operation">REMOVE</E>
+            <E n="recipients">Actor</E>
+            <E n="targets">TargetSim</E>
+          </U>
+          <U>
+            <T n="bit">306294<!--RelationshipBit: familyTrope_compliant_target_IsSubordinateOf_actor--></T>
+            <E n="operation">REMOVE</E>
+            <E n="recipients">TargetSim</E>
+            <E n="targets">Actor</E>
+          </U>
+          <U>
+            <T n="bit">310888<!--RelationshipBit: familyTrope_difficult--></T>
+            <E n="operation">REMOVE</E>
+            <E n="recipients">Actor</E>
+            <E n="targets">TargetSim</E>
+          </U>
+          <U>
+            <T n="bit">306279<!--RelationshipBit: familyTrope_Jokesters--></T>
+            <E n="operation">REMOVE</E>
+            <E n="recipients">Actor</E>
+            <E n="targets">TargetSim</E>
+          </U>
+          <U>
+            <T n="bit">306293<!--RelationshipBit: familyTrope_close--></T>
+            <E n="operation">REMOVE</E>
+            <E n="recipients">Actor</E>
+            <E n="targets">TargetSim</E>
+          </U>
+          <U>
+            <T n="bit">306356<!--RelationshipBit: familyTrope_loving_target_IsAuthorityOf_actor--></T>
+            <E n="operation">REMOVE</E>
+            <E n="recipients">Actor</E>
+            <E n="targets">TargetSim</E>
+          </U>
+          <U>
+            <T n="bit">306356<!--RelationshipBit: familyTrope_loving_target_IsAuthorityOf_actor--></T>
+            <E n="operation">REMOVE</E>
+            <E n="recipients">TargetSim</E>
+            <E n="targets">Actor</E>
+          </U>
+          <U>
+            <T n="bit">306357<!--RelationshipBit: familyTrope_loving_target_isSubordinateOf_actor--></T>
+            <E n="operation">REMOVE</E>
+            <E n="recipients">Actor</E>
+            <E n="targets">TargetSim</E>
+          </U>
+          <U>
+            <T n="bit">306357<!--RelationshipBit: familyTrope_loving_target_isSubordinateOf_actor--></T>
+            <E n="operation">REMOVE</E>
+            <E n="recipients">TargetSim</E>
+            <E n="targets">Actor</E>
+          </U>
+          <U>
+            <T n="bit">306289<!--RelationshipBit: familyTrope_permissive_target_isAuthorityOf_actor--></T>
+            <E n="operation">REMOVE</E>
+            <E n="recipients">Actor</E>
+            <E n="targets">TargetSim</E>
+          </U>
+          <U>
+            <T n="bit">306289<!--RelationshipBit: familyTrope_permissive_target_isAuthorityOf_actor--></T>
+            <E n="operation">REMOVE</E>
+            <E n="recipients">TargetSim</E>
+            <E n="targets">Actor</E>
+          </U>
+          <U>
+            <T n="bit">306296<!--RelationshipBit: familyTrope_permissive_target_isSubordinateOf_actor--></T>
+            <E n="operation">REMOVE</E>
+            <E n="recipients">Actor</E>
+            <E n="targets">TargetSim</E>
+          </U>
+          <U>
+            <T n="bit">306296<!--RelationshipBit: familyTrope_permissive_target_isSubordinateOf_actor--></T>
+            <E n="operation">REMOVE</E>
+            <E n="recipients">TargetSim</E>
+            <E n="targets">Actor</E>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V t="buff_removal">
+      <U n="buff_removal">
+        <L n="buffs_to_remove">
+          <T>320704<!--Buff: buff_KeepsakeBox_PonderMeaning_IsntEverything--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="required_relationship_bits">
+            <L n="match_any">
+              <T>15806<!--RelationshipBitCollection: rbc_Family_IncludingSpouseAndDistantAndStep--></T>
+              <T>474387<!--RelationshipBitCollection: rbc_Family_InLaws--></T>
+            </L>
+          </U>
+          <L n="subject">
+            <E>Actor</E>
+          </L>
+          <L n="target_sim">
+            <E>TargetSim</E>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

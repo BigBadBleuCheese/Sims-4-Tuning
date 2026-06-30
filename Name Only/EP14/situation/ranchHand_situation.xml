@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="ServiceNpcButlerSituation" i="situation" m="situations.service_npcs.butler.service_npc_butler_situation" n="ranchHand_situation" s="304722">
+  <U n="_butler_job">
+    <T n="role_state">304720<!--RoleState: ranchHand_Roles_Start--></T>
+    <T n="situation_job">303809<!--SituationJob: jobs_Service_NPC_RanchHand--></T>
+  </U>
+  <T n="_implies_greeted_status">True</T>
+  <T n="_maintain_sims_consistency">True</T>
+  <T n="blocks_super_speed_three">True</T>
+  <U n="butler_states">
+    <U n="childcare_state">
+      <L n="job_and_role_changes">
+        <U>
+          <T n="Situation Job">303809<!--SituationJob: jobs_Service_NPC_RanchHand--></T>
+          <T n="Role State">304721<!--RoleState: ranchHand_Roles_AnimalCare_Start--></T>
+        </U>
+      </L>
+      <V n="time_out" t="enabled">
+        <T n="enabled">15</T>
+      </V>
+    </U>
+    <U n="cleaning_state">
+      <L n="job_and_role_changes">
+        <U>
+          <T n="Situation Job">303809<!--SituationJob: jobs_Service_NPC_RanchHand--></T>
+          <T n="Role State">304721<!--RoleState: ranchHand_Roles_AnimalCare_Start--></T>
+        </U>
+      </L>
+      <V n="time_out" t="enabled">
+        <T n="enabled">15</T>
+      </V>
+    </U>
+    <U n="default_state">
+      <L n="job_and_role_changes">
+        <U>
+          <T n="Situation Job">303809<!--SituationJob: jobs_Service_NPC_RanchHand--></T>
+          <T n="Role State">304720<!--RoleState: ranchHand_Roles_Start--></T>
+        </U>
+      </L>
+      <V n="time_out" t="enabled">
+        <T n="enabled">1</T>
+      </V>
+    </U>
+    <U n="gardening_state">
+      <L n="job_and_role_changes">
+        <U>
+          <T n="Situation Job">303809<!--SituationJob: jobs_Service_NPC_RanchHand--></T>
+          <T n="Role State">304718<!--RoleState: ranchHand_Roles_Gardener_Start--></T>
+        </U>
+      </L>
+      <V n="time_out" t="enabled">
+        <T n="enabled">15</T>
+      </V>
+    </U>
+    <U n="repair_state">
+      <L n="job_and_role_changes">
+        <U>
+          <T n="Situation Job">303809<!--SituationJob: jobs_Service_NPC_RanchHand--></T>
+          <T n="Role State">304719<!--RoleState: ranchHand_Roles_Repair_Start--></T>
+        </U>
+      </L>
+      <V n="time_out" t="enabled">
+        <T n="enabled">15</T>
+      </V>
+    </U>
+  </U>
+  <T n="duration">720</T>
+  <E n="exclusivity">SERVICE</E>
+  <L n="finish_job_states">
+    <U>
+      <E n="key">DISMISSED</E>
+      <U n="value">
+        <U n="enter_state_test">
+          <L n="affordances">
+            <T>14017<!--SocialSuperInteraction: sim_DismissServiceNPC--></T>
+          </L>
+        </U>
+        <V n="notification" t="enabled">
+          <V n="enabled" t="literal">
+            <U n="literal">
+              <L n="dialog_options">
+                <E>DISABLE_CLOSE_BUTTON</E>
+              </L>
+              <V n="icon" t="enabled">
+                <V n="enabled" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>Actor</E>
+                    </L>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0xA308BA03<!--String: "You don't want me anymore? Well, that'll be {0.Money} for today's services."--></T>
+              </V>
+              <E n="visual_type">SPEECH</E>
+            </U>
+          </V>
+        </V>
+        <T n="role_state">339311<!--RoleState: ranchHand_Roles_End--></T>
+      </U>
+    </U>
+    <U>
+      <E n="key">FINISHED_WORK</E>
+    </U>
+    <U>
+      <E n="key">FIRED</E>
+      <U n="value">
+        <U n="enter_state_test">
+          <L n="affordances">
+            <T>303789<!--SocialSuperInteraction: sim_FireServiceNPC_RanchHand--></T>
+          </L>
+          <E n="participant">TargetSim</E>
+        </U>
+        <V n="notification" t="enabled">
+          <V n="enabled" t="literal">
+            <U n="literal">
+              <L n="dialog_options">
+                <E>DISABLE_CLOSE_BUTTON</E>
+              </L>
+              <V n="icon" t="enabled">
+                <V n="enabled" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>Actor</E>
+                    </L>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x94188EF<!--String: "Looks like it's the end of the line for me on this gig. That will be {0.Money} for today. Good luck around here."--></T>
+              </V>
+              <E n="visual_type">SPEECH</E>
+            </U>
+          </V>
+        </V>
+        <T n="role_state">339311<!--RoleState: ranchHand_Roles_End--></T>
+      </U>
+    </U>
+    <U>
+      <E n="key">NOT_PAID</E>
+      <U n="value">
+        <U n="enter_state_test">
+          <L n="affordances">
+            <T>306328<!--SocialSuperInteraction: sim_RanchHand_Quit--></T>
+          </L>
+          <E n="participant">TargetSim</E>
+        </U>
+        <V n="notification" t="enabled">
+          <V n="enabled" t="literal">
+            <U n="literal">
+              <L n="dialog_options">
+                <E>DISABLE_CLOSE_BUTTON</E>
+              </L>
+              <V n="icon" t="enabled">
+                <V n="enabled" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>Actor</E>
+                    </L>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0xBB1A13F3<!--String: "I am used to tough work as a Ranch Hand, but I have standards, too. I'm heading to greener pastures."--></T>
+              </V>
+              <E n="urgency">URGENT</E>
+              <E n="visual_type">SPEECH</E>
+            </U>
+          </V>
+        </V>
+        <T n="role_state">339311<!--RoleState: ranchHand_Roles_End--></T>
+      </U>
+    </U>
+  </L>
+  <V n="situation_end_time_string" t="show_end_time">
+    <T n="show_end_time">0xA3E17143<!--String: "Work day ends at {0.TimeShort}"--></T>
+  </V>
+  <V n="super_speed3_replacement_speed" t="enabled" />
+  <L n="tags">
+    <E>Situation_RanchHand</E>
+  </L>
+  <V n="time_jump" t="simulate" />
+</I>

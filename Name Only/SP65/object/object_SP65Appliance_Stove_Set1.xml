@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="GameObject" i="object" m="objects.game_object" n="object_SP65Appliance_Stove_Set1" s="453900">
+  <U n="_components">
+    <V n="focus" t="enabled">
+      <U n="enabled">
+        <V n="_focus_score" t="globally">
+          <U n="globally">
+            <E n="base">NONE</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V n="state" t="enabled">
+      <U n="enabled">
+        <L n="states">
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">15132<!--CommodityBasedObjectStateValue: Dirty_Clean--></T>
+              </U>
+              <U>
+                <T n="key">15133<!--CommodityBasedObjectStateValue: Dirty_Dirty--></T>
+              </U>
+              <U>
+                <T n="key">15134<!--CommodityBasedObjectStateValue: Dirty_Neutral--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">15132<!--CommodityBasedObjectStateValue: Dirty_Clean--></T>
+            </V>
+            <V n="tested_states_on_add" t="enabled">
+              <U n="enabled">
+                <L n="tested_states">
+                  <U>
+                    <T n="state">15133<!--CommodityBasedObjectStateValue: Dirty_Dirty--></T>
+                    <L n="tests">
+                      <L>
+                        <V t="state">
+                          <U n="state">
+                            <T n="value">452929<!--CommodityBasedObjectStateValue: SP65_Salvage_State_NeedsRepair--></T>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                </L>
+              </U>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">101103<!--ObjectStateValue: DirtyState_Neutral--></T>
+              </U>
+              <U>
+                <T n="key">15130<!--ObjectStateValue: DirtyState_Clean--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value" />
+                </U>
+              </U>
+              <U>
+                <T n="key">15131<!--ObjectStateValue: DirtyState_Dirty--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">Dirty</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">15130<!--ObjectStateValue: DirtyState_Clean--></T>
+            </V>
+            <V n="tested_states_on_add" t="enabled">
+              <U n="enabled">
+                <L n="tested_states">
+                  <U>
+                    <T n="state">15131<!--ObjectStateValue: DirtyState_Dirty--></T>
+                    <L n="tests">
+                      <L>
+                        <V t="state">
+                          <U n="state">
+                            <T n="value">452929<!--CommodityBasedObjectStateValue: SP65_Salvage_State_NeedsRepair--></T>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                </L>
+              </U>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">452928<!--CommodityBasedObjectStateValue: SP65_Salvage_State_Restored--></T>
+                <U n="value">
+                  <V n="replace_object" t="enabled">
+                    <U n="enabled">
+                      <V n="new_object" t="enabled">
+                        <T n="enabled">466962<!--Buff: buff_AutonomyMod_UpgradeService_Plumbing--></T>
+                      </V>
+                      <T n="transfer_sim_ownership">True</T>
+                      <T n="use_fgl">False</T>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">452929<!--CommodityBasedObjectStateValue: SP65_Salvage_State_NeedsRepair--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">452929<!--CommodityBasedObjectStateValue: SP65_Salvage_State_NeedsRepair--></T>
+            </V>
+          </U>
+        </L>
+      </U>
+    </V>
+  </U>
+  <L n="_part_data">
+    <U>
+      <T n="disable_child_aop_forwarding">True</T>
+      <L n="overlapping_parts">
+        <T>1</T>
+        <T>2</T>
+      </L>
+      <T n="part_definition">14800<!--ObjectPart: part_Stove_Burner--></T>
+      <V n="subroot_index" t="enabled">
+        <T n="enabled">1</T>
+      </V>
+    </U>
+    <U>
+      <T n="disable_child_aop_forwarding">True</T>
+      <L n="overlapping_parts">
+        <T>0</T>
+        <T>2</T>
+      </L>
+      <T n="part_definition">14800<!--ObjectPart: part_Stove_Burner--></T>
+      <V n="subroot_index" t="enabled">
+        <T n="enabled">2</T>
+      </V>
+    </U>
+    <U>
+      <L n="overlapping_parts">
+        <T>0</T>
+        <T>1</T>
+      </L>
+      <T n="part_definition">14801<!--ObjectPart: part_Stove_Oven--></T>
+      <V n="subroot_index" t="enabled">
+        <T n="enabled">3</T>
+      </V>
+    </U>
+  </L>
+  <L n="_super_affordances">
+    <T>13328<!--ImmediateSuperInteraction: debug_Reset--></T>
+    <T>13326<!--ImmediateSuperInteraction: debug_ObjectDestroy--></T>
+    <T>103888<!--ImmediateSuperInteraction: cheat_set_as_head--></T>
+    <T>13983<!--StandSuperInteraction: sim-stand--></T>
+    <T>452930<!--SuperInteraction: restoreSalvage_SP65_Stove--></T>
+  </L>
+  <U n="recycling_data">
+    <L n="recycling_values">
+      <U>
+        <E n="Bucks Type">RecycleBitsBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+      <U>
+        <E n="Bucks Type">RecyclePiecesBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+    </L>
+  </U>
+</I>

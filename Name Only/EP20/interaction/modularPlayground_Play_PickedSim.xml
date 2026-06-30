@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="modularPlayground_Play_PickedSim" s="475290">
+  <V n="_affordance_key_override_for_autonomy" t="enabled">
+    <T n="enabled">ModularPlayground</T>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <L n="_static_commodities">
+    <U>
+      <T n="desire">1</T>
+      <T n="static_commodity">27510<!--StaticCommodity: StaticCommodity_PlayChildrenOutdoorObjects--></T>
+    </U>
+    <U>
+      <T n="static_commodity">34451<!--StaticCommodity: staticCommodity_PlayGames--></T>
+    </U>
+    <U>
+      <T n="desire">2</T>
+      <T n="static_commodity">27510<!--StaticCommodity: StaticCommodity_PlayChildrenOutdoorObjects--></T>
+    </U>
+  </L>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <L n="basic_extras">
+    <V t="buff_fire_and_forget">
+      <U n="buff_fire_and_forget">
+        <U n="buff">
+          <T n="buff_type">455290<!--Buff: buff_ModularPlayground_PlayWithPlayground--></T>
+        </U>
+      </U>
+    </V>
+    <V t="buff_fire_and_forget">
+      <U n="buff_fire_and_forget">
+        <U n="buff">
+          <T n="buff_type">486721<!--Buff: buff_ModularPlayground_Cooldown_Idle--></T>
+        </U>
+      </U>
+    </V>
+  </L>
+  <V n="basic_reserve_object" t="disabled" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x4E5098B6<!--String: "Play on Playground"--></T>
+  <V n="display_name_overrides" t="testable">
+    <U n="testable">
+      <L n="overrides">
+        <U>
+          <V n="new_display_name" t="disabled" />
+          <L n="test">
+            <L>
+              <V t="mood">
+                <U n="mood">
+                  <T n="mood">14642<!--Mood: Mood_Playful--></T>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+    <E>Interaction_Skill_Child_Motor</E>
+    <E>Interaction_PlayToy</E>
+  </L>
+  <L n="mood_list">
+    <T>14642<!--Mood: Mood_Playful--></T>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="parameterized_autonomy">
+          <U>
+            <E n="key">Actor</E>
+            <U n="value">
+              <L n="requests">
+                <U>
+                  <T n="consider_same_target">False</T>
+                  <L n="static_commodities">
+                    <T>455289<!--StaticCommodity: staticCommodity_ModularPlayground--></T>
+                  </L>
+                </U>
+              </L>
+            </U>
+          </U>
+        </L>
+      </U>
+    </U>
+  </V>
+  <U n="posture_preferences">
+    <T n="prefer_clicked_parts">False</T>
+  </U>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>CHILD</E>
+            <E>TODDLER</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

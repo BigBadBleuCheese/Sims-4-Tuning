@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_APM_EventOutcome_Failure_Algae" s="354512">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="audio_sting" t="enabled">
+              <U n="enabled">
+                <T n="audio" p="InEP15\Audio\music\bumpers\bumper_ep15_contractor_fail.propx">39b2aa4a:00000000:0763036a495722c7</T>
+              </U>
+            </V>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T p="InEP15\UI\Icons\Notification\notification_PoolAlgae.png" n="key">2f7d0004:00000000:0b40e6a87850a0f3</T>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x7C7AB700<!--String: "Despite their best efforts, the Contractor was unable to fix the Pool Algae for the {0.String} household in {1.String}. As a result, the Unit Rating went down."--></T>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="participant_type_special">
+                    <U n="participant_type_special">
+                      <V n="participant_type" t="zone">
+                        <U n="zone">
+                          <V n="attribute" t="occupant_household_name" />
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                  <V t="participant_type_special">
+                    <U n="participant_type_special">
+                      <V n="participant_type" t="zone" />
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0xCE90E733<!--String: "Pool Algae"--></T>
+            </V>
+          </U>
+        </V>
+        <E n="subject">ActiveHousehold</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="is_active_sim" t="enabled" />
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="actions">
+      <T n="actions">357103<!--LootActions: loot_UnitRating_Progression_PickedUnit_ActiveLot_NoSims_Small_Loss--></T>
+    </V>
+    <V t="actions">
+      <T n="actions">348415<!--LootActions: loot_muEventAPM_AddCooldown_Algae--></T>
+    </V>
+    <V t="actions">
+      <T n="actions">349813<!--LootActions: loot_muEventAPM_AddEventOutcomeBuff_Failed--></T>
+    </V>
+  </L>
+</I>

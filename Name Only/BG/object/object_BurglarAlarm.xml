@@ -1,0 +1,542 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="GameObject" i="object" m="objects.game_object" n="object_BurglarAlarm" s="426550">
+  <U n="_components">
+    <V n="focus" t="enabled">
+      <U n="enabled">
+        <V n="_focus_score" t="globally">
+          <U n="globally">
+            <E n="base">LOW</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V n="retail_component" t="disabled" />
+    <V n="state" t="enabled">
+      <U n="enabled">
+        <V n="delinquency_state_changes" t="enabled">
+          <L n="enabled">
+            <U>
+              <E n="key">POWER</E>
+              <L n="value">
+                <T>354118<!--ObjectStateValue: genericLotHasUtility_Power_No--></T>
+              </L>
+            </U>
+          </L>
+        </V>
+        <L n="state_triggers">
+          <U>
+            <L n="at_states">
+              <T>15076<!--CommodityBasedObjectStateValue: Brokenness_Broken--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>15080<!--ObjectStateValue: BrokenState_Broken--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>15078<!--CommodityBasedObjectStateValue: Brokenness_Unbroken--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>15081<!--ObjectStateValue: BrokenState_Unbroken--></T>
+              </L>
+            </V>
+            <L n="statistic_operations">
+              <V t="statistic_set_min">
+                <U n="statistic_set_min">
+                  <T n="stat">208412<!--Commodity: commodity_IslanderCulture_TimeSinceBroken--></T>
+                </U>
+              </V>
+            </L>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>35297<!--ObjectStateValue: GenericOnOff_Off--></T>
+              <T>15080<!--ObjectStateValue: BrokenState_Broken--></T>
+              <T>354118<!--ObjectStateValue: genericLotHasUtility_Power_No--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>426947<!--ObjectStateValue: burglarAlarm_Disarmed--></T>
+              </L>
+            </V>
+            <E n="trigger_operation">OR</E>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>35296<!--ObjectStateValue: GenericOnOff_On--></T>
+              <T>354117<!--ObjectStateValue: genericLotHasUtility_Power_Yes--></T>
+              <T>15081<!--ObjectStateValue: BrokenState_Unbroken--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>426553<!--ObjectStateValue: burglarAlarm_Armed--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>275005<!--CommodityBasedObjectStateValue: upgrade_Completed_Generic_Slot1--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>430006<!--ObjectStateValue: burglarAlarm_Security_Activated--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>275006<!--CommodityBasedObjectStateValue: upgrade_Completed_Generic_Slot2--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>430005<!--ObjectStateValue: burglarAlarm_Shock_Activated--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>442726<!--ObjectStateValue: burglarAlarm_Situation_Active--></T>
+              <T>426553<!--ObjectStateValue: burglarAlarm_Armed--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>252813<!--ObjectStateValue: genericBroadcasterOnOff_On--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>426554<!--ObjectStateValue: burglarAlarm_Triggered--></T>
+              <T>426947<!--ObjectStateValue: burglarAlarm_Disarmed--></T>
+              <T>442727<!--ObjectStateValue: burglarAlarm_Situation_Inactive--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>252814<!--ObjectStateValue: genericBroadcasterOnOff_Off--></T>
+              </L>
+            </V>
+            <E n="trigger_operation">OR</E>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>77532<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Replace--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>39737<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Not_Burning--></T>
+              </L>
+            </V>
+          </U>
+        </L>
+        <L n="states">
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">442727<!--ObjectStateValue: burglarAlarm_Situation_Inactive--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">252813<!--ObjectStateValue: genericBroadcasterOnOff_On--></T>
+                <U n="value">
+                  <V n="broadcaster" t="apply_new_value">
+                    <V n="apply_new_value" t="start_broadcaster">
+                      <U n="start_broadcaster">
+                        <L n="broadcaster_types">
+                          <U>
+                            <T n="item">429872<!--Broadcaster: broadcaster_BurglarAlarm_Trigger--></T>
+                          </U>
+                        </L>
+                      </U>
+                    </V>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">252814<!--ObjectStateValue: genericBroadcasterOnOff_Off--></T>
+                <U n="value">
+                  <V n="broadcaster" t="apply_new_value" />
+                </U>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">252814<!--ObjectStateValue: genericBroadcasterOnOff_Off--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">426553<!--ObjectStateValue: burglarAlarm_Armed--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">15078<!--CommodityBasedObjectStateValue: Brokenness_Unbroken--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">15080<!--ObjectStateValue: BrokenState_Broken--></T>
+                <U n="value">
+                  <V n="vfx_state" t="apply_new_value">
+                    <V n="apply_new_value" t="start_vfx">
+                      <V n="start_vfx" t="single_effect">
+                        <U n="single_effect">
+                          <T n="effect_name">ep18_burglar_alarm_broken</T>
+                        </U>
+                      </V>
+                    </V>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">15081<!--ObjectStateValue: BrokenState_Unbroken--></T>
+                <U n="value">
+                  <V n="vfx_state" t="apply_new_value" />
+                </U>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">15081<!--ObjectStateValue: BrokenState_Unbroken--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">35296<!--ObjectStateValue: GenericOnOff_On--></T>
+              </U>
+              <U>
+                <T n="key">35297<!--ObjectStateValue: GenericOnOff_Off--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">35296<!--ObjectStateValue: GenericOnOff_On--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">15397<!--CommodityBasedObjectStateValue: Upgrade_Generic_LowerBrokenness_NotStarted--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">15385<!--CommodityBasedObjectStateValue: Upgrade_Generic_LockBrokenness_NotStarted--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">354117<!--ObjectStateValue: genericLotHasUtility_Power_Yes--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">275012<!--CommodityBasedObjectStateValue: upgrade_NotStarted_Generic_Slot1--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">275013<!--CommodityBasedObjectStateValue: upgrade_NotStarted_Generic_Slot2--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">430003<!--ObjectStateValue: burglarAlarm_Security_Deactivated--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">430004<!--ObjectStateValue: burglarAlarm_Shock_Deactivated--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">73871<!--ObjectStateValue: TheKnack_NotAwesome--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">39611<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change--></T>
+              </U>
+              <U>
+                <T n="key">39736<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Burning--></T>
+              </U>
+              <U>
+                <T n="key">39737<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Not_Burning--></T>
+              </U>
+              <U>
+                <T n="key">77532<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Replace--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">39737<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Not_Burning--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">35956<!--CommodityBasedObjectStateValue: Materialistic_Admired--></T>
+              </U>
+              <U>
+                <T n="key">35957<!--CommodityBasedObjectStateValue: Materialistic_YetToAdmire--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">35957<!--CommodityBasedObjectStateValue: Materialistic_YetToAdmire--></T>
+            </V>
+          </U>
+        </L>
+        <V n="timed_state_triggers" t="enabled">
+          <L n="enabled">
+            <U>
+              <T n="key">426554<!--ObjectStateValue: burglarAlarm_Triggered--></T>
+              <U n="value">
+                <L n="ops">
+                  <U>
+                    <L n="states_to_trigger">
+                      <T>426553<!--ObjectStateValue: burglarAlarm_Armed--></T>
+                    </L>
+                    <T n="trigger_time">30</T>
+                    <T n="trigger_time_random_offset">10</T>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+        </V>
+      </U>
+    </V>
+    <V n="tooltip_component" t="enabled">
+      <U n="enabled">
+        <L n="custom_tooltips">
+          <U>
+            <L n="object_tests">
+              <L>
+                <V t="state">
+                  <U n="state">
+                    <T n="value">426947<!--ObjectStateValue: burglarAlarm_Disarmed--></T>
+                  </U>
+                </V>
+              </L>
+            </L>
+            <L n="tooltip_fields">
+              <U>
+                <E n="key">recipe_description</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x517FBDD3<!--String: "<b>Status:</b> <font color='#D10007'>Disarmed</font>"--></T>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <E n="key">recipe_name</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x41A0F856<!--String: "{0.ObjectCatalogName}"--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">Object</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+            </L>
+          </U>
+          <U>
+            <L n="object_tests">
+              <L>
+                <V t="state">
+                  <U n="state">
+                    <T n="value">426553<!--ObjectStateValue: burglarAlarm_Armed--></T>
+                  </U>
+                </V>
+              </L>
+            </L>
+            <L n="tooltip_fields">
+              <U>
+                <E n="key">recipe_description</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x83AA7BB5<!--String: "<b>Status:</b> <font color='#199C2C'>Armed</font>"--></T>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <E n="key">recipe_name</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x41A0F856<!--String: "{0.ObjectCatalogName}"--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">Object</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+            </L>
+          </U>
+          <U>
+            <L n="object_tests">
+              <L>
+                <V t="state">
+                  <U n="state">
+                    <T n="value">15080<!--ObjectStateValue: BrokenState_Broken--></T>
+                  </U>
+                </V>
+              </L>
+            </L>
+            <L n="tooltip_fields">
+              <U>
+                <E n="key">recipe_description</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x6BA40B58<!--String: "<b>Status:</b> <font color='#FF7800'>Broken</font>"--></T>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <E n="key">recipe_name</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x41A0F856<!--String: "{0.ObjectCatalogName}"--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">Object</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+            </L>
+          </U>
+          <U>
+            <L n="object_tests">
+              <L>
+                <V t="state">
+                  <U n="state">
+                    <T n="value">426554<!--ObjectStateValue: burglarAlarm_Triggered--></T>
+                  </U>
+                </V>
+              </L>
+            </L>
+            <L n="tooltip_fields">
+              <U>
+                <E n="key">recipe_description</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0xA2A28F70<!--String: "<b>Status:</b> <font color='#199C2C'>Triggered</font>"--></T>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <E n="key">recipe_name</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x41A0F856<!--String: "{0.ObjectCatalogName}"--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">Object</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+            </L>
+          </U>
+        </L>
+      </U>
+    </V>
+  </U>
+  <L n="_super_affordances">
+    <T>13328<!--ImmediateSuperInteraction: debug_Reset--></T>
+    <T>13326<!--ImmediateSuperInteraction: debug_ObjectDestroy--></T>
+    <T>103888<!--ImmediateSuperInteraction: cheat_set_as_head--></T>
+    <T>13983<!--StandSuperInteraction: sim-stand--></T>
+    <T>129510<!--SuperInteraction: object_Hire_Repair_Service--></T>
+    <T>13327<!--ImmediateSuperInteraction: debug_RepairObject--></T>
+    <T>13319<!--ImmediateSuperInteraction: debug_BreakObject--></T>
+    <T>99087<!--ImmediateSuperInteraction: object_ReplaceBrokenObject--></T>
+    <T>353047<!--SuperInteraction: generic_Upgrade_BreakLess--></T>
+    <T>353048<!--SuperInteraction: generic_UpgradeContinue_BreakLess--></T>
+    <T>353050<!--SuperInteraction: generic_Upgrade_NeverBreak--></T>
+    <T>353051<!--SuperInteraction: generic_UpgradeContinue_NeverBreak--></T>
+    <T>13752<!--SuperInteraction: object_RepairElectrical--></T>
+    <T>353060<!--SuperInteraction: generic_Upgrade_NeverBreak_CompletedDisplay--></T>
+    <T>40055<!--SuperInteraction: object_Bane_Sabotage_StereoTV--></T>
+    <T>276518<!--SuperInteraction: infant_WhatsThat--></T>
+    <T>328068<!--SuperInteraction: infant_WhatsThat_Immobile_InObject--></T>
+    <T>157510<!--SuperInteraction: generic_Object_Toddler_Check_Out_CircleConstraint--></T>
+    <T>73832<!--SuperInteraction: object_Knack_FixIt_StereoTV--></T>
+    <T>287360<!--SuperInteraction: werewolf_Smash--></T>
+    <T>426942<!--SuperInteraction: burglarAlarm_UpgradeContinue_Security--></T>
+    <T>426941<!--SuperInteraction: burglarAlarm_Upgrade_Security--></T>
+    <T>426944<!--SuperInteraction: burglarAlarm_UpgradeContinue_Shock--></T>
+    <T>426943<!--SuperInteraction: burglarAlarm_Upgrade_Shock--></T>
+    <T>426945<!--SuperInteraction: burglarAlarm_Upgrade_Security_CompletedDisplay--></T>
+    <T>426946<!--SuperInteraction: burglarAlarm_Upgrade_Shock_CompletedDisplay--></T>
+    <T>426960<!--ImmediateSuperInteraction: immediate_BurglarAlarm_Toggle--></T>
+    <T>430001<!--ImmediateSuperInteraction: immediate_BurglarAlarm_SecurityUpgrade_Toggle--></T>
+    <T>430007<!--ImmediateSuperInteraction: immediate_BurglarAlarm_ShockUpgrade_Toggle--></T>
+    <T>326870<!--SuperInteraction: infant_WatchObject_isOn_Immobile_InObject--></T>
+    <T>283778<!--SuperInteraction: infant_WatchObject_isOn--></T>
+    <T>476748<!--SuperInteraction: object_Knack_MakeAwesome_BurglarAlarm--></T>
+    <T>74457<!--ImmediateSuperInteraction: fire_ReplaceBurntObject--></T>
+  </L>
+  <U n="recycling_data">
+    <L n="recycling_values">
+      <U>
+        <E n="Bucks Type">RecycleBitsBucks</E>
+        <T n="Value">0</T>
+      </U>
+      <U>
+        <E n="Bucks Type">RecyclePiecesBucks</E>
+        <T n="Value">2</T>
+      </U>
+    </L>
+  </U>
+</I>

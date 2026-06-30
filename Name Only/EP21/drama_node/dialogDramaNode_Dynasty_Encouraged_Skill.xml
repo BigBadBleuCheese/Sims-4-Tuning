@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="DialogDramaNode" i="drama_node" m="drama_scheduler.dialog_drama_node" n="dialogDramaNode_Dynasty_Encouraged_Skill" s="475441">
+  <V n="dialog_and_loot" t="dialog_multi_response">
+    <U n="dialog_multi_response">
+      <U n="dialog">
+        <E n="phone_ring_type">BUZZ</E>
+        <V n="text" t="variation">
+          <U n="variation">
+            <L n="variations">
+              <T>0x8CE2F423<!--String: "I've been working hard improving my skills, just like you told me, {0.SimFirstName}!"--></T>
+              <T>0x1DE3DD1D<!--String: "Thanks for taking an interest in me {0.SimFirstName}! I'm focusing hard on improving my skills, I wanna make you proud."--></T>
+            </L>
+          </U>
+        </V>
+        <V n="text_tokens" t="enabled">
+          <U n="enabled">
+            <L n="tokens">
+              <V t="participant_type" />
+              <V t="participant_type">
+                <U n="participant_type">
+                  <V n="objects" t="from_participant">
+                    <U n="from_participant">
+                      <E n="participant">TargetSim</E>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </U>
+        </V>
+      </U>
+      <L n="on_dialog_complete_loot_list">
+        <T>485793<!--LootActions: loot_Dynasty_Encourage_NPCResult_SkillGain--></T>
+      </L>
+      <L n="possible_responses">
+        <U>
+          <U n="item">
+            <T n="text">0x9213F40E<!--String: "Great!"--></T>
+          </U>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="min_and_max_times">
+    <T n="lower_bound">16</T>
+    <T n="upper_bound">40</T>
+  </U>
+  <V n="picked_sim_info" t="no_participant" />
+  <L n="run_tests">
+    <L>
+      <V t="dynasty_member">
+        <U n="dynasty_member">
+          <V n="test_type" t="same_dynasty_membership" />
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="sender_sim_info" t="participant_type">
+    <U n="participant_type">
+      <E n="participant_type">TargetSim</E>
+    </U>
+  </V>
+  <V n="time_option" t="schedule">
+    <U n="schedule">
+      <L n="valid_times">
+        <U>
+          <U n="days_available">
+            <T n="0 SUNDAY">True</T>
+            <T n="1 MONDAY">True</T>
+            <T n="2 TUESDAY">True</T>
+            <T n="3 WEDNESDAY">True</T>
+            <T n="4 THURSDAY">True</T>
+            <T n="5 FRIDAY">True</T>
+            <T n="6 SATURDAY">True</T>
+          </U>
+          <T n="duration">12</T>
+          <U n="start_time">
+            <T n="hour">9</T>
+          </U>
+        </U>
+      </L>
+    </U>
+  </V>
+</I>

@@ -1,0 +1,1713 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="GameObject" i="object" m="objects.game_object" n="object_AlarmClock_SP67_KitchenTimer" s="455554">
+  <U n="_components">
+    <V n="affordance_tuning" t="enabled">
+      <U n="enabled">
+        <L n="affordance_map">
+          <U>
+            <T n="key">10459<!--SuperInteraction: si_SwipeIntoSimInventory--></T>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V n="focus" t="enabled">
+      <U n="enabled">
+        <V n="_focus_score" t="globally">
+          <U n="globally">
+            <E n="base">LOW</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V n="inventory_item" t="enabled">
+      <U n="enabled">
+        <V n="put_away_affordance" t="OVERRIDE">
+          <T n="OVERRIDE">10459<!--SuperInteraction: si_SwipeIntoSimInventory--></T>
+        </V>
+        <T n="skip_carry_pose">True</T>
+        <L n="valid_inventory_types">
+          <E>SIM</E>
+        </L>
+      </U>
+    </V>
+    <V n="retail_component" t="enabled">
+      <V n="enabled" t="reference">
+        <T n="reference">115301<!--RetailComponent: retailComponent_Default_LowAppeal--></T>
+      </V>
+    </V>
+    <V n="state" t="enabled">
+      <U n="enabled">
+        <L n="state_triggers">
+          <U>
+            <L n="at_states">
+              <T>401231<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_On--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>400893<!--ObjectStateValue: alarmClock_Ringing--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>400894<!--ObjectStateValue: alarmClock_NotRinging--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>401230<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_Off--></T>
+                <T>402893<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_Large_Off--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>402894<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_Large_On--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>402922<!--ObjectStateValue: alarmClock_Ringing_Large--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>15076<!--CommodityBasedObjectStateValue: Brokenness_Broken--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>15080<!--ObjectStateValue: BrokenState_Broken--></T>
+                <T>400958<!--ObjectStateValue: alarmClock_IsNotSet--></T>
+                <T>401230<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_Off--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>15078<!--CommodityBasedObjectStateValue: Brokenness_Unbroken--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>15081<!--ObjectStateValue: BrokenState_Unbroken--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>77532<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Replace--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>39737<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Not_Burning--></T>
+              </L>
+            </V>
+          </U>
+        </L>
+        <L n="states">
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">400893<!--ObjectStateValue: alarmClock_Ringing--></T>
+                <U n="value">
+                  <V n="audio_state" t="apply_new_value">
+                    <V n="apply_new_value" t="start_audio">
+                      <U n="start_audio">
+                        <T n="audio" p="InSP67\Audio\sfx\kitchen\fx_sp67_kitchen_timer_lp.propx">39b2aa4a:00000000:bd46ddfdad5af99c</T>
+                      </U>
+                    </V>
+                  </V>
+                  <V n="broadcaster" t="apply_new_value">
+                    <V n="apply_new_value" t="start_broadcaster">
+                      <U n="start_broadcaster">
+                        <L n="broadcaster_types">
+                          <U>
+                            <T n="item">400737<!--Broadcaster: broadcaster_AlarmClock--></T>
+                          </U>
+                        </L>
+                      </U>
+                    </V>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">400894<!--ObjectStateValue: alarmClock_NotRinging--></T>
+                <U n="value">
+                  <V n="audio_effect_state" t="apply_new_value" />
+                  <V n="audio_state" t="apply_new_value">
+                    <V n="apply_new_value" t="no_audio" />
+                  </V>
+                  <V n="broadcaster" t="apply_new_value">
+                    <V n="apply_new_value" t="no_broadcaster" />
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">402922<!--ObjectStateValue: alarmClock_Ringing_Large--></T>
+                <U n="value">
+                  <V n="audio_state" t="apply_new_value">
+                    <V n="apply_new_value" t="start_audio">
+                      <U n="start_audio">
+                        <T n="audio" p="InSP67\Audio\sfx\kitchen\fx_sp67_kitchen_timer_lp.propx">39b2aa4a:00000000:bd46ddfdad5af99c</T>
+                      </U>
+                    </V>
+                  </V>
+                  <V n="broadcaster" t="apply_new_value">
+                    <V n="apply_new_value" t="start_broadcaster">
+                      <U n="start_broadcaster">
+                        <L n="broadcaster_types">
+                          <U>
+                            <T n="item">402892<!--Broadcaster: broadcaster_AlarmClock_large--></T>
+                          </U>
+                        </L>
+                      </U>
+                    </V>
+                  </V>
+                  <V n="material_state" t="apply_new_value" />
+                </U>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">400894<!--ObjectStateValue: alarmClock_NotRinging--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">401230<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_Off--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">400957<!--ObjectStateValue: alarmClock_IsSet_12pm--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">AlarmSet</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">400958<!--ObjectStateValue: alarmClock_IsNotSet--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value" />
+                </U>
+              </U>
+              <U>
+                <T n="key">400963<!--ObjectStateValue: alarmClock_IsSet_7am--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">AlarmSet</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">400964<!--ObjectStateValue: alarmClock_IsSet_3pm--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">AlarmSet</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">400966<!--ObjectStateValue: alarmClock_IsSet_5am--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">AlarmSet</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">400967<!--ObjectStateValue: alarmClock_IsSet_8am--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">AlarmSet</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">400969<!--ObjectStateValue: alarmClock_IsSet_1pm--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">AlarmSet</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">400970<!--ObjectStateValue: alarmClock_IsSet_11pm--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">AlarmSet</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">400972<!--ObjectStateValue: alarmClock_ISSet_6pm--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">AlarmSet</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">400973<!--ObjectStateValue: alarmClock_IsSet_8pm--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">AlarmSet</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">401535<!--ObjectStateValue: alarmClock_IsSet_2pm--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">AlarmSet</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">401536<!--ObjectStateValue: alarmClock_IsSet_4pm--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">AlarmSet</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">401537<!--ObjectStateValue: alarmClock_ISSet_7pm--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">AlarmSet</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">401538<!--ObjectStateValue: alarmClock_IsSet_9pm--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">AlarmSet</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">401539<!--ObjectStateValue: alarmClock_IsSet_10pm--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">AlarmSet</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">401540<!--ObjectStateValue: alarmClock_IsSet_12am--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">AlarmSet</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">401591<!--ObjectStateValue: alarmClock_IsSet_1am--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">AlarmSet</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">401592<!--ObjectStateValue: alarmClock_IsSet_2am--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">AlarmSet</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">401593<!--ObjectStateValue: alarmClock_IsSet_3am--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">AlarmSet</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">401594<!--ObjectStateValue: alarmClock_IsSet_4am--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">AlarmSet</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">401595<!--ObjectStateValue: alarmClock_IsSet_6am--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">AlarmSet</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">401596<!--ObjectStateValue: alarmClock_IsSet_9am--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">AlarmSet</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">401597<!--ObjectStateValue: alarmClock_IsSet_10am--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">AlarmSet</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">401598<!--ObjectStateValue: alarmClock_IsSet_11am--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">AlarmSet</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">401601<!--ObjectStateValue: alarmClock_IsSet_5pm--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">AlarmSet</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">402898<!--ObjectStateValue: alarmClock_IsSet_10am_Large--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">AlarmSet</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">402899<!--ObjectStateValue: alarmClock_IsSet_10pm_Large--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">AlarmSet</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">402900<!--ObjectStateValue: alarmClock_IsSet_11am_Large--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">AlarmSet</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">402901<!--ObjectStateValue: alarmClock_IsSet_11pm_Large--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">AlarmSet</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">402902<!--ObjectStateValue: alarmClock_IsSet_12am_Large--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">AlarmSet</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">402903<!--ObjectStateValue: alarmClock_IsSet_12pm_Large--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">AlarmSet</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">402904<!--ObjectStateValue: alarmClock_IsSet_1am_Large--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">AlarmSet</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">402905<!--ObjectStateValue: alarmClock_IsSet_1pm_Large--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">AlarmSet</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">402906<!--ObjectStateValue: alarmClock_IsSet_2am_Large--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">AlarmSet</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">402907<!--ObjectStateValue: alarmClock_IsSet_2pm_Large--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">AlarmSet</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">402908<!--ObjectStateValue: alarmClock_IsSet_3am_Large--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">AlarmSet</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">402909<!--ObjectStateValue: alarmClock_IsSet_3pm_Large--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">AlarmSet</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">402910<!--ObjectStateValue: alarmClock_IsSet_4am_Large--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">AlarmSet</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">402911<!--ObjectStateValue: alarmClock_IsSet_4pm_Large--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">AlarmSet</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">402912<!--ObjectStateValue: alarmClock_IsSet_5am_Large--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">AlarmSet</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">402913<!--ObjectStateValue: alarmClock_IsSet_5pm_Large--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">AlarmSet</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">402914<!--ObjectStateValue: alarmClock_IsSet_6am_Large--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">AlarmSet</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">402915<!--ObjectStateValue: alarmClock_ISSet_6pm_Large--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">AlarmSet</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">402916<!--ObjectStateValue: alarmClock_IsSet_7am_Large--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">AlarmSet</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">402917<!--ObjectStateValue: alarmClock_ISSet_7pm_Large--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">AlarmSet</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">402918<!--ObjectStateValue: alarmClock_IsSet_8am_Large--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">AlarmSet</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">402919<!--ObjectStateValue: alarmClock_IsSet_8pm_Large--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">AlarmSet</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">402920<!--ObjectStateValue: alarmClock_IsSet_9am_Large--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">AlarmSet</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">402921<!--ObjectStateValue: alarmClock_IsSet_9pm_Large--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">AlarmSet</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">400958<!--ObjectStateValue: alarmClock_IsNotSet--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">402896<!--ObjectStateValue: alarmClockState_SpeakerSize_Large--></T>
+              </U>
+              <U>
+                <T n="key">402897<!--ObjectStateValue: alarmClockState_SpeakerSize_Small--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">402897<!--ObjectStateValue: alarmClockState_SpeakerSize_Small--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">15080<!--ObjectStateValue: BrokenState_Broken--></T>
+                <U n="value">
+                  <V n="vfx_state" t="apply_new_value">
+                    <V n="apply_new_value" t="start_vfx">
+                      <V n="start_vfx" t="single_effect">
+                        <U n="single_effect">
+                          <T n="effect_name">eng62_alarmclock_broken</T>
+                        </U>
+                      </V>
+                    </V>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">15081<!--ObjectStateValue: BrokenState_Unbroken--></T>
+                <U n="value">
+                  <V n="vfx_state" t="apply_new_value" />
+                </U>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">15081<!--ObjectStateValue: BrokenState_Unbroken--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">15076<!--CommodityBasedObjectStateValue: Brokenness_Broken--></T>
+              </U>
+              <U>
+                <T n="key">15077<!--CommodityBasedObjectStateValue: Brokenness_Neutral--></T>
+              </U>
+              <U>
+                <T n="key">15078<!--CommodityBasedObjectStateValue: Brokenness_Unbroken--></T>
+              </U>
+              <U>
+                <T n="key">97754<!--CommodityBasedObjectStateValue: Brokenness_Broken_Sabotage--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">15078<!--CommodityBasedObjectStateValue: Brokenness_Unbroken--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">224553<!--ObjectStateValue: utilities_Power_Consumption_On--></T>
+                <U n="value">
+                  <V n="autonomy_modifiers" t="apply_new_value">
+                    <V n="apply_new_value" t="apply_statistic_modifiers">
+                      <U n="apply_statistic_modifiers">
+                        <L n="lot_statistic_modifiers">
+                          <U>
+                            <V n="modifier" t="multipliers">
+                              <U n="multipliers">
+                                <U n="value">
+                                  <T n="base_value">-0.00694</T>
+                                  <L n="multipliers">
+                                    <U>
+                                      <T n="multiplier">0.75</T>
+                                      <L n="tests">
+                                        <L>
+                                          <V t="zone">
+                                            <U n="zone">
+                                              <U n="zone_tests">
+                                                <V n="zone_modifiers" t="enabled">
+                                                  <U n="enabled">
+                                                    <V n="whitelist" t="specify">
+                                                      <U n="specify">
+                                                        <L n="whitelist">
+                                                          <T>353534<!--ZoneModifier: zoneModifier_Hidden_FuseBox_On--></T>
+                                                        </L>
+                                                      </U>
+                                                    </V>
+                                                  </U>
+                                                </V>
+                                              </U>
+                                            </U>
+                                          </V>
+                                        </L>
+                                      </L>
+                                    </U>
+                                    <U>
+                                      <T n="multiplier">0.8</T>
+                                      <L n="tests">
+                                        <L>
+                                          <V t="statistic">
+                                            <U n="statistic">
+                                              <T n="stat">187710<!--Statistic: statistic_Object_Thermostat_LotStat_Setting--></T>
+                                              <V n="threshold" t="value_threshold">
+                                                <U n="value_threshold">
+                                                  <E n="comparison">LESS_OR_EQUAL</E>
+                                                  <T n="value">-1</T>
+                                                </U>
+                                              </V>
+                                              <E n="who">Lot</E>
+                                            </U>
+                                          </V>
+                                        </L>
+                                      </L>
+                                    </U>
+                                  </L>
+                                </U>
+                              </U>
+                            </V>
+                            <T n="statistic">233027<!--Commodity: commodity_Utilities_Power--></T>
+                          </U>
+                        </L>
+                        <U n="periodic_statistic_change">
+                          <T n="interval">10</T>
+                          <L n="operations" />
+                        </U>
+                      </U>
+                    </V>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">224564<!--ObjectStateValue: utilities_Power_Consumption_Off--></T>
+                <U n="value">
+                  <V n="autonomy_modifiers" t="apply_new_value" />
+                </U>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">224564<!--ObjectStateValue: utilities_Power_Consumption_Off--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">39611<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change--></T>
+              </U>
+              <U>
+                <T n="key">39736<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Burning--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">Burnt</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">39737<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Not_Burning--></T>
+                <U n="value">
+                  <V n="material_state" t="apply_new_value" />
+                </U>
+              </U>
+              <U>
+                <T n="key">77532<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Replace--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">39737<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Not_Burning--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">35956<!--CommodityBasedObjectStateValue: Materialistic_Admired--></T>
+              </U>
+              <U>
+                <T n="key">35957<!--CommodityBasedObjectStateValue: Materialistic_YetToAdmire--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">35957<!--CommodityBasedObjectStateValue: Materialistic_YetToAdmire--></T>
+            </V>
+          </U>
+        </L>
+        <V n="timed_state_triggers" t="enabled">
+          <L n="enabled">
+            <U>
+              <T n="key">400893<!--ObjectStateValue: alarmClock_Ringing--></T>
+              <U n="value">
+                <L n="ops">
+                  <U>
+                    <L n="states_to_trigger">
+                      <T>400894<!--ObjectStateValue: alarmClock_NotRinging--></T>
+                    </L>
+                    <T n="trigger_time">6</T>
+                  </U>
+                </L>
+              </U>
+            </U>
+            <U>
+              <T n="key">402922<!--ObjectStateValue: alarmClock_Ringing_Large--></T>
+              <U n="value">
+                <L n="ops">
+                  <U>
+                    <L n="states_to_trigger">
+                      <T>400894<!--ObjectStateValue: alarmClock_NotRinging--></T>
+                    </L>
+                    <T n="trigger_time">6</T>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+        </V>
+      </U>
+    </V>
+    <V n="time_of_day_component" t="enabled">
+      <U n="enabled">
+        <L n="state_changes">
+          <U>
+            <T n="key">401203<!--ObjectState: alarmClock_AlarmTimes--></T>
+            <L n="value">
+              <U>
+                <T n="start_time">1</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">401591<!--ObjectStateValue: alarmClock_IsSet_1am--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">401231<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_On--></T>
+              </U>
+              <U>
+                <T n="start_time">13</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">400969<!--ObjectStateValue: alarmClock_IsSet_1pm--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">401231<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_On--></T>
+              </U>
+              <U>
+                <T n="start_time">2</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">401592<!--ObjectStateValue: alarmClock_IsSet_2am--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">401231<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_On--></T>
+              </U>
+              <U>
+                <T n="start_time">14</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">401535<!--ObjectStateValue: alarmClock_IsSet_2pm--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">401231<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_On--></T>
+              </U>
+              <U>
+                <T n="start_time">3</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">401593<!--ObjectStateValue: alarmClock_IsSet_3am--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">401231<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_On--></T>
+              </U>
+              <U>
+                <T n="start_time">15</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">400964<!--ObjectStateValue: alarmClock_IsSet_3pm--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">401231<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_On--></T>
+              </U>
+              <U>
+                <T n="start_time">4</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">401594<!--ObjectStateValue: alarmClock_IsSet_4am--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">401231<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_On--></T>
+              </U>
+              <U>
+                <T n="start_time">16</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">401536<!--ObjectStateValue: alarmClock_IsSet_4pm--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">401231<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_On--></T>
+              </U>
+              <U>
+                <T n="start_time">5</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">400966<!--ObjectStateValue: alarmClock_IsSet_5am--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">401231<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_On--></T>
+              </U>
+              <U>
+                <T n="start_time">17</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">401601<!--ObjectStateValue: alarmClock_IsSet_5pm--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">401231<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_On--></T>
+              </U>
+              <U>
+                <T n="start_time">6</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">401595<!--ObjectStateValue: alarmClock_IsSet_6am--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">401231<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_On--></T>
+              </U>
+              <U>
+                <T n="start_time">18</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">400972<!--ObjectStateValue: alarmClock_ISSet_6pm--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">401231<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_On--></T>
+              </U>
+              <U>
+                <T n="start_time">7</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">400963<!--ObjectStateValue: alarmClock_IsSet_7am--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">401231<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_On--></T>
+              </U>
+              <U>
+                <T n="start_time">19</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">401537<!--ObjectStateValue: alarmClock_ISSet_7pm--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">401231<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_On--></T>
+              </U>
+              <U>
+                <T n="start_time">8</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">400967<!--ObjectStateValue: alarmClock_IsSet_8am--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">401231<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_On--></T>
+              </U>
+              <U>
+                <T n="start_time">20</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">400973<!--ObjectStateValue: alarmClock_IsSet_8pm--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">401231<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_On--></T>
+              </U>
+              <U>
+                <T n="start_time">9</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">401596<!--ObjectStateValue: alarmClock_IsSet_9am--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">401231<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_On--></T>
+              </U>
+              <U>
+                <T n="start_time">21</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">401538<!--ObjectStateValue: alarmClock_IsSet_9pm--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">401231<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_On--></T>
+              </U>
+              <U>
+                <T n="start_time">10</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">401597<!--ObjectStateValue: alarmClock_IsSet_10am--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">401231<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_On--></T>
+              </U>
+              <U>
+                <T n="start_time">22</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">401539<!--ObjectStateValue: alarmClock_IsSet_10pm--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">401231<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_On--></T>
+              </U>
+              <U>
+                <T n="start_time">11</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">401598<!--ObjectStateValue: alarmClock_IsSet_11am--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">401231<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_On--></T>
+              </U>
+              <U>
+                <T n="start_time">23</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">400970<!--ObjectStateValue: alarmClock_IsSet_11pm--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">401231<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_On--></T>
+              </U>
+              <U>
+                <T n="start_time">24</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">401540<!--ObjectStateValue: alarmClock_IsSet_12am--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">401231<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_On--></T>
+              </U>
+              <U>
+                <T n="start_time">12</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">400957<!--ObjectStateValue: alarmClock_IsSet_12pm--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">401231<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_On--></T>
+              </U>
+              <U>
+                <T n="start_time">1</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">402904<!--ObjectStateValue: alarmClock_IsSet_1am_Large--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">402894<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_Large_On--></T>
+              </U>
+              <U>
+                <T n="start_time">13</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">402905<!--ObjectStateValue: alarmClock_IsSet_1pm_Large--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">402894<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_Large_On--></T>
+              </U>
+              <U>
+                <T n="start_time">2</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">402906<!--ObjectStateValue: alarmClock_IsSet_2am_Large--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">402894<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_Large_On--></T>
+              </U>
+              <U>
+                <T n="start_time">14</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">402907<!--ObjectStateValue: alarmClock_IsSet_2pm_Large--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">402894<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_Large_On--></T>
+              </U>
+              <U>
+                <T n="start_time">3</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">402908<!--ObjectStateValue: alarmClock_IsSet_3am_Large--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">402894<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_Large_On--></T>
+              </U>
+              <U>
+                <T n="start_time">15</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">402909<!--ObjectStateValue: alarmClock_IsSet_3pm_Large--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">402894<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_Large_On--></T>
+              </U>
+              <U>
+                <T n="start_time">4</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">402910<!--ObjectStateValue: alarmClock_IsSet_4am_Large--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">402894<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_Large_On--></T>
+              </U>
+              <U>
+                <T n="start_time">16</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">402911<!--ObjectStateValue: alarmClock_IsSet_4pm_Large--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">402894<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_Large_On--></T>
+              </U>
+              <U>
+                <T n="start_time">5</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">402912<!--ObjectStateValue: alarmClock_IsSet_5am_Large--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">402894<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_Large_On--></T>
+              </U>
+              <U>
+                <T n="start_time">17</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">402913<!--ObjectStateValue: alarmClock_IsSet_5pm_Large--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">402894<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_Large_On--></T>
+              </U>
+              <U>
+                <T n="start_time">6</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">402914<!--ObjectStateValue: alarmClock_IsSet_6am_Large--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">402894<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_Large_On--></T>
+              </U>
+              <U>
+                <T n="start_time">18</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">402915<!--ObjectStateValue: alarmClock_ISSet_6pm_Large--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">402894<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_Large_On--></T>
+              </U>
+              <U>
+                <T n="start_time">7</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">402916<!--ObjectStateValue: alarmClock_IsSet_7am_Large--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">402894<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_Large_On--></T>
+              </U>
+              <U>
+                <T n="start_time">19</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">402917<!--ObjectStateValue: alarmClock_ISSet_7pm_Large--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">402894<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_Large_On--></T>
+              </U>
+              <U>
+                <T n="start_time">8</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">402918<!--ObjectStateValue: alarmClock_IsSet_8am_Large--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">402894<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_Large_On--></T>
+              </U>
+              <U>
+                <T n="start_time">20</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">402919<!--ObjectStateValue: alarmClock_IsSet_8pm_Large--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">402894<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_Large_On--></T>
+              </U>
+              <U>
+                <T n="start_time">9</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">402920<!--ObjectStateValue: alarmClock_IsSet_9am_Large--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">402894<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_Large_On--></T>
+              </U>
+              <U>
+                <T n="start_time">21</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">402921<!--ObjectStateValue: alarmClock_IsSet_9pm_Large--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">402894<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_Large_On--></T>
+              </U>
+              <U>
+                <T n="start_time">10</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">402898<!--ObjectStateValue: alarmClock_IsSet_10am_Large--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">402894<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_Large_On--></T>
+              </U>
+              <U>
+                <T n="start_time">22</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">402899<!--ObjectStateValue: alarmClock_IsSet_10pm_Large--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">402894<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_Large_On--></T>
+              </U>
+              <U>
+                <T n="start_time">11</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">402900<!--ObjectStateValue: alarmClock_IsSet_11am_Large--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">402894<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_Large_On--></T>
+              </U>
+              <U>
+                <T n="start_time">23</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">402901<!--ObjectStateValue: alarmClock_IsSet_11pm_Large--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">402894<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_Large_On--></T>
+              </U>
+              <U>
+                <T n="start_time">12</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">402902<!--ObjectStateValue: alarmClock_IsSet_12am_Large--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">402894<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_Large_On--></T>
+              </U>
+              <U>
+                <T n="start_time">24</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">402903<!--ObjectStateValue: alarmClock_IsSet_12pm_Large--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">402894<!--ObjectStateValue: alarmClock_AlarmTimes_OnOff_Large_On--></T>
+              </U>
+            </L>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V n="tooltip_component" t="enabled">
+      <U n="enabled">
+        <L n="custom_tooltips">
+          <U>
+            <L n="tooltip_fields">
+              <U>
+                <E n="key">recipe_name</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x4F918F8<!--String: "{0.ObjectName}"--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">Object</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+            </L>
+            <E n="tooltip_style">HOVER_TIP_CUSTOM_OBJECT</E>
+          </U>
+        </L>
+      </U>
+    </V>
+  </U>
+  <L n="_super_affordances">
+    <T>13328<!--ImmediateSuperInteraction: debug_Reset--></T>
+    <T>13326<!--ImmediateSuperInteraction: debug_ObjectDestroy--></T>
+    <T>103888<!--ImmediateSuperInteraction: cheat_set_as_head--></T>
+    <T>196759<!--SuperInteraction: famePerks_GoodReputation_GivingBack_DonateObject--></T>
+    <T>401385<!--SuperInteraction: ghost_Possess_MischieviousGhost--></T>
+    <T>401603<!--ImmediateSuperInteraction: alarmClock_Immediate_1am--></T>
+    <T>399497<!--ImmediateSuperInteraction: alarmClock_Immediate_1pm--></T>
+    <T>401604<!--ImmediateSuperInteraction: alarmClock_Immediate_2am--></T>
+    <T>401605<!--ImmediateSuperInteraction: alarmClock_Immediate_2pm--></T>
+    <T>401606<!--ImmediateSuperInteraction: alarmClock_Immediate_3am--></T>
+    <T>399498<!--ImmediateSuperInteraction: alarmClock_Immediate_3pm--></T>
+    <T>401631<!--ImmediateSuperInteraction: alarmClock_Immediate_4am--></T>
+    <T>401636<!--ImmediateSuperInteraction: alarmClock_Immediate_4pm--></T>
+    <T>399468<!--ImmediateSuperInteraction: alarmClock_Immediate_5am--></T>
+    <T>401637<!--ImmediateSuperInteraction: alarmClock_Immediate_5pm--></T>
+    <T>401609<!--ImmediateSuperInteraction: alarmClock_Immediate_10pm--></T>
+    <T>401635<!--ImmediateSuperInteraction: alarmClock_Immediate_11am--></T>
+    <T>401632<!--ImmediateSuperInteraction: alarmClock_Immediate_6am--></T>
+    <T>400310<!--ImmediateSuperInteraction: alarmClock_Immediate_6pm--></T>
+    <T>399469<!--ImmediateSuperInteraction: alarmClock_Immediate_7am--></T>
+    <T>401638<!--ImmediateSuperInteraction: alarmClock_Immediate_7pm--></T>
+    <T>399470<!--ImmediateSuperInteraction: alarmClock_Immediate_8am--></T>
+    <T>400311<!--ImmediateSuperInteraction: alarmClock_Immediate_8pm--></T>
+    <T>401633<!--ImmediateSuperInteraction: alarmClock_Immediate_9am--></T>
+    <T>401608<!--ImmediateSuperInteraction: alarmClock_Immediate_9pm--></T>
+    <T>401634<!--ImmediateSuperInteraction: alarmClock_Immediate_10am--></T>
+    <T>400312<!--ImmediateSuperInteraction: alarmClock_Immediate_11pm--></T>
+    <T>401610<!--ImmediateSuperInteraction: alarmClock_Immediate_12am--></T>
+    <T>399496<!--ImmediateSuperInteraction: alarmClock_Immediate_12pm--></T>
+    <T>401534<!--ImmediateSuperInteraction: alarmClock_Immediate_UnsetAlarmTime--></T>
+    <T>403706<!--SuperInteraction: object_Repair_AlarmClock--></T>
+    <T>13319<!--ImmediateSuperInteraction: debug_BreakObject--></T>
+    <T>13983<!--StandSuperInteraction: sim-stand--></T>
+    <T>129510<!--SuperInteraction: object_Hire_Repair_Service--></T>
+    <T>99087<!--ImmediateSuperInteraction: object_ReplaceBrokenObject--></T>
+    <T>425569<!--SuperInteraction: alarmClock_Upgrade_Speaker_new--></T>
+    <T>106859<!--SuperInteraction: simRay_Transform_Object--></T>
+    <T>393854<!--SuperInteraction: ghostPowers_Abilities_Scary_SinisterPossess_Autonomous--></T>
+    <T>74457<!--ImmediateSuperInteraction: fire_ReplaceBurntObject--></T>
+    <T>102258<!--SuperInteraction: Ghost_Possess--></T>
+    <T>168502<!--SuperInteraction: Ghost_Pet_Possess--></T>
+    <T>324988<!--SuperInteraction: Ghost_Horse_Possess--></T>
+  </L>
+  <U n="recycling_data">
+    <L n="recycling_values">
+      <U>
+        <E n="Bucks Type">RecycleBitsBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+      <U>
+        <E n="Bucks Type">RecyclePiecesBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+    </L>
+  </U>
+</I>

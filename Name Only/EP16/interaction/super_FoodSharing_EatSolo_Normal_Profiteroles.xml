@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="super_FoodSharing_EatSolo_Normal_Profiteroles" s="381735">
+  <V n="_saveable" t="enabled" />
+  <T n="allow_from_sim_inventory">True</T>
+  <T n="allow_from_world">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="time_based">
+                <U n="time_based">
+                  <T n="max_time">25</T>
+                  <T n="min_time">20</T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+      </L>
+      <V n="content" t="looping_content">
+        <U n="looping_content">
+          <U n="animation_ref">
+            <T n="factory">363306<!--AnimationElement: anim_FoodSharing_EatSolo_Normal--></T>
+            <U n="overrides">
+              <L n="props">
+                <U>
+                  <T n="key">foodBoxEat</T>
+                  <U n="value">
+                    <T n="definition">398840</T>
+                  </U>
+                </U>
+                <U>
+                  <T n="key">foodFingersRound</T>
+                  <U n="value">
+                    <T n="definition">399096</T>
+                  </U>
+                </U>
+              </L>
+            </U>
+          </U>
+        </U>
+      </V>
+      <V n="periodic_stat_change" t="enabled">
+        <U n="enabled">
+          <L n="operations">
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="amount">3.2</T>
+                <T n="stat">16656<!--Commodity: motive_Hunger--></T>
+                <L n="subject">
+                  <E>Actor</E>
+                  <E>TargetSim</E>
+                </L>
+              </U>
+            </V>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x56AD8EB8<!--String: "Eat Profiteroles"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+    <E>Food_Any</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="basic_extras">
+          <V t="destroy_object" />
+        </L>
+        <L n="loot_list">
+          <T>176148<!--LootActions: loot_Skeleton_Eat--></T>
+          <T>395128<!--LootActions: loot_FoodSharing_FatGain_Actor--></T>
+        </L>
+      </U>
+    </U>
+  </V>
+  <U n="posture_preferences">
+    <T n="apply_posture_costs">True</T>
+    <L n="posture_cost_overrides">
+      <U>
+        <T n="key">117257<!--Posture: posture_HotTubSit--></T>
+        <T n="value">100</T>
+      </U>
+    </L>
+    <T n="prefer_surface">True</T>
+  </U>
+  <V n="posture_target_preference" t="enabled">
+    <L n="enabled">
+      <U>
+        <E n="key">SEATING_BARSTOOL</E>
+        <T n="value">2</T>
+      </U>
+      <U>
+        <E n="key">SEATING_BED</E>
+        <T n="value">0</T>
+      </U>
+      <U>
+        <E n="key">SEATING_DESK</E>
+        <T n="value">2</T>
+      </U>
+      <U>
+        <E n="key">SEATING_DINING</E>
+        <T n="value">4</T>
+      </U>
+      <U>
+        <E n="key">SEATING_LIVING</E>
+        <T n="value">4</T>
+      </U>
+      <U>
+        <E n="key">SEATING_LOVESEAT</E>
+        <T n="value">4</T>
+      </U>
+      <U>
+        <E n="key">SEATING_SOFA</E>
+        <T n="value">4</T>
+      </U>
+    </L>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all" />
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="posture">
+      <U n="posture">
+        <L n="prohibited_postures">
+          <T>282911<!--IntimatePartPosture: posture_BedUpdates_PillowFight--></T>
+          <T>15542<!--Posture: posture_WorkoutMachine--></T>
+          <T>132262<!--BeCarriedPosture: posture_BeCarried--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

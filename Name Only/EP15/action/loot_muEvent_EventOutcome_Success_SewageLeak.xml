@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_muEvent_EventOutcome_Success_SewageLeak" s="347471">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T p="InEP15\UI\Icons\Notification\notification_SewageLeak.png" n="key">2f7d0004:00000000:df80a30994feae4e</T>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x84803C63<!--String: "Great job sorting out the Sewage Leak problem! As a result, the Unit Rating went up."--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x2D090CFE<!--String: "Sewage Leak"--></T>
+            </V>
+          </U>
+        </V>
+        <E n="subject">ActiveHousehold</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="is_active_sim" t="enabled" />
+              </U>
+            </V>
+          </L>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="location">
+              <U n="location">
+                <U n="location_tests">
+                  <V n="is_venue_type" t="enabled">
+                    <U n="enabled">
+                      <T n="venue_type">341299<!--Venue: venue_MultiUnit--></T>
+                    </U>
+                  </V>
+                </U>
+                <E n="subject">ActiveHousehold</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T p="InEP15\UI\Icons\Notification\notification_SewageLeak.png" n="key">2f7d0004:00000000:df80a30994feae4e</T>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xDC1C4C95<!--String: "Great job addressing the Sewage Leak issue! Let's hope the pipes remain sturdy."--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x2D090CFE<!--String: "Sewage Leak"--></T>
+            </V>
+          </U>
+        </V>
+        <E n="subject">ActiveHousehold</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="is_active_sim" t="enabled" />
+              </U>
+            </V>
+          </L>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="location">
+              <U n="location">
+                <U n="location_tests">
+                  <V n="is_venue_type" t="enabled">
+                    <U n="enabled">
+                      <T n="negate">True</T>
+                      <T n="venue_type">341299<!--Venue: venue_MultiUnit--></T>
+                    </U>
+                  </V>
+                </U>
+                <E n="subject">ActiveHousehold</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="money_loot">
+      <U n="money_loot">
+        <V n="amount" t="random_in_range">
+          <U n="random_in_range">
+            <T n="lower_bound">50</T>
+            <T n="upper_bound">150</T>
+          </U>
+        </V>
+        <V n="notification" t="enabled">
+          <V n="enabled" t="literal">
+            <U n="literal">
+              <V n="text" t="single">
+                <T n="single">0xE5790779<!--String: "The Property Owner sent you {1.Money} for helping to address the issue."--></T>
+              </V>
+              <V n="text_tokens" t="enabled">
+                <U n="enabled">
+                  <L n="tokens">
+                    <V t="money_amount">
+                      <U n="money_amount">
+                        <E n="participant">ActiveHousehold</E>
+                      </U>
+                    </V>
+                  </L>
+                </U>
+              </V>
+            </U>
+          </V>
+        </V>
+        <E n="subject">ActiveHousehold</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="is_active_sim" t="enabled" />
+              </U>
+            </V>
+          </L>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <T n="apply_whitelist_on_individual_basis">False</T>
+                <E n="subject">ActiveHousehold</E>
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>353150<!--Buff: buff_muEvent_Hidden_TenantDidFix--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="actions">
+      <T n="actions">357093<!--LootActions: loot_UnitRating_Progression_PickedUnit_ActiveLot_NoSims_Large_Gain--></T>
+    </V>
+    <V t="actions">
+      <T n="actions">351719<!--RandomWeightedLoot: randomWeightedLoot_muEvent_ReoccurenceChance_SuccessPrimary--></T>
+    </V>
+    <V t="actions">
+      <T n="actions">351720<!--RandomWeightedLoot: randomWeightedLoot_muEvent_ReoccurenceChance_SuccessSecondary--></T>
+    </V>
+    <V t="actions">
+      <T n="actions">348473<!--LootActions: loot_muEventAPM_AddCooldown_SewageLeak--></T>
+    </V>
+    <V t="buff_removal">
+      <U n="buff_removal">
+        <L n="buffs_to_remove">
+          <T>353150<!--Buff: buff_muEvent_Hidden_TenantDidFix--></T>
+        </L>
+        <E n="subject">ActiveHousehold</E>
+      </U>
+    </V>
+  </L>
+</I>

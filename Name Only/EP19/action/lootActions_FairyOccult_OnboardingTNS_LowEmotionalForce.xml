@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="lootActions_FairyOccult_OnboardingTNS_LowEmotionalForce" s="460544">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InEP19\UI\Icons\Notifications\notification_EmotionalEnergyLow.png">2f7d0004:00000000:c0304e1c75619ef1</T>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant" />
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x7441F38E<!--String: "{0.SimFirstName} is Emotionally Starving! Any Fairy that completely runs out of Emotional Force will die. {0.SimFirstName} can regain Emotional Force by Absorbing the Emotions of other Sims, Drinking Emotion Potions, Using the Regenerate Emotional Force Self Interaction or a Fairy Home."--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0xBAF47EFB<!--String: "Emotionally Starving"--></T>
+            </V>
+            <V n="tns_suppression_group" t="enabled">
+              <E n="enabled">Onboarding_FairyOccult_LowEmotionalForce_EmotionallyStarving</E>
+            </V>
+            <L n="ui_responses">
+              <U>
+                <T n="text">0x58BDBC1A<!--String: "View Lessons"--></T>
+                <V n="tutorial_id" t="enabled">
+                  <T n="enabled">459941<!--Tutorial: tutorial_EP19_FairyDeath--></T>
+                </V>
+                <E n="ui_request">SHOW_LESSONS</E>
+              </U>
+            </L>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>435991<!--Buff: buff_FairyOccult_EmotionallyStarving--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InEP19\UI\Icons\Notifications\notification_EmotionalEnergyCritical.png">2f7d0004:00000000:298810508dc58e16</T>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant" />
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x8AF0E2BC<!--String: "{0.SimFirstName} is Emotionally Ravenous and will soon die of Emotional Starvation if {0.SimPronounSubjective} don't replenish {0.SimPronounPossessiveDependent} Emotional Force. {0.SimFirstName} can do this by Absorbing the Emotions of other Sims, Drinking Emotion Potions, Using the Regenerate Emotional Force Self Interaction or a Fairy Home."--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x4C4D0E82<!--String: "Emotionally Ravenous"--></T>
+            </V>
+            <V n="tns_suppression_group" t="enabled">
+              <E n="enabled">Onboarding_FairyOccult_LowEmotionalForce_EmotionallyRavenous</E>
+            </V>
+            <L n="ui_responses">
+              <U>
+                <T n="text">0x58BDBC1A<!--String: "View Lessons"--></T>
+                <V n="tutorial_id" t="enabled">
+                  <T n="enabled">459941<!--Tutorial: tutorial_EP19_FairyDeath--></T>
+                </V>
+                <E n="ui_request">SHOW_LESSONS</E>
+              </U>
+            </L>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>435992<!--Buff: buff_FairyOccult_EmotionallyRavenous--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>441510<!--Buff: buff_FairyJourney_Mortal--></T>
+            <T>441512<!--Buff: buff_FairyJourney_MeetMotherNature_Fairy--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

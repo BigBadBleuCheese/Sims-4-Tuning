@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalObjectInteraction" i="situation_goal" m="situations.situation_goal_object_interaction" n="situationGoalObjectInteraction_CommunalEvents_Animal_Day_Guests_InteractWithAnimals" s="331809">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T n="enabled" p="InEP14\UI\Icons\Events\EventGoal_HaveGuestsInteractWithAnimals.png">2f7d0004:00000000:929823cc75395385</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x74B7F066<!--String: "Have Guests Socialize with Ranch Animals"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0xE7078AC6<!--String: "Guests will automatically attempt to Socialize with Animals when Mini Goats, Mini Sheep, and Horses are present on the lot."--></T>
+      </V>
+    </U>
+  </V>
+  <U n="_goal_test">
+    <L n="affordances">
+      <T>319842<!--SocialSuperInteraction: HorseSocials_SimToHorse_NonTouching--></T>
+      <T>328007<!--SocialSuperInteraction: horseSocials_SimToHorse_Touching_Friendly_CheerUp--></T>
+      <T>322226<!--SocialSuperInteraction: horseSocials_SimToHorse_Touching_Friendly_Hug--></T>
+      <T>325499<!--SocialSuperInteraction: horseSocials_SimToHorse_Touching_Friendly_RubNeck--></T>
+      <T>319845<!--SocialSuperInteraction: HorseSocials_SimToHorse_Touching_Friendly_ScratchNeck--></T>
+      <T>325500<!--SocialSuperInteraction: horseSocials_SimToHorse_Touching_Friendly_WhisperTo--></T>
+      <T>328878<!--SocialSuperInteraction: horseSocials_SimToFoal_Touching_Cradle--></T>
+      <T>329220<!--SocialSuperInteraction: horseSocials_SimToFoal_Touching_GentleTouch--></T>
+      <T>323931<!--MixerInteraction: horseSocialCarryMixers_SimToRiddenHorse_Friendly_CheerUp--></T>
+      <T>323932<!--MixerInteraction: horseSocialCarryMixers_SimToRiddenHorse_Friendly_Hug--></T>
+      <T>323928<!--MixerInteraction: horseSocialCarryMixers_SimToRiddenHorse_Friendly_Scratch--></T>
+      <T>323929<!--MixerInteraction: horseSocialCarryMixers_SimToRiddenHorse_Friendly_TalkTo--></T>
+      <T>323930<!--MixerInteraction: horseSocialCarryMixers_SimToRiddenHorse_Friendly_TellJoke--></T>
+      <T>323877<!--MixerInteraction: horseSocialCarryMixers_SimToRiddenHorse_Friendly_WhatsWrong--></T>
+    </L>
+    <L n="tags">
+      <E>Interaction_AnimalObjects_Social_All</E>
+    </L>
+    <E n="test_event">InteractionComplete</E>
+  </U>
+  <T n="_iterations">4</T>
+  <L n="_post_tests">
+    <V t="situation_job">
+      <U n="situation_job">
+        <L n="situation_jobs">
+          <T>330679<!--SituationJob: communalEvents_Job_Guests--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T n="_score">30</T>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+</I>

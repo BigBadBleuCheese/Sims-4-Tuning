@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="RunSituationSuperInteraction" i="interaction" m="interactions.run_situation" n="object_HireNPC_SpinningClass_Instructor" s="446572">
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">11702<!--AnimationElement: Phone_Chat--></T>
+      </U>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="notification">
+      <U n="notification">
+        <V n="dialog" t="single">
+          <V n="single" t="literal">
+            <U n="literal">
+              <V n="icon" t="enabled">
+                <V n="enabled" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>Object</E>
+                    </L>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x6ABE0931<!--String: "A service Sim hired by {0.SimName} is on their way!"--></T>
+              </V>
+              <V n="text_tokens" t="enabled">
+                <U n="enabled">
+                  <L n="tokens">
+                    <V t="participant_type" />
+                  </L>
+                </U>
+              </V>
+            </U>
+          </V>
+        </V>
+      </U>
+    </V>
+  </L>
+  <V n="basic_reserve_object" t="disabled" />
+  <T n="category">485644<!--PieMenuCategory: pieMenuCategory_SpinningClass--></T>
+  <T n="collapsible">True</T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x4819267C<!--String: "Hire Spinning Instructor"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <V n="host_sim" t="NoHost" />
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="loot_list">
+          <T>489322<!--LootActions: loot_Dynasty_ValueBasedPrestige_DomesticServices_100--></T>
+        </L>
+      </U>
+    </U>
+  </V>
+  <T n="pie_menu_priority">1</T>
+  <U n="posture_preferences">
+    <T n="disable_all_scoring">True</T>
+  </U>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="situation">446573<!--StaffMemberSituation: situation_SpinningClass_Instructor--></T>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="region">
+      <U n="region">
+        <V n="blacklist" t="enabled">
+          <L n="enabled">
+            <T>231104<!--Region: region_Destination_Batuu--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+    <V t="situation_job_test">
+      <U n="situation_job_test">
+        <T n="negate">True</T>
+        <L n="situation_jobs">
+          <T>373362<!--SituationJob: job_SmallBusinessCustomer--></T>
+        </L>
+      </U>
+    </V>
+    <V t="location">
+      <U n="location">
+        <U n="location_tests">
+          <V n="is_on_active_lot" t="Is_or_is_not_on_active_lot" />
+        </U>
+        <E n="subject">Object</E>
+      </U>
+    </V>
+    <V t="situation_running_test">
+      <U n="situation_running_test">
+        <L n="tag_blacklist">
+          <E>Situation_HobbyClass</E>
+        </L>
+      </U>
+    </V>
+    <V t="situation_running_test">
+      <U n="situation_running_test">
+        <V n="situation_blacklist" t="enabled">
+          <L n="enabled">
+            <T>446573<!--StaffMemberSituation: situation_SpinningClass_Instructor--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+    <V t="situation_running_test">
+      <U n="situation_running_test">
+        <V n="situation_blacklist" t="enabled">
+          <L n="enabled">
+            <T>447796<!--SpinClassSituation: spinningClassSituation--></T>
+            <T>461028<!--SpinClassSituation: spinningClassSituation_HiredInstructor--></T>
+            <T>465920<!--SpinClassSituation: spinningClassSituation_PlayerLed_Free--></T>
+          </L>
+        </V>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x9F121A89<!--String: "A Spinning Class is already in session."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">471169<!--TestSetInstance: testSet_SpinningClass_StudentBikesCheck--></T>
+    </V>
+    <V t="zone">
+      <U n="zone">
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x75BE432A<!--String: "The internet doesn't work off-the-grid."--></T>
+        </V>
+        <U n="zone_tests">
+          <V n="zone_modifiers" t="enabled">
+            <U n="enabled">
+              <V n="blacklist" t="specify">
+                <U n="specify">
+                  <L n="blacklist">
+                    <T>206665<!--ZoneModifier: zoneModifier_lotTrait_OffTheGrid--></T>
+                  </L>
+                </U>
+              </V>
+            </U>
+          </V>
+        </U>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

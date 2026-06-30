@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Drink_Multiserve_FirstConsumptionTurn_DeductServing" s="322908">
+  <L n="loot_actions">
+    <V t="statistics">
+      <V n="statistics" t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">-1</T>
+          <T n="stat">16672<!--Statistic: statistic_Object_Consumable_Servings--></T>
+          <L n="subject">
+            <E>Object</E>
+          </L>
+        </U>
+      </V>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="state">
+        <U n="state">
+          <E n="operator">NOTEQUAL</E>
+          <T n="value">15320<!--CommodityBasedObjectStateValue: Servings_Empty--></T>
+        </U>
+      </V>
+      <V t="state_white_black">
+        <U n="state_white_black">
+          <U n="states">
+            <V n="blacklist" t="specify">
+              <U n="specify">
+                <L n="blacklist">
+                  <T>15109<!--CommodityBasedObjectStateValue: Consumable_Full--></T>
+                  <T>15113<!--CommodityBasedObjectStateValue: Consumable_Untouched--></T>
+                </L>
+              </U>
+            </V>
+          </U>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

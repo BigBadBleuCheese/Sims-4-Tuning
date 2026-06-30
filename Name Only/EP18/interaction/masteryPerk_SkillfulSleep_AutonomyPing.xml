@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="masteryPerk_SkillfulSleep_AutonomyPing" s="390874">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="current_position" />
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Actor</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <L n="_static_commodities">
+    <U>
+      <T n="static_commodity">390875<!--StaticCommodity: staticCommodity_MasteryPerk_SkillfulSleepClone--></T>
+    </U>
+  </L>
+  <T n="allow_autonomous">True</T>
+  <T n="allow_user_directed">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <L n="basic_liabilities">
+    <V t="critical_priority">
+      <U n="critical_priority">
+        <E n="priority_on_push">Low</E>
+        <E n="priority_on_run">Low</E>
+      </U>
+    </V>
+  </L>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x0000</T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="parameterized_autonomy">
+          <U>
+            <E n="key">Actor</E>
+            <U n="value">
+              <L n="push_on_success_or_fail">
+                <U>
+                  <T n="affordance">390873<!--SuperInteraction: masteryPerk_SkillfulSleep_NoWork--></T>
+                  <T n="push_on_fail">True</T>
+                  <E n="who">Actor</E>
+                </U>
+              </L>
+              <L n="requests">
+                <U>
+                  <L n="static_commodities">
+                    <T>377252<!--StaticCommodity: staticCommodity_BuildSkill_MasteryPerk_SkillfulSleepClone--></T>
+                  </L>
+                </U>
+              </L>
+            </U>
+          </U>
+        </L>
+      </U>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">ACTOR</E>
+  <L n="test_globals">
+    <V t="participant_running_interaction">
+      <U n="participant_running_interaction">
+        <L n="affordances">
+          <T>386340<!--SuperInteraction: cookingPractice_Mentoring_Start_Gourmet--></T>
+          <T>386315<!--SuperInteraction: cookingPractice_Mentoring_Start_Homestyle--></T>
+          <T>390944<!--SuperInteraction: cookingPractice_Mentoring_Start_Herbalism--></T>
+          <T>386343<!--SuperInteraction: cookingPractice_Mentoring_Start_Baking--></T>
+          <T>386342<!--SuperInteraction: cookingPractice_Mentoring_Cont_Gourmet--></T>
+          <T>386317<!--SuperInteraction: cookingPractice_Mentoring_Cont_Homestyle--></T>
+          <T>390945<!--SuperInteraction: cookingPractice_Mentoring_Cont_Herbalism--></T>
+          <T>386344<!--SuperInteraction: cookingPractice_Mentoring_Cont_Baking--></T>
+        </L>
+        <T n="test_for_not_running">True</T>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+  <T n="visible">False</T>
+</I>

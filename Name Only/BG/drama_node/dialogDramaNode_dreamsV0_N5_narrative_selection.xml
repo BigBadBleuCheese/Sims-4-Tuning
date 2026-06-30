@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="DialogDramaNode" i="drama_node" m="drama_scheduler.dialog_drama_node" n="dialogDramaNode_dreamsV0_N5_narrative_selection" s="440713">
+  <V n="cooldown_data" t="node_cooldown">
+    <U n="node_cooldown">
+      <E n="cooldown_option">ON_DIALOG_RESPONSE</E>
+      <V n="duration" t="permanent" />
+    </U>
+  </V>
+  <V n="dialog_and_loot" t="dialog_ok_cancel">
+    <U n="dialog_ok_cancel">
+      <U n="dialog">
+        <E n="dialog_style">LARGE_ICON</E>
+        <V n="icon" t="enabled">
+          <V n="enabled" t="resource_key">
+            <U n="resource_key">
+              <T n="key" p="InGame\UI\Icons\Dialog\Screenshots\SS_DreamsV0_Select_Group1.png">2f7d0004:00000000:2e55f80d6403dbb0</T>
+            </U>
+          </V>
+        </V>
+        <V n="text" t="single">
+          <T n="single">0x7CF98C3F<!--String: "Select a <b>Dream</b> to fulfill long-term goals for your Sims.\n\n<b>Family Farm</b> - Guide your family through a <b>Nature Aspiration</b>, leveling up <b>Gardening Skill</b> and <b>raising another generation</b> to take over.\n\n<b>Friendly Neighbor</b> - <b>Befriend your neighbors, grow your home,</b> and become the <b>best party host.</b>"--></T>
+        </V>
+        <T n="text_cancel">0xBA394153<!--String: "Choose <b>Friendly Neighbor</b>"--></T>
+        <T n="text_ok">0x5A95E107<!--String: "Choose <b>Family Farm</b>"--></T>
+        <V n="title" t="enabled">
+          <T n="enabled">0x161E39A7<!--String: "Select a Dream!"--></T>
+        </V>
+      </U>
+      <L n="on_dialog_accepted_loot_list">
+        <T>439742<!--LootActions: loot_PivotalMoment_dreamsV0_N5_choice1--></T>
+      </L>
+      <L n="on_dialog_canceled_loot_list">
+        <T>439743<!--LootActions: loot_PivotalMoment_dreamsV0_N5_choice2--></T>
+      </L>
+    </U>
+  </V>
+  <T n="is_simless">True</T>
+  <U n="min_and_max_times">
+    <T n="lower_bound">0</T>
+    <T n="upper_bound">0</T>
+  </U>
+  <L n="receiver_sim_pretests">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="is_active_sim" t="enabled" />
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="reschedule_on_failed_tests" t="reschedule" />
+  <L n="run_tests">
+    <L>
+      <V t="discovery_quest_completed">
+        <U n="discovery_quest_completed">
+          <T n="pivotal_moment">342430<!--PivotalMoment: pivotalMoment_Needs--></T>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="time_option" t="schedule">
+    <U n="schedule">
+      <L n="valid_times">
+        <U>
+          <U n="days_available">
+            <T n="0 SUNDAY">True</T>
+            <T n="1 MONDAY">True</T>
+            <T n="2 TUESDAY">True</T>
+            <T n="3 WEDNESDAY">True</T>
+            <T n="4 THURSDAY">True</T>
+            <T n="5 FRIDAY">True</T>
+            <T n="6 SATURDAY">True</T>
+          </U>
+          <T n="duration">24</T>
+          <U n="start_time">
+            <T n="hour">0</T>
+          </U>
+        </U>
+      </L>
+    </U>
+  </V>
+</I>

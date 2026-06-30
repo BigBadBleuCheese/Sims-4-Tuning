@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Buff" i="buff" m="buffs.buff" n="buff_Trait_EP16SpecialNPC_TheRingBear" s="370190">
+  <V n="appearance_modifier" t="enabled">
+    <U n="enabled">
+      <L n="appearance_modifiers">
+        <L>
+          <U>
+            <V n="modifier" t="generate_outfit">
+              <U n="generate_outfit">
+                <U n="outfit_generator">
+                  <L n="filter_flag">
+                    <E>USE_EXISTING_IF_APPROPRIATE</E>
+                    <E>USE_VALID_FOR_LIVE_RANDOM</E>
+                  </L>
+                  <L n="tags">
+                    <E>Uniform_EP16SpecialNPC_SammyBearSuit</E>
+                  </L>
+                </U>
+              </U>
+            </V>
+          </U>
+        </L>
+      </L>
+    </U>
+  </V>
+  <T p="InGame\Audio\Stings\sting_buff_gain.propx" n="audio_sting_on_add">39b2aa4a:00000000:8af8b916cf64c646</T>
+  <T p="InGame\Audio\Stings\sting_buff_loss.propx" n="audio_sting_on_remove">39b2aa4a:00000000:3bf33216a25546ea</T>
+  <V n="auto_situation" t="enabled">
+    <U n="enabled">
+      <V n="actor_init_job" t="specify_job">
+        <T n="specify_job">370687<!--SituationJob: situationJob_BasicTrait_EP16SpecialNPC_TheRingBear--></T>
+      </V>
+      <T n="situation">370685<!--BasicTraitSitaution: basicTraitSitaution_EP16SpecialNPC_TheRingBear--></T>
+      <T n="user_facing">False</T>
+    </U>
+  </V>
+  <U n="game_effect_modifier">
+    <L n="_game_effect_modifiers">
+      <V t="autonomy_modifier">
+        <U n="autonomy_modifier">
+          <V n="provided_affordance_compatibility" t="literal">
+            <U n="literal">
+              <V n="default_inclusion" t="exclude_all">
+                <U n="exclude_all">
+                  <L n="include_affordances">
+                    <T>179604<!--CheatSetStatSuperInteraction: cheat_SetStatisticOnObject--></T>
+                    <T>268056<!--ImmediateSuperInteraction: immediate_RelPanel_LockCamera--></T>
+                    <T>370870<!--SocialSuperInteraction: EP16SpecialNPC_TheRingBear_AskAboutRing_NPCQuest1--></T>
+                    <T>204297<!--SuperInteraction: welcomeWagon_Interactions_go_to_front_door--></T>
+                    <T>370878<!--SocialSuperInteraction: EP16SpecialNPC_TheRingBear_AskAboutRing_NPCQuest2--></T>
+                    <T>189267<!--AddToWorldSuperInteraction: add_To_World_Welcome_Wagon_FruitCake--></T>
+                    <T>119787<!--SocialSuperInteraction: social_Greet_Neighbor--></T>
+                    <T>233575<!--SuperInteraction: sim_GetOut_Target--></T>
+                    <T>376033<!--SocialSuperInteraction: SSI_EP16SpecialNPC_AskAboutLove_RomanticBlanket--></T>
+                    <T>376032<!--SocialSuperInteraction: SSI_EP16SpecialNPC_AskAboutLove_TriviaBox--></T>
+                    <T>376034<!--SocialSuperInteraction: SSI_EP16SpecialNPC_AskAboutLove_RelationshipCounseling--></T>
+                    <T>369775<!--SocialSuperInteraction: SSI_EP16SpecialNPC_PityHug--></T>
+                    <T>369941<!--SocialSuperInteraction: SSI_EP16SpecialNPC_AskAboutBearCostume--></T>
+                    <T>369922<!--SocialSuperInteraction: SSI_EP16SpecialNPC_AskAboutSadness--></T>
+                    <T>369774<!--SocialSuperInteraction: SSI_EP16SpecialNPC_AskAboutLove_Attraction--></T>
+                    <T>369920<!--SocialSuperInteraction: SSI_EP16SpecialNPC_AskAboutLove_CostumeBox--></T>
+                    <T>369919<!--SocialSuperInteraction: SSI_EP16SpecialNPC_AskAboutLove_Dating--></T>
+                    <T>369918<!--SocialSuperInteraction: SSI_EP16SpecialNPC_AskAboutLove_MatchmakingApp--></T>
+                    <T>369915<!--SocialSuperInteraction: SSI_EP16SpecialNPC_AskAboutLove_RelationshipExpectations--></T>
+                    <T>369917<!--SocialSuperInteraction: SSI_EP16SpecialNPC_AskAboutLove_RelationshipSatisfaction--></T>
+                    <T>369916<!--SocialSuperInteraction: SSI_EP16SpecialNPC_AskAboutLove_RomanceDynamics--></T>
+                    <T>240189<!--ImmediateSuperInteraction: immediate_RelPanel_FocusCamera--></T>
+                    <T>370087<!--ImmediateSuperInteraction: immediate_EP16SpecialNPC_CreateRing_Complete--></T>
+                    <T>370095<!--ImmediateSuperInteraction: immediate_EP16SpecialNPC_CreateRing_Quest1--></T>
+                    <T>370096<!--ImmediateSuperInteraction: immediate_EP16SpecialNPC_CreateRing_Quest2--></T>
+                  </L>
+                </U>
+              </V>
+            </U>
+          </V>
+          <E n="super_affordance_suppression_mode">USE_AFFORDANCE_COMPATIBILITY_AND_WHITELIST</E>
+        </U>
+      </V>
+      <V t="affordance_filters">
+        <U n="affordance_filters">
+          <V n="as_actor" t="enabled">
+            <U n="enabled">
+              <V n="social_filters" t="enabled">
+                <U n="enabled">
+                  <V n="mixer_affordance_filter" t="enabled">
+                    <V n="enabled" t="by_affordance_filter">
+                      <U n="by_affordance_filter">
+                        <V n="affordance_filter" t="literal">
+                          <U n="literal">
+                            <V n="default_inclusion" t="exclude_all" />
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </V>
+                </U>
+              </V>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T p="InGame\UI\Icons\Debug\missing_image.png" n="icon">2f7d0004:00000000:30f0846c783606f9</T>
+  <T n="mood_type">14643<!--Mood: Mood_Sad--></T>
+  <T n="mood_weight">50</T>
+  <T n="refresh_on_add">True</T>
+  <L n="static_commodity_to_add">
+    <T>373290<!--StaticCommodity: commodity_RoleAutonomy_EP16SpecialNPC_TheRingBear_HangOut_Anywhere--></T>
+  </L>
+  <T n="success_modifier">0</T>
+  <L n="super_affordances">
+    <T>370870<!--SocialSuperInteraction: EP16SpecialNPC_TheRingBear_AskAboutRing_NPCQuest1--></T>
+    <T>370878<!--SocialSuperInteraction: EP16SpecialNPC_TheRingBear_AskAboutRing_NPCQuest2--></T>
+    <T>376033<!--SocialSuperInteraction: SSI_EP16SpecialNPC_AskAboutLove_RomanticBlanket--></T>
+    <T>376032<!--SocialSuperInteraction: SSI_EP16SpecialNPC_AskAboutLove_TriviaBox--></T>
+    <T>376034<!--SocialSuperInteraction: SSI_EP16SpecialNPC_AskAboutLove_RelationshipCounseling--></T>
+    <T>369774<!--SocialSuperInteraction: SSI_EP16SpecialNPC_AskAboutLove_Attraction--></T>
+    <T>369920<!--SocialSuperInteraction: SSI_EP16SpecialNPC_AskAboutLove_CostumeBox--></T>
+    <T>369919<!--SocialSuperInteraction: SSI_EP16SpecialNPC_AskAboutLove_Dating--></T>
+    <T>369918<!--SocialSuperInteraction: SSI_EP16SpecialNPC_AskAboutLove_MatchmakingApp--></T>
+    <T>369915<!--SocialSuperInteraction: SSI_EP16SpecialNPC_AskAboutLove_RelationshipExpectations--></T>
+    <T>369917<!--SocialSuperInteraction: SSI_EP16SpecialNPC_AskAboutLove_RelationshipSatisfaction--></T>
+    <T>369916<!--SocialSuperInteraction: SSI_EP16SpecialNPC_AskAboutLove_RomanceDynamics--></T>
+    <T>369775<!--SocialSuperInteraction: SSI_EP16SpecialNPC_PityHug--></T>
+    <T>369941<!--SocialSuperInteraction: SSI_EP16SpecialNPC_AskAboutBearCostume--></T>
+    <T>369922<!--SocialSuperInteraction: SSI_EP16SpecialNPC_AskAboutSadness--></T>
+    <T>370087<!--ImmediateSuperInteraction: immediate_EP16SpecialNPC_CreateRing_Complete--></T>
+    <T>370095<!--ImmediateSuperInteraction: immediate_EP16SpecialNPC_CreateRing_Quest1--></T>
+    <T>370096<!--ImmediateSuperInteraction: immediate_EP16SpecialNPC_CreateRing_Quest2--></T>
+  </L>
+  <T n="suppress_social_front_page_when_targeted">True</T>
+  <L n="target_super_affordances">
+    <U>
+      <T n="affordance">373288<!--SuperInteraction: EP16SpecialNPC_TheRingBear_HangOut_BearRug--></T>
+      <V n="object_filter" t="filter_by_tags">
+        <U n="filter_by_tags">
+          <L n="tags">
+            <E>Func_RomanticBlanket_Bear</E>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <T n="affordance">373291<!--SuperInteraction: eP16SpecialNPC_TheRingBear_HangOut_StuffedBear--></T>
+      <V n="object_filter" t="filter_by_tags">
+        <U n="filter_by_tags">
+          <L n="tags">
+            <E>Func_Bear</E>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <T n="affordance">370593<!--SuperInteraction: EP16SpecialNPC_TheRingBear_Rummage--></T>
+      <V n="object_filter" t="filter_by_tags">
+        <U n="filter_by_tags">
+          <L n="tags">
+            <E>Func_TrashCan_Outdoor</E>
+          </L>
+        </U>
+      </V>
+    </U>
+  </L>
+  <T n="ui_sort_order">1</T>
+  <T n="visible">False</T>
+  <V n="walkstyle" t="disabled" />
+</I>

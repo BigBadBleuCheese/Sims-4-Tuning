@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalObjectInteraction" i="situation_goal" m="situations.situation_goal_object_interaction" n="goal_CAD_Interaction_Dance" s="364704">
+  <T n="_cooldown">45</T>
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T n="enabled" p="InGame\UI\Icons\Events\EventGoal_DanceZoomba.png">2f7d0004:00000000:8d90fa622ba4da3c</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x895DB483<!--String: "Dance"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0x21FB618D<!--String: "Use a stereo or dance floor to dance."--></T>
+      </V>
+    </U>
+  </V>
+  <U n="_goal_test">
+    <L n="affordances">
+      <T>14316<!--MixerInteraction: stereo_danceActive--></T>
+      <T>14317<!--MixerInteraction: stereo_dancePassive--></T>
+      <T>121608<!--MixerInteraction: mixer_Bonfire_Dance_Passive--></T>
+      <T>334364<!--MixerInteraction: mixer_Bonfire_Dance_Passive_Actor--></T>
+      <T>115870<!--MixerInteraction: solo_dancePassive--></T>
+      <T>296047<!--SuperInteraction: pairedDancing_MoveToDanceFloor_Teens--></T>
+      <T>128141<!--MixerInteraction: dance_skill_Passive_1_Low--></T>
+      <T>128189<!--MixerInteraction: dance_skill_Passive_2_Medium--></T>
+      <T>128142<!--MixerInteraction: dance_skill_Passive_3_High--></T>
+      <T>175378<!--MixerInteraction: dance_LocalCultureSkill_PassiveActions--></T>
+      <T>121607<!--MixerInteraction: mixer_Bonfire_Dance_Active--></T>
+      <T>268058<!--SocialObjectSuperInteraction: sI_AnimalObjects_Dance_AnimalEnthusiast--></T>
+      <T>129624<!--SuperInteraction: rallyables_GoToBonFireDance--></T>
+      <T>107935<!--MixerInteraction: mixer_DanceWithMannequin_Active--></T>
+      <T>107936<!--MixerInteraction: mixer_DanceWithMannequin_Passive--></T>
+      <T>334363<!--MixerInteraction: mixer_Bonfire_Dance_Active_Actor--></T>
+      <T>115871<!--MixerInteraction: solo_danceActive--></T>
+      <T>280377<!--SuperInteraction: paireddancing_MoveToDanceFloor--></T>
+      <T>147361<!--MixerInteraction: stereo_Toddlers_DanceActive_Clap--></T>
+      <T>147362<!--MixerInteraction: stereo_Toddlers_DanceActive_Spin--></T>
+      <T>147360<!--MixerInteraction: stereo_Toddlers_DanceActive_WaveHands--></T>
+      <T>370725<!--SuperInteraction: sI_RomanticVenue_SeductiveDance--></T>
+      <T>370727<!--MixerInteraction: romanticVenue_Mixers_SeductiveDance_Idle--></T>
+      <T>370728<!--MixerInteraction: romanticVenue_Mixers_SeductiveDance_SeductiveDance--></T>
+      <T>128199<!--SuperInteraction: mirrorFloor_PracticeDancing--></T>
+      <T>283976<!--SocialMixerInteraction: socialMixerInteraction_PairedDancing_SwayIdle--></T>
+      <T>286033<!--SocialSuperInteraction: social_PairedDancing_Staging--></T>
+    </L>
+    <V n="running_time" t="enabled">
+      <T n="enabled">1</T>
+    </V>
+    <L n="tags">
+      <E>Interaction_StereoDance</E>
+      <E>Interaction_Skill_Dancing</E>
+    </L>
+    <E n="test_event">InteractionUpdate</E>
+  </U>
+  <L n="_post_tests">
+    <V t="situation_job">
+      <U n="situation_job">
+        <L n="situation_jobs">
+          <T>365353<!--SituationJob: job_CAD_Actor_Date_Adult--></T>
+          <T>365354<!--SituationJob: job_CAD_Actor_Date_Teen--></T>
+          <T>365360<!--SituationJob: job_CAD_Target_Hangout--></T>
+          <T>365361<!--SituationJob: job_CAD_Target_Hangout_AdditionalGuest--></T>
+          <T>365356<!--SituationJob: job_CAD_Target_Date_Adult--></T>
+          <T>365357<!--SituationJob: job_CAD_Target_Date_Adult_AdditionalDate--></T>
+          <T>365358<!--SituationJob: job_CAD_Target_Date_Teen--></T>
+          <T>365359<!--SituationJob: job_CAD_Target_Date_Teen_AdditionalDate--></T>
+          <T>376785<!--SituationJob: job_CAD_Actor_Date_Adult_BlindDate--></T>
+          <T>376786<!--SituationJob: job_CAD_Actor_Date_Adult_BlindDate_Catfish--></T>
+          <T>374485<!--SituationJob: job_CAD_Target_Date_Adult_BlindDate--></T>
+          <T>375208<!--SituationJob: job_CAD_Target_Date_Adult_BlindDate_Catfish--></T>
+          <T>379086<!--SituationJob: job_CAD_Actor_Date_Recovery--></T>
+          <T>379088<!--SituationJob: job_CAD_Actor_Date_Teen_Recovery--></T>
+          <T>375557<!--SituationJob: job_CAD_Target_Date_Teen_RecoveryDate--></T>
+          <T>375556<!--SituationJob: job_CAD_Target_Date_Adult_RecoveryDate--></T>
+          <T>365355<!--SituationJob: job_CAD_Actor_Hangout--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T n="_score">30</T>
+  <L n="_tested_score_overrides">
+    <U>
+      <T n="score">45</T>
+      <L n="tests">
+        <V t="buff">
+          <U n="buff">
+            <V n="whitelist" t="enabled">
+              <L n="enabled">
+                <T>351456<!--Buff: buff_Gemology_FireOpal_DateSuccess--></T>
+              </L>
+            </V>
+          </U>
+        </V>
+      </L>
+    </U>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+</I>

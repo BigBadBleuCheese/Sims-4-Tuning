@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="recreationTable_puzzles_replacePiece" s="317699">
+  <V n="_forwarding" t="Forward" />
+  <V n="_saveable" t="enabled" />
+  <T n="_super_affordance_can_share_target">True</T>
+  <T n="allow_autonomous">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">308059<!--AnimationElement: recreationTable_puzzles_crafting_replacePiece--></T>
+      </U>
+    </U>
+  </V>
+  <V n="basic_reserve_object" t="disabled" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x84343AD<!--String: "Return Stolen Piece"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="basic_extras">
+          <V t="balloon">
+            <U n="balloon">
+              <L n="balloon_choices">
+                <U>
+                  <V n="item" t="balloon_icon">
+                    <U n="balloon_icon">
+                      <V n="icon" t="resource_key">
+                        <U n="resource_key">
+                          <T n="key" p="InEP13\UI\Icons\Headlines\headline_Replaceapiece.png">2f7d0004:00000000:dfe00ee55846ace1</T>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </L>
+              <L n="balloon_target">
+                <E>Actor</E>
+              </L>
+            </U>
+          </V>
+        </L>
+        <L n="loot_list">
+          <T>317700<!--LootActions: loot_recreationTable_puzzles_returnPiece--></T>
+        </L>
+      </U>
+    </U>
+  </V>
+  <U n="posture_preferences">
+    <T n="prefer_clicked_parts">False</T>
+  </U>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="state">
+      <U n="state">
+        <E n="operator">NOTEQUAL</E>
+        <T n="value">307779<!--ObjectStateValue: recreationTable_puzzles_crafting_notstarted--></T>
+        <E n="who">ObjectParent</E>
+      </U>
+    </V>
+    <V t="object_relationship">
+      <U n="object_relationship">
+        <V n="relationship_status" t="relationship_range">
+          <U n="relationship_range">
+            <U n="value_interval">
+              <T n="lower_bound">100</T>
+            </U>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="posture">
+      <U n="posture">
+        <L n="required_postures">
+          <T>15535<!--Posture: posture_Sit--></T>
+        </L>
+      </U>
+    </V>
+    <V t="distance">
+      <U n="distance">
+        <U n="distance_threshold">
+          <E n="comparison">LESS_OR_EQUAL</E>
+          <T n="value">1.25</T>
+        </U>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

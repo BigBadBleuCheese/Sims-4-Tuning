@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="GameObject" i="object" m="objects.game_object" n="object_HorseManure_OutstandingQuality" s="322017">
+  <U n="_components">
+    <V n="carryable" t="enabled" />
+    <V n="consumable" t="enabled">
+      <U n="enabled">
+        <L n="consume_affordances">
+          <T>159184<!--SuperInteraction: pet_Poop_Eat--></T>
+          <T>176894<!--SuperInteraction: pet_Poop_Eat_SmallDog--></T>
+        </L>
+        <L n="consumption_statistics">
+          <V t="statistic_change">
+            <U n="statistic_change">
+              <T n="amount">40</T>
+              <T n="stat">151031<!--Commodity: commodity_Motive_PetDog_Hunger--></T>
+              <L n="subject">
+                <E>Actor</E>
+              </L>
+              <L n="tests">
+                <L>
+                  <V t="sim_info">
+                    <U n="sim_info">
+                      <V n="species" t="specified">
+                        <U n="specified">
+                          <L n="species">
+                            <E>DOG</E>
+                          </L>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+          </V>
+          <V t="statistic_change">
+            <U n="statistic_change">
+              <T n="amount">-25</T>
+              <T n="stat">151032<!--Commodity: commodity_Motive_PetDog_Bladder--></T>
+              <L n="subject">
+                <E>Actor</E>
+              </L>
+            </U>
+          </V>
+        </L>
+        <T n="consumption_turns">1</T>
+        <U n="fitness_info">
+          <T n="calories">250</T>
+        </U>
+      </U>
+    </V>
+    <V n="focus" t="enabled">
+      <U n="enabled">
+        <V n="_focus_score" t="globally">
+          <U n="globally">
+            <E n="base">LOW</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V n="inventory_item" t="enabled">
+      <U n="enabled">
+        <V n="create_notebook_when_added_to_inventory" t="enabled">
+          <U n="enabled">
+            <V n="notebook_entry" t="create_entry_from_participant_definition">
+              <U n="create_entry_from_participant_definition">
+                <T n="reference_notebook_entry">333422<!--NotebookEntryCountryItem: notebookEntryCountryItem_HorseManure_OutstandingQuality--></T>
+              </U>
+            </V>
+            <U n="notifications">
+              <V n="unlocked_success_notification" t="enabled">
+                <V n="enabled" t="literal">
+                  <U n="literal">
+                    <V n="icon" t="enabled">
+                      <V n="enabled" t="resource_key">
+                        <U n="resource_key">
+                          <T n="key" p="InEP14\UI\Icons\Notebook\notebook_ranchJournal.png">2f7d0004:00000000:42a0cb5afea6dd7a</T>
+                        </U>
+                      </V>
+                    </V>
+                    <V n="primary_icon_response" t="enabled">
+                      <U n="enabled">
+                        <V n="response_command" t="enabled">
+                          <V n="enabled" t="literal">
+                            <U n="literal">
+                              <L n="arguments">
+                                <V t="special_command_data" />
+                                <V t="integer">
+                                  <U n="integer">
+                                    <T n="arg_value">118785</T>
+                                  </U>
+                                </V>
+                                <V t="integer">
+                                  <U n="integer">
+                                    <T n="arg_value">118785</T>
+                                  </U>
+                                </V>
+                              </L>
+                              <T n="command">notebook.generate_notebook</T>
+                            </U>
+                          </V>
+                        </V>
+                        <E n="ui_request">SEND_COMMAND</E>
+                      </U>
+                    </V>
+                    <V n="text" t="single">
+                      <T n="single">0x31179283<!--String: "{0.SimFirstName} has learned about {1.ObjectName|enAn}."--></T>
+                    </V>
+                    <V n="text_tokens" t="enabled">
+                      <U n="enabled">
+                        <L n="tokens">
+                          <V t="participant_type" />
+                          <V t="participant_type">
+                            <U n="participant_type">
+                              <V n="objects" t="from_participant">
+                                <U n="from_participant">
+                                  <E n="participant">Object</E>
+                                </U>
+                              </V>
+                            </U>
+                          </V>
+                        </L>
+                      </U>
+                    </V>
+                    <L n="ui_responses">
+                      <U>
+                        <V n="response_command" t="enabled">
+                          <V n="enabled" t="literal">
+                            <U n="literal">
+                              <L n="arguments">
+                                <V t="special_command_data" />
+                                <V t="integer">
+                                  <U n="integer">
+                                    <T n="arg_value">118785</T>
+                                  </U>
+                                </V>
+                                <V t="integer">
+                                  <U n="integer">
+                                    <T n="arg_value">118785</T>
+                                  </U>
+                                </V>
+                              </L>
+                              <T n="command">notebook.generate_notebook</T>
+                            </U>
+                          </V>
+                        </V>
+                        <T n="text">0xF3022429<!--String: "Open Notebook"--></T>
+                        <E n="ui_request">SEND_COMMAND</E>
+                      </U>
+                    </L>
+                  </U>
+                </V>
+              </V>
+            </U>
+          </U>
+        </V>
+        <V n="no_carry_add_to_sim_inventory_affordances" t="OVERRIDE">
+          <L n="OVERRIDE">
+            <T>184685<!--SuperInteraction: si_SwipeIntoSimInventory_NoOwnership--></T>
+          </L>
+        </V>
+        <T n="remove_from_npc_inventory">True</T>
+        <T n="skip_carry_pose">True</T>
+        <L n="valid_inventory_types">
+          <E>SIM</E>
+          <E>TRASHCAN</E>
+          <E>STORAGE_CHEST_DORM</E>
+          <E>STORAGE_CHEST</E>
+        </L>
+      </U>
+    </V>
+    <V n="retail_component" t="enabled">
+      <V n="enabled" t="reference">
+        <T n="reference">115301<!--RetailComponent: retailComponent_Default_LowAppeal--></T>
+      </V>
+    </V>
+    <V n="state" t="enabled">
+      <U n="enabled">
+        <L n="states">
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">257974<!--ObjectStateValue: vacuum_Destroy_Values_NotDestroying--></T>
+              </U>
+              <U>
+                <T n="key">257975<!--ObjectStateValue: vacuum_Destroy_Values_Destroying--></T>
+                <U n="value">
+                  <V n="replace_object" t="enabled" />
+                </U>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">257974<!--ObjectStateValue: vacuum_Destroy_Values_NotDestroying--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">39478<!--CommodityBasedObjectStateValue: FireState_Burn_Incinerate_Burning--></T>
+              </U>
+              <U>
+                <T n="key">39479<!--CommodityBasedObjectStateValue: FireState_Burn_Incinerate--></T>
+              </U>
+              <U>
+                <T n="key">39612<!--CommodityBasedObjectStateValue: FireState_Burn_Incinerate_Not_Burning--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">39612<!--CommodityBasedObjectStateValue: FireState_Burn_Incinerate_Not_Burning--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">131794<!--ObjectStateValue: Kelpto_Stolen_Object--></T>
+              </U>
+              <U>
+                <T n="key">131795<!--ObjectStateValue: Klepto_Not_Stolen_Object--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">131795<!--ObjectStateValue: Klepto_Not_Stolen_Object--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">98745<!--ObjectStateValue: GenericFX_On--></T>
+                <U n="value">
+                  <V n="vfx_state" t="apply_new_value">
+                    <V n="apply_new_value" t="start_vfx">
+                      <V n="start_vfx" t="single_effect">
+                        <U n="single_effect">
+                          <T n="effect_name">ep14_manure_stink_high</T>
+                        </U>
+                      </V>
+                    </V>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">98746<!--ObjectStateValue: GenericFX_Off--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">98745<!--ObjectStateValue: GenericFX_On--></T>
+            </V>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V n="tooltip_component" t="enabled">
+      <U n="enabled">
+        <L n="custom_tooltips">
+          <U>
+            <L n="object_tests">
+              <L>
+                <V t="in_inventory">
+                  <U n="in_inventory">
+                    <L n="inventory_types">
+                      <E>SIM</E>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+            <L n="tooltip_fields">
+              <U>
+                <E n="key">recipe_description</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0xE2E9872D<!--String: "{0.ObjectDescription}"--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">Object</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <E n="key">recipe_name</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x4F918F8<!--String: "{0.ObjectName}"--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">Object</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <E n="key">simoleon_text</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x35A942D0<!--String: "{0.Money}"--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="object_property" />
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+            </L>
+          </U>
+        </L>
+      </U>
+    </V>
+  </U>
+  <L n="_super_affordances">
+    <T>13328<!--ImmediateSuperInteraction: debug_Reset--></T>
+    <T>13326<!--ImmediateSuperInteraction: debug_ObjectDestroy--></T>
+    <T>103888<!--ImmediateSuperInteraction: cheat_set_as_head--></T>
+    <T>176856<!--SuperInteraction: pet_Poop_Sniff_Cat--></T>
+    <T>176865<!--SuperInteraction: pet_Poop_Sniff_LargeDog--></T>
+    <T>159185<!--SuperInteraction: pet_Poop_Sniff--></T>
+    <T>322067<!--AggregateSuperInteraction: collect_Trash_HorseManure_OnLot_Aggregate--></T>
+    <T>106859<!--SuperInteraction: simRay_Transform_Object--></T>
+    <T>144099<!--SuperInteraction: generic_Object_Toddler_Check_Out--></T>
+  </L>
+  <U n="recycling_data">
+    <L n="recycling_values">
+      <U>
+        <E n="Bucks Type">RecycleBitsBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+      <U>
+        <E n="Bucks Type">RecyclePiecesBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+    </L>
+  </U>
+</I>

@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Buff" i="buff" m="buffs.buff" n="buff_CostumeBox_Costume_BobaFett" s="361432">
+  <L n="_loot_on_removal">
+    <T>362791<!--LootActions: loot_CostumeBox_RemoveTimerBuff--></T>
+  </L>
+  <V n="_temporary_commodity_info" t="enabled">
+    <U n="enabled">
+      <L n="categories">
+        <E />
+      </L>
+      <T n="max_duration">370</T>
+    </U>
+  </V>
+  <V n="appearance_modifier" t="enabled">
+    <U n="enabled">
+      <L n="appearance_modifiers">
+        <L>
+          <U>
+            <V n="modifier" t="generate_outfit">
+              <U n="generate_outfit">
+                <T n="apply_before_other_modifiers">False</T>
+                <U n="outfit_generator">
+                  <L n="body_type_chance_overrides">
+                    <U>
+                      <E n="key">FULL_BODY</E>
+                    </U>
+                    <U>
+                      <E n="key">HAT</E>
+                    </U>
+                    <U>
+                      <E n="key">LOWER_BODY</E>
+                    </U>
+                    <U>
+                      <E n="key">SHOES</E>
+                    </U>
+                    <U>
+                      <E n="key">UPPER_BODY</E>
+                    </U>
+                  </L>
+                  <L n="body_type_match_not_found_policy">
+                    <U>
+                      <E n="key">FULL_BODY</E>
+                      <E n="value">MATCH_NOT_FOUND_RANDOMIZE</E>
+                    </U>
+                    <U>
+                      <E n="key">LOWER_BODY</E>
+                      <E n="value">MATCH_NOT_FOUND_RANDOMIZE</E>
+                    </U>
+                    <U>
+                      <E n="key">UPPER_BODY</E>
+                      <E n="value">MATCH_NOT_FOUND_RANDOMIZE</E>
+                    </U>
+                  </L>
+                  <L n="tags">
+                    <E>Uniform_Costume_BobaFett</E>
+                  </L>
+                </U>
+                <V n="outfit_type_compatibility" t="enabled">
+                  <U n="enabled">
+                    <V n="blacklist" t="specify">
+                      <U n="specify">
+                        <L n="blacklist">
+                          <E>SLEEP</E>
+                          <E>SWIMWEAR</E>
+                          <E>BATHING</E>
+                          <E>SPECIAL</E>
+                        </L>
+                      </U>
+                    </V>
+                    <V n="whitelist" t="specify" />
+                  </U>
+                </V>
+                <T n="should_refresh_thumbnail">True</T>
+              </U>
+            </V>
+          </U>
+        </L>
+      </L>
+      <T n="apply_to_all_outfits">False</T>
+      <E n="priority">COSTUME_BOX</E>
+    </U>
+  </V>
+  <T p="InGame\Audio\Stings\sting_buff_gain.propx" n="audio_sting_on_add">39b2aa4a:00000000:8af8b916cf64c646</T>
+  <T p="InGame\Audio\Stings\sting_buff_loss.propx" n="audio_sting_on_remove">39b2aa4a:00000000:3bf33216a25546ea</T>
+  <T p="InGame\UI\Icons\Debug\missing_image.png" n="icon">2f7d0004:00000000:30f0846c783606f9</T>
+  <T n="report_telemetry">True</T>
+  <L n="super_affordances">
+    <T>384543<!--SuperInteraction: costumeBox_RemoveCostume_FromSim--></T>
+  </L>
+  <L n="tags">
+    <E>Buff_CostumeBox_AppearanceModifier</E>
+  </L>
+  <T n="visible">False</T>
+</I>

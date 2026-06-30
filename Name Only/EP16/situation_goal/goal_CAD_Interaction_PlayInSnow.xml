@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalObjectInteraction" i="situation_goal" m="situations.situation_goal_object_interaction" n="goal_CAD_Interaction_PlayInSnow" s="357998">
+  <T n="_cooldown">45</T>
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T n="enabled" p="InEP16\UI\Icons\Events\EventGoal_MakeSnowAngel.png">2f7d0004:00000000:c7cd5116c2135c09</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x1E391B46<!--String: "Play In Snow"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0x6450CACA<!--String: "Try snowball fights, making snow angels, skiing, or sledding."--></T>
+      </V>
+    </U>
+  </V>
+  <U n="_goal_test">
+    <V n="running_time" t="enabled">
+      <T n="enabled">1</T>
+    </V>
+    <L n="tags">
+      <E>Interaction_CAD_PlayInSnow</E>
+    </L>
+    <E n="test_event">InteractionUpdate</E>
+  </U>
+  <L n="_post_tests">
+    <V t="situation_job">
+      <U n="situation_job">
+        <L n="situation_jobs">
+          <T>365353<!--SituationJob: job_CAD_Actor_Date_Adult--></T>
+          <T>365354<!--SituationJob: job_CAD_Actor_Date_Teen--></T>
+          <T>365360<!--SituationJob: job_CAD_Target_Hangout--></T>
+          <T>365361<!--SituationJob: job_CAD_Target_Hangout_AdditionalGuest--></T>
+          <T>365356<!--SituationJob: job_CAD_Target_Date_Adult--></T>
+          <T>365357<!--SituationJob: job_CAD_Target_Date_Adult_AdditionalDate--></T>
+          <T>365358<!--SituationJob: job_CAD_Target_Date_Teen--></T>
+          <T>365359<!--SituationJob: job_CAD_Target_Date_Teen_AdditionalDate--></T>
+          <T>376785<!--SituationJob: job_CAD_Actor_Date_Adult_BlindDate--></T>
+          <T>376786<!--SituationJob: job_CAD_Actor_Date_Adult_BlindDate_Catfish--></T>
+          <T>374485<!--SituationJob: job_CAD_Target_Date_Adult_BlindDate--></T>
+          <T>375208<!--SituationJob: job_CAD_Target_Date_Adult_BlindDate_Catfish--></T>
+          <T>379086<!--SituationJob: job_CAD_Actor_Date_Recovery--></T>
+          <T>379088<!--SituationJob: job_CAD_Actor_Date_Teen_Recovery--></T>
+          <T>375557<!--SituationJob: job_CAD_Target_Date_Teen_RecoveryDate--></T>
+          <T>375556<!--SituationJob: job_CAD_Target_Date_Adult_RecoveryDate--></T>
+          <T>365355<!--SituationJob: job_CAD_Actor_Hangout--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T n="_score">30</T>
+  <L n="_tested_score_overrides">
+    <U>
+      <T n="score">45</T>
+      <L n="tests">
+        <V t="buff">
+          <U n="buff">
+            <V n="whitelist" t="enabled">
+              <L n="enabled">
+                <T>351456<!--Buff: buff_Gemology_FireOpal_DateSuccess--></T>
+              </L>
+            </V>
+          </U>
+        </V>
+      </L>
+    </U>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+</I>

@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="AdventureMoment" i="snippet" m="snippets" n="adventureMoment_DynastyMarriageChoice_TargetDynastyMember" s="490695">
+  <U n="value">
+    <L n="_finish_actions">
+      <U>
+        <L n="action_results">
+          <U>
+            <L n="loot_actions">
+              <T>490703<!--LootActions: loot_Dynasty_Marriage_ActorJoinTargetDynasty--></T>
+            </L>
+          </U>
+        </L>
+        <L n="availability_tests">
+          <L>
+            <V t="test_set_reference">
+              <T n="test_set_reference">471429<!--TestSetInstance: testSet_Dynasty_Membership_InviteWillingness_Actor--></T>
+            </V>
+          </L>
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="npc" t="enabled">
+                  <T n="enabled">False</T>
+                </V>
+                <E n="who">TargetDynastyHead</E>
+              </U>
+            </V>
+          </L>
+          <L>
+            <V t="identity">
+              <U n="identity">
+                <E n="subject_a">TargetSim</E>
+                <E n="subject_b">TargetDynastyHead</E>
+              </U>
+            </V>
+          </L>
+        </L>
+        <V n="disabled_text" t="enabled">
+          <T n="enabled">0x2577C3D2<!--String: "The Dynasty Head is not willing to invite {0.SimFirstName}."--></T>
+        </V>
+        <V n="display_text" t="single">
+          <T n="single">0x9328C70B<!--String: "Invite {0.SimFirstName}"--></T>
+        </V>
+      </U>
+      <U>
+        <V n="display_text" t="single">
+          <T n="single">0xD078441A<!--String: "Cancel"--></T>
+        </V>
+      </U>
+    </L>
+    <V n="_visibility" t="show_dialog">
+      <U n="show_dialog">
+        <V n="text" t="single">
+          <T n="single">0x98927753<!--String: "Now that {0.SimFirstName} and {1.SimFirstName} are married, {0.SimFirstName} is eligible to join the {3.String} Dynasty. Would you like to invite {0.SimPronounObjective}? You can also decide later."--></T>
+        </V>
+        <V n="text_tokens" t="enabled">
+          <U n="enabled">
+            <L n="tokens">
+              <V t="participant_type" />
+              <V t="participant_type">
+                <U n="participant_type">
+                  <V n="objects" t="from_participant">
+                    <U n="from_participant">
+                      <E n="participant">TargetSim</E>
+                    </U>
+                  </V>
+                </U>
+              </V>
+              <V t="dynasty" />
+              <V t="dynasty">
+                <U n="dynasty">
+                  <E n="participant">TargetSim</E>
+                </U>
+              </V>
+            </L>
+          </U>
+        </V>
+        <V n="title" t="enabled">
+          <T n="enabled">0x54CD8E4<!--String: "Dynastic Marriage"--></T>
+        </V>
+      </U>
+    </V>
+  </U>
+</I>

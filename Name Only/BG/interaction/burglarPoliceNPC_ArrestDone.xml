@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="burglarPoliceNPC_ArrestDone" s="422006">
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Actor</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <T n="allow_user_directed">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">11808<!--AnimationElement: Social_Responses_Confident_CrossArms--></T>
+        <U n="overrides">
+          <V n="balloons" t="enabled">
+            <L n="enabled">
+              <U>
+                <L n="balloon_choices">
+                  <U>
+                    <V n="item" t="balloon_icon">
+                      <U n="balloon_icon">
+                        <V n="icon" t="resource_key">
+                          <U n="resource_key">
+                            <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_thumbup.png">2f7d0004:00000000:f8fd1d05fbeac837</T>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </U>
+                  <U>
+                    <V n="item" t="balloon_icon">
+                      <U n="balloon_icon">
+                        <V n="icon" t="resource_key">
+                          <U n="resource_key">
+                            <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_policecar.png">2f7d0004:00000000:9ec27f278bdd8ad0</T>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </U>
+                  <U>
+                    <V n="item" t="balloon_icon">
+                      <U n="balloon_icon">
+                        <V n="icon" t="resource_key">
+                          <U n="resource_key">
+                            <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_handcuffs.png">2f7d0004:00000000:5ce5608ec9deb5aa</T>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </U>
+                </L>
+                <L n="balloon_target">
+                  <E>Actor</E>
+                </L>
+              </U>
+            </L>
+          </V>
+        </U>
+      </U>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="notification">
+      <U n="notification">
+        <V n="dialog" t="single">
+          <V n="single" t="literal">
+            <U n="literal">
+              <V n="icon" t="enabled">
+                <V n="enabled" t="participant" />
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x3459B3E2<!--String: "Well, that's a job well done. We caught the burglar red-handed. Your vigilance kept the neighborhood safe—excellent work!"--></T>
+              </V>
+              <E n="visual_type">SPEECH</E>
+            </U>
+          </V>
+        </V>
+        <T n="limit_to_one_notification">True</T>
+        <E n="recipient_subject">ActiveHousehold</E>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+    <V t="buff_fire_and_forget">
+      <U n="buff_fire_and_forget">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x626D0DC4<!--String: "(From Burglar Being Arrested)"--></T>
+          </V>
+          <T n="buff_type">430108<!--Buff: buff_Burglar_PoliceWon--></T>
+        </U>
+        <E n="participant">ActiveHousehold</E>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>435041<!--LootActions: loot_Burglar_PoliceCleanupBuffs--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xFE983BAD<!--String: "Careers"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">ACTOR</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="situation_job_test">
+      <U n="situation_job_test">
+        <L n="situation_jobs">
+          <T>421826<!--SituationJob: job_Police--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

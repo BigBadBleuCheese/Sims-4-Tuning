@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="superInteraction_Apothecary_EmotionStone_BottleMyMood" s="442993">
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Object</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <T n="allow_from_sim_inventory">True</T>
+  <T n="allow_from_world">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">442990<!--AnimationElement: Apothecary_EmotionStone_BottleMyMood--></T>
+      </U>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>435485<!--LootActions: lootActions_FairyOccult_Ability_BottleMood_Actor_Angry--></T>
+          <T>435561<!--LootActions: lootActions_FairyOccult_Ability_BottleMood_Actor_Bored--></T>
+          <T>435562<!--LootActions: lootActions_FairyOccult_Ability_BottleMood_Actor_Confident--></T>
+          <T>435558<!--LootActions: lootActions_FairyOccult_Ability_BottleMood_Actor_Embarrassed--></T>
+          <T>435563<!--LootActions: lootActions_FairyOccult_Ability_BottleMood_Actor_Energized--></T>
+          <T>435494<!--LootActions: lootActions_FairyOccult_Ability_BottleMood_Actor_Flirty--></T>
+          <T>435556<!--LootActions: lootActions_FairyOccult_Ability_BottleMood_Actor_Focused--></T>
+          <T>435492<!--LootActions: lootActions_FairyOccult_Ability_BottleMood_Actor_Happy--></T>
+          <T>435493<!--LootActions: lootActions_FairyOccult_Ability_BottleMood_Actor_Inspired--></T>
+          <T>435555<!--LootActions: lootActions_FairyOccult_Ability_BottleMood_Actor_Playful--></T>
+          <T>435557<!--LootActions: lootActions_FairyOccult_Ability_BottleMood_Actor_Sad--></T>
+          <T>435560<!--LootActions: lootActions_FairyOccult_Ability_BottleMood_Actor_Scared--></T>
+          <T>435559<!--LootActions: lootActions_FairyOccult_Ability_BottleMood_Actor_Tense--></T>
+          <T>438164<!--LootActions: lootActions_FairyOccult_Ability_BottleMood_RemoveMood--></T>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>457977<!--LootActions: loot_Apothecary_EmotionStone_Brokenness--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="basic_focus" t="tunable_focus">
+    <U n="tunable_focus">
+      <T n="layer">3</T>
+      <T n="score">5</T>
+      <L n="subject">
+        <E>Object</E>
+      </L>
+    </U>
+  </V>
+  <T n="category">442988<!--PieMenuCategory: pieMenuCategory_Apothecary--></T>
+  <V n="category_on_forwarded" t="enabled">
+    <T n="enabled">442988<!--PieMenuCategory: pieMenuCategory_Apothecary--></T>
+  </V>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x2B41F80F<!--String: "Bottle Emotion"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T n="ignore_group_socials">True</T>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+    <E>Func_EmotionStone</E>
+  </L>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T n="key" p="InEP19\UI\Icons\PieMenu\Skills\skill_Apothecary_piemenu.png">2f7d0004:00000000:77bf7a8128bd17e5</T>
+      </U>
+    </V>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">True</T>
+  </U>
+  <T n="relationship_scoring">False</T>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">472928<!--TestSetInstance: testSetInstance_DeepWaterPostures_Disallow_Actor--></T>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">435673<!--TestSetInstance: testSetInstance_FairyOccult_BottleMyMood--></T>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

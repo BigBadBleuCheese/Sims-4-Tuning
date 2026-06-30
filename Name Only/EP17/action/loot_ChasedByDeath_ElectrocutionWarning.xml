@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_ChasedByDeath_ElectrocutionWarning" s="414199">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InEP17\UI\Icons\Headlines\headline_ChasedByDeath.png">2f7d0004:00000000:f9e825caf1d9b161</T>
+                </U>
+              </V>
+            </V>
+            <V n="participant" t="enabled">
+              <E n="enabled">Actor</E>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant" />
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xA431A541<!--String: "Since {0.SimFirstName} is Chased by Death, being more cautious around electrical objects would be prudent."--></T>
+            </V>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">8938<!--Commodity: Commodity_Death_Electrocution--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">LESS</E>
+                    <T n="value">100</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="trait">
+              <U n="trait">
+                <L n="whitelist_traits">
+                  <T>384182<!--Trait: trait_ChasedByDeath--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

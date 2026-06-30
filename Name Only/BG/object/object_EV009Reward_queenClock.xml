@@ -1,0 +1,1006 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="GameObject" i="object" m="objects.game_object" n="object_EV009Reward_queenClock" s="501720">
+  <U n="_components">
+    <V n="focus" t="enabled">
+      <U n="enabled">
+        <V n="_focus_score" t="globally">
+          <U n="globally">
+            <E n="base">LOW</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V n="inventory_item" t="enabled" />
+    <V n="retail_component" t="enabled">
+      <V n="enabled" t="reference">
+        <T n="reference">115301<!--RetailComponent: retailComponent_Default_LowAppeal--></T>
+      </V>
+    </V>
+    <V n="state" t="enabled">
+      <U n="enabled">
+        <L n="state_triggers">
+          <U>
+            <L n="at_states">
+              <T>505960<!--ObjectStateValue: queenClock_stateValue_Maintain_VFX_Off--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>505969<!--ObjectStateValue: queenClock_stateValue_Maintain_lvl_VFX_Off--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>501944<!--CommodityBasedObjectStateValue: queenClock_stateValues_Maintain_OnTime_Lvl1--></T>
+            </L>
+            <L n="prohibited_states">
+              <T>505960<!--ObjectStateValue: queenClock_stateValue_Maintain_VFX_Off--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>505959<!--ObjectStateValue: queenClock_stateValue_Maintain_lvl1_VFX_On--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>501945<!--CommodityBasedObjectStateValue: queenClock_stateValues_Maintain_OnTime_Lvl2--></T>
+            </L>
+            <L n="prohibited_states">
+              <T>505960<!--ObjectStateValue: queenClock_stateValue_Maintain_VFX_Off--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>505961<!--ObjectStateValue: queenClock_stateValue_Maintain_lvl2_VFX_On--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>501946<!--CommodityBasedObjectStateValue: queenClock_stateValues_Maintain_OnTime_Lvl3--></T>
+            </L>
+            <L n="prohibited_states">
+              <T>505960<!--ObjectStateValue: queenClock_stateValue_Maintain_VFX_Off--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>505963<!--ObjectStateValue: queenClock_stateValue_Maintain_lvl3_VFX_On--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>501947<!--CommodityBasedObjectStateValue: queenClock_stateValues_Maintain_offTime--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>505969<!--ObjectStateValue: queenClock_stateValue_Maintain_lvl_VFX_Off--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>501948<!--CommodityBasedObjectStateValue: queenClock_stateValues_Maintain_veryOffTime--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>505969<!--ObjectStateValue: queenClock_stateValue_Maintain_lvl_VFX_Off--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>77532<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Replace--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>39737<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Not_Burning--></T>
+              </L>
+            </V>
+          </U>
+        </L>
+        <L n="states">
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">131794<!--ObjectStateValue: Kelpto_Stolen_Object--></T>
+              </U>
+              <U>
+                <T n="key">131795<!--ObjectStateValue: Klepto_Not_Stolen_Object--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">131795<!--ObjectStateValue: Klepto_Not_Stolen_Object--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">501900<!--ObjectStateValue: queenClock_stateValue_chimeTimeSet_Off--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">501897<!--ObjectStateValue: queenClock_stateValue_chimeRing_On--></T>
+                <U n="value">
+                  <V n="broadcaster" t="apply_new_value">
+                    <V n="apply_new_value" t="start_broadcaster">
+                      <U n="start_broadcaster">
+                        <L n="broadcaster_types">
+                          <U>
+                            <T n="item">503885<!--Broadcaster: broadcaster_EV009_QueenClock_Chime--></T>
+                          </U>
+                        </L>
+                      </U>
+                    </V>
+                  </V>
+                  <V n="vfx_state" t="apply_new_value">
+                    <V n="apply_new_value" t="start_vfx">
+                      <V n="start_vfx" t="single_effect">
+                        <U n="single_effect">
+                          <T n="effect_name">ev009_clock_chime</T>
+                          <T n="play_immediate">True</T>
+                        </U>
+                      </V>
+                    </V>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">501898<!--ObjectStateValue: queenClock_stateValue_chimeRing_Off--></T>
+                <U n="value">
+                  <V n="broadcaster" t="apply_new_value" />
+                  <V n="vfx_state" t="apply_new_value" />
+                </U>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">501898<!--ObjectStateValue: queenClock_stateValue_chimeRing_Off--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">501944<!--CommodityBasedObjectStateValue: queenClock_stateValues_Maintain_OnTime_Lvl1--></T>
+              </U>
+              <U>
+                <T n="key">501945<!--CommodityBasedObjectStateValue: queenClock_stateValues_Maintain_OnTime_Lvl2--></T>
+              </U>
+              <U>
+                <T n="key">501946<!--CommodityBasedObjectStateValue: queenClock_stateValues_Maintain_OnTime_Lvl3--></T>
+              </U>
+              <U>
+                <T n="key">501947<!--CommodityBasedObjectStateValue: queenClock_stateValues_Maintain_offTime--></T>
+              </U>
+              <U>
+                <T n="key">501948<!--CommodityBasedObjectStateValue: queenClock_stateValues_Maintain_veryOffTime--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">501948<!--CommodityBasedObjectStateValue: queenClock_stateValues_Maintain_veryOffTime--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">505959<!--ObjectStateValue: queenClock_stateValue_Maintain_lvl1_VFX_On--></T>
+                <U n="value">
+                  <V n="vfx_state" t="apply_new_value">
+                    <V n="apply_new_value" t="start_vfx">
+                      <V n="start_vfx" t="single_effect">
+                        <U n="single_effect">
+                          <T n="effect_name">ev009_clock_stage1_sparkle</T>
+                          <T n="play_immediate">True</T>
+                        </U>
+                      </V>
+                    </V>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">505961<!--ObjectStateValue: queenClock_stateValue_Maintain_lvl2_VFX_On--></T>
+                <U n="value">
+                  <V n="vfx_state" t="apply_new_value">
+                    <V n="apply_new_value" t="start_vfx">
+                      <V n="start_vfx" t="single_effect">
+                        <U n="single_effect">
+                          <T n="effect_name">ev009_clock_stage2_sparkle</T>
+                          <T n="play_immediate">True</T>
+                        </U>
+                      </V>
+                    </V>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">505963<!--ObjectStateValue: queenClock_stateValue_Maintain_lvl3_VFX_On--></T>
+                <U n="value">
+                  <V n="vfx_state" t="apply_new_value">
+                    <V n="apply_new_value" t="start_vfx">
+                      <V n="start_vfx" t="single_effect">
+                        <U n="single_effect">
+                          <T n="effect_name">ev009_clock_stage3_sparkle</T>
+                          <T n="play_immediate">True</T>
+                        </U>
+                      </V>
+                    </V>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">505969<!--ObjectStateValue: queenClock_stateValue_Maintain_lvl_VFX_Off--></T>
+                <U n="value">
+                  <V n="vfx_state" t="apply_new_value" />
+                </U>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">505969<!--ObjectStateValue: queenClock_stateValue_Maintain_lvl_VFX_Off--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">505960<!--ObjectStateValue: queenClock_stateValue_Maintain_VFX_Off--></T>
+              </U>
+              <U>
+                <T n="key">505966<!--ObjectStateValue: queenClock_stateValue_Maintain_VFX_On--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">505966<!--ObjectStateValue: queenClock_stateValue_Maintain_VFX_On--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">39611<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change--></T>
+              </U>
+              <U>
+                <T n="key">39736<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Burning--></T>
+              </U>
+              <U>
+                <T n="key">39737<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Not_Burning--></T>
+              </U>
+              <U>
+                <T n="key">77532<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Replace--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">39737<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Not_Burning--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">35956<!--CommodityBasedObjectStateValue: Materialistic_Admired--></T>
+              </U>
+              <U>
+                <T n="key">35957<!--CommodityBasedObjectStateValue: Materialistic_YetToAdmire--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">35957<!--CommodityBasedObjectStateValue: Materialistic_YetToAdmire--></T>
+            </V>
+          </U>
+        </L>
+        <V n="timed_state_triggers" t="enabled">
+          <L n="enabled">
+            <U>
+              <T n="key">501897<!--ObjectStateValue: queenClock_stateValue_chimeRing_On--></T>
+              <U n="value">
+                <L n="ops">
+                  <U>
+                    <L n="states_to_trigger">
+                      <T>501898<!--ObjectStateValue: queenClock_stateValue_chimeRing_Off--></T>
+                    </L>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+        </V>
+      </U>
+    </V>
+    <V n="time_of_day_component" t="enabled">
+      <U n="enabled">
+        <L n="state_changes">
+          <U>
+            <T n="key">501734<!--ObjectState: queenClock_EV009_ChimeRing_OnOff--></T>
+            <L n="value">
+              <U>
+                <T n="start_time">1</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">501907<!--ObjectStateValue: queenClock_stateValue_ChimeTime_1AM--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">501897<!--ObjectStateValue: queenClock_stateValue_chimeRing_On--></T>
+              </U>
+              <U>
+                <T n="start_time">13</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">501908<!--ObjectStateValue: queenClock_stateValue_ChimeTime_1PM--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">501897<!--ObjectStateValue: queenClock_stateValue_chimeRing_On--></T>
+              </U>
+              <U>
+                <T n="start_time">2</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">501909<!--ObjectStateValue: queenClock_stateValue_ChimeTime_2AM--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">501897<!--ObjectStateValue: queenClock_stateValue_chimeRing_On--></T>
+              </U>
+              <U>
+                <T n="start_time">14</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">501910<!--ObjectStateValue: queenClock_stateValue_ChimeTime_2PM--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">501897<!--ObjectStateValue: queenClock_stateValue_chimeRing_On--></T>
+              </U>
+              <U>
+                <T n="start_time">3</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">501911<!--ObjectStateValue: queenClock_stateValue_ChimeTime_3AM--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">501897<!--ObjectStateValue: queenClock_stateValue_chimeRing_On--></T>
+              </U>
+              <U>
+                <T n="start_time">15</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">501912<!--ObjectStateValue: queenClock_stateValue_ChimeTime_3PM--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">501897<!--ObjectStateValue: queenClock_stateValue_chimeRing_On--></T>
+              </U>
+              <U>
+                <T n="start_time">4</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">501913<!--ObjectStateValue: queenClock_stateValue_ChimeTime_4AM--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">501897<!--ObjectStateValue: queenClock_stateValue_chimeRing_On--></T>
+              </U>
+              <U>
+                <T n="start_time">16</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">501914<!--ObjectStateValue: queenClock_stateValue_ChimeTime_4PM--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">501897<!--ObjectStateValue: queenClock_stateValue_chimeRing_On--></T>
+              </U>
+              <U>
+                <T n="start_time">5</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">501915<!--ObjectStateValue: queenClock_stateValue_ChimeTime_5AM--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">501897<!--ObjectStateValue: queenClock_stateValue_chimeRing_On--></T>
+              </U>
+              <U>
+                <T n="start_time">17</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">501916<!--ObjectStateValue: queenClock_stateValue_ChimeTime_5PM--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">501897<!--ObjectStateValue: queenClock_stateValue_chimeRing_On--></T>
+              </U>
+              <U>
+                <T n="start_time">6</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">501917<!--ObjectStateValue: queenClock_stateValue_ChimeTime_6AM--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">501897<!--ObjectStateValue: queenClock_stateValue_chimeRing_On--></T>
+              </U>
+              <U>
+                <T n="start_time">18</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">501918<!--ObjectStateValue: queenClock_stateValue_ChimeTime_6PM--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">501897<!--ObjectStateValue: queenClock_stateValue_chimeRing_On--></T>
+              </U>
+              <U>
+                <T n="start_time">7</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">501919<!--ObjectStateValue: queenClock_stateValue_ChimeTime_7AM--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">501897<!--ObjectStateValue: queenClock_stateValue_chimeRing_On--></T>
+              </U>
+              <U>
+                <T n="start_time">19</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">501920<!--ObjectStateValue: queenClock_stateValue_ChimeTime_7PM--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">501897<!--ObjectStateValue: queenClock_stateValue_chimeRing_On--></T>
+              </U>
+              <U>
+                <T n="start_time">8</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">501921<!--ObjectStateValue: queenClock_stateValue_ChimeTime_8AM--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">501897<!--ObjectStateValue: queenClock_stateValue_chimeRing_On--></T>
+              </U>
+              <U>
+                <T n="start_time">20</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">501922<!--ObjectStateValue: queenClock_stateValue_ChimeTime_8PM--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">501897<!--ObjectStateValue: queenClock_stateValue_chimeRing_On--></T>
+              </U>
+              <U>
+                <T n="start_time">9</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">501923<!--ObjectStateValue: queenClock_stateValue_ChimeTime_9AM--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">501897<!--ObjectStateValue: queenClock_stateValue_chimeRing_On--></T>
+              </U>
+              <U>
+                <T n="start_time">21</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">501924<!--ObjectStateValue: queenClock_stateValue_ChimeTime_9PM--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">501897<!--ObjectStateValue: queenClock_stateValue_chimeRing_On--></T>
+              </U>
+              <U>
+                <T n="start_time">10</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">501925<!--ObjectStateValue: queenClock_stateValue_ChimeTime_10AM--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">501897<!--ObjectStateValue: queenClock_stateValue_chimeRing_On--></T>
+              </U>
+              <U>
+                <T n="start_time">22</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">501926<!--ObjectStateValue: queenClock_stateValue_ChimeTime_10PM--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">501897<!--ObjectStateValue: queenClock_stateValue_chimeRing_On--></T>
+              </U>
+              <U>
+                <T n="start_time">11</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">501927<!--ObjectStateValue: queenClock_stateValue_ChimeTime_11AM--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">501897<!--ObjectStateValue: queenClock_stateValue_chimeRing_On--></T>
+              </U>
+              <U>
+                <T n="start_time">23</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">501928<!--ObjectStateValue: queenClock_stateValue_ChimeTime_11PM--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">501897<!--ObjectStateValue: queenClock_stateValue_chimeRing_On--></T>
+              </U>
+              <U>
+                <T n="start_time">24</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">501929<!--ObjectStateValue: queenClock_stateValue_ChimeTime_12AM--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">501897<!--ObjectStateValue: queenClock_stateValue_chimeRing_On--></T>
+              </U>
+              <U>
+                <T n="start_time">12</T>
+                <L n="tests">
+                  <L>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">501930<!--ObjectStateValue: queenClock_stateValue_ChimeTime_12PM--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">501897<!--ObjectStateValue: queenClock_stateValue_chimeRing_On--></T>
+              </U>
+            </L>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V n="tooltip_component" t="enabled">
+      <U n="enabled">
+        <L n="custom_tooltips">
+          <U>
+            <L n="object_tests">
+              <L>
+                <V t="state">
+                  <U n="state">
+                    <T n="value">501948<!--CommodityBasedObjectStateValue: queenClock_stateValues_Maintain_veryOffTime--></T>
+                  </U>
+                </V>
+              </L>
+            </L>
+            <L n="tooltip_fields">
+              <U>
+                <E n="key">recipe_description</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0xAA306028<!--String: "The time is extremely off... you really need to wind this clock"--></T>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <E n="key">recipe_name</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x68595A84<!--String: "Clock Status: Very Off Time"--></T>
+                  </V>
+                </U>
+              </U>
+            </L>
+          </U>
+          <U>
+            <L n="object_tests">
+              <L>
+                <V t="state">
+                  <U n="state">
+                    <T n="value">501947<!--CommodityBasedObjectStateValue: queenClock_stateValues_Maintain_offTime--></T>
+                  </U>
+                </V>
+              </L>
+            </L>
+            <L n="tooltip_fields">
+              <U>
+                <E n="key">recipe_description</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0xCB96C820<!--String: "It's closer to the time. But it's still quite off. The Queen would not be pleased."--></T>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <E n="key">recipe_name</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x7C3F6038<!--String: "Clock Status: Off Time"--></T>
+                  </V>
+                </U>
+              </U>
+            </L>
+          </U>
+          <U>
+            <L n="object_tests">
+              <L>
+                <V t="state">
+                  <U n="state">
+                    <T n="value">501944<!--CommodityBasedObjectStateValue: queenClock_stateValues_Maintain_OnTime_Lvl1--></T>
+                  </U>
+                </V>
+              </L>
+            </L>
+            <L n="tooltip_fields">
+              <U>
+                <E n="key">recipe_description</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0xABB2060C<!--String: "Just barely on time I see."--></T>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <E n="key">recipe_name</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x5FF3966D<!--String: "Clock Status: On Time lvl 1"--></T>
+                  </V>
+                </U>
+              </U>
+            </L>
+          </U>
+          <U>
+            <L n="object_tests">
+              <L>
+                <V t="state">
+                  <U n="state">
+                    <T n="value">501945<!--CommodityBasedObjectStateValue: queenClock_stateValues_Maintain_OnTime_Lvl2--></T>
+                  </U>
+                </V>
+              </L>
+            </L>
+            <L n="tooltip_fields">
+              <U>
+                <E n="key">recipe_description</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x42C51662<!--String: "The Queen would be satisfied with your work."--></T>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <E n="key">recipe_name</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x1E11060F<!--String: "Clock Status: On Time lvl 2"--></T>
+                  </V>
+                </U>
+              </U>
+            </L>
+          </U>
+          <U>
+            <L n="object_tests">
+              <L>
+                <V t="state">
+                  <U n="state">
+                    <T n="value">501946<!--CommodityBasedObjectStateValue: queenClock_stateValues_Maintain_OnTime_Lvl3--></T>
+                  </U>
+                </V>
+              </L>
+            </L>
+            <L n="tooltip_fields">
+              <U>
+                <E n="key">recipe_description</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x8F916112<!--String: "The Queen would be most pleased with your attention to detail!"--></T>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <E n="key">recipe_name</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0xCF44EC2E<!--String: "Clock Status: On Time lvl 3"--></T>
+                  </V>
+                </U>
+              </U>
+            </L>
+          </U>
+        </L>
+        <L n="state_value_strings">
+          <L>
+            <U>
+              <E n="state_concatenation_style">NEW_LINE_SEPARATION</E>
+              <T n="state_value">501907<!--ObjectStateValue: queenClock_stateValue_ChimeTime_1AM--></T>
+              <V n="text" t="single">
+                <T n="single">0x750D3EFE<!--String: "Chime Time: 1 AM"--></T>
+              </V>
+            </U>
+            <U>
+              <E n="state_concatenation_style">NEW_LINE_SEPARATION</E>
+              <T n="state_value">501909<!--ObjectStateValue: queenClock_stateValue_ChimeTime_2AM--></T>
+              <V n="text" t="single">
+                <T n="single">0x2C097087<!--String: "Chime Time: 2 AM"--></T>
+              </V>
+            </U>
+            <U>
+              <E n="state_concatenation_style">NEW_LINE_SEPARATION</E>
+              <T n="state_value">501911<!--ObjectStateValue: queenClock_stateValue_ChimeTime_3AM--></T>
+              <V n="text" t="single">
+                <T n="single">0x6E9F44EB<!--String: "Chime Time: 3 AM"--></T>
+              </V>
+            </U>
+            <U>
+              <E n="state_concatenation_style">NEW_LINE_SEPARATION</E>
+              <T n="state_value">501913<!--ObjectStateValue: queenClock_stateValue_ChimeTime_4AM--></T>
+              <V n="text" t="single">
+                <T n="single">0xBE5BFFD8<!--String: "Chime Time: 4 AM"--></T>
+              </V>
+            </U>
+            <U>
+              <E n="state_concatenation_style">NEW_LINE_SEPARATION</E>
+              <T n="state_value">501915<!--ObjectStateValue: queenClock_stateValue_ChimeTime_5AM--></T>
+              <V n="text" t="single">
+                <T n="single">0xE5FB5CA3<!--String: "Chime Time: 5 AM"--></T>
+              </V>
+            </U>
+            <U>
+              <E n="state_concatenation_style">NEW_LINE_SEPARATION</E>
+              <T n="state_value">501917<!--ObjectStateValue: queenClock_stateValue_ChimeTime_6AM--></T>
+              <V n="text" t="single">
+                <T n="single">0x7C1EFC6E<!--String: "Chime Time: 6 AM"--></T>
+              </V>
+            </U>
+            <U>
+              <E n="state_concatenation_style">NEW_LINE_SEPARATION</E>
+              <T n="state_value">501919<!--ObjectStateValue: queenClock_stateValue_ChimeTime_7AM--></T>
+              <V n="text" t="single">
+                <T n="single">0x51C9FBE<!--String: "Chime Time: 7 AM"--></T>
+              </V>
+            </U>
+            <U>
+              <E n="state_concatenation_style">NEW_LINE_SEPARATION</E>
+              <T n="state_value">501921<!--ObjectStateValue: queenClock_stateValue_ChimeTime_8AM--></T>
+              <V n="text" t="single">
+                <T n="single">0x1E6A3B6C<!--String: "Chime Time: 8 AM"--></T>
+              </V>
+            </U>
+            <U>
+              <E n="state_concatenation_style">NEW_LINE_SEPARATION</E>
+              <T n="state_value">501923<!--ObjectStateValue: queenClock_stateValue_ChimeTime_9AM--></T>
+              <V n="text" t="single">
+                <T n="single">0xDD5D11E5<!--String: "Chime Time: 9 AM"--></T>
+              </V>
+            </U>
+            <U>
+              <E n="state_concatenation_style">NEW_LINE_SEPARATION</E>
+              <T n="state_value">501925<!--ObjectStateValue: queenClock_stateValue_ChimeTime_10AM--></T>
+              <V n="text" t="single">
+                <T n="single">0xF31393F3<!--String: "Chime Time: 10 AM"--></T>
+              </V>
+            </U>
+            <U>
+              <E n="state_concatenation_style">NEW_LINE_SEPARATION</E>
+              <T n="state_value">501927<!--ObjectStateValue: queenClock_stateValue_ChimeTime_11AM--></T>
+              <V n="text" t="single">
+                <T n="single">0x20C09695<!--String: "Chime Time: 11 AM"--></T>
+              </V>
+            </U>
+            <U>
+              <E n="state_concatenation_style">NEW_LINE_SEPARATION</E>
+              <T n="state_value">501930<!--ObjectStateValue: queenClock_stateValue_ChimeTime_12PM--></T>
+              <V n="text" t="single">
+                <T n="single">0x6CE2BE8B<!--String: "Chime Time 12 PM"--></T>
+              </V>
+            </U>
+            <U>
+              <E n="state_concatenation_style">NEW_LINE_SEPARATION</E>
+              <T n="state_value">501908<!--ObjectStateValue: queenClock_stateValue_ChimeTime_1PM--></T>
+              <V n="text" t="single">
+                <T n="single">0x8781675<!--String: "Chime Time: 1 PM"--></T>
+              </V>
+            </U>
+            <U>
+              <E n="state_concatenation_style">NEW_LINE_SEPARATION</E>
+              <T n="state_value">501910<!--ObjectStateValue: queenClock_stateValue_ChimeTime_2PM--></T>
+              <V n="text" t="single">
+                <T n="single">0x461E5DDF<!--String: "Chime Time: 2 PM"--></T>
+              </V>
+            </U>
+            <U>
+              <E n="state_concatenation_style">NEW_LINE_SEPARATION</E>
+              <T n="state_value">501912<!--ObjectStateValue: queenClock_stateValue_ChimeTime_3PM--></T>
+              <V n="text" t="single">
+                <T n="single">0xEDD6BA88<!--String: "Chime Time: 3 PM"--></T>
+              </V>
+            </U>
+            <U>
+              <E n="state_concatenation_style">NEW_LINE_SEPARATION</E>
+              <T n="state_value">501914<!--ObjectStateValue: queenClock_stateValue_ChimeTime_4PM--></T>
+              <V n="text" t="single">
+                <T n="single">0x3C480E3E<!--String: "Chime Time: 4 PM"--></T>
+              </V>
+            </U>
+            <U>
+              <E n="state_concatenation_style">NEW_LINE_SEPARATION</E>
+              <T n="state_value">501916<!--ObjectStateValue: queenClock_stateValue_ChimeTime_5PM--></T>
+              <V n="text" t="single">
+                <T n="single">0x7771D621<!--String: "Chime Time: 5 PM"--></T>
+              </V>
+            </U>
+            <U>
+              <E n="state_concatenation_style">NEW_LINE_SEPARATION</E>
+              <T n="state_value">501918<!--ObjectStateValue: queenClock_stateValue_ChimeTime_6PM--></T>
+              <V n="text" t="single">
+                <T n="single">0x86EF4E04<!--String: "Chime Time: 6 PM"--></T>
+              </V>
+            </U>
+            <U>
+              <E n="state_concatenation_style">NEW_LINE_SEPARATION</E>
+              <T n="state_value">501920<!--ObjectStateValue: queenClock_stateValue_ChimeTime_7PM--></T>
+              <V n="text" t="single">
+                <T n="single">0x7AF01BC6<!--String: "Chime Time: 7 PM"--></T>
+              </V>
+            </U>
+            <U>
+              <E n="state_concatenation_style">NEW_LINE_SEPARATION</E>
+              <T n="state_value">501922<!--ObjectStateValue: queenClock_stateValue_ChimeTime_8PM--></T>
+              <V n="text" t="single">
+                <T n="single">0xD8198F11<!--String: "Chime Time: 8 PM"--></T>
+              </V>
+            </U>
+            <U>
+              <E n="state_concatenation_style">NEW_LINE_SEPARATION</E>
+              <T n="state_value">501924<!--ObjectStateValue: queenClock_stateValue_ChimeTime_9PM--></T>
+              <V n="text" t="single">
+                <T n="single">0x982371FC<!--String: "Chime Time: 9 PM"--></T>
+              </V>
+            </U>
+            <U>
+              <E n="state_concatenation_style">NEW_LINE_SEPARATION</E>
+              <T n="state_value">501926<!--ObjectStateValue: queenClock_stateValue_ChimeTime_10PM--></T>
+              <V n="text" t="single">
+                <T n="single">0x712EF17F<!--String: "Chime Time: 10 PM"--></T>
+              </V>
+            </U>
+            <U>
+              <E n="state_concatenation_style">NEW_LINE_SEPARATION</E>
+              <T n="state_value">501928<!--ObjectStateValue: queenClock_stateValue_ChimeTime_11PM--></T>
+              <V n="text" t="single">
+                <T n="single">0x5AF20725<!--String: "Chime Time: 11 PM"--></T>
+              </V>
+            </U>
+            <U>
+              <E n="state_concatenation_style">NEW_LINE_SEPARATION</E>
+              <T n="state_value">501929<!--ObjectStateValue: queenClock_stateValue_ChimeTime_12AM--></T>
+              <V n="text" t="single">
+                <T n="single">0x3BD0B38A<!--String: "Chime Time: 12 AM"--></T>
+              </V>
+            </U>
+          </L>
+        </L>
+      </U>
+    </V>
+  </U>
+  <L n="_super_affordances">
+    <T>13328<!--ImmediateSuperInteraction: debug_Reset--></T>
+    <T>13326<!--ImmediateSuperInteraction: debug_ObjectDestroy--></T>
+    <T>103888<!--ImmediateSuperInteraction: cheat_set_as_head--></T>
+    <T>196759<!--SuperInteraction: famePerks_GoodReputation_GivingBack_DonateObject--></T>
+    <T>401385<!--SuperInteraction: ghost_Possess_MischieviousGhost--></T>
+    <T>503597<!--SuperInteraction: object_EV009_queenClock_wind--></T>
+    <T>503629<!--ImmediateSuperInteraction: queenClock_EV009_Immediate_10AM--></T>
+    <T>503630<!--ImmediateSuperInteraction: queenClock_EV009_Immediate_10PM--></T>
+    <T>503631<!--ImmediateSuperInteraction: queenClock_EV009_Immediate_11AM--></T>
+    <T>503632<!--ImmediateSuperInteraction: queenClock_EV009_Immediate_11PM--></T>
+    <T>503633<!--ImmediateSuperInteraction: queenClock_EV009_Immediate_12AM--></T>
+    <T>503634<!--ImmediateSuperInteraction: queenClock_EV009_Immediate_12PM--></T>
+    <T>503611<!--ImmediateSuperInteraction: queenClock_EV009_Immediate_1AM--></T>
+    <T>503612<!--ImmediateSuperInteraction: queenClock_EV009_Immediate_1PM--></T>
+    <T>503613<!--ImmediateSuperInteraction: queenClock_EV009_Immediate_2AM--></T>
+    <T>503614<!--ImmediateSuperInteraction: queenClock_EV009_Immediate_2PM--></T>
+    <T>503615<!--ImmediateSuperInteraction: queenClock_EV009_Immediate_3AM--></T>
+    <T>503616<!--ImmediateSuperInteraction: queenClock_EV009_Immediate_3PM--></T>
+    <T>503617<!--ImmediateSuperInteraction: queenClock_EV009_Immediate_4AM--></T>
+    <T>503618<!--ImmediateSuperInteraction: queenClock_EV009_Immediate_4PM--></T>
+    <T>503619<!--ImmediateSuperInteraction: queenClock_EV009_Immediate_5AM--></T>
+    <T>503620<!--ImmediateSuperInteraction: queenClock_EV009_Immediate_5PM--></T>
+    <T>503621<!--ImmediateSuperInteraction: queenClock_EV009_Immediate_6AM--></T>
+    <T>503622<!--ImmediateSuperInteraction: queenClock_EV009_Immediate_6PM--></T>
+    <T>503623<!--ImmediateSuperInteraction: queenClock_EV009_Immediate_7AM--></T>
+    <T>503624<!--ImmediateSuperInteraction: queenClock_EV009_Immediate_7PM--></T>
+    <T>503625<!--ImmediateSuperInteraction: queenClock_EV009_Immediate_8AM--></T>
+    <T>503626<!--ImmediateSuperInteraction: queenClock_EV009_Immediate_8PM--></T>
+    <T>503627<!--ImmediateSuperInteraction: queenClock_EV009_Immediate_9AM--></T>
+    <T>503628<!--ImmediateSuperInteraction: queenClock_EV009_Immediate_9PM--></T>
+    <T>503635<!--ImmediateSuperInteraction: queenClock_EV009_Immediate_UnsetChimeTime--></T>
+    <T>328068<!--SuperInteraction: infant_WhatsThat_Immobile_InObject--></T>
+    <T>144099<!--SuperInteraction: generic_Object_Toddler_Check_Out--></T>
+    <T>276518<!--SuperInteraction: infant_WhatsThat--></T>
+    <T>106859<!--SuperInteraction: simRay_Transform_Object--></T>
+    <T>393854<!--SuperInteraction: ghostPowers_Abilities_Scary_SinisterPossess_Autonomous--></T>
+    <T>74457<!--ImmediateSuperInteraction: fire_ReplaceBurntObject--></T>
+    <T>102258<!--SuperInteraction: Ghost_Possess--></T>
+    <T>168502<!--SuperInteraction: Ghost_Pet_Possess--></T>
+    <T>324988<!--SuperInteraction: Ghost_Horse_Possess--></T>
+  </L>
+  <U n="recycling_data">
+    <L n="recycling_values">
+      <U>
+        <E n="Bucks Type">RecycleBitsBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+      <U>
+        <E n="Bucks Type">RecyclePiecesBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+    </L>
+  </U>
+</I>

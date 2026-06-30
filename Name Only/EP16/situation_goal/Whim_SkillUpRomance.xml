@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalActor" i="situation_goal" m="situations.situation_goal_actor" n="Whim_SkillUpRomance" s="362686">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T n="enabled" p="InEP16\UI\Icons\Whims\whim_FearofIntimacy.png">2f7d0004:00000000:ac69996c6e3d3656</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0xCD7A8433<!--String: "Increase Romance Skill"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0x4BA6F3BD<!--String: "Read Romance Skill books, watch Romance Channel, or flirt to improve {1.SimFirstName}'s skill."--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>272907<!--SituationGoalLootActions: goalLoot_WantFear_Fulfillment_Gain--></T>
+    <T>291793<!--SituationGoalLootActions: goalLoot_Want_Fulfilled_BuffGain_Flirty--></T>
+  </L>
+  <V n="_goal_test" t="statistic">
+    <U n="statistic">
+      <T n="stat">368684<!--Skill: statistic_Skill_AdultMajor_Romance--></T>
+      <V n="threshold" t="value_threshold">
+        <U n="value_threshold">
+          <T n="value">2</T>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="_pre_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="skill_test">
+      <U n="skill_test">
+        <T n="skill">368684<!--Skill: statistic_Skill_AdultMajor_Romance--></T>
+        <V n="skill_range" t="interval">
+          <U n="interval">
+            <U n="skill_interval">
+              <T n="upper_bound">9</T>
+            </U>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="_score">25</T>
+  <T p="InGame\Audio\Music\bumpers\bumper_ep16_overcome_fear_of_intimacy.propx" n="audio_sting_on_complete">39b2aa4a:00000000:f99f39b2e03313f6</T>
+  <V n="goal_completion_notification" t="enabled">
+    <U n="enabled">
+      <V n="icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T n="key" p="InEP16\UI\Icons\Notifications\notification_FearOfIntimacy.png">2f7d0004:00000000:883d7a505cb422b0</T>
+          </U>
+        </V>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0xFAF09993<!--String: "{0.SimFirstName} feels like being on the fast track to overcoming {0.SimPronounPossessiveDependent} fear after increasing {0.SimPronounPossessiveDependent} skill!\n\nWhy not pop into Cupid's Corner or Create a Date to seek out romantic interests and build a foundation towards healing the fear?"--></T>
+      </V>
+      <V n="title" t="enabled">
+        <T n="enabled">0x759EB28F<!--String: "Fear Progress"--></T>
+      </V>
+    </U>
+  </V>
+  <T n="ignore_goal_precheck">True</T>
+</I>

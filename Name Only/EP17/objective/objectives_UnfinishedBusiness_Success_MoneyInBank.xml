@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Objective" i="objective" m="event_testing.objective_tuning" n="objectives_UnfinishedBusiness_Success_MoneyInBank" s="382465">
+  <E n="category_type">Success</E>
+  <L n="completion_loot">
+    <T>385159<!--LootActions: loot_UnfinishedBusiness_GoalCompleted--></T>
+  </L>
+  <T n="display_text">0x9D63749D<!--String: ""I'd like to hoard tons of Simoleons!""--></T>
+  <L n="loot_on_completion_ui_update">
+    <T>396545<!--LootActions: loot_UnfinishedBusiness_clearCompleteObjective--></T>
+  </L>
+  <V n="objective_completion_type" t="use_test_result" />
+  <V n="objective_test" t="simoleon_value">
+    <U n="simoleon_value">
+      <V n="value_context" t="total_cash" />
+      <U n="value_threshold">
+        <E n="comparison">GREATER_OR_EQUAL</E>
+        <T n="value">100000<!--PaintingTexture: PaintingTexture_Sml_IMP_High_01--></T>
+      </U>
+    </U>
+  </V>
+  <L n="tests_for_picker_availability">
+    <L>
+      <V t="simoleon_value">
+        <U n="simoleon_value">
+          <V n="value_context" t="total_cash" />
+          <U n="value_threshold">
+            <E n="comparison">LESS</E>
+            <T n="value">100000<!--PaintingTexture: PaintingTexture_Sml_IMP_High_01--></T>
+          </U>
+        </U>
+      </V>
+    </L>
+  </L>
+  <T n="tooltip">0x581A06B2<!--String: "<b><font color='#2182e6'>Have 100,000 Simoleons in household funds</font></b>\nWhat does success look like to me? Being rich. And I'm gonna be rich!"--></T>
+</I>

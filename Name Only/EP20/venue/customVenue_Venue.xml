@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Venue" i="venue" m="venues.venue_tuning" n="customVenue_Venue" s="455703">
+  <T n="allowed_for_clubs">True</T>
+  <L n="category_tags">
+    <E>BuyCat_Community</E>
+  </L>
+  <V n="club_gathering_auto_spawn_schedule" t="disabled" />
+  <V n="club_gathering_text" t="enabled">
+    <V n="enabled" t="variation">
+      <U n="variation">
+        <L n="variations">
+          <T>0x260B3588<!--String: "Join us at the Custom Venue!"--></T>
+          <T>0xE153E94C<!--String: "We're meeting at the Custom Venue to see what's going on!"--></T>
+        </L>
+      </U>
+    </V>
+  </V>
+  <T n="display_name">0x423F1AF9<!--String: "Custom Venue"--></T>
+  <T n="display_name_incomplete">0xC0718420<!--String: "Custom Venue - Incomplete"--></T>
+  <L n="npc_summoning_behavior">
+    <U>
+      <E n="key">Ask_To_Hang_Out</E>
+      <L n="value">
+        <U>
+          <E n="key">HUMAN</E>
+          <V n="value" t="create_situation">
+            <U n="create_situation">
+              <T n="situation_to_create">101273<!--SituationSimple: situation_NPCVisitAnyVenue--></T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+    <U>
+      <E n="key">BRING_PLAYER_SIM_TO_LOT</E>
+      <L n="value">
+        <U>
+          <E n="key">HUMAN</E>
+          <V n="value" t="notify_zone_director" />
+        </U>
+      </L>
+    </U>
+    <U>
+      <E n="key">DEFAULT</E>
+      <L n="value">
+        <U>
+          <E n="key">HUMAN</E>
+          <V n="value" t="create_situation">
+            <U n="create_situation">
+              <T n="situation_to_create">101273<!--SituationSimple: situation_NPCVisitAnyVenue--></T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+    <U>
+      <E n="key">Invite_Over</E>
+      <L n="value">
+        <U>
+          <E n="key">CAT</E>
+          <V n="value" t="create_situation">
+            <U n="create_situation">
+              <T n="situation_to_create">101273<!--SituationSimple: situation_NPCVisitAnyVenue--></T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <E n="key">DOG</E>
+          <V n="value" t="create_situation">
+            <U n="create_situation">
+              <T n="situation_to_create">101273<!--SituationSimple: situation_NPCVisitAnyVenue--></T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <E n="key">HUMAN</E>
+          <V n="value" t="create_situation">
+            <U n="create_situation">
+              <T n="situation_to_create">101273<!--SituationSimple: situation_NPCVisitAnyVenue--></T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+    <U>
+      <E n="key">Voodoo_Summon</E>
+      <L n="value">
+        <U>
+          <E n="key">HUMAN</E>
+          <V n="value" t="create_situation">
+            <U n="create_situation">
+              <T n="situation_to_create">40508<!--VoodooSummonSituation: Situation_VoodooSummon--></T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <L n="required_objects">
+    <U>
+      <T n="min_number">1</T>
+      <U n="object">
+        <L n="tag_set">
+          <E>BuyCatPA_Sink</E>
+          <E>BuyCatPA_SinkCounter</E>
+        </L>
+      </U>
+      <T n="object_display_name">0xE24682FB<!--String: "Sink"--></T>
+      <L n="object_parent_pair_tests">
+        <U>
+          <U n="object_tags">
+            <L n="tag_set">
+              <E>BuyCatPA_Sink</E>
+              <E>BuyCatPA_SinkCounter</E>
+            </L>
+          </U>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="min_number">1</T>
+      <U n="object">
+        <L n="tag_set">
+          <E>BuyCatPA_Disposable</E>
+        </L>
+      </U>
+      <T n="object_display_name">0x88C83BA0<!--String: "Waste Disposal"--></T>
+      <L n="object_parent_pair_tests">
+        <U>
+          <U n="object_tags">
+            <L n="tag_set">
+              <E>BuyCatPA_Disposable</E>
+            </L>
+          </U>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="min_number">1</T>
+      <U n="object">
+        <L n="tag_set">
+          <E>Func_Bathroom</E>
+        </L>
+      </U>
+      <T n="object_display_name">0x22F1CD6C<!--String: "Toilet"--></T>
+      <L n="object_parent_pair_tests">
+        <U>
+          <U n="object_tags">
+            <L n="tag_set">
+              <E>Func_Bathroom</E>
+            </L>
+          </U>
+        </U>
+      </L>
+    </U>
+  </L>
+  <T n="venue_description">0x8D74A871<!--String: "Bring any vision to life with Custom Venues! Design the perfect atmosphere by setting activities, assigning roles to create a daily schedule for the lot. Sims assigned to roles and visiting the venue will follow the schedule and their defined role behavior ensuring the space is used just as intended!"--></T>
+  <T n="venue_icon" p="InGame\UI\Icons\BuildBuy\Venues\icon_CustomVenue.png">2f7d0004:00000000:09d399a2902a5979</T>
+  <E n="venue_type">CUSTOM_VENUE</E>
+  <T n="zone_director">106124<!--ZoneDirectorBase: zone_director_default--></T>
+  <V n="zone_fixup" t="add_to_background_situation" />
+  <L n="zone_modifiers">
+    <T>235291<!--ZoneModifier: ZoneModifiers_Hidden_BBGameplayEffects--></T>
+  </L>
+</I>

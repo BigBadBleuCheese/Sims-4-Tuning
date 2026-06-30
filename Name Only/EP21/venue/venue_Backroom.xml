@@ -1,0 +1,467 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Venue" i="venue" m="venues.venue_tuning" n="venue_Backroom" s="471898">
+  <T n="allowed_for_clubs">True</T>
+  <L n="category_tags">
+    <E>BuyCat_Community</E>
+    <E>BuyCat_Venue_Backroom</E>
+    <E>Venue_Object_Exercise</E>
+    <E>BuyCat_Venue_Club</E>
+  </L>
+  <V n="club_gathering_auto_spawn_schedule" t="enabled">
+    <U n="enabled">
+      <L n="schedule_entries">
+        <U>
+          <U n="club_gathering_data">
+            <L n="ideal_club_gatherings">
+              <U>
+                <T n="x">1</T>
+                <T n="y">1</T>
+              </U>
+              <U>
+                <T n="x">2</T>
+                <T n="y">2</T>
+              </U>
+              <U>
+                <T n="x">3</T>
+                <T n="y">3</T>
+              </U>
+            </L>
+          </U>
+          <U n="days_available">
+            <T n="0 SUNDAY">True</T>
+            <T n="1 MONDAY">True</T>
+            <T n="2 TUESDAY">True</T>
+            <T n="3 WEDNESDAY">True</T>
+            <T n="4 THURSDAY">True</T>
+            <T n="5 FRIDAY">True</T>
+            <T n="6 SATURDAY">True</T>
+          </U>
+          <T n="duration">4</T>
+        </U>
+        <U>
+          <U n="club_gathering_data">
+            <L n="ideal_club_gatherings">
+              <U>
+                <T n="x">1</T>
+                <T n="y">1</T>
+              </U>
+              <U>
+                <T n="x">2</T>
+                <T n="y">2</T>
+              </U>
+              <U>
+                <T n="x">3</T>
+                <T n="y">3</T>
+              </U>
+            </L>
+          </U>
+          <U n="days_available">
+            <T n="0 SUNDAY">True</T>
+            <T n="1 MONDAY">True</T>
+            <T n="2 TUESDAY">True</T>
+            <T n="3 WEDNESDAY">True</T>
+            <T n="4 THURSDAY">True</T>
+            <T n="5 FRIDAY">True</T>
+            <T n="6 SATURDAY">True</T>
+          </U>
+          <T n="duration">7</T>
+          <U n="start_time">
+            <T n="hour">13</T>
+          </U>
+        </U>
+        <U>
+          <U n="club_gathering_data">
+            <L n="ideal_club_gatherings">
+              <U>
+                <T n="x">1</T>
+                <T n="y">1</T>
+              </U>
+              <U>
+                <T n="x">2</T>
+                <T n="y">2</T>
+              </U>
+              <U>
+                <T n="x">3</T>
+                <T n="y">3</T>
+              </U>
+            </L>
+          </U>
+          <U n="days_available">
+            <T n="0 SUNDAY">True</T>
+            <T n="1 MONDAY">True</T>
+            <T n="2 TUESDAY">True</T>
+            <T n="3 WEDNESDAY">True</T>
+            <T n="4 THURSDAY">True</T>
+            <T n="5 FRIDAY">True</T>
+            <T n="6 SATURDAY">True</T>
+          </U>
+          <T n="duration">11</T>
+          <U n="start_time">
+            <T n="hour">20</T>
+          </U>
+        </U>
+      </L>
+    </U>
+  </V>
+  <V n="club_gathering_text" t="enabled">
+    <V n="enabled" t="variation">
+      <U n="variation">
+        <L n="variations">
+          <T>0x16F36C3D<!--String: "Come hang out with us, there's so much to do here at any time of day!"--></T>
+          <T>0xE1DBDD63<!--String: "Let's look for the hidden Nightclub in here...it's gonna be a blast!"--></T>
+          <T>0xF8AFA63<!--String: "We could spend all day here—take it easy during the day and party all night!"--></T>
+        </L>
+      </U>
+    </V>
+  </V>
+  <T n="display_name">0xB91ACFE0<!--String: "Backroom"--></T>
+  <T n="display_name_incomplete">0xAD8ADC0F<!--String: "Backroom - Incomplete"--></T>
+  <L n="npc_summoning_behavior">
+    <U>
+      <E n="key">Ask_To_Hang_Out</E>
+      <L n="value">
+        <U>
+          <E n="key">HUMAN</E>
+          <V n="value" t="create_situation">
+            <U n="create_situation">
+              <T n="situation_to_create">101273<!--SituationSimple: situation_NPCVisitAnyVenue--></T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+    <U>
+      <E n="key">BRING_PLAYER_SIM_TO_LOT</E>
+      <L n="value">
+        <U>
+          <E n="key">HUMAN</E>
+          <V n="value" t="notify_zone_director" />
+        </U>
+      </L>
+    </U>
+    <U>
+      <E n="key">DEFAULT</E>
+      <L n="value">
+        <U>
+          <E n="key">HUMAN</E>
+          <V n="value" t="create_situation">
+            <U n="create_situation">
+              <T n="situation_to_create">101273<!--SituationSimple: situation_NPCVisitAnyVenue--></T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+    <U>
+      <E n="key">Invite_Over</E>
+      <L n="value">
+        <U>
+          <E n="key">CAT</E>
+          <V n="value" t="create_situation">
+            <U n="create_situation">
+              <T n="situation_to_create">101273<!--SituationSimple: situation_NPCVisitAnyVenue--></T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <E n="key">DOG</E>
+          <V n="value" t="create_situation">
+            <U n="create_situation">
+              <T n="situation_to_create">101273<!--SituationSimple: situation_NPCVisitAnyVenue--></T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <E n="key">HUMAN</E>
+          <V n="value" t="create_situation">
+            <U n="create_situation">
+              <T n="situation_to_create">101273<!--SituationSimple: situation_NPCVisitAnyVenue--></T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+    <U>
+      <E n="key">Voodoo_Summon</E>
+      <L n="value">
+        <U>
+          <E n="key">HUMAN</E>
+          <V n="value" t="create_situation">
+            <U n="create_situation">
+              <T n="situation_to_create">40508<!--VoodooSummonSituation: Situation_VoodooSummon--></T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <L n="required_objects">
+    <U>
+      <T n="min_number">1</T>
+      <U n="object">
+        <L n="tag_set">
+          <E>BuyCatPA_Sink</E>
+          <E>BuyCatPA_SinkCounter</E>
+        </L>
+      </U>
+      <T n="object_display_name">0x136E301E<!--String: "Sink"--></T>
+      <L n="object_parent_pair_tests">
+        <U>
+          <U n="object_tags">
+            <L n="tag_set">
+              <E>BuyCatPA_Sink</E>
+              <E>BuyCatPA_SinkCounter</E>
+            </L>
+          </U>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="min_number">1</T>
+      <U n="object">
+        <L n="tag_set">
+          <E>Func_Bathroom</E>
+        </L>
+      </U>
+      <T n="object_display_name">0x22F1CD6C<!--String: "Toilet"--></T>
+      <L n="object_parent_pair_tests">
+        <U>
+          <U n="object_tags">
+            <L n="tag_set">
+              <E>Func_Bathroom</E>
+            </L>
+          </U>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="min_number">1</T>
+      <U n="object">
+        <L n="tag_set">
+          <E>BuyCatPA_Disposable</E>
+        </L>
+      </U>
+      <T n="object_display_name">0x88C83BA0<!--String: "Waste Disposal"--></T>
+      <L n="object_parent_pair_tests">
+        <U>
+          <U n="object_tags">
+            <L n="tag_set">
+              <E>BuyCatPA_Disposable</E>
+            </L>
+          </U>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="min_number">3</T>
+      <U n="object">
+        <L n="tag_set">
+          <E>BuyCatSS_Bookshelf</E>
+          <E>Func_Art</E>
+          <E>Venue_Object_Exercise</E>
+        </L>
+      </U>
+      <T n="object_display_name">0xC2A3EA6D<!--String: "Bookshelf, Art or Gym Equipment"--></T>
+      <L n="object_parent_pair_tests">
+        <U>
+          <U n="object_tags">
+            <L n="tag_set">
+              <E>BuyCatSS_Bookshelf</E>
+              <E>Venue_Object_Exercise</E>
+              <E>Func_Art</E>
+            </L>
+          </U>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="is_optional">True</T>
+      <T n="min_number">2</T>
+      <U n="object">
+        <L n="tag_set">
+          <E>BuyCatSS_Desk</E>
+        </L>
+      </U>
+      <T n="object_display_name">0xA5165013<!--String: "Desks"--></T>
+      <L n="object_parent_pair_tests">
+        <U>
+          <U n="object_tags">
+            <L n="tag_set">
+              <E>BuyCatSS_Desk</E>
+            </L>
+          </U>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="is_optional">True</T>
+      <T n="min_number">2</T>
+      <U n="object">
+        <L n="tag_set">
+          <E>BuyCatSS_DiningChair</E>
+          <E>BuyCatSS_OutdoorChair</E>
+          <E>BuyCatSS_DeskChair</E>
+        </L>
+      </U>
+      <T n="object_display_name">0xAFA067F2<!--String: "Desk Chair"--></T>
+      <L n="object_parent_pair_tests">
+        <U>
+          <U n="object_tags">
+            <L n="tag_set">
+              <E>BuyCatSS_DiningChair</E>
+              <E>BuyCatSS_OutdoorChair</E>
+              <E>BuyCatSS_DeskChair</E>
+            </L>
+          </U>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="is_optional">True</T>
+      <T n="min_number">2</T>
+      <U n="object">
+        <L n="tag_set">
+          <E>BuyCatEE_Computer</E>
+        </L>
+      </U>
+      <T n="object_display_name">0x5AE4A50C<!--String: "Computer"--></T>
+      <L n="object_parent_pair_tests">
+        <U>
+          <U n="object_tags">
+            <L n="tag_set">
+              <E>BuyCatEE_Computer</E>
+            </L>
+          </U>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="is_optional">True</T>
+      <T n="min_number">1</T>
+      <U n="object">
+        <L n="tag_set">
+          <E>BuyCat_Easel</E>
+        </L>
+      </U>
+      <T n="object_display_name">0x22854DFC<!--String: "Easel"--></T>
+      <L n="object_parent_pair_tests">
+        <U>
+          <U n="object_tags">
+            <L n="tag_set">
+              <E>BuyCat_Easel</E>
+            </L>
+          </U>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="is_optional">True</T>
+      <T n="min_number">1</T>
+      <U n="object">
+        <L n="tag_set">
+          <E>BuyCatPA_Shower</E>
+        </L>
+      </U>
+      <T n="object_display_name">0x491CCFE7<!--String: "Shower"--></T>
+      <L n="object_parent_pair_tests">
+        <U>
+          <U n="object_tags">
+            <L n="tag_set">
+              <E>BuyCatPA_Shower</E>
+            </L>
+          </U>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="min_number">1</T>
+      <U n="object">
+        <L n="tag_set">
+          <E>BuyCatEE_Bar</E>
+        </L>
+      </U>
+      <T n="object_display_name">0xE17B874E<!--String: "Bar"--></T>
+      <L n="object_parent_pair_tests">
+        <U>
+          <U n="object_tags">
+            <L n="tag_set">
+              <E>BuyCatEE_Bar</E>
+            </L>
+          </U>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="min_number">1</T>
+      <U n="object">
+        <L n="tag_set">
+          <E>Func_Stereo</E>
+        </L>
+      </U>
+      <T n="object_display_name">0x3F6F8D56<!--String: "Stereo"--></T>
+      <L n="object_parent_pair_tests">
+        <U>
+          <U n="object_tags">
+            <L n="tag_set">
+              <E>Func_Stereo</E>
+            </L>
+          </U>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="min_number">4</T>
+      <U n="object">
+        <L n="tag_set">
+          <E>BuyCatSS_Barstool</E>
+        </L>
+      </U>
+      <T n="object_display_name">0xFCBF0BEF<!--String: "Barstool"--></T>
+      <L n="object_parent_pair_tests">
+        <U>
+          <U n="object_tags">
+            <L n="tag_set">
+              <E>BuyCatSS_Barstool</E>
+            </L>
+          </U>
+        </U>
+      </L>
+    </U>
+  </L>
+  <T n="supports_welcome_wagon">False</T>
+  <V n="travel_group_limit" t="enabled">
+    <T n="enabled">8</T>
+  </V>
+  <V n="travel_interaction_name" t="visit_venue">
+    <U n="visit_venue">
+      <T n="visit_venue_name">0xA5DFA939<!--String: "Visit The Backroom"--></T>
+    </U>
+  </V>
+  <V n="travel_with_interaction_name" t="visit_venue">
+    <U n="visit_venue">
+      <T n="visit_venue_name">0x215C5320<!--String: "Visit The Backroom..."--></T>
+    </U>
+  </V>
+  <L n="venue_buffs">
+    <U>
+      <V n="buff_reason" t="disabled" />
+      <T n="buff_type">472725<!--Buff: buff_Venue_Nightclub_Backroom--></T>
+    </U>
+    <U>
+      <T n="buff_type">472726<!--Buff: buff_Venue_Library_Backroom--></T>
+    </U>
+    <U>
+      <T n="buff_type">472727<!--Buff: Buff_Venue_Gym_Backroom--></T>
+    </U>
+    <U>
+      <T n="buff_type">472728<!--Buff: buff_Venue_Museum_Backroom--></T>
+    </U>
+  </L>
+  <T n="venue_description">0xA91501CA<!--String: "A hidden nightclub, inside a day venue! A Backroom can function as a library, a gym or a museum during daytime. But when the sun sets, all visitors will look to get a nice beverage and dance the night away!"--></T>
+  <T n="venue_icon" p="InGame\UI\Icons\BuildBuy\Venues\icon_Backroom.png">2f7d0004:00000000:612265522edfa54d</T>
+  <T n="zone_director">471899<!--SchedulingZoneDirector: zoneDirector_Backroom--></T>
+  <V n="zone_fixup" t="add_to_background_situation" />
+  <L n="zone_modifiers">
+    <T>235291<!--ZoneModifier: ZoneModifiers_Hidden_BBGameplayEffects--></T>
+  </L>
+</I>

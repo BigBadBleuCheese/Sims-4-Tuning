@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="funerals_PourOneOut" s="383289">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="circle">
+            <U n="circle">
+              <T n="ideal_radius">2</T>
+              <T n="radius">2</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="value" t="facing" />
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <V n="_situation_participant_provider" t="enabled">
+    <U n="enabled">
+      <L n="provided_participant_type_to_job_map">
+        <U>
+          <E n="key">SituationParticipants1</E>
+          <L n="value">
+            <U>
+              <T n="job">381374<!--SituationJob: job_Funeral_DepartedSim--></T>
+              <V n="sim_info_source" t="from_guest_list" />
+              <E n="situation_participant">Actor</E>
+              <V n="situations" t="by_definition">
+                <U n="by_definition">
+                  <L n="situations">
+                    <T>381372<!--CustomStateFuneralSituation: Situation_Funeral--></T>
+                  </L>
+                </U>
+              </V>
+            </U>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <L n="_static_commodities">
+    <U>
+      <T n="static_commodity">383560<!--StaticCommodity: staticCommodity_Funeral_RoleActions--></T>
+    </U>
+    <U>
+      <T n="static_commodity">388973<!--StaticCommodity: staticCommodity_Cemetery_Mourner_PourOneOut--></T>
+    </U>
+    <U>
+      <T n="static_commodity">405697<!--StaticCommodity: staticCommodity_Funeral_RoleActions_DailyFestival--></T>
+    </U>
+  </L>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">383312<!--AnimationElement: Funerals_Solo_PourOneOut--></T>
+      </U>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="balloon">
+      <U n="balloon">
+        <L n="balloon_choices">
+          <U>
+            <V n="item" t="balloon_category">
+              <T n="balloon_category">32075<!--BalloonCategory: balloonCategory_SetDeath_Though--></T>
+            </V>
+          </U>
+        </L>
+        <L n="balloon_target">
+          <E>Actor</E>
+        </L>
+      </U>
+    </V>
+    <V t="buff_fire_and_forget">
+      <U n="buff_fire_and_forget">
+        <U n="buff">
+          <T n="buff_type">427031<!--Buff: buff_Funerals_Hidden_PourOneOut_Cooldown--></T>
+        </U>
+      </U>
+    </V>
+  </L>
+  <V n="basic_reserve_object" t="disabled" />
+  <T n="category">383557<!--PieMenuCategory: pieMenuCategory_Funeral--></T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x94C236F9<!--String: "Pour One Out"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="loot_list">
+          <T>393531<!--LootActions: rel_Gain_Medium_Funeral--></T>
+          <T>393697<!--RandomWeightedLoot: randomWeightedLoot_Funerals_PourOneOut_Buffs--></T>
+        </L>
+      </U>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_autonomous">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>427031<!--Buff: buff_Funerals_Hidden_PourOneOut_Cooldown--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="trait">
+      <U n="trait">
+        <L n="blacklist_traits">
+          <T>16851<!--Trait: trait_isGrimReaper--></T>
+        </L>
+        <E n="subject">TargetSim</E>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">404575<!--TestSetInstance: testSet_FloatingUrn_Disallow--></T>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>392382<!--Buff: buff_Funerals_RoleBuffs_Speeches--></T>
+            <T>392383<!--Buff: buff_Funerals_RoleBuffs_Celebration--></T>
+            <T>392384<!--Buff: buff_Funerals_RoleBuffs_Mingle--></T>
+            <T>392381<!--Buff: buff_Funerals_RoleBuffs_Mourn--></T>
+          </L>
+        </U>
+      </V>
+      <V t="situation_job_test">
+        <U n="situation_job_test">
+          <L n="situation_jobs">
+            <T>378339<!--SituationJob: job_Cemetery_Keeper--></T>
+            <T>388741<!--SituationJob: job_Cemetery_Mourner--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <V n="whitelist" t="enabled">
+            <L n="enabled">
+              <T>392382<!--Buff: buff_Funerals_RoleBuffs_Speeches--></T>
+              <T>392383<!--Buff: buff_Funerals_RoleBuffs_Celebration--></T>
+              <T>392384<!--Buff: buff_Funerals_RoleBuffs_Mingle--></T>
+              <T>392381<!--Buff: buff_Funerals_RoleBuffs_Mourn--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

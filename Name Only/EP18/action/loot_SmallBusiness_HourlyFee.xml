@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_SmallBusiness_HourlyFee" s="372063">
+  <L n="loot_actions">
+    <V t="small_business_customer_state_change">
+      <U n="small_business_customer_state_change">
+        <T n="customer_situation">373363<!--SmallBusinessCustomerSituation: SmallBusinessCustomerSituation_Default--></T>
+        <E n="situation_state">CHECK_IN</E>
+        <L n="tests">
+          <L>
+            <V t="simoleon_value">
+              <U n="simoleon_value">
+                <V n="value_context" t="total_cash">
+                  <U n="total_cash">
+                    <E n="subject">Actor</E>
+                  </U>
+                </V>
+                <U n="value_threshold">
+                  <E n="comparison">LESS_OR_EQUAL</E>
+                  <T n="value">0</T>
+                </U>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_remove">
+        <U n="statistic_remove">
+          <T n="stat">372060<!--Commodity: commodity_AttendanceSale_HourlyFee_Timer--></T>
+          <L n="tests">
+            <L>
+              <V t="simoleon_value">
+                <U n="simoleon_value">
+                  <V n="value_context" t="total_cash">
+                    <U n="total_cash">
+                      <E n="subject">Actor</E>
+                    </U>
+                  </V>
+                  <U n="value_threshold">
+                    <E n="comparison">LESS_OR_EQUAL</E>
+                    <T n="value">0</T>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="small_business">
+                <U n="small_business">
+                  <L n="participant_type">
+                    <E>CurrentlyOpenSmallBusinessOwner</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="primary_icon_response" t="enabled">
+              <U n="enabled">
+                <E n="ui_request">SHOW_SMALL_BUSINESS_PANEL</E>
+              </U>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant" />
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x8205C95C<!--String: "{0.SimFirstName} is out of money and has been automatically checked out of the Small Business."--></T>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="participant_type">
+                    <U n="participant_type">
+                      <V n="objects" t="from_participant">
+                        <U n="from_participant">
+                          <V n="in_slot" t="use_participant" />
+                          <E n="participant">Actor</E>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                  <V t="small_business">
+                    <U n="small_business">
+                      <E n="participant">CurrentlyOpenSmallBusinessOwner</E>
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </V>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="simoleon_value">
+              <U n="simoleon_value">
+                <V n="value_context" t="total_cash">
+                  <U n="total_cash">
+                    <E n="subject">Actor</E>
+                  </U>
+                </V>
+                <U n="value_threshold">
+                  <E n="comparison">LESS_OR_EQUAL</E>
+                  <T n="value">0</T>
+                </U>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_set_max">
+        <U n="statistic_set_max">
+          <T n="stat">372060<!--Commodity: commodity_AttendanceSale_HourlyFee_Timer--></T>
+          <L n="tests">
+            <L>
+              <V t="simoleon_value">
+                <U n="simoleon_value">
+                  <V n="value_context" t="total_cash">
+                    <U n="total_cash">
+                      <E n="subject">Actor</E>
+                    </U>
+                  </V>
+                  <U n="value_threshold">
+                    <E n="comparison">GREATER</E>
+                    <T n="value">0</T>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+    </V>
+    <V t="payment_loot">
+      <U n="payment_loot">
+        <V n="payment" t="literal">
+          <U n="literal">
+            <U n="cost_modifiers">
+              <L n="multipliers">
+                <U>
+                  <T n="multiplier">2</T>
+                  <L n="tests">
+                    <L>
+                      <V t="small_business_dependents_supervised" />
+                      <V t="situation_sim_count_test">
+                        <U n="situation_sim_count_test">
+                          <L n="situation_tags">
+                            <E>Situation_SmallBusiness_Customer</E>
+                          </L>
+                          <U n="threshold">
+                            <T n="value">2</T>
+                          </U>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+              </L>
+            </U>
+            <V n="payment_cost" t="small_business_fee">
+              <U n="small_business_fee">
+                <L n="payment_destinations">
+                  <V t="open_small_business" />
+                </L>
+                <V n="payment_type" t="small_business_hourly_fee_payment" />
+              </U>
+            </V>
+            <V n="payment_source" t="household">
+              <U n="household">
+                <T n="require_full_amount">False</T>
+              </U>
+            </V>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="simoleon_value">
+              <U n="simoleon_value">
+                <V n="value_context" t="total_cash">
+                  <U n="total_cash">
+                    <E n="subject">Actor</E>
+                  </U>
+                </V>
+                <U n="value_threshold">
+                  <E n="comparison">GREATER</E>
+                  <T n="value">0</T>
+                </U>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="small_business_attendance_sale_mode_test">
+        <U n="small_business_attendance_sale_mode_test">
+          <E n="attendance_sale_mode">HOURLY_FEE</E>
+          <E n="participant">CurrentlyOpenSmallBusinessOwner</E>
+        </U>
+      </V>
+      <V t="buff">
+        <U n="buff">
+          <V n="whitelist" t="enabled">
+            <L n="enabled">
+              <T>400877<!--Buff: buff_SmallBusiness_CheckedIn--></T>
+              <T>445241<!--Buff: buff_SmallBusiness_PutDownDependent--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

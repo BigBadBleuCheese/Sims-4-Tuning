@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Objective" i="objective" m="event_testing.objective_tuning" n="objectives_UnfinishedBusiness_Family_GetMarried" s="382442">
+  <E n="category_type">Family</E>
+  <L n="completion_loot">
+    <T>385159<!--LootActions: loot_UnfinishedBusiness_GoalCompleted--></T>
+  </L>
+  <T n="display_text">0xC3D86259<!--String: ""I should finally get married!""--></T>
+  <L n="loot_on_completion_ui_update">
+    <T>396545<!--LootActions: loot_UnfinishedBusiness_clearCompleteObjective--></T>
+  </L>
+  <V n="objective_test" t="relationship_bit">
+    <U n="relationship_bit">
+      <L n="relationship_bits">
+        <T>15822<!--RelationshipBit: romantic-Married--></T>
+      </L>
+    </U>
+  </V>
+  <L n="tests_for_picker_availability">
+    <L>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>381402<!--Trait: trait_IsGhost--></T>
+          </L>
+        </U>
+      </V>
+      <V t="relationship_bit_count">
+        <U n="relationship_bit_count">
+          <E n="comparison_operator">EQUAL</E>
+          <T n="rel_bit">15822<!--RelationshipBit: romantic-Married--></T>
+          <T n="relationship_count">0</T>
+        </U>
+      </V>
+    </L>
+  </L>
+  <T n="tooltip">0xD1CC1EBE<!--String: "<b><font color='#2182E6'>Get Married</font></b>\nIt's time for me to settle down! I'd like to spend the rest of my life in a happy marriage with the love of my life. Is that too much to ask?"--></T>
+</I>

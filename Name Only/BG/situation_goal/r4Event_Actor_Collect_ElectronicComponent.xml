@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalActor" i="situation_goal" m="situations.situation_goal_actor" n="r4Event_Actor_Collect_ElectronicComponent" s="430534">
+  <T n="_cooldown">0</T>
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T p="InGame\UI\Icons\LiveEvents\AnniversaryEvent\TNS\Objects\TNS_salvageElectronicGEN_01.png" n="enabled">2f7d0004:00000000:ad32bc15a246cf32</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x9F6BB34F<!--String: "Obtain an Electronic Upgrade Part"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0xB5EFD41<!--String: "Electronic Upgrade Parts can be obtained in a couple of ways.\n\nRepairing a broken electronic object may yield an upgrade part. Be careful, as a fire can easily be the outcome of the unskilled.\n\nOr Select Order and then Purchase Upgrade Parts... from a Computer.\n\n<i>(+25 Event Points)</i>"--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>447711<!--SituationGoalLootActions: liveEvent_GoalLoot_CompleteQuestGoal--></T>
+  </L>
+  <V n="_goal_test" t="inventory">
+    <U n="inventory">
+      <V n="contents_check" t="has_object_with_def">
+        <U n="has_object_with_def">
+          <T n="definition">22671</T>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="_post_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+      </U>
+    </V>
+  </L>
+  <T n="_score">0</T>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+  <V n="goal_completion_notification" t="enabled">
+    <U n="enabled">
+      <V n="icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T p="InGame\UI\Icons\LiveEvents\AnniversaryEvent\TNS\Objects\TNS_salvageElectronicGEN_01.png" n="key">2f7d0004:00000000:ad32bc15a246cf32</T>
+          </U>
+        </V>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0xF7981FC7<!--String: "{0.SimFirstName} has an Electronic Upgrade Part!\n\nThis is a core component for all theoretical high tech devices...including coffee makers, and it's used for building a time travel component."--></T>
+      </V>
+      <V n="title" t="enabled">
+        <T n="enabled">0x2F0E8B45<!--String: "Electronic Upgrade Part Obtained!"--></T>
+      </V>
+    </U>
+  </V>
+  <V n="tutorial_tip_group" t="disabled" />
+</I>

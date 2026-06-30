@@ -1,0 +1,738 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="computer_Dynasty_MarketFund_Manipulate" s="465701">
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Object</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <L n="_static_commodities">
+    <U>
+      <T n="static_commodity">27767<!--StaticCommodity: StaticCommodity_UseComputer--></T>
+    </U>
+  </L>
+  <T n="allow_autonomous">False</T>
+  <L n="appropriateness_tags">
+    <E>Appropriateness_Computer</E>
+  </L>
+  <T n="attention_cost">0.75</T>
+  <V n="autonomy_preference" t="enabled">
+    <V n="enabled" t="use_preference">
+      <U n="use_preference">
+        <U n="preference">
+          <E n="tag">Computer</E>
+        </U>
+      </U>
+    </V>
+  </V>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="time_based">
+                <U n="time_based">
+                  <T n="max_time">20</T>
+                  <T n="min_time">15</T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+      </L>
+      <V n="content" t="staging_content">
+        <U n="staging_content">
+          <U n="content_set">
+            <L n="affordance_links">
+              <T>31661<!--MixerInteraction: Computer_Use_Read--></T>
+              <T>31667<!--MixerInteraction: Computer_Use_Hack--></T>
+            </L>
+            <V n="balloon_overrides" t="enabled">
+              <L n="enabled">
+                <U>
+                  <T n="balloon_chance">60</T>
+                  <L n="balloon_choices">
+                    <U>
+                      <V n="item" t="balloon_icon">
+                        <U n="balloon_icon">
+                          <V n="icon" t="resource_key">
+                            <U n="resource_key">
+                              <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_Pricey_bg.png">2f7d0004:00000000:b25c8d196f26173e</T>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                    <U>
+                      <V n="item" t="balloon_icon">
+                        <U n="balloon_icon">
+                          <V n="category_icon" t="show_category_icon">
+                            <V n="show_category_icon" t="resource_key">
+                              <U n="resource_key">
+                                <T p="InGame\UI\Icons\Headlines\Final\headline_QuestionMark.png" n="key">2f7d0004:00000000:873da6c8ff732f1f</T>
+                              </U>
+                            </V>
+                          </V>
+                          <V n="icon" t="resource_key">
+                            <U n="resource_key">
+                              <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_Pricey_bg.png">2f7d0004:00000000:b25c8d196f26173e</T>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                    <U>
+                      <V n="item" t="balloon_icon">
+                        <U n="balloon_icon">
+                          <T p="InGame\UI\Icons\Headlines\Final\headline_QuestionMark.png" n="debug_overlay_override">2f7d0004:00000000:873da6c8ff732f1f</T>
+                          <V n="icon" t="resource_key">
+                            <U n="resource_key">
+                              <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_Cheap_bg.png">2f7d0004:00000000:e25c006655046b65</T>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </L>
+                  <L n="balloon_target">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </L>
+            </V>
+          </U>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="state_change">
+      <U n="state_change">
+        <V n="new_value" t="single_value">
+          <U n="single_value">
+            <T n="new_value">96850<!--VideoChannel: Computer_Hacking--></T>
+          </U>
+        </V>
+        <V n="timing" t="immediately" />
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x7EEB3345<!--String: "(From Liking Computers)"--></T>
+          </V>
+          <T n="buff_type">501809<!--Buff: buff_SimPreference_Likes_Activities_Computer--></T>
+        </U>
+        <L n="subject">
+          <E>Actor</E>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <L n="whitelist_traits">
+                  <T>501777<!--Preference: trait_SimPreference_Likes_Activities_Computer--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x4800997A<!--String: "(From Disliking Computers)"--></T>
+          </V>
+          <T n="buff_type">501811<!--Buff: buff_SimPreference_Dislikes_Activities_Computer--></T>
+        </U>
+        <L n="subject">
+          <E>Actor</E>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <L n="whitelist_traits">
+                  <T>501774<!--Preference: trait_SimPreference_Dislikes_Activities_Computer--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="adventure">
+      <U n="adventure">
+        <L n="_adventure_moments">
+          <U>
+            <E n="key">Career_ChanceCard_01</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">501780<!--AdventureMoment: adventureMoment_SimPreference_Activities_Computer_Like--></T>
+              </V>
+            </U>
+          </U>
+        </L>
+        <L n="_initial_moments">
+          <U>
+            <E n="adventure_moment_key">Career_ChanceCard_01</E>
+            <U n="weight">
+              <L n="multipliers">
+                <U>
+                  <T n="multiplier">0</T>
+                  <L n="tests">
+                    <L>
+                      <V t="test_set_reference">
+                        <T n="test_set_reference">269650<!--TestSetInstance: testSetInstance_SimPreference_PreferenceDiscovery_MaxOrCoolOrAgeChildAllowed--></T>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+                <U>
+                  <T n="multiplier">0</T>
+                  <L n="tests">
+                    <L>
+                      <V t="trait">
+                        <U n="trait">
+                          <L n="whitelist_traits">
+                            <T>501774<!--Preference: trait_SimPreference_Dislikes_Activities_Computer--></T>
+                            <T>501777<!--Preference: trait_SimPreference_Likes_Activities_Computer--></T>
+                            <T>501779<!--Trait: trait_SimPreference_NoOpinion_Activities_Computer--></T>
+                          </L>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+                <U>
+                  <T n="multiplier">0</T>
+                  <L n="tests">
+                    <L>
+                      <V t="test_set_reference">
+                        <T n="test_set_reference">267815<!--TestSetInstance: testSetInstance_SimPreference_PreferenceDiscovery_EnergizedFocusedInspired--></T>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+              </L>
+            </U>
+          </U>
+        </L>
+        <U n="success_chance">
+          <T n="base_chance">5</T>
+        </U>
+      </U>
+    </V>
+    <V t="adventure">
+      <U n="adventure">
+        <L n="_adventure_moments">
+          <U>
+            <E n="key">Career_ChanceCard_01</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">501781<!--AdventureMoment: adventureMoment_SimPreference_Activities_Computer_Dislike--></T>
+              </V>
+            </U>
+          </U>
+        </L>
+        <L n="_initial_moments">
+          <U>
+            <E n="adventure_moment_key">Career_ChanceCard_01</E>
+            <U n="weight">
+              <L n="multipliers">
+                <U>
+                  <T n="multiplier">0</T>
+                  <L n="tests">
+                    <L>
+                      <V t="test_set_reference">
+                        <T n="test_set_reference">269650<!--TestSetInstance: testSetInstance_SimPreference_PreferenceDiscovery_MaxOrCoolOrAgeChildAllowed--></T>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+                <U>
+                  <T n="multiplier">0</T>
+                  <L n="tests">
+                    <L>
+                      <V t="trait">
+                        <U n="trait">
+                          <L n="whitelist_traits">
+                            <T>501774<!--Preference: trait_SimPreference_Dislikes_Activities_Computer--></T>
+                            <T>501777<!--Preference: trait_SimPreference_Likes_Activities_Computer--></T>
+                            <T>501779<!--Trait: trait_SimPreference_NoOpinion_Activities_Computer--></T>
+                          </L>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+                <U>
+                  <T n="multiplier">0</T>
+                  <L n="tests">
+                    <L>
+                      <V t="mood">
+                        <U n="mood">
+                          <T n="disallow">True</T>
+                          <T n="mood">14645<!--Mood: Mood_Stressed--></T>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+              </L>
+            </U>
+          </U>
+        </L>
+        <U n="success_chance">
+          <T n="base_chance">25</T>
+        </U>
+      </U>
+    </V>
+    <V t="state_change">
+      <U n="state_change">
+        <V n="new_value" t="single_value">
+          <U n="single_value">
+            <T n="new_value">15106<!--VideoChannel: Computer_Off--></T>
+          </U>
+        </V>
+        <V n="timing" t="at_end">
+          <U n="at_end">
+            <E n="criticality">OnCancelOrException</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>285796<!--LootActions: loot_TeenPranks_Trigger_PasswordStealer--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="canonical_animation" t="enabled">
+    <U n="enabled">
+      <T n="factory">31395<!--AnimationElement: Computer_Use_Type--></T>
+    </U>
+  </V>
+  <T n="category">465502<!--PieMenuCategory: computer_Dynasty_MarketFund--></T>
+  <V n="content_score" t="disabled" />
+  <T n="disallow_as_mixer_target">True</T>
+  <T n="display_name">0xD3F1E670<!--String: "Manipulate Market"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Computer</E>
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+    <E>Interaction_OldDay_Fine</E>
+    <E>Interaction_Lifestyles_Techie_FlexibleLength</E>
+    <E>Interaction_Lifestyles_Sedentary_FlexibleLength</E>
+    <E>Interaction_Lifestyles_Indoorsy_FlexibleLength</E>
+    <E>Interaction_Lifestyles_AdrenalineSeeker_Mundane</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <V n="animation_ref" t="enabled">
+              <U n="enabled">
+                <T n="factory">31393<!--AnimationElement: Computer_Use_React_Positive--></T>
+              </U>
+            </V>
+            <L n="basic_extras">
+              <V t="buff_fire_and_forget">
+                <U n="buff_fire_and_forget">
+                  <U n="buff">
+                    <T n="buff_type">491490<!--Buff: buff_DynastyPerk_MarketFund_Manipulate_Cooldown--></T>
+                  </U>
+                </U>
+              </V>
+            </L>
+            <L n="loot_list">
+              <T>465702<!--LootActions: loot_Dynasty_MarketFund_Manipulate--></T>
+            </L>
+          </U>
+          <U n="weight">
+            <T n="base_value">9</T>
+          </U>
+        </U>
+      </L>
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">31394<!--AnimationElement: Computer_Use_React_Negative--></T>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <T n="buff_type">491490<!--Buff: buff_DynastyPerk_MarketFund_Manipulate_Cooldown--></T>
+                      </U>
+                    </U>
+                  </V>
+                </L>
+                <L n="loot_list">
+                  <T>258159<!--LootActions: loot_Buff_Trait_Clumsy_BreakObject--></T>
+                  <T>465878<!--LootActions: loot_Dynasty_MarketFund_ManipulateFail--></T>
+                </L>
+                <E n="outcome_result">FAILURE</E>
+              </U>
+              <U n="weight">
+                <T n="base_value">1</T>
+                <L n="multipliers">
+                  <U>
+                    <T n="multiplier">2</T>
+                    <L n="tests">
+                      <L>
+                        <V t="statistic">
+                          <U n="statistic">
+                            <T n="stat">465703<!--Statistic: statistic_Dynasty_MarketFund_ManipulateSuccessCount--></T>
+                            <V n="threshold" t="value_threshold">
+                              <U n="value_threshold">
+                                <E n="comparison">EQUAL</E>
+                                <T n="value">2</T>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                  <U>
+                    <T n="multiplier">3</T>
+                    <L n="tests">
+                      <L>
+                        <V t="statistic">
+                          <U n="statistic">
+                            <T n="stat">465703<!--Statistic: statistic_Dynasty_MarketFund_ManipulateSuccessCount--></T>
+                            <V n="threshold" t="value_threshold">
+                              <U n="value_threshold">
+                                <E n="comparison">EQUAL</E>
+                                <T n="value">3</T>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                  <U>
+                    <T n="multiplier">4</T>
+                    <L n="tests">
+                      <L>
+                        <V t="statistic">
+                          <U n="statistic">
+                            <T n="stat">465703<!--Statistic: statistic_Dynasty_MarketFund_ManipulateSuccessCount--></T>
+                            <V n="threshold" t="value_threshold">
+                              <U n="value_threshold">
+                                <E n="comparison">EQUAL</E>
+                                <T n="value">4</T>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                  <U>
+                    <T n="multiplier">5</T>
+                    <L n="tests">
+                      <L>
+                        <V t="statistic">
+                          <U n="statistic">
+                            <T n="stat">465703<!--Statistic: statistic_Dynasty_MarketFund_ManipulateSuccessCount--></T>
+                            <V n="threshold" t="value_threshold">
+                              <U n="value_threshold">
+                                <E n="comparison">EQUAL</E>
+                                <T n="value">5</T>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                  <U>
+                    <T n="multiplier">6</T>
+                    <L n="tests">
+                      <L>
+                        <V t="statistic">
+                          <U n="statistic">
+                            <T n="stat">465703<!--Statistic: statistic_Dynasty_MarketFund_ManipulateSuccessCount--></T>
+                            <V n="threshold" t="value_threshold">
+                              <U n="value_threshold">
+                                <T n="value">6</T>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                  <U>
+                    <T n="multiplier">7</T>
+                    <L n="tests">
+                      <L>
+                        <V t="statistic">
+                          <U n="statistic">
+                            <T n="stat">465703<!--Statistic: statistic_Dynasty_MarketFund_ManipulateSuccessCount--></T>
+                            <V n="threshold" t="value_threshold">
+                              <U n="value_threshold">
+                                <T n="value">7</T>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                  <U>
+                    <T n="multiplier">8</T>
+                    <L n="tests">
+                      <L>
+                        <V t="statistic">
+                          <U n="statistic">
+                            <T n="stat">465703<!--Statistic: statistic_Dynasty_MarketFund_ManipulateSuccessCount--></T>
+                            <V n="threshold" t="value_threshold">
+                              <U n="value_threshold">
+                                <T n="value">8</T>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                  <U>
+                    <T n="multiplier">9</T>
+                    <L n="tests">
+                      <L>
+                        <V t="statistic">
+                          <U n="statistic">
+                            <T n="stat">465703<!--Statistic: statistic_Dynasty_MarketFund_ManipulateSuccessCount--></T>
+                            <V n="threshold" t="value_threshold">
+                              <U n="value_threshold">
+                                <T n="value">10</T>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                  <U>
+                    <T n="multiplier">10</T>
+                    <L n="tests">
+                      <L>
+                        <V t="statistic">
+                          <U n="statistic">
+                            <T n="stat">465703<!--Statistic: statistic_Dynasty_MarketFund_ManipulateSuccessCount--></T>
+                            <V n="threshold" t="value_threshold">
+                              <U n="value_threshold">
+                                <T n="value">10</T>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                  <U>
+                    <T n="multiplier">2</T>
+                    <L n="tests">
+                      <L>
+                        <V t="test_set_reference">
+                          <T n="test_set_reference">425930<!--TestSetInstance: testSetInstance_LuckSys_BadLuck--></T>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                  <U>
+                    <T n="multiplier">0.5</T>
+                    <L n="tests">
+                      <L>
+                        <V t="test_set_reference">
+                          <T n="test_set_reference">425929<!--TestSetInstance: testSetInstance_LuckSys_GoodLuck--></T>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="statistic">
+                <U n="statistic">
+                  <T n="stat">465703<!--Statistic: statistic_Dynasty_MarketFund_ManipulateSuccessCount--></T>
+                  <V n="threshold" t="value_threshold">
+                    <U n="value_threshold">
+                      <T n="value">1</T>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+      <T n="use_fallback_as_default">True</T>
+    </U>
+  </V>
+  <V n="route_start_balloon" t="enabled">
+    <U n="enabled">
+      <U n="balloon">
+        <L n="balloon_choices">
+          <U>
+            <V n="item" t="balloon_icon">
+              <U n="balloon_icon">
+                <V n="icon" t="resource_key">
+                  <U n="resource_key">
+                    <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_desktopcomputer.png">2f7d0004:00000000:0e4f503d281657bb</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </U>
+        </L>
+        <L n="balloon_target">
+          <E>Actor</E>
+        </L>
+      </U>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">3</T>
+  <V n="super_affordance_compatibility" t="reference">
+    <T n="reference">77330<!--AffordanceFilter: af_ComputerCompatibility--></T>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_autonomous">
+    <L>
+      <V t="appropriateness" />
+      <V t="test_set_reference">
+        <T n="test_set_reference">303412<!--TestSetInstance: testSet_HighSchool_Active_DisallowOnPrincipalsDesk--></T>
+      </V>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>501774<!--Preference: trait_SimPreference_Dislikes_Activities_Computer--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="state">
+      <U n="state">
+        <V n="fallback_behavior" t="always_pass" />
+        <T n="value">110121<!--ObjectStateValue: frontDesk_Slotted_0_No--></T>
+      </U>
+    </V>
+    <V t="state">
+      <U n="state">
+        <E n="operator">NOTEQUAL</E>
+        <T n="value">15080<!--ObjectStateValue: BrokenState_Broken--></T>
+      </U>
+    </V>
+    <V t="statistic">
+      <U n="statistic">
+        <T n="must_have_stat">True</T>
+        <T n="stat">465643<!--Statistic: statistic_Dynasty_MarketFund_RiskLevel--></T>
+        <V n="threshold" t="value_threshold">
+          <U n="value_threshold">
+            <E n="comparison">GREATER</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="bucks_perks_test">
+      <U n="bucks_perks_test">
+        <T n="bucks_perk">465887<!--BucksPerk: dynastyPerks_MarketManipulator--></T>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">469886<!--TestSetInstance: testSet_DynastyPerk_ValidActor_Tooltip--></T>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>491490<!--Buff: buff_DynastyPerk_MarketFund_Manipulate_Cooldown--></T>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x4CDA556E<!--String: "It's too risky for {0.SimFirstName} to do this again so soon."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="statistic">
+      <U n="statistic">
+        <T n="stat">465471<!--Statistic: statistic_Dynasty_MarketFund--></T>
+        <V n="threshold" t="value_threshold">
+          <U n="value_threshold">
+            <E n="comparison">LESS</E>
+            <T n="value">1000000</T>
+          </U>
+        </V>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xFA36E79<!--String: "Account at maximum value."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+  <V n="utility_info" t="enabled">
+    <L n="enabled">
+      <U>
+        <E n="key">POWER</E>
+      </U>
+    </L>
+  </V>
+</I>

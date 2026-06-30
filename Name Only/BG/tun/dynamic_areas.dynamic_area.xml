@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<M n="dynamic_areas.dynamic_area" s="13542926634054092169">
+  <C n="DynamicAreaService">
+    <L n="AREA_TYPE_OBJECT_TAG">
+      <U>
+        <E n="Area Type">BUSINESS_EMPLOYEES_ONLY</E>
+        <E n="Tag">DynamicArea_Business_Employees_Only</E>
+      </U>
+      <U>
+        <E n="Area Type">BUSINESS_PUBLIC</E>
+        <E n="Tag">DynamicArea_Business_Public</E>
+      </U>
+      <U>
+        <E n="Area Type">BUSINESS_RESIDENTIAL</E>
+        <E n="Tag">DynamicArea_Business_Residential</E>
+      </U>
+    </L>
+    <L n="DYNAMIC_AREA_AUTONOMY_RESTRICTION">
+      <U>
+        <L n="area_types">
+          <E>BUSINESS_RESIDENTIAL</E>
+          <E>BUSINESS_EMPLOYEES_ONLY</E>
+        </L>
+        <E n="autonomy_rule">BUSINESS_CUSTOMER</E>
+      </U>
+      <U>
+        <L n="area_types">
+          <E>BUSINESS_RESIDENTIAL</E>
+        </L>
+        <E n="autonomy_rule">BUSINESS_EMPLOYEE</E>
+      </U>
+    </L>
+    <E n="EXTERIOR_AREA_TYPE">BUSINESS_PUBLIC</E>
+    <L n="PORTALS_EXCLUSIONS">
+      <U>
+        <E n="area_type">BUSINESS_RESIDENTIAL</E>
+        <L n="portal_exclusion_flag">
+          <E>BUSINESS_PRIVATE_AREA</E>
+        </L>
+      </U>
+      <U>
+        <E n="area_type">BUSINESS_EMPLOYEES_ONLY</E>
+        <L n="portal_exclusion_flag">
+          <E>BUSINESS_EMPLOYEE_AREA</E>
+        </L>
+      </U>
+    </L>
+    <L n="PORTALS_TRANSITION_OVERRIDE">
+      <U>
+        <E n="entry_area_type">BUSINESS_RESIDENTIAL</E>
+        <E n="exit_area_type">BUSINESS_EMPLOYEES_ONLY</E>
+      </U>
+    </L>
+  </C>
+</M>

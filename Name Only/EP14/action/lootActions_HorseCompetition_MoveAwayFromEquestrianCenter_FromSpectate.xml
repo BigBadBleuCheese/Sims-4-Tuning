@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="lootActions_HorseCompetition_MoveAwayFromEquestrianCenter_FromSpectate" s="349404">
+  <L n="loot_actions">
+    <V t="reaction">
+      <U n="reaction">
+        <T n="allow_rabbit_holed_sim">True</T>
+        <V n="si_reaction" t="enabled">
+          <U n="enabled">
+            <T n="affordance">348890<!--SuperInteraction: si_moveAwayCircle_EquestrianCenter_Exit_FromSpectate--></T>
+            <E n="affordance_priority">High</E>
+            <V n="affordance_target" t="enabled">
+              <E n="enabled">Actor</E>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="state_change">
+      <U n="state_change">
+        <T n="state_value">327479<!--ObjectStateValue: EP14World_EquestrianCenter_States_OpenClose_Closed--></T>
+        <V n="subject" t="all_objects_with_tag">
+          <E n="all_objects_with_tag">Func_EquestrianCenter</E>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="species" t="specified">
+                  <U n="specified">
+                    <L n="species">
+                      <E />
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="day_and_time">
+              <U n="day_and_time">
+                <V n="time_range" t="enabled">
+                  <U n="enabled">
+                    <U n="begin_time">
+                      <T n="hour">19</T>
+                    </U>
+                    <U n="duration">
+                      <T n="hour">12</T>
+                    </U>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="state_change">
+      <U n="state_change">
+        <T n="state_value">327478<!--ObjectStateValue: EP14World_EquestrianCenter_States_OpenClose_Open--></T>
+        <V n="subject" t="all_objects_with_tag">
+          <E n="all_objects_with_tag">Func_EquestrianCenter</E>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="species" t="specified">
+                  <U n="specified">
+                    <L n="species">
+                      <E />
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="day_and_time">
+              <U n="day_and_time">
+                <V n="time_range" t="enabled">
+                  <U n="enabled">
+                    <U n="begin_time">
+                      <T n="hour">7</T>
+                    </U>
+                    <U n="duration">
+                      <T n="hour">12</T>
+                    </U>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

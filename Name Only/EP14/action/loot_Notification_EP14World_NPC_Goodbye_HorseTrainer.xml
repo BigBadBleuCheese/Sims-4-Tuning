@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Notification_EP14World_NPC_Goodbye_HorseTrainer" s="349033">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant" />
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x2A64A819<!--String: "Howdy there! Friendly reminder that the Hay Now! Equestrian Center is open from 7 AM to 7 PM! If we're closed, just come back tomorrow for an exciting day of training and competition!"--></T>
+            </V>
+          </U>
+        </V>
+        <E n="subject">ActiveHousehold</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="is_active_sim" t="enabled" />
+              </U>
+            </V>
+            <V t="trait">
+              <U n="trait">
+                <L n="blacklist_traits">
+                  <T>350340<!--Trait: trait_Hidden_EP14_World_NPC_HorseTrainer_goodbye--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="trait_add">
+      <U n="trait_add">
+        <E n="subject">ActorHouseholdMembers</E>
+        <T n="trait">350340<!--Trait: trait_Hidden_EP14_World_NPC_HorseTrainer_goodbye--></T>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>350340<!--Trait: trait_Hidden_EP14_World_NPC_HorseTrainer_goodbye--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="RandomWeightedLoot" i="action" m="interactions.utils.loot" n="randomWeightedLoot_HorseRiding_Mount_RearUp_Chance" s="339939">
+  <L n="random_loot_actions">
+    <U>
+      <V n="action" t="do_nothing" />
+      <U n="weight">
+        <T n="base_value">1</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">2</T>
+            <L n="tests">
+              <L>
+                <V t="trait">
+                  <U n="trait">
+                    <L n="whitelist_traits">
+                      <T>322836<!--Trait: trait_Horse_Personality_Friendly--></T>
+                      <T>322882<!--Trait: trait_Horse_Personality_Intelligent--></T>
+                      <T>322880<!--Trait: trait_Horse_Personality_Mellow--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0.5</T>
+            <L n="tests">
+              <L>
+                <V t="trait">
+                  <U n="trait">
+                    <L n="whitelist_traits">
+                      <T>323824<!--Trait: trait_Horse_Personality_Aggressive--></T>
+                      <T>322878<!--Trait: trait_Horse_Personality_Energetic--></T>
+                      <T>323822<!--Trait: trait_Horse_Personality_FreeSpirit--></T>
+                      <T>323823<!--Trait: trait_Horse_Personality_Independent--></T>
+                      <T>323821<!--Trait: trait_Horse_Personality_Defiant--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">2</T>
+            <L n="tests">
+              <L>
+                <V t="skill_test">
+                  <U n="skill_test">
+                    <T n="skill">324631<!--Skill: statistic_Skill_Horse_Temperament--></T>
+                    <V n="skill_range" t="interval">
+                      <U n="interval">
+                        <U n="skill_interval">
+                          <T n="lower_bound">4</T>
+                          <T n="upper_bound">7</T>
+                        </U>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">3</T>
+            <L n="tests">
+              <L>
+                <V t="skill_test">
+                  <U n="skill_test">
+                    <T n="skill">324631<!--Skill: statistic_Skill_Horse_Temperament--></T>
+                    <V n="skill_range" t="interval">
+                      <U n="interval">
+                        <U n="skill_interval">
+                          <T n="lower_bound">8</T>
+                        </U>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">2</T>
+            <L n="tests">
+              <L>
+                <V t="relationship">
+                  <U n="relationship">
+                    <U n="relationship_score_interval">
+                      <T n="lower_bound">25</T>
+                      <T n="upper_bound">75</T>
+                    </U>
+                    <T n="track">159228<!--RelationshipTrack: LTR_SimToPet_Friendship_Main--></T>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">3</T>
+            <L n="tests">
+              <L>
+                <V t="relationship">
+                  <U n="relationship">
+                    <U n="relationship_score_interval">
+                      <T n="lower_bound">76</T>
+                      <T n="upper_bound">100</T>
+                    </U>
+                    <T n="track">159228<!--RelationshipTrack: LTR_SimToPet_Friendship_Main--></T>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">329586<!--LootActions: loot_Reaction_Horse_Riding_RearUp--></T>
+      </V>
+      <U n="weight">
+        <T n="base_value">1</T>
+      </U>
+    </U>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>332086<!--Buff: buff_HorseRiding_ThrowRider--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

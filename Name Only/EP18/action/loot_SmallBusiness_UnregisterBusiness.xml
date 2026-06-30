@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_SmallBusiness_UnregisterBusiness" s="428803">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">427450<!--Buff: buff_SmallBusiness_LightRetail_Hidden_ActiveStateCleanupBuff--></T>
+        </U>
+      </U>
+    </V>
+    <V t="apply_loot_to_all_lot_level_objects">
+      <U n="apply_loot_to_all_lot_level_objects">
+        <L n="loot_list">
+          <T>427410<!--LootActions: loot_SmallBusiness_LightRetailSurface_SetStateToInactive--></T>
+        </L>
+        <V n="object_loot" t="enabled">
+          <U n="enabled">
+            <V n="objects" t="tagged_objects">
+              <U n="tagged_objects">
+                <L n="tags">
+                  <E>Func_LightRetailSurface</E>
+                </L>
+              </U>
+            </V>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="small_business_does_household_have_other_business_test">
+              <U n="small_business_does_household_have_other_business_test">
+                <T n="negate">True</T>
+                <E n="participant">Actor</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="actions">
+      <T n="actions">419334<!--LootActions: loot_SmallBusiness_Reputation_Consequences_Ultimatum_Resolved--></T>
+    </V>
+    <V t="actions">
+      <T n="actions">440612<!--LootActions: loot_DramaNode_SmallBusiness_Reputation_Ultimatum_Cancel_NoTargetSim--></T>
+    </V>
+  </L>
+</I>

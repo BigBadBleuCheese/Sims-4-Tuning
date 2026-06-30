@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="MixerInteraction" i="interaction" m="interactions.base.mixer_interaction" n="mixer_RanchNectar_MasteryPerk_SkillfulSleep_Stomp" s="379684">
+  <T n="allow_user_directed">False</T>
+  <V n="basic_content" t="looping_animation">
+    <U n="looping_animation">
+      <U n="animation_ref">
+        <T n="factory">322551<!--AnimationElement: ranchNectarMaker_Stomp_Stomp--></T>
+      </U>
+      <L n="conditional_actions">
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="time_based">
+                <U n="time_based">
+                  <T n="max_time">5</T>
+                  <T n="min_time">3</T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+      </L>
+    </U>
+  </V>
+  <V n="basic_focus" t="disable_focus" />
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Mixer</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U />
+        <U>
+          <U n="outcome">
+            <V n="animation_ref" t="enabled">
+              <U n="enabled">
+                <T n="factory">322550<!--AnimationElement: ranchNectarMaker_Stomp_Fall--></T>
+              </U>
+            </V>
+          </U>
+          <U n="weight">
+            <T n="base_value">2</T>
+            <L n="multipliers">
+              <U>
+                <L n="tests">
+                  <L>
+                    <V t="skill_test">
+                      <U n="skill_test">
+                        <T n="skill">315761<!--Skill: statistic_Skill_AdultMinor_RanchNectar--></T>
+                        <V n="skill_range" t="interval">
+                          <U n="interval">
+                            <U n="skill_interval">
+                              <T n="lower_bound">1</T>
+                              <T n="upper_bound">2</T>
+                            </U>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">0.5</T>
+                <L n="tests">
+                  <L>
+                    <V t="skill_test">
+                      <U n="skill_test">
+                        <T n="skill">315761<!--Skill: statistic_Skill_AdultMinor_RanchNectar--></T>
+                        <V n="skill_range" t="interval">
+                          <U n="interval">
+                            <U n="skill_interval">
+                              <T n="lower_bound">3</T>
+                              <T n="upper_bound">4</T>
+                            </U>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">0.2</T>
+                <L n="tests">
+                  <L>
+                    <V t="skill_test">
+                      <U n="skill_test">
+                        <T n="skill">315761<!--Skill: statistic_Skill_AdultMinor_RanchNectar--></T>
+                        <V n="skill_range" t="interval">
+                          <U n="interval">
+                            <U n="skill_interval">
+                              <T n="lower_bound">5</T>
+                            </U>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="sub_action">
+    <T n="base_weight">2</T>
+  </U>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals" />
+  <T n="visible">False</T>
+</I>

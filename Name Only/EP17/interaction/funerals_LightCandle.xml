@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="funerals_LightCandle" s="383283">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="circle">
+            <U n="circle">
+              <T n="ideal_radius">2</T>
+              <T n="radius">2</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="value" t="facing" />
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <V n="_situation_participant_provider" t="enabled">
+    <U n="enabled">
+      <L n="provided_participant_type_to_job_map">
+        <U>
+          <E n="key">SituationParticipants1</E>
+          <L n="value">
+            <U>
+              <T n="job">381374<!--SituationJob: job_Funeral_DepartedSim--></T>
+              <V n="sim_info_source" t="from_guest_list" />
+              <E n="situation_participant">Actor</E>
+              <V n="situations" t="by_definition">
+                <U n="by_definition">
+                  <L n="situations">
+                    <T>381372<!--CustomStateFuneralSituation: Situation_Funeral--></T>
+                  </L>
+                </U>
+              </V>
+            </U>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <L n="_static_commodities">
+    <U>
+      <T n="static_commodity">383560<!--StaticCommodity: staticCommodity_Funeral_RoleActions--></T>
+    </U>
+    <U>
+      <T n="static_commodity">388977<!--StaticCommodity: staticCommodity_Cemetery_Mourner_LightCandle--></T>
+    </U>
+    <U>
+      <T n="static_commodity">405697<!--StaticCommodity: staticCommodity_Funeral_RoleActions_DailyFestival--></T>
+    </U>
+  </L>
+  <T n="allowed_to_combine">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="time_based">
+                <U n="time_based">
+                  <T n="max_time">10</T>
+                  <T n="min_time">6</T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+      </L>
+      <V n="content" t="staging_content">
+        <U n="staging_content">
+          <V n="animation_ref" t="enabled">
+            <U n="enabled">
+              <T n="factory">383311<!--AnimationElement: Funerals_Solo_LightCandle--></T>
+            </U>
+          </V>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="balloon">
+      <U n="balloon">
+        <L n="balloon_choices">
+          <U>
+            <V n="item" t="balloon_icon">
+              <U n="balloon_icon">
+                <V n="icon" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>StoredSim</E>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </U>
+        </L>
+        <L n="balloon_target">
+          <E>Object</E>
+        </L>
+      </U>
+    </V>
+    <V t="create_object">
+      <U n="create_object">
+        <V n="creation_data" t="definition">
+          <U n="definition">
+            <T n="definition">453667</T>
+          </U>
+        </V>
+        <V n="location" t="position">
+          <U n="position">
+            <V n="initial_location" t="from_participant">
+              <U n="from_participant">
+                <E n="participant">Object</E>
+              </U>
+            </V>
+            <L n="reference_obj_hidden_flags">
+              <E>RABBIT_HOLE</E>
+            </L>
+            <L n="search_flag_set">
+              <E>STAY_IN_CONNECTED_CONNECTIVITY_GROUP</E>
+              <E>CALCULATE_RESULT_TERRAIN_HEIGHTS</E>
+              <E>DONE_ON_MAX_RESULTS</E>
+            </L>
+          </U>
+        </V>
+        <V n="timing" t="on_xevt" />
+      </U>
+    </V>
+    <V t="buff_fire_and_forget">
+      <U n="buff_fire_and_forget">
+        <U n="buff">
+          <T n="buff_type">427030<!--Buff: buff_Funerals_Hidden_Candle_Cooldown--></T>
+        </U>
+      </U>
+    </V>
+  </L>
+  <V n="basic_reserve_object" t="enabled" />
+  <T n="category">383557<!--PieMenuCategory: pieMenuCategory_Funeral--></T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xBDA971C<!--String: "Light Candle"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="loot_list">
+          <T>393531<!--LootActions: rel_Gain_Medium_Funeral--></T>
+          <T>393701<!--RandomWeightedLoot: randomWeightedLoot_Funerals_LightCandle--></T>
+        </L>
+      </U>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all" />
+    </U>
+  </V>
+  <V n="super_affordance_klobberers" t="enabled" />
+  <E n="target_type">OBJECT</E>
+  <L n="test_autonomous">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>427030<!--Buff: buff_Funerals_Hidden_Candle_Cooldown--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="trait">
+      <U n="trait">
+        <L n="blacklist_traits">
+          <T>16851<!--Trait: trait_isGrimReaper--></T>
+        </L>
+        <E n="subject">TargetSim</E>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">404575<!--TestSetInstance: testSet_FloatingUrn_Disallow--></T>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

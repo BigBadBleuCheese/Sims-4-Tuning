@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="ScarecrowSituation" i="situation" m="situations.complex.scarecrow_situation" n="situation_GreenMan_Summon" s="445902">
+  <U n="_do_stuff_state">
+    <T n="role_state">437903<!--RoleState: roleState_GreenMan_OpenForHelp--></T>
+    <V n="time_out" t="enabled">
+      <T n="enabled">360</T>
+    </V>
+  </U>
+  <U n="_leave_state">
+    <U n="_leave_interaction">
+      <L n="affordances">
+        <T>448364<!--NPCLeaveLotInteraction: npcLeaveLot_GreenMan_Return--></T>
+        <T>458136<!--NPCLeaveLotInteraction: npcLeaveLot_GreenMan_Return_CantReachObject--></T>
+      </L>
+    </U>
+    <T n="role_state">437103<!--RoleState: roleState_GreenMan_Return--></T>
+  </U>
+  <T n="_situation_job">437099<!--SituationJob: situationJob_GreenMan--></T>
+  <T n="_spawn_object_reset_loots">445903<!--LootActions: loot_GreenMan_Situation_ReturnReset--></T>
+  <U n="_spawn_object_targeting_affordance">
+    <L n="affordances">
+      <T>437101<!--SuperInteraction: super_GreenMan_Object_SpawnSim--></T>
+    </L>
+  </U>
+  <T n="_survives_active_household_change">True</T>
+  <T n="duration">0</T>
+  <V n="situation_end_time_string" t="show_end_time">
+    <T n="show_end_time">0xA3E17143<!--String: "Work day ends at {0.TimeShort}"--></T>
+  </V>
+  <V n="time_jump" t="allow" />
+</I>

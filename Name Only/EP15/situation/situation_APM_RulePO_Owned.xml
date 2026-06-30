@@ -1,0 +1,505 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="CustomStatesSituation" i="situation" m="situations.custom_states.custom_states_situation" n="situation_APM_RulePO_Owned" s="345211">
+  <L n="_situation_states">
+    <U>
+      <T n="Situation State Key">DeliverFine</T>
+      <V n="Situation State" t="literal">
+        <U n="literal">
+          <L n="job_and_role_changes">
+            <U>
+              <T n="Situation Job">345207<!--SituationJob: job_APM_PO_Owned--></T>
+              <T n="Role State">358858<!--RoleState: role_APM_PO_DeliverFine--></T>
+            </U>
+          </L>
+          <L n="triggers">
+            <U>
+              <V n="effect" t="end_situation" />
+              <L n="triggers">
+                <V t="duration">
+                  <U n="duration">
+                    <U n="duration">
+                      <T n="minutes">30</T>
+                    </U>
+                  </U>
+                </V>
+                <V t="test_event">
+                  <U n="test_event">
+                    <V n="test" t="ran_interaction_test">
+                      <U n="ran_interaction_test">
+                        <L n="affordances">
+                          <T>358860<!--SuperInteraction: door_APM_DeliverFine_Autonomous--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </U>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <T n="Situation State Key">DoAction</T>
+      <V n="Situation State" t="literal">
+        <U n="literal">
+          <L n="job_and_role_changes">
+            <U>
+              <T n="Situation Job">351419<!--SituationJob: job_APM_PO_Tenant--></T>
+              <T n="Role State">351530<!--RoleState: role_APM_Tenant_EvictionChance--></T>
+            </U>
+          </L>
+          <L n="triggers">
+            <U>
+              <V n="effect" t="change_state">
+                <U n="change_state">
+                  <U n="possible_states">
+                    <L n="possible_state_keys">
+                      <U>
+                        <T n="situation_key">Hangout</T>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+              </V>
+              <L n="triggers">
+                <V t="duration">
+                  <U n="duration">
+                    <U n="duration">
+                      <T n="minutes">1</T>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </U>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <T n="Situation State Key">EndSituation</T>
+      <V n="Situation State" t="literal">
+        <U n="literal">
+          <L n="triggers">
+            <U>
+              <V n="effect" t="end_situation" />
+              <L n="triggers">
+                <V t="duration">
+                  <U n="duration">
+                    <U n="duration">
+                      <T n="minutes">1</T>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </U>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <T n="Situation State Key">EvictionChance</T>
+      <V n="Situation State" t="literal">
+        <U n="literal">
+          <L n="job_and_role_changes">
+            <U>
+              <T n="Situation Job">351419<!--SituationJob: job_APM_PO_Tenant--></T>
+              <T n="Role State">351530<!--RoleState: role_APM_Tenant_EvictionChance--></T>
+            </U>
+          </L>
+          <L n="triggers">
+            <U>
+              <V n="effect" t="end_situation" />
+              <L n="triggers">
+                <V t="duration">
+                  <U n="duration">
+                    <U n="duration">
+                      <T n="minutes">5</T>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </U>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <T n="Situation State Key">Hangout</T>
+      <V n="Situation State" t="literal">
+        <U n="literal">
+          <L n="job_and_role_changes">
+            <U>
+              <T n="Situation Job">345207<!--SituationJob: job_APM_PO_Owned--></T>
+              <T n="Role State">345203<!--RoleState: role_NPCVisit_Hangout_APM--></T>
+            </U>
+          </L>
+          <L n="triggers">
+            <U>
+              <V n="effect" t="end_situation" />
+              <L n="triggers">
+                <V t="duration">
+                  <U n="duration">
+                    <U n="duration">
+                      <T n="hours">2</T>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </U>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <T n="Situation State Key">KnockWait</T>
+      <V n="Situation State" t="literal">
+        <U n="literal">
+          <L n="job_and_role_changes">
+            <U>
+              <T n="Situation Job">345207<!--SituationJob: job_APM_PO_Owned--></T>
+              <T n="Role State">345141<!--RoleState: role_NPCVisit_KnockOnDoor_APM--></T>
+            </U>
+          </L>
+          <L n="triggers">
+            <U>
+              <V n="effect" t="end_situation" />
+              <L n="triggers">
+                <V t="duration">
+                  <U n="duration">
+                    <U n="duration">
+                      <T n="hours">1</T>
+                      <T n="minutes">0</T>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </U>
+            <U>
+              <V n="effect" t="change_state">
+                <U n="change_state">
+                  <U n="possible_states">
+                    <L n="possible_state_keys">
+                      <U>
+                        <T n="situation_key">DoAction</T>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+              </V>
+              <L n="triggers">
+                <V t="test_event">
+                  <U n="test_event">
+                    <T n="only_trigger_for_situation_sims">False</T>
+                    <V n="test" t="ran_interaction_test">
+                      <U n="ran_interaction_test">
+                        <L n="affordances">
+                          <T>234517<!--SocialSuperInteraction: sim_InviteIn_NoSummon_NoEnterFrontDoor--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </U>
+            <U>
+              <V n="effect" t="change_state">
+                <U n="change_state">
+                  <U n="possible_states">
+                    <L n="possible_state_keys">
+                      <U>
+                        <T n="situation_key">WaitForInvite</T>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+              </V>
+              <L n="triggers">
+                <V t="test_event">
+                  <U n="test_event">
+                    <T n="only_trigger_for_situation_sims">False</T>
+                    <V n="test" t="ran_interaction_test">
+                      <U n="ran_interaction_test">
+                        <L n="affordances">
+                          <T>25211<!--SuperInteraction: door_RingDoorbell--></T>
+                          <T>201065<!--SuperInteraction: door_RingDoorbell_Sliding--></T>
+                          <T>139307<!--SuperInteraction: door_Apartment_NPCRingDoorbell--></T>
+                        </L>
+                        <E n="test_event">InteractionStart</E>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </U>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <T n="Situation State Key">MailboxWait</T>
+      <V n="Situation State" t="literal">
+        <U n="literal">
+          <L n="job_and_role_changes">
+            <U>
+              <T n="Situation Job">345207<!--SituationJob: job_APM_PO_Owned--></T>
+              <T n="Role State">350975<!--RoleState: role_APM_PO_WaitAtMailbox--></T>
+            </U>
+          </L>
+          <L n="triggers">
+            <U>
+              <V n="effect" t="end_situation" />
+              <L n="triggers">
+                <V t="duration">
+                  <U n="duration">
+                    <U n="duration">
+                      <T n="minutes">30</T>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </U>
+            <U>
+              <V n="effect" t="change_state">
+                <U n="change_state">
+                  <U n="possible_states">
+                    <L n="possible_state_keys">
+                      <U>
+                        <T n="situation_key">DoAction</T>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+              </V>
+              <L n="triggers">
+                <V t="test_event">
+                  <U n="test_event">
+                    <V n="test" t="ran_interaction_test">
+                      <U n="ran_interaction_test">
+                        <L n="affordances">
+                          <T>234517<!--SocialSuperInteraction: sim_InviteIn_NoSummon_NoEnterFrontDoor--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </U>
+            <U>
+              <V n="effect" t="change_state">
+                <U n="change_state">
+                  <U n="possible_states">
+                    <L n="possible_state_keys">
+                      <U>
+                        <T n="situation_key">WaitForInvite</T>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+              </V>
+              <L n="triggers">
+                <V t="test_event">
+                  <U n="test_event">
+                    <V n="test" t="ran_interaction_test">
+                      <U n="ran_interaction_test">
+                        <L n="affordances">
+                          <T>24821<!--SuperInteraction: mailbox_visit--></T>
+                        </L>
+                        <E n="test_event">InteractionStart</E>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </U>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <T n="Situation State Key">WaitForInvite</T>
+      <V n="Situation State" t="literal">
+        <U n="literal">
+          <L n="job_and_role_changes">
+            <U>
+              <T n="Situation Job">345207<!--SituationJob: job_APM_PO_Owned--></T>
+              <T n="Role State">345255<!--RoleState: role_APM_PO_AngryWaitAtDoor--></T>
+            </U>
+          </L>
+          <L n="triggers">
+            <U>
+              <V n="effect" t="change_state">
+                <U n="change_state">
+                  <U n="possible_states">
+                    <L n="possible_state_keys">
+                      <U>
+                        <T n="situation_key">EvictionChance</T>
+                        <U n="weight">
+                          <T n="base_value">2</T>
+                          <L n="multipliers">
+                            <U>
+                              <T n="multiplier">2</T>
+                              <L n="tests">
+                                <L>
+                                  <V t="business_rule_state">
+                                    <U n="business_rule_state">
+                                      <E n="state">BROKEN</E>
+                                      <V n="target_business" t="zone">
+                                        <U n="zone">
+                                          <E n="participant">CurrentZoneId</E>
+                                        </U>
+                                      </V>
+                                      <U n="threshold">
+                                        <T n="value">3</T>
+                                      </U>
+                                    </U>
+                                  </V>
+                                </L>
+                              </L>
+                            </U>
+                          </L>
+                        </U>
+                      </U>
+                      <U>
+                        <T n="situation_key">DeliverFine</T>
+                      </U>
+                      <U>
+                        <T n="situation_key">EndSituation</T>
+                        <U n="weight">
+                          <T n="base_value">4</T>
+                          <L n="multipliers">
+                            <U>
+                              <T n="multiplier">0.25</T>
+                              <L n="tests">
+                                <L>
+                                  <V t="business_rule_state">
+                                    <U n="business_rule_state">
+                                      <E n="state">BROKEN</E>
+                                      <V n="target_business" t="zone">
+                                        <U n="zone">
+                                          <E n="participant">CurrentZoneId</E>
+                                        </U>
+                                      </V>
+                                      <U n="threshold">
+                                        <T n="value">2</T>
+                                      </U>
+                                    </U>
+                                  </V>
+                                </L>
+                              </L>
+                            </U>
+                          </L>
+                        </U>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+              </V>
+              <L n="triggers">
+                <V t="duration">
+                  <U n="duration">
+                    <U n="duration">
+                      <T n="hours">1</T>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </U>
+            <U>
+              <V n="effect" t="change_state">
+                <U n="change_state">
+                  <U n="possible_states">
+                    <L n="possible_state_keys">
+                      <U>
+                        <T n="situation_key">DoAction</T>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+              </V>
+              <L n="triggers">
+                <V t="test_event">
+                  <U n="test_event">
+                    <T n="only_trigger_for_situation_sims">False</T>
+                    <V n="test" t="ran_interaction_test">
+                      <U n="ran_interaction_test">
+                        <L n="affordances">
+                          <T>234517<!--SocialSuperInteraction: sim_InviteIn_NoSummon_NoEnterFrontDoor--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </U>
+          </L>
+        </U>
+      </V>
+    </U>
+  </L>
+  <V n="_starting_state" t="random_starting_state">
+    <U n="random_starting_state">
+      <L n="possible_state_keys">
+        <U>
+          <T n="situation_key">KnockWait</T>
+          <U n="weight">
+            <L n="multipliers">
+              <U>
+                <T n="multiplier">0</T>
+                <L n="tests">
+                  <L>
+                    <V t="lot_has_front_door">
+                      <U n="lot_has_front_door">
+                        <T n="invert">True</T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+        <U>
+          <T n="situation_key">MailboxWait</T>
+          <U n="weight">
+            <L n="multipliers">
+              <U>
+                <T n="multiplier">0</T>
+                <L n="tests">
+                  <L>
+                    <V t="lot_has_front_door" />
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+      </L>
+    </U>
+  </V>
+  <T p="InGame\Audio\Bumper\bumper_event_start.propx" n="audio_sting_on_start">39b2aa4a:00000000:78b903461d47e4fc</T>
+  <L n="compatible_venues">
+    <T>28614<!--Venue: venue_residential--></T>
+  </L>
+  <E n="creation_ui_option">NOT_AVAILABLE</E>
+  <L n="default_job_and_roles">
+    <U>
+      <T n="Situation Job">345207<!--SituationJob: job_APM_PO_Owned--></T>
+      <T n="Role State">350975<!--RoleState: role_APM_PO_WaitAtMailbox--></T>
+    </U>
+    <U>
+      <T n="Situation Job">351419<!--SituationJob: job_APM_PO_Tenant--></T>
+      <T n="Role State">351529<!--RoleState: role_APM_PO_Tenant_Blank--></T>
+    </U>
+  </L>
+  <T n="duration">0</T>
+  <E n="exclusivity">VISIT</E>
+  <T p="InGame\Audio\Bumper\bumper_event_major_complete.propx" n="main_goal_audio_sting">39b2aa4a:00000000:10b476550150a33f</T>
+  <T n="max_participants">20</T>
+  <V n="situation_end_time_string" t="show_end_time">
+    <T n="show_end_time">0xA3E17143<!--String: "Work day ends at {0.TimeShort}"--></T>
+  </V>
+  <L n="tags">
+    <E>Situation_VisitorNPCs</E>
+  </L>
+</I>

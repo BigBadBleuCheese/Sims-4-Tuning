@@ -1,0 +1,2425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="RandomWeightedLoot" i="action" m="interactions.utils.loot" n="randomWeightedLoot_APM_EventPicker" s="347719">
+  <L n="random_loot_actions">
+    <U>
+      <V n="action" t="schedule_drama_node">
+        <U n="schedule_drama_node">
+          <T n="drama_node">347284<!--MultiUnitEventDramaNode: dramaNode_APM_Algae--></T>
+          <E n="subject">Actor</E>
+          <L n="tests">
+            <L>
+              <V t="zone">
+                <U n="zone">
+                  <V n="zone_source" t="use_picked_zone_ids" />
+                  <U n="zone_tests">
+                    <T n="use_source_venue">True</T>
+                    <V n="zone_modifiers" t="enabled">
+                      <U n="enabled">
+                        <V n="whitelist" t="specify">
+                          <U n="specify">
+                            <L n="whitelist">
+                              <T>348337<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasPoolObject--></T>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">2</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">2</T>
+            <L n="tests">
+              <L>
+                <V t="statistic">
+                  <U n="statistic">
+                    <T n="stat">348779<!--Commodity: commodity_APM_LastPOVisitTimer--></T>
+                    <V n="threshold" t="value_threshold">
+                      <U n="value_threshold">
+                        <E n="comparison">EQUAL</E>
+                      </U>
+                    </V>
+                    <E n="who">Actor</E>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">2</T>
+            <L n="tests">
+              <L>
+                <V t="zone">
+                  <U n="zone">
+                    <V n="zone_source" t="use_picked_zone_ids" />
+                    <U n="zone_tests">
+                      <T n="use_source_venue">True</T>
+                      <V n="zone_modifiers" t="enabled">
+                        <U n="enabled">
+                          <V n="whitelist" t="specify">
+                            <U n="specify">
+                              <L n="whitelist">
+                                <T>144148<!--ZoneModifier: zoneModifier_lotTrait_Filthy--></T>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0.5</T>
+            <L n="tests">
+              <L>
+                <V t="zone">
+                  <U n="zone">
+                    <V n="zone_source" t="use_picked_zone_ids" />
+                    <U n="zone_tests">
+                      <V n="zone_modifiers" t="enabled">
+                        <U n="enabled">
+                          <V n="whitelist" t="specify">
+                            <U n="specify">
+                              <L n="whitelist">
+                                <T>359114<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasPool_CommonArea--></T>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="drama_node">
+                  <U n="drama_node">
+                    <T n="check_active_nodes">False</T>
+                    <L n="drama_nodes">
+                      <T>348270<!--DialogDramaNode: dialogDramaNode_muEventAPM_Cooldown_Algae--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="schedule_drama_node">
+        <U n="schedule_drama_node">
+          <T n="drama_node">359181<!--MultiUnitEventDramaNode: dramaNode_APM_Algae_CommonArea--></T>
+          <E n="subject">Actor</E>
+          <L n="tests">
+            <L>
+              <V t="zone">
+                <U n="zone">
+                  <V n="zone_source" t="use_picked_zone_ids" />
+                  <U n="zone_tests">
+                    <T n="use_source_venue">True</T>
+                    <V n="zone_modifiers" t="enabled">
+                      <U n="enabled">
+                        <V n="whitelist" t="specify">
+                          <U n="specify">
+                            <L n="whitelist">
+                              <T>359114<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasPool_CommonArea--></T>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </U>
+                </U>
+              </V>
+              <V t="zone">
+                <U n="zone">
+                  <U n="zone_tests">
+                    <V n="venue_type" t="enabled">
+                      <U n="enabled">
+                        <V n="blacklist" t="specify">
+                          <U n="specify">
+                            <L n="blacklist">
+                              <T>341299<!--Venue: venue_MultiUnit--></T>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </U>
+                </U>
+              </V>
+              <V t="test_set_reference">
+                <T n="test_set_reference">361365<!--TestSetInstance: testSet_APM_NoUninterruptableEventRunning--></T>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">2</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">2</T>
+            <L n="tests">
+              <L>
+                <V t="statistic">
+                  <U n="statistic">
+                    <T n="stat">348779<!--Commodity: commodity_APM_LastPOVisitTimer--></T>
+                    <V n="threshold" t="value_threshold">
+                      <U n="value_threshold">
+                        <E n="comparison">EQUAL</E>
+                      </U>
+                    </V>
+                    <E n="who">Actor</E>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">2</T>
+            <L n="tests">
+              <L>
+                <V t="zone">
+                  <U n="zone">
+                    <V n="zone_source" t="use_picked_zone_ids" />
+                    <U n="zone_tests">
+                      <T n="use_source_venue">True</T>
+                      <V n="zone_modifiers" t="enabled">
+                        <U n="enabled">
+                          <V n="whitelist" t="specify">
+                            <U n="specify">
+                              <L n="whitelist">
+                                <T>144148<!--ZoneModifier: zoneModifier_lotTrait_Filthy--></T>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0.5</T>
+            <L n="tests">
+              <L>
+                <V t="zone">
+                  <U n="zone">
+                    <V n="zone_source" t="use_picked_zone_ids" />
+                    <U n="zone_tests">
+                      <V n="zone_modifiers" t="enabled">
+                        <U n="enabled">
+                          <V n="whitelist" t="specify">
+                            <U n="specify">
+                              <L n="whitelist">
+                                <T>348337<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasPoolObject--></T>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="drama_node">
+                  <U n="drama_node">
+                    <T n="check_active_nodes">False</T>
+                    <L n="drama_nodes">
+                      <T>348270<!--DialogDramaNode: dialogDramaNode_muEventAPM_Cooldown_Algae--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="schedule_drama_node">
+        <U n="schedule_drama_node">
+          <T n="drama_node">347285<!--MultiUnitEventDramaNode: dramaNode_APM_Blight--></T>
+          <E n="subject">Actor</E>
+          <L n="tests">
+            <L>
+              <V t="zone">
+                <U n="zone">
+                  <V n="zone_source" t="use_picked_zone_ids" />
+                  <U n="zone_tests">
+                    <T n="use_source_venue">True</T>
+                    <V n="zone_modifiers" t="enabled">
+                      <U n="enabled">
+                        <V n="whitelist" t="specify">
+                          <U n="specify">
+                            <L n="whitelist">
+                              <T>347994<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasGardenObject--></T>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">2</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">4</T>
+            <L n="tests">
+              <L>
+                <V t="statistic">
+                  <U n="statistic">
+                    <T n="stat">348774<!--Commodity: commodity_muEvent_GardeningTimer_Lot--></T>
+                    <V n="threshold" t="value_threshold">
+                      <U n="value_threshold">
+                        <E n="comparison">EQUAL</E>
+                      </U>
+                    </V>
+                    <E n="who">Lot</E>
+                  </U>
+                </V>
+              </L>
+              <L>
+                <V t="statistic">
+                  <U n="statistic">
+                    <T n="stat">348779<!--Commodity: commodity_APM_LastPOVisitTimer--></T>
+                    <V n="threshold" t="value_threshold">
+                      <U n="value_threshold">
+                        <E n="comparison">EQUAL</E>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0.5</T>
+            <L n="tests">
+              <L>
+                <V t="zone">
+                  <U n="zone">
+                    <V n="zone_source" t="use_picked_zone_ids" />
+                    <U n="zone_tests">
+                      <T n="use_source_venue">True</T>
+                      <V n="zone_modifiers" t="enabled">
+                        <U n="enabled">
+                          <V n="whitelist" t="specify">
+                            <U n="specify">
+                              <L n="whitelist">
+                                <T>144150<!--ZoneModifier: zoneModifier_lotTrait_GreatSoil--></T>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0.5</T>
+            <L n="tests">
+              <L>
+                <V t="zone">
+                  <U n="zone">
+                    <V n="zone_source" t="use_picked_zone_ids" />
+                    <U n="zone_tests">
+                      <V n="zone_modifiers" t="enabled">
+                        <U n="enabled">
+                          <V n="whitelist" t="specify">
+                            <U n="specify">
+                              <L n="whitelist">
+                                <T>359119<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasGarden_CommonArea--></T>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="drama_node">
+                  <U n="drama_node">
+                    <T n="check_active_nodes">False</T>
+                    <L n="drama_nodes">
+                      <T>347906<!--DialogDramaNode: dialogDramaNode_muEventAPM_Cooldown_Blight--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="schedule_drama_node">
+        <U n="schedule_drama_node">
+          <T n="drama_node">359184<!--MultiUnitEventDramaNode: dramaNode_APM_Blight_CommonArea--></T>
+          <E n="subject">Actor</E>
+          <L n="tests">
+            <L>
+              <V t="zone">
+                <U n="zone">
+                  <V n="zone_source" t="use_picked_zone_ids" />
+                  <U n="zone_tests">
+                    <T n="use_source_venue">True</T>
+                    <V n="zone_modifiers" t="enabled">
+                      <U n="enabled">
+                        <V n="whitelist" t="specify">
+                          <U n="specify">
+                            <L n="whitelist">
+                              <T>359119<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasGarden_CommonArea--></T>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </U>
+                </U>
+              </V>
+              <V t="zone">
+                <U n="zone">
+                  <U n="zone_tests">
+                    <V n="venue_type" t="enabled">
+                      <U n="enabled">
+                        <V n="blacklist" t="specify">
+                          <U n="specify">
+                            <L n="blacklist">
+                              <T>341299<!--Venue: venue_MultiUnit--></T>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </U>
+                </U>
+              </V>
+              <V t="test_set_reference">
+                <T n="test_set_reference">361365<!--TestSetInstance: testSet_APM_NoUninterruptableEventRunning--></T>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">2</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">4</T>
+            <L n="tests">
+              <L>
+                <V t="statistic">
+                  <U n="statistic">
+                    <T n="stat">348774<!--Commodity: commodity_muEvent_GardeningTimer_Lot--></T>
+                    <V n="threshold" t="value_threshold">
+                      <U n="value_threshold">
+                        <E n="comparison">EQUAL</E>
+                      </U>
+                    </V>
+                    <E n="who">Lot</E>
+                  </U>
+                </V>
+              </L>
+              <L>
+                <V t="statistic">
+                  <U n="statistic">
+                    <T n="stat">348779<!--Commodity: commodity_APM_LastPOVisitTimer--></T>
+                    <V n="threshold" t="value_threshold">
+                      <U n="value_threshold">
+                        <E n="comparison">EQUAL</E>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0.5</T>
+            <L n="tests">
+              <L>
+                <V t="zone">
+                  <U n="zone">
+                    <V n="zone_source" t="use_picked_zone_ids" />
+                    <U n="zone_tests">
+                      <T n="use_source_venue">True</T>
+                      <V n="zone_modifiers" t="enabled">
+                        <U n="enabled">
+                          <V n="whitelist" t="specify">
+                            <U n="specify">
+                              <L n="whitelist">
+                                <T>144150<!--ZoneModifier: zoneModifier_lotTrait_GreatSoil--></T>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0.5</T>
+            <L n="tests">
+              <L>
+                <V t="zone">
+                  <U n="zone">
+                    <V n="zone_source" t="use_picked_zone_ids" />
+                    <U n="zone_tests">
+                      <V n="zone_modifiers" t="enabled">
+                        <U n="enabled">
+                          <V n="whitelist" t="specify">
+                            <U n="specify">
+                              <L n="whitelist">
+                                <T>347994<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasGardenObject--></T>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="drama_node">
+                  <U n="drama_node">
+                    <T n="check_active_nodes">False</T>
+                    <L n="drama_nodes">
+                      <T>347906<!--DialogDramaNode: dialogDramaNode_muEventAPM_Cooldown_Blight--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="schedule_drama_node">
+        <U n="schedule_drama_node">
+          <T n="drama_node">347287<!--MultiUnitEventDramaNode: dramaNode_APM_Charity--></T>
+          <E n="subject">Actor</E>
+          <L n="tests">
+            <L>
+              <V t="test_set_reference">
+                <T n="test_set_reference">361365<!--TestSetInstance: testSet_APM_NoUninterruptableEventRunning--></T>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+      <U n="weight">
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">3</T>
+            <L n="tests">
+              <L>
+                <V t="zone">
+                  <U n="zone">
+                    <V n="zone_source" t="use_picked_zone_ids" />
+                    <U n="zone_tests">
+                      <T n="use_source_venue">True</T>
+                      <V n="zone_modifiers" t="enabled">
+                        <U n="enabled">
+                          <V n="whitelist" t="specify">
+                            <U n="specify">
+                              <L n="whitelist">
+                                <T>350230<!--ZoneModifier: zoneModifier_muEventAPM_Test_HighWealth--></T>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">3</T>
+            <L n="tests">
+              <L>
+                <V t="zone">
+                  <U n="zone">
+                    <V n="zone_source" t="use_picked_zone_ids" />
+                    <U n="zone_tests">
+                      <T n="use_source_venue">True</T>
+                      <V n="zone_modifiers" t="enabled">
+                        <U n="enabled">
+                          <V n="whitelist" t="specify">
+                            <U n="specify">
+                              <L n="whitelist">
+                                <T>348776<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasGoodSim--></T>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="drama_node">
+                  <U n="drama_node">
+                    <T n="check_active_nodes">False</T>
+                    <L n="drama_nodes">
+                      <T>348271<!--DialogDramaNode: dialogDramaNode_muEventAPM_Cooldown_Charity--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="schedule_drama_node">
+        <U n="schedule_drama_node">
+          <T n="drama_node">347286<!--MultiUnitEventDramaNode: dramaNode_APM_Cursed--></T>
+          <E n="subject">Actor</E>
+        </U>
+      </V>
+      <U n="weight">
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">4</T>
+            <L n="tests">
+              <L>
+                <V t="zone">
+                  <U n="zone">
+                    <V n="zone_source" t="use_picked_zone_ids" />
+                    <U n="zone_tests">
+                      <T n="use_source_venue">True</T>
+                      <V n="zone_modifiers" t="enabled">
+                        <U n="enabled">
+                          <V n="whitelist" t="specify">
+                            <U n="specify">
+                              <L n="whitelist">
+                                <T>348063<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasEvilSim--></T>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">2</T>
+            <L n="tests">
+              <L>
+                <V t="zone">
+                  <U n="zone">
+                    <V n="zone_source" t="use_picked_zone_ids" />
+                    <U n="zone_tests">
+                      <T n="use_source_venue">True</T>
+                      <V n="zone_modifiers" t="enabled">
+                        <U n="enabled">
+                          <V n="whitelist" t="specify">
+                            <U n="specify">
+                              <L n="whitelist">
+                                <T>137285<!--ZoneModifier: zoneModifier_con_Cursed--></T>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="drama_node">
+                  <U n="drama_node">
+                    <T n="check_active_nodes">False</T>
+                    <L n="drama_nodes">
+                      <T>348272<!--DialogDramaNode: dialogDramaNode_muEventAPM_Cooldown_Cursed--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="schedule_drama_node">
+        <U n="schedule_drama_node">
+          <T n="drama_node">347288<!--MultiUnitEventDramaNode: dramaNode_APM_Electrical--></T>
+          <E n="subject">Actor</E>
+          <L n="tests">
+            <L>
+              <V t="zone">
+                <U n="zone">
+                  <V n="zone_source" t="use_picked_zone_ids" />
+                  <U n="zone_tests">
+                    <T n="use_source_venue">True</T>
+                    <V n="zone_modifiers" t="enabled">
+                      <U n="enabled">
+                        <V n="blacklist" t="specify">
+                          <U n="specify">
+                            <L n="blacklist">
+                              <T>206665<!--ZoneModifier: zoneModifier_lotTrait_OffTheGrid--></T>
+                            </L>
+                          </U>
+                        </V>
+                        <V n="whitelist" t="specify">
+                          <U n="specify">
+                            <L n="whitelist">
+                              <T>347990<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasElectricalObject--></T>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">2</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">3</T>
+            <L n="tests">
+              <L>
+                <V t="zone">
+                  <U n="zone">
+                    <V n="zone_source" t="use_picked_zone_ids" />
+                    <U n="zone_tests">
+                      <T n="use_source_venue">True</T>
+                      <V n="zone_modifiers" t="enabled">
+                        <U n="enabled">
+                          <V n="whitelist" t="specify">
+                            <U n="specify">
+                              <L n="whitelist">
+                                <T>347996<!--ZoneModifier: zoneModifier_muEventAPM_Test_BrokenPowerObjects--></T>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">2</T>
+            <L n="tests">
+              <L>
+                <V t="statistic">
+                  <U n="statistic">
+                    <T n="stat">348779<!--Commodity: commodity_APM_LastPOVisitTimer--></T>
+                    <V n="threshold" t="value_threshold">
+                      <U n="value_threshold">
+                        <E n="comparison">EQUAL</E>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="drama_node">
+                  <U n="drama_node">
+                    <T n="check_active_nodes">False</T>
+                    <L n="drama_nodes">
+                      <T>348273<!--DialogDramaNode: dialogDramaNode_muEventAPM_Cooldown_Electrical--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="schedule_drama_node">
+        <U n="schedule_drama_node">
+          <T n="drama_node">347289<!--MultiUnitEventDramaNode: dramaNode_APM_Explosion--></T>
+          <E n="subject">Actor</E>
+          <L n="tests">
+            <L>
+              <V t="zone">
+                <U n="zone">
+                  <V n="zone_source" t="use_picked_zone_ids" />
+                  <U n="zone_tests">
+                    <T n="use_source_venue">True</T>
+                    <V n="zone_modifiers" t="enabled">
+                      <U n="enabled">
+                        <V n="whitelist" t="specify">
+                          <U n="specify">
+                            <L n="whitelist">
+                              <T>347993<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasExplosiveObject--></T>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">2</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">3</T>
+            <L n="tests">
+              <L>
+                <V t="zone">
+                  <U n="zone">
+                    <V n="zone_source" t="use_picked_zone_ids" />
+                    <U n="zone_tests">
+                      <T n="use_source_venue">True</T>
+                      <V n="zone_modifiers" t="enabled">
+                        <U n="enabled">
+                          <V n="whitelist" t="specify">
+                            <U n="specify">
+                              <L n="whitelist">
+                                <T>348059<!--ZoneModifier: zoneModifier_muEventAPM_Test_BrokenExplosiveObjects--></T>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0.5</T>
+            <L n="tests">
+              <L>
+                <V t="zone">
+                  <U n="zone">
+                    <V n="zone_source" t="use_picked_zone_ids" />
+                    <U n="zone_tests">
+                      <V n="zone_modifiers" t="enabled">
+                        <U n="enabled">
+                          <V n="whitelist" t="specify">
+                            <U n="specify">
+                              <L n="whitelist">
+                                <T>358971<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasExplosiveObject_CommonArea--></T>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">2</T>
+            <L n="tests">
+              <L>
+                <V t="statistic">
+                  <U n="statistic">
+                    <T n="stat">348779<!--Commodity: commodity_APM_LastPOVisitTimer--></T>
+                    <V n="threshold" t="value_threshold">
+                      <U n="value_threshold">
+                        <E n="comparison">EQUAL</E>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="drama_node">
+                  <U n="drama_node">
+                    <T n="check_active_nodes">False</T>
+                    <L n="drama_nodes">
+                      <T>348274<!--DialogDramaNode: dialogDramaNode_muEventAPM_Cooldown_Explosion--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="schedule_drama_node">
+        <U n="schedule_drama_node">
+          <T n="drama_node">359185<!--MultiUnitEventDramaNode: dramaNode_APM_Explosion_CommonArea--></T>
+          <E n="subject">Actor</E>
+          <L n="tests">
+            <L>
+              <V t="zone">
+                <U n="zone">
+                  <V n="zone_source" t="use_picked_zone_ids" />
+                  <U n="zone_tests">
+                    <T n="use_source_venue">True</T>
+                    <V n="zone_modifiers" t="enabled">
+                      <U n="enabled">
+                        <V n="whitelist" t="specify">
+                          <U n="specify">
+                            <L n="whitelist">
+                              <T>358971<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasExplosiveObject_CommonArea--></T>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </U>
+                </U>
+              </V>
+              <V t="zone">
+                <U n="zone">
+                  <U n="zone_tests">
+                    <V n="venue_type" t="enabled">
+                      <U n="enabled">
+                        <V n="blacklist" t="specify">
+                          <U n="specify">
+                            <L n="blacklist">
+                              <T>341299<!--Venue: venue_MultiUnit--></T>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </U>
+                </U>
+              </V>
+              <V t="test_set_reference">
+                <T n="test_set_reference">361365<!--TestSetInstance: testSet_APM_NoUninterruptableEventRunning--></T>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">2</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">3</T>
+            <L n="tests">
+              <L>
+                <V t="zone">
+                  <U n="zone">
+                    <V n="zone_source" t="use_picked_zone_ids" />
+                    <U n="zone_tests">
+                      <T n="use_source_venue">True</T>
+                      <V n="zone_modifiers" t="enabled">
+                        <U n="enabled">
+                          <V n="whitelist" t="specify">
+                            <U n="specify">
+                              <L n="whitelist">
+                                <T>348059<!--ZoneModifier: zoneModifier_muEventAPM_Test_BrokenExplosiveObjects--></T>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0.5</T>
+            <L n="tests">
+              <L>
+                <V t="zone">
+                  <U n="zone">
+                    <V n="zone_source" t="use_picked_zone_ids" />
+                    <U n="zone_tests">
+                      <V n="zone_modifiers" t="enabled">
+                        <U n="enabled">
+                          <V n="whitelist" t="specify">
+                            <U n="specify">
+                              <L n="whitelist">
+                                <T>347993<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasExplosiveObject--></T>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">2</T>
+            <L n="tests">
+              <L>
+                <V t="statistic">
+                  <U n="statistic">
+                    <T n="stat">348779<!--Commodity: commodity_APM_LastPOVisitTimer--></T>
+                    <V n="threshold" t="value_threshold">
+                      <U n="value_threshold">
+                        <E n="comparison">EQUAL</E>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="drama_node">
+                  <U n="drama_node">
+                    <T n="check_active_nodes">False</T>
+                    <L n="drama_nodes">
+                      <T>348274<!--DialogDramaNode: dialogDramaNode_muEventAPM_Cooldown_Explosion--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="schedule_drama_node">
+        <U n="schedule_drama_node">
+          <T n="drama_node">347290<!--MultiUnitEventDramaNode: dramaNode_APM_Haunting--></T>
+          <E n="subject">Actor</E>
+          <L n="tests">
+            <L>
+              <V t="zone">
+                <U n="zone">
+                  <V n="zone_source" t="use_picked_zone_ids" />
+                  <U n="zone_tests">
+                    <T n="use_source_venue">True</T>
+                    <V n="zone_modifiers" t="enabled">
+                      <U n="enabled">
+                        <V n="whitelist" t="specify">
+                          <U n="specify">
+                            <L n="whitelist">
+                              <T>359890<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasMinimumObjects--></T>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">1</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">2</T>
+            <L n="tests">
+              <L>
+                <V t="zone">
+                  <U n="zone">
+                    <V n="zone_source" t="use_picked_zone_ids" />
+                    <U n="zone_tests">
+                      <T n="use_source_venue">True</T>
+                      <V n="zone_modifiers" t="enabled">
+                        <U n="enabled">
+                          <V n="whitelist" t="specify">
+                            <U n="specify">
+                              <L n="whitelist">
+                                <T>348798<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasObjectCount--></T>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">2</T>
+            <L n="tests">
+              <L>
+                <V t="zone">
+                  <U n="zone">
+                    <V n="zone_source" t="use_picked_zone_ids" />
+                    <U n="zone_tests">
+                      <T n="use_source_venue">True</T>
+                      <V n="zone_modifiers" t="enabled">
+                        <U n="enabled">
+                          <V n="whitelist" t="specify">
+                            <U n="specify">
+                              <L n="whitelist">
+                                <T>149429<!--ZoneModifier: zoneModifier_lotTrait_Haunted--></T>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0.5</T>
+            <L n="tests">
+              <L>
+                <V t="zone">
+                  <U n="zone">
+                    <V n="zone_source" t="use_picked_zone_ids" />
+                    <U n="zone_tests">
+                      <T n="use_source_venue">True</T>
+                      <V n="zone_modifiers" t="enabled">
+                        <U n="enabled">
+                          <V n="whitelist" t="specify">
+                            <U n="specify">
+                              <L n="whitelist">
+                                <T>348062<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasParanormalInvestigatorSim--></T>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">2</T>
+            <L n="tests">
+              <L>
+                <V t="statistic">
+                  <U n="statistic">
+                    <T n="stat">348779<!--Commodity: commodity_APM_LastPOVisitTimer--></T>
+                    <V n="threshold" t="value_threshold">
+                      <U n="value_threshold">
+                        <E n="comparison">EQUAL</E>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="drama_node">
+                  <U n="drama_node">
+                    <T n="check_active_nodes">False</T>
+                    <L n="drama_nodes">
+                      <T>348275<!--DialogDramaNode: dialogDramaNode_muEventAPM_Cooldown_Haunting--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="schedule_drama_node">
+        <U n="schedule_drama_node">
+          <T n="drama_node">347311<!--MultiUnitEventDramaNode: dramaNode_APM_Infestation--></T>
+          <E n="subject">Actor</E>
+          <L n="tests">
+            <L>
+              <V t="zone">
+                <U n="zone">
+                  <V n="zone_source" t="use_picked_zone_ids" />
+                  <U n="zone_tests">
+                    <T n="use_source_venue">True</T>
+                    <V n="zone_modifiers" t="enabled">
+                      <U n="enabled">
+                        <V n="whitelist" t="specify">
+                          <U n="specify">
+                            <L n="whitelist">
+                              <T>359890<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasMinimumObjects--></T>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">1.5</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">2</T>
+            <L n="tests">
+              <L>
+                <V t="drama_node">
+                  <U n="drama_node">
+                    <T n="check_active_nodes">True</T>
+                    <L n="drama_nodes">
+                      <T>348289<!--DialogDramaNode: dialogDramaNode_muEventAPM_Cooldown_SewageLeak--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">2</T>
+            <L n="tests">
+              <L>
+                <V t="zone">
+                  <U n="zone">
+                    <V n="zone_source" t="use_picked_zone_ids" />
+                    <U n="zone_tests">
+                      <T n="use_source_venue">True</T>
+                      <V n="zone_modifiers" t="enabled">
+                        <U n="enabled">
+                          <V n="whitelist" t="specify">
+                            <U n="specify">
+                              <L n="whitelist">
+                                <T>348061<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasSlobSim--></T>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">2</T>
+            <L n="tests">
+              <L>
+                <V t="zone">
+                  <U n="zone">
+                    <V n="zone_source" t="use_picked_zone_ids" />
+                    <U n="zone_tests">
+                      <T n="use_source_venue">True</T>
+                      <V n="zone_modifiers" t="enabled">
+                        <U n="enabled">
+                          <V n="whitelist" t="specify">
+                            <U n="specify">
+                              <L n="whitelist">
+                                <T>179482<!--ZoneModifier: zoneModifiers_lotTrait_CreepyCrawlies--></T>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="drama_node">
+                  <U n="drama_node">
+                    <T n="check_active_nodes">False</T>
+                    <L n="drama_nodes">
+                      <T>348276<!--DialogDramaNode: dialogDramaNode_muEventAPM_Cooldown_Infestation--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="schedule_drama_node">
+        <U n="schedule_drama_node">
+          <T n="drama_node">347312<!--MultiUnitEventDramaNode: dramaNode_APM_MaintenanceDay--></T>
+          <E n="subject">Actor</E>
+          <L n="tests">
+            <L>
+              <V t="zone">
+                <U n="zone">
+                  <V n="zone_source" t="use_picked_zone_ids" />
+                  <U n="zone_tests">
+                    <T n="use_source_venue">True</T>
+                    <V n="zone_modifiers" t="enabled">
+                      <U n="enabled">
+                        <V n="whitelist" t="specify">
+                          <U n="specify">
+                            <L n="whitelist">
+                              <T>348059<!--ZoneModifier: zoneModifier_muEventAPM_Test_BrokenExplosiveObjects--></T>
+                              <T>347996<!--ZoneModifier: zoneModifier_muEventAPM_Test_BrokenPowerObjects--></T>
+                              <T>348058<!--ZoneModifier: zoneModifier_muEventAPM_Test_BrokenToiletObjects--></T>
+                              <T>348057<!--ZoneModifier: zoneModifier_muEventAPM_Test_BrokenWaterObjects--></T>
+                              <T>348066<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasDirtyObjects--></T>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </U>
+                </U>
+              </V>
+              <V t="test_set_reference">
+                <T n="test_set_reference">361365<!--TestSetInstance: testSet_APM_NoUninterruptableEventRunning--></T>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">1.5</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">3</T>
+            <L n="tests">
+              <L>
+                <V t="zone">
+                  <U n="zone">
+                    <V n="zone_source" t="use_picked_zone_ids" />
+                    <U n="zone_tests">
+                      <T n="use_source_venue">True</T>
+                      <V n="zone_modifiers" t="enabled">
+                        <U n="enabled">
+                          <V n="whitelist" t="specify">
+                            <U n="specify">
+                              <L n="whitelist">
+                                <T>348059<!--ZoneModifier: zoneModifier_muEventAPM_Test_BrokenExplosiveObjects--></T>
+                                <T>347996<!--ZoneModifier: zoneModifier_muEventAPM_Test_BrokenPowerObjects--></T>
+                                <T>348058<!--ZoneModifier: zoneModifier_muEventAPM_Test_BrokenToiletObjects--></T>
+                                <T>348057<!--ZoneModifier: zoneModifier_muEventAPM_Test_BrokenWaterObjects--></T>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+              </L>
+              <L>
+                <V t="zone">
+                  <U n="zone">
+                    <V n="zone_source" t="use_picked_zone_ids" />
+                    <U n="zone_tests">
+                      <T n="use_source_venue">True</T>
+                      <V n="zone_modifiers" t="enabled">
+                        <U n="enabled">
+                          <V n="whitelist" t="specify">
+                            <U n="specify">
+                              <L n="whitelist">
+                                <T>348066<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasDirtyObjects--></T>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">2</T>
+            <L n="tests">
+              <L>
+                <V t="zone">
+                  <U n="zone">
+                    <V n="zone_source" t="use_picked_zone_ids" />
+                    <U n="zone_tests">
+                      <T n="use_source_venue">True</T>
+                      <V n="zone_modifiers" t="enabled">
+                        <U n="enabled">
+                          <V n="whitelist" t="specify">
+                            <U n="specify">
+                              <L n="whitelist">
+                                <T>348078<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasNeatSim--></T>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">2</T>
+            <L n="tests">
+              <L>
+                <V t="zone">
+                  <U n="zone">
+                    <V n="zone_source" t="use_picked_zone_ids" />
+                    <U n="zone_tests">
+                      <T n="use_source_venue">True</T>
+                      <V n="zone_modifiers" t="enabled">
+                        <U n="enabled">
+                          <V n="whitelist" t="specify">
+                            <U n="specify">
+                              <L n="whitelist">
+                                <T>348065<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasHighHandinessSim--></T>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="drama_node">
+                  <U n="drama_node">
+                    <T n="check_active_nodes">False</T>
+                    <L n="drama_nodes">
+                      <T>348287<!--DialogDramaNode: dialogDramaNode_muEventAPM_Cooldown_MaintenanceDay--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="schedule_drama_node">
+        <U n="schedule_drama_node">
+          <T n="drama_node">347314<!--MultiUnitEventDramaNode: dramaNode_APM_SewageLeak--></T>
+          <E n="subject">Actor</E>
+          <L n="tests">
+            <L>
+              <V t="zone">
+                <U n="zone">
+                  <V n="zone_source" t="use_picked_zone_ids" />
+                  <U n="zone_tests">
+                    <T n="use_source_venue">True</T>
+                    <V n="zone_modifiers" t="enabled">
+                      <U n="enabled">
+                        <V n="whitelist" t="specify">
+                          <U n="specify">
+                            <L n="whitelist">
+                              <T>347992<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasToiletObject--></T>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">1</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">3</T>
+            <L n="tests">
+              <L>
+                <V t="zone">
+                  <U n="zone">
+                    <V n="zone_source" t="use_picked_zone_ids" />
+                    <U n="zone_tests">
+                      <T n="use_source_venue">True</T>
+                      <V n="zone_modifiers" t="enabled">
+                        <U n="enabled">
+                          <V n="whitelist" t="specify">
+                            <U n="specify">
+                              <L n="whitelist">
+                                <T>348058<!--ZoneModifier: zoneModifier_muEventAPM_Test_BrokenToiletObjects--></T>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">2</T>
+            <L n="tests">
+              <L>
+                <V t="zone">
+                  <U n="zone">
+                    <V n="zone_source" t="use_picked_zone_ids" />
+                    <U n="zone_tests">
+                      <T n="use_source_venue">True</T>
+                      <V n="zone_modifiers" t="enabled">
+                        <U n="enabled">
+                          <V n="whitelist" t="specify">
+                            <U n="specify">
+                              <L n="whitelist">
+                                <T>144148<!--ZoneModifier: zoneModifier_lotTrait_Filthy--></T>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">2</T>
+            <L n="tests">
+              <L>
+                <V t="statistic">
+                  <U n="statistic">
+                    <T n="stat">348779<!--Commodity: commodity_APM_LastPOVisitTimer--></T>
+                    <V n="threshold" t="value_threshold">
+                      <U n="value_threshold">
+                        <E n="comparison">EQUAL</E>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="drama_node">
+                  <U n="drama_node">
+                    <T n="check_active_nodes">False</T>
+                    <L n="drama_nodes">
+                      <T>348289<!--DialogDramaNode: dialogDramaNode_muEventAPM_Cooldown_SewageLeak--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="schedule_drama_node">
+        <U n="schedule_drama_node">
+          <T n="drama_node">347316<!--MultiUnitEventDramaNode: dramaNode_APM_TenantRevolt--></T>
+          <E n="subject">Actor</E>
+          <L n="tests">
+            <L>
+              <V t="test_set_reference">
+                <T n="test_set_reference">361365<!--TestSetInstance: testSet_APM_NoUninterruptableEventRunning--></T>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">2.5</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">2</T>
+            <L n="tests">
+              <L>
+                <V t="zone">
+                  <U n="zone">
+                    <V n="zone_source" t="use_picked_zone_ids" />
+                    <U n="zone_tests">
+                      <T n="use_source_venue">True</T>
+                      <V n="zone_modifiers" t="enabled">
+                        <U n="enabled">
+                          <V n="whitelist" t="specify">
+                            <U n="specify">
+                              <L n="whitelist">
+                                <T>348059<!--ZoneModifier: zoneModifier_muEventAPM_Test_BrokenExplosiveObjects--></T>
+                                <T>347996<!--ZoneModifier: zoneModifier_muEventAPM_Test_BrokenPowerObjects--></T>
+                                <T>348058<!--ZoneModifier: zoneModifier_muEventAPM_Test_BrokenToiletObjects--></T>
+                                <T>348057<!--ZoneModifier: zoneModifier_muEventAPM_Test_BrokenWaterObjects--></T>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+              </L>
+              <L>
+                <V t="zone">
+                  <U n="zone">
+                    <V n="zone_source" t="use_picked_zone_ids" />
+                    <U n="zone_tests">
+                      <T n="use_source_venue">True</T>
+                      <V n="zone_modifiers" t="enabled">
+                        <U n="enabled">
+                          <V n="whitelist" t="specify">
+                            <U n="specify">
+                              <L n="whitelist">
+                                <T>348066<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasDirtyObjects--></T>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">2</T>
+            <L n="tests">
+              <L>
+                <V t="statistic">
+                  <U n="statistic">
+                    <T n="stat">348779<!--Commodity: commodity_APM_LastPOVisitTimer--></T>
+                    <V n="threshold" t="value_threshold">
+                      <U n="value_threshold">
+                        <E n="comparison">EQUAL</E>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0.5</T>
+            <L n="tests">
+              <L>
+                <V t="zone">
+                  <U n="zone">
+                    <V n="zone_source" t="use_picked_zone_ids" />
+                    <U n="zone_tests">
+                      <T n="use_source_venue">True</T>
+                      <V n="zone_modifiers" t="enabled">
+                        <U n="enabled">
+                          <V n="whitelist" t="specify">
+                            <U n="specify">
+                              <L n="whitelist">
+                                <T>144145<!--ZoneModifier: zoneModifier_lotTrait_SunnyAspect--></T>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="drama_node">
+                  <U n="drama_node">
+                    <T n="check_active_nodes">False</T>
+                    <L n="drama_nodes">
+                      <T>348290<!--DialogDramaNode: dialogDramaNode_muEventAPM_Cooldown_TenantRevolt--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="schedule_drama_node">
+        <U n="schedule_drama_node">
+          <T n="drama_node">347317<!--MultiUnitEventDramaNode: dramaNode_APM_TrashOverload--></T>
+          <E n="subject">Actor</E>
+          <L n="tests">
+            <L>
+              <V t="zone">
+                <U n="zone">
+                  <V n="zone_source" t="use_picked_zone_ids" />
+                  <U n="zone_tests">
+                    <T n="use_source_venue">True</T>
+                    <V n="zone_modifiers" t="enabled">
+                      <U n="enabled">
+                        <V n="whitelist" t="specify">
+                          <U n="specify">
+                            <L n="whitelist">
+                              <T>347995<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasTrashcanObject--></T>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">2</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">2</T>
+            <L n="tests">
+              <L>
+                <V t="zone">
+                  <U n="zone">
+                    <V n="zone_source" t="use_picked_zone_ids" />
+                    <U n="zone_tests">
+                      <T n="use_source_venue">True</T>
+                      <V n="zone_modifiers" t="enabled">
+                        <U n="enabled">
+                          <V n="whitelist" t="specify">
+                            <U n="specify">
+                              <L n="whitelist">
+                                <T>348077<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasUnemptiedTrashcans--></T>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0.5</T>
+            <L n="tests">
+              <L>
+                <V t="zone">
+                  <U n="zone">
+                    <V n="zone_source" t="use_picked_zone_ids" />
+                    <U n="zone_tests">
+                      <T n="use_source_venue">True</T>
+                      <V n="zone_modifiers" t="enabled">
+                        <U n="enabled">
+                          <V n="whitelist" t="specify">
+                            <U n="specify">
+                              <L n="whitelist">
+                                <T>230867<!--ZoneModifier: zoneModifier_LotTrait_TrashUpdate--></T>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">2</T>
+            <L n="tests">
+              <L>
+                <V t="statistic">
+                  <U n="statistic">
+                    <T n="stat">348779<!--Commodity: commodity_APM_LastPOVisitTimer--></T>
+                    <V n="threshold" t="value_threshold">
+                      <U n="value_threshold">
+                        <E n="comparison">EQUAL</E>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="drama_node">
+                  <U n="drama_node">
+                    <T n="check_active_nodes">False</T>
+                    <L n="drama_nodes">
+                      <T>348291<!--DialogDramaNode: dialogDramaNode_muEventAPM_Cooldown_TrashOverload--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="schedule_drama_node">
+        <U n="schedule_drama_node">
+          <T n="drama_node">347115<!--MultiUnitEventDramaNode: dramaNode_APM_WaterLeak--></T>
+          <E n="subject">Actor</E>
+          <L n="tests">
+            <L>
+              <V t="zone">
+                <U n="zone">
+                  <V n="zone_source" t="use_picked_zone_ids" />
+                  <U n="zone_tests">
+                    <T n="use_source_venue">True</T>
+                    <V n="zone_modifiers" t="enabled">
+                      <U n="enabled">
+                        <V n="blacklist" t="specify">
+                          <U n="specify">
+                            <L n="blacklist">
+                              <T>206665<!--ZoneModifier: zoneModifier_lotTrait_OffTheGrid--></T>
+                            </L>
+                          </U>
+                        </V>
+                        <V n="whitelist" t="specify">
+                          <U n="specify">
+                            <L n="whitelist">
+                              <T>347991<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasWaterObject--></T>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">2</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">3</T>
+            <L n="tests">
+              <L>
+                <V t="zone">
+                  <U n="zone">
+                    <V n="zone_source" t="use_picked_zone_ids" />
+                    <U n="zone_tests">
+                      <T n="use_source_venue">True</T>
+                      <V n="zone_modifiers" t="enabled">
+                        <U n="enabled">
+                          <V n="whitelist" t="specify">
+                            <U n="specify">
+                              <L n="whitelist">
+                                <T>348057<!--ZoneModifier: zoneModifier_muEventAPM_Test_BrokenWaterObjects--></T>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">2</T>
+            <L n="tests">
+              <L>
+                <V t="statistic">
+                  <U n="statistic">
+                    <T n="stat">348779<!--Commodity: commodity_APM_LastPOVisitTimer--></T>
+                    <V n="threshold" t="value_threshold">
+                      <U n="value_threshold">
+                        <E n="comparison">EQUAL</E>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="drama_node">
+                  <U n="drama_node">
+                    <T n="check_active_nodes">False</T>
+                    <L n="drama_nodes">
+                      <T>348292<!--DialogDramaNode: dialogDramaNode_muEventAPM_Cooldown_WaterLeak--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">348441<!--LootActions: loot_APM_Start_PetDay--></T>
+      </V>
+      <U n="weight">
+        <T n="base_value">1.2</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">3</T>
+            <L n="tests">
+              <L>
+                <V t="zone">
+                  <U n="zone">
+                    <V n="zone_source" t="use_picked_zone_ids" />
+                    <U n="zone_tests">
+                      <T n="use_source_venue">True</T>
+                      <V n="zone_modifiers" t="enabled">
+                        <U n="enabled">
+                          <V n="whitelist" t="specify">
+                            <U n="specify">
+                              <L n="whitelist">
+                                <T>348064<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasPetLover--></T>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">3</T>
+            <L n="tests">
+              <L>
+                <V t="zone">
+                  <U n="zone">
+                    <V n="zone_source" t="use_picked_zone_ids" />
+                    <U n="zone_tests">
+                      <T n="use_source_venue">True</T>
+                      <V n="zone_modifiers" t="enabled">
+                        <U n="enabled">
+                          <V n="whitelist" t="specify">
+                            <U n="specify">
+                              <L n="whitelist">
+                                <T>350229<!--ZoneModifier: zoneModifier_muEventAPM_Test_NoPets--></T>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="drama_node">
+                  <U n="drama_node">
+                    <T n="check_active_nodes">False</T>
+                    <L n="drama_nodes">
+                      <T>348269<!--DialogDramaNode: dialogDramaNode_muEventAPM_Cooldown_PetDay--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="schedule_drama_node">
+        <U n="schedule_drama_node">
+          <T n="drama_node">353937<!--MultiUnitEventDramaNode: dramaNode_APM_LeaseBreak--></T>
+          <L n="tests">
+            <L>
+              <V t="has_tenant_ever_paid_rent_test" />
+              <V t="identity">
+                <U n="identity">
+                  <E n="subject_a">PickedZoneId</E>
+                  <E n="subject_b">CurrentZoneId</E>
+                  <T n="use_value">True</T>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">4</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="drama_node">
+                  <U n="drama_node">
+                    <T n="check_active_nodes">False</T>
+                    <L n="drama_nodes">
+                      <T>348178<!--DialogDramaNode: dialogDramaNode_muEventAPM_Cooldown_LeaseBreak--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">349368<!--LootActions: loot_APM_StartTNS_RentArrears--></T>
+      </V>
+      <U n="weight">
+        <T n="base_value">1</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">7</T>
+            <L n="tests">
+              <L>
+                <V t="rental_unit_star_rating_test">
+                  <U n="rental_unit_star_rating_test">
+                    <U n="star_rating">
+                      <T n="upper_bound">1</T>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">3</T>
+            <L n="tests">
+              <L>
+                <V t="test_set_reference">
+                  <T n="test_set_reference">355442<!--TestSetInstance: testSet_APM_RentArrears--></T>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="drama_node">
+                  <U n="drama_node">
+                    <T n="check_active_nodes">False</T>
+                    <L n="drama_nodes">
+                      <T>348179<!--DialogDramaNode: dialogDramaNode_muEventAPM_Cooldown_RentArrears--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="schedule_drama_node">
+        <U n="schedule_drama_node">
+          <T n="drama_node">358007<!--MultiUnitEventDramaNode: dramaNode_APM_RuleBreakNoise--></T>
+          <L n="tests">
+            <L>
+              <V t="business_rule_state">
+                <U n="business_rule_state">
+                  <L n="rules">
+                    <T>348401<!--BusinessRule: Rule_PMI_LoudNoises--></T>
+                  </L>
+                  <E n="state">ENABLED</E>
+                  <V n="target_business" t="zone" />
+                  <U n="threshold">
+                    <T n="value">1</T>
+                  </U>
+                </U>
+              </V>
+              <V t="identity">
+                <U n="identity">
+                  <E n="subject_a">PickedZoneId</E>
+                  <E n="subject_b">CurrentZoneId</E>
+                  <T n="use_value">True</T>
+                </U>
+              </V>
+              <V t="zone">
+                <U n="zone">
+                  <V n="zone_source" t="use_picked_zone_ids" />
+                  <U n="zone_tests">
+                    <T n="use_source_venue">True</T>
+                    <V n="zone_modifiers" t="enabled">
+                      <U n="enabled">
+                        <V n="whitelist" t="specify">
+                          <U n="specify">
+                            <L n="whitelist">
+                              <T>360100<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasNoisyObjects--></T>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">2</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">2</T>
+            <L n="tests">
+              <L>
+                <V t="zone">
+                  <U n="zone">
+                    <V n="zone_source" t="use_picked_zone_ids" />
+                    <U n="zone_tests">
+                      <T n="use_source_venue">True</T>
+                      <V n="zone_modifiers" t="enabled">
+                        <U n="enabled">
+                          <V n="whitelist" t="specify">
+                            <U n="specify">
+                              <L n="whitelist">
+                                <T>350227<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasNoisySim--></T>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">2</T>
+            <L n="tests">
+              <L>
+                <V t="statistic">
+                  <U n="statistic">
+                    <T n="stat">348779<!--Commodity: commodity_APM_LastPOVisitTimer--></T>
+                    <V n="threshold" t="value_threshold">
+                      <U n="value_threshold">
+                        <E n="comparison">EQUAL</E>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="drama_node">
+                  <U n="drama_node">
+                    <T n="check_active_nodes">False</T>
+                    <L n="drama_nodes">
+                      <T>348180<!--DialogDramaNode: dialogDramaNode_muEventAPM_Cooldown_RuleBreakNoise--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">349369<!--LootActions: loot_APM_StartTNS_RuleBreakSocialEvent--></T>
+      </V>
+      <U n="weight">
+        <T n="base_value">2</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">2</T>
+            <L n="tests">
+              <L>
+                <V t="zone">
+                  <U n="zone">
+                    <U n="zone_tests">
+                      <T n="use_source_venue">True</T>
+                      <V n="zone_modifiers" t="enabled">
+                        <U n="enabled">
+                          <V n="whitelist" t="specify">
+                            <U n="specify">
+                              <L n="whitelist">
+                                <T>350228<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasSocialSim--></T>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">2</T>
+            <L n="tests">
+              <L>
+                <V t="statistic">
+                  <U n="statistic">
+                    <T n="stat">348779<!--Commodity: commodity_APM_LastPOVisitTimer--></T>
+                    <V n="threshold" t="value_threshold">
+                      <U n="value_threshold">
+                        <E n="comparison">EQUAL</E>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="drama_node">
+                  <U n="drama_node">
+                    <T n="check_active_nodes">False</T>
+                    <L n="drama_nodes">
+                      <T>348181<!--DialogDramaNode: dialogDramaNode_muEventAPM_Cooldown_RuleBreakSocialEvent--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="schedule_drama_node">
+        <U n="schedule_drama_node">
+          <T n="drama_node">347907<!--MultiUnitEventDramaNode: dramaNode_APM_RuleBreakTrash--></T>
+          <L n="tests">
+            <L>
+              <V t="business_rule_state">
+                <U n="business_rule_state">
+                  <L n="rules">
+                    <T>343562<!--BusinessRule: Rule_PMI_NoTrash--></T>
+                  </L>
+                  <E n="state">ENABLED</E>
+                  <V n="target_business" t="zone" />
+                  <U n="threshold">
+                    <T n="value">1</T>
+                  </U>
+                </U>
+              </V>
+              <V t="identity">
+                <U n="identity">
+                  <E n="subject_a">PickedZoneId</E>
+                  <E n="subject_b">CurrentZoneId</E>
+                  <T n="use_value">True</T>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">2</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">2</T>
+            <L n="tests">
+              <L>
+                <V t="zone">
+                  <U n="zone">
+                    <V n="zone_source" t="use_picked_zone_ids" />
+                    <U n="zone_tests">
+                      <T n="use_source_venue">True</T>
+                      <V n="zone_modifiers" t="enabled">
+                        <U n="enabled">
+                          <V n="whitelist" t="specify">
+                            <U n="specify">
+                              <L n="whitelist">
+                                <T>348061<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasSlobSim--></T>
+                              </L>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">2</T>
+            <L n="tests">
+              <L>
+                <V t="statistic">
+                  <U n="statistic">
+                    <T n="stat">348779<!--Commodity: commodity_APM_LastPOVisitTimer--></T>
+                    <V n="threshold" t="value_threshold">
+                      <U n="value_threshold">
+                        <E n="comparison">EQUAL</E>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="drama_node">
+                  <U n="drama_node">
+                    <T n="check_active_nodes">False</T>
+                    <L n="drama_nodes">
+                      <T>348182<!--DialogDramaNode: dialogDramaNode_muEventAPM_Cooldown_RuleBreakTrash--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">357505<!--LootActions: loot_APM_StartTNS_RuleBreakMaxHousehold--></T>
+      </V>
+      <U n="weight">
+        <T n="base_value">15</T>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">358166<!--LootActions: loot_APM_StartTNS_RuleBreakNoPets--></T>
+      </V>
+      <U n="weight">
+        <T n="base_value">15</T>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="do_nothing" />
+      <U n="weight">
+        <T n="base_value">2</T>
+      </U>
+    </U>
+  </L>
+</I>

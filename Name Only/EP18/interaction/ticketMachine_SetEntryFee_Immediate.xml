@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="ImmediateSuperInteraction" i="interaction" m="interactions.base.immediate_interaction" n="ticketMachine_SetEntryFee_Immediate" s="374285">
+  <V n="_saveable" t="disabled" />
+  <T n="category">372386<!--PieMenuCategory: pieMenuCategory_TicketMachine_SetFee--></T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x8206819F<!--String: "One-Time Entrance Fee"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="small_business">
+        <U n="small_business">
+          <E n="participant">CurrentlyOpenSmallBusinessOwner</E>
+        </U>
+      </V>
+      <V t="small_business" />
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="loot_list">
+          <T>382089<!--LootActions: loot_SmallBusiness_SetAttendanceSaleMode_Entry--></T>
+        </L>
+      </U>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T n="key" p="InGame\UI\Icons\PieMenu\Interactions\icon_pieMenu_immediateInteraction.png">2f7d0004:00000000:25eea5cdba6a6fd6</T>
+      </U>
+    </V>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="lot_owner" />
+    <V t="location">
+      <U n="location">
+        <U n="location_tests">
+          <V n="is_venue_type" t="enabled">
+            <U n="enabled">
+              <T n="negate">True</T>
+              <T n="venue_type">105157<!--Venue: venue_retail--></T>
+            </U>
+          </V>
+        </U>
+      </U>
+    </V>
+    <V t="small_business_ownership_test">
+      <U n="small_business_ownership_test">
+        <T n="negate">False</T>
+      </U>
+    </V>
+    <V t="situation_job_test">
+      <U n="situation_job_test">
+        <T n="negate">True</T>
+        <L n="situation_jobs">
+          <T>373362<!--SituationJob: job_SmallBusinessCustomer--></T>
+        </L>
+      </U>
+    </V>
+    <V t="is_small_business_open">
+      <U n="is_small_business_open">
+        <T n="negate">True</T>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xDC6348E5<!--String: "{2.String} is currently open. Close {2.String} first to change the ticket sales mode."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="small_business_attendance_sale_mode_test">
+      <U n="small_business_attendance_sale_mode_test">
+        <E n="attendance_sale_mode">ENTRY_FEE</E>
+        <T n="negate">True</T>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xE14BBDE4<!--String: "{3.String} is already set to One-Time Entrance Fee."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+</I>

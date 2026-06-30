@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_JobLoss_LayOffPeriod_StartChance" s="306070">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">306067<!--Buff: buff_JobLoss_Layoff_Chance--></T>
+        </U>
+        <U n="chance">
+          <T n="base_chance">1</T>
+          <L n="multipliers">
+            <U>
+              <T n="multiplier">0.5</T>
+              <L n="tests">
+                <L>
+                  <V t="buff">
+                    <U n="buff">
+                      <V n="whitelist" t="enabled">
+                        <L n="enabled">
+                          <T>125702<!--Buff: buff_Career_EarnedPromotion--></T>
+                        </L>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+            <U>
+              <T n="multiplier">0.5</T>
+              <L n="tests">
+                <L>
+                  <V t="trait">
+                    <U n="trait">
+                      <T n="apply_thresholds_on_individual_basis">False</T>
+                      <E n="subject">ActiveHousehold</E>
+                      <L n="whitelist_traits">
+                        <T>306064<!--Trait: trait_JobLoss_InLayoffPeriod--></T>
+                      </L>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+            <U>
+              <T n="multiplier">0.8</T>
+              <L n="tests">
+                <L>
+                  <V t="buff">
+                    <U n="buff">
+                      <T n="apply_whitelist_on_individual_basis">False</T>
+                      <E n="subject">ActiveHousehold</E>
+                      <V n="whitelist" t="enabled">
+                        <L n="enabled">
+                          <T>306066<!--Buff: buff_JobLoss_Layoff_Cooldown--></T>
+                        </L>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+            <U>
+              <T n="multiplier">1.25</T>
+              <L n="tests">
+                <L>
+                  <V t="trait">
+                    <U n="trait">
+                      <L n="whitelist_traits">
+                        <T>9599<!--Trait: trait_Lazy--></T>
+                      </L>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+          </L>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <L n="blacklist_traits">
+                  <T>306064<!--Trait: trait_JobLoss_InLayoffPeriod--></T>
+                  <T>32442<!--Trait: trait_ProfessionalSlacker--></T>
+                </L>
+              </U>
+            </V>
+            <V t="scenario_sim_status">
+              <U n="scenario_sim_status">
+                <T n="invert">True</T>
+              </U>
+            </V>
+            <V t="buff">
+              <U n="buff">
+                <L n="blacklist">
+                  <T>306066<!--Buff: buff_JobLoss_Layoff_Cooldown--></T>
+                  <T>125723<!--Buff: buff_Career_GotNewJob--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="trait_add">
+      <U n="trait_add">
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>306067<!--Buff: buff_JobLoss_Layoff_Chance--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+        <T n="trait">306064<!--Trait: trait_JobLoss_InLayoffPeriod--></T>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InGame\UI\Icons\Notifications\notification_unemployed.png">2f7d0004:00000000:c81267fdc9e90a9b</T>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x72521B4F<!--String: "Oh no! Alongside profit warnings and dire predictions of financial calamity, {0.SimFirstName} finds that {0.SimPronounPossessiveDependent} job is at serious risk of layoffs. Might be that working hard helps {0.SimFirstName} dodge the layoff bullet, but who knows?"--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x7B8DF0D1<!--String: "Looming Layoff"--></T>
+            </V>
+            <E n="urgency">URGENT</E>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>306067<!--Buff: buff_JobLoss_Layoff_Chance--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="career_test" />
+      <V t="game_option">
+        <U n="game_option">
+          <E n="gameplay_option">CAREER_LAY_OFF_ENABLED</E>
+        </U>
+      </V>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified">
+            <L n="specified">
+              <E>TEEN</E>
+              <E>YOUNGADULT</E>
+            </L>
+          </V>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="career_test" />
+      <V t="birthday_test">
+        <U n="birthday_test">
+          <T n="days_until_birthday">2</T>
+          <T n="invert">True</T>
+        </U>
+      </V>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified">
+            <L n="specified">
+              <E>ADULT</E>
+            </L>
+          </V>
+        </U>
+      </V>
+      <V t="game_option">
+        <U n="game_option">
+          <E n="gameplay_option">CAREER_LAY_OFF_ENABLED</E>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_InfantElement_Reveal_SelfSoother" s="320124">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T p="InEP13\UI\Icons\CAS\Traits\traits_SelfSootherInfant.png" n="key">2f7d0004:00000000:ea3ccbf2b2b68295</T>
+                </U>
+              </V>
+            </V>
+            <V n="primary_icon_response" t="enabled">
+              <U n="enabled">
+                <E n="ui_request">SHOW_SUMMARY_PANEL</E>
+              </U>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant" />
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x63A2D650<!--String: "{0.SimFirstName} will often try to self-soothe {0.SimPronounReflexive}. Infants with the Self-Soother Quirk are more likely to place their little fingers and toes in their mouths to calm themselves when sad or angry, and especially when crying. They will also self-soothe to fall asleep.\n\nEach Infant is different from the next and has 3 Infant Quirks that can be discovered over time. To read more about {0.SimFirstName}'s new Quirk, visit the Traits section in the Simology Panel."--></T>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="participant_type" />
+                </L>
+              </U>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0xA98DB8DE<!--String: "Quirk Revealed:\nSelf-Soother"--></T>
+            </V>
+            <L n="ui_responses">
+              <U>
+                <T n="text">0x2E3A1C6<!--String: "Open Simology Panel"--></T>
+                <E n="ui_request">SHOW_SUMMARY_PANEL</E>
+              </U>
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="trait_add">
+      <U n="trait_add">
+        <T n="trait">319912<!--Trait: trait_Human_Infant_Element_SelfSoother--></T>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>319912<!--Trait: trait_Human_Infant_Element_SelfSoother--></T>
+          </L>
+          <L n="whitelist_traits">
+            <T>286066<!--Trait: trait_Hidden_Infant_Element_SelfSoother--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

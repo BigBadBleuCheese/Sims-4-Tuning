@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="horseInteractions_Sleep_Nap_Outdoors" s="329997">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="jig">
+            <U n="jig">
+              <T n="jig">349759</T>
+              <T n="stay_outside">True</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_icon" t="resource_key">
+    <U n="resource_key">
+      <T n="key" p="InGame\UI\Icons\InteractionQueue\IconQueueTranquilized.png">2f7d0004:00000000:c7a72bda4858412f</T>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="buff_based">
+                <U n="buff_based">
+                  <T n="buff">328400<!--Buff: buff_Horse_Hidden_BeWokenUp--></T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="time_based">
+                <U n="time_based">
+                  <T n="max_time">75</T>
+                  <T n="min_time">50</T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+      </L>
+      <V n="content" t="staging_content">
+        <U n="staging_content">
+          <U n="content_set">
+            <L n="affordance_links">
+              <T>330159<!--MixerInteraction: mixerInteraction_Horse_Sleep_Dream--></T>
+              <T>330160<!--MixerInteraction: mixerInteraction_Horse_Sleep_NapIdle--></T>
+            </L>
+          </U>
+        </U>
+      </V>
+      <V n="periodic_stat_change" t="enabled">
+        <U n="enabled">
+          <L n="operations">
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="advertise">False</T>
+                <T n="amount">2.59</T>
+                <T n="stat">312266<!--Commodity: motive_Horse_Energy--></T>
+              </U>
+            </V>
+          </L>
+        </U>
+      </V>
+      <T n="start_autonomous_inertial">False</T>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="set_sim_sleeping" />
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <T n="buff_type">325741<!--Buff: buff_Horse_IsSleeping--></T>
+        </U>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <T n="buff_type">334350<!--Buff: buff_Suppress_Trait_Idle--></T>
+        </U>
+        <L n="subject">
+          <E>Actor</E>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <T n="buff_type">129126<!--Buff: buff_Suppress_Emotion_Idle--></T>
+        </U>
+        <L n="subject">
+          <E>Actor</E>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="basic_liabilities">
+    <V t="push_affordance_on_route_fail">
+      <U n="push_affordance_on_route_fail">
+        <T n="affordance">325743<!--SuperInteraction: horseInteractions_Sleep_Nap--></T>
+      </U>
+    </V>
+  </L>
+  <V n="canonical_animation" t="enabled">
+    <U n="enabled">
+      <T n="factory">329976<!--AnimationElement: horseSpecies_Nap--></T>
+    </U>
+  </V>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x713F179<!--String: "Nap"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+    <E>Interaction_Sleep</E>
+  </L>
+  <V n="require_reins_for_formation" t="disabled" />
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all" />
+    </U>
+  </V>
+  <E n="target_type">ACTOR</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E>HORSE</E>
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="statistic">
+      <U n="statistic">
+        <T n="stat">312266<!--Commodity: motive_Horse_Energy--></T>
+        <V n="threshold" t="value_threshold">
+          <U n="value_threshold">
+            <E n="comparison">LESS_OR_EQUAL</E>
+            <T n="value">50</T>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

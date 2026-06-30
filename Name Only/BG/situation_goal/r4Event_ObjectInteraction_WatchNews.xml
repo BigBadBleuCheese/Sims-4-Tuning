@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalObjectInteraction" i="situation_goal" m="situations.situation_goal_object_interaction" n="r4Event_ObjectInteraction_WatchNews" s="424148">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T p="InGame\UI\Icons\Events\EventGoal_Television.png" n="enabled">2f7d0004:00000000:cbdf720703663afd</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x3FB5189B<!--String: "Tune In to the News for 15 Minutes"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0xD1E530B5<!--String: "You might find more details about the situation on the news.\n\nSelect Watch Channel then Watch News on any TV for breaking updates.\n\n<i>(+25 Event Points)</i>"--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>447711<!--SituationGoalLootActions: liveEvent_GoalLoot_CompleteQuestGoal--></T>
+  </L>
+  <U n="_goal_test">
+    <L n="affordances">
+      <T>9111<!--WatchSuperInteraction: tv_WatchNews--></T>
+    </L>
+    <V n="running_time" t="enabled">
+      <T n="enabled">15</T>
+    </V>
+    <E n="test_event">InteractionUpdate</E>
+  </U>
+  <L n="_post_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+      </U>
+    </V>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+  <V n="goal_completion_notification" t="enabled">
+    <U n="enabled">
+      <V n="icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_tvtube.png">2f7d0004:00000000:5ac6bc4ebc727504</T>
+          </U>
+        </V>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0xE199B4EE<!--String: "We're receiving reports of a potential time traveler in town.\n\nTheir identity, origin, and purpose remain unconfirmed. However, several Sims have noted the distinct blue hair of this new arrival that they believe to be Emit Relevart.\n\nOver to you, Ginny."--></T>
+      </V>
+      <V n="title" t="enabled">
+        <T n="enabled">0x524FCC39<!--String: "Local News Report"--></T>
+      </V>
+      <E n="visual_type">SPEECH</E>
+    </U>
+  </V>
+  <V n="tutorial_tip_group" t="disabled" />
+</I>

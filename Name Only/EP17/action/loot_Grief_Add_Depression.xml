@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Grief_Add_Depression" s="381910">
+  <L n="loot_actions">
+    <V t="trait_add">
+      <U n="trait_add">
+        <T n="trait">381518<!--Trait: trait_Grief_Depression--></T>
+      </U>
+    </V>
+    <V t="relationship_bits_loot">
+      <U n="relationship_bits_loot">
+        <L n="bit_operations">
+          <U>
+            <T n="bit">381916<!--RelationshipBit: relbit_Grief_GriefTrigger--></T>
+            <E n="operation">ADD</E>
+            <E n="recipients">Actor</E>
+            <E n="targets">AllRelationships</E>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">-2160</T>
+          <T n="stat">381524<!--Commodity: commodity_Grief_Timer--></T>
+          <L n="tests">
+            <L>
+              <V t="trait">
+                <U n="trait">
+                  <L n="whitelist_traits">
+                    <T>381522<!--Trait: trait_Grief_Conquered--></T>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InEP17\UI\Icons\Notifications\notification_Griefnotifications.png">2f7d0004:00000000:3d35ada96e2b7edc</T>
+                </U>
+              </V>
+            </V>
+            <V n="primary_icon_response" t="enabled">
+              <U n="enabled">
+                <E n="ui_request">SHOW_SUMMARY_PANEL</E>
+              </U>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant" />
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x5267B66B<!--String: "Whether it be a divorce, loss of a job, or losing a loved one, <b>Grief</b> is a normal, albeit tough, part of life that every Sim has to navigate.\n\n{0.SimFirstName} has been feeling pretty down during this difficult time. With the <b>Blues Grief Type</b>, {0.SimFirstName} might feel more inclined to <b>Cry It Out</b>, and feel <b>Sad Emotions</b> more frequently. {0.SimFirstName} will lean towards more <b>Gloomy Interactions</b> and might seem a bit more melancholic than usual.\n\n<i>More information on this <b>Grief Type</b> and <b>Grief Coping</b> can be found in the <b>Traits Section</b> of the <b>Simology Panel</b></i>"--></T>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">-1440</T>
+          <T n="stat">381524<!--Commodity: commodity_Grief_Timer--></T>
+          <L n="tests">
+            <L>
+              <V t="skill_test">
+                <U n="skill_test">
+                  <T n="skill">380495<!--Skill: statistic_Skill_AdultMinor_Thanatology--></T>
+                  <V n="skill_range" t="interval">
+                    <U n="interval">
+                      <U n="skill_interval">
+                        <T n="lower_bound">4</T>
+                        <T n="upper_bound">5</T>
+                      </U>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+            <L>
+              <V t="trait">
+                <U n="trait">
+                  <L n="whitelist_traits">
+                    <T>393555<!--Trait: trait_ReaperCareer_DeathReward--></T>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x6E0111C8<!--String: "(From Grieving)"--></T>
+          </V>
+          <T n="buff_type">381547<!--Buff: buff_Grief_Depression_Periodic--></T>
+        </U>
+      </U>
+    </V>
+  </L>
+</I>

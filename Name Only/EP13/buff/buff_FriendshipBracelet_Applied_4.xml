@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Buff" i="buff" m="buffs.buff" n="buff_FriendshipBracelet_Applied_4" s="320047">
+  <V n="appearance_modifier" t="enabled">
+    <U n="enabled">
+      <L n="appearance_modifiers">
+        <L>
+          <U>
+            <V n="modifier" t="set_cas_part">
+              <U n="set_cas_part">
+                <T n="cas_part">343216</T>
+                <T n="expect_invalid_parts">True</T>
+              </U>
+            </V>
+            <U n="weight">
+              <L n="multipliers">
+                <U>
+                  <T n="multiplier">0</T>
+                  <L n="tests">
+                    <L>
+                      <V t="sim_info">
+                        <U n="sim_info">
+                          <V n="ages" t="specified" />
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+              </L>
+            </U>
+          </U>
+        </L>
+        <L>
+          <U>
+            <V n="modifier" t="set_cas_part">
+              <U n="set_cas_part">
+                <T n="cas_part">343381</T>
+                <T n="expect_invalid_parts">True</T>
+              </U>
+            </V>
+            <U n="weight">
+              <L n="multipliers">
+                <U>
+                  <T n="multiplier">0</T>
+                  <L n="tests">
+                    <L>
+                      <V t="sim_info">
+                        <U n="sim_info">
+                          <V n="gender" t="specified">
+                            <E n="specified">MALE</E>
+                          </V>
+                        </U>
+                      </V>
+                    </L>
+                    <L>
+                      <V t="sim_info">
+                        <U n="sim_info">
+                          <V n="ages" t="specified">
+                            <L n="specified">
+                              <E>CHILD</E>
+                            </L>
+                          </V>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+              </L>
+            </U>
+          </U>
+        </L>
+        <L>
+          <U>
+            <V n="modifier" t="set_cas_part">
+              <U n="set_cas_part">
+                <T n="cas_part">343387</T>
+                <T n="expect_invalid_parts">True</T>
+              </U>
+            </V>
+            <U n="weight">
+              <L n="multipliers">
+                <U>
+                  <T n="multiplier">0</T>
+                  <L n="tests">
+                    <L>
+                      <V t="sim_info">
+                        <U n="sim_info">
+                          <V n="gender" t="specified">
+                            <E n="specified">FEMALE</E>
+                          </V>
+                        </U>
+                      </V>
+                    </L>
+                    <L>
+                      <V t="sim_info">
+                        <U n="sim_info">
+                          <V n="ages" t="specified">
+                            <L n="specified">
+                              <E>CHILD</E>
+                            </L>
+                          </V>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+              </L>
+            </U>
+          </U>
+        </L>
+      </L>
+    </U>
+  </V>
+  <T p="InGame\Audio\Stings\sting_buff_gain.propx" n="audio_sting_on_add">39b2aa4a:00000000:8af8b916cf64c646</T>
+  <T p="InGame\Audio\Stings\sting_buff_loss.propx" n="audio_sting_on_remove">39b2aa4a:00000000:3bf33216a25546ea</T>
+  <U n="game_effect_modifier">
+    <L n="_game_effect_modifiers">
+      <V t="affordance_modifier">
+        <U n="affordance_modifier">
+          <L n="basic_extras">
+            <V t="buff_fire_and_forget">
+              <U n="buff_fire_and_forget">
+                <U n="buff">
+                  <V n="buff_reason" t="enabled">
+                    <T n="enabled">0x70A7D7A5<!--String: "(From Socialization)"--></T>
+                  </V>
+                  <T n="buff_type">320181<!--Buff: buff_FriendshipBracelet_Awkward--></T>
+                </U>
+                <U n="success_chance">
+                  <T n="base_chance">10</T>
+                  <L n="multipliers">
+                    <U>
+                      <T n="multiplier">0.5</T>
+                      <L n="tests">
+                        <L>
+                          <V t="trait">
+                            <U n="trait">
+                              <L n="whitelist_traits">
+                                <T>16824<!--Trait: trait_SelfAssured--></T>
+                              </L>
+                            </U>
+                          </V>
+                        </L>
+                      </L>
+                    </U>
+                  </L>
+                </U>
+              </U>
+            </V>
+            <V t="buff_fire_and_forget">
+              <U n="buff_fire_and_forget">
+                <U n="buff">
+                  <V n="buff_reason" t="enabled">
+                    <T n="enabled">0x70A7D7A5<!--String: "(From Socialization)"--></T>
+                  </V>
+                  <T n="buff_type">320182<!--Buff: buff_FriendshipBracelet_Braceletless--></T>
+                </U>
+                <E n="participant">TargetSim</E>
+                <U n="success_chance">
+                  <T n="base_chance">10</T>
+                  <L n="multipliers">
+                    <U>
+                      <T n="multiplier">2</T>
+                      <L n="tests">
+                        <L>
+                          <V t="trait">
+                            <U n="trait">
+                              <E n="subject">TargetSim</E>
+                              <L n="whitelist_traits">
+                                <T>9332<!--Trait: trait_Gloomy--></T>
+                                <T>124879<!--Trait: trait_Jealous--></T>
+                              </L>
+                            </U>
+                          </V>
+                        </L>
+                      </L>
+                    </U>
+                  </L>
+                </U>
+              </U>
+            </V>
+          </L>
+          <L n="interaction_category_tags">
+            <E>Interaction_Friendly</E>
+          </L>
+          <L n="test">
+            <L>
+              <V t="test_set_reference">
+                <T n="test_set_reference">320186<!--TestSetInstance: testSet_FriendshipBracelet_CanGetSad_Target--></T>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T p="InGame\UI\Icons\Debug\missing_image.png" n="icon">2f7d0004:00000000:30f0846c783606f9</T>
+  <T n="visible">False</T>
+</I>

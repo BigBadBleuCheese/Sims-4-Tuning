@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="MultiUnitEventSituation" i="situation" m="situations.custom_states.multi_unit_event_situation" n="situation_muEvent_Infestation" s="344500">
+  <T n="_display_name">0x6749A0DD<!--String: "Insect Infestation"--></T>
+  <T n="_resident_job">348951<!--SituationJob: job_muEvent_ActiveSim--></T>
+  <L n="_situation_states">
+    <U>
+      <T n="Situation State Key">Event</T>
+      <V n="Situation State" t="literal">
+        <U n="literal">
+          <L n="triggers">
+            <U>
+              <V n="effect" t="loot">
+                <U n="loot">
+                  <T n="is_multi_unit_event_loot">True</T>
+                  <L n="loot_actions">
+                    <T>351137<!--LootActions: loot_muEvent_SetEventSuccess--></T>
+                  </L>
+                </U>
+              </V>
+              <L n="triggers">
+                <V t="test_event">
+                  <U n="test_event">
+                    <T n="only_trigger_for_situation_sims">False</T>
+                    <V n="test" t="buff_added">
+                      <U n="buff_added">
+                        <L n="acceptable_buffs">
+                          <T>343477<!--Buff: buff_muEvent_CompletedPrimary--></T>
+                          <T>352303<!--Buff: buff_muEvent_CompletedSecondary--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </U>
+          </L>
+        </U>
+      </V>
+    </U>
+  </L>
+  <V n="_starting_state" t="random_starting_state">
+    <U n="random_starting_state">
+      <L n="possible_state_keys">
+        <U>
+          <T n="situation_key">Event</T>
+        </U>
+      </L>
+    </U>
+  </V>
+  <T p="InGame\Audio\Bumper\bumper_event_start.propx" n="audio_sting_on_start">39b2aa4a:00000000:78b903461d47e4fc</T>
+  <V n="build_buy_lock_reason" t="enabled">
+    <T n="enabled">0x9E28D4DE<!--String: "Cannot go to Build Mode during an Event."--></T>
+  </V>
+  <T n="can_remove_sims_from_work">False</T>
+  <L n="compatible_venues">
+    <T>28614<!--Venue: venue_residential--></T>
+  </L>
+  <E n="creation_ui_option">NOT_AVAILABLE</E>
+  <L n="default_job_and_roles">
+    <U>
+      <T n="Situation Job">348951<!--SituationJob: job_muEvent_ActiveSim--></T>
+      <T n="Role State">324590<!--RoleState: role_Empty--></T>
+    </U>
+  </L>
+  <T n="duration">1434</T>
+  <E n="exclusivity">NEUTRAL</E>
+  <T p="InGame\Audio\Bumper\bumper_event_major_complete.propx" n="main_goal_audio_sting">39b2aa4a:00000000:10b476550150a33f</T>
+  <T n="max_participants">20</T>
+  <L n="minor_goal_chains">
+    <T>345000<!--SituationGoalSet: goalSet_muEvent_Infestation_Stomp--></T>
+    <T>345001<!--SituationGoalSet: goalSet_muEvent_Infestation_Fumigate--></T>
+  </L>
+  <E n="persistence_option">DONT</E>
+  <T n="show_timer_in_scored_situation">True</T>
+  <T n="situation_cancelable">False</T>
+  <T n="situation_description">0xC5A8FD5D<!--String: "This place is becoming an insect metropolis! Sort out the Insect Infestation problem by selecting Deploy Fumigation Device. You can even try to Stomp on the Bugs, but this might not be enough to keep these gravity-defying pests away! "--></T>
+  <V n="situation_end_time_string" t="show_end_time">
+    <T n="show_end_time">0xA3E17143<!--String: "Work day ends at {0.TimeShort}"--></T>
+  </V>
+  <T n="suppress_scoring_progress_bar">True</T>
+  <V n="travel_request_behavior" t="allow" />
+</I>

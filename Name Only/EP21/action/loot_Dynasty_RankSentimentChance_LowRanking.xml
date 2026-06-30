@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Dynasty_RankSentimentChance_LowRanking" s="493034">
+  <L n="loot_actions">
+    <V t="looping_loot_ops_with_target">
+      <U n="looping_loot_ops_with_target">
+        <U n="chance">
+          <T n="base_chance">100</T>
+        </U>
+        <L n="loots_to_apply">
+          <T>493028<!--LootActions: loot_Sentiment_AddSentiment_Bitter_Dynasty_LowRanking--></T>
+        </L>
+        <E n="target_participant_type">TargetSim</E>
+      </U>
+    </V>
+    <V t="looping_loot_ops_with_target">
+      <U n="looping_loot_ops_with_target">
+        <U n="chance">
+          <T n="base_chance">100</T>
+        </U>
+        <L n="loots_to_apply">
+          <T>493028<!--LootActions: loot_Sentiment_AddSentiment_Bitter_Dynasty_LowRanking--></T>
+        </L>
+        <E n="subject">TargetSim</E>
+        <E n="target_participant_type">Actor</E>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="dynasty_member">
+        <U n="dynasty_member">
+          <V n="test_type" t="same_dynasty_membership" />
+        </U>
+      </V>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified">
+            <L n="specified">
+              <E>TEEN</E>
+              <E>YOUNGADULT</E>
+              <E>ADULT</E>
+              <E>ELDER</E>
+            </L>
+          </V>
+        </U>
+      </V>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified">
+            <L n="specified">
+              <E>TEEN</E>
+              <E>YOUNGADULT</E>
+              <E>ADULT</E>
+              <E>ELDER</E>
+            </L>
+          </V>
+          <E n="who">TargetSim</E>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

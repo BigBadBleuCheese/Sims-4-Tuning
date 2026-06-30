@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Object_RanchNectarMaker_RancherTraitEffects" s="331044">
+  <L n="loot_actions">
+    <V t="create_object">
+      <U n="create_object">
+        <U n="chance">
+          <T n="base_chance">20</T>
+        </U>
+        <V n="creation_data" t="clone_object">
+          <U n="clone_object">
+            <V n="source_object" t="is_participant">
+              <U n="is_participant">
+                <E n="participant">CraftingObject</E>
+              </U>
+            </V>
+          </U>
+        </V>
+        <V n="location" t="inventory" />
+        <V n="notification_inventory" t="enabled">
+          <U n="enabled">
+            <U n="household_inventory">
+              <V n="text" t="single">
+                <T n="single">0xD964AD90<!--String: "{0.SimFirstName}'s dedication to Rancher life pays off again. {0.SimPronounSubjective} knew just how to stomp and extracted an extra bottle's worth of Nectar from this batch!"--></T>
+              </V>
+            </U>
+            <U n="participant_inventory">
+              <V n="icon" t="enabled">
+                <V n="enabled" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>Object</E>
+                    </L>
+                  </U>
+                </V>
+              </V>
+              <V n="secondary_icon" t="enabled">
+                <V n="enabled" t="participant" />
+              </V>
+              <V n="text" t="single">
+                <T n="single">0xD964AD90<!--String: "{0.SimFirstName}'s dedication to Rancher life pays off again. {0.SimPronounSubjective} knew just how to stomp and extracted an extra bottle's worth of Nectar from this batch!"--></T>
+              </V>
+              <V n="text_tokens" t="enabled">
+                <U n="enabled">
+                  <L n="tokens">
+                    <V t="participant_type" />
+                  </L>
+                </U>
+              </V>
+            </U>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x2CF3EF2D<!--String: "(From Rancher Trait)"--></T>
+          </V>
+          <T n="buff_type">320990<!--Buff: buff_Trait_Rancher_RanchChores_Embarassed--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="state">
+              <U n="state">
+                <T n="value">15306<!--CommodityBasedObjectStateValue: Quality_Poor--></T>
+                <E n="who">CraftingObject</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="trait">
+        <U n="trait">
+          <L n="whitelist_traits">
+            <T>320988<!--Trait: trait_Rancher--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

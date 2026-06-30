@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_HorseManure_BladderMotive_CreateManure_Outstanding_Foal" s="350328">
+  <L n="loot_actions">
+    <V t="create_object">
+      <U n="create_object">
+        <V n="creation_data" t="definition">
+          <U n="definition">
+            <T n="definition">340032</T>
+          </U>
+        </V>
+        <V n="location" t="position">
+          <U n="position">
+            <T n="allow_off_lot_placement">True</T>
+            <U n="initial_location_offset">
+              <U n="default_offset">
+                <T n="z">-0.9</T>
+              </U>
+            </U>
+            <T n="perform_fgl_check">False</T>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="motive">
+        <U n="motive">
+          <L n="stats">
+            <T>312266<!--Commodity: motive_Horse_Energy--></T>
+            <T>312268<!--Commodity: motive_Horse_Fun--></T>
+            <T>312265<!--Commodity: motive_Horse_Hunger--></T>
+            <T>312269<!--Commodity: motive_Horse_Hygiene--></T>
+            <T>312270<!--Commodity: motive_Horse_Social--></T>
+          </L>
+          <U n="threshold">
+            <E n="comparison">GREATER</E>
+            <T n="value">50</T>
+          </U>
+        </U>
+      </V>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified">
+            <L n="specified">
+              <E>TODDLER</E>
+              <E>CHILD</E>
+            </L>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="costumeBox_WearCostume_Confident_Doctor" s="364652">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="circle">
+            <U n="circle">
+              <T n="ideal_radius">1</T>
+              <T n="radius">2</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="value" t="facing" />
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>362791<!--LootActions: loot_CostumeBox_RemoveTimerBuff--></T>
+        </L>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+    <V t="payment">
+      <U n="payment">
+        <V n="payment" t="literal">
+          <U n="literal">
+            <U n="cost_modifiers">
+              <L n="multipliers">
+                <U>
+                  <T n="multiplier">0</T>
+                  <L n="tests">
+                    <L>
+                      <V t="object_criteria">
+                        <U n="object_criteria">
+                          <V n="subject_specific_tests" t="single_object" />
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+              </L>
+            </U>
+            <V n="payment_cost" t="amount">
+              <U n="amount">
+                <T n="amount">50</T>
+              </U>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <V n="basic_reserve_object" t="disabled" />
+  <T n="category">365754<!--PieMenuCategory: pieMenuCategory_CostumeBox_Wear_Confident_Job--></T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x85DA6FE7<!--String: "Doctor"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <V n="animation_ref" t="enabled">
+          <U n="enabled">
+            <T n="factory">361527<!--AnimationElement: costumeBox_ClothesChange--></T>
+          </U>
+        </V>
+        <L n="basic_extras">
+          <V t="change_outfit">
+            <U n="change_outfit">
+              <L n="tests">
+                <L>
+                  <V t="outfit">
+                    <U n="outfit">
+                      <L n="whitelist_outfits">
+                        <E>BATHING</E>
+                      </L>
+                    </U>
+                  </V>
+                </L>
+              </L>
+              <V n="xevt_outfit_change" t="enabled">
+                <U n="enabled">
+                  <V n="outfit_change" t="for_reason">
+                    <U n="for_reason">
+                      <E n="reason">Category_Everyday</E>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </U>
+          </V>
+          <V t="loot">
+            <U n="loot">
+              <L n="loot_list">
+                <T>361931<!--LootActions: loot_CostumeBox_RemoveCostumeBuff--></T>
+              </L>
+              <V n="timing" t="on_xevt" />
+            </U>
+          </V>
+          <V t="buff_fire_and_forget">
+            <U n="buff_fire_and_forget">
+              <U n="buff">
+                <T n="buff_type">364649<!--Buff: buff_CostumeBox_Costume_Doctor--></T>
+              </U>
+              <V n="timing" t="on_xevt" />
+            </U>
+          </V>
+          <V t="buff_fire_and_forget">
+            <U n="buff_fire_and_forget">
+              <U n="buff">
+                <V n="buff_reason" t="enabled">
+                  <T n="enabled">0x4ADF0F7<!--String: "(From Wearing a Costume)"--></T>
+                </V>
+                <T n="buff_type">361932<!--Buff: buff_CostumeBox_Timer_Confident--></T>
+              </U>
+            </U>
+          </V>
+        </L>
+      </U>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_autonomous">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist_tags">
+            <E>Buff_CostumeBox_AppearanceModifier</E>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

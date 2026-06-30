@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="lootActions_WorkRival_NobleCareer_Resolution_Befriended" s="486633">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0xD1737E28<!--String: "(From Resolving Noble Rivalry Amicably)"--></T>
+          </V>
+          <T n="buff_type">486678<!--Buff: buff_WorkRival_NobleCareer_HappyResolution--></T>
+        </U>
+      </U>
+    </V>
+    <V t="actions">
+      <T n="actions">486627<!--LootActions: lootActions_WorkRival_NobleCareer_BitRemove--></T>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="required_relationship_bits">
+            <L n="match_any">
+              <T>486634<!--RelationshipBit: relBit_WorkRival_NobleCareer--></T>
+              <T>492672<!--RelationshipBit: relBit_WorkRival_NobleCareer_Rank9--></T>
+            </L>
+          </U>
+        </U>
+      </V>
+      <V t="career_test">
+        <U n="career_test">
+          <T n="negate">True</T>
+          <V n="test_type" t="career_level">
+            <U n="career_level">
+              <T n="career_level">463262<!--CareerLevel: career_Noble_Level10--></T>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="career_test">
+        <U n="career_test">
+          <T n="negate">True</T>
+          <E n="subjects">TargetSim</E>
+          <V n="test_type" t="career_level">
+            <U n="career_level">
+              <T n="career_level">463262<!--CareerLevel: career_Noble_Level10--></T>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

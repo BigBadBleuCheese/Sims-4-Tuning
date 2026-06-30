@@ -1,0 +1,578 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Skill" i="statistic" m="statistics.skill" n="statistic_Skill_NLS" s="434909">
+  <L n="ages">
+    <E>ADULT</E>
+    <E>ELDER</E>
+    <E>YOUNGADULT</E>
+    <E>TEEN</E>
+    <E>CHILD</E>
+  </L>
+  <T p="InEP19\UI\Icons\Skills\Skill_NaturalLiving.png" n="icon">2f7d0004:00000000:b7f6856da7f9bde9</T>
+  <T n="initial_value">100</T>
+  <L n="level_data">
+    <U>
+      <T n="key">1</T>
+      <U n="value">
+        <U n="level_up_notification">
+          <E n="expand_behavior">FORCE_EXPAND</E>
+          <V n="text" t="single">
+            <T n="single">0x2D888E1B<!--String: "{0.SimFirstName}'s new skill in Natural Living allows {0.SimPronounObjective} to fulfill more needs outdoors. It can be challenging at first, but living out in nature becomes easy and comfortable with practice!\n\n{0.SimFirstName} can sleep on the ground indoors and outdoors but will gain Energy slowly and lose Hygiene until {0.SimPronounSubjective} {S0.grow}{P0.grows} more skillful.\n\n{0.SimFirstName} can also bathe in any outdoor water that's shallow enough to wade in, including ponds, rivers, and ocean shorelines. In addition, {0.SimFirstName} can also take a sponge bath in a public restroom and the Fairy Hub located in Everdew.\n\nEating harvestable foods will help {0.SimFirstName} gain a small amount of fun.\n\nContinue to build the skill by also reading the Natural Living Skill Book and Researching Nature on a Computer."--></T>
+          </V>
+          <V n="title" t="enabled">
+            <T n="enabled">0xFC1E2C49<!--String: "Acquired the Natural Living Skill"--></T>
+          </V>
+          <L n="ui_responses">
+            <U>
+              <T n="text">0xEABE5948<!--String: "View Lessons"--></T>
+              <V n="tutorial_id" t="enabled">
+                <T n="enabled">448260<!--Tutorial: tutorial_EP19_NaturalLivingSkill--></T>
+              </V>
+              <E n="ui_request">SHOW_LESSONS</E>
+            </U>
+          </L>
+        </U>
+        <L n="loot">
+          <T>224724<!--LootActions: loot_HumanoidRobots_GainEnhancementProgress_Level1--></T>
+          <T>387753<!--LootActions: loot_NewSkill_ChasedByDeath--></T>
+        </L>
+      </U>
+    </U>
+    <U>
+      <T n="key">2</T>
+      <U n="value">
+        <U n="level_up_notification">
+          <V n="audio_sting" t="enabled">
+            <U n="enabled">
+              <T n="audio" p="InGame\Audio\Stings\sting_skill_progress.propx">39b2aa4a:00000000:54381264540dd53c</T>
+            </U>
+          </V>
+          <V n="text" t="single">
+            <T n="single">0xFE538DC1<!--String: "{0.SimFirstName} is learning more ways to live out in nature! {0.SimPronounSubjective|xxUpper} can now directly summon a Privy Bush outdoors for Bladder relief, and gain Hunger by gulping down any fish {0.SimPronounSubjective} {S0.has}{P0.have} acquired—no cooking involved! {0.SimPronounSubjective|xxUpper} can also now intentionally Forage for Food.\n\nWhile these skills offer partial comfort and nourishment, with practice, {0.SimFirstName} will find even greater fulfillment in natural living."--></T>
+          </V>
+          <V n="title" t="enabled">
+            <T n="enabled">0xF297BEB3<!--String: "Reached Natural Living Level 2"--></T>
+          </V>
+          <L n="ui_responses">
+            <U>
+              <T n="text">0xEABE5948<!--String: "View Lessons"--></T>
+              <V n="tutorial_id" t="enabled">
+                <T n="enabled">448260<!--Tutorial: tutorial_EP19_NaturalLivingSkill--></T>
+              </V>
+              <E n="ui_request">SHOW_LESSONS</E>
+            </U>
+          </L>
+        </U>
+        <V n="level_up_screen_slam" t="enabled">
+          <V n="enabled" t="reference">
+            <T n="reference">439139<!--ScreenSlam: screenSlam_Skill_NLS_LevelUp--></T>
+          </V>
+        </V>
+        <L n="loot">
+          <T>182401<!--LootActions: loot_SurpriseHoliday_SkillDay_SkillIUpCheck--></T>
+          <T>224725<!--LootActions: loot_HumanoidRobots_GainEnhancementProgress_Level2--></T>
+          <T>307087<!--LootActions: loot_Child_Confidence_Gain_Small--></T>
+          <T>372622<!--LootActions: loot_Trait_practiceMakesPerfect_LevelSkill_Whim--></T>
+          <T>395690<!--LootActions: loot_ImprovedSelf_ChasedByDeath--></T>
+          <T>456796<!--LootActions: loot_Getaway_AddBuff_WorkingOnMyself--></T>
+          <T>460916<!--LootActions: loot_Competitive_SkillBuffs--></T>
+        </L>
+        <L n="target_super_affordances">
+          <U>
+            <T n="affordance">27845<!--SuperInteraction: computer_ResearchSkills--></T>
+            <V n="object_filter" t="filter_by_tags">
+              <U n="filter_by_tags">
+                <L n="tags">
+                  <E>Func_Computer</E>
+                </L>
+              </U>
+            </V>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <T n="key">3</T>
+      <U n="value">
+        <U n="level_up_notification">
+          <V n="audio_sting" t="enabled">
+            <U n="enabled">
+              <T n="audio" p="InGame\Audio\Stings\sting_skill_progress.propx">39b2aa4a:00000000:54381264540dd53c</T>
+            </U>
+          </V>
+          <V n="text" t="single">
+            <T n="single">0x5AAFE2F0<!--String: "The wild calls! {0.SimFirstName} can now intentionally Forage for Plants! Eating harvestable foods will also better satisfy {0.SimPronounPossessiveDependent} Hunger.\n\nSleeping on the ground, outdoors and indoors, is a little more restful and won't reduce {0.SimFirstName}'s Hygiene as quickly. As {0.SimPronounSubjective} {S0.gains}{P0.gain} skill, sleeping will become even better!"--></T>
+          </V>
+          <V n="title" t="enabled">
+            <T n="enabled">0xD66D0F6<!--String: "Reached Natural Living Level 3"--></T>
+          </V>
+          <L n="ui_responses">
+            <U>
+              <T n="text">0xEABE5948<!--String: "View Lessons"--></T>
+              <V n="tutorial_id" t="enabled">
+                <T n="enabled">448260<!--Tutorial: tutorial_EP19_NaturalLivingSkill--></T>
+              </V>
+              <E n="ui_request">SHOW_LESSONS</E>
+            </U>
+          </L>
+        </U>
+        <V n="level_up_screen_slam" t="enabled">
+          <V n="enabled" t="reference">
+            <T n="reference">439139<!--ScreenSlam: screenSlam_Skill_NLS_LevelUp--></T>
+          </V>
+        </V>
+        <L n="loot">
+          <T>182401<!--LootActions: loot_SurpriseHoliday_SkillDay_SkillIUpCheck--></T>
+          <T>224726<!--LootActions: loot_HumanoidRobots_GainEnhancementProgress_Level3--></T>
+          <T>307087<!--LootActions: loot_Child_Confidence_Gain_Small--></T>
+          <T>372622<!--LootActions: loot_Trait_practiceMakesPerfect_LevelSkill_Whim--></T>
+          <T>395690<!--LootActions: loot_ImprovedSelf_ChasedByDeath--></T>
+          <T>456796<!--LootActions: loot_Getaway_AddBuff_WorkingOnMyself--></T>
+          <T>460916<!--LootActions: loot_Competitive_SkillBuffs--></T>
+        </L>
+        <L n="target_super_affordances">
+          <U>
+            <T n="affordance">27845<!--SuperInteraction: computer_ResearchSkills--></T>
+            <V n="object_filter" t="filter_by_tags">
+              <U n="filter_by_tags">
+                <L n="tags">
+                  <E>Func_Computer</E>
+                </L>
+              </U>
+            </V>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <T n="key">4</T>
+      <U n="value">
+        <U n="level_up_notification">
+          <V n="audio_sting" t="enabled">
+            <U n="enabled">
+              <T n="audio" p="InGame\Audio\Stings\sting_skill_progress.propx">39b2aa4a:00000000:54381264540dd53c</T>
+            </U>
+          </V>
+          <V n="text" t="single">
+            <T n="single">0x6946D<!--String: "Nature's benefits grow for {0.SimFirstName}! When using the Privy Bush, {0.SimPronounSubjective} {S0.stays}{P0.stay} cleaner and loses less Hygiene.\n\nAt this level of skill, {0.SimFirstName} finds bathing in natural water kind of fun, even if a bit uncomfortable at times. Napping on benches is also a little nicer than before!"--></T>
+          </V>
+          <V n="title" t="enabled">
+            <T n="enabled">0xBFABBF2F<!--String: "Reached Natural Living Level 4"--></T>
+          </V>
+          <L n="ui_responses">
+            <U>
+              <T n="text">0xEABE5948<!--String: "View Lessons"--></T>
+              <V n="tutorial_id" t="enabled">
+                <T n="enabled">448260<!--Tutorial: tutorial_EP19_NaturalLivingSkill--></T>
+              </V>
+              <E n="ui_request">SHOW_LESSONS</E>
+            </U>
+          </L>
+        </U>
+        <V n="level_up_screen_slam" t="enabled">
+          <V n="enabled" t="reference">
+            <T n="reference">439139<!--ScreenSlam: screenSlam_Skill_NLS_LevelUp--></T>
+          </V>
+        </V>
+        <L n="loot">
+          <T>182401<!--LootActions: loot_SurpriseHoliday_SkillDay_SkillIUpCheck--></T>
+          <T>224727<!--LootActions: loot_HumanoidRobots_GainEnhancementProgress_Level4--></T>
+          <T>307087<!--LootActions: loot_Child_Confidence_Gain_Small--></T>
+          <T>372622<!--LootActions: loot_Trait_practiceMakesPerfect_LevelSkill_Whim--></T>
+          <T>395690<!--LootActions: loot_ImprovedSelf_ChasedByDeath--></T>
+          <T>456796<!--LootActions: loot_Getaway_AddBuff_WorkingOnMyself--></T>
+          <T>460916<!--LootActions: loot_Competitive_SkillBuffs--></T>
+        </L>
+        <L n="target_super_affordances">
+          <U>
+            <T n="affordance">27845<!--SuperInteraction: computer_ResearchSkills--></T>
+            <V n="object_filter" t="filter_by_tags">
+              <U n="filter_by_tags">
+                <L n="tags">
+                  <E>Func_Computer</E>
+                </L>
+              </U>
+            </V>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <T n="key">5</T>
+      <U n="value">
+        <U n="level_up_notification">
+          <V n="audio_sting" t="enabled">
+            <U n="enabled">
+              <T n="audio" p="InGame\Audio\Stings\sting_skill_progress.propx">39b2aa4a:00000000:54381264540dd53c</T>
+            </U>
+          </V>
+          <V n="text" t="single">
+            <T n="single">0x4BCE4F2A<!--String: "Natural Living knowledge unfolds! {0.SimFirstName} can now eat frogs caught in the wild and intentionally Forage for Collectibles.\n{0.SimFirstName} can Talk to Nature itself to slowly recover {0.SimPronounPossessiveDependent} Social Needs outdoors.\n\n{0.SimFirstName} has also overcome the discomfort of bathing in natural water (and public restroom sponge baths!) {0.SimPronounSubjective|xxUpper}'ll get cleaner faster and feel better in the process. Huzzah!"--></T>
+          </V>
+          <V n="title" t="enabled">
+            <T n="enabled">0xA4F03735<!--String: "Reached Natural Living Level 5"--></T>
+          </V>
+          <L n="ui_responses">
+            <U>
+              <T n="text">0xEABE5948<!--String: "View Lessons"--></T>
+              <V n="tutorial_id" t="enabled">
+                <T n="enabled">448260<!--Tutorial: tutorial_EP19_NaturalLivingSkill--></T>
+              </V>
+              <E n="ui_request">SHOW_LESSONS</E>
+            </U>
+          </L>
+        </U>
+        <V n="level_up_screen_slam" t="enabled">
+          <V n="enabled" t="reference">
+            <T n="reference">439139<!--ScreenSlam: screenSlam_Skill_NLS_LevelUp--></T>
+          </V>
+        </V>
+        <L n="loot">
+          <T>182401<!--LootActions: loot_SurpriseHoliday_SkillDay_SkillIUpCheck--></T>
+          <T>224728<!--LootActions: loot_HumanoidRobots_GainEnhancementProgress_Level5--></T>
+          <T>307087<!--LootActions: loot_Child_Confidence_Gain_Small--></T>
+          <T>372622<!--LootActions: loot_Trait_practiceMakesPerfect_LevelSkill_Whim--></T>
+          <T>395690<!--LootActions: loot_ImprovedSelf_ChasedByDeath--></T>
+          <T>426641<!--LootActions: loot_Buff_Add_Onboarding_Mentorship_SkillUp--></T>
+          <T>456796<!--LootActions: loot_Getaway_AddBuff_WorkingOnMyself--></T>
+          <T>460916<!--LootActions: loot_Competitive_SkillBuffs--></T>
+        </L>
+        <L n="target_super_affordances">
+          <U>
+            <T n="affordance">27845<!--SuperInteraction: computer_ResearchSkills--></T>
+            <V n="object_filter" t="filter_by_tags">
+              <U n="filter_by_tags">
+                <L n="tags">
+                  <E>Func_Computer</E>
+                </L>
+              </U>
+            </V>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <T n="key">6</T>
+      <U n="value">
+        <U n="level_up_notification">
+          <V n="audio_sting" t="enabled">
+            <U n="enabled">
+              <T n="audio" p="InGame\Audio\Stings\sting_skill_progress.propx">39b2aa4a:00000000:54381264540dd53c</T>
+            </U>
+          </V>
+          <V n="text" t="single">
+            <T n="single">0x9545C3BB<!--String: "{0.SimFirstName}'s Natural Living experiences have conditioned {0.SimPronounPossessiveDependent} body to the elements.\n{0.SimPronounSubjective|xxUpper} {S0.is}{P0.are} no longer affected by extreme heat or cold, and have no problem sleeping or bathing outdoors in rain or snow <i>(Seasons)</i>. Sleeping on the ground may even give a boost to {0.SimFirstName}'s Balance!\n\n{0.SimPronounSubjective|xxUpper} will also fill more Hunger when gulping down raw fish, with less chance of getting the Raw Rumble Moodlet."--></T>
+          </V>
+          <V n="title" t="enabled">
+            <T n="enabled">0xAD41D42F<!--String: "Reached Natural Living Level 6"--></T>
+          </V>
+          <L n="ui_responses">
+            <U>
+              <T n="text">0xEABE5948<!--String: "View Lessons"--></T>
+              <V n="tutorial_id" t="enabled">
+                <T n="enabled">448260<!--Tutorial: tutorial_EP19_NaturalLivingSkill--></T>
+              </V>
+              <E n="ui_request">SHOW_LESSONS</E>
+            </U>
+          </L>
+        </U>
+        <V n="level_up_screen_slam" t="enabled">
+          <V n="enabled" t="reference">
+            <T n="reference">439139<!--ScreenSlam: screenSlam_Skill_NLS_LevelUp--></T>
+          </V>
+        </V>
+        <L n="loot">
+          <T>224729<!--LootActions: loot_HumanoidRobots_GainEnhancementProgress_Level6--></T>
+          <T>284486<!--LootActions: loot_SkillIUpCheck_NonHoliday--></T>
+          <T>307087<!--LootActions: loot_Child_Confidence_Gain_Small--></T>
+          <T>372622<!--LootActions: loot_Trait_practiceMakesPerfect_LevelSkill_Whim--></T>
+          <T>395690<!--LootActions: loot_ImprovedSelf_ChasedByDeath--></T>
+          <T>456796<!--LootActions: loot_Getaway_AddBuff_WorkingOnMyself--></T>
+          <T>460916<!--LootActions: loot_Competitive_SkillBuffs--></T>
+        </L>
+        <L n="target_super_affordances">
+          <U>
+            <T n="affordance">27845<!--SuperInteraction: computer_ResearchSkills--></T>
+            <V n="object_filter" t="filter_by_tags">
+              <U n="filter_by_tags">
+                <L n="tags">
+                  <E>Func_Computer</E>
+                </L>
+              </U>
+            </V>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <T n="key">7</T>
+      <U n="value">
+        <U n="level_up_notification">
+          <V n="audio_sting" t="enabled">
+            <U n="enabled">
+              <T n="audio" p="InGame\Audio\Stings\sting_skill_progress.propx">39b2aa4a:00000000:54381264540dd53c</T>
+            </U>
+          </V>
+          <V n="text" t="single">
+            <T n="single">0x5B5B751B<!--String: "{0.SimFirstName} is becoming a Natural Living pro. Using a Privy Bush no longer affects {0.SimPronounPossessiveDependent} Hygiene at all, and feasting on harvestable foods is Fun!\n\n{0.SimFirstName} can now also Meditate in Nature. It's kind of fun but will take a bit more skill to get the hang of."--></T>
+          </V>
+          <V n="title" t="enabled">
+            <T n="enabled">0x17B4EB49<!--String: "Reached Natural Living Level 7"--></T>
+          </V>
+          <L n="ui_responses">
+            <U>
+              <T n="text">0xEABE5948<!--String: "View Lessons"--></T>
+              <V n="tutorial_id" t="enabled">
+                <T n="enabled">448260<!--Tutorial: tutorial_EP19_NaturalLivingSkill--></T>
+              </V>
+              <E n="ui_request">SHOW_LESSONS</E>
+            </U>
+          </L>
+        </U>
+        <V n="level_up_screen_slam" t="enabled">
+          <V n="enabled" t="reference">
+            <T n="reference">439139<!--ScreenSlam: screenSlam_Skill_NLS_LevelUp--></T>
+          </V>
+        </V>
+        <L n="loot">
+          <T>224730<!--LootActions: loot_HumanoidRobots_GainEnhancementProgress_Level7--></T>
+          <T>284486<!--LootActions: loot_SkillIUpCheck_NonHoliday--></T>
+          <T>307087<!--LootActions: loot_Child_Confidence_Gain_Small--></T>
+          <T>372622<!--LootActions: loot_Trait_practiceMakesPerfect_LevelSkill_Whim--></T>
+          <T>395690<!--LootActions: loot_ImprovedSelf_ChasedByDeath--></T>
+          <T>456796<!--LootActions: loot_Getaway_AddBuff_WorkingOnMyself--></T>
+          <T>460916<!--LootActions: loot_Competitive_SkillBuffs--></T>
+        </L>
+        <L n="target_super_affordances">
+          <U>
+            <T n="affordance">27845<!--SuperInteraction: computer_ResearchSkills--></T>
+            <V n="object_filter" t="filter_by_tags">
+              <U n="filter_by_tags">
+                <L n="tags">
+                  <E>Func_Computer</E>
+                </L>
+              </U>
+            </V>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <T n="key">8</T>
+      <U n="value">
+        <U n="level_up_notification">
+          <V n="audio_sting" t="enabled">
+            <U n="enabled">
+              <T n="audio" p="InGame\Audio\Stings\sting_skill_progress.propx">39b2aa4a:00000000:54381264540dd53c</T>
+            </U>
+          </V>
+          <V n="text" t="single">
+            <T n="single">0xF8429A6E<!--String: "{0.SimFirstName} is thriving out in nature! {0.SimPronounSubjective|xxUpper} will satisfy much more Hunger from eating raw Fish as well as Harvestable foods (whether gained by Foraging, Gardening, or otherwise.)"--></T>
+          </V>
+          <V n="title" t="enabled">
+            <T n="enabled">0x6FC08D48<!--String: "Reached Natural Living Level 8"--></T>
+          </V>
+          <L n="ui_responses">
+            <U>
+              <T n="text">0xEABE5948<!--String: "View Lessons"--></T>
+              <V n="tutorial_id" t="enabled">
+                <T n="enabled">448260<!--Tutorial: tutorial_EP19_NaturalLivingSkill--></T>
+              </V>
+              <E n="ui_request">SHOW_LESSONS</E>
+            </U>
+          </L>
+        </U>
+        <V n="level_up_screen_slam" t="enabled">
+          <V n="enabled" t="reference">
+            <T n="reference">439139<!--ScreenSlam: screenSlam_Skill_NLS_LevelUp--></T>
+          </V>
+        </V>
+        <L n="loot">
+          <T>224731<!--LootActions: loot_HumanoidRobots_GainEnhancementProgress_Level8--></T>
+          <T>284486<!--LootActions: loot_SkillIUpCheck_NonHoliday--></T>
+          <T>307087<!--LootActions: loot_Child_Confidence_Gain_Small--></T>
+          <T>372622<!--LootActions: loot_Trait_practiceMakesPerfect_LevelSkill_Whim--></T>
+          <T>395690<!--LootActions: loot_ImprovedSelf_ChasedByDeath--></T>
+          <T>456796<!--LootActions: loot_Getaway_AddBuff_WorkingOnMyself--></T>
+          <T>460916<!--LootActions: loot_Competitive_SkillBuffs--></T>
+        </L>
+        <L n="target_super_affordances">
+          <U>
+            <T n="affordance">27845<!--SuperInteraction: computer_ResearchSkills--></T>
+            <V n="object_filter" t="filter_by_tags">
+              <U n="filter_by_tags">
+                <L n="tags">
+                  <E>Func_Computer</E>
+                </L>
+              </U>
+            </V>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <T n="key">9</T>
+      <U n="value">
+        <U n="level_up_notification">
+          <V n="audio_sting" t="enabled">
+            <U n="enabled">
+              <T n="audio" p="InGame\Audio\Stings\sting_skill_progress.propx">39b2aa4a:00000000:54381264540dd53c</T>
+            </U>
+          </V>
+          <V n="text" t="single">
+            <T n="single">0x7893B3A6<!--String: "{0.SimFirstName} is feeling right at home in nature! Frogs satisfy extra Hunger, while Talking to Nature fills much greater Social Need.\n\n{0.SimFirstName} has also figured out Meditating in Nature, finding it not only enjoyable but also restorative to {0.SimPronounPossessiveDependent} Balance."--></T>
+          </V>
+          <V n="title" t="enabled">
+            <T n="enabled">0xF7DE67D<!--String: "Reached Natural Living Level 9"--></T>
+          </V>
+          <L n="ui_responses">
+            <U>
+              <T n="text">0xEABE5948<!--String: "View Lessons"--></T>
+              <V n="tutorial_id" t="enabled">
+                <T n="enabled">448260<!--Tutorial: tutorial_EP19_NaturalLivingSkill--></T>
+              </V>
+              <E n="ui_request">SHOW_LESSONS</E>
+            </U>
+          </L>
+        </U>
+        <V n="level_up_screen_slam" t="enabled">
+          <V n="enabled" t="reference">
+            <T n="reference">439139<!--ScreenSlam: screenSlam_Skill_NLS_LevelUp--></T>
+          </V>
+        </V>
+        <L n="loot">
+          <T>224732<!--LootActions: loot_HumanoidRobots_GainEnhancementProgress_Level9--></T>
+          <T>284486<!--LootActions: loot_SkillIUpCheck_NonHoliday--></T>
+          <T>307087<!--LootActions: loot_Child_Confidence_Gain_Small--></T>
+          <T>372622<!--LootActions: loot_Trait_practiceMakesPerfect_LevelSkill_Whim--></T>
+          <T>395690<!--LootActions: loot_ImprovedSelf_ChasedByDeath--></T>
+          <T>456796<!--LootActions: loot_Getaway_AddBuff_WorkingOnMyself--></T>
+          <T>460916<!--LootActions: loot_Competitive_SkillBuffs--></T>
+        </L>
+        <L n="target_super_affordances">
+          <U>
+            <T n="affordance">27845<!--SuperInteraction: computer_ResearchSkills--></T>
+            <V n="object_filter" t="filter_by_tags">
+              <U n="filter_by_tags">
+                <L n="tags">
+                  <E>Func_Computer</E>
+                </L>
+              </U>
+            </V>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <T n="key">10</T>
+      <U n="value">
+        <U n="level_up_notification">
+          <V n="text" t="single">
+            <T n="single">0xD509FDE2<!--String: "{0.SimFirstName} is totally at home living in nature! {0.SimPronounSubjective|xxUpper} can clean up very quickly in wadable waters, sleeping on the ground has even greater chance to restore some Balance, and eating harvestable foods now satisfies a large amount of Hunger.\n\n{0.SimFirstName}'s comfort with Natural Living adds one more benefit: dramatically lowered chances of getting Fear of the Dark simply from being outdoors at night, and Fear of Swimming from minor swimming incidents."--></T>
+          </V>
+          <V n="title" t="enabled">
+            <T n="enabled">0x191D13FC<!--String: "Reached Natural Living Level 10"--></T>
+          </V>
+          <L n="ui_responses">
+            <U>
+              <T n="text">0xEABE5948<!--String: "View Lessons"--></T>
+              <V n="tutorial_id" t="enabled">
+                <T n="enabled">448260<!--Tutorial: tutorial_EP19_NaturalLivingSkill--></T>
+              </V>
+              <E n="ui_request">SHOW_LESSONS</E>
+            </U>
+          </L>
+        </U>
+        <V n="level_up_screen_slam" t="enabled">
+          <V n="enabled" t="reference">
+            <T n="reference">439140<!--ScreenSlam: screenSlam_Skill_NLS_MaxLevel--></T>
+          </V>
+        </V>
+        <L n="loot">
+          <T>224733<!--LootActions: loot_HumanoidRobots_GainEnhancementProgress_Level10--></T>
+          <T>284486<!--LootActions: loot_SkillIUpCheck_NonHoliday--></T>
+          <T>294361<!--LootActions: loot_Trait_Overachiever_MaxedSkill--></T>
+          <T>306801<!--LootActions: loot_Child_Confidence_Gain_Medium--></T>
+          <T>334198<!--LootActions: loot_MidlifeCrisis_MaxASkill--></T>
+          <T>311355<!--LootActions: loot_SelfDiscovery_Progress_Skill_Min_Large--></T>
+          <T>372622<!--LootActions: loot_Trait_practiceMakesPerfect_LevelSkill_Whim--></T>
+          <T>395690<!--LootActions: loot_ImprovedSelf_ChasedByDeath--></T>
+          <T>456796<!--LootActions: loot_Getaway_AddBuff_WorkingOnMyself--></T>
+          <T>460916<!--LootActions: loot_Competitive_SkillBuffs--></T>
+          <T>458543<!--LootActions: loot_NLS_buff_ConfidentProud--></T>
+        </L>
+        <L n="target_super_affordances">
+          <U>
+            <T n="affordance">27845<!--SuperInteraction: computer_ResearchSkills--></T>
+            <V n="object_filter" t="filter_by_tags">
+              <U n="filter_by_tags">
+                <L n="tags">
+                  <E>Func_Computer</E>
+                </L>
+              </U>
+            </V>
+          </U>
+        </L>
+      </U>
+    </U>
+  </L>
+  <T n="locked_description">0x644FF6E5<!--String: "Embrace a lifestyle that connects you with the outdoors. With Natural Living, you can forage for wild foods, enjoy sleep in natural settings, and cleanse in refreshing waters. As you develop this skill, you'll unlock ways to nourish yourself in nature."--></T>
+  <T n="mood_id">14641<!--Mood: Mood_Inspired--></T>
+  <T n="skill_description">0x3CAC5B68<!--String: "Embrace the bohemian life with this Skill that erases the boundary between "in here" and "out there." Sims can start by sleeping outdoors, doing basic Foraging, and bathing in rivers, lakes, oceans, and even ponds. With practice, Sims unlock ways to solve any and all their Needs naturally. High-skilled Sims may choose to live without a bed, kitchen, bathroom, or even any house at all. Natural Living is more than just surviving, it's thriving—whether travelling out in the world or bedding down on the grass in your own beautiful garden!\n\nNatural Living is improved best by first hand practice outdoors but can also be studied at the Computer or by reading a Natural Living Skill Book."--></T>
+  <E n="skill_level_type">MAJOR</E>
+  <U n="stat_asm_param">
+    <T n="asm_param_name">statLevel</T>
+    <L n="level_ranges">
+      <U>
+        <T n="key">high</T>
+        <U n="value">
+          <T n="lower_bound">9</T>
+          <T n="upper_bound">100</T>
+        </U>
+      </U>
+      <U>
+        <T n="key">low</T>
+        <U n="value">
+          <T n="lower_bound">0</T>
+          <T n="upper_bound">1</T>
+        </U>
+      </U>
+      <U>
+        <T n="key">medium</T>
+        <U n="value">
+          <T n="lower_bound">4</T>
+          <T n="upper_bound">6</T>
+        </U>
+      </U>
+      <U>
+        <T n="key">mediumHigh</T>
+        <U n="value">
+          <T n="lower_bound">7</T>
+          <T n="upper_bound">8</T>
+        </U>
+      </U>
+      <U>
+        <T n="key">mediumLow</T>
+        <U n="value">
+          <T n="lower_bound">2</T>
+          <T n="upper_bound">3</T>
+        </U>
+      </U>
+    </L>
+  </U>
+  <T n="stat_name">0x294F015C<!--String: "Natural Living"--></T>
+  <L n="tags">
+    <E>Skill_All</E>
+    <E>Skill_All_Visible</E>
+    <E>Skill_University_CanListen</E>
+    <E>Skill_Life</E>
+    <E>Skill_Mental</E>
+    <E>Skill_NLS</E>
+  </L>
+  <L n="tooltip_icon_list">
+    <T p="InGame\UI\Icons\Skills\Skill_Fishing_SkillBar.png">2f7d0004:00000000:718921d4c5d4bfcc</T>
+    <T p="InGame\UI\Icons\SkillObjects\SkillObjects_Pond.png">2f7d0004:00000000:353bb466cdb36976</T>
+    <T p="InEP19\UI\Icons\Skills\skill_BushyPlant.png">2f7d0004:00000000:7afa4bc35bd61fa5</T>
+    <T p="InEP19\UI\Icons\Skills\skill_Foraging.png">2f7d0004:00000000:087b9edf5b5d5db0</T>
+  </L>
+  <T n="tutorial">448260<!--Tutorial: tutorial_EP19_NaturalLivingSkill--></T>
+</I>

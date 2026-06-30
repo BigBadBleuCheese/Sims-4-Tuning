@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalObjectInteraction" i="situation_goal" m="situations.situation_goal_object_interaction" n="r3Event_ObjectInteraction_ResearchAmbrosia" s="377953">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T n="enabled" p="InGame\UI\Icons\Headlines\Final\headline_MagnifyingGlass_bg.png">2f7d0004:00000000:826e59f0e02180c5</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x98E09AF<!--String: "Research Ambrosia on your Phone, a Tablet, or a Computer"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0x3F03B4A1<!--String: "There must be more information somewhere out there...\n\nResearch Ambrosia from the Home app on the Phone, or select the Research Ambrosia interaction on a Computer or Tablet.\n\n<i>(+25 Event Points)</i>"--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>447711<!--SituationGoalLootActions: liveEvent_GoalLoot_CompleteQuestGoal--></T>
+  </L>
+  <U n="_goal_test">
+    <L n="affordances">
+      <T>378252<!--SuperInteraction: computer_R3Event_ResearchAmbrosia--></T>
+      <T>395178<!--SuperInteraction: tablet_R3Event_ResearchAmbrosia--></T>
+      <T>395179<!--SuperInteraction: phone_R3Event_ResearchAmbrosia--></T>
+    </L>
+    <E n="test_event">InteractionComplete</E>
+  </U>
+  <L n="_post_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+      </U>
+    </V>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+  <V n="tutorial_tip_group" t="disabled" />
+</I>

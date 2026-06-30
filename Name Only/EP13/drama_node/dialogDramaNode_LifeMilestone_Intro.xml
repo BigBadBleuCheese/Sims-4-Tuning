@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="DialogDramaNode" i="drama_node" m="drama_scheduler.dialog_drama_node" n="dialogDramaNode_LifeMilestone_Intro" s="320401">
+  <V n="cooldown_data" t="node_cooldown">
+    <U n="node_cooldown">
+      <E n="cooldown_option">ON_SCHEDULE</E>
+      <V n="duration" t="permanent" />
+    </U>
+  </V>
+  <V n="dialog_and_loot" t="notification">
+    <U n="notification">
+      <U n="notification">
+        <E n="expand_behavior">FORCE_EXPAND</E>
+        <V n="icon" t="enabled">
+          <V n="enabled" t="resource_key">
+            <U n="resource_key">
+              <T n="key" p="InGame\UI\Icons\Notifications\notification_bored_v2.png">2f7d0004:00000000:b4a3f7f0918b5362</T>
+            </U>
+          </V>
+        </V>
+        <E n="information_level">PLAYER</E>
+        <V n="text" t="single">
+          <T n="single">0x81DCC301<!--String: "Milestones mark the big moments in Sims' lives. Whether it's the inevitable signs of growing up or exceptional achievements, these experiences shape who Sims become. Look back on their journeys through each Life Stage by viewing Milestones in the Simology Panel. "--></T>
+        </V>
+        <V n="title" t="enabled">
+          <T n="enabled">0x8291EFF3<!--String: "Milestones"--></T>
+        </V>
+        <L n="ui_responses">
+          <U>
+            <T n="text">0xEABE5948<!--String: "View Lessons"--></T>
+            <V n="tutorial_id" t="enabled">
+              <T n="enabled">330149<!--Tutorial: EP13_tutorial_Milestones--></T>
+            </V>
+            <E n="ui_request">SHOW_LESSONS</E>
+          </U>
+        </L>
+      </U>
+    </U>
+  </V>
+  <T n="is_simless">True</T>
+  <U n="min_and_max_times">
+    <T n="lower_bound">48</T>
+    <T n="upper_bound">72</T>
+  </U>
+  <V n="scoring" t="enabled">
+    <U n="enabled">
+      <E n="bucket">LifeMilestoneIntro</E>
+    </U>
+  </V>
+  <V n="sender_sim_info" t="no_participant" />
+  <V n="time_option" t="schedule">
+    <U n="schedule">
+      <L n="valid_times">
+        <U>
+          <U n="days_available">
+            <T n="0 SUNDAY">True</T>
+            <T n="1 MONDAY">True</T>
+            <T n="2 TUESDAY">True</T>
+            <T n="3 WEDNESDAY">True</T>
+            <T n="4 THURSDAY">True</T>
+            <T n="5 FRIDAY">True</T>
+            <T n="6 SATURDAY">True</T>
+          </U>
+          <T n="duration">1</T>
+          <U n="start_time">
+            <T n="hour">10</T>
+          </U>
+        </U>
+      </L>
+    </U>
+  </V>
+</I>

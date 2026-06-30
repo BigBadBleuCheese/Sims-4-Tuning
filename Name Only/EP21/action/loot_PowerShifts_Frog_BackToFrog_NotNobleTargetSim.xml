@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_PowerShifts_Frog_BackToFrog_NotNobleTargetSim" s="479097">
+  <L n="loot_actions">
+    <V t="interaction">
+      <U n="interaction">
+        <E n="affordance_priority">Critical</E>
+        <V n="affordance_run_priority" t="enabled">
+          <E n="enabled">Critical</E>
+        </V>
+        <L n="affordances">
+          <T>477954<!--SuperInteraction: powerShifts_Frog_SuperInteractions_BackToFrog--></T>
+        </L>
+        <E n="target_participant_type">TargetSim</E>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>TargetSim</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x55067EA5<!--String: "I suppose I'm hopping back to frog life forever!"--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x3AD1E663<!--String: "Forever a Frog"--></T>
+            </V>
+            <E n="visual_type">SPEECH</E>
+          </U>
+        </V>
+        <E n="subject">TargetSim</E>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="career_test">
+        <U n="career_test">
+          <T n="negate">True</T>
+          <E n="subjects">TargetSim</E>
+          <V n="test_type" t="career_reference">
+            <U n="career_reference">
+              <V n="career" t="specific_career">
+                <T n="specific_career">466304<!--NobleCareer: career_Noble--></T>
+              </V>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

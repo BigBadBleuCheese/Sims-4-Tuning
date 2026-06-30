@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="GuidanceTip" i="guidance_tip" m="guidance.guidance_tip" n="guidanceTip_MultiUnit_Landlord_Live_SingleUnitOwner" s="358930">
+  <L n="activation_rules">
+    <U>
+      <L n="criteria">
+        <U>
+          <V n="criterion" t="guidance_mode" />
+        </U>
+        <U>
+          <V n="criterion" t="game_state">
+            <E n="game_state">LIVE_MODE</E>
+          </V>
+        </U>
+        <U>
+          <V n="criterion" t="guidance_tips_satisfied">
+            <L n="guidance_tips_satisfied">
+              <T>353072<!--GuidanceTip: guidanceTip_MultiUnit_Landlord_Live_04--></T>
+            </L>
+          </V>
+        </U>
+        <U>
+          <V n="criterion" t="ui_element_visible">
+            <L n="ui_element_visible">
+              <E>PMI_FILL_VACANCY</E>
+            </L>
+          </V>
+          <T n="exclude_if_matched">True</T>
+        </U>
+        <U>
+          <V n="criterion" t="ui_element_visible">
+            <L n="ui_element_visible">
+              <E>HVP_RENTAL_UNIT_PANEL</E>
+            </L>
+          </V>
+          <T n="exclude_if_matched">False</T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <L n="criteria">
+        <U>
+          <V n="criterion" t="game_option_setting">
+            <U n="game_option_setting">
+              <T n="setting_name">PackGuidanceEnabled</T>
+              <T n="setting_value">1</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="criterion" t="game_option_setting">
+            <U n="game_option_setting">
+              <T n="setting_name">GuidancePack</T>
+              <T n="setting_value">1</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <T n="auto_select_on_activate">True</T>
+  <L n="options">
+    <U>
+      <U n="actions">
+        <L n="actions_on_activate">
+          <V t="tutorial_tip_group">
+            <T n="tutorial_tip_group">358927<!--TutorialTipGroup: tutorialTipGroup_MultiUnitGuide_Landlord_Live_SingleUnitOwner--></T>
+          </V>
+          <V t="satisfy_item">
+            <T n="satisfy_item">358931<!--GuidanceTip: guidanceTip_MultiUnit_Landlord_Live_02_MultiUnitOwner--></T>
+          </V>
+          <V t="satisfy_item">
+            <T n="satisfy_item">354754<!--GuidanceTip: guidanceTip_MultiUnit_Landlord_Live_End--></T>
+          </V>
+        </L>
+        <L n="actions_on_cancel">
+          <V t="activate_guidance_item">
+            <T n="activate_guidance_item">352407<!--GuidanceTip: guidanceTip_MultiUnit_Reminder--></T>
+          </V>
+        </L>
+        <L n="actions_on_success">
+          <V t="activate_guidance_item">
+            <T n="activate_guidance_item">358929<!--GuidanceTip: guidanceTip_MultiUnit_Landlord_Live_SingleUnitOwner_End--></T>
+          </V>
+          <V t="satisfy_guidance_item_group">
+            <T n="satisfy_guidance_item_group">358266<!--GuidanceTipGroup: guidanceTipGroup_MultiUnit_All--></T>
+          </V>
+        </L>
+      </U>
+    </U>
+  </L>
+  <L n="relaunch_rules" />
+  <T n="relaunch_text">0x42B391F8<!--String: "Tutorial: Residential Rental"--></T>
+  <T n="satisfy_on_timeout">True</T>
+  <T n="text">0x6CC8CAA<!--String: "I'm Vanesha, your trusty guide to the world of Residential Rentals! If your goal is to become a Property Owner, you've made a fantastic choice. But a bit of preparation is needed. Don't worry; it's a breeze, and I'm confident you'll pick it up in no time!"--></T>
+  <T n="timeout">3600</T>
+  <T n="title">0x18422113<!--String: "Vanesha is here to help!"--></T>
+</I>

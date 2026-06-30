@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="GuidanceTip" i="guidance_tip" m="guidance.guidance_tip" n="guidanceTip_Attraction_CAS_TOTO" s="376189">
+  <L n="activation_rules">
+    <U>
+      <L n="criteria">
+        <U>
+          <V n="criterion" t="guidance_mode" />
+        </U>
+        <U>
+          <V n="criterion" t="feature_parameter">
+            <T n="feature_parameter">guidance_tip_cas_disable</T>
+          </V>
+          <T n="exclude_if_matched">True</T>
+        </U>
+        <U>
+          <V n="criterion" t="game_option_setting">
+            <U n="game_option_setting">
+              <T n="setting_name">PackGuidanceEnabled</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="criterion" t="game_state">
+            <E n="game_state">CAS</E>
+          </V>
+        </U>
+        <U>
+          <V n="criterion" t="guidance_tips_satisfied">
+            <L n="guidance_tips_satisfied">
+              <T>315494<!--GuidanceTip: guidanceTip_Sunrise_ManageWorlds_initialize--></T>
+            </L>
+          </V>
+        </U>
+        <U>
+          <V n="criterion" t="ui_element_visible">
+            <L n="ui_element_visible">
+              <E>CAS_PREFERENCE_MOLECULE</E>
+            </L>
+          </V>
+        </U>
+        <U>
+          <V n="criterion" t="ui_element_visible">
+            <L n="ui_element_visible">
+              <E>GLOBAL_TRANSITION_SCREEN</E>
+            </L>
+          </V>
+          <T n="exclude_if_matched">True</T>
+        </U>
+      </L>
+    </U>
+  </L>
+  <T n="auto_select_on_activate">True</T>
+  <L n="options">
+    <U>
+      <U n="actions">
+        <L n="actions_on_activate">
+          <V t="ui_message">
+            <U n="ui_message">
+              <V n="ui_message_cmn" t="enabled">
+                <U n="enabled">
+                  <T n="message_name">CASTurnOnTurnOffTutorialStarted</T>
+                </U>
+              </V>
+            </U>
+          </V>
+          <V t="tutorial_tip_group">
+            <T n="tutorial_tip_group">375993<!--TutorialTipGroup: tutorialTipGroup_Attraction_CAS_Tips--></T>
+          </V>
+        </L>
+        <L n="actions_on_success">
+          <V t="ui_message">
+            <U n="ui_message">
+              <V n="ui_message_cmn" t="enabled">
+                <U n="enabled">
+                  <T n="message_name">CASTurnOnTurnOffTutorialFinished</T>
+                </U>
+              </V>
+            </U>
+          </V>
+        </L>
+      </U>
+    </U>
+  </L>
+  <T n="priority">1</T>
+  <T n="satisfy_on_timeout">True</T>
+  <T n="timeout">3600</T>
+</I>

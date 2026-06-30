@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Getaway_Elimination_CookingSkill_3_Remaining" s="487107">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="audio_sting" t="enabled">
+              <U n="enabled">
+                <T n="audio" p="InEP20\Audio\music\mu_bumpers_ep20\bumper_ep20_getaway_eliminated.propx">39b2aa4a:00000000:81a59ed6b7405638</T>
+                <T n="immediate_audio">True</T>
+              </U>
+            </V>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InEP20\UI\Icons\Notifications\notification_CookingCompetitionElimination.png">2f7d0004:00000000:af1d8ef186113545</T>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xCE984CA2<!--String: "Each elimination gets tougher as Sims sharpen their cooking and baking skills. Every Sim deserves an apron and a tall hat, but today {0.SimFirstName} has to hang up the whisk. The talent is there, but like {0.SimPronounPossessiveDependent} last dish, it could use a pinch more seasoning.\n\nThe three Sims move forward as the kitchen gets hotter. To stay in the game, it’s time to dig deep, try bold recipes, and keep leveling up those Homestyle Cooking, Gourmet Cooking, and Baking Skills.\n\nThe next elimination will happen tomorrow at 11 AM."--></T>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="participant_type">
+                    <U n="participant_type">
+                      <V n="objects" t="from_participant">
+                        <U n="from_participant">
+                          <E n="participant">Actor</E>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                  <V t="participant_type">
+                    <U n="participant_type">
+                      <V n="objects" t="from_participant">
+                        <U n="from_participant">
+                          <E n="participant">GetawayEliminationCandidates</E>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x933A9740<!--String: "A Sim has been Eliminated!"--></T>
+            </V>
+          </U>
+        </V>
+        <E n="subject">ActiveHousehold</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="is_active_sim" t="enabled" />
+                <E n="who">Actor</E>
+              </U>
+            </V>
+          </L>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="test_set_reference">
+              <T n="test_set_reference">492379<!--TestSetInstance: testSetInstance_Getaways_HHSimInGetaway_OneOrMoreSims--></T>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InEP20\UI\Icons\Notifications\notification_CookingCompetitionElimination.png">2f7d0004:00000000:af1d8ef186113545</T>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xADDA978E<!--String: "{0.SimFirstName} has been eliminated! The Getaway tested {0.SimPronounObjective} at every turn—strategy, resilience, and luck all played their part. But in the end, {0.SimPronounSubjective} couldn't outlast the fierce competition. With no Sims left from the active household, the competition draws to a close. Though victory slipped away, the Getaway was packed with moments worth celebrating!"--></T>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="participant_type">
+                    <U n="participant_type">
+                      <V n="objects" t="from_participant">
+                        <U n="from_participant">
+                          <E n="participant">Actor</E>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                  <V t="participant_type">
+                    <U n="participant_type">
+                      <V n="objects" t="from_participant">
+                        <U n="from_participant">
+                          <E n="participant">GetawayEliminationCandidates</E>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x232502E8<!--String: "{0.SimFirstName} Has Been Eliminated!"--></T>
+            </V>
+          </U>
+        </V>
+        <E n="subject">ActiveHousehold</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="is_active_sim" t="enabled" />
+                <E n="who">Actor</E>
+              </U>
+            </V>
+          </L>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="test_set_reference">
+              <T n="test_set_reference">492378<!--TestSetInstance: testSetInstance_Getaways_HHSimInGetaway_NoSimLeft--></T>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">488902<!--Buff: buff_Getaway_Hidden_RecentlyEliminated--></T>
+        </U>
+      </U>
+    </V>
+    <V t="reaction">
+      <U n="reaction">
+        <V n="si_reaction" t="enabled">
+          <U n="enabled">
+            <T n="affordance">488905<!--SuperInteraction: reactions_Generic_Shocked_Strong_Getaway_Eliminated--></T>
+            <E n="affordance_priority">High</E>
+            <V n="affordance_run_priority" t="enabled">
+              <E n="enabled">High</E>
+            </V>
+            <V n="affordance_target" t="enabled">
+              <E n="enabled">Actor</E>
+            </V>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <L n="blacklist_traits">
+                  <T>443222<!--Trait: trait_Competitive--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="actions">
+      <T n="actions">488298<!--LootActions: loot_Competitive_Reaction_Game_Loss_ReactionOnly--></T>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="count">
+        <U n="count">
+          <V n="participant" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">GetawayEliminationCandidates</E>
+            </U>
+          </V>
+          <V n="threshold" t="from_value">
+            <U n="from_value">
+              <E n="comparison">EQUAL</E>
+              <T n="value">3</T>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

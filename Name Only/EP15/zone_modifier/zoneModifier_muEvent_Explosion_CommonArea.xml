@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="ZoneModifier" i="zone_modifier" m="zone_modifier.zone_modifier" n="zoneModifier_muEvent_Explosion_CommonArea" s="358968">
+  <T n="hide_screen_slam">True</T>
+  <U n="on_add_loot">
+    <L n="actions">
+      <V t="modify_lot_items">
+        <U n="modify_lot_items">
+          <U n="actions">
+            <L n="modifications">
+              <U>
+                <V n="action" t="loot">
+                  <U n="loot">
+                    <L n="loot_actions">
+                      <T>341481<!--LootActions: loot_muEvent_Explosion--></T>
+                    </L>
+                  </U>
+                </V>
+                <V n="max_num_modification" t="enabled" />
+                <L n="tests">
+                  <L>
+                    <V t="object_definition">
+                      <U n="object_definition">
+                        <V n="item" t="tagged_item">
+                          <U n="tagged_item">
+                            <L n="tag_set">
+                              <E>Func_muEvent_Explosion</E>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                    <V t="object_definition">
+                      <U n="object_definition">
+                        <V n="item" t="tagged_item">
+                          <U n="tagged_item">
+                            <L n="tag_set">
+                              <E>Func_Unbreakable_Object</E>
+                            </L>
+                            <E n="test_type">CONTAINS_NO_TAGS_IN_SET</E>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                    <V t="state">
+                      <U n="state">
+                        <V n="fallback_behavior" t="always_pass" />
+                        <E n="operator">NOTEQUAL</E>
+                        <T n="value">15384<!--CommodityBasedObjectStateValue: Upgrade_Generic_LockBrokenness_Completed--></T>
+                      </U>
+                    </V>
+                    <V t="location">
+                      <U n="location">
+                        <U n="location_tests">
+                          <V n="in_common_area" t="enabled" />
+                          <V n="is_venue_type" t="enabled">
+                            <U n="enabled">
+                              <T n="venue_type">341299<!--Venue: venue_MultiUnit--></T>
+                            </U>
+                          </V>
+                        </U>
+                      </U>
+                    </V>
+                  </L>
+                  <L>
+                    <V t="object_definition">
+                      <U n="object_definition">
+                        <V n="item" t="tagged_item">
+                          <U n="tagged_item">
+                            <L n="tag_set">
+                              <E>Func_muEvent_Explosion</E>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                    <V t="object_definition">
+                      <U n="object_definition">
+                        <V n="item" t="tagged_item">
+                          <U n="tagged_item">
+                            <L n="tag_set">
+                              <E>Func_Unbreakable_Object</E>
+                            </L>
+                            <E n="test_type">CONTAINS_NO_TAGS_IN_SET</E>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                    <V t="state">
+                      <U n="state">
+                        <V n="fallback_behavior" t="always_pass" />
+                        <E n="operator">NOTEQUAL</E>
+                        <T n="value">15384<!--CommodityBasedObjectStateValue: Upgrade_Generic_LockBrokenness_Completed--></T>
+                      </U>
+                    </V>
+                    <V t="location">
+                      <U n="location">
+                        <U n="location_tests">
+                          <V n="is_venue_type" t="enabled">
+                            <U n="enabled">
+                              <T n="negate">True</T>
+                              <T n="venue_type">341299<!--Venue: venue_MultiUnit--></T>
+                            </U>
+                          </V>
+                        </U>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T n="zone_modifier_locked">True</T>
+</I>

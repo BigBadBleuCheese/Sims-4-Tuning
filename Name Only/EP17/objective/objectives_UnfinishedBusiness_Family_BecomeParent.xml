@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Objective" i="objective" m="event_testing.objective_tuning" n="objectives_UnfinishedBusiness_Family_BecomeParent" s="382443">
+  <E n="category_type">Family</E>
+  <L n="completion_loot">
+    <T>385159<!--LootActions: loot_UnfinishedBusiness_GoalCompleted--></T>
+  </L>
+  <T n="display_text">0xECB79B06<!--String: ""I've been dreaming of becoming a parent!""--></T>
+  <L n="loot_on_completion_ui_update">
+    <T>396545<!--LootActions: loot_UnfinishedBusiness_clearCompleteObjective--></T>
+  </L>
+  <V n="objective_test" t="relationship">
+    <U n="relationship">
+      <T n="num_relations">1</T>
+      <U n="required_relationship_bits">
+        <L n="match_any">
+          <T>8805<!--RelationshipBit: family_Target_IsSonOrDaughterOf_Actor--></T>
+        </L>
+      </U>
+    </U>
+  </V>
+  <L n="tests_for_picker_availability">
+    <L>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>381402<!--Trait: trait_IsGhost--></T>
+            <T>16844<!--Trait: trait_HatesChildren--></T>
+          </L>
+        </U>
+      </V>
+      <V t="relationship_bit_count">
+        <U n="relationship_bit_count">
+          <T n="rel_bit">8805<!--RelationshipBit: family_Target_IsSonOrDaughterOf_Actor--></T>
+        </U>
+      </V>
+    </L>
+  </L>
+  <T n="tooltip">0xC7362B7F<!--String: "<b><font color='#2182E6'>Become a Parent</font></b>\nI think it's finally time to start a family. Whether it's traditionally, via science baby services, or adoption, I'm really looking forward to having a child of my own to raise. Let's make this house a home!"--></T>
+</I>

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Dynasty_RivalryDeclareDialog" s="480031">
+  <L n="loot_actions">
+    <V t="sim_interaction_dialog">
+      <U n="sim_interaction_dialog">
+        <U n="dialog">
+          <V n="text" t="variation">
+            <U n="variation">
+              <L n="variations">
+                <T>0x157699C7<!--String: "I've had enough of you and the rest of the {0.String} Dynasty, strutting around like you own the place! Prove that you're worthy rivals of the great {1.String} Dynasty, or suffer public humiliation. "--></T>
+              </L>
+            </U>
+          </V>
+          <V n="text_tokens" t="enabled">
+            <U n="enabled">
+              <L n="tokens">
+                <V t="participant_type" />
+                <V t="dynasty" />
+                <V t="dynasty">
+                  <U n="dynasty">
+                    <E n="participant">TargetSim</E>
+                  </U>
+                </V>
+                <V t="participant_type">
+                  <U n="participant_type">
+                    <V n="objects" t="from_participant">
+                      <U n="from_participant">
+                        <E n="participant">TargetSim</E>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </U>
+          </V>
+        </U>
+        <L n="possible_responses">
+          <U>
+            <U n="item">
+              <L n="loot">
+                <T>474318<!--LootActions: loot_Dynasty_Heir_DeclareDialog_ProudAccept--></T>
+              </L>
+              <T n="text">0x943CFB5<!--String: "Bring it on!"--></T>
+            </U>
+          </U>
+          <U>
+            <U n="item">
+              <L n="loot">
+                <T>474319<!--LootActions: loot_Dynasty_Heir_DeclareDialog_PressuredAccept--></T>
+              </L>
+              <T n="text">0x7B8B84FA<!--String: "Please, no, I don't want enemies!"--></T>
+            </U>
+          </U>
+        </L>
+        <E n="subject">TargetSim</E>
+        <E n="target_participant_type">Actor</E>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="npc" t="enabled">
+            <T n="enabled">False</T>
+          </V>
+          <E n="who">TargetSim</E>
+        </U>
+      </V>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="npc" t="enabled">
+            <T n="enabled">True</T>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

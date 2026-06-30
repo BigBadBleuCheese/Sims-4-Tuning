@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="GuidanceTip" i="guidance_tip" m="guidance.guidance_tip" n="guidanceTip_EP20_GetawaySchedule_7_Reminder" s="487651">
+  <L n="activation_rules" />
+  <T n="auto_select_on_activate">False</T>
+  <T p="InGame\UI\Icons\GuidanceSystem\Poses\EmilyPose_Wave.png" n="icon">2f7d0004:00000000:cfafcaf7fc9c9b7e</T>
+  <L n="options">
+    <U>
+      <U n="actions">
+        <L n="actions_on_activate">
+          <V t="satisfy_guidance_item_group">
+            <T n="satisfy_guidance_item_group">479617<!--GuidanceTipGroup: guidanceTipGroup_Getaways_SchedulerGroup--></T>
+          </V>
+        </L>
+        <T n="satisfy_on_action_cancel">True</T>
+        <T n="satisfy_on_activate">True</T>
+      </U>
+      <T n="text">0xC66265D9<!--String: "Sounds good!"--></T>
+    </U>
+    <U>
+      <U n="actions">
+        <L n="actions_on_activate">
+          <V t="ui_message">
+            <U n="ui_message">
+              <V n="ui_message_cmn" t="enabled">
+                <U n="enabled">
+                  <T n="message_name">ShowTutorial</T>
+                  <L n="parameters">
+                    <U>
+                      <T n="key">source</T>
+                      <V n="value" t="raw_string">
+                        <T n="raw_string">quiz</T>
+                      </V>
+                    </U>
+                    <U>
+                      <T n="key">tutorial_id</T>
+                      <V n="value" t="raw_string">
+                        <T n="raw_string">484092<!--Tutorial: tutorial_EP20_AdventureAwaits_SettingUpGetaways--></T>
+                      </V>
+                    </U>
+                  </L>
+                </U>
+              </V>
+            </U>
+          </V>
+        </L>
+        <T n="satisfy_on_action_success">False</T>
+      </U>
+      <T n="suppress_hide_on_activate">True</T>
+      <T n="text">0xEABE5948<!--String: "View Lessons"--></T>
+    </U>
+  </L>
+  <T n="satisfy_on_timeout">True</T>
+  <T n="text">0x7BD6B51F<!--String: "Need more helpful tips? Check out additional information by viewing <b>Lessons</b> at any time!"--></T>
+  <T n="timeout">0</T>
+  <T n="title">0xE4DDD8E3<!--String: "Emily here to help!"--></T>
+</I>

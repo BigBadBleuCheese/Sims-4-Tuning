@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="cursedRing_EV008_DisableCurse" s="496763">
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xFD30B2AD<!--String: "Disable the Curse"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="basic_extras">
+          <V t="loot">
+            <U n="loot">
+              <L n="loot_list">
+                <T>499672<!--LootActions: loot_LiveEvents_EV008_CursedRing_RemoveSimCurse--></T>
+              </L>
+              <V n="timing" t="at_beginning" />
+            </U>
+          </V>
+          <V t="buff_fire_and_forget">
+            <U n="buff_fire_and_forget">
+              <U n="buff">
+                <V n="buff_reason" t="enabled">
+                  <T n="enabled">0xE32E07B5<!--String: "(From Disabling the Curse of the Ring)"--></T>
+                </V>
+                <T n="buff_type">497797<!--Buff: buff_LiveEvent_EV008_CursedRing_FeelLighter--></T>
+              </U>
+            </U>
+          </V>
+        </L>
+      </U>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T n="key" p="InGame\UI\Icons\LiveEvents\EV008\Inventory\inventory_CursedRing.png">2f7d0004:00000000:6a4ccd5cc6d9c1a6</T>
+      </U>
+    </V>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="identity">
+      <U n="identity">
+        <E n="subject_b">TargetSim</E>
+        <T n="subjects_match">True</T>
+      </U>
+    </V>
+    <V t="aspiration_track_complete">
+      <U n="aspiration_track_complete">
+        <L n="aspiration_tracks">
+          <T>25148<!--AspirationTrack: Track_Fortune_A--></T>
+          <T>25149<!--AspirationTrack: Track_Fortune_B--></T>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x506B44B2<!--String: "The Curse can only be disabled once an Aspiration from the Fortune Track is complete."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

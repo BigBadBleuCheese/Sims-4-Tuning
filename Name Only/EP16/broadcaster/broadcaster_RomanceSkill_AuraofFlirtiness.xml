@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Broadcaster" i="broadcaster" m="broadcasters.broadcaster" n="broadcaster_RomanceSkill_AuraofFlirtiness" s="370003">
+  <L n="constraints">
+    <V t="circle">
+      <U n="circle">
+        <T n="radius">5</T>
+      </U>
+    </V>
+    <V t="line_of_sight" />
+  </L>
+  <L n="effects">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0xB466325B<!--String: "(From Aura of Flirtiness)"--></T>
+          </V>
+          <T n="buff_type">370021<!--Buff: buff_RomanceSkill_AuraofFlirtiness--></T>
+        </U>
+        <T n="remove_buff">False</T>
+        <L n="tests">
+          <L>
+            <V t="relationship">
+              <U n="relationship">
+                <L n="subject">
+                  <E>TargetSim</E>
+                </L>
+                <L n="target_sim">
+                  <E>Actor</E>
+                </L>
+                <V n="test_incest" t="is not incestuous" />
+              </U>
+            </V>
+            <V t="test_set_reference">
+              <T n="test_set_reference">100790<!--TestSetInstance: testSet_TeenANDTeenORAdultANDAdult_Romance--></T>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="frequency" t="on_enter" />
+  <T n="immediate">True</T>
+</I>

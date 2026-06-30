@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Dynasty_ActionFeedback_UnityStabilityEnter" s="476721">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="audio_sting" t="enabled">
+              <U n="enabled">
+                <T n="audio" p="InEP21\Audio\music\bumpers\bumper_ep21_unity_stability.propx">39b2aa4a:00000000:98fb9b196353b1cd</T>
+                <T n="immediate_audio">True</T>
+              </U>
+            </V>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="dynasty" />
+            </V>
+            <V n="secondary_icon" t="disabled" />
+            <V n="text" t="single">
+              <T n="single">0x3785E79B<!--String: "The {2.String} Dynasty has entered Unity Stability. During the Stability, members will have an easier time getting along, and positive Dynasty Events are more likely to happen."--></T>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="participant_type" />
+                  <V t="participant_type">
+                    <U n="participant_type">
+                      <V n="objects" t="from_participant">
+                        <U n="from_participant">
+                          <E n="participant">ActorDynastyHead</E>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                  <V t="dynasty" />
+                </L>
+              </U>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0xB9C7E44E<!--String: "Dynasty Unity Stability"--></T>
+            </V>
+            <L n="ui_responses">
+              <U>
+                <T n="text">0x80221642<!--String: "View Unity Lesson"--></T>
+                <V n="tutorial_id" t="enabled">
+                  <T n="enabled">488445<!--Tutorial: tutorial_EP21_ProjectGold_UnityAndValues--></T>
+                </V>
+                <E n="ui_request">SHOW_LESSONS</E>
+              </U>
+            </L>
+          </U>
+        </V>
+        <E n="subject">ActiveHousehold</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="is_active_sim" t="enabled" />
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="dynasty_member">
+        <U n="dynasty_member">
+          <E n="subjects">Actor</E>
+          <E n="targets">ActiveHousehold</E>
+          <V n="test_type" t="same_dynasty_membership" />
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

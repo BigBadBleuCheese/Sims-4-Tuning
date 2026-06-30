@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="DialogDramaNode" i="drama_node" m="drama_scheduler.dialog_drama_node" n="dialogDramaNode_APM_POVisit_Urgent" s="352226">
+  <V n="dialog_and_loot" t="loot_only">
+    <U n="loot_only">
+      <L n="on_drama_node_run_loot">
+        <T>345209<!--LootActions: loot_APM_StartRuleSituation--></T>
+      </L>
+    </U>
+  </V>
+  <U n="min_and_max_times">
+    <T n="lower_bound">0.5</T>
+    <T n="upper_bound">1</T>
+  </U>
+  <L n="pretests">
+    <L>
+      <V t="test_set_reference">
+        <T n="test_set_reference">356930<!--TestSetInstance: testSet_APM_IsTenantOnly--></T>
+      </V>
+      <V t="situation_running_test">
+        <U n="situation_running_test">
+          <V n="situation_blacklist" t="enabled">
+            <L n="enabled">
+              <T>344940<!--CustomStatesSituation: situation_APM_EventPO_Owned--></T>
+              <T>344939<!--CustomStatesSituation: situation_APM_EventPO_Unowned--></T>
+              <T>350931<!--CustomStatesSituation: situation_APM_GenericPO_Owned--></T>
+              <T>350932<!--CustomStatesSituation: situation_APM_GenericPO_Unowned--></T>
+              <T>345211<!--CustomStatesSituation: situation_APM_RulePO_Owned--></T>
+              <T>345212<!--CustomStatesSituation: situation_APM_RulePO_Unowned--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+  <L n="run_tests">
+    <L>
+      <V t="business_rule_state">
+        <U n="business_rule_state">
+          <V n="target_business" t="zone">
+            <U n="zone">
+              <E n="participant">CurrentZoneId</E>
+            </U>
+          </V>
+          <U n="threshold">
+            <T n="value">1</T>
+          </U>
+        </U>
+      </V>
+      <V t="test_set_reference">
+        <T n="test_set_reference">356930<!--TestSetInstance: testSet_APM_IsTenantOnly--></T>
+      </V>
+    </L>
+    <L>
+      <V t="business_rule_state">
+        <U n="business_rule_state">
+          <E n="state">BROKEN</E>
+          <U n="threshold">
+            <T n="value">1</T>
+          </U>
+        </U>
+      </V>
+      <V t="test_set_reference">
+        <T n="test_set_reference">356930<!--TestSetInstance: testSet_APM_IsTenantOnly--></T>
+      </V>
+    </L>
+  </L>
+  <V n="sender_sim_info" t="no_participant" />
+  <V n="time_option" t="schedule">
+    <U n="schedule">
+      <L n="valid_times">
+        <U>
+          <U n="days_available">
+            <T n="0 SUNDAY">True</T>
+            <T n="1 MONDAY">True</T>
+            <T n="2 TUESDAY">True</T>
+            <T n="3 WEDNESDAY">True</T>
+            <T n="4 THURSDAY">True</T>
+            <T n="5 FRIDAY">True</T>
+            <T n="6 SATURDAY">True</T>
+          </U>
+          <T n="duration">24</T>
+          <U n="start_time">
+            <T n="hour">0</T>
+          </U>
+        </U>
+      </L>
+    </U>
+  </V>
+</I>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_BusinessEvents_ScheduleBusinessEvents" s="398637">
+  <L n="loot_actions">
+    <V t="schedule_drama_node">
+      <U n="schedule_drama_node">
+        <T n="drama_node">398636<!--DialogDramaNode: dialogDramaNode_ScheduleBusinessEvents--></T>
+        <L n="tests">
+          <L>
+            <V t="drama_node">
+              <U n="drama_node">
+                <L n="drama_nodes">
+                  <T>398636<!--DialogDramaNode: dialogDramaNode_ScheduleBusinessEvents--></T>
+                </L>
+                <T n="exists">False</T>
+                <V n="receiver_sim" t="enabled">
+                  <E n="enabled">Actor</E>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>399047<!--Buff: buff_BusinessEvents_Cooldown--></T>
+          </L>
+        </U>
+      </V>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified" />
+        </U>
+      </V>
+      <V t="small_business_open_hours_test">
+        <U n="small_business_open_hours_test">
+          <U n="open_hours_to_verify">
+            <E n="comparison">GREATER_OR_EQUAL</E>
+          </U>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

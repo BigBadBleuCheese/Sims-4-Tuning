@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="BasicFestivalOpenStreetDirector" i="open_street_director" m="open_street_director.basic_festival" n="festivals_HobbyMeetup_OpenStreetDirector_Performer_NewTown" s="398354">
+  <U n="cleanup_festival_state">
+    <L n="_conditional_layers">
+      <T>398340<!--ConditionalLayer: conditionalLayer_HobbyMeetup_NewTown_Performer--></T>
+    </L>
+  </U>
+  <U n="cooldown_festival_state">
+    <T n="_duration">30</T>
+    <V n="notification" t="enabled">
+      <V n="enabled" t="literal">
+        <U n="literal">
+          <V n="icon" t="enabled">
+            <V n="enabled" t="resource_key">
+              <U n="resource_key">
+                <T n="key" p="InGame\UI\Icons\Notifications\notification_festival_bg.png">2f7d0004:00000000:5725ad1127409d8b</T>
+              </U>
+            </V>
+          </V>
+          <V n="text" t="single">
+            <T n="single">0x92B1F1D8<!--String: "The meetup is ending soon. Finish up any activities and be sure to check out the next one!"--></T>
+          </V>
+          <V n="title" t="enabled">
+            <T n="enabled">0xD4342CB7<!--String: "Spotlight Stars"--></T>
+          </V>
+        </U>
+      </V>
+    </V>
+    <V n="notification_tests" t="enabled">
+      <L n="enabled">
+        <L>
+          <V t="buff">
+            <U n="buff">
+              <T n="apply_whitelist_on_individual_basis">False</T>
+              <E n="subject">ActiveHousehold</E>
+              <V n="whitelist" t="enabled">
+                <L n="enabled">
+                  <T>401421<!--Buff: buff_Role_HobbyMeetup_PlayerInArea--></T>
+                </L>
+              </V>
+            </U>
+          </V>
+        </L>
+      </L>
+    </V>
+  </U>
+  <U n="lot_cleanup">
+    <L n="modifications">
+      <U>
+        <V n="action" t="set_state">
+          <U n="set_state">
+            <T n="action_value">323882<!--ObjectStateValue: genericVariant_Values_0--></T>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="object_definition">
+              <U n="object_definition">
+                <V n="item" t="actual_item">
+                  <U n="actual_item">
+                    <L n="items_to_check">
+                      <T>448830</T>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </L>
+  </U>
+  <U n="main_festival_state">
+    <T n="_duration">270</T>
+    <L n="_situations">
+      <U>
+        <T n="number_of_situations">5</T>
+        <L n="situations">
+          <U>
+            <T n="situation">398718<!--GenericOneStateFestivalAttendeeSituation: festival_HobbyMeetup_Performer--></T>
+            <T n="weight">3</T>
+          </U>
+          <U>
+            <T n="situation">401423<!--GenericOneStateFestivalAttendeeSituation: festival_HobbyMeetup_Nobody--></T>
+          </U>
+          <U>
+            <T n="situation">405796<!--GenericOneStateFestivalAttendeeSituation: festival_HobbyMeetup_Situation_Backup_Performer--></T>
+            <T n="weight">1</T>
+          </U>
+        </L>
+      </U>
+    </L>
+  </U>
+  <U n="spinup_festival_state">
+    <L n="_conditional_layers">
+      <T>398340<!--ConditionalLayer: conditionalLayer_HobbyMeetup_NewTown_Performer--></T>
+    </L>
+  </U>
+  <U n="startup_actions">
+    <L n="modifications">
+      <U>
+        <V n="action" t="set_state">
+          <U n="set_state">
+            <T n="action_value">323888<!--ObjectStateValue: genericVariant_Values_6--></T>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="object_definition">
+              <U n="object_definition">
+                <V n="item" t="actual_item">
+                  <U n="actual_item">
+                    <L n="items_to_check">
+                      <T>448830</T>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </L>
+  </U>
+</I>

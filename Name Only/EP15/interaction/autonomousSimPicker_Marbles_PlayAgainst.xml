@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="AutonomousSimPickerSuperInteraction" i="interaction" m="interactions.base.picker_interaction" n="autonomousSimPicker_Marbles_PlayAgainst" s="442589">
+  <V n="_saveable" t="disabled" />
+  <L n="actor_continuation">
+    <U>
+      <T n="affordance">360022<!--SuperInteraction: marblesGame_Start_Normal--></T>
+    </U>
+  </L>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x9021B4E7<!--String: "Play Marbles with"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T n="include_uninstantiated_sims">False</T>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <L n="picked_continuation">
+    <U>
+      <T n="affordance">360022<!--SuperInteraction: marblesGame_Start_Normal--></T>
+    </U>
+  </L>
+  <V n="radius" t="enabled">
+    <T n="enabled">20</T>
+  </V>
+  <V n="route_start_balloon" t="enabled">
+    <U n="enabled">
+      <U n="balloon">
+        <L n="balloon_choices">
+          <U>
+            <V n="item" t="balloon_icon">
+              <U n="balloon_icon">
+                <V n="icon" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>Object</E>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </U>
+        </L>
+        <L n="balloon_target">
+          <E>Actor</E>
+        </L>
+      </U>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <V n="sim_filter" t="sim_filter_selected">
+    <T n="sim_filter_selected">27505<!--TunableSimFilter: filter_ages_children--></T>
+  </V>
+  <L n="sim_tests">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>26171<!--Buff: buff_Sim_IsDying--></T>
+            <T>376403<!--Buff: buff_AutonomyMod_SmallBusinessCustomer_Deliberate--></T>
+            <T>12856<!--Buff: MoodBuff_Hidden_Stressed--></T>
+            <T>12847<!--Buff: MoodBuff_Hidden_Miserable--></T>
+            <T>347885<!--Buff: buff_Marbles_SoreThumb--></T>
+          </L>
+          <E n="subject">PickedSim</E>
+        </U>
+      </V>
+      <V t="participant_running_interaction">
+        <U n="participant_running_interaction">
+          <L n="affordances">
+            <T>347801<!--SocialSuperInteraction: socialSI_MarblesGame_Normal--></T>
+            <T>347802<!--SocialSuperInteraction: socialSI_MarblesGame_ForKeeps--></T>
+            <T>354790<!--SuperInteraction: marblesGame_Practice--></T>
+          </L>
+          <E n="participant">PickedSim</E>
+          <T n="test_for_not_running">True</T>
+          <T n="test_interaction_queue">True</T>
+        </U>
+      </V>
+    </L>
+  </L>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="state_white_black">
+      <U n="state_white_black">
+        <U n="states">
+          <V n="blacklist" t="specify">
+            <U n="specify">
+              <L n="blacklist">
+                <T>346995<!--ObjectStateValue: marblesRug_MatchInProgress_Values--></T>
+              </L>
+            </U>
+          </V>
+        </U>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">28305<!--TestSetInstance: testSet_EmotionNotMiserable--></T>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>347885<!--Buff: buff_Marbles_SoreThumb--></T>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x69B287CB<!--String: "This Sim has a sore thumb and needs a break from Marbles."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="test_set_reference">
+        <T n="test_set_reference">126907<!--TestSetInstance: testSetInstance_InteractionIsEncouragedByClubOrCustomerRulesOrHobbyClassOrDynasty--></T>
+      </V>
+    </L>
+    <L>
+      <V t="test_set_reference">
+        <T n="test_set_reference">483388<!--TestSetInstance: testSetInstance_Getaways_IsInteractionEncouraged--></T>
+      </V>
+    </L>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

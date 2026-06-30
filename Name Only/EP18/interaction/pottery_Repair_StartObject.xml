@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="pottery_Repair_StartObject" s="390804">
+  <V n="_saveable" t="enabled" />
+  <T n="allow_from_sim_inventory">True</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xE6175863<!--String: "Repair Ceramic"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="continuation">
+          <U>
+            <T n="affordance">395553<!--ImmediateSuperInteraction: pottery_Repair_Save_FromObject--></T>
+          </U>
+        </L>
+      </U>
+    </U>
+  </V>
+  <T n="pie_menu_priority">1</T>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">438961<!--TestSetInstance: testSet_ObjectOwnerOrCrafter--></T>
+    </V>
+    <V t="object_criteria">
+      <U n="object_criteria">
+        <V n="identity_test" t="tags">
+          <U n="tags">
+            <L n="tag_set">
+              <E>Func_PotteryWheel</E>
+            </L>
+          </U>
+        </V>
+        <T n="owned">False</T>
+        <V n="subject_specific_tests" t="single_object">
+          <U n="single_object">
+            <E n="target">ObjectParent</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="skill_test">
+      <U n="skill_test">
+        <T n="skill">371129<!--Skill: statistic_Skill_AdultMajor_Pottery--></T>
+        <V n="skill_range" t="interval">
+          <U n="interval">
+            <U n="skill_interval">
+              <T n="lower_bound">7</T>
+            </U>
+          </U>
+        </V>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x22366236<!--String: "Requires Pottery Skill Level 7"--></T>
+        </V>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">28176<!--TestSetInstance: testSet_EmotionNotStressed--></T>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">28305<!--TestSetInstance: testSet_EmotionNotMiserable--></T>
+    </V>
+    <V t="object_criteria">
+      <U n="object_criteria">
+        <V n="identity_test" t="tags">
+          <U n="tags">
+            <L n="tag_set">
+              <E>Func_PotteryWheel</E>
+            </L>
+          </U>
+        </V>
+        <T n="owned">False</T>
+        <V n="slot_test" t="test">
+          <U n="test">
+            <V n="child_slot" t="by_reference">
+              <T n="by_reference">slot_SitChair</T>
+            </V>
+            <V n="slot_test_type" t="has_used_slot" />
+          </U>
+        </V>
+        <V n="subject_specific_tests" t="single_object">
+          <U n="single_object">
+            <E n="target">ObjectParent</E>
+          </U>
+        </V>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x7C067948<!--String: "Requires a dining or desk chair"--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="state">
+        <U n="state">
+          <T n="value">374609<!--CommodityBasedObjectStateValue: potteryCeramic_CommodityState_Brokenness_Broken--></T>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="state">
+        <U n="state">
+          <T n="value">374610<!--CommodityBasedObjectStateValue: potteryCeramic_CommodityState_Brokenness_Repairing--></T>
+        </U>
+      </V>
+    </L>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

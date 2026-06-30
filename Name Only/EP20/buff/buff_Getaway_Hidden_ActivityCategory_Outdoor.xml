@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Buff" i="buff" m="buffs.buff" n="buff_Getaway_Hidden_ActivityCategory_Outdoor" s="478659">
+  <V n="_add_test_set" t="tests_set">
+    <L n="tests_set">
+      <L>
+        <V t="sim_info">
+          <U n="sim_info">
+            <V n="ages" t="specified">
+              <L n="specified">
+                <E>TEEN</E>
+                <E>YOUNGADULT</E>
+                <E>ADULT</E>
+                <E>ELDER</E>
+                <E>CHILD</E>
+              </L>
+            </V>
+            <V n="species" t="specified">
+              <U n="specified">
+                <L n="species">
+                  <E />
+                </L>
+              </U>
+            </V>
+          </U>
+        </V>
+      </L>
+    </L>
+  </V>
+  <T p="InGame\Audio\Stings\sting_buff_gain.propx" n="audio_sting_on_add">39b2aa4a:00000000:8af8b916cf64c646</T>
+  <T p="InGame\Audio\Stings\sting_buff_loss.propx" n="audio_sting_on_remove">39b2aa4a:00000000:3bf33216a25546ea</T>
+  <T n="buff_description">0xE0536BF8<!--String: "{0.SimFirstName} set out to escape the everyday and embrace the wild side of life! While enjoying outdoor Getaway activities, {0.SimPronounSubjective} {S0.feels}{P0.feel} bolder, braver, and ready to chase down whatever fun the great outdoors has to offer, even if the weather tries to throw a tantrum. Adventure's calling, and nothing's getting in the way!"--></T>
+  <T n="buff_name">0xAF4A32F7<!--String: "Adventure Awaits!"--></T>
+  <T n="default_buff_reason">0xC36A030C<!--String: "(From Outdoor Activity at Getaway)"--></T>
+  <U n="game_effect_modifier">
+    <L n="_game_effect_modifiers">
+      <V t="autonomy_modifier">
+        <U n="autonomy_modifier">
+          <L n="object_tags_that_override_off_lot_autonomy">
+            <E>Func_Kayak</E>
+            <E>Func_BBQ</E>
+            <E>Func_FishingLocation_Any</E>
+            <E>Func_Garden</E>
+            <E>Func_ButterflyCollection</E>
+            <E>Func_Bonfire</E>
+            <E>Func_WaterScooter</E>
+            <E>Func_Bicycle</E>
+            <E>Func_Bike</E>
+            <E>Func_FrogLog</E>
+            <E>Func_ButterflyCollection_Spawner</E>
+            <E>Func_ButterflyIncubator</E>
+            <E>Func_ClimbingRoute</E>
+            <E>Func_Buoy</E>
+          </L>
+          <V n="off_lot_autonomy_rule" t="enabled">
+            <V n="enabled" t="default_behavior">
+              <U n="default_behavior">
+                <T n="radius">75</T>
+                <T n="tolerance">75</T>
+              </U>
+            </V>
+          </V>
+          <V n="outside_objects_multiplier" t="enabled">
+            <T n="enabled">1.5</T>
+          </V>
+          <L n="stat_use_multiplier">
+            <U>
+              <T n="key">182175<!--Commodity: commodity_Death_Temperature_Burning--></T>
+              <U n="value">
+                <E n="apply_direction">INCREASE</E>
+                <T n="multiplier">0.5</T>
+              </U>
+            </U>
+            <U>
+              <T n="key">182176<!--Commodity: commodity_Death_Temperature_Freezing--></T>
+              <U n="value">
+                <E n="apply_direction">INCREASE</E>
+                <T n="multiplier">0.5</T>
+              </U>
+            </U>
+          </L>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T p="InEP20\UI\Icons\Buffs\buffs_OutdoorActivityPreparation.png" n="icon">2f7d0004:00000000:6da02d2469fb2c4e</T>
+  <T n="mood_type">14634<!--Mood: Mood_Confident--></T>
+  <T n="mood_weight">1</T>
+  <L n="super_affordances">
+    <T>484017<!--SuperInteraction: solo_Stargazing_Autonomous_Anywhere--></T>
+    <T>486119<!--WaypointInteraction: terrain-jog_Autonomous--></T>
+  </L>
+  <T n="visible">True</T>
+</I>

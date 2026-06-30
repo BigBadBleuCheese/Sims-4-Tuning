@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="RandomWeightedLoot" i="action" m="interactions.utils.loot" n="randomWeightedLoot_Tattooing_PoorTattooPayment" s="384583">
+  <L n="random_loot_actions">
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">384322<!--LootActions: loot_Tattooing_Payment_Tattoo--></T>
+      </V>
+      <U n="weight">
+        <T n="base_value">10</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">0.1</T>
+            <L n="tests">
+              <L>
+                <V t="trait">
+                  <U n="trait">
+                    <E n="subject">TargetSim</E>
+                    <L n="whitelist_traits">
+                      <T>16845<!--Trait: trait_HotHeaded--></T>
+                      <T>27913<!--Trait: trait_Materialistic--></T>
+                      <T>16857<!--Trait: trait_Mean--></T>
+                      <T>9617<!--Trait: trait_Perfectionist--></T>
+                      <T>16824<!--Trait: trait_SelfAssured--></T>
+                      <T>203542<!--Trait: trait_Paranoid--></T>
+                      <T>199561<!--Trait: trait_SelfAbsorbed--></T>
+                      <T>272336<!--Trait: trait_HighMaintenance--></T>
+                      <T>16836<!--Trait: trait_Evil--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">3</T>
+            <L n="tests">
+              <L>
+                <V t="relationship">
+                  <U n="relationship">
+                    <U n="relationship_score_interval">
+                      <T n="lower_bound">40</T>
+                    </U>
+                    <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="notification_and_dialog">
+        <U n="notification_and_dialog">
+          <V n="dialog" t="notification">
+            <U n="notification">
+              <V n="icon" t="enabled">
+                <V n="enabled" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>TargetSim</E>
+                    </L>
+                  </U>
+                </V>
+              </V>
+              <V n="secondary_icon" t="enabled">
+                <V n="enabled" t="participant" />
+              </V>
+              <V n="text" t="variation">
+                <U n="variation">
+                  <L n="variations">
+                    <T>0xB11EF5B8<!--String: "Do you seriously expect to be paid for this? You should be paying <i>me</i>, and that still wouldn't make up for this atrocity..."--></T>
+                    <T>0xF6DBD6DD<!--String: "Are you <i>serious</i>? I'd rather cuddle with a rodent fever infested hamster than let you tattoo me again! I hope you didn't expect to get paid for this crap..."--></T>
+                    <T>0xF57D849A<!--String: "What have you done to my beautiful skin?! A toddler could have done a better job! Don't even <i>think</i> about asking for payment..."--></T>
+                  </L>
+                </U>
+              </V>
+              <E n="visual_type">SPEECH</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">10</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">0.1</T>
+            <L n="tests">
+              <L>
+                <V t="trait">
+                  <U n="trait">
+                    <E n="subject">TargetSim</E>
+                    <L n="whitelist_traits">
+                      <T>9322<!--Trait: trait_Cheerful--></T>
+                      <T>311267<!--Trait: trait_Loyal--></T>
+                      <T>251970<!--Trait: trait_Proper--></T>
+                      <T>272629<!--Trait: trait_SociallyAwkward--></T>
+                      <T>27915<!--Trait: trait_Good--></T>
+                      <T>341152<!--Trait: trait_Generous--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">10</T>
+            <L n="tests">
+              <L>
+                <V t="relationship">
+                  <U n="relationship">
+                    <U n="relationship_score_interval">
+                      <T n="lower_bound">-100</T>
+                      <T n="upper_bound">-1</T>
+                    </U>
+                    <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="test_set_reference">
+        <T n="test_set_reference">427203<!--TestSetInstance: testSetInstance_Tattooing_PaidService_ArtistOfferToRecipient--></T>
+      </V>
+    </L>
+  </L>
+</I>

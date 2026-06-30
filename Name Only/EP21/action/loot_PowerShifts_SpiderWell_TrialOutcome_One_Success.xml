@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_PowerShifts_SpiderWell_TrialOutcome_One_Success" s="496646">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">496563<!--Buff: buff_PowerShifts_SpiderWell_WovenVoice--></T>
+        </U>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InEP21\UI\Icons\Notifications\notification_AnansisWell.png">2f7d0004:00000000:521e84daf86d49aa</T>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant" />
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xE07C3530<!--String: "{0.SimFirstName}'s tale weaves truth and wit. Anansi approves."--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x6B782790<!--String: "Anansi's Trial: Story Well-Spun"--></T>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="buff_removal">
+      <U n="buff_removal">
+        <L n="buffs_to_remove">
+          <T>496562<!--Buff: buff_PowerShifts_SpiderWell_TrialWalkerStory--></T>
+        </L>
+      </U>
+    </V>
+    <V t="interaction">
+      <U n="interaction">
+        <E n="affordance_priority">Critical</E>
+        <L n="affordances">
+          <T>496790<!--SuperInteraction: powerShifts_SuperInteractions_SpiderWell_Reaction_Success--></T>
+        </L>
+      </U>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">1</T>
+          <T n="stat">496691<!--Commodity: commodity_PowerShifts_SpiderWell_TrialTracker--></T>
+        </U>
+      </V>
+    </V>
+    <V t="career_loot">
+      <U n="career_loot">
+        <V n="career" t="career_reference">
+          <U n="career_reference">
+            <T n="reference">466304<!--NobleCareer: career_Noble--></T>
+          </U>
+        </V>
+        <L n="operations">
+          <V t="performance">
+            <U n="performance">
+              <T n="amount">30</T>
+            </U>
+          </V>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="career_test">
+              <U n="career_test">
+                <V n="test_type" t="career_reference">
+                  <U n="career_reference">
+                    <V n="career" t="specific_career">
+                      <T n="specific_career">466304<!--NobleCareer: career_Noble--></T>
+                    </V>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="vfx">
+      <U n="vfx">
+        <U n="vfx">
+          <T n="effect_name">ep21_anansi_trial_succeed</T>
+          <V n="joint_name" t="Slot">
+            <T n="Slot">b__ROOT__</T>
+          </V>
+        </U>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <V n="whitelist" t="enabled">
+            <L n="enabled">
+              <T>496562<!--Buff: buff_PowerShifts_SpiderWell_TrialWalkerStory--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

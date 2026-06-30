@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_AnimalObjects_GoatSheep_Destroy" s="349463">
+  <L n="loot_actions">
+    <V t="vfx">
+      <U n="vfx">
+        <U n="vfx">
+          <T n="effect_name">ep14_sell_goat_sheep</T>
+          <V n="joint_name" t="Current_Position" />
+          <T n="play_immediate">True</T>
+        </U>
+      </U>
+    </V>
+    <V t="destroy_target_objects">
+      <U n="destroy_target_objects">
+        <E n="object_source">IN_WORLD</E>
+        <E n="subject">Object</E>
+        <L n="tests">
+          <L>
+            <V t="state_white_black">
+              <U n="state_white_black">
+                <U n="states">
+                  <V n="whitelist" t="specify">
+                    <U n="specify">
+                      <L n="whitelist">
+                        <T>268070<!--ObjectStateValue: animalObjects_Livestock_Sold_SoldForLivestockFeed--></T>
+                        <T>268069<!--ObjectStateValue: animalObjects_Livestock_Sold_SoldForIngredients--></T>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="actions">
+      <T n="actions">326800<!--LootActions: loot_AnimalObjects_SellSimoleons_GoatSheep_Object--></T>
+    </V>
+  </L>
+</I>

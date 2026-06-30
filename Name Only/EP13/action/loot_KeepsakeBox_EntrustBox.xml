@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_KeepsakeBox_EntrustBox" s="320760">
+  <L n="loot_actions">
+    <V t="oneshot_broadcaster">
+      <U n="oneshot_broadcaster">
+        <U n="broadcaster_request">
+          <L n="broadcaster_types">
+            <U>
+              <T n="item">320759<!--Broadcaster: broadcaster_KeepsakeBox--></T>
+            </U>
+          </L>
+        </U>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x82639881<!--String: "(From Receiving a Keepsake Box)"--></T>
+          </V>
+          <T n="buff_type">320392<!--Buff: buff_KeepsakeBox_FamilyEntrusted--></T>
+        </U>
+        <E n="subject">PickedSim</E>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x855DB89B<!--String: "(From Entrusting a Keepsake Box)"--></T>
+          </V>
+          <T n="buff_type">320391<!--Buff: buff_KeepsakeBox_PassingTorch--></T>
+        </U>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>SavedActor1</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x4F9E673D<!--String: "{1.SimFirstName} has been granted access to all the family secrets held within the Keepsake Box! {1.SimPronounSubjective|xxUpper} can add to it over time as well. Try not to lose it!"--></T>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+</I>

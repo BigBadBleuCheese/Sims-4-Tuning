@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="DeathSuperInteraction" i="interaction" m="interactions.utils.death_interactions" n="death_MovingOn_ReincarnationDialog" s="396285">
+  <V n="_forwarding" t="Don't_Forward" />
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Actor</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <T n="can_shoo">False</T>
+  <V n="content_score" t="disabled" />
+  <U n="death_dialog">
+    <U n="text">
+      <V n="fallback" t="single">
+        <T n="single">0xB47BC90B<!--String: "The Soul's Journey denotes the overall satisfaction of {0.SimFirstName}'s existence. Filling the Soul's Journey rewards {0.SimFirstName} with various perks to help them in life, death, and whatever comes afterward.\nSome things that increase the Soul's Journey are:\n\n• Completing Bucket List Goals\n• Completing Aspirations\n• Completing Wants"--></T>
+      </V>
+    </U>
+  </U>
+  <U n="death_element">
+    <V n="cancel_on_inaccessible_placement" t="no" />
+    <T n="create_urnstone">False</T>
+    <V n="location" t="position">
+      <U n="position">
+        <T n="skip_plex_starting_position_validation">True</T>
+        <V n="surface_type_override" t="enabled" />
+      </U>
+    </V>
+    <V n="timing" t="at_beginning" />
+  </U>
+  <V n="death_info" t="Set_To_Minimum_LOD" />
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <E n="outcome_result">FAILURE</E>
+      </U>
+    </U>
+  </V>
+  <V n="reincarnation_only" t="enabled">
+    <U n="enabled">
+      <V n="audio_sting" t="enabled">
+        <U n="enabled">
+          <T p="InGame\Audio\UI\ui_ep17_movingon_resurrect_chime.propx" n="audio">39b2aa4a:00000000:36af33411593f7ac</T>
+          <T n="immediate_audio">True</T>
+        </U>
+      </V>
+      <V n="audio_sting_owner" t="disabled" />
+      <V n="background_audio" t="disabled" />
+      <E n="dialog_bg_style">BG_DEATH</E>
+      <E n="dialog_style">LARGE_ICON_WIDE</E>
+      <V n="icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T n="key" p="InGame\UI\Icons\ChanceCards\ChanceCard_Reincarnation.png">2f7d0004:00000000:d61529f25c7edec3</T>
+          </U>
+        </V>
+      </V>
+      <V n="icon_override_participant" t="enabled">
+        <E n="enabled">Actor</E>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0x519CDC74<!--String: "<i><b>Is your soul ready to embrace the next chapter?</b></i>\n\nBy choosing to Rebirth, you will set forth on a new journey as a new Sim, leaving your current life behind with no chance of return. You will be taken to Manage Worlds to select the household where your new life will unfold and will have the opportunity to fully customize your reborn self in Create a Sim. While funds, relationships, and achievements from this life will be lost, if you have already unlocked the coveted <b>Burning Soul</b> trait, you’ll be able to retain one personality trait with the <b>Recall Past Life</b> self-interaction, along with certain others using the <b>Peer Into Soul</b> interaction available on mirrors. If you choose to Rebirth as a younger Sim, certain developmental skills will be immediately unlocked!\n\nNow the threads of fate lie before you. The choice to weave a new destiny can be made when you are ready. <b><i>Will you choose to Rebirth now?</b></i>"--></T>
+      </V>
+      <T n="text_cancel">0x7492D540<!--String: "No, do not Rebirth now."--></T>
+      <T n="text_ok">0xFCD61ECC<!--String: "Yes, Rebirth now."--></T>
+      <V n="title" t="enabled">
+        <T n="enabled">0x81F0543C<!--String: "Rebirth"--></T>
+      </V>
+    </U>
+  </V>
+  <T n="save_lock_tooltip">0x7DEA5E02<!--String: "Fill Vacancy"--></T>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+  <T n="visible">False</T>
+</I>

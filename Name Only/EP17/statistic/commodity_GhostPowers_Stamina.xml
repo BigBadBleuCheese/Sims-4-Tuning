@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Commodity" i="statistic" m="statistics.commodity" n="commodity_GhostPowers_Stamina" s="384632">
+  <T n="_add_if_not_in_tracker">False</T>
+  <T n="_affects_plumbob_color">False</T>
+  <T n="_default_convergence_value">100</T>
+  <U n="arrow_data">
+    <T n="negative_double_arrow">-20</T>
+    <T n="negative_single_arrow">-1</T>
+    <T n="negative_triple_arrow">-30</T>
+    <T n="positive_double_arrow">20</T>
+    <T n="positive_single_arrow">1</T>
+    <T n="positive_triple_arrow">30</T>
+  </U>
+  <T n="auto_satisfy_curve_random_time_offset">120</T>
+  <T n="decay_rate">0.14</T>
+  <U n="initial_tuning">
+    <T n="_use_auto_satisfy_curve_as_initial_value">False</T>
+    <T n="_value">90</T>
+  </U>
+  <T n="max_value_tuning">100</T>
+  <T n="maximum_auto_satisfy_time">1440</T>
+  <T n="min_value_tuning">0</T>
+  <T n="remove_on_convergence">False</T>
+  <T n="stat_name">0x6A1B6817<!--String: "Ghost Stamina"--></T>
+  <L n="states">
+    <U>
+      <U n="buff">
+        <V n="buff_reason" t="enabled">
+          <T n="enabled">0xEFE1357E<!--String: "(From Depleted Ghost Stamina)"--></T>
+        </V>
+        <T n="buff_type">404414<!--Buff: buff_GhostPowers_Stamina_BurntOut_Completely--></T>
+      </U>
+      <T n="data_description">0x6581876D<!--String: "<font color='#FF0000'><b>Depleted Stamina</b></font>\n\n{0.SimFirstName}'s Ghost Stamina is now completely depleted and the intense exertion of Ghost Mastery has left {0.SimPronounObjective} appearing completely faded. {0.SimFirstName} is now no longer able to perform any abilities in this state and must wait for {0.SimPronounPossessiveDependent} Stamina to replenish or take a <b>Spectral Slumber</b> to recharge back up to <b>Low Stamina</b>."--></T>
+      <L n="loot_list_on_enter_always">
+        <T>404415<!--LootActions: loot_GhostPowers_Stamina_BurntOutCompletely--></T>
+      </L>
+      <T n="value">0</T>
+    </U>
+    <U>
+      <U n="buff">
+        <V n="buff_reason" t="enabled">
+          <T n="enabled">0xD00E2B21<!--String: "(From Critical Stamina)"--></T>
+        </V>
+        <T n="buff_type">390327<!--Buff: buff_GhostPowers_Stamina_BurntOut--></T>
+      </U>
+      <L n="buff_overrides">
+        <U>
+          <T n="key">404413<!--Trait: trait_Hidden_GhostPowers_BurntOut--></T>
+          <U n="value">
+            <V n="buff_reason" t="enabled">
+              <T n="enabled">0xEFE1357E<!--String: "(From Depleted Ghost Stamina)"--></T>
+            </V>
+            <T n="buff_type">404414<!--Buff: buff_GhostPowers_Stamina_BurntOut_Completely--></T>
+          </U>
+        </U>
+      </L>
+      <T n="data_description">0x20FE4D4A<!--String: "<font color='#FF0000'><b>Critical Stamina</b></font>\n\n{0.SimFirstName} is in a state of Critical Ghost Stamina and the intense use of Ghost Mastery has left {0.SimPronounObjective} appearing more faded. When {0.SimFirstName} completely depletes {0.SimPronounPossessiveDependent} Stamina, {0.SimPronounSubjective} will no longer be able to perform any abilities. {0.SimFirstName} must wait for {0.SimPronounPossessiveDependent} Stamina to replenish or take a <b>Spectral Slumber</b> to recharge faster!"--></T>
+      <T n="value">1</T>
+    </U>
+    <U>
+      <U n="buff">
+        <V n="buff_reason" t="enabled">
+          <T n="enabled">0xF91139A8<!--String: "(From Low Ghost Stamina)"--></T>
+        </V>
+        <T n="buff_type">390328<!--Buff: buff_GhostPowers_Stamina_Danger--></T>
+      </U>
+      <T n="data_description">0xF5E115B3<!--String: "<font color='#1E90FF'><b>Fading Stamina</b></font>\n\n{0.SimFirstName}'s stamina is slowly fading and the continuous use of Ghost Mastery has left {0.SimPronounObjective} appearing a bit less vibrant. When {0.SimFirstName} completely depletes {0.SimPronounPossessiveDependent} Stamina, {0.SimPronounSubjective} will no longer be able to perform any abilities. {0.SimFirstName} must wait for {0.SimPronounPossessiveDependent} Stamina to replenish or take a <b>Spectral Slumber</b> to recharge faster!"--></T>
+      <L n="loot_list_on_enter_always">
+        <T>404417<!--LootActions: loot_GhostPowers_Stamina_BurntOut_Remove--></T>
+      </L>
+      <T n="value">25</T>
+    </U>
+    <U>
+      <U n="buff">
+        <T n="buff_type">397737<!--Buff: buff_GhostPowers_Stamina_Hidden_Warning--></T>
+      </U>
+      <T n="data_description">0xB0F81997<!--String: "<font color='#FFA500'><b>Low Stamina</b></font>\n\n{0.SimFirstName}'s stamina is low and the continuous use of Ghost Mastery has left {0.SimPronounObjective} appearing more faded. When {0.SimFirstName} completely depletes {0.SimPronounPossessiveDependent} Stamina, {0.SimPronounSubjective} will no longer be able to perform any abilities. {0.SimFirstName} must wait for {0.SimPronounPossessiveDependent} Stamina to replenish or take a <b>Spectral Slumber</b> to recharge faster!"--></T>
+      <T n="value">50</T>
+    </U>
+    <U>
+      <U n="buff">
+        <T n="buff_type">390818<!--Buff: buff_GhostPowers_Stamina_Hidden_MaxOut--></T>
+      </U>
+      <V n="buff_add_threshold" t="enabled">
+        <U n="enabled">
+          <E n="comparison">EQUAL</E>
+          <T n="value">100</T>
+        </U>
+      </V>
+      <T n="data_description">0xAFA284AB<!--String: "<font color='#228B22'><b>Healthy Stamina</b></font>\n\n{0.SimFirstName}'s ghostly energy is overflowing and brimming with spectral vitality! At this state, {0.SimPronounSubjective} can perform Ghost Mastery abilities with ease. "--></T>
+      <L n="loot_list_on_enter_always">
+        <T>395340<!--LootActions: loot_GhostPowers_Stamina_VFX--></T>
+      </L>
+      <T n="value">75</T>
+    </U>
+  </L>
+  <T n="ui_sort_order">0</T>
+  <U n="ui_visible_distress_threshold">
+    <T n="threshold_value">0</T>
+  </U>
+  <T n="visible">True</T>
+  <T n="weight">1</T>
+</I>

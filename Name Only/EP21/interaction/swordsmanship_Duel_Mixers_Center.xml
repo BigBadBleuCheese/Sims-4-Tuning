@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="MixerInteraction" i="interaction" m="interactions.base.mixer_interaction" n="swordsmanship_Duel_Mixers_Center" s="449399">
+  <T n="allow_user_directed">False</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">449427<!--AnimationElement: swordsmanship_Duel_Center--></T>
+        <U n="overrides">
+          <L n="prop_state_values">
+            <U>
+              <T n="key">sword</T>
+              <L n="value">
+                <T>98745<!--ObjectStateValue: GenericFX_On--></T>
+              </L>
+            </U>
+            <U>
+              <T n="key">sword1</T>
+              <L n="value">
+                <T>98745<!--ObjectStateValue: GenericFX_On--></T>
+              </L>
+            </U>
+          </L>
+          <L n="props">
+            <U>
+              <T n="key">sword</T>
+              <U n="value">
+                <V n="alternative_prop_definitions" t="enabled">
+                  <U n="enabled">
+                    <V n="favorite_object_in_inventory" t="enabled">
+                      <U n="enabled">
+                        <E n="favorite_tag">Func_Swords</E>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+                <T n="definition">497362</T>
+              </U>
+            </U>
+            <U>
+              <T n="key">sword1</T>
+              <U n="value">
+                <V n="alternative_prop_definitions" t="enabled">
+                  <U n="enabled">
+                    <V n="favorite_object_in_inventory" t="enabled">
+                      <U n="enabled">
+                        <T n="actor_asm_name">y</T>
+                        <E n="favorite_tag">Func_Swords</E>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+                <T n="definition">497362</T>
+              </U>
+            </U>
+          </L>
+        </U>
+      </U>
+    </U>
+  </V>
+  <V n="basic_focus" t="disable_focus" />
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Mixer</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <L n="continuation">
+              <U>
+                <T n="affordance">449403<!--MixerInteraction: swordsmanship_Duel_Mixers_Forward--></T>
+              </U>
+            </L>
+          </U>
+        </U>
+        <U>
+          <U n="outcome">
+            <L n="continuation">
+              <U>
+                <T n="affordance">449397<!--MixerInteraction: swordsmanship_Duel_Mixers_Back--></T>
+              </U>
+            </L>
+          </U>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="sub_action">
+    <T n="base_weight">2</T>
+  </U>
+  <E n="target_type">TARGET</E>
+  <L n="test_globals" />
+  <T n="visible">False</T>
+</I>

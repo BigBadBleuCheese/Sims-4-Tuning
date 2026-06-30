@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="HobbyClassSituation" i="situation" m="situations.complex.hobby_class_situation" n="situation_HobbyClass_Instructor_Parenting" s="399350">
+  <T n="_class_member_job">400498<!--SituationJob: job_HobbyClass_ClassMember_TYAE--></T>
+  <T n="_display_name">0x4E4E520<!--String: "Hobby Class"--></T>
+  <T n="_instructor_job">397235<!--SituationJob: job_HobbyClass_Instructor--></T>
+  <U n="_level_data">
+    <U n="bronze">
+      <T n="level_description">0x9224E9B0<!--String: "Bronze"--></T>
+      <T n="score_delta">70</T>
+    </U>
+    <U n="gold">
+      <T n="level_description">0x82AD9EEA<!--String: "Gold"--></T>
+      <T n="score_delta">30</T>
+    </U>
+    <U n="silver">
+      <T n="level_description">0x20CAEAD3<!--String: "Silver"--></T>
+      <T n="score_delta">30</T>
+    </U>
+  </U>
+  <T n="allowed_in_super_speed_3">False</T>
+  <U n="class_invite_situation_tag_blacklist">
+    <L n="situation_tags">
+      <E>Situation_YogaClass</E>
+    </L>
+  </U>
+  <E n="creation_ui_option">NOT_AVAILABLE</E>
+  <E n="display_style">DEFAULT</E>
+  <T n="duration">300</T>
+  <L n="finished_class_loots">
+    <T>400581<!--LootActions: loot_HobbyClass_ActiveWhiteboardTag_Remove--></T>
+    <T>415562<!--LootActions: loot_HobbyClass_RemoveClassStatistics--></T>
+  </L>
+  <U n="in_class_state">
+    <L n="job_and_role_changes">
+      <U>
+        <T n="Situation Job">397235<!--SituationJob: job_HobbyClass_Instructor--></T>
+        <T n="Role State">397236<!--RoleState: role_HobbyClass_Instructor_InClass--></T>
+      </U>
+      <U>
+        <T n="Situation Job">400498<!--SituationJob: job_HobbyClass_ClassMember_TYAE--></T>
+        <T n="Role State">399112<!--RoleState: role_HobbyClass_ClassMember_InClass_Parenting--></T>
+      </U>
+    </L>
+  </U>
+  <T n="main_goal">415567<!--SituationGoalActor: situationGoalActor_HobbyClass_HoldLectureLong--></T>
+  <T p="InGame\Audio\Bumper\bumper_event_major_complete.propx" n="main_goal_audio_sting">39b2aa4a:00000000:10b476550150a33f</T>
+  <U n="member_situation_job_test">
+    <T n="negate">True</T>
+    <L n="situation_jobs">
+      <T>118131<!--SituationJob: Job_yoga_classMember--></T>
+      <T>271676<!--SituationJob: job_GuidedMeditation_ClassMember--></T>
+    </L>
+  </U>
+  <U n="member_situation_role_test">
+    <L n="situation_required_roles">
+      <T>373359<!--RoleState: role_smallBusinessCustomer_BusinessVisit--></T>
+    </L>
+  </U>
+  <L n="minor_goal_chains">
+    <T>396733<!--SituationGoalSet: goalSet_HobbyClass_Social_2--></T>
+  </L>
+  <V n="no_class_members_dialog" t="literal">
+    <U n="literal">
+      <V n="icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T n="key" p="InGame\UI\Icons\Notifications\notification_chalkboard.png">2f7d0004:00000000:ec36084161d31ce0</T>
+          </U>
+        </V>
+      </V>
+      <V n="secondary_icon" t="enabled">
+        <V n="enabled" t="participant" />
+      </V>
+      <V n="text" t="single">
+        <T n="single">0x5E9F6877<!--String: "{0.SimFirstName}’s Hobby Class was canceled because no one joined."--></T>
+      </V>
+    </U>
+  </V>
+  <T n="num_picked_sim_participants_for_post_class_loots">1</T>
+  <U n="number_of_npc_class_members">
+    <T n="lower_bound">70</T>
+    <T n="upper_bound">80</T>
+  </U>
+  <U n="picked_sim_weights">
+    <T n="base_value">1</T>
+    <L n="modifiers">
+      <U>
+        <T n="modifier">10</T>
+        <L n="tests">
+          <L>
+            <V t="situation_medal_test">
+              <U n="situation_medal_test">
+                <V n="situation" t="by_tags">
+                  <U n="by_tags">
+                    <L n="situation_tags">
+                      <E>Situation_HobbyClass</E>
+                    </L>
+                  </U>
+                </V>
+                <U n="threshold">
+                  <E n="value">BRONZE</E>
+                </U>
+                <E n="who">TargetSim</E>
+              </U>
+            </V>
+            <V t="trait">
+              <U n="trait">
+                <L n="blacklist_traits">
+                  <T>9332<!--Trait: trait_Gloomy--></T>
+                  <T>16845<!--Trait: trait_HotHeaded--></T>
+                  <T>124879<!--Trait: trait_Jealous--></T>
+                  <T>16857<!--Trait: trait_Mean--></T>
+                  <T>272336<!--Trait: trait_HighMaintenance--></T>
+                  <T>203542<!--Trait: trait_Paranoid--></T>
+                  <T>199561<!--Trait: trait_SelfAbsorbed--></T>
+                  <T>383203<!--Trait: trait_Skeptical--></T>
+                  <T>396064<!--Trait: trait_Shady--></T>
+                  <T>16836<!--Trait: trait_Evil--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+      <U>
+        <T n="modifier">10</T>
+        <L n="tests">
+          <L>
+            <V t="situation_medal_test">
+              <U n="situation_medal_test">
+                <V n="situation" t="by_tags">
+                  <U n="by_tags">
+                    <L n="situation_tags">
+                      <E>Situation_HobbyClass</E>
+                    </L>
+                  </U>
+                </V>
+                <U n="threshold">
+                  <E n="comparison">EQUAL</E>
+                  <E n="value">TIN</E>
+                </U>
+                <E n="who">TargetSim</E>
+              </U>
+            </V>
+            <V t="trait">
+              <U n="trait">
+                <L n="blacklist_traits">
+                  <T>9322<!--Trait: trait_Cheerful--></T>
+                  <T>27915<!--Trait: trait_Good--></T>
+                  <T>311267<!--Trait: trait_Loyal--></T>
+                  <T>29571<!--Trait: trait_Outgoing--></T>
+                  <T>251970<!--Trait: trait_Proper--></T>
+                  <T>341152<!--Trait: trait_Generous--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+      <U>
+        <T n="modifier">5</T>
+        <L n="tests">
+          <L>
+            <V t="situation_medal_test">
+              <U n="situation_medal_test">
+                <V n="situation" t="by_tags">
+                  <U n="by_tags">
+                    <L n="situation_tags">
+                      <E>Situation_HobbyClass</E>
+                    </L>
+                  </U>
+                </V>
+                <U n="threshold">
+                  <E n="value">BRONZE</E>
+                </U>
+                <E n="who">TargetSim</E>
+              </U>
+            </V>
+            <V t="relationship">
+              <U n="relationship">
+                <U n="relationship_score_interval">
+                  <T n="lower_bound">30</T>
+                </U>
+                <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+      <U>
+        <T n="modifier">5</T>
+        <L n="tests">
+          <L>
+            <V t="situation_medal_test">
+              <U n="situation_medal_test">
+                <V n="situation" t="by_tags">
+                  <U n="by_tags">
+                    <L n="situation_tags">
+                      <E>Situation_HobbyClass</E>
+                    </L>
+                  </U>
+                </V>
+                <U n="threshold">
+                  <E n="comparison">EQUAL</E>
+                  <E n="value">TIN</E>
+                </U>
+                <E n="who">TargetSim</E>
+              </U>
+            </V>
+            <V t="relationship">
+              <U n="relationship">
+                <U n="relationship_score_interval">
+                  <T n="upper_bound">-10</T>
+                </U>
+                <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </L>
+  </U>
+  <L n="post_class_loots">
+    <T>398070<!--LootActions: loot_HobbyClass_EndOfClassRelGain--></T>
+    <T>399373<!--LootActions: loot_HobbyClass_Payment_Parenting--></T>
+    <T>398044<!--LootActions: loot_HobbyClass_Feedback_Social--></T>
+    <T>398071<!--LootActions: loot_HobbyClass_InstructorReward--></T>
+    <T>431357<!--LootActions: loot_Buff_Add_SmallBusiness_CustomerSatisfaction_Quality_Classes--></T>
+  </L>
+  <U n="pre_class_state">
+    <U n="situation_state">
+      <L n="job_and_role_changes">
+        <U>
+          <T n="Situation Job">397235<!--SituationJob: job_HobbyClass_Instructor--></T>
+          <T n="Role State">397237<!--RoleState: role_HobbyClass_Instructor_PreClass--></T>
+        </U>
+        <U>
+          <T n="Situation Job">400498<!--SituationJob: job_HobbyClass_ClassMember_TYAE--></T>
+          <T n="Role State">396981<!--RoleState: role_HobbyClass_ClassMember_PreClass--></T>
+        </U>
+      </L>
+    </U>
+    <T n="time_out">30</T>
+  </U>
+  <V n="screen_slam_bronze" t="enabled">
+    <V n="enabled" t="reference">
+      <T n="reference">75362<!--ScreenSlam: EventOutcome_Bronze--></T>
+    </V>
+  </V>
+  <V n="screen_slam_gold" t="enabled">
+    <V n="enabled" t="reference">
+      <T n="reference">75364<!--ScreenSlam: EventOutcome_Gold--></T>
+    </V>
+  </V>
+  <V n="screen_slam_no_medal" t="enabled">
+    <V n="enabled" t="reference">
+      <T n="reference">75361<!--ScreenSlam: EventOutcome_Tin--></T>
+    </V>
+  </V>
+  <V n="screen_slam_silver" t="enabled">
+    <V n="enabled" t="reference">
+      <T n="reference">75363<!--ScreenSlam: EventOutcome_Silver--></T>
+    </V>
+  </V>
+  <T n="should_apply_post_class_loots_to_instructor">True</T>
+  <V n="situation_end_time_string" t="show_end_time">
+    <T n="show_end_time">0xA3E17143<!--String: "Work day ends at {0.TimeShort}"--></T>
+  </V>
+  <L n="tags">
+    <E>Situation_HobbyClass</E>
+    <E>Situation_HobbyClass_TYAE</E>
+    <E>Situation_HobbyClass_NoMood</E>
+  </L>
+</I>

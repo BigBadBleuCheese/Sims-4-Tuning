@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Crypts_AdventureMoments_TimeOutExit" s="423555">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="dialog_ok">
+          <U n="dialog_ok">
+            <E n="dialog_style">LARGE_ICON</E>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InEP17\UI\Icons\ChanceCards\ChanceCard_cryptexterior.png">2f7d0004:00000000:8e018be784d465e0</T>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x39B08721<!--String: "{0.SimFirstName} spots a beam of light illuminating a hidden corridor."--></T>
+            </V>
+            <T n="text_ok">0x6F4B76F4<!--String: "Exit Crypts"--></T>
+            <V n="title" t="enabled">
+              <T n="enabled">0xEDB80FE6<!--String: "A Way Out"--></T>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="actions">
+      <T n="actions">377267<!--LootActions: loot_Crypts_ExitBuffs_GenericExit--></T>
+    </V>
+  </L>
+  <T n="run_test_first">False</T>
+  <L n="tests">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <V n="whitelist" t="enabled">
+            <L n="enabled">
+              <T>423560<!--Buff: buff_Crypts_TrackingBuffs_TimeOutExit_InteractionRunning--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>423561<!--Buff: buff_Crypts_TrackingBuffs_TimeOutExit_SafetyNet--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>423561<!--Buff: buff_Crypts_TrackingBuffs_TimeOutExit_SafetyNet--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

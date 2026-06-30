@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="StaffMemberSituation" i="situation" m="situations.complex.staff_member_situation" n="staffMemberSituation_Freeweights_HiredInstructor" s="473185">
+  <U n="_actively_working_situation_state">
+    <U n="interaction_of_interest">
+      <L n="affordances">
+        <T>460391<!--SuperInteraction: superInteraction_FreeWeights_Class_WaitForStart_Student--></T>
+      </L>
+    </U>
+    <L n="job_and_role_changes">
+      <U>
+        <T n="Situation Job">460464<!--SituationJob: situationJob_FreeWeights_Class_Student--></T>
+        <T n="Role State">460270<!--RoleState: roleState_FreeWeights_InClass_Student--></T>
+      </U>
+      <U>
+        <T n="Situation Job">478642<!--SituationJob: jobs_Service_Freeweights_PumpItUp_NPC--></T>
+        <T n="Role State">460272<!--RoleState: roleState_FreeWeights_InClass_Instructor--></T>
+      </U>
+    </L>
+  </U>
+  <U n="_arriving_situation_state">
+    <U n="interaction_of_interest">
+      <L n="affordances">
+        <T>460346<!--SuperInteraction: superInteraction_FreeWeights_Class_WaitForStart_Instructor--></T>
+      </L>
+    </U>
+    <L n="job_and_role_changes">
+      <U>
+        <T n="Situation Job">460464<!--SituationJob: situationJob_FreeWeights_Class_Student--></T>
+        <T n="Role State">460269<!--RoleState: roleState_FreeWeights_PreClass_Student--></T>
+      </U>
+      <U>
+        <T n="Situation Job">478642<!--SituationJob: jobs_Service_Freeweights_PumpItUp_NPC--></T>
+        <T n="Role State">460271<!--RoleState: roleState_FreeWeights_PreClass_Instructor--></T>
+      </U>
+    </L>
+  </U>
+  <T n="_implies_greeted_status">True</T>
+  <V n="_object_to_staff_filter" t="object_tags">
+    <U n="object_tags">
+      <L n="tag_set">
+        <E>Func_Freeweight</E>
+      </L>
+    </U>
+  </V>
+  <V n="arrival_interaction" t="push_interaction">
+    <T n="push_interaction">485138<!--SuperInteraction: superInteraction_FreeWeights_Class_WaitForStart_InstructorNPC--></T>
+  </V>
+  <V n="arrival_notification" t="enabled">
+    <V n="enabled" t="literal">
+      <U n="literal">
+        <V n="icon" t="enabled">
+          <V n="enabled" t="participant" />
+        </V>
+        <V n="text" t="single">
+          <T n="single">0x42DFF763<!--String: "Pump It Up Class is starting soon! "--></T>
+        </V>
+        <E n="visual_type">SPEECH</E>
+      </U>
+    </V>
+  </V>
+  <V n="bored_timeout" t="enabled">
+    <T n="enabled">120</T>
+  </V>
+  <V n="bored_timeout_notification" t="enabled">
+    <V n="enabled" t="literal">
+      <U n="literal">
+        <V n="icon" t="enabled">
+          <V n="enabled" t="participant" />
+        </V>
+        <V n="text" t="single">
+          <T n="single">0x8C514998<!--String: "Time for me to go. Thank you for hiring a certified Pump It Up Instructor."--></T>
+        </V>
+        <E n="visual_type">SPEECH</E>
+      </U>
+    </V>
+  </V>
+  <T n="duration">60</T>
+  <T n="force_sim_to_leave_lot_on_completion">False</T>
+  <V n="situation_end_time_string" t="show_end_time">
+    <T n="show_end_time">0xA3E17143<!--String: "Work day ends at {0.TimeShort}"--></T>
+  </V>
+  <T n="situation_job">478642<!--SituationJob: jobs_Service_Freeweights_PumpItUp_NPC--></T>
+  <V n="time_jump" t="allow" />
+  <T n="use_staffed_object_as_target_object">True</T>
+</I>

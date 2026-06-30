@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_PivotalMoment_dreamsV0_N5_trigger_choice" s="439726">
+  <L n="loot_actions">
+    <V t="schedule_drama_node">
+      <U n="schedule_drama_node">
+        <T n="drama_node">440713<!--DialogDramaNode: dialogDramaNode_dreamsV0_N5_narrative_selection--></T>
+        <L n="tests">
+          <L>
+            <V t="experiment_group">
+              <U n="experiment_group">
+                <E n="experiment_name">N5_DreamsV0</E>
+                <L n="groups">
+                  <T>1</T>
+                </L>
+              </U>
+            </V>
+          </L>
+          <L>
+            <V t="experiment_group">
+              <U n="experiment_group">
+                <E n="experiment_name">N5_DreamsV0_DLC</E>
+                <L n="groups">
+                  <T>1</T>
+                </L>
+              </U>
+            </V>
+          </L>
+          <L>
+            <V t="experiment_group">
+              <U n="experiment_group">
+                <E n="experiment_name">N5_DreamsV0_DLC</E>
+                <L n="groups">
+                  <T>2</T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="schedule_drama_node">
+      <U n="schedule_drama_node">
+        <T n="drama_node">445500<!--DialogDramaNode: dialogDramaNode_dreamsV0_N5_general_selection--></T>
+        <L n="tests">
+          <L>
+            <V t="experiment_group">
+              <U n="experiment_group">
+                <E n="experiment_name">N5_DreamsV0</E>
+                <L n="groups">
+                  <T>2</T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">462757<!--Buff: buff_DreamsV0_N5_startTracker_hidden--></T>
+        </U>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="situation_running_test">
+        <U n="situation_running_test">
+          <V n="situation_blacklist" t="enabled">
+            <L n="enabled">
+              <T>439927<!--PivotalMomentSituation: pivotalMomentSituation_DreamsV0_N5_Narrative_Choice1--></T>
+              <T>439928<!--PivotalMomentSituation: pivotalMomentSituation_DreamsV0_N5_Narrative_Choice2--></T>
+              <T>445441<!--PivotalMomentSituation: pivotalMomentSituation_DreamsV0_N5_General_Choice1--></T>
+              <T>446036<!--PivotalMomentSituation: pivotalMomentSituation_DreamsV0_N5_General_Choice2--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+      <V t="statistic">
+        <U n="statistic">
+          <T n="stat">447830<!--Statistic: statistic_dreamsv0_N5_objectiveCounter--></T>
+          <V n="threshold" t="value_threshold">
+            <U n="value_threshold">
+              <E n="comparison">EQUAL</E>
+            </U>
+          </V>
+          <E n="who">ActiveHousehold</E>
+        </U>
+      </V>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>462757<!--Buff: buff_DreamsV0_N5_startTracker_hidden--></T>
+          </L>
+          <E n="subject">ActorHouseholdMembers</E>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

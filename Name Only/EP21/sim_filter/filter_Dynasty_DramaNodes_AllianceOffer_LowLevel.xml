@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="TunableSimFilter" i="sim_filter" m="filters.tunable" n="filter_Dynasty_DramaNodes_AllianceOffer_LowLevel" s="478758">
+  <L n="_filter_terms">
+    <V t="species" />
+    <V t="dynasty">
+      <V n="dynasty" t="dynasty_same_dynasty_membership">
+        <U n="dynasty_same_dynasty_membership">
+          <T n="invert_score">True</T>
+        </U>
+      </V>
+    </V>
+    <V t="age_variant">
+      <U n="age_variant">
+        <L n="allowed_ages">
+          <E>TEEN</E>
+          <E>YOUNGADULT</E>
+          <E />
+          <E>ELDER</E>
+        </L>
+      </U>
+    </V>
+    <V t="in_family">
+      <U n="in_family">
+        <T n="invert_score">True</T>
+      </U>
+    </V>
+    <V t="dynasty">
+      <V n="dynasty" t="dynasty_sim_in_allied_dynasty">
+        <U n="dynasty_sim_in_allied_dynasty">
+          <T n="invert_score">True</T>
+        </U>
+      </V>
+    </V>
+    <V t="dynasty">
+      <V n="dynasty" t="dynasty_sim_in_rival_dynasty">
+        <U n="dynasty_sim_in_rival_dynasty">
+          <T n="invert_score">True</T>
+        </U>
+      </V>
+    </V>
+    <V t="trait">
+      <U n="trait">
+        <T n="trait">466527<!--Trait: trait_Dynasty_Head--></T>
+      </U>
+    </V>
+    <V t="relationship_track">
+      <U n="relationship_track">
+        <T n="min_value">-1</T>
+        <T n="relationship_track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+      </U>
+    </V>
+    <V t="relationship_track">
+      <U n="relationship_track">
+        <T n="ideal_value">40</T>
+        <T n="min_value">20</T>
+        <T n="minimum_filter_score">0.1</T>
+        <T n="relationship_track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+      </U>
+    </V>
+    <V t="ranked_statistic">
+      <U n="ranked_statistic">
+        <T n="ideal_value">3</T>
+        <T n="max_value">5</T>
+        <T n="min_value">0</T>
+        <T n="minimum_filter_score">0.1</T>
+        <T n="ranked_statistic">466614<!--RankedStatistic: rankedStatistic_Dynasty_Prestige--></T>
+      </U>
+    </V>
+    <V t="dynasty">
+      <V n="dynasty" t="dynasty_compare_values">
+        <U n="dynasty_compare_values">
+          <U n="value_threshold">
+            <T n="value">1</T>
+          </U>
+        </U>
+      </V>
+    </V>
+    <V t="dynasty">
+      <V n="dynasty" t="dynasty_compare_values">
+        <U n="dynasty_compare_values">
+          <T n="minimum_filter_score">0.1</T>
+          <U n="value_threshold">
+            <E n="comparison">GREATER</E>
+            <T n="value">3</T>
+          </U>
+        </U>
+      </V>
+    </V>
+  </L>
+  <V n="_household_templates_override" t="enabled">
+    <L n="enabled">
+      <T>98542<!--HouseholdTemplate: HH_template_NPC_adult_single--></T>
+    </L>
+  </V>
+  <T n="use_weighted_random">False</T>
+</I>

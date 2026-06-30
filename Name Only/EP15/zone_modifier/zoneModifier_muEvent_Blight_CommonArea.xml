@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="ZoneModifier" i="zone_modifier" m="zone_modifier.zone_modifier" n="zoneModifier_muEvent_Blight_CommonArea" s="359121">
+  <U n="cleanup_loot">
+    <L n="actions">
+      <V t="modify_lot_items">
+        <U n="modify_lot_items">
+          <U n="actions">
+            <L n="modifications">
+              <U>
+                <V n="action" t="set_state">
+                  <U n="set_state">
+                    <T n="action_value">343786<!--ObjectStateValue: gardening_muEvent_Blight_Planter_Off--></T>
+                  </U>
+                </V>
+                <L n="tests">
+                  <L>
+                    <V t="object_definition">
+                      <U n="object_definition">
+                        <V n="item" t="tagged_item">
+                          <U n="tagged_item">
+                            <L n="tag_set">
+                              <E>Func_PlanterBox</E>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <V n="action" t="set_state">
+                  <U n="set_state">
+                    <T n="action_value">343787<!--ObjectStateValue: gardening_muEvent_Blight_On_Recover--></T>
+                  </U>
+                </V>
+                <L n="tests">
+                  <L>
+                    <V t="object_definition">
+                      <U n="object_definition">
+                        <V n="item" t="tagged_item">
+                          <U n="tagged_item">
+                            <L n="tag_set">
+                              <E>Func_GardeningSkillPlant</E>
+                              <E>Func_GiantCrops_Plant</E>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">339730<!--ObjectStateValue: gardening_muEvent_Blight_On--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T n="hide_screen_slam">True</T>
+  <U n="on_add_loot">
+    <L n="actions">
+      <V t="modify_lot_items">
+        <U n="modify_lot_items">
+          <U n="actions">
+            <L n="modifications">
+              <U>
+                <V n="action" t="set_state">
+                  <U n="set_state">
+                    <T n="action_value">343785<!--ObjectStateValue: gardening_muEvent_Blight_Planter_On--></T>
+                  </U>
+                </V>
+                <V n="max_num_modification" t="enabled" />
+                <L n="tests">
+                  <L>
+                    <V t="object_definition">
+                      <U n="object_definition">
+                        <V n="item" t="tagged_item">
+                          <U n="tagged_item">
+                            <L n="tag_set">
+                              <E>Func_PlanterBox</E>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                    <V t="location">
+                      <U n="location">
+                        <U n="location_tests">
+                          <V n="in_common_area" t="enabled" />
+                          <V n="is_venue_type" t="enabled">
+                            <U n="enabled">
+                              <T n="venue_type">341299<!--Venue: venue_MultiUnit--></T>
+                            </U>
+                          </V>
+                        </U>
+                      </U>
+                    </V>
+                  </L>
+                  <L>
+                    <V t="object_definition">
+                      <U n="object_definition">
+                        <V n="item" t="tagged_item">
+                          <U n="tagged_item">
+                            <L n="tag_set">
+                              <E>Func_PlanterBox</E>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                    <V t="location">
+                      <U n="location">
+                        <U n="location_tests">
+                          <V n="is_venue_type" t="enabled">
+                            <U n="enabled">
+                              <T n="negate">True</T>
+                              <T n="venue_type">341299<!--Venue: venue_MultiUnit--></T>
+                            </U>
+                          </V>
+                        </U>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <V n="action" t="set_state">
+                  <U n="set_state">
+                    <T n="action_value">339730<!--ObjectStateValue: gardening_muEvent_Blight_On--></T>
+                  </U>
+                </V>
+                <V n="max_num_modification" t="enabled">
+                  <T n="enabled">3</T>
+                </V>
+                <L n="tests">
+                  <L>
+                    <V t="object_definition">
+                      <U n="object_definition">
+                        <V n="item" t="tagged_item">
+                          <U n="tagged_item">
+                            <L n="tag_set">
+                              <E>Func_GardeningSkillPlant</E>
+                              <E>Func_GiantCrops_Plant</E>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">15295<!--CommodityBasedObjectStateValue: PlantGrowth_2_Mature--></T>
+                      </U>
+                    </V>
+                    <V t="location">
+                      <U n="location">
+                        <U n="location_tests">
+                          <V n="in_common_area" t="enabled" />
+                          <V n="is_venue_type" t="enabled">
+                            <U n="enabled">
+                              <T n="venue_type">341299<!--Venue: venue_MultiUnit--></T>
+                            </U>
+                          </V>
+                        </U>
+                      </U>
+                    </V>
+                  </L>
+                  <L>
+                    <V t="object_definition">
+                      <U n="object_definition">
+                        <V n="item" t="tagged_item">
+                          <U n="tagged_item">
+                            <L n="tag_set">
+                              <E>Func_GardeningSkillPlant</E>
+                              <E>Func_GiantCrops_Plant</E>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">77615<!--CommodityBasedObjectStateValue: PlantGrowth_3_Blossoming--></T>
+                      </U>
+                    </V>
+                    <V t="location">
+                      <U n="location">
+                        <U n="location_tests">
+                          <V n="in_common_area" t="enabled" />
+                          <V n="is_venue_type" t="enabled">
+                            <U n="enabled">
+                              <T n="venue_type">341299<!--Venue: venue_MultiUnit--></T>
+                            </U>
+                          </V>
+                        </U>
+                      </U>
+                    </V>
+                  </L>
+                  <L>
+                    <V t="object_definition">
+                      <U n="object_definition">
+                        <V n="item" t="tagged_item">
+                          <U n="tagged_item">
+                            <L n="tag_set">
+                              <E>Func_GardeningSkillPlant</E>
+                              <E>Func_GiantCrops_Plant</E>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">15294<!--CommodityBasedObjectStateValue: PlantGrowth_1_Seedling--></T>
+                      </U>
+                    </V>
+                    <V t="location">
+                      <U n="location">
+                        <U n="location_tests">
+                          <V n="in_common_area" t="enabled" />
+                          <V n="is_venue_type" t="enabled">
+                            <U n="enabled">
+                              <T n="venue_type">341299<!--Venue: venue_MultiUnit--></T>
+                            </U>
+                          </V>
+                        </U>
+                      </U>
+                    </V>
+                  </L>
+                  <L>
+                    <V t="object_definition">
+                      <U n="object_definition">
+                        <V n="item" t="tagged_item">
+                          <U n="tagged_item">
+                            <L n="tag_set">
+                              <E>Func_GardeningSkillPlant</E>
+                              <E>Func_GiantCrops_Plant</E>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">15295<!--CommodityBasedObjectStateValue: PlantGrowth_2_Mature--></T>
+                      </U>
+                    </V>
+                    <V t="location">
+                      <U n="location">
+                        <U n="location_tests">
+                          <V n="is_venue_type" t="enabled">
+                            <U n="enabled">
+                              <T n="negate">True</T>
+                              <T n="venue_type">341299<!--Venue: venue_MultiUnit--></T>
+                            </U>
+                          </V>
+                        </U>
+                      </U>
+                    </V>
+                  </L>
+                  <L>
+                    <V t="object_definition">
+                      <U n="object_definition">
+                        <V n="item" t="tagged_item">
+                          <U n="tagged_item">
+                            <L n="tag_set">
+                              <E>Func_GardeningSkillPlant</E>
+                              <E>Func_GiantCrops_Plant</E>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">77615<!--CommodityBasedObjectStateValue: PlantGrowth_3_Blossoming--></T>
+                      </U>
+                    </V>
+                    <V t="location">
+                      <U n="location">
+                        <U n="location_tests">
+                          <V n="is_venue_type" t="enabled">
+                            <U n="enabled">
+                              <T n="negate">True</T>
+                              <T n="venue_type">341299<!--Venue: venue_MultiUnit--></T>
+                            </U>
+                          </V>
+                        </U>
+                      </U>
+                    </V>
+                  </L>
+                  <L>
+                    <V t="object_definition">
+                      <U n="object_definition">
+                        <V n="item" t="tagged_item">
+                          <U n="tagged_item">
+                            <L n="tag_set">
+                              <E>Func_GardeningSkillPlant</E>
+                              <E>Func_GiantCrops_Plant</E>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                    <V t="state">
+                      <U n="state">
+                        <T n="value">15294<!--CommodityBasedObjectStateValue: PlantGrowth_1_Seedling--></T>
+                      </U>
+                    </V>
+                    <V t="location">
+                      <U n="location">
+                        <U n="location_tests">
+                          <V n="is_venue_type" t="enabled">
+                            <U n="enabled">
+                              <T n="negate">True</T>
+                              <T n="venue_type">341299<!--Venue: venue_MultiUnit--></T>
+                            </U>
+                          </V>
+                        </U>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <V n="action" t="set_state">
+                  <U n="set_state">
+                    <T n="action_value">339730<!--ObjectStateValue: gardening_muEvent_Blight_On--></T>
+                  </U>
+                </V>
+                <L n="global_tests">
+                  <V t="object_criteria">
+                    <U n="object_criteria">
+                      <V n="desired_state_threshold" t="enabled">
+                        <U n="enabled">
+                          <E n="comparison">GREATER_OR_EQUAL</E>
+                          <T n="value">15294<!--CommodityBasedObjectStateValue: PlantGrowth_1_Seedling--></T>
+                        </U>
+                      </V>
+                      <V n="identity_test" t="tags">
+                        <U n="tags">
+                          <L n="tag_set">
+                            <E>Func_GardeningSkillPlant</E>
+                            <E>Func_GiantCrops_Plant</E>
+                          </L>
+                        </U>
+                      </V>
+                      <E n="object_location">SharedSpaceOnly</E>
+                      <T n="on_active_lot">True</T>
+                      <T n="owned">False</T>
+                      <V n="subject_specific_tests" t="all_objects">
+                        <U n="all_objects">
+                          <U n="quantity">
+                            <E n="comparison">EQUAL</E>
+                            <T n="value">0</T>
+                          </U>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+                <V n="max_num_modification" t="enabled">
+                  <T n="enabled">3</T>
+                </V>
+                <L n="tests">
+                  <L>
+                    <V t="object_definition">
+                      <U n="object_definition">
+                        <V n="item" t="tagged_item">
+                          <U n="tagged_item">
+                            <L n="tag_set">
+                              <E>Func_GardeningSkillPlant</E>
+                              <E>Func_GiantCrops_Plant</E>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                    <V t="location">
+                      <U n="location">
+                        <U n="location_tests">
+                          <V n="in_common_area" t="enabled" />
+                          <V n="is_venue_type" t="enabled">
+                            <U n="enabled">
+                              <T n="venue_type">341299<!--Venue: venue_MultiUnit--></T>
+                            </U>
+                          </V>
+                        </U>
+                      </U>
+                    </V>
+                  </L>
+                  <L>
+                    <V t="object_definition">
+                      <U n="object_definition">
+                        <V n="item" t="tagged_item">
+                          <U n="tagged_item">
+                            <L n="tag_set">
+                              <E>Func_GardeningSkillPlant</E>
+                              <E>Func_GiantCrops_Plant</E>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                    <V t="location">
+                      <U n="location">
+                        <U n="location_tests">
+                          <V n="is_venue_type" t="enabled">
+                            <U n="enabled">
+                              <T n="negate">True</T>
+                              <T n="venue_type">341299<!--Venue: venue_MultiUnit--></T>
+                            </U>
+                          </V>
+                        </U>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T n="zone_modifier_locked">True</T>
+</I>

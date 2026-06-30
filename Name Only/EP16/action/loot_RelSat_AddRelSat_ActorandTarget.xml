@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_RelSat_AddRelSat_ActorandTarget" s="362249">
+  <L n="loot_actions">
+    <V t="statistics">
+      <V n="statistics" t="relationship_set">
+        <U n="relationship_set">
+          <L n="target_participant_type">
+            <E>TargetSim</E>
+          </L>
+          <T n="track">362100<!--UnidirectionalRelationshipTrack: URT_RelSat_Main--></T>
+          <T n="value">1</T>
+        </U>
+      </V>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="relationship_set">
+        <U n="relationship_set">
+          <L n="subject">
+            <E>TargetSim</E>
+          </L>
+          <L n="target_participant_type">
+            <E>Actor</E>
+          </L>
+          <T n="track">362100<!--UnidirectionalRelationshipTrack: URT_RelSat_Main--></T>
+          <T n="value">1</T>
+        </U>
+      </V>
+    </V>
+    <V t="actions">
+      <T n="actions">377157<!--LootActions: loot_RelSat_Add_HiddenBuff_ToTo_TNS_Delay--></T>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="audio_sting" t="enabled">
+              <U n="enabled">
+                <T n="audio" p="InEP16\Audio\music\bumpers\bumper_ep16_relationship_satisfaction_begins.propx">39b2aa4a:00000000:dd3f6d8db76f805a</T>
+              </U>
+            </V>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InEP16\UI\Icons\Notifications\notification_RelationshipSatisfaction.png">2f7d0004:00000000:01ba1a5952a96639</T>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant" />
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x7030825A<!--String: "{0.SimFirstName} and {1.SimFirstName} have a strong Romantic Relationship and will now each have <b>independent</b> Romantic Satisfaction levels.\n\nHigh Romantic Satisfaction will make maintaining Romantic Relationship easier, low Romantic Satisfaction will make maintaining Romantic Relationship more difficult."--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0xBF89D497<!--String: "Romantic Satisfaction Begins"--></T>
+            </V>
+            <L n="ui_responses">
+              <U>
+                <T n="text">0xEABE5948<!--String: "View Lessons"--></T>
+                <V n="tutorial_id" t="enabled">
+                  <T n="enabled">368973<!--Tutorial: tutorial_EP16_RelSat--></T>
+                </V>
+                <E n="ui_request">SHOW_LESSONS</E>
+              </U>
+            </L>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="npc" t="enabled" />
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="audio_sting" t="enabled">
+              <U n="enabled">
+                <T n="audio" p="InEP16\Audio\music\bumpers\bumper_ep16_relationship_satisfaction_begins.propx">39b2aa4a:00000000:dd3f6d8db76f805a</T>
+              </U>
+            </V>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InEP16\UI\Icons\Notifications\notification_RelationshipSatisfaction.png">2f7d0004:00000000:01ba1a5952a96639</T>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>TargetSim</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xDC23DD5F<!--String: "{1.SimFirstName} and {0.SimFirstName} have a strong Romantic Relationship and will now each have <b>independent</b> Romantic Satisfaction levels.\n\nHigh Romantic Satisfaction will make maintaining Romantic Relationship easier, low Romantic Satisfaction will make maintaining Romantic Relationship more difficult."--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0xBF89D497<!--String: "Romantic Satisfaction Begins"--></T>
+            </V>
+            <L n="ui_responses">
+              <U>
+                <T n="text">0xEABE5948<!--String: "View Lessons"--></T>
+                <V n="tutorial_id" t="enabled">
+                  <T n="enabled">368973<!--Tutorial: tutorial_EP16_RelSat--></T>
+                </V>
+                <E n="ui_request">SHOW_LESSONS</E>
+              </U>
+            </L>
+          </U>
+        </V>
+        <E n="subject">TargetSim</E>
+        <L n="tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="npc" t="enabled" />
+                <E n="who">TargetSim</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="vfx">
+      <U n="vfx">
+        <U n="vfx">
+          <T n="effect_name">ep16_romantic_satisfaction_start</T>
+          <V n="joint_name" t="Slot">
+            <T n="Slot">b__ROOT__</T>
+          </V>
+          <T n="play_immediate">True</T>
+        </U>
+      </U>
+    </V>
+    <V t="vfx">
+      <U n="vfx">
+        <E n="subject">TargetSim</E>
+        <U n="vfx">
+          <T n="effect_name">ep16_romantic_satisfaction_start</T>
+          <V n="joint_name" t="Slot">
+            <T n="Slot">b__ROOT__</T>
+          </V>
+          <T n="play_immediate">True</T>
+        </U>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="prohibited_relationship_bits">
+            <L n="match_any">
+              <T>362102<!--RelationshipBit: relBit_RelSat_1_Actor_VeryUnsatisfiedWith_Target--></T>
+              <T>362103<!--RelationshipBit: relBit_RelSat_2_Actor_UnsatisfiedWith_Target--></T>
+              <T>362104<!--RelationshipBit: relBit_RelSat_3_Actor_NeutralWith_Target--></T>
+              <T>362105<!--RelationshipBit: relBit_RelSat_4_Actor_SatisfiedWith_Target--></T>
+              <T>362106<!--RelationshipBit: relBit_RelSat_5_Actor_VerySatisfiedWith_Target--></T>
+            </L>
+          </U>
+          <T n="track">362100<!--UnidirectionalRelationshipTrack: URT_RelSat_Main--></T>
+        </U>
+      </V>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="prohibited_relationship_bits">
+            <L n="match_any">
+              <T>362102<!--RelationshipBit: relBit_RelSat_1_Actor_VeryUnsatisfiedWith_Target--></T>
+              <T>362103<!--RelationshipBit: relBit_RelSat_2_Actor_UnsatisfiedWith_Target--></T>
+              <T>362104<!--RelationshipBit: relBit_RelSat_3_Actor_NeutralWith_Target--></T>
+              <T>362105<!--RelationshipBit: relBit_RelSat_4_Actor_SatisfiedWith_Target--></T>
+              <T>362106<!--RelationshipBit: relBit_RelSat_5_Actor_VerySatisfiedWith_Target--></T>
+            </L>
+          </U>
+          <L n="subject">
+            <E>TargetSim</E>
+          </L>
+          <L n="target_sim">
+            <E>Actor</E>
+          </L>
+          <T n="track">362100<!--UnidirectionalRelationshipTrack: URT_RelSat_Main--></T>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

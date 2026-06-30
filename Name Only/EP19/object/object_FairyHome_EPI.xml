@@ -1,0 +1,485 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="GameObject" i="object" m="objects.game_object" n="object_FairyHome_EPI" s="466429">
+  <U n="_components">
+    <V n="focus" t="enabled">
+      <U n="enabled">
+        <V n="_focus_score" t="globally">
+          <U n="globally">
+            <E n="base">LOW</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V n="idle_component" t="enabled">
+      <U n="enabled">
+        <L n="idle_animation_map">
+          <U>
+            <T n="key">468068<!--ObjectStateValue: fairyHome_Values_PartyBounce_On--></T>
+            <T n="value">468216<!--ObjectAnimationElement: fairyHome_Idles_PartyOn--></T>
+          </U>
+          <U>
+            <T n="key">468069<!--ObjectStateValue: fairyHome_Values_PartyBounce_Off--></T>
+            <T n="value">468215<!--ObjectAnimationElement: fairyHome_Idles_PartyOff--></T>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V n="inventory" t="enabled">
+      <U n="enabled">
+        <T n="allow_putdown_in_inventory">False</T>
+        <V n="count_statistic" t="enabled">
+          <T n="enabled">463081<!--Statistic: statistic_FairyHome_FairyDustCount--></T>
+        </V>
+        <E n="inventory_type">FAIRY_HOME</E>
+        <T n="score_contained_objects_for_autonomy">False</T>
+        <T n="visible">False</T>
+      </U>
+    </V>
+    <V n="inventory_item" t="enabled">
+      <U n="enabled">
+        <V n="no_carry_add_to_sim_inventory_affordances" t="OVERRIDE">
+          <L n="OVERRIDE">
+            <T>10459<!--SuperInteraction: si_SwipeIntoSimInventory--></T>
+          </L>
+        </V>
+        <T n="remove_from_npc_inventory">True</T>
+        <T n="skip_carry_pose">True</T>
+        <E n="stack_scheme">DEFINITION</E>
+        <L n="valid_inventory_types">
+          <E>SIM</E>
+          <E>STORAGE_CHEST</E>
+        </L>
+      </U>
+    </V>
+    <V n="name" t="enabled">
+      <U n="enabled">
+        <V n="affordance" t="enabled">
+          <T n="enabled">445934<!--RenameImmediateInteraction: rename_Object_FairyHome--></T>
+        </V>
+        <L n="templates">
+          <U>
+            <T n="template_name">0xBF29E610<!--String: "Fairy Glen"--></T>
+          </U>
+          <U>
+            <T n="template_name">0xF3A9016C<!--String: "Daisy Nook"--></T>
+          </U>
+          <U>
+            <T n="template_name">0x6EE62E1<!--String: "Blossom Way"--></T>
+          </U>
+          <U>
+            <T n="template_name">0xB4CCFBC6<!--String: "Flowerpot Palace"--></T>
+          </U>
+          <U>
+            <T n="template_name">0x3DCCD441<!--String: "Ivy Fields"--></T>
+          </U>
+          <U>
+            <T n="template_name">0xC79F6EE7<!--String: "Mossy Hideaway"--></T>
+          </U>
+          <U>
+            <T n="template_name">0x37587FAD<!--String: "Nymph Hollow"--></T>
+          </U>
+          <U>
+            <T n="template_name">0x30D22314<!--String: "Pixie Peak"--></T>
+          </U>
+          <U>
+            <T n="template_name">0x601123ED<!--String: "Tiny Town"--></T>
+          </U>
+          <U>
+            <T n="template_name">0xA57514F<!--String: "Whimsy Woods"--></T>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V n="state" t="enabled">
+      <U n="enabled">
+        <L n="state_triggers">
+          <U>
+            <L n="at_states">
+              <T>462953<!--CommodityBasedObjectStateValue: fairyHome_Values_FairyDustAmt_None--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>444942<!--ObjectStateValue: fairyHome_Values_FairyDust_No--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>462947<!--CommodityBasedObjectStateValue: fairyHome_Values_FairyDustAmt_Low--></T>
+              <T>462948<!--CommodityBasedObjectStateValue: fairyHome_Values_FairyDustAmt_Med--></T>
+              <T>462950<!--CommodityBasedObjectStateValue: fairyHome_Values_FairyDustAmt_Lrg--></T>
+              <T>462949<!--CommodityBasedObjectStateValue: fairyHome_Values_FairyDustAmt_Max--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>444943<!--ObjectStateValue: fairyHome_Values_FairyDust_Yes--></T>
+              </L>
+            </V>
+            <E n="trigger_operation">OR</E>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>444940<!--CommodityBasedObjectStateValue: fairyHome_Values_DanceParty_No--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>466746<!--ObjectStateValue: fairyHome_Values_PartyVFX_Off--></T>
+                <T>468069<!--ObjectStateValue: fairyHome_Values_PartyBounce_Off--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>444941<!--CommodityBasedObjectStateValue: fairyHome_Values_DanceParty_Yes--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>468060<!--ObjectStateValue: fairyHome_Values_PartyVFX_On_EPI--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>468064<!--CommodityBasedObjectStateValue: fairyHome_Values_EmotionalForce_Off--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>466743<!--ObjectStateValue: fairyHome_Values_Lights_Off--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>468065<!--CommodityBasedObjectStateValue: fairyHome_Values_EmotionalForce_On--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>468061<!--ObjectStateValue: fairyHome_Values_Lights_On_EPI--></T>
+              </L>
+            </V>
+          </U>
+        </L>
+        <L n="states">
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">444942<!--ObjectStateValue: fairyHome_Values_FairyDust_No--></T>
+              </U>
+              <U>
+                <T n="key">444943<!--ObjectStateValue: fairyHome_Values_FairyDust_Yes--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">444942<!--ObjectStateValue: fairyHome_Values_FairyDust_No--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">444940<!--CommodityBasedObjectStateValue: fairyHome_Values_DanceParty_No--></T>
+              </U>
+              <U>
+                <T n="key">444941<!--CommodityBasedObjectStateValue: fairyHome_Values_DanceParty_Yes--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">444940<!--CommodityBasedObjectStateValue: fairyHome_Values_DanceParty_No--></T>
+            </V>
+            <V n="tested_states_post_load" t="enabled">
+              <U n="enabled">
+                <V n="fallback_state" t="enabled">
+                  <T n="enabled">444940<!--CommodityBasedObjectStateValue: fairyHome_Values_DanceParty_No--></T>
+                </V>
+              </U>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">455809<!--CommodityBasedObjectStateValue: fairyHome_Values_Sleeping_No--></T>
+              </U>
+              <U>
+                <T n="key">455810<!--CommodityBasedObjectStateValue: fairyHome_Values_Sleeping_Yes--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">455809<!--CommodityBasedObjectStateValue: fairyHome_Values_Sleeping_No--></T>
+            </V>
+            <V n="tested_states_post_load" t="enabled">
+              <U n="enabled">
+                <V n="fallback_state" t="enabled">
+                  <T n="enabled">455809<!--CommodityBasedObjectStateValue: fairyHome_Values_Sleeping_No--></T>
+                </V>
+              </U>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">462947<!--CommodityBasedObjectStateValue: fairyHome_Values_FairyDustAmt_Low--></T>
+              </U>
+              <U>
+                <T n="key">462948<!--CommodityBasedObjectStateValue: fairyHome_Values_FairyDustAmt_Med--></T>
+              </U>
+              <U>
+                <T n="key">462949<!--CommodityBasedObjectStateValue: fairyHome_Values_FairyDustAmt_Max--></T>
+              </U>
+              <U>
+                <T n="key">462950<!--CommodityBasedObjectStateValue: fairyHome_Values_FairyDustAmt_Lrg--></T>
+              </U>
+              <U>
+                <T n="key">462953<!--CommodityBasedObjectStateValue: fairyHome_Values_FairyDustAmt_None--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">462953<!--CommodityBasedObjectStateValue: fairyHome_Values_FairyDustAmt_None--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">466742<!--ObjectStateValue: fairyHome_Values_Lights_On--></T>
+              </U>
+              <U>
+                <T n="key">466743<!--ObjectStateValue: fairyHome_Values_Lights_Off--></T>
+              </U>
+              <U>
+                <T n="key">468061<!--ObjectStateValue: fairyHome_Values_Lights_On_EPI--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">466743<!--ObjectStateValue: fairyHome_Values_Lights_Off--></T>
+            </V>
+            <V n="tested_states_post_load" t="enabled">
+              <U n="enabled">
+                <V n="fallback_state" t="enabled">
+                  <T n="enabled">466743<!--ObjectStateValue: fairyHome_Values_Lights_Off--></T>
+                </V>
+              </U>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">466745<!--ObjectStateValue: fairyHome_Values_PartyVFX_On--></T>
+              </U>
+              <U>
+                <T n="key">466746<!--ObjectStateValue: fairyHome_Values_PartyVFX_Off--></T>
+              </U>
+              <U>
+                <T n="key">468060<!--ObjectStateValue: fairyHome_Values_PartyVFX_On_EPI--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">466746<!--ObjectStateValue: fairyHome_Values_PartyVFX_Off--></T>
+            </V>
+            <V n="tested_states_post_load" t="enabled">
+              <U n="enabled">
+                <V n="fallback_state" t="enabled">
+                  <T n="enabled">466746<!--ObjectStateValue: fairyHome_Values_PartyVFX_Off--></T>
+                </V>
+              </U>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">468064<!--CommodityBasedObjectStateValue: fairyHome_Values_EmotionalForce_Off--></T>
+              </U>
+              <U>
+                <T n="key">468065<!--CommodityBasedObjectStateValue: fairyHome_Values_EmotionalForce_On--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">468064<!--CommodityBasedObjectStateValue: fairyHome_Values_EmotionalForce_Off--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">468068<!--ObjectStateValue: fairyHome_Values_PartyBounce_On--></T>
+              </U>
+              <U>
+                <T n="key">468069<!--ObjectStateValue: fairyHome_Values_PartyBounce_Off--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">468069<!--ObjectStateValue: fairyHome_Values_PartyBounce_Off--></T>
+            </V>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V n="tooltip_component" t="enabled">
+      <U n="enabled">
+        <L n="custom_tooltips">
+          <U>
+            <L n="tooltip_fields">
+              <U>
+                <E n="key">recipe_description</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0xCD046C10<!--String: "<font color="#1E81E6">Fairy Homes provide a cozy spot to rest and wash up. Fairy Dust accumulates as Fairies occupy them. Collect it for enchanting plants and gnomes!</font>"--></T>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <E n="key">recipe_name</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x4F918F8<!--String: "{0.ObjectName}"--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">Object</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <E n="key">subtext</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x8229EA32<!--String: "• Fairy Dust Amount: <font color="#1E81E6">{0.Number}</font>"--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="statistic_value">
+                          <U n="statistic_value">
+                            <E n="participant">Object</E>
+                            <T n="statistic">463081<!--Statistic: statistic_FairyHome_FairyDustCount--></T>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+            </L>
+          </U>
+        </L>
+        <T n="update_if_stat_or_buck_changes">True</T>
+      </U>
+    </V>
+  </U>
+  <L n="_super_affordances">
+    <T>13328<!--ImmediateSuperInteraction: debug_Reset--></T>
+    <T>13326<!--ImmediateSuperInteraction: debug_ObjectDestroy--></T>
+    <T>103888<!--ImmediateSuperInteraction: cheat_set_as_head--></T>
+    <T>33623<!--SuperInteraction: art_View--></T>
+    <T>444879<!--SuperInteraction: super_FairyHome_Object_Sleep--></T>
+    <T>444889<!--SuperInteraction: super_FairyHome_Object_Cleanse--></T>
+    <T>444890<!--SuperInteraction: super_FairyHome_Object_DanceParty_Fairy--></T>
+    <T>444891<!--SuperInteraction: super_FairyHome_Object_DanceParty_NonFairy--></T>
+    <T>444894<!--SuperInteraction: super_FairyHome_Object_EmotionalAppetite--></T>
+    <T>444892<!--SuperInteraction: super_FairyHome_Object_ReadBook--></T>
+    <T>444893<!--SuperInteraction: super_FairyHome_Object_ShakeForFairyDust--></T>
+    <T>445275<!--SimPickerInteraction: simPickerInteraction_FairyHome_DanceParty_Fairy--></T>
+    <T>445277<!--SuperInteraction: generic_FairyHome--></T>
+    <T>13983<!--StandSuperInteraction: sim-stand--></T>
+    <T>445038<!--SuperInteraction: super_FairyHome_Object_DanceParty_Fairy_Join--></T>
+    <T>464210<!--ImmediateSuperInteraction: debugImmediate_FairyHome_FairyDust--></T>
+    <T>472693<!--SuperInteraction: super_FairyHome_Object_AskToLeave--></T>
+  </L>
+  <L n="autonomy_modifiers">
+    <U>
+      <V n="affordance_compatibility" t="enabled">
+        <V n="enabled" t="literal">
+          <U n="literal">
+            <V n="default_inclusion" t="exclude_all">
+              <U n="exclude_all">
+                <L n="include_affordances">
+                  <T>444879<!--SuperInteraction: super_FairyHome_Object_Sleep--></T>
+                </L>
+              </U>
+            </V>
+          </U>
+        </V>
+      </V>
+      <L n="stat_use_multiplier">
+        <U>
+          <T n="key">16654<!--Commodity: motive_Energy--></T>
+          <U n="value">
+            <E n="apply_direction">INCREASE</E>
+            <T n="multiplier">1.02</T>
+          </U>
+        </U>
+      </L>
+    </U>
+    <U>
+      <V n="affordance_compatibility" t="enabled">
+        <V n="enabled" t="literal">
+          <U n="literal">
+            <V n="default_inclusion" t="exclude_all">
+              <U n="exclude_all">
+                <L n="include_affordances">
+                  <T>444889<!--SuperInteraction: super_FairyHome_Object_Cleanse--></T>
+                </L>
+              </U>
+            </V>
+          </U>
+        </V>
+      </V>
+      <L n="stat_use_multiplier">
+        <U>
+          <T n="key">16657<!--Commodity: motive_Hygiene--></T>
+          <U n="value">
+            <E n="apply_direction">INCREASE</E>
+            <T n="multiplier">1.14</T>
+          </U>
+        </U>
+      </L>
+    </U>
+    <U>
+      <V n="affordance_compatibility" t="enabled">
+        <V n="enabled" t="literal">
+          <U n="literal">
+            <V n="default_inclusion" t="exclude_all">
+              <U n="exclude_all">
+                <L n="include_affordances">
+                  <T>444890<!--SuperInteraction: super_FairyHome_Object_DanceParty_Fairy--></T>
+                  <T>445038<!--SuperInteraction: super_FairyHome_Object_DanceParty_Fairy_Join--></T>
+                  <T>456138<!--SuperInteraction: super_FairyHome_Object_DanceParty_Fairy_Join_Picker--></T>
+                  <T>444891<!--SuperInteraction: super_FairyHome_Object_DanceParty_NonFairy--></T>
+                </L>
+              </U>
+            </V>
+          </U>
+        </V>
+      </V>
+      <L n="stat_use_multiplier">
+        <U>
+          <T n="key">16655<!--Commodity: motive_Fun--></T>
+          <U n="value">
+            <E n="apply_direction">INCREASE</E>
+            <T n="multiplier">1.29</T>
+          </U>
+        </U>
+      </L>
+    </U>
+  </L>
+  <T n="fire_retardant">True</T>
+  <U n="recycling_data">
+    <L n="recycling_values">
+      <U>
+        <E n="Bucks Type">RecycleBitsBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+      <U>
+        <E n="Bucks Type">RecyclePiecesBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+    </L>
+  </U>
+</I>

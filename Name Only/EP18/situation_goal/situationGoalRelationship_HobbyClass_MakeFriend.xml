@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalRelationshipChangeTargetedSim" i="situation_goal" m="situations.situation_goal_targeted_sim" n="situationGoalRelationship_HobbyClass_MakeFriend" s="398847">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T n="enabled" p="InGame\UI\Icons\Events\EventGoal_Make_a_New_Friend.png">2f7d0004:00000000:4bca8598a95e8643</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x62C70626<!--String: "Make a New Friend"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0xEFCEECB6<!--String: "Select interactions from the Friendly Category on another Sim to improve your relationship level with them."--></T>
+      </V>
+    </U>
+  </V>
+  <U n="_goal_test">
+    <U n="required_relationship_bits">
+      <L n="match_all">
+        <T>15797<!--RelationshipBit: friendship-friend--></T>
+      </L>
+    </U>
+  </U>
+  <L n="_post_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+      </U>
+    </V>
+    <V t="situation_job">
+      <U n="situation_job">
+        <L n="situation_jobs">
+          <T>397234<!--SituationJob: job_HobbyClass_ClassMember_CTYAE--></T>
+          <T>400498<!--SituationJob: job_HobbyClass_ClassMember_TYAE--></T>
+          <T>397235<!--SituationJob: job_HobbyClass_Instructor--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T n="_score">100</T>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+</I>

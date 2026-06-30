@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="VariableDistanceInteraction" i="interaction" m="interactions.variable_distance_interaction" n="variableDistanceInteraction_FairyOccult_Ability_CureAilment" s="433308">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="facing">
+            <U n="facing">
+              <T n="range">30</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="value" t="line_of_sight">
+            <U n="line_of_sight">
+              <V n="temporary_los" t="enabled">
+                <U n="enabled">
+                  <T n="max_line_of_sight_radius">20</T>
+                  <T n="override_los_component">True</T>
+                </U>
+              </V>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="value" t="posture">
+            <U n="posture">
+              <L n="posture_manifest_tuning">
+                <U>
+                  <V n="posture_type" t="enabled">
+                    <T n="enabled">15537<!--MobilePosture: posture_Stand--></T>
+                  </V>
+                </U>
+              </L>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <E n="_constraints_actor">TargetSim</E>
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>TargetSim</E>
+      </L>
+    </U>
+  </V>
+  <L n="_party_size_weight_tuning">
+    <U>
+      <T n="y">100</T>
+    </U>
+    <U>
+      <T n="x">1</T>
+      <T n="y">100</T>
+    </U>
+    <U>
+      <T n="x">2</T>
+      <T n="y">50</T>
+    </U>
+    <U>
+      <T n="x">3</T>
+      <T n="y">0</T>
+    </U>
+    <U>
+      <T n="x">4</T>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <T n="_social_group_type">436009<!--ConstraintlessGroup: constraintlessGroup_FairyOccult_Ability--></T>
+  <V n="affordance_to_push_on_target" t="push_affordance">
+    <T n="push_affordance">459833<!--SocialSuperInteraction: socialSuperInteraction_FairyOccult_Ability_Target--></T>
+  </V>
+  <T n="apply_transition_dest_params">False</T>
+  <T n="attention_cost">0</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">435467<!--AnimationElement: animations_FairyOccult_Ability_CureAilment--></T>
+      </U>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>162659<!--LootActions: loot_Commodity_Culling_GhostAdd_target--></T>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x9C09275F<!--String: "(From Being in a social group with at least 3 Sims)"--></T>
+          </V>
+          <T n="buff_type">125555<!--Buff: buff_Trait_WithMyFriends--></T>
+        </U>
+        <L n="subject">
+          <E>Actor</E>
+          <E>SocialGroupSims</E>
+          <E>TargetSim</E>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="social_group">
+              <U n="social_group">
+                <V n="threshold" t="enabled">
+                  <U n="enabled">
+                    <T n="value">3</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>424738<!--LootActions: lootActions_FairyOccult_Ability_Cost_Low--></T>
+          <T>434064<!--LootActions: lootActions_FairyOccult_Ability_RemoveAllAilments--></T>
+          <T>445423<!--LootActions: loot_NatureMeds_HealsWithPills_Fun--></T>
+          <T>445490<!--LootActions: loot_Aspiration_FairyStories_LightPixie_FunGain--></T>
+          <T>445929<!--LootActions: loot_Sentiment_AddSentiment_Adoring_HealingHelper--></T>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>444656<!--LootActions: loot_EP19World_MagicCoastalBroadcaster_Start--></T>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>433746<!--LootActions: lootActions_FairyOccult_Ability_ProximityCheck_Positive--></T>
+        </L>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+    <V t="notification">
+      <U n="notification">
+        <V n="dialog" t="single">
+          <V n="single" t="literal">
+            <U n="literal">
+              <V n="icon" t="enabled">
+                <V n="enabled" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>TargetSim</E>
+                    </L>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x3AB0901F<!--String: "{1.SimFirstName} has been Cured of {1.SimPronounPossessiveDependent} Ailment."--></T>
+              </V>
+            </U>
+          </V>
+        </V>
+        <E n="recipient_subject">Actor</E>
+      </U>
+    </V>
+  </L>
+  <V n="basic_reserve_object" t="disabled" />
+  <T n="category">424680<!--PieMenuCategory: pieMenuCategory_FairyOccult--></T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xC1F92814<!--String: "Cure Ailment"--></T>
+  <V n="display_name_overrides" t="testable">
+    <U n="testable">
+      <L n="overrides">
+        <U>
+          <V n="new_display_name" t="disabled" />
+          <T n="new_pie_menu_category">447588<!--PieMenuCategory: pieMenuCategory_NaturopathicCareer_Guidance--></T>
+          <L n="test">
+            <L>
+              <V t="situation_goal_test">
+                <U n="situation_goal_test">
+                  <L n="situation_goals">
+                    <T>440131<!--SituationGoalRanInteractionOnTargetedSim: career_Naturopath_GiveCure--></T>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <V n="idle_animation" t="enabled">
+    <U n="enabled">
+      <T n="factory">11570<!--AnimationElement: Listen_Listen_Looping_basic--></T>
+    </U>
+  </V>
+  <T n="ignore_group_socials">False</T>
+  <L n="interaction_category_tags">
+    <E>Interaction_SocialSuper</E>
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+    <E>Interaction_SocialAll</E>
+    <E>Interaction_Social_Contagious</E>
+  </L>
+  <T n="invite_in_after_interaction">True</T>
+  <U n="listen_animation">
+    <T n="factory">11570<!--AnimationElement: Listen_Listen_Looping_basic--></T>
+  </U>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <V n="response" t="enabled">
+          <V n="enabled" t="individual">
+            <U n="individual">
+              <L n="animations">
+                <U>
+                  <E n="target">TargetSim</E>
+                  <U n="animation">
+                    <T n="factory">435481<!--AnimationElement: animations_FairyOccult_Ability_Response_CureAilment--></T>
+                  </U>
+                </U>
+              </L>
+            </U>
+          </V>
+        </V>
+      </U>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T p="InGame\UI\Icons\PieMenu\SpecialInteractions\specialinteraction_consumeemotionalenergy_piemenu.png" n="key">2f7d0004:00000000:063ecf9a6c7efd31</T>
+      </U>
+    </V>
+  </V>
+  <T n="pie_menu_priority">15</T>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <T n="relationship_scoring">True</T>
+  <E n="scoring_priority">NORMAL</E>
+  <V n="sim_affinity_posture_scoring_data" t="enabled">
+    <U n="enabled">
+      <L n="my_scoring">
+        <U>
+          <V n="affinity_strategy" t="relationship_based" />
+          <T n="negate_tag">True</T>
+          <E n="running_interaction_tag">Sleeping</E>
+        </U>
+        <U>
+          <V n="affinity_strategy" t="avoid" />
+          <E n="running_interaction_tag">Very_Loud</E>
+        </U>
+      </L>
+      <L n="my_tags">
+        <E>Loud</E>
+        <E>Chat</E>
+      </L>
+    </U>
+  </V>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="include_all">
+        <U n="include_all">
+          <L n="exclude_affordances">
+            <T>271032<!--SuperInteraction: socialSuperInteraction_CarryPickUp_Infant--></T>
+            <T>134423<!--SuperInteraction: socialSuperInteraction_CarryPickUp--></T>
+            <T>132162<!--SuperInteraction: socialSuperInteraction_CarryPickUp_Pet--></T>
+            <T>132170<!--HoldObject: carry_HoldSim--></T>
+            <T>271209<!--HoldObject: carry_HoldSim_Back--></T>
+            <T>271090<!--SuperInteraction: socialSuperInteraction_CarryPickUp_Infant_Back--></T>
+            <T>288662<!--SuperInteraction: socialSuperInteraction_CarryPickUp_Infant_Handoff--></T>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <E n="target_type">TARGET</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">TargetSim</E>
+      </U>
+    </V>
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="region">
+      <U n="region">
+        <V n="blacklist" t="enabled">
+          <L n="enabled">
+            <T>231104<!--Region: region_Destination_Batuu--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+    <V t="bucks_perks_test">
+      <U n="bucks_perks_test">
+        <T n="bucks_perk">437333<!--BucksPerk: fairyPerks_CureAilment--></T>
+      </U>
+    </V>
+    <V t="identity" />
+    <V t="buff">
+      <U n="buff">
+        <E n="subject">TargetSim</E>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x37074141<!--String: "{1.SimFirstName} has no Ailments."--></T>
+        </V>
+        <V n="whitelist" t="enabled">
+          <L n="enabled">
+            <T>432796<!--Buff: buff_Ailments_MainBuff_CreationImpulse--></T>
+            <T>427745<!--Buff: buff_Ailments_MainBuff_EmotionalVoid--></T>
+            <T>432795<!--Buff: buff_Ailments_MainBuff_GnomeMagnet--></T>
+            <T>432794<!--Buff: buff_Ailments_MainBuff_GreenieMeanie--></T>
+            <T>432793<!--Buff: buff_Ailments_MainBuff_LuckSuck--></T>
+            <T>452109<!--Buff: buff_Ailments_MainBuff_BurningPassion--></T>
+            <T>452107<!--Buff: buff_Ailments_MainBuff_SonicSinuses--></T>
+            <T>452108<!--Buff: buff_Ailments_MainBuff_SimoleonFever--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">436906<!--TestSetInstance: testSetInstance_FairyOccult_Ability_EmotionalAppetite_Cost_Low--></T>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+  <T n="visible">True</T>
+</I>

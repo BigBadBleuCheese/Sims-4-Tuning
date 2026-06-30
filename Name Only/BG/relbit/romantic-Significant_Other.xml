@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="RelationshipBit" i="relbit" m="relationships.relationship_bit" n="romantic-Significant_Other" s="15825">
+  <T n="autonomy_multiplier">1.75</T>
+  <L n="bit_added_loot_list">
+    <T>278301<!--LootActions: loot_Fear_BeingCheatedOn_TrackerRelbit_Add--></T>
+    <T>379291<!--LootActions: loot_SexualOrientation_RemoveWoohooPartners--></T>
+    <T>125983<!--LootActions: loot_DramaNode_SignificantOther--></T>
+    <T>310405<!--LootActions: loot_MoveIn_ScheduleSocialPrompt--></T>
+    <T>376541<!--LootActions: loot_RelSat_AddRelSat_FromRelationshipStart_ActorandTarget--></T>
+    <T>457560<!--LootActions: loot_Sentiment_AddSentiment_Enamored_Getaway_FoundEachOther--></T>
+    <T>478382<!--LootActions: loot_ScandalSecret_CreateSecret_romanceGrim--></T>
+    <T>478381<!--LootActions: loot_ScandalSecret_CreateSecret_romanceClown--></T>
+    <T>479130<!--LootActions: loot_ScandalSecret_CreateSecret_romanceBurglar--></T>
+    <T>488761<!--LootActions: loot_ScandalSecret_CreateSecret_romanceFatherWinter--></T>
+    <T>479119<!--LootActions: loot_ScandalSecret_BlackmailEvents_CancelBlackmail--></T>
+    <T>487757<!--LootActions: loot_ScandalSecret_CreateSecret_Dynasty_ForbiddenRomance--></T>
+    <T>254534<!--LootActions: loot_Lifestyles_Progress_SingleAndLovingIt_MaxLoss--></T>
+  </L>
+  <V n="bit_added_notification" t="enabled">
+    <U n="enabled">
+      <V n="notification" t="literal">
+        <U n="literal">
+          <V n="icon" t="enabled">
+            <V n="enabled" t="participant">
+              <U n="participant">
+                <L n="participant_type">
+                  <E>TargetSim</E>
+                </L>
+              </U>
+            </V>
+          </V>
+          <V n="secondary_icon" t="enabled">
+            <V n="enabled" t="participant">
+              <U n="participant">
+                <L n="participant_type">
+                  <E>Actor</E>
+                </L>
+              </U>
+            </V>
+          </V>
+          <V n="text" t="single">
+            <T n="single">0xA249A425<!--String: "{1.SimFirstName} just became the partner of {0.SimFirstName}."--></T>
+          </V>
+        </U>
+      </V>
+    </U>
+  </V>
+  <T n="bit_description">0xB7574DE9<!--String: "Dating, exclusivity...a relationship?"--></T>
+  <L n="bit_removed_loot_list">
+    <T>278304<!--LootActions: loot_Fear_BeingCheatedOn_TrackerRelbit_Remove--></T>
+  </L>
+  <L n="buffs_on_add_bit">
+    <U>
+      <U n="buff_ref">
+        <T n="buff_type">374159<!--Buff: buff_inRelationship--></T>
+      </U>
+    </U>
+    <U>
+      <U n="buff_ref">
+        <V n="buff_reason" t="enabled">
+          <T n="enabled">0x35984631<!--String: "(From New Relationship)"--></T>
+        </V>
+        <T n="buff_type">98092<!--Buff: buff_Relationship_NewPartner--></T>
+      </U>
+    </U>
+    <U>
+      <U n="buff_ref">
+        <T n="buff_type">250757<!--Buff: buff_Lifestyles_HungryForLove_InARelationship--></T>
+      </U>
+    </U>
+    <U>
+      <U n="buff_ref">
+        <T n="buff_type">251260<!--Buff: buff_Lifestyles_NoNeedForRomance_HasRelationship--></T>
+      </U>
+    </U>
+    <U>
+      <U n="buff_ref">
+        <T n="buff_type">280633<!--Buff: buff_NPCRelationshipAutonomy_TalkAboutMarriage--></T>
+      </U>
+    </U>
+  </L>
+  <L n="buffs_to_add_if_on_active_lot">
+    <U>
+      <T n="buff_type">75274<!--Buff: buff_RelationshipAppropriateness_Lovers--></T>
+    </U>
+  </L>
+  <L n="collection_ids">
+    <E>Romance</E>
+    <E>Romance_InRelationship</E>
+  </L>
+  <T n="depth">50</T>
+  <T n="display_name">0x79E7668E<!--String: "Partner"--></T>
+  <E n="group_id">SignificantOther</E>
+  <T p="InGame\UI\Icons\Relationships\icon_r_significantother.png" n="icon">2f7d0004:00000000:01b5ddc6bdd7373d</T>
+  <T n="priority">1</T>
+  <L n="provided_mixers">
+    <U>
+      <T n="key">13991<!--SocialSuperInteraction: sim_BeAffectionate--></T>
+      <L n="value">
+        <T>375135<!--SocialMixerInteraction: socials_Targeted_Friendly_AlwaysOn_RelationshipCounseling_Ask--></T>
+      </L>
+    </U>
+  </L>
+  <E n="relationship_culling_prevention">PLAYED_ONLY</E>
+  <T n="triggered_track">16651<!--RelationshipTrack: LTR_Romance_Main--></T>
+  <V n="whim_set" t="enabled">
+    <U n="enabled">
+      <T n="whim_set">282683<!--ObjectivelessWhimSet: whimSet_Partner--></T>
+    </U>
+  </V>
+</I>

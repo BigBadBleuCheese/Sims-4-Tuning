@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="marbles_PlayersReaction_TurnSuccess" s="348597">
+  <L n="loot_actions">
+    <V t="reaction">
+      <U n="reaction">
+        <U n="chance">
+          <T n="base_chance">25</T>
+          <L n="multipliers">
+            <U>
+              <T n="multiplier">0.5</T>
+              <L n="tests">
+                <L>
+                  <V t="game_component">
+                    <U n="game_component">
+                      <V n="number_of_players" t="enabled">
+                        <U n="enabled">
+                          <T n="lower_bound">3</T>
+                          <T n="upper_bound">4</T>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+          </L>
+        </U>
+        <V n="mixer_reaction" t="enabled">
+          <U n="enabled">
+            <T n="affordance">347840<!--SocialMixerInteraction: mixerSI_MarblesGame_PlayerReaction_Sad--></T>
+            <V n="super_affordance_override" t="enabled">
+              <T n="enabled">347801<!--SocialSuperInteraction: socialSI_MarblesGame_Normal--></T>
+            </V>
+          </U>
+        </V>
+        <E n="subject">Listeners</E>
+        <L n="tests">
+          <L>
+            <V t="user_running_interaction">
+              <U n="user_running_interaction">
+                <L n="affordances">
+                  <T>347801<!--SocialSuperInteraction: socialSI_MarblesGame_Normal--></T>
+                </L>
+                <E n="participant">Actor</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="reaction">
+      <U n="reaction">
+        <U n="chance">
+          <T n="base_chance">50</T>
+          <L n="multipliers">
+            <U>
+              <T n="multiplier">0.5</T>
+              <L n="tests">
+                <L>
+                  <V t="game_component">
+                    <U n="game_component">
+                      <V n="number_of_players" t="enabled">
+                        <U n="enabled">
+                          <T n="lower_bound">3</T>
+                          <T n="upper_bound">4</T>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+          </L>
+        </U>
+        <V n="mixer_reaction" t="enabled">
+          <U n="enabled">
+            <T n="affordance">347840<!--SocialMixerInteraction: mixerSI_MarblesGame_PlayerReaction_Sad--></T>
+            <V n="super_affordance_override" t="enabled">
+              <T n="enabled">347802<!--SocialSuperInteraction: socialSI_MarblesGame_ForKeeps--></T>
+            </V>
+          </U>
+        </V>
+        <E n="subject">Listeners</E>
+        <L n="tests">
+          <L>
+            <V t="user_running_interaction">
+              <U n="user_running_interaction">
+                <L n="affordances">
+                  <T>347802<!--SocialSuperInteraction: socialSI_MarblesGame_ForKeeps--></T>
+                </L>
+                <E n="participant">Actor</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

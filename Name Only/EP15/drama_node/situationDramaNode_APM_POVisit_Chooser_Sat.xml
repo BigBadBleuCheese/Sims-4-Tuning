@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="DialogDramaNode" i="drama_node" m="drama_scheduler.dialog_drama_node" n="situationDramaNode_APM_POVisit_Chooser_Sat" s="345260">
+  <V n="cooldown_data" t="node_cooldown">
+    <U n="node_cooldown">
+      <V n="duration" t="duration">
+        <T n="duration">168</T>
+      </V>
+    </U>
+  </V>
+  <V n="dialog_and_loot" t="loot_only">
+    <U n="loot_only">
+      <L n="on_drama_node_run_loot">
+        <T>350287<!--RandomWeightedLoot: randomWeightedLoot_APM_POVisitType--></T>
+      </L>
+    </U>
+  </V>
+  <U n="min_and_max_times">
+    <T n="lower_bound">0</T>
+    <T n="upper_bound">9</T>
+  </U>
+  <L n="pretests">
+    <L>
+      <V t="situation_running_test">
+        <U n="situation_running_test">
+          <V n="situation_blacklist" t="enabled">
+            <L n="enabled">
+              <T>344940<!--CustomStatesSituation: situation_APM_EventPO_Owned--></T>
+              <T>344939<!--CustomStatesSituation: situation_APM_EventPO_Unowned--></T>
+              <T>350931<!--CustomStatesSituation: situation_APM_GenericPO_Owned--></T>
+              <T>350932<!--CustomStatesSituation: situation_APM_GenericPO_Unowned--></T>
+              <T>345211<!--CustomStatesSituation: situation_APM_RulePO_Owned--></T>
+              <T>345212<!--CustomStatesSituation: situation_APM_RulePO_Unowned--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+      <V t="test_set_reference">
+        <T n="test_set_reference">356930<!--TestSetInstance: testSet_APM_IsTenantOnly--></T>
+      </V>
+    </L>
+  </L>
+  <L n="receiver_sim_pretests">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="species" t="specified">
+            <U n="specified">
+              <L n="species">
+                <E />
+              </L>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+  <L n="run_tests">
+    <L>
+      <V t="situation_running_test">
+        <U n="situation_running_test">
+          <V n="situation_blacklist" t="enabled">
+            <L n="enabled">
+              <T>344940<!--CustomStatesSituation: situation_APM_EventPO_Owned--></T>
+              <T>344939<!--CustomStatesSituation: situation_APM_EventPO_Unowned--></T>
+              <T>350931<!--CustomStatesSituation: situation_APM_GenericPO_Owned--></T>
+              <T>350932<!--CustomStatesSituation: situation_APM_GenericPO_Unowned--></T>
+              <T>345211<!--CustomStatesSituation: situation_APM_RulePO_Owned--></T>
+              <T>345212<!--CustomStatesSituation: situation_APM_RulePO_Unowned--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+      <V t="test_set_reference">
+        <T n="test_set_reference">356930<!--TestSetInstance: testSet_APM_IsTenantOnly--></T>
+      </V>
+    </L>
+  </L>
+  <V n="scoring" t="enabled">
+    <U n="enabled">
+      <E n="bucket">APM_POVisit</E>
+    </U>
+  </V>
+  <V n="sender_sim_info" t="no_participant" />
+  <V n="time_option" t="single_time">
+    <U n="single_time">
+      <U n="valid_time">
+        <E n="day">SATURDAY</E>
+        <T n="hour">11</T>
+      </U>
+    </U>
+  </V>
+</I>

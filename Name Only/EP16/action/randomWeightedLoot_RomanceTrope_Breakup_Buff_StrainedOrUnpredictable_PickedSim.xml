@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="RandomWeightedLoot" i="action" m="interactions.utils.loot" n="randomWeightedLoot_RomanceTrope_Breakup_Buff_StrainedOrUnpredictable_PickedSim" s="369168">
+  <L n="random_loot_actions">
+    <U>
+      <V n="action" t="buff">
+        <U n="buff">
+          <U n="buff">
+            <V n="buff_reason" t="enabled">
+              <T n="enabled">0x23042ACF<!--String: "(From Getting Dumped by Strained Partner)"--></T>
+            </V>
+            <T n="buff_type">365202<!--Buff: buff_RomanceDynamics_DistraughtOverBreakup--></T>
+          </U>
+          <E n="subject">PickedSim</E>
+          <L n="tests">
+            <L>
+              <V t="relationship">
+                <U n="relationship">
+                  <U n="required_relationship_bits">
+                    <L n="match_all">
+                      <T>362478<!--RelationshipBit: romanceTrope_strained--></T>
+                    </L>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">2</T>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="buff">
+        <U n="buff">
+          <U n="buff">
+            <V n="buff_reason" t="enabled">
+              <T n="enabled">0x23042ACF<!--String: "(From Getting Dumped by Strained Partner)"--></T>
+            </V>
+            <T n="buff_type">365203<!--Buff: buff_RomanceDynamics_BreakupStress--></T>
+          </U>
+          <E n="subject">PickedSim</E>
+          <L n="tests">
+            <L>
+              <V t="relationship">
+                <U n="relationship">
+                  <U n="required_relationship_bits">
+                    <L n="match_all">
+                      <T>362478<!--RelationshipBit: romanceTrope_strained--></T>
+                    </L>
+                  </U>
+                  <L n="subject">
+                    <E>Actor</E>
+                  </L>
+                  <L n="target_sim">
+                    <E>TargetSim</E>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <V n="action" t="buff">
+        <U n="buff">
+          <U n="buff">
+            <V n="buff_reason" t="enabled">
+              <T n="enabled">0xAE128532<!--String: "(From Getting Dumped by Unpredictable Partner)"--></T>
+            </V>
+            <T n="buff_type">365202<!--Buff: buff_RomanceDynamics_DistraughtOverBreakup--></T>
+          </U>
+          <E n="subject">PickedSim</E>
+          <L n="tests">
+            <L>
+              <V t="relationship">
+                <U n="relationship">
+                  <U n="required_relationship_bits">
+                    <L n="match_all">
+                      <T>362477<!--RelationshipBit: romanceTrope_unpredictable--></T>
+                    </L>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <V n="action" t="buff">
+        <U n="buff">
+          <U n="buff">
+            <V n="buff_reason" t="enabled">
+              <T n="enabled">0xAE128532<!--String: "(From Getting Dumped by Unpredictable Partner)"--></T>
+            </V>
+            <T n="buff_type">365203<!--Buff: buff_RomanceDynamics_BreakupStress--></T>
+          </U>
+          <E n="subject">PickedSim</E>
+          <L n="tests">
+            <L>
+              <V t="relationship">
+                <U n="relationship">
+                  <U n="required_relationship_bits">
+                    <L n="match_all">
+                      <T>362477<!--RelationshipBit: romanceTrope_unpredictable--></T>
+                    </L>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">2</T>
+      </U>
+    </U>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="required_relationship_bits">
+            <L n="match_any">
+              <T>362477<!--RelationshipBit: romanceTrope_unpredictable--></T>
+              <T>362478<!--RelationshipBit: romanceTrope_strained--></T>
+            </L>
+          </U>
+          <L n="subject">
+            <E>PickedSim</E>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

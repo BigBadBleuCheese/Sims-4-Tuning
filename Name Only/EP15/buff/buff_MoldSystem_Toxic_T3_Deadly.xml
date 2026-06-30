@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Buff" i="buff" m="buffs.buff" n="buff_MoldSystem_Toxic_T3_Deadly" s="342349">
+  <V n="appearance_modifier" t="enabled">
+    <U n="enabled">
+      <L n="appearance_modifiers">
+        <L>
+          <U>
+            <V n="modifier" t="set_cas_part">
+              <U n="set_cas_part">
+                <V n="appearance_modifier_tag" t="disabled" />
+                <T n="cas_part">369646</T>
+              </U>
+            </V>
+          </U>
+        </L>
+      </L>
+    </U>
+  </V>
+  <T p="InGame\Audio\Stings\sting_buff_gain.propx" n="audio_sting_on_add">39b2aa4a:00000000:8af8b916cf64c646</T>
+  <T p="InGame\Audio\Stings\sting_buff_loss.propx" n="audio_sting_on_remove">39b2aa4a:00000000:3bf33216a25546ea</T>
+  <T n="buff_description">0xFE968028<!--String: "Seriously, {0.SimFirstName}'s Moldinitis has developed so much, it almost feels <i>deadly</i>. The mold has taken over {0.SimPronounPossessiveDependent} body, but is it too late to endure and survive?"--></T>
+  <T n="buff_name">0xD2367E47<!--String: "Deadly Moldinitis"--></T>
+  <T n="icon" p="InEP15\UI\Icons\Buffs\buffs_MoldSicknessDeadly_neg.png">2f7d0004:00000000:78eeb8e83918a5b7</T>
+  <V n="interactions" t="enabled">
+    <U n="enabled">
+      <L n="interaction_items">
+        <T>344880<!--MixerInteraction: idle_Buff_MoldSystem_Toxic--></T>
+        <T>356983<!--MixerInteraction: idle_Buff_MoldSystem_Scratch--></T>
+      </L>
+    </U>
+  </V>
+  <T n="mood_type">14646<!--Mood: Mood_Uncomfortable--></T>
+  <T n="mood_weight">99</T>
+  <T n="refresh_on_add">False</T>
+  <V n="vfx" t="play_multiple_effects">
+    <U n="play_multiple_effects">
+      <L n="vfx_list">
+        <U>
+          <T n="effect_name">ep15_mold_sickness_extreme_head</T>
+          <V n="joint_name" t="Slot">
+            <T n="Slot">b__Head__</T>
+          </V>
+        </U>
+        <U>
+          <T n="effect_name">ep15_mold_sickness_extreme_torso</T>
+          <V n="joint_name" t="Slot">
+            <T n="Slot">b__Spine2__</T>
+          </V>
+        </U>
+        <U>
+          <T n="effect_name">ep15_mold_sickness_extreme_upperarm</T>
+          <V n="joint_name" t="Slot">
+            <T n="Slot">b__L_UpperArm__</T>
+          </V>
+        </U>
+        <U>
+          <T n="effect_name">ep15_mold_sickness_extreme_upperarm</T>
+          <V n="joint_name" t="Slot">
+            <T n="Slot">b__R_UpperArm__</T>
+          </V>
+        </U>
+        <U>
+          <T n="effect_name">ep15_mold_sickness_extreme_thigh</T>
+          <V n="joint_name" t="Slot">
+            <T n="Slot">b__L_Thigh__</T>
+          </V>
+        </U>
+        <U>
+          <T n="effect_name">ep15_mold_sickness_extreme_thigh</T>
+          <V n="joint_name" t="Slot">
+            <T n="Slot">b__R_Thigh__</T>
+          </V>
+        </U>
+      </L>
+    </U>
+  </V>
+  <T n="visible">True</T>
+  <V n="walkstyle" t="enabled">
+    <U n="enabled">
+      <T n="can_replace_with_short_walkstyle">False</T>
+      <E n="priority">TRAIT_GRIMREAPER</E>
+      <T p="InEP15\Locomotion\EP15_WalkSporeSickness.walkstyle" n="walkstyle">27c01d95:00000000:00000000d6815724</T>
+    </U>
+  </V>
+  <V n="walkstyle_behavior_override" t="enabled">
+    <U n="enabled">
+      <V n="run_walkstyle" t="Override">
+        <T p="InEP15\Locomotion\EP15_WalkSporeSickness.walkstyle" n="Override">27c01d95:00000000:00000000d6815724</T>
+      </V>
+      <V n="short_walkstyle" t="Override">
+        <T p="InEP15\Locomotion\EP15_WalkSporeSickness.walkstyle" n="Override">27c01d95:00000000:00000000d6815724</T>
+      </V>
+    </U>
+  </V>
+</I>

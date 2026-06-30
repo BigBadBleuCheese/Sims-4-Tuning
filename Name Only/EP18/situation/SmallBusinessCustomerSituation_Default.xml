@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SmallBusinessCustomerSituation" i="situation" m="small_business.small_business_situation" n="SmallBusinessCustomerSituation_Default" s="373363">
+  <T n="_default_job">373362<!--SituationJob: job_SmallBusinessCustomer--></T>
+  <T n="_implies_greeted_status">True</T>
+  <T n="_survives_active_household_change">False</T>
+  <T n="calculate_entry_affordance">423773<!--SuperInteraction: smallBusiness_Entry_CalculateEntry_Self--></T>
+  <U n="check_in_state">
+    <T n="allow_join_situation">False</T>
+    <U n="interaction_of_interest">
+      <L n="affordances">
+        <T>372066<!--SuperInteraction: ticketMachine_CheckIn_Autonomous--></T>
+        <T>421665<!--SuperInteraction: smallBusinessSystem_self_CheckIn--></T>
+        <T>446628<!--ImmediateSuperInteraction: immediate_SmallBusinessSystem_ActivePlayer_hidden_self_CheckIn--></T>
+        <T>446629<!--ImmediateSuperInteraction: immediate_SmallBusinessSystem_Dependents_hidden_self_CheckIn--></T>
+      </L>
+    </U>
+    <L n="job_and_role_changes">
+      <U>
+        <T n="Situation Job">373362<!--SituationJob: job_SmallBusinessCustomer--></T>
+        <T n="Role State">373358<!--RoleState: role_smallBusinessCustomer_CheckIn--></T>
+      </U>
+    </L>
+  </U>
+  <U n="check_out_state">
+    <U n="interaction_of_interest">
+      <L n="affordances">
+        <T>437006<!--SuperInteraction: ticketMachine_CheckOut_Autonomous--></T>
+        <T>374284<!--SuperInteraction: ticketMachine_CheckOut--></T>
+        <T>405622<!--SuperInteraction: smallBusinessSystem_self_CheckOut--></T>
+        <T>447483<!--ImmediateSuperInteraction: immediate_SmallBusinessSystem_Dependents_hidden_self_CheckOut--></T>
+      </L>
+    </U>
+    <L n="job_and_role_changes">
+      <U>
+        <T n="Situation Job">373362<!--SituationJob: job_SmallBusinessCustomer--></T>
+        <T n="Role State">380794<!--RoleState: role_smallBusinessCustomer_CheckOut--></T>
+      </U>
+    </L>
+    <L n="switch_next_state_tests">
+      <U>
+        <L n="test">
+          <L>
+            <V t="participant_running_interaction">
+              <U n="participant_running_interaction">
+                <L n="affordance_lists">
+                  <T>442107<!--AffordanceList: affordanceList_TattooingTable_ReceivingServicesIncludingRequest--></T>
+                  <T>447492<!--AffordanceList: affordanceList_Wellness_RecievingService--></T>
+                </L>
+                <T n="test_for_not_running">True</T>
+                <T n="test_interaction_queue">True</T>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </L>
+    <V n="time_out" t="enabled">
+      <T n="enabled">30</T>
+    </V>
+  </U>
+  <U n="consider_visit_state">
+    <T n="allow_join_situation">False</T>
+    <U n="interaction_of_interest">
+      <L n="affordances">
+        <T>372056<!--SuperInteraction: smallBusiness_Entry_Deliberate_Autonomous--></T>
+      </L>
+    </U>
+    <L n="job_and_role_changes">
+      <U>
+        <T n="Situation Job">373362<!--SituationJob: job_SmallBusinessCustomer--></T>
+        <T n="Role State">373357<!--RoleState: role_smallBusinessCustomer_ConsiderVisit--></T>
+      </U>
+    </L>
+  </U>
+  <U n="customer_visit_state">
+    <T n="allow_join_situation">False</T>
+    <L n="job_and_role_changes">
+      <U>
+        <T n="Situation Job">373362<!--SituationJob: job_SmallBusinessCustomer--></T>
+        <T n="Role State">373359<!--RoleState: role_smallBusinessCustomer_BusinessVisit--></T>
+      </U>
+    </L>
+    <L n="switch_next_state_tests">
+      <U>
+        <L n="test">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <T n="apply_whitelist_on_individual_basis">False</T>
+                <L n="blacklist">
+                  <T>397402<!--Buff: buff_HobbyClass_NPCClassMember--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+          <L>
+            <V t="motive">
+              <U n="motive">
+                <L n="stats">
+                  <T>16654<!--Commodity: motive_Energy--></T>
+                  <T>218484<!--Commodity: motive_Robots_Charge--></T>
+                  <T>150238<!--Commodity: commodity_Motive_Visible_Vampire_Power--></T>
+                </L>
+                <U n="threshold">
+                  <E n="comparison">LESS_OR_EQUAL</E>
+                  <T n="value">0</T>
+                </U>
+              </U>
+            </V>
+          </L>
+        </L>
+        <T n="time_to_add">210</T>
+      </U>
+      <U>
+        <L n="test">
+          <L>
+            <V t="participant_running_interaction">
+              <U n="participant_running_interaction">
+                <L n="affordance_lists">
+                  <T>442107<!--AffordanceList: affordanceList_TattooingTable_ReceivingServicesIncludingRequest--></T>
+                  <T>447492<!--AffordanceList: affordanceList_Wellness_RecievingService--></T>
+                </L>
+                <T n="test_for_not_running">True</T>
+                <T n="test_interaction_queue">True</T>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </L>
+    <V n="time_out" t="enabled">
+      <T n="enabled">210</T>
+    </V>
+    <T n="timeout_variation">90</T>
+    <L n="triggers">
+      <U>
+        <V n="effect" t="loot">
+          <U n="loot">
+            <L n="loot_actions">
+              <T>392647<!--LootActions: loot_SmallBusiness_RelationshipScore_AddTimer--></T>
+              <T>391295<!--LootActions: loot_SmallBusiness_EnvironmentScore_AddTimer--></T>
+            </L>
+          </U>
+        </V>
+        <L n="triggers">
+          <V t="duration" />
+        </L>
+      </U>
+    </L>
+  </U>
+  <T n="duration">0</T>
+  <E n="exclusivity">CLUB_GATHERING</E>
+  <T n="leave_affordance">24309<!--NPCLeaveLotInteraction: npc_leave_lot_now_must_run--></T>
+  <U n="leave_state">
+    <T n="allow_join_situation">False</T>
+    <L n="job_and_role_changes">
+      <U>
+        <T n="Situation Job">373362<!--SituationJob: job_SmallBusinessCustomer--></T>
+        <T n="Role State">373360<!--RoleState: role_smallBusinessCustomer_Leave--></T>
+      </U>
+    </L>
+    <V n="time_out" t="enabled">
+      <T n="enabled">30</T>
+    </V>
+  </U>
+  <L n="pick_up_affordances">
+    <T>271032<!--SuperInteraction: socialSuperInteraction_CarryPickUp_Infant--></T>
+    <T>134423<!--SuperInteraction: socialSuperInteraction_CarryPickUp--></T>
+    <T>132162<!--SuperInteraction: socialSuperInteraction_CarryPickUp_Pet--></T>
+  </L>
+  <U n="put_down_state">
+    <U n="interaction_of_interest">
+      <L n="affordances">
+        <T>325508<!--PutDownSimOnRoutableSurfaceInteraction: putDownHere_CarriedSim_BackCarriedAllowed--></T>
+        <T>428970<!--GoHereSuperInteraction: terrain-gohere_carryCustomer--></T>
+        <T>325600<!--AggregateSuperInteraction: aggregateSuperInteraction_CarriedSim_PutDown_Infant--></T>
+        <T>325613<!--AggregateSuperInteraction: aggregateSuperInteraction_CarriedSim_PutDown_ToddlerPet--></T>
+        <T>325508<!--PutDownSimOnRoutableSurfaceInteraction: putDownHere_CarriedSim_BackCarriedAllowed--></T>
+      </L>
+    </U>
+    <L n="job_and_role_changes">
+      <U>
+        <T n="Situation Job">373362<!--SituationJob: job_SmallBusinessCustomer--></T>
+        <T n="Role State">396253<!--RoleState: role_smallBusinessCustomer_CarryDependent--></T>
+      </U>
+    </L>
+  </U>
+  <U n="satisfaction_activity_timer">
+    <T n="loot_action">433652<!--LootActions: loot_Buff_Add_SmallBusiness_CustomerSatisfaction_WaitTime_Add--></T>
+    <T n="timer">30</T>
+  </U>
+  <L n="satisfaction_interaction_counter_rewards">
+    <U>
+      <T n="interaction_count">1</T>
+      <T n="loot_action">392657<!--LootActions: lootActions_SmallBusiness_Customer_Satisfaction_InteractionCount_0--></T>
+    </U>
+    <U>
+      <T n="interaction_count">2</T>
+      <T n="loot_action">392658<!--LootActions: lootActions_SmallBusiness_Customer_Satisfaction_InteractionCount_1--></T>
+    </U>
+    <U>
+      <T n="interaction_count">3</T>
+      <T n="loot_action">393619<!--LootActions: lootActions_SmallBusiness_Customer_Satisfaction_InteractionCount_2--></T>
+    </U>
+    <U>
+      <T n="interaction_count">4</T>
+      <T n="loot_action">393617<!--LootActions: lootActions_SmallBusiness_Customer_Satisfaction_InteractionCount_3--></T>
+    </U>
+    <U>
+      <T n="interaction_count">5</T>
+      <T n="loot_action">393618<!--LootActions: lootActions_SmallBusiness_Customer_Satisfaction_InteractionCount_4--></T>
+    </U>
+    <U>
+      <T n="interaction_count">6</T>
+      <T n="loot_action">433865<!--LootActions: lootActions_SmallBusiness_Customer_Satisfaction_InteractionCount_5--></T>
+    </U>
+    <U>
+      <T n="interaction_count">7</T>
+      <T n="loot_action">433871<!--LootActions: lootActions_SmallBusiness_Customer_Satisfaction_InteractionCount_6--></T>
+    </U>
+    <U>
+      <T n="interaction_count">8</T>
+      <T n="loot_action">433872<!--LootActions: lootActions_SmallBusiness_Customer_Satisfaction_InteractionCount_7--></T>
+    </U>
+    <U>
+      <T n="interaction_count">9</T>
+      <T n="loot_action">433873<!--LootActions: lootActions_SmallBusiness_Customer_Satisfaction_InteractionCount_8--></T>
+    </U>
+    <U>
+      <T n="interaction_count">10</T>
+      <T n="loot_action">433874<!--LootActions: lootActions_SmallBusiness_Customer_Satisfaction_InteractionCount_9--></T>
+    </U>
+  </L>
+  <L n="satisfaction_loot">
+    <T>404923<!--LootActions: loot_Sentiment_AddSentiment_Adoring_HappyCustomer--></T>
+    <T>415592<!--LootActions: loot_SmallBusiness_Satisfaction_CustomerLeaving_CleanUp--></T>
+    <T>417231<!--LootActions: loot_SmallBusiness_Satisfaction_DependentCustomerMood--></T>
+    <T>420703<!--LootActions: loot_SmallBusiness_BelovedBrand_SatisfiedRelGain--></T>
+    <T>421394<!--LootActions: loot_SmallBusiness_Universal_CustomerLeaving_Cleanup--></T>
+    <T>426469<!--LootActions: loot_SmallBusiness_GiveRecentTargetCustomerRelbit--></T>
+  </L>
+  <L n="satisfaction_markup_ratio_per_markup_value">
+    <U>
+      <T n="markup_value">0</T>
+    </U>
+    <U>
+      <T n="markup_value">0.5</T>
+      <T n="ratio_value">1</T>
+    </U>
+    <U>
+      <T n="markup_value">0.75</T>
+      <T n="ratio_value">0.5</T>
+    </U>
+    <U>
+      <T n="markup_value">1</T>
+      <T n="ratio_value">0</T>
+    </U>
+    <U>
+      <T n="markup_value">1.5</T>
+      <T n="ratio_value">-0.6</T>
+    </U>
+    <U>
+      <T n="markup_value">2</T>
+      <T n="ratio_value">-1.5</T>
+    </U>
+  </L>
+  <L n="satisfaction_markup_ratio_per_payment_type">
+    <U>
+      <E n="payment_type">SMALL_BUSINESS_ATTENDANCE_ENTRY_FEE</E>
+      <T n="ratio_value">0.5</T>
+    </U>
+    <U>
+      <E n="payment_type">SMALL_BUSINESS_ATTENDANCE_HOURLY_FEE</E>
+      <T n="ratio_value">0.1</T>
+    </U>
+    <U>
+      <E n="payment_type">SMALL_BUSINESS_INTERACTION_FEE</E>
+      <T n="ratio_value">1</T>
+    </U>
+    <U>
+      <E n="payment_type">SMALL_BUSINESS_LIGHT_RETAIL_FEE</E>
+      <T n="ratio_value">1.5</T>
+    </U>
+  </L>
+  <L n="satisfaction_markup_ratios_rewards">
+    <U>
+      <T n="loot_action">427663<!--LootActions: lootActions_SmallBusiness_Customer_Satisfaction_Pricing_Bad--></T>
+      <T n="minimum_ratio_value">-2</T>
+    </U>
+    <U>
+      <T n="loot_action">427664<!--LootActions: lootActions_SmallBusiness_Customer_Satisfaction_Pricing_Neutral--></T>
+      <T n="minimum_ratio_value">-1</T>
+    </U>
+    <U>
+      <T n="loot_action">427665<!--LootActions: lootActions_SmallBusiness_Customer_Satisfaction_Pricing_Good--></T>
+      <T n="minimum_ratio_value">1</T>
+    </U>
+  </L>
+  <U n="say_goodbye_state">
+    <U n="interaction_of_interest">
+      <L n="affordances">
+        <T>420850<!--SuperInteraction: SmallBusiness_DependentCustomer_WaveGoodbye_CatDog--></T>
+        <T>420851<!--SuperInteraction: SmallBusiness_DependentCustomer_WaveGoodbye_Horse--></T>
+        <T>420849<!--SuperInteraction: smallBusiness_DependentCustomer_WaveGoodbye_Human--></T>
+      </L>
+    </U>
+    <L n="job_and_role_changes">
+      <U>
+        <T n="Situation Job">373362<!--SituationJob: job_SmallBusinessCustomer--></T>
+        <T n="Role State">419345<!--RoleState: role_smallBusinessCustomer_SayGoodbye--></T>
+      </U>
+    </L>
+    <V n="time_out" t="enabled">
+      <T n="enabled">30</T>
+    </V>
+  </U>
+  <V n="situation_end_time_string" t="show_end_time">
+    <T n="show_end_time">0xA3E17143<!--String: "Work day ends at {0.TimeShort}"--></T>
+  </V>
+  <L n="tags">
+    <E>Situation_SmallBusiness_Customer</E>
+  </L>
+  <T n="terrain_place">325508<!--PutDownSimOnRoutableSurfaceInteraction: putDownHere_CarriedSim_BackCarriedAllowed--></T>
+  <T n="terrain_walk_to">428970<!--GoHereSuperInteraction: terrain-gohere_carryCustomer--></T>
+  <V n="time_jump" t="allow" />
+  <T n="toddler_or_infant_fadeout">444479<!--NPCLeaveLotInteraction: toddler_NPCLeaveLot_FadeOut--></T>
+</I>

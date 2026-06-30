@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Dynasty_Heir_DeclareDialog" s="473897">
+  <L n="loot_actions">
+    <V t="sim_interaction_dialog">
+      <U n="sim_interaction_dialog">
+        <U n="dialog">
+          <V n="text" t="single">
+            <T n="single">0xA585B14C<!--String: "{0.SimFirstName}, I would like you to become my heir and lead the {1.String} Dynasty one day."--></T>
+          </V>
+          <V n="text_tokens" t="enabled">
+            <U n="enabled">
+              <L n="tokens">
+                <V t="participant_type">
+                  <U n="participant_type">
+                    <V n="objects" t="from_participant">
+                      <U n="from_participant">
+                        <E n="participant">TargetSim</E>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+                <V t="dynasty" />
+              </L>
+            </U>
+          </V>
+        </U>
+        <L n="possible_responses">
+          <U>
+            <U n="item">
+              <L n="loot">
+                <T>474318<!--LootActions: loot_Dynasty_Heir_DeclareDialog_ProudAccept--></T>
+              </L>
+              <T n="text">0x6212F8D<!--String: "I'm honored to be your heir!"--></T>
+            </U>
+          </U>
+          <U>
+            <U n="item">
+              <L n="loot">
+                <T>474319<!--LootActions: loot_Dynasty_Heir_DeclareDialog_PressuredAccept--></T>
+              </L>
+              <T n="text">0x29B91608<!--String: "I guess I can't say no..."--></T>
+            </U>
+          </U>
+          <U>
+            <U n="item">
+              <L n="loot">
+                <T>474320<!--LootActions: loot_Dynasty_Heir_DeclareDialog_Decline--></T>
+              </L>
+              <T n="text">0xB6C2963A<!--String: "I refuse! I'd rather leave!"--></T>
+            </U>
+          </U>
+        </L>
+        <E n="subject">TargetSim</E>
+        <E n="target_participant_type">Actor</E>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="npc" t="enabled">
+            <T n="enabled">False</T>
+          </V>
+          <E n="who">TargetSim</E>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

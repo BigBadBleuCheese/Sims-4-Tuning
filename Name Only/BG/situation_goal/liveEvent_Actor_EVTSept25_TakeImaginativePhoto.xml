@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalActor" i="situation_goal" m="situations.situation_goal_actor" n="liveEvent_Actor_EVTSept25_TakeImaginativePhoto" s="473476">
+  <T n="_cooldown">0</T>
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T p="InGame\UI\Icons\Headlines\Final\headline_camera.png" n="enabled">2f7d0004:00000000:56826bf5d4a6259d</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x3C9C33FD<!--String: "Take an Imaginative Photo of a Stuffed Animal While at Home"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0x4D0726D2<!--String: "Capture the essence of childhood friendship by using the Imaginative Photo interaction. This special shot will preserve the magic of the friendship.\n\nUse a camera to Take an Imaginative Photo."--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>447711<!--SituationGoalLootActions: liveEvent_GoalLoot_CompleteQuestGoal--></T>
+  </L>
+  <V n="_goal_test" t="buff_added">
+    <U n="buff_added">
+      <L n="acceptable_buffs">
+        <T>356336<!--Buff: buff_PivotalMoments_Hidden_PhotoTaken--></T>
+      </L>
+    </U>
+  </V>
+  <L n="_post_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <V n="whitelist" t="enabled">
+          <L n="enabled">
+            <T>473471<!--Buff: buff_LiveEvent_EVTSept25_Invisible_SimTookPhoto--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="_score">0</T>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+  <V n="goal_completion_notification" t="enabled">
+    <U n="enabled">
+      <V n="icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T n="key" p="InGame\UI\Icons\Headlines\Events\ImaginationEvent_EventTNS.png">2f7d0004:00000000:a7d998e23b3c9bc3</T>
+          </U>
+        </V>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0xD1C6A899<!--String: "A photo that only {0.SimFirstName} could take with {0.SimPronounPossessiveDependent} friend.\n\nIt captured the heart of this relationship—a friendship mixed with imagination!\n\nThis photo should be placed in a digital photo frame for display!"--></T>
+      </V>
+    </U>
+  </V>
+  <V n="tutorial_tip_group" t="enabled">
+    <T n="enabled">471609<!--TutorialTipGroup: tutorialTipGroup_LiveEvent_EVTSept25_TakeImaginativePhoto--></T>
+  </V>
+</I>

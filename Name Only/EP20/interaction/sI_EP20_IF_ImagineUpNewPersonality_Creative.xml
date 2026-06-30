@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="sI_EP20_IF_ImagineUpNewPersonality_Creative" s="455339">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U />
+        <U>
+          <V n="value" t="facing" />
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="time_based">
+                <U n="time_based">
+                  <T n="max_time">5</T>
+                  <T n="min_time">4</T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+      </L>
+      <V n="content" t="looping_content">
+        <U n="looping_content">
+          <U n="animation_ref">
+            <T n="factory">483892<!--AnimationElement: eP20_IF_DollObject_ImagineUp_Personality--></T>
+          </U>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="state_change">
+      <U n="state_change">
+        <V n="new_value" t="single_value">
+          <U n="single_value">
+            <T n="new_value">454014<!--ObjectStateValue: eP20_IF_Doll_Personality_Creative--></T>
+          </U>
+        </V>
+        <V n="timing" t="immediately" />
+      </U>
+    </V>
+    <V t="balloon">
+      <U n="balloon">
+        <L n="balloon_choices">
+          <U>
+            <V n="item" t="balloon_category">
+              <T n="balloon_category">485118<!--BalloonCategory: balloonCategory_EP20_IF_ImagineUp_DollBody--></T>
+            </V>
+          </U>
+        </L>
+        <T n="balloon_delay_random_offset">1</T>
+        <L n="balloon_target">
+          <E>Actor</E>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>452256<!--LootActions: loot_ChildhoodInspiration_AddSuggestedChallenge_HaveBestImaginaryFriend--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T n="category">455225<!--PieMenuCategory: pieMenuCategory_EP20_IF_ImagineUpNewPersonality--></T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x1B864242<!--String: "Creative"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <V n="display_tooltip" t="enabled">
+    <T n="enabled">0x5CF1B84E<!--String: "As an Imaginary Friend, this Doll's Creative Personality will <b>Inspire</b> {0.SimFirstName} with the <i>Imaginary Boost</i> Power! This Friend will also encourage {0.SimFirstName} to partake in artistic pursuits together."--></T>
+  </V>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="basic_extras">
+          <V t="balloon">
+            <U n="balloon">
+              <L n="balloon_choices">
+                <U>
+                  <V n="item" t="balloon_category">
+                    <T n="balloon_category">455223<!--BalloonCategory: balloonCategory_EP20_IF_ImagineUp_Competitive--></T>
+                  </V>
+                  <L n="tests">
+                    <L>
+                      <V t="state">
+                        <U n="state">
+                          <T n="value">454016<!--ObjectStateValue: eP20_IF_Doll_Personality_Competitive--></T>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+                <U>
+                  <V n="item" t="balloon_category">
+                    <T n="balloon_category">455222<!--BalloonCategory: balloonCategory_EP20_IF_ImagineUp_Creative--></T>
+                  </V>
+                  <L n="tests">
+                    <L>
+                      <V t="state">
+                        <U n="state">
+                          <T n="value">454014<!--ObjectStateValue: eP20_IF_Doll_Personality_Creative--></T>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+                <U>
+                  <V n="item" t="balloon_category">
+                    <T n="balloon_category">455221<!--BalloonCategory: balloonCategory_EP20_IF_ImagineUp_Evil--></T>
+                  </V>
+                  <L n="tests">
+                    <L>
+                      <V t="state">
+                        <U n="state">
+                          <T n="value">454013<!--ObjectStateValue: eP20_IF_Doll_Personality_Evil--></T>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+                <U>
+                  <V n="item" t="balloon_category">
+                    <T n="balloon_category">455224<!--BalloonCategory: balloonCategory_EP20_IF_ImagineUp_Goofball--></T>
+                  </V>
+                  <L n="tests">
+                    <L>
+                      <V t="state">
+                        <U n="state">
+                          <T n="value">454015<!--ObjectStateValue: eP20_IF_Doll_Personality_Goofball--></T>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+              </L>
+              <L n="balloon_target">
+                <E>Actor</E>
+              </L>
+            </U>
+          </V>
+          <V t="notification">
+            <U n="notification">
+              <V n="dialog" t="single">
+                <V n="single" t="literal">
+                  <U n="literal">
+                    <L n="dialog_options">
+                      <E>DISABLE_CLOSE_BUTTON</E>
+                    </L>
+                    <V n="icon" t="enabled">
+                      <V n="enabled" t="participant">
+                        <U n="participant">
+                          <L n="participant_type">
+                            <E>Object</E>
+                          </L>
+                        </U>
+                      </V>
+                    </V>
+                    <V n="secondary_icon" t="enabled">
+                      <V n="enabled" t="participant">
+                        <U n="participant">
+                          <L n="participant_type">
+                            <E>Actor</E>
+                          </L>
+                        </U>
+                      </V>
+                    </V>
+                    <V n="text" t="single">
+                      <T n="single">0xB3AC2C53<!--String: "{0.SimFirstName} chose a New Personality for {0.SimPronounPossessiveDependent} <i>ImagineMe!</i> Doll. From now on, this doll is <b>Creative</b>.\n\nIf this doll becomes an Imaginary Friend, the <b>Imaginary Boost!</b> interaction will cause {0.SimFirstName} to become Inspired. And that's not all! A Creative Imaginary Friend will also encourage {0.SimFirstName} to partake in artistic behavior and activities together!"--></T>
+                    </V>
+                    <V n="title" t="enabled">
+                      <T n="enabled">0x920D245F<!--String: "<i>ImagineMe!</i> Doll Personality Changed"--></T>
+                    </V>
+                  </U>
+                </V>
+              </V>
+              <V n="timing" t="at_beginning" />
+            </U>
+          </V>
+        </L>
+        <V n="response" t="enabled">
+          <V n="enabled" t="individual">
+            <U n="individual">
+              <L n="animations">
+                <U>
+                  <E n="target">Actor</E>
+                  <U n="animation">
+                    <T n="factory">11825<!--AnimationElement: Social_Responses_Happy_Chuckle--></T>
+                  </U>
+                </U>
+              </L>
+            </U>
+          </V>
+        </V>
+      </U>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T n="key" p="InGame\UI\Icons\PieMenu\Traits\trait_creative_cas_piemenu.png">2f7d0004:00000000:797d11b53ae550bd</T>
+      </U>
+    </V>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all" />
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="state">
+      <U n="state">
+        <T n="value">35297<!--ObjectStateValue: GenericOnOff_Off--></T>
+      </U>
+    </V>
+    <V t="object_ownership">
+      <U n="object_ownership">
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x73E0AEC1<!--String: "Another household owns this ImagineMe! Doll."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="state">
+      <U n="state">
+        <E n="operator">NOTEQUAL</E>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x65E31E68<!--String: "This is already the active personality."--></T>
+        </V>
+        <T n="value">454014<!--ObjectStateValue: eP20_IF_Doll_Personality_Creative--></T>
+      </U>
+    </V>
+    <V t="in_use">
+      <U n="in_use">
+        <T n="negate">True</T>
+        <L n="targets">
+          <E>Object</E>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x3A22BB1E<!--String: "ImagineMe! Doll is already in use."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>485413<!--Buff: buff_EP20_IF_Hidden_TemporaryPrevent--></T>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x63587888<!--String: "Can't do this right now."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

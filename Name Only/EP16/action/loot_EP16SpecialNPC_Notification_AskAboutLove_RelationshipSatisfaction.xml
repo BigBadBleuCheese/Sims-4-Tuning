@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_EP16SpecialNPC_Notification_AskAboutLove_RelationshipSatisfaction" s="369949">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <E n="expand_behavior">FORCE_EXPAND</E>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>TargetSim</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x89E9304F<!--String: "The problem with love is you have to do things. Doing things is hard. You might as well be a bear. Us bears just eat from the trash and sleep.\n\nAnywho, <B>Romantic Satisfaction</B> is a measure of how satisfied you and your partner feel in the relationship. If you have a romantic relationship with someone and you would like to know how they feel about you, you can <B>Ask about Romantic Satisfaction</B> in the <I>Learn More</I> category under <I>Relationship</I>. You can also <B>View Relationship</B> in there as well. So... yeah... good luck with all that non-sense."--></T>
+            </V>
+            <L n="ui_responses">
+              <U>
+                <T n="text">0xEABE5948<!--String: "View Lessons"--></T>
+                <V n="tutorial_id" t="enabled">
+                  <T n="enabled">368973<!--Tutorial: tutorial_EP16_RelSat--></T>
+                </V>
+                <E n="ui_request">SHOW_LESSONS</E>
+              </U>
+            </L>
+            <E n="visual_type">SPEECH</E>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <E n="subject">TargetSim</E>
+                <L n="whitelist_traits">
+                  <T>376258<!--Trait: trait_SpecialNPCs_EP16SpecialNPC_SammyGarcia--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <E n="expand_behavior">FORCE_EXPAND</E>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>TargetSim</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xE63B9144<!--String: "<B>Romantic Satisfaction</B> is a measure of how satisfied you and your partner feel in the relationship. If you have a romantic relationship with someone and you would like to know how they feel about you, you can <B>Ask about Romantic Satisfaction</B> in the <I>Learn More</I> category under <I>Relationship</I>. You can also <B>View Relationship</B> in there as well."--></T>
+            </V>
+            <L n="ui_responses">
+              <U>
+                <T n="text">0xEABE5948<!--String: "View Lessons"--></T>
+                <V n="tutorial_id" t="enabled">
+                  <T n="enabled">0</T>
+                </V>
+                <E n="ui_request">SHOW_LESSONS</E>
+              </U>
+            </L>
+            <E n="visual_type">SPEECH</E>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <L n="blacklist_traits">
+                  <T>376258<!--Trait: trait_SpecialNPCs_EP16SpecialNPC_SammyGarcia--></T>
+                </L>
+                <E n="subject">TargetSim</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

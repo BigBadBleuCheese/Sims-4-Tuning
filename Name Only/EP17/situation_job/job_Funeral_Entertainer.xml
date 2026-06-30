@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationJob" i="situation_job" m="situations.situation_job" n="job_Funeral_Entertainer" s="381378">
+  <T n="additional_filter_for_user_selection">99155<!--TunableSimFilter: filter_InviteHiredRole--></T>
+  <T n="can_be_hired">True</T>
+  <L n="commodities">
+    <V t="statistic_set_in_range">
+      <U n="statistic_set_in_range">
+        <T n="stat">16652<!--Commodity: motive_Bladder--></T>
+        <V n="value_type" t="int_range">
+          <U n="int_range">
+            <U n="value_range">
+              <T n="lower_bound">75</T>
+              <T n="upper_bound">100</T>
+            </U>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="statistic_set_in_range">
+      <U n="statistic_set_in_range">
+        <T n="stat">16654<!--Commodity: motive_Energy--></T>
+        <V n="value_type" t="int_range">
+          <U n="int_range">
+            <U n="value_range">
+              <T n="lower_bound">75</T>
+              <T n="upper_bound">100</T>
+            </U>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="statistic_set_in_range">
+      <U n="statistic_set_in_range">
+        <T n="stat">16655<!--Commodity: motive_Fun--></T>
+        <V n="value_type" t="int_range">
+          <U n="int_range">
+            <U n="value_range">
+              <T n="lower_bound">75</T>
+              <T n="upper_bound">100</T>
+            </U>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="statistic_set_in_range">
+      <U n="statistic_set_in_range">
+        <T n="stat">16656<!--Commodity: motive_Hunger--></T>
+        <V n="value_type" t="int_range">
+          <U n="int_range">
+            <U n="value_range">
+              <T n="lower_bound">75</T>
+              <T n="upper_bound">100</T>
+            </U>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="statistic_set_in_range">
+      <U n="statistic_set_in_range">
+        <T n="stat">16657<!--Commodity: motive_Hygiene--></T>
+        <V n="value_type" t="int_range">
+          <U n="int_range">
+            <U n="value_range">
+              <T n="lower_bound">75</T>
+              <T n="upper_bound">100</T>
+            </U>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="statistic_set_max">
+      <U n="statistic_set_max">
+        <T n="stat">16658<!--Commodity: motive_Social--></T>
+      </U>
+    </V>
+    <V t="statistic_set_max">
+      <U n="statistic_set_max">
+        <T n="stat">16695<!--Skill: statistic_Skill_AdultMajor_Bartending--></T>
+      </U>
+    </V>
+    <V t="statistic_set_max">
+      <U n="statistic_set_max">
+        <T n="stat">16713<!--Skill: statistic_Skill_AdultMajor_Violin--></T>
+      </U>
+    </V>
+    <V t="statistic_set_max">
+      <U n="statistic_set_max">
+        <T n="stat">16709<!--Skill: statistic_Skill_AdultMajor_Piano--></T>
+      </U>
+    </V>
+    <V t="statistic_set_max">
+      <U n="statistic_set_max">
+        <T n="stat">16702<!--Skill: statistic_Skill_AdultMajor_Guitar--></T>
+      </U>
+    </V>
+  </L>
+  <T n="confirm_leave_situation_for_work">True</T>
+  <E n="died_or_left_action">REPLACE_THEM</E>
+  <T n="display_name">0xCE66C329<!--String: "Entertainer"--></T>
+  <L n="emotional_setup">
+    <U>
+      <T n="single_sim_loot_actions">39237<!--WeightedSingleSimLootActions: lootAction_Service_NPC_EmotionSetup--></T>
+    </U>
+  </L>
+  <T n="filter">74300<!--TunableSimFilter: filter_Entertainer_PlayerFacing--></T>
+  <T n="goal_scoring">10</T>
+  <T n="hire_cost">250</T>
+  <T n="icon" p="InGame\UI\Icons\Events\EventRoles\EventRole_Entertainer.png">2f7d0004:00000000:b18e67b26c741185</T>
+  <V n="job_uniform" t="uniform_specified">
+    <U n="uniform_specified">
+      <E n="outfit_change_priority">High</E>
+      <E n="outfit_change_reason">Situation</E>
+      <V n="situation_outfit_generators" t="enabled">
+        <L n="enabled">
+          <U>
+            <T n="generator">402425<!--Outfit: outfit_uniform_funerals--></T>
+            <L n="tests">
+              <L>
+                <V t="situation_guest_attire_test">
+                  <U n="situation_guest_attire_test">
+                    <V n="attire_selection" t="style_picked" />
+                    <T n="situation">381372<!--CustomStateFuneralSituation: Situation_Funeral--></T>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <V n="copy_category_override" t="enabled">
+              <E n="enabled">FORMAL</E>
+            </V>
+            <T n="generator">414259<!--Outfit: outfit_uniform_funerals_formal--></T>
+            <L n="tests">
+              <L>
+                <V t="situation_guest_attire_test">
+                  <U n="situation_guest_attire_test">
+                    <V n="attire_selection" t="style_picked" />
+                    <T n="negate">True</T>
+                    <T n="situation">381372<!--CustomStateFuneralSituation: Situation_Funeral--></T>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </V>
+    </U>
+  </V>
+  <L n="location_based_filter_terms" />
+  <E n="no_show_action">REPLACE_THEM</E>
+  <T n="participating_npcs_should_ignore_work">True</T>
+  <T n="sim_auto_invite_use_common_blacklists_on_instanced_sims">True</T>
+  <U n="sim_count">
+    <T n="lower_bound">0</T>
+  </U>
+  <L n="tags">
+    <E>Role_Entertainer</E>
+  </L>
+  <T n="tooltip_name">0xCE66C329<!--String: "Entertainer"--></T>
+  <U n="tooltip_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type" />
+    </L>
+  </U>
+  <T n="user_facing_sim_headline_display_override">True</T>
+  <L n="zone_modifier_based_filter_terms" />
+</I>

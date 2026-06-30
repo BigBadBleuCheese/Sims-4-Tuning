@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="lootActions_SmallBusinessPerks_StorePheromone_StartSituation" s="411668">
+  <L n="loot_actions">
+    <V t="create_situation">
+      <U n="create_situation">
+        <U n="create_situation">
+          <T n="invite_actor">False</T>
+          <T n="invite_picked_sims">False</T>
+          <T n="invite_target_sim">False</T>
+          <T n="situation">411643<!--MovingObjectsSituation: situation_SmallBusinessPerks_StorePheromone_Active--></T>
+          <T n="user_facing">False</T>
+        </U>
+      </U>
+    </V>
+  </L>
+  <T n="run_test_first">True</T>
+  <L n="tests">
+    <L>
+      <V t="identity">
+        <U n="identity">
+          <E n="subject_b">CurrentlyOpenSmallBusinessOwner</E>
+          <T n="subjects_match">True</T>
+        </U>
+      </V>
+      <V t="trait">
+        <U n="trait">
+          <L n="whitelist_traits">
+            <T>405252<!--Trait: trait_SmallBusiness_Perks_StorePheromone--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

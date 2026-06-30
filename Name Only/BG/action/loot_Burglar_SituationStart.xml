@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Burglar_SituationStart" s="438804">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">438794<!--Buff: buff_Burglar_Hidden_SituationActive--></T>
+        </U>
+        <E n="subject">AllInstancedActiveHouseholdSims</E>
+      </U>
+    </V>
+    <V t="state_change">
+      <U n="state_change">
+        <T n="state_value">442726<!--ObjectStateValue: burglarAlarm_Situation_Active--></T>
+        <V n="subject" t="all_objects_with_tag">
+          <E n="all_objects_with_tag">Func_BurglarAlarm</E>
+        </V>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">422832<!--Buff: buff_Burglar_Hidden_SpottedBurglar--></T>
+        </U>
+        <E n="subject">AllInstancedSims</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="situation_job_test">
+              <U n="situation_job_test">
+                <L n="situation_jobs">
+                  <T>421826<!--SituationJob: job_Police--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff_removal">
+      <U n="buff_removal">
+        <L n="buffs_to_remove">
+          <T>423147<!--Buff: buff_Burglar_Hidden_ReactionCooldown_Long--></T>
+          <T>423145<!--Buff: buff_Burglar_Hidden_ReactionCooldown_Short--></T>
+          <T>426972<!--Buff: buff_Burglar_Hidden_StopPanic--></T>
+        </L>
+        <E n="subject">AllInstancedSims</E>
+      </U>
+    </V>
+  </L>
+</I>

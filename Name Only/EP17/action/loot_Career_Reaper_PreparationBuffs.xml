@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Career_Reaper_PreparationBuffs" s="400286">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0xB8C96744<!--String: "(From Preparing to Reap)"--></T>
+          </V>
+          <T n="buff_type">400285<!--Buff: buff_Career_Reaper_ReapingBoosts_High--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>400284<!--Buff: buff_Career_Reaper_ReapingBoosts_Mid--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0xB8C96744<!--String: "(From Preparing to Reap)"--></T>
+          </V>
+          <T n="buff_type">400284<!--Buff: buff_Career_Reaper_ReapingBoosts_Mid--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <L n="blacklist">
+                  <T>400285<!--Buff: buff_Career_Reaper_ReapingBoosts_High--></T>
+                </L>
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>400283<!--Buff: buff_Career_Reaper_ReapingBoosts_Low--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0xB8C96744<!--String: "(From Preparing to Reap)"--></T>
+          </V>
+          <T n="buff_type">400283<!--Buff: buff_Career_Reaper_ReapingBoosts_Low--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <L n="blacklist">
+                  <T>400284<!--Buff: buff_Career_Reaper_ReapingBoosts_Mid--></T>
+                  <T>400285<!--Buff: buff_Career_Reaper_ReapingBoosts_High--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

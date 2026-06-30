@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Objective" i="objective" m="event_testing.objective_tuning" n="objectives_MidlifeCrisis_DesiretoCreate_8" s="317764">
+  <L n="completion_loot">
+    <T>314282<!--LootActions: loot_MidlifeCrisis_ObjectiveComplete--></T>
+  </L>
+  <T n="display_text">0x49151618<!--String: "View Tragic Clown Painting"--></T>
+  <L n="loot_on_completion_ui_update">
+    <T>320212<!--LootActions: loot_MidlifeCrisis_AddObjective_Create--></T>
+  </L>
+  <V n="objective_completion_type" t="use_test_result" />
+  <V n="objective_test" t="ran_interaction_test">
+    <U n="ran_interaction_test">
+      <L n="affordances">
+        <T>139852<!--SuperInteraction: art_View_TragicClown--></T>
+        <T>140956<!--SuperInteraction: art_View_TragicClown_Autonomous--></T>
+      </L>
+      <T n="consider_user_cancelled_as_failure">False</T>
+      <V n="interaction_outcome" t="enabled">
+        <E n="enabled">SUCCESS</E>
+      </V>
+      <U n="target_filters">
+        <V n="object_tags" t="enabled">
+          <U n="enabled">
+            <L n="tag_set">
+              <E>Func_SadClown</E>
+            </L>
+            <E n="test_type">CONTAINS_ANY_TAG_IN_SET</E>
+          </U>
+        </V>
+      </U>
+      <E n="test_event">InteractionStart</E>
+    </U>
+  </V>
+  <T n="relative_to_unlock_moment">True</T>
+  <T n="satisfaction_points">10</T>
+  <T n="show_progress">False</T>
+  <T n="tooltip">0xFE6D6AB5<!--String: "{0.SimFirstName} wants to feeeeel something powerful! Purchase the <b>Tragic Clown</b> painting in <b>Build Mode</b> or visit the <b>Recreation Center</b> to view it there."--></T>
+</I>

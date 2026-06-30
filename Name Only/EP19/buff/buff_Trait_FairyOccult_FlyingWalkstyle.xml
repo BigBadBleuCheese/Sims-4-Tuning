@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Buff" i="buff" m="buffs.buff" n="buff_Trait_FairyOccult_FlyingWalkstyle" s="433292">
+  <T p="InGame\Audio\Stings\sting_buff_gain.propx" n="audio_sting_on_add">39b2aa4a:00000000:8af8b916cf64c646</T>
+  <T p="InGame\Audio\Stings\sting_buff_loss.propx" n="audio_sting_on_remove">39b2aa4a:00000000:3bf33216a25546ea</T>
+  <U n="game_effect_modifier">
+    <L n="_game_effect_modifiers">
+      <V t="affordance_filters">
+        <U n="affordance_filters">
+          <V n="as_actor" t="enabled">
+            <U n="enabled">
+              <V n="interaction_filters" t="enabled">
+                <U n="enabled">
+                  <V n="super_affordance_filter" t="enabled">
+                    <V n="enabled" t="by_affordance_filter">
+                      <U n="by_affordance_filter">
+                        <V n="affordance_filter" t="literal">
+                          <U n="literal">
+                            <V n="default_inclusion" t="include_all">
+                              <U n="include_all">
+                                <L n="exclude_affordances">
+                                  <T>227318<!--GoHereSuperInteraction: terrain-walkhere--></T>
+                                </L>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </V>
+                </U>
+              </V>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T p="InGame\UI\Icons\Debug\missing_image.png" n="icon">2f7d0004:00000000:30f0846c783606f9</T>
+  <U n="portal_flags_override">
+    <V n="set_flags" t="enabled">
+      <U n="enabled">
+        <L n="portal_allowance_flags">
+          <E>SimBuildLadderFairyFly</E>
+        </L>
+      </U>
+    </V>
+    <V n="unset_flags" t="enabled">
+      <U n="enabled">
+        <L n="portal_allowance_flags">
+          <E>SimBuildLadderClimb</E>
+          <E>SimBuildLadderSlide</E>
+        </L>
+      </U>
+    </V>
+  </U>
+  <T n="visible">False</T>
+  <V n="walkstyle" t="enabled">
+    <U n="enabled">
+      <E n="priority">JOG_OVERRIDE_HIGH</E>
+      <T p="InEP19\Locomotion\HoverFairy.walkstyle" n="walkstyle">27c01d95:00000000:000000002f6b652c</T>
+    </U>
+  </V>
+  <V n="walkstyle_behavior_override" t="enabled">
+    <U n="enabled">
+      <V n="run_walkstyle" t="Override">
+        <T n="Override" p="InEP19\Locomotion\FlyFairy.walkstyle">27c01d95:00000000:0000000093e985bb</T>
+      </V>
+      <V n="short_walkstyle" t="Override">
+        <T p="InEP19\Locomotion\HoverFairy.walkstyle" n="Override">27c01d95:00000000:000000002f6b652c</T>
+      </V>
+    </U>
+  </V>
+</I>

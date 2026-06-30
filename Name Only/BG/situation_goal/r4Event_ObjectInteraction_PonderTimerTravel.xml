@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalObjectInteraction" i="situation_goal" m="situations.situation_goal_object_interaction" n="r4Event_ObjectInteraction_PonderTimerTravel" s="421414">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T p="InGame\UI\Icons\Headlines\Final\headline_showerstall.png" n="enabled">2f7d0004:00000000:9e0219d1567d7494</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x5B378A3A<!--String: "Ponder Time Travel"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0xB2A762<!--String: "There has been a lot going on today. Hidden time capsules, a cryptic note, random accusations towards your neighbors of the near-impossible. That's a lot to ponder.\n\nFind a Shower, and select Ponder Time Travel. (You can also use a Bathtub or Toilet!)\n\n<i>(+25 Event Points)</i>"--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>447711<!--SituationGoalLootActions: liveEvent_GoalLoot_CompleteQuestGoal--></T>
+  </L>
+  <U n="_goal_test">
+    <L n="affordances">
+      <T>421434<!--SuperInteraction: shower_TakeShower_r4Event_PonderTimeTravel--></T>
+    </L>
+    <L n="tags">
+      <E>Interaction_UseToilet</E>
+      <E>Interaction_Bathtub</E>
+    </L>
+    <E n="test_event">InteractionComplete</E>
+  </U>
+  <L n="_post_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+      </U>
+    </V>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+  <V n="goal_completion_notification" t="enabled">
+    <U n="enabled">
+      <V n="icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T p="InGame\UI\Icons\Headlines\Final\headline_showerstall.png" n="key">2f7d0004:00000000:9e0219d1567d7494</T>
+          </U>
+        </V>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0x8464C234<!--String: "That helped put things into perspective!\n\nMaybe it's best to take some time, and continue the search for clues after regrouping."--></T>
+      </V>
+      <V n="title" t="enabled">
+        <T n="enabled">0xA8D5C232<!--String: "Post Ponder Thoughts"--></T>
+      </V>
+    </U>
+  </V>
+  <V n="tutorial_tip_group" t="disabled" />
+</I>

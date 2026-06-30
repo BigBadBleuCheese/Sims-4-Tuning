@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Papercraft_FinishedCrafting_Fail" s="476287">
+  <L n="loot_actions">
+    <V t="state_change">
+      <U n="state_change">
+        <T n="state_value">489206<!--CommodityBasedObjectStateValue: papercraft_CommodityValues_Destruction_02_Countdown--></T>
+        <V n="subject" t="participant">
+          <E n="participant">CraftingObject</E>
+        </V>
+      </U>
+    </V>
+    <V t="hidden_inventory_transfer">
+      <U n="hidden_inventory_transfer">
+        <E n="target_participant_type">CraftingObject</E>
+      </U>
+    </V>
+    <V t="create_object">
+      <U n="create_object">
+        <V n="creation_data" t="definition">
+          <U n="definition">
+            <T n="definition">482462</T>
+          </U>
+        </V>
+        <L n="initial_states">
+          <U>
+            <T n="state">15306<!--CommodityBasedObjectStateValue: Quality_Poor--></T>
+          </U>
+          <U>
+            <T n="state">476458<!--ObjectStateValue: papercraft_Values_Failed_Recent--></T>
+          </U>
+        </L>
+        <V n="location" t="inventory" />
+        <L n="tests">
+          <L>
+            <V t="object_definition_criteria">
+              <U n="object_definition_criteria">
+                <V n="identity_test" t="tags">
+                  <U n="tags">
+                    <L n="tag_set">
+                      <E>Func_Origami</E>
+                      <E>Func_PaperCelebrationCard</E>
+                      <E>Func_PaperConsolationCard</E>
+                      <E>Func_PaperFriendshipCard</E>
+                      <E>Func_PaperLoveCard</E>
+                    </L>
+                  </U>
+                </V>
+                <E n="participant">CraftingObject</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="create_object">
+      <U n="create_object">
+        <V n="creation_data" t="definition">
+          <U n="definition">
+            <T n="definition">482471</T>
+          </U>
+        </V>
+        <L n="initial_states">
+          <U>
+            <T n="state">15306<!--CommodityBasedObjectStateValue: Quality_Poor--></T>
+          </U>
+          <U>
+            <T n="state">476458<!--ObjectStateValue: papercraft_Values_Failed_Recent--></T>
+          </U>
+        </L>
+        <V n="location" t="inventory" />
+        <L n="tests">
+          <L>
+            <V t="object_definition_criteria">
+              <U n="object_definition_criteria">
+                <V n="identity_test" t="tags">
+                  <U n="tags">
+                    <L n="tag_set">
+                      <E>Func_PaperMache</E>
+                    </L>
+                  </U>
+                </V>
+                <E n="participant">CraftingObject</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="reaction">
+      <U n="reaction">
+        <V n="si_reaction" t="enabled">
+          <U n="enabled">
+            <T n="affordance">476457<!--AutonomousObjectInInventoryPickerInteraction: autonomous_Papercraft_FailTNS--></T>
+            <E n="affordance_priority">Critical</E>
+            <V n="affordance_target" t="disabled" />
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+</I>

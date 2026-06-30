@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="BlanketPicnicSituation" i="situation" m="situations.complex.blanket_picnic_situation" n="blanketPicnicSituation_RomanticBlanket_PicnicBasket" s="363229">
+  <T n="_allow_external_autonomy">True</T>
+  <E n="basket_object_tag">Func_PicnicBasket_BG</E>
+  <T n="basket_slot_name">_deco_med_1</T>
+  <T n="can_remove_sims_from_work">False</T>
+  <T n="duration">180</T>
+  <U n="eat_food_on_blanket_state">
+    <T n="allow_join_situation">True</T>
+    <L n="food_all_eaten_states">
+      <T>15108<!--CommodityBasedObjectStateValue: Consumable_Empty--></T>
+      <T>15320<!--CommodityBasedObjectStateValue: Servings_Empty--></T>
+      <T>181268<!--CommodityBasedObjectStateValue: servings_GrandEmpty--></T>
+      <T>15322<!--CommodityBasedObjectStateValue: Servings_LargeEmpty--></T>
+      <T>15326<!--CommodityBasedObjectStateValue: Servings_SmallEmpty--></T>
+      <T>39479<!--CommodityBasedObjectStateValue: FireState_Burn_Incinerate--></T>
+      <T>39478<!--CommodityBasedObjectStateValue: FireState_Burn_Incinerate_Burning--></T>
+    </L>
+    <U n="interaction_of_interest">
+      <L n="affordances">
+        <T>13433<!--SuperInteraction: generic_consume_food--></T>
+      </L>
+    </U>
+    <L n="job_and_role_changes">
+      <U>
+        <T n="Situation Job">363612<!--SituationJob: situationJob_RomanticBlanket_Picnic_Host--></T>
+        <T n="Role State">364258<!--RoleState: romanticBlanket_Picnic_Roles_Eat--></T>
+      </U>
+      <U>
+        <T n="Situation Job">363613<!--SituationJob: situationJob_RomanticBlanket_Picnic_Guest--></T>
+        <T n="Role State">364258<!--RoleState: romanticBlanket_Picnic_Roles_Eat--></T>
+      </U>
+    </L>
+    <L n="triggers">
+      <U>
+        <L n="triggers">
+          <V t="test_event">
+            <U n="test_event">
+              <V n="test" t="ran_interaction_test">
+                <U n="ran_interaction_test">
+                  <L n="affordances">
+                    <T>368955<!--SuperInteraction: romanticBlanket_Picnic_EndSituation--></T>
+                  </L>
+                </U>
+              </V>
+            </U>
+          </V>
+        </L>
+      </U>
+    </L>
+  </U>
+  <E n="food_object_tag">Food_Any</E>
+  <T n="food_slot_name">_deco_sml_1</T>
+  <U n="gather_on_blanket_state">
+    <U n="interaction_of_interest">
+      <L n="affordances">
+        <T>358477<!--SuperInteraction: romanticBlanket_sit--></T>
+        <T>359845<!--SuperInteraction: romanticBlanket_sit_kneel--></T>
+        <T>358474<!--MixerInteraction: mixer_RomanticBlanket_Sit_CrossLegged--></T>
+        <T>360922<!--MixerInteraction: mixer_RomanticBlanket_Sit_Kneel--></T>
+        <T>358476<!--SuperInteraction: generic_RomanticBlanket_Sit_CrossLegged--></T>
+        <T>360921<!--SuperInteraction: generic_RomanticBlanket_Sit_Kneel--></T>
+      </L>
+    </U>
+    <L n="job_and_role_changes">
+      <U>
+        <T n="Situation Job">363612<!--SituationJob: situationJob_RomanticBlanket_Picnic_Host--></T>
+        <T n="Role State">363615<!--RoleState: romanticBlanket_Picnic_Roles_Gather--></T>
+      </U>
+      <U>
+        <T n="Situation Job">363613<!--SituationJob: situationJob_RomanticBlanket_Picnic_Guest--></T>
+        <T n="Role State">363615<!--RoleState: romanticBlanket_Picnic_Roles_Gather--></T>
+      </U>
+    </L>
+  </U>
+  <T n="guest_job">363613<!--SituationJob: situationJob_RomanticBlanket_Picnic_Guest--></T>
+  <T n="host_job">363612<!--SituationJob: situationJob_RomanticBlanket_Picnic_Host--></T>
+  <U n="place_food_on_blanket_state">
+    <T n="allow_join_situation">True</T>
+    <U n="interaction_of_interest">
+      <L n="affordances">
+        <T>364177<!--SuperInteraction: romanticBlanket_Picnic_PlaceFood_GrilledCheese--></T>
+        <T>364384<!--SuperInteraction: romanticBlanket_Picnic_PlaceFood_PicnicBasket--></T>
+        <T>368339<!--SuperInteraction: romanticBlanket_Picnic_PlaceFood_BLT--></T>
+        <T>368336<!--SuperInteraction: romanticBlanket_Picnic_PlaceFood_ExistingSlottedFood--></T>
+        <T>368337<!--SuperInteraction: romanticBlanket_Picnic_PlaceFood_FlirtyHeartCookies--></T>
+        <T>368338<!--SuperInteraction: romanticBlanket_Picnic_PlaceFood_GardenSalad--></T>
+        <T>368335<!--SuperInteraction: romanticBlanket_Picnic_PlaceFood_Pambazo--></T>
+      </L>
+    </U>
+    <L n="job_and_role_changes">
+      <U>
+        <T n="Situation Job">363612<!--SituationJob: situationJob_RomanticBlanket_Picnic_Host--></T>
+        <T n="Role State">364178<!--RoleState: romanticBlanket_Picnic_Roles_PlaceFood_PicnicBasket--></T>
+      </U>
+    </L>
+  </U>
+  <V n="situation_end_time_string" t="show_end_time">
+    <T n="show_end_time">0xA3E17143<!--String: "Work day ends at {0.TimeShort}"--></T>
+  </V>
+</I>

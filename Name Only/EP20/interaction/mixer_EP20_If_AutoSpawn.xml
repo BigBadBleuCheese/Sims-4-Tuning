@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="MixerInteraction" i="interaction" m="interactions.base.mixer_interaction" n="mixer_EP20_If_AutoSpawn" s="462590">
+  <T n="allow_user_directed">False</T>
+  <L n="basic_extras">
+    <V t="dynamic_spawn_point">
+      <U n="dynamic_spawn_point">
+        <T n="distance_to_participant">3</T>
+        <L n="tags">
+          <E>Spawn_EP20_ImaginaryFriend</E>
+        </L>
+      </U>
+    </V>
+    <V t="create_situation">
+      <U n="create_situation">
+        <V n="create_situation" t="situation_start">
+          <U n="situation_start">
+            <V n="actor_init_job" t="specify_job">
+              <T n="specify_job">455722<!--SituationJob: jobs_EP20_IF_Creator--></T>
+            </V>
+            <T n="invite_actor">True</T>
+            <T n="invite_picked_sims">False</T>
+            <T n="invite_target_sim">False</T>
+            <T n="situation">460865<!--ImaginaryFriendSituation: situation_EP20_IF_SpawnFriend--></T>
+            <V n="situation_default_target" t="enabled" />
+            <T n="user_facing">False</T>
+          </U>
+        </V>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+  </L>
+  <V n="basic_focus" t="disable_focus" />
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Mixer</E>
+    <E>Interaction_All</E>
+  </L>
+  <U n="sub_action">
+    <T n="base_weight">2</T>
+  </U>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals" />
+  <T n="visible">False</T>
+</I>

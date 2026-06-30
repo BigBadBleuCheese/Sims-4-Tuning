@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_JobLoss_LayoffPeriod_Active" s="306069">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">315653<!--Buff: buff_JobLoss_Layoff_Expired--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="must_have_stat">True</T>
+                <T n="stat">306071<!--Commodity: commodity_JobLoss_LayoffPeriodTimer--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">EQUAL</E>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="trait">
+              <U n="trait">
+                <L n="whitelist_traits">
+                  <T>306064<!--Trait: trait_JobLoss_InLayoffPeriod--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+          <L>
+            <V t="game_option">
+              <U n="game_option">
+                <E n="gameplay_option">CAREER_LAY_OFF_ENABLED</E>
+                <T n="invert">True</T>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InGame\UI\Icons\Notifications\notification_briefcase.png">2f7d0004:00000000:90d20287d30025e9</T>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x91B3E964<!--String: "Phew! Looks like {0.SimFirstName}'s company underestimated the power of creative accounting, so the threat of layoffs has receded into the background. {0.SimFirstName}'s job is safe!"--></T>
+            </V>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>315653<!--Buff: buff_JobLoss_Layoff_Expired--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="career_loot">
+      <U n="career_loot">
+        <V n="career" t="all_careers" />
+        <U n="chance">
+          <T n="base_chance">20</T>
+          <L n="multipliers">
+            <U>
+              <T n="multiplier">1.5</T>
+              <L n="tests">
+                <L>
+                  <V t="trait">
+                    <U n="trait">
+                      <L n="whitelist_traits">
+                        <T>9599<!--Trait: trait_Lazy--></T>
+                      </L>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+            <U>
+              <T n="multiplier">2</T>
+              <L n="tests">
+                <L>
+                  <V t="buff">
+                    <U n="buff">
+                      <V n="whitelist" t="enabled">
+                        <L n="enabled">
+                          <T>306500<!--Buff: buff_JobLoss_Layoff_SlackOffBoost--></T>
+                        </L>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+            <U>
+              <T n="multiplier">0.75</T>
+              <L n="tests">
+                <L>
+                  <V t="trait">
+                    <U n="trait">
+                      <L n="whitelist_traits">
+                        <T>16823<!--Trait: trait_Ambitious--></T>
+                      </L>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+            <U>
+              <T n="multiplier">0.25</T>
+              <L n="tests">
+                <L>
+                  <V t="buff">
+                    <U n="buff">
+                      <V n="whitelist" t="enabled">
+                        <L n="enabled">
+                          <T>306501<!--Buff: buff_JobLoss_Layoff_WorkHarderBoost--></T>
+                        </L>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+          </L>
+        </U>
+        <L n="operations">
+          <V t="lay_off">
+            <U n="lay_off">
+              <T n="show_notification">False</T>
+            </U>
+          </V>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">306071<!--Commodity: commodity_JobLoss_LayoffPeriodTimer--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">GREATER</E>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="trait">
+              <U n="trait">
+                <L n="whitelist_traits">
+                  <T>306064<!--Trait: trait_JobLoss_InLayoffPeriod--></T>
+                </L>
+              </U>
+            </V>
+            <V t="game_option">
+              <U n="game_option">
+                <E n="gameplay_option">CAREER_LAY_OFF_ENABLED</E>
+              </U>
+            </V>
+          </L>
+        </L>
+        <V n="text" t="no_text" />
+      </U>
+    </V>
+    <V t="trait_remove">
+      <U n="trait_remove">
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>315653<!--Buff: buff_JobLoss_Layoff_Expired--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+        <V n="trait" t="specific_trait">
+          <U n="specific_trait">
+            <T n="specific_trait">306064<!--Trait: trait_JobLoss_InLayoffPeriod--></T>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_remove">
+        <U n="statistic_remove">
+          <T n="stat">306071<!--Commodity: commodity_JobLoss_LayoffPeriodTimer--></T>
+          <L n="subject">
+            <E>Actor</E>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="buff">
+                <U n="buff">
+                  <V n="whitelist" t="enabled">
+                    <L n="enabled">
+                      <T>315653<!--Buff: buff_JobLoss_Layoff_Expired--></T>
+                    </L>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">306066<!--Buff: buff_JobLoss_Layoff_Cooldown--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>315653<!--Buff: buff_JobLoss_Layoff_Expired--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="actions">
+      <T n="actions">318819<!--LootActions: loot_Fear_Failure_Trigger_InLayoffPeriod--></T>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="trait">
+        <U n="trait">
+          <L n="whitelist_traits">
+            <T>306064<!--Trait: trait_JobLoss_InLayoffPeriod--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

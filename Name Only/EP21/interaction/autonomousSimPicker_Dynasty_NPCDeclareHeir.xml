@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="AutonomousSimPickerSuperInteraction" i="interaction" m="interactions.base.picker_interaction" n="autonomousSimPicker_Dynasty_NPCDeclareHeir" s="477642">
+  <L n="_false_advertisements">
+    <V t="statistic_change">
+      <U n="statistic_change">
+        <T n="amount">4</T>
+        <T n="stat">16658<!--Commodity: motive_Social--></T>
+      </U>
+    </V>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <L n="_static_commodities">
+    <U>
+      <T n="static_commodity">477640<!--StaticCommodity: staticCommodity_Dynasty_HeadDramaNode--></T>
+    </U>
+  </L>
+  <L n="actor_continuation">
+    <U>
+      <T n="affordance">473887<!--SocialMixerInteraction: socialMixer_Dynasty_Internal_Titles_DeclareHeir--></T>
+      <T n="si_affordance_override">13991<!--SocialSuperInteraction: sim_BeAffectionate--></T>
+      <E n="target">PickedSim</E>
+    </U>
+  </L>
+  <T n="attention_cost">1</T>
+  <V n="basic_content" t="one_shot" />
+  <V n="content_score" t="disabled" />
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T n="include_uninstantiated_sims">False</T>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="route_start_balloon" t="enabled">
+    <U n="enabled">
+      <U n="balloon">
+        <L n="balloon_choices">
+          <U>
+            <V n="item" t="balloon_icon">
+              <U n="balloon_icon">
+                <V n="icon" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>Object</E>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </U>
+        </L>
+        <L n="balloon_target">
+          <E>Actor</E>
+        </L>
+      </U>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <V n="sim_filter" t="sim_filter_selected">
+    <T n="sim_filter_selected">497206<!--TunableSimFilter: filter_Dynasty_SameDynasty--></T>
+  </V>
+  <L n="sim_tests">
+    <L>
+      <V t="test_set_reference">
+        <T n="test_set_reference">477702<!--TestSetInstance: testSet_Dynasty_Titles_NPCHeadDeclareHeir_HeadToPickedSim--></T>
+      </V>
+    </L>
+  </L>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">ACTOR</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="identity">
+      <U n="identity">
+        <E n="subject_b">TargetSim</E>
+        <T n="subjects_match">True</T>
+      </U>
+    </V>
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled">
+          <T n="enabled">True</T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="existence">
+        <U n="existence">
+          <T n="exists">False</T>
+          <E n="participant">ActorDynastyHeir</E>
+          <T n="require_instantiatable">False</T>
+          <T n="require_instantiated">False</T>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="prohibited_relationship_bits">
+            <L n="match_any">
+              <T>466807<!--RelationshipBit: sentimentBit_Actor_BitterAt_Target_LT_Dynasty_PressuredHeir--></T>
+              <T>466623<!--RelationshipBit: sentimentBit_Actor_MotivatedBy_Target_LT_Dynasty_ProudHeir--></T>
+            </L>
+          </U>
+          <L n="subject">
+            <E>ActorDynastyHeir</E>
+          </L>
+          <L n="target_sim">
+            <E>Actor</E>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+  <T n="time_overhead">30</T>
+  <T n="visible">False</T>
+</I>

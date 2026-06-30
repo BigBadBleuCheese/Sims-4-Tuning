@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="ImmediateSuperInteraction" i="interaction" m="interactions.base.immediate_interaction" n="immediate_Eviction_EvictOnRouteFail" s="360583">
+  <V n="_saveable" t="disabled" />
+  <L n="basic_extras">
+    <V t="create_situation">
+      <U n="create_situation">
+        <V n="create_situation" t="situation_start">
+          <U n="situation_start">
+            <V n="actor_init_job" t="specify_job">
+              <T n="specify_job">346037<!--SituationJob: job_Eviction_Landlord--></T>
+            </V>
+            <T n="invite_household_sims_on_active_lot">True</T>
+            <L n="invite_participants">
+              <U>
+                <E n="participants_to_invite">TargetHouseholdMembers</E>
+                <V n="invite_to_job" t="specify_job">
+                  <L n="specify_job">
+                    <T>346020<!--SituationJob: job_Eviction_Tenant--></T>
+                  </L>
+                </V>
+              </U>
+            </L>
+            <T n="invite_picked_sims">False</T>
+            <V n="linked_sim_participant" t="enabled">
+              <E n="enabled">Actor</E>
+            </V>
+            <T n="situation">360745<!--EvictionPropertyOwnerSituation: situation_Eviction_PropertyOwner_UI--></T>
+            <V n="target_init_job" t="specify_job">
+              <T n="specify_job">346020<!--SituationJob: job_Eviction_Tenant--></T>
+            </V>
+          </U>
+        </V>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+  </L>
+  <V n="content_score" t="disabled" />
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+            <E>TODDLER</E>
+            <E>BABY</E>
+            <E>INFANT</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+  </L>
+</I>

@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="GameObject" i="object" m="objects.game_object" n="object_HorseBed" s="325308">
+  <U n="_components">
+    <V n="focus" t="enabled">
+      <U n="enabled">
+        <V n="_focus_score" t="globally">
+          <U n="globally">
+            <E n="base">LOW</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V n="inventory_item" t="enabled">
+      <U n="enabled">
+        <T n="skip_carry_pose">True</T>
+        <L n="valid_inventory_types">
+          <E>SIM</E>
+        </L>
+      </U>
+    </V>
+    <V n="retail_component" t="enabled">
+      <V n="enabled" t="reference">
+        <T n="reference">115301<!--RetailComponent: retailComponent_Default_LowAppeal--></T>
+      </V>
+    </V>
+    <V n="state" t="enabled">
+      <U n="enabled">
+        <L n="state_triggers">
+          <U>
+            <L n="at_states">
+              <T>15132<!--CommodityBasedObjectStateValue: Dirty_Clean--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>15130<!--ObjectStateValue: DirtyState_Clean--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>15133<!--CommodityBasedObjectStateValue: Dirty_Dirty--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>15131<!--ObjectStateValue: DirtyState_Dirty--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>77532<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Replace--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>39737<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Not_Burning--></T>
+              </L>
+            </V>
+          </U>
+        </L>
+        <L n="states">
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">15132<!--CommodityBasedObjectStateValue: Dirty_Clean--></T>
+              </U>
+              <U>
+                <T n="key">15133<!--CommodityBasedObjectStateValue: Dirty_Dirty--></T>
+              </U>
+              <U>
+                <T n="key">15134<!--CommodityBasedObjectStateValue: Dirty_Neutral--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">15132<!--CommodityBasedObjectStateValue: Dirty_Clean--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">101103<!--ObjectStateValue: DirtyState_Neutral--></T>
+                <U n="value">
+                  <V n="vfx_state" t="apply_new_value">
+                    <V n="apply_new_value" t="no_vfx" />
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">15130<!--ObjectStateValue: DirtyState_Clean--></T>
+                <U n="value">
+                  <V n="autonomy_modifiers" t="apply_new_value">
+                    <V n="apply_new_value" t="apply_statistic_modifiers">
+                      <U n="apply_statistic_modifiers">
+                        <L n="lot_statistic_modifiers">
+                          <U>
+                            <V n="modifier" t="basic_value">
+                              <U n="basic_value">
+                                <T n="value">0</T>
+                              </U>
+                            </V>
+                            <T n="statistic">233233<!--Commodity: commodity_EcoFootprint_Lot--></T>
+                          </U>
+                        </L>
+                      </U>
+                    </V>
+                  </V>
+                  <V n="geometry_state" t="apply_new_value" />
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_default_value" />
+                    </U>
+                  </V>
+                  <V n="vfx_state" t="apply_new_value">
+                    <V n="apply_new_value" t="no_vfx" />
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">15131<!--ObjectStateValue: DirtyState_Dirty--></T>
+                <U n="value">
+                  <V n="autonomy_modifiers" t="apply_new_value">
+                    <V n="apply_new_value" t="apply_statistic_modifiers">
+                      <U n="apply_statistic_modifiers">
+                        <L n="lot_statistic_modifiers">
+                          <U>
+                            <V n="modifier" t="basic_value">
+                              <U n="basic_value">
+                                <T n="value">0.0175</T>
+                              </U>
+                            </V>
+                            <T n="statistic">233233<!--Commodity: commodity_EcoFootprint_Lot--></T>
+                          </U>
+                        </L>
+                      </U>
+                    </V>
+                  </V>
+                  <V n="geometry_state" t="apply_new_value">
+                    <V n="apply_new_value" t="set_to_custom_value">
+                      <T n="set_to_custom_value">Dirty</T>
+                    </V>
+                  </V>
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">Dirty</T>
+                      </V>
+                    </U>
+                  </V>
+                  <V n="vfx_state" t="apply_new_value">
+                    <V n="apply_new_value" t="start_vfx">
+                      <V n="start_vfx" t="single_effect">
+                        <U n="single_effect">
+                          <T n="effect_name">ep14_horsebed_stink</T>
+                        </U>
+                      </V>
+                    </V>
+                  </V>
+                </U>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">15130<!--ObjectStateValue: DirtyState_Clean--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">235498<!--ObjectStateValue: ecoFootprint_Object_AcidRain_Inside--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">151675<!--ObjectStateValue: generic_ObjectInUse_True--></T>
+              </U>
+              <U>
+                <T n="key">151677<!--ObjectStateValue: generic_ObjectInUse_False--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">151677<!--ObjectStateValue: generic_ObjectInUse_False--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">39611<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change--></T>
+              </U>
+              <U>
+                <T n="key">39736<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Burning--></T>
+              </U>
+              <U>
+                <T n="key">39737<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Not_Burning--></T>
+              </U>
+              <U>
+                <T n="key">77532<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Replace--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">39737<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Not_Burning--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">35956<!--CommodityBasedObjectStateValue: Materialistic_Admired--></T>
+              </U>
+              <U>
+                <T n="key">35957<!--CommodityBasedObjectStateValue: Materialistic_YetToAdmire--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">35957<!--CommodityBasedObjectStateValue: Materialistic_YetToAdmire--></T>
+            </V>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V n="tooltip_component" t="enabled">
+      <U n="enabled">
+        <L n="custom_tooltips">
+          <U>
+            <L n="object_tests">
+              <L>
+                <V t="object_preference">
+                  <U n="object_preference">
+                    <V n="any_sim" t="enabled">
+                      <E n="enabled">HORSE_BED</E>
+                    </V>
+                    <T n="require">False</T>
+                  </U>
+                </V>
+              </L>
+            </L>
+            <L n="tooltip_fields">
+              <U>
+                <E n="key">recipe_name</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0xA58D3724<!--String: "Horse Bed"--></T>
+                  </V>
+                </U>
+              </U>
+            </L>
+            <E n="tooltip_style">HOVER_TIP_OBJECT_RELATIONSHIP</E>
+          </U>
+          <U>
+            <V n="display_object_preference" t="enabled">
+              <E n="enabled">HORSE_BED</E>
+            </V>
+            <L n="object_tests">
+              <L>
+                <V t="object_preference">
+                  <U n="object_preference">
+                    <V n="any_sim" t="enabled">
+                      <E n="enabled">HORSE_BED</E>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+            <L n="tooltip_fields">
+              <U>
+                <E n="key">recipe_name</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0xA58D3724<!--String: "Horse Bed"--></T>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <E n="key">subtext</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0xD59C6AAB<!--String: "Assigned to: "--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">StoredSim</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+            </L>
+            <E n="tooltip_style">HOVER_TIP_OBJECT_RELATIONSHIP</E>
+          </U>
+        </L>
+        <L n="state_value_strings">
+          <L>
+            <U>
+              <T n="state_value">15133<!--CommodityBasedObjectStateValue: Dirty_Dirty--></T>
+              <V n="text" t="single">
+                <T n="single">0x479B6295<!--String: "Status: <font color='#FF7800'>Dirty</font>"--></T>
+              </V>
+              <T n="tooltip_field_prepend">True</T>
+            </U>
+            <U>
+              <T n="state_value">15132<!--CommodityBasedObjectStateValue: Dirty_Clean--></T>
+              <V n="text" t="single">
+                <T n="single">0x2597227A<!--String: "Status: <font color='#1E81E6'>Clean</font>"--></T>
+              </V>
+              <T n="tooltip_field_prepend">True</T>
+            </U>
+            <U>
+              <T n="state_value">15134<!--CommodityBasedObjectStateValue: Dirty_Neutral--></T>
+              <V n="text" t="single">
+                <T n="single">0x3854E68B<!--String: "Status: <font color='#E0AB00'>Slightly Dirty</font>"--></T>
+              </V>
+              <T n="tooltip_field_prepend">True</T>
+            </U>
+          </L>
+        </L>
+        <L n="tooltip_tests">
+          <L>
+            <V t="state">
+              <U n="state">
+                <E n="operator">NOTEQUAL</E>
+                <T n="value">39611<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change--></T>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V n="weather_aware_component" t="enabled">
+      <U n="enabled">
+        <L n="outside_loot">
+          <U>
+            <E n="key">AnyRain</E>
+            <U n="value">
+              <L n="end_loot">
+                <T>235500<!--LootActions: loot_EcoFootprint_Object_AcidRain_End--></T>
+              </L>
+              <L n="start_loot">
+                <T>235499<!--LootActions: loot_EcoFootprint_Object_AcidRain--></T>
+              </L>
+            </U>
+          </U>
+        </L>
+      </U>
+    </V>
+  </U>
+  <L n="_super_affordances">
+    <T>13328<!--ImmediateSuperInteraction: debug_Reset--></T>
+    <T>13326<!--ImmediateSuperInteraction: debug_ObjectDestroy--></T>
+    <T>103888<!--ImmediateSuperInteraction: cheat_set_as_head--></T>
+    <T>13983<!--StandSuperInteraction: sim-stand--></T>
+    <T>120430<!--StandSuperInteraction: horse_stand--></T>
+    <T>327126<!--SuperInteraction: Generic_Horse_layDown--></T>
+    <T>13142<!--ImmediateSuperInteraction: Cheat_MakeDirty--></T>
+    <T>33960<!--ImmediateSuperInteraction: Cheat_MakeClean--></T>
+    <T>196759<!--SuperInteraction: famePerks_GoodReputation_GivingBack_DonateObject--></T>
+    <T>401385<!--SuperInteraction: ghost_Possess_MischieviousGhost--></T>
+    <T>325304<!--SimPickerInteraction: simPicker_HorseBed_AssignHorseSim--></T>
+    <T>325672<!--SuperInteraction: HorseInteractions_HorseToObject_HorseBedIdle--></T>
+    <T>325745<!--SuperInteraction: horseInteractions_Sleep_HorseBed_Nap--></T>
+    <T>325744<!--SuperInteraction: horseInteractions_Sleep_HorseBed_Sleep--></T>
+    <T>329128<!--ImmediateSuperInteraction: immediate_HorseBed_FocusAssignedHorse--></T>
+    <T>329129<!--SimPickerInteraction: horsePickerInteraction_HorseBed_CallToBed--></T>
+    <T>329131<!--SuperInteraction: horseBed_Clean--></T>
+    <T>337879<!--ImmediateSuperInteraction: immediate_HorseTransaction_Phone_BuyHorse_HorseBed--></T>
+    <T>338019<!--ImmediateSuperInteraction: immediate_HorseTransaction_Phone_AdoptHorse_HorseBed--></T>
+    <T>303830<!--PurchasePickerWithFailureOptionInteraction: purchasePickerInteraction_AnimalObjects_GoatSheep--></T>
+    <T>393854<!--SuperInteraction: ghostPowers_Abilities_Scary_SinisterPossess_Autonomous--></T>
+    <T>393658<!--SuperInteraction: ghostPowers_Abilities_Helpful_NoPossess_Instantly_Clean--></T>
+    <T>74457<!--ImmediateSuperInteraction: fire_ReplaceBurntObject--></T>
+  </L>
+  <U n="recycling_data">
+    <L n="recycling_values">
+      <U>
+        <E n="Bucks Type">RecycleBitsBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+      <U>
+        <E n="Bucks Type">RecyclePiecesBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+    </L>
+  </U>
+</I>

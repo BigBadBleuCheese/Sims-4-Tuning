@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Grief_SocialSim_Denial" s="382955">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x6E0111C8<!--String: "(From Grieving)"--></T>
+          </V>
+          <T n="buff_type">381552<!--Buff: buff_Grief_Denial_MeetLivingTarget--></T>
+        </U>
+        <U n="chance">
+          <L n="multipliers">
+            <U>
+              <T n="multiplier">0.3</T>
+              <L n="tests">
+                <L>
+                  <V t="buff">
+                    <U n="buff">
+                      <V n="whitelist" t="enabled">
+                        <L n="enabled">
+                          <T>381540<!--Buff: buff_Grief_Counselor_Success_Inspired--></T>
+                          <T>381557<!--Buff: buff_Grief_Counselor_Success_Confident--></T>
+                          <T>381564<!--Buff: buff_Grief_Coping_Positive_Confident--></T>
+                          <T>381565<!--Buff: buff_Grief_Coping_Positive_Energized--></T>
+                          <T>381567<!--Buff: buff_Grief_Coping_Positive_Happy--></T>
+                          <T>381566<!--Buff: buff_Grief_Coping_Positive_Inspired--></T>
+                        </L>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+          </L>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <L n="blacklist_trait_types">
+                  <E>GHOST</E>
+                </L>
+                <E n="subject">TargetSim</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x6E0111C8<!--String: "(From Grieving)"--></T>
+          </V>
+          <T n="buff_type">381553<!--Buff: buff_Grief_Denial_MeetGhostTarget--></T>
+        </U>
+        <U n="chance">
+          <L n="multipliers">
+            <U>
+              <T n="multiplier">0.3</T>
+              <L n="tests">
+                <L>
+                  <V t="buff">
+                    <U n="buff">
+                      <V n="whitelist" t="enabled">
+                        <L n="enabled">
+                          <T>381540<!--Buff: buff_Grief_Counselor_Success_Inspired--></T>
+                          <T>381557<!--Buff: buff_Grief_Counselor_Success_Confident--></T>
+                          <T>381564<!--Buff: buff_Grief_Coping_Positive_Confident--></T>
+                          <T>381565<!--Buff: buff_Grief_Coping_Positive_Energized--></T>
+                          <T>381567<!--Buff: buff_Grief_Coping_Positive_Happy--></T>
+                          <T>381566<!--Buff: buff_Grief_Coping_Positive_Inspired--></T>
+                        </L>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+          </L>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <E n="subject">TargetSim</E>
+                <L n="whitelist_trait_types">
+                  <E>GHOST</E>
+                </L>
+              </U>
+            </V>
+            <V t="relationship">
+              <U n="relationship">
+                <U n="required_relationship_bits">
+                  <L n="match_any">
+                    <T>381916<!--RelationshipBit: relbit_Grief_GriefTrigger--></T>
+                  </L>
+                </U>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="required_relationship_bits">
+            <L n="match_any">
+              <T>381916<!--RelationshipBit: relbit_Grief_GriefTrigger--></T>
+              <T>422961<!--RelationshipBit: relbit_Grief_GriefTrigger_BreakUp--></T>
+            </L>
+          </U>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

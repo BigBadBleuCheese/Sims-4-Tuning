@@ -1,0 +1,801 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="ZoneModifier" i="zone_modifier" m="zone_modifier.zone_modifier" n="zoneModifier_muEvent_Infestation" s="344496">
+  <U n="cleanup_loot">
+    <L n="actions">
+      <V t="modify_lot_items">
+        <U n="modify_lot_items">
+          <U n="actions">
+            <L n="modifications">
+              <U>
+                <V n="action" t="set_state">
+                  <U n="set_state">
+                    <T n="action_value">98746<!--ObjectStateValue: GenericFX_Off--></T>
+                  </U>
+                </V>
+                <L n="tests">
+                  <L>
+                    <V t="object_definition">
+                      <U n="object_definition">
+                        <V n="item" t="actual_item">
+                          <U n="actual_item">
+                            <L n="items_to_check">
+                              <T>366452</T>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T n="hide_screen_slam">True</T>
+  <U n="on_add_loot">
+    <L n="actions">
+      <V t="spawn_objects">
+        <U n="spawn_objects">
+          <U n="creation_op">
+            <V n="creation_data" t="definition">
+              <U n="definition">
+                <T n="definition">366452</T>
+              </U>
+            </V>
+            <V n="location" t="position">
+              <U n="position">
+                <T n="enclosed_room_only">True</T>
+                <V n="initial_location" t="from_lot">
+                  <U n="from_lot">
+                    <E n="lot_location_strategy">RANDOM_ANY_FLOOR</E>
+                  </U>
+                </V>
+                <T n="stay_in_connected_connectivity_group">False</T>
+              </U>
+            </V>
+            <E n="subject">Lot</E>
+          </U>
+          <V n="iterations" t="enabled">
+            <U n="enabled">
+              <T n="lower_bound">5</T>
+              <T n="upper_bound">5</T>
+            </U>
+          </V>
+          <V n="spawn_delay" t="enabled">
+            <U n="enabled">
+              <T n="lower_bound">1</T>
+            </U>
+          </V>
+          <V n="spawn_threshold" t="enabled">
+            <U n="enabled">
+              <L n="tags">
+                <E>Func_MuLE_Infestation_SpawnLimit</E>
+              </L>
+              <T n="threshold">7</T>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <U n="schedule">
+    <L n="schedule_entries">
+      <U>
+        <L n="actions">
+          <V t="literal">
+            <V n="literal" t="spawn_objects">
+              <U n="spawn_objects">
+                <U n="creation_op">
+                  <V n="creation_data" t="definition">
+                    <U n="definition">
+                      <T n="definition">366452</T>
+                    </U>
+                  </V>
+                  <V n="location" t="position">
+                    <U n="position">
+                      <T n="enclosed_room_only">True</T>
+                      <V n="initial_location" t="from_lot">
+                        <U n="from_lot">
+                          <E n="lot_location_strategy">RANDOM_ANY_FLOOR</E>
+                        </U>
+                      </V>
+                      <T n="stay_in_connected_connectivity_group">False</T>
+                    </U>
+                  </V>
+                  <E n="subject">Lot</E>
+                </U>
+                <V n="iterations" t="enabled">
+                  <U n="enabled">
+                    <T n="lower_bound">2</T>
+                    <T n="upper_bound">2</T>
+                  </U>
+                </V>
+                <V n="spawn_delay" t="enabled" />
+                <V n="spawn_threshold" t="enabled">
+                  <U n="enabled">
+                    <L n="tags">
+                      <E>Func_MuLE_Infestation_SpawnLimit</E>
+                    </L>
+                    <T n="threshold">7</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </V>
+          <V t="literal">
+            <V n="literal" t="loot">
+              <U n="loot">
+                <L n="loots">
+                  <T>345008<!--LootActions: loot_muEvent_Infestation_PeriodicGiveBuff--></T>
+                </L>
+              </U>
+            </V>
+          </V>
+        </L>
+        <U n="days_available">
+          <T n="0 SUNDAY">True</T>
+          <T n="1 MONDAY">True</T>
+          <T n="2 TUESDAY">True</T>
+          <T n="3 WEDNESDAY">True</T>
+          <T n="4 THURSDAY">True</T>
+          <T n="5 FRIDAY">True</T>
+          <T n="6 SATURDAY">True</T>
+        </U>
+        <U n="start_time">
+          <T n="hour">5</T>
+        </U>
+      </U>
+      <U>
+        <L n="actions">
+          <V t="literal">
+            <V n="literal" t="spawn_objects">
+              <U n="spawn_objects">
+                <U n="creation_op">
+                  <V n="creation_data" t="definition">
+                    <U n="definition">
+                      <T n="definition">366452</T>
+                    </U>
+                  </V>
+                  <V n="location" t="position">
+                    <U n="position">
+                      <T n="enclosed_room_only">True</T>
+                      <V n="initial_location" t="from_lot">
+                        <U n="from_lot">
+                          <E n="lot_location_strategy">RANDOM_ANY_FLOOR</E>
+                        </U>
+                      </V>
+                      <T n="stay_in_connected_connectivity_group">False</T>
+                    </U>
+                  </V>
+                  <E n="subject">Lot</E>
+                </U>
+                <V n="iterations" t="enabled">
+                  <U n="enabled">
+                    <T n="lower_bound">2</T>
+                    <T n="upper_bound">2</T>
+                  </U>
+                </V>
+                <V n="spawn_delay" t="enabled" />
+                <V n="spawn_threshold" t="enabled">
+                  <U n="enabled">
+                    <L n="tags">
+                      <E>Func_MuLE_Infestation_SpawnLimit</E>
+                    </L>
+                    <T n="threshold">7</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </V>
+          <V t="literal">
+            <V n="literal" t="loot">
+              <U n="loot">
+                <L n="loots">
+                  <T>345008<!--LootActions: loot_muEvent_Infestation_PeriodicGiveBuff--></T>
+                </L>
+              </U>
+            </V>
+          </V>
+        </L>
+        <U n="days_available">
+          <T n="0 SUNDAY">True</T>
+          <T n="1 MONDAY">True</T>
+          <T n="2 TUESDAY">True</T>
+          <T n="3 WEDNESDAY">True</T>
+          <T n="4 THURSDAY">True</T>
+          <T n="5 FRIDAY">True</T>
+          <T n="6 SATURDAY">True</T>
+        </U>
+        <U n="start_time">
+          <T n="hour">7</T>
+        </U>
+      </U>
+      <U>
+        <L n="actions">
+          <V t="literal">
+            <V n="literal" t="spawn_objects">
+              <U n="spawn_objects">
+                <U n="creation_op">
+                  <V n="creation_data" t="definition">
+                    <U n="definition">
+                      <T n="definition">366452</T>
+                    </U>
+                  </V>
+                  <V n="location" t="position">
+                    <U n="position">
+                      <T n="enclosed_room_only">True</T>
+                      <V n="initial_location" t="from_lot">
+                        <U n="from_lot">
+                          <E n="lot_location_strategy">RANDOM_ANY_FLOOR</E>
+                        </U>
+                      </V>
+                      <T n="stay_in_connected_connectivity_group">False</T>
+                    </U>
+                  </V>
+                  <E n="subject">Lot</E>
+                </U>
+                <V n="iterations" t="enabled">
+                  <U n="enabled">
+                    <T n="lower_bound">2</T>
+                    <T n="upper_bound">2</T>
+                  </U>
+                </V>
+                <V n="spawn_delay" t="enabled" />
+                <V n="spawn_threshold" t="enabled">
+                  <U n="enabled">
+                    <L n="tags">
+                      <E>Func_MuLE_Infestation_SpawnLimit</E>
+                    </L>
+                    <T n="threshold">7</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </V>
+          <V t="literal">
+            <V n="literal" t="loot">
+              <U n="loot">
+                <L n="loots">
+                  <T>345008<!--LootActions: loot_muEvent_Infestation_PeriodicGiveBuff--></T>
+                </L>
+              </U>
+            </V>
+          </V>
+        </L>
+        <U n="days_available">
+          <T n="0 SUNDAY">True</T>
+          <T n="1 MONDAY">True</T>
+          <T n="2 TUESDAY">True</T>
+          <T n="3 WEDNESDAY">True</T>
+          <T n="4 THURSDAY">True</T>
+          <T n="5 FRIDAY">True</T>
+          <T n="6 SATURDAY">True</T>
+        </U>
+      </U>
+      <U>
+        <L n="actions">
+          <V t="literal">
+            <V n="literal" t="spawn_objects">
+              <U n="spawn_objects">
+                <U n="creation_op">
+                  <V n="creation_data" t="definition">
+                    <U n="definition">
+                      <T n="definition">366452</T>
+                    </U>
+                  </V>
+                  <V n="location" t="position">
+                    <U n="position">
+                      <T n="enclosed_room_only">True</T>
+                      <V n="initial_location" t="from_lot">
+                        <U n="from_lot">
+                          <E n="lot_location_strategy">RANDOM_ANY_FLOOR</E>
+                        </U>
+                      </V>
+                      <T n="stay_in_connected_connectivity_group">False</T>
+                    </U>
+                  </V>
+                  <E n="subject">Lot</E>
+                </U>
+                <V n="iterations" t="enabled">
+                  <U n="enabled">
+                    <T n="lower_bound">2</T>
+                    <T n="upper_bound">2</T>
+                  </U>
+                </V>
+                <V n="spawn_delay" t="enabled" />
+                <V n="spawn_threshold" t="enabled">
+                  <U n="enabled">
+                    <L n="tags">
+                      <E>Func_MuLE_Infestation_SpawnLimit</E>
+                    </L>
+                    <T n="threshold">7</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </V>
+          <V t="literal">
+            <V n="literal" t="loot">
+              <U n="loot">
+                <L n="loots">
+                  <T>345008<!--LootActions: loot_muEvent_Infestation_PeriodicGiveBuff--></T>
+                </L>
+              </U>
+            </V>
+          </V>
+        </L>
+        <U n="days_available">
+          <T n="0 SUNDAY">True</T>
+          <T n="1 MONDAY">True</T>
+          <T n="2 TUESDAY">True</T>
+          <T n="3 WEDNESDAY">True</T>
+          <T n="4 THURSDAY">True</T>
+          <T n="5 FRIDAY">True</T>
+          <T n="6 SATURDAY">True</T>
+        </U>
+        <U n="start_time">
+          <T n="hour">11</T>
+        </U>
+      </U>
+      <U>
+        <L n="actions">
+          <V t="literal">
+            <V n="literal" t="spawn_objects">
+              <U n="spawn_objects">
+                <U n="creation_op">
+                  <V n="creation_data" t="definition">
+                    <U n="definition">
+                      <T n="definition">366452</T>
+                    </U>
+                  </V>
+                  <V n="location" t="position">
+                    <U n="position">
+                      <T n="enclosed_room_only">True</T>
+                      <V n="initial_location" t="from_lot">
+                        <U n="from_lot">
+                          <E n="lot_location_strategy">RANDOM_ANY_FLOOR</E>
+                        </U>
+                      </V>
+                      <T n="stay_in_connected_connectivity_group">False</T>
+                    </U>
+                  </V>
+                  <E n="subject">Lot</E>
+                </U>
+                <V n="iterations" t="enabled">
+                  <U n="enabled">
+                    <T n="lower_bound">2</T>
+                    <T n="upper_bound">2</T>
+                  </U>
+                </V>
+                <V n="spawn_delay" t="enabled" />
+                <V n="spawn_threshold" t="enabled">
+                  <U n="enabled">
+                    <L n="tags">
+                      <E>Func_MuLE_Infestation_SpawnLimit</E>
+                    </L>
+                    <T n="threshold">7</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </V>
+          <V t="literal">
+            <V n="literal" t="loot">
+              <U n="loot">
+                <L n="loots">
+                  <T>345008<!--LootActions: loot_muEvent_Infestation_PeriodicGiveBuff--></T>
+                </L>
+              </U>
+            </V>
+          </V>
+        </L>
+        <U n="days_available">
+          <T n="0 SUNDAY">True</T>
+          <T n="1 MONDAY">True</T>
+          <T n="2 TUESDAY">True</T>
+          <T n="3 WEDNESDAY">True</T>
+          <T n="4 THURSDAY">True</T>
+          <T n="5 FRIDAY">True</T>
+          <T n="6 SATURDAY">True</T>
+        </U>
+        <U n="start_time">
+          <T n="hour">13</T>
+        </U>
+      </U>
+      <U>
+        <L n="actions">
+          <V t="literal">
+            <V n="literal" t="spawn_objects">
+              <U n="spawn_objects">
+                <U n="creation_op">
+                  <V n="creation_data" t="definition">
+                    <U n="definition">
+                      <T n="definition">366452</T>
+                    </U>
+                  </V>
+                  <V n="location" t="position">
+                    <U n="position">
+                      <T n="enclosed_room_only">True</T>
+                      <V n="initial_location" t="from_lot">
+                        <U n="from_lot">
+                          <E n="lot_location_strategy">RANDOM_ANY_FLOOR</E>
+                        </U>
+                      </V>
+                      <T n="stay_in_connected_connectivity_group">False</T>
+                    </U>
+                  </V>
+                  <E n="subject">Lot</E>
+                </U>
+                <V n="iterations" t="enabled">
+                  <U n="enabled">
+                    <T n="lower_bound">2</T>
+                    <T n="upper_bound">2</T>
+                  </U>
+                </V>
+                <V n="spawn_delay" t="enabled" />
+                <V n="spawn_threshold" t="enabled">
+                  <U n="enabled">
+                    <L n="tags">
+                      <E>Func_MuLE_Infestation_SpawnLimit</E>
+                    </L>
+                    <T n="threshold">7</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </V>
+          <V t="literal">
+            <V n="literal" t="loot">
+              <U n="loot">
+                <L n="loots">
+                  <T>345008<!--LootActions: loot_muEvent_Infestation_PeriodicGiveBuff--></T>
+                </L>
+              </U>
+            </V>
+          </V>
+        </L>
+        <U n="days_available">
+          <T n="0 SUNDAY">True</T>
+          <T n="1 MONDAY">True</T>
+          <T n="2 TUESDAY">True</T>
+          <T n="3 WEDNESDAY">True</T>
+          <T n="4 THURSDAY">True</T>
+          <T n="5 FRIDAY">True</T>
+          <T n="6 SATURDAY">True</T>
+        </U>
+        <U n="start_time">
+          <T n="hour">15</T>
+        </U>
+      </U>
+      <U>
+        <L n="actions">
+          <V t="literal">
+            <V n="literal" t="spawn_objects">
+              <U n="spawn_objects">
+                <U n="creation_op">
+                  <V n="creation_data" t="definition">
+                    <U n="definition">
+                      <T n="definition">366452</T>
+                    </U>
+                  </V>
+                  <V n="location" t="position">
+                    <U n="position">
+                      <T n="enclosed_room_only">True</T>
+                      <V n="initial_location" t="from_lot">
+                        <U n="from_lot">
+                          <E n="lot_location_strategy">RANDOM_ANY_FLOOR</E>
+                        </U>
+                      </V>
+                      <T n="stay_in_connected_connectivity_group">False</T>
+                    </U>
+                  </V>
+                  <E n="subject">Lot</E>
+                </U>
+                <V n="iterations" t="enabled">
+                  <U n="enabled">
+                    <T n="lower_bound">2</T>
+                    <T n="upper_bound">2</T>
+                  </U>
+                </V>
+                <V n="spawn_delay" t="enabled" />
+                <V n="spawn_threshold" t="enabled">
+                  <U n="enabled">
+                    <L n="tags">
+                      <E>Func_MuLE_Infestation_SpawnLimit</E>
+                    </L>
+                    <T n="threshold">7</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </V>
+          <V t="literal">
+            <V n="literal" t="loot">
+              <U n="loot">
+                <L n="loots">
+                  <T>345008<!--LootActions: loot_muEvent_Infestation_PeriodicGiveBuff--></T>
+                </L>
+              </U>
+            </V>
+          </V>
+        </L>
+        <U n="days_available">
+          <T n="0 SUNDAY">True</T>
+          <T n="1 MONDAY">True</T>
+          <T n="2 TUESDAY">True</T>
+          <T n="3 WEDNESDAY">True</T>
+          <T n="4 THURSDAY">True</T>
+          <T n="5 FRIDAY">True</T>
+          <T n="6 SATURDAY">True</T>
+        </U>
+        <U n="start_time">
+          <T n="hour">17</T>
+        </U>
+      </U>
+      <U>
+        <L n="actions">
+          <V t="literal">
+            <V n="literal" t="spawn_objects">
+              <U n="spawn_objects">
+                <U n="creation_op">
+                  <V n="creation_data" t="definition">
+                    <U n="definition">
+                      <T n="definition">366452</T>
+                    </U>
+                  </V>
+                  <V n="location" t="position">
+                    <U n="position">
+                      <T n="enclosed_room_only">True</T>
+                      <V n="initial_location" t="from_lot">
+                        <U n="from_lot">
+                          <E n="lot_location_strategy">RANDOM_ANY_FLOOR</E>
+                        </U>
+                      </V>
+                      <T n="stay_in_connected_connectivity_group">False</T>
+                    </U>
+                  </V>
+                  <E n="subject">Lot</E>
+                </U>
+                <V n="iterations" t="enabled">
+                  <U n="enabled">
+                    <T n="lower_bound">2</T>
+                    <T n="upper_bound">2</T>
+                  </U>
+                </V>
+                <V n="spawn_delay" t="enabled" />
+                <V n="spawn_threshold" t="enabled">
+                  <U n="enabled">
+                    <L n="tags">
+                      <E>Func_MuLE_Infestation_SpawnLimit</E>
+                    </L>
+                    <T n="threshold">7</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </V>
+          <V t="literal">
+            <V n="literal" t="loot">
+              <U n="loot">
+                <L n="loots">
+                  <T>345008<!--LootActions: loot_muEvent_Infestation_PeriodicGiveBuff--></T>
+                </L>
+              </U>
+            </V>
+          </V>
+        </L>
+        <U n="days_available">
+          <T n="0 SUNDAY">True</T>
+          <T n="1 MONDAY">True</T>
+          <T n="2 TUESDAY">True</T>
+          <T n="3 WEDNESDAY">True</T>
+          <T n="4 THURSDAY">True</T>
+          <T n="5 FRIDAY">True</T>
+          <T n="6 SATURDAY">True</T>
+        </U>
+        <U n="start_time">
+          <T n="hour">19</T>
+        </U>
+      </U>
+      <U>
+        <L n="actions">
+          <V t="literal">
+            <V n="literal" t="spawn_objects">
+              <U n="spawn_objects">
+                <U n="creation_op">
+                  <V n="creation_data" t="definition">
+                    <U n="definition">
+                      <T n="definition">366452</T>
+                    </U>
+                  </V>
+                  <V n="location" t="position">
+                    <U n="position">
+                      <T n="enclosed_room_only">True</T>
+                      <V n="initial_location" t="from_lot">
+                        <U n="from_lot">
+                          <E n="lot_location_strategy">RANDOM_ANY_FLOOR</E>
+                        </U>
+                      </V>
+                      <T n="stay_in_connected_connectivity_group">False</T>
+                    </U>
+                  </V>
+                  <E n="subject">Lot</E>
+                </U>
+                <V n="iterations" t="enabled">
+                  <U n="enabled">
+                    <T n="lower_bound">2</T>
+                    <T n="upper_bound">2</T>
+                  </U>
+                </V>
+                <V n="spawn_delay" t="enabled" />
+                <V n="spawn_threshold" t="enabled">
+                  <U n="enabled">
+                    <L n="tags">
+                      <E>Func_MuLE_Infestation_SpawnLimit</E>
+                    </L>
+                    <T n="threshold">7</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </V>
+          <V t="literal">
+            <V n="literal" t="loot">
+              <U n="loot">
+                <L n="loots">
+                  <T>345008<!--LootActions: loot_muEvent_Infestation_PeriodicGiveBuff--></T>
+                </L>
+              </U>
+            </V>
+          </V>
+        </L>
+        <U n="days_available">
+          <T n="0 SUNDAY">True</T>
+          <T n="1 MONDAY">True</T>
+          <T n="2 TUESDAY">True</T>
+          <T n="3 WEDNESDAY">True</T>
+          <T n="4 THURSDAY">True</T>
+          <T n="5 FRIDAY">True</T>
+          <T n="6 SATURDAY">True</T>
+        </U>
+        <U n="start_time">
+          <T n="hour">21</T>
+        </U>
+      </U>
+      <U>
+        <L n="actions">
+          <V t="literal">
+            <V n="literal" t="spawn_objects">
+              <U n="spawn_objects">
+                <U n="creation_op">
+                  <V n="creation_data" t="definition">
+                    <U n="definition">
+                      <T n="definition">366452</T>
+                    </U>
+                  </V>
+                  <V n="location" t="position">
+                    <U n="position">
+                      <T n="enclosed_room_only">True</T>
+                      <V n="initial_location" t="from_lot">
+                        <U n="from_lot">
+                          <E n="lot_location_strategy">RANDOM_ANY_FLOOR</E>
+                        </U>
+                      </V>
+                      <T n="stay_in_connected_connectivity_group">False</T>
+                    </U>
+                  </V>
+                  <E n="subject">Lot</E>
+                </U>
+                <V n="iterations" t="enabled">
+                  <U n="enabled">
+                    <T n="lower_bound">2</T>
+                    <T n="upper_bound">2</T>
+                  </U>
+                </V>
+                <V n="spawn_delay" t="enabled" />
+                <V n="spawn_threshold" t="enabled">
+                  <U n="enabled">
+                    <L n="tags">
+                      <E>Func_MuLE_Infestation_SpawnLimit</E>
+                    </L>
+                    <T n="threshold">7</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </V>
+          <V t="literal">
+            <V n="literal" t="loot">
+              <U n="loot">
+                <L n="loots">
+                  <T>345008<!--LootActions: loot_muEvent_Infestation_PeriodicGiveBuff--></T>
+                </L>
+              </U>
+            </V>
+          </V>
+        </L>
+        <U n="days_available">
+          <T n="0 SUNDAY">True</T>
+          <T n="1 MONDAY">True</T>
+          <T n="2 TUESDAY">True</T>
+          <T n="3 WEDNESDAY">True</T>
+          <T n="4 THURSDAY">True</T>
+          <T n="5 FRIDAY">True</T>
+          <T n="6 SATURDAY">True</T>
+        </U>
+        <U n="start_time">
+          <T n="hour">23</T>
+        </U>
+      </U>
+      <U>
+        <L n="actions">
+          <V t="literal">
+            <V n="literal" t="spawn_objects">
+              <U n="spawn_objects">
+                <U n="creation_op">
+                  <V n="creation_data" t="definition">
+                    <U n="definition">
+                      <T n="definition">366452</T>
+                    </U>
+                  </V>
+                  <V n="location" t="position">
+                    <U n="position">
+                      <T n="enclosed_room_only">True</T>
+                      <V n="initial_location" t="from_lot">
+                        <U n="from_lot">
+                          <E n="lot_location_strategy">RANDOM_ANY_FLOOR</E>
+                        </U>
+                      </V>
+                      <T n="stay_in_connected_connectivity_group">False</T>
+                    </U>
+                  </V>
+                  <E n="subject">Lot</E>
+                </U>
+                <V n="iterations" t="enabled">
+                  <U n="enabled">
+                    <T n="lower_bound">2</T>
+                    <T n="upper_bound">2</T>
+                  </U>
+                </V>
+                <V n="spawn_delay" t="enabled" />
+                <V n="spawn_threshold" t="enabled">
+                  <U n="enabled">
+                    <L n="tags">
+                      <E>Func_MuLE_Infestation_SpawnLimit</E>
+                    </L>
+                    <T n="threshold">7</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </V>
+          <V t="literal">
+            <V n="literal" t="loot">
+              <U n="loot">
+                <L n="loots">
+                  <T>345008<!--LootActions: loot_muEvent_Infestation_PeriodicGiveBuff--></T>
+                </L>
+              </U>
+            </V>
+          </V>
+        </L>
+        <U n="days_available">
+          <T n="0 SUNDAY">True</T>
+          <T n="1 MONDAY">True</T>
+          <T n="2 TUESDAY">True</T>
+          <T n="3 WEDNESDAY">True</T>
+          <T n="4 THURSDAY">True</T>
+          <T n="5 FRIDAY">True</T>
+          <T n="6 SATURDAY">True</T>
+        </U>
+        <U n="start_time">
+          <T n="hour">1</T>
+        </U>
+      </U>
+    </L>
+  </U>
+  <T n="zone_modifier_locked">True</T>
+</I>

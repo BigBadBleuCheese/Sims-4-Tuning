@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SocialObjectSuperInteraction" i="interaction" m="interactions.social.social_object_super_interaction" n="sI_AnimalObjects_FeedBasic_Sheep_Milk" s="325933">
+  <L n="_constraints" />
+  <V n="_saveable" t="enabled" />
+  <L n="_static_commodities">
+    <U>
+      <T n="desire">10</T>
+      <T n="static_commodity">305074<!--StaticCommodity: staticCommodity_RanchHand_AnimalCare--></T>
+    </U>
+    <U>
+      <T n="static_commodity">331508<!--StaticCommodity: staticCommodity_CommunalEvents_AnimalDay_Guests--></T>
+    </U>
+  </L>
+  <T n="allow_autonomous">True</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="time_based">
+                <U n="time_based">
+                  <T n="max_time">10</T>
+                  <T n="min_time">5</T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+        <V t="list_reference">
+          <T n="list_reference">40705<!--ExitConditionList: ExitConditionList_MotivesNearFail--></T>
+        </V>
+      </L>
+      <V n="content" t="looping_content">
+        <U n="looping_content">
+          <U n="animation_ref">
+            <T n="factory">315633<!--AnimationElement: animalObjects_Socials_GoatSheep_BottleFeeding--></T>
+          </U>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>260702<!--LootActions: loot_AnimalObjects_LivestockFeed_FeedWith--></T>
+          <T>269559<!--LootActions: loot_Trait_AnimalEnthusiast_SuccessAnimalCare--></T>
+        </L>
+      </U>
+    </V>
+    <V t="state_change">
+      <U n="state_change">
+        <V n="new_value" t="single_value">
+          <U n="single_value">
+            <T n="new_value">256717<!--ObjectStateValue: animalObjects_Generic_IdleStateValues_Positive--></T>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="destroy_specified_objects_from_target_inventory">
+      <U n="destroy_specified_objects_from_target_inventory">
+        <V n="count" t="number" />
+        <E n="inventory_owner">Actor</E>
+        <L n="object_tests">
+          <L>
+            <V t="object_definition_criteria">
+              <U n="object_definition_criteria">
+                <V n="identity_test" t="definition_id">
+                  <U n="definition_id">
+                    <T n="actual_object">271852</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="state_white_black">
+              <U n="state_white_black">
+                <U n="states">
+                  <V n="blacklist" t="specify">
+                    <U n="specify">
+                      <L n="blacklist">
+                        <T>15108<!--CommodityBasedObjectStateValue: Consumable_Empty--></T>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+            </V>
+          </L>
+        </L>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+  </L>
+  <V n="basic_focus" t="tunable_focus" />
+  <T n="category">337336<!--PieMenuCategory: pieMenuCategory_AnimalObjects_Care--></T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x283EF301<!--String: "Bottle Feed {1.ObjectName} with Milk"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <V n="display_tooltip" t="enabled">
+    <T n="enabled">0x9F2A47FB<!--String: "This will consume 1 bottle of common milk from {0.SimFirstName}'s inventory."--></T>
+  </V>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+    <E>Interaction_Animal</E>
+  </L>
+  <V n="outcome" t="none" />
+  <E n="scoring_priority">NORMAL</E>
+  <V n="social_jig" t="enabled">
+    <V n="enabled" t="definition">
+      <U n="definition">
+        <T n="jig_definition">277493<!--Commodity: commodity_CareerBenefit_HSTeam_CheerTeam--></T>
+      </U>
+    </V>
+  </V>
+  <V n="state_value_exit" t="enabled">
+    <V n="enabled" t="value_from_test_list">
+      <U n="value_from_test_list">
+        <V n="fallback_value" t="enabled">
+          <T n="enabled">262374<!--ObjectStateValue: animalObjects_Generic_MasterController_Free--></T>
+        </V>
+      </U>
+    </V>
+  </V>
+  <V n="state_value_prepare" t="enabled">
+    <V n="enabled" t="single_value">
+      <U n="single_value">
+        <T n="new_value">260599<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_Social--></T>
+      </U>
+    </V>
+  </V>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_autonomous">
+    <L>
+      <V t="distance">
+        <U n="distance">
+          <U n="distance_threshold">
+            <E n="comparison">LESS_OR_EQUAL</E>
+            <T n="value">20</T>
+          </U>
+          <V n="level_modifier" t="infinite" />
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="location">
+        <U n="location">
+          <U n="location_tests">
+            <V n="is_on_active_lot" t="Is_or_is_not_on_active_lot" />
+          </U>
+        </U>
+      </V>
+      <V t="location">
+        <U n="location">
+          <U n="location_tests">
+            <V n="is_on_active_lot" t="Is_or_is_not_on_active_lot" />
+          </U>
+          <E n="subject">Object</E>
+        </U>
+      </V>
+    </L>
+  </L>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="state_white_black">
+      <U n="state_white_black">
+        <U n="states">
+          <V n="blacklist" t="specify">
+            <U n="specify">
+              <L n="blacklist">
+                <T>259456<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_BeIn0--></T>
+                <T>269851<!--ObjectStateValue: villageFair_InCompetition_ON--></T>
+                <T>264797<!--ObjectStateValue: animalObjects_Generic_RoutingStateValues_Disappear--></T>
+                <T>261266<!--CommodityBasedObjectStateValue: animalObjects_CommodityStateValues_Age_ReadyToDie--></T>
+                <T>262324<!--ObjectStateValue: animalObjects_Generic_MasterController_InSlot_Sleep--></T>
+                <T>262477<!--ObjectStateValue: animalObjects_Generic_MasterController_Missing--></T>
+                <T>271105<!--ObjectStateValue: animalObjects_Generic_Location_InHome--></T>
+              </L>
+            </U>
+          </V>
+        </U>
+      </U>
+    </V>
+    <V t="state">
+      <U n="state">
+        <E n="operator">NOTEQUAL</E>
+        <T n="value">261266<!--CommodityBasedObjectStateValue: animalObjects_CommodityStateValues_Age_ReadyToDie--></T>
+      </U>
+    </V>
+    <V t="inventory">
+      <U n="inventory">
+        <V n="contents_check" t="has_object_with_states">
+          <U n="has_object_with_states">
+            <V n="object_requirement" t="tag">
+              <U n="tag">
+                <U n="tag">
+                  <L n="tag_set">
+                    <E>Func_Milk_Basic</E>
+                  </L>
+                </U>
+              </U>
+            </V>
+            <L n="state_set">
+              <T>15109<!--CommodityBasedObjectStateValue: Consumable_Full--></T>
+            </L>
+            <E n="test_type">CONTAINS_ALL_STATES_IN_SET</E>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="object_ownership" />
+    </L>
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <V n="whitelist" t="enabled">
+            <L n="enabled">
+              <T>305070<!--Buff: buff_Role_RanchHand_NPC--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+      <V t="statistic">
+        <U n="statistic">
+          <T n="must_have_stat">True</T>
+          <T n="stat">256986<!--Commodity: commodity_AnimalObjects_Motive_Hunger--></T>
+          <V n="threshold" t="value_threshold">
+            <U n="value_threshold">
+              <E n="comparison">LESS</E>
+              <T n="value">150</T>
+            </U>
+          </V>
+          <E n="who">Object</E>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <V n="whitelist" t="enabled">
+            <L n="enabled">
+              <T>331504<!--Buff: buff_CommunalEvents_AnimalDay_Role_Guests--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="test_set_reference">
+        <T n="test_set_reference">126907<!--TestSetInstance: testSetInstance_InteractionIsEncouragedByClubOrCustomerRulesOrHobbyClassOrDynasty--></T>
+      </V>
+      <V t="statistic">
+        <U n="statistic">
+          <T n="must_have_stat">True</T>
+          <T n="stat">256986<!--Commodity: commodity_AnimalObjects_Motive_Hunger--></T>
+          <V n="threshold" t="value_threshold">
+            <U n="value_threshold">
+              <E n="comparison">LESS</E>
+              <T n="value">150</T>
+            </U>
+          </V>
+          <E n="who">Object</E>
+        </U>
+      </V>
+    </L>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

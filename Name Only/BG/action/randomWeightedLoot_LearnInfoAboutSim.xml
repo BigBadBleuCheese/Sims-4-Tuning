@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="RandomWeightedLoot" i="action" m="interactions.utils.loot" n="randomWeightedLoot_LearnInfoAboutSim" s="253027">
+  <L n="random_loot_actions">
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">9901<!--LootActions: Loot_KnowTrait_Random--></T>
+      </V>
+    </U>
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">253029<!--LootActions: loot_Lifestyles_Learn_ActorLearnsTarget_Random--></T>
+      </V>
+      <U n="weight">
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="trait">
+                  <U n="trait">
+                    <L n="blacklist_trait_types">
+                      <E>LIFESTYLE</E>
+                    </L>
+                    <E n="subject">TargetSim</E>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">364734<!--RandomWeightedLoot: randomLoot_LearnAboutTarget_RandomSkill--></T>
+      </V>
+      <U n="weight">
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="skill_tag">
+                  <U n="skill_tag">
+                    <E n="skill_tag">Skill_All_Visible</E>
+                    <U n="skill_threshold">
+                      <E n="comparison">LESS</E>
+                      <T n="value">2</T>
+                    </U>
+                    <E n="who">TargetSim</E>
+                  </U>
+                </V>
+              </L>
+              <L>
+                <V t="buff">
+                  <U n="buff">
+                    <L n="blacklist">
+                      <T>380149<!--Buff: buff_Attraction_CanLearnAttractionRequiredStuff--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">364746<!--LootActions: loot_LearnWealth_LearnAboutTarget--></T>
+      </V>
+      <U n="weight">
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="knowledge">
+                  <U n="knowledge">
+                    <V n="knows_net_worth" t="enabled">
+                      <T n="enabled">True</T>
+                    </V>
+                  </U>
+                </V>
+              </L>
+              <L>
+                <V t="buff">
+                  <U n="buff">
+                    <L n="blacklist">
+                      <T>380149<!--Buff: buff_Attraction_CanLearnAttractionRequiredStuff--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+  </L>
+</I>

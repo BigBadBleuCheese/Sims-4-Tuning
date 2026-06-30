@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_WildGrass_Harvest" s="326902">
+  <L n="loot_actions">
+    <V t="create_object">
+      <U n="create_object">
+        <V n="creation_data" t="definition">
+          <U n="definition">
+            <T n="definition">341476</T>
+          </U>
+        </V>
+        <V n="location" t="inventory" />
+        <E n="owner_sim">Actor</E>
+        <T n="quantity">2</T>
+      </U>
+    </V>
+    <V t="create_object">
+      <U n="create_object">
+        <V n="creation_data" t="definition">
+          <U n="definition">
+            <T n="definition">341476</T>
+          </U>
+        </V>
+        <V n="location" t="inventory" />
+        <E n="owner_sim">Actor</E>
+        <T n="quantity">1</T>
+        <L n="tests">
+          <L>
+            <V t="state">
+              <U n="state">
+                <T n="value">326165<!--CommodityBasedObjectStateValue: wildGrass_Values_Overgrown--></T>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x9EFA3673<!--String: "(From Harvesting Prairie Grass)"--></T>
+          </V>
+          <T n="buff_type">326663<!--Buff: buff_Object_WildGrass_Cuts--></T>
+        </U>
+        <U n="chance">
+          <T n="base_chance">30</T>
+        </U>
+      </U>
+    </V>
+    <V t="create_object">
+      <U n="create_object">
+        <U n="chance">
+          <T n="base_chance">20</T>
+        </U>
+        <V n="creation_data" t="definition">
+          <U n="definition">
+            <T n="definition">341476</T>
+          </U>
+        </V>
+        <V n="location" t="inventory" />
+        <T n="set_sim_as_inventory_owner">False</T>
+        <T n="set_sim_as_owner">False</T>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <L n="whitelist_traits">
+                  <T>320988<!--Trait: trait_Rancher--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="npc" t="enabled" />
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<M n="family_tree.family_tree_forgery_tuning" s="2080098598598708281">
+  <C n="FamilyTreeForgeryTunables">
+    <L n="FORGEABLE_FAMILY_TYPES">
+      <E>PARENT</E>
+      <E>SIBLING</E>
+      <E>DESCENDANT</E>
+      <E>GRANDPARENT</E>
+      <E>GRANDCHILD</E>
+      <E>SIBLINGS_CHILD</E>
+      <E>PARENTS_SIBLING</E>
+      <E>COUSIN</E>
+      <E>GREAT_GRANDPARENT</E>
+      <E>GREAT_GRANDCHILD</E>
+      <E>GRANDPARENT_SIBLING</E>
+      <E>SIBLINGS_GRANDCHILD</E>
+    </L>
+    <T n="FORGERY_SECRET">486463<!--SimSecret: secret_ScandalSecret_forgeFamilyTree--></T>
+    <U n="GET_SIM_DIALOG">
+      <V n="title" t="enabled">
+        <T n="enabled">0x5E315F2C<!--String: "Select Sim to Forge Connection"--></T>
+      </V>
+    </U>
+    <L n="LOOT_ON_FORGERY_COMPLETE">
+      <T>490165<!--LootActions: loot_ScandalSecret_CreateSecret_FamilyTreeForgery--></T>
+    </L>
+    <L n="LOOT_ON_SECRET_CHILD_FORGED">
+      <T>499367<!--LootActions: loot_FamilyTree_SecretChild_GenerateSecret_AtBirth--></T>
+    </L>
+    <L n="LOOT_ON_SECRET_CHILD_TRUTH">
+      <T>488684<!--LootActions: loot_ScandalSecret_CreateSecret_HasSecretChild_Scandal--></T>
+    </L>
+    <U n="NONEXISTENT_SIM_ICON">
+      <T n="key" p="InEP21\UI\Icons\Dialogs\FamilyTree\NonExistentSim.png">2f7d0004:00000000:6fdfb8c8fa0991bf</T>
+    </U>
+    <T n="POTENTIAL_ORIGIN_SIMS_FILTER">482749<!--TunableSimFilter: filter_SimPicker_Family--></T>
+    <T n="POTENTIAL_TARGET_SIMS_FILTER">485691<!--TunableSimFilter: filter_SimPicker_HasMet_CTYAE_NoFamily--></T>
+    <L n="PREMADE_SECRET_CHILDREN">
+      <U>
+        <T n="child_sim">466570<!--PremadeSimTemplate: premadeSimTemplate_EP21_Ananou_AfuaAnanou--></T>
+        <T n="pregnant_sim">491878<!--TunablePremadeAncestor: premadeAncestor_EP21_Aghata_Ananou--></T>
+        <T n="secret_parent_sim">466575<!--PremadeSimTemplate: premadeSimTemplate_EP21_Darong_AdekoyaDarong--></T>
+      </U>
+    </L>
+    <T n="RELBIT_SECRET_CHILD">487507<!--RelationshipBit: relationshipBit_SecretChild--></T>
+    <T n="RELBIT_SECRET_PARENT">491219<!--RelationshipBit: relationshipBit_SecretParent--></T>
+    <L n="SECRET_CHILD_GENERATION_TEST">
+      <L>
+        <V t="trait">
+          <U n="trait">
+            <L n="whitelist_traits">
+              <T>487146<!--Trait: trait_Hidden_FamilyTree_SecretChild_isPregnant--></T>
+            </L>
+          </U>
+        </V>
+      </L>
+      <L>
+        <V t="relationship">
+          <U n="relationship">
+            <U n="required_relationship_bits">
+              <L n="match_any">
+                <T>496939<!--RelationshipBit: relbit_SecretChild_RealParents--></T>
+              </L>
+            </U>
+            <L n="target_sim">
+              <E>PregnancyPartnerActor</E>
+            </L>
+          </U>
+        </V>
+        <V t="trait">
+          <U n="trait">
+            <E n="subject">PregnancyPartnerActor</E>
+            <L n="whitelist_traits">
+              <T>488667<!--Trait: trait_Hidden_FamilyTree_SecretChild_isPregnancyPartner--></T>
+            </L>
+          </U>
+        </V>
+        <V t="trait">
+          <U n="trait">
+            <L n="blacklist_traits">
+              <T>497507<!--Trait: trait_Hidden_FamilyTree_SecretChild_AskedToKeepSecret--></T>
+            </L>
+          </U>
+        </V>
+      </L>
+    </L>
+    <T n="SECRET_CHILD_SECRET">488678<!--SimSecret: secret_ScandalSecret_hasSecretChild--></T>
+  </C>
+</M>

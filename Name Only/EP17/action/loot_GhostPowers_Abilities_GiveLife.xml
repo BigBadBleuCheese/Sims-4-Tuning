@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_GhostPowers_Abilities_GiveLife" s="393350">
+  <L n="loot_actions">
+    <V t="life_extension">
+      <U n="life_extension">
+        <T n="bonus_days">0</T>
+        <V n="modify_aging_progress" t="restore_days_from_aging_progress">
+          <U n="restore_days_from_aging_progress">
+            <T n="days_to_restore">1</T>
+          </U>
+        </V>
+        <E n="subject">TargetSim</E>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>TargetSim</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x409F3628<!--String: "{1.SimFirstName} had {1.SimPronounPossessiveDependent} life essence increased by {0.SimFirstName}! As a result, {1.SimFirstName} just got a little bit younger."--></T>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+</I>

@@ -1,0 +1,558 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="EP14World_Rabbithole_Cave" s="322975">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="circle" />
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Actor</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="list_reference">
+          <T n="list_reference">40705<!--ExitConditionList: ExitConditionList_MotivesNearFail--></T>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="buff_based">
+                <U n="buff_based">
+                  <T n="buff">325025<!--Buff: Buff_EP14World_Cave_FailureExit--></T>
+                  <E n="timing">ON_ADD</E>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="buff_based">
+                <U n="buff_based">
+                  <T n="buff">325772<!--Buff: buff_EP14World_Cave_Exit--></T>
+                  <E n="timing">ON_ADD</E>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+      </L>
+      <V n="content" t="looping_content">
+        <U n="looping_content">
+          <U n="animation_ref">
+            <T n="factory">325375<!--AnimationElement: EP14World_Anims_CaveIdle--></T>
+          </U>
+        </U>
+      </V>
+      <V n="periodic_stat_change" t="enabled">
+        <U n="enabled">
+          <L n="operations">
+            <V t="reference">
+              <T n="reference">248870<!--PeriodicStatChangeOperation: periodicStatChangeOperation_Lifestyles_Progress_FrequentTraveler--></T>
+            </V>
+            <V t="reference">
+              <T n="reference">249770<!--PeriodicStatChangeOperation: periodicStatChangeOperation_Lifestyles_Liked_AdrenalineSeeker--></T>
+            </V>
+            <V t="reference">
+              <T n="reference">249762<!--PeriodicStatChangeOperation: periodicStatChangeOperation_Lifestyles_Progress_AdrenalineSeeker--></T>
+            </V>
+            <V t="reference">
+              <T n="reference">252299<!--PeriodicStatChangeOperation: periodictStatChange_Adventurous_Adventuring--></T>
+            </V>
+            <V t="reference">
+              <T n="reference">289137<!--PeriodicStatChangeOperation: periodicStatChange_WerewolfPackValue_ExpandExplore--></T>
+            </V>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>325164<!--LootActions: loot_EP14World_Rabbithole_Cave_Setup--></T>
+        </L>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+    <V t="adventure">
+      <U n="adventure">
+        <L n="_adventure_moments">
+          <U>
+            <E n="key">Cave_BossCreature1</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">325383<!--AdventureMoment: EP14World_AdventureMoments_Cave_AttackedByDino_Start--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Cave_BossCreature1_Repeat</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">325384<!--AdventureMoment: EP14World_AdventureMoments_Cave_AttackedByDino_Repeat--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Cave_BossCreature2</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">325378<!--AdventureMoment: EP14World_AdventureMoments_Cave_AttackedByHeadlessRider_Start--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Cave_BossCreature2_Repeat</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">325379<!--AdventureMoment: EP14World_AdventureMoments_Cave_AttackedByHeadlessRider_Repeat--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Cave_BossCreature3</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">324705<!--AdventureMoment: EP14World_AdventureMoments_Cave_AttackedByFlamingSkull_Start--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Cave_BossCreature3_Repeat</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">324704<!--AdventureMoment: EP14World_AdventureMoments_Cave_AttackedByFlamingSkull_Repeat--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Cave_BossCreature4</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">324718<!--AdventureMoment: EP14World_AdventureMoments_Cave_AttackedByLostCriminal_Start--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Cave_BossCreature4_Repeat</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">324717<!--AdventureMoment: EP14World_AdventureMoments_Cave_AttackedByLostCriminal_Repeat--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Cave_BossCreature_GnomeRog</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">324734<!--AdventureMoment: EP14World_AdventureMoments_Cave_AttackedByGnomeRog_Start--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Cave_BossCreature_GnomeRog_Repeat</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">324733<!--AdventureMoment: EP14World_AdventureMoments_Cave_AttackedByGnomeRog_Repeat--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Cave_Creature1</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">322986<!--AdventureMoment: EP14World_AdventureMoments_Cave_AttackedByBat_Start--></T>
+              </V>
+              <V n="sim_specific_cooldown" t="hours">
+                <T n="hours">2</T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Cave_Creature1_Repeat</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">322987<!--AdventureMoment: EP14World_AdventureMoments_Cave_AttackedByBat_Repeat--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Cave_Creature2</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">324702<!--AdventureMoment: EP14World_AdventureMoments_Cave_AttackedByBear_Start--></T>
+              </V>
+              <V n="sim_specific_cooldown" t="hours">
+                <T n="hours">2</T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Cave_Creature2_Repeat</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">324701<!--AdventureMoment: EP14World_AdventureMoments_Cave_AttackedByBear_Repeat--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Cave_Creature3</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">324711<!--AdventureMoment: EP14World_AdventureMoments_Cave_AttackedBySkeleton_Start--></T>
+              </V>
+              <V n="sim_specific_cooldown" t="hours">
+                <T n="hours">2</T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Cave_Creature3_Repeat</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">324710<!--AdventureMoment: EP14World_AdventureMoments_Cave_AttackedBySkeleton_Repeat--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Cave_Creature4</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">324708<!--AdventureMoment: EP14World_AdventureMoments_Cave_AttackedByGiantSpider_Start--></T>
+              </V>
+              <V n="sim_specific_cooldown" t="hours">
+                <T n="hours">2</T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Cave_Creature4_Repeat</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">324707<!--AdventureMoment: EP14World_AdventureMoments_Cave_AttackedByGiantSpider_Repeat--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Cave_Explore</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">325363<!--AdventureMoment: EP14World_AdventureMoments_Cave_Explore--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Cave_Gnome1</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">324736<!--AdventureMoment: EP14World_AdventureMoments_Cave_AppeaseCreature_Gnome1--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Cave_Gnome2</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">325380<!--AdventureMoment: EP14World_AdventureMoments_Cave_AppeaseCreature_Gnome2--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Cave_Gnome3</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">325381<!--AdventureMoment: EP14World_AdventureMoments_Cave_AppeaseCreature_Gnome3--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Cave_GnomeWorld</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">325660<!--AdventureMoment: SP14World_AdventureMoments_Cave_AppeaseCreature_Gnomeworld--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Cave_Loot_1</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">324719<!--AdventureMoment: EP14World_AdventureMoments_Cave_Loot_TreasureChest--></T>
+              </V>
+              <V n="sim_specific_cooldown" t="hours">
+                <T n="hours">1</T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Cave_Loot_2</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">324730<!--AdventureMoment: EP14World_AdventureMoments_Cave_Loot_OreDeposits--></T>
+              </V>
+              <V n="sim_specific_cooldown" t="hours">
+                <T n="hours">1</T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Cave_SecretDoor1</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">324712<!--AdventureMoment: EP14World_AdventureMoments_Cave_SecretDoor_1--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Cave_SecretDoor2</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">324714<!--AdventureMoment: EP14World_AdventureMoments_Cave_SecretDoor_2--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Cave_SecretDoor3</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">324713<!--AdventureMoment: EP14World_AdventureMoments_Cave_SecretDoor_3--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Cave_SecretDoor4</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">325548<!--AdventureMoment: EP14World_AdventureMoments_Cave_SecretDoor_4--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Cave_SecretDoor5</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">325549<!--AdventureMoment: EP14World_AdventureMoments_Cave_SecretDoor_5--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Cave_SecretDoor6</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">325550<!--AdventureMoment: EP14World_AdventureMoments_Cave_SecretDoor_6--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Cave_Unicorn</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">324737<!--AdventureMoment: EP14World_AdventureMoments_Cave_AppeaseCreature_Unicorns--></T>
+              </V>
+            </U>
+          </U>
+        </L>
+        <L n="_initial_moments">
+          <U>
+            <E n="adventure_moment_key">Cave_Explore</E>
+          </U>
+        </L>
+        <T n="_resumable">False</T>
+        <U n="_trigger_interval">
+          <T n="lower_bound">6</T>
+          <T n="upper_bound">12</T>
+        </U>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>325198<!--LootActions: loot_EP14World_Rabbithole_Cave_Remove--></T>
+        </L>
+        <V n="timing" t="at_end">
+          <U n="at_end">
+            <E n="criticality">OnCancelOrException</E>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <L n="basic_liabilities" />
+  <V n="canonical_animation" t="enabled">
+    <U n="enabled">
+      <T n="factory">325375<!--AnimationElement: EP14World_Anims_CaveIdle--></T>
+    </U>
+  </V>
+  <V n="content_score" t="disabled" />
+  <T n="counts_as_inside">True</T>
+  <T n="display_name">0x536B8204<!--String: "Explore Dreadhorse Caverns"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="statistic_value">
+        <U n="statistic_value">
+          <E n="participant">Actor</E>
+          <T n="statistic">325538<!--Statistic: statistic_EP14World_Cave_Progress--></T>
+        </U>
+      </V>
+      <V t="statistic_value">
+        <U n="statistic_value">
+          <E n="participant">Actor</E>
+          <T n="statistic">325362<!--Statistic: statistic_EP14World_Cave_Level--></T>
+        </U>
+      </V>
+    </L>
+  </U>
+  <V n="display_tooltip" t="enabled">
+    <T n="enabled">0x5BEF436F<!--String: "Cave Progress: {2.Number} / 100\nCave Level: {3.Number}"--></T>
+  </V>
+  <T n="fade_sim_out">False</T>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+    <E>Interaction_Lifestyles_FrequentTraveler_FlexibleLength</E>
+    <E>Interaction_Lifestyles_AdrenalineSeeker_FlexibleLength</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <L n="continuation">
+              <U>
+                <T n="affordance">166961<!--SuperInteraction: si_RabbitHole_MoveAway--></T>
+                <E n="target">Actor</E>
+              </U>
+            </L>
+            <T n="force_outcome_on_exit">True</T>
+          </U>
+        </U>
+      </L>
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <V n="buff_reason" t="enabled">
+                          <T n="enabled">0xD4F45E2F<!--String: "(From Exploring Dreadhorse Caverns)"--></T>
+                        </V>
+                        <T n="buff_type">325666<!--Buff: buff_EP14World_Cave_SurvivedTheCave_Dazed--></T>
+                      </U>
+                    </U>
+                  </V>
+                  <V t="loot">
+                    <U n="loot">
+                      <L n="loot_list">
+                        <T>336635<!--LootActions: loot_Commodity_Motive_Energy_Loss_Medium--></T>
+                      </L>
+                    </U>
+                  </V>
+                </L>
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">325771<!--SuperInteraction: EP14World_Rabbithole_Cave_FailureExit--></T>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="buff">
+                <U n="buff">
+                  <L n="blacklist">
+                    <T>325772<!--Buff: buff_EP14World_Cave_Exit--></T>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>325665<!--Buff: buff_EP14World_Cave_SurvivedTheCave--></T>
+          <T>325666<!--Buff: buff_EP14World_Cave_SurvivedTheCave_Dazed--></T>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xBB5CB532<!--String: "{0.SimFirstName} has had enough of Dreadhorse Caverns for today.\n\nCave Progress: {2.Number} / 100\nCave Level: {3.Number}"--></T>
+        </V>
+      </U>
+    </V>
+    <V t="in_use">
+      <U n="in_use">
+        <T n="negate">True</T>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x34146D3E<!--String: "Somebody is already exploring Dreadhorse Caverns."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

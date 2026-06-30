@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SimPickerInteraction" i="interaction" m="interactions.base.picker_interaction" n="simPicker_CommunityBoard_TeachShowJumping" s="330915">
+  <V n="_saveable" t="disabled" />
+  <L n="actor_continuation">
+    <U>
+      <T n="affordance">331554<!--SuperInteraction: si_CommunityBoard_RabbitHole_TeachShowJumping--></T>
+      <E n="target">Actor</E>
+    </U>
+  </L>
+  <V n="cell_enabled_tests" t="enabled">
+    <L n="enabled">
+      <L>
+        <V t="buff">
+          <U n="buff">
+            <L n="blacklist">
+              <T>323052<!--Buff: buff_Pregnancy_HorseBreeding_Trimester1--></T>
+              <T>323053<!--Buff: buff_Pregnancy_HorseBreeding_Trimester2--></T>
+              <T>323054<!--Buff: buff_Pregnancy_HorseBreeding_Trimester3--></T>
+              <T>323055<!--Buff: buff_Pregnancy_HorseBreeding_InLabor--></T>
+            </L>
+            <E n="subject">PickedSim</E>
+            <V n="tooltip" t="enabled">
+              <T n="enabled">0x2601AD0<!--String: "This horse is pregnant."--></T>
+            </V>
+          </U>
+        </V>
+        <V t="buff">
+          <U n="buff">
+            <L n="blacklist">
+              <T>327961<!--Buff: buff_HorseTraining_Fatigue--></T>
+            </L>
+            <E n="subject">PickedSim</E>
+            <V n="tooltip" t="enabled">
+              <T n="enabled">0x94728BB2<!--String: "This Horse is too Fatigued to do this. Check back in {2.Timespan}."--></T>
+            </V>
+          </U>
+        </V>
+      </L>
+    </L>
+  </V>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xE20DAB89<!--String: "Teach Show Jumping"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="buff_duration_remaining">
+        <U n="buff_duration_remaining">
+          <T n="buff">327961<!--Buff: buff_HorseTraining_Fatigue--></T>
+          <E n="participant">PickedSim</E>
+        </U>
+      </V>
+    </L>
+  </U>
+  <V n="display_tooltip" t="enabled">
+    <T n="enabled">0xF530B543<!--String: "Teach Show Jumping. Payout increases with higher <b>Horse Riding</b> and <b>Jumping skills</b>. Job takes 4 hours."--></T>
+  </V>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <V n="picker_dialog" t="sim_picker">
+    <U n="sim_picker">
+      <L n="custom_filters">
+        <V t="reference">
+          <T n="reference">499295<!--CustomSimFilter: customSimFilter_NobleCareer--></T>
+        </V>
+      </L>
+    </U>
+  </V>
+  <V n="pie_menu_test_tooltip" t="enabled">
+    <T n="enabled">0x2CAE8479<!--String: "Requires an available Horse in the Sim's household."--></T>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <V n="sim_filter" t="sim_filter_selected">
+    <T n="sim_filter_selected">336168<!--TunableSimFilter: simPickerFilter_Horses_AE_CompatibleRegion_InFamily--></T>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">341569<!--TestSetInstance: testSetInstance_EquestrianCenter_IsOpen--></T>
+    </V>
+  </L>
+</I>

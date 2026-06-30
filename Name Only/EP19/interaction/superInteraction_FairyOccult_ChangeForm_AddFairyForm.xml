@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="superInteraction_FairyOccult_ChangeForm_AddFairyForm" s="425308">
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Actor</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">435988<!--AnimationElement: animations_FairyOccult_ChangeForm_HumantoFairy--></T>
+      </U>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>425309<!--LootActions: lootActions_FairyOccult_ChangeForm_AddFairyForm--></T>
+        </L>
+        <V n="timing" t="on_xevt">
+          <U n="on_xevt">
+            <T n="xevt_id">200</T>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="create_and_enter_carry_while_holding">
+      <U n="create_and_enter_carry_while_holding">
+        <T n="object_definition">460952</T>
+        <T n="owning_affordance">426489<!--SuperInteraction: superInteraction_FairyOccult_Wings_HoldWingProxyObject_Back--></T>
+        <E n="posture_track">BACK</E>
+      </U>
+    </V>
+  </L>
+  <V n="carry_back_compatibility_override" t="enabled">
+    <U n="enabled">
+      <T n="infant">False</T>
+    </U>
+  </V>
+  <T n="category">424680<!--PieMenuCategory: pieMenuCategory_FairyOccult--></T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x432862C5<!--String: "Reveal Fairy Form"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T n="key" p="InEP19\UI\Icons\PieMenu\SpecialInteractions\specialinteraction_fairy_piemenu.png">2f7d0004:00000000:5733ef1fae0d31a6</T>
+      </U>
+    </V>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all" />
+    </U>
+  </V>
+  <E n="target_type">ACTOR</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="trait">
+      <U n="trait">
+        <L n="blacklist_traits">
+          <T>414621<!--Trait: trait_OccultFairy_FairyForm--></T>
+        </L>
+      </U>
+    </V>
+    <V t="identity">
+      <U n="identity">
+        <T n="subjects_match">True</T>
+      </U>
+    </V>
+    <V t="posture">
+      <U n="posture">
+        <L n="prohibited_postures">
+          <T>110594<!--Posture: posture_hospitalExamBed_Stand--></T>
+        </L>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">472928<!--TestSetInstance: testSetInstance_DeepWaterPostures_Disallow_Actor--></T>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

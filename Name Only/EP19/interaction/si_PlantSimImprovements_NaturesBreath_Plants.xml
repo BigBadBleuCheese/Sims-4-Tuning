@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="si_PlantSimImprovements_NaturesBreath_Plants" s="443800">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="circle">
+            <U n="circle">
+              <T n="multi_surface">True</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="facing" />
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <L n="_static_commodities">
+    <U>
+      <T n="desire">10</T>
+      <T n="static_commodity">443782<!--StaticCommodity: commodity_RoleAutonomy_EP19World_OpenStreet_PlantSim--></T>
+    </U>
+  </L>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x4189143A<!--String: "Nature's Breath"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <V n="animation_ref" t="enabled">
+              <U n="enabled">
+                <T n="factory">434531<!--AnimationElement: plantSim_Improvements_NaturesBreath_Succeed--></T>
+              </U>
+            </V>
+            <L n="basic_extras">
+              <V t="destroy_specified_objects_from_target_inventory">
+                <U n="destroy_specified_objects_from_target_inventory">
+                  <V n="count" t="number">
+                    <T n="number">5</T>
+                  </V>
+                  <E n="inventory_owner">Actor</E>
+                  <L n="object_tests">
+                    <L>
+                      <V t="object_definition_criteria">
+                        <U n="object_definition_criteria">
+                          <V n="identity_test" t="definition_id">
+                            <U n="definition_id">
+                              <T n="actual_object">465683</T>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+              </V>
+              <V t="buff_fire_and_forget">
+                <U n="buff_fire_and_forget">
+                  <U n="buff">
+                    <V n="buff_reason" t="enabled">
+                      <T n="enabled">0x7694F47<!--String: "(From PlantSim Trait)"--></T>
+                    </V>
+                    <T n="buff_type">433804<!--Buff: buff_PlantSims_Improvements_NaturesVessel--></T>
+                  </U>
+                </U>
+              </V>
+            </L>
+            <L n="loot_list">
+              <T>433822<!--LootActions: loot_Trait_PlantSims_Improvements_Bloom--></T>
+            </L>
+          </U>
+        </U>
+      </L>
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">434532<!--AnimationElement: plantSim_Improvements_NaturesBreath_Fail--></T>
+                  </U>
+                </V>
+                <E n="outcome_result">FAILURE</E>
+                <V n="response" t="enabled">
+                  <V n="enabled" t="individual">
+                    <U n="individual">
+                      <L n="animations">
+                        <U>
+                          <E n="target">Actor</E>
+                          <U n="animation">
+                            <T n="factory">11834<!--AnimationElement: Social_Responses_Sad_Bummed--></T>
+                          </U>
+                        </U>
+                      </L>
+                    </U>
+                  </V>
+                </V>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="skill_test">
+                <U n="skill_test">
+                  <T n="skill">16700<!--Skill: statistic_Skill_AdultMajor_Gardening--></T>
+                  <V n="skill_range" t="interval">
+                    <U n="interval">
+                      <U n="skill_interval">
+                        <T n="upper_bound">4</T>
+                      </U>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+      <T n="use_fallback_as_default">True</T>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T n="key" p="InGame\UI\Icons\PieMenu\SpecialInteractions\specialinteraction_plantsim_piemenu.png">2f7d0004:00000000:874286ed8b3c4ac7</T>
+      </U>
+    </V>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="state">
+      <U n="state">
+        <E n="operator">NOTEQUAL</E>
+        <T n="value">437168<!--ObjectStateValue: state_EP19Gardening_Pixies_Gameplay_On--></T>
+      </U>
+    </V>
+    <V t="inventory">
+      <U n="inventory">
+        <V n="contents_check" t="has_object_with_def">
+          <U n="has_object_with_def">
+            <T n="definition">465683</T>
+          </U>
+        </V>
+        <U n="required_count">
+          <T n="value">5</T>
+        </U>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xDB213CF1<!--String: "Requires 5 Fairy Dust."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="state">
+      <U n="state">
+        <E n="operator">NOTEQUAL</E>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xC46F4FD9<!--String: "This plant has already bloomed."--></T>
+        </V>
+        <T n="value">77615<!--CommodityBasedObjectStateValue: PlantGrowth_3_Blossoming--></T>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

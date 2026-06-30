@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="DialogDramaNode" i="drama_node" m="drama_scheduler.dialog_drama_node" n="dialogDramaNode_Scenario_Inheritance_Grandma_1a" s="339176">
+  <V n="dialog_and_loot" t="dialog_ok_cancel">
+    <U n="dialog_ok_cancel">
+      <U n="dialog">
+        <V n="icon" t="enabled">
+          <V n="enabled" t="participant">
+            <U n="participant">
+              <L n="participant_type">
+                <E>TargetSim</E>
+              </L>
+            </U>
+          </V>
+        </V>
+        <V n="secondary_icon" t="enabled">
+          <V n="enabled" t="participant" />
+        </V>
+        <V n="text" t="single">
+          <T n="single">0x84125D54<!--String: "I'm deeply disappointed with the way things have gone for all of you. We have a proud family legacy to uphold, and it's clear that you've let it slip through your fingers. You've squandered your opportunities and shown little regard for the values that have made us who we are. If you want to have any hope of inheriting a share of my fortune, you'll need to demonstrate that you're willing to work hard and make something of yourselves. Prove to me you've turned over a new leaf and the inheritance could be yours."--></T>
+        </V>
+        <T n="text_cancel">0xDA78A0E0<!--String: "How dare you! We deserve that money."--></T>
+        <T n="text_ok">0x1F72596C<!--String: "Sorry grandma. Please don't be rash, we can change!"--></T>
+      </U>
+      <L n="on_dialog_complete_loot_list">
+        <T>339518<!--LootActions: lootActions_Scenario_Inheritance_Goals_Phase1_DramaNodeComplete--></T>
+      </L>
+      <L n="on_dialog_no_response_loot_list">
+        <T>339518<!--LootActions: lootActions_Scenario_Inheritance_Goals_Phase1_DramaNodeComplete--></T>
+      </L>
+    </U>
+  </V>
+  <U n="min_and_max_times">
+    <T n="lower_bound">0</T>
+  </U>
+  <L n="receiver_sim_pretests">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified">
+            <L n="specified">
+              <E>TEEN</E>
+              <E>YOUNGADULT</E>
+              <E>ADULT</E>
+              <E>ELDER</E>
+              <E>CHILD</E>
+            </L>
+          </V>
+          <V n="species" t="specified">
+            <U n="specified">
+              <L n="species">
+                <E />
+              </L>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="sender_sim_info" t="sim_filter">
+    <U n="sim_filter">
+      <T n="sim_filter">339196<!--TunableSimFilter: dramaNodeFilters_Scenario_Inheritance_Grandmother--></T>
+    </U>
+  </V>
+  <E n="sender_sim_info_type">INSTANCED_ALLOWED</E>
+  <V n="time_option" t="schedule">
+    <U n="schedule">
+      <L n="valid_times">
+        <U>
+          <U n="days_available">
+            <T n="0 SUNDAY">True</T>
+            <T n="1 MONDAY">True</T>
+            <T n="2 TUESDAY">True</T>
+            <T n="3 WEDNESDAY">True</T>
+            <T n="4 THURSDAY">True</T>
+            <T n="5 FRIDAY">True</T>
+            <T n="6 SATURDAY">True</T>
+          </U>
+          <T n="duration">24</T>
+          <U n="start_time">
+            <T n="hour">0</T>
+          </U>
+        </U>
+      </L>
+    </U>
+  </V>
+</I>

@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Buff" i="buff" m="buffs.buff" n="buff_GhostPowers_Ult_Cursed" s="393944">
+  <V n="_temporary_commodity_info" t="enabled">
+    <U n="enabled">
+      <L n="categories">
+        <E>Scared_Buffs</E>
+      </L>
+      <T n="max_duration">720</T>
+    </U>
+  </V>
+  <T p="InGame\Audio\Stings\sting_buff_gain.propx" n="audio_sting_on_add">39b2aa4a:00000000:8af8b916cf64c646</T>
+  <T p="InGame\Audio\Stings\sting_buff_loss.propx" n="audio_sting_on_remove">39b2aa4a:00000000:3bf33216a25546ea</T>
+  <T n="buff_description">0x8391676D<!--String: "After that ghostly encounter, {0.SimFirstName} can’t shake the feeling of an invisible weight dragging {0.SimPronounObjective} down. What once seemed like simple tasks now feel like epic challenges, and nothing just seems to go right around here! Could this just be a twist of fate, or is something more sinister from beyond at play..?"--></T>
+  <T n="buff_name">0xEA538638<!--String: "Am I <i>Cursed?!</i>"--></T>
+  <U n="game_effect_modifier">
+    <L n="_game_effect_modifiers">
+      <V t="affordance_modifier">
+        <U n="affordance_modifier">
+          <L n="interaction_category_tags">
+            <E>Interaction_Category_Affection</E>
+            <E>Interaction_Category_Flirtation</E>
+            <E>Interaction_Category_PhysicalIntimacy</E>
+            <E>Interaction_Chat</E>
+            <E>Interaction_Friendly</E>
+          </L>
+          <T n="success_modifier">-50</T>
+        </U>
+      </V>
+      <V t="autonomy_modifier">
+        <U n="autonomy_modifier">
+          <L n="stat_use_multiplier">
+            <U>
+              <T n="key">16574<!--Commodity: commodity_CraftingProgress--></T>
+              <U n="value">
+                <E n="apply_direction">INCREASE</E>
+                <T n="multiplier">0.65</T>
+              </U>
+            </U>
+          </L>
+          <V n="subject" t="apply_on_interaction_to_participant">
+            <V n="apply_on_interaction_to_participant" t="enabled">
+              <L n="enabled">
+                <E>CraftingObject</E>
+                <E>CraftingProcess</E>
+              </L>
+            </V>
+          </V>
+        </U>
+      </V>
+      <V t="autonomy_modifier">
+        <U n="autonomy_modifier">
+          <L n="skill_tag_modifiers">
+            <U>
+              <E n="key">Skill_All</E>
+              <T n="value">0.65</T>
+            </U>
+          </L>
+        </U>
+      </V>
+    </L>
+    <L n="_tested_game_effect_modifiers">
+      <U>
+        <V n="game_effect_modifier" t="statistic_static_modifier">
+          <U n="statistic_static_modifier">
+            <V n="modifier" t="delta">
+              <U n="delta">
+                <T n="number">-60</T>
+              </U>
+            </V>
+            <T n="statistic">424777<!--Statistic: statistic_LuckSys_Luck--></T>
+          </U>
+        </V>
+        <L n="test_set">
+          <L>
+            <V t="test_set_reference">
+              <T n="test_set_reference">449545<!--TestSetInstance: testSetInstance_LuckSys_HasLuck--></T>
+            </V>
+          </L>
+        </L>
+      </U>
+    </L>
+  </U>
+  <T n="icon" p="InEP17\UI\Icons\Buffs\buffs_Cursed_neg.png">2f7d0004:00000000:f6db2b3e9e6ee081</T>
+  <V n="interactions" t="enabled">
+    <U n="enabled">
+      <L n="interaction_items">
+        <T>25717<!--MixerInteraction: Emotion_Idle--></T>
+      </L>
+      <T n="scored_commodity">16472<!--Commodity: commodity_Emotion_Autonomy_Uncomfortable--></T>
+    </U>
+  </V>
+  <T n="mood_type">251719<!--Mood: Mood_Scared--></T>
+  <T n="mood_weight">4</T>
+  <T n="ui_sort_order">10</T>
+  <V n="vfx" t="play_effect">
+    <U n="play_effect">
+      <T n="effect_name">ep17_gp_curse_buff_glow_torso</T>
+      <V n="joint_name" t="Slot">
+        <T n="Slot">b__Spine2__</T>
+      </V>
+    </U>
+  </V>
+</I>

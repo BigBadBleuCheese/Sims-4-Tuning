@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="worldPOI_RangerStation_EP20_Asp_StudyMatingRitual" s="463051">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="spawn_points">
+            <U n="spawn_points">
+              <V n="tags" t="Spawn_Point_Tags">
+                <L n="Spawn_Point_Tags">
+                  <E>Spawn_EP20_RangerStation</E>
+                </L>
+              </V>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="time_based">
+                <U n="time_based">
+                  <T n="max_time">60</T>
+                  <T n="min_time">30</T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+      </L>
+      <V n="content" t="looping_content">
+        <U n="looping_content">
+          <U n="animation_ref">
+            <T n="factory">8749<!--AnimationElement: PostureIdle_Stand--></T>
+          </U>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="basic_liabilities">
+    <V t="hide_sim_liability">
+      <U n="hide_sim_liability">
+        <T n="include_carried_sims">True</T>
+        <L n="participants">
+          <E>Actor</E>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="basic_reserve_object" t="enabled">
+    <U n="enabled">
+      <L n="subject_list">
+        <U>
+          <L n="subject">
+            <E>Object</E>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <V n="content_score" t="disabled" />
+  <T n="counts_as_in_shade">True</T>
+  <T n="counts_as_inside">True</T>
+  <T n="display_name">0xB14C4541<!--String: "Research Mating Rituals of Butterflies"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <V n="display_tooltip" t="enabled">
+    <T n="enabled">0x486A5E84<!--String: "Learn the mystical and coveted Mating Ritual of Butterflies to gain new <b>butterfly-themed Romantic interactions</b>!"--></T>
+  </V>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="basic_extras">
+          <V t="loot">
+            <U n="loot">
+              <L n="loot_list">
+                <T>454703<!--LootActions: loot_EP20_Asp_ButterflyMating--></T>
+              </L>
+            </U>
+          </V>
+        </L>
+      </U>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T n="key" p="InEP20\UI\Icons\PieMenu\Traits\trait_CritterEnthusiast_piemenu.png">2f7d0004:00000000:445d9b1472cbbbc3</T>
+      </U>
+    </V>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all" />
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="trait">
+      <U n="trait">
+        <L n="blacklist_traits">
+          <T>454700<!--Trait: trait_Hidden_EP20_Asp_BeforeCritterEnthusiast--></T>
+        </L>
+      </U>
+    </V>
+    <V t="aspiration_track_complete">
+      <U n="aspiration_track_complete">
+        <L n="aspiration_tracks">
+          <T>452449<!--AspirationTrack: Track_Nature_EP20_Asp_CritterHunter--></T>
+        </L>
+        <V n="levels" t="enabled">
+          <T n="enabled">3</T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

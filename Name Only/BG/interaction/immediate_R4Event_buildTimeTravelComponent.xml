@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="ImmediateSuperInteraction" i="interaction" m="interactions.base.immediate_interaction" n="immediate_R4Event_buildTimeTravelComponent" s="426981">
+  <V n="_saveable" t="disabled" />
+  <T n="allow_from_object_inventory">False</T>
+  <T n="allow_from_sim_inventory">True</T>
+  <T n="allow_from_world">False</T>
+  <T n="allow_user_directed">True</T>
+  <T n="allowed_to_combine">False</T>
+  <V n="basic_content" t="no_content" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x5AE2271A<!--String: "Build Time Travel Component"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <V n="item_cost" t="explicit_item_cost">
+    <U n="explicit_item_cost">
+      <L n="ingredients">
+        <U>
+          <T n="ingredient">22671</T>
+        </U>
+        <U>
+          <T n="ingredient">28772</T>
+        </U>
+        <U>
+          <T n="ingredient">28764</T>
+        </U>
+      </L>
+    </U>
+  </V>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="basic_extras">
+          <V t="create_object">
+            <U n="create_object">
+              <V n="creation_data" t="definition">
+                <U n="definition">
+                  <T n="definition">462038</T>
+                </U>
+              </V>
+              <V n="location" t="inventory" />
+              <E n="owner_sim">Actor</E>
+              <T n="set_sim_as_inventory_owner">False</T>
+              <T n="set_sim_as_owner">False</T>
+              <T n="set_value_to_crafted_tooltip">True</T>
+            </U>
+          </V>
+          <V t="balloon">
+            <U n="balloon">
+              <L n="balloon_choices">
+                <U>
+                  <V n="item" t="balloon_icon">
+                    <U n="balloon_icon">
+                      <V n="icon" t="resource_key">
+                        <U n="resource_key">
+                          <T p="InGame\UI\Icons\Headlines\Events\headline_ShardOfTimeIcon2_50x50.png" n="key">2f7d0004:00000000:2b2278a1c6d8e3a8</T>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </L>
+              <L n="balloon_target">
+                <E>Actor</E>
+              </L>
+            </U>
+          </V>
+          <V t="destroy_specified_objects_from_target_inventory">
+            <U n="destroy_specified_objects_from_target_inventory">
+              <E n="inventory_owner">Actor</E>
+              <L n="object_tests">
+                <L>
+                  <V t="object_definition_criteria">
+                    <U n="object_definition_criteria">
+                      <V n="identity_test" t="definition_id">
+                        <U n="definition_id">
+                          <T n="actual_object">462018</T>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+          </V>
+        </L>
+        <L n="continuation">
+          <U>
+            <T n="affordance">229709<!--SuperInteraction: reactions_Generic_Cheer_Strong_NoNPC--></T>
+            <E n="target">Actor</E>
+          </U>
+        </L>
+      </U>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T n="key" p="InGame\UI\Icons\PieMenu\Events\icon_piemenu_category_AnniversaryEvent.png">2f7d0004:00000000:0d7f83a067aad3b8</T>
+      </U>
+    </V>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+            <E>TODDLER</E>
+            <E>BABY</E>
+            <E>INFANT</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <V n="whitelist" t="enabled">
+          <L n="enabled">
+            <T>410922<!--Buff: buff_R4Event_QuestActive--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+    <V t="skill_test">
+      <U n="skill_test">
+        <T n="skill">16706<!--Skill: statistic_Skill_AdultMajor_Logic--></T>
+        <V n="skill_range" t="interval">
+          <U n="interval">
+            <U n="skill_interval">
+              <T n="lower_bound">2</T>
+            </U>
+          </U>
+        </V>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xB7B28E14<!--String: "{0.SimFirstName} needs level 2 Logic skill to build this."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="skill_test">
+      <U n="skill_test">
+        <T n="skill">16704<!--Skill: statistic_Skill_AdultMajor_Handiness--></T>
+        <V n="skill_range" t="interval">
+          <U n="interval">
+            <U n="skill_interval">
+              <T n="lower_bound">2</T>
+            </U>
+          </U>
+        </V>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x9DB046EC<!--String: "{0.SimFirstName} needs level 2 Handiness skill to build this."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="situation_goal_test">
+        <U n="situation_goal_test">
+          <L n="situation_goals">
+            <T>426982<!--SituationGoalObjectInteraction: r4Event_ObjectInteraction_TimeTravelComponent--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

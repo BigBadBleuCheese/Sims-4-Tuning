@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SimPickerInteraction" i="interaction" m="interactions.base.picker_interaction" n="simPicker_FreeWeights_Class_Public_Free" s="461344">
+  <V n="_icon" t="resource_key">
+    <U n="resource_key">
+      <T p="InGame\UI\Icons\Headlines\Final\headline_PumpItUpClass.png" n="key">2f7d0004:00000000:1fb213c12c215ce6</T>
+    </U>
+  </V>
+  <V n="_saveable" t="disabled" />
+  <L n="actor_continuation">
+    <U>
+      <T n="affordance">460693<!--ImmediateSuperInteraction: immediate_FreeWeights_Start_Public_Free--></T>
+    </U>
+  </L>
+  <L n="basic_extras">
+    <V t="notification">
+      <U n="notification">
+        <V n="dialog" t="single">
+          <V n="single" t="literal">
+            <U n="literal">
+              <L n="dialog_options">
+                <E>DISABLE_CLOSE_BUTTON</E>
+              </L>
+              <V n="icon" t="enabled">
+                <V n="enabled" t="resource_key">
+                  <U n="resource_key">
+                    <T p="InGame\UI\Icons\Headlines\Final\headline_PumpItUpClass.png" n="key">2f7d0004:00000000:1fb213c12c215ce6</T>
+                  </U>
+                </V>
+              </V>
+              <V n="secondary_icon" t="enabled">
+                <V n="enabled" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>Actor</E>
+                    </L>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x42DFF763<!--String: "Pump It Up Class is starting soon! "--></T>
+              </V>
+            </U>
+          </V>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="category">460456<!--PieMenuCategory: pieMenuCategory_FreeWeights_Class_Free--></T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x87E4ED6F<!--String: "Lead Pump It Up Routine"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T n="include_uninstantiated_sims">False</T>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <L n="picked_continuation">
+    <U>
+      <T n="affordance">460329<!--ImmediateSuperInteraction: immediate_FreeWeights_InviteToJoin_Picker_Free--></T>
+      <E n="target">Actor</E>
+    </U>
+  </L>
+  <V n="picker_dialog" t="sim_picker">
+    <U n="sim_picker">
+      <L n="custom_filters">
+        <V t="reference">
+          <T n="reference">499295<!--CustomSimFilter: customSimFilter_NobleCareer--></T>
+        </V>
+      </L>
+      <V n="max_selectable" t="static_count">
+        <U n="static_count">
+          <T n="number_selectable">3</T>
+        </U>
+      </V>
+      <V n="title" t="enabled">
+        <T n="enabled">0x1C27B77C<!--String: "Lead Pump It Up Class"--></T>
+      </V>
+    </U>
+  </V>
+  <V n="pie_menu_test_tooltip" t="enabled">
+    <T n="enabled">0x7B21F72E<!--String: "There are no available Sims nearby."--></T>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <V n="radius" t="enabled">
+    <T n="enabled">25</T>
+  </V>
+  <V n="sim_filter" t="sim_filter_selected">
+    <T n="sim_filter_selected">422487<!--TunableSimFilter: filter_SimPicker_NotBusy_TYAE--></T>
+  </V>
+  <L n="sim_tests">
+    <L>
+      <V t="situation_job_test">
+        <U n="situation_job_test">
+          <T n="negate">True</T>
+          <E n="participant">PickedSim</E>
+          <L n="role_tags">
+            <E>Role_ExcludeFromYogaAndMeditationClass</E>
+          </L>
+          <L n="situation_jobs">
+            <T>270310<!--SituationJob: jobs_YogaInstructor_Service--></T>
+            <T>118131<!--SituationJob: Job_yoga_classMember--></T>
+            <T>118130<!--SituationJob: job_yoga_instructor--></T>
+            <T>118373<!--SituationJob: job_yoga_instructor_idle--></T>
+            <T>270297<!--SituationJob: job_yoga_instructor_playerLed--></T>
+            <T>271675<!--SituationJob: job_GuidedMeditation_Instructor--></T>
+            <T>271676<!--SituationJob: job_GuidedMeditation_ClassMember--></T>
+            <T>117815<!--SituationJob: jobs_RelaxationVenue_MassageTherapist--></T>
+            <T>119519<!--SituationJob: jobs_RelaxationVenue_Reflexologist--></T>
+            <T>118593<!--SituationJob: jobs_MassageTherapist_Service--></T>
+            <T>460465<!--SituationJob: situationJob_FreeWeights_Class_Instructor--></T>
+            <T>460464<!--SituationJob: situationJob_FreeWeights_Class_Student--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>31362<!--Buff: buff_Object_Fitness_VeryFatigued--></T>
+          <T>12543<!--Buff: buff_Object_Fitness-Fatigued--></T>
+          <T>28907<!--Buff: buff_Object_Fitness-Fatigued_Lazy--></T>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x1B7CC406<!--String: "{0.SimFirstName} is too tired to do this right now!"--></T>
+        </V>
+      </U>
+    </V>
+    <V t="state_white_black">
+      <U n="state_white_black">
+        <U n="states">
+          <V n="whitelist" t="specify">
+            <U n="specify">
+              <L n="whitelist">
+                <T>459042<!--CommodityBasedObjectStateValue: freeWeights_CommodityValues_Full--></T>
+                <T>459041<!--CommodityBasedObjectStateValue: freeWeights_CommodityValues_Half--></T>
+              </L>
+            </U>
+          </V>
+        </U>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x51C90F98<!--String: "Object is already in use."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="skill_test">
+      <U n="skill_test">
+        <T n="skill">16659<!--Skill: skill_Fitness--></T>
+        <V n="skill_range" t="interval">
+          <U n="interval">
+            <U n="skill_interval">
+              <T n="lower_bound">3</T>
+            </U>
+          </U>
+        </V>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x7C6CA10<!--String: "{0.SimFirstName} doesn't have the necessary Fitness Skill to teach a Pump It Up class. Maybe start with a few arm curls first!"--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+</I>

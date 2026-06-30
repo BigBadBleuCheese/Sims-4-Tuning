@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_EP21_Onboarding_Dynasty_FirstTimeInteraction" s="488797">
+  <L n="loot_actions">
+    <V t="actions">
+      <T n="actions">488798<!--LootActions: loot_EP21_Onboarding_EP21_AccountDataTracking_Dynasty_FirstTimeIntroduction--></T>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>TargetSim</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x41B965FE<!--String: "Your Sim interacted with a Dynasty member for the first time! Start a new Dynasty by opening the Dynasty Panel."--></T>
+            </V>
+            <L n="ui_responses">
+              <U>
+                <T n="text">0xF2B71F3B<!--String: "Show the Dynasty Panel"--></T>
+                <E n="ui_request">SHOW_DYNASTY_PANEL</E>
+              </U>
+            </L>
+            <E n="visual_type">SPEECH</E>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="account_gameplay_data_test">
+        <U n="account_gameplay_data_test">
+          <T n="name">Onboarding_EP21_Dynasty_FirstTimeInteraction</T>
+          <T n="negate">True</T>
+          <T n="value">Complete</T>
+        </U>
+      </V>
+      <V t="trait">
+        <U n="trait">
+          <E n="subject">TargetSim</E>
+          <L n="whitelist_traits">
+            <T>466524<!--Trait: trait_Dynasty_Member--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

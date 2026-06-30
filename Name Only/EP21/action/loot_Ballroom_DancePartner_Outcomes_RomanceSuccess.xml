@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Ballroom_DancePartner_Outcomes_RomanceSuccess" s="476410">
+  <L n="loot_actions">
+    <V t="relationship_bits_loot">
+      <U n="relationship_bits_loot">
+        <L n="bit_operations">
+          <U>
+            <T n="bit">462978<!--RelationshipBit: ballroomParty_Relbit_RomancePartner--></T>
+            <E n="operation">ADD</E>
+            <E n="recipients">Actor</E>
+            <E n="targets">TargetSim</E>
+          </U>
+          <U>
+            <T n="bit">462979<!--RelationshipBit: ballroomParty_Relbit_StatusPartner--></T>
+            <E n="operation">REMOVE</E>
+            <E n="recipients">Actor</E>
+            <E n="targets">TargetSim</E>
+          </U>
+          <U>
+            <T n="bit">462977<!--RelationshipBit: ballroomParty_Relbit_DancePartner--></T>
+            <E n="operation">REMOVE</E>
+            <E n="recipients">Actor</E>
+            <E n="targets">TargetSim</E>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>TargetSim</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x4F1E6EAF<!--String: "{0.SimFirstName} and {1.SimFirstName} have agreed to a romantic dance during the Grand Waltz. The Host can start the Grand Waltz by selecting the Waltzing Dance Floor, calling all guests to dance."--></T>
+            </V>
+            <E n="visual_type">SPEECH</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="actions">
+      <T n="actions">10900<!--LootActions: Loot_LTR_Romance_Small--></T>
+    </V>
+    <V t="actions">
+      <T n="actions">24120<!--LootActions: Loot_SocialContext_Romance_Gain--></T>
+    </V>
+    <V t="actions">
+      <T n="actions">481577<!--LootActions: loot_Ballroom_DancePartner_Buff_Plumbbob_Romance--></T>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">500067<!--Buff: buff_Ballroom_Hidden_DanceIntentSet--></T>
+        </U>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">473658<!--Buff: buff_Ballroom_Hidden_RomanceDancePartners--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <L n="blacklist">
+                  <T>473659<!--Buff: buff_Ballroom_Hidden_StatusDancePartners--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

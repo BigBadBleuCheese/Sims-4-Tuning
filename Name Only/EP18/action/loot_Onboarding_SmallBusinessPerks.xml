@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Onboarding_SmallBusinessPerks" s="431140">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InEP18\UI\Icons\Notifications\BusinessPerkPoints_TNS.png">2f7d0004:00000000:51b6f321a7c80196</T>
+                </U>
+              </V>
+            </V>
+            <V n="primary_icon_response" t="enabled">
+              <U n="enabled">
+                <E n="ui_request">SHOW_SMALL_BUSINESS_PERKS_PANEL</E>
+              </U>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x1738DFDB<!--String: "{0.SimFirstName} has earned {0.SimPronounPossessiveDependent} first Small Business Perk Point for {1.String}! Perk Points are earned every time the Small Business Renown level increases.\n\nSpend those hard earned Perk Points on useful Small Business Perks! They will bring various improvements to {1.String}, such as a Tip Jar, being able to Sway Customers, and Inspiring others with {0.SimPronounPossessiveDependent} Business Story. Some Small Business Perks also affect the Alignment of {1.String}."--></T>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="participant_type" />
+                  <V t="small_business" />
+                </L>
+              </U>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0xB5E4E06<!--String: "The Perks of Business"--></T>
+            </V>
+            <V n="tns_suppression_group" t="enabled">
+              <E n="enabled">Onboarding_SmallBusinessPerk</E>
+            </V>
+            <L n="ui_responses">
+              <U>
+                <T n="text">0x9300F22A<!--String: "Open Small Business Perks Screen"--></T>
+                <V n="tutorial_id" t="enabled" />
+                <E n="ui_request">SHOW_SMALL_BUSINESS_PERKS_PANEL</E>
+              </U>
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="small_business_ownership_test" />
+    </L>
+  </L>
+</I>

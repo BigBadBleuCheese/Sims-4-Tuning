@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="sI_NobleCareer_SetKingdomTaxes_Normal" s="482121">
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">482118<!--AnimationElement: anim_NobleCareer_Throne_SetKingdomTaxes--></T>
+        <U n="overrides">
+          <V n="balloons" t="enabled">
+            <L n="enabled">
+              <U>
+                <L n="balloon_choices">
+                  <U>
+                    <V n="item" t="balloon_category">
+                      <T n="balloon_category">483994<!--BalloonCategory: BalloonCategory_SetMoney_Thought--></T>
+                    </V>
+                  </U>
+                </L>
+                <L n="balloon_target">
+                  <E>Actor</E>
+                </L>
+              </U>
+            </L>
+          </V>
+        </U>
+      </U>
+    </U>
+  </V>
+  <T n="category">482124<!--PieMenuCategory: pieMenuCategory_NobleCareer_KingdomTaxes--></T>
+  <V n="content_score" t="enabled">
+    <U n="enabled">
+      <L n="active_career_assignments">
+        <U>
+          <T n="key">487722<!--AspirationAssignment: careerAssignment_Noble_SetKingdomTaxes--></T>
+          <T n="value">1000</T>
+        </U>
+      </L>
+    </U>
+  </V>
+  <T n="display_name">0x30D6690D<!--String: "Normal"--></T>
+  <V n="display_name_in_queue" t="enabled">
+    <T n="enabled">0x84E08A97<!--String: "Set Taxes to Normal"--></T>
+  </V>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <V n="display_tooltip" t="enabled">
+    <T n="enabled">0x251039F<!--String: "Noble Salaries in the region and Household Bills will be normal, neither increasing nor decreasing."--></T>
+  </V>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="loot_list">
+          <T>482128<!--LootActions: loot_NobleCareer_SetKingdomTax_Normal--></T>
+        </L>
+      </U>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="disabled" />
+  <T n="pie_menu_priority">2</T>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="in_home_region">
+      <U n="in_home_region">
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xE2ED99EC<!--String: "Noble Actions cannot be performed outside the Kingdom {0.SimFirstName} lives in."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="career_test">
+      <U n="career_test">
+        <V n="test_type" t="career_reference">
+          <U n="career_reference">
+            <V n="career" t="specific_career">
+              <T n="specific_career">466304<!--NobleCareer: career_Noble--></T>
+            </V>
+            <V n="user_level" t="enabled">
+              <U n="enabled">
+                <T n="lower_bound">7</T>
+              </U>
+            </V>
+          </U>
+        </V>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x86C58151<!--String: "{0.SimFirstName} has to be Level 7 in the Noble Career to do this interaction."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="kingdom">
+      <U n="kingdom">
+        <V n="test_type" t="tax_level">
+          <U n="tax_level">
+            <E n="comparison">NOTEQUAL</E>
+            <V n="tooltip" t="enabled">
+              <T n="enabled">0x20E86423<!--String: "This is the current tax level."--></T>
+            </V>
+            <E n="value">Normal</E>
+            <E n="world">ACTOR_NEIGHBORHOOD</E>
+          </U>
+        </V>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x20E86423<!--String: "This is the current tax level."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

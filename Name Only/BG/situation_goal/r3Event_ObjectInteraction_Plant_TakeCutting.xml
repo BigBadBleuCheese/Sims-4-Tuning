@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalObjectInteraction" i="situation_goal" m="situations.situation_goal_object_interaction" n="r3Event_ObjectInteraction_Plant_TakeCutting" s="397164">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T p="InGame\UI\Icons\Headlines\Final\headline_Gardening.png" n="enabled">2f7d0004:00000000:bcf6721a428d5635</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x894CE11F<!--String: "Take a Cutting of a Plant"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0xF0727091<!--String: "Reach Level 5 in Gardening and take a cutting of your Snapdragon or Lily.\n\nYour plant must grow to the mature stage for the Take Cutting interaction to be available.\n\n<i>(+35 Event Points)</i>"--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>447711<!--SituationGoalLootActions: liveEvent_GoalLoot_CompleteQuestGoal--></T>
+  </L>
+  <U n="_goal_test">
+    <L n="affordances">
+      <T>13416<!--GardeningSpliceInteraction: Gardening_Splice--></T>
+      <T>77757<!--GardeningSpliceInteraction: Gardening_Splice_Low--></T>
+      <T>234818<!--GardeningSpliceInteraction: Gardening_Splice_VerticalGarden--></T>
+      <T>432891<!--GardeningSpliceInteraction: super_PottedPlants_Gardening_Splice--></T>
+    </L>
+    <E n="test_event">InteractionComplete</E>
+  </U>
+  <L n="_post_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+      </U>
+    </V>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+  <V n="tutorial_tip_group" t="disabled" />
+</I>

@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="GameObject" i="object" m="objects.game_object" n="object_StreetFoodTable" s="334531">
+  <U n="_components">
+    <V n="focus" t="enabled">
+      <U n="enabled">
+        <V n="_focus_score" t="globally">
+          <U n="globally">
+            <E n="base">LOW</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V n="inventory" t="enabled">
+      <U n="enabled">
+        <T n="allow_putdown_in_inventory">False</T>
+        <E n="inventory_type">CRAFT_SALES_TABLE_EP03</E>
+        <T n="return_owned_objects">True</T>
+        <T n="score_contained_objects_for_autonomy">False</T>
+      </U>
+    </V>
+    <V n="inventory_item" t="enabled">
+      <U n="enabled">
+        <V n="no_carry_add_to_sim_inventory_affordances" t="OVERRIDE">
+          <L n="OVERRIDE">
+            <T>146698<!--SuperInteraction: si_SwipeIntoSimInventory_CraftSalesTable--></T>
+          </L>
+        </V>
+        <T n="skip_carry_pose">True</T>
+        <E n="stack_scheme">NONE</E>
+        <L n="valid_inventory_types">
+          <E>SIM</E>
+          <E>STORAGE_CHEST_DORM</E>
+        </L>
+      </U>
+    </V>
+    <V n="live_drag_target" t="enabled">
+      <U n="enabled">
+        <L n="drop_tests_and_actions">
+          <U>
+            <E n="drop_type">CRAFT_SALES_TABLE_EP03</E>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V n="name" t="enabled">
+      <U n="enabled">
+        <V n="affordance" t="enabled">
+          <T n="enabled">337816<!--RebrandImmediateInteraction: rename_StreetFoodTable--></T>
+        </V>
+      </U>
+    </V>
+    <V n="ownable_component" t="enabled" />
+    <V n="retail_component" t="disabled" />
+    <V n="situation_scheduler_component" t="disabled" />
+    <V n="state" t="enabled">
+      <U n="enabled">
+        <L n="state_triggers">
+          <U>
+            <L n="at_states">
+              <T>77532<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Replace--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>39737<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Not_Burning--></T>
+              </L>
+            </V>
+          </U>
+        </L>
+        <L n="states">
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">227578<!--ObjectStateValue: salesTable_Tend_Closed--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">145183<!--ObjectStateValue: salesTable_MarkUp_0--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">349670<!--ObjectStateValue: salesTable_TenderBonus_None--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">335001<!--ObjectStateValue: streetFoodTable_AutoStock_Off--></T>
+              </U>
+              <U>
+                <T n="key">335002<!--ObjectStateValue: streetFoodTable_AutoStock_On--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">335002<!--ObjectStateValue: streetFoodTable_AutoStock_On--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">39611<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change--></T>
+              </U>
+              <U>
+                <T n="key">39736<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Burning--></T>
+              </U>
+              <U>
+                <T n="key">39737<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Not_Burning--></T>
+              </U>
+              <U>
+                <T n="key">77532<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Replace--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">39737<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Not_Burning--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">35956<!--CommodityBasedObjectStateValue: Materialistic_Admired--></T>
+              </U>
+              <U>
+                <T n="key">35957<!--CommodityBasedObjectStateValue: Materialistic_YetToAdmire--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">35957<!--CommodityBasedObjectStateValue: Materialistic_YetToAdmire--></T>
+            </V>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V n="tooltip_component" t="enabled">
+      <U n="enabled">
+        <L n="custom_tooltips">
+          <U>
+            <L n="object_tests">
+              <L>
+                <V t="in_inventory" />
+              </L>
+            </L>
+            <L n="tooltip_fields">
+              <U>
+                <E n="key">recipe_name</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x144FD666<!--String: "{0.ObjectName}"--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">Object</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+            </L>
+          </U>
+        </L>
+      </U>
+    </V>
+  </U>
+  <U n="_components_native">
+    <V n="Slot" t="enabled">
+      <U n="enabled">
+        <U n="default_slot">
+          <L n="autonomy_modifiers" />
+          <T n="return_owned_objects">True</T>
+          <L n="slot_provided_affordances" />
+          <L n="state_values_tuning">
+            <U>
+              <L n="required_slot_types">
+                <T>_gameplaySlot_Deco_Small</T>
+                <T>_gameplaySlot_Deco_Medium</T>
+                <T>_gameplaySlot_Deco_Large</T>
+              </L>
+              <T n="state_to_set">32305<!--ObjectStateValue: Marketable_HigherValue--></T>
+            </U>
+          </L>
+        </U>
+        <T n="send_telemetry">True</T>
+        <L n="specific_slots">
+          <U>
+            <L n="autonomy_modifiers">
+              <U>
+                <V n="affordance_compatibility" t="enabled">
+                  <V n="enabled" t="literal">
+                    <U n="literal">
+                      <V n="default_inclusion" t="exclude_all">
+                        <U n="exclude_all">
+                          <L n="include_affordances">
+                            <T>336455<!--SuperInteraction: si_StreetFoodTable_PurchaseObject_Autonomous--></T>
+                            <T>336899<!--SuperInteraction: si_StreetFoodTable_PurchaseEatFood_Autonomous--></T>
+                            <T>343214<!--SuperInteraction: si_StreetFoodTable_PurchaseEatFood_Convinced--></T>
+                          </L>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                </V>
+                <V n="provided_affordance_compatibility" t="literal">
+                  <U n="literal">
+                    <V n="default_inclusion" t="exclude_all">
+                      <U n="exclude_all">
+                        <L n="include_affordances">
+                          <T>336455<!--SuperInteraction: si_StreetFoodTable_PurchaseObject_Autonomous--></T>
+                          <T>336899<!--SuperInteraction: si_StreetFoodTable_PurchaseEatFood_Autonomous--></T>
+                          <T>343214<!--SuperInteraction: si_StreetFoodTable_PurchaseEatFood_Convinced--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+                <T n="super_affordance_suppress_on_add">True</T>
+                <E n="super_affordance_suppression_mode">USE_AFFORDANCE_COMPATIBILITY_AND_WHITELIST</E>
+              </U>
+              <U>
+                <L n="decay_modifiers">
+                  <U>
+                    <T n="key">16591<!--Commodity: commodity_freshness--></T>
+                    <T n="value">0.12</T>
+                  </U>
+                  <U>
+                    <T n="key">77040<!--Commodity: commodity_Fish_Freshness--></T>
+                    <T n="value">0.12</T>
+                  </U>
+                </L>
+              </U>
+            </L>
+            <L n="slot_provided_affordances">
+              <U>
+                <T n="affordance">336455<!--SuperInteraction: si_StreetFoodTable_PurchaseObject_Autonomous--></T>
+              </U>
+              <U>
+                <T n="affordance">336899<!--SuperInteraction: si_StreetFoodTable_PurchaseEatFood_Autonomous--></T>
+                <V n="object_filter" t="allow_all" />
+              </U>
+              <U>
+                <T n="affordance">343214<!--SuperInteraction: si_StreetFoodTable_PurchaseEatFood_Convinced--></T>
+              </U>
+            </L>
+            <T n="specific_slot_set">slotSet_Deco</T>
+          </U>
+        </L>
+        <T n="update_children_tooltip">True</T>
+      </U>
+    </V>
+  </U>
+  <L n="_part_data_map">
+    <U>
+      <T n="key">Counter_1</T>
+      <U n="value">
+        <L n="adjacent_parts">
+          <T>Display_0</T>
+        </L>
+        <T n="part_definition">334534<!--ObjectPart: part_StreetFoodTable_counter--></T>
+        <V n="subroot_index" t="enabled">
+          <T n="enabled">4</T>
+        </V>
+      </U>
+    </U>
+    <U>
+      <T n="key">Counter_2</T>
+      <U n="value">
+        <L n="adjacent_parts">
+          <T>Display_0</T>
+        </L>
+        <T n="part_definition">334534<!--ObjectPart: part_StreetFoodTable_counter--></T>
+        <V n="subroot_index" t="enabled">
+          <T n="enabled">5</T>
+        </V>
+      </U>
+    </U>
+    <U>
+      <T n="key">Display_0</T>
+      <U n="value">
+        <L n="adjacent_parts">
+          <T>Counter_1</T>
+          <T>Counter_2</T>
+        </L>
+        <T n="part_definition">334535<!--ObjectPart: part_StreetFoodTable_display--></T>
+        <V n="subroot_index" t="enabled">
+          <T n="enabled">2</T>
+        </V>
+      </U>
+    </U>
+  </L>
+  <L n="_super_affordances">
+    <T>13328<!--ImmediateSuperInteraction: debug_Reset--></T>
+    <T>13326<!--ImmediateSuperInteraction: debug_ObjectDestroy--></T>
+    <T>103888<!--ImmediateSuperInteraction: cheat_set_as_head--></T>
+    <T>196759<!--SuperInteraction: famePerks_GoodReputation_GivingBack_DonateObject--></T>
+    <T>401385<!--SuperInteraction: ghost_Possess_MischieviousGhost--></T>
+    <T>336346<!--SuperInteraction: si_StreetFoodTable_TendTable--></T>
+    <T>346331<!--SuperInteraction: si_StreetFoodTable_TendTable_Child--></T>
+    <T>336897<!--SuperInteraction: si_StreetFoodTable_StockTable--></T>
+    <T>353080<!--SuperInteraction: si_StreetFoodTable_StockTable_Child--></T>
+    <T>353081<!--SuperInteraction: si_StreetFoodTable_CloseTable--></T>
+    <T>353082<!--SuperInteraction: si_StreetFoodTable_CloseTable_Child--></T>
+    <T>335458<!--ImmediateSuperInteraction: si_StreetFoodTable_Immediate_FoodSale_StockAndTend--></T>
+    <T>335460<!--ImmediateSuperInteraction: si_StreetFoodTable_Immediate_FoodSale_OpenStreet_StockAndTend--></T>
+    <T>336543<!--SuperInteraction: StreetFoodTable_BrowseTable--></T>
+    <T>335255<!--ObjectInInventoryPickerInteraction: objectInInventory_StreetFoodTable_SlotSmallAppliance--></T>
+    <T>335254<!--ImmediateSuperInteraction: si_StreetFoodTable_Immediate_AutoStock--></T>
+    <T>13983<!--StandSuperInteraction: sim-stand--></T>
+    <T>337929<!--SuperInteraction: generic_StreetFoodTable_Tend--></T>
+    <T>350781<!--ImmediateSuperInteraction: si_StreetFoodTable_Immediate_FoodSale_Indoors_StockAndTend--></T>
+    <T>393854<!--SuperInteraction: ghostPowers_Abilities_Scary_SinisterPossess_Autonomous--></T>
+    <T>145236<!--ImmediateSuperInteraction: si_craftSalesTable_MarkUp_0--></T>
+    <T>145232<!--ImmediateSuperInteraction: si_CraftSalesTable_MarkUp_25--></T>
+    <T>145238<!--ImmediateSuperInteraction: si_CraftSalesTable_MarkUp_50--></T>
+    <T>145237<!--ImmediateSuperInteraction: si_CraftSalesTable_MarkUp_75--></T>
+    <T>145233<!--ImmediateSuperInteraction: si_CraftSalesTable_MarkUp_100--></T>
+    <T>145234<!--ImmediateSuperInteraction: si_CraftSalesTable_MarkUp_200--></T>
+    <T>145235<!--ImmediateSuperInteraction: si_CraftSalesTable_MarkUp_300--></T>
+    <T>341360<!--ImmediateSuperInteraction: si_craftSalesTable_MarkUp_500--></T>
+    <T>74457<!--ImmediateSuperInteraction: fire_ReplaceBurntObject--></T>
+    <T>168502<!--SuperInteraction: Ghost_Pet_Possess--></T>
+    <T>324988<!--SuperInteraction: Ghost_Horse_Possess--></T>
+  </L>
+  <U n="recycling_data">
+    <L n="recycling_values">
+      <U>
+        <E n="Bucks Type">RecycleBitsBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+      <U>
+        <E n="Bucks Type">RecyclePiecesBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+    </L>
+  </U>
+  <L n="slot_cost_modifiers">
+    <U>
+      <T n="key">_gameplaySlot_Deco_Large</T>
+      <T n="value">1000</T>
+    </U>
+    <U>
+      <T n="key">_gameplaySlot_Deco_Medium</T>
+      <T n="value">1000</T>
+    </U>
+    <U>
+      <T n="key">_gameplaySlot_Deco_Small</T>
+      <T n="value">1000</T>
+    </U>
+  </L>
+</I>

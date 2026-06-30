@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Dynasty_RivalPartyCrasherChance" s="480240">
+  <L n="loot_actions">
+    <V t="schedule_drama_node">
+      <U n="schedule_drama_node">
+        <U n="chance">
+          <T n="base_chance">15</T>
+          <L n="multipliers">
+            <U>
+              <T n="multiplier">2.5</T>
+              <L n="tests">
+                <L>
+                  <V t="situation_running_test">
+                    <U n="situation_running_test">
+                      <V n="situation_whitelist" t="enabled">
+                        <L n="enabled">
+                          <T>469578<!--CustomStatesSituation: situation_CustomState_BallroomDance--></T>
+                        </L>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+          </L>
+        </U>
+        <T n="drama_node">480241<!--SituationDramaNode: situationDramaNode_Dynasty_RivalPartyCrasher_YAE--></T>
+        <L n="tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="ages" t="specified">
+                  <L n="specified">
+                    <E>YOUNGADULT</E>
+                    <E>ADULT</E>
+                    <E>ELDER</E>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="schedule_drama_node">
+      <U n="schedule_drama_node">
+        <U n="chance">
+          <T n="base_chance">15</T>
+          <L n="multipliers">
+            <U>
+              <T n="multiplier">2.5</T>
+              <L n="tests">
+                <L>
+                  <V t="situation_running_test">
+                    <U n="situation_running_test">
+                      <V n="situation_whitelist" t="enabled">
+                        <L n="enabled">
+                          <T>469578<!--CustomStatesSituation: situation_CustomState_BallroomDance--></T>
+                        </L>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+          </L>
+        </U>
+        <T n="drama_node">480391<!--SituationDramaNode: situationDramaNode_Dynasty_RivalPartyCrasher_Teen--></T>
+        <L n="tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="ages" t="specified">
+                  <L n="specified">
+                    <E>TEEN</E>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="situation_running_test">
+        <U n="situation_running_test">
+          <V n="situation_blacklist" t="enabled">
+            <L n="enabled">
+              <T>480242<!--SituationSimple: situation_Dynasty_RivalPartyCrasher--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+      <V t="drama_node">
+        <U n="drama_node">
+          <L n="drama_nodes">
+            <T>480241<!--SituationDramaNode: situationDramaNode_Dynasty_RivalPartyCrasher_YAE--></T>
+            <T>480391<!--SituationDramaNode: situationDramaNode_Dynasty_RivalPartyCrasher_Teen--></T>
+          </L>
+          <T n="exists">False</T>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

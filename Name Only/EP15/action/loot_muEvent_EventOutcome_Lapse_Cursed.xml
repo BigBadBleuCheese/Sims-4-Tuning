@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_muEvent_EventOutcome_Lapse_Cursed" s="347557">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T p="InEP15\UI\Icons\Notification\notification_CursedItem.png" n="key">2f7d0004:00000000:61a56e8e242baca4</T>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x96187734<!--String: "Fortunately, the curse has faded. But the lack of attention has caused your Unit Rating to fall."--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x27E81BB7<!--String: "Cursed"--></T>
+            </V>
+          </U>
+        </V>
+        <E n="subject">ActiveHousehold</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="is_active_sim" t="enabled" />
+              </U>
+            </V>
+          </L>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="location">
+              <U n="location">
+                <U n="location_tests">
+                  <V n="is_venue_type" t="enabled">
+                    <U n="enabled">
+                      <T n="venue_type">341299<!--Venue: venue_MultiUnit--></T>
+                    </U>
+                  </V>
+                </U>
+                <E n="subject">ActiveHousehold</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T p="InEP15\UI\Icons\Notification\notification_CursedItem.png" n="key">2f7d0004:00000000:61a56e8e242baca4</T>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xD8D0E045<!--String: "Fortunately, the curse has faded. Better pay closer attention next time!"--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x27E81BB7<!--String: "Cursed"--></T>
+            </V>
+          </U>
+        </V>
+        <E n="subject">ActiveHousehold</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="is_active_sim" t="enabled" />
+              </U>
+            </V>
+          </L>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="location">
+              <U n="location">
+                <U n="location_tests">
+                  <V n="is_venue_type" t="enabled">
+                    <U n="enabled">
+                      <T n="negate">True</T>
+                      <T n="venue_type">341299<!--Venue: venue_MultiUnit--></T>
+                    </U>
+                  </V>
+                </U>
+                <E n="subject">ActiveHousehold</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="money_loot">
+      <U n="money_loot">
+        <V n="amount" t="random_in_range">
+          <U n="random_in_range">
+            <T n="lower_bound">20</T>
+            <T n="upper_bound">30</T>
+          </U>
+        </V>
+        <V n="notification" t="enabled">
+          <V n="enabled" t="literal">
+            <U n="literal">
+              <V n="text" t="single">
+                <T n="single">0xD3F9D531<!--String: "The Property Owner sent you {1.Money} to apologize for the inconvenience."--></T>
+              </V>
+              <V n="text_tokens" t="enabled">
+                <U n="enabled">
+                  <L n="tokens">
+                    <V t="money_amount">
+                      <U n="money_amount">
+                        <E n="participant">ActiveHousehold</E>
+                      </U>
+                    </V>
+                  </L>
+                </U>
+              </V>
+            </U>
+          </V>
+        </V>
+        <E n="subject">ActiveHousehold</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="is_active_sim" t="enabled" />
+              </U>
+            </V>
+          </L>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="multi_unit_role_test">
+              <U n="multi_unit_role_test">
+                <T n="invert">False</T>
+                <V n="lot_source" t="enabled" />
+                <E n="subject">ActiveHousehold</E>
+              </U>
+            </V>
+            <V t="multi_unit_role_test">
+              <U n="multi_unit_role_test">
+                <T n="invert">True</T>
+                <V n="lot_source" t="enabled" />
+                <V n="role_to_check" t="is_property_owner" />
+                <E n="subject">ActiveHousehold</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="actions">
+      <T n="actions">357103<!--LootActions: loot_UnitRating_Progression_PickedUnit_ActiveLot_NoSims_Small_Loss--></T>
+    </V>
+    <V t="actions">
+      <T n="actions">351589<!--RandomWeightedLoot: randomWeightedLoot_muEvent_ReoccurenceChance_Lapse--></T>
+    </V>
+    <V t="actions">
+      <T n="actions">348467<!--LootActions: loot_muEventAPM_AddCooldown_Cursed--></T>
+    </V>
+    <V t="buff_removal">
+      <U n="buff_removal">
+        <L n="buffs_to_remove">
+          <T>353150<!--Buff: buff_muEvent_Hidden_TenantDidFix--></T>
+        </L>
+        <E n="subject">ActiveHousehold</E>
+      </U>
+    </V>
+  </L>
+</I>

@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalObjectInteraction" i="situation_goal" m="situations.situation_goal_object_interaction" n="eventActivity_IntObject_Funerals_CategoryInteractions" s="424228">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T p="InEP17\UI\Icons\Events\events_Funeral.png" n="enabled">2f7d0004:00000000:60d6356c000e5732</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x67C3EF3D<!--String: "Lead Funeral Activities"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0x374170A2<!--String: "Successfully run any interaction under the Funeral pie menu."--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list" />
+  <U n="_goal_test">
+    <L n="affordances">
+      <T>383295<!--SuperInteraction: funerals_Eulogize_Lightheartedly_Gravesite--></T>
+      <T>383291<!--SuperInteraction: funerals_Eulogize_Lightheartedly_Podium--></T>
+      <T>390175<!--SuperInteraction: funerals_Eulogize_Lightheartedly_Self--></T>
+      <T>383293<!--SuperInteraction: funerals_Eulogize_Mournfully_Gravesite--></T>
+      <T>383290<!--SuperInteraction: funerals_Eulogize_Mournfully_Podium--></T>
+      <T>390178<!--SuperInteraction: funerals_Eulogize_Mournfully_Self--></T>
+      <T>383284<!--SuperInteraction: funerals_ToastSim--></T>
+      <T>383283<!--SuperInteraction: funerals_LightCandle--></T>
+      <T>390166<!--SuperInteraction: funerals_LightCandle_Self--></T>
+      <T>391353<!--SuperInteraction: urnstone_Crypt_LightCandle--></T>
+      <T>390167<!--SuperInteraction: funerals_MomentOfSilence_Self--></T>
+      <T>390164<!--SuperInteraction: funerals_MomentOfSilence--></T>
+      <T>420522<!--SuperInteraction: funerals_MomentOfSilence_Podium--></T>
+      <T>383296<!--SuperInteraction: funerals_Weep--></T>
+      <T>383297<!--SuperInteraction: funerals_Wail--></T>
+      <T>14498<!--AggregateSuperInteraction: urnstone_MournAggregate--></T>
+      <T>390171<!--SuperInteraction: funerals_Wail_Self--></T>
+      <T>390172<!--SuperInteraction: funerals_Weep_Self--></T>
+      <T>390927<!--MixerInteraction: funerals_Mixers_MomentOfSilence_Stance3--></T>
+      <T>390926<!--MixerInteraction: funerals_Mixers_MomentOfSilence_Stance2--></T>
+      <T>390925<!--MixerInteraction: funerals_Mixers_MomentOfSilence_Stance1--></T>
+      <T>391352<!--SuperInteraction: urnstone_Crypt_MomentOfSilence--></T>
+      <T>394342<!--SuperInteraction: urnstone_BurialCasket_MomentOfSilence--></T>
+      <T>390180<!--SuperInteraction: funerals_Eulogize_ListenToSpeaker--></T>
+      <T>422290<!--SuperInteraction: funerals_Eulogize_ListenToSpeaker_Mournful--></T>
+      <T>384071<!--SocialSuperInteraction: social_Funerals_OfferSympathies_OfferAwkwardSympathies--></T>
+      <T>384070<!--SocialSuperInteraction: social_Funerals_OfferSympathies_TryToMakeLaugh--></T>
+      <T>383289<!--SuperInteraction: funerals_PourOneOut--></T>
+      <T>390168<!--SuperInteraction: funerals_PourOneOut_Self--></T>
+      <T>383287<!--SuperInteraction: funerals_SpreadAshes--></T>
+    </L>
+    <E n="test_event">InteractionComplete</E>
+  </U>
+  <T n="_iterations">7</T>
+  <L n="_post_tests">
+    <V t="buff">
+      <U n="buff">
+        <V n="whitelist" t="enabled">
+          <L n="enabled">
+            <T>392383<!--Buff: buff_Funerals_RoleBuffs_Celebration--></T>
+            <T>392384<!--Buff: buff_Funerals_RoleBuffs_Mingle--></T>
+            <T>392381<!--Buff: buff_Funerals_RoleBuffs_Mourn--></T>
+            <T>403982<!--Buff: buff_Funerals_RoleBuffs_Sleep--></T>
+            <T>392382<!--Buff: buff_Funerals_RoleBuffs_Speeches--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+      </U>
+    </V>
+  </L>
+  <T n="_score">25</T>
+  <L n="_tested_score_multiplier">
+    <U>
+      <T n="multiplier">1.4</T>
+      <L n="tests">
+        <V t="situation_job">
+          <U n="situation_job">
+            <L n="role_tags">
+              <E>Role_Host</E>
+            </L>
+          </U>
+        </V>
+        <V t="trait">
+          <U n="trait">
+            <L n="blacklist_traits">
+              <T>466528<!--Trait: trait_Dynasty_BlackSheep--></T>
+            </L>
+            <L n="whitelist_traits">
+              <T>485435<!--Trait: trait_DynastyPerk_PartyPlanner3--></T>
+            </L>
+          </U>
+        </V>
+      </L>
+    </U>
+    <U>
+      <T n="multiplier">1.3</T>
+      <L n="tests">
+        <V t="situation_job">
+          <U n="situation_job">
+            <L n="role_tags">
+              <E>Role_Host</E>
+            </L>
+          </U>
+        </V>
+        <V t="trait">
+          <U n="trait">
+            <L n="blacklist_traits">
+              <T>466528<!--Trait: trait_Dynasty_BlackSheep--></T>
+            </L>
+            <L n="whitelist_traits">
+              <T>485434<!--Trait: trait_DynastyPerk_PartyPlanner2--></T>
+            </L>
+          </U>
+        </V>
+      </L>
+    </U>
+    <U>
+      <T n="multiplier">1.2</T>
+      <L n="tests">
+        <V t="situation_job">
+          <U n="situation_job">
+            <L n="role_tags">
+              <E>Role_Host</E>
+            </L>
+          </U>
+        </V>
+        <V t="trait">
+          <U n="trait">
+            <L n="blacklist_traits">
+              <T>466528<!--Trait: trait_Dynasty_BlackSheep--></T>
+            </L>
+            <L n="whitelist_traits">
+              <T>485433<!--Trait: trait_DynastyPerk_PartyPlanner1--></T>
+            </L>
+          </U>
+        </V>
+      </L>
+    </U>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+  <L n="role_tags">
+    <E>role_funeral</E>
+  </L>
+</I>

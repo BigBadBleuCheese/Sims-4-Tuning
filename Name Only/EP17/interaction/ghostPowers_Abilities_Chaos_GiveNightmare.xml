@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="ghostPowers_Abilities_Chaos_GiveNightmare" s="391701">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U />
+        <U>
+          <V n="value" t="facing" />
+        </U>
+      </L>
+    </U>
+  </L>
+  <L n="_false_advertisements">
+    <V t="statistic_set_max">
+      <U n="statistic_set_max">
+        <T n="stat">393850<!--Commodity: commodity_GhostPowers_Autonomy_Evil--></T>
+      </U>
+    </V>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">391698<!--AnimationElement: ghostPowers_GiveNightmare--></T>
+        <U n="overrides">
+          <V n="balloons" t="enabled">
+            <L n="enabled">
+              <U>
+                <L n="balloon_choices">
+                  <U>
+                    <V n="item" t="balloon_category">
+                      <T n="balloon_category">391704<!--BalloonCategory: balloonCategory_GhostPowers_GiveNightmare_Living--></T>
+                    </V>
+                  </U>
+                </L>
+                <T n="balloon_delay">1</T>
+                <T n="balloon_delay_random_offset">0</T>
+                <L n="balloon_target">
+                  <E>TargetSim</E>
+                </L>
+              </U>
+              <U>
+                <L n="balloon_choices">
+                  <U>
+                    <V n="item" t="balloon_category">
+                      <T n="balloon_category">391703<!--BalloonCategory: balloonCategory_GhostPowers_GiveNightmare_Ghost--></T>
+                    </V>
+                  </U>
+                </L>
+                <L n="balloon_target">
+                  <E>Actor</E>
+                </L>
+              </U>
+            </L>
+          </V>
+        </U>
+      </U>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>390312<!--LootActions: loot_GhostPowers_GhostEssence_Fear_Medium--></T>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>390821<!--LootActions: loot_GhostPowers_Stamina_Progression_Decrease_Medium--></T>
+        </L>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+    <V t="buff_fire_and_forget">
+      <U n="buff_fire_and_forget">
+        <U n="buff">
+          <T n="buff_type">392268<!--Buff: buff_GhostPowers_Hidden_GiveNightmare_Wakeup--></T>
+        </U>
+        <E n="participant">TargetSim</E>
+        <U n="success_chance">
+          <L n="multipliers">
+            <U>
+              <T n="multiplier">0</T>
+              <L n="tests">
+                <L>
+                  <V t="participant_running_interaction">
+                    <U n="participant_running_interaction">
+                      <L n="affordance_lists">
+                        <T>403163<!--AffordanceList: affordanceList_Nap--></T>
+                      </L>
+                      <E n="participant">TargetSim</E>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+          </L>
+        </U>
+      </U>
+    </V>
+    <V t="buff_fire_and_forget">
+      <U n="buff_fire_and_forget">
+        <U n="buff">
+          <T n="buff_type">414192<!--Buff: buff_GhostPowers_Hidden_GiveNightmare_Wakeup_Nap--></T>
+        </U>
+        <E n="participant">TargetSim</E>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>393855<!--LootActions: loot_GhostPowers_Evil_Autonomy--></T>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>130277<!--LootActions: rel_Loss_Small_TargetSim--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T o="true" n="category" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x138E9DF6<!--String: "Corrupt Dream"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+    <E>Interaction_GhostAbility_Evil</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <L n="basic_extras">
+              <V t="buff_fire_and_forget">
+                <U n="buff_fire_and_forget">
+                  <U n="buff">
+                    <V n="buff_reason" t="enabled">
+                      <T n="enabled">0x5BA1C7F1<!--String: "(From Receiving a Nightmare) "--></T>
+                    </V>
+                    <T n="buff_type">391710<!--Buff: buff_GhostPowers_GiveNightmare_Scared--></T>
+                  </U>
+                  <E n="participant">TargetSim</E>
+                </U>
+              </V>
+            </L>
+            <L n="loot_list">
+              <T>390821<!--LootActions: loot_GhostPowers_Stamina_Progression_Decrease_Medium--></T>
+              <T>390311<!--LootActions: loot_GhostPowers_GhostEssence_Fear_Small--></T>
+              <T>390828<!--LootActions: loot_GhostPowers_Progression_EvilUlt_Count--></T>
+              <T>390826<!--LootActions: loot_GhostPowers_Progression_XP_Medium--></T>
+              <T>384989<!--LootActions: loot_GhostPowers_Abilities_MotiveFun_Boost--></T>
+            </L>
+          </U>
+        </U>
+      </L>
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <V n="buff_reason" t="enabled">
+                          <T n="enabled">0x7F89734C<!--String: "(From Corrupting Dream)"--></T>
+                        </V>
+                        <T n="buff_type">391711<!--Buff: buff_GhostPowers_GiveNightmare_Sad--></T>
+                      </U>
+                    </U>
+                  </V>
+                </L>
+                <L n="loot_list">
+                  <T>442953<!--LootActions: Apothecary_AuraShield_CuresAndElixirs_Loot_Remove_Buff--></T>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="buff">
+                <U n="buff">
+                  <E n="subject">TargetSim</E>
+                  <V n="whitelist" t="enabled">
+                    <L n="enabled">
+                      <T>442916<!--Buff: Apothecary_CuresAndElixirs_Buff_AuraShield--></T>
+                    </L>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <V n="buff_reason" t="enabled">
+                          <T n="enabled">0x7F89734C<!--String: "(From Corrupting Dream)"--></T>
+                        </V>
+                        <T n="buff_type">391709<!--Buff: buff_GhostPowers_GiveNightmare_Happy--></T>
+                      </U>
+                    </U>
+                  </V>
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <V n="buff_reason" t="enabled">
+                          <T n="enabled">0x5BA1C7F1<!--String: "(From Receiving a Nightmare) "--></T>
+                        </V>
+                        <T n="buff_type">391707<!--Buff: buff_GhostPowers_GiveNightmare_ScaredEnemy--></T>
+                      </U>
+                      <E n="participant">TargetSim</E>
+                    </U>
+                  </V>
+                </L>
+                <L n="loot_list">
+                  <T>390828<!--LootActions: loot_GhostPowers_Progression_EvilUlt_Count--></T>
+                  <T>390826<!--LootActions: loot_GhostPowers_Progression_XP_Medium--></T>
+                  <T>384989<!--LootActions: loot_GhostPowers_Abilities_MotiveFun_Boost--></T>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="relationship">
+                <U n="relationship">
+                  <U n="required_relationship_bits">
+                    <L n="match_any">
+                      <T>15801<!--RelationshipBit: friendship-nemesis--></T>
+                      <T>15802<!--RelationshipBit: friendship-disliked--></T>
+                      <T>15796<!--RelationshipBit: friendship-despised--></T>
+                    </L>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <V n="buff_reason" t="enabled">
+                          <T n="enabled">0x7F89734C<!--String: "(From Corrupting Dream)"--></T>
+                        </V>
+                        <T n="buff_type">391711<!--Buff: buff_GhostPowers_GiveNightmare_Sad--></T>
+                      </U>
+                    </U>
+                  </V>
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <V n="buff_reason" t="enabled">
+                          <T n="enabled">0x5BA1C7F1<!--String: "(From Receiving a Nightmare) "--></T>
+                        </V>
+                        <T n="buff_type">391708<!--Buff: buff_GhostPowers_GiveNightmare_ScaredFamilyFriend--></T>
+                      </U>
+                      <E n="participant">TargetSim</E>
+                    </U>
+                  </V>
+                </L>
+                <L n="loot_list">
+                  <T>390828<!--LootActions: loot_GhostPowers_Progression_EvilUlt_Count--></T>
+                  <T>390826<!--LootActions: loot_GhostPowers_Progression_XP_Medium--></T>
+                  <T>384989<!--LootActions: loot_GhostPowers_Abilities_MotiveFun_Boost--></T>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="relationship">
+                <U n="relationship">
+                  <U n="required_relationship_bits">
+                    <L n="match_any">
+                      <T>15794<!--RelationshipBit: friendship-bff--></T>
+                      <T>15797<!--RelationshipBit: friendship-friend--></T>
+                      <T>15799<!--RelationshipBit: friendship-good_friends--></T>
+                      <T>248676<!--RelationshipBit: friendship-Confidant--></T>
+                      <T>15837<!--RelationshipBit: RomanticCombo_Lovers--></T>
+                      <T>15829<!--RelationshipBit: RomanticCombo_Lovebirds--></T>
+                      <T>15839<!--RelationshipBit: RomanticCombo_Soulmates--></T>
+                      <T>15840<!--RelationshipBit: RomanticCombo_Sweethearts--></T>
+                      <T>369543<!--RelationshipBitCollection: rbc_Romantic_HasRelationship--></T>
+                      <T>15806<!--RelationshipBitCollection: rbc_Family_IncludingSpouseAndDistantAndStep--></T>
+                    </L>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T p="InEP17\UI\Icons\PieMenu\Category\icon_pieMenu_category_GhostChaos.png" n="key">2f7d0004:00000000:120db4b7f034ff31</T>
+      </U>
+    </V>
+  </V>
+  <T n="pie_menu_priority">30</T>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all" />
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="bucks_perks_test">
+      <U n="bucks_perks_test">
+        <T n="bucks_perk">384960<!--BucksPerk: ghostPowersPerks_GiveNightmare--></T>
+      </U>
+    </V>
+    <V t="trait">
+      <U n="trait">
+        <L n="whitelist_traits">
+          <T>384623<!--Trait: trait_GhostPowers_Manifested--></T>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <E n="subject">TargetSim</E>
+        <V n="whitelist" t="enabled">
+          <L n="enabled">
+            <T>10094<!--Buff: buff_Sim_IsSleeping--></T>
+            <T>275549<!--Buff: buff_Sim_IsSleeping_Hidden--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">TargetSim</E>
+      </U>
+    </V>
+    <V t="trait">
+      <U n="trait">
+        <L n="blacklist_traits">
+          <T>381402<!--Trait: trait_IsGhost--></T>
+          <T>218444<!--Trait: trait_Humanoid_Robots_MainTrait--></T>
+        </L>
+        <E n="subject">TargetSim</E>
+      </U>
+    </V>
+    <V t="trait">
+      <U n="trait">
+        <L n="whitelist_traits">
+          <T>381402<!--Trait: trait_IsGhost--></T>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>404414<!--Buff: buff_GhostPowers_Stamina_BurntOut_Completely--></T>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x75B5DF62<!--String: "{0.SimFirstName} has exhausted all of {0.SimPronounPossessiveDependent} Stamina and cannot perform any more Ghost Mastery until it is replenished. Time for a Spectral Slumber or give it time to recharge."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

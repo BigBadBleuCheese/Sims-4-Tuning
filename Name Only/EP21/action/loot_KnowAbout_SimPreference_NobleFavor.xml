@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_KnowAbout_SimPreference_NobleFavor" s="468474">
+  <L n="loot_actions">
+    <V t="know_other_sims_statistics">
+      <U n="know_other_sims_statistics">
+        <V n="notification" t="enabled">
+          <U n="enabled">
+            <V n="dialog" t="single">
+              <V n="single" t="literal">
+                <U n="literal">
+                  <V n="icon" t="enabled">
+                    <V n="enabled" t="ranked_statistic">
+                      <U n="ranked_statistic">
+                        <L n="participant_type">
+                          <E>TargetSim</E>
+                        </L>
+                        <T n="ranked_statistic">466513<!--RankedStatistic: rankedStatistic_NobleFavor--></T>
+                      </U>
+                    </V>
+                  </V>
+                  <V n="secondary_icon" t="enabled">
+                    <V n="enabled" t="participant">
+                      <U n="participant">
+                        <L n="participant_type">
+                          <E>Actor</E>
+                        </L>
+                      </U>
+                    </V>
+                  </V>
+                  <V n="text" t="single">
+                    <T n="single">0x4038BE17<!--String: "{0.SimFirstName} has learned about {1.SimFirstNameWithPrefix}'s Favor alignment!\n• {2.String}"--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="participant_type" />
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">TargetSim</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                        <V t="statistic_rank_name">
+                          <U n="statistic_rank_name">
+                            <E n="participant">TargetSim</E>
+                            <T n="statistic">466513<!--RankedStatistic: rankedStatistic_NobleFavor--></T>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                  <V n="title" t="enabled">
+                    <T n="enabled">0x902718B0<!--String: "Noble Favor Learned"--></T>
+                  </V>
+                </U>
+              </V>
+            </V>
+          </U>
+        </V>
+        <L n="statistics">
+          <T>466513<!--RankedStatistic: rankedStatistic_NobleFavor--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T n="run_test_first">True</T>
+  <L n="tests">
+    <L>
+      <V t="career_test">
+        <U n="career_test">
+          <E n="subjects">TargetSim</E>
+          <V n="test_type" t="career_reference">
+            <U n="career_reference">
+              <V n="career" t="specific_career">
+                <T n="specific_career">466304<!--NobleCareer: career_Noble--></T>
+              </V>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

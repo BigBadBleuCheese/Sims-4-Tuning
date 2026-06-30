@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="hopscotch_Watch_Start" s="340654">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="facing" />
+        </U>
+        <U>
+          <V n="value" t="line_of_sight">
+            <U n="line_of_sight">
+              <V n="temporary_los" t="enabled" />
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="value" t="circle">
+            <U n="circle">
+              <T n="radial_cost_weight">0</T>
+              <T n="radius">5</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_saveable" t="disabled" />
+  <L n="_static_commodities">
+    <U>
+      <T n="desire">0.7</T>
+      <T n="static_commodity">27510<!--StaticCommodity: StaticCommodity_PlayChildrenOutdoorObjects--></T>
+    </U>
+    <U>
+      <T n="static_commodity">359795<!--StaticCommodity: staticCommodity_Hopscotch_Watch--></T>
+    </U>
+  </L>
+  <T n="allow_autonomous">True</T>
+  <T n="allow_user_directed">True</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <L n="basic_extras">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <T n="buff_type">402104<!--Buff: buff_GrimRework_Hidden_Grim_ChallengedTracker--></T>
+        </U>
+      </U>
+    </V>
+    <V t="save_participant">
+      <U n="save_participant">
+        <E n="participant">Object</E>
+      </U>
+    </V>
+  </L>
+  <L n="basic_liabilities">
+    <V t="user_cancelable_chain" />
+  </L>
+  <V n="basic_reserve_object" t="disabled" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xC2A6283C<!--String: "Watch Hopscotch"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <L n="continuation">
+              <U>
+                <T n="affordance">340655<!--SuperInteraction: hopscotch_Watch_Object--></T>
+              </U>
+            </L>
+          </U>
+        </U>
+      </L>
+      <L n="prioritized_tested_outcomes">
+        <U>
+          <U n="outcome">
+            <L n="continuation">
+              <U>
+                <T n="affordance">340642<!--SimPickerInteraction: simPicker_Hopscotch_Watch--></T>
+              </U>
+            </L>
+          </U>
+          <L n="tests">
+            <L>
+              <V t="state">
+                <U n="state">
+                  <T n="value">151675<!--ObjectStateValue: generic_ObjectInUse_True--></T>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="include_all" />
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <V n="test_disallow_while_running" t="enabled">
+    <U n="enabled">
+      <L n="affordances">
+        <T>340655<!--SuperInteraction: hopscotch_Watch_Object--></T>
+        <T>340634<!--SuperInteraction: hopscotch_Watch_Sim--></T>
+      </L>
+      <T n="test_self">True</T>
+    </U>
+  </V>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>342594<!--Buff: buff_Hopscotch_InGame--></T>
+        </L>
+      </U>
+    </V>
+    <V t="participant_running_interaction">
+      <U n="participant_running_interaction">
+        <L n="affordances">
+          <T>340636<!--SuperInteraction: hopscotch_ThrowStone_A--></T>
+          <T>342360<!--SuperInteraction: hopscotch_ThrowStone_B--></T>
+          <T>342403<!--SuperInteraction: hopscotch_ThrowStone_C--></T>
+          <T>342532<!--SuperInteraction: hopscotch_ThrowStone_D--></T>
+          <T>342593<!--SuperInteraction: hopscotch_ThrowStone_E--></T>
+          <T>342647<!--SuperInteraction: hopscotch_ThrowStone_F--></T>
+          <T>342648<!--SuperInteraction: hopscotch_ThrowStone_G--></T>
+          <T>342649<!--SuperInteraction: hopscotch_ThrowStone_H--></T>
+          <T>336585<!--SuperInteraction: hopscotch_WaitForTurn--></T>
+        </L>
+        <T n="test_for_not_running">True</T>
+        <T n="test_interaction_queue">True</T>
+      </U>
+    </V>
+    <V t="game_component">
+      <U n="game_component">
+        <V n="game_over" t="enabled">
+          <T n="enabled">False</T>
+        </V>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xFCE1A8A1<!--String: "No Sims are currently playing."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

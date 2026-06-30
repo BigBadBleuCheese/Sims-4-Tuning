@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SimStoryChapter" i="story_chapter" m="story_progression.story_progression_chapter" n="simStoryChapter_ChildrenStories_AdoptAHorse_Elder_Chapter1" s="337843">
+  <L n="actions">
+    <V t="add_family_member">
+      <U n="add_family_member">
+        <T n="add_adoption_relationships">False</T>
+        <V n="store_household_name_participant" t="enabled" />
+        <V n="store_new_family_member_participant" t="enabled" />
+        <V n="store_world_name_participant" t="enabled">
+          <E n="enabled">SavedStoryProgressionString2</E>
+        </V>
+        <T n="template">337840<!--TunableSimTemplate: template_horse_ChildrenStories_HorseAdoption_Elder--></T>
+        <T n="use_adoptors_last_name">False</T>
+      </U>
+    </V>
+  </L>
+  <V n="discoveries" t="enabled">
+    <L n="enabled">
+      <U>
+        <V n="string" t="variation">
+          <U n="variation">
+            <L n="variations">
+              <T>0xAC2824C1<!--String: "<b>{4.String}:</b> The {3.String} household recently rescued a Horse."--></T>
+              <T>0x7DFC1CFC<!--String: "<b>{4.String}:</b> A rescue Horse found a home with the {3.String} household."--></T>
+            </L>
+          </U>
+        </V>
+        <L n="token_participants">
+          <E>SavedStoryProgressionString1</E>
+          <E>SavedStoryProgressionString2</E>
+        </L>
+      </U>
+    </L>
+  </V>
+  <L n="drama_nodes">
+    <T>338187<!--NPCInviteSituationDramaNode: dramaNode_NPCInvite_Story_Progression_ChildrenStories_AdoptedHorse--></T>
+  </L>
+  <L n="loot_list">
+    <T>337812<!--LootActions: loot_Relationship_Bit_HorseAdopt_ChildrenStories_Story_Progression--></T>
+  </L>
+</I>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="RandomWeightedLoot" i="action" m="interactions.utils.loot" n="randomWeightedLoot_AutoInitRomance_JudgementCall_GoodRelationship" s="361858">
+  <L n="random_loot_actions">
+    <U>
+      <V n="action" t="schedule_drama_node">
+        <U n="schedule_drama_node">
+          <T n="drama_node">361848<!--DialogDramaNode: dialogDramaNode_AutoInitRomance_JudgementCall_GoodRelationshipEvent--></T>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">8</T>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="do_nothing" />
+      <U n="weight">
+        <T n="base_value">2</T>
+      </U>
+    </U>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified" />
+          <V n="npc" t="enabled" />
+        </U>
+      </V>
+      <V t="game_option">
+        <U n="game_option">
+          <E n="gameplay_option">NPC_AUTONOMY_FRIENDLY</E>
+        </U>
+      </V>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="required_relationship_bits">
+            <L n="match_any">
+              <T>369543<!--RelationshipBitCollection: rbc_Romantic_HasRelationship--></T>
+            </L>
+          </U>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

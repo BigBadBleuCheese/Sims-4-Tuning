@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_ChildhoodInspiration_AddSuggestedChallenge_FollowInFootsteps_SwimTeam" s="472273">
+  <L n="loot_actions">
+    <V t="timed_aspiration">
+      <U n="timed_aspiration">
+        <T n="aspiration">454872<!--TimedAspiration: childhoodInspiration_FollowInFootsteps_SwimTeam--></T>
+        <V n="operation" t="add_timed_aspiration_to_suggested_aspirations" />
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">475321<!--Buff: buff_ChildhoodInspiration_SuggestedBySeekInspiration--></T>
+        </U>
+      </U>
+    </V>
+    <V t="actions">
+      <T n="actions">472312<!--LootActions: loot_ChildhoodInspiration_UpdateCompletionUI--></T>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified">
+            <L n="specified">
+              <E>CHILD</E>
+            </L>
+          </V>
+          <V n="is_active_sim" t="enabled" />
+          <V n="species" t="specified">
+            <U n="specified">
+              <L n="species">
+                <E />
+              </L>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="childhood_inspiration">
+        <U n="childhood_inspiration">
+          <V n="test_behavior" t="is_in_suggested_inspiration_list">
+            <U n="is_in_suggested_inspiration_list">
+              <T n="aspiration_to_test">454872<!--TimedAspiration: childhoodInspiration_FollowInFootsteps_SwimTeam--></T>
+              <T n="invert">True</T>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="has_timed_aspirations">
+        <U n="has_timed_aspirations">
+          <V n="test_behavior" t="has_specific_timed_aspiration">
+            <U n="has_specific_timed_aspiration">
+              <T n="invert">True</T>
+              <L n="timed_aspirations">
+                <T>454872<!--TimedAspiration: childhoodInspiration_FollowInFootsteps_SwimTeam--></T>
+              </L>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>454845<!--Trait: trait_Reward_ChildhoodInspiration_FollowInFootsteps_SwimTeam--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

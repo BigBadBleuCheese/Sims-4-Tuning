@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="MixerInteraction" i="interaction" m="interactions.base.mixer_interaction" n="idle_Buff_EP17World_EdithBasu_NoLunarCycle_MoodChange" s="420967">
+  <T n="allow_user_directed">False</T>
+  <V n="basic_content" t="no_content" />
+  <V n="basic_focus" t="do_not_change_focus" />
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Mixer</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="lock_out_time" t="enabled">
+    <U n="enabled">
+      <U n="interval">
+        <T n="lower_bound">1</T>
+        <T n="upper_bound">30</T>
+      </U>
+    </U>
+  </V>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="basic_extras">
+          <V t="buff_fire_and_forget">
+            <U n="buff_fire_and_forget">
+              <U n="buff">
+                <T n="buff_type">420974<!--Buff: buff_EP17World_Walkbys_EdithBasu_NoLunarCycle_Checker_Cooldown--></T>
+              </U>
+            </U>
+          </V>
+        </L>
+        <L n="loot_list">
+          <T>420966<!--RandomWeightedLoot: randomWeightedLoot_EP17World_EdithBasu_NoLunarCycle_MoodChange--></T>
+        </L>
+      </U>
+    </U>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <U n="sub_action">
+    <T n="base_weight">2</T>
+    <E n="mixer_group">IDLES</E>
+  </U>
+  <E n="target_type">ACTOR</E>
+  <L n="test_globals">
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>420974<!--Buff: buff_EP17World_Walkbys_EdithBasu_NoLunarCycle_Checker_Cooldown--></T>
+          <T>389243<!--Buff: buff_EP17World_Walkbys_EdithBasu_LunarCycle_1_NewMoon_Angry--></T>
+          <T>389191<!--Buff: buff_EP17World_Walkbys_EdithBasu_LunarCycle_2_WaxingCrescent_Angry--></T>
+          <T>389194<!--Buff: buff_EP17World_Walkbys_EdithBasu_LunarCycle_3_FirstQuarter_Playful--></T>
+          <T>389244<!--Buff: buff_EP17World_Walkbys_EdithBasu_LunarCycle_4_WaxingGibbous_Angry--></T>
+          <T>389193<!--Buff: buff_EP17World_Walkbys_EdithBasu_LunarCycle_5_FullMoon_VeryAngry--></T>
+          <T>389245<!--Buff: buff_EP17World_Walkbys_EdithBasu_LunarCycle_6_WaningGibbous_Angry--></T>
+          <T>389246<!--Buff: buff_EP17World_Walkbys_EdithBasu_LunarCycle_7_ThirdQuarter_Playful--></T>
+          <T>389247<!--Buff: buff_EP17World_Walkbys_EdithBasu_LunarCycle_8_WaningCrescent_Angry--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T n="visible">False</T>
+</I>

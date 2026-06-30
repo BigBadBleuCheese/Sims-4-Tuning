@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="EvictionTenantSituation" i="situation" m="situations.complex.eviction_tenant_situation" n="situation_Eviction_Tenant" s="346012">
+  <T n="_display_name">0xBC182184<!--String: "Eviction"--></T>
+  <T n="_implies_greeted_status">True</T>
+  <T n="audio_sting_on_start" p="InGame\Audio\Bumper\bumper_ep15_tenant_evicted.propx">39b2aa4a:00000000:5018e40a8e2ec608</T>
+  <L n="compatible_venues">
+    <T>28614<!--Venue: venue_residential--></T>
+  </L>
+  <E n="creation_ui_option">NOT_AVAILABLE</E>
+  <T n="duration">120</T>
+  <V n="end_situation_dialog" t="enabled">
+    <U n="enabled">
+      <V n="text" t="single">
+        <T n="single">0xC880BC3<!--String: "The Eviction hasn't fully concluded. Is this Household ready to Move Out early and find a new home?"--></T>
+      </V>
+    </U>
+  </V>
+  <L n="eviction_dialog_map">
+    <U>
+      <E n="Eviction Reason">LEASE_EXPIRED</E>
+      <U n="Eviction Start Dialog">
+        <V n="text" t="single">
+          <T n="single">0xA5EEBC2D<!--String: "{0.SimFirstName}'s Lease on {0.SimPronounPossessiveDependent} Rental Unit has ended. {0.SimPronounSubjective|xxUpper} must gather what {0.SimPronounSubjective} can and move out within the next couple hours."--></T>
+        </V>
+        <V n="title" t="enabled">
+          <T n="enabled">0xB02CB768<!--String: "Evicted!"--></T>
+        </V>
+      </U>
+    </U>
+    <U>
+      <E n="Eviction Reason">NONE</E>
+      <U n="Eviction Start Dialog">
+        <V n="text" t="single">
+          <T n="single">0x53213FF9<!--String: "How unfair! {0.SimFirstName} is getting kicked out of {0.SimPronounPossessiveDependent} <i>home</i> for no apparent reason. Maybe {0.SimPronounSubjective} can convince the Property Owner to let {0.SimPronounObjective} stay, but time is limited!"--></T>
+        </V>
+        <V n="title" t="enabled">
+          <T n="enabled">0xB02CB768<!--String: "Evicted!"--></T>
+        </V>
+      </U>
+    </U>
+    <U>
+      <E n="Eviction Reason">RULE_BROKEN</E>
+      <U n="Eviction Start Dialog">
+        <V n="text" t="single">
+          <T n="single">0xFEE0D0DA<!--String: "{0.SimFirstName} has been caught not following the Rental Property Rules. The Property Owner is fed up and ready to kick {0.SimPronounObjective} out! Unless {0.SimFirstName} convinces the Property Owner to give {0.SimPronounObjective} another chance to stay, an Eviction is imminent."--></T>
+        </V>
+        <V n="title" t="enabled">
+          <T n="enabled">0xB02CB768<!--String: "Evicted!"--></T>
+        </V>
+      </U>
+    </U>
+    <U>
+      <E n="Eviction Reason">UNJUST_EVICTION</E>
+      <U n="Eviction Start Dialog">
+        <V n="text" t="single">
+          <T n="single">0x53213FF9<!--String: "How unfair! {0.SimFirstName} is getting kicked out of {0.SimPronounPossessiveDependent} <i>home</i> for no apparent reason. Maybe {0.SimPronounSubjective} can convince the Property Owner to let {0.SimPronounObjective} stay, but time is limited!"--></T>
+        </V>
+        <V n="title" t="enabled">
+          <T n="enabled">0xB02CB768<!--String: "Evicted!"--></T>
+        </V>
+      </U>
+    </U>
+    <U>
+      <E n="Eviction Reason">UNPAID_RENT</E>
+      <U n="Eviction Start Dialog">
+        <V n="text" t="single">
+          <T n="single">0x5901180E<!--String: "{0.SimFirstName} hasn't paid Rent, and the Property Owner is fed up and ready to kick {0.SimPronounObjective} out! Unless {0.SimFirstName} convinces the Property Owner to give {0.SimPronounObjective} another chance, an Eviction is imminent."--></T>
+        </V>
+        <V n="title" t="enabled">
+          <T n="enabled">0xB02CB768<!--String: "Evicted!"--></T>
+        </V>
+      </U>
+    </U>
+  </L>
+  <U n="eviction_owner_job_and_role_state">
+    <T n="role_state">346018<!--RoleState: role_Eviction_Landlord--></T>
+    <T n="situation_job">351531<!--SituationJob: job_Eviction_Landlord_TenantSituation--></T>
+  </U>
+  <U n="eviction_tenant_job_and_role_state">
+    <T n="role_state">346017<!--RoleState: role_Eviction_Tenant--></T>
+    <T n="situation_job">346020<!--SituationJob: job_Eviction_Tenant--></T>
+  </U>
+  <T p="InGame\Audio\Bumper\bumper_event_major_complete.propx" n="main_goal_audio_sting">39b2aa4a:00000000:10b476550150a33f</T>
+  <T n="max_participants">20</T>
+  <T n="save_lock_tooltip_message">0xF2675288<!--String: "You cannot Save the game or leave during an Eviction."--></T>
+  <T n="show_timer_in_scored_situation">True</T>
+  <T n="situation_description">0x70E445E0<!--String: "There isn't much time left before this Tenant will be forced to move elsewhere! Maybe the Property Owner can be convinced otherwise before the time runs out though..."--></T>
+  <V n="situation_display_type_override" t="enabled">
+    <E n="enabled">EVICTION</E>
+  </V>
+  <V n="situation_end_time_string" t="show_end_time">
+    <T n="show_end_time">0xA3E17143<!--String: "Work day ends at {0.TimeShort}"--></T>
+  </V>
+  <T n="suppress_scoring_progress_bar">True</T>
+  <L n="tags">
+    <E>Situation_Eviction</E>
+  </L>
+  <U n="timeout_dialog">
+    <V n="text" t="single">
+      <T n="single">0x2F1A1038<!--String: "Time's up! This Household has fully been Evicted and must now move to another location."--></T>
+    </V>
+  </U>
+</I>

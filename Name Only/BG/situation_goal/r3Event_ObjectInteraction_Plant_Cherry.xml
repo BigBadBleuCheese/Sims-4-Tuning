@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalObjectInteraction" i="situation_goal" m="situations.situation_goal_object_interaction" n="r3Event_ObjectInteraction_Plant_Cherry" s="378896">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T p="InGame\UI\Icons\Headlines\Final\headline_Gardening.png" n="enabled">2f7d0004:00000000:bcf6721a428d5635</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x98759A2B<!--String: "Plant a Cherry"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0xE9C8C0C5<!--String: "Plant the Cherry fruit from the Starter Fruit Seed packet.\n\nHint: Plant it under a roof to ensure they are in season.\n\n<i>(+25 Event Points)</i>"--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>447711<!--SituationGoalLootActions: liveEvent_GoalLoot_CompleteQuestGoal--></T>
+  </L>
+  <U n="_goal_test">
+    <L n="affordances">
+      <T>13408<!--SuperInteraction: GardeningFruit_Plant--></T>
+      <T>76308<!--SuperInteraction: GardeningFruit_Plant_All--></T>
+      <T>98587<!--SuperInteraction: GardeningFruit_Plant_All_Pot--></T>
+      <T>76309<!--SuperInteraction: GardeningFruit_Plant_Continuation--></T>
+      <T>100876<!--SuperInteraction: GardeningFruit_Plant_Inventory_fake--></T>
+      <T>77070<!--SuperInteraction: GardeningFruit_Plant_Planter--></T>
+      <T>97297<!--SuperInteraction: GardeningFruit_Plant_Planter_continuation--></T>
+      <T>97268<!--SuperInteraction: GardeningFruit_Plant_Pot_continuation--></T>
+      <T>77327<!--SuperInteraction: GardeningFruit_Plant_Pot--></T>
+      <T>270942<!--SuperInteraction: gardeningFruit_Plant_GardeningPatch_Cont--></T>
+      <T>270941<!--SuperInteraction: gardeningFruit_Plant_GardeningPatch--></T>
+      <T>234821<!--SuperInteraction: gardeningFruit_Plant_VerticalGarden--></T>
+      <T>234822<!--SuperInteraction: gardeningFruit_Plant_VerticalGarden_Continuation--></T>
+      <T>432889<!--SuperInteraction: super_PottedPlants_Gardening_Plant--></T>
+      <T>433030<!--SuperInteraction: super_PottedPlants_Gardening_Plant_Cont--></T>
+    </L>
+    <U n="target_filters">
+      <V n="object_tags" t="enabled">
+        <U n="enabled">
+          <L n="tag_set">
+            <E>Func_Gardening_Cherry</E>
+          </L>
+        </U>
+      </V>
+    </U>
+    <E n="test_event">InteractionComplete</E>
+  </U>
+  <L n="_post_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+      </U>
+    </V>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+  <V n="tutorial_tip_group" t="disabled" />
+</I>

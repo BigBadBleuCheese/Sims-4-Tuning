@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Horses_TNS_Fatigue" s="342240">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InEP14\UI\Icons\Notifications\notification_WaterTrough.png">2f7d0004:00000000:14cd03a06177666b</T>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant" />
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xB1C51006<!--String: "{0.SimFirstName} is Fatigued! When Horses exercise and train continuously, they will eventually become Fatigued and need rest and water. Consider buying a Water Trough so Horses will have a supply of refreshing water to drink!\n\n⚒ <b>Water Trough</b>"--></T>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="participant_type" />
+                </L>
+              </U>
+            </V>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="object_criteria">
+              <U n="object_criteria">
+                <V n="identity_test" t="tags">
+                  <U n="tags">
+                    <L n="tag_set">
+                      <E>Func_WaterTrough</E>
+                    </L>
+                  </U>
+                </V>
+                <T n="on_active_lot">True</T>
+                <V n="subject_specific_tests" t="all_objects">
+                  <U n="all_objects">
+                    <U n="quantity">
+                      <E n="comparison">LESS</E>
+                    </U>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="reaction">
+      <U n="reaction">
+        <V n="si_reaction" t="enabled">
+          <U n="enabled">
+            <T n="affordance">348527<!--SuperInteraction: Sim_Horse_FatigueDistress--></T>
+            <V n="affordance_run_priority" t="enabled" />
+            <V n="affordance_target" t="enabled">
+              <E n="enabled">Actor</E>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+</I>

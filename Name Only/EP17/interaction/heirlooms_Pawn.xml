@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="heirlooms_Pawn" s="381424">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="circle">
+            <U n="circle">
+              <T n="ideal_radius">0</T>
+              <T n="radius">1.5</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="value" t="posture">
+            <U n="posture">
+              <L n="posture_manifest_tuning">
+                <U>
+                  <V n="posture_type" t="enabled">
+                    <T n="enabled">15537<!--MobilePosture: posture_Stand--></T>
+                  </V>
+                </U>
+              </L>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_from_sim_inventory">True</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">23927<!--AnimationElement: Generic_PutDown--></T>
+      </U>
+    </U>
+  </V>
+  <V n="basic_reserve_object" t="disabled" />
+  <T n="category">395098<!--PieMenuCategory: pieMenuCategory_Heirlooms--></T>
+  <V n="confirmation_dialog" t="enabled">
+    <U n="enabled">
+      <U n="dialog">
+        <V n="dialog" t="ok_cancel">
+          <U n="ok_cancel">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_cashmoney.png">2f7d0004:00000000:36d81b5cf7ea3cab</T>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x685F7478<!--String: "Are you sure you want to pawn this precious heirloom? It might be seen as disrespectful to any Sim who previously owned it, not to mention the heirloom itself!"--></T>
+            </V>
+          </U>
+        </V>
+      </U>
+    </U>
+  </V>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x65571BC9<!--String: "Pawn Heirloom"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="basic_extras">
+          <V t="destroy_object">
+            <U n="destroy_object">
+              <V n="award_value" t="enabled" />
+              <T n="display_only">True</T>
+              <V n="timing" t="at_beginning" />
+            </U>
+          </V>
+        </L>
+        <L n="continuation">
+          <U>
+            <T n="affordance">427255<!--SuperInteraction: heirlooms_Pawn_Continuation--></T>
+          </U>
+        </L>
+      </U>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T p="InEP17\UI\Icons\PieMenu\Interactions\icon_pieMenu_Heirloom.png" n="key">2f7d0004:00000000:8581aa691a6b5e94</T>
+      </U>
+    </V>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all" />
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">385132<!--TestSetInstance: testSetInstance_Heirlooms_IsInherited--></T>
+    </V>
+    <V t="object_ownership">
+      <U n="object_ownership">
+        <T n="test_household_owner">True</T>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xBC852244<!--String: "This Heirloom does not belong to {0.SimFirstName}."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

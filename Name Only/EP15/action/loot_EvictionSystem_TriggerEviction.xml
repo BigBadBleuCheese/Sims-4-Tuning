@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_EvictionSystem_TriggerEviction" s="351127">
+  <L n="loot_actions">
+    <V t="actions">
+      <T n="actions">346015<!--RandomWeightedLoot: loot_Random_EvictionChance_NPCLandlord--></T>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="business_rule_state">
+        <U n="business_rule_state">
+          <E n="state">BROKEN</E>
+          <U n="threshold">
+            <T n="value">1</T>
+          </U>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="rental_unit_has_overdue_status_test">
+        <U n="rental_unit_has_overdue_status_test">
+          <E n="tenant">ActorHouseholdMembers</E>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

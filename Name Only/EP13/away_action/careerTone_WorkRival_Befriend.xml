@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="CareerTone" i="away_action" m="careers.career_interactions" n="careerTone_WorkRival_Befriend" s="308620">
+  <T n="_available_when_instanced">True</T>
+  <L n="_disable_away_action">
+    <L>
+      <V t="statistic">
+        <U n="statistic">
+          <T n="stat">308708<!--Statistic: statistic_WorkRival_BefriendTimer--></T>
+          <V n="threshold" t="value_threshold">
+            <U n="value_threshold">
+              <E n="comparison">LESS</E>
+              <T n="value">120</T>
+            </U>
+          </V>
+          <V n="tooltip" t="enabled">
+            <T n="enabled">0x71229F8E<!--String: "Your Sim cannot do this anymore today."--></T>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="_disabled_when_running" t="disabled_when_running">
+    <T n="disabled_when_running">0xD31BCFBD<!--String: "Your Sim is already doing this."--></T>
+  </V>
+  <T n="_display_name">0x72FE33AC<!--String: "Befriend Work Rival"--></T>
+  <L n="_exit_conditions">
+    <U>
+      <L n="conditions">
+        <V t="stat_based">
+          <U n="stat_based">
+            <T n="stat">308708<!--Statistic: statistic_WorkRival_BefriendTimer--></T>
+            <U n="threshold">
+              <T n="value">120</T>
+            </U>
+          </U>
+        </V>
+      </L>
+    </U>
+  </L>
+  <U n="_periodic_stat_changes">
+    <L n="operations">
+      <V t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">0.583</T>
+          <T n="stat">16658<!--Commodity: motive_Social--></T>
+        </U>
+      </V>
+      <V t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">0.07</T>
+          <T n="stat">304271<!--Commodity: commodity_Burnout_CreativeTracker--></T>
+          <L n="tests">
+            <L>
+              <V t="test_set_reference">
+                <T n="test_set_reference">309704<!--TestSetInstance: testSet_Burnout_CreativeCareer--></T>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+      <V t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">-0.09</T>
+          <T n="stat">304271<!--Commodity: commodity_Burnout_CreativeTracker--></T>
+          <L n="subject">
+            <E>Actor</E>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="test_set_reference">
+                <T n="test_set_reference">309706<!--TestSetInstance: testSet_Burnout_MentalCareer--></T>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+      <V t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">-0.09</T>
+          <T n="stat">306749<!--Commodity: commodity_Burnout_MentalTracker--></T>
+          <L n="subject">
+            <E>Actor</E>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="test_set_reference">
+                <T n="test_set_reference">309704<!--TestSetInstance: testSet_Burnout_CreativeCareer--></T>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+      <V t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">0.07</T>
+          <T n="stat">306749<!--Commodity: commodity_Burnout_MentalTracker--></T>
+          <L n="subject">
+            <E>Actor</E>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="test_set_reference">
+                <T n="test_set_reference">309706<!--TestSetInstance: testSet_Burnout_MentalCareer--></T>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+      <V t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">1.5</T>
+          <T n="stat">304314<!--Commodity: commodity_Burnout_FogCreative--></T>
+          <L n="subject">
+            <E>Actor</E>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="test_set_reference">
+                <T n="test_set_reference">309704<!--TestSetInstance: testSet_Burnout_CreativeCareer--></T>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+      <V t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">-1.5</T>
+          <T n="stat">304314<!--Commodity: commodity_Burnout_FogCreative--></T>
+          <L n="subject">
+            <E>Actor</E>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="test_set_reference">
+                <T n="test_set_reference">309706<!--TestSetInstance: testSet_Burnout_MentalCareer--></T>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+      <V t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">-1.5</T>
+          <T n="stat">306744<!--Commodity: commodity_Burnout_FogMental--></T>
+          <L n="subject">
+            <E>Actor</E>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="test_set_reference">
+                <T n="test_set_reference">309704<!--TestSetInstance: testSet_Burnout_CreativeCareer--></T>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+      <V t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">1.5</T>
+          <T n="stat">306744<!--Commodity: commodity_Burnout_FogMental--></T>
+          <L n="subject">
+            <E>Actor</E>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="test_set_reference">
+                <T n="test_set_reference">309706<!--TestSetInstance: testSet_Burnout_MentalCareer--></T>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+      <V t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">1.5</T>
+          <T n="stat">304313<!--Commodity: commodity_Burnout_BurnedOut--></T>
+          <L n="subject">
+            <E>Actor</E>
+          </L>
+        </U>
+      </V>
+      <V t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">1</T>
+          <T n="stat">308708<!--Statistic: statistic_WorkRival_BefriendTimer--></T>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="_tests">
+    <L>
+      <V t="at_work">
+        <U n="at_work">
+          <T n="is_at_work">True</T>
+        </U>
+      </V>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified">
+            <L n="specified">
+              <E>CHILD</E>
+              <E>TEEN</E>
+              <E>YOUNGADULT</E>
+              <E>ADULT</E>
+              <E>ELDER</E>
+            </L>
+          </V>
+        </U>
+      </V>
+      <V t="relationship_bit_count">
+        <U n="relationship_bit_count">
+          <T n="rel_bit">308614<!--RelationshipBit: relbit_WorkRival--></T>
+          <T n="relationship_count">1</T>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="icon_data" t="enabled">
+    <U n="enabled">
+      <T p="InGame\UI\Icons\AwayActions\AwayAction_General.png" n="icon">2f7d0004:00000000:7ed032d2aeb9db44</T>
+      <T n="tooltip">0x72FE33AC<!--String: "Befriend Work Rival"--></T>
+    </U>
+  </V>
+  <V n="override_default_away_action" t="use_override">
+    <T n="use_override">75577<!--CareerTone: Career_Tone_Normal--></T>
+  </V>
+  <T n="performance_multiplier">0</T>
+  <T n="pie_menu_tooltip">0x3889419<!--String: "Lowers Work Performance. Fills Social Need. Chance of ending the rivarly."--></T>
+  <L n="sim_filter_periodic_loots">
+    <U>
+      <U n="chance">
+        <T n="base_chance">30</T>
+      </U>
+      <T n="loot">308622<!--LootActions: loot_WorkRival_CareerTone_Befriend--></T>
+      <V n="max_sims" t="enabled" />
+      <T n="sim_filter">308704<!--TunableSimFilter: filter_Coworker_WorkRival--></T>
+    </U>
+    <U>
+      <U n="chance">
+        <T n="base_chance">100</T>
+      </U>
+      <T n="loot">110014<!--LootActions: loot_Career_Coworker_Socialize--></T>
+      <V n="max_sims" t="enabled" />
+      <T n="sim_filter">308704<!--TunableSimFilter: filter_Coworker_WorkRival--></T>
+    </U>
+  </L>
+  <L n="working_sim_periodic_loots">
+    <U>
+      <T n="loot">494859<!--LootActions: loot_Commodity_Motive_Hunger_CareerTone_FixUp--></T>
+    </U>
+    <U>
+      <T n="loot">494858<!--LootActions: loot_Commodity_Motive_Bladder_CareerTone_FixUp--></T>
+    </U>
+    <U>
+      <T n="loot">494728<!--LootActions: loot_Commodity_Motive_Energy_CareerTone_FixUp--></T>
+    </U>
+    <U>
+      <U n="chance">
+        <T n="base_chance">25</T>
+      </U>
+      <T n="loot">97666<!--LootActions: loot_Commodity_Motive_SocializeWithCoworkers--></T>
+    </U>
+    <U>
+      <T n="loot">488730<!--LootActions: loot_Dynasty_ValueBasedPrestige_HardworkingCareer_SlackOff--></T>
+    </U>
+  </L>
+</I>

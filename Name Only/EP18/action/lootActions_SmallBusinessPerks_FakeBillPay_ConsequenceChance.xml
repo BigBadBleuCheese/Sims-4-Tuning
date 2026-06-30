@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="lootActions_SmallBusinessPerks_FakeBillPay_ConsequenceChance" s="420100">
+  <L n="loot_actions">
+    <V t="actions">
+      <T n="actions">420098<!--LootActions: lootActions_SmallBusinessPerks_FakeBillPay_CounterIncrement--></T>
+    </V>
+    <V t="schedule_drama_node">
+      <U n="schedule_drama_node">
+        <U n="chance">
+          <T n="base_chance">5</T>
+          <L n="multipliers">
+            <U>
+              <T n="multiplier">2</T>
+              <L n="tests">
+                <L>
+                  <V t="statistic">
+                    <U n="statistic">
+                      <T n="must_have_stat">True</T>
+                      <T n="stat">420085<!--Statistic: statistic_SmallBusinessPerks_FakeBillPay_ConsequenceCounter--></T>
+                      <V n="threshold" t="value_threshold">
+                        <U n="value_threshold">
+                          <E n="comparison">EQUAL</E>
+                          <T n="value">2</T>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+            <U>
+              <T n="multiplier">4</T>
+              <L n="tests">
+                <L>
+                  <V t="statistic">
+                    <U n="statistic">
+                      <T n="must_have_stat">True</T>
+                      <T n="stat">420085<!--Statistic: statistic_SmallBusinessPerks_FakeBillPay_ConsequenceCounter--></T>
+                      <V n="threshold" t="value_threshold">
+                        <U n="value_threshold">
+                          <E n="comparison">EQUAL</E>
+                          <T n="value">3</T>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+            <U>
+              <T n="multiplier">6</T>
+              <L n="tests">
+                <L>
+                  <V t="statistic">
+                    <U n="statistic">
+                      <T n="must_have_stat">True</T>
+                      <T n="stat">420085<!--Statistic: statistic_SmallBusinessPerks_FakeBillPay_ConsequenceCounter--></T>
+                      <V n="threshold" t="value_threshold">
+                        <U n="value_threshold">
+                          <E n="comparison">EQUAL</E>
+                          <T n="value">4</T>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+            <U>
+              <T n="multiplier">10</T>
+              <L n="tests">
+                <L>
+                  <V t="statistic">
+                    <U n="statistic">
+                      <T n="must_have_stat">True</T>
+                      <T n="stat">420085<!--Statistic: statistic_SmallBusinessPerks_FakeBillPay_ConsequenceCounter--></T>
+                      <V n="threshold" t="value_threshold">
+                        <U n="value_threshold">
+                          <E n="comparison">EQUAL</E>
+                          <T n="value">5</T>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+            <U>
+              <T n="multiplier">15</T>
+              <L n="tests">
+                <L>
+                  <V t="statistic">
+                    <U n="statistic">
+                      <T n="must_have_stat">True</T>
+                      <T n="stat">420085<!--Statistic: statistic_SmallBusinessPerks_FakeBillPay_ConsequenceCounter--></T>
+                      <V n="threshold" t="value_threshold">
+                        <U n="value_threshold">
+                          <E n="comparison">EQUAL</E>
+                          <T n="value">6</T>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+            <U>
+              <T n="multiplier">20</T>
+              <L n="tests">
+                <L>
+                  <V t="statistic">
+                    <U n="statistic">
+                      <T n="must_have_stat">True</T>
+                      <T n="stat">420085<!--Statistic: statistic_SmallBusinessPerks_FakeBillPay_ConsequenceCounter--></T>
+                      <V n="threshold" t="value_threshold">
+                        <U n="value_threshold">
+                          <T n="value">7</T>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+            <U>
+              <T n="multiplier">0.8</T>
+              <L n="tests">
+                <L>
+                  <V t="trait">
+                    <U n="trait">
+                      <L n="whitelist_traits">
+                        <T>396064<!--Trait: trait_Shady--></T>
+                      </L>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+          </L>
+        </U>
+        <T n="drama_node">420103<!--DialogDramaNode: dialogDramaNode_SmallBusinessPerks_FakeBillPay_Consequence--></T>
+        <L n="tests">
+          <L>
+            <V t="drama_node">
+              <U n="drama_node">
+                <L n="drama_nodes">
+                  <T>420103<!--DialogDramaNode: dialogDramaNode_SmallBusinessPerks_FakeBillPay_Consequence--></T>
+                </L>
+                <T n="exists">False</T>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">1</T>
+          <T n="stat">420601<!--Statistic: statistic_SmallBusinessPerks_FakeBillPay_WantCounter--></T>
+          <L n="tests">
+            <L>
+              <V t="whim">
+                <U n="whim">
+                  <L n="whims">
+                    <T>420605<!--Whim: want_SmallBusinessPerks_FakeBillPay--></T>
+                  </L>
+                </U>
+              </V>
+              <V t="drama_node">
+                <U n="drama_node">
+                  <L n="drama_nodes">
+                    <T>420103<!--DialogDramaNode: dialogDramaNode_SmallBusinessPerks_FakeBillPay_Consequence--></T>
+                  </L>
+                  <T n="exists">False</T>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_set_min">
+        <U n="statistic_set_min">
+          <T n="stat">420601<!--Statistic: statistic_SmallBusinessPerks_FakeBillPay_WantCounter--></T>
+          <L n="tests">
+            <L>
+              <V t="drama_node">
+                <U n="drama_node">
+                  <L n="drama_nodes">
+                    <T>420103<!--DialogDramaNode: dialogDramaNode_SmallBusinessPerks_FakeBillPay_Consequence--></T>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+    </V>
+  </L>
+</I>

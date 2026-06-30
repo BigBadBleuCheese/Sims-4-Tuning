@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_SmallBusiness_Reputation_Consequences_Ultimatum_BreakUp" s="420916">
+  <L n="loot_actions">
+    <V t="interaction">
+      <U n="interaction">
+        <E n="affordance_priority">Critical</E>
+        <L n="affordances">
+          <T>420915<!--ImmediateSuperInteraction: immediateSuperInteraction_SmallBusiness_Consequences_BreakUp--></T>
+        </L>
+        <E n="subject">Actor</E>
+        <E n="target_participant_type">SignificantOtherActor</E>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="trait">
+        <U n="trait">
+          <E n="subject">SignificantOtherActor</E>
+          <L n="whitelist_traits">
+            <T>441985<!--Trait: trait_SmallBusiness_Reputation_Consequences_Ultimatum_LastWarningGiven_Hidden--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="trait">
+        <U n="trait">
+          <E n="subject">SignificantOtherActor</E>
+          <L n="whitelist_traits">
+            <T>441915<!--Trait: trait_SmallBusiness_Reputation_Consequences_Ultimatum_FirstWarningGiven_Hidden--></T>
+          </L>
+        </U>
+      </V>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>376341<!--Trait: trait_SmallBusiness_Reputation_4_Neutral--></T>
+          </L>
+          <E n="subject">SignificantOtherActor</E>
+        </U>
+      </V>
+      <V t="test_set_reference">
+        <T n="test_set_reference">447920<!--TestSetInstance: testSet_SmallBusiness_Misaligned_Traits_BusinessOwner--></T>
+      </V>
+    </L>
+  </L>
+</I>

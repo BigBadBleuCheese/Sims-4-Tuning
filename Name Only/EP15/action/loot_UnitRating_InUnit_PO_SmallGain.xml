@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_UnitRating_InUnit_PO_SmallGain" s="359931">
+  <L n="loot_actions">
+    <V t="actions">
+      <T n="actions">355182<!--LootActions: loot_UnitRating_Progression_CurrentUnit_Small_Gain--></T>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">360952<!--Buff: buff_UnitRating_MaintenanceDay_CD--></T>
+        </U>
+        <U n="chance">
+          <T n="base_chance">25</T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="situation_running_test">
+              <U n="situation_running_test">
+                <V n="situation_whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>343855<!--MultiUnitEventSituation: situation_muEvent_MaintenanceDay--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="zone">
+        <U n="zone">
+          <U n="zone_tests">
+            <V n="venue_type" t="enabled">
+              <U n="enabled">
+                <V n="whitelist" t="specify">
+                  <U n="specify">
+                    <L n="whitelist">
+                      <T>341299<!--Venue: venue_MultiUnit--></T>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </U>
+        </U>
+      </V>
+      <V t="location">
+        <U n="location">
+          <U n="location_tests">
+            <V n="in_common_area" t="enabled">
+              <T n="enabled">False</T>
+            </V>
+          </U>
+        </U>
+      </V>
+      <V t="multi_unit_role_test">
+        <U n="multi_unit_role_test">
+          <V n="lot_source" t="enabled" />
+          <V n="role_to_check" t="is_property_owner" />
+        </U>
+      </V>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>360952<!--Buff: buff_UnitRating_MaintenanceDay_CD--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

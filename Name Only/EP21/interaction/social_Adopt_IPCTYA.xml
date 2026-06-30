@@ -1,0 +1,472 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SocialSuperInteraction" i="interaction" m="interactions.social.social_super_interaction" n="social_Adopt_IPCTYA" s="479026">
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>TargetSim</E>
+      </L>
+    </U>
+  </V>
+  <L n="_party_size_weight_tuning">
+    <U>
+      <T n="y">100</T>
+    </U>
+    <U>
+      <T n="x">1</T>
+      <T n="y">100</T>
+    </U>
+    <U>
+      <T n="x">2</T>
+      <T n="y">50</T>
+    </U>
+    <U>
+      <T n="x">3</T>
+      <T n="y">0</T>
+    </U>
+    <U>
+      <T n="x">4</T>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <T n="_social_group_type">74849<!--JigGroup: group_Platonic--></T>
+  <V n="affordance_to_push_on_target" t="push_affordance">
+    <T n="push_affordance">475923<!--SocialSuperInteraction: adoption_Target--></T>
+  </V>
+  <T n="allow_autonomous">False</T>
+  <T n="attention_cost">0</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">314290<!--AnimationElement: adoption--></T>
+      </U>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>162659<!--LootActions: loot_Commodity_Culling_GhostAdd_target--></T>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x9C09275F<!--String: "(From Being in a social group with at least 3 Sims)"--></T>
+          </V>
+          <T n="buff_type">125555<!--Buff: buff_Trait_WithMyFriends--></T>
+        </U>
+        <L n="subject">
+          <E>Actor</E>
+          <E>SocialGroupSims</E>
+          <E>TargetSim</E>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="social_group">
+              <U n="social_group">
+                <V n="threshold" t="enabled">
+                  <U n="enabled">
+                    <T n="value">3</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>317159<!--LootActions: loot_Adoption--></T>
+        </L>
+      </U>
+    </V>
+    <V t="broadcaster">
+      <U n="broadcaster">
+        <L n="broadcaster_types">
+          <U>
+            <T n="item">317581<!--Broadcaster: broadcaster_Adoption_Cheer--></T>
+          </U>
+        </L>
+        <V n="offset_time" t="enabled" />
+        <E n="participant">TargetSim</E>
+      </U>
+    </V>
+    <V t="notification">
+      <U n="notification">
+        <V n="dialog" t="single">
+          <V n="single" t="literal">
+            <U n="literal">
+              <V n="icon" t="enabled">
+                <V n="enabled" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>TargetSim</E>
+                    </L>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0xC4105FC1<!--String: "It's official! {1.SimFirstName} has been adopted into the {0.SimLastName} family.\n\nWelcome to the family, {1.SimFirstName}!"--></T>
+              </V>
+            </U>
+          </V>
+        </V>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>11030<!--LootActions: Rel_Gain_Large--></T>
+        </L>
+      </U>
+    </V>
+    <V t="buff_fire_and_forget">
+      <U n="buff_fire_and_forget">
+        <U n="buff">
+          <T n="buff_type">317586<!--Buff: buff_FamilyDynamics_Adoption--></T>
+        </U>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>311319<!--LootActions: loot_SelfDiscovery_Progress_Family_Min_Large--></T>
+        </L>
+      </U>
+    </V>
+    <V t="buff_fire_and_forget">
+      <U n="buff_fire_and_forget">
+        <U n="buff">
+          <T n="buff_type">473852<!--Buff: buff_Papercraft_Hidden_CelebrationCard_Adoption_Parent--></T>
+        </U>
+      </U>
+    </V>
+    <V t="buff_fire_and_forget">
+      <U n="buff_fire_and_forget">
+        <U n="buff">
+          <T n="buff_type">473853<!--Buff: buff_Papercraft_Hidden_CelebrationCard_Adoption_Child--></T>
+        </U>
+        <E n="participant">TargetSim</E>
+      </U>
+    </V>
+    <V t="buff_fire_and_forget">
+      <U n="buff_fire_and_forget">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x94659C67<!--String: "(From Being Adopted)"--></T>
+          </V>
+          <T n="buff_type">476164<!--Buff: buff_Family_Adoption_NewFamilyBond--></T>
+        </U>
+        <E n="participant">TargetSim</E>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <L n="blacklist">
+                  <T>479193<!--Buff: buff_Family_Adoption_AskedToBeAdopted_Hidden--></T>
+                </L>
+                <E n="subject">TargetSim</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff_fire_and_forget">
+      <U n="buff_fire_and_forget">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x3B8BDB7F<!--String: "(From Asking to be Adopted)"--></T>
+          </V>
+          <T n="buff_type">476163<!--Buff: buff_Family_Adoption_ChosenFamily--></T>
+        </U>
+        <E n="participant">TargetSim</E>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <E n="subject">TargetSim</E>
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>479193<!--Buff: buff_Family_Adoption_AskedToBeAdopted_Hidden--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="basic_reserve_object" t="disabled" />
+  <T n="category">372510<!--PieMenuCategory: pieMenuCategory_SocialMenu_SubCat_Relationship_Modify--></T>
+  <V n="content_score" t="enabled">
+    <U n="enabled">
+      <T n="base_score">15</T>
+    </U>
+  </V>
+  <T n="display_name">0x3F7205E5<!--String: "Adopt {1.SimFirstName}"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <V n="idle_animation" t="enabled">
+    <U n="enabled">
+      <T n="factory">11570<!--AnimationElement: Listen_Listen_Looping_basic--></T>
+    </U>
+  </V>
+  <T n="ignore_group_socials">False</T>
+  <L n="interaction_category_tags">
+    <E>Interaction_SocialSuper</E>
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+    <E>Interaction_SocialAll</E>
+    <E>Interaction_Social_Contagious</E>
+  </L>
+  <T n="invite_in_after_interaction">True</T>
+  <U n="listen_animation">
+    <T n="factory">11570<!--AnimationElement: Listen_Listen_Looping_basic--></T>
+  </U>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">334448<!--SocialMixerInteraction: mixer_social_Hug_Friendly_Middlescore_AdoptionContinuation_CT--></T>
+                    <T n="si_affordance_override">13991<!--SocialSuperInteraction: sim_BeAffectionate--></T>
+                    <E n="target">TargetSim</E>
+                  </U>
+                </L>
+                <L n="loot_list">
+                  <T>489350<!--LootActions: loot_EP21_Onboarding_TNSDeepLinks_FirstTimeAdoption--></T>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="sim_info">
+                <U n="sim_info">
+                  <V n="ages" t="specified">
+                    <L n="specified">
+                      <E>TEEN</E>
+                      <E>CHILD</E>
+                      <E />
+                      <E>YOUNGADULT</E>
+                    </L>
+                  </V>
+                  <E n="who">TargetSim</E>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="continuation">
+                  <U>
+                    <E n="actor">TargetSim</E>
+                    <T n="affordance">334449<!--SocialSuperInteraction: si_touching_Toddler_Hug_AdoptionContinuation--></T>
+                    <E n="target">Actor</E>
+                  </U>
+                </L>
+                <L n="loot_list">
+                  <T>489350<!--LootActions: loot_EP21_Onboarding_TNSDeepLinks_FirstTimeAdoption--></T>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="sim_info">
+                <U n="sim_info">
+                  <V n="ages" t="specified">
+                    <L n="specified">
+                      <E>TODDLER</E>
+                    </L>
+                  </V>
+                  <E n="who">TargetSim</E>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">308120<!--MixerInteraction: socials_Infant_Carry_CradleHold_Cuddle--></T>
+                    <T n="si_affordance_override">282876<!--SuperInteraction: socialSuperInteraction_CarryPickUp_Infant_CradleHold--></T>
+                    <E n="target">TargetSim</E>
+                  </U>
+                </L>
+                <L n="loot_list">
+                  <T>489350<!--LootActions: loot_EP21_Onboarding_TNSDeepLinks_FirstTimeAdoption--></T>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="sim_info">
+                <U n="sim_info">
+                  <V n="ages" t="specified">
+                    <L n="specified">
+                      <E>INFANT</E>
+                    </L>
+                  </V>
+                  <E n="who">TargetSim</E>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <T n="relationship_scoring">True</T>
+  <E n="scoring_priority">NORMAL</E>
+  <V n="sim_affinity_posture_scoring_data" t="enabled">
+    <U n="enabled">
+      <L n="my_scoring">
+        <U>
+          <V n="affinity_strategy" t="relationship_based" />
+          <T n="negate_tag">True</T>
+          <E n="running_interaction_tag">Sleeping</E>
+        </U>
+        <U>
+          <V n="affinity_strategy" t="avoid" />
+          <E n="running_interaction_tag">Very_Loud</E>
+        </U>
+      </L>
+      <L n="my_tags">
+        <E>Loud</E>
+        <E>Chat</E>
+      </L>
+    </U>
+  </V>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">TARGET</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>ADULT</E>
+            <E>YOUNGADULT</E>
+            <E>CHILD</E>
+            <E>TODDLER</E>
+            <E>INFANT</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">TargetSim</E>
+      </U>
+    </V>
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="relationship_bit_count">
+      <U n="relationship_bit_count">
+        <E n="comparison_operator">LESS</E>
+        <T n="rel_bit">8809<!--RelationshipBit: family_Target_IsParentOf_Actor--></T>
+        <T n="relationship_count">2</T>
+        <L n="subject">
+          <E>TargetSim</E>
+        </L>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">491712<!--TestSetInstance: testSetInstance_FamilyTree_Adoption_Relationship--></T>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">479028<!--TestSetInstance: testSetInstance_Adoption_AgeCompatability--></T>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">441196<!--TestSetInstance: testSet_Target_NotSpecialNPC--></T>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">491714<!--TestSetInstance: testSet_FamilyTree_Adoption_IPCorTYA--></T>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">502520<!--TestSetInstance: testSetInstance_ImportantJobTest_TargetSim--></T>
+    </V>
+    <V t="relationship">
+      <U n="relationship">
+        <U n="required_relationship_bits">
+          <L n="match_any">
+            <T>15794<!--RelationshipBit: friendship-bff--></T>
+            <T>31211<!--RelationshipBit: friendship-bff_BromanticPartner--></T>
+            <T>15795<!--RelationshipBit: friendship-bff_Evil--></T>
+            <T>15796<!--RelationshipBit: friendship-despised--></T>
+            <T>15802<!--RelationshipBit: friendship-disliked--></T>
+            <T>15797<!--RelationshipBit: friendship-friend--></T>
+            <T>15798<!--RelationshipBit: friendship-friend_Evil--></T>
+            <T>15799<!--RelationshipBit: friendship-good_friends--></T>
+            <T>15800<!--RelationshipBit: friendship-good_friends_Evil--></T>
+            <T>15801<!--RelationshipBit: friendship-nemesis--></T>
+            <T>248676<!--RelationshipBit: friendship-Confidant--></T>
+          </L>
+        </U>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

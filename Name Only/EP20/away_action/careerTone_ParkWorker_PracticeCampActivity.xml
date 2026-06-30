@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="CareerTone" i="away_action" m="careers.career_interactions" n="careerTone_ParkWorker_PracticeCampActivity" s="458334">
+  <T n="_available_when_instanced">True</T>
+  <V n="_disabled_when_running" t="disabled_when_running">
+    <T n="disabled_when_running">0xD31BCFBD<!--String: "Your Sim is already doing this."--></T>
+  </V>
+  <T n="_display_name">0x903456CF<!--String: "Practice Camp Activities"--></T>
+  <L n="_exit_conditions">
+    <U>
+      <L n="conditions">
+        <V t="time_based">
+          <U n="time_based">
+            <T n="max_time">60</T>
+            <T n="min_time">60</T>
+          </U>
+        </V>
+      </L>
+    </U>
+  </L>
+  <U n="_periodic_stat_changes">
+    <L n="operations">
+      <V t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">0.5</T>
+          <T n="stat">16655<!--Commodity: motive_Fun--></T>
+        </U>
+      </V>
+      <V t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">-0.25</T>
+          <T n="stat">16654<!--Commodity: motive_Energy--></T>
+        </U>
+      </V>
+      <V t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">-1</T>
+          <T n="stat">16657<!--Commodity: motive_Hygiene--></T>
+        </U>
+      </V>
+      <V t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">-0.25</T>
+          <T n="stat">218484<!--Commodity: motive_Robots_Charge--></T>
+          <L n="tests">
+            <L>
+              <V t="test_set_reference">
+                <T n="test_set_reference">230085<!--TestSetInstance: testSet_Is_HumanoidRobot--></T>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="_tests">
+    <L>
+      <V t="at_work">
+        <U n="at_work">
+          <T n="is_at_work">True</T>
+        </U>
+      </V>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified">
+            <L n="specified">
+              <E>TEEN</E>
+              <E>YOUNGADULT</E>
+              <E>ADULT</E>
+              <E>ELDER</E>
+            </L>
+          </V>
+        </U>
+      </V>
+      <V t="day_and_time">
+        <U n="day_and_time">
+          <V n="time_range" t="enabled">
+            <U n="enabled">
+              <U n="begin_time">
+                <T n="hour">8</T>
+              </U>
+              <U n="duration">
+                <T n="hour">14</T>
+              </U>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>460072<!--Buff: buff_Career_ParkWorker_ActivityPrep_Archaeology--></T>
+            <T>460066<!--Buff: buff_Career_ParkWorker_ActivityPrep_Archery--></T>
+            <T>460067<!--Buff: buff_Career_ParkWorker_ActivityPrep_Fishing--></T>
+            <T>460069<!--Buff: buff_Career_ParkWorker_ActivityPrep_Fitness--></T>
+            <T>460068<!--Buff: buff_Career_ParkWorker_ActivityPrep_Gardening--></T>
+            <T>460071<!--Buff: buff_Career_ParkWorker_ActivityPrep_Herbalism--></T>
+            <T>460075<!--Buff: buff_Career_ParkWorker_ActivityPrep_HorseRiding--></T>
+            <T>460073<!--Buff: buff_Career_ParkWorker_ActivityPrep_RockClimbing--></T>
+            <T>460076<!--Buff: buff_Career_ParkWorker_ActivityPrep_Skiing--></T>
+            <T>460074<!--Buff: buff_Career_ParkWorker_ActivityPrep_Snowboarding--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="icon_data" t="enabled">
+    <U n="enabled">
+      <T p="InGame\UI\Icons\AwayActions\AwayAction_General.png" n="icon">2f7d0004:00000000:7ed032d2aeb9db44</T>
+      <T n="tooltip">0x903456CF<!--String: "Practice Camp Activities"--></T>
+    </U>
+  </V>
+  <V n="override_default_away_action" t="use_override">
+    <T n="use_override">465181<!--CareerTone: careerTone_ParkWorker_Normal--></T>
+  </V>
+  <T n="performance_multiplier">1.25</T>
+  <T n="pie_menu_tooltip">0x97222160<!--String: "Increases Work Performance and replenishes Fun Need. Reduces Energy and Hygiene Needs. Offers a chance of granting a Focused moodlet and a small boost to a random Camp Activity Skill."--></T>
+  <L n="working_sim_periodic_loots">
+    <U>
+      <T n="loot">494859<!--LootActions: loot_Commodity_Motive_Hunger_CareerTone_FixUp--></T>
+    </U>
+    <U>
+      <T n="loot">494858<!--LootActions: loot_Commodity_Motive_Bladder_CareerTone_FixUp--></T>
+    </U>
+    <U>
+      <U n="chance">
+        <T n="base_chance">25</T>
+      </U>
+      <T n="loot">97666<!--LootActions: loot_Commodity_Motive_SocializeWithCoworkers--></T>
+    </U>
+    <U>
+      <T n="loot">488729<!--LootActions: loot_Dynasty_ValueBasedPrestige_HardworkingCareer_WorkHard--></T>
+    </U>
+    <U>
+      <T n="loot">465570<!--LootActions: loot_Career_ParkWorker_PracticeOutdoorActivity_PeriodicChance--></T>
+    </U>
+  </L>
+</I>

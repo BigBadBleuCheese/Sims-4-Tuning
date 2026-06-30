@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="CustomStatesSituation" i="situation" m="situations.custom_states.custom_states_situation" n="situation_SpecialMailDelivery" s="466331">
+  <T n="_is_unique">True</T>
+  <L n="_situation_states">
+    <U>
+      <T n="Situation State Key">DeliverSpecialDelivery</T>
+      <V n="Situation State" t="literal">
+        <U n="literal">
+          <L n="job_and_role_changes">
+            <U>
+              <T n="Situation Job">465025<!--SituationJob: situationJob_SpecialMailDelivery--></T>
+              <T n="Role State">465027<!--RoleState: mailman_role_SpecialDelivery--></T>
+            </U>
+          </L>
+          <L n="triggers">
+            <U>
+              <V n="effect" t="end_situation" />
+              <L n="triggers">
+                <V t="duration">
+                  <U n="duration">
+                    <U n="duration">
+                      <T n="hours">2</T>
+                    </U>
+                  </U>
+                </V>
+                <V t="test_event">
+                  <U n="test_event">
+                    <V n="test" t="ran_interaction_test">
+                      <U n="ran_interaction_test">
+                        <L n="affordances">
+                          <T>465231<!--SuperInteraction: mailboxWall_MailmanSpecialDelivery--></T>
+                          <T>465232<!--SuperInteraction: mailbox_MailmanSpecialDelivery--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </U>
+          </L>
+        </U>
+      </V>
+    </U>
+  </L>
+  <V n="_starting_state" t="random_starting_state">
+    <U n="random_starting_state">
+      <L n="possible_state_keys">
+        <U>
+          <T n="situation_key">DeliverSpecialDelivery</T>
+        </U>
+      </L>
+    </U>
+  </V>
+  <T p="InGame\Audio\Bumper\bumper_event_start.propx" n="audio_sting_on_start">39b2aa4a:00000000:78b903461d47e4fc</T>
+  <T n="can_be_sent_home_in_super_speed_3">False</T>
+  <L n="compatible_venues">
+    <T>28614<!--Venue: venue_residential--></T>
+  </L>
+  <E n="creation_ui_option">NOT_AVAILABLE</E>
+  <L n="default_job_and_roles">
+    <U>
+      <T n="Situation Job">465025<!--SituationJob: situationJob_SpecialMailDelivery--></T>
+      <T n="Role State">465027<!--RoleState: mailman_role_SpecialDelivery--></T>
+    </U>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_major_complete.propx" n="main_goal_audio_sting">39b2aa4a:00000000:10b476550150a33f</T>
+  <T n="max_participants">20</T>
+  <V n="situation_end_time_string" t="show_end_time">
+    <T n="show_end_time">0xA3E17143<!--String: "Work day ends at {0.TimeShort}"--></T>
+  </V>
+  <V n="travel_request_behavior" t="allow" />
+</I>

@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Career_Promote_Dynasty_ArrangeForPickedSim" s="485099">
+  <L n="loot_actions">
+    <V t="career_loot">
+      <U n="career_loot">
+        <V n="career" t="all_careers">
+          <U n="all_careers">
+            <V n="career_filters" t="enabled">
+              <U n="enabled">
+                <L n="blacklist_categories">
+                  <E>Invalid</E>
+                  <E>School</E>
+                  <E>UniversityCourse</E>
+                  <E>Volunteer</E>
+                </L>
+                <V n="limit_careers" t="enabled" />
+              </U>
+            </V>
+          </U>
+        </V>
+        <L n="operations">
+          <V t="promote" />
+        </L>
+        <E n="subject">PickedSim</E>
+        <L n="tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="npc" t="enabled" />
+                <E n="who">PickedSim</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="career_loot">
+      <U n="career_loot">
+        <V n="career" t="all_careers">
+          <U n="all_careers">
+            <V n="career_filters" t="enabled">
+              <U n="enabled">
+                <L n="blacklist_categories">
+                  <E />
+                  <E>School</E>
+                  <E>UniversityCourse</E>
+                  <E>Volunteer</E>
+                  <E>TeenSideHustle</E>
+                </L>
+              </U>
+            </V>
+          </U>
+        </V>
+        <V n="notification" t="enabled">
+          <V n="enabled" t="literal">
+            <U n="literal">
+              <V n="icon" t="enabled">
+                <V n="enabled" t="dynasty" />
+              </V>
+              <V n="secondary_icon" t="enabled">
+                <V n="enabled" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>PickedSim</E>
+                    </L>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x7D4C1379<!--String: "As Dynasty head, {0.SimFirstName} successfully negotiated a promotion for {1.SimFirstName} in the {2.String} career."--></T>
+              </V>
+              <V n="text_tokens" t="enabled">
+                <U n="enabled">
+                  <L n="tokens">
+                    <V t="participant_type">
+                      <U n="participant_type">
+                        <V n="objects" t="from_participant">
+                          <U n="from_participant">
+                            <E n="participant">Actor</E>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                    <V t="participant_type">
+                      <U n="participant_type">
+                        <V n="objects" t="from_participant">
+                          <U n="from_participant">
+                            <E n="participant">PickedSim</E>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </U>
+              </V>
+            </U>
+          </V>
+        </V>
+        <L n="operations">
+          <V t="promote">
+            <U n="promote">
+              <T n="allow_branch_popup_for_npc">True</T>
+            </U>
+          </V>
+        </L>
+        <E n="subject">PickedSim</E>
+        <L n="tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="npc" t="enabled">
+                  <T n="enabled">True</T>
+                </V>
+                <E n="who">PickedSim</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

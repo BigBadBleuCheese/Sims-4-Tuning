@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="AdventureMoment" i="snippet" m="snippets" n="EP14World_AdventureMoments_Cave_AppeaseCreature_Gnome2" s="325380">
+  <U n="value">
+    <L n="_finish_actions">
+      <U>
+        <L n="action_results">
+          <U>
+            <L n="loot_actions">
+              <T>325561<!--LootActions: loot_EP14World_Rabbithole_Cave_AppeaseCreature_Gnome_2_Success--></T>
+            </L>
+            <L n="next_moments">
+              <E>Cave_Explore</E>
+            </L>
+          </U>
+        </L>
+        <L n="availability_tests">
+          <L>
+            <V t="inventory">
+              <U n="inventory">
+                <V n="contents_check" t="has_object_with_def">
+                  <U n="has_object_with_def">
+                    <T n="definition">98932</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+        <V n="cost" t="item_cost">
+          <U n="item_cost">
+            <U n="item_cost">
+              <L n="ingredients">
+                <U>
+                  <T n="ingredient">98932</T>
+                </U>
+              </L>
+            </U>
+          </U>
+        </V>
+        <V n="display_text" t="single">
+          <T n="single">0x8A3A8D1<!--String: "Attempt to Appease Gnome"--></T>
+        </V>
+      </U>
+      <U>
+        <L n="action_results">
+          <U>
+            <L n="loot_actions">
+              <T>325567<!--LootActions: loot_EP14World_Rabbithole_Cave_AppeaseCreature_Gnome_2_Fail--></T>
+            </L>
+          </U>
+        </L>
+        <L n="availability_tests">
+          <L>
+            <V t="inventory">
+              <U n="inventory">
+                <V n="contents_check" t="has_object_with_def">
+                  <U n="has_object_with_def">
+                    <T n="definition">98932</T>
+                  </U>
+                </V>
+                <U n="required_count">
+                  <E n="comparison">EQUAL</E>
+                  <T n="value">0</T>
+                </U>
+              </U>
+            </V>
+          </L>
+        </L>
+        <V n="display_text" t="single">
+          <T n="single">0x8A3A8D1<!--String: "Attempt to Appease Gnome"--></T>
+        </V>
+      </U>
+      <U>
+        <L n="action_results">
+          <U>
+            <L n="loot_actions">
+              <T>325564<!--LootActions: loot_EP14World_Rabbithole_Cave_AppeaseCreature_Gnome_2_Neutral--></T>
+            </L>
+          </U>
+        </L>
+        <V n="display_text" t="single">
+          <T n="single">0xF4E99B36<!--String: "Kick Gnome"--></T>
+        </V>
+      </U>
+    </L>
+    <V n="_visibility" t="show_dialog">
+      <U n="show_dialog">
+        <V n="audio_sting" t="enabled">
+          <U n="enabled">
+            <T n="audio" p="InEP14\Audio\music\cave_chance_cards\bumper_ep14_cave_ghost_gnome_appear.propx">39b2aa4a:00000000:6ea24402950644a8</T>
+            <T n="immediate_audio">True</T>
+          </U>
+        </V>
+        <E n="dialog_bg_style">BG_CHANCE_CARD</E>
+        <E n="dialog_style">LARGE_ICON</E>
+        <V n="icon" t="enabled">
+          <V n="enabled" t="resource_key">
+            <U n="resource_key">
+              <T n="key" p="InEP14\UI\Icons\Dialog\ChanceCard_Gnomes.png">2f7d0004:00000000:0c2bf94f837bcc19</T>
+            </U>
+          </V>
+        </V>
+        <V n="text" t="single">
+          <T n="single">0x15FE46BD<!--String: "{0.SimFirstName} comes across a Gnome with a ghostly appearance and an expectant stare. Plates are littered around it that look like they were offerings... or maybe... welcome gifts. Perhaps the Gnome is looking for something to eat. What would one offer someone who just moved into the neighborhood?"--></T>
+        </V>
+      </U>
+    </V>
+  </U>
+</I>

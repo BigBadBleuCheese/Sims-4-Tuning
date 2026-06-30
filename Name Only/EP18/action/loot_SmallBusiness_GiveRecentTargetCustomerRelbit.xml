@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_SmallBusiness_GiveRecentTargetCustomerRelbit" s="426469">
+  <L n="loot_actions">
+    <V t="relationship_bits_loot">
+      <U n="relationship_bits_loot">
+        <L n="bit_operations">
+          <U>
+            <T n="bit">426467<!--RelationshipBit: shortTermBits_SmallBusiness_ActorOwner_RecentTargetCustomer--></T>
+            <E n="operation">ADD</E>
+            <E n="recipients">CurrentlyOpenSmallBusinessOwner</E>
+            <E n="targets">Actor</E>
+          </U>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="relationship">
+              <U n="relationship">
+                <U n="required_relationship_bits">
+                  <L n="match_all">
+                    <T>426466<!--RelationshipBit: relbit_SmallBusiness_ActorOwner_HasTalkedTo_TargetCustomer--></T>
+                  </L>
+                </U>
+                <L n="subject">
+                  <E>CurrentlyOpenSmallBusinessOwner</E>
+                </L>
+                <L n="target_sim">
+                  <E>Actor</E>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

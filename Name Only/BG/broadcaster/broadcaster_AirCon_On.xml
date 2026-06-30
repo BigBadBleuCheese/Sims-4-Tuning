@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Broadcaster" i="broadcaster" m="broadcasters.broadcaster" n="broadcaster_AirCon_On" s="357733">
+  <L n="constraints">
+    <V t="cone">
+      <U n="cone">
+        <T n="angle">160</T>
+        <T n="max_radius">6</T>
+        <T n="offset">180</T>
+      </U>
+    </V>
+    <V t="line_of_sight">
+      <U n="line_of_sight">
+        <V n="temporary_los" t="enabled" />
+      </U>
+    </V>
+  </L>
+  <L n="effects">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x86CA0D4C<!--String: "(From Air Conditioner)"--></T>
+          </V>
+          <T n="buff_type">357734<!--Buff: buff_Object_AirCon_Positive--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="location">
+              <U n="location">
+                <U n="location_tests">
+                  <V n="is_inside_building" t="enabled" />
+                </U>
+              </U>
+            </V>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="species" t="specified">
+                  <U n="specified">
+                    <L n="species">
+                      <E />
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="buff">
+              <U n="buff">
+                <L n="blacklist">
+                  <T>188980<!--Buff: buff_Thermostat_Cooler_Uncomfortable--></T>
+                  <T>185937<!--Buff: buff_Temperature_Hidden_Chilled--></T>
+                  <T>186001<!--Buff: buff_Temperature_Hidden_ExtremeFreezing--></T>
+                  <T>186000<!--Buff: buff_Temperature_Hidden_Freezing--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x86CA0D4C<!--String: "(From Air Conditioner)"--></T>
+          </V>
+          <T n="buff_type">357735<!--Buff: buff_Object_AirCon_Negative--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="location">
+              <U n="location">
+                <U n="location_tests">
+                  <V n="is_inside_building" t="enabled" />
+                </U>
+              </U>
+            </V>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="species" t="specified">
+                  <U n="specified">
+                    <L n="species">
+                      <E />
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="buff">
+              <U n="buff">
+                <L n="blacklist">
+                  <T>188978<!--Buff: buff_Thermostat_Cooler_Happy--></T>
+                  <T>186004<!--Buff: buff_Temperature_Hidden_ExtremeMelting--></T>
+                  <T>186003<!--Buff: buff_Temperature_Hidden_Melting--></T>
+                  <T>186002<!--Buff: buff_Temperature_Hidden_Overheating--></T>
+                </L>
+              </U>
+            </V>
+            <V t="buff">
+              <U n="buff">
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>185937<!--Buff: buff_Temperature_Hidden_Chilled--></T>
+                    <T>186001<!--Buff: buff_Temperature_Hidden_ExtremeFreezing--></T>
+                    <T>186000<!--Buff: buff_Temperature_Hidden_Freezing--></T>
+                    <T>188980<!--Buff: buff_Thermostat_Cooler_Uncomfortable--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">357736<!--Buff: buff_Object_AirCon_Effects--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="location">
+              <U n="location">
+                <U n="location_tests">
+                  <V n="is_inside_building" t="enabled" />
+                </U>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="frequency" t="on_enter">
+    <U n="on_enter">
+      <T n="allow_multiple">True</T>
+    </U>
+  </V>
+</I>

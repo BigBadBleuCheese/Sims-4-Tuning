@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="mailboxWall_PayBills_FakeBillPayment" s="373378">
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Object</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <L n="_static_commodities">
+    <U>
+      <T n="static_commodity">16430<!--StaticCommodity: StaticCommodity_PayBills--></T>
+    </U>
+  </L>
+  <T n="attention_cost">0.75</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">381641<!--AnimationElement: mailboxWall_PayFakeBill--></T>
+      </U>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="payment">
+      <U n="payment">
+        <U n="insufficient_funds_behavior">
+          <T n="allow_payment_succeed">True</T>
+        </U>
+        <V n="payment" t="literal">
+          <U n="literal">
+            <V n="payment_cost" t="bills" />
+            <V n="payment_source" t="no_source">
+              <U n="no_source">
+                <T n="advertise_simoleon_delta">False</T>
+              </U>
+            </V>
+          </U>
+        </V>
+        <V n="timing" t="at_end">
+          <U n="at_end">
+            <E n="criticality">NotCritical</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>376350<!--LootActions: loot_SmallBusiness_Reputation_Loss_Medium--></T>
+          <T>420100<!--LootActions: lootActions_SmallBusinessPerks_FakeBillPay_ConsequenceChance--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T n="category">379469<!--PieMenuCategory: pieMenuCategory_Bills--></T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xD8493A8C<!--String: "Fake Bill Payment"--></T>
+  <V n="display_name_overrides" t="testable">
+    <U n="testable">
+      <L n="overrides">
+        <U>
+          <V n="new_display_name" t="enabled">
+            <T n="enabled">0x55EC24FC<!--String: "Pay Bills and Rent"--></T>
+          </V>
+          <L n="test">
+            <L>
+              <V t="zone">
+                <U n="zone">
+                  <V n="zone_source" t="use_participant_home_zone" />
+                  <U n="zone_tests">
+                    <V n="venue_type" t="enabled">
+                      <U n="enabled">
+                        <V n="whitelist" t="specify">
+                          <U n="specify">
+                            <L n="whitelist">
+                              <T>341299<!--Venue: venue_MultiUnit--></T>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </U>
+                </U>
+              </V>
+              <V t="test_set_reference">
+                <T n="test_set_reference">352604<!--TestSetInstance: testSet_MultiUnit_isTenantNotOwner_HomeLot--></T>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="basic_extras">
+          <V t="buff_fire_and_forget">
+            <U n="buff_fire_and_forget">
+              <U n="buff">
+                <V n="buff_reason" t="enabled">
+                  <T n="enabled">0x49887A06<!--String: "(From Faking a Bill Payment)"--></T>
+                </V>
+                <T n="buff_type">373712<!--Buff: buff_SmallBusinessPerks_FakeBillPayment--></T>
+              </U>
+            </U>
+          </V>
+          <V t="buff_fire_and_forget">
+            <U n="buff_fire_and_forget">
+              <U n="buff">
+                <V n="buff_reason" t="enabled">
+                  <T n="enabled">0x49887A06<!--String: "(From Faking a Bill Payment)"--></T>
+                </V>
+                <T n="buff_type">373712<!--Buff: buff_SmallBusinessPerks_FakeBillPayment--></T>
+              </U>
+            </U>
+          </V>
+        </L>
+        <L n="loot_list">
+          <T>427180<!--LootActions: loot_Idealist_Guilt--></T>
+        </L>
+      </U>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T n="key" p="InEP18\UI\Icons\PieMenu\PieMenu_Schemer.png">2f7d0004:00000000:f9008fd772d502cc</T>
+      </U>
+    </V>
+  </V>
+  <T n="pie_menu_priority">8</T>
+  <V n="route_start_balloon" t="enabled">
+    <U n="enabled">
+      <U n="balloon">
+        <L n="balloon_choices">
+          <U>
+            <V n="item" t="balloon_icon">
+              <U n="balloon_icon">
+                <V n="icon" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>Object</E>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </U>
+        </L>
+        <L n="balloon_target">
+          <E>Actor</E>
+        </L>
+      </U>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="object_ownership" />
+    <V t="test_set_reference">
+      <T n="test_set_reference">351086<!--TestSetInstance: testSet_PayBillsUnit_CanPayBillsAndRent--></T>
+    </V>
+    <V t="bucks_perks_test">
+      <U n="bucks_perks_test">
+        <T n="bucks_perk">373035<!--BucksPerk: smallBusinessPerks_Schemer_FakeBillPayment--></T>
+      </U>
+    </V>
+    <V t="bills">
+      <U n="bills">
+        <V n="payment_due" t="enabled" />
+        <T n="test_participant_owned_households">True</T>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xA6C420A9<!--String: "Bills are not yet due."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="lot_owner" />
+      <V t="zone">
+        <U n="zone">
+          <U n="zone_tests">
+            <V n="venue_type" t="enabled">
+              <U n="enabled">
+                <V n="blacklist" t="specify">
+                  <U n="specify">
+                    <L n="blacklist">
+                      <T>208182<!--Venue: venue_rentable_universityHousing--></T>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </U>
+        </U>
+      </V>
+    </L>
+  </L>
+  <T n="time_overhead">5</T>
+</I>

@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_NobleCareer_SetKingdomTax_Normal" s="482128">
+  <L n="loot_actions">
+    <V t="kingdom">
+      <U n="kingdom">
+        <V n="operation" t="set_tax_level">
+          <U n="set_tax_level">
+            <E n="tax_level">Normal</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant" />
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x930FEC75<!--String: "{0.SimFirstNameWithPrefix} set the Kingdom Taxes to Normal."--></T>
+            </V>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="kingdom">
+              <U n="kingdom">
+                <V n="test_type" t="tax_level">
+                  <U n="tax_level">
+                    <E n="value">Normal</E>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="trait_add">
+      <U n="trait_add">
+        <E n="subject">AllNoblesInActorNeighborhood</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="ages" t="specified">
+                  <L n="specified">
+                    <E>TEEN</E>
+                    <E>YOUNGADULT</E>
+                    <E>ADULT</E>
+                    <E>ELDER</E>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+        <T n="trait">482155<!--Trait: trait_NobleCareer_Hidden_KingdomTax_Normal--></T>
+      </U>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_add">
+        <U n="statistic_add">
+          <T n="stat">482620<!--Commodity: commodity_NobleCareer_KingdomTaxFavorGain--></T>
+          <L n="subject">
+            <E>AllNoblesInActorNeighborhood</E>
+          </L>
+          <L n="subject_filter_tests">
+            <L>
+              <V t="sim_info">
+                <U n="sim_info">
+                  <V n="ages" t="specified" />
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+    </V>
+    <V t="trait_remove">
+      <U n="trait_remove">
+        <E n="subject">AllNoblesInActorNeighborhood</E>
+        <V n="trait" t="all_from_list">
+          <U n="all_from_list">
+            <L n="trait_list">
+              <T>482156<!--Trait: trait_NobleCareer_Hidden_KingdomTax_High--></T>
+              <T>482154<!--Trait: trait_NobleCareer_Hidden_KingdomTax_Low--></T>
+              <T>482167<!--Trait: trait_NobleCareer_Hidden_KingdomTax_VeryHigh--></T>
+              <T>482153<!--Trait: trait_NobleCareer_Hidden_KingdomTax_VeryLow--></T>
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+</I>

@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="ImmediateSuperInteraction" i="interaction" m="interactions.base.immediate_interaction" n="smallBusiness_Immediate_Employee_SetPay_Low" s="404878">
+  <V n="_saveable" t="disabled" />
+  <L n="basic_extras">
+    <V t="do_command">
+      <U n="do_command">
+        <L n="arguments">
+          <V t="participant">
+            <U n="participant">
+              <E n="argument">Actor</E>
+            </U>
+          </V>
+          <V t="participant">
+            <U n="participant">
+              <E n="argument">TargetSim</E>
+            </U>
+          </V>
+          <V t="string">
+            <U n="string">
+              <T n="argument">0</T>
+            </U>
+          </V>
+        </L>
+        <T n="command">business.set_pay_level_small_business_employee</T>
+      </U>
+    </V>
+  </L>
+  <T n="category">404881<!--PieMenuCategory: pieMenuCategory_Socials_SmallBusiness_SetPay--></T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x1F2554E1<!--String: "Low Pay"--></T>
+  <V n="display_name_overrides" t="testable">
+    <U n="testable">
+      <L n="overrides">
+        <U>
+          <V n="new_display_name" t="disabled" />
+          <V n="new_pie_menu_icon" t="enabled">
+            <V n="enabled" t="resource_key">
+              <U n="resource_key">
+                <T n="key" p="InGame\UI\Icons\Clubs\DropDownIcons\icon_do_this.png">2f7d0004:00000000:7d6ce658c6cde7a9</T>
+              </U>
+            </V>
+          </V>
+          <L n="test">
+            <L>
+              <V t="small_business_career_level_test">
+                <U n="small_business_career_level_test">
+                  <T n="career_level">401792<!--CareerLevel: careerLevels_SmallBusiness_Employee_Level1--></T>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="small_business">
+        <U n="small_business">
+          <E n="participant">CurrentlyOpenSmallBusinessOwner</E>
+        </U>
+      </V>
+      <V t="small_business" />
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T n="key" p="InGame\UI\Icons\PieMenu\Interactions\icon_pieMenu_immediateInteraction.png">2f7d0004:00000000:25eea5cdba6a6fd6</T>
+      </U>
+    </V>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="lot_owner" />
+    <V t="is_small_business_open">
+      <U n="is_small_business_open">
+        <E n="participant">Actor</E>
+      </U>
+    </V>
+    <V t="small_business_career_level_test">
+      <U n="small_business_career_level_test">
+        <T n="career_level">401792<!--CareerLevel: careerLevels_SmallBusiness_Employee_Level1--></T>
+        <T n="negate">True</T>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x22FDFB54<!--String: "This is {1.SimFirstName}'s current pay level."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+</I>

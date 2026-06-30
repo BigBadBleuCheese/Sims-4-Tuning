@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="DialogDramaNode" i="drama_node" m="drama_scheduler.dialog_drama_node" n="dialogDramaNode_EP20World_NPC_NPCDrama_Skip" s="469783">
+  <V n="dialog_and_loot" t="dialog_ok">
+    <U n="dialog_ok">
+      <U n="dialog">
+        <V n="icon" t="enabled">
+          <V n="enabled" t="participant">
+            <U n="participant">
+              <L n="participant_type">
+                <E>Actor</E>
+              </L>
+            </U>
+          </V>
+        </V>
+        <E n="phone_ring_type">RING</E>
+        <V n="text" t="single">
+          <T n="single">0x713547F7<!--String: "Hey, I thought I should make myself a bit more known after talking to you through those responses to those letters I put up on the Lighthouse. I'm sorta surprised anyone even bothered to respond, but you did. You should maybe stop by and talk more, cuz I have something to share with you. Just remember to Ask about Lighthouse Letters with me, okay?"--></T>
+        </V>
+      </U>
+      <L n="on_dialog_complete_loot_list">
+        <T>479549<!--LootActions: loot_EP20World_NPC_NPCDrama_BigRevealBuff--></T>
+        <T>469768<!--LootActions: loot_EP20World_NPC_NPCDrama_Skip_RevealNarrative--></T>
+      </L>
+      <L n="on_dialog_seen_loot_list">
+        <T>481047<!--LootActions: loot_EP20World_NPC_NPCDrama_Skip_OK_TNS--></T>
+      </L>
+    </U>
+  </V>
+  <U n="min_and_max_times">
+    <T n="lower_bound">2</T>
+    <T n="upper_bound">3</T>
+  </U>
+  <L n="pretests">
+    <L>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>469985<!--Trait: trait_Hidden_EP20World_NPC_NPCDrama_Skip_Ready--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+  <L n="receiver_sim_pretests">
+    <L>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>469985<!--Trait: trait_Hidden_EP20World_NPC_NPCDrama_Skip_Ready--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="reschedule_on_failed_tests" t="reschedule">
+    <U n="reschedule">
+      <T n="lower_bound">2</T>
+      <T n="upper_bound">4</T>
+    </U>
+  </V>
+  <V n="sender_sim_info" t="sim_filter">
+    <U n="sim_filter">
+      <T n="sim_filter">469979<!--TunableSimFilter: filter_EP20World_NPCs_SkipBroke--></T>
+    </U>
+  </V>
+  <E n="sender_sim_info_type">INSTANCED_ALLOWED</E>
+  <V n="time_option" t="schedule">
+    <U n="schedule">
+      <L n="valid_times">
+        <U>
+          <U n="days_available">
+            <T n="0 SUNDAY">True</T>
+            <T n="1 MONDAY">True</T>
+            <T n="2 TUESDAY">True</T>
+            <T n="3 WEDNESDAY">True</T>
+            <T n="4 THURSDAY">True</T>
+            <T n="5 FRIDAY">True</T>
+            <T n="6 SATURDAY">True</T>
+          </U>
+          <T n="duration">24</T>
+          <U n="start_time">
+            <T n="hour">0</T>
+          </U>
+        </U>
+      </L>
+    </U>
+  </V>
+</I>

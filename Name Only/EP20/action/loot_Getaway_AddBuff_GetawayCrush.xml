@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Getaway_AddBuff_GetawayCrush" s="456778">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0xE91A5EDA<!--String: "(From a Getaway Romance)"--></T>
+          </V>
+          <T n="buff_type">456789<!--Buff: buff_Getaway_GetawayCrush--></T>
+        </U>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <E n="subject">TargetSim</E>
+          <V n="whitelist" t="enabled">
+            <L n="enabled">
+              <T>456952<!--Buff: buff_Getaway--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="relationship_score_interval">
+            <T n="lower_bound">30</T>
+          </U>
+          <T n="track">16651<!--RelationshipTrack: LTR_Romance_Main--></T>
+        </U>
+      </V>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>456789<!--Buff: buff_Getaway_GetawayCrush--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

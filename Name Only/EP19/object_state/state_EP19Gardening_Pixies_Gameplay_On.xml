@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="ObjectStateValue" i="object_state" m="objects.components.state" n="state_EP19Gardening_Pixies_Gameplay_On" s="437168">
+  <U n="new_client_state">
+    <V n="autonomy_modifiers" t="apply_new_value">
+      <V n="apply_new_value" t="no_statistic_to_apply" />
+    </V>
+  </U>
+  <L n="super_affordances">
+    <T>437176<!--SuperInteraction: super_EP19Gardening_ChasePixies--></T>
+    <T>437177<!--SuperInteraction: super_EP19Gardening_ChasePixies_Fairy--></T>
+    <T>437762<!--ImmediateSuperInteraction: immediate_EP19Gardening_Pixies_NoInteractions--></T>
+    <T>437763<!--ImmediateSuperInteraction: debug_EP19Gardening_TogglePixies--></T>
+    <T>437832<!--SuperInteraction: super_EP19Gardening_ChasePixies_VerticalGarden--></T>
+    <T>437834<!--SuperInteraction: super_EP19Gardening_ChasePixies_Fairy_VerticalGarden--></T>
+    <T>454795<!--ImmediateSuperInteraction: debug_EP19Gardening_PushPixiesSpread--></T>
+  </L>
+  <L n="tested_client_state_overrides">
+    <U>
+      <U n="state_change_op">
+        <V n="broadcaster" t="apply_new_value">
+          <V n="apply_new_value" t="start_broadcaster">
+            <U n="start_broadcaster">
+              <L n="broadcaster_types">
+                <U>
+                  <T n="item">437171<!--Broadcaster: broadcaster_EP19Gardening_Pixies_Mischief--></T>
+                </U>
+              </L>
+            </U>
+          </V>
+        </V>
+      </U>
+      <L n="tests">
+        <L>
+          <V t="object_definition_criteria">
+            <U n="object_definition_criteria">
+              <V n="identity_test" t="tags">
+                <U n="tags">
+                  <L n="tag_set">
+                    <E>Func_GardeningSkillPlant_Tree</E>
+                  </L>
+                </U>
+              </V>
+            </U>
+          </V>
+        </L>
+      </L>
+    </U>
+    <U>
+      <U n="state_change_op">
+        <V n="broadcaster" t="apply_new_value">
+          <V n="apply_new_value" t="start_broadcaster">
+            <U n="start_broadcaster">
+              <L n="broadcaster_types">
+                <U>
+                  <T n="item">437171<!--Broadcaster: broadcaster_EP19Gardening_Pixies_Mischief--></T>
+                </U>
+              </L>
+            </U>
+          </V>
+        </V>
+      </U>
+      <L n="tests">
+        <L>
+          <V t="test_set_reference">
+            <T n="test_set_reference">434147<!--TestSetInstance: testSet_PottedPlants_IsOnPot--></T>
+          </V>
+        </L>
+        <L>
+          <V t="test_set_reference">
+            <T n="test_set_reference">438593<!--TestSetInstance: testSet_VerticalGarden_IsOnGarden--></T>
+          </V>
+        </L>
+      </L>
+    </U>
+  </L>
+  <V n="value" t="boolean" />
+</I>

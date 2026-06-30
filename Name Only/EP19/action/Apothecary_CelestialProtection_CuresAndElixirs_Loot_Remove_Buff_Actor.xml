@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="Apothecary_CelestialProtection_CuresAndElixirs_Loot_Remove_Buff_Actor" s="448667">
+  <L n="loot_actions">
+    <V t="buff_removal">
+      <U n="buff_removal">
+        <L n="buffs_to_remove">
+          <T>442917<!--Buff: Apothecary_CuresAndElixirs_Buff_CelestialProtection--></T>
+          <T>433169<!--Buff: buff_Ailments_SleepFlag--></T>
+        </L>
+        <E n="subject">Actor</E>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x906ABA00<!--String: "A glimmering shield of Celestial Protection just surrounded {1.SimFirstName}. {1.SimPronounSubjective|xxUpper} may not realize it, but this prevented an Ailment {1.SimPronounSubjective} would surely have gotten otherwise!\n\nCelestial Protection's power has faded, and {1.SimFirstName} will need to drink another."--></T>
+            </V>
+          </U>
+        </V>
+        <E n="subject">Actor</E>
+      </U>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">100</T>
+          <T n="stat">427050<!--Commodity: commodity_BalanceSys_BalanceAxis--></T>
+          <L n="subject">
+            <E>Actor</E>
+          </L>
+        </U>
+      </V>
+    </V>
+  </L>
+  <T n="run_test_first">True</T>
+  <L n="tests">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <E n="subject">Actor</E>
+          <V n="whitelist" t="enabled">
+            <L n="enabled">
+              <T>442917<!--Buff: Apothecary_CuresAndElixirs_Buff_CelestialProtection--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

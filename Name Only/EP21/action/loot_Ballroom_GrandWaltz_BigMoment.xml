@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Ballroom_GrandWaltz_BigMoment" s="471888">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">471759<!--Buff: buff_Ballroom_Hidden_GrandWaltzOutcomes_Failure--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <L n="whitelist_traits">
+                  <T>475268<!--Trait: trait_Hidden_Ballroom_AwkwardWaltz--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">482618<!--Buff: buff_Ballroom_Hidden_GrandWaltzOutcomes_SuperSuccess--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="relationship">
+              <U n="relationship">
+                <U n="required_relationship_bits">
+                  <L n="match_any">
+                    <T>462978<!--RelationshipBit: ballroomParty_Relbit_RomancePartner--></T>
+                    <T>462979<!--RelationshipBit: ballroomParty_Relbit_StatusPartner--></T>
+                  </L>
+                </U>
+              </U>
+            </V>
+            <V t="buff">
+              <U n="buff">
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>482615<!--Buff: buff_Ballroom_Hidden_MoodMatch--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+            <V t="trait">
+              <U n="trait">
+                <L n="blacklist_traits">
+                  <T>475268<!--Trait: trait_Hidden_Ballroom_AwkwardWaltz--></T>
+                </L>
+              </U>
+            </V>
+            <V t="trait">
+              <U n="trait">
+                <L n="blacklist_traits">
+                  <T>475268<!--Trait: trait_Hidden_Ballroom_AwkwardWaltz--></T>
+                </L>
+                <E n="subject">TargetSim</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">471758<!--Buff: buff_Ballroom_Hidden_GrandWaltzOutcomes_Success--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <L n="blacklist">
+                  <T>482618<!--Buff: buff_Ballroom_Hidden_GrandWaltzOutcomes_SuperSuccess--></T>
+                  <T>471759<!--Buff: buff_Ballroom_Hidden_GrandWaltzOutcomes_Failure--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

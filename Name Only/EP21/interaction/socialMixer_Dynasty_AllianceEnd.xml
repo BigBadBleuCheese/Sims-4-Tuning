@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SocialMixerInteraction" i="interaction" m="interactions.social.social_mixer_interaction" n="socialMixer_Dynasty_AllianceEnd" s="477495">
+  <V n="_icon" t="resource_key">
+    <U n="resource_key">
+      <T n="key" p="InGame\UI\Icons\InteractionQueueSubInteractions\icon_queuesubinteraction_mean.png">2f7d0004:00000000:3d35761f11f0418c</T>
+    </U>
+  </V>
+  <T n="allow_autonomous">False</T>
+  <T n="allow_user_directed">True</T>
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>162659<!--LootActions: loot_Commodity_Culling_GhostAdd_target--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T n="category">470461<!--PieMenuCategory: pieMenuCategory_Dynasty--></T>
+  <T n="display_name">0x9F16DC3D<!--String: "End Alliance"--></T>
+  <T n="display_name_target">0x8C71C8F7<!--String: "Listen to {1.SimFirstName}'s Question"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T n="ignores_greetings">True</T>
+  <L n="interaction_category_tags">
+    <E>Interaction_Mixer</E>
+    <E>Interaction_All</E>
+    <E>Interaction_SocialAll</E>
+    <E>Interaction_SocialMixer</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <V n="animation_ref" t="enabled">
+          <U n="enabled">
+            <T n="factory">477500<!--AnimationElement: animation_Dynasty_EndAlliance--></T>
+            <U n="overrides">
+              <V n="balloons" t="enabled">
+                <L n="enabled">
+                  <U>
+                    <L n="balloon_choices">
+                      <U>
+                        <V n="item" t="balloon_icon">
+                          <U n="balloon_icon">
+                            <E n="balloon_type">SPEECH</E>
+                            <V n="icon" t="dynasty">
+                              <U n="dynasty">
+                                <L n="participant_type">
+                                  <E>TargetSim</E>
+                                </L>
+                              </U>
+                            </V>
+                            <T p="InGame\UI\Icons\Headlines\Final\headline_Prohibit.png" n="overlay">2f7d0004:00000000:ab4a67c934164fb1</T>
+                          </U>
+                        </V>
+                      </U>
+                    </L>
+                    <T n="balloon_delay">1</T>
+                    <L n="balloon_target">
+                      <E>Actor</E>
+                    </L>
+                  </U>
+                </L>
+              </V>
+            </U>
+          </U>
+        </V>
+        <L n="basic_extras">
+          <V t="buff_fire_and_forget">
+            <U n="buff_fire_and_forget">
+              <U n="buff">
+                <V n="buff_reason" t="enabled">
+                  <T n="enabled">0x49AC3764<!--String: "(From Ending an Alliance)"--></T>
+                </V>
+                <T n="buff_type">477505<!--Buff: buff_Dynasty_AllianceEndedActor--></T>
+              </U>
+            </U>
+          </V>
+          <V t="buff_fire_and_forget">
+            <U n="buff_fire_and_forget">
+              <U n="buff">
+                <V n="buff_reason" t="enabled">
+                  <T n="enabled">0x8D350545<!--String: "(From an Alliance Ending)"--></T>
+                </V>
+                <T n="buff_type">477506<!--Buff: buff_Dynasty_AllianceEndedTarget--></T>
+              </U>
+              <E n="participant">TargetSim</E>
+            </U>
+          </V>
+          <V t="notification">
+            <U n="notification">
+              <V n="dialog" t="single">
+                <V n="single" t="literal">
+                  <U n="literal">
+                    <V n="icon" t="enabled">
+                      <V n="enabled" t="participant">
+                        <U n="participant">
+                          <L n="participant_type">
+                            <E>TargetSim</E>
+                          </L>
+                        </U>
+                      </V>
+                    </V>
+                    <V n="secondary_icon" t="enabled">
+                      <V n="enabled" t="participant" />
+                    </V>
+                    <V n="text" t="variation">
+                      <U n="variation">
+                        <L n="variations">
+                          <T>0xA7405F0F<!--String: "I see. Well, we don't need you either, so you can stop looking so <i>smug</i>."--></T>
+                          <T>0xF857912A<!--String: "If you don't value the great {0.String} Dynasty, then yes, we shouldn't be allies. Good riddance."--></T>
+                        </L>
+                      </U>
+                    </V>
+                    <V n="text_tokens" t="enabled">
+                      <U n="enabled">
+                        <L n="tokens">
+                          <V t="dynasty">
+                            <U n="dynasty">
+                              <E n="participant">TargetSim</E>
+                            </U>
+                          </V>
+                        </L>
+                      </U>
+                    </V>
+                    <E n="visual_type">SPEECH</E>
+                  </U>
+                </V>
+              </V>
+            </U>
+          </V>
+        </L>
+        <V n="cancel_si" t="enabled">
+          <L n="enabled">
+            <E>Actor</E>
+            <E>TargetSim</E>
+          </L>
+        </V>
+        <L n="loot_list">
+          <T>11040<!--LootActions: Rel_Loss_Medium--></T>
+          <T>26086<!--LootActions: Loot_SocialContext_Friendship_Loss_cappedDistasteful--></T>
+          <T>477969<!--LootActions: loot_Dynasty_AllianceEnd--></T>
+        </L>
+      </U>
+    </U>
+  </V>
+  <U n="skill_loot_data">
+    <V n="level_range" t="enabled">
+      <U n="enabled">
+        <T n="lower_bound">1</T>
+        <T n="upper_bound">10</T>
+      </U>
+    </V>
+    <T n="stat">16699<!--Skill: statistic_Skill_AdultMajor_Charisma--></T>
+  </U>
+  <U n="sub_action">
+    <T n="base_weight">2</T>
+  </U>
+  <E n="target_type">TARGET</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+      </U>
+    </V>
+    <V t="relationship">
+      <U n="relationship">
+        <U n="required_relationship_bits">
+          <L n="match_any">
+            <T>15803<!--RelationshipBit: has_met--></T>
+            <T>192631<!--RelationshipBit: relationshipBit_CelebrityAcquaintance--></T>
+          </L>
+        </U>
+      </U>
+    </V>
+    <V t="dynasty_member">
+      <U n="dynasty_member">
+        <T n="negate">True</T>
+        <V n="test_type" t="same_dynasty_membership" />
+      </U>
+    </V>
+    <V t="identity">
+      <U n="identity">
+        <E n="subject_b">TargetSim</E>
+      </U>
+    </V>
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <E n="who">TargetSim</E>
+      </U>
+    </V>
+    <V t="trait">
+      <U n="trait">
+        <E n="subject">TargetSim</E>
+        <L n="whitelist_traits">
+          <T>466527<!--Trait: trait_Dynasty_Head--></T>
+        </L>
+      </U>
+    </V>
+    <V t="dynasty_member">
+      <U n="dynasty_member">
+        <V n="test_type" t="sim_in_allied_dynasty_test" />
+      </U>
+    </V>
+  </L>
+  <T n="visible">True</T>
+</I>

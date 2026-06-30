@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SimPickerInteraction" i="interaction" m="interactions.base.picker_interaction" n="simPickerInteraction_TropeRemoverPotion" s="318621">
+  <V n="_saveable" t="disabled" />
+  <L n="actor_continuation">
+    <U>
+      <T n="affordance">318626<!--SuperInteraction: generic_consume_drink_nonbar_potion_TropeRemover--></T>
+    </U>
+  </L>
+  <T n="allow_from_sim_inventory">True</T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x8926D937<!--String: "Drink Potion While Thinking Of"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T n="include_uninstantiated_sims">False</T>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <V n="picker_dialog" t="sim_picker">
+    <U n="sim_picker">
+      <L n="custom_filters">
+        <V t="reference">
+          <T n="reference">499295<!--CustomSimFilter: customSimFilter_NobleCareer--></T>
+        </V>
+      </L>
+      <T n="display_filter">False</T>
+    </U>
+  </V>
+  <V n="pie_menu_test_tooltip" t="enabled">
+    <T n="enabled">0x1184AB48<!--String: "There are no eligible Sims nearby."--></T>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <L n="sim_tests">
+    <L>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="required_relationship_bits">
+            <L n="match_any">
+              <T>306293<!--RelationshipBit: familyTrope_close--></T>
+              <T>306291<!--RelationshipBit: familyTrope_compliant_target_isAuthorityOf_actor--></T>
+              <T>306294<!--RelationshipBit: familyTrope_compliant_target_IsSubordinateOf_actor--></T>
+              <T>310888<!--RelationshipBit: familyTrope_difficult--></T>
+              <T>306282<!--RelationshipBit: familyTrope_distant--></T>
+              <T>306279<!--RelationshipBit: familyTrope_Jokesters--></T>
+              <T>306356<!--RelationshipBit: familyTrope_loving_target_IsAuthorityOf_actor--></T>
+              <T>306357<!--RelationshipBit: familyTrope_loving_target_isSubordinateOf_actor--></T>
+              <T>306289<!--RelationshipBit: familyTrope_permissive_target_isAuthorityOf_actor--></T>
+              <T>306296<!--RelationshipBit: familyTrope_permissive_target_isSubordinateOf_actor--></T>
+            </L>
+          </U>
+          <L n="target_sim">
+            <E>PickedSim</E>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="state">
+      <U n="state">
+        <E n="operator">NOTEQUAL</E>
+        <T n="value">15108<!--CommodityBasedObjectStateValue: Consumable_Empty--></T>
+      </U>
+    </V>
+  </L>
+</I>

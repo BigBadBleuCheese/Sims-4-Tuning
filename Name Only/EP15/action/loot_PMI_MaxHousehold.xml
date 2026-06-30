@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_PMI_MaxHousehold" s="349354">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="audio_sting" t="enabled">
+              <U n="enabled">
+                <T n="audio" p="InEP15\Audio\music\bumpers\bumper_ep15_property_rental_rule_break.propx">39b2aa4a:00000000:8272ba36ca758a10</T>
+                <T n="immediate_audio">True</T>
+              </U>
+            </V>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T p="InEP15\UI\Icons\UnitRules\UnitRules_MaximumOccupancy.png" n="key">2f7d0004:00000000:bdf4ea91d165c1a6</T>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xCF2E2DF0<!--String: "Hold on a sec! Four sims crammed into one household? No room for that many occupants in this unit. Expect to pay a fine of 1000 Simoleons to the Property Owner, or you may face more serious consequences."--></T>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="participant_type_special" />
+                  <V t="participant_type_special">
+                    <U n="participant_type_special">
+                      <V n="participant_type" t="zone" />
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0xC4945BDD<!--String: "Tenant Rule Violation"--></T>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">350269<!--Buff: buff_LandlordTenant_Hidden_RuleBroken--></T>
+        </U>
+      </U>
+    </V>
+    <V t="actions">
+      <T n="actions">354276<!--LootActions: loot_Fear_Eviction_ViolatingRules_Trigger--></T>
+    </V>
+    <V t="actions">
+      <T n="actions">350324<!--LootActions: loot_UnitRating_Progression_PickedUnit_ActiveLot_Large_Loss--></T>
+    </V>
+    <V t="schedule_drama_node">
+      <U n="schedule_drama_node">
+        <T n="drama_node">352226<!--DialogDramaNode: dialogDramaNode_APM_POVisit_Urgent--></T>
+        <E n="subject">ActiveHousehold</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="is_active_sim" t="enabled" />
+                <V n="species" t="specified">
+                  <U n="specified">
+                    <L n="species">
+                      <E />
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="test_set_reference">
+              <T n="test_set_reference">359434<!--TestSetInstance: testSet_APM_NoUnscheduledPOVisit--></T>
+            </V>
+            <V t="test_set_reference">
+              <T n="test_set_reference">359455<!--TestSetInstance: testSet_APM_NoRuleVisitCooldown_MaxHousehold--></T>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

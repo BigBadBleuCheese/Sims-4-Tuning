@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="transferCarryInteraction_RightToBack_Infant" s="271074">
+  <V n="_animation_actor_map" t="reference">
+    <T n="reference">104104<!--AnimationActorMap: AlreadyCarryingCarryTarget--></T>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">271078<!--AnimationElement: transferCarry_RightToBack_Infant--></T>
+      </U>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="change_carry_while_holding">
+      <U n="change_carry_while_holding">
+        <E n="carry_obj_participant_type">CarriedObject</E>
+        <V n="carry_track_override" t="enabled">
+          <E n="enabled">BACK</E>
+        </V>
+        <T n="owning_affordance">271090<!--SuperInteraction: socialSuperInteraction_CarryPickUp_Infant_Back--></T>
+      </U>
+    </V>
+  </L>
+  <T n="category">275893<!--PieMenuCategory: sim_Infant_Care--></T>
+  <V n="content_score" t="enabled">
+    <U n="enabled">
+      <T n="base_score">1000</T>
+    </U>
+  </V>
+  <T n="display_name">0x890638B<!--String: "Put {1.SimFirstName} in Back Carrier"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <T n="pie_menu_priority">10</T>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">TARGET</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="identity">
+      <U n="identity">
+        <E n="subject_a">CarriedObject</E>
+        <E n="subject_b">TargetSim</E>
+        <T n="subjects_match">True</T>
+      </U>
+    </V>
+    <V t="participant_running_interaction">
+      <U n="participant_running_interaction">
+        <L n="affordances">
+          <T>132170<!--HoldObject: carry_HoldSim--></T>
+        </L>
+      </U>
+    </V>
+    <V t="posture">
+      <U n="posture">
+        <L n="prohibited_postures">
+          <T>271210<!--CarryingSim: posture_CarrySim_Back--></T>
+        </L>
+      </U>
+    </V>
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>INFANT</E>
+          </L>
+        </V>
+        <E n="who">CarriedSim</E>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

@@ -1,0 +1,470 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="GameObject" i="object" m="objects.game_object" n="object_FriendshipBracelet_3" s="320679">
+  <U n="_components">
+    <V n="focus" t="enabled">
+      <U n="enabled">
+        <V n="_focus_score" t="globally">
+          <U n="globally">
+            <E n="base">LOW</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V n="inventory_item" t="enabled">
+      <U n="enabled">
+        <T n="can_place_in_world">False</T>
+        <T n="inventory_only">True</T>
+        <E n="stack_scheme">NONE</E>
+        <L n="valid_inventory_types">
+          <E>SIM</E>
+        </L>
+        <L n="visual_icon_states">
+          <T>319911<!--ObjectState: friendshipBracelet_Exchanged--></T>
+        </L>
+      </U>
+    </V>
+    <V n="ownable_component" t="enabled" />
+    <V n="state" t="enabled">
+      <U n="enabled">
+        <L n="states">
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">319906<!--ObjectStateValue: friendshipBracelet_Default--></T>
+              </U>
+              <U>
+                <T n="key">319907<!--ObjectStateValue: friendshipBracelet_Tangled--></T>
+                <U n="value">
+                  <V n="model" t="apply_new_value">
+                    <V n="apply_new_value" t="set_to_custom_model">
+                      <U n="set_to_custom_model">
+                        <V n="model" t="from_definition">
+                          <U n="from_definition">
+                            <T n="apply_definition">True</T>
+                            <T n="definition">342926</T>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </V>
+                </U>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">319906<!--ObjectStateValue: friendshipBracelet_Default--></T>
+            </V>
+            <V n="tested_states_post_load" t="enabled">
+              <U n="enabled">
+                <V n="fallback_state" t="enabled">
+                  <T n="enabled">319906<!--ObjectStateValue: friendshipBracelet_Default--></T>
+                </V>
+                <L n="tested_states">
+                  <U>
+                    <T n="state">319907<!--ObjectStateValue: friendshipBracelet_Tangled--></T>
+                    <L n="tests">
+                      <L>
+                        <V t="state">
+                          <U n="state">
+                            <T n="value">319908<!--ObjectStateValue: friendshipBracelet_Exchanged_Yes--></T>
+                          </U>
+                        </V>
+                        <V t="relationship_bit_count">
+                          <U n="relationship_bit_count">
+                            <T n="rel_bit">319551<!--RelationshipBit: relbit_FriendshipBraceletBuddy--></T>
+                            <L n="subject">
+                              <E>StoredSim</E>
+                            </L>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                </L>
+              </U>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">319909<!--ObjectStateValue: friendshipBracelet_Exchanged_No--></T>
+            </V>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V n="tooltip_component" t="enabled">
+      <U n="enabled">
+        <L n="custom_tooltips">
+          <U>
+            <L n="object_tests">
+              <L>
+                <V t="state">
+                  <U n="state">
+                    <T n="value">319909<!--ObjectStateValue: friendshipBracelet_Exchanged_No--></T>
+                  </U>
+                </V>
+                <V t="state">
+                  <U n="state">
+                    <T n="value">319906<!--ObjectStateValue: friendshipBracelet_Default--></T>
+                  </U>
+                </V>
+              </L>
+            </L>
+            <L n="tooltip_fields">
+              <U>
+                <E n="key">crafted_by_text</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x2642142E<!--String: "Made By: {0.SimName}"--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">StoredSim</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <E n="key">recipe_description</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0xA36ED979<!--String: "A friendship bracelet that's ready to be exchanged with a special friend!"--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">StoredSim</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <E n="key">recipe_name</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x4F918F8<!--String: "{0.ObjectName}"--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">Object</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+            </L>
+          </U>
+          <U>
+            <L n="object_tests">
+              <L>
+                <V t="state">
+                  <U n="state">
+                    <T n="value">319908<!--ObjectStateValue: friendshipBracelet_Exchanged_Yes--></T>
+                  </U>
+                </V>
+                <V t="state">
+                  <U n="state">
+                    <T n="value">319906<!--ObjectStateValue: friendshipBracelet_Default--></T>
+                  </U>
+                </V>
+              </L>
+            </L>
+            <L n="tooltip_fields">
+              <U>
+                <E n="key">crafted_by_text</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x2642142E<!--String: "Made By: {0.SimName}"--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">StoredSim</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <E n="key">recipe_description</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0xECEDAF53<!--String: "{1.SimFirstName} and {0.SimFirstName} exchanged friendship bracelets. Together they'll experience a one-of-a-kind bond that only the magic of friendship within these bracelets can provide."--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">StoredSim</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">OwnerSim</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <E n="key">recipe_name</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x4F918F8<!--String: "{0.ObjectName}"--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">Object</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+            </L>
+          </U>
+          <U>
+            <L n="object_tests">
+              <L>
+                <V t="state">
+                  <U n="state">
+                    <T n="value">319908<!--ObjectStateValue: friendshipBracelet_Exchanged_Yes--></T>
+                  </U>
+                </V>
+                <V t="state">
+                  <U n="state">
+                    <T n="value">319907<!--ObjectStateValue: friendshipBracelet_Tangled--></T>
+                  </U>
+                </V>
+              </L>
+            </L>
+            <L n="tooltip_fields">
+              <U>
+                <E n="key">crafted_by_text</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x2642142E<!--String: "Made By: {0.SimName}"--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">StoredSim</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <E n="key">recipe_description</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0xECEDAF53<!--String: "{1.SimFirstName} and {0.SimFirstName} exchanged friendship bracelets. Together they'll experience a one-of-a-kind bond that only the magic of friendship within these bracelets can provide."--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">StoredSim</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">OwnerSim</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <E n="key">recipe_name</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x4F918F8<!--String: "{0.ObjectName}"--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">Object</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <E n="key">subtext</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x2BC75A6F<!--String: "Unlike true friendship, these threads couldn’t stand the test of time and came apart."--></T>
+                  </V>
+                </U>
+              </U>
+            </L>
+          </U>
+          <U>
+            <L n="object_tests">
+              <L>
+                <V t="state">
+                  <U n="state">
+                    <T n="value">319909<!--ObjectStateValue: friendshipBracelet_Exchanged_No--></T>
+                  </U>
+                </V>
+                <V t="state">
+                  <U n="state">
+                    <T n="value">319907<!--ObjectStateValue: friendshipBracelet_Tangled--></T>
+                  </U>
+                </V>
+              </L>
+            </L>
+            <L n="tooltip_fields">
+              <U>
+                <E n="key">recipe_description</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0xB7D15EFB<!--String: "You can't make friends with everyone, just like you can't always make a friendship bracelet."--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">StoredSim</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <E n="key">recipe_name</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x4F918F8<!--String: "{0.ObjectName}"--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">Object</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+            </L>
+          </U>
+        </L>
+      </U>
+    </V>
+  </U>
+  <L n="_super_affordances">
+    <T>13328<!--ImmediateSuperInteraction: debug_Reset--></T>
+    <T>13326<!--ImmediateSuperInteraction: debug_ObjectDestroy--></T>
+    <T>103888<!--ImmediateSuperInteraction: cheat_set_as_head--></T>
+    <T>320000<!--ImmediateSuperInteraction: immediate_FriendshipBracelet_Destroy--></T>
+  </L>
+  <U n="recycling_data">
+    <L n="recycling_values">
+      <U>
+        <E n="Bucks Type">RecycleBitsBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+      <U>
+        <E n="Bucks Type">RecyclePiecesBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+    </L>
+  </U>
+</I>

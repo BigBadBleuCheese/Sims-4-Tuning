@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="RandomWeightedLoot" i="action" m="interactions.utils.loot" n="randomLoot_Ailments_SpreadFromTouch_SonicSinuses" s="452112">
+  <L n="random_loot_actions">
+    <U>
+      <V n="action" t="buff">
+        <U n="buff">
+          <U n="buff">
+            <T n="buff_type">439588<!--Buff: buff_Ailments_SpreadFromTouch_Cooldown--></T>
+          </U>
+          <E n="subject">TargetSim</E>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">97</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="buff">
+                  <U n="buff">
+                    <E n="subject">TargetSim</E>
+                    <V n="whitelist" t="enabled">
+                      <L n="enabled">
+                        <T>484213<!--Buff: buff_Debug_Ailments_GuaranteedSpread--></T>
+                      </L>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">452115<!--LootActions: loot_Ailments_IncubationTimer_Start_Target_SonicSinuses--></T>
+      </V>
+      <U n="weight">
+        <T n="base_value">3</T>
+      </U>
+    </U>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>439588<!--Buff: buff_Ailments_SpreadFromTouch_Cooldown--></T>
+            <T>471522<!--Buff: buff_BalanceSys_Hidden_AilmentCooldown--></T>
+          </L>
+          <E n="subject">TargetSim</E>
+        </U>
+      </V>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified" />
+          <E n="who">TargetSim</E>
+        </U>
+      </V>
+      <V t="test_set_reference">
+        <T n="test_set_reference">441176<!--TestSetInstance: testSet_Ailments_HasNoAilment_Target--></T>
+      </V>
+      <V t="test_set_reference">
+        <T n="test_set_reference">484210<!--TestSetInstance: testSet_Ailments_GameOptions_IsEnabled--></T>
+      </V>
+    </L>
+  </L>
+</I>

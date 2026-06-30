@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="TestSetInstance" i="snippet" m="event_testing.tests" n="testSet_PayBillsUnit_CanPayBillsAndRent" s="351086">
+  <L n="test">
+    <L>
+      <V t="zone">
+        <U n="zone">
+          <V n="zone_source" t="use_participant_home_zone" />
+          <U n="zone_tests">
+            <V n="venue_type" t="enabled">
+              <U n="enabled">
+                <V n="blacklist" t="specify">
+                  <U n="specify">
+                    <L n="blacklist">
+                      <T>341299<!--Venue: venue_MultiUnit--></T>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </U>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="zone">
+        <U n="zone">
+          <V n="zone_source" t="use_participant_home_zone" />
+          <U n="zone_tests">
+            <V n="venue_type" t="enabled">
+              <U n="enabled">
+                <V n="whitelist" t="specify">
+                  <U n="specify">
+                    <L n="whitelist">
+                      <T>341299<!--Venue: venue_MultiUnit--></T>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </U>
+        </U>
+      </V>
+      <V t="multi_unit_role_test">
+        <U n="multi_unit_role_test">
+          <V n="lot_source" t="enabled">
+            <V n="enabled" t="use_participant_home_zone" />
+          </V>
+        </U>
+      </V>
+      <V t="bills">
+        <U n="bills">
+          <V n="payment_due" t="enabled">
+            <U n="enabled">
+              <E n="bill_type">HOUSING_BILLS</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="zone">
+        <U n="zone">
+          <V n="zone_source" t="use_participant_home_zone" />
+          <U n="zone_tests">
+            <V n="venue_type" t="enabled">
+              <U n="enabled">
+                <V n="whitelist" t="specify">
+                  <U n="specify">
+                    <L n="whitelist">
+                      <T>341299<!--Venue: venue_MultiUnit--></T>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </U>
+        </U>
+      </V>
+      <V t="multi_unit_role_test">
+        <U n="multi_unit_role_test">
+          <V n="lot_source" t="enabled">
+            <V n="enabled" t="use_participant_home_zone" />
+          </V>
+          <V n="role_to_check" t="is_property_owner" />
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

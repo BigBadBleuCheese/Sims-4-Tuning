@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Sleepover_CreateSnack_PizzaSetup" s="318517">
+  <L n="loot_actions">
+    <V t="setup_crafted_object">
+      <U n="setup_crafted_object">
+        <T n="recipe">9776<!--Recipe: recipe_Food_Pizza_Cheese--></T>
+        <E n="subject">CreatedObject</E>
+        <L n="tests">
+          <L>
+            <V t="object_definition_criteria">
+              <U n="object_definition_criteria">
+                <V n="identity_test" t="definition_id">
+                  <U n="definition_id">
+                    <T n="actual_object">23895</T>
+                  </U>
+                </V>
+                <E n="participant">CreatedObject</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="setup_crafted_object">
+      <U n="setup_crafted_object">
+        <T n="recipe">9889<!--Recipe: recipe_Food_Pizza_Pepperoni--></T>
+        <E n="subject">CreatedObject</E>
+        <L n="tests">
+          <L>
+            <V t="object_definition_criteria">
+              <U n="object_definition_criteria">
+                <V n="identity_test" t="definition_id">
+                  <U n="definition_id">
+                    <T n="actual_object">131031</T>
+                  </U>
+                </V>
+                <E n="participant">CreatedObject</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="setup_crafted_object">
+      <U n="setup_crafted_object">
+        <T n="recipe">10345<!--Recipe: recipe_Food_Pizza_CanadianBacon--></T>
+        <E n="subject">CreatedObject</E>
+        <L n="tests">
+          <L>
+            <V t="object_definition_criteria">
+              <U n="object_definition_criteria">
+                <V n="identity_test" t="definition_id">
+                  <U n="definition_id">
+                    <T n="actual_object">131032</T>
+                  </U>
+                </V>
+                <E n="participant">CreatedObject</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="state_change">
+      <U n="state_change">
+        <T n="state_value">15323<!--CommodityBasedObjectStateValue: Servings_LargeUntouched--></T>
+        <V n="subject" t="participant">
+          <E n="participant">CreatedObject</E>
+        </V>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">313777<!--Buff: buff_Sleepover_SleepoverSnacks_Cooldown--></T>
+        </U>
+        <E n="subject">AllInstancedSims</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="situation_job_test">
+              <U n="situation_job_test">
+                <L n="situation_jobs">
+                  <T>311722<!--SituationJob: job_host_Sleepover--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T n="run_test_first">True</T>
+</I>

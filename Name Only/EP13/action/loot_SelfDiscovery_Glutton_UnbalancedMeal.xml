@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_SelfDiscovery_Glutton_UnbalancedMeal" s="317000">
+  <L n="loot_actions">
+    <V t="actions">
+      <T n="actions">311333<!--LootActions: loot_SelfDiscovery_Progress_Metabolism_Min_Small--></T>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="object_criteria">
+        <U n="object_criteria">
+          <V n="identity_test" t="tags">
+            <U n="tags">
+              <L n="tag_set">
+                <E>Food_Snack</E>
+                <E>Food_QuickMeal</E>
+                <E>Food_Dessert</E>
+              </L>
+            </U>
+          </V>
+          <T n="owned">False</T>
+          <V n="subject_specific_tests" t="single_object" />
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="state">
+        <U n="state">
+          <E n="operator">NOTEQUAL</E>
+          <T n="value">247616<!--ObjectStateValue: junkFoodAdd_None--></T>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

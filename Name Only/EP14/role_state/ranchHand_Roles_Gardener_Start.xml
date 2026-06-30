@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="RoleState" i="role_state" m="role.role_state" n="ranchHand_Roles_Gardener_Start" s="304718">
+  <L n="_buffs">
+    <U>
+      <T n="buff_type">101052<!--Buff: Buff_Role_Appropriateness_NoCallToMeal--></T>
+    </U>
+    <U>
+      <T n="buff_type">39294<!--Buff: buff_Role_NoCareerTalk--></T>
+    </U>
+    <U>
+      <T n="buff_type">305070<!--Buff: buff_Role_RanchHand_NPC--></T>
+    </U>
+    <U>
+      <T n="buff_type">35390<!--Buff: Buff_Role_Appropriateness_NoSleeping--></T>
+    </U>
+    <U>
+      <T n="buff_type">35368<!--Buff: Buff_Role_Appropriateness_NoBathing--></T>
+    </U>
+    <U>
+      <T n="buff_type">35372<!--Buff: Buff_Role_Appropriateness_NoEating--></T>
+    </U>
+    <U>
+      <T n="buff_type">142027<!--Buff: buff_Role_Appropriateness_NoPhone--></T>
+    </U>
+    <U>
+      <T n="buff_type">134457<!--Buff: buff_Role_Appropriateness_NoComputer--></T>
+    </U>
+    <U>
+      <T n="buff_type">137593<!--Buff: buff_Role_Appropriateness_NoReading--></T>
+    </U>
+    <U>
+      <T n="buff_type">137592<!--Buff: buff_Role_Appropriateness_NoPlaying--></T>
+    </U>
+    <U>
+      <T n="buff_type">133051<!--Buff: buff_Role_Appropriateness_NoWorkout_BG--></T>
+    </U>
+    <U>
+      <T n="buff_type">155063<!--Buff: buff_Role_Appropriateness_NoTV--></T>
+    </U>
+    <U>
+      <T n="buff_type">305071<!--Buff: buff_Role_RanchHand_NPC_GardenerRole--></T>
+    </U>
+  </L>
+  <E n="_crafting_process_override">ACTIVE_HOUSEHOLD</E>
+  <U n="_off_lot_autonomy_buff">
+    <T n="buff_type">38292<!--Buff: buff_offLotAutonomyMod_OnLotOnly--></T>
+  </U>
+  <V n="_on_activate" t="parameterized_autonomy_ping">
+    <U n="parameterized_autonomy_ping">
+      <V n="full_ping_on_fail" t="enabled" />
+      <L n="static_commodities">
+        <T>130542<!--StaticCommodity: StaticCommodity_Gardener_Service--></T>
+      </L>
+    </U>
+  </V>
+  <L n="role_affordances">
+    <T>304748<!--ImmediateSuperInteraction: ranchHand_Immediate_Tasks_AllowAnimalCare--></T>
+    <T>304750<!--ImmediateSuperInteraction: ranchHand_Immediate_Tasks_AllowGardening--></T>
+    <T>304749<!--ImmediateSuperInteraction: ranchHand_Immediate_Tasks_AllowRepairingObjects--></T>
+    <T>304751<!--ImmediateSuperInteraction: ranchHand_Immediate_Tasks_DisallowAnimalCare--></T>
+    <T>304752<!--ImmediateSuperInteraction: ranchHand_Immediate_Tasks_DisallowGardening--></T>
+    <T>304753<!--ImmediateSuperInteraction: ranchHand_Immediate_Tasks_DisallowRepairingObjects--></T>
+    <T>303789<!--SocialSuperInteraction: sim_FireServiceNPC_RanchHand--></T>
+    <T>305077<!--ImmediateSuperInteraction: ranchHand_Immediate_Tasks_Reset--></T>
+    <T>305108<!--SuperInteraction: situation_RanchHand_Order_Repair--></T>
+    <T>315066<!--SuperInteraction: situation_RanchHand_Order_WaterPlants--></T>
+    <T>321518<!--SuperInteraction: situation_RanchHand_Order_CollectManure--></T>
+    <T>321517<!--SuperInteraction: situation_RanchHand_Order_HarvestPlants--></T>
+    <T>329178<!--SuperInteraction: situation_RanchHand_Schedule--></T>
+  </L>
+  <L n="role_target_affordances">
+    <T>306328<!--SocialSuperInteraction: sim_RanchHand_Quit--></T>
+  </L>
+</I>
