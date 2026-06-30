@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_LearnRelationship_LearnAboutActor" s="365593">
+  <L n="loot_actions">
+    <V t="know_other_sims_relationship_status">
+      <U n="know_other_sims_relationship_status">
+        <E n="subject">TargetSim</E>
+        <E n="target_participant_type">Actor</E>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant" />
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>TargetSim</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x73941D5C<!--String: "{0.SimFirstName} has learned that {1.SimFirstName} is in a relationship."--></T>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="participant_type">
+                    <U n="participant_type">
+                      <V n="objects" t="from_participant">
+                        <U n="from_participant">
+                          <E n="participant">TargetSim</E>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                  <V t="participant_type" />
+                </L>
+              </U>
+            </V>
+          </U>
+        </V>
+        <E n="subject">TargetSim</E>
+        <L n="tests">
+          <L>
+            <V t="relationship">
+              <U n="relationship">
+                <U n="required_relationship_bits">
+                  <L n="match_any">
+                    <T>15822<!--RelationshipBit: romantic-Married--></T>
+                    <T>15816<!--RelationshipBit: romantic-Engaged--></T>
+                    <T>99429<!--RelationshipBit: romantic-Promised--></T>
+                    <T>15825<!--RelationshipBit: romantic-Significant_Other--></T>
+                  </L>
+                </U>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant" />
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>TargetSim</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x22D2E67C<!--String: "{0.SimFirstName} has learned that {1.SimFirstName} is single!"--></T>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="participant_type">
+                    <U n="participant_type">
+                      <V n="objects" t="from_participant">
+                        <U n="from_participant">
+                          <E n="participant">TargetSim</E>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                  <V t="participant_type" />
+                </L>
+              </U>
+            </V>
+          </U>
+        </V>
+        <E n="subject">TargetSim</E>
+        <L n="tests">
+          <L>
+            <V t="relationship">
+              <U n="relationship">
+                <U n="prohibited_relationship_bits">
+                  <L n="match_all">
+                    <T>15822<!--RelationshipBit: romantic-Married--></T>
+                    <T>15816<!--RelationshipBit: romantic-Engaged--></T>
+                    <T>99429<!--RelationshipBit: romantic-Promised--></T>
+                    <T>15825<!--RelationshipBit: romantic-Significant_Other--></T>
+                  </L>
+                </U>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <V n="whitelist" t="enabled">
+            <L n="enabled">
+              <T>380149<!--Buff: buff_Attraction_CanLearnAttractionRequiredStuff--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+      <V t="knowledge">
+        <U n="knowledge">
+          <V n="knows_relationship_status" t="enabled" />
+          <E n="subject">TargetSim</E>
+          <E n="target">Actor</E>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

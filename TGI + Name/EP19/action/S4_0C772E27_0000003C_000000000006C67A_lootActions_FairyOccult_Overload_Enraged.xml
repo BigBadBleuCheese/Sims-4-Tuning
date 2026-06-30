@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="lootActions_FairyOccult_Overload_Enraged" s="444026">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x291D134B<!--String: "(From Absorbing Angry, Tense, or Bored emotions)"--></T>
+          </V>
+          <T n="buff_type">444010<!--Buff: buff_FairyOccult_Overload_Enraged_Critical--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>444009<!--Buff: buff_FairyOccult_Overload_Enraged_Major--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x291D134B<!--String: "(From Absorbing Angry, Tense, or Bored emotions)"--></T>
+          </V>
+          <T n="buff_type">444009<!--Buff: buff_FairyOccult_Overload_Enraged_Major--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>444008<!--Buff: buff_FairyOccult_Overload_Enraged_Minor--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x291D134B<!--String: "(From Absorbing Angry, Tense, or Bored emotions)"--></T>
+          </V>
+          <T n="buff_type">444008<!--Buff: buff_FairyOccult_Overload_Enraged_Minor--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <L n="blacklist">
+                  <T>444010<!--Buff: buff_FairyOccult_Overload_Enraged_Critical--></T>
+                  <T>444009<!--Buff: buff_FairyOccult_Overload_Enraged_Major--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff_removal">
+      <U n="buff_removal">
+        <L n="buffs_to_remove">
+          <T>435241<!--Buff: buff_FairyOccult_ImpendingOverload--></T>
+        </L>
+      </U>
+    </V>
+    <V t="reaction">
+      <U n="reaction">
+        <V n="si_reaction" t="enabled">
+          <U n="enabled">
+            <T n="affordance">461326<!--SuperInteraction: superInteraction_FairyOccult_OverloadReaction_Enraged--></T>
+            <E n="affordance_priority">High</E>
+            <V n="affordance_run_priority" t="enabled">
+              <E n="enabled">High</E>
+            </V>
+            <V n="affordance_target" t="disabled" />
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>444010<!--Buff: buff_FairyOccult_Overload_Enraged_Critical--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

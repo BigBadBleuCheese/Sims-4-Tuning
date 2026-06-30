@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="muEvent_Electrical_FakeUseTV" s="344700">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="line_of_sight" />
+        </U>
+      </L>
+    </U>
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="facing">
+            <U n="facing">
+              <T n="range">180</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <L n="_false_advertisements">
+    <V t="statistic_change">
+      <U n="statistic_change">
+        <T n="amount">1</T>
+        <T n="stat">16655<!--Commodity: motive_Fun--></T>
+      </U>
+    </V>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x768A1F78<!--String: "Attempt to Watch TV"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <V n="animation_ref" t="enabled">
+          <U n="enabled">
+            <T n="factory">344699<!--AnimationElement: muEvent_Electrical_FakeUseTV--></T>
+          </U>
+        </V>
+        <L n="basic_extras">
+          <V t="buff_fire_and_forget">
+            <U n="buff_fire_and_forget">
+              <U n="buff">
+                <V n="buff_reason" t="enabled">
+                  <T n="enabled">0x358DEC59<!--String: "(From Electrical Outage)"--></T>
+                </V>
+                <T n="buff_type">344834<!--Buff: buff_muEvent_Electrical_PowerlessProvocation--></T>
+              </U>
+            </U>
+          </V>
+        </L>
+        <V n="response" t="enabled">
+          <V n="enabled" t="individual">
+            <U n="individual">
+              <L n="animations">
+                <U>
+                  <E n="target">Actor</E>
+                  <U n="animation">
+                    <T n="factory">11798<!--AnimationElement: Social_Responses_Angry_Random--></T>
+                  </U>
+                </U>
+              </L>
+            </U>
+          </V>
+        </V>
+      </U>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="zone">
+      <U n="zone">
+        <U n="zone_tests">
+          <V n="zone_modifiers" t="enabled">
+            <U n="enabled">
+              <V n="whitelist" t="specify">
+                <U n="specify">
+                  <L n="whitelist">
+                    <T>343543<!--ZoneModifier: zoneModifier_muEvent_Electrical--></T>
+                  </L>
+                </U>
+              </V>
+            </U>
+          </V>
+        </U>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

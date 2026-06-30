@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_APM_StartTNS_Algae" s="349310">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="audio_sting" t="enabled">
+              <U n="enabled">
+                <T n="audio" p="InEP15\Audio\music\bumpers\bumper_ep15_multiunit_event_maintenance.propx">39b2aa4a:00000000:af09f8d44e1edac7</T>
+              </U>
+            </V>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T p="InEP15\UI\Icons\Notification\notification_PoolAlgae.png" n="key">2f7d0004:00000000:0b40e6a87850a0f3</T>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x47FC1E15<!--String: "Here in {1.String} the pool has started developing some disgusting, green Algae! It seems like its slowly growing and something must be done or it will surely clog up the entire pool! Visit the unit to resolve the issue or Call a Contractor Crew over the phone."--></T>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="participant_type_special">
+                    <U n="participant_type_special">
+                      <V n="participant_type" t="zone">
+                        <U n="zone">
+                          <V n="attribute" t="occupant_household_name" />
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                  <V t="participant_type_special">
+                    <U n="participant_type_special">
+                      <V n="participant_type" t="zone" />
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0xCE90E733<!--String: "Pool Algae"--></T>
+            </V>
+          </U>
+        </V>
+        <E n="subject">ActiveHousehold</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="is_active_sim" t="enabled" />
+              </U>
+            </V>
+          </L>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="identity">
+              <U n="identity">
+                <E n="subject_a">PickedZoneId</E>
+                <E n="subject_b">CurrentZoneId</E>
+                <T n="use_value">True</T>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="audio_sting" t="enabled">
+              <U n="enabled">
+                <T n="audio" p="InEP15\Audio\music\bumpers\bumper_ep15_multiunit_event_maintenance.propx">39b2aa4a:00000000:af09f8d44e1edac7</T>
+              </U>
+            </V>
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T p="InEP15\UI\Icons\Notification\notification_PoolAlgae.png" n="key">2f7d0004:00000000:0b40e6a87850a0f3</T>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x3DF173F8<!--String: "Floating-green Algae is starting to cloud up the pool! These nature's slimy, relentless invaders must be put to an end before they seriously grow out of control!"--></T>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="participant_type_special">
+                    <U n="participant_type_special">
+                      <V n="participant_type" t="zone">
+                        <U n="zone">
+                          <V n="attribute" t="occupant_household_name" />
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                  <V t="participant_type_special">
+                    <U n="participant_type_special">
+                      <V n="participant_type" t="zone" />
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0xCE90E733<!--String: "Pool Algae"--></T>
+            </V>
+          </U>
+        </V>
+        <E n="subject">ActiveHousehold</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="is_active_sim" t="enabled" />
+              </U>
+            </V>
+          </L>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="identity">
+              <U n="identity">
+                <E n="subject_a">PickedZoneId</E>
+                <E n="subject_b">CurrentZoneId</E>
+                <T n="subjects_match">True</T>
+                <T n="use_value">True</T>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_set">
+        <U n="statistic_set">
+          <T n="stat">351590<!--Statistic: statistic_muEvent_EventType--></T>
+          <L n="subject">
+            <E>Lot</E>
+          </L>
+          <T n="value">0</T>
+        </U>
+      </V>
+    </V>
+  </L>
+</I>

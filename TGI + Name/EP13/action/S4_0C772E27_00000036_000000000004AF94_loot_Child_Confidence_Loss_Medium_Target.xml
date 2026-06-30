@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Child_Confidence_Loss_Medium_Target" s="307092">
+  <L n="loot_actions">
+    <V t="statistics">
+      <V n="statistics" t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">-10</T>
+          <T n="stat">306796<!--Commodity: commodity_Child_Confidence--></T>
+          <L n="subject">
+            <E>TargetSim</E>
+          </L>
+        </U>
+      </V>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x3F85657F<!--String: "(From Losing Confidence)"--></T>
+          </V>
+          <T n="buff_type">306786<!--Buff: buff_Confidence_High_LearningFromMistakes--></T>
+        </U>
+        <U n="chance">
+          <T n="base_chance">45</T>
+        </U>
+        <E n="subject">TargetSim</E>
+        <L n="tests">
+          <L>
+            <V t="test_set_reference">
+              <T n="test_set_reference">327089<!--TestSetInstance: testSetInstance_Child_Confidence_High_Target--></T>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x3F85657F<!--String: "(From Losing Confidence)"--></T>
+          </V>
+          <T n="buff_type">306790<!--Buff: buff_Confidence_Neutral_ICannot--></T>
+        </U>
+        <U n="chance">
+          <T n="base_chance">25</T>
+        </U>
+        <E n="subject">TargetSim</E>
+        <L n="tests">
+          <L>
+            <V t="test_set_reference">
+              <T n="test_set_reference">327091<!--TestSetInstance: testSetInstance_Child_Confidence_Neutral_Target--></T>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x3F85657F<!--String: "(From Losing Confidence)"--></T>
+          </V>
+          <T n="buff_type">306792<!--Buff: buff_Confidence_Low_IllNever--></T>
+        </U>
+        <U n="chance">
+          <T n="base_chance">25</T>
+        </U>
+        <E n="subject">TargetSim</E>
+        <L n="tests">
+          <L>
+            <V t="test_set_reference">
+              <T n="test_set_reference">327090<!--TestSetInstance: testSetInstance_Child_Confidence_Low_Target--></T>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="headline_loot">
+      <U n="headline_loot">
+        <T n="amount">-150</T>
+        <T n="headline">314052<!--Headline: headline_Confidence--></T>
+        <E n="subject">TargetSim</E>
+        <L n="tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="ages" t="specified">
+                  <L n="specified">
+                    <E>CHILD</E>
+                  </L>
+                </V>
+                <E n="who">TargetSim</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="actions">
+      <T n="actions">327085<!--LootActions: loot_Child_Confidence_TraitUpdate_General_Target--></T>
+    </V>
+    <V t="trait_add">
+      <U n="trait_add">
+        <U n="chance">
+          <T n="base_chance">50</T>
+          <L n="multipliers">
+            <U>
+              <T n="multiplier">0.5</T>
+              <L n="tests">
+                <L>
+                  <V t="test_set_reference">
+                    <T n="test_set_reference">308737<!--TestSetInstance: testSetInstance_Child_Confidence_High--></T>
+                  </V>
+                </L>
+              </L>
+            </U>
+            <U>
+              <T n="multiplier">1.5</T>
+              <L n="tests">
+                <L>
+                  <V t="test_set_reference">
+                    <T n="test_set_reference">308735<!--TestSetInstance: testSetInstance_Child_Confidence_Low--></T>
+                  </V>
+                </L>
+              </L>
+            </U>
+          </L>
+        </U>
+        <E n="subject">TargetSim</E>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <L n="blacklist">
+                  <T>277115<!--Buff: buff_Fear_Immunity_ResolvedRecently--></T>
+                </L>
+              </U>
+            </V>
+            <V t="trait">
+              <U n="trait">
+                <L n="blacklist_traits">
+                  <T>307957<!--Trait: trait_Fear_Inferior--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+        <T n="trait">307957<!--Trait: trait_Fear_Inferior--></T>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>378502<!--Trait: trait_Hidden_EP17World_NPC_EdithBasu--></T>
+          </L>
+          <E n="subject">TargetSim</E>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

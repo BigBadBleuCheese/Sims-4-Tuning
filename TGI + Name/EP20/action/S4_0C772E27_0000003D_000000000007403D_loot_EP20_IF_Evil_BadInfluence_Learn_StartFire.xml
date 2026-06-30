@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_EP20_IF_Evil_BadInfluence_Learn_StartFire" s="475197">
+  <L n="loot_actions">
+    <V t="trait_add">
+      <U n="trait_add">
+        <E n="subject">TargetSim</E>
+        <T n="trait">475088<!--Trait: trait_Hidden_EP20_IF_BadInfluence_StartFire--></T>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>TargetSim</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x7E213E4E<!--String: "{0.SimFirstName}'s Imaginary Friend has taught {0.SimPronounObjective} how to start fires! Select something flammable and watch the world burn! <b>Mwahahaha!</b>"--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x2F1F622D<!--String: "Bad Influence"--></T>
+            </V>
+          </U>
+        </V>
+        <E n="subject">TargetSim</E>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>475088<!--Trait: trait_Hidden_EP20_IF_BadInfluence_StartFire--></T>
+          </L>
+          <E n="subject">TargetSim</E>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

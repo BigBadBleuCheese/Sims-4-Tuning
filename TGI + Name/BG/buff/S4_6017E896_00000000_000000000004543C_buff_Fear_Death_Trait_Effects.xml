@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Buff" i="buff" m="buffs.buff" n="buff_Fear_Death_Trait_Effects" s="283708">
+  <T p="InGame\Audio\Stings\sting_buff_gain.propx" n="audio_sting_on_add">39b2aa4a:00000000:8af8b916cf64c646</T>
+  <T p="InGame\Audio\Stings\sting_buff_loss.propx" n="audio_sting_on_remove">39b2aa4a:00000000:3bf33216a25546ea</T>
+  <U n="game_effect_modifier">
+    <L n="_game_effect_modifiers">
+      <V t="pie_menu_modifier">
+        <U n="pie_menu_modifier">
+          <V n="affordance_filter" t="by_affordance_filter">
+            <U n="by_affordance_filter">
+              <V n="affordance_filter" t="literal">
+                <U n="literal">
+                  <V n="default_inclusion" t="include_all">
+                    <U n="include_all">
+                      <L n="exclude_affordances">
+                        <T>97606<!--SocialSuperInteraction: grimReaper_ListenToPlead--></T>
+                        <T>40845<!--SocialSuperInteraction: grimReaper_Demand--></T>
+                        <T>391550<!--SimPickerInteraction: game_ChallengeGrim_Basketball--></T>
+                        <T>13457<!--SocialSuperInteraction: grimReaper_Plead--></T>
+                        <T>40844<!--SocialSuperInteraction: grimReaper_Seduce--></T>
+                        <T>40843<!--SocialSuperInteraction: grimReaper_Wail--></T>
+                        <T>40846<!--SocialSuperInteraction: grimReaper_YellAtDeath--></T>
+                        <T>153924<!--SocialSuperInteraction: nonTouching_Event_Socials_Reaper_DoTD_Celebration_Buff_Socials--></T>
+                        <T>115892<!--SocialSuperInteraction: si_Touching_ReaperSlap--></T>
+                        <T>115575<!--SocialSuperInteraction: si_Touching_Reaper_BroHug--></T>
+                        <T>391551<!--SimPickerInteraction: game_ChallengeGrim_Bowling--></T>
+                        <T>390914<!--SimPickerInteraction: game_ChallengeGrim_Chess--></T>
+                        <T>391552<!--SimPickerInteraction: game_ChallengeGrim_Dartboard--></T>
+                        <T>391553<!--SimPickerInteraction: game_ChallengeGrim_DontWakeLlama--></T>
+                        <T>391554<!--SimPickerInteraction: game_ChallengeGrim_Foosball--></T>
+                        <T>391555<!--SimPickerInteraction: game_ChallengeGrim_Hopscotch--></T>
+                        <T>391556<!--SimPickerInteraction: game_ChallengeGrim_Horseshoes--></T>
+                        <T>391557<!--SimPickerInteraction: game_ChallengeGrim_JuicePong--></T>
+                        <T>391605<!--SocialSuperInteraction: grimReaper_Social_Challenge_FromGrim_Basketball--></T>
+                        <T>391633<!--SocialSuperInteraction: grimReaper_Social_Challenge_FromGrim_Bowling--></T>
+                        <T>390917<!--SocialSuperInteraction: grimReaper_Social_Challenge_FromGrim_Chess--></T>
+                        <T>391634<!--SocialSuperInteraction: grimReaper_Social_Challenge_FromGrim_Dartboard--></T>
+                        <T>391635<!--SocialSuperInteraction: grimReaper_Social_Challenge_FromGrim_DontWakeLlama--></T>
+                        <T>391636<!--SocialSuperInteraction: grimReaper_Social_Challenge_FromGrim_Foosball--></T>
+                        <T>391637<!--SocialSuperInteraction: grimReaper_Social_Challenge_FromGrim_Hopscotch--></T>
+                        <T>391638<!--SocialSuperInteraction: grimReaper_Social_Challenge_FromGrim_Horseshoes--></T>
+                        <T>391639<!--SocialSuperInteraction: grimReaper_Social_Challenge_FromGrim_JuicePong--></T>
+                        <T>421560<!--SimPickerInteraction: game_ChallengeGrim_Basketball_Shoot--></T>
+                        <T>421561<!--SimPickerInteraction: game_ChallengeGrim_PingPong--></T>
+                        <T>421556<!--SocialSuperInteraction: grimReaper_Social_Challenge_FromGrim_Basketball_Shoot--></T>
+                        <T>421557<!--SocialSuperInteraction: grimReaper_Social_Challenge_FromGrim_PingPong--></T>
+                        <T>451697<!--SocialSuperInteraction: grimReaper_Social_Challenge_FromGrim_Archery--></T>
+                        <T>490610<!--SimPickerInteraction: game_ChallengeGrim_Archery--></T>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </U>
+          </V>
+          <V n="suppression_tooltip" t="enabled">
+            <T n="enabled">0xB4F7171B<!--String: "{0.SimFirstName} fears Death too much to plead with the Grim Reaper doing work."--></T>
+          </V>
+        </U>
+      </V>
+      <V t="autonomy_modifier">
+        <U n="autonomy_modifier">
+          <L n="interaction_score_modifier">
+            <U>
+              <L n="interaction_category_tags">
+                <E>Interaction_Lifestyles_AdrenalineSeeker_FlexibleLength</E>
+                <E>Interaction_Lifestyles_AdrenalineSeeker_OneShot</E>
+              </L>
+              <T n="modifier">0</T>
+            </U>
+          </L>
+        </U>
+      </V>
+      <V t="affordance_modifier">
+        <U n="affordance_modifier">
+          <L n="basic_extras">
+            <V t="buff">
+              <U n="buff">
+                <U n="buff_type">
+                  <T n="buff_type">392588<!--Buff: buff_GrimRework_FearofDeath_ChatGrimTracker--></T>
+                </U>
+                <L n="tests">
+                  <L>
+                    <V t="trait">
+                      <U n="trait">
+                        <E n="subject">TargetSim</E>
+                        <L n="whitelist_traits">
+                          <T>16851<!--Trait: trait_isGrimReaper--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </V>
+          </L>
+          <L n="interaction_category_tags">
+            <E>Interaction_SocialAll</E>
+          </L>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T p="InGame\UI\Icons\Debug\missing_image.png" n="icon">2f7d0004:00000000:30f0846c783606f9</T>
+  <T n="visible">False</T>
+</I>

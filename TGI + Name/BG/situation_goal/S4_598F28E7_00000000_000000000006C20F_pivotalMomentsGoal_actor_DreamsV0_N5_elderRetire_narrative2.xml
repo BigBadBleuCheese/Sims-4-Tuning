@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalActorCareer" i="situation_goal" m="situations.situation_goal_actor" n="pivotalMomentsGoal_actor_DreamsV0_N5_elderRetire_narrative2" s="442895">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T p="InGame\UI\Icons\Headlines\Final\headline_PerfectHost.png" n="enabled">2f7d0004:00000000:1ca339e13c08313d</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x8547EAAD<!--String: "Have an Elder Retire from a Career"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0x700EAA47<!--String: "(Objective 5 of 5)\n\nUse the Phone to select Retire from the Business section to have your Elder Sim retire from their career.\n\nReward: 500 Simoleons"--></T>
+      </V>
+    </U>
+  </V>
+  <V n="_evaluate_on_test_event_origin" t="specific_origins">
+    <L n="specific_origins">
+      <E>RETIRE_CAREER</E>
+    </L>
+  </V>
+  <L n="_goal_loot_list">
+    <T>454832<!--SituationGoalLootActions: situationGoalLootActions_dreamsV0_N5_rewardTrigger_small--></T>
+  </L>
+  <V n="_goal_test" t="career_changed">
+    <U n="career_changed">
+      <U n="event_origin_careers">
+        <V n="blacklist" t="specify">
+          <U n="specify">
+            <L n="blacklist">
+              <T>12895<!--Career: career_Child_GradeSchool--></T>
+              <T>9541<!--Career: career_Teen_HighSchool--></T>
+              <T>209979<!--UniversityCourseCareerSlot: university_CourseSlot_A--></T>
+              <T>209984<!--UniversityCourseCareerSlot: university_CourseSlot_B--></T>
+              <T>209988<!--UniversityCourseCareerSlot: university_CourseSlot_C--></T>
+              <T>209989<!--UniversityCourseCareerSlot: university_CourseSlot_D--></T>
+              <T>223698<!--UniversityCourseCareerSlot: University_BaseCareer--></T>
+              <T>206791<!--Career: careers_Adult_Freelancer_No_Agency--></T>
+              <T>186513<!--Career: career_Volunteer_Scouting--></T>
+              <T>199274<!--Career: career_Volunteer_DramaClub--></T>
+              <T>220913<!--Career: careers_Volunteer_SoccerTeam--></T>
+              <T>217092<!--Career: career_Volunteer_E-Sports--></T>
+              <T>276604<!--Career: careers_Volunteer_HSTeam_CheerTeam--></T>
+              <T>276602<!--Career: careers_Volunteer_HSTeam_ChessTeam--></T>
+              <T>276603<!--Career: careers_Volunteer_HSTeam_ComputerTeam--></T>
+              <T>276605<!--Career: careers_Volunteer_HSTeam_FootballTeam--></T>
+              <T>207004<!--Career: career_OddJob--></T>
+              <T>260893<!--Career: careers_VillagerHelp--></T>
+              <T>231099<!--Career: career_Batuu--></T>
+              <T>386484<!--Career: career_AliceTree_AliceQuest--></T>
+              <T>388211<!--Career: career_Tarot_NPCHelp--></T>
+            </L>
+          </U>
+        </V>
+      </U>
+    </U>
+  </V>
+  <L n="_post_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+      </U>
+    </V>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+  <V n="goal_completion_notification" t="enabled">
+    <U n="enabled">
+      <L n="dialog_options">
+        <E>DISABLE_CLOSE_BUTTON</E>
+      </L>
+      <E n="expand_behavior">FORCE_EXPAND</E>
+      <V n="icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_Cloud.png">2f7d0004:00000000:edaeb925e304cd13</T>
+          </U>
+        </V>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0xBAAA76B3<!--String: "<i>Your retired Elder can now take time for themselves or keep busy helping out the family!</i>\n\nYou completed a Dream goal and earned 500 Simoleons as a reward!"--></T>
+      </V>
+      <V n="title" t="enabled">
+        <T n="enabled">0x390D8004<!--String: "Dream Update!"--></T>
+      </V>
+    </U>
+  </V>
+</I>

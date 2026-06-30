@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="WaypointInteraction" i="interaction" m="interactions.jog_interaction" n="terrain_practiceMakesPerfect_takeMindfulWalk" s="369315">
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Actor</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <L n="appropriateness_tags">
+    <E>Appropriateness_NotDuringWork</E>
+  </L>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="time_based">
+                <U n="time_based">
+                  <T n="max_time">45</T>
+                  <T n="min_time">15</T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+            <L n="loot_actions">
+              <T>370157<!--LootActions: loot_Trait_practiceMakesPerfect_MindfulWalk--></T>
+            </L>
+          </U>
+        </V>
+      </L>
+      <V n="statistic_reduction_by_category" t="enabled">
+        <U n="enabled">
+          <L n="categories">
+            <E>Stressed_Buffs</E>
+          </L>
+          <T n="rate">3</T>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>163551<!--LootActions: loot_Grounded_Give_BuffReward_NoOffLot--></T>
+        </L>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <T n="buff_type">163474<!--Buff: buff_Grounded_Breaking--></T>
+        </U>
+        <L n="subject">
+          <E>Actor</E>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>161737<!--Buff: buff_Grounded_Controllers_No_Offlot--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <T n="buff_type">74343<!--Buff: buff_PreventRunning--></T>
+        </U>
+      </U>
+    </V>
+  </L>
+  <V n="canonical_animation" t="enabled">
+    <U n="enabled">
+      <T n="factory">8749<!--AnimationElement: PostureIdle_Stand--></T>
+    </U>
+  </V>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x20CB2598<!--String: "Take a Mindful Walk"--></T>
+  <V n="display_name_overrides" t="none" />
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+    <E>Interaction_MasteryPerk_Active</E>
+  </L>
+  <L n="mood_list">
+    <T>14639<!--Mood: Mood_Focused--></T>
+    <T>14645<!--Mood: Mood_Stressed--></T>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="loot_list" />
+      </U>
+    </U>
+  </V>
+  <V n="pie_menu_color" t="enabled">
+    <U n="enabled">
+      <T n="mood">14639<!--Mood: Mood_Focused--></T>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T n="key" p="InGame\UI\Icons\PieMenu\Traits\traitReward_practicemakesperfect_piemenu.png">2f7d0004:00000000:22cd42c000ef82a8</T>
+      </U>
+    </V>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="include_all">
+        <U n="include_all">
+          <L n="exclude_affordances">
+            <T>13998<!--SocialSuperInteraction: sim_Chat--></T>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <E n="target_type">ACTOR</E>
+  <L n="test_autonomous">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="npc" t="enabled">
+            <T n="enabled">True</T>
+          </V>
+        </U>
+      </V>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>258759<!--Preference: trait_SimPreference_Dislikes_Activities_Fitness--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="posture">
+      <U n="posture">
+        <L n="prohibited_postures">
+          <T>206337<!--MobilePosture: posture_IslandCanoe--></T>
+          <T>199821<!--MobilePosture: posture_WaterScooter--></T>
+          <T>208298<!--Posture: posture_IslandCanoe_Sit--></T>
+          <T>208299<!--Posture: posture_IslandCanoe_Stand--></T>
+        </L>
+      </U>
+    </V>
+    <V t="identity">
+      <U n="identity">
+        <T n="subjects_match">True</T>
+      </U>
+    </V>
+    <V t="swim_location">
+      <U n="swim_location">
+        <T n="invert">True</T>
+        <V n="test" t="swim_in_ocean" />
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>28907<!--Buff: buff_Object_Fitness-Fatigued_Lazy--></T>
+          <T>31362<!--Buff: buff_Object_Fitness_VeryFatigued--></T>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xE148C5BE<!--String: "{0.SimName} is too fatigued to exercise right now."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">248794<!--TestSetInstance: testSet_MountainSnow_DisallowOnMountainSnow_Object--></T>
+    </V>
+    <V t="weather_type">
+      <U n="weather_type">
+        <T n="invert">True</T>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xA5BEDBDB<!--String: "{0.SimFirstName} can't jog in a blizzard!"--></T>
+        </V>
+        <L n="weather_types">
+          <E>Snow_Storm</E>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">60</T>
+  <T n="use_best_scoring_aop">True</T>
+  <V n="waypoint_constraint" t="spawn_points" />
+  <V n="waypoint_route_fail_balloon" t="enabled">
+    <U n="enabled">
+      <L n="balloon_choices">
+        <U>
+          <V n="item" t="balloon_icon">
+            <U n="balloon_icon">
+              <V n="icon" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_RouteFail.png">2f7d0004:00000000:97cc3201d9f385cf</T>
+                </U>
+              </V>
+            </U>
+          </V>
+        </U>
+      </L>
+      <L n="balloon_target">
+        <E>Actor</E>
+      </L>
+    </U>
+  </V>
+  <U n="waypoint_walk_style">
+    <E n="priority">DEFAULT_WALKSTYLE</E>
+    <T p="InGame\Locomotion\WalkSlow.walkstyle" n="walkstyle">27c01d95:00000000:00000000f54999c9</T>
+  </U>
+</I>

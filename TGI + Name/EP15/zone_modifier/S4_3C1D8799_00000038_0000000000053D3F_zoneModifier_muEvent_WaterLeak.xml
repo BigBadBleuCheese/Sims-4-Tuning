@@ -1,0 +1,467 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="ZoneModifier" i="zone_modifier" m="zone_modifier.zone_modifier" n="zoneModifier_muEvent_WaterLeak" s="343359">
+  <U n="cleanup_loot">
+    <L n="actions">
+      <V t="loot">
+        <U n="loot">
+          <V n="loot_distribution" t="active_sim_only" />
+          <L n="loots">
+            <T>343436<!--LootActions: loot_muEvent_WaterLeak_EventEnd--></T>
+          </L>
+        </U>
+      </V>
+      <V t="modify_lot_items">
+        <U n="modify_lot_items">
+          <U n="actions">
+            <L n="modifications">
+              <U>
+                <V n="action" t="destroy_object" />
+                <L n="tests">
+                  <L>
+                    <V t="object_definition">
+                      <U n="object_definition">
+                        <V n="item" t="tagged_item">
+                          <U n="tagged_item">
+                            <L n="tag_set">
+                              <E>Func_Puddle</E>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+      </V>
+      <V t="modify_lot_items">
+        <U n="modify_lot_items">
+          <U n="actions">
+            <L n="modifications">
+              <U>
+                <V n="action" t="set_state">
+                  <U n="set_state">
+                    <T n="action_value">15078<!--CommodityBasedObjectStateValue: Brokenness_Unbroken--></T>
+                  </U>
+                </V>
+                <V n="max_num_modification" t="enabled">
+                  <T n="enabled">2</T>
+                </V>
+                <L n="tests">
+                  <L>
+                    <V t="object_definition">
+                      <U n="object_definition">
+                        <V n="item" t="tagged_item">
+                          <U n="tagged_item">
+                            <L n="tag_set">
+                              <E>Func_Shower</E>
+                              <E>Func_ShowerTub</E>
+                              <E>Func_Bath</E>
+                              <E>Func_Sink</E>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                    <V t="state">
+                      <U n="state">
+                        <E n="operator">NOTEQUAL</E>
+                        <T n="value">15078<!--CommodityBasedObjectStateValue: Brokenness_Unbroken--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+      </V>
+      <V t="modify_lot_items">
+        <U n="modify_lot_items">
+          <U n="actions">
+            <L n="modifications">
+              <U>
+                <V n="action" t="set_state">
+                  <U n="set_state">
+                    <T n="action_value">358777<!--ObjectStateValue: shower_VFX_Default--></T>
+                  </U>
+                </V>
+                <L n="global_tests">
+                  <V t="zone">
+                    <U n="zone">
+                      <U n="zone_tests">
+                        <V n="zone_modifiers" t="enabled">
+                          <U n="enabled">
+                            <V n="blacklist" t="specify">
+                              <U n="specify">
+                                <L n="blacklist">
+                                  <T>352987<!--ZoneModifier: zoneModifier_Hidden_WaterHeater_Off--></T>
+                                  <T>353068<!--ZoneModifier: zoneModifier_Hidden_WaterHeater_On--></T>
+                                </L>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </U>
+                    </U>
+                  </V>
+                </L>
+                <L n="tests">
+                  <L>
+                    <V t="object_definition">
+                      <U n="object_definition">
+                        <V n="item" t="tagged_item">
+                          <U n="tagged_item">
+                            <L n="tag_set">
+                              <E>Func_Shower</E>
+                              <E>Func_ShowerTub</E>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <V n="action" t="set_state">
+                  <U n="set_state">
+                    <T n="action_value">358777<!--ObjectStateValue: shower_VFX_Default--></T>
+                  </U>
+                </V>
+                <L n="global_tests">
+                  <V t="zone">
+                    <U n="zone">
+                      <U n="zone_tests">
+                        <V n="zone_modifiers" t="enabled">
+                          <U n="enabled">
+                            <V n="whitelist" t="specify">
+                              <U n="specify">
+                                <L n="whitelist">
+                                  <T>353068<!--ZoneModifier: zoneModifier_Hidden_WaterHeater_On--></T>
+                                </L>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </U>
+                    </U>
+                  </V>
+                </L>
+                <L n="tests">
+                  <L>
+                    <V t="object_definition">
+                      <U n="object_definition">
+                        <V n="item" t="tagged_item">
+                          <U n="tagged_item">
+                            <L n="tag_set">
+                              <E>Func_Shower</E>
+                              <E>Func_ShowerTub</E>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <V n="action" t="set_state">
+                  <U n="set_state">
+                    <T n="action_value">358778<!--ObjectStateValue: shower_VFX_Cold--></T>
+                  </U>
+                </V>
+                <L n="global_tests">
+                  <V t="zone">
+                    <U n="zone">
+                      <U n="zone_tests">
+                        <V n="zone_modifiers" t="enabled">
+                          <U n="enabled">
+                            <V n="blacklist" t="specify">
+                              <U n="specify">
+                                <L n="blacklist">
+                                  <T>353068<!--ZoneModifier: zoneModifier_Hidden_WaterHeater_On--></T>
+                                </L>
+                              </U>
+                            </V>
+                            <V n="whitelist" t="specify">
+                              <U n="specify">
+                                <L n="whitelist">
+                                  <T>352987<!--ZoneModifier: zoneModifier_Hidden_WaterHeater_Off--></T>
+                                </L>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </U>
+                    </U>
+                  </V>
+                </L>
+                <L n="tests">
+                  <L>
+                    <V t="object_definition">
+                      <U n="object_definition">
+                        <V n="item" t="tagged_item">
+                          <U n="tagged_item">
+                            <L n="tag_set">
+                              <E>Func_Shower</E>
+                              <E>Func_ShowerTub</E>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T n="hide_screen_slam">True</T>
+  <U n="on_add_loot">
+    <L n="actions">
+      <V t="loot">
+        <U n="loot">
+          <V n="loot_distribution" t="active_sim_only" />
+          <L n="loots">
+            <T>343432<!--LootActions: loot_muEvent_WaterLeak_EventStart--></T>
+          </L>
+        </U>
+      </V>
+      <V t="modify_lot_items">
+        <U n="modify_lot_items">
+          <U n="actions">
+            <L n="modifications">
+              <U>
+                <V n="action" t="set_state">
+                  <U n="set_state">
+                    <T n="action_value">15076<!--CommodityBasedObjectStateValue: Brokenness_Broken--></T>
+                  </U>
+                </V>
+                <V n="max_num_modification" t="enabled">
+                  <T n="enabled">2</T>
+                </V>
+                <L n="tests">
+                  <L>
+                    <V t="object_definition">
+                      <U n="object_definition">
+                        <V n="item" t="tagged_item">
+                          <U n="tagged_item">
+                            <L n="tag_set">
+                              <E>Func_Shower</E>
+                              <E>Func_ShowerTub</E>
+                              <E>Func_Bath</E>
+                              <E>Func_Sink</E>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                    <V t="state">
+                      <U n="state">
+                        <E n="operator">NOTEQUAL</E>
+                        <T n="value">15076<!--CommodityBasedObjectStateValue: Brokenness_Broken--></T>
+                      </U>
+                    </V>
+                    <V t="location">
+                      <U n="location">
+                        <U n="location_tests">
+                          <V n="in_common_area" t="enabled">
+                            <T n="enabled">False</T>
+                          </V>
+                        </U>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+      </V>
+      <V t="modify_lot_items">
+        <U n="modify_lot_items">
+          <U n="actions">
+            <L n="modifications">
+              <U>
+                <V n="action" t="set_state">
+                  <U n="set_state">
+                    <T n="action_value">15076<!--CommodityBasedObjectStateValue: Brokenness_Broken--></T>
+                  </U>
+                </V>
+                <V n="max_num_modification" t="enabled" />
+                <L n="tests">
+                  <L>
+                    <V t="object_definition">
+                      <U n="object_definition">
+                        <V n="item" t="tagged_item">
+                          <U n="tagged_item">
+                            <L n="tag_set">
+                              <E>Func_WaterHeater</E>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                    <V t="state">
+                      <U n="state">
+                        <E n="operator">NOTEQUAL</E>
+                        <T n="value">15076<!--CommodityBasedObjectStateValue: Brokenness_Broken--></T>
+                      </U>
+                    </V>
+                    <V t="state">
+                      <U n="state">
+                        <E n="operator">NOTEQUAL</E>
+                        <T n="value">15384<!--CommodityBasedObjectStateValue: Upgrade_Generic_LockBrokenness_Completed--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+      </V>
+      <V t="spawn_objects">
+        <U n="spawn_objects">
+          <U n="creation_op">
+            <V n="creation_data" t="definition">
+              <U n="definition">
+                <T n="definition">21124</T>
+              </U>
+            </V>
+            <V n="location" t="position">
+              <U n="position">
+                <V n="initial_location" t="from_tags">
+                  <U n="from_tags">
+                    <L n="tag_test_sets">
+                      <U>
+                        <L n="tags">
+                          <E>Func_Shower</E>
+                          <E>Func_ShowerTub</E>
+                          <E>Func_Bath</E>
+                          <E>Func_Sink</E>
+                        </L>
+                        <L n="tests">
+                          <L>
+                            <V t="state">
+                              <U n="state">
+                                <T n="value">15076<!--CommodityBasedObjectStateValue: Brokenness_Broken--></T>
+                              </U>
+                            </V>
+                          </L>
+                        </L>
+                      </U>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <T n="quantity">7</T>
+            <E n="subject">Lot</E>
+          </U>
+        </U>
+      </V>
+      <V t="modify_lot_items">
+        <U n="modify_lot_items">
+          <U n="actions">
+            <L n="modifications">
+              <U>
+                <V n="action" t="set_state">
+                  <U n="set_state">
+                    <T n="action_value">358779<!--ObjectStateValue: shower_VFX_NoWater--></T>
+                  </U>
+                </V>
+                <L n="tests">
+                  <L>
+                    <V t="object_definition">
+                      <U n="object_definition">
+                        <V n="item" t="tagged_item">
+                          <U n="tagged_item">
+                            <L n="tag_set">
+                              <E>Func_Shower</E>
+                              <E>Func_ShowerTub</E>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+      </V>
+    </L>
+  </U>
+  <U n="spin_up_lot_loot">
+    <L n="actions">
+      <V t="loot">
+        <U n="loot">
+          <V n="loot_distribution" t="active_sim_only" />
+          <L n="loots">
+            <T>343432<!--LootActions: loot_muEvent_WaterLeak_EventStart--></T>
+          </L>
+        </U>
+      </V>
+      <V t="modify_lot_items">
+        <U n="modify_lot_items">
+          <U n="actions">
+            <L n="modifications">
+              <U>
+                <V n="action" t="set_state">
+                  <U n="set_state">
+                    <T n="action_value">15080<!--ObjectStateValue: BrokenState_Broken--></T>
+                  </U>
+                </V>
+                <V n="max_num_modification" t="enabled">
+                  <T n="enabled">2</T>
+                </V>
+                <L n="tests">
+                  <L>
+                    <V t="object_definition">
+                      <U n="object_definition">
+                        <V n="item" t="tagged_item">
+                          <U n="tagged_item">
+                            <L n="tag_set">
+                              <E>Func_Shower</E>
+                              <E>Func_ShowerTub</E>
+                              <E>Func_Bath</E>
+                              <E>Func_Sink</E>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                    <V t="state">
+                      <U n="state">
+                        <E n="operator">EQUAL</E>
+                        <T n="value">15076<!--CommodityBasedObjectStateValue: Brokenness_Broken--></T>
+                      </U>
+                    </V>
+                    <V t="location">
+                      <U n="location">
+                        <U n="location_tests">
+                          <V n="in_common_area" t="enabled">
+                            <T n="enabled">False</T>
+                          </V>
+                        </U>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T n="zone_modifier_locked">True</T>
+</I>

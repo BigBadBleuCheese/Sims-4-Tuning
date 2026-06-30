@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="wills_Clear_All" s="378286">
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <T n="allow_from_sim_inventory">True</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>379177<!--LootActions: loot_Wills_Clear_Dependents--></T>
+          <T>379210<!--LootActions: loot_Wills_Clear_FuneralActivities--></T>
+          <T>379211<!--LootActions: loot_Wills_Clear_Heirloom--></T>
+          <T>379212<!--LootActions: loot_Wills_Clear_Note--></T>
+          <T>379175<!--LootActions: loot_Wills_Clear_Simoleans--></T>
+          <T>379213<!--LootActions: loot_Wills_Clear_Urn--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T n="category">378280<!--PieMenuCategory: pieMenuCategories_Wills_ClearChoices--></T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x2FC84271<!--String: "Clear All"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="will">
+      <U n="will">
+        <T n="negate">True</T>
+        <V n="test_type" t="will_finalized" />
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

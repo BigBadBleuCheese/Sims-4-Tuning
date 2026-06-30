@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SocialMixerInteraction" i="interaction" m="interactions.social.social_mixer_interaction" n="socialMixer_Dynasty_AskPermissionMarry" s="480962">
+  <V n="_icon" t="resource_key">
+    <U n="resource_key">
+      <T n="key" p="InGame\UI\Icons\InteractionQueueSubInteractions\icon_queuesubinteraction_friendly.png">2f7d0004:00000000:8baf7893abd95bda</T>
+    </U>
+  </V>
+  <T n="allow_autonomous">False</T>
+  <T n="allow_user_directed">True</T>
+  <V n="basic_content" t="looping_animation">
+    <U n="looping_animation">
+      <L n="conditional_actions">
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="buff_based">
+                <U n="buff_based">
+                  <T n="buff">474356<!--Buff: buff_Dynasty_Heir_DeclareDialog_Decline--></T>
+                  <E n="timing">HAS_BUFF</E>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="buff_based">
+                <U n="buff_based">
+                  <T n="buff">474357<!--Buff: buff_Dynasty_Heir_DeclareDialog_AcceptProud--></T>
+                  <E n="timing">HAS_BUFF</E>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="buff_based">
+                <U n="buff_based">
+                  <T n="buff">474371<!--Buff: buff_Dynasty_Heir_DeclareDialog_AcceptPressuredOrNPC--></T>
+                  <E n="timing">HAS_BUFF</E>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+      </L>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>162659<!--LootActions: loot_Commodity_Culling_GhostAdd_target--></T>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>481095<!--LootActions: loot_Dynasty_AskPermissionToMarryDialog--></T>
+        </L>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+    <V t="buff_fire_and_forget">
+      <U n="buff_fire_and_forget">
+        <U n="buff">
+          <T n="buff_type">474371<!--Buff: buff_Dynasty_Heir_DeclareDialog_AcceptPressuredOrNPC--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="npc" t="enabled">
+                  <T n="enabled">True</T>
+                </V>
+                <E n="who">TargetSim</E>
+              </U>
+            </V>
+          </L>
+        </L>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+  </L>
+  <T n="category">470461<!--PieMenuCategory: pieMenuCategory_Dynasty--></T>
+  <T n="display_name">0x99973D4A<!--String: "Ask Permission to Marry {2.SimName}"--></T>
+  <T n="display_name_target">0x8C71C8F7<!--String: "Listen to {1.SimFirstName}'s Question"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">PickedSim</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Mixer</E>
+    <E>Interaction_All</E>
+    <E>Interaction_SocialAll</E>
+    <E>Interaction_SocialMixer</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <V n="animation_ref" t="enabled">
+              <U n="enabled">
+                <T n="factory">401324<!--AnimationElement: social_AsktoReMarry_Fail--></T>
+                <U n="overrides">
+                  <V n="balloons" t="enabled">
+                    <L n="enabled">
+                      <U>
+                        <L n="balloon_choices">
+                          <U>
+                            <V n="item" t="balloon_icon">
+                              <U n="balloon_icon">
+                                <E n="balloon_type">SPEECH</E>
+                                <V n="icon" t="participant">
+                                  <U n="participant">
+                                    <L n="participant_type">
+                                      <E>PickedSim</E>
+                                    </L>
+                                  </U>
+                                </V>
+                              </U>
+                            </V>
+                          </U>
+                        </L>
+                        <T n="balloon_delay">1</T>
+                        <L n="balloon_target">
+                          <E>Actor</E>
+                        </L>
+                      </U>
+                    </L>
+                  </V>
+                </U>
+              </U>
+            </V>
+            <L n="basic_extras">
+              <V t="relationship_bit">
+                <U n="relationship_bit">
+                  <U n="relationship_bits_begin">
+                    <L n="bit_operations">
+                      <U>
+                        <T n="bit">481096<!--RelationshipBit: shortTermBit_Dynasty_MarriageNotApprovedByTargetFamily--></T>
+                        <E n="operation">ADD</E>
+                        <E n="recipients">Actor</E>
+                        <E n="targets">PickedSim</E>
+                      </U>
+                      <U>
+                        <T n="bit">487640<!--RelationshipBit: shortTermBit_Dynasty_AskPermissionToMarryCooldown--></T>
+                        <E n="operation">ADD</E>
+                        <E n="recipients">Actor</E>
+                        <E n="targets">PickedSim</E>
+                      </U>
+                    </L>
+                    <L n="tests">
+                      <L>
+                        <V t="test_set_reference">
+                          <T n="test_set_reference">481878<!--TestSetInstance: testSet_Dynasty_AskPermissionToMarry_TargetPickedSimSide--></T>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                </U>
+              </V>
+              <V t="relationship_bit">
+                <U n="relationship_bit">
+                  <U n="relationship_bits_begin">
+                    <L n="bit_operations">
+                      <U>
+                        <T n="bit">481096<!--RelationshipBit: shortTermBit_Dynasty_MarriageNotApprovedByTargetFamily--></T>
+                        <E n="operation">ADD</E>
+                        <E n="recipients">PickedSim</E>
+                        <E n="targets">Actor</E>
+                      </U>
+                      <U>
+                        <T n="bit">487640<!--RelationshipBit: shortTermBit_Dynasty_AskPermissionToMarryCooldown--></T>
+                        <E n="operation">ADD</E>
+                        <E n="recipients">PickedSim</E>
+                        <E n="targets">Actor</E>
+                      </U>
+                    </L>
+                    <L n="tests">
+                      <L>
+                        <V t="test_set_reference">
+                          <T n="test_set_reference">481876<!--TestSetInstance: testSet_Dynasty_AskPermissionToMarry_TargetActorSide--></T>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                </U>
+              </V>
+              <V t="notification">
+                <U n="notification">
+                  <V n="dialog" t="single">
+                    <V n="single" t="literal">
+                      <U n="literal">
+                        <V n="icon" t="enabled">
+                          <V n="enabled" t="participant">
+                            <U n="participant">
+                              <L n="participant_type">
+                                <E>TargetSim</E>
+                              </L>
+                            </U>
+                          </V>
+                        </V>
+                        <V n="secondary_icon" t="enabled">
+                          <V n="enabled" t="participant" />
+                        </V>
+                        <V n="text" t="single">
+                          <T n="single">0xAF8AA77D<!--String: "No, I don't approve of this union. Surely there's someone more appropriate?"--></T>
+                        </V>
+                        <E n="visual_type">SPEECH</E>
+                      </U>
+                    </V>
+                  </V>
+                </U>
+              </V>
+            </L>
+            <L n="loot_list">
+              <T>11042<!--LootActions: Rel_Loss_Small--></T>
+              <T>24124<!--LootActions: Loot_SocialContext_Friendship_Loss--></T>
+            </L>
+            <E n="outcome_result">FAILURE</E>
+          </U>
+        </U>
+      </L>
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">401323<!--AnimationElement: social_AsktoReMarry_Succeed--></T>
+                    <U n="overrides">
+                      <V n="balloons" t="enabled">
+                        <L n="enabled">
+                          <U>
+                            <L n="balloon_choices">
+                              <U>
+                                <V n="item" t="balloon_icon">
+                                  <U n="balloon_icon">
+                                    <E n="balloon_type">SPEECH</E>
+                                    <T p="" n="debug_overlay_override" />
+                                    <V n="icon" t="participant">
+                                      <U n="participant">
+                                        <L n="participant_type">
+                                          <E>PickedSim</E>
+                                        </L>
+                                      </U>
+                                    </V>
+                                    <T p="" n="overlay" />
+                                  </U>
+                                </V>
+                              </U>
+                            </L>
+                            <T n="balloon_delay">1</T>
+                            <L n="balloon_target">
+                              <E>Actor</E>
+                            </L>
+                          </U>
+                        </L>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="relationship_bit">
+                    <U n="relationship_bit">
+                      <U n="relationship_bits_begin">
+                        <L n="bit_operations">
+                          <U>
+                            <T n="bit">481094<!--RelationshipBit: shortTermBit_Dynasty_MarriageApprovedByTargetFamily--></T>
+                            <E n="operation">ADD</E>
+                            <E n="recipients">Actor</E>
+                            <E n="targets">PickedSim</E>
+                          </U>
+                        </L>
+                        <L n="tests">
+                          <L>
+                            <V t="test_set_reference">
+                              <T n="test_set_reference">481878<!--TestSetInstance: testSet_Dynasty_AskPermissionToMarry_TargetPickedSimSide--></T>
+                            </V>
+                          </L>
+                        </L>
+                      </U>
+                    </U>
+                  </V>
+                  <V t="relationship_bit">
+                    <U n="relationship_bit">
+                      <U n="relationship_bits_begin">
+                        <L n="bit_operations">
+                          <U>
+                            <T n="bit">481094<!--RelationshipBit: shortTermBit_Dynasty_MarriageApprovedByTargetFamily--></T>
+                            <E n="operation">ADD</E>
+                            <E n="recipients">PickedSim</E>
+                            <E n="targets">Actor</E>
+                          </U>
+                        </L>
+                        <L n="tests">
+                          <L>
+                            <V t="test_set_reference">
+                              <T n="test_set_reference">481876<!--TestSetInstance: testSet_Dynasty_AskPermissionToMarry_TargetActorSide--></T>
+                            </V>
+                          </L>
+                        </L>
+                      </U>
+                    </U>
+                  </V>
+                  <V t="notification">
+                    <U n="notification">
+                      <V n="dialog" t="single">
+                        <V n="single" t="literal">
+                          <U n="literal">
+                            <L n="dialog_options">
+                              <E>DISABLE_CLOSE_BUTTON</E>
+                            </L>
+                            <V n="icon" t="enabled">
+                              <V n="enabled" t="participant">
+                                <U n="participant">
+                                  <L n="participant_type">
+                                    <E>TargetSim</E>
+                                  </L>
+                                </U>
+                              </V>
+                            </V>
+                            <V n="secondary_icon" t="enabled">
+                              <V n="enabled" t="participant">
+                                <U n="participant">
+                                  <L n="participant_type">
+                                    <E>Actor</E>
+                                  </L>
+                                </U>
+                              </V>
+                            </V>
+                            <V n="text" t="single">
+                              <T n="single">0x5DCA004<!--String: "Yes, this marriage will strengthen our Dynasty! I wish you both every happiness."--></T>
+                            </V>
+                            <E n="visual_type">SPEECH</E>
+                          </U>
+                        </V>
+                      </V>
+                    </U>
+                  </V>
+                  <V t="relationship_bit">
+                    <U n="relationship_bit">
+                      <U n="relationship_bits_begin">
+                        <L n="bit_operations">
+                          <U>
+                            <T n="bit">496380<!--RelationshipBit: shortTermBit_Dynasty_MarriageApprovalFromTarget--></T>
+                            <E n="operation">ADD</E>
+                            <E n="recipients">Actor</E>
+                            <E n="targets">TargetSim</E>
+                          </U>
+                        </L>
+                      </U>
+                    </U>
+                  </V>
+                </L>
+                <L n="loot_list">
+                  <T>11036<!--LootActions: Rel_Gain_Small--></T>
+                  <T>24123<!--LootActions: Loot_SocialContext_Friendship_Gain--></T>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="sim_info">
+                <U n="sim_info">
+                  <V n="npc" t="enabled" />
+                  <E n="who">TargetSim</E>
+                </U>
+              </V>
+              <V t="buff">
+                <U n="buff">
+                  <V n="whitelist" t="enabled">
+                    <L n="enabled">
+                      <T>474357<!--Buff: buff_Dynasty_Heir_DeclareDialog_AcceptProud--></T>
+                    </L>
+                  </V>
+                </U>
+              </V>
+            </L>
+            <L>
+              <V t="sim_info">
+                <U n="sim_info">
+                  <V n="npc" t="enabled">
+                    <T n="enabled">True</T>
+                  </V>
+                  <E n="who">TargetSim</E>
+                </U>
+              </V>
+              <V t="test_set_reference">
+                <T n="test_set_reference">481876<!--TestSetInstance: testSet_Dynasty_AskPermissionToMarry_TargetActorSide--></T>
+              </V>
+              <V t="test_based_score_threshold">
+                <U n="test_based_score_threshold">
+                  <T n="test_based_score">481344<!--TestBasedScore: testBasedScore_Dynasty_AskPermissionToMarry_FromActorFamily--></T>
+                  <U n="threshold">
+                    <T n="value">35</T>
+                  </U>
+                </U>
+              </V>
+            </L>
+            <L>
+              <V t="sim_info">
+                <U n="sim_info">
+                  <V n="npc" t="enabled">
+                    <T n="enabled">True</T>
+                  </V>
+                  <E n="who">TargetSim</E>
+                </U>
+              </V>
+              <V t="test_set_reference">
+                <T n="test_set_reference">481878<!--TestSetInstance: testSet_Dynasty_AskPermissionToMarry_TargetPickedSimSide--></T>
+              </V>
+              <V t="test_based_score_threshold">
+                <U n="test_based_score_threshold">
+                  <T n="test_based_score">481346<!--TestBasedScore: testBasedScore_Dynasty_AskPermissionToMarry_FromSOFamily--></T>
+                  <U n="threshold">
+                    <T n="value">35</T>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="skill_loot_data">
+    <V n="level_range" t="enabled">
+      <U n="enabled">
+        <T n="lower_bound">1</T>
+        <T n="upper_bound">10</T>
+      </U>
+    </V>
+    <T n="stat">16699<!--Skill: statistic_Skill_AdultMajor_Charisma--></T>
+  </U>
+  <U n="sub_action">
+    <T n="base_weight">2</T>
+  </U>
+  <E n="target_type">TARGET</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+      </U>
+    </V>
+    <V t="relationship">
+      <U n="relationship">
+        <U n="required_relationship_bits">
+          <L n="match_any">
+            <T>15803<!--RelationshipBit: has_met--></T>
+            <T>192631<!--RelationshipBit: relationshipBit_CelebrityAcquaintance--></T>
+          </L>
+        </U>
+      </U>
+    </V>
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <E n="who">TargetSim</E>
+      </U>
+    </V>
+  </L>
+  <T n="visible">True</T>
+</I>

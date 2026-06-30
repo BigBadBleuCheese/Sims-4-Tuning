@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="superInteraction_Target_ShowOffEmotionStone" s="456783">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="cone">
+            <U n="cone">
+              <T n="angle">180</T>
+              <T n="ideal_angle">0.5</T>
+              <T n="max_radius">2</T>
+              <T n="min_radius">0.5</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="value" t="facing">
+            <U n="facing">
+              <T n="range">44</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Actor</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="buff_based">
+                <U n="buff_based">
+                  <T n="buff">472040<!--Buff: buff_Object_Apothecary_CuresAndElixirs_hidden_ShowOffEmotionStone_IsShowing--></T>
+                  <E n="participant">TargetSim</E>
+                  <E n="timing">NOT_HAS_BUFF</E>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+      </L>
+      <V n="content" t="looping_content">
+        <U n="looping_content">
+          <U n="animation_ref">
+            <T n="factory">456784<!--AnimationElement: animationElement_Target_ShowOffEmotionStone--></T>
+            <U n="overrides">
+              <V n="balloons" t="enabled">
+                <L n="enabled">
+                  <U>
+                    <L n="balloon_choices">
+                      <U>
+                        <V n="item" t="balloon_icon">
+                          <U n="balloon_icon">
+                            <V n="icon" t="resource_key">
+                              <U n="resource_key">
+                                <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_rock.png">2f7d0004:00000000:0378efd8f18f1e3b</T>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </U>
+                    </L>
+                    <L n="balloon_target">
+                      <E>Actor</E>
+                    </L>
+                  </U>
+                </L>
+              </V>
+            </U>
+          </U>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>457025<!--RandomWeightedLoot: RandomLoot_Apothecary_CuresAndElixirs_ShowOffEmotionStone--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="basic_reserve_object" t="disabled" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xA95F7DDA<!--String: "Gaze at Emotion Stone"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="trait">
+      <U n="trait">
+        <L n="blacklist_traits">
+          <T>194217<!--Trait: trait_Reputation_Rank_6_ReallyGood--></T>
+          <T>194224<!--Trait: trait_Reputation_Rank_7_Pristine--></T>
+          <T>191818<!--Trait: fameTrait_Level5--></T>
+        </L>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">100369<!--TestSetInstance: testSet_MotivesNotRed--></T>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <E n="subject">TargetSim</E>
+        <V n="whitelist" t="enabled">
+          <L n="enabled">
+            <T>472040<!--Buff: buff_Object_Apothecary_CuresAndElixirs_hidden_ShowOffEmotionStone_IsShowing--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

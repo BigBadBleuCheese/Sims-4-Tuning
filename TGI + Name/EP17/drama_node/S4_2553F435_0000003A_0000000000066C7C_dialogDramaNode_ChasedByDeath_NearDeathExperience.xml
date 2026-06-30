@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="DialogDramaNode" i="drama_node" m="drama_scheduler.dialog_drama_node" n="dialogDramaNode_ChasedByDeath_NearDeathExperience" s="420988">
+  <V n="dialog_and_loot" t="dialog_ok_cancel">
+    <U n="dialog_ok_cancel">
+      <U n="dialog">
+        <V n="audio_sting" t="enabled">
+          <U n="enabled">
+            <T n="audio" p="InEP17\Audio\music\stings\sting_ep17_chased_by_death_faint.propx">39b2aa4a:00000000:d600698cf8ca9f37</T>
+            <T n="immediate_audio">True</T>
+          </U>
+        </V>
+        <V n="background_image" t="disabled" />
+        <E n="dialog_bg_style">BG_DEATH</E>
+        <E n="dialog_footer_type">AUTOMATIC</E>
+        <L n="dialog_options">
+          <E>DISABLE_CLOSE_BUTTON</E>
+        </L>
+        <E n="dialog_style">LARGE_ICON_WIDE</E>
+        <V n="icon" t="enabled">
+          <V n="enabled" t="resource_key">
+            <U n="resource_key">
+              <T n="key" p="InGame\UI\Icons\ChanceCards\ChanceCard_MomentofDeath.png">2f7d0004:00000000:c4e1470fcd890e49</T>
+            </U>
+          </V>
+        </V>
+        <V n="icon_override_participant" t="enabled">
+          <E n="enabled">Actor</E>
+        </V>
+        <E n="phone_ring_type">NO_RING</E>
+        <V n="secondary_icon" t="enabled">
+          <V n="enabled" t="participant" />
+        </V>
+        <V n="text" t="single">
+          <T n="single">0x15888E60<!--String: "You're on my list, {0.SimFirstName}.\n\nYou've been pushing the line, living dangerously. Perhaps you think you're immune to the consequences of your actions? Perhaps you're brave—or perhaps you're just foolish. But let me make this clear, you're on very, very thin ice. After your latest brush with death, I'll be keeping a particularly close eye on you, and if you even THINK about stepping one toe out of line, I'll be there to collect your soul.\n\nI like you, {0.SimFirstName}. But as you spend the next few days reeling from your near-death experience, you should know that you're on death's doorstep. It would be wise of you to be careful—your next mistake <i>will</i> be your last."--></T>
+        </V>
+        <T n="text_cancel">0xBFB4D8F4<!--String: "I'm sorry! Have mercy!"--></T>
+        <T n="text_ok">0x811DB140<!--String: "You can't scare me!"--></T>
+        <V n="title" t="enabled">
+          <T n="enabled">0x9108542E<!--String: "A Close Encounter with Death!"--></T>
+        </V>
+      </U>
+      <L n="on_dialog_accepted_loot_list">
+        <T>421374<!--LootActions: loot_ChasedByDeath_NearDeathExperience_Inspired--></T>
+      </L>
+      <L n="on_dialog_canceled_loot_list">
+        <T>421375<!--LootActions: loot_ChasedByDeath_NearDeathExperience_Scared--></T>
+      </L>
+      <L n="on_dialog_no_response_loot_list">
+        <T>421375<!--LootActions: loot_ChasedByDeath_NearDeathExperience_Scared--></T>
+      </L>
+    </U>
+  </V>
+  <U n="min_and_max_times">
+    <T n="lower_bound">0</T>
+    <T n="upper_bound">24</T>
+  </U>
+  <L n="pretests">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified" />
+          <V n="npc" t="enabled" />
+          <V n="species" t="specified">
+            <U n="specified">
+              <L n="species">
+                <E />
+              </L>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>420855<!--Buff: buff_Trait_ChasedByDeath_OnThinIce_Inspired--></T>
+            <T>420856<!--Buff: buff_Trait_ChasedByDeath_OnThinIce_Scared--></T>
+          </L>
+        </U>
+      </V>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_trait_types">
+            <E>GHOST</E>
+          </L>
+          <L n="whitelist_traits">
+            <T>384182<!--Trait: trait_ChasedByDeath--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="sender_sim_info" t="no_participant" />
+  <E n="sender_sim_info_type">INSTANCED_ALLOWED</E>
+  <V n="time_option" t="schedule">
+    <U n="schedule">
+      <L n="valid_times">
+        <U>
+          <U n="days_available">
+            <T n="0 SUNDAY">True</T>
+            <T n="1 MONDAY">True</T>
+            <T n="2 TUESDAY">True</T>
+            <T n="3 WEDNESDAY">True</T>
+            <T n="4 THURSDAY">True</T>
+            <T n="5 FRIDAY">True</T>
+            <T n="6 SATURDAY">True</T>
+          </U>
+          <T n="duration">24</T>
+        </U>
+      </L>
+    </U>
+  </V>
+</I>

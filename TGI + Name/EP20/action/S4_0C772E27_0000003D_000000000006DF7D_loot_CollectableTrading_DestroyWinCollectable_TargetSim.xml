@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_CollectableTrading_DestroyWinCollectable_TargetSim" s="450429">
+  <L n="loot_actions">
+    <V t="destroy_objects_from_inventory">
+      <U n="destroy_objects_from_inventory">
+        <V n="count" t="all" />
+        <L n="object_tests">
+          <L>
+            <V t="object_criteria">
+              <U n="object_criteria">
+                <V n="identity_test" t="tags">
+                  <U n="tags">
+                    <L n="tag_set">
+                      <E>Func_Collectible</E>
+                    </L>
+                  </U>
+                </V>
+                <T n="owned">False</T>
+                <V n="subject_specific_tests" t="single_object" />
+              </U>
+            </V>
+          </L>
+        </L>
+        <E n="subject">TargetSim</E>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>450425<!--Buff: buff_CollectableTrading_RetryAvailable--></T>
+          </L>
+          <E n="subject">TargetSim</E>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

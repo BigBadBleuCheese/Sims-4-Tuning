@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="TestSetInstance" i="snippet" m="event_testing.tests" n="testSet_Dynasty_Titles_NPCHeadDeclareHeir_HeadToPickedSim" s="477702">
+  <L n="test">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified" />
+          <V n="npc" t="enabled" />
+          <E n="who">PickedSim</E>
+        </U>
+      </V>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>466526<!--Trait: trait_Dynasty_Heir--></T>
+          </L>
+          <E n="subject">PickedSim</E>
+        </U>
+      </V>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="prohibited_relationship_bits">
+            <L n="match_any">
+              <T>466812<!--RelationshipBit: sentimentBit_Actor_HurtBy_Target_LT_Dynasty_UnmadeHeir--></T>
+              <T>466804<!--RelationshipBit: sentimentBit_Actor_BitterAt_Target_LT_Dynasty_UnmadeHeir--></T>
+            </L>
+          </U>
+          <L n="subject">
+            <E>PickedSim</E>
+          </L>
+          <L n="target_sim">
+            <E>ActorDynastyHead</E>
+          </L>
+        </U>
+      </V>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="prohibited_relationship_bits">
+            <L n="match_any">
+              <T>240104<!--RelationshipBitCollection: rbc_Sentiment_Bitter--></T>
+              <T>240105<!--RelationshipBitCollection: rbc_Sentiment_Furious--></T>
+              <T>246490<!--RelationshipBitCollection: rbc_Sentiment_Hurt--></T>
+            </L>
+          </U>
+          <U n="relationship_score_interval">
+            <T n="lower_bound">40</T>
+          </U>
+          <L n="subject">
+            <E>ActorDynastyHead</E>
+          </L>
+          <L n="target_sim">
+            <E>PickedSim</E>
+          </L>
+          <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+        </U>
+      </V>
+      <V t="dynasty_value">
+        <U n="dynasty_value">
+          <E n="subjects">PickedSim</E>
+          <V n="test_type" t="compare_sim_traits_to_dynasty">
+            <U n="compare_sim_traits_to_dynasty">
+              <E n="target">ActorDynastyHead</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="test_set_reference">
+        <T n="test_set_reference">477701<!--TestSetInstance: testSet_Dynasty_Titles_NPCDeclareHeir_CurrentHeirComparison_HeadToPickedSim--></T>
+      </V>
+      <V t="dynasty_rank">
+        <U n="dynasty_rank">
+          <E n="subjects">PickedSim</E>
+          <V n="test_type" t="dynasty_rank_percentages_test">
+            <U n="dynasty_rank_percentages_test">
+              <T n="max_percentage">100</T>
+              <T n="min_percentage">55</T>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

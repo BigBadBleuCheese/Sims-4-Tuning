@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="BusinessRule" i="business_rule" m="business.business_rule" n="Rule_PMI_NoEvents" s="348400">
+  <T n="auto_resolve_time">0</T>
+  <T n="cooldown_time">1300</T>
+  <T n="fine">600</T>
+  <T p="InEP15\UI\Icons\UnitRules\UnitRules_NoParties.png" n="icon">2f7d0004:00000000:4e21d06529b3edda</T>
+  <T n="loot_on_auto_resolved">340361<!--LootActions: loot_LandlordTenant_ViolateRules--></T>
+  <T n="loot_on_rule_broken">349355<!--LootActions: loot_PMI_NoEvents--></T>
+  <T n="rule_description">0xB193AEEE<!--String: "Hosting any type of Social Event will be strictly off-limits at this Residential Rental unit!"--></T>
+  <T n="rule_name">0xD376B891<!--String: "No Social Events"--></T>
+  <L n="test_events">
+    <L>
+      <V t="situation_running_test">
+        <U n="situation_running_test">
+          <T n="check_for_initiating_sim">False</T>
+          <V n="tag_whitelist" t="enabled">
+            <L n="enabled">
+              <E>Situation_PlayerFacing_CanHost</E>
+            </L>
+          </V>
+          <E n="test_event">SituationStarted</E>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_muEvent_Cursed_StartFire" s="345193">
+  <L n="loot_actions">
+    <V t="statistics">
+      <V n="statistics" t="statistic_set_max">
+        <U n="statistic_set_max">
+          <T n="stat">345180<!--Commodity: commodity_muEvent_Cursed_StartFire--></T>
+        </U>
+      </V>
+    </V>
+    <V t="oneshot_broadcaster">
+      <U n="oneshot_broadcaster">
+        <U n="broadcaster_request">
+          <L n="broadcaster_types">
+            <U>
+              <T n="item">356921<!--Broadcaster: broadcaster_muEvent_Cursed_StartFireNearby_Buff--></T>
+              <T n="stop_processing">True</T>
+              <L n="test">
+                <L>
+                  <V t="location">
+                    <U n="location">
+                      <U n="location_tests">
+                        <V n="is_fire_allowed" t="enabled" />
+                      </U>
+                    </U>
+                  </V>
+                  <V t="buff">
+                    <U n="buff">
+                      <V n="whitelist" t="enabled">
+                        <L n="enabled">
+                          <T>345177<!--Buff: buff_muEvent_Cursed_AfterDestroy--></T>
+                        </L>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+            <U>
+              <T n="item">345196<!--Broadcaster: broadcaster_muEvent_Cursed_StartFireNearby--></T>
+              <L n="test">
+                <L>
+                  <V t="location">
+                    <U n="location">
+                      <U n="location_tests">
+                        <V n="is_fire_allowed" t="enabled" />
+                      </U>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+          </L>
+        </U>
+      </U>
+    </V>
+  </L>
+</I>

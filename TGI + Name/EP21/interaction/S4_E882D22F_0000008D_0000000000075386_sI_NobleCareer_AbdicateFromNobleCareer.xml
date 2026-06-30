@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="sI_NobleCareer_AbdicateFromNobleCareer" s="480134">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="facing" />
+        </U>
+        <U>
+          <V n="value" t="cone">
+            <U n="cone">
+              <T n="angle">45</T>
+              <T n="max_radius">2</T>
+              <T n="min_radius">0</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">480135<!--AnimationElement: anim_NobleCareer_Throne_Abdicate--></T>
+        <U n="overrides">
+          <L n="props">
+            <U>
+              <T n="key">crown</T>
+              <U n="value">
+                <T n="definition">497568</T>
+              </U>
+            </U>
+          </L>
+        </U>
+      </U>
+    </U>
+  </V>
+  <V n="confirmation_dialog" t="enabled">
+    <U n="enabled">
+      <U n="dialog">
+        <V n="dialog" t="ok_cancel">
+          <U n="ok_cancel">
+            <V n="text" t="single">
+              <T n="single">0xFB1F1397<!--String: "As a {2.String}, {0.SimFirstNameWithPrefix} has titles that might also be inherited by {0.SimPronounPossessiveDependent} spouse and children. This means that by abdicating from the Noble Career, {0.SimPronounPossessiveDependent} spouse and children will lose their inherited titles as well."--></T>
+            </V>
+            <T n="text_cancel">0x3AB7E2BB<!--String: "I've Changed My Mind!"--></T>
+            <T n="text_ok">0x7AE57D33<!--String: "Understood!"--></T>
+            <V n="title" t="enabled">
+              <T n="enabled">0xCD806D55<!--String: "Are you sure?"--></T>
+            </V>
+          </U>
+        </V>
+      </U>
+    </U>
+  </V>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x9326F778<!--String: "Abdicate from Noble Career"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="career_data">
+        <U n="career_data">
+          <T n="career_type">466304<!--NobleCareer: career_Noble--></T>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="basic_extras">
+          <V t="buff_fire_and_forget">
+            <U n="buff_fire_and_forget">
+              <U n="buff">
+                <T n="buff_type">497596<!--Buff: buff_NobleCareer_Abdication_Normal--></T>
+              </U>
+            </U>
+          </V>
+        </L>
+        <L n="loot_list">
+          <T>480136<!--LootActions: loot_NobleCareer_Abdicate--></T>
+        </L>
+      </U>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T p="InEP21\UI\Icons\PieMenu\PieMenu_NobleCareer.png" n="key">2f7d0004:00000000:9b49aa0d1eb08413</T>
+      </U>
+    </V>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all" />
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="career_test">
+      <U n="career_test">
+        <V n="test_type" t="career_reference">
+          <U n="career_reference">
+            <V n="career" t="specific_career">
+              <T n="specific_career">466304<!--NobleCareer: career_Noble--></T>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="in_home_region">
+      <U n="in_home_region">
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xE2ED99EC<!--String: "Noble Actions cannot be performed outside the Kingdom {0.SimFirstName} lives in."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

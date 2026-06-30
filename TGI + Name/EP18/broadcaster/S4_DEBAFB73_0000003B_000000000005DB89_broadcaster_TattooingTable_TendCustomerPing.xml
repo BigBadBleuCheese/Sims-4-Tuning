@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Broadcaster" i="broadcaster" m="broadcasters.broadcaster" n="broadcaster_TattooingTable_TendCustomerPing" s="383881">
+  <V n="allow_sim_test" t="enabled">
+    <L n="enabled">
+      <L>
+        <V t="mood">
+          <U n="mood">
+            <T n="disallow">True</T>
+            <T n="mood">201531<!--Mood: Mood_Possessed--></T>
+          </U>
+        </V>
+        <V t="mood">
+          <U n="mood">
+            <T n="disallow">True</T>
+            <T n="mood">27149<!--Mood: Mood_Asleep--></T>
+          </U>
+        </V>
+        <V t="situation_running_test">
+          <U n="situation_running_test">
+            <V n="participant" t="enabled" />
+            <V n="situation_blacklist" t="enabled">
+              <L n="enabled">
+                <T>24322<!--LeaveNowMustRunSituation: situation_leave_now_must_run--></T>
+                <T>24196<!--LeaveSituation: situation_leave--></T>
+                <T>101251<!--SingleSimLeaveSituation: Situation_SingleSimLeave--></T>
+              </L>
+            </V>
+          </U>
+        </V>
+        <V t="buff">
+          <U n="buff">
+            <L n="blacklist">
+              <T>404176<!--Buff: buff_Tattooing_RecentCustomerCooldown--></T>
+            </L>
+          </U>
+        </V>
+        <V t="sim_info">
+          <U n="sim_info">
+            <V n="ages" t="specified" />
+            <V n="npc" t="enabled">
+              <T n="enabled">True</T>
+            </V>
+          </U>
+        </V>
+        <V t="test_set_reference">
+          <T n="test_set_reference">202221<!--TestSetInstance: testSetInstance_ImportantJobTest--></T>
+        </V>
+        <V t="participant_running_interaction">
+          <U n="participant_running_interaction">
+            <L n="affordance_lists">
+              <T>383868<!--AffordanceList: affordanceList_TattooingTable_PerformingServicesIncludingOffer--></T>
+              <T>442107<!--AffordanceList: affordanceList_TattooingTable_ReceivingServicesIncludingRequest--></T>
+            </L>
+            <L n="affordances">
+              <T>383880<!--SuperInteraction: si_TattooingTable_Tend_Autonomous--></T>
+            </L>
+            <T n="test_for_not_running">True</T>
+            <T n="test_interaction_queue">True</T>
+          </U>
+        </V>
+        <V t="test_set_reference">
+          <T n="test_set_reference">432052<!--TestSetInstance: testSet_SmallBusiness_CheckedInCustomerOrNotCustomer_Actor--></T>
+        </V>
+        <V t="posture">
+          <U n="posture">
+            <L n="prohibited_postures">
+              <T>15522<!--CarryingObject: posture_CarryObject--></T>
+              <T>132169<!--CarryingSim: posture_CarrySim--></T>
+              <T>271210<!--CarryingSim: posture_CarrySim_Back--></T>
+            </L>
+          </U>
+        </V>
+        <V t="situation_job_test">
+          <U n="situation_job_test">
+            <T n="negate">True</T>
+            <L n="situation_jobs">
+              <T>399327<!--SituationJob: jobs_SmallBusinessEmployee_Work--></T>
+              <T>401789<!--SituationJob: jobs_SmallBusinessEmployee_Work_Owner--></T>
+            </L>
+          </U>
+        </V>
+        <V t="test_set_reference">
+          <T n="test_set_reference">386307<!--TestSetInstance: testSetInstance_Tattooing_CheckIfForbidden_Actor--></T>
+        </V>
+      </L>
+    </L>
+  </V>
+  <V n="clustering" t="disabled" />
+  <L n="constraints">
+    <V t="circle">
+      <U n="circle">
+        <T n="radius">15</T>
+      </U>
+    </V>
+    <V t="line_of_sight" />
+  </L>
+  <L n="effects">
+    <V t="affordance">
+      <U n="affordance">
+        <V n="affected_object_cap" t="enabled">
+          <T n="enabled">1</T>
+        </V>
+        <T n="affordance_must_run_next">True</T>
+        <E n="affordance_priority">High</E>
+        <L n="affordances">
+          <U>
+            <T n="affordance">384321<!--ImmediateSuperInteraction: immediate_TattooingTable_NPCRequestTattoo--></T>
+          </U>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <L n="blacklist">
+                  <T>404178<!--Buff: buff_TattooingTable_Hidden_WithCustomer--></T>
+                </L>
+                <E n="subject">TargetSim</E>
+              </U>
+            </V>
+            <V t="participant_running_interaction">
+              <U n="participant_running_interaction">
+                <L n="affordance_lists">
+                  <T>383868<!--AffordanceList: affordanceList_TattooingTable_PerformingServicesIncludingOffer--></T>
+                </L>
+                <E n="participant">TargetSim</E>
+                <T n="test_for_not_running">True</T>
+                <T n="test_interaction_queue">True</T>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="frequency" t="on_pulse">
+    <U n="on_pulse">
+      <T n="cooldown_time">1</T>
+    </U>
+  </V>
+</I>

@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="hopscotch_Reaction_Success" s="343166">
+  <V n="_saveable" t="disabled" />
+  <T n="_super_affordance_can_share_target">True</T>
+  <T n="allow_autonomous">False</T>
+  <T n="allow_user_directed">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <L n="basic_extras" />
+  <V n="basic_reserve_object" t="disabled" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xFE983BAD<!--String: "Careers"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <V n="animation_ref" t="enabled">
+              <U n="enabled">
+                <T n="factory">343102<!--AnimationElement: hopscotch_Spectator_Cheer--></T>
+                <U n="overrides">
+                  <V n="balloons" t="enabled">
+                    <L n="enabled">
+                      <U>
+                        <T n="balloon_chance">50</T>
+                        <L n="balloon_choices">
+                          <U>
+                            <V n="item" t="balloon_icon">
+                              <U n="balloon_icon">
+                                <E n="balloon_type">SPEECH</E>
+                                <V n="icon" t="resource_key">
+                                  <U n="resource_key">
+                                    <T n="key" p="InGame\UI\Icons\Headlines\Final\Headline_CampfireFrogWithACrown_bg.png">2f7d0004:00000000:ec969b0973c2cc0f</T>
+                                  </U>
+                                </V>
+                              </U>
+                            </V>
+                          </U>
+                          <U>
+                            <V n="item" t="balloon_icon">
+                              <U n="balloon_icon">
+                                <E n="balloon_type">SPEECH</E>
+                                <V n="icon" t="resource_key">
+                                  <U n="resource_key">
+                                    <T n="key" p="InGame\UI\Icons\Headlines\Final\icon_headline_thumbup.png">2f7d0004:00000000:dc2a874dae392433</T>
+                                  </U>
+                                </V>
+                              </U>
+                            </V>
+                          </U>
+                          <U>
+                            <V n="item" t="balloon_icon">
+                              <U n="balloon_icon">
+                                <E n="balloon_type">SPEECH</E>
+                                <V n="icon" t="resource_key">
+                                  <U n="resource_key">
+                                    <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_happy_v2.png">2f7d0004:00000000:4f27caa127291bd5</T>
+                                  </U>
+                                </V>
+                              </U>
+                            </V>
+                          </U>
+                        </L>
+                        <T n="balloon_delay">1</T>
+                        <T n="balloon_delay_random_offset">1</T>
+                        <L n="balloon_target">
+                          <E>Actor</E>
+                        </L>
+                      </U>
+                    </L>
+                  </V>
+                </U>
+              </U>
+            </V>
+          </U>
+        </U>
+      </L>
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">343103<!--AnimationElement: hopscotch_Spectator_Heckle--></T>
+                  </U>
+                </V>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="relationship">
+                <U n="relationship">
+                  <U n="relationship_score_interval">
+                    <T n="upper_bound">0</T>
+                  </U>
+                  <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="include_all" />
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="participant_running_interaction">
+      <U n="participant_running_interaction">
+        <L n="affordances">
+          <T>336585<!--SuperInteraction: hopscotch_WaitForTurn--></T>
+          <T>340634<!--SuperInteraction: hopscotch_Watch_Sim--></T>
+          <T>340655<!--SuperInteraction: hopscotch_Watch_Object--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+  <T n="visible">False</T>
+</I>

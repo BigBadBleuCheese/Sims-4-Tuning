@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_R3Event_Mail_NewHousehold" s="423185">
+  <L n="loot_actions">
+    <V t="scheduled_delivery">
+      <T n="scheduled_delivery">377547<!--ScheduledDeliveryLoot: scheduledDeliveryLoot_R3Event_Mail--></T>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="situation_goal_test">
+        <U n="situation_goal_test">
+          <L n="situation_goals">
+            <T>388640<!--SituationGoalObjectCount: goalObjectCount_R3Event_ReceivedMail--></T>
+          </L>
+        </U>
+      </V>
+      <V t="object_criteria">
+        <U n="object_criteria">
+          <V n="identity_test" t="definition_id">
+            <U n="definition_id">
+              <T n="actual_object">424092</T>
+            </U>
+          </V>
+          <T n="owned">False</T>
+          <V n="subject_specific_tests" t="all_objects">
+            <U n="all_objects">
+              <U n="quantity">
+                <E n="comparison">EQUAL</E>
+                <T n="value">0</T>
+              </U>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="inventory">
+        <U n="inventory">
+          <V n="contents_check" t="has_object_with_def">
+            <U n="has_object_with_def">
+              <T n="definition">424092</T>
+            </U>
+          </V>
+          <V n="inventory_location" t="hidden_inventory_objects">
+            <U n="hidden_inventory_objects">
+              <E n="inventory">MAILBOX</E>
+            </U>
+          </V>
+          <U n="required_count">
+            <E n="comparison">EQUAL</E>
+            <T n="value">0</T>
+          </U>
+        </U>
+      </V>
+      <V t="inventory">
+        <U n="inventory">
+          <V n="contents_check" t="has_object_with_def">
+            <U n="has_object_with_def">
+              <T n="definition">424092</T>
+            </U>
+          </V>
+          <V n="inventory_location" t="object_inventory_type">
+            <U n="object_inventory_type">
+              <E n="inventory">MAILBOX</E>
+            </U>
+          </V>
+          <U n="required_count">
+            <E n="comparison">EQUAL</E>
+            <T n="value">0</T>
+          </U>
+        </U>
+      </V>
+      <V t="inventory">
+        <U n="inventory">
+          <V n="contents_check" t="has_object_with_def">
+            <U n="has_object_with_def">
+              <T n="definition">424092</T>
+            </U>
+          </V>
+          <V n="inventory_location" t="object_inventory_type">
+            <U n="object_inventory_type">
+              <E n="inventory">SIM</E>
+            </U>
+          </V>
+          <U n="required_count">
+            <E n="comparison">EQUAL</E>
+            <T n="value">0</T>
+          </U>
+        </U>
+      </V>
+      <V t="lot_owner">
+        <U n="lot_owner">
+          <T n="consider_business_lot_as_owned">False</T>
+          <T n="consider_rented_lot_as_owned">False</T>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

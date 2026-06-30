@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="spiritHouse_LeaveIncense_Interaction" s="345386">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="cone">
+            <U n="cone">
+              <T n="angle">10</T>
+              <T n="max_radius">1.5</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">23927<!--AnimationElement: Generic_PutDown--></T>
+      </U>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>344486<!--LootActions: loot_Trait_ChildoftheSEA_CulturalActivities_Add--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x985C6BA3<!--String: "Leave Incense"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+    <E>Interaction_SpiritHouse</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="loot_list">
+          <T>345405<!--LootActions: loot_Object_SpiritHouse_ChangeState_Incense--></T>
+        </L>
+      </U>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="state_white_black">
+      <U n="state_white_black">
+        <U n="states">
+          <V n="whitelist" t="specify">
+            <U n="specify">
+              <L n="whitelist">
+                <T>341505<!--ObjectStateValue: spiritHouse_Value_BothOff--></T>
+                <T>341501<!--ObjectStateValue: spiritHouse_Value_FruitOnly--></T>
+              </L>
+            </U>
+          </V>
+        </U>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x3456AFAC<!--String: "Incense has already been placed."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

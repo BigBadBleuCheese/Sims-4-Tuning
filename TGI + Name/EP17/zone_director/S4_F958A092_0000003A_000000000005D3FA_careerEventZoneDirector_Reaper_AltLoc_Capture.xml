@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="CareerEventZoneDirector" i="zone_director" m="careers.career_event_zone_director" n="careerEventZoneDirector_Reaper_AltLoc_Capture" s="381946">
+  <V n="fan_situation_support" t="disabled" />
+  <L n="lot_preparations">
+    <U>
+      <V n="action" t="create_random_object_nearby">
+        <U n="create_random_object_nearby">
+          <L n="objects_to_choose_from">
+            <T>419187</T>
+          </L>
+        </U>
+      </V>
+      <U n="number_of_changes">
+        <T n="lower_bound">8</T>
+        <T n="upper_bound">8</T>
+      </U>
+      <L n="tests">
+        <L>
+          <V t="object_definition">
+            <U n="object_definition">
+              <V n="item" t="tagged_item">
+                <U n="tagged_item">
+                  <L n="tag_set">
+                    <E>Func_OutdoorPlant</E>
+                  </L>
+                  <E n="test_type">CONTAINS_NO_TAGS_IN_SET</E>
+                </U>
+              </V>
+            </U>
+          </V>
+        </L>
+      </L>
+    </U>
+    <U>
+      <V n="action" t="create_random_object_nearby">
+        <U n="create_random_object_nearby">
+          <L n="objects_to_choose_from">
+            <T>422874<!--SituationGoalSet: goalSet_ReaperCareer_Reaping_Social--></T>
+            <T>422877<!--SuperInteraction: career_Reaper_Objects_Investigate--></T>
+          </L>
+        </U>
+      </V>
+      <U n="number_of_changes">
+        <T n="lower_bound">4</T>
+        <T n="upper_bound">4</T>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="create_random_object_nearby">
+        <U n="create_random_object_nearby">
+          <L n="objects_to_choose_from">
+            <T>419192</T>
+          </L>
+        </U>
+      </V>
+      <U n="number_of_changes">
+        <T n="lower_bound">2</T>
+        <T n="upper_bound">2</T>
+      </U>
+      <L n="tests">
+        <L>
+          <V t="location">
+            <U n="location">
+              <U n="location_tests">
+                <V n="is_natural_ground" t="enabled" />
+              </U>
+            </U>
+          </V>
+        </L>
+      </L>
+    </U>
+    <U>
+      <V n="action" t="set_state">
+        <U n="set_state">
+          <T n="prepare_state">98745<!--ObjectStateValue: GenericFX_On--></T>
+        </U>
+      </V>
+      <U n="number_of_changes">
+        <T n="lower_bound">8</T>
+        <T n="upper_bound">8</T>
+      </U>
+      <L n="tests">
+        <L>
+          <V t="object_definition">
+            <U n="object_definition">
+              <V n="item" t="actual_item">
+                <U n="actual_item">
+                  <L n="items_to_check">
+                    <T>419187</T>
+                  </L>
+                </U>
+              </V>
+            </U>
+          </V>
+        </L>
+      </L>
+    </U>
+  </L>
+  <L n="situation_shifts" />
+  <V n="tested_spawn_point_override" t="enabled">
+    <U n="enabled">
+      <L n="tested_list">
+        <U>
+          <U n="item">
+            <E n="spawn_tag">Spawn_VisitorArrival</E>
+          </U>
+          <L n="test">
+            <L>
+              <V t="sim_info">
+                <U n="sim_info">
+                  <V n="species" t="specified">
+                    <U n="specified">
+                      <L n="species">
+                        <E>HORSE</E>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </V>
+              <V t="zone">
+                <U n="zone">
+                  <U n="zone_tests">
+                    <V n="is_apartment" t="Is_or_is_not_apartment_zone" />
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+</I>

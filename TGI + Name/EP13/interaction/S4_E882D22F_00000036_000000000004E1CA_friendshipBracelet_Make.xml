@@ -1,0 +1,556 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="friendshipBracelet_Make" s="319946">
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <T n="allow_from_sim_inventory">True</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="list_reference">
+          <T n="list_reference">40705<!--ExitConditionList: ExitConditionList_MotivesNearFail--></T>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="time_based">
+                <U n="time_based">
+                  <T n="max_time">20</T>
+                  <T n="min_time">15</T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+      </L>
+      <V n="content" t="looping_content">
+        <U n="looping_content">
+          <U n="animation_ref">
+            <T n="factory">321046<!--AnimationElement: craftGeneric_Loop--></T>
+            <U n="overrides">
+              <V n="balloons" t="enabled">
+                <L n="enabled">
+                  <U>
+                    <L n="balloon_choices">
+                      <U>
+                        <V n="item" t="balloon_icon">
+                          <U n="balloon_icon">
+                            <V n="icon" t="resource_key">
+                              <U n="resource_key">
+                                <T n="key" p="InEP13\UI\Icons\Headlines\headline_ThinkingAboutBracelet.png">2f7d0004:00000000:69037c97ca0ecd07</T>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </U>
+                    </L>
+                    <T n="balloon_delay">2</T>
+                    <L n="balloon_target">
+                      <E>Actor</E>
+                    </L>
+                  </U>
+                </L>
+              </V>
+            </U>
+          </U>
+        </U>
+      </V>
+      <V n="periodic_stat_change" t="enabled">
+        <U n="enabled">
+          <L n="operations">
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="amount">0.75</T>
+                <T n="stat">16655<!--Commodity: motive_Fun--></T>
+              </U>
+            </V>
+            <V t="dynamic_skill">
+              <U n="dynamic_skill">
+                <U n="skill_loot_data_override">
+                  <E n="effectiveness">Tiny</E>
+                  <T n="stat">16718<!--Skill: statistic_Skill_Child_Creativity--></T>
+                </U>
+                <L n="tests">
+                  <L>
+                    <V t="sim_info">
+                      <U n="sim_info">
+                        <V n="ages" t="specified">
+                          <L n="specified">
+                            <E>CHILD</E>
+                          </L>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </V>
+            <V t="dynamic_skill">
+              <U n="dynamic_skill">
+                <U n="skill_loot_data_override">
+                  <E n="effectiveness">Tiny</E>
+                  <T n="stat">16704<!--Skill: statistic_Skill_AdultMajor_Handiness--></T>
+                </U>
+                <L n="tests">
+                  <L>
+                    <V t="sim_info">
+                      <U n="sim_info">
+                        <V n="ages" t="specified" />
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </V>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <V n="basic_reserve_object" t="disabled" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xA5E78A23<!--String: "Make Friendship Bracelet"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+    <E>Interaction_Burnout_Creative_IncreaseSmall</E>
+    <E>Interaction_CreativeCraft</E>
+    <E>Interaction_Skill_Child_Creativity</E>
+    <E>Interaction_Skill_Handiness</E>
+  </L>
+  <V n="outcome" t="dual">
+    <U n="dual">
+      <U n="failure_actions">
+        <V n="animation_ref" t="enabled">
+          <U n="enabled">
+            <T n="factory">321051<!--AnimationElement: craftGeneric_Failure--></T>
+            <U n="overrides">
+              <V n="balloons" t="enabled">
+                <L n="enabled">
+                  <U>
+                    <L n="balloon_choices">
+                      <U>
+                        <V n="item" t="balloon_icon">
+                          <U n="balloon_icon">
+                            <V n="icon" t="resource_key">
+                              <U n="resource_key">
+                                <T n="key" p="InGame\UI\Icons\Headlines\Final\icon_headline_tvtrashcan.png">2f7d0004:00000000:d31dfa55d2f2aade</T>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </U>
+                    </L>
+                    <T n="balloon_delay">1</T>
+                    <L n="balloon_target">
+                      <E>Actor</E>
+                    </L>
+                  </U>
+                </L>
+              </V>
+            </U>
+          </U>
+        </V>
+        <L n="loot_list">
+          <T>320682<!--LootActions: loot_FriendshipBracelet_MakePickedObject_Failure--></T>
+        </L>
+      </U>
+      <U n="success_actions">
+        <V n="animation_ref" t="enabled">
+          <U n="enabled">
+            <T n="factory">321050<!--AnimationElement: craftGeneric_Success--></T>
+          </U>
+        </V>
+        <L n="loot_list">
+          <T>320059<!--LootActions: loot_FriendshipBracelet_MakePickedObject--></T>
+        </L>
+      </U>
+      <U n="success_chance">
+        <T n="base_chance">60</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">1.2</T>
+            <L n="tests">
+              <L>
+                <V t="skill_test">
+                  <U n="skill_test">
+                    <T n="skill">16718<!--Skill: statistic_Skill_Child_Creativity--></T>
+                    <V n="skill_range" t="interval">
+                      <U n="interval">
+                        <U n="skill_interval">
+                          <T n="lower_bound">2</T>
+                          <T n="upper_bound">2</T>
+                        </U>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+                <V t="sim_info">
+                  <U n="sim_info">
+                    <V n="ages" t="specified">
+                      <L n="specified">
+                        <E>CHILD</E>
+                      </L>
+                    </V>
+                  </U>
+                </V>
+              </L>
+              <L>
+                <V t="skill_test">
+                  <U n="skill_test">
+                    <T n="skill">16704<!--Skill: statistic_Skill_AdultMajor_Handiness--></T>
+                    <V n="skill_range" t="interval">
+                      <U n="interval">
+                        <U n="skill_interval">
+                          <T n="lower_bound">2</T>
+                          <T n="upper_bound">2</T>
+                        </U>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+                <V t="sim_info">
+                  <U n="sim_info">
+                    <V n="ages" t="specified" />
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">1.3</T>
+            <L n="tests">
+              <L>
+                <V t="skill_test">
+                  <U n="skill_test">
+                    <T n="skill">16718<!--Skill: statistic_Skill_Child_Creativity--></T>
+                    <V n="skill_range" t="interval">
+                      <U n="interval">
+                        <U n="skill_interval">
+                          <T n="lower_bound">3</T>
+                          <T n="upper_bound">4</T>
+                        </U>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+                <V t="sim_info">
+                  <U n="sim_info">
+                    <V n="ages" t="specified">
+                      <L n="specified">
+                        <E>CHILD</E>
+                      </L>
+                    </V>
+                  </U>
+                </V>
+              </L>
+              <L>
+                <V t="skill_test">
+                  <U n="skill_test">
+                    <T n="skill">16704<!--Skill: statistic_Skill_AdultMajor_Handiness--></T>
+                    <V n="skill_range" t="interval">
+                      <U n="interval">
+                        <U n="skill_interval">
+                          <T n="lower_bound">3</T>
+                          <T n="upper_bound">4</T>
+                        </U>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+                <V t="sim_info">
+                  <U n="sim_info">
+                    <V n="ages" t="specified" />
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">1.4</T>
+            <L n="tests">
+              <L>
+                <V t="skill_test">
+                  <U n="skill_test">
+                    <T n="skill">16718<!--Skill: statistic_Skill_Child_Creativity--></T>
+                    <V n="skill_range" t="interval">
+                      <U n="interval">
+                        <U n="skill_interval">
+                          <T n="lower_bound">5</T>
+                          <T n="upper_bound">6</T>
+                        </U>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+                <V t="sim_info">
+                  <U n="sim_info">
+                    <V n="ages" t="specified">
+                      <L n="specified">
+                        <E>CHILD</E>
+                      </L>
+                    </V>
+                  </U>
+                </V>
+              </L>
+              <L>
+                <V t="skill_test">
+                  <U n="skill_test">
+                    <T n="skill">16704<!--Skill: statistic_Skill_AdultMajor_Handiness--></T>
+                    <V n="skill_range" t="interval">
+                      <U n="interval">
+                        <U n="skill_interval">
+                          <T n="lower_bound">5</T>
+                          <T n="upper_bound">6</T>
+                        </U>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+                <V t="sim_info">
+                  <U n="sim_info">
+                    <V n="ages" t="specified">
+                      <L n="specified">
+                        <E>TEEN</E>
+                        <E>YOUNGADULT</E>
+                        <E>ADULT</E>
+                        <E>ELDER</E>
+                      </L>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">1.5</T>
+            <L n="tests">
+              <L>
+                <V t="skill_test">
+                  <U n="skill_test">
+                    <T n="skill">16718<!--Skill: statistic_Skill_Child_Creativity--></T>
+                    <V n="skill_range" t="interval">
+                      <U n="interval">
+                        <U n="skill_interval">
+                          <T n="lower_bound">7</T>
+                          <T n="upper_bound">8</T>
+                        </U>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+                <V t="sim_info">
+                  <U n="sim_info">
+                    <V n="ages" t="specified">
+                      <L n="specified">
+                        <E>CHILD</E>
+                      </L>
+                    </V>
+                  </U>
+                </V>
+              </L>
+              <L>
+                <V t="skill_test">
+                  <U n="skill_test">
+                    <T n="skill">16704<!--Skill: statistic_Skill_AdultMajor_Handiness--></T>
+                    <V n="skill_range" t="interval">
+                      <U n="interval">
+                        <U n="skill_interval">
+                          <T n="lower_bound">7</T>
+                          <T n="upper_bound">8</T>
+                        </U>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+                <V t="sim_info">
+                  <U n="sim_info">
+                    <V n="ages" t="specified">
+                      <L n="specified">
+                        <E>TEEN</E>
+                        <E>YOUNGADULT</E>
+                        <E>ADULT</E>
+                        <E>ELDER</E>
+                      </L>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">2</T>
+            <L n="tests">
+              <L>
+                <V t="skill_test">
+                  <U n="skill_test">
+                    <T n="skill">16718<!--Skill: statistic_Skill_Child_Creativity--></T>
+                    <V n="skill_range" t="interval">
+                      <U n="interval">
+                        <U n="skill_interval">
+                          <T n="lower_bound">9</T>
+                        </U>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+                <V t="sim_info">
+                  <U n="sim_info">
+                    <V n="ages" t="specified">
+                      <L n="specified">
+                        <E>CHILD</E>
+                      </L>
+                    </V>
+                  </U>
+                </V>
+              </L>
+              <L>
+                <V t="skill_test">
+                  <U n="skill_test">
+                    <T n="skill">16704<!--Skill: statistic_Skill_AdultMajor_Handiness--></T>
+                    <V n="skill_range" t="interval">
+                      <U n="interval">
+                        <U n="skill_interval">
+                          <T n="lower_bound">9</T>
+                        </U>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+                <V t="sim_info">
+                  <U n="sim_info">
+                    <V n="ages" t="specified">
+                      <L n="specified">
+                        <E>TEEN</E>
+                        <E>YOUNGADULT</E>
+                        <E>ADULT</E>
+                        <E>ELDER</E>
+                      </L>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">1.2</T>
+            <L n="tests">
+              <L>
+                <V t="skill_test">
+                  <U n="skill_test">
+                    <T n="skill">239521<!--Skill: statistic_Skill_AdultMajor_Knitting--></T>
+                    <V n="skill_range" t="interval">
+                      <U n="interval">
+                        <U n="skill_interval">
+                          <T n="lower_bound">5</T>
+                          <T n="upper_bound">6</T>
+                        </U>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">1.4</T>
+            <L n="tests">
+              <L>
+                <V t="skill_test">
+                  <U n="skill_test">
+                    <T n="skill">239521<!--Skill: statistic_Skill_AdultMajor_Knitting--></T>
+                    <V n="skill_range" t="interval">
+                      <U n="interval">
+                        <U n="skill_interval">
+                          <T n="lower_bound">7</T>
+                          <T n="upper_bound">8</T>
+                        </U>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">1.6</T>
+            <L n="tests">
+              <L>
+                <V t="skill_test">
+                  <U n="skill_test">
+                    <T n="skill">239521<!--Skill: statistic_Skill_AdultMajor_Knitting--></T>
+                    <V n="skill_range" t="interval">
+                      <U n="interval">
+                        <U n="skill_interval">
+                          <T n="lower_bound">9</T>
+                        </U>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+  </V>
+  <U n="posture_preferences">
+    <T n="apply_posture_costs">True</T>
+  </U>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all" />
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_TeleportStone_RemoveFlagBuffs" s="444449">
+  <L n="loot_actions">
+    <V t="buff_removal">
+      <U n="buff_removal">
+        <L n="buffs_to_remove">
+          <T>444399<!--Buff: buff_TeleportStone_TravelWith_FlagBuff_Glade--></T>
+          <T>444400<!--Buff: buff_TeleportStone_TravelWith_FlagBuff_Grotto--></T>
+          <T>444402<!--Buff: buff_TeleportStone_TravelWith_FlagBuff_MagicRealm--></T>
+          <T>444403<!--Buff: buff_TeleportStone_TravelWith_FlagBuff_MountainPeak--></T>
+          <T>444401<!--Buff: buff_TeleportStone_TravelWith_FlagBuff_Sixam--></T>
+        </L>
+      </U>
+    </V>
+    <V t="destroy_objects_from_inventory">
+      <U n="destroy_objects_from_inventory">
+        <V n="count" t="number">
+          <T n="number">1</T>
+        </V>
+        <L n="object_tests">
+          <L>
+            <V t="object_definition_criteria">
+              <U n="object_definition_criteria">
+                <V n="identity_test" t="definition_id">
+                  <U n="definition_id">
+                    <T n="actual_object">465683</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="destroy_objects_from_inventory">
+      <U n="destroy_objects_from_inventory">
+        <V n="count" t="number">
+          <T n="number">1</T>
+        </V>
+        <L n="object_tests">
+          <L>
+            <V t="object_definition_criteria">
+              <U n="object_definition_criteria">
+                <V n="identity_test" t="definition_id">
+                  <U n="definition_id">
+                    <T n="actual_object">465683</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="situation_job_test">
+              <U n="situation_job_test">
+                <L n="situation_jobs">
+                  <T>444349<!--SituationJob: job_TeleportStone_TravelWith_Host--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

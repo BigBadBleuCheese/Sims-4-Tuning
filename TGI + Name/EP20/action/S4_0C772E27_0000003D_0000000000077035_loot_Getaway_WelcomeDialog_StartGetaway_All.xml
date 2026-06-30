@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Getaway_WelcomeDialog_StartGetaway_All" s="487477">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <U n="chance">
+          <T n="base_chance">100</T>
+          <L n="multipliers">
+            <U>
+              <T n="multiplier">0</T>
+              <L n="tests">
+                <L>
+                  <V t="travel_group">
+                    <U n="travel_group">
+                      <T n="include_household_travel_group">True</T>
+                      <E n="participant">ActiveHousehold</E>
+                      <V n="test_type" t="is_getaway_schedule">
+                        <U n="is_getaway_schedule">
+                          <T n="custom_schedule_preset">455474<!--CustomSchedulePreset: customSchedulePreset_PremadeGetaways_EP20World_OutdoorKidsCamp--></T>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+            <U>
+              <T n="multiplier">0</T>
+              <L n="tests">
+                <L>
+                  <V t="travel_group">
+                    <U n="travel_group">
+                      <T n="include_household_travel_group">True</T>
+                      <E n="participant">ActiveHousehold</E>
+                      <V n="test_type" t="is_getaway_schedule">
+                        <U n="is_getaway_schedule">
+                          <T n="custom_schedule_preset">455475<!--CustomSchedulePreset: customSchedulePreset_PremadeGetaways_EP20World_FitnessRetreat--></T>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+            <U>
+              <T n="multiplier">0</T>
+              <L n="tests">
+                <L>
+                  <V t="travel_group">
+                    <U n="travel_group">
+                      <T n="include_household_travel_group">True</T>
+                      <E n="participant">ActiveHousehold</E>
+                      <V n="test_type" t="is_getaway_schedule">
+                        <U n="is_getaway_schedule">
+                          <T n="custom_schedule_preset">455476<!--CustomSchedulePreset: customSchedulePreset_PremadeGetaways_EP20World_RomanticCompetition--></T>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+          </L>
+        </U>
+        <V n="dialog" t="dialog_ok">
+          <U n="dialog_ok">
+            <E n="dialog_bg_style">BG_CELEBRATION_LARGE</E>
+            <E n="dialog_style">LARGE_ICON_TEXT_HORIZONTAL</E>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InEP20\UI\Icons\Dialog\Getaway_General.png">2f7d0004:00000000:816e5519104798a0</T>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x2CDDCD9A<!--String: "A Getaway can be as simple as enjoying a change of pace and staying away from home. The first thing to do will be to get your bearings—take a look at your surroundings and take a look at your Getaway's Schedule. For as long as your Getaway lasts, this will be your home! So explore, get comfortable, claim a bed, and start making friends!\n\nA Getaway has a Schedule, which is an itinerary filled with Activities—these Activities are things that Sims will care about doing, along with their other priorities and wants. The Schedule gives you control of the full Getaway experience. Changing Activities will change what you see happening at the Getaway, and changing Roles will change what kinds of Sims show up, how they behave, and what outfits they wear. As the Getaway unfolds, you can sit back and enjoy the show—or be the leader of the experience and stir things up however you like.\n\nAs Sims do different kinds of Activities in a Getaway, they will change, and they might develop new traits, special bonds, or earn unique rewards. Many kinds of adventure and rewards await your Sims—whether it's an exploring the outdoors, competing with other talented Sims, or just kicking their feet up, there's no wrong way to get away.\n\nIf you'd like to learn even more about all the cool things you do with Getaway Schedules and Roles, or perhaps learn about Getaway Rules and how they can transform your Getaway, check out these Lessons below!"--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x7C0E16FF<!--String: "Introduction to Getaways"--></T>
+            </V>
+            <L n="ui_responses">
+              <U>
+                <T n="text">0x555E5DCA<!--String: "View Getaway Lessons"--></T>
+                <V n="tutorial_id" t="enabled">
+                  <T n="enabled">481192<!--Tutorial: tutorial_EP20_AdventureAwaits_Getaways--></T>
+                </V>
+                <E n="ui_request">SHOW_LESSONS</E>
+              </U>
+            </L>
+          </U>
+        </V>
+        <E n="subject">ActiveHousehold</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="is_active_sim" t="enabled" />
+                <E n="who">Actor</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="dialog_ok">
+          <U n="dialog_ok">
+            <E n="dialog_bg_style">BG_CELEBRATION_LARGE</E>
+            <E n="dialog_style">LARGE_ICON_TEXT_HORIZONTAL</E>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InEP20\UI\Icons\Dialog\Getaway_PremadeCamp.png">2f7d0004:00000000:aa9f0c8b4ddd9b3b</T>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x44983FFB<!--String: "Welcome to Outdoor Kids Camp! A place to build friendships, new skills, and unforgettable memories, plus plenty of outdoor activities and splashy good times! Each day brings a mix of main camp activities and role activities, which can be viewed or adjusted anytime from the top-left panel in Live Mode. Rest assured, the Camp Director and Camp Counselors are here to keep things running smoothly, guide the fun, and look after those mischievous little campers. Follow the plan or break away for an adventure, the outcome still brings special rewards based on how the Getaway unfolds!\n\nIf you want to learn more about everything Getaways has to offer, check out the lessons by selecting below!"--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0xB3D05618<!--String: "Information about Camp!"--></T>
+            </V>
+            <L n="ui_responses">
+              <U>
+                <T n="text">0x555E5DCA<!--String: "View Getaway Lessons"--></T>
+                <V n="tutorial_id" t="enabled">
+                  <T n="enabled">481192<!--Tutorial: tutorial_EP20_AdventureAwaits_Getaways--></T>
+                </V>
+                <E n="ui_request">SHOW_LESSONS</E>
+              </U>
+            </L>
+          </U>
+        </V>
+        <E n="subject">ActiveHousehold</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="is_active_sim" t="enabled" />
+                <E n="who">Actor</E>
+              </U>
+            </V>
+          </L>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="travel_group">
+              <U n="travel_group">
+                <E n="participant">ActiveHousehold</E>
+                <V n="test_type" t="is_getaway_schedule">
+                  <U n="is_getaway_schedule">
+                    <T n="custom_schedule_preset">455474<!--CustomSchedulePreset: customSchedulePreset_PremadeGetaways_EP20World_OutdoorKidsCamp--></T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="dialog_ok">
+          <U n="dialog_ok">
+            <E n="dialog_bg_style">BG_CELEBRATION_LARGE</E>
+            <E n="dialog_style">LARGE_ICON_TEXT_HORIZONTAL</E>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InEP20\UI\Icons\Dialog\Getaway_PremadeFitness.png">2f7d0004:00000000:78d1c5ee50c23b4c</T>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x93E0DA8<!--String: "Welcome to Fitness Retreat, where muscles meet mindfulness! Sims will push their limits with heart-pumping workouts, dive into splashy outdoor fun, and recharge with moments of relaxation in between. Each day brings a mix of main activities and role activities, which can be viewed or adjusted anytime from the top-left panel in Live Mode. Switch things up, add new Roles, or remix the daily schedule to keep it fresh!\n\nIf you want to learn more about everything Getaways has to offer, check out the lessons by selecting below!"--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x652EA0F6<!--String: "Introduction to Fitness Retreat!"--></T>
+            </V>
+            <L n="ui_responses">
+              <U>
+                <T n="text">0x555E5DCA<!--String: "View Getaway Lessons"--></T>
+                <V n="tutorial_id" t="enabled">
+                  <T n="enabled">481192<!--Tutorial: tutorial_EP20_AdventureAwaits_Getaways--></T>
+                </V>
+                <E n="ui_request">SHOW_LESSONS</E>
+              </U>
+            </L>
+          </U>
+        </V>
+        <E n="subject">ActiveHousehold</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="is_active_sim" t="enabled" />
+                <E n="who">Actor</E>
+              </U>
+            </V>
+          </L>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="travel_group">
+              <U n="travel_group">
+                <T n="include_household_travel_group">True</T>
+                <E n="participant">ActiveHousehold</E>
+                <V n="test_type" t="is_getaway_schedule">
+                  <U n="is_getaway_schedule">
+                    <T n="custom_schedule_preset">455475<!--CustomSchedulePreset: customSchedulePreset_PremadeGetaways_EP20World_FitnessRetreat--></T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="dialog_ok">
+          <U n="dialog_ok">
+            <E n="dialog_bg_style">BG_CELEBRATION_LARGE</E>
+            <E n="dialog_style">LARGE_ICON_TEXT_HORIZONTAL</E>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InEP20\UI\Icons\Dialog\Getaway_PremadeRomantic.png">2f7d0004:00000000:a6943da548c94931</T>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xE13D71CA<!--String: "Love is in the air...along with a few surprises! Romantic Getaway promises sparks, chemistry, and maybe even a hot tub rendezvous, but with Romantic Elimination active, one Sim will be packing up at 11 AM each day. To stay in the game, Sims will need to turn on the charm and keep those romantic connections alive. Each day is filled with a mix of main activities and role activities, which can be viewed or adjusted anytime from the top-left panel in Live Mode. Change things up by editing the schedule or add new Sims to keep the drama spicy. And don't forget! The Romance Hosts will be around to cook, mingle, and stir the pot. After all, it's their house.\n\nIf you want to learn more about everything Getaways has to offer, check out the lessons by selecting below!"--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x2A3A624E<!--String: "Introduction to Romantic Competition!"--></T>
+            </V>
+            <L n="ui_responses">
+              <U>
+                <T n="text">0x555E5DCA<!--String: "View Getaway Lessons"--></T>
+                <V n="tutorial_id" t="enabled">
+                  <T n="enabled">481192<!--Tutorial: tutorial_EP20_AdventureAwaits_Getaways--></T>
+                </V>
+                <E n="ui_request">SHOW_LESSONS</E>
+              </U>
+            </L>
+          </U>
+        </V>
+        <E n="subject">ActiveHousehold</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="is_active_sim" t="enabled" />
+                <E n="who">Actor</E>
+              </U>
+            </V>
+          </L>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="travel_group">
+              <U n="travel_group">
+                <T n="include_household_travel_group">True</T>
+                <E n="participant">ActiveHousehold</E>
+                <V n="test_type" t="is_getaway_schedule">
+                  <U n="is_getaway_schedule">
+                    <T n="custom_schedule_preset">455476<!--CustomSchedulePreset: customSchedulePreset_PremadeGetaways_EP20World_RomanticCompetition--></T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

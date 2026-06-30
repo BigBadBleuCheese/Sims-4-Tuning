@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SimPickerInteraction" i="interaction" m="interactions.base.picker_interaction" n="triviaBox_wooWho_playWith_Picker" s="360124">
+  <V n="_saveable" t="disabled" />
+  <L n="actor_continuation">
+    <U>
+      <T n="affordance">382733<!--SuperInteraction: triviaBox_wooWho_gameSetup_wait--></T>
+    </U>
+  </L>
+  <L n="basic_extras">
+    <V t="state_change">
+      <U n="state_change">
+        <V n="new_value" t="single_value">
+          <U n="single_value">
+            <T n="new_value">382730<!--ObjectStateValue: triviaBox_thumbsUp_wooWho_gameState_gameSetup--></T>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <V n="cell_enabled_tests" t="enabled">
+    <L n="enabled">
+      <L>
+        <V t="buff">
+          <U n="buff">
+            <L n="blacklist">
+              <T>366016<!--Buff: buff_triviaBox_thumbsUp_tense--></T>
+            </L>
+            <E n="subject">PickedSim</E>
+            <V n="tooltip" t="enabled">
+              <T n="enabled">0x7D0C81A7<!--String: "{2.SimFirstName} is too tense from not "winning" Thumbs-Up! the last time {2.SimPronounSubjective} played and is not interested in Who's Up Party Games right now."--></T>
+            </V>
+          </U>
+        </V>
+        <V t="distance">
+          <U n="distance">
+            <U n="distance_threshold">
+              <E n="comparison">LESS_OR_EQUAL</E>
+              <T n="value">10</T>
+            </U>
+            <E n="subject">PickedSim</E>
+            <V n="target" t="participant_type">
+              <U n="participant_type">
+                <E n="participant">Object</E>
+              </U>
+            </V>
+            <V n="tooltip" t="enabled">
+              <T n="enabled">0x20013AAA<!--String: "{2.SimFirstName} is not close enough to play. Call them over!"--></T>
+            </V>
+          </U>
+        </V>
+        <V t="test_set_reference">
+          <T n="test_set_reference">394972<!--TestSetInstance: testSetInstance_ImportantJobTest_PickedSim--></T>
+        </V>
+      </L>
+    </L>
+  </V>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x9EF1EABB<!--String: "Play Woo-Who!? With"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">PickedSim</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T n="include_uninstantiated_sims">False</T>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <L n="picked_continuation">
+    <U>
+      <T n="affordance">382733<!--SuperInteraction: triviaBox_wooWho_gameSetup_wait--></T>
+    </U>
+  </L>
+  <V n="picker_dialog" t="sim_picker">
+    <U n="sim_picker">
+      <L n="custom_filters">
+        <V t="reference">
+          <T n="reference">499295<!--CustomSimFilter: customSimFilter_NobleCareer--></T>
+        </V>
+      </L>
+      <V n="max_selectable" t="static_count">
+        <U n="static_count">
+          <T n="number_selectable">5</T>
+        </U>
+      </V>
+      <V n="text" t="enabled">
+        <V n="enabled" t="single">
+          <T n="single">0xDC2552A9<!--String: "Invite up to 5 other Sims to play."--></T>
+        </V>
+      </V>
+    </U>
+  </V>
+  <V n="pie_menu_test_tooltip" t="enabled">
+    <T n="enabled">0xDCE83B44<!--String: "{0.SimFirstName} can only invite friends of the appropriate age group that are not busy. Make more friends or wait for someone to be available."--></T>
+  </V>
+  <U n="posture_preferences">
+    <T n="prefer_clicked_parts">False</T>
+  </U>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <V n="sim_filter" t="sim_filter_selected">
+    <T n="sim_filter_selected">189739<!--TunableSimFilter: filter_SimPicker_HasMet_TYAE--></T>
+  </V>
+  <L n="sim_tests">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>10094<!--Buff: buff_Sim_IsSleeping--></T>
+            <T>275549<!--Buff: buff_Sim_IsSleeping_Hidden--></T>
+          </L>
+          <E n="subject">PickedSim</E>
+        </U>
+      </V>
+      <V t="test_set_reference">
+        <T n="test_set_reference">107053<!--TestSetInstance: testSetInstance_TeensToTeensANDAdultsToAdults_PickedSim--></T>
+      </V>
+    </L>
+  </L>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>366016<!--Buff: buff_triviaBox_thumbsUp_tense--></T>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x7D0C81A7<!--String: "{2.SimFirstName} is too tense from not "winning" Thumbs-Up! the last time {2.SimPronounSubjective} played and is not interested in Who's Up Party Games right now."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x4EE358AA<!--String: "{0.SimFirstName} is not old enough to play this game."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="user_running_interaction">
+      <U n="user_running_interaction">
+        <L n="affordances">
+          <T>360125<!--SocialSuperInteraction: triviaBox_wooWho_playing--></T>
+          <T>359332<!--SocialSuperInteraction: triviaBox_thumbsUp_playing--></T>
+          <T>382733<!--SuperInteraction: triviaBox_wooWho_gameSetup_wait--></T>
+          <T>383170<!--SuperInteraction: triviaBox_thumbsUp_gameSetup_wait--></T>
+        </L>
+        <T n="test_for_not_running">True</T>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x90282CEE<!--String: "That Who's Up Party Games is in use."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+</I>

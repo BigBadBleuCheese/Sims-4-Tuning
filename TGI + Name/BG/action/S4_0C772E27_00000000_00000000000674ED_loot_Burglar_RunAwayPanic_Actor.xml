@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Burglar_RunAwayPanic_Actor" s="423149">
+  <L n="loot_actions">
+    <V t="reaction">
+      <U n="reaction">
+        <V n="si_reaction" t="enabled">
+          <U n="enabled">
+            <T n="affordance">443956<!--NPCLeaveLotInteraction: NPCLeaveLot_Burglar_Panic--></T>
+            <E n="affordance_priority">Critical</E>
+            <V n="affordance_target" t="disabled" />
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="event">
+      <U n="event">
+        <E n="test_event">event_BurglarReturnObjects</E>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InGame\UI\Icons\Notifications\notification_BurglarScaredOff.png">2f7d0004:00000000:1930ed22893de3ad</T>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xBFFFC74B<!--String: "The burglar was successfully scared off—and won't be seen again anytime soon! Your lot is safe and sound."--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x4D7A6BB9<!--String: "Burglar Scared Off!"--></T>
+            </V>
+            <V n="tns_suppression_group" t="enabled">
+              <E n="enabled">Burglar_ScaredOff</E>
+            </V>
+          </U>
+        </V>
+        <E n="subject">ActiveHousehold</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="is_active_sim" t="enabled" />
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="situation_job_test">
+        <U n="situation_job_test">
+          <L n="situation_jobs">
+            <T>421825<!--SituationJob: job_Burglar--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

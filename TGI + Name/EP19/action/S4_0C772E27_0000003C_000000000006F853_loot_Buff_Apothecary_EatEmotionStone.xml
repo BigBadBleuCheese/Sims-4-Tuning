@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Buff_Apothecary_EatEmotionStone" s="456787">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0xE1E0CA6B<!--String: "(From Eating an Emotion Stone)"--></T>
+          </V>
+          <T n="buff_type">456788<!--Buff: buff_Apothecary_EatEmotionStone--></T>
+        </U>
+      </U>
+    </V>
+    <V t="destroy_objects_from_inventory">
+      <U n="destroy_objects_from_inventory">
+        <V n="count" t="number" />
+        <L n="object_tests">
+          <L>
+            <V t="object_criteria">
+              <U n="object_criteria">
+                <V n="identity_test" t="tags">
+                  <U n="tags">
+                    <L n="tag_set">
+                      <E>Func_EmotionStone</E>
+                    </L>
+                  </U>
+                </V>
+                <V n="subject_specific_tests" t="single_object" />
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">100</T>
+          <T n="stat">420035<!--Commodity: commodity_Motive_FairyOccult_EmotionalAppetite--></T>
+        </U>
+      </V>
+    </V>
+  </L>
+</I>

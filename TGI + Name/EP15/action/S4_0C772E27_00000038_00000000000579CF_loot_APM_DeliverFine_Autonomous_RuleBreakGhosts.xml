@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_APM_DeliverFine_Autonomous_RuleBreakGhosts" s="358863">
+  <L n="loot_actions">
+    <V t="payment_loot">
+      <U n="payment_loot">
+        <V n="payment" t="literal">
+          <U n="literal">
+            <V n="payment_cost" t="amount">
+              <U n="amount">
+                <T n="amount">1000</T>
+              </U>
+            </V>
+          </U>
+        </V>
+        <E n="subject">ActiveHousehold</E>
+      </U>
+    </V>
+    <V t="set_business_rule_compliance_state">
+      <U n="set_business_rule_compliance_state">
+        <V n="rule" t="rule_reference">
+          <U n="rule_reference">
+            <T n="reference">348397<!--BusinessRule: Rule_PMI_NoGhosts--></T>
+          </U>
+        </V>
+        <E n="subject">CurrentZoneId</E>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InEP15\UI\Icons\Notification\Notification_NoGhosts.png">2f7d0004:00000000:51f8ff8ef80d517a</T>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x39BF8D84<!--String: "It doesn't matter that this Household has decided to ignore their Property Owner. They are in violation of the No Ghosts Unit Rule, and during this visit the Property owner decided to deliver a fine!"--></T>
+            </V>
+          </U>
+        </V>
+        <E n="subject">LotOwnersOrRenters</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="is_active_sim" t="enabled" />
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

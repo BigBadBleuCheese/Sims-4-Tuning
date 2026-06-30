@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_AnimalObjects_GoMissing_Warn_GoatSheep" s="333826">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="audio_sting" t="enabled">
+              <U n="enabled">
+                <T p="InEP14\Audio\music\bumpers\bumper_ep14_animal_missing.propx" n="audio">39b2aa4a:00000000:213228632fb9c4f7</T>
+                <T n="immediate_audio">True</T>
+              </U>
+            </V>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant" />
+            </V>
+            <V n="secondary_icon" t="disabled" />
+            <V n="text" t="single">
+              <T n="single">0x39F5D8C0<!--String: "{1.ObjectName} is thinking of leaving soon due to inadequate care. Ensure there is enough <b>food, cleaning, and attention</b>.\n\n<b>Tips:</b>\n•<b>Hire a Ranch Hand</b> via the Phone.\n•Buy an <b>Animal Feeder</b> in Build Mode.\n•Place some <b>Prairie Grass</b> in Build Mode."--></T>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="participant_type">
+                    <U n="participant_type">
+                      <V n="objects" t="from_participant">
+                        <U n="from_participant">
+                          <E n="participant">ActiveHousehold</E>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                  <V t="participant_type" />
+                </L>
+              </U>
+            </V>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="state">
+              <U n="state">
+                <T n="value">258077<!--ObjectStateValue: animalObjects_Generic_Happiness_Sad--></T>
+                <E n="who">Actor</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="state_change">
+      <U n="state_change">
+        <T n="state_value">267880<!--CommodityBasedObjectStateValue: animalObjects_LivestockPen_GoMissing_Start--></T>
+        <L n="tests">
+          <L>
+            <V t="state">
+              <U n="state">
+                <E n="operator">NOTEQUAL</E>
+                <T n="value">258077<!--ObjectStateValue: animalObjects_Generic_Happiness_Sad--></T>
+                <E n="who">Actor</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

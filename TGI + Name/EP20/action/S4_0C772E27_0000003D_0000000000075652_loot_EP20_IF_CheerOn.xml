@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_EP20_IF_CheerOn" s="480850">
+  <L n="loot_actions">
+    <V t="reaction">
+      <U n="reaction">
+        <V n="si_reaction" t="enabled">
+          <U n="enabled">
+            <T n="affordance">480849<!--AggregateSuperInteraction: aggregateSI_EP20_IF_CheerOn--></T>
+            <E n="affordance_priority">Low</E>
+            <V n="affordance_run_priority" t="enabled">
+              <E n="enabled">Low</E>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="reaction">
+      <U n="reaction">
+        <V n="si_reaction" t="enabled">
+          <U n="enabled">
+            <T n="affordance">480849<!--AggregateSuperInteraction: aggregateSI_EP20_IF_CheerOn--></T>
+            <E n="affordance_priority">Critical</E>
+            <V n="affordance_run_priority" t="enabled">
+              <E n="enabled">Critical</E>
+            </V>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="participant_running_interaction">
+              <U n="participant_running_interaction">
+                <L n="affordances">
+                  <T>13998<!--SocialSuperInteraction: sim_Chat--></T>
+                </L>
+                <T n="test_interaction_queue">True</T>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="participant_running_interaction">
+        <U n="participant_running_interaction">
+          <L n="affordances">
+            <T>480849<!--AggregateSuperInteraction: aggregateSI_EP20_IF_CheerOn--></T>
+            <T>462599<!--SuperInteraction: sI_EP20_IF_Cheer--></T>
+          </L>
+          <T n="test_for_not_running">True</T>
+        </U>
+      </V>
+      <V t="trait">
+        <U n="trait">
+          <L n="whitelist_traits">
+            <T>453528<!--Trait: trait_Hidden_EP20_IF--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

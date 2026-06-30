@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_NLS_OnboardingTNS" s="457311">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InEP19\UI\Icons\Notifications\notification_NaturalLiving.png">2f7d0004:00000000:2536b2f7ca3fe955</T>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant" />
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x5D580FC2<!--String: "{0.SimFirstName} has learned more about using {0.SimPronounPossessiveDependent} Natural Living Skill to care for {0.SimPronounPossessiveDependent} Needs naturally.\n\nNatural Living Skill offers all Sims aged Child or older a way to solve each of their Needs out in nature. View the Skill Lesson to learn more!"--></T>
+            </V>
+            <V n="tns_suppression_group" t="enabled">
+              <E n="enabled">Onboarding_NaturalLivingSkill</E>
+            </V>
+            <L n="ui_responses">
+              <U>
+                <T n="text">0xEABE5948<!--String: "View Lessons"--></T>
+                <V n="tutorial_id" t="enabled">
+                  <T n="enabled">448260<!--Tutorial: tutorial_EP19_NaturalLivingSkill--></T>
+                </V>
+                <E n="ui_request">SHOW_LESSONS</E>
+              </U>
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">468870<!--Buff: buff_NLS_OnboardingCooldown--></T>
+        </U>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>468870<!--Buff: buff_NLS_OnboardingCooldown--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

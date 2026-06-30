@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="sI_NobleCareer_PressConference_SpeechStart" s="502704">
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="buff_based">
+                <U n="buff_based">
+                  <T n="buff">502818<!--Buff: buff_NobleCareer_Hidden_SpeechCanStart--></T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="time_based">
+                <U n="time_based">
+                  <T n="min_time">30</T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="situation_based">
+                <U n="situation_based">
+                  <L n="situation_types">
+                    <T>480951<!--CustomStatesSituation: situation_NobleCareer_HoldPressConference--></T>
+                  </L>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_CANCEL</E>
+          </U>
+        </V>
+      </L>
+      <V n="content" t="looping_content">
+        <U n="looping_content">
+          <U n="animation_ref">
+            <T n="factory">8749<!--AnimationElement: PostureIdle_Stand--></T>
+          </U>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="broadcaster">
+      <U n="broadcaster">
+        <L n="broadcaster_types">
+          <U>
+            <T n="item">502837<!--Broadcaster: broadcaster_NobleCareer_ListenToSpeech_PreWatch--></T>
+          </U>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="canonical_animation" t="enabled">
+    <U n="enabled">
+      <T n="factory">480923<!--AnimationElement: anim_NobleCareer_GiveNobleSpeech--></T>
+    </U>
+  </V>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x95A5063D<!--String: "Give Noble Speech"--></T>
+  <V n="display_name_in_queue" t="enabled">
+    <T n="enabled">0xBBA0C5D3<!--String: "Waiting for Audience"--></T>
+  </V>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="continuation">
+          <U>
+            <T n="affordance">481024<!--MixerInteraction: mixer_NobleCareer_GiveNobleSpeech--></T>
+            <T n="si_affordance_override">480948<!--SuperInteraction: sI_NobleCareer_HoldPressConference_GiveNobleSpeech--></T>
+          </U>
+        </L>
+      </U>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T p="InEP21\UI\Icons\PieMenu\PieMenu_NobleCareer.png" n="key">2f7d0004:00000000:9b49aa0d1eb08413</T>
+      </U>
+    </V>
+  </V>
+  <L n="provided_affordances">
+    <U>
+      <T n="affordance">502819<!--SuperInteraction: sI_NobleCareer_PressConference_SpeechPreWatch--></T>
+    </U>
+  </L>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all" />
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <V n="test_disallow_while_running" t="enabled">
+    <U n="enabled">
+      <L n="affordances">
+        <T>480948<!--SuperInteraction: sI_NobleCareer_HoldPressConference_GiveNobleSpeech--></T>
+      </L>
+      <T n="test_self">True</T>
+    </U>
+  </V>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="situation_running_test">
+      <U n="situation_running_test">
+        <V n="situation_whitelist" t="enabled">
+          <L n="enabled">
+            <T>480951<!--CustomStatesSituation: situation_NobleCareer_HoldPressConference--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+    <V t="career_test">
+      <U n="career_test">
+        <V n="test_type" t="career_reference">
+          <U n="career_reference">
+            <V n="career" t="specific_career">
+              <T n="specific_career">466304<!--NobleCareer: career_Noble--></T>
+            </V>
+            <V n="user_level" t="enabled">
+              <U n="enabled">
+                <T n="lower_bound">4</T>
+              </U>
+            </V>
+          </U>
+        </V>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xCEFACDD0<!--String: "{0.SimFirstName} has to be Level 4 in the Noble Career to do this interaction."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

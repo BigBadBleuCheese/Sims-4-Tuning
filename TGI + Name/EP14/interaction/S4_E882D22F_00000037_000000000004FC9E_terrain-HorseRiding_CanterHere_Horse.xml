@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="GoHereSuperInteraction" i="interaction" m="objects.terrain" n="terrain-HorseRiding_CanterHere_Horse" s="326814">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="circle">
+            <U n="circle">
+              <T n="radius">2.25</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_icon" t="resource_key">
+    <U n="resource_key">
+      <T n="key" p="InGame\UI\Icons\InteractionQueue\IconQueueGoHere.png">2f7d0004:00000000:97d318ad9e4da2b3</T>
+    </U>
+  </V>
+  <T n="_multi_surface">False</T>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <V n="link_carried_sims" t="enabled" />
+    </U>
+  </V>
+  <L n="basic_liabilities">
+    <V t="remove_buff">
+      <U n="remove_buff">
+        <T n="buff_to_remove">326965<!--Buff: buff_HorseRiding_Walkstyle_Canter--></T>
+      </U>
+    </V>
+    <V t="remove_buff">
+      <U n="remove_buff">
+        <T n="buff_to_remove">331991<!--Buff: buff_HorseRiding_Walkstyle_Canter_LowSkill--></T>
+      </U>
+    </V>
+    <V t="remove_buff">
+      <U n="remove_buff">
+        <T n="buff_to_remove">331996<!--Buff: buff_HorseRiding_Walkstyle_Canter_LowSkill_BuckWild--></T>
+      </U>
+    </V>
+    <V t="remove_buff">
+      <U n="remove_buff">
+        <T n="buff_to_remove">345117<!--Buff: buff_HorseRiding_Walkstyle_Ghost_Canter--></T>
+      </U>
+    </V>
+    <V t="remove_buff">
+      <U n="remove_buff">
+        <T n="buff_to_remove">345118<!--Buff: buff_HorseRiding_Walkstyle_Ghost_Canter_LowSkill--></T>
+      </U>
+    </V>
+  </L>
+  <V n="canonical_animation" t="disabled" />
+  <T n="collapsible">True</T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xEE42FF33<!--String: "Canter Here"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T n="ignore_group_socials">False</T>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="none" />
+  <T n="pie_menu_priority">10</T>
+  <L n="rallyable" />
+  <V n="require_reins_for_formation" t="enabled">
+    <T n="enabled">314817<!--RoutingFormation: routingFormation_HorseRiding_Ride--></T>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_klobberers" t="enabled">
+    <V n="enabled" t="literal">
+      <U n="literal">
+        <V n="default_inclusion" t="exclude_all">
+          <U n="exclude_all">
+            <L n="include_affordances">
+              <T>182954<!--GoHereSuperInteraction: terrain-rakeLeaf--></T>
+              <T>326814<!--GoHereSuperInteraction: terrain-HorseRiding_CanterHere_Horse--></T>
+              <T>318879<!--GoHereSuperInteraction: terrain-HorseRiding_RideHere_Horse--></T>
+              <T>326813<!--GoHereSuperInteraction: terrain-HorseRiding_TrotHere_Horse--></T>
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="pick_info_test">
+      <U n="pick_info_test">
+        <V n="pick_type_test" t="pick_type">
+          <U n="pick_type">
+            <L n="whitelist">
+              <E>PICK_TERRAIN</E>
+              <E>PICK_FLOOR</E>
+              <E>PICK_OBJECT</E>
+              <E>PICK_SIM</E>
+              <E>PICK_POOL_EDGE</E>
+              <E>PICK_POOL_TRIM</E>
+              <E>PICK_WATER_TERRAIN</E>
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <V n="whitelist" t="enabled">
+          <L n="enabled">
+            <T>317538<!--Buff: buff_HorseRiding_HorseMounted--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+  <U n="visual_type_override_data">
+    <T n="icon" p="InGame\UI\Icons\InteractionQueue\IconQueueWalking.png">2f7d0004:00000000:7c3ee3d732a8ea1c</T>
+  </U>
+</I>

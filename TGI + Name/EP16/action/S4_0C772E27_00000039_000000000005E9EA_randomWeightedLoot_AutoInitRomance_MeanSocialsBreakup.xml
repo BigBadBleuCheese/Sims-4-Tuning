@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="RandomWeightedLoot" i="action" m="interactions.utils.loot" n="randomWeightedLoot_AutoInitRomance_MeanSocialsBreakup" s="387562">
+  <L n="random_loot_actions">
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">387564<!--LootActions: loot_AutoInitRomance_TNSWarning_or_BreakUp_Cheating_MeanSocialsBreakup--></T>
+      </V>
+      <U n="weight">
+        <T n="base_value">3</T>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="do_nothing" />
+      <U n="weight">
+        <T n="base_value">3</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="relationship">
+                  <U n="relationship">
+                    <U n="required_relationship_bits">
+                      <L n="match_any">
+                        <T>363150<!--RelationshipBit: shortTermBits_AutoInitRomance_Warning1--></T>
+                        <T>363151<!--RelationshipBit: shortTermBits_AutoInitRomance_Warning2--></T>
+                      </L>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="required_relationship_bits">
+            <L n="match_any">
+              <T>362102<!--RelationshipBit: relBit_RelSat_1_Actor_VeryUnsatisfiedWith_Target--></T>
+              <T>15841<!--RelationshipBit: RomanticCombo_TerribleMatch--></T>
+              <T>15842<!--RelationshipBit: RomanticCombo_TotalOpposites--></T>
+            </L>
+          </U>
+          <L n="subject">
+            <E>Actor</E>
+          </L>
+          <L n="target_sim">
+            <E>TargetSim</E>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

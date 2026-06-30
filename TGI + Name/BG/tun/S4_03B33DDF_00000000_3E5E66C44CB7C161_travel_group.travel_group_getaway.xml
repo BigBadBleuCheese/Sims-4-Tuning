@@ -1,0 +1,535 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<M n="travel_group.travel_group_getaway" s="4494142471449067873">
+  <C n="TravelGroupGetaway">
+    <V n="DAILY_COST_PROFIT_LOOP" t="enabled">
+      <U n="enabled">
+        <U n="costs_tns">
+          <V n="icon" t="enabled">
+            <V n="enabled" t="resource_key">
+              <U n="resource_key">
+                <T p="InGame\UI\Icons\Headlines\Final\headline_simoleon.png" n="key">2f7d0004:00000000:bb40d6575241ca1a</T>
+              </U>
+            </V>
+          </V>
+          <V n="text" t="single">
+            <T n="single">0x84FEB3F6<!--String: "A daily Getaway fee of {1.Money} has been deducted from your household funds. Getaway fees are calculated based on:\n\nLot Value = {2.Money}\nTotal Sim Count = {3.Number}"--></T>
+          </V>
+          <V n="title" t="enabled">
+            <T n="enabled">0xE9F633BA<!--String: "Getaway Payment"--></T>
+          </V>
+        </U>
+        <V n="insufficient_funds_dialog" t="dialog_ok">
+          <U n="dialog_ok">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T p="InGame\UI\Icons\Headlines\Final\headline_simoleon.png" n="key">2f7d0004:00000000:bb40d6575241ca1a</T>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xE8655065<!--String: "Your household does not have enough Simoleons to pay the Getaway's daily fee. Unfortunately, this Getaway will end immediately."--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0xA55E7E67<!--String: "Insufficient Funds"--></T>
+            </V>
+          </U>
+        </V>
+        <U n="no_penalty_tns">
+          <V n="icon" t="enabled">
+            <V n="enabled" t="resource_key">
+              <U n="resource_key">
+                <T p="InGame\UI\Icons\Headlines\Final\headline_simoleon.png" n="key">2f7d0004:00000000:bb40d6575241ca1a</T>
+              </U>
+            </V>
+          </V>
+          <V n="text" t="single">
+            <T n="single">0x989DF073<!--String: "A Getaway earned you {1.Money} from the previous day. Earnings are based on:\n\n<ul type="circle"><li>Lot value = {2.Money}</li><li>Number of non-household Sims attending the Getaway = Total {3.Number} Sims</li> </ul>\nKeep in mind, guests who feel well cared for and socially connected are more likely to leave you a tip!"--></T>
+          </V>
+          <V n="title" t="enabled">
+            <T n="enabled">0xFF02511F<!--String: "Getaway Earnings"--></T>
+          </V>
+        </U>
+        <U n="penalty_included_tns">
+          <V n="additional_texts" t="disabled" />
+          <V n="icon" t="enabled">
+            <V n="enabled" t="resource_key">
+              <U n="resource_key">
+                <T p="InGame\UI\Icons\Headlines\Final\headline_simoleon.png" n="key">2f7d0004:00000000:bb40d6575241ca1a</T>
+              </U>
+            </V>
+          </V>
+          <V n="text" t="single">
+            <T n="single">0xAEC44182<!--String: "The Getaway earned {1.Money} from the previous day. Earnings are based on:\n\n<ul type="circle"> <li>Lot value = {2.Money}</li> <li>Number of non-household Sims attending the Getaway = Total {3.Number} Sims</li> </ul> \nSome guests left early, either from eliminations or voluntarily, which slightly reduced the overall earnings. Keep in mind: guests are more likely to leave tips when they feel well cared for and socially connected."--></T>
+          </V>
+          <V n="title" t="enabled">
+            <T n="enabled">0xD81C2CBA<!--String: "Reduced Getaway Earnings"--></T>
+          </V>
+        </U>
+        <T n="sims_quit_multiplier">-0.33</T>
+        <U n="time_of_day">
+          <T n="hour">12</T>
+        </U>
+      </U>
+    </V>
+    <U n="END_STAY_NOTIFICATION">
+      <V n="text" t="single">
+        <T n="single">0x383F1E9<!--String: "Supports Large and X-Large Curved Walls"--></T>
+      </V>
+    </U>
+    <U n="GETAWAY_CONTINUE_NOTIFICATION">
+      <V n="text" t="single">
+        <T n="single">0xFCF579E6<!--String: "Welcome back! There's still {1.Timespan} remaining in the Getaway. Make the most of it!"--></T>
+      </V>
+      <L n="ui_responses">
+        <U>
+          <V n="response_command" t="enabled">
+            <V n="enabled" t="literal">
+              <U n="literal">
+                <T n="command">travel_groups.show_extend_vacation</T>
+              </U>
+            </V>
+          </V>
+          <T n="text">0x724BFB13<!--String: "Extend Getaway"--></T>
+          <E n="ui_request">SEND_COMMAND</E>
+        </U>
+      </L>
+    </U>
+    <U n="GETAWAY_ENDING_DAYS_NOTIFICATION">
+      <V n="icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T p="InGame\UI\Icons\Headlines\Final\headline_GoHome.png" n="key">2f7d0004:00000000:f2ce027635927c83</T>
+          </U>
+        </V>
+      </V>
+      <E n="information_level">PLAYER</E>
+      <V n="text" t="single">
+        <T n="single">0xD689C8EE<!--String: "There is 1 day left in this Getaway. To extend your stay, use the Phone or a Computer and select Extend Getaway."--></T>
+      </V>
+      <V n="title" t="enabled">
+        <T n="enabled">0xE41B9FC8<!--String: "Getaway Ending"--></T>
+      </V>
+    </U>
+    <U n="GETAWAY_ENDING_HOURS_NOTIFICATION">
+      <V n="icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T p="InGame\UI\Icons\Headlines\Final\headline_GoHome.png" n="key">2f7d0004:00000000:f2ce027635927c83</T>
+          </U>
+        </V>
+      </V>
+      <E n="information_level">PLAYER</E>
+      <V n="text" t="single">
+        <T n="single">0x31F5BFBF<!--String: "Only {0.Number} {S0.hour}{P0.hours} to go before this Getaway ends. Might be a good time to pack and say your farewells!"--></T>
+      </V>
+      <V n="title" t="enabled">
+        <T n="enabled">0x761DBFDD<!--String: "Getaway Ending Soon"--></T>
+      </V>
+    </U>
+    <V n="GETAWAY_NO_SELECTABLE_SIM_NOTIFICATION" t="enabled">
+      <U n="enabled">
+        <V n="icon" t="enabled">
+          <V n="enabled" t="resource_key">
+            <U n="resource_key">
+              <T n="key" p="InGame\UI\Icons\Notifications\notification_Getaway_bg.png">2f7d0004:00000000:8e3c631129875a1f</T>
+            </U>
+          </V>
+        </V>
+        <V n="text" t="single">
+          <T n="single">0x5CF6BFC7<!--String: "The Getaway has ended because changes were made to the current household or lot type. To schedule another Getaway, set an eligible lot type in Build Mode."--></T>
+        </V>
+        <V n="title" t="enabled">
+          <T n="enabled">0x1B1E2B45<!--String: "Getaway Has Ended!"--></T>
+        </V>
+      </U>
+    </V>
+    <V n="GETAWAY_REWARDS" t="enabled">
+      <U n="enabled">
+        <V n="activity_rewards" t="enabled">
+          <U n="enabled">
+            <L n="activity_category_rewards">
+              <U>
+                <E n="key">ART_AND_MUSIC</E>
+                <U n="value">
+                  <U n="reward">
+                    <T n="failure_loot">475002<!--LootActions: loot_Getaway_Reward_WhimBucks--></T>
+                    <T n="success_loot">469051<!--LootActions: loot_Getaway_Reward_AddTrait_ArtMusic--></T>
+                    <L n="tests">
+                      <L>
+                        <V t="trait">
+                          <U n="trait">
+                            <L n="blacklist_traits">
+                              <T>469042<!--Trait: trait_Getaway_Reward_ArtMusic--></T>
+                            </L>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                  <U n="threshold">
+                    <T n="value">4</T>
+                  </U>
+                </U>
+              </U>
+              <U>
+                <E n="key">FOOD_AND_DRINK</E>
+                <U n="value">
+                  <U n="reward">
+                    <T n="failure_loot">475002<!--LootActions: loot_Getaway_Reward_WhimBucks--></T>
+                    <T n="success_loot">469052<!--LootActions: loot_Getaway_Reward_AddTrait_FoodDrink--></T>
+                    <L n="tests">
+                      <L>
+                        <V t="trait">
+                          <U n="trait">
+                            <L n="blacklist_traits">
+                              <T>469043<!--Trait: trait_Getaway_Reward_FoodDrink--></T>
+                            </L>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                  <L n="shared_progression_categories">
+                    <E>HOME_ACTIVITIES</E>
+                  </L>
+                  <U n="threshold">
+                    <T n="value">10</T>
+                  </U>
+                </U>
+              </U>
+              <U>
+                <E n="key">HOBBIES</E>
+                <U n="value">
+                  <U n="reward">
+                    <T n="failure_loot">475002<!--LootActions: loot_Getaway_Reward_WhimBucks--></T>
+                    <T n="success_loot">469054<!--LootActions: loot_Getaway_Reward_AddTrait_Hobbies--></T>
+                    <L n="tests">
+                      <L>
+                        <V t="trait">
+                          <U n="trait">
+                            <L n="blacklist_traits">
+                              <T>469045<!--Trait: trait_Getaway_Reward_Hobbies--></T>
+                            </L>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                  <U n="threshold">
+                    <T n="value">4</T>
+                  </U>
+                </U>
+              </U>
+              <U>
+                <E n="key">KID_ACTIVITIES</E>
+                <U n="value">
+                  <U n="reward">
+                    <T n="failure_loot">475002<!--LootActions: loot_Getaway_Reward_WhimBucks--></T>
+                    <T n="success_loot">469053<!--LootActions: loot_Getaway_Reward_AddTrait_KidActvities--></T>
+                    <L n="tests">
+                      <L>
+                        <V t="trait">
+                          <U n="trait">
+                            <L n="blacklist_traits">
+                              <T>469044<!--Trait: trait_Getaway_Reward_KidActvities--></T>
+                            </L>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                  <L n="shared_progression_categories">
+                    <E>FUN_AND_GAMES</E>
+                  </L>
+                  <U n="threshold">
+                    <T n="value">4</T>
+                  </U>
+                </U>
+              </U>
+              <U>
+                <E n="key">MISCHIEF_AND_MAYHEM</E>
+                <U n="value">
+                  <U n="reward">
+                    <T n="failure_loot">475002<!--LootActions: loot_Getaway_Reward_WhimBucks--></T>
+                    <T n="success_loot">469055<!--LootActions: loot_Getaway_Reward_AddTrait_Mischief--></T>
+                    <L n="tests">
+                      <L>
+                        <V t="trait">
+                          <U n="trait">
+                            <L n="blacklist_traits">
+                              <T>469046<!--Trait: trait_Getaway_Reward_Mischief--></T>
+                            </L>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                  <U n="threshold">
+                    <T n="value">4</T>
+                  </U>
+                </U>
+              </U>
+              <U>
+                <E n="key">OUTDOOR</E>
+                <U n="value">
+                  <U n="reward">
+                    <T n="failure_loot">475002<!--LootActions: loot_Getaway_Reward_WhimBucks--></T>
+                    <T n="success_loot">469056<!--LootActions: loot_Getaway_Reward_AddTrait_Outdoor--></T>
+                    <L n="tests">
+                      <L>
+                        <V t="trait">
+                          <U n="trait">
+                            <L n="blacklist_traits">
+                              <T>469047<!--Trait: trait_Getaway_Reward_Outdoor--></T>
+                            </L>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                  <U n="threshold">
+                    <T n="value">4</T>
+                  </U>
+                </U>
+              </U>
+              <U>
+                <E n="key">SOCIAL</E>
+                <U n="value">
+                  <U n="reward">
+                    <T n="failure_loot">475002<!--LootActions: loot_Getaway_Reward_WhimBucks--></T>
+                    <T n="success_loot">469057<!--LootActions: loot_Getaway_Reward_AddTrait_Social--></T>
+                    <L n="tests">
+                      <L>
+                        <V t="trait">
+                          <U n="trait">
+                            <L n="blacklist_traits">
+                              <T>469048<!--Trait: trait_Getaway_Reward_Social--></T>
+                            </L>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                  <U n="threshold">
+                    <T n="value">6</T>
+                  </U>
+                </U>
+              </U>
+            </L>
+            <T n="general_reward_string">0x83FFB3F6<!--String: "Great Job! You've completed many of the Main Activities in this Getaway’s schedule and received the following reward Trait(s):"--></T>
+          </U>
+        </V>
+        <V n="challenge_rewards" t="enabled">
+          <U n="enabled">
+            <U n="reward_strings">
+              <T n="elimination_rule_string">0x895799E9<!--String: "With an Elimination Rule active, a trait or reward item has been granted! Check your household Sim's inventory or Simology panel to learn more!"--></T>
+              <T n="general_reward_string">0xE87F5C9F<!--String: "With Getaway Rules in play, you have earned the following reward(s):"--></T>
+              <T n="non_elimination_rule_string">0x5B3B05D4<!--String: "A special reward from the {0.String} Rule has been unlocked! Check your household Sim’s inventory or the Notification Wall to see the reward."--></T>
+            </U>
+            <L n="rule_reward_map">
+              <U>
+                <T n="key">462154<!--PlayerElimination: getawayRules_Elimination_PlayerChoice--></T>
+                <U n="value">
+                  <T n="reward">475120<!--LootActions: loot_Getaway_RuleRewardLoots_PlayerChoiceElim--></T>
+                  <U n="threshold">
+                    <T n="value">10</T>
+                  </U>
+                </U>
+              </U>
+              <U>
+                <T n="key">462155<!--FriendshipElimination: getawayRules_Elimination_RelationshipFriendship--></T>
+                <U n="value">
+                  <T n="reward">475115<!--LootActions: loot_Getaway_RuleRewardLoots_FriendshipElim--></T>
+                  <U n="threshold">
+                    <T n="value">10</T>
+                  </U>
+                </U>
+              </U>
+              <U>
+                <T n="key">462156<!--RomanceElimination: getawayRules_Elimination_RelationshipRomance--></T>
+                <U n="value">
+                  <T n="reward">475122<!--LootActions: loot_Getaway_RuleRewardLoots_RomanticElim--></T>
+                  <U n="threshold">
+                    <T n="value">10</T>
+                  </U>
+                </U>
+              </U>
+              <U>
+                <T n="key">462157<!--SkillElimination: getawayRules_Elimination_Skill_SurvivalOfTheFittest--></T>
+                <U n="value">
+                  <T n="reward">475124<!--LootActions: loot_Getaway_RuleRewardLoots_SurvivialOfFittest--></T>
+                  <U n="threshold">
+                    <T n="value">10</T>
+                  </U>
+                </U>
+              </U>
+              <U>
+                <T n="key">462160<!--SkillElimination: getawayRules_Elimination_Skill_CookingCompetition--></T>
+                <U n="value">
+                  <T n="reward">475112<!--LootActions: loot_Getaway_RuleRewardLoots_Cooking--></T>
+                  <U n="threshold">
+                    <T n="value">10</T>
+                  </U>
+                </U>
+              </U>
+              <U>
+                <T n="key">462161<!--SkillElimination: getawayRules_Elimination_Skill_CreativeSkills--></T>
+                <U n="value">
+                  <T n="reward">475113<!--LootActions: loot_Getaway_RuleRewardLoots_Creative--></T>
+                  <U n="threshold">
+                    <T n="value">10</T>
+                  </U>
+                </U>
+              </U>
+              <U>
+                <T n="key">462162<!--SkillElimination: getawayRules_Elimination_Skill_ChildSkills--></T>
+                <U n="value">
+                  <T n="reward">469005<!--LootActions: loot_Getaway_RuleRewardLoots_Child--></T>
+                  <U n="threshold">
+                    <T n="value">10</T>
+                  </U>
+                </U>
+              </U>
+              <U>
+                <T n="key">462163<!--ActivityShuffle: getawayRules_ActivityShuffle--></T>
+                <U n="value">
+                  <T n="reward">475123<!--LootActions: loot_Getaway_RuleRewardLoots_Shuffle--></T>
+                  <U n="threshold">
+                    <T n="value">10</T>
+                  </U>
+                </U>
+              </U>
+              <U>
+                <T n="key">463595<!--BuffChallenge: getawayRules_BuffModifier_LoveIsInTheAir--></T>
+                <U n="value">
+                  <T n="reward">475119<!--LootActions: loot_Getaway_RuleRewardLoots_LoveInAir--></T>
+                  <U n="threshold">
+                    <T n="value">10</T>
+                  </U>
+                </U>
+              </U>
+              <U>
+                <T n="key">463596<!--BuffChallenge: getawayRules_BuffModifier_EveryoneHatesEachOther--></T>
+                <U n="value">
+                  <T n="reward">475118<!--LootActions: loot_Getaway_RuleRewardLoots_EveryoneHatesEachOther--></T>
+                  <U n="threshold">
+                    <T n="value">10</T>
+                  </U>
+                </U>
+              </U>
+              <U>
+                <T n="key">463597<!--BuffChallenge: getawayRules_BuffModifier_FreeLove--></T>
+                <U n="value">
+                  <T n="reward">475114<!--LootActions: loot_Getaway_RuleRewardLoots_FreeLove--></T>
+                  <U n="threshold">
+                    <T n="value">10</T>
+                  </U>
+                </U>
+              </U>
+              <U>
+                <T n="key">463598<!--BuffChallenge: getawayRules_BuffModifier_RenaissanceHouse--></T>
+                <U n="value">
+                  <T n="reward">475121<!--LootActions: loot_Getaway_RuleRewardLoots_Renaissance--></T>
+                  <U n="threshold">
+                    <T n="value">10</T>
+                  </U>
+                </U>
+              </U>
+              <U>
+                <T n="key">463599<!--BuffChallenge: getawayRules_BuffModifier_HardcoreMode--></T>
+                <U n="value">
+                  <T n="reward">475117<!--LootActions: loot_Getaway_RuleRewardLoots_HardMode--></T>
+                  <U n="threshold">
+                    <T n="value">10</T>
+                  </U>
+                </U>
+              </U>
+              <U>
+                <T n="key">463600<!--BuffChallenge: getawayRules_BuffModifier_GrindsetMindset--></T>
+                <U n="value">
+                  <T n="reward">475116<!--LootActions: loot_Getaway_RuleRewardLoots_Grindset--></T>
+                  <U n="threshold">
+                    <T n="value">10</T>
+                  </U>
+                </U>
+              </U>
+            </L>
+          </U>
+        </V>
+        <V n="reward_dialog" t="enabled">
+          <U n="enabled">
+            <V n="dialog" t="dialog_icon_label">
+              <U n="dialog_icon_label">
+                <V n="audio_sting" t="disabled" />
+                <E n="dialog_bg_style">BG_CELEBRATION_LARGE</E>
+                <E n="dialog_style">LARGE_ICON_TEXT_HORIZONTAL</E>
+                <V n="icon" t="enabled">
+                  <V n="enabled" t="resource_key">
+                    <U n="resource_key">
+                      <T n="key" p="InGame\UI\Icons\Dialog\Screenshots\SS_EndOfGetaway.png">2f7d0004:00000000:ef7af97e57467880</T>
+                    </U>
+                  </V>
+                </V>
+                <V n="text" t="single">
+                  <T n="single">0xD9CAF06F<!--String: "{1.String}\n{2.String}"--></T>
+                </V>
+                <V n="text_tokens" t="enabled">
+                  <U n="enabled">
+                    <L n="tokens">
+                      <V t="participant_type" />
+                    </L>
+                  </U>
+                </V>
+                <V n="title" t="enabled">
+                  <T n="enabled">0x15AE43A4<!--String: "Getaway Complete!"--></T>
+                </V>
+              </U>
+            </V>
+            <T n="insufficient_funds_preface">0x9F183F9B<!--String: "The Getaway has ended due to insufficient household funds!"--></T>
+            <T n="normal_preface">0xCBEF82A2<!--String: "Congratulations! The Getaway has come to an end!"--></T>
+          </U>
+        </V>
+        <U n="reward_tns">
+          <V n="text" t="single">
+            <T n="single">0xAAE23397<!--String: "{0.SimFirstName} gained Satisfaction Points from the Getaway!"--></T>
+          </V>
+        </U>
+      </U>
+    </V>
+    <V n="GETAWAY_WELCOME_NOTIFICATION" t="enabled">
+      <U n="enabled">
+        <V n="audio_sting" t="disabled" />
+        <V n="icon" t="enabled">
+          <V n="enabled" t="resource_key">
+            <U n="resource_key">
+              <T n="key" p="InGame\UI\Icons\Notifications\notification_Getaway_bg.png">2f7d0004:00000000:8e3c631129875a1f</T>
+            </U>
+          </V>
+        </V>
+        <V n="text" t="single">
+          <T n="single">0xFF47848F<!--String: "This lot is the temporary home for all Sims on this Getaway, complete with a Schedule to guide the adventure ahead. Each day includes main activities and role activities, which can be viewed or adjusted anytime from the top-left panel in Live Mode. Follow the plan or break away, the outcome still brings special rewards based on how the Getaway unfolds!\n\nSelect <b>Learn More</b> below for a quick overview!"--></T>
+        </V>
+        <V n="title" t="enabled">
+          <T n="enabled">0xE4B11BAD<!--String: "Welcome to Your Getaway"--></T>
+        </V>
+        <L n="ui_responses">
+          <U>
+            <V n="loots_for_response" t="enabled">
+              <U n="enabled">
+                <L n="loots">
+                  <T>487477<!--LootActions: loot_Getaway_WelcomeDialog_StartGetaway_All--></T>
+                </L>
+              </U>
+            </V>
+            <T n="text">0x885B9BE0<!--String: "Learn More..."--></T>
+          </U>
+        </L>
+      </U>
+    </V>
+    <T n="HOUSEHOLD_AND_GUEST_MAXIMUM">20</T>
+    <L n="SS3_PARK_INTERACTIONS">
+      <T>249248<!--AggregateSuperInteraction: aggregateSi_NPC_SS3_Park--></T>
+    </L>
+  </C>
+</M>

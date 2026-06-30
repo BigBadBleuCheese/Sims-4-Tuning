@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="DialogDramaNode" i="drama_node" m="drama_scheduler.dialog_drama_node" n="dialogDramaNode_ChildhoodSentiment_ImaginationCalling_WildChild" s="462702">
+  <T n="allow_during_work_hours">False</T>
+  <V n="cooldown_data" t="node_cooldown">
+    <U n="node_cooldown">
+      <V n="duration" t="permanent" />
+    </U>
+  </V>
+  <V n="dialog_and_loot" t="dialog_ok_cancel">
+    <U n="dialog_ok_cancel">
+      <U n="dialog">
+        <V n="custom_mask_target_sim" t="enabled">
+          <U n="enabled">
+            <V n="alert_icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InGame\UI\Icons\Dialog\phone_imaginaryFriendWildChild_icon.png">2f7d0004:00000000:3a60d722d08102f3</T>
+                </U>
+              </V>
+            </V>
+            <V n="alert_sim_name" t="enabled">
+              <T n="enabled">0x80B201A9<!--String: "Wild Child"--></T>
+            </V>
+            <V n="header_icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InGame\UI\Icons\Dialog\phone_imaginaryFriendWildChild_icon.png">2f7d0004:00000000:3a60d722d08102f3</T>
+                </U>
+              </V>
+            </V>
+          </U>
+        </V>
+        <V n="icon" t="disabled" />
+        <E n="phone_ring_type">RING</E>
+        <V n="secondary_icon" t="disabled" />
+        <V n="text" t="single">
+          <T n="single">0x5A190B53<!--String: "Shhh! Hi. It's me. I just wanted to remind you of something I told you a long time ago. Imaginary Friends are the very best kinds of friends, because they come from your heart!"--></T>
+        </V>
+        <T n="text_cancel">0x21BC38A9<!--String: "No way. I must be dreaming..."--></T>
+        <T n="text_ok">0x9B094847<!--String: "Wait! Come back!"--></T>
+        <V n="title" t="enabled">
+          <T n="enabled">0xF16F1DE1<!--String: "Is This a Dream?"--></T>
+        </V>
+      </U>
+      <L n="on_dialog_accepted_loot_list">
+        <T>463463<!--LootActions: loot_ChildhoodSentiment_Response_ImaginationCalling_Pos--></T>
+      </L>
+      <L n="on_dialog_canceled_loot_list">
+        <T>463464<!--LootActions: loot_ChildhoodSentiment_Response_ImaginationCalling_Neg--></T>
+      </L>
+      <L n="on_dialog_no_response_loot_list">
+        <T>463464<!--LootActions: loot_ChildhoodSentiment_Response_ImaginationCalling_Neg--></T>
+      </L>
+    </U>
+  </V>
+  <U n="min_and_max_times">
+    <T n="lower_bound">0</T>
+    <T n="upper_bound">24</T>
+  </U>
+  <L n="pretests" />
+  <E n="receiver_sim">TargetSim</E>
+  <V n="reschedule_on_failed_tests" t="do_not_reschedule" />
+  <V n="sender_sim_info" t="participant_type">
+    <U n="participant_type">
+      <E n="participant_type">Actor</E>
+    </U>
+  </V>
+  <E n="sender_sim_info_type">INSTANCED_ALLOWED</E>
+  <V n="time_option" t="schedule">
+    <U n="schedule">
+      <L n="valid_times">
+        <U>
+          <U n="days_available">
+            <T n="0 SUNDAY">True</T>
+            <T n="1 MONDAY">True</T>
+            <T n="2 TUESDAY">True</T>
+            <T n="3 WEDNESDAY">True</T>
+            <T n="4 THURSDAY">True</T>
+            <T n="5 FRIDAY">True</T>
+            <T n="6 SATURDAY">True</T>
+          </U>
+          <T n="duration">24</T>
+        </U>
+      </L>
+    </U>
+  </V>
+</I>

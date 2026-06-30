@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SimCompetitionSituation" i="situation" m="sim_competitions.sim_competition_situation" n="simCompetitionSituation_SwordsmanshipTournament_Level3" s="484627">
+  <T n="_display_name">0xA865C62<!--String: "SimNation Grand Masters"--></T>
+  <T n="_is_unique">True</T>
+  <U n="_level_data">
+    <U n="bronze">
+      <T n="score_delta">100</T>
+    </U>
+    <U n="gold">
+      <T n="score_delta">300</T>
+    </U>
+    <U n="silver">
+      <T n="score_delta">200</T>
+    </U>
+  </U>
+  <T n="_use_spawner_tags_on_travel">True</T>
+  <T p="InGame\Audio\Bumper\bumper_event_start.propx" n="audio_sting_on_start">39b2aa4a:00000000:78b903461d47e4fc</T>
+  <V n="cancel_tooltip_override" t="enabled">
+    <T n="enabled">0xC7253823<!--String: "Cancelling the tournament will end the event and result in your Sim earning last place. Would you still like to cancel?"--></T>
+  </V>
+  <E n="category">DEFAULT</E>
+  <L n="compatible_venues">
+    <T>28614<!--Venue: venue_residential--></T>
+  </L>
+  <L n="competition_cancelled_loot">
+    <T>492285<!--LootActions: loot_SwordsmanshipTournament_Surrender--></T>
+  </L>
+  <E n="creation_ui_option">NOT_AVAILABLE</E>
+  <E n="display_style">DEFAULT</E>
+  <T n="duration">0</T>
+  <V n="end_situation_dialog" t="enabled">
+    <U n="enabled">
+      <V n="text" t="single">
+        <T n="single">0xC7253823<!--String: "Cancelling the tournament will end the event and result in your Sim earning last place. Would you still like to cancel?"--></T>
+      </V>
+      <V n="title" t="enabled">
+        <T n="enabled">0xCD5D61FC<!--String: "Cancelling Tournament"--></T>
+      </V>
+      <V n="tooltip_text_cancel" t="enabled">
+        <T n="enabled">0xC7253823<!--String: "Cancelling the tournament will end the event and result in your Sim earning last place. Would you still like to cancel?"--></T>
+      </V>
+    </U>
+  </V>
+  <V n="entitlement" t="disabled" />
+  <E n="exclusivity">TOURNAMENT</E>
+  <U n="main_competitor_job_and_role_states">
+    <T n="role_state">482380<!--RoleState: role_simCompetition_SwordsmanshipTournament_Actor_Waiting--></T>
+    <T n="situation_job">482376<!--SituationJob: job_SimCompetition_Actor_SwordsmanshipTournament--></T>
+  </U>
+  <T n="main_goal">482912<!--SituationGoalRanInteractionOnTargetedSim: goal_IntOnTargetSim_Competition_SwordsmanshipTournament_MainGoal--></T>
+  <T p="InGame\Audio\Bumper\bumper_event_major_complete.propx" n="main_goal_audio_sting">39b2aa4a:00000000:10b476550150a33f</T>
+  <T n="max_participants">20</T>
+  <V n="medal_icon_override" t="enabled">
+    <T n="enabled" p="InGame\UI\Icons\Ranks\emptyRank.png">2f7d0004:00000000:4b4ee27715d79e46</T>
+  </V>
+  <L n="minor_goal_chains" />
+  <T n="offer_completed_goals">False</T>
+  <U n="opponent_job_and_role_states">
+    <T n="role_state">496659<!--RoleState: role_SimCompetition_SwordsmanshipTournament_NPC_NotInRound--></T>
+    <T n="situation_job">484624<!--SituationJob: job_SimCompetition_NPC_SwordsmanshipTournament_Level3--></T>
+  </U>
+  <L n="rounds">
+    <U>
+      <L n="minor_goals">
+        <T>482914<!--SituationGoalSet: situationGoalSet_Competition_SwordsmanshipTournament--></T>
+      </L>
+      <U n="round_stages">
+        <U n="active_stage">
+          <T n="active_opponent_role_state">483317<!--RoleState: role_simCompetition_SwordsmanshipTournament_NPC_Active--></T>
+          <T n="allow_join_situation">False</T>
+          <U n="interaction_of_interest">
+            <L n="affordances">
+              <T>484643<!--SocialSuperInteraction: social_Swordsmanship_Duel_Tournament--></T>
+            </L>
+          </U>
+          <L n="job_and_role_changes">
+            <U>
+              <T n="Situation Job">482376<!--SituationJob: job_SimCompetition_Actor_SwordsmanshipTournament--></T>
+              <T n="Role State">482379<!--RoleState: role_simCompetition_SwordsmanshipTournament_Actor_Active--></T>
+            </U>
+            <U>
+              <T n="Situation Job">483315<!--SituationJob: job_SimCompetition_SwordsmanshipTournament_Spectator--></T>
+              <T n="Role State">496664<!--RoleState: role_SimCompetition_SwordsmanshipTournament_Spectator_Active--></T>
+            </U>
+            <U>
+              <T n="Situation Job">484624<!--SituationJob: job_SimCompetition_NPC_SwordsmanshipTournament_Level3--></T>
+              <T n="Role State">496659<!--RoleState: role_SimCompetition_SwordsmanshipTournament_NPC_NotInRound--></T>
+            </U>
+          </L>
+          <L n="triggers">
+            <U>
+              <V n="effect" t="end_situation" />
+              <L n="triggers">
+                <V t="test_event">
+                  <U n="test_event">
+                    <V n="test" t="ran_interaction_test">
+                      <U n="ran_interaction_test">
+                        <L n="affordances">
+                          <T>485246<!--SuperInteraction: gazebo_SwordsmanshipTournament_GiveUp_ConfirmationDialog--></T>
+                        </L>
+                        <T n="consider_all_cancelled_as_failure">True</T>
+                        <T n="consider_user_cancelled_as_failure">False</T>
+                        <V n="interaction_outcome" t="enabled">
+                          <E n="enabled">SUCCESS</E>
+                        </V>
+                        <E n="test_event">InteractionComplete</E>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </U>
+          </L>
+        </U>
+        <U n="between_rounds_stage">
+          <T n="active_opponent_role_state">483924<!--RoleState: role_simCompetition_SwordsmanshipTournament_NPC_Waiting--></T>
+          <V n="additional_minor_goals" t="enabled">
+            <L n="enabled">
+              <T>460505<!--SituationGoalSet: goalSet_SwordsmanshipTournament_Mental--></T>
+              <T>460503<!--SituationGoalSet: goalSet_SwordsmanshipTournament_Physical--></T>
+              <T>460504<!--SituationGoalSet: goalSet_SwordsmanshipTournament_Social--></T>
+            </L>
+          </V>
+          <T n="allow_join_situation">False</T>
+          <U n="interaction_of_interest">
+            <L n="affordances">
+              <T>484435<!--ImmediateSuperInteraction: immediate_Gazebo_SwordsmanshipTournament_StartNextRound--></T>
+            </L>
+            <L n="tags" />
+          </U>
+          <L n="job_and_role_changes">
+            <U>
+              <T n="Situation Job">482376<!--SituationJob: job_SimCompetition_Actor_SwordsmanshipTournament--></T>
+              <T n="Role State">482380<!--RoleState: role_simCompetition_SwordsmanshipTournament_Actor_Waiting--></T>
+            </U>
+            <U>
+              <T n="Situation Job">483315<!--SituationJob: job_SimCompetition_SwordsmanshipTournament_Spectator--></T>
+              <T n="Role State">483316<!--RoleState: role_SimCompetition_SwordsmanshipTournament_Spectator--></T>
+            </U>
+            <U>
+              <T n="Situation Job">484624<!--SituationJob: job_SimCompetition_NPC_SwordsmanshipTournament_Level3--></T>
+              <T n="Role State">496659<!--RoleState: role_SimCompetition_SwordsmanshipTournament_NPC_NotInRound--></T>
+            </U>
+          </L>
+          <V n="time_out" t="enabled">
+            <T n="enabled">60</T>
+          </V>
+          <L n="triggers">
+            <U>
+              <V n="effect" t="end_situation" />
+              <L n="triggers">
+                <V t="test_event">
+                  <U n="test_event">
+                    <V n="test" t="ran_interaction_test">
+                      <U n="ran_interaction_test">
+                        <L n="affordances">
+                          <T>485246<!--SuperInteraction: gazebo_SwordsmanshipTournament_GiveUp_ConfirmationDialog--></T>
+                        </L>
+                        <T n="consider_all_cancelled_as_failure">True</T>
+                        <T n="consider_user_cancelled_as_failure">False</T>
+                        <V n="interaction_outcome" t="enabled">
+                          <E n="enabled">SUCCESS</E>
+                        </V>
+                        <E n="test_event">InteractionComplete</E>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </U>
+          </L>
+        </U>
+      </U>
+    </U>
+    <U>
+      <L n="minor_goals">
+        <T>482914<!--SituationGoalSet: situationGoalSet_Competition_SwordsmanshipTournament--></T>
+      </L>
+      <U n="round_stages">
+        <U n="active_stage">
+          <T n="active_opponent_role_state">483317<!--RoleState: role_simCompetition_SwordsmanshipTournament_NPC_Active--></T>
+          <T n="allow_join_situation">False</T>
+          <U n="interaction_of_interest">
+            <L n="affordances">
+              <T>484643<!--SocialSuperInteraction: social_Swordsmanship_Duel_Tournament--></T>
+            </L>
+          </U>
+          <L n="job_and_role_changes">
+            <U>
+              <T n="Situation Job">482376<!--SituationJob: job_SimCompetition_Actor_SwordsmanshipTournament--></T>
+              <T n="Role State">482379<!--RoleState: role_simCompetition_SwordsmanshipTournament_Actor_Active--></T>
+            </U>
+            <U>
+              <T n="Situation Job">483315<!--SituationJob: job_SimCompetition_SwordsmanshipTournament_Spectator--></T>
+              <T n="Role State">496664<!--RoleState: role_SimCompetition_SwordsmanshipTournament_Spectator_Active--></T>
+            </U>
+            <U>
+              <T n="Situation Job">484624<!--SituationJob: job_SimCompetition_NPC_SwordsmanshipTournament_Level3--></T>
+              <T n="Role State">496659<!--RoleState: role_SimCompetition_SwordsmanshipTournament_NPC_NotInRound--></T>
+            </U>
+          </L>
+          <L n="triggers">
+            <U>
+              <V n="effect" t="end_situation" />
+              <L n="triggers">
+                <V t="test_event">
+                  <U n="test_event">
+                    <V n="test" t="ran_interaction_test">
+                      <U n="ran_interaction_test">
+                        <L n="affordances">
+                          <T>485246<!--SuperInteraction: gazebo_SwordsmanshipTournament_GiveUp_ConfirmationDialog--></T>
+                        </L>
+                        <T n="consider_all_cancelled_as_failure">True</T>
+                        <T n="consider_user_cancelled_as_failure">False</T>
+                        <V n="interaction_outcome" t="enabled">
+                          <E n="enabled">SUCCESS</E>
+                        </V>
+                        <E n="test_event">InteractionComplete</E>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </U>
+          </L>
+        </U>
+        <U n="between_rounds_stage">
+          <T n="active_opponent_role_state">483924<!--RoleState: role_simCompetition_SwordsmanshipTournament_NPC_Waiting--></T>
+          <V n="additional_minor_goals" t="enabled">
+            <L n="enabled">
+              <T>460505<!--SituationGoalSet: goalSet_SwordsmanshipTournament_Mental--></T>
+              <T>460503<!--SituationGoalSet: goalSet_SwordsmanshipTournament_Physical--></T>
+              <T>460504<!--SituationGoalSet: goalSet_SwordsmanshipTournament_Social--></T>
+            </L>
+          </V>
+          <T n="allow_join_situation">False</T>
+          <U n="interaction_of_interest">
+            <L n="affordances">
+              <T>484435<!--ImmediateSuperInteraction: immediate_Gazebo_SwordsmanshipTournament_StartNextRound--></T>
+            </L>
+          </U>
+          <L n="job_and_role_changes">
+            <U>
+              <T n="Situation Job">482376<!--SituationJob: job_SimCompetition_Actor_SwordsmanshipTournament--></T>
+              <T n="Role State">482380<!--RoleState: role_simCompetition_SwordsmanshipTournament_Actor_Waiting--></T>
+            </U>
+            <U>
+              <T n="Situation Job">483315<!--SituationJob: job_SimCompetition_SwordsmanshipTournament_Spectator--></T>
+              <T n="Role State">483316<!--RoleState: role_SimCompetition_SwordsmanshipTournament_Spectator--></T>
+            </U>
+            <U>
+              <T n="Situation Job">484624<!--SituationJob: job_SimCompetition_NPC_SwordsmanshipTournament_Level3--></T>
+              <T n="Role State">496659<!--RoleState: role_SimCompetition_SwordsmanshipTournament_NPC_NotInRound--></T>
+            </U>
+          </L>
+          <V n="time_out" t="enabled">
+            <T n="enabled">60</T>
+          </V>
+          <L n="triggers">
+            <U>
+              <V n="effect" t="end_situation" />
+              <L n="triggers">
+                <V t="test_event">
+                  <U n="test_event">
+                    <V n="test" t="ran_interaction_test">
+                      <U n="ran_interaction_test">
+                        <L n="affordances">
+                          <T>485246<!--SuperInteraction: gazebo_SwordsmanshipTournament_GiveUp_ConfirmationDialog--></T>
+                        </L>
+                        <T n="consider_all_cancelled_as_failure">True</T>
+                        <T n="consider_user_cancelled_as_failure">False</T>
+                        <V n="interaction_outcome" t="enabled">
+                          <E n="enabled">SUCCESS</E>
+                        </V>
+                        <E n="test_event">InteractionComplete</E>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </U>
+          </L>
+        </U>
+      </U>
+    </U>
+    <U>
+      <L n="minor_goals">
+        <T>482914<!--SituationGoalSet: situationGoalSet_Competition_SwordsmanshipTournament--></T>
+      </L>
+      <U n="round_stages">
+        <U n="active_stage">
+          <T n="active_opponent_role_state">483317<!--RoleState: role_simCompetition_SwordsmanshipTournament_NPC_Active--></T>
+          <T n="allow_join_situation">False</T>
+          <U n="interaction_of_interest">
+            <L n="affordances">
+              <T>484643<!--SocialSuperInteraction: social_Swordsmanship_Duel_Tournament--></T>
+            </L>
+          </U>
+          <L n="job_and_role_changes">
+            <U>
+              <T n="Situation Job">482376<!--SituationJob: job_SimCompetition_Actor_SwordsmanshipTournament--></T>
+              <T n="Role State">482379<!--RoleState: role_simCompetition_SwordsmanshipTournament_Actor_Active--></T>
+            </U>
+            <U>
+              <T n="Situation Job">483315<!--SituationJob: job_SimCompetition_SwordsmanshipTournament_Spectator--></T>
+              <T n="Role State">496664<!--RoleState: role_SimCompetition_SwordsmanshipTournament_Spectator_Active--></T>
+            </U>
+            <U>
+              <T n="Situation Job">484624<!--SituationJob: job_SimCompetition_NPC_SwordsmanshipTournament_Level3--></T>
+              <T n="Role State">496659<!--RoleState: role_SimCompetition_SwordsmanshipTournament_NPC_NotInRound--></T>
+            </U>
+          </L>
+          <L n="triggers">
+            <U>
+              <V n="effect" t="end_situation" />
+              <L n="triggers">
+                <V t="test_event">
+                  <U n="test_event">
+                    <V n="test" t="ran_interaction_test">
+                      <U n="ran_interaction_test">
+                        <L n="affordances">
+                          <T>485246<!--SuperInteraction: gazebo_SwordsmanshipTournament_GiveUp_ConfirmationDialog--></T>
+                        </L>
+                        <T n="consider_all_cancelled_as_failure">True</T>
+                        <T n="consider_user_cancelled_as_failure">False</T>
+                        <V n="interaction_outcome" t="enabled">
+                          <E n="enabled">SUCCESS</E>
+                        </V>
+                        <E n="test_event">InteractionComplete</E>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </U>
+          </L>
+        </U>
+        <U n="between_rounds_stage">
+          <T n="active_opponent_role_state">483924<!--RoleState: role_simCompetition_SwordsmanshipTournament_NPC_Waiting--></T>
+          <V n="additional_minor_goals" t="enabled">
+            <L n="enabled">
+              <T>460505<!--SituationGoalSet: goalSet_SwordsmanshipTournament_Mental--></T>
+              <T>460503<!--SituationGoalSet: goalSet_SwordsmanshipTournament_Physical--></T>
+              <T>460504<!--SituationGoalSet: goalSet_SwordsmanshipTournament_Social--></T>
+            </L>
+          </V>
+          <T n="allow_join_situation">False</T>
+          <U n="interaction_of_interest">
+            <L n="affordances">
+              <T>484435<!--ImmediateSuperInteraction: immediate_Gazebo_SwordsmanshipTournament_StartNextRound--></T>
+            </L>
+          </U>
+          <L n="job_and_role_changes">
+            <U>
+              <T n="Situation Job">482376<!--SituationJob: job_SimCompetition_Actor_SwordsmanshipTournament--></T>
+              <T n="Role State">482380<!--RoleState: role_simCompetition_SwordsmanshipTournament_Actor_Waiting--></T>
+            </U>
+            <U>
+              <T n="Situation Job">483315<!--SituationJob: job_SimCompetition_SwordsmanshipTournament_Spectator--></T>
+              <T n="Role State">483316<!--RoleState: role_SimCompetition_SwordsmanshipTournament_Spectator--></T>
+            </U>
+            <U>
+              <T n="Situation Job">484624<!--SituationJob: job_SimCompetition_NPC_SwordsmanshipTournament_Level3--></T>
+              <T n="Role State">496659<!--RoleState: role_SimCompetition_SwordsmanshipTournament_NPC_NotInRound--></T>
+            </U>
+          </L>
+          <V n="time_out" t="enabled">
+            <T n="enabled">60</T>
+          </V>
+          <L n="triggers">
+            <U>
+              <V n="effect" t="end_situation" />
+              <L n="triggers">
+                <V t="test_event">
+                  <U n="test_event">
+                    <V n="test" t="ran_interaction_test">
+                      <U n="ran_interaction_test">
+                        <L n="affordances">
+                          <T>485246<!--SuperInteraction: gazebo_SwordsmanshipTournament_GiveUp_ConfirmationDialog--></T>
+                        </L>
+                        <T n="consider_all_cancelled_as_failure">True</T>
+                        <T n="consider_user_cancelled_as_failure">False</T>
+                        <V n="interaction_outcome" t="enabled">
+                          <E n="enabled">SUCCESS</E>
+                        </V>
+                        <E n="test_event">InteractionComplete</E>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </U>
+          </L>
+        </U>
+      </U>
+    </U>
+  </L>
+  <T n="situation_cancelable">True</T>
+  <T n="situation_description">0xA2FF47CA<!--String: "Welcome to the big leagues! Only the most expert duelists are welcomed here, and a win at this level can really cement your reputation as a true master. Remember, this is the biggest tournament in SimNation and will attract your toughest opponents yet—make sure to live up to your name!"--></T>
+  <V n="situation_display_type_override" t="disabled" />
+  <V n="situation_end_time_string" t="show_end_time">
+    <T n="show_end_time">0xA3E17143<!--String: "Work day ends at {0.TimeShort}"--></T>
+  </V>
+  <U n="spectator_job_and_role_states">
+    <T n="role_state">483316<!--RoleState: role_SimCompetition_SwordsmanshipTournament_Spectator--></T>
+    <T n="situation_job">483315<!--SituationJob: job_SimCompetition_SwordsmanshipTournament_Spectator--></T>
+  </U>
+  <V n="travel_request_behavior" t="disallow" />
+</I>

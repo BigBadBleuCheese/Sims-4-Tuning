@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Buff_UnlockFamilyRecipes_Rage" s="391261">
+  <L n="loot_actions">
+    <V t="unlock_item">
+      <U n="unlock_item">
+        <E n="subject">Actor</E>
+        <V n="unlock_item" t="unlock_buff">
+          <T n="unlock_buff">387645<!--Buff: buff_FamilyRecipes_Rage--></T>
+        </V>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InEP18\UI\Icons\Notifications\notification_Family_Recipes.png">2f7d0004:00000000:84cfa4f64766a3cb</T>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x533E56D5<!--String: "{0.SimFirstName} has unlocked the <b>Spontaneous Rage</b> Special Touch for Family Recipes by winning a fight against another Sim."--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0xBF718698<!--String: "Family Recipe Special Touch Unlocked"--></T>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="unlock_tracker">
+        <U n="unlock_tracker">
+          <T n="invert">True</T>
+          <V n="unlock_item" t="unlock_buff">
+            <T n="unlock_buff">387645<!--Buff: buff_FamilyRecipes_Rage--></T>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

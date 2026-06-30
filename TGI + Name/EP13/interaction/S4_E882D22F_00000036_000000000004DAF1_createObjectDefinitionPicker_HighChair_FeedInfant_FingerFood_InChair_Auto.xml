@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="CreateObjectDefinitionPickerInteraction" i="interaction" m="objects.definition_picker_interaction" n="createObjectDefinitionPicker_HighChair_FeedInfant_FingerFood_InChair_Auto" s="318193">
+  <V n="_forwarding" t="Forward" />
+  <V n="_saveable" t="disabled" />
+  <V n="auto_pick" t="randomized_pick" />
+  <V n="content_score" t="disabled" />
+  <V n="continuation" t="enabled">
+    <L n="enabled">
+      <U>
+        <T n="affordance">274393<!--SocialSuperInteraction: HighChair_Infants_GiveFood--></T>
+        <E n="target">Object</E>
+      </U>
+    </L>
+  </V>
+  <L n="definition_to_loot">
+    <U>
+      <U n="definition_id_test">
+        <T n="definition">294156</T>
+      </U>
+      <T n="loot_to_apply">274788<!--LootActions: loot_HighChair_InfantFoods_SetupRecipe_BananaSlices--></T>
+    </U>
+    <U>
+      <U n="definition_id_test">
+        <T n="definition">294157</T>
+      </U>
+      <T n="loot_to_apply">274789<!--LootActions: loot_HighChair_InfantFoods_SetupRecipe_OatyOs--></T>
+    </U>
+    <U>
+      <U n="definition_id_test">
+        <T n="definition">294158</T>
+      </U>
+      <T n="loot_to_apply">274790<!--LootActions: loot_HighChair_InfantFoods_SetupRecipe_PeanutButterPuffs--></T>
+    </U>
+    <U>
+      <U n="definition_id_test">
+        <T n="definition">294159</T>
+      </U>
+      <T n="loot_to_apply">274791<!--LootActions: loot_HighChair_InfantFoods_SetupRecipe_YogurtMelts--></T>
+    </U>
+  </L>
+  <T n="destroy_on_placement_failure">True</T>
+  <T n="display_name">0x90423AB4<!--String: "Give Finger Foods to {2.SimFirstName}"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">TargetSim</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="initial_states">
+    <U>
+      <T n="state">15113<!--CommodityBasedObjectStateValue: Consumable_Untouched--></T>
+    </U>
+  </L>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <V n="location" t="slot">
+    <U n="slot">
+      <V n="parent" t="from_participant">
+        <U n="from_participant">
+          <E n="participant">TargetSimPostureTarget</E>
+        </U>
+      </V>
+      <V n="parent_slot" t="by_reference">
+        <T n="by_reference">slot_SitEat</T>
+      </V>
+      <L n="reference_obj_hidden_flags">
+        <E>RABBIT_HOLE</E>
+      </L>
+      <T n="use_part_owner">True</T>
+    </U>
+  </V>
+  <V n="object_name_override" t="enabled">
+    <V n="enabled" t="from_gameplay_object_preference_type" />
+  </V>
+  <V n="object_tags_or_definition" t="tested_items">
+    <U n="tested_items">
+      <L n="item_list">
+        <U>
+          <T n="item">294156</T>
+          <L n="tests">
+            <L>
+              <V t="gameplay_object_preference_test">
+                <U n="gameplay_object_preference_test">
+                  <T n="gameplay_object_preference">289275<!--GameplayObjectPreference: foodPreferences_Infants_bananaSlices--></T>
+                  <L n="preference_type">
+                    <E>DISLIKE</E>
+                    <E />
+                    <E>LIKE</E>
+                    <E>LOVE</E>
+                  </L>
+                  <T n="targetless">True</T>
+                  <E n="targets">Actor</E>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <T n="item">294157</T>
+          <L n="tests">
+            <L>
+              <V t="gameplay_object_preference_test">
+                <U n="gameplay_object_preference_test">
+                  <T n="gameplay_object_preference">289277<!--GameplayObjectPreference: foodPreferences_Infants_OatyOs--></T>
+                  <L n="preference_type">
+                    <E>DISLIKE</E>
+                    <E />
+                    <E>LIKE</E>
+                    <E>LOVE</E>
+                  </L>
+                  <T n="targetless">True</T>
+                  <E n="targets">Actor</E>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <T n="item">294158</T>
+          <L n="tests">
+            <L>
+              <V t="gameplay_object_preference_test">
+                <U n="gameplay_object_preference_test">
+                  <T n="gameplay_object_preference">289278<!--GameplayObjectPreference: foodPreferences_Infants_peanutButterPuffs--></T>
+                  <L n="preference_type">
+                    <E>DISLIKE</E>
+                    <E />
+                    <E>LIKE</E>
+                    <E>LOVE</E>
+                  </L>
+                  <T n="targetless">True</T>
+                  <E n="targets">Actor</E>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <T n="item">294159</T>
+          <L n="tests">
+            <L>
+              <V t="gameplay_object_preference_test">
+                <U n="gameplay_object_preference_test">
+                  <T n="gameplay_object_preference">289276<!--GameplayObjectPreference: foodPreferences_Infants_yogurtMelts--></T>
+                  <L n="preference_type">
+                    <E>DISLIKE</E>
+                    <E />
+                    <E>LIKE</E>
+                    <E>LOVE</E>
+                  </L>
+                  <T n="targetless">True</T>
+                  <E n="targets">Actor</E>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <E n="owner_sim">Actor</E>
+  <V n="picker_dialog" t="object_picker" />
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <T n="single_push_continuation">True</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>INFANT</E>
+          </L>
+        </V>
+        <E n="who">TargetSim</E>
+      </U>
+    </V>
+    <V t="developmental_milestone">
+      <U n="developmental_milestone">
+        <T n="developmental_milestone">286459<!--DevelopmentalMilestone: infantMilestones_FineMotor_PincerGrasp--></T>
+        <E n="subject">TargetSim</E>
+        <V n="tooltip" t="disabled" />
+      </U>
+    </V>
+    <V t="slot_test">
+      <U n="slot_test">
+        <V n="child_slot" t="by_reference">
+          <T n="by_reference">slot_SitEat</T>
+        </V>
+        <E n="participant">TargetSimPostureTarget</E>
+        <V n="tooltip" t="disabled" />
+      </U>
+    </V>
+    <V t="motive">
+      <U n="motive">
+        <L n="stats">
+          <T>16656<!--Commodity: motive_Hunger--></T>
+        </L>
+        <U n="threshold">
+          <T n="value">-50</T>
+        </U>
+        <E n="who">TargetSim</E>
+      </U>
+    </V>
+    <V t="posture">
+      <U n="posture">
+        <L n="required_postures">
+          <T>135522<!--Posture: posture_SitInHighChair--></T>
+        </L>
+        <E n="subject">TargetSim</E>
+      </U>
+    </V>
+    <V t="developmental_milestone">
+      <U n="developmental_milestone">
+        <T n="developmental_milestone">286469<!--DevelopmentalMilestone: infantMilestones_Generic_FirstFingerFood--></T>
+        <E n="subject">TargetSim</E>
+      </U>
+    </V>
+  </L>
+</I>

@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Utilities_FuseBox_LightFlickerOn" s="353042">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0xABE94A2C<!--String: "(From Broken Fuse Box)"--></T>
+          </V>
+          <T n="buff_type">354212<!--Buff: buff_FuseBox_FlickerReaction--></T>
+        </U>
+        <E n="subject">AllInstancedActiveHouseholdSims</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="ages" t="specified">
+                  <L n="specified">
+                    <E>TEEN</E>
+                    <E>YOUNGADULT</E>
+                    <E>ADULT</E>
+                    <E>ELDER</E>
+                    <E>CHILD</E>
+                  </L>
+                </V>
+                <V n="species" t="specified">
+                  <U n="specified">
+                    <L n="species">
+                      <E />
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="location">
+              <U n="location">
+                <U n="location_tests">
+                  <V n="is_on_active_lot" t="Is_or_is_not_on_active_lot" />
+                </U>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0xABE94A2C<!--String: "(From Broken Fuse Box)"--></T>
+          </V>
+          <T n="buff_type">354225<!--Buff: buff_FuseBox_FlickerReaction_IP--></T>
+        </U>
+        <E n="subject">AllInstancedActiveHouseholdSims</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="ages" t="specified">
+                  <L n="specified">
+                    <E>INFANT</E>
+                    <E>TODDLER</E>
+                  </L>
+                </V>
+                <V n="species" t="specified">
+                  <U n="specified">
+                    <L n="species">
+                      <E />
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="location">
+              <U n="location">
+                <U n="location_tests">
+                  <V n="is_on_active_lot" t="Is_or_is_not_on_active_lot" />
+                </U>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="reaction">
+      <U n="reaction">
+        <V n="si_reaction" t="enabled">
+          <U n="enabled">
+            <T n="affordance">354213<!--SuperInteraction: reaction_FuseBox_Flickering--></T>
+            <V n="affordance_target" t="disabled" />
+          </U>
+        </V>
+        <E n="subject">AllInstancedActiveHouseholdSims</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="location">
+              <U n="location">
+                <U n="location_tests">
+                  <V n="is_on_active_lot" t="Is_or_is_not_on_active_lot" />
+                  <V n="is_outside" t="enabled">
+                    <T n="enabled">False</T>
+                  </V>
+                </U>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="audio">
+      <U n="audio">
+        <U n="audio">
+          <T n="audio" p="InGame\Audio\SFX\utility_object\utilityobject_fusebox_break_light_flicker.propx">39b2aa4a:00000000:d6aa31f85238e6d9</T>
+        </U>
+      </U>
+    </V>
+    <V t="lighting_loot">
+      <U n="lighting_loot">
+        <U n="lighting_change">
+          <V n="dimmer_value" t="do_not_change_dimmer_value" />
+          <V n="light_target" t="all_lights">
+            <U n="all_lights">
+              <T n="include_common_area">True</T>
+            </U>
+          </V>
+          <V n="state_change" t="enabled">
+            <T n="enabled">254199<!--ObjectStateValue: lightFlickeringState_Values_On--></T>
+          </V>
+        </U>
+      </U>
+    </V>
+  </L>
+</I>

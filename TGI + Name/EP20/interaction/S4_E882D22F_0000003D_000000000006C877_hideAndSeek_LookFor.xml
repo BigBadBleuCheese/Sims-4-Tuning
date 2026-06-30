@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="hideAndSeek_LookFor" s="444535">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="circle">
+            <U n="circle">
+              <T n="ideal_radius">2</T>
+              <T n="multi_surface">True</T>
+              <T n="radius">3</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="value" t="facing" />
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Actor</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <L n="_static_commodities">
+    <U>
+      <T n="static_commodity">444537<!--StaticCommodity: commodity_RoleAutonomy_HideAndSeek_LookFor--></T>
+    </U>
+  </L>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">452601<!--AnimationElement: hideAndSeek_Look--></T>
+      </U>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>458784<!--LootActions: loot_HideAndSeek_FunGain--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="basic_reserve_object" t="disabled" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x5D005C7B<!--String: "Look for Hiding Sims"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="parameterized_autonomy">
+          <U>
+            <E n="key">Actor</E>
+            <U n="value">
+              <L n="push_on_success_or_fail">
+                <U>
+                  <T n="affordance">444536<!--SuperInteraction: hideAndSeek_Seek_Start--></T>
+                  <T n="push_on_fail">True</T>
+                  <E n="who">Actor</E>
+                </U>
+              </L>
+              <L n="requests">
+                <U>
+                  <T n="consider_same_target">True</T>
+                  <T n="same_target_only">True</T>
+                  <L n="static_commodities">
+                    <T>444593<!--StaticCommodity: commodity_RoleAutonomy_HideAndSeek_Seek_Start--></T>
+                  </L>
+                </U>
+              </L>
+            </U>
+          </U>
+        </L>
+      </U>
+    </U>
+  </V>
+  <L n="route_events">
+    <U>
+      <T n="route_event">445674<!--RouteEvent: routeEvent_HideAndSeek_LookAround--></T>
+    </U>
+  </L>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="in_use">
+      <U n="in_use">
+        <T n="negate">True</T>
+        <L n="targets">
+          <E>Object</E>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

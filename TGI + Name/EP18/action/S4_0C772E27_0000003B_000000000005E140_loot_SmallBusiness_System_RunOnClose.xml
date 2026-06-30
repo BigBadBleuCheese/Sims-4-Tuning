@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_SmallBusiness_System_RunOnClose" s="385344">
+  <L n="loot_actions">
+    <V t="apply_loot_to_all_lot_level_objects">
+      <U n="apply_loot_to_all_lot_level_objects">
+        <L n="loot_list">
+          <T>385347<!--LootActions: loot_SmallBusiness_Sign_SetCloseState--></T>
+        </L>
+        <V n="object_loot" t="enabled">
+          <U n="enabled">
+            <V n="objects" t="tagged_objects">
+              <U n="tagged_objects">
+                <L n="tags">
+                  <E>Func_Sync_SmallBusiness_OpenClose</E>
+                </L>
+              </U>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_remove">
+        <U n="statistic_remove">
+          <T n="stat">440583<!--Commodity: commodity_SmallBusiness_OpenTimer--></T>
+        </U>
+      </V>
+    </V>
+    <V t="cancel_scheduled_drama_node">
+      <U n="cancel_scheduled_drama_node">
+        <L n="drama_nodes">
+          <T>438981<!--DialogDramaNode: dialogDramaNode_SmallBusinessCustomer_SpecialBehavior_TNS--></T>
+        </L>
+        <T n="is_simless">True</T>
+        <E n="receiver">Actor</E>
+      </U>
+    </V>
+    <V t="apply_loot_to_all_lot_level_objects">
+      <U n="apply_loot_to_all_lot_level_objects">
+        <L n="loot_list">
+          <T>493094<!--LootActions: loot_Laundry_SmallBusiness_Dryer_TurnOff--></T>
+        </L>
+        <V n="object_loot" t="enabled">
+          <U n="enabled">
+            <V n="objects" t="tagged_objects">
+              <U n="tagged_objects">
+                <L n="tags">
+                  <E>Func_Laundry_Dryer</E>
+                </L>
+              </U>
+            </V>
+            <L n="tests">
+              <L>
+                <V t="state">
+                  <U n="state">
+                    <T n="value">493071<!--ObjectStateValue: laundry_SmallBusiness_On--></T>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="apply_loot_to_all_lot_level_objects">
+      <U n="apply_loot_to_all_lot_level_objects">
+        <L n="loot_list">
+          <T>493092<!--LootActions: loot_Laundry_SmallBusiness_WashingMachine_TurnOff--></T>
+        </L>
+        <V n="object_loot" t="enabled">
+          <U n="enabled">
+            <V n="objects" t="tagged_objects">
+              <U n="tagged_objects">
+                <L n="tags">
+                  <E>Func_Laundry_WashingMachine</E>
+                </L>
+              </U>
+            </V>
+            <L n="tests">
+              <L>
+                <V t="state">
+                  <U n="state">
+                    <T n="value">493071<!--ObjectStateValue: laundry_SmallBusiness_On--></T>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+</I>

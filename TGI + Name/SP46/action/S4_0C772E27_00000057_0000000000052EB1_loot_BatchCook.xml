@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_BatchCook" s="339633">
+  <L n="loot_actions">
+    <V t="create_object">
+      <U n="create_object">
+        <V n="creation_data" t="clone_object">
+          <U n="clone_object">
+            <V n="source_object" t="is_participant">
+              <U n="is_participant">
+                <E n="participant">CreatedObject</E>
+              </U>
+            </V>
+          </U>
+        </V>
+        <V n="location" t="inventory" />
+        <T n="quantity">1</T>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="text" t="single">
+              <T n="single">0x95FAA608<!--String: "Ding! {0.SimFirstName}'s efficient use of Prepped Ingredients allowed {0.SimPronounObjective} to cook extra meal servings! You can find them in {0.SimFirstName}'s inventory."--></T>
+            </V>
+            <L n="ui_responses">
+              <U>
+                <T n="text">0xD030349C<!--String: "Open Inventory"--></T>
+                <E n="ui_request">SHOW_SIM_INVENTORY</E>
+              </U>
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="trait">
+        <U n="trait">
+          <L n="whitelist_traits">
+            <T>339631<!--Trait: trait_BatchCook--></T>
+          </L>
+        </U>
+      </V>
+      <V t="crafting_consumed_ingredients_test">
+        <U n="crafting_consumed_ingredients_test">
+          <L n="ingredient_list">
+            <V t="ingredient_by_tag">
+              <U n="ingredient_by_tag">
+                <E n="ingredient_tag">Func_Ingredient_Prepped</E>
+              </U>
+            </V>
+          </L>
+          <V n="subject" t="enabled">
+            <E n="enabled">CreatedObject</E>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

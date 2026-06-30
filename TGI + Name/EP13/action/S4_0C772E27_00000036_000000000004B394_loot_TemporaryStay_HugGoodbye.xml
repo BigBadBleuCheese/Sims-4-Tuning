@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_TemporaryStay_HugGoodbye" s="308116">
+  <L n="loot_actions">
+    <V t="relationship_bits_loot">
+      <U n="relationship_bits_loot">
+        <L n="bit_operations">
+          <U>
+            <T n="bit">308115<!--RelationshipBit: shortTermBits_TemporaryStay_HuggedGoodbye--></T>
+            <E n="operation">ADD</E>
+            <E n="recipients">Actor</E>
+            <E n="targets">TargetSim</E>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0xB430197F<!--String: "(From Grandparents Staying Over)"--></T>
+          </V>
+          <T n="buff_type">307451<!--Buff: buff_TemporaryStay_NiceSeeingGrandparents--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="relationship">
+              <U n="relationship">
+                <U n="required_relationship_bits">
+                  <L n="match_any">
+                    <T>8808<!--RelationshipBit: family_Target_IsGrandparentOf_Actor--></T>
+                  </L>
+                </U>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x444902D5<!--String: "(From Parents Staying Over)"--></T>
+          </V>
+          <T n="buff_type">307450<!--Buff: buff_TemporaryStay_NiceSeeingParents--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="relationship">
+              <U n="relationship">
+                <U n="required_relationship_bits">
+                  <L n="match_any">
+                    <T>8809<!--RelationshipBit: family_Target_IsParentOf_Actor--></T>
+                  </L>
+                </U>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+                <L n="target_sim">
+                  <E>TargetSim</E>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x8936463A<!--String: "(From Family Stay Over)"--></T>
+          </V>
+          <T n="buff_type">307453<!--Buff: buff_TemporaryStay_NiceSeeingFamily--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="relationship">
+              <U n="relationship">
+                <U n="prohibited_relationship_bits">
+                  <L n="match_any">
+                    <T>8809<!--RelationshipBit: family_Target_IsParentOf_Actor--></T>
+                    <T>8808<!--RelationshipBit: family_Target_IsGrandparentOf_Actor--></T>
+                  </L>
+                </U>
+                <U n="required_relationship_bits">
+                  <L n="match_any">
+                    <T>15806<!--RelationshipBitCollection: rbc_Family_IncludingSpouseAndDistantAndStep--></T>
+                    <T>474387<!--RelationshipBitCollection: rbc_Family_InLaws--></T>
+                  </L>
+                </U>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+                <L n="target_sim">
+                  <E>TargetSim</E>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0xEF27EDCC<!--String: "(From Friends Staying Over)"--></T>
+          </V>
+          <T n="buff_type">307452<!--Buff: buff_TemporaryStay_NiceSeeingFriends--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="relationship">
+              <U n="relationship">
+                <U n="prohibited_relationship_bits">
+                  <L n="match_any">
+                    <T>8809<!--RelationshipBit: family_Target_IsParentOf_Actor--></T>
+                    <T>8808<!--RelationshipBit: family_Target_IsGrandparentOf_Actor--></T>
+                    <T>15806<!--RelationshipBitCollection: rbc_Family_IncludingSpouseAndDistantAndStep--></T>
+                    <T>474387<!--RelationshipBitCollection: rbc_Family_InLaws--></T>
+                  </L>
+                </U>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+                <L n="target_sim">
+                  <E>TargetSim</E>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T n="run_test_first">True</T>
+</I>

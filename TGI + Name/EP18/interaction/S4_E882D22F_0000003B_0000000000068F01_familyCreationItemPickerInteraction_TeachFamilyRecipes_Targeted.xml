@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="FamilyCreationItemPickerInteraction" i="interaction" m="sims.family_recipes.family_recipes_picker_interactions" n="familyCreationItemPickerInteraction_TeachFamilyRecipes_Targeted" s="429825">
+  <V n="_saveable" t="disabled" />
+  <T n="category">308260<!--PieMenuCategory: sim_SubCat_Friendly_Hobbies--></T>
+  <V n="content_score" t="disabled" />
+  <V n="continuation" t="enabled">
+    <L n="enabled">
+      <U>
+        <T n="affordance">431838<!--SocialMixerInteraction: socials_Targeted_Friendly_AlwaysOn_TeachFamilyRecipe_Targeted--></T>
+        <T n="si_affordance_override">13998<!--SocialSuperInteraction: sim_Chat--></T>
+        <E n="target">TargetSim</E>
+      </U>
+    </L>
+  </V>
+  <T n="display_name">0x7A11CA69<!--String: "Teach Family Recipe"--></T>
+  <V n="display_name_overrides" t="testable">
+    <U n="testable">
+      <L n="overrides">
+        <U>
+          <V n="new_display_name" t="disabled" />
+          <V n="new_pie_menu_icon" t="enabled">
+            <V n="enabled" t="resource_key">
+              <U n="resource_key">
+                <T n="key" p="InEP21\UI\Icons\PieMenu\PieMenu_UnityAlignedAction.png">2f7d0004:00000000:79a65800e2bcdb2c</T>
+              </U>
+            </V>
+          </V>
+          <L n="test">
+            <L>
+              <V t="test_set_reference">
+                <T n="test_set_reference">501184<!--TestSetInstance: testSet_DynastyBG_SocialPrestigeIcon_Alliance--></T>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+    <E>Interaction_Friendly</E>
+  </L>
+  <V n="item" t="family_recipe" />
+  <V n="picker_dialog" t="object_picker">
+    <U n="object_picker">
+      <L n="dialog_options">
+        <E>DISABLE_CLOSE_BUTTON</E>
+      </L>
+    </U>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">TargetSim</E>
+      </U>
+    </V>
+    <V t="in_same_household" />
+    <V t="notebook_categories_test">
+      <U n="notebook_categories_test">
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x81B30A23<!--String: "Create a Family Recipe to do this interaction."--></T>
+        </V>
+        <U n="unlocked_categories">
+          <V n="whitelist" t="specify">
+            <U n="specify">
+              <L n="whitelist">
+                <E>Family Recipes</E>
+              </L>
+            </U>
+          </V>
+        </U>
+      </U>
+    </V>
+    <V t="relationship">
+      <U n="relationship">
+        <U n="prohibited_relationship_bits">
+          <L n="match_any">
+            <T>240110<!--RelationshipBitCollection: rbc_Sentiment_Negative--></T>
+          </L>
+        </U>
+        <U n="relationship_score_interval">
+          <T n="lower_bound">-20</T>
+        </U>
+        <L n="subject">
+          <E>Actor</E>
+        </L>
+        <L n="target_sim">
+          <E>TargetSim</E>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x19F088AB<!--String: "A Family Recipe cannot be taught to Sims who have a negative relationship or sentiment."--></T>
+        </V>
+        <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+      </U>
+    </V>
+  </L>
+</I>

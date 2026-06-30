@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="BusinessRule" i="business_rule" m="business.business_rule" n="Rule_PMI_MaxHousehold" s="347342">
+  <T n="auto_resolve_time">0</T>
+  <T n="cooldown_time">1300</T>
+  <T n="fine">1000</T>
+  <T p="InEP15\UI\Icons\UnitRules\UnitRules_MaximumOccupancy.png" n="icon">2f7d0004:00000000:bdf4ea91d165c1a6</T>
+  <T n="loot_on_auto_resolved">340361<!--LootActions: loot_LandlordTenant_ViolateRules--></T>
+  <T n="loot_on_rule_broken">349354<!--LootActions: loot_PMI_MaxHousehold--></T>
+  <T n="rule_description">0x1B708146<!--String: "Two's a crowd, three's a party, and four Sims in one household violates the Maximum Occupancy rule. "--></T>
+  <T n="rule_name">0x9260BAD9<!--String: "Maximum Occupancy"--></T>
+  <L n="test_events">
+    <L>
+      <V t="household_size">
+        <U n="household_size">
+          <E n="participant">TargetHouseholdMembers</E>
+          <V n="test_type" t="test_sim_infos">
+            <U n="test_sim_infos">
+              <U n="count">
+                <T n="value">4</T>
+              </U>
+              <V n="test" t="sim_info">
+                <U n="sim_info">
+                  <V n="species" t="specified">
+                    <U n="specified">
+                      <L n="species">
+                        <E>HUMAN</E>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </U>
+          </V>
+          <V n="tooltip" t="disabled" />
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

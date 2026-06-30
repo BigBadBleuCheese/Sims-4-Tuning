@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="ObjectInInventoryPickerInteraction" i="interaction" m="interactions.base.picker_interaction" n="giveGift_Interactions_Pickers_EP20World_FirewatchTower_Picker" s="469590">
+  <V n="_saveable" t="disabled" />
+  <V n="content_score" t="disabled" />
+  <V n="continuation" t="enabled">
+    <L n="enabled">
+      <U>
+        <T n="affordance">469405<!--SuperInteraction: eP20World_FirewatchTower_DropoffGift--></T>
+      </U>
+    </L>
+  </V>
+  <T n="display_name">0x149E4ECB<!--String: "Drop Off Gift for Hermit Ranger"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <V n="inventory_item_test" t="tag_set">
+    <U n="tag_set">
+      <L n="tag_set">
+        <E>Func_Book_Homework</E>
+        <E>Func_SchoolProjectBox_Child</E>
+        <E>Func_SchoolProjectBox_Teen</E>
+        <E>Func_FlowerArrangement</E>
+        <E>Func_GiveGift_NotGiftable</E>
+      </L>
+      <E n="test_type">CONTAINS_NO_TAGS_IN_SET</E>
+    </U>
+  </V>
+  <V n="picker_dialog" t="object_picker" />
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+            <E>TODDLER</E>
+            <E>BABY</E>
+            <E>INFANT</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="state">
+      <U n="state">
+        <E n="operator">NOTEQUAL</E>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xEE1F0902<!--String: "{0.SimFirstName} can't send another gift until receiving one back from the Hermit Park Ranger. Check back later to collect it."--></T>
+        </V>
+        <T n="value">470743<!--ObjectStateValue: eP20World_FirewatchTower_GiftSet_GiftSent--></T>
+      </U>
+    </V>
+  </L>
+</I>

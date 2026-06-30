@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalObjectInteraction" i="situation_goal" m="situations.situation_goal_object_interaction" n="situationGoalObjectInteraction_LiveEvent_EV008_BreakInRoyalEnvoyPhone" s="494550">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T p="InGame\UI\Icons\Headlines\Final\headline_cellphoneold.png" n="enabled">2f7d0004:00000000:feed889af683ed97</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0xFE89D5F7<!--String: "Hack the Royal Envoy's Phone"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0xFD905B99<!--String: "The Envoy's phone is in the inventory.\n\nFind it there, and choose to hack the file inside it!\n\nHint: A replacement Envoy phone can be found by rummaging in a trash can again."--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>447711<!--SituationGoalLootActions: liveEvent_GoalLoot_CompleteQuestGoal--></T>
+  </L>
+  <U n="_goal_test">
+    <L n="affordances">
+      <T>499843<!--SuperInteraction: liveEvents_EV008_InvestigatePhone_B--></T>
+    </L>
+    <E n="test_event">InteractionComplete</E>
+  </U>
+  <L n="_post_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+      </U>
+    </V>
+  </L>
+  <L n="_pre_goal_loot_list">
+    <T>500879<!--SituationGoalLootActions: liveEvent_GoalLoot_EV008_CreatePhone--></T>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+  <V n="goal_completion_notification" t="enabled">
+    <U n="enabled">
+      <L n="dialog_options">
+        <E>DISABLE_CLOSE_BUTTON</E>
+      </L>
+      <V n="icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T p="InGame\UI\Icons\Headlines\Final\headline_cellphoneold.png" n="key">2f7d0004:00000000:feed889af683ed97</T>
+          </U>
+        </V>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0x3F01BE7C<!--String: "{0.SimFirstName} remembers the code {0.SimPronounSubjective} found hidden on Cordelia's Statue in the museum and wonders if it's related to the Royal Envoy's plan. {0.SimPronounSubjective} {S0.enters}{P0.enter} the code and voila! The Master Plan file opens and it is shocking. You know, As someone who is trying to commit such a large crime, the Royal Envoy has a terrible understanding of cybersecurity.\n\nThe file reveals all of their plans in detail. It turns out, the Envoy was trying to steal the treasures for themself this whole time, sell them off, and make a massive profit! Wow, it also includes the specs for a massive house with so many hot tubs...\n\nNo wonder the Royal Envoy has been acting so shady. They have been tricking people this whole time! They must be found immediately. This crime cannot go unanswered!\n\n{0.SimFirstName} remembers someone mentioning that the Royal Envoy was running towards the Blue Velvet Nightclub in Willow Creek...maybe they're still there."--></T>
+      </V>
+    </U>
+  </V>
+  <V n="tutorial_tip_group" t="enabled">
+    <T n="enabled">498759<!--TutorialTipGroup: tutorialTipGroup_LiveEvent_EV008_InspectPhone--></T>
+  </V>
+</I>

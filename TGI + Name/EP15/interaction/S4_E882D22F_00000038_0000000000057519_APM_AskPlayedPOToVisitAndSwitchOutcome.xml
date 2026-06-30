@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="APM_AskPlayedPOToVisitAndSwitchOutcome" s="357657">
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <V n="content_score" t="disabled" />
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="partial">
+    <U n="partial">
+      <T n="all_failure_string">0x246B697F<!--String: "Nobody can make it over right now!\n{0.String}"--></T>
+      <T n="all_success_string">0x70F44FEA<!--String: "Everyone is coming over!"--></T>
+      <U n="default_actions">
+        <L n="basic_extras">
+          <V t="create_situation">
+            <U n="create_situation">
+              <V n="create_situation" t="situation_start">
+                <U n="situation_start">
+                  <T n="invite_actor">False</T>
+                  <L n="invite_participants">
+                    <U>
+                      <E n="participants_to_invite">PickedSim</E>
+                      <V n="invite_to_job" t="specify_job">
+                        <L n="specify_job">
+                          <T>345207<!--SituationJob: job_APM_PO_Owned--></T>
+                        </L>
+                      </V>
+                    </U>
+                  </L>
+                  <T n="invite_picked_sims">False</T>
+                  <T n="invite_target_sim">False</T>
+                  <T n="situation">357653<!--CustomStatesSituation: situation_APM_SwitchToPO--></T>
+                  <T n="user_facing">False</T>
+                </U>
+              </V>
+            </U>
+          </V>
+        </L>
+      </U>
+      <U n="notification">
+        <L n="dialog_options">
+          <E>DISABLE_CLOSE_BUTTON</E>
+        </L>
+        <V n="icon" t="enabled">
+          <V n="enabled" t="resource_key">
+            <U n="resource_key">
+              <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_cellphoneold.png">2f7d0004:00000000:feed889af683ed97</T>
+            </U>
+          </V>
+        </V>
+        <V n="title" t="enabled">
+          <T n="enabled">0x7139C648<!--String: "Property Owner Visit"--></T>
+        </V>
+      </U>
+      <T n="partial_success_string">0x4477AF8<!--String: "Not everyone could make it over!\n{0.String}"--></T>
+      <T n="single_failure_string">0x3DF4105A<!--String: "{0.String}"--></T>
+      <T n="single_success_string">0x2724103B<!--String: "{1.SimName} will be right over!"--></T>
+      <L n="test_and_results">
+        <U>
+          <T n="result_string">0x9AFF2B31<!--String: "{0.SimFirstName} is busy right now!"--></T>
+          <L n="test">
+            <L>
+              <V t="filter_test">
+                <U n="filter_test">
+                  <V n="filter_target" t="enabled">
+                    <E n="enabled">PickedSim</E>
+                  </V>
+                  <T n="include_rabbithole_sims">True</T>
+                  <T n="sim_filter">100958<!--TunableSimFilter: filter_IsBusy--></T>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+      <V n="total_failure" t="enabled">
+        <U n="enabled">
+          <E n="outcome_result">FAILURE</E>
+        </U>
+      </V>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+  <T n="visible">False</T>
+</I>

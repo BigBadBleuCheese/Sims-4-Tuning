@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="si_ChildhoodInspiration_CreateScrapbook" s="484872">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="facing" />
+        </U>
+        <U>
+          <V n="value" t="circle">
+            <U n="circle">
+              <T n="radius">1</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">100698<!--AnimationElement: Generic_CreateAndCarry--></T>
+        <U n="overrides">
+          <L n="params">
+            <U>
+              <T n="name">surfaceHeight</T>
+              <V n="value" t="string">
+                <T n="string">inventory</T>
+              </V>
+            </U>
+          </L>
+        </U>
+      </U>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="create_object">
+      <U n="create_object">
+        <V n="creation_data" t="definition_tested">
+          <U n="definition_tested">
+            <L n="definitions">
+              <U>
+                <T n="definition">34342</T>
+              </U>
+            </L>
+          </U>
+        </V>
+        <T n="destroy_on_placement_failure">True</T>
+        <L n="initial_states">
+          <U>
+            <T n="state">347253<!--ObjectStateValue: genericCleanupService_CleanUp--></T>
+          </U>
+        </L>
+        <V n="location" t="carry" />
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+  </L>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xFCB44120<!--String: "Find Lost Scrapbook"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="continuation">
+          <U>
+            <T n="affordance">484873<!--SuperInteraction: si_ChildhoodInspiration_ReadScrapbook--></T>
+            <E n="target">CreatedObject</E>
+          </U>
+        </L>
+        <L n="loot_list">
+          <T>472461<!--RandomWeightedLoot: randomWeightedLoot_ChildhoodInspiration_PickFollowInFootsteps--></T>
+        </L>
+      </U>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T n="key" p="InGame\UI\Icons\PieMenu\SpecialInteractions\specialInteraction_InquisitivenessChallenge_piemenu.png">2f7d0004:00000000:154f32ad54df4d2d</T>
+      </U>
+    </V>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="posture">
+      <U n="posture">
+        <L n="prohibited_postures">
+          <T>39398<!--MobilePosture: posture_Swim--></T>
+        </L>
+      </U>
+    </V>
+    <V t="has_timed_aspirations">
+      <U n="has_timed_aspirations">
+        <V n="test_behavior" t="has_specific_timed_aspiration">
+          <U n="has_specific_timed_aspiration">
+            <T n="invert">True</T>
+            <L n="timed_aspirations">
+              <T>454870<!--TimedAspiration: childhoodInspiration_FollowInFootsteps_OnTour--></T>
+              <T>454871<!--TimedAspiration: childhoodInspiration_FollowInFootsteps_Sketches--></T>
+              <T>454872<!--TimedAspiration: childhoodInspiration_FollowInFootsteps_SwimTeam--></T>
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">486095<!--TestSetInstance: testSet_ChildhoodInspiration_FollowInFootstepsNotComplete--></T>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

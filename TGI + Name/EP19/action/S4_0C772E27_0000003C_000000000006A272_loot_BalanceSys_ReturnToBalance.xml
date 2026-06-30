@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_BalanceSys_ReturnToBalance" s="434802">
+  <L n="loot_actions">
+    <V t="actions">
+      <T n="actions">432402<!--LootActions: loot_BalanceSys_RemoveMinorEffects--></T>
+    </V>
+    <V t="actions">
+      <T n="actions">434450<!--LootActions: loot_BalanceSys_RemoveMajorEffects--></T>
+    </V>
+    <V t="reaction">
+      <U n="reaction">
+        <V n="mixer_reaction" t="enabled">
+          <U n="enabled">
+            <T n="affordance">435045<!--MixerInteraction: idle_Buff_BalanceSys_ReturnToBalance--></T>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="show_balloon">
+      <U n="show_balloon">
+        <U n="balloon">
+          <L n="balloon_choices">
+            <U>
+              <V n="item" t="balloon_icon">
+                <U n="balloon_icon">
+                  <V n="icon" t="resource_key">
+                    <U n="resource_key">
+                      <T n="key" p="InEP19\UI\Icons\Headlines\headline_Balance.png">2f7d0004:00000000:40785c214785aa34</T>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </U>
+          </L>
+          <L n="balloon_target">
+            <E>Actor</E>
+          </L>
+        </U>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="test_set_reference">
+        <T n="test_set_reference">449546<!--TestSetInstance: testSetInstance_BalanceSys_HasBalance--></T>
+      </V>
+      <V t="buff">
+        <U n="buff">
+          <V n="whitelist" t="enabled">
+            <L n="enabled">
+              <T>435003<!--Buff: buff_BalanceSys_Hidden_Balance--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

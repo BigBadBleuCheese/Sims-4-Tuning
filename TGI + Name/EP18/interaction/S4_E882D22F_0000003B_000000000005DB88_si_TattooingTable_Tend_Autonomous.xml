@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="si_TattooingTable_Tend_Autonomous" s="383880">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="circle">
+            <U n="circle">
+              <T n="ideal_radius">1</T>
+              <T n="radius">10</T>
+              <T n="require_los">False</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <L n="_static_commodities">
+    <U>
+      <T n="static_commodity">403114<!--StaticCommodity: staticCommodity_TattooArtist--></T>
+    </U>
+  </L>
+  <T n="_super_affordance_can_share_target">True</T>
+  <T n="allow_user_directed">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="list_reference">
+          <T n="list_reference">40705<!--ExitConditionList: ExitConditionList_MotivesNearFail--></T>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="time_based">
+                <U n="time_based">
+                  <T n="min_time">0</T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">NO_ACTION</E>
+            <L n="loot_actions">
+              <T>383849<!--LootActions: loot_Tattooing_GoNearTattooingTableTend--></T>
+            </L>
+          </U>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="state_based">
+                <U n="state_based">
+                  <V n="state" t="on_trigger">
+                    <T n="on_trigger">383846<!--ObjectStateValue: tattooingTable_Tend_UserDirected_Yes--></T>
+                  </V>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+        <V t="list_reference">
+          <T n="list_reference">40144<!--ExitConditionList: ExitConditionList_EmotionMiserable--></T>
+        </V>
+        <V t="list_reference">
+          <T n="list_reference">40702<!--ExitConditionList: ExitConditionList_EmotionStressed--></T>
+        </V>
+      </L>
+      <V n="content" t="staging_content">
+        <U n="staging_content">
+          <U n="content_set">
+            <L n="affordance_links">
+              <T>433197<!--MixerInteraction: mixer_Tattooing_TendBroadcaster--></T>
+            </L>
+          </U>
+        </U>
+      </V>
+      <V n="periodic_stat_change" t="enabled">
+        <U n="enabled">
+          <U n="operation_actions">
+            <L n="actions">
+              <T>383849<!--LootActions: loot_Tattooing_GoNearTattooingTableTend--></T>
+            </L>
+            <T n="alarm_interval">30</T>
+          </U>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <T n="buff_type">383851<!--Buff: buff_TattooingTable_Hidden_Tend--></T>
+        </U>
+      </U>
+    </V>
+  </L>
+  <L n="basic_liabilities">
+    <V t="temporary_state_change">
+      <U n="temporary_state_change">
+        <E n="target">Object</E>
+        <L n="temp_state_values">
+          <T>384320<!--ObjectStateValue: tattooingTable_Tend_Autonomous_Yes--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="basic_reserve_object" t="disabled" />
+  <V n="content_score" t="disabled" />
+  <T n="disable_autonomous_multitasking_if_user_directed">True</T>
+  <T n="display_name">0xA85963B6<!--String: "Tend Tattoo Table"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <T n="pie_menu_priority">7</T>
+  <U n="posture_preferences">
+    <T n="apply_posture_costs">True</T>
+    <L n="posture_cost_overrides">
+      <U>
+        <T n="key">15537<!--MobilePosture: posture_Stand--></T>
+        <T n="value">-100</T>
+      </U>
+      <U>
+        <T n="key">378571<!--Posture: posture_TattooingTable_Artist--></T>
+        <T n="value">100</T>
+      </U>
+    </L>
+  </U>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="include_all">
+        <U n="include_all">
+          <L n="exclude_affordances">
+            <T>152179<!--SuperInteraction: si_CraftSalesTable_Tend_Paintings--></T>
+            <T>145247<!--SuperInteraction: si_CraftSalesTable_Tend--></T>
+            <T>336346<!--SuperInteraction: si_StreetFoodTable_TendTable--></T>
+            <T>346331<!--SuperInteraction: si_StreetFoodTable_TendTable_Child--></T>
+            <T>272111<!--SuperInteraction: massageChair_Tend--></T>
+            <T>272382<!--SuperInteraction: massageTable_Tend--></T>
+            <T>13063<!--SuperInteraction: bar_Tendbar--></T>
+            <T>122156<!--SuperInteraction: espressoBar_Tend--></T>
+            <T>402526<!--SuperInteraction: marketStalls_Tend_CoffeeCounter--></T>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>383851<!--Buff: buff_TattooingTable_Hidden_Tend--></T>
+        </L>
+      </U>
+    </V>
+    <V t="state">
+      <U n="state">
+        <E n="operator">NOTEQUAL</E>
+        <V n="tooltip" t="disabled" />
+        <T n="value">383846<!--ObjectStateValue: tattooingTable_Tend_UserDirected_Yes--></T>
+      </U>
+    </V>
+    <V t="state">
+      <U n="state">
+        <E n="operator">NOTEQUAL</E>
+        <V n="tooltip" t="disabled" />
+        <T n="value">384320<!--ObjectStateValue: tattooingTable_Tend_Autonomous_Yes--></T>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">28176<!--TestSetInstance: testSet_EmotionNotStressed--></T>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">28305<!--TestSetInstance: testSet_EmotionNotMiserable--></T>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+  <V n="utility_info" t="enabled">
+    <L n="enabled">
+      <U>
+        <E n="key">POWER</E>
+      </U>
+    </L>
+  </V>
+</I>

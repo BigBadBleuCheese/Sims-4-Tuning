@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Buff" i="buff" m="buffs.buff" n="moodBuffs_Horses_Hidden_Angry" s="319703">
+  <V n="_add_test_set" t="tests_set">
+    <L n="tests_set">
+      <L>
+        <V t="sim_info">
+          <U n="sim_info">
+            <V n="species" t="specified">
+              <U n="specified">
+                <L n="species">
+                  <E>HORSE</E>
+                </L>
+              </U>
+            </V>
+          </U>
+        </V>
+      </L>
+    </L>
+  </V>
+  <L n="_loot_on_addition" />
+  <L n="_loot_on_removal">
+    <T>77734<!--LootActions: emotion_Start_Fine--></T>
+  </L>
+  <T p="InGame\Audio\Stings\sting_buff_gain.propx" n="audio_sting_on_add">39b2aa4a:00000000:8af8b916cf64c646</T>
+  <T p="InGame\Audio\Stings\sting_buff_loss.propx" n="audio_sting_on_remove">39b2aa4a:00000000:3bf33216a25546ea</T>
+  <U n="game_effect_modifier">
+    <L n="_game_effect_modifiers">
+      <V t="autonomy_modifier">
+        <U n="autonomy_modifier">
+          <L n="commodities_to_add">
+            <T>330328<!--Commodity: commodity_Emotion_Autonomy_Horse_Angry--></T>
+          </L>
+          <L n="interaction_score_modifier">
+            <U>
+              <L n="affordances">
+                <T>322264<!--SocialSuperInteraction: horseSocials_HorseToHorse_Touching_Mean_BiteAt--></T>
+                <T>322230<!--SocialSuperInteraction: horseSocials_HorseToSim_Touching_Mean_BiteAt--></T>
+                <T>322231<!--SocialSuperInteraction: horseSocials_HorseToHorse_Touching_Mean_YellAt--></T>
+              </L>
+              <T n="modifier">1.33</T>
+            </U>
+          </L>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T p="InGame\UI\Icons\Debug\missing_image.png" n="icon">2f7d0004:00000000:30f0846c783606f9</T>
+  <V n="interactions" t="enabled">
+    <U n="enabled">
+      <L n="interaction_items">
+        <T>334811<!--MixerInteraction: emotion_Idle_Horse--></T>
+        <T>334812<!--MixerInteraction: emotion_Idle_HorseRiding--></T>
+      </L>
+      <T n="scored_commodity">330328<!--Commodity: commodity_Emotion_Autonomy_Horse_Angry--></T>
+    </U>
+  </V>
+  <V n="route_events" t="enabled">
+    <U n="enabled">
+      <L n="repeating_events">
+        <T>329540<!--RouteEvent: routeEvent_Horses_Angry_Snort--></T>
+      </L>
+    </U>
+  </V>
+  <L n="super_affordances">
+    <T>330728<!--SuperInteraction: horseInteractions_Angry_Tantrum--></T>
+  </L>
+  <T n="visible">False</T>
+</I>

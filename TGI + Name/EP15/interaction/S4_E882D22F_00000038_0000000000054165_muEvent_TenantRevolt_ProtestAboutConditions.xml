@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="muEvent_TenantRevolt_ProtestAboutConditions" s="344421">
+  <V n="_animation_actor_map" t="reference">
+    <T n="reference">104104<!--AnimationActorMap: AlreadyCarryingCarryTarget--></T>
+  </V>
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="spawn_points">
+            <U n="spawn_points">
+              <V n="tags" t="Spawn_Point_Tags">
+                <L n="Spawn_Point_Tags">
+                  <E>Spawn_Arrival</E>
+                </L>
+              </V>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Actor</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="time_based">
+                <U n="time_based">
+                  <T n="max_time">45</T>
+                  <T n="min_time">45</T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="buff_based">
+                <U n="buff_based">
+                  <T n="buff">226416<!--Buff: buff_Generic_CancelInteraction--></T>
+                </U>
+              </V>
+            </L>
+          </U>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="buff_based">
+                <U n="buff_based">
+                  <T n="buff">358006<!--Buff: buff_muEvent_TenantRevolt_Autonomy--></T>
+                  <E n="timing">ON_REMOVE</E>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+      </L>
+      <V n="content" t="staging_content">
+        <U n="staging_content">
+          <U n="content_set">
+            <L n="affordance_links">
+              <T>351761<!--MixerInteraction: mixer_muEvent_TenantRevolt_Megaphone--></T>
+              <T>351760<!--MixerInteraction: mixer_muEvent_TenantRevolt_Protest--></T>
+            </L>
+          </U>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="basic_liabilities">
+    <V t="route_goal_suppression" />
+  </L>
+  <V n="basic_reserve_object" t="disabled" />
+  <V n="canonical_animation" t="enabled">
+    <U n="enabled">
+      <T n="factory">344504<!--AnimationElement: muEvent_TenantRevolt_Protest--></T>
+    </U>
+  </V>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xF783583F<!--String: "Protest About Conditions"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="basic_extras">
+          <V t="buff_fire_and_forget">
+            <U n="buff_fire_and_forget">
+              <U n="buff">
+                <V n="buff_reason" t="enabled">
+                  <T n="enabled">0xE137C9C7<!--String: "(From Tenant Revolt)"--></T>
+                </V>
+                <T n="buff_type">352350<!--Buff: buff_muEvent_TenantRevolt_MobRules--></T>
+              </U>
+            </U>
+          </V>
+        </L>
+        <T n="force_outcome_on_exit">True</T>
+      </U>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all" />
+    </U>
+  </V>
+  <E n="target_type">ACTOR</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

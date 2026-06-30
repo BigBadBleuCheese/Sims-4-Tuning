@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="si_EP17Festival_Podium_AdmitProblem_Grief" s="385244">
+  <V n="_saveable" t="enabled" />
+  <L n="_static_commodities">
+    <U>
+      <T n="static_commodity">385248<!--StaticCommodity: staticCommodity_RoleAutonomy_EP17Festival_AA_Ghost--></T>
+    </U>
+  </L>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="time_based">
+                <U n="time_based">
+                  <T n="max_time">30</T>
+                  <T n="min_time">25</T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+        <V t="list_reference">
+          <T n="list_reference">40705<!--ExitConditionList: ExitConditionList_MotivesNearFail--></T>
+        </V>
+      </L>
+      <V n="content" t="staging_content">
+        <U n="staging_content">
+          <U n="content_set">
+            <L n="affordance_links">
+              <T>423197<!--MixerInteraction: EP17Podium_Mixers_AdmitGriefProblems--></T>
+            </L>
+          </U>
+        </U>
+      </V>
+      <V n="periodic_stat_change" t="enabled">
+        <U n="enabled">
+          <U n="operation_actions">
+            <L n="actions">
+              <T>385983<!--LootActions: loot_Grief_PositiveCoping_Increase_Periodic_Any--></T>
+            </L>
+          </U>
+          <L n="operations">
+            <V t="dynamic_skill">
+              <U n="dynamic_skill">
+                <U n="skill_loot_data_override">
+                  <E n="effectiveness">SmallPeriodic</E>
+                  <T n="stat">16699<!--Skill: statistic_Skill_AdultMajor_Charisma--></T>
+                </U>
+              </U>
+            </V>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="balloon">
+      <U n="balloon">
+        <L n="balloon_choices">
+          <U>
+            <V n="item" t="balloon_category">
+              <T n="balloon_category">389024<!--BalloonCategory: balloonCategory_EP17Festival_AdmitGrief--></T>
+            </V>
+          </U>
+        </L>
+        <L n="balloon_target">
+          <E>Actor</E>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="canonical_animation" t="enabled">
+    <U n="enabled">
+      <T n="factory">383302<!--AnimationElement: Funerals_Canonical_Podium--></T>
+    </U>
+  </V>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xD356627A<!--String: "Admit Grieving Problems"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="basic_extras">
+          <V t="buff_fire_and_forget">
+            <U n="buff_fire_and_forget">
+              <U n="buff">
+                <T n="buff_type">389033<!--Buff: buff_EP17Festival_AA_AdmitProblems_AutonomousCooldown--></T>
+              </U>
+            </U>
+          </V>
+        </L>
+        <L n="loot_list">
+          <T>387975<!--LootActions: loot_Grief_TimerDecrease_Med--></T>
+          <T>186568<!--LootActions: loot_Statistic_EmotionCategory_LowerNegativeMoods--></T>
+          <T>389881<!--LootActions: loot_Buff_EP17Festival_AA_Attendance--></T>
+        </L>
+      </U>
+    </U>
+  </V>
+  <L n="provided_affordances">
+    <U>
+      <T n="affordance">385356<!--SuperInteraction: si_EP17Festival_WatchPodium--></T>
+    </U>
+  </L>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all" />
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_autonomous">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>389033<!--Buff: buff_EP17Festival_AA_AdmitProblems_AutonomousCooldown--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="in_use">
+      <U n="in_use">
+        <T n="negate">True</T>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">385250<!--TestSetInstance: testSetInstance_Grieving_Actor--></T>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

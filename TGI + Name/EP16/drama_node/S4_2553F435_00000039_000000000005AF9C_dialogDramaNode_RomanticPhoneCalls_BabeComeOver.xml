@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="DialogDramaNode" i="drama_node" m="drama_scheduler.dialog_drama_node" n="dialogDramaNode_RomanticPhoneCalls_BabeComeOver" s="372636">
+  <T n="allow_during_work_hours">False</T>
+  <V n="cooldown_data" t="group_cooldown">
+    <U n="group_cooldown">
+      <E n="group">RomancePhoneCallsCooldown</E>
+    </U>
+  </V>
+  <V n="dialog_and_loot" t="dialog_multi_response">
+    <U n="dialog_multi_response">
+      <U n="dialog">
+        <E n="phone_ring_type">RING</E>
+        <V n="text" t="single">
+          <T n="single">0x354071B0<!--String: "Nobody is home. I have a heart bed and I'm all alone and lonely! Babe come over!"--></T>
+        </V>
+      </U>
+      <L n="possible_responses">
+        <U>
+          <U n="item">
+            <L n="loot">
+              <T>372649<!--LootActions: loot_DramaNode_RomanticPhoneCalls_BabeComeOver_Accept--></T>
+            </L>
+            <T n="text">0xE03E0F22<!--String: "I'll be over in 5!"--></T>
+          </U>
+        </U>
+        <U>
+          <U n="item">
+            <L n="loot">
+              <T>372664<!--LootActions: loot_DramaNode_RomanticPhoneCalls_BabeComeOver_Decline--></T>
+            </L>
+            <T n="text">0x539CE1AC<!--String: "Can't. Playing Sims."--></T>
+          </U>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="min_and_max_times">
+    <T n="lower_bound">1</T>
+    <T n="upper_bound">24</T>
+  </U>
+  <L n="pretests">
+    <L>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="required_relationship_bits">
+            <L n="match_any">
+              <T>362476<!--RelationshipBit: romanceTrope_steamy--></T>
+              <T>362104<!--RelationshipBit: relBit_RelSat_3_Actor_NeutralWith_Target--></T>
+              <T>362105<!--RelationshipBit: relBit_RelSat_4_Actor_SatisfiedWith_Target--></T>
+              <T>362106<!--RelationshipBit: relBit_RelSat_5_Actor_VerySatisfiedWith_Target--></T>
+            </L>
+          </U>
+          <L n="subject">
+            <E>SignificantOtherActor</E>
+          </L>
+          <L n="target_sim">
+            <E>Actor</E>
+          </L>
+        </U>
+      </V>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="npc" t="enabled">
+            <T n="enabled">True</T>
+          </V>
+          <E n="who">TargetSim</E>
+        </U>
+      </V>
+    </L>
+  </L>
+  <L n="receiver_sim_pretests">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified">
+            <L n="specified">
+              <E>YOUNGADULT</E>
+              <E>ADULT</E>
+              <E>ELDER</E>
+            </L>
+          </V>
+          <V n="species" t="specified">
+            <U n="specified">
+              <L n="species">
+                <E>HUMAN</E>
+              </L>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="reschedule_on_failed_tests" t="reschedule">
+    <U n="reschedule">
+      <T n="lower_bound">2</T>
+      <T n="upper_bound">4</T>
+    </U>
+  </V>
+  <L n="run_tests">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>10094<!--Buff: buff_Sim_IsSleeping--></T>
+            <T>275549<!--Buff: buff_Sim_IsSleeping_Hidden--></T>
+          </L>
+        </U>
+      </V>
+      <V t="existence">
+        <U n="existence">
+          <T n="exists">False</T>
+          <E n="participant">SignificantOtherActor</E>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="scoring" t="enabled">
+    <U n="enabled">
+      <T n="base_score">100</T>
+      <E n="bucket">RomanticPhoneCalls</E>
+    </U>
+  </V>
+  <V n="sender_sim_info" t="participant_type">
+    <U n="participant_type">
+      <E n="participant_type">SignificantOtherActor</E>
+    </U>
+  </V>
+  <E n="sender_sim_info_type">INSTANCED_ALLOWED</E>
+  <V n="time_option" t="schedule">
+    <U n="schedule">
+      <L n="valid_times">
+        <U>
+          <U n="days_available">
+            <T n="0 SUNDAY">True</T>
+            <T n="1 MONDAY">True</T>
+            <T n="2 TUESDAY">True</T>
+            <T n="3 WEDNESDAY">True</T>
+            <T n="4 THURSDAY">True</T>
+            <T n="5 FRIDAY">True</T>
+            <T n="6 SATURDAY">True</T>
+          </U>
+          <T n="duration">8</T>
+          <U n="start_time">
+            <T n="hour">12</T>
+          </U>
+        </U>
+      </L>
+    </U>
+  </V>
+</I>

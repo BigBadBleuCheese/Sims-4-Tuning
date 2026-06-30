@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Tarot_Cards_Fool" s="388662">
+  <L n="loot_actions">
+    <V t="create_object">
+      <U n="create_object">
+        <V n="creation_data" t="definition">
+          <U n="definition">
+            <T n="definition">422575</T>
+          </U>
+        </V>
+        <V n="location" t="inventory" />
+        <E n="owner_sim">Actor</E>
+        <T n="set_sim_as_owner">True</T>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T p="InEP17\UI\Icons\Whims\Whims_GiveTarotReading.png" n="key">2f7d0004:00000000:89d4867e7317ab9f</T>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x66288673<!--String: "<b>The Fool</b> is merely a joyful Harlequin oblivious to the perils which surround him. Steadfast towards a dangerous ledge, one may wonder if he will awaken before plunging into the depths of his own naivety? Should he stay this wide-eyed, the only adventures he will partake in are those beyond the veil."--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x5134101<!--String: "The Fool"--></T>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="inventory">
+        <U n="inventory">
+          <V n="contents_check" t="has_object_with_def">
+            <U n="has_object_with_def">
+              <T n="definition">422575</T>
+            </U>
+          </V>
+          <U n="required_count">
+            <E n="comparison">EQUAL</E>
+            <T n="value">0</T>
+          </U>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

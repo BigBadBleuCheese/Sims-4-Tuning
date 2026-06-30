@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="Loot_EP14World_Rabbithole_Cave_AttackedByFlamingSkull_AttackIt_Success" s="324764">
+  <L n="loot_actions">
+    <V t="actions">
+      <T n="actions">325817<!--RandomWeightedLoot: randomWeightedLoot_EP14World_Cave_Rewards_Generic--></T>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="dialog_ok">
+          <U n="dialog_ok">
+            <V n="audio_sting" t="enabled">
+              <U n="enabled">
+                <T n="audio" p="InEP14\Audio\music\cave_chance_cards\bumper_ep14_cave_success_drop_loot.propx">39b2aa4a:00000000:83422a2729e05600</T>
+                <T n="immediate_audio">True</T>
+              </U>
+            </V>
+            <E n="dialog_bg_style">BG_CHANCE_CARD</E>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InGame\UI\Icons\Headlines\Final\Headline_CampfireCutlass_bg.png">2f7d0004:00000000:28f1eba073e5b1dc</T>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x3E73B10A<!--String: "{0.SimFirstName} used the power of Nectar and defeated the Flaming Skull of Necteaux! It looks like it dropped some items!\n\n<b>+50 to Cave Progress</b>"--></T>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="participant_type" />
+                  <V t="statistic_value">
+                    <U n="statistic_value">
+                      <E n="participant">Object</E>
+                      <T n="statistic">325167<!--Statistic: statistic_EP14World_Cave_AttackDamage_Sim--></T>
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">50</T>
+          <T n="stat">325538<!--Statistic: statistic_EP14World_Cave_Progress--></T>
+          <L n="subject">
+            <E>Actor</E>
+          </L>
+        </U>
+      </V>
+    </V>
+  </L>
+</I>

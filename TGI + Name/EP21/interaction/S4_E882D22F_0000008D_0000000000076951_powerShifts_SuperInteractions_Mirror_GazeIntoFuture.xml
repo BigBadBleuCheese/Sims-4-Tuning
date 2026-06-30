@@ -1,0 +1,561 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="powerShifts_SuperInteractions_Mirror_GazeIntoFuture" s="485713">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="cone">
+            <U n="cone">
+              <T n="angle">45</T>
+              <T n="ideal_angle">0</T>
+              <T n="ideal_radius_max">0.75</T>
+              <T n="ideal_radius_min">0.25</T>
+              <T n="max_radius">1.5</T>
+              <T n="min_radius">1.5</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="value" t="facing">
+            <U n="facing">
+              <T n="range">90</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <L n="basic_extras">
+    <V t="state_change">
+      <U n="state_change">
+        <V n="new_value" t="single_value">
+          <U n="single_value">
+            <T n="new_value">498940<!--ObjectStateValue: powerShifts_Values_Mirror_InUse--></T>
+          </U>
+        </V>
+        <V n="timing" t="immediately" />
+      </U>
+    </V>
+    <V t="state_change">
+      <U n="state_change">
+        <V n="new_value" t="single_value">
+          <U n="single_value">
+            <T n="new_value">498938<!--ObjectStateValue: powerShifts_Values_Mirror_Idle--></T>
+          </U>
+        </V>
+        <V n="timing" t="at_end" />
+      </U>
+    </V>
+    <V t="buff_fire_and_forget">
+      <U n="buff_fire_and_forget">
+        <U n="buff">
+          <T n="buff_type">486190<!--Buff: buff_PowerShifts_Mirror_GazeInfoFuture_Cooldown--></T>
+        </U>
+      </U>
+    </V>
+  </L>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x8BC8F88D<!--String: "Gaze into the Future"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">485716<!--AnimationElement: powerShifts_Mirror_GazeIntoFuture_Success--></T>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <T n="buff_type">485701<!--Buff: buff_PowerShifts_Mirror_RadiantReflections--></T>
+                      </U>
+                    </U>
+                  </V>
+                  <V t="notification">
+                    <U n="notification">
+                      <V n="dialog" t="single">
+                        <V n="single" t="literal">
+                          <U n="literal">
+                            <V n="icon" t="enabled">
+                              <V n="enabled" t="resource_key">
+                                <U n="resource_key">
+                                  <T n="key" p="InEP21\UI\Icons\Notifications\notification_EnchantedMirror.png">2f7d0004:00000000:0ec42a32b1c513b8</T>
+                                </U>
+                              </V>
+                            </V>
+                            <V n="secondary_icon" t="enabled">
+                              <V n="enabled" t="participant" />
+                            </V>
+                            <V n="text" t="single">
+                              <T n="single">0x55BC5ED5<!--String: "{0.SimFirstName} has been blessed by the Enchanted Mirror and received a promotion in the Noble Career!"--></T>
+                            </V>
+                            <V n="title" t="enabled">
+                              <T n="enabled">0x5991309A<!--String: "Enchanted Mirror's Gift"--></T>
+                            </V>
+                            <E n="visual_type">SPEECH</E>
+                          </U>
+                        </V>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </U>
+              <U n="weight">
+                <T n="base_value">1</T>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="career_test">
+                <U n="career_test">
+                  <V n="test_type" t="career_reference">
+                    <U n="career_reference">
+                      <V n="career" t="specific_career">
+                        <T n="specific_career">466304<!--NobleCareer: career_Noble--></T>
+                      </V>
+                      <V n="user_level" t="enabled">
+                        <U n="enabled">
+                          <T n="upper_bound">8</T>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">485716<!--AnimationElement: powerShifts_Mirror_GazeIntoFuture_Success--></T>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <T n="buff_type">486351<!--Buff: buff_PowerShifts_Mirror_GiftOfTheMirror--></T>
+                      </U>
+                    </U>
+                  </V>
+                  <V t="notification">
+                    <U n="notification">
+                      <V n="dialog" t="single">
+                        <V n="single" t="literal">
+                          <U n="literal">
+                            <L n="dialog_options">
+                              <E>DISABLE_CLOSE_BUTTON</E>
+                            </L>
+                            <V n="icon" t="enabled">
+                              <V n="enabled" t="resource_key">
+                                <U n="resource_key">
+                                  <T n="key" p="InEP21\UI\Icons\Notifications\notification_EnchantedMirror.png">2f7d0004:00000000:0ec42a32b1c513b8</T>
+                                </U>
+                              </V>
+                            </V>
+                            <V n="secondary_icon" t="enabled">
+                              <V n="enabled" t="participant">
+                                <U n="participant">
+                                  <L n="participant_type">
+                                    <E>Actor</E>
+                                  </L>
+                                </U>
+                              </V>
+                            </V>
+                            <V n="text" t="single">
+                              <T n="single">0x57178795<!--String: "The Enchanted Mirror has blessed {0.SimFirstName} with its magic, promising a wave of good luck and brighter opportunities ahead."--></T>
+                            </V>
+                            <V n="title" t="enabled">
+                              <T n="enabled">0x5991309A<!--String: "Enchanted Mirror's Gift"--></T>
+                            </V>
+                            <E n="visual_type">SPEECH</E>
+                          </U>
+                        </V>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </U>
+              <U n="weight">
+                <T n="base_value">1</T>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="test_set_reference">
+                <T n="test_set_reference">449545<!--TestSetInstance: testSetInstance_LuckSys_HasLuck--></T>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">485716<!--AnimationElement: powerShifts_Mirror_GazeIntoFuture_Success--></T>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <T n="buff_type">485704<!--Buff: buff_PowerShifts_Mirror_BlessingOfTheMirror--></T>
+                      </U>
+                    </U>
+                  </V>
+                  <V t="notification">
+                    <U n="notification">
+                      <V n="dialog" t="single">
+                        <V n="single" t="literal">
+                          <U n="literal">
+                            <L n="dialog_options">
+                              <E>DISABLE_CLOSE_BUTTON</E>
+                            </L>
+                            <V n="icon" t="enabled">
+                              <V n="enabled" t="resource_key">
+                                <U n="resource_key">
+                                  <T n="key" p="InEP21\UI\Icons\Notifications\notification_EnchantedMirror.png">2f7d0004:00000000:0ec42a32b1c513b8</T>
+                                </U>
+                              </V>
+                            </V>
+                            <V n="secondary_icon" t="enabled">
+                              <V n="enabled" t="participant">
+                                <U n="participant">
+                                  <L n="participant_type">
+                                    <E>Actor</E>
+                                  </L>
+                                </U>
+                              </V>
+                            </V>
+                            <V n="text" t="single">
+                              <T n="single">0x9F4A4521<!--String: "The Enchanted Mirror has temporarily imbued {0.SimFirstName} with the power to craft higher quality objects and increased chances for Career promotion opportunities!"--></T>
+                            </V>
+                            <V n="title" t="enabled">
+                              <T n="enabled">0x5991309A<!--String: "Enchanted Mirror's Gift"--></T>
+                            </V>
+                            <E n="visual_type">SPEECH</E>
+                          </U>
+                        </V>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </U>
+              <U n="weight">
+                <T n="base_value">1</T>
+              </U>
+            </U>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">485719<!--AnimationElement: powerShifts_Mirror_GazeIntoFuture_Failure--></T>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <T n="buff_type">485702<!--Buff: buff_PowerShifts_Mirror_DimHorizons--></T>
+                      </U>
+                    </U>
+                  </V>
+                  <V t="notification">
+                    <U n="notification">
+                      <V n="dialog" t="single">
+                        <V n="single" t="literal">
+                          <U n="literal">
+                            <L n="dialog_options">
+                              <E>DISABLE_CLOSE_BUTTON</E>
+                            </L>
+                            <V n="icon" t="enabled">
+                              <V n="enabled" t="resource_key">
+                                <U n="resource_key">
+                                  <T n="key" p="InEP21\UI\Icons\Notifications\notification_EnchantedMirror.png">2f7d0004:00000000:0ec42a32b1c513b8</T>
+                                </U>
+                              </V>
+                            </V>
+                            <V n="secondary_icon" t="enabled">
+                              <V n="enabled" t="participant">
+                                <U n="participant">
+                                  <L n="participant_type">
+                                    <E>Actor</E>
+                                  </L>
+                                </U>
+                              </V>
+                            </V>
+                            <V n="text" t="single">
+                              <T n="single">0x85960FD2<!--String: "{0.SimFirstName} has felt the Enchanted Mirror's displeasure, leading to a newly formed Rival within the Noble Career."--></T>
+                            </V>
+                            <V n="title" t="enabled">
+                              <T n="enabled">0x2DC0B503<!--String: "Mirror's Malice"--></T>
+                            </V>
+                            <E n="visual_type">SPEECH</E>
+                          </U>
+                        </V>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </U>
+              <U n="weight">
+                <T n="base_value">1</T>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="career_test">
+                <U n="career_test">
+                  <V n="test_type" t="career_reference">
+                    <U n="career_reference">
+                      <V n="career" t="specific_career">
+                        <T n="specific_career">466304<!--NobleCareer: career_Noble--></T>
+                      </V>
+                      <V n="user_level" t="enabled">
+                        <U n="enabled">
+                          <T n="upper_bound">8</T>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </V>
+              <V t="relationship_bit_count">
+                <U n="relationship_bit_count">
+                  <T n="rel_bit">486634<!--RelationshipBit: relBit_WorkRival_NobleCareer--></T>
+                  <L n="subject">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">485719<!--AnimationElement: powerShifts_Mirror_GazeIntoFuture_Failure--></T>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <T n="buff_type">486352<!--Buff: buff_PowerShifts_Mirror_BurdenOfTheMirror--></T>
+                      </U>
+                    </U>
+                  </V>
+                  <V t="notification">
+                    <U n="notification">
+                      <V n="dialog" t="single">
+                        <V n="single" t="literal">
+                          <U n="literal">
+                            <L n="dialog_options">
+                              <E>DISABLE_CLOSE_BUTTON</E>
+                            </L>
+                            <V n="icon" t="enabled">
+                              <V n="enabled" t="resource_key">
+                                <U n="resource_key">
+                                  <T n="key" p="InEP21\UI\Icons\Notifications\notification_EnchantedMirror.png">2f7d0004:00000000:0ec42a32b1c513b8</T>
+                                </U>
+                              </V>
+                            </V>
+                            <V n="secondary_icon" t="enabled">
+                              <V n="enabled" t="participant">
+                                <U n="participant">
+                                  <L n="participant_type">
+                                    <E>Actor</E>
+                                  </L>
+                                </U>
+                              </V>
+                            </V>
+                            <V n="text" t="single">
+                              <T n="single">0xE13B65AC<!--String: "The Enchanted Mirror has cast a shadow over {0.SimFirstName}, reducing {0.SimPronounPossessiveDependent} luck."--></T>
+                            </V>
+                            <V n="title" t="enabled">
+                              <T n="enabled">0x2DC0B503<!--String: "Mirror's Malice"--></T>
+                            </V>
+                            <E n="visual_type">SPEECH</E>
+                          </U>
+                        </V>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </U>
+              <U n="weight">
+                <T n="base_value">1</T>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="test_set_reference">
+                <T n="test_set_reference">449545<!--TestSetInstance: testSetInstance_LuckSys_HasLuck--></T>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">485719<!--AnimationElement: powerShifts_Mirror_GazeIntoFuture_Failure--></T>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <T n="buff_type">485705<!--Buff: buff_PowerShifts_Mirror_CurseOfTheMirror--></T>
+                      </U>
+                    </U>
+                  </V>
+                  <V t="notification">
+                    <U n="notification">
+                      <V n="dialog" t="single">
+                        <V n="single" t="literal">
+                          <U n="literal">
+                            <L n="dialog_options">
+                              <E>DISABLE_CLOSE_BUTTON</E>
+                            </L>
+                            <V n="icon" t="enabled">
+                              <V n="enabled" t="resource_key">
+                                <U n="resource_key">
+                                  <T n="key" p="InEP21\UI\Icons\Notifications\notification_EnchantedMirror.png">2f7d0004:00000000:0ec42a32b1c513b8</T>
+                                </U>
+                              </V>
+                            </V>
+                            <V n="secondary_icon" t="enabled">
+                              <V n="enabled" t="participant">
+                                <U n="participant">
+                                  <L n="participant_type">
+                                    <E>Actor</E>
+                                  </L>
+                                </U>
+                              </V>
+                            </V>
+                            <V n="text" t="single">
+                              <T n="single">0xA708DED8<!--String: "The Enchanted Mirror has temporarily diminished {0.SimFirstName}'s talents, leading to lower quality objects being crafted and fewer chances for career promotion opportunities."--></T>
+                            </V>
+                            <V n="title" t="enabled">
+                              <T n="enabled">0x2DC0B503<!--String: "Mirror's Malice"--></T>
+                            </V>
+                            <E n="visual_type">SPEECH</E>
+                          </U>
+                        </V>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </U>
+              <U n="weight">
+                <T n="base_value">1</T>
+                <L n="multipliers">
+                  <U>
+                    <T n="multiplier">2</T>
+                    <L n="tests">
+                      <L>
+                        <V t="relationship_bit_count">
+                          <U n="relationship_bit_count">
+                            <E n="comparison_operator">GREATER_OR_EQUAL</E>
+                            <T n="rel_bit">486634<!--RelationshipBit: relBit_WorkRival_NobleCareer--></T>
+                            <T n="relationship_count">1</T>
+                            <L n="subject">
+                              <E>Actor</E>
+                            </L>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>486190<!--Buff: buff_PowerShifts_Mirror_GazeInfoFuture_Cooldown--></T>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x785085C0<!--String: "This interaction has been performed too recently."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

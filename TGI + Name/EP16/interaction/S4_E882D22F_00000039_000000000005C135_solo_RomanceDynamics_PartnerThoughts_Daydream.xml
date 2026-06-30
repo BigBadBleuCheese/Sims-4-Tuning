@@ -1,0 +1,483 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="solo_RomanceDynamics_PartnerThoughts_Daydream" s="377141">
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Actor</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>377350<!--LootActions: lootActions_RomanceDynamics_PartnerThoughts_Balloon--></T>
+        </L>
+        <V n="timing" t="at_end" />
+      </U>
+    </V>
+  </L>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x4B818429<!--String: "Think About {1.SimFirstName}"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">PickedSim</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="prioritized_tested_outcomes">
+        <U>
+          <U n="outcome">
+            <V n="animation_ref" t="enabled">
+              <U n="enabled">
+                <T n="factory">377144<!--AnimationElement: animationElement_RomanceDynamics_PartnerThoughts_Flirty--></T>
+                <U n="overrides">
+                  <V n="balloons" t="enabled">
+                    <L n="enabled">
+                      <U>
+                        <L n="balloon_choices">
+                          <U>
+                            <V n="item" t="balloon_icon">
+                              <U n="balloon_icon">
+                                <V n="icon" t="participant">
+                                  <U n="participant">
+                                    <L n="participant_type">
+                                      <E>PickedSim</E>
+                                    </L>
+                                  </U>
+                                </V>
+                              </U>
+                            </V>
+                          </U>
+                        </L>
+                        <T n="balloon_delay">0</T>
+                        <L n="balloon_target">
+                          <E>Actor</E>
+                        </L>
+                      </U>
+                    </L>
+                  </V>
+                </U>
+              </U>
+            </V>
+            <L n="basic_extras">
+              <V t="buff_fire_and_forget">
+                <U n="buff_fire_and_forget">
+                  <U n="buff">
+                    <V n="buff_reason" t="enabled">
+                      <T n="enabled">0x5D31651B<!--String: "(From Having a Steamy Romance Dynamic)"--></T>
+                    </V>
+                    <T n="buff_type">365197<!--Buff: buff_RomanceDynamics_DaydreamingOfPartner--></T>
+                  </U>
+                  <U n="success_chance">
+                    <T n="base_chance">80</T>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </U>
+          <L n="tests">
+            <L>
+              <V t="relationship">
+                <U n="relationship">
+                  <U n="required_relationship_bits">
+                    <L n="match_any">
+                      <T>362476<!--RelationshipBit: romanceTrope_steamy--></T>
+                    </L>
+                  </U>
+                  <L n="target_sim">
+                    <E>PickedSim</E>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <U n="outcome">
+            <V n="animation_ref" t="enabled">
+              <U n="enabled">
+                <T n="factory">377166<!--AnimationElement: animationElement_RomanceDynamics_PartnerThoughts_Angry--></T>
+                <U n="overrides">
+                  <V n="balloons" t="enabled">
+                    <L n="enabled">
+                      <U>
+                        <L n="balloon_choices">
+                          <U>
+                            <V n="item" t="balloon_icon">
+                              <U n="balloon_icon">
+                                <V n="icon" t="participant">
+                                  <U n="participant">
+                                    <L n="participant_type">
+                                      <E>PickedSim</E>
+                                    </L>
+                                  </U>
+                                </V>
+                              </U>
+                            </V>
+                          </U>
+                        </L>
+                        <T n="balloon_delay">0</T>
+                        <L n="balloon_target">
+                          <E>Actor</E>
+                        </L>
+                      </U>
+                    </L>
+                  </V>
+                </U>
+              </U>
+            </V>
+            <L n="basic_extras">
+              <V t="buff_fire_and_forget">
+                <U n="buff_fire_and_forget">
+                  <U n="buff">
+                    <V n="buff_reason" t="enabled">
+                      <T n="enabled">0xA1E608C<!--String: "(From Having a Strained Romance Dynamic)"--></T>
+                    </V>
+                    <T n="buff_type">376896<!--Buff: buff_RomanceDynamics_PartnerThoughts_Strained_Angry--></T>
+                  </U>
+                  <U n="success_chance">
+                    <T n="base_chance">80</T>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </U>
+          <L n="tests">
+            <L>
+              <V t="relationship">
+                <U n="relationship">
+                  <U n="required_relationship_bits">
+                    <L n="match_any">
+                      <T>362478<!--RelationshipBit: romanceTrope_strained--></T>
+                    </L>
+                  </U>
+                  <L n="subject">
+                    <E>Actor</E>
+                  </L>
+                  <L n="target_sim">
+                    <E>PickedSim</E>
+                  </L>
+                </U>
+              </V>
+              <V t="trait">
+                <U n="trait">
+                  <L n="blacklist_traits">
+                    <T>16857<!--Trait: trait_Mean--></T>
+                    <T>16836<!--Trait: trait_Evil--></T>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <U n="outcome">
+            <V n="animation_ref" t="enabled">
+              <U n="enabled">
+                <T n="factory">377143<!--AnimationElement: animationElement_RomanceDynamics_PartnerThoughts_Happy--></T>
+                <U n="overrides">
+                  <V n="balloons" t="enabled">
+                    <L n="enabled">
+                      <U>
+                        <L n="balloon_choices">
+                          <U>
+                            <V n="item" t="balloon_icon">
+                              <U n="balloon_icon">
+                                <V n="icon" t="participant">
+                                  <U n="participant">
+                                    <L n="participant_type">
+                                      <E>PickedSim</E>
+                                    </L>
+                                  </U>
+                                </V>
+                              </U>
+                            </V>
+                          </U>
+                        </L>
+                        <T n="balloon_delay">0</T>
+                        <L n="balloon_target">
+                          <E>Actor</E>
+                        </L>
+                      </U>
+                    </L>
+                  </V>
+                </U>
+              </U>
+            </V>
+            <L n="basic_extras">
+              <V t="buff_fire_and_forget">
+                <U n="buff_fire_and_forget">
+                  <U n="buff">
+                    <V n="buff_reason" t="enabled">
+                      <T n="enabled">0x25F988B6<!--String: "(From Having a Wholesome Romance Dynamic)"--></T>
+                    </V>
+                    <T n="buff_type">376893<!--Buff: buff_RomanceDynamics_PartnerThoughts_Wholesome--></T>
+                  </U>
+                  <U n="success_chance">
+                    <T n="base_chance">80</T>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </U>
+          <L n="tests">
+            <L>
+              <V t="relationship">
+                <U n="relationship">
+                  <U n="required_relationship_bits">
+                    <L n="match_any">
+                      <T>362475<!--RelationshipBit: romanceTrope_wholesome--></T>
+                    </L>
+                  </U>
+                  <L n="target_sim">
+                    <E>PickedSim</E>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">377165<!--AnimationElement: animationElement_RomanceDynamics_PartnerThoughts_Stressed--></T>
+                    <U n="overrides">
+                      <V n="balloons" t="enabled">
+                        <L n="enabled">
+                          <U>
+                            <L n="balloon_choices">
+                              <U>
+                                <V n="item" t="balloon_icon">
+                                  <U n="balloon_icon">
+                                    <V n="icon" t="participant">
+                                      <U n="participant">
+                                        <L n="participant_type">
+                                          <E>PickedSim</E>
+                                        </L>
+                                      </U>
+                                    </V>
+                                  </U>
+                                </V>
+                              </U>
+                            </L>
+                            <T n="balloon_delay">0</T>
+                            <L n="balloon_target">
+                              <E>Actor</E>
+                            </L>
+                          </U>
+                        </L>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <V n="buff_reason" t="enabled">
+                          <T n="enabled">0x26C33F00<!--String: "(From Having an Unpredictable Romance Dynamic)"--></T>
+                        </V>
+                        <T n="buff_type">376895<!--Buff: buff_RomanceDynamics_PartnerThoughts_Unpredictable_Tense--></T>
+                      </U>
+                      <U n="success_chance">
+                        <T n="base_chance">80</T>
+                      </U>
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </U>
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">377144<!--AnimationElement: animationElement_RomanceDynamics_PartnerThoughts_Flirty--></T>
+                    <U n="overrides">
+                      <V n="balloons" t="enabled">
+                        <L n="enabled">
+                          <U>
+                            <L n="balloon_choices">
+                              <U>
+                                <V n="item" t="balloon_icon">
+                                  <U n="balloon_icon">
+                                    <V n="icon" t="participant">
+                                      <U n="participant">
+                                        <L n="participant_type">
+                                          <E>PickedSim</E>
+                                        </L>
+                                      </U>
+                                    </V>
+                                  </U>
+                                </V>
+                              </U>
+                            </L>
+                            <T n="balloon_delay">0</T>
+                            <L n="balloon_target">
+                              <E>Actor</E>
+                            </L>
+                          </U>
+                        </L>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <V n="buff_reason" t="enabled">
+                          <T n="enabled">0x26C33F00<!--String: "(From Having an Unpredictable Romance Dynamic)"--></T>
+                        </V>
+                        <T n="buff_type">376894<!--Buff: buff_RomanceDynamics_PartnerThoughts_Unpredictable_Flirty--></T>
+                      </U>
+                      <U n="success_chance">
+                        <T n="base_chance">80</T>
+                      </U>
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="relationship">
+                <U n="relationship">
+                  <U n="required_relationship_bits">
+                    <L n="match_any">
+                      <T>362477<!--RelationshipBit: romanceTrope_unpredictable--></T>
+                    </L>
+                  </U>
+                  <L n="target_sim">
+                    <E>PickedSim</E>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">377143<!--AnimationElement: animationElement_RomanceDynamics_PartnerThoughts_Happy--></T>
+                    <U n="overrides">
+                      <V n="balloons" t="enabled">
+                        <L n="enabled">
+                          <U>
+                            <L n="balloon_choices">
+                              <U>
+                                <V n="item" t="balloon_icon">
+                                  <U n="balloon_icon">
+                                    <V n="icon" t="participant">
+                                      <U n="participant">
+                                        <L n="participant_type">
+                                          <E>PickedSim</E>
+                                        </L>
+                                      </U>
+                                    </V>
+                                  </U>
+                                </V>
+                              </U>
+                            </L>
+                            <T n="balloon_delay">0</T>
+                            <L n="balloon_target">
+                              <E>Actor</E>
+                            </L>
+                          </U>
+                        </L>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <V n="buff_reason" t="enabled">
+                          <T n="enabled">0xA1E608C<!--String: "(From Having a Strained Romance Dynamic)"--></T>
+                        </V>
+                        <T n="buff_type">376897<!--Buff: buff_RomanceDynamics_PartnerThoughts_Strained_Happy--></T>
+                      </U>
+                      <U n="success_chance">
+                        <T n="base_chance">80</T>
+                      </U>
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="relationship">
+                <U n="relationship">
+                  <U n="required_relationship_bits">
+                    <L n="match_any">
+                      <T>362478<!--RelationshipBit: romanceTrope_strained--></T>
+                    </L>
+                  </U>
+                  <L n="target_sim">
+                    <E>PickedSim</E>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

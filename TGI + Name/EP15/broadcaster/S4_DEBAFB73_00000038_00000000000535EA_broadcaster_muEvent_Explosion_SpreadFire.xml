@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Broadcaster" i="broadcaster" m="broadcasters.broadcaster" n="broadcaster_muEvent_Explosion_SpreadFire" s="341482">
+  <V n="allow_objects" t="from_flammable" />
+  <T n="allow_sims">False</T>
+  <L n="constraints">
+    <V t="circle">
+      <U n="circle">
+        <T n="radius">3</T>
+      </U>
+    </V>
+  </L>
+  <L n="effects">
+    <V t="start_fire">
+      <U n="start_fire">
+        <V n="affected_object_cap" t="enabled">
+          <T n="enabled">1</T>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="object_criteria">
+              <U n="object_criteria">
+                <V n="identity_test" t="tags">
+                  <U n="tags">
+                    <L n="tag_set">
+                      <E>Func_Chair</E>
+                      <E>BuyCatSS_OutdoorChair</E>
+                      <E>Venue_Object_Chair</E>
+                      <E>BuyCatSS_DiningChair</E>
+                      <E>BuyCatSS_LivingChair</E>
+                      <E>Func_Ottoman</E>
+                      <E>Func_Jig</E>
+                    </L>
+                    <E n="test_type">CONTAINS_NO_TAGS_IN_SET</E>
+                  </U>
+                </V>
+                <T n="owned">False</T>
+                <V n="subject_specific_tests" t="single_object">
+                  <U n="single_object">
+                    <E n="target">Actor</E>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="frequency" t="on_enter" />
+  <T n="immediate">True</T>
+</I>

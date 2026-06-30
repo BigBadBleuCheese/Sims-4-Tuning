@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="MixerInteraction" i="interaction" m="interactions.base.mixer_interaction" n="idle_Buff_HideAndSeek_Seeker" s="465918">
+  <T n="allow_user_directed">False</T>
+  <V n="basic_content" t="no_content" />
+  <V n="basic_focus" t="do_not_change_focus" />
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Mixer</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <L n="continuation">
+              <U>
+                <T n="affordance">444536<!--SuperInteraction: hideAndSeek_Seek_Start--></T>
+                <E n="target">Invalid</E>
+              </U>
+            </L>
+          </U>
+        </U>
+      </L>
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="loot_list">
+                  <T>492802<!--LootActions: loot_HideAndSeek_ClearSeekerBuff--></T>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="situation_running_test">
+                <U n="situation_running_test">
+                  <V n="situation_blacklist" t="enabled">
+                    <L n="enabled">
+                      <T>442955<!--CustomStatesSituation: situation_CustomState_HideAndSeek--></T>
+                    </L>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <U n="sub_action">
+    <T n="base_weight">2</T>
+    <E n="mixer_group">IDLES</E>
+  </U>
+  <E n="target_type">ACTOR</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="user_running_interaction">
+      <U n="user_running_interaction">
+        <L n="affordances">
+          <T>442007<!--SuperInteraction: hideAndSeek_Find--></T>
+          <T>444535<!--SuperInteraction: hideAndSeek_LookFor--></T>
+          <T>445191<!--SuperInteraction: hideAndSeek_MoveAround--></T>
+          <T>444536<!--SuperInteraction: hideAndSeek_Seek_Start--></T>
+        </L>
+        <T n="test_for_not_running">True</T>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>474078<!--Buff: buff_Ballroom_Hidden_SupressAutonomy--></T>
+          <T>256563<!--Buff: buff_SnowDrift_SuppressIdlesWhenShoveling--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T n="visible">False</T>
+</I>

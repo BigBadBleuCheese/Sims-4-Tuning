@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="pottery_Glaze_ResumeFromKiln" s="420945">
+  <V n="_saveable" t="enabled" />
+  <T n="allow_from_sim_inventory">True</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x4CDA1A4<!--String: "Resume Glazing"--></T>
+  <V n="display_name_overrides" t="testable">
+    <U n="testable">
+      <L n="overrides">
+        <U>
+          <V n="new_display_name" t="enabled">
+            <T n="enabled">0xEBBB3270<!--String: "Resume Glaze with Unbreakable Coating"--></T>
+          </V>
+          <L n="test">
+            <L>
+              <V t="state">
+                <U n="state">
+                  <T n="value">428950<!--ObjectStateValue: potteryCeramic_UnbreakableGlaze_Sprayed--></T>
+                  <E n="who">SavedActor1</E>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <L n="joinable">
+    <U>
+      <V n="invite_available" t="enabled">
+        <U n="enabled">
+          <V n="loc_custom_invite_name" t="enabled">
+            <T n="enabled">0xF80506D0<!--String: "{0.String}"--></T>
+          </V>
+          <T n="use_proxied_affordance_name">True</T>
+        </U>
+      </V>
+      <V n="join_affordance" t="affordance">
+        <U n="affordance">
+          <V n="value" t="custom">
+            <T n="custom">406938<!--SuperInteraction: mentor_Pottery--></T>
+          </V>
+        </U>
+      </V>
+      <V n="join_available" t="enabled">
+        <U n="enabled">
+          <V n="loc_custom_join_name" t="enabled">
+            <T n="enabled">0xF80506D0<!--String: "{0.String}"--></T>
+          </V>
+        </U>
+      </V>
+      <E n="join_target">Actor</E>
+      <T n="link_joinable">True</T>
+    </U>
+    <U>
+      <V n="invite_available" t="enabled">
+        <U n="enabled">
+          <V n="loc_custom_invite_name" t="enabled">
+            <T n="enabled">0xF80506D0<!--String: "{0.String}"--></T>
+          </V>
+          <T n="use_proxied_affordance_name">True</T>
+        </U>
+      </V>
+      <V n="join_affordance" t="affordance">
+        <U n="affordance">
+          <V n="value" t="custom">
+            <T n="custom">487439<!--SuperInteraction: mentor_Pottery_Getaway--></T>
+          </V>
+        </U>
+      </V>
+      <V n="join_available" t="enabled">
+        <U n="enabled">
+          <V n="loc_custom_join_name" t="enabled">
+            <T n="enabled">0xF80506D0<!--String: "{0.String}"--></T>
+          </V>
+        </U>
+      </V>
+      <E n="join_target">Actor</E>
+      <T n="link_joinable">True</T>
+    </U>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="continuation">
+          <U>
+            <T n="affordance">387681<!--SuperInteraction: pottery_Glaze_PrepKiln--></T>
+          </U>
+        </L>
+      </U>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="state">
+        <U n="state">
+          <T n="value">394319<!--ObjectStateValue: potteryCeramic_GlazeState_Values_Sprayed--></T>
+          <E n="who">SavedActor1</E>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="test_set_reference">
+        <T n="test_set_reference">445873<!--TestSetInstance: testSetInstance_Pottery_ResumeUnbreakableGlazeFromKiln--></T>
+      </V>
+    </L>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

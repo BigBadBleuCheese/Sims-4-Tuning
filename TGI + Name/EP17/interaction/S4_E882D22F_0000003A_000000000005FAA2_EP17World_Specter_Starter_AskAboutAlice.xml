@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="EP17World_Specter_Starter_AskAboutAlice" s="391842">
+  <V n="_saveable" t="enabled" />
+  <L n="_static_commodities" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <L n="basic_extras">
+    <V t="state_change">
+      <U n="state_change">
+        <V n="new_value" t="single_value">
+          <U n="single_value">
+            <T n="new_value">383533<!--ObjectStateValue: EP17World_Values_Specter_Routing_None--></T>
+          </U>
+        </V>
+        <V n="timing" t="immediately" />
+      </U>
+    </V>
+    <V t="state_change">
+      <U n="state_change">
+        <V n="new_value" t="single_value">
+          <U n="single_value">
+            <T n="new_value">383662<!--ObjectStateValue: EP17World_Values_Specter_Interacting--></T>
+          </U>
+        </V>
+        <V n="timing" t="immediately" />
+      </U>
+    </V>
+    <V t="state_change">
+      <U n="state_change">
+        <V n="new_value" t="single_value">
+          <U n="single_value">
+            <T n="new_value">421257<!--ObjectStateValue: EP17World_Values_Specter_WanderingBackup_UnfreezeCommodity--></T>
+          </U>
+        </V>
+        <V n="timing" t="immediately" />
+      </U>
+    </V>
+  </L>
+  <L n="basic_liabilities">
+    <V t="critical_priority" />
+  </L>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x46135E6E<!--String: "Ask about Alice's Sorrow"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="continuation">
+          <U>
+            <T n="affordance">391843<!--SuperInteraction: EP17World_Specter_AskAboutAlice--></T>
+          </U>
+        </L>
+      </U>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T n="key" p="InEP17\UI\Icons\PieMenu\Interactions\icon_pieMenu_AlicesDeadTree.png">2f7d0004:00000000:7c74900f90c8aca2</T>
+      </U>
+    </V>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all" />
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="trait">
+      <U n="trait">
+        <L n="blacklist_traits">
+          <T>393903<!--Trait: trait_EP17World_AliceTree_QuestComplete--></T>
+          <T>421718<!--Trait: trait_Hidden_EP17World_02_Freddy_ObjectiveTracker--></T>
+        </L>
+      </U>
+    </V>
+    <V t="career_gig_test">
+      <U n="career_gig_test">
+        <T n="career">386484<!--Career: career_AliceTree_AliceQuest--></T>
+        <T n="negate">False</T>
+        <V n="test_type" t="any_gig">
+          <U n="any_gig">
+            <V n="active_objective" t="enabled">
+              <T n="enabled">386511<!--Objective: objective_EP17World_AliceTree_AliceQuest_02_Freddy--></T>
+            </V>
+          </U>
+        </V>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x570AB1CE<!--String: "{0.SimFirstName} needs to <b>Ask about Alice's Sorrow</b> first. Find Alice in Mourningvale near the Guardian Tree."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="state">
+      <U n="state">
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x9B8276BB<!--String: "{1.ObjectName} is busy right now."--></T>
+        </V>
+        <T n="value">383873<!--ObjectStateValue: EP17World_Values_Specter_NotInteracting--></T>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

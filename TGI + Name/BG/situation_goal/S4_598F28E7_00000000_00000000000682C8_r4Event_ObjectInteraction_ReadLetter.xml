@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalObjectInteraction" i="situation_goal" m="situations.situation_goal_object_interaction" n="r4Event_ObjectInteraction_ReadLetter" s="426696">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T p="InGame\UI\Icons\Notifications\notification_letterenvelope.png" n="enabled">2f7d0004:00000000:6ebfba504ed8aa87</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0xECE1F281<!--String: "Read the Thief's Letter"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0x117E09E3<!--String: "The thief has responded to the email with a letter.\n\nSelect Read Thief's Letter from the letter in your inventory to find out their motive!\n\n<i>(+35 Event Points)</i>"--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>447711<!--SituationGoalLootActions: liveEvent_GoalLoot_CompleteQuestGoal--></T>
+  </L>
+  <U n="_goal_test">
+    <L n="affordances">
+      <T>426695<!--ImmediateSuperInteraction: immediate_R4Event_readLetter--></T>
+    </L>
+    <E n="test_event">InteractionComplete</E>
+  </U>
+  <L n="_post_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+      </U>
+    </V>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+  <V n="goal_completion_notification" t="enabled">
+    <U n="enabled">
+      <V n="icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T p="InGame\UI\Icons\Notifications\notification_letterenvelope.png" n="key">2f7d0004:00000000:6ebfba504ed8aa87</T>
+          </U>
+        </V>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0xFF610F1F<!--String: "To {0.SimName},\n\nI didn't mean to worry anyone. I know I should have asked before I did what I did. I was really just trying to save stuff from the past for the future, and have some fun!\n\nI'm sure we'll run into each other...in time. Gotta run! I have some things to pickup.\n\n- Sincerely, the Thief"--></T>
+      </V>
+      <V n="title" t="enabled">
+        <T n="enabled">0x4218EAB3<!--String: "Thief's Letter"--></T>
+      </V>
+    </U>
+  </V>
+  <V n="tutorial_tip_group" t="disabled" />
+</I>

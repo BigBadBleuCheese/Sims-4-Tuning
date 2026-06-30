@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_ChildhoodInspiration_IncreaseEmergence_BeUseful" s="472291">
+  <L n="loot_actions">
+    <V t="statistics">
+      <V n="statistics" t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">100</T>
+          <T n="stat">472306<!--Commodity: commodity_ChildhoodInspiration_Tracker_BeUseful--></T>
+        </U>
+      </V>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified">
+            <L n="specified">
+              <E>CHILD</E>
+            </L>
+          </V>
+          <V n="is_active_sim" t="enabled" />
+          <V n="species" t="specified">
+            <U n="specified">
+              <L n="species">
+                <E />
+              </L>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="childhood_inspiration">
+        <U n="childhood_inspiration">
+          <V n="test_behavior" t="is_in_suggested_inspiration_list">
+            <U n="is_in_suggested_inspiration_list">
+              <T n="aspiration_to_test">454863<!--TimedAspiration: childhoodInspiration_BeUseful--></T>
+              <T n="invert">True</T>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="has_timed_aspirations">
+        <U n="has_timed_aspirations">
+          <V n="test_behavior" t="has_specific_timed_aspiration">
+            <U n="has_specific_timed_aspiration">
+              <T n="invert">True</T>
+              <L n="timed_aspirations">
+                <T>454863<!--TimedAspiration: childhoodInspiration_BeUseful--></T>
+              </L>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>454358<!--Trait: trait_Reward_ChildhoodInspiration_BeUseful--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

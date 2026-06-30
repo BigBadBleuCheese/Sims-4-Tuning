@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="MixerInteraction" i="interaction" m="interactions.base.mixer_interaction" n="playmat_Mixers_Anticipation_Small" s="323263">
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Actor</E>
+      </L>
+    </U>
+  </V>
+  <T n="_must_run">True</T>
+  <T n="allow_user_directed">False</T>
+  <V n="basic_content" t="looping_animation">
+    <U n="looping_animation">
+      <U n="animation_ref">
+        <T n="factory">287637<!--AnimationElement: animation_InfantMilestones_Anticipation_SmallMoment--></T>
+      </U>
+      <L n="conditional_actions">
+        <V t="reference">
+          <T n="reference">328736<!--ExitCondition: exitCondition_InfantMilestones_Anticipation_Small--></T>
+        </V>
+      </L>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="broadcaster">
+      <U n="broadcaster">
+        <L n="broadcaster_types">
+          <U>
+            <T n="item">328739<!--Broadcaster: broadcaster_Reaction_InfantMilestone_Anticipation_Small--></T>
+          </U>
+        </L>
+        <V n="offset_time" t="enabled">
+          <T n="enabled">1</T>
+        </V>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <T n="buff_type">327858<!--Buff: buff_InfantMilestones_AnticipationMoment_Small--></T>
+        </U>
+        <L n="subject">
+          <E>Actor</E>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="basic_focus" t="disable_focus" />
+  <T n="display_name">0xC1117813<!--String: "Reaching a Milestone"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Mixer</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="lock_out_time" t="enabled">
+    <U n="enabled">
+      <U n="interval">
+        <T n="lower_bound">5</T>
+        <T n="upper_bound">10</T>
+      </U>
+    </U>
+  </V>
+  <V n="lock_out_time_initial" t="enabled">
+    <U n="enabled">
+      <T n="lower_bound">2</T>
+      <T n="upper_bound">2</T>
+    </U>
+  </V>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">277544<!--AnimationElement: playmatAnims_Infant_Play_GrabAt_Pincer--></T>
+                  </U>
+                </V>
+                <L n="events_to_send">
+                  <E>event_InfantMilestones_PincerGrasp</E>
+                </L>
+                <T n="force_outcome_on_exit">True</T>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="statistic">
+                <U n="statistic">
+                  <T n="stat">286578<!--Commodity: commodity_InfantMilestones_PincerGrasp--></T>
+                  <V n="threshold" t="value_threshold">
+                    <U n="value_threshold">
+                      <T n="value">99</T>
+                    </U>
+                  </V>
+                </U>
+              </V>
+              <V t="posture">
+                <U n="posture">
+                  <L n="required_postures">
+                    <T>275295<!--Posture: posture_SitOnObject--></T>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">277545<!--AnimationElement: playmatAnims_Infant_Play_BatAt--></T>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <T n="buff_type">327169<!--Buff: buff_InfantMilestones_AnticipationMoment_JustReached--></T>
+                      </U>
+                    </U>
+                  </V>
+                </L>
+                <T n="force_outcome_on_exit">True</T>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="statistic">
+                <U n="statistic">
+                  <T n="stat">286566<!--Commodity: commodity_InfantMilestones_Reaching--></T>
+                  <V n="threshold" t="value_threshold">
+                    <U n="value_threshold">
+                      <T n="value">99</T>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">286977<!--AnimationElement: infant_Behavior_PlaceToesInMouth--></T>
+                  </U>
+                </V>
+                <L n="events_to_send">
+                  <E>event_InfantMilestones_FineMotor_ToesInMouth</E>
+                </L>
+                <T n="force_outcome_on_exit">True</T>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="statistic">
+                <U n="statistic">
+                  <T n="stat">286570<!--Commodity: commodity_InfantMilestones_ToeInMouth--></T>
+                  <V n="threshold" t="value_threshold">
+                    <U n="value_threshold">
+                      <T n="value">99</T>
+                    </U>
+                  </V>
+                </U>
+              </V>
+              <V t="posture">
+                <U n="posture">
+                  <L n="required_postures">
+                    <T>275138<!--Posture: posture_LayOnBackOnObject--></T>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">275273<!--AnimationElement: infant_Responses_Clapping--></T>
+                  </U>
+                </V>
+                <L n="events_to_send">
+                  <E>event_InfantMilestones_FineMotor_Clapping</E>
+                </L>
+                <T n="force_outcome_on_exit">True</T>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="statistic">
+                <U n="statistic">
+                  <T n="stat">286573<!--Commodity: commodity_InfantMilestones_Clapping--></T>
+                  <V n="threshold" t="value_threshold">
+                    <U n="value_threshold">
+                      <T n="value">99</T>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="cancel_si" t="enabled" />
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">327737<!--SuperInteraction: infantMilestones_AnticipationMoment_Coo--></T>
+                    <E n="target">Actor</E>
+                  </U>
+                </L>
+                <L n="events_to_send">
+                  <E>event_infantMilestone_Social_Coo</E>
+                </L>
+                <T n="force_outcome_on_exit">True</T>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="statistic">
+                <U n="statistic">
+                  <T n="stat">286561<!--Commodity: commodity_InfantMilestones_Coo--></T>
+                  <V n="threshold" t="value_threshold">
+                    <U n="value_threshold">
+                      <T n="value">99</T>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">277543<!--AnimationElement: playmatAnims_Infant_Play_GrabAt--></T>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <T n="buff_type">327168<!--Buff: buff_InfantMilestones_AnticipationMoment_JustGrabbed--></T>
+                      </U>
+                    </U>
+                  </V>
+                </L>
+                <T n="force_outcome_on_exit">True</T>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="statistic">
+                <U n="statistic">
+                  <T n="stat">286563<!--Commodity: commodity_InfantMilestones_Grabbing--></T>
+                  <V n="threshold" t="value_threshold">
+                    <U n="value_threshold">
+                      <T n="value">99</T>
+                    </U>
+                  </V>
+                </U>
+              </V>
+              <V t="posture">
+                <U n="posture">
+                  <L n="required_postures">
+                    <T>275295<!--Posture: posture_SitOnObject--></T>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">275203<!--AnimationElement: infant_Behavior_Babbling--></T>
+                  </U>
+                </V>
+                <L n="events_to_send">
+                  <E>event_InfantMilestones_Social_Babble</E>
+                </L>
+                <T n="force_outcome_on_exit">True</T>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="statistic">
+                <U n="statistic">
+                  <T n="stat">286560<!--Commodity: commodity_InfantMilestones_Babble--></T>
+                  <V n="threshold" t="value_threshold">
+                    <U n="value_threshold">
+                      <T n="value">99</T>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">275206<!--AnimationElement: infant_Behavior_GrabFeet--></T>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <T n="buff_type">327168<!--Buff: buff_InfantMilestones_AnticipationMoment_JustGrabbed--></T>
+                      </U>
+                    </U>
+                  </V>
+                </L>
+                <T n="force_outcome_on_exit">True</T>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="statistic">
+                <U n="statistic">
+                  <T n="stat">286563<!--Commodity: commodity_InfantMilestones_Grabbing--></T>
+                  <V n="threshold" t="value_threshold">
+                    <U n="value_threshold">
+                      <T n="value">99</T>
+                    </U>
+                  </V>
+                </U>
+              </V>
+              <V t="posture">
+                <U n="posture">
+                  <L n="required_postures">
+                    <T>275138<!--Posture: posture_LayOnBackOnObject--></T>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">286339<!--AnimationElement: infant_Behavior_BlowRaspberries--></T>
+                  </U>
+                </V>
+                <L n="events_to_send">
+                  <E>event_InfantMilestones_BlowRaspberry</E>
+                </L>
+                <T n="force_outcome_on_exit">True</T>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="statistic">
+                <U n="statistic">
+                  <T n="stat">286572<!--Commodity: commodity_InfantMilestones_BlowRaspberry--></T>
+                  <V n="threshold" t="value_threshold">
+                    <U n="value_threshold">
+                      <T n="value">99</T>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="sub_action">
+    <T n="base_weight">500</T>
+  </U>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="test_set_reference">
+      <T n="test_set_reference">327164<!--TestSetInstance: testSet_InfantMilestones_Anticipation_Playmat_Small--></T>
+    </V>
+  </L>
+  <T n="visible">True</T>
+</I>

@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Getaway_Elimination_Friendship_2_Remaining_EndEarly" s="489167">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="audio_sting" t="enabled">
+              <U n="enabled">
+                <T n="audio" p="InEP20\Audio\music\mu_bumpers_ep20\bumper_ep20_getaway_eliminated.propx">39b2aa4a:00000000:81a59ed6b7405638</T>
+                <T n="immediate_audio">True</T>
+              </U>
+            </V>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InEP20\UI\Icons\Notifications\notification_FriendRelationshipElimination.png">2f7d0004:00000000:3f7de15186141050</T>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xB3524CCE<!--String: "{0.SimFirstName} has been eliminated, leaving just two Sims at the very top. All throughout the Getaway, they stood out as the most popular, making connections, turning heads, and proving they had what it takes to win over everyone around them. Their impact was undeniable, and now they walk away not just as finalists, but as the ultimate stars of the Getaway!"--></T>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="participant_type">
+                    <U n="participant_type">
+                      <V n="objects" t="from_participant">
+                        <U n="from_participant">
+                          <E n="participant">Actor</E>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                  <V t="participant_type">
+                    <U n="participant_type">
+                      <V n="objects" t="from_participant">
+                        <U n="from_participant">
+                          <E n="participant">GetawayEliminationCandidates</E>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x68985E6<!--String: "Two Winners Crowned!"--></T>
+            </V>
+          </U>
+        </V>
+        <E n="subject">ActiveHousehold</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="is_active_sim" t="enabled" />
+                <E n="who">Actor</E>
+              </U>
+            </V>
+          </L>
+        </L>
+        <L n="tests">
+          <L />
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">488902<!--Buff: buff_Getaway_Hidden_RecentlyEliminated--></T>
+        </U>
+      </U>
+    </V>
+    <V t="reaction">
+      <U n="reaction">
+        <V n="si_reaction" t="enabled">
+          <U n="enabled">
+            <T n="affordance">488905<!--SuperInteraction: reactions_Generic_Shocked_Strong_Getaway_Eliminated--></T>
+            <E n="affordance_priority">High</E>
+            <V n="affordance_run_priority" t="enabled">
+              <E n="enabled">High</E>
+            </V>
+            <V n="affordance_target" t="enabled">
+              <E n="enabled">Actor</E>
+            </V>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <L n="blacklist_traits">
+                  <T>443222<!--Trait: trait_Competitive--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="actions">
+      <T n="actions">488298<!--LootActions: loot_Competitive_Reaction_Game_Loss_ReactionOnly--></T>
+    </V>
+    <V t="reaction">
+      <U n="reaction">
+        <V n="si_reaction" t="enabled">
+          <U n="enabled">
+            <T n="affordance">489133<!--SuperInteraction: reactions_Generic_Cheer_Strong_Getaway_Elimination_Winner--></T>
+            <E n="affordance_priority">High</E>
+            <V n="affordance_run_priority" t="enabled">
+              <E n="enabled">High</E>
+            </V>
+            <V n="affordance_target" t="disabled" />
+          </U>
+        </V>
+        <E n="subject">GetawayEliminationCandidates</E>
+      </U>
+    </V>
+    <V t="end_custom_schedule_loot" />
+  </L>
+  <L n="tests">
+    <L>
+      <V t="test_set_reference">
+        <T n="test_set_reference">491469<!--TestSetInstance: testSetInstance_Getaways_Elimination_2SimsRemaining_EndEarly--></T>
+      </V>
+    </L>
+  </L>
+</I>

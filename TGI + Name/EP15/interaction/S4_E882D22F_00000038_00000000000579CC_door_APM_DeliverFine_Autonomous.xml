@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="door_APM_DeliverFine_Autonomous" s="358860">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="position">
+            <U n="position">
+              <U n="relative_position">
+                <T n="z">1.3</T>
+              </U>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="value" t="facing" />
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <L n="_static_commodities">
+    <U>
+      <T n="static_commodity">358861<!--StaticCommodity: staticCommodity_APM_POVisit_DeliverFine--></T>
+    </U>
+  </L>
+  <T n="allow_user_directed">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">348944<!--AnimationElement: APM_SlideNoteUnderDoor--></T>
+        <U n="overrides">
+          <L n="props">
+            <U>
+              <T n="key">note</T>
+              <U n="value">
+                <T n="definition">71829</T>
+              </U>
+            </U>
+          </L>
+        </U>
+      </U>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="broadcaster">
+      <U n="broadcaster">
+        <L n="broadcaster_types">
+          <U>
+            <T n="item">162170<!--Broadcaster: broadcaster_PetReactions_Dog_Door--></T>
+          </U>
+        </L>
+        <E n="participant">Object</E>
+      </U>
+    </V>
+    <V t="broadcaster">
+      <U n="broadcaster">
+        <L n="broadcaster_types">
+          <U>
+            <T n="item">351566<!--Broadcaster: broadcaster_FearOfEviction_DoorPanicReaction--></T>
+          </U>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="basic_reserve_object" t="disabled" />
+  <V n="canonical_animation" t="disabled" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x34AFE30B<!--String: "Deliver Fine"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="loot_list">
+                  <T>358865<!--LootActions: loot_APM_DeliverFine_Autonomous_RuleBreakNoise--></T>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="business_rule_state">
+                <U n="business_rule_state">
+                  <L n="rules">
+                    <T>348401<!--BusinessRule: Rule_PMI_LoudNoises--></T>
+                  </L>
+                  <E n="state">BROKEN</E>
+                  <V n="target_business" t="zone">
+                    <U n="zone">
+                      <E n="participant">CurrentZoneId</E>
+                    </U>
+                  </V>
+                  <U n="threshold">
+                    <T n="value">1</T>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="loot_list">
+                  <T>358866<!--LootActions: loot_APM_DeliverFine_Autonomous_RuleBreakSocialEvent--></T>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="business_rule_state">
+                <U n="business_rule_state">
+                  <L n="rules">
+                    <T>348400<!--BusinessRule: Rule_PMI_NoEvents--></T>
+                  </L>
+                  <E n="state">BROKEN</E>
+                  <V n="target_business" t="zone">
+                    <U n="zone">
+                      <E n="participant">CurrentZoneId</E>
+                    </U>
+                  </V>
+                  <U n="threshold">
+                    <T n="value">1</T>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="loot_list">
+                  <T>358867<!--LootActions: loot_APM_DeliverFine_Autonomous_RuleBreakTrash--></T>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="business_rule_state">
+                <U n="business_rule_state">
+                  <L n="rules">
+                    <T>343562<!--BusinessRule: Rule_PMI_NoTrash--></T>
+                  </L>
+                  <E n="state">BROKEN</E>
+                  <V n="target_business" t="zone">
+                    <U n="zone">
+                      <E n="participant">CurrentZoneId</E>
+                    </U>
+                  </V>
+                  <U n="threshold">
+                    <T n="value">1</T>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="loot_list">
+                  <T>358863<!--LootActions: loot_APM_DeliverFine_Autonomous_RuleBreakGhosts--></T>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="business_rule_state">
+                <U n="business_rule_state">
+                  <L n="rules">
+                    <T>348397<!--BusinessRule: Rule_PMI_NoGhosts--></T>
+                  </L>
+                  <E n="state">BROKEN</E>
+                  <V n="target_business" t="zone">
+                    <U n="zone">
+                      <E n="participant">CurrentZoneId</E>
+                    </U>
+                  </V>
+                  <U n="threshold">
+                    <T n="value">1</T>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="loot_list">
+                  <T>358864<!--LootActions: loot_APM_DeliverFine_Autonomous_RuleBreakHousehold--></T>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="business_rule_state">
+                <U n="business_rule_state">
+                  <L n="rules">
+                    <T>347342<!--BusinessRule: Rule_PMI_MaxHousehold--></T>
+                  </L>
+                  <E n="state">BROKEN</E>
+                  <V n="target_business" t="zone">
+                    <U n="zone">
+                      <E n="participant">CurrentZoneId</E>
+                    </U>
+                  </V>
+                  <U n="threshold">
+                    <T n="value">1</T>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="loot_list">
+                  <T>358937<!--LootActions: loot_APM_DeliverFine_Autonomous_RuleBreakPets--></T>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="test_set_reference">
+                <T n="test_set_reference">359094<!--TestSetInstance: testSet_PMI_PetRule_CurrentZone_Broken--></T>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="posture_preferences">
+    <T n="apply_posture_costs">True</T>
+    <T n="prefer_clicked_parts">False</T>
+  </U>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="state">
+      <U n="state">
+        <T n="value">135096<!--ObjectStateValue: FrontDoor_IsFrontDoor--></T>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

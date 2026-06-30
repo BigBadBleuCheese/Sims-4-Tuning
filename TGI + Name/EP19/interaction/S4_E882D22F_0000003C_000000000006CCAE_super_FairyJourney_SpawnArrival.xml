@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="super_FairyJourney_SpawnArrival" s="445614">
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <T n="allow_user_directed">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <L n="basic_extras">
+    <V t="put_near">
+      <U n="put_near">
+        <V n="offset" t="enabled">
+          <U n="enabled">
+            <T n="offset_orientation">150</T>
+            <U n="offset_translation">
+              <T n="z">2</T>
+            </U>
+          </U>
+        </V>
+        <E n="target">TargetSim</E>
+        <V n="timing" t="at_beginning" />
+        <T n="use_world_routing">False</T>
+      </U>
+    </V>
+    <V t="vfx">
+      <U n="vfx">
+        <V n="participant" t="from_participant">
+          <U n="from_participant">
+            <E n="participant">Actor</E>
+          </U>
+        </V>
+        <V n="timing" t="at_beginning" />
+        <U n="vfx">
+          <T n="effect_name">ep19_fairy_journey_mothernature_appear</T>
+          <V n="joint_name" t="Current_Position" />
+          <T n="play_immediate">True</T>
+        </U>
+      </U>
+    </V>
+    <V t="set_visibility_state">
+      <U n="set_visibility_state">
+        <T n="fade">True</T>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+    <V t="store_sim">
+      <U n="store_sim">
+        <E n="destination_participant">TargetSim</E>
+        <V n="source_participant" t="specific_participant">
+          <E n="specific_participant">Actor</E>
+        </V>
+      </U>
+    </V>
+  </L>
+  <V n="basic_reserve_object" t="disabled" />
+  <V n="content_score" t="disabled" />
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">435632<!--AutonomousSimPickerSuperInteraction: autonomousSimPickerSuperInteraction_FairyJourney_Marking--></T>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="situation_running_test">
+                <U n="situation_running_test">
+                  <V n="situation_whitelist" t="enabled">
+                    <L n="enabled">
+                      <T>443791<!--SpecificSimCustomStatesSituation: situation_EP19NPC_MotherNature_FairyJourney_Human--></T>
+                    </L>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="disabled" />
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">TARGET</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+  <T n="visible">False</T>
+</I>

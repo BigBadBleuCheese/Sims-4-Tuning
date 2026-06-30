@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="RandomWeightedLoot" i="action" m="interactions.utils.loot" n="randomWeightedLoot_SelfDiscovery_DiscoveryMoment_Green_PlantLover" s="457111">
+  <L n="random_loot_actions">
+    <U>
+      <V n="action" t="notification_and_dialog">
+        <U n="notification_and_dialog">
+          <V n="dialog" t="dialog_icon">
+            <U n="dialog_icon">
+              <L n="content_icons">
+                <U>
+                  <T p="InEP19\UI\Icons\CAS\Traits\trait_PlantLover.png" n="icon">2f7d0004:00000000:95e7653725422b1d</T>
+                  <V n="label" t="enabled">
+                    <T n="enabled">0xE2D6BF94<!--String: "Plant Lover"--></T>
+                  </V>
+                </U>
+              </L>
+              <V n="icon" t="enabled">
+                <V n="enabled" t="participant" />
+              </V>
+              <V n="icon_override_participant" t="enabled">
+                <E n="enabled">Actor</E>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x8F1F868A<!--String: "{0.SimFirstName} appears to identify with plants on an emotional level. Plant Lovers feel happiest when treating plants like little Sims, loving and caring for them as they grow.\n\nEmbrace the change?"--></T>
+              </V>
+              <V n="title" t="enabled">
+                <T n="enabled">0xE7C87314<!--String: "New Personality Trait"--></T>
+              </V>
+              <L n="ui_responses">
+                <U>
+                  <V n="loots_for_response" t="enabled">
+                    <U n="enabled">
+                      <L n="loots">
+                        <T>457110<!--LootActions: loot_SelfDiscovery_Reward_Green_PlantLover--></T>
+                      </L>
+                    </U>
+                  </V>
+                  <T n="text">0xD6106CF2<!--String: "Yes"--></T>
+                </U>
+                <U>
+                  <V n="loots_for_response" t="enabled">
+                    <U n="enabled">
+                      <E n="dialog_response_id_override">DIALOG_RESPONSE_CUSTOM_2</E>
+                      <L n="loots">
+                        <T>316286<!--LootActions: loot_SelfDiscovery_DiscoveryMomentCancel_Green--></T>
+                      </L>
+                    </U>
+                  </V>
+                  <T n="text">0xA9EC8BD2<!--String: "No"--></T>
+                </U>
+              </L>
+            </U>
+          </V>
+        </U>
+      </V>
+      <U n="weight">
+        <L n="multipliers" />
+      </U>
+    </U>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="game_option">
+        <U n="game_option">
+          <E n="gameplay_option">SELF_DISCOVERY_ENABLED</E>
+        </U>
+      </V>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified">
+            <L n="specified">
+              <E>YOUNGADULT</E>
+              <E>ADULT</E>
+              <E>ELDER</E>
+            </L>
+          </V>
+          <V n="npc" t="enabled" />
+        </U>
+      </V>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>318344<!--Buff: buff_SelfDiscovery_DiscoveryMoment_CD--></T>
+          </L>
+        </U>
+      </V>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>315699<!--Trait: trait_Hidden_SelfDiscoveryMax--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

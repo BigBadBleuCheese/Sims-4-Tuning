@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SimPickerInteraction" i="interaction" m="interactions.base.picker_interaction" n="simPicker_NobleCareer_PickCoronateTarget" s="476110">
+  <V n="_saveable" t="disabled" />
+  <L n="actor_continuation">
+    <U>
+      <T n="affordance">476128<!--SocialSuperInteraction: socialSI_NobleCareer_Coronate_Speech--></T>
+      <E n="target">PickedSim</E>
+    </U>
+  </L>
+  <V n="cell_enabled_tests" t="enabled">
+    <L n="enabled">
+      <L>
+        <V t="buff">
+          <U n="buff">
+            <L n="blacklist">
+              <T>488186<!--Buff: buff_NobleCareer_Hidden_KnightedAndDelighted--></T>
+            </L>
+            <E n="subject">PickedSim</E>
+            <V n="tooltip" t="enabled">
+              <T n="enabled">0x50B6BDCC<!--String: "{0.SimFirstName} has recently joined Nobility. "--></T>
+            </V>
+          </U>
+        </V>
+        <V t="relationship">
+          <U n="relationship">
+            <U n="required_relationship_bits">
+              <L n="match_all">
+                <T>15803<!--RelationshipBit: has_met--></T>
+              </L>
+            </U>
+            <L n="target_sim">
+              <E>PickedSim</E>
+            </L>
+            <V n="tooltip" t="enabled">
+              <T n="enabled">0xACC457B7<!--String: "Needs to be Introduced first."--></T>
+            </V>
+          </U>
+        </V>
+      </L>
+    </L>
+  </V>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x28E6B885<!--String: "Grant Noble Title"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <V n="picker_dialog" t="sim_picker">
+    <U n="sim_picker">
+      <L n="custom_filters">
+        <V t="reference">
+          <T n="reference">499295<!--CustomSimFilter: customSimFilter_NobleCareer--></T>
+        </V>
+      </L>
+      <V n="text" t="enabled">
+        <V n="enabled" t="single">
+          <T n="single">0x3F81D410<!--String: "This will give the chosen court guest a new Noble Title! Sims in the Noble Career will be promoted, and non-Noble Sims will leave their current career to join the Noble Career."--></T>
+        </V>
+      </V>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T p="InEP21\UI\Icons\PieMenu\PieMenu_NobleCareer.png" n="key">2f7d0004:00000000:9b49aa0d1eb08413</T>
+      </U>
+    </V>
+  </V>
+  <V n="pie_menu_test_tooltip" t="enabled">
+    <T n="enabled">0x45B777EE<!--String: "There are no Nobles with a lower rank than {0.SimFirstName} currently attending Noble Court."--></T>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <V n="sim_filter" t="sim_filter_selected">
+    <T n="sim_filter_selected">422353<!--TunableSimFilter: filter_SimPicker_Basic_TYAE--></T>
+  </V>
+  <L n="sim_tests">
+    <L>
+      <V t="situation_job_test">
+        <U n="situation_job_test">
+          <E n="participant">PickedSim</E>
+          <L n="situation_jobs">
+            <T>473913<!--SituationJob: job_Career_Noble_GuestNoble_Court--></T>
+            <T>473914<!--SituationJob: job_Career_Noble_Host_Court--></T>
+            <T>473915<!--SituationJob: job_Career_Noble_NobleAdvisor--></T>
+          </L>
+        </U>
+      </V>
+      <V t="test_set_reference">
+        <T n="test_set_reference">476111<!--TestSetInstance: testSet_NobleCareer_ActorHigherNobleThanPickedSim--></T>
+      </V>
+      <V t="career_test">
+        <U n="career_test">
+          <T n="negate">False</T>
+          <E n="subjects">PickedSim</E>
+          <V n="test_type" t="career_reference">
+            <U n="career_reference">
+              <V n="career" t="specific_career">
+                <T n="specific_career">466304<!--NobleCareer: career_Noble--></T>
+              </V>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="in_home_region">
+      <U n="in_home_region">
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xE2ED99EC<!--String: "Noble Actions cannot be performed outside the Kingdom {0.SimFirstName} lives in."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="career_test">
+      <U n="career_test">
+        <V n="test_type" t="career_reference">
+          <U n="career_reference">
+            <V n="career" t="specific_career">
+              <T n="specific_career">466304<!--NobleCareer: career_Noble--></T>
+            </V>
+            <V n="user_level" t="enabled">
+              <U n="enabled">
+                <T n="lower_bound">10</T>
+              </U>
+            </V>
+          </U>
+        </V>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xED597FE6<!--String: "{0.SimFirstName} has to be Level 10 in the Noble Career to do this interaction."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="situation_running_test">
+      <U n="situation_running_test">
+        <V n="situation_whitelist" t="enabled">
+          <L n="enabled">
+            <T>473670<!--CustomStatesSituation: situation_NobleCareer_HoldCourt--></T>
+          </L>
+        </V>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xB3D5237E<!--String: "{0.SimFirstName} needs to Hold Court to do this."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+</I>

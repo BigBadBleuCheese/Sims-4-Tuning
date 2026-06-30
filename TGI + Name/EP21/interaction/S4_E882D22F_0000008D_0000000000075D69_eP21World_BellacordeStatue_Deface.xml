@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="eP21World_BellacordeStatue_Deface" s="482665">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="facing" />
+        </U>
+        <U>
+          <V n="value" t="cone">
+            <U n="cone">
+              <T n="angle">45</T>
+              <T n="max_radius">5</T>
+              <T n="min_radius">3</T>
+              <T n="require_los">False</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="time_based">
+                <U n="time_based">
+                  <T n="max_time">15</T>
+                  <T n="min_time">10</T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="buff_based">
+                <U n="buff_based">
+                  <T n="buff">226416<!--Buff: buff_Generic_CancelInteraction--></T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_CANCEL</E>
+          </U>
+        </V>
+        <V t="list_reference">
+          <T n="list_reference">33040<!--ExitConditionList: ExitConditionList_FunOrMotiveFailureExit--></T>
+        </V>
+        <V t="list_reference">
+          <T n="list_reference">40144<!--ExitConditionList: ExitConditionList_EmotionMiserable--></T>
+        </V>
+        <V t="list_reference">
+          <T n="list_reference">40702<!--ExitConditionList: ExitConditionList_EmotionStressed--></T>
+        </V>
+      </L>
+      <V n="content" t="staging_content">
+        <U n="staging_content">
+          <U n="content_set">
+            <L n="affordance_links">
+              <T>483123<!--MixerInteraction: ep21World_Mixers_BellacordeStatue_Idle--></T>
+              <T>483124<!--MixerInteraction: ep21World_Mixers_BellacordeStatue_Loop--></T>
+            </L>
+          </U>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="buff_fire_and_forget">
+      <U n="buff_fire_and_forget">
+        <U n="buff">
+          <T n="buff_type">226416<!--Buff: buff_Generic_CancelInteraction--></T>
+        </U>
+        <V n="timing" t="at_end">
+          <U n="at_end">
+            <E n="criticality">OnCancelOrException</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="broadcaster">
+      <U n="broadcaster">
+        <L n="broadcaster_types">
+          <U>
+            <T n="item">483129<!--Broadcaster: broadcaster_EP21World_DefaceReaction--></T>
+          </U>
+          <U>
+            <T n="item">497137<!--Broadcaster: broadcaster_ScandalSecret_Witness_VandalizedMonument--></T>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V t="buff_fire_and_forget">
+      <U n="buff_fire_and_forget">
+        <U n="buff">
+          <T n="buff_type">483482<!--Buff: buff_Ep21World_NoBroadcasterEffect--></T>
+        </U>
+      </U>
+    </V>
+  </L>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xD925664<!--String: "Deface Statue"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <L n="basic_extras">
+              <V t="state_change">
+                <U n="state_change">
+                  <V n="new_value" t="single_value">
+                    <U n="single_value">
+                      <T n="new_value">482897<!--ObjectStateValue: eP21World_InteractableStatue_Values_SprayPainted--></T>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+            <L n="loot_list">
+              <T>489942<!--LootActions: loot_ScandalSecret_CreateSecret_vandalizedMonument--></T>
+            </L>
+          </U>
+        </U>
+      </L>
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="basic_extras">
+                  <V t="state_change">
+                    <U n="state_change">
+                      <V n="new_value" t="single_value">
+                        <U n="single_value">
+                          <T n="new_value">482897<!--ObjectStateValue: eP21World_InteractableStatue_Values_SprayPainted--></T>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                  <V t="leave_situation">
+                    <U n="leave_situation">
+                      <L n="situation_types">
+                        <T>489050<!--OpenStreetsAutonomySituation: openStreetsAutonomySituation_GoldWorld_NobleRebel--></T>
+                      </L>
+                    </U>
+                  </V>
+                </L>
+                <L n="loot_list">
+                  <T>467397<!--LootActions: loot_NobleFavor_Gain_Commoner_Large--></T>
+                  <T>483481<!--LootActions: loot_WorldEp21_BellacordeStatue_PrankSuccess--></T>
+                  <T>489942<!--LootActions: loot_ScandalSecret_CreateSecret_vandalizedMonument--></T>
+                </L>
+                <E n="outcome_result">SUCCESS</E>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="trait">
+                <U n="trait">
+                  <L n="blacklist_traits">
+                    <T>194224<!--Trait: trait_Reputation_Rank_7_Pristine--></T>
+                    <T>194215<!--Trait: trait_Reputation_Rank_5_Good--></T>
+                    <T>194217<!--Trait: trait_Reputation_Rank_6_ReallyGood--></T>
+                  </L>
+                  <T n="num_whitelist_required">0</T>
+                </U>
+              </V>
+              <V t="buff">
+                <U n="buff">
+                  <L n="blacklist">
+                    <T>226416<!--Buff: buff_Generic_CancelInteraction--></T>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all" />
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

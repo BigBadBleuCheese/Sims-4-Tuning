@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalObjectInteraction" i="situation_goal" m="situations.situation_goal_object_interaction" n="r4Event_ObjectInteraction_TimeTravelComponent" s="426982">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T p="InGame\UI\Icons\Headlines\Events\headline_ShardOfTimeIcon2_50x50.png" n="enabled">2f7d0004:00000000:2b2278a1c6d8e3a8</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x2B77D21B<!--String: "Build the Time Travel Component"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0xB4A60935<!--String: "To build a time travel component, first make sure you have:\n\n• Level 2 in both Handiness and Logic\n• A piece of Ironyum and Plathinum\n• An Electronic Upgrade Part\n• A Shard of Time\n\nIf any of the components are missing, select Replace on a Mailbox to recover the needed parts.\n\nFrom your inventory, select Build Time Travel Component on a Shard of Time.\n\n<i>(+15 Event Points)</i>"--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>447711<!--SituationGoalLootActions: liveEvent_GoalLoot_CompleteQuestGoal--></T>
+  </L>
+  <U n="_goal_test">
+    <L n="affordances">
+      <T>426981<!--ImmediateSuperInteraction: immediate_R4Event_buildTimeTravelComponent--></T>
+    </L>
+    <E n="test_event">InteractionComplete</E>
+  </U>
+  <L n="_post_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+      </U>
+    </V>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+  <V n="goal_completion_notification" t="enabled">
+    <U n="enabled">
+      <V n="icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T p="InGame\UI\Icons\Headlines\Events\headline_ShardOfTimeIcon2_50x50.png" n="key">2f7d0004:00000000:2b2278a1c6d8e3a8</T>
+          </U>
+        </V>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0xC93D04B<!--String: "With the time travel component in hand, {0.SimFirstName} is feeling very proud of {0.SimPronounReflexive}. {0.SimPronounSubjective} solved the missing time piece from Nikolais theoretical work!\n\nWhat could be next, other than to activate it?!"--></T>
+      </V>
+      <V n="title" t="enabled">
+        <T n="enabled">0x547C1CB9<!--String: "Time Travel Component Complete!"--></T>
+      </V>
+    </U>
+  </V>
+  <V n="tutorial_tip_group" t="disabled" />
+</I>

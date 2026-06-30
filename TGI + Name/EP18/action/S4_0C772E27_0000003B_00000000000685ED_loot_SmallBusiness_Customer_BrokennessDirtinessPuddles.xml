@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_SmallBusiness_Customer_BrokennessDirtinessPuddles" s="427501">
+  <L n="loot_actions">
+    <V t="statistics">
+      <V n="statistics" t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">-9</T>
+          <U n="chance">
+            <T n="base_chance">5</T>
+          </U>
+          <T n="stat">16633<!--Commodity: commodity_Object_Brokenness--></T>
+          <L n="subject">
+            <E>Object</E>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="state">
+                <U n="state">
+                  <T n="value">15081<!--ObjectStateValue: BrokenState_Unbroken--></T>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">-20</T>
+          <U n="chance">
+            <T n="base_chance">6.25</T>
+          </U>
+          <T n="stat">16575<!--Commodity: commodity_dirtiness--></T>
+          <L n="subject">
+            <E>Object</E>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="state">
+                <U n="state">
+                  <T n="value">15130<!--ObjectStateValue: DirtyState_Clean--></T>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+    </V>
+    <V t="create_puddles">
+      <U n="create_puddles">
+        <U n="chance">
+          <T n="base_chance">10</T>
+        </U>
+        <U n="default_puddle_factory">
+          <T n="none">0</T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="object_definition_criteria">
+              <U n="object_definition_criteria">
+                <V n="identity_test" t="tags">
+                  <U n="tags">
+                    <L n="tag_set">
+                      <E>Func_Dumpster_Deal_Plumbing</E>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="AutonomousSimPickerSuperInteraction" i="interaction" m="interactions.base.picker_interaction" n="autonomousSimPicker_Police_WaitWithBurglar" s="444541">
+  <V n="_saveable" t="enabled" />
+  <L n="_static_commodities">
+    <U>
+      <T n="static_commodity">421846<!--StaticCommodity: staticCommodity_Police--></T>
+    </U>
+  </L>
+  <L n="actor_continuation">
+    <U>
+      <T n="affordance">426710<!--SocialSuperInteraction: social_BurglarNPC_Arrested_WaitTogether--></T>
+      <E n="target">PickedSim</E>
+    </U>
+  </L>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <V n="content_score" t="disabled" />
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T n="include_uninstantiated_sims">False</T>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="route_start_balloon" t="enabled">
+    <U n="enabled">
+      <U n="balloon">
+        <L n="balloon_choices">
+          <U>
+            <V n="item" t="balloon_icon">
+              <U n="balloon_icon">
+                <V n="icon" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>Object</E>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </U>
+        </L>
+        <L n="balloon_target">
+          <E>Actor</E>
+        </L>
+      </U>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <L n="sim_tests">
+    <L>
+      <V t="situation_job_test">
+        <U n="situation_job_test">
+          <E n="participant">PickedSim</E>
+          <L n="situation_jobs">
+            <T>421825<!--SituationJob: job_Burglar--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">ACTOR</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="routing_slave_formation">
+      <U n="routing_slave_formation">
+        <V n="formation_test" t="in_formation">
+          <U n="in_formation">
+            <V n="formations_to_validate" t="enabled">
+              <U n="enabled">
+                <V n="whitelist" t="specify">
+                  <U n="specify">
+                    <L n="whitelist">
+                      <T>421851<!--RoutingFormation: routingFormation_BurglarPolice--></T>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <T n="required_or_prohibited">False</T>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="participant_running_interaction">
+      <U n="participant_running_interaction">
+        <L n="affordances">
+          <T>426710<!--SocialSuperInteraction: social_BurglarNPC_Arrested_WaitTogether--></T>
+          <T>426297<!--SocialSuperInteraction: social_Burglar_DistractPolice--></T>
+          <T>426802<!--SocialSuperInteraction: social_Burglar_DistractPolice_Target--></T>
+          <T>446688<!--SuperInteraction: burglarNPC_Arrested_NoFormation_GoToArrival--></T>
+          <T>446687<!--SuperInteraction: burglarNPC_Arrested_NoFormation_Start--></T>
+          <T>446837<!--SuperInteraction: burglarNPC_Arrested_NoFormation_WaitAtArrival--></T>
+        </L>
+        <T n="test_for_not_running">True</T>
+        <T n="test_interaction_queue">True</T>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>426353<!--Buff: buff_Burglar_Hidden_DistractedByPlayer--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+  <T n="visible">False</T>
+</I>

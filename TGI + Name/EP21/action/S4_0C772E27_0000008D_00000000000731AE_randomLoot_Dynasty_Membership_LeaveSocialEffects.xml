@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="RandomWeightedLoot" i="action" m="interactions.utils.loot" n="randomLoot_Dynasty_Membership_LeaveSocialEffects" s="471470">
+  <L n="random_loot_actions">
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">470784<!--LootActions: loot_Sentiment_AddSentiment_Bitter_Dynasty_LeftDynasty--></T>
+      </V>
+      <U n="weight">
+        <T n="base_value">15</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">2</T>
+            <L n="tests">
+              <L>
+                <V t="trait">
+                  <U n="trait">
+                    <L n="whitelist_traits">
+                      <T>16838<!--Trait: trait_FamilyOriented--></T>
+                      <T>311267<!--Trait: trait_Loyal--></T>
+                      <T>272336<!--Trait: trait_HighMaintenance--></T>
+                      <T>16823<!--Trait: trait_Ambitious--></T>
+                      <T>16845<!--Trait: trait_HotHeaded--></T>
+                      <T>203542<!--Trait: trait_Paranoid--></T>
+                      <T>199561<!--Trait: trait_SelfAbsorbed--></T>
+                      <T>251970<!--Trait: trait_Proper--></T>
+                      <T>424535<!--Trait: trait_Idealist--></T>
+                      <T>466527<!--Trait: trait_Dynasty_Head--></T>
+                      <T>469883<!--Trait: trait_Dynasty_BlackSheep_Repentful--></T>
+                      <T>16857<!--Trait: trait_Mean--></T>
+                      <T>466526<!--Trait: trait_Dynasty_Heir--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">3</T>
+            <L n="tests">
+              <L>
+                <V t="relationship">
+                  <U n="relationship">
+                    <U n="required_relationship_bits">
+                      <L n="match_any">
+                        <T>8802<!--RelationshipBit: family_Target_IsBrotherSisterOf_Actor--></T>
+                        <T>468542<!--RelationshipBit: family_Target_IsHalfsiblingOf_Actor--></T>
+                        <T>8809<!--RelationshipBit: family_Target_IsParentOf_Actor--></T>
+                        <T>467759<!--RelationshipBit: family_Target_IsParentInLawOf_Actor--></T>
+                        <T>467761<!--RelationshipBit: family_Target_IsSiblingInLawOf_Actor--></T>
+                        <T>468544<!--RelationshipBit: family_Target_IsStepchildOf_Actor--></T>
+                        <T>468543<!--RelationshipBit: family_Target_IsStepparentOf_Actor--></T>
+                        <T>8824<!--RelationshipBit: family_Target_IsStepsiblingOf_Actor--></T>
+                        <T>15822<!--RelationshipBit: romantic-Married--></T>
+                        <T>8805<!--RelationshipBit: family_Target_IsSonOrDaughterOf_Actor--></T>
+                        <T>240104<!--RelationshipBitCollection: rbc_Sentiment_Bitter--></T>
+                        <T>240105<!--RelationshipBitCollection: rbc_Sentiment_Furious--></T>
+                        <T>246490<!--RelationshipBitCollection: rbc_Sentiment_Hurt--></T>
+                      </L>
+                    </U>
+                    <L n="subject">
+                      <E>Actor</E>
+                    </L>
+                    <L n="target_sim">
+                      <E>TargetSim</E>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0.3</T>
+            <L n="tests">
+              <L>
+                <V t="trait">
+                  <U n="trait">
+                    <L n="whitelist_traits">
+                      <T>469882<!--Trait: trait_Dynasty_BlackSheep_Resentful--></T>
+                      <T>16833<!--Trait: trait_CommitmentIssues--></T>
+                      <T>27915<!--Trait: trait_Good--></T>
+                      <T>341151<!--Trait: trait_Wise--></T>
+                      <T>341152<!--Trait: trait_Generous--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0.1</T>
+            <L n="tests">
+              <L>
+                <V t="buff">
+                  <U n="buff">
+                    <E n="subject">ActorDynastyHead</E>
+                    <V n="whitelist" t="enabled">
+                      <L n="enabled">
+                        <T>471740<!--Buff: buff_Dynasty_HeadApprovedLeave--></T>
+                      </L>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <U n="weight">
+        <T n="base_value">85</T>
+      </U>
+    </U>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="identity">
+        <U n="identity">
+          <E n="subject_b">TargetSim</E>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

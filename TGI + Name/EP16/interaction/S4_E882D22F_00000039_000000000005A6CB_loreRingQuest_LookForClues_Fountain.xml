@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="loreRingQuest_LookForClues_Fountain" s="370379">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="circle">
+            <U n="circle">
+              <T n="radius">5</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="value" t="facing" />
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">370182<!--AnimationElement: loreRingQuest_LookForClues_Fountain--></T>
+      </U>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="notification">
+      <U n="notification">
+        <V n="dialog" t="single">
+          <V n="single" t="literal">
+            <U n="literal">
+              <V n="icon" t="enabled">
+                <V n="enabled" t="participant" />
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x43392A5<!--String: "{0.SimFirstName} is barely able to make out the odd markings at the bottom of the fountain that looks like the markings from inside the ring...<I>interesting</I>... Maybe {0.SimPronounSubjective} should go talk to <B>The Ring Bear</B> about all this?"--></T>
+              </V>
+            </U>
+          </V>
+        </V>
+      </U>
+    </V>
+  </L>
+  <V n="basic_reserve_object" t="disabled" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x947FADE3<!--String: "Search Fountain for Clues"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <V n="animation_ref" t="disabled" />
+        <L n="continuation">
+          <U>
+            <T n="affordance">370865<!--ObjectInInventoryPickerInteraction: objectInInventoryPickerInteraction_LoreRing_Fountain--></T>
+          </U>
+        </L>
+      </U>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="inventory">
+      <U n="inventory">
+        <V n="contents_check" t="has_object_with_states">
+          <U n="has_object_with_states">
+            <V n="object_requirement" t="tag">
+              <U n="tag">
+                <U n="tag">
+                  <L n="tag_set">
+                    <E>Func_EP16LoreRing</E>
+                  </L>
+                </U>
+              </U>
+            </V>
+            <L n="state_set">
+              <T>369417<!--ObjectStateValue: objectStateValue_LoreRing_QuestStatus_FindFountain--></T>
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

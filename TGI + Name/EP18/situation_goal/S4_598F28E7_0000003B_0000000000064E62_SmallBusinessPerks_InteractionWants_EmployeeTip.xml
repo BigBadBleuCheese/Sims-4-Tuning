@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalObjectInteraction" i="situation_goal" m="situations.situation_goal_object_interaction" n="SmallBusinessPerks_InteractionWants_EmployeeTip" s="413282">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T n="enabled" p="InEP18\UI\Icons\Whims\whims_TipEmployee.png">2f7d0004:00000000:969d36998052573f</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0xF28474D4<!--String: "Reward an Employee with a Bonus"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0x335C2864<!--String: "Select an employee, then choose Give Employee Bonus from the Manage Pay options under the Small Business category."--></T>
+      </V>
+    </U>
+  </V>
+  <U n="_goal_test">
+    <L n="affordances">
+      <T>412479<!--SocialSuperInteraction: social_SmallBusinessPerks_EmployeeTip_VeryLarge--></T>
+      <T>412475<!--SocialSuperInteraction: social_SmallBusinessPerks_EmployeeTip_Small--></T>
+      <T>412477<!--SocialSuperInteraction: social_SmallBusinessPerks_EmployeeTip_Medium--></T>
+      <T>412478<!--SocialSuperInteraction: social_SmallBusinessPerks_EmployeeTip_Large--></T>
+    </L>
+    <V n="interaction_outcome" t="enabled">
+      <E n="enabled">SUCCESS</E>
+    </V>
+    <E n="test_event">InteractionComplete</E>
+  </U>
+  <L n="_pre_tests">
+    <V t="trait">
+      <U n="trait">
+        <L n="whitelist_traits">
+          <T>405250<!--Trait: trait_SmallBusiness_Perks_EmployeeTip--></T>
+        </L>
+      </U>
+    </V>
+    <V t="business_employee_count">
+      <U n="business_employee_count">
+        <T n="employee_count">0</T>
+        <T n="negate">True</T>
+      </U>
+    </V>
+  </L>
+  <T n="_score">25</T>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+</I>

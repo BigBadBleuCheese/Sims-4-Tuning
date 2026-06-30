@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Blanket" i="object" m="objects.decorative.blanket" n="object_RomanticBlanket" s="358135">
+  <T n="_allow_different_multi_sim_idles">False</T>
+  <U n="_components">
+    <V n="focus" t="enabled">
+      <U n="enabled">
+        <V n="_focus_score" t="globally">
+          <U n="globally">
+            <E n="base">LOW</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V n="inventory_item" t="enabled">
+      <U n="enabled">
+        <V n="no_carry_add_to_sim_inventory_affordances" t="OVERRIDE">
+          <L n="OVERRIDE">
+            <T>381363<!--SuperInteraction: si_SwipeIntoSimInventory_RomanticBlanket--></T>
+          </L>
+        </V>
+        <T n="skip_carry_pose">True</T>
+        <E n="stack_scheme">NONE</E>
+        <L n="valid_inventory_types">
+          <E>SIM</E>
+        </L>
+      </U>
+    </V>
+    <V n="object_relationships" t="enabled">
+      <U n="enabled">
+        <T n="relationship_stat">385080<!--Statistic: statistic_Object_Blanket_Relationship--></T>
+      </U>
+    </V>
+    <V n="retail_component" t="enabled">
+      <V n="enabled" t="reference">
+        <T n="reference">110393<!--RetailComponent: retailComponent_Default--></T>
+      </V>
+    </V>
+    <V n="state" t="enabled">
+      <U n="enabled">
+        <L n="state_triggers">
+          <U>
+            <L n="at_states">
+              <T>77532<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Replace--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>39737<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Not_Burning--></T>
+              </L>
+            </V>
+          </U>
+        </L>
+        <L n="states">
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">362270<!--ObjectStateValue: romanticBlanket_StateValues_Flat--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">384440<!--ObjectStateValue: romanticBlanket_StateValues_Posture_NotIn_IntimatePosture--></T>
+            </V>
+            <T n="reset_on_load_if_time_passes">True</T>
+            <T n="reset_to_default">True</T>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">39611<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change--></T>
+              </U>
+              <U>
+                <T n="key">39736<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Burning--></T>
+              </U>
+              <U>
+                <T n="key">39737<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Not_Burning--></T>
+              </U>
+              <U>
+                <T n="key">77532<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Replace--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">39737<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Not_Burning--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">131794<!--ObjectStateValue: Kelpto_Stolen_Object--></T>
+              </U>
+              <U>
+                <T n="key">131795<!--ObjectStateValue: Klepto_Not_Stolen_Object--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">131795<!--ObjectStateValue: Klepto_Not_Stolen_Object--></T>
+            </V>
+          </U>
+        </L>
+      </U>
+    </V>
+  </U>
+  <L n="_part_data_map">
+    <U>
+      <T n="key">Sit_0</T>
+      <U n="value">
+        <L n="adjacent_parts">
+          <T>Sit_1</T>
+        </L>
+        <V n="is_mirrored" t="enabled">
+          <T n="enabled">False</T>
+        </V>
+        <T n="part_definition">358137<!--ObjectPart: part_RomanticBlanket_Sit--></T>
+      </U>
+    </U>
+    <U>
+      <T n="key">Sit_1</T>
+      <U n="value">
+        <L n="adjacent_parts">
+          <T>Sit_0</T>
+        </L>
+        <V n="is_mirrored" t="enabled">
+          <T n="enabled">True</T>
+        </V>
+        <T n="part_definition">358137<!--ObjectPart: part_RomanticBlanket_Sit--></T>
+        <V n="subroot_index" t="enabled">
+          <T n="enabled">1</T>
+        </V>
+      </U>
+    </U>
+  </L>
+  <L n="_super_affordances">
+    <T>13328<!--ImmediateSuperInteraction: debug_Reset--></T>
+    <T>13326<!--ImmediateSuperInteraction: debug_ObjectDestroy--></T>
+    <T>103888<!--ImmediateSuperInteraction: cheat_set_as_head--></T>
+    <T>13983<!--StandSuperInteraction: sim-stand--></T>
+    <T>361929<!--ImmediateSuperInteraction: romanticBlanket_sit_start--></T>
+    <T>358476<!--SuperInteraction: generic_RomanticBlanket_Sit_CrossLegged--></T>
+    <T>359027<!--SuperInteraction: generic_SitIntimate_RomanticBlanket--></T>
+    <T>360921<!--SuperInteraction: generic_RomanticBlanket_Sit_Kneel--></T>
+    <T>359344<!--SimPickerInteraction: simPicker_RomanticBlanket_SitTogether--></T>
+    <T>359345<!--SimPickerInteraction: simPicker_RomanticBlanket_Snuggle--></T>
+    <T>359681<!--SimPickerInteraction: romanticBlanket_MessAround_Picker--></T>
+    <T>74457<!--ImmediateSuperInteraction: fire_ReplaceBurntObject--></T>
+    <T>359682<!--SimPickerInteraction: romanticBlanket_TryForBaby_Female_Picker--></T>
+    <T>144099<!--SuperInteraction: generic_Object_Toddler_Check_Out--></T>
+    <T>359683<!--SimPickerInteraction: romanticBlanket_TryForBaby_Male_Picker--></T>
+    <T>375913<!--AutonomousSimPickerSuperInteraction: autonomousSimPicker_RomanticVenue_WatchSkyTogether_RomanticBlanket--></T>
+    <T>359653<!--SimPickerInteraction: romanticBlanket_WooHoo_Picker--></T>
+    <T>375915<!--AutonomousSimPickerSuperInteraction: autonomousSimPicker_RomanticVenue_WatchStarsTogether_RomanticBlanket--></T>
+    <T>359651<!--SuperInteraction: generic_RomanticBlanket_Woohoo--></T>
+    <T>368098<!--SimPickerInteraction: simPicker_RomanticBlanket_PicnicTogether_GrilledCheese--></T>
+    <T>363618<!--SimPickerInteraction: simPicker_RomanticBlanket_PicnicTogether_PicnicBasket--></T>
+    <T>368344<!--SimPickerInteraction: simPicker_RomanticBlanket_PicnicTogether_BLT--></T>
+    <T>368341<!--SimPickerInteraction: simPicker_RomanticBlanket_PicnicTogether_ExistingSlottedFood--></T>
+    <T>368342<!--SimPickerInteraction: simPicker_RomanticBlanket_PicnicTogether_FlirtyHeartCookies--></T>
+    <T>368343<!--SimPickerInteraction: simPicker_RomanticBlanket_PicnicTogether_GardenSalad--></T>
+    <T>368340<!--SimPickerInteraction: simPicker_RomanticBlanket_PicnicTogether_Pambazo--></T>
+    <T>368957<!--SuperInteraction: romanticBlanket_Picnic_JoinSituation_BLT--></T>
+    <T>368958<!--SuperInteraction: romanticBlanket_Picnic_JoinSituation_ExistingSlottedFood--></T>
+    <T>368959<!--SuperInteraction: romanticBlanket_Picnic_JoinSituation_FlirtyHeartCookies--></T>
+    <T>368960<!--SuperInteraction: romanticBlanket_Picnic_JoinSituation_GardenSalad--></T>
+    <T>368961<!--SuperInteraction: romanticBlanket_Picnic_JoinSituation_GrilledCheese--></T>
+    <T>368962<!--SuperInteraction: romanticBlanket_Picnic_JoinSituation_Pambazo--></T>
+    <T>368963<!--SuperInteraction: romanticBlanket_Picnic_JoinSituation_PicnicBasket--></T>
+    <T>368955<!--SuperInteraction: romanticBlanket_Picnic_EndSituation--></T>
+    <T>375908<!--SimPickerInteraction: simPickerInteraction_RomanticVenue_WatchSkyTogether_RomanticBlanket--></T>
+    <T>375909<!--SimPickerInteraction: simPickerInteraction_RomanticVenue_WatchStarsTogether_RomanticBlanket--></T>
+    <T>276518<!--SuperInteraction: infant_WhatsThat--></T>
+  </L>
+  <T n="ignore_deco_slots_for_surfaces">True</T>
+  <E n="posture_transition_target_tag">INVALID</E>
+  <U n="recycling_data">
+    <L n="recycling_values">
+      <U>
+        <E n="Bucks Type">RecycleBitsBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+      <U>
+        <E n="Bucks Type">RecyclePiecesBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+    </L>
+  </U>
+</I>

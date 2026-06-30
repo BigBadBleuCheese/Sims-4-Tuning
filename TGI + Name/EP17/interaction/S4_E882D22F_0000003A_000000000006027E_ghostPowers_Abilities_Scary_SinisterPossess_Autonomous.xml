@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="ghostPowers_Abilities_Scary_SinisterPossess_Autonomous" s="393854">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="facing" />
+        </U>
+        <U>
+          <V n="value" t="circle">
+            <U n="circle">
+              <T n="ideal_radius">1</T>
+              <T n="radius">2</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <L n="_static_commodities">
+    <U>
+      <T n="static_commodity">393410<!--StaticCommodity: commodity_RoleAutonomy_ReaperCareer_GhostPower--></T>
+    </U>
+    <U>
+      <T n="static_commodity">400798<!--StaticCommodity: staticCommodity_EP17World_GhostPowersGang--></T>
+    </U>
+  </L>
+  <T n="allow_autonomous">True</T>
+  <T n="allow_user_directed">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="list_reference">
+          <T n="list_reference">40705<!--ExitConditionList: ExitConditionList_MotivesNearFail--></T>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="time_based">
+                <U n="time_based">
+                  <T n="max_time">12</T>
+                  <T n="min_time">8</T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+        <V t="list_reference">
+          <T n="list_reference">40702<!--ExitConditionList: ExitConditionList_EmotionStressed--></T>
+        </V>
+      </L>
+      <V n="content" t="looping_content">
+        <U n="looping_content">
+          <U n="animation_ref">
+            <T n="factory">391310<!--AnimationElement: ghostPowers_SinisterPossess--></T>
+          </U>
+        </U>
+      </V>
+      <V n="periodic_stat_change" t="enabled">
+        <U n="enabled">
+          <L n="operations">
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="amount">0.75</T>
+                <T n="stat">16655<!--Commodity: motive_Fun--></T>
+              </U>
+            </V>
+            <V t="statistic_set_max">
+              <U n="statistic_set_max">
+                <T n="stat">393850<!--Commodity: commodity_GhostPowers_Autonomy_Evil--></T>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+              </U>
+            </V>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="broadcaster">
+      <U n="broadcaster">
+        <L n="broadcaster_types">
+          <U>
+            <T n="item">393538<!--Broadcaster: broadcaster_GhostPowers_WitnessReaction_SinisterPossess--></T>
+          </U>
+        </L>
+        <V n="offset_time" t="enabled">
+          <T n="enabled">2</T>
+        </V>
+      </U>
+    </V>
+    <V t="reslot_plumbbob">
+      <U n="reslot_plumbbob">
+        <T n="bone_name">b__ROOT__</T>
+        <U n="offset">
+          <T n="y">2.5</T>
+        </U>
+      </U>
+    </V>
+    <V t="set_visibility_state">
+      <U n="set_visibility_state">
+        <V n="timing" t="on_xevt">
+          <U n="on_xevt">
+            <T n="xevt_id">101</T>
+          </U>
+        </V>
+        <T n="visibility">False</T>
+      </U>
+    </V>
+    <V t="set_visibility_state">
+      <U n="set_visibility_state">
+        <V n="timing" t="on_xevt">
+          <U n="on_xevt">
+            <E n="criticality">OnCancel</E>
+            <T n="xevt_id">102</T>
+          </U>
+        </V>
+        <T n="visibility">True</T>
+      </U>
+    </V>
+    <V t="buff_fire_and_forget">
+      <U n="buff_fire_and_forget">
+        <U n="buff">
+          <T n="buff_type">424355<!--Buff: buff_EP17World_Walkbys_WaylonWarez_Possess_Cooldown--></T>
+        </U>
+      </U>
+    </V>
+    <V t="buff_fire_and_forget">
+      <U n="buff_fire_and_forget">
+        <U n="buff">
+          <T n="buff_type">424947<!--Buff: buff_EP17World_Walkbys_GhostPowersGang_GenericAbilityCooldown--></T>
+        </U>
+        <U n="success_chance">
+          <L n="multipliers">
+            <U>
+              <T n="multiplier">0</T>
+              <L n="tests">
+                <L>
+                  <V t="buff">
+                    <U n="buff">
+                      <L n="blacklist">
+                        <T>424947<!--Buff: buff_EP17World_Walkbys_GhostPowersGang_GenericAbilityCooldown--></T>
+                      </L>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+          </L>
+        </U>
+      </U>
+    </V>
+  </L>
+  <V n="basic_reserve_object" t="enabled">
+    <U n="enabled">
+      <L n="subject_list">
+        <U>
+          <V n="reserve_type" t="all" />
+          <L n="subject">
+            <E>Object</E>
+            <E>CarriedObject</E>
+            <E>CraftingObject</E>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <T n="category">384919<!--PieMenuCategory: pieMenuCategory_GhostPowers_Scary--></T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x7144F4E9<!--String: "Sinister Haunt"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+    <E>Interaction_GhostAbility_Evil</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <V n="animation_ref" t="enabled">
+          <U n="enabled">
+            <T n="factory">28375<!--AnimationElement: Socials_Responses_Funny_LowIntensity--></T>
+          </U>
+        </V>
+        <L n="loot_list" />
+      </U>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T p="InEP17\UI\Icons\PieMenu\Category\icon_pieMenu_category_GhostScary.png" n="key">2f7d0004:00000000:fa70973b029d63a9</T>
+      </U>
+    </V>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all" />
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="npc" t="enabled">
+          <T n="enabled">True</T>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="trait">
+      <U n="trait">
+        <L n="whitelist_traits">
+          <T>381402<!--Trait: trait_IsGhost--></T>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>424355<!--Buff: buff_EP17World_Walkbys_WaylonWarez_Possess_Cooldown--></T>
+          <T>424947<!--Buff: buff_EP17World_Walkbys_GhostPowersGang_GenericAbilityCooldown--></T>
+        </L>
+      </U>
+    </V>
+    <V t="in_use">
+      <U n="in_use">
+        <T n="negate">True</T>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x91E86BD9<!--String: "This object is currently in use."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="object_has_no_children">
+      <U n="object_has_no_children">
+        <T n="check_part_owner">True</T>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xEE2357FB<!--String: "Can't do this on objects with items on it."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

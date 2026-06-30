@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="lootActions_CAD_CancelDate" s="376048">
+  <L n="loot_actions">
+    <V t="schedule_drama_node">
+      <U n="schedule_drama_node">
+        <T n="drama_node">375958<!--DialogDramaNode: DialogDramaNode_CAD_Date--></T>
+        <V n="time_delay" t="enabled">
+          <U n="enabled">
+            <T n="minutes">5</T>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="relationship_set">
+        <U n="relationship_set">
+          <U n="chance">
+            <T n="base_chance">100</T>
+          </U>
+          <L n="subject">
+            <E>TargetSim</E>
+          </L>
+          <L n="target_participant_type">
+            <E>Actor</E>
+          </L>
+          <T n="track">247964<!--SentimentTrack: sentimentTrack_Actor_HurtBy_Target_ST_generic--></T>
+          <T n="value">50</T>
+        </U>
+      </V>
+    </V>
+    <V t="audio">
+      <U n="audio">
+        <U n="audio">
+          <T n="audio" p="InEP16\Audio\music\bumpers\bumper_ep16_core_dating_gameplay_fail.propx">39b2aa4a:00000000:76d24b307aa201bb</T>
+        </U>
+      </U>
+    </V>
+    <V t="reaction">
+      <U n="reaction">
+        <V n="si_reaction" t="enabled">
+          <U n="enabled">
+            <T n="affordance">125127<!--AggregateSuperInteraction: reaction_Generic_ShockedAggregate--></T>
+            <E n="affordance_priority">High</E>
+            <V n="affordance_run_priority" t="enabled">
+              <E n="enabled">High</E>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="show_balloon">
+      <U n="show_balloon">
+        <U n="balloon">
+          <L n="balloon_choices">
+            <U>
+              <V n="item" t="balloon_icon">
+                <U n="balloon_icon">
+                  <V n="icon" t="participant">
+                    <U n="participant">
+                      <L n="participant_type">
+                        <E>TargetSim</E>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </U>
+          </L>
+          <L n="balloon_target">
+            <E>Actor</E>
+          </L>
+        </U>
+      </U>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="relationship_change">
+        <U n="relationship_change">
+          <T n="amount">-5</T>
+          <L n="subject">
+            <E>TargetSim</E>
+          </L>
+          <L n="target_participant_type">
+            <E>Actor</E>
+          </L>
+          <T n="track">16651<!--RelationshipTrack: LTR_Romance_Main--></T>
+        </U>
+      </V>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="npc" t="enabled" />
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

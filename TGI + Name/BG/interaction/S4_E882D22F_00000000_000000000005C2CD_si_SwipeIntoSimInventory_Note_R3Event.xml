@@ -1,0 +1,456 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="si_SwipeIntoSimInventory_Note_R3Event" s="377549">
+  <V n="_avoid_participants_as_body_target" t="enabled">
+    <L n="enabled">
+      <E />
+    </L>
+  </V>
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="circle">
+            <U n="circle">
+              <T n="ideal_radius">0.5</T>
+              <T n="radius">1.5</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="facing" />
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Object</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <T n="allow_from_sim_inventory">True</T>
+  <T n="allowed_to_combine">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">23926<!--AnimationElement: Generic_PickUp--></T>
+      </U>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="destroy_object" />
+  </L>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x7273BA60<!--String: "Read"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes" />
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="basic_extras">
+                  <V t="notification">
+                    <U n="notification">
+                      <V n="dialog" t="single">
+                        <V n="single" t="literal">
+                          <U n="literal">
+                            <V n="icon" t="enabled">
+                              <V n="enabled" t="resource_key">
+                                <U n="resource_key">
+                                  <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_newspaper.png">2f7d0004:00000000:2d1c27c2507b6109</T>
+                                </U>
+                              </V>
+                            </V>
+                            <V n="text" t="single">
+                              <T n="single">0x28569837<!--String: "Welcome to our latest series, where we guide you through the process of cooking Ambrosia!\n\nIf you have your Snapdragon planted then the next step is to work on your Cooking and Gardening Skills. The best way to do this is to feed your garden and yourself!"--></T>
+                            </V>
+                            <V n="title" t="enabled">
+                              <T n="enabled">0x4FC40C09<!--String: "Ambrosia Society Newsletter"--></T>
+                            </V>
+                            <L n="ui_responses">
+                              <U>
+                                <T n="text">0xC3DEA665<!--String: "Cooking Lesson"--></T>
+                                <V n="tutorial_id" t="enabled">
+                                  <T n="enabled">74201<!--Tutorial: tutorial_Sim_Skill_Cooking--></T>
+                                </V>
+                                <E n="ui_request">SHOW_LESSONS</E>
+                              </U>
+                              <U>
+                                <T n="text">0x82BE095B<!--String: "Gardening Lesson"--></T>
+                                <V n="tutorial_id" t="enabled">
+                                  <T n="enabled">74200<!--Tutorial: tutorial_Sim_Skill_Gardening--></T>
+                                </V>
+                                <E n="ui_request">SHOW_LESSONS</E>
+                              </U>
+                            </L>
+                          </U>
+                        </V>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="situation_running_test">
+                <U n="situation_running_test">
+                  <V n="situation_whitelist" t="enabled">
+                    <L n="enabled">
+                      <T>376878<!--PivotalMomentSituation: eventSituation_R3Event_Quest02--></T>
+                      <T>390490<!--PivotalMomentSituation: eventSituation_R3Event_Quest02_A--></T>
+                      <T>390491<!--PivotalMomentSituation: eventSituation_R3Event_Quest02_B--></T>
+                    </L>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="basic_extras">
+                  <V t="notification">
+                    <U n="notification">
+                      <V n="dialog" t="single">
+                        <V n="single" t="literal">
+                          <U n="literal">
+                            <V n="icon" t="enabled">
+                              <V n="enabled" t="resource_key">
+                                <U n="resource_key">
+                                  <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_newspaper.png">2f7d0004:00000000:2d1c27c2507b6109</T>
+                                </U>
+                              </V>
+                            </V>
+                            <V n="text" t="single">
+                              <T n="single">0x3E4BC8C8<!--String: "This week, we continue to work on Gardening. You'll also need to make sure you start getting Satisfaction Points, you'll need them later!\n\nAmbrosia requires some creative plant manipulation, so you should also grab a cutting of Lily and Snapdragon this week. Check out Magnolia Blossom Park in Willow Creek to find some wild Lily and Snapdragon."--></T>
+                            </V>
+                            <V n="title" t="enabled">
+                              <T n="enabled">0x4FC40C09<!--String: "Ambrosia Society Newsletter"--></T>
+                            </V>
+                            <L n="ui_responses">
+                              <U>
+                                <T n="text">0x82BE095B<!--String: "Gardening Lesson"--></T>
+                                <V n="tutorial_id" t="enabled">
+                                  <T n="enabled">74200<!--Tutorial: tutorial_Sim_Skill_Gardening--></T>
+                                </V>
+                                <E n="ui_request">SHOW_LESSONS</E>
+                              </U>
+                              <U>
+                                <T n="text">0x2DE7D237<!--String: "Aspiration Lesson"--></T>
+                                <V n="tutorial_id" t="enabled">
+                                  <T n="enabled">315822<!--Tutorial: tutorial_LiveMode_AspirationsWants--></T>
+                                </V>
+                                <E n="ui_request">SHOW_LESSONS</E>
+                              </U>
+                            </L>
+                          </U>
+                        </V>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="situation_running_test">
+                <U n="situation_running_test">
+                  <V n="situation_whitelist" t="enabled">
+                    <L n="enabled">
+                      <T>376880<!--PivotalMomentSituation: eventSituation_R3Event_Quest04--></T>
+                      <T>390494<!--PivotalMomentSituation: eventSituation_R3Event_Quest04_A--></T>
+                      <T>390495<!--PivotalMomentSituation: eventSituation_R3Event_Quest04_B--></T>
+                    </L>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="basic_extras">
+                  <V t="notification">
+                    <U n="notification">
+                      <V n="dialog" t="single">
+                        <V n="single" t="literal">
+                          <U n="literal">
+                            <V n="icon" t="enabled">
+                              <V n="enabled" t="resource_key">
+                                <U n="resource_key">
+                                  <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_newspaper.png">2f7d0004:00000000:2d1c27c2507b6109</T>
+                                </U>
+                              </V>
+                            </V>
+                            <V n="text" t="single">
+                              <T n="single">0xEC5E7CBC<!--String: "Another week, another newsletter! This week it's time to catch the first ingredient, an Angelfish!\n\nAmbrosia is a gourmet dish, so it's time to learn the Gourmet Cooking skill.\n\nIs your garden blossoming? Ambrosia requires a Death Flower, so this week, you will also need to graft an Orchid and Pomegranate plant."--></T>
+                            </V>
+                            <V n="title" t="enabled">
+                              <T n="enabled">0x4FC40C09<!--String: "Ambrosia Society Newsletter"--></T>
+                            </V>
+                            <L n="ui_responses">
+                              <U>
+                                <T n="text">0x4C8491AA<!--String: "Fishing Lesson"--></T>
+                                <V n="tutorial_id" t="enabled">
+                                  <T n="enabled">77130<!--Tutorial: tutorial_Sim_Skill_Fishing--></T>
+                                </V>
+                                <E n="ui_request">SHOW_LESSONS</E>
+                              </U>
+                            </L>
+                          </U>
+                        </V>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="situation_running_test">
+                <U n="situation_running_test">
+                  <V n="situation_whitelist" t="enabled">
+                    <L n="enabled">
+                      <T>376922<!--PivotalMomentSituation: eventSituation_R3Event_Quest06--></T>
+                      <T>390498<!--PivotalMomentSituation: eventSituation_R3Event_Quest06_A--></T>
+                      <T>390499<!--PivotalMomentSituation: eventSituation_R3Event_Quest06_B--></T>
+                    </L>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="basic_extras">
+                  <V t="notification">
+                    <U n="notification">
+                      <V n="dialog" t="single">
+                        <V n="single" t="literal">
+                          <U n="literal">
+                            <V n="icon" t="enabled">
+                              <V n="enabled" t="resource_key">
+                                <U n="resource_key">
+                                  <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_newspaper.png">2f7d0004:00000000:2d1c27c2507b6109</T>
+                                </U>
+                              </V>
+                            </V>
+                            <V n="text" t="single">
+                              <T n="single">0xC5D8318<!--String: "This week, the Death Flower should be just within reach.\n\nWhile you're waiting for it to grow, make sure you continue working on your Cooking and Gourmet Cooking skills! They will come in handy when you're eventually ready to cook Ambrosia."--></T>
+                            </V>
+                            <V n="title" t="enabled">
+                              <T n="enabled">0x4FC40C09<!--String: "Ambrosia Society Newsletter"--></T>
+                            </V>
+                            <L n="ui_responses">
+                              <U>
+                                <T n="text">0x3D9C8AE6<!--String: "Aspiration Lesson"--></T>
+                                <V n="tutorial_id" t="enabled">
+                                  <T n="enabled">74214<!--Tutorial: tutorial_Sim_Aspirations--></T>
+                                </V>
+                                <E n="ui_request">SHOW_LESSONS</E>
+                              </U>
+                            </L>
+                          </U>
+                        </V>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="situation_running_test">
+                <U n="situation_running_test">
+                  <V n="situation_whitelist" t="enabled">
+                    <L n="enabled">
+                      <T>376924<!--PivotalMomentSituation: eventSituation_R3Event_Quest08--></T>
+                      <T>390502<!--PivotalMomentSituation: eventSituation_R3Event_Quest08_A--></T>
+                      <T>390503<!--PivotalMomentSituation: eventSituation_R3Event_Quest08_B--></T>
+                    </L>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="basic_extras">
+                  <V t="notification">
+                    <U n="notification">
+                      <V n="dialog" t="single">
+                        <V n="single" t="literal">
+                          <U n="literal">
+                            <V n="icon" t="enabled">
+                              <V n="enabled" t="resource_key">
+                                <U n="resource_key">
+                                  <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_newspaper.png">2f7d0004:00000000:2d1c27c2507b6109</T>
+                                </U>
+                              </V>
+                            </V>
+                            <V n="text" t="single">
+                              <T n="single">0x6B21D92A<!--String: "This week we are getting the final details rounded out before we are ready to cook Ambrosia! You need to max out your Cooking and Gourmet Cooking skills before you attempt to cook up the dish next week."--></T>
+                            </V>
+                            <V n="title" t="enabled">
+                              <T n="enabled">0x4FC40C09<!--String: "Ambrosia Society Newsletter"--></T>
+                            </V>
+                          </U>
+                        </V>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="situation_running_test">
+                <U n="situation_running_test">
+                  <V n="situation_whitelist" t="enabled">
+                    <L n="enabled">
+                      <T>376926<!--PivotalMomentSituation: eventSituation_R3Event_Quest10--></T>
+                      <T>390506<!--PivotalMomentSituation: eventSituation_R3Event_Quest10_A--></T>
+                      <T>390507<!--PivotalMomentSituation: eventSituation_R3Event_Quest10_B--></T>
+                    </L>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="basic_extras">
+                  <V t="notification">
+                    <U n="notification">
+                      <V n="dialog" t="single">
+                        <V n="single" t="literal">
+                          <U n="literal">
+                            <V n="icon" t="enabled">
+                              <V n="enabled" t="resource_key">
+                                <U n="resource_key">
+                                  <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_newspaper.png">2f7d0004:00000000:2d1c27c2507b6109</T>
+                                </U>
+                              </V>
+                            </V>
+                            <V n="text" t="single">
+                              <T n="single">0xAB24924C<!--String: "Welcome to the final edition of our newsletter! It's time for all your hard work to pay off. Cook Ambrosia from the Gourmet Cooking recipes.\n\nOnce it's cooked, you can bring a ghost back to life with this magical dish!"--></T>
+                            </V>
+                            <V n="title" t="enabled">
+                              <T n="enabled">0x4FC40C09<!--String: "Ambrosia Society Newsletter"--></T>
+                            </V>
+                          </U>
+                        </V>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="situation_running_test">
+                <U n="situation_running_test">
+                  <V n="situation_whitelist" t="enabled">
+                    <L n="enabled">
+                      <T>376927<!--PivotalMomentSituation: eventSituation_R3Event_Quest11--></T>
+                    </L>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T n="key" p="InGame\UI\Icons\PieMenu\Events\icon_piemenu_category_GrimEvent.png">2f7d0004:00000000:8d0a1ebc75133695</T>
+      </U>
+    </V>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">5</T>
+</I>

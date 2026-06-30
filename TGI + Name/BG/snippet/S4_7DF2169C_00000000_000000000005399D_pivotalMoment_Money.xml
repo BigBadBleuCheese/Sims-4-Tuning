@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="PivotalMoment" i="snippet" m="pivotal_moments.pivotal_moment" n="pivotalMoment_Money" s="342429">
+  <L n="activation_triggers">
+    <U>
+      <T n="key">1</T>
+      <L n="value">
+        <U>
+          <L n="conditions">
+            <V t="time_based">
+              <U n="time_based">
+                <T n="max_time">90</T>
+                <T n="min_time">90</T>
+                <T n="save_id">1</T>
+              </U>
+            </V>
+          </L>
+        </U>
+        <U>
+          <L n="conditions">
+            <V t="event_test_based">
+              <U n="event_test_based">
+                <E n="event_to_listen_for">OnExitBuildBuy</E>
+                <T n="save_id">2</T>
+                <V n="test" t="simoleon_value">
+                  <U n="simoleon_value">
+                    <V n="value_context" t="total_cash" />
+                    <U n="value_threshold">
+                      <E n="comparison">LESS_OR_EQUAL</E>
+                      <T n="value">2000</T>
+                    </U>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </U>
+        <U>
+          <L n="conditions">
+            <V t="event_based">
+              <U n="event_based">
+                <E n="event_to_listen_for">UICareerPanel</E>
+                <T n="save_id">3</T>
+              </U>
+            </V>
+          </L>
+        </U>
+        <U>
+          <L n="conditions">
+            <V t="event_test_based">
+              <U n="event_test_based">
+                <E n="event_to_listen_for">ItemCrafted</E>
+                <T n="save_id">4</T>
+                <V n="test" t="simoleon_value">
+                  <U n="simoleon_value">
+                    <V n="value_context" t="total_cash" />
+                    <U n="value_threshold">
+                      <E n="comparison">LESS_OR_EQUAL</E>
+                      <T n="value">2000</T>
+                    </U>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="key">2</T>
+      <L n="value">
+        <U>
+          <L n="conditions">
+            <V t="time_based">
+              <U n="time_based">
+                <T n="max_time">720</T>
+                <T n="min_time">360</T>
+                <T n="save_id">1</T>
+              </U>
+            </V>
+          </L>
+        </U>
+        <U>
+          <L n="conditions">
+            <V t="event_test_based">
+              <U n="event_test_based">
+                <E n="event_to_listen_for">OnExitBuildBuy</E>
+                <T n="save_id">3</T>
+                <V n="test" t="simoleon_value">
+                  <U n="simoleon_value">
+                    <V n="value_context" t="total_cash" />
+                    <U n="value_threshold">
+                      <E n="comparison">LESS_OR_EQUAL</E>
+                      <T n="value">1000</T>
+                    </U>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </U>
+        <U>
+          <L n="conditions">
+            <V t="event_test_based">
+              <U n="event_test_based">
+                <E n="event_to_listen_for">ItemCrafted</E>
+                <T n="save_id">5</T>
+                <V n="test" t="simoleon_value">
+                  <U n="simoleon_value">
+                    <V n="value_context" t="total_cash" />
+                    <U n="value_threshold">
+                      <E n="comparison">LESS_OR_EQUAL</E>
+                      <T n="value">1000</T>
+                    </U>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="key">3</T>
+      <L n="value">
+        <U>
+          <L n="conditions">
+            <V t="time_based">
+              <U n="time_based">
+                <T n="max_time">360</T>
+                <T n="min_time">180</T>
+                <T n="save_id">1</T>
+              </U>
+            </V>
+          </L>
+        </U>
+        <U>
+          <L n="conditions">
+            <V t="event_test_based">
+              <U n="event_test_based">
+                <E n="event_to_listen_for">OnExitBuildBuy</E>
+                <T n="save_id">3</T>
+                <V n="test" t="simoleon_value">
+                  <U n="simoleon_value">
+                    <V n="value_context" t="total_cash" />
+                    <U n="value_threshold">
+                      <E n="comparison">LESS_OR_EQUAL</E>
+                      <T n="value">500</T>
+                    </U>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </U>
+        <U>
+          <L n="conditions">
+            <V t="event_test_based">
+              <U n="event_test_based">
+                <E n="event_to_listen_for">ItemCrafted</E>
+                <T n="save_id">5</T>
+                <V n="test" t="simoleon_value">
+                  <U n="simoleon_value">
+                    <V n="value_context" t="total_cash" />
+                    <U n="value_threshold">
+                      <E n="comparison">LESS_OR_EQUAL</E>
+                      <T n="value">500</T>
+                    </U>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="cooldown" t="enabled">
+    <U n="enabled">
+      <T n="lower_bound">14400</T>
+      <T n="upper_bound">14400</T>
+    </U>
+  </V>
+  <T n="drama_node">352104<!--PivotalMomentDialogDramaNode: pivotalMomentDramaNode_Alarm_Money--></T>
+  <T n="is_onboarding_requirement">True</T>
+  <T n="outcome_already_rewarded_text">0xFDD32E11<!--String: "<b>Rewards</b>\nRewards have already been given."--></T>
+  <T n="outcome_description_text">0x55CF8C7<!--String: "Congratulations, you have completed the Scoring Simoleons Discovery Quest!"--></T>
+  <T n="outcome_next_steps_text">0x60DDD99A<!--String: "Your reward was deposited directly into your Household Funds! Entering Build Mode is a great way to spend all of those hard earned Simoleons!"--></T>
+  <T n="outcome_title_text">0x92CCA68C<!--String: "{0.String}"--></T>
+  <T n="situation_to_start">337979<!--PivotalMomentSituation: pivotalMomentSituation_Money--></T>
+</I>

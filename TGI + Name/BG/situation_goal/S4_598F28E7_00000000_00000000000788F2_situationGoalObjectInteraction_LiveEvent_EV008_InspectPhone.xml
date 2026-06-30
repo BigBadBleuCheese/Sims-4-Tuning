@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalObjectInteraction" i="situation_goal" m="situations.situation_goal_object_interaction" n="situationGoalObjectInteraction_LiveEvent_EV008_InspectPhone" s="493810">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T n="enabled" p="InGame\UI\Icons\Events\EventGoal_cellphone.png">2f7d0004:00000000:730921a6799dc36f</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0xED475578<!--String: "Inspect the Envoy's Phone in Your Inventory"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0xDC171850<!--String: "To find the Envoy's phone, look in the inventory. Not the phone menu!\n\nHint: A replacement Envoy phone can be found by rummaging in a trash can again."--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>447711<!--SituationGoalLootActions: liveEvent_GoalLoot_CompleteQuestGoal--></T>
+  </L>
+  <U n="_goal_test">
+    <L n="affordances">
+      <T>494003<!--SuperInteraction: liveEvents_EV008_InvestigatePhone--></T>
+    </L>
+    <E n="test_event">InteractionComplete</E>
+  </U>
+  <L n="_post_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+      </U>
+    </V>
+  </L>
+  <L n="_pre_goal_loot_list">
+    <T>500879<!--SituationGoalLootActions: liveEvent_GoalLoot_EV008_CreatePhone--></T>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+  <V n="goal_completion_notification" t="enabled">
+    <U n="enabled">
+      <V n="icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T p="InGame\UI\Icons\Headlines\Final\headline_cellphoneold.png" n="key">2f7d0004:00000000:feed889af683ed97</T>
+          </U>
+        </V>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0x9ED603D8<!--String: "Upon inspection, {0.SimFirstName} uncovers a file named "My Retirement Master Plan" that requires a password.\n\nRetirement...fancy house? It seems like the Envoy is actually trying to enrich themself somehow!"--></T>
+      </V>
+    </U>
+  </V>
+  <V n="tutorial_tip_group" t="enabled">
+    <T n="enabled">498759<!--TutorialTipGroup: tutorialTipGroup_LiveEvent_EV008_InspectPhone--></T>
+  </V>
+</I>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Objective" i="objective" m="event_testing.objective_tuning" n="objectives_UnfinishedBusiness_Family_Will" s="382446">
+  <E n="category_type">Family</E>
+  <L n="completion_loot">
+    <T>385159<!--LootActions: loot_UnfinishedBusiness_GoalCompleted--></T>
+  </L>
+  <T n="display_text">0x66C8122D<!--String: ""I'd like to protect the future of my assets.""--></T>
+  <L n="loot_on_completion_ui_update">
+    <T>396545<!--LootActions: loot_UnfinishedBusiness_clearCompleteObjective--></T>
+  </L>
+  <V n="objective_test" t="ran_interaction_test">
+    <U n="ran_interaction_test">
+      <L n="affordances">
+        <T>378308<!--SuperInteraction: computer_Wills_CreateWill--></T>
+        <T>385678<!--SuperInteraction: wills_StartWill_Shell--></T>
+        <T>379569<!--SocialSuperInteraction: socialSuper_Wills_Lawyer_StartWill--></T>
+        <T>379744<!--SocialSuperInteraction: socialSuper_Wills_GeneratePremadeWill--></T>
+        <T>388593<!--SuperInteraction: wills_Update_Heirloom--></T>
+        <T>385953<!--SuperInteraction: wills_StartWill_Self--></T>
+      </L>
+    </U>
+  </V>
+  <L n="tests_for_picker_availability">
+    <L>
+      <V t="will">
+        <U n="will">
+          <T n="negate">True</T>
+          <V n="test_type" t="sim_will_exists" />
+        </U>
+      </V>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>381402<!--Trait: trait_IsGhost--></T>
+          </L>
+        </U>
+      </V>
+      <V t="test_set_reference">
+        <T n="test_set_reference">426720<!--TestSetInstance: testSetInstance_UnfinishedBusiness_HasFamily_Check--></T>
+      </V>
+    </L>
+  </L>
+  <T n="tooltip">0x5CD02A22<!--String: "<b><font color='#2182E6'>Write a Will</font></b>\nWills aren't just about protecting my assets, it's about protecting my family and my legacy! Before it's too late, I should start my Will, either on a computer or by calling an Inheritance Lawyer. That way, once I've assigned inheritance rules and planned my funeral, I'll be free to go about my life knowing my legacy is secured."--></T>
+</I>

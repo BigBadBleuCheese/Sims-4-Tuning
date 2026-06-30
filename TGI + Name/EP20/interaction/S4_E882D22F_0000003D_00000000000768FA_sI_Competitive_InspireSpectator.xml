@@ -1,0 +1,471 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="sI_Competitive_InspireSpectator" s="485626">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="circle">
+            <U n="circle">
+              <T n="ideal_radius">2</T>
+              <T n="ideal_radius_width">1</T>
+              <T n="radius">3</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="facing" />
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Actor</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="acquire_targets_as_resource">False</T>
+  <T n="allow_autonomous">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="buff_based">
+                <U n="buff_based">
+                  <T n="buff">485627<!--Buff: buff_Trait_Competitive_Hidden_InspireSpectating--></T>
+                  <E n="participant">Actor</E>
+                  <E n="timing">ON_REMOVE</E>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+      </L>
+      <V n="content" t="looping_content">
+        <U n="looping_content">
+          <U n="animation_ref">
+            <T n="factory">129906<!--AnimationElement: reactions_Watch_Idle--></T>
+          </U>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="balloon">
+      <U n="balloon">
+        <L n="balloon_choices">
+          <U>
+            <V n="item" t="balloon_icon">
+              <U n="balloon_icon">
+                <V n="icon" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>TargetSim</E>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </U>
+        </L>
+        <L n="balloon_target">
+          <E>Actor</E>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="basic_focus" t="tunable_focus">
+    <U n="tunable_focus">
+      <L n="subject">
+        <E>TargetSim</E>
+      </L>
+    </U>
+  </V>
+  <V n="basic_reserve_object" t="disabled" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xAFD1E539<!--String: "Watch {1.SimFirstName}"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <L n="basic_extras">
+              <V t="buff_fire_and_forget">
+                <U n="buff_fire_and_forget">
+                  <U n="buff">
+                    <T n="buff_type">448950<!--Buff: buff_Trait_Competitive_InspireTarget--></T>
+                  </U>
+                </U>
+              </V>
+            </L>
+            <L n="loot_list">
+              <T>262325<!--LootActions: loot_Commodity_Motive_Social_Gain_Small--></T>
+            </L>
+            <V n="response" t="enabled">
+              <V n="enabled" t="individual">
+                <U n="individual">
+                  <L n="animations">
+                    <U>
+                      <E n="target">Actor</E>
+                      <U n="animation">
+                        <T n="factory">11739<!--AnimationElement: Reactionlets_Audience_CheerHigh_basic--></T>
+                        <U n="overrides">
+                          <V n="balloons" t="enabled">
+                            <L n="enabled">
+                              <U>
+                                <L n="balloon_choices">
+                                  <U>
+                                    <V n="item" t="balloon_icon">
+                                      <U n="balloon_icon">
+                                        <V n="icon" t="resource_key">
+                                          <U n="resource_key">
+                                            <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_EmotionInspired.png">2f7d0004:00000000:8942ac586a840b49</T>
+                                          </U>
+                                        </V>
+                                      </U>
+                                    </V>
+                                  </U>
+                                </L>
+                                <L n="balloon_target">
+                                  <E>Actor</E>
+                                </L>
+                              </U>
+                            </L>
+                          </V>
+                        </U>
+                      </U>
+                    </U>
+                  </L>
+                </U>
+              </V>
+            </V>
+          </U>
+          <U n="weight">
+            <L n="multipliers">
+              <U>
+                <T n="multiplier">1.25</T>
+                <L n="tests">
+                  <L>
+                    <V t="trait">
+                      <U n="trait">
+                        <L n="whitelist_traits">
+                          <T>27419<!--Trait: trait_active--></T>
+                          <T>9322<!--Trait: trait_Cheerful--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+        <U>
+          <U n="outcome">
+            <L n="basic_extras">
+              <V t="buff_fire_and_forget">
+                <U n="buff_fire_and_forget">
+                  <U n="buff">
+                    <T n="buff_type">448951<!--Buff: buff_Trait_Competitive_InspireFail--></T>
+                  </U>
+                </U>
+              </V>
+            </L>
+            <E n="outcome_result">FAILURE</E>
+            <V n="response" t="enabled">
+              <V n="enabled" t="individual">
+                <U n="individual">
+                  <L n="animations">
+                    <U>
+                      <E n="target">Actor</E>
+                      <U n="animation">
+                        <T n="factory">191226<!--AnimationElement: reactionlets_Audience_Annoyed--></T>
+                        <U n="overrides">
+                          <V n="balloons" t="enabled">
+                            <L n="enabled">
+                              <U>
+                                <L n="balloon_choices">
+                                  <U>
+                                    <V n="item" t="balloon_icon">
+                                      <U n="balloon_icon">
+                                        <V n="icon" t="resource_key">
+                                          <U n="resource_key">
+                                            <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_EmotionBored.png">2f7d0004:00000000:687af9184e7c056f</T>
+                                          </U>
+                                        </V>
+                                      </U>
+                                    </V>
+                                  </U>
+                                </L>
+                                <L n="balloon_target">
+                                  <E>Actor</E>
+                                </L>
+                              </U>
+                            </L>
+                          </V>
+                        </U>
+                      </U>
+                    </U>
+                  </L>
+                </U>
+              </V>
+            </V>
+          </U>
+          <U n="weight">
+            <L n="multipliers">
+              <U>
+                <T n="multiplier">1.25</T>
+                <L n="tests">
+                  <L>
+                    <V t="trait">
+                      <U n="trait">
+                        <L n="whitelist_traits">
+                          <T>9332<!--Trait: trait_Gloomy--></T>
+                          <T>16860<!--Trait: trait_Slob--></T>
+                          <T>203542<!--Trait: trait_Paranoid--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+      </L>
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <T n="buff_type">448950<!--Buff: buff_Trait_Competitive_InspireTarget--></T>
+                      </U>
+                    </U>
+                  </V>
+                </L>
+                <L n="loot_list">
+                  <T>262325<!--LootActions: loot_Commodity_Motive_Social_Gain_Small--></T>
+                </L>
+                <V n="response" t="enabled">
+                  <V n="enabled" t="individual">
+                    <U n="individual">
+                      <L n="animations">
+                        <U>
+                          <E n="target">Actor</E>
+                          <U n="animation">
+                            <T n="factory">11739<!--AnimationElement: Reactionlets_Audience_CheerHigh_basic--></T>
+                            <U n="overrides">
+                              <V n="balloons" t="enabled">
+                                <L n="enabled">
+                                  <U>
+                                    <L n="balloon_choices">
+                                      <U>
+                                        <V n="item" t="balloon_icon">
+                                          <U n="balloon_icon">
+                                            <V n="icon" t="resource_key">
+                                              <U n="resource_key">
+                                                <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_EmotionInspired.png">2f7d0004:00000000:8942ac586a840b49</T>
+                                              </U>
+                                            </V>
+                                          </U>
+                                        </V>
+                                      </U>
+                                    </L>
+                                    <L n="balloon_target">
+                                      <E>Actor</E>
+                                    </L>
+                                  </U>
+                                </L>
+                              </V>
+                            </U>
+                          </U>
+                        </U>
+                      </L>
+                    </U>
+                  </V>
+                </V>
+              </U>
+              <U n="weight">
+                <L n="multipliers">
+                  <U>
+                    <T n="multiplier">0</T>
+                    <L n="tests">
+                      <L>
+                        <V t="trait">
+                          <U n="trait">
+                            <L n="whitelist_traits">
+                              <T>9332<!--Trait: trait_Gloomy--></T>
+                              <T>9599<!--Trait: trait_Lazy--></T>
+                            </L>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                  <U>
+                    <T n="multiplier">1.25</T>
+                    <L n="tests">
+                      <L>
+                        <V t="trait">
+                          <U n="trait">
+                            <L n="whitelist_traits">
+                              <T>27419<!--Trait: trait_active--></T>
+                              <T>9322<!--Trait: trait_Cheerful--></T>
+                            </L>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                </L>
+              </U>
+            </U>
+            <U>
+              <U n="outcome">
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <T n="buff_type">448951<!--Buff: buff_Trait_Competitive_InspireFail--></T>
+                      </U>
+                    </U>
+                  </V>
+                </L>
+                <E n="outcome_result">FAILURE</E>
+                <V n="response" t="enabled">
+                  <V n="enabled" t="individual">
+                    <U n="individual">
+                      <L n="animations">
+                        <U>
+                          <E n="target">Actor</E>
+                          <U n="animation">
+                            <T n="factory">191226<!--AnimationElement: reactionlets_Audience_Annoyed--></T>
+                            <U n="overrides">
+                              <V n="balloons" t="enabled">
+                                <L n="enabled">
+                                  <U>
+                                    <L n="balloon_choices">
+                                      <U>
+                                        <V n="item" t="balloon_icon">
+                                          <U n="balloon_icon">
+                                            <V n="icon" t="resource_key">
+                                              <U n="resource_key">
+                                                <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_EmotionBored.png">2f7d0004:00000000:687af9184e7c056f</T>
+                                              </U>
+                                            </V>
+                                          </U>
+                                        </V>
+                                      </U>
+                                    </L>
+                                    <L n="balloon_target">
+                                      <E>Actor</E>
+                                    </L>
+                                  </U>
+                                </L>
+                              </V>
+                            </U>
+                          </U>
+                        </U>
+                      </L>
+                    </U>
+                  </V>
+                </V>
+              </U>
+              <U n="weight">
+                <L n="multipliers">
+                  <U>
+                    <T n="multiplier">0</T>
+                    <L n="tests">
+                      <L>
+                        <V t="trait">
+                          <U n="trait">
+                            <L n="whitelist_traits">
+                              <T>16823<!--Trait: trait_Ambitious--></T>
+                              <T>9617<!--Trait: trait_Perfectionist--></T>
+                              <T>368744<!--Trait: trait_PracticeMakesPerfect--></T>
+                              <T>16824<!--Trait: trait_SelfAssured--></T>
+                              <T>443222<!--Trait: trait_Competitive--></T>
+                              <T>284113<!--Trait: trait_Overachiever--></T>
+                            </L>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                  <U>
+                    <T n="multiplier">1.25</T>
+                    <L n="tests">
+                      <L>
+                        <V t="trait">
+                          <U n="trait">
+                            <L n="whitelist_traits">
+                              <T>9332<!--Trait: trait_Gloomy--></T>
+                              <T>16860<!--Trait: trait_Slob--></T>
+                              <T>203542<!--Trait: trait_Paranoid--></T>
+                            </L>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T n="key" p="InEP20\UI\Icons\PieMenu\Traits\trait_Competitive_piemenu.png">2f7d0004:00000000:d634875aaaa47a99</T>
+      </U>
+    </V>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">TARGET</E>
+  <L n="test_globals" />
+  <T n="time_overhead">30</T>
+</I>

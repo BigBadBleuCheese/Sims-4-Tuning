@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="MixerInteraction" i="interaction" m="interactions.base.mixer_interaction" n="Idle_Trait_Horse_Curious" s="326131">
+  <T n="allow_from_world">True</T>
+  <T n="allow_user_directed">False</T>
+  <L n="asm_actor_overrides">
+    <U>
+      <T n="actor_name">y</T>
+      <E n="actor_participant">RoutingSlaves</E>
+    </U>
+  </L>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">326284<!--AnimationElement: Trait_Horse_Curious--></T>
+        <U n="overrides">
+          <V n="balloons" t="enabled">
+            <L n="enabled">
+              <U>
+                <L n="balloon_choices">
+                  <U>
+                    <V n="item" t="balloon_icon">
+                      <U n="balloon_icon">
+                        <V n="icon" t="resource_key">
+                          <U n="resource_key">
+                            <T n="key" p="InEP14\UI\Icons\Headlines\headline_HorseTrait_Curious.png">2f7d0004:00000000:054b13431bc3005a</T>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </U>
+                </L>
+                <L n="balloon_target">
+                  <E>Actor</E>
+                </L>
+              </U>
+            </L>
+          </V>
+        </U>
+      </U>
+    </U>
+  </V>
+  <V n="basic_focus" t="do_not_change_focus" />
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Mixer</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="lock_out_time" t="enabled">
+    <U n="enabled">
+      <U n="interval">
+        <T n="lower_bound">30</T>
+        <T n="upper_bound">90</T>
+      </U>
+    </U>
+  </V>
+  <V n="lock_out_time_initial" t="enabled">
+    <U n="enabled">
+      <T n="lower_bound">30</T>
+      <T n="upper_bound">90</T>
+    </U>
+  </V>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <V n="animation_ref" t="disabled" />
+      </U>
+    </U>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <V n="require_reins_for_formation" t="enabled">
+    <T n="enabled">314817<!--RoutingFormation: routingFormation_HorseRiding_Ride--></T>
+  </V>
+  <U n="sub_action">
+    <T n="base_weight">8</T>
+    <E n="mixer_group">IDLES</E>
+  </U>
+  <E n="target_type">ACTOR</E>
+  <L n="test_globals">
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>334350<!--Buff: buff_Suppress_Trait_Idle--></T>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>129126<!--Buff: buff_Suppress_Emotion_Idle--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T n="visible">False</T>
+</I>

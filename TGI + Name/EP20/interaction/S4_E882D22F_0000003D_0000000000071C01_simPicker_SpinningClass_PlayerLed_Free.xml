@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SimPickerInteraction" i="interaction" m="interactions.base.picker_interaction" n="simPicker_SpinningClass_PlayerLed_Free" s="465921">
+  <V n="_saveable" t="disabled" />
+  <L n="actor_continuation">
+    <U>
+      <T n="affordance">465923<!--ImmediateSuperInteraction: spinningClass_PlayerLed_Start_Free--></T>
+    </U>
+  </L>
+  <T n="category">465927<!--PieMenuCategory: pieMenuCategory_SpinningClass_PlayerLed--></T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x62043FC8<!--String: "Free"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T n="include_uninstantiated_sims">False</T>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <L n="picked_continuation">
+    <U>
+      <T n="affordance">465924<!--ImmediateSuperInteraction: spinningClass_PlayerLed_Join_Free--></T>
+      <E n="target">Actor</E>
+    </U>
+  </L>
+  <V n="picker_dialog" t="sim_picker">
+    <U n="sim_picker">
+      <L n="custom_filters">
+        <V t="reference">
+          <T n="reference">499295<!--CustomSimFilter: customSimFilter_NobleCareer--></T>
+        </V>
+      </L>
+      <V n="max_selectable" t="static_count">
+        <U n="static_count">
+          <T n="number_selectable">5</T>
+        </U>
+      </V>
+    </U>
+  </V>
+  <V n="pie_menu_test_tooltip" t="enabled">
+    <T n="enabled">0xFECF93B1<!--String: "There are no available Sims to teach Spinning Class."--></T>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <V n="radius" t="enabled">
+    <T n="enabled">20</T>
+  </V>
+  <V n="sim_filter" t="sim_filter_selected">
+    <T n="sim_filter_selected">465926<!--TunableSimFilter: filter_Situation_PlayerFacing_SpinningClass_ClassMember_Free--></T>
+  </V>
+  <L n="sim_tests">
+    <L>
+      <V t="situation_job_test">
+        <U n="situation_job_test">
+          <T n="negate">True</T>
+          <E n="participant">PickedSim</E>
+          <L n="situation_jobs">
+            <T>446574<!--SituationJob: jobs_SpinningClass_Instructor_Service--></T>
+          </L>
+        </U>
+      </V>
+      <V t="state">
+        <U n="state">
+          <E n="operator">NOTEQUAL</E>
+          <T n="value">75273<!--CommodityBasedObjectStateValue: Pregnant_InLabor--></T>
+          <E n="who">PickedSim</E>
+        </U>
+      </V>
+      <V t="state">
+        <U n="state">
+          <E n="operator">NOTEQUAL</E>
+          <T n="value">15302<!--CommodityBasedObjectStateValue: Pregnant_ThirdTrimester--></T>
+          <E n="who">PickedSim</E>
+        </U>
+      </V>
+    </L>
+  </L>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="situation_running_test">
+      <U n="situation_running_test">
+        <L n="tag_blacklist">
+          <E>Situation_HobbyClass</E>
+        </L>
+      </U>
+    </V>
+    <V t="skill_test">
+      <U n="skill_test">
+        <T n="skill">16659<!--Skill: skill_Fitness--></T>
+        <V n="skill_range" t="interval">
+          <U n="interval">
+            <U n="skill_interval">
+              <T n="lower_bound">4</T>
+            </U>
+          </U>
+        </V>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x101E35C3<!--String: "{0.SimFirstName} doesn't have the necessary Fitness Skill to teach a Spinning Class."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="situation_running_test">
+      <U n="situation_running_test">
+        <V n="situation_blacklist" t="enabled">
+          <L n="enabled">
+            <T>447796<!--SpinClassSituation: spinningClassSituation--></T>
+            <T>461028<!--SpinClassSituation: spinningClassSituation_HiredInstructor--></T>
+            <T>465920<!--SpinClassSituation: spinningClassSituation_PlayerLed_Free--></T>
+          </L>
+        </V>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x9F121A89<!--String: "A Spinning Class is already in session."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">134952<!--TestSetInstance: testSet_PregnantDisallow_InLabor--></T>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">97269<!--TestSetInstance: testSet_PregnantDisallow_3rdTrimester--></T>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">28305<!--TestSetInstance: testSet_EmotionNotMiserable--></T>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">97371<!--TestSetInstance: testSet_Fitness_PulledMuscle--></T>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">471169<!--TestSetInstance: testSet_SpinningClass_StudentBikesCheck--></T>
+    </V>
+  </L>
+  <V n="utility_info" t="enabled">
+    <L n="enabled">
+      <U>
+        <E n="key">POWER</E>
+      </U>
+    </L>
+  </V>
+</I>

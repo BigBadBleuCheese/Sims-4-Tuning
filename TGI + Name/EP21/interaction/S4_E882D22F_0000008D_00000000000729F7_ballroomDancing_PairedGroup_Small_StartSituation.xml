@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="ballroomDancing_PairedGroup_Small_StartSituation" s="469495">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="circle">
+            <U n="circle">
+              <T n="radius">5</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">473662<!--AnimationElement: ballroomDancing_GrandWaltz_CallOver--></T>
+        <U n="overrides">
+          <V n="balloons" t="enabled">
+            <L n="enabled">
+              <U>
+                <L n="balloon_choices">
+                  <U>
+                    <V n="item" t="balloon_icon">
+                      <U n="balloon_icon">
+                        <E n="balloon_type">SPEECH</E>
+                        <V n="icon" t="resource_key">
+                          <U n="resource_key">
+                            <T n="key" p="InEP21\UI\Icons\Headlines\headline_DancePartner.png">2f7d0004:00000000:626080df88de0a91</T>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </U>
+                </L>
+                <L n="balloon_target">
+                  <E>Actor</E>
+                </L>
+              </U>
+            </L>
+          </V>
+        </U>
+      </U>
+    </U>
+  </V>
+  <L n="basic_extras" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x3003A209<!--String: "Start the Grand Waltz"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <V n="display_tooltip" t="enabled">
+    <T n="enabled">0xD8ADCC3<!--String: "Caution: you won't be able to ask someone new to become your Dance Partner after you start the Grand Waltz!"--></T>
+  </V>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T n="key" p="InEP21\UI\Icons\PieMenu\PieMenu_GrandBall.png">2f7d0004:00000000:6ba7a0b49c50d340</T>
+      </U>
+    </V>
+  </V>
+  <T n="pie_menu_priority">5</T>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all" />
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="npc" t="enabled">
+          <T n="enabled">True</T>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xEF0719BD<!--String: "This Dance Floor is too small to run a Grand Waltz! Purchase a Waltzing Dance Floor (Grand or Medium) instead."--></T>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="situation_running_test">
+      <U n="situation_running_test">
+        <T n="check_for_initiating_sim">True</T>
+        <V n="situation_blacklist" t="enabled">
+          <L n="enabled">
+            <T>469177<!--GroupPairedDanceSituation: groupPairedDanceSituation_BallroomSmall--></T>
+            <T>458731<!--GroupPairedDanceSituation: groupPairedDanceSituation_BallroomLarge--></T>
+          </L>
+        </V>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x6645E6B0<!--String: "A Grand Waltz is already happening."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="situation_job_test">
+      <U n="situation_job_test">
+        <L n="situation_jobs">
+          <T>461960<!--SituationJob: job_Host_Ballroom--></T>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xB2EA3B5B<!--String: "Only the Host can start the Grand Waltz."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="situation_running_test">
+        <U n="situation_running_test">
+          <V n="situation_whitelist" t="enabled">
+            <L n="enabled">
+              <T>469578<!--CustomStatesSituation: situation_CustomState_BallroomDance--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

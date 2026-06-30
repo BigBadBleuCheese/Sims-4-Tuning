@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="TestSetInstance" i="snippet" m="event_testing.tests" n="testSet_Dynasty_AskPermissionToMarry_TargetPickedSimSide" s="481878">
+  <L n="test">
+    <L>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="required_relationship_bits">
+            <L n="match_any">
+              <T>8809<!--RelationshipBit: family_Target_IsParentOf_Actor--></T>
+              <T>468543<!--RelationshipBit: family_Target_IsStepparentOf_Actor--></T>
+              <T>8808<!--RelationshipBit: family_Target_IsGrandparentOf_Actor--></T>
+              <T>468799<!--RelationshipBit: family_Target_IsGreatGrandparentOf_Actor--></T>
+            </L>
+          </U>
+          <L n="subject">
+            <E>PickedSim</E>
+          </L>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="trait">
+        <U n="trait">
+          <E n="subject">TargetSim</E>
+          <L n="whitelist_traits">
+            <T>466527<!--Trait: trait_Dynasty_Head--></T>
+          </L>
+        </U>
+      </V>
+      <V t="dynasty_member">
+        <U n="dynasty_member">
+          <E n="subjects">PickedSim</E>
+          <V n="test_type" t="same_dynasty_membership" />
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

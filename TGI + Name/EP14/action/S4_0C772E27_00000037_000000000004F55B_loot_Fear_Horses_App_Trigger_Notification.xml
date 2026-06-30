@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Fear_Horses_App_Trigger_Notification" s="324955">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InEP14\UI\Icons\Notifications\notification_HorseFear.png">2f7d0004:00000000:28b1781b396afcb0</T>
+                </U>
+              </V>
+            </V>
+            <V n="primary_icon_response" t="enabled">
+              <U n="enabled">
+                <E n="ui_request">SHOW_SUMMARY_PANEL</E>
+              </U>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant" />
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xFB3F0965<!--String: "Uh Oh! Despite {0.SimFirstName}'s best efforts, things aren't going well with Horses. A few more bad interactions and a Fear may develop."--></T>
+            </V>
+            <L n="ui_responses" />
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0xCD14ECDC<!--String: "(From Fear of Horses)"--></T>
+          </V>
+          <T n="buff_type">284204<!--Buff: buff_Fear_Gained_Anxiety--></T>
+        </U>
+      </U>
+    </V>
+  </L>
+  <L n="tests" />
+</I>

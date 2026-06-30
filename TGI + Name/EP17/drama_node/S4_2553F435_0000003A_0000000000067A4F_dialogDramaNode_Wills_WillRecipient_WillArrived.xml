@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="DialogDramaNode" i="drama_node" m="drama_scheduler.dialog_drama_node" n="dialogDramaNode_Wills_WillRecipient_WillArrived" s="424527">
+  <V n="cooldown_data" t="none" />
+  <V n="dialog_and_loot" t="notification">
+    <U n="notification">
+      <U n="notification">
+        <V n="icon" t="enabled">
+          <V n="enabled" t="resource_key">
+            <U n="resource_key">
+              <T p="InGame\UI\Icons\Notifications\notification_wills.png" n="key">2f7d0004:00000000:518e1275655a7a96</T>
+            </U>
+          </V>
+        </V>
+        <V n="text" t="single">
+          <T n="single">0xB26DB311<!--String: "Your household is a recipient of a Will from a recently deceased Sim. Keep an eye on that mailbox! It should arrive with the next mail delivery. Once you've received the Will, be sure to <b>Read It Out Loud</b> to receive your inheritance."--></T>
+        </V>
+        <V n="title" t="disabled" />
+      </U>
+    </U>
+  </V>
+  <U n="min_and_max_times">
+    <T n="lower_bound">1</T>
+    <T n="upper_bound">24</T>
+  </U>
+  <L n="pretests">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified" />
+          <V n="species" t="specified">
+            <U n="specified">
+              <L n="species">
+                <E />
+              </L>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="inventory">
+        <U n="inventory">
+          <V n="contents_check" t="has_object_with_def">
+            <U n="has_object_with_def">
+              <T n="definition">418228</T>
+            </U>
+          </V>
+          <U n="required_count">
+            <E n="comparison">EQUAL</E>
+            <T n="value">0</T>
+          </U>
+        </U>
+      </V>
+      <V t="will">
+        <U n="will">
+          <V n="test_type" t="will_recipient" />
+        </U>
+      </V>
+      <V t="will">
+        <U n="will">
+          <V n="test_type" t="claim_inheritance" />
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="reschedule_on_failed_tests" t="do_not_reschedule" />
+  <V n="sender_sim_info" t="no_participant" />
+  <V n="time_option" t="schedule">
+    <U n="schedule">
+      <L n="valid_times">
+        <U>
+          <U n="days_available">
+            <T n="0 SUNDAY">True</T>
+            <T n="1 MONDAY">True</T>
+            <T n="2 TUESDAY">True</T>
+            <T n="3 WEDNESDAY">True</T>
+            <T n="4 THURSDAY">True</T>
+            <T n="5 FRIDAY">True</T>
+            <T n="6 SATURDAY">True</T>
+          </U>
+          <T n="duration">12</T>
+          <U n="start_time">
+            <T n="hour">9</T>
+          </U>
+        </U>
+      </L>
+    </U>
+  </V>
+</I>

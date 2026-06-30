@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="ImmediateSuperInteraction" i="interaction" m="interactions.base.immediate_interaction" n="smallBusiness_LightRetail_PurchaseOrBarter_Immediate" s="421611">
+  <V n="_saveable" t="disabled" />
+  <T n="allow_user_directed">False</T>
+  <L n="basic_extras">
+    <V t="save_participant">
+      <U n="save_participant">
+        <E n="participant">Object</E>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+  </L>
+  <V n="content_score" t="disabled" />
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="small_business">
+        <U n="small_business">
+          <E n="participant">CurrentlyOpenSmallBusinessOwner</E>
+        </U>
+      </V>
+      <V t="small_business" />
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <L n="continuation">
+              <U>
+                <T n="affordance">402596<!--SuperInteraction: smallBusinessSystem_LightRetail_Purchase_Autonomous--></T>
+              </U>
+            </L>
+          </U>
+          <U n="weight">
+            <T n="base_value">7</T>
+          </U>
+        </U>
+      </L>
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">421612<!--SocialSuperInteraction: social_SmallBusinessPerks_NPC_Barter--></T>
+                    <E n="target">CurrentlyOpenSmallBusinessOwner</E>
+                  </U>
+                </L>
+              </U>
+              <U n="weight">
+                <T n="base_value">3</T>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="trait">
+                <U n="trait">
+                  <E n="subject">CurrentlyOpenSmallBusinessOwner</E>
+                  <L n="whitelist_traits">
+                    <T>405255<!--Trait: trait_SmallBusiness_Perks_Bartering--></T>
+                  </L>
+                </U>
+              </V>
+              <V t="object_criteria">
+                <U n="object_criteria">
+                  <T n="owned">False</T>
+                  <V n="subject_specific_tests" t="single_object" />
+                  <V n="value" t="enabled">
+                    <U n="enabled">
+                      <U n="threshold">
+                        <E n="comparison">LESS</E>
+                        <T n="value">500</T>
+                      </U>
+                      <V n="value_to_check" t="current_value" />
+                    </U>
+                  </V>
+                </U>
+              </V>
+              <V t="buff">
+                <U n="buff">
+                  <L n="blacklist">
+                    <T>414763<!--Buff: buff_SmallBusinessPerks_PillarOfTheCommunity--></T>
+                  </L>
+                  <E n="subject">CurrentlyOpenSmallBusinessOwner</E>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+      <T n="use_fallback_as_default">True</T>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T n="key" p="InGame\UI\Icons\PieMenu\Interactions\icon_pieMenu_immediateInteraction.png">2f7d0004:00000000:25eea5cdba6a6fd6</T>
+      </U>
+    </V>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+  </L>
+</I>

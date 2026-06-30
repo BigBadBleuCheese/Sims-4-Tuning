@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_APM_EventOutcome_LapsedSuccess_SewageLeak" s="348762">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T p="InEP15\UI\Icons\Notification\notification_SewageLeak.png" n="key">2f7d0004:00000000:df80a30994feae4e</T>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x1438E2C2<!--String: "Looks like the {0.String} household got it figured out on their own and you got away with ignoring the Sewage Leak! Pay careful attention next time or your Unit Rating may go down."--></T>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="participant_type_special">
+                    <U n="participant_type_special">
+                      <V n="participant_type" t="zone">
+                        <U n="zone">
+                          <V n="attribute" t="occupant_household_name" />
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                  <V t="participant_type_special">
+                    <U n="participant_type_special">
+                      <V n="participant_type" t="zone" />
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x2D090CFE<!--String: "Sewage Leak"--></T>
+            </V>
+          </U>
+        </V>
+        <E n="subject">ActiveHousehold</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="is_active_sim" t="enabled" />
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="actions">
+      <T n="actions">357102<!--LootActions: loot_UnitRating_Progression_PickedUnit_ActiveLot_NoSims_Small_Gain--></T>
+    </V>
+    <V t="actions">
+      <T n="actions">348473<!--LootActions: loot_muEventAPM_AddCooldown_SewageLeak--></T>
+    </V>
+    <V t="actions">
+      <T n="actions">349812<!--LootActions: loot_muEventAPM_AddEventOutcomeBuff_Lapsed--></T>
+    </V>
+  </L>
+</I>

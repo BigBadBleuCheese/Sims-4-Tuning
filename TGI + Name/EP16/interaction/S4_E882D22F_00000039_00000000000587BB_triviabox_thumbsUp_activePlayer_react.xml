@@ -1,0 +1,543 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SocialMixerInteraction" i="interaction" m="interactions.social.social_mixer_interaction" n="triviabox_thumbsUp_activePlayer_react" s="362427">
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>TargetSim</E>
+      </L>
+    </U>
+  </V>
+  <T n="acquire_social_group_as_resource">False</T>
+  <T n="allow_autonomous">False</T>
+  <T n="allow_user_directed">False</T>
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>162659<!--LootActions: loot_Commodity_Culling_GhostAdd_target--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T n="display_name">0x477DD999<!--String: "Playing Thumbs-Up! Game"--></T>
+  <T n="display_name_target">0x8C71C8F7<!--String: "Listen to {1.SimFirstName}'s Question"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Mixer</E>
+    <E>Interaction_All</E>
+    <E>Interaction_SocialAll</E>
+    <E>Interaction_SocialMixer</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <V n="animation_ref" t="enabled">
+              <U n="enabled">
+                <T n="factory">361696<!--AnimationElement: triviaBox_thumbsUp_activePlayer_response_correct--></T>
+              </U>
+            </V>
+            <L n="basic_extras">
+              <V t="loot">
+                <U n="loot">
+                  <L n="loot_list">
+                    <T>365985<!--LootActions: loot_triviaBox_thumbsUp_wooWho_relGain--></T>
+                    <T>386989<!--LootActions: loot_triviaBox_thumbsUp_wooWho_relGain_romance--></T>
+                  </L>
+                  <V n="object_override" t="enabled">
+                    <V n="enabled" t="from_participant">
+                      <U n="from_participant">
+                        <E n="participant">OtherSimsInCurrentGame</E>
+                      </U>
+                    </V>
+                  </V>
+                </U>
+              </V>
+            </L>
+            <L n="loot_list">
+              <T>366024<!--LootActions: loot_triviaBox_thumbsUp_learnAboutPlayers--></T>
+              <T>359465<!--LootActions: loot_triviaBox_thumbsUp_nextPlayer--></T>
+            </L>
+          </U>
+        </U>
+      </L>
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">361697<!--AnimationElement: triviaBox_thumbsUp_activePlayer_response_incorrect--></T>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="state_change">
+                    <U n="state_change">
+                      <V n="new_value" t="single_value">
+                        <U n="single_value">
+                          <T n="new_value">357635<!--ObjectStateValue: triviaBox_thumbsUp_wooWho_gameState_guessing--></T>
+                        </U>
+                      </V>
+                      <V n="timing" t="immediately" />
+                    </U>
+                  </V>
+                </L>
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">362431<!--SocialMixerInteraction: triviabox_thumbsUp_activePlayer_guess_scream--></T>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="state_white_black">
+                <U n="state_white_black">
+                  <U n="states">
+                    <V n="whitelist" t="specify">
+                      <U n="specify">
+                        <V n="threshold" t="threshold">
+                          <U n="threshold">
+                            <E n="comparison">EQUAL</E>
+                            <T n="value">2</T>
+                          </U>
+                        </V>
+                        <L n="whitelist">
+                          <T>358376<!--ObjectStateValue: triviaBox_thumbsUp_guessedCardState_incorrect--></T>
+                          <T>361968<!--ObjectStateValue: triviaBox_thumbsUp_chosenCardState_scream--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">361697<!--AnimationElement: triviaBox_thumbsUp_activePlayer_response_incorrect--></T>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="state_change">
+                    <U n="state_change">
+                      <V n="new_value" t="single_value">
+                        <U n="single_value">
+                          <T n="new_value">357635<!--ObjectStateValue: triviaBox_thumbsUp_wooWho_gameState_guessing--></T>
+                        </U>
+                      </V>
+                      <V n="timing" t="immediately" />
+                    </U>
+                  </V>
+                </L>
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">362432<!--SocialMixerInteraction: triviabox_thumbsUp_activePlayer_guess_surprised--></T>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="state_white_black">
+                <U n="state_white_black">
+                  <U n="states">
+                    <V n="whitelist" t="specify">
+                      <U n="specify">
+                        <V n="threshold" t="threshold">
+                          <U n="threshold">
+                            <E n="comparison">EQUAL</E>
+                            <T n="value">2</T>
+                          </U>
+                        </V>
+                        <L n="whitelist">
+                          <T>358376<!--ObjectStateValue: triviaBox_thumbsUp_guessedCardState_incorrect--></T>
+                          <T>358356<!--ObjectStateValue: triviaBox_thumbsUp_chosenCardState_surprised--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">361697<!--AnimationElement: triviaBox_thumbsUp_activePlayer_response_incorrect--></T>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="state_change">
+                    <U n="state_change">
+                      <V n="new_value" t="single_value">
+                        <U n="single_value">
+                          <T n="new_value">357635<!--ObjectStateValue: triviaBox_thumbsUp_wooWho_gameState_guessing--></T>
+                        </U>
+                      </V>
+                      <V n="timing" t="immediately" />
+                    </U>
+                  </V>
+                </L>
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">362430<!--SocialMixerInteraction: triviabox_thumbsUp_activePlayer_guess_sweatSmile--></T>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="state_white_black">
+                <U n="state_white_black">
+                  <U n="states">
+                    <V n="whitelist" t="specify">
+                      <U n="specify">
+                        <V n="threshold" t="threshold">
+                          <U n="threshold">
+                            <E n="comparison">EQUAL</E>
+                            <T n="value">2</T>
+                          </U>
+                        </V>
+                        <L n="whitelist">
+                          <T>358376<!--ObjectStateValue: triviaBox_thumbsUp_guessedCardState_incorrect--></T>
+                          <T>358358<!--ObjectStateValue: triviaBox_thumbsUp_chosenCardState_sweatSmile--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">361697<!--AnimationElement: triviaBox_thumbsUp_activePlayer_response_incorrect--></T>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="state_change">
+                    <U n="state_change">
+                      <V n="new_value" t="single_value">
+                        <U n="single_value">
+                          <T n="new_value">357635<!--ObjectStateValue: triviaBox_thumbsUp_wooWho_gameState_guessing--></T>
+                        </U>
+                      </V>
+                      <V n="timing" t="immediately" />
+                    </U>
+                  </V>
+                </L>
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">365312<!--SocialMixerInteraction: triviabox_thumbsUp_activePlayer_guess_crying--></T>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="state_white_black">
+                <U n="state_white_black">
+                  <U n="states">
+                    <V n="whitelist" t="specify">
+                      <U n="specify">
+                        <V n="threshold" t="threshold">
+                          <U n="threshold">
+                            <E n="comparison">EQUAL</E>
+                            <T n="value">2</T>
+                          </U>
+                        </V>
+                        <L n="whitelist">
+                          <T>358376<!--ObjectStateValue: triviaBox_thumbsUp_guessedCardState_incorrect--></T>
+                          <T>361965<!--ObjectStateValue: triviaBox_thumbsUp_chosenCardState_crying--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">361697<!--AnimationElement: triviaBox_thumbsUp_activePlayer_response_incorrect--></T>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="state_change">
+                    <U n="state_change">
+                      <V n="new_value" t="single_value">
+                        <U n="single_value">
+                          <T n="new_value">357635<!--ObjectStateValue: triviaBox_thumbsUp_wooWho_gameState_guessing--></T>
+                        </U>
+                      </V>
+                      <V n="timing" t="immediately" />
+                    </U>
+                  </V>
+                </L>
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">365313<!--SocialMixerInteraction: triviabox_thumbsUp_activePlayer_guess_mindBlown--></T>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="state_white_black">
+                <U n="state_white_black">
+                  <U n="states">
+                    <V n="whitelist" t="specify">
+                      <U n="specify">
+                        <V n="threshold" t="threshold">
+                          <U n="threshold">
+                            <E n="comparison">EQUAL</E>
+                            <T n="value">2</T>
+                          </U>
+                        </V>
+                        <L n="whitelist">
+                          <T>358376<!--ObjectStateValue: triviaBox_thumbsUp_guessedCardState_incorrect--></T>
+                          <T>361969<!--ObjectStateValue: triviaBox_thumbsUp_chosenCardState_mindBlown--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">361697<!--AnimationElement: triviaBox_thumbsUp_activePlayer_response_incorrect--></T>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="state_change">
+                    <U n="state_change">
+                      <V n="new_value" t="single_value">
+                        <U n="single_value">
+                          <T n="new_value">357635<!--ObjectStateValue: triviaBox_thumbsUp_wooWho_gameState_guessing--></T>
+                        </U>
+                      </V>
+                      <V n="timing" t="immediately" />
+                    </U>
+                  </V>
+                </L>
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">365314<!--SocialMixerInteraction: triviabox_thumbsUp_activePlayer_guess_thinking--></T>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="state_white_black">
+                <U n="state_white_black">
+                  <U n="states">
+                    <V n="whitelist" t="specify">
+                      <U n="specify">
+                        <V n="threshold" t="threshold">
+                          <U n="threshold">
+                            <E n="comparison">EQUAL</E>
+                            <T n="value">2</T>
+                          </U>
+                        </V>
+                        <L n="whitelist">
+                          <T>358376<!--ObjectStateValue: triviaBox_thumbsUp_guessedCardState_incorrect--></T>
+                          <T>361966<!--ObjectStateValue: triviaBox_thumbsUp_chosenCardState_thinking--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">361697<!--AnimationElement: triviaBox_thumbsUp_activePlayer_response_incorrect--></T>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="state_change">
+                    <U n="state_change">
+                      <V n="new_value" t="single_value">
+                        <U n="single_value">
+                          <T n="new_value">357635<!--ObjectStateValue: triviaBox_thumbsUp_wooWho_gameState_guessing--></T>
+                        </U>
+                      </V>
+                      <V n="timing" t="immediately" />
+                    </U>
+                  </V>
+                </L>
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">365315<!--SocialMixerInteraction: triviabox_thumbsUp_activePlayer_guess_vomit--></T>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="state_white_black">
+                <U n="state_white_black">
+                  <U n="states">
+                    <V n="whitelist" t="specify">
+                      <U n="specify">
+                        <V n="threshold" t="threshold">
+                          <U n="threshold">
+                            <E n="comparison">EQUAL</E>
+                            <T n="value">2</T>
+                          </U>
+                        </V>
+                        <L n="whitelist">
+                          <T>358376<!--ObjectStateValue: triviaBox_thumbsUp_guessedCardState_incorrect--></T>
+                          <T>361967<!--ObjectStateValue: triviaBox_thumbsUp_chosenCardState_vomiting--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">361697<!--AnimationElement: triviaBox_thumbsUp_activePlayer_response_incorrect--></T>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="state_change">
+                    <U n="state_change">
+                      <V n="new_value" t="single_value">
+                        <U n="single_value">
+                          <T n="new_value">357635<!--ObjectStateValue: triviaBox_thumbsUp_wooWho_gameState_guessing--></T>
+                        </U>
+                      </V>
+                      <V n="timing" t="immediately" />
+                    </U>
+                  </V>
+                </L>
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">365316<!--SocialMixerInteraction: triviabox_thumbsUp_activePlayer_guess_zipperMouth--></T>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="state_white_black">
+                <U n="state_white_black">
+                  <U n="states">
+                    <V n="whitelist" t="specify">
+                      <U n="specify">
+                        <V n="threshold" t="threshold">
+                          <U n="threshold">
+                            <E n="comparison">EQUAL</E>
+                            <T n="value">2</T>
+                          </U>
+                        </V>
+                        <L n="whitelist">
+                          <T>358376<!--ObjectStateValue: triviaBox_thumbsUp_guessedCardState_incorrect--></T>
+                          <T>358357<!--ObjectStateValue: triviaBox_thumbsUp_chosenCardState_zipperMouth--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="skill_loot_data">
+    <V n="level_range" t="enabled">
+      <U n="enabled">
+        <T n="lower_bound">1</T>
+        <T n="upper_bound">10</T>
+      </U>
+    </V>
+    <T n="stat">16699<!--Skill: statistic_Skill_AdultMajor_Charisma--></T>
+  </U>
+  <U n="sub_action">
+    <T n="base_weight">6</T>
+  </U>
+  <E n="target_type">GROUP</E>
+  <L n="test_globals">
+    <V t="game_component">
+      <U n="game_component">
+        <V n="is_sim_turn" t="enabled" />
+      </U>
+    </V>
+  </L>
+  <T n="visible">False</T>
+</I>

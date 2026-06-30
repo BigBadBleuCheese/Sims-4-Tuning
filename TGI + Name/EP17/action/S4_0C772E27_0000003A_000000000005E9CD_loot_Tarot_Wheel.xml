@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Tarot_Wheel" s="387533">
+  <L n="loot_actions">
+    <V t="create_object">
+      <U n="create_object">
+        <U n="chance">
+          <T n="base_chance">100</T>
+        </U>
+        <V n="creation_data" t="definition">
+          <U n="definition">
+            <T n="definition">427580</T>
+          </U>
+        </V>
+        <V n="location" t="inventory" />
+        <E n="owner_sim">Actor</E>
+        <T n="set_sim_as_owner">True</T>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T p="InEP17\UI\Icons\Whims\Whims_GiveTarotReading.png" n="key">2f7d0004:00000000:89d4867e7317ab9f</T>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x3C594DEC<!--String: "Immersed amongst the building blocks of life and death, <b>The Wheel of Fortune</b> spins its cycle to determine one's destiny. The wheel holds both the learnings of the Cowplant and the ever approaching fate of the Netherworld. Forever in rotation, as one comes up the other must come down."--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0xEC87184A<!--String: "The Wheel of Fortune"--></T>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="inventory">
+        <U n="inventory">
+          <V n="contents_check" t="has_object_with_def">
+            <U n="has_object_with_def">
+              <T n="definition">427580</T>
+            </U>
+          </V>
+          <U n="required_count">
+            <E n="comparison">EQUAL</E>
+            <T n="value">0</T>
+          </U>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

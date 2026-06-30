@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_PowerShifts_Sword_Remove" s="470817">
+  <L n="loot_actions">
+    <V t="destroy_objects_from_inventory">
+      <U n="destroy_objects_from_inventory">
+        <L n="object_tests">
+          <L>
+            <V t="object_definition_criteria">
+              <U n="object_definition_criteria">
+                <V n="identity_test" t="tags">
+                  <U n="tags">
+                    <L n="tag_set">
+                      <E>Func_PowerShifts_Sword</E>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="stored_sim_info_transfer">
+      <U n="stored_sim_info_transfer">
+        <T n="clear_stored_sim_on_subject">True</T>
+        <E n="subject">Object</E>
+        <E n="target_participant_type">Object</E>
+      </U>
+    </V>
+    <V t="trait_remove">
+      <U n="trait_remove">
+        <V n="trait" t="specific_trait">
+          <U n="specific_trait">
+            <T n="specific_trait">484831<!--Trait: trait_Hidden_PowerShifts_SwordOwner--></T>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="narrative">
+      <U n="narrative">
+        <V n="op_type" t="start_narrative">
+          <U n="start_narrative">
+            <T n="narrative">484829<!--Narrative: narrative_PowerShifts_Sword_InStone--></T>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+</I>

@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_EP17World_GossipTNS_RavendancerGoth" s="372974">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>TargetSim</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="variation">
+              <U n="variation">
+                <L n="variations">
+                  <T>0x5944D44B<!--String: "Would you believe there are people around that still associate me with the founding of this lovely little area? Picture it: Ages ago, right here in Ravenwood, well before anything was here of course, I'm just traipsing along minding my own business when <i>suddenly</i> I turn around, and these filthy, hungry Sims were following me! I, of course, took pity and gave them a Tarot Reading. Eventually they got distracted by some stray goat and left me alone."--></T>
+                  <T>0xE9AA20E4<!--String: "Zelmira Gomes was able to summon me once they'd collected all of my special Tarot cards. What an interesting individual; of course, our family tree has intertwined roots going all the way back to Lolita Goth, so it makes sense that there some commonalities between us. "--></T>
+                  <T>0xF8D6222E<!--String: "The interesting thing about being a ghost is that a lot of time can pass in a blink. Back when this area was named after Ravens, it made sense; my family was on the ascendance and there were ravens, not crows. Now, time has passed and I see that the crows from Grim's aviary have taken over. Perhaps a century from now, it will be back in the hands (or talons) of ravens!"--></T>
+                  <T>0xB8912205<!--String: "Once a week—on Wednesdays, I believe—the living and the dead gather together to celebrate the link between their worlds at the Thinned Festiveil. Of course, one must bring a gift for the tree if they attend! My relative, Zelmira, has given tarot readings there before. They certainly have a flair for it!"--></T>
+                </L>
+              </U>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0xEBB55930<!--String: "Ravenwood Rumors"--></T>
+            </V>
+            <E n="visual_type">SPEECH</E>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="relationship">
+              <U n="relationship">
+                <U n="relationship_score_interval">
+                  <T n="upper_bound">100</T>
+                </U>
+                <U n="required_relationship_bits">
+                  <L n="match_all">
+                    <T>15803<!--RelationshipBit: has_met--></T>
+                  </L>
+                </U>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+                <L n="target_sim">
+                  <E>TargetSim</E>
+                </L>
+                <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0xE50B7C4E<!--String: "(From Gossiping with Locals)"--></T>
+          </V>
+          <T n="buff_type">385100<!--Buff: buff_EP17World_NPC_HighRelGossip--></T>
+        </U>
+        <U n="chance">
+          <T n="base_chance">80</T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="relationship">
+              <U n="relationship">
+                <U n="relationship_score_interval">
+                  <T n="lower_bound">66</T>
+                </U>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+                <L n="target_sim">
+                  <E>TargetSim</E>
+                </L>
+                <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="trait">
+        <U n="trait">
+          <E n="subject">TargetSim</E>
+          <L n="whitelist_traits">
+            <T>372977<!--Trait: trait_Hidden_EP17World_NPC_RavendancerGoth--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

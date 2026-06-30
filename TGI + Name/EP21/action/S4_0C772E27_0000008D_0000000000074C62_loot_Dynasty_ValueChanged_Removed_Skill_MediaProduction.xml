@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Dynasty_ValueChanged_Removed_Skill_MediaProduction" s="478306">
+  <L n="loot_actions">
+    <V t="statistics">
+      <V n="statistics" t="relationship_change">
+        <U n="relationship_change">
+          <T n="amount">-15</T>
+          <L n="target_participant_type">
+            <E>ActorDynastyHead</E>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="sim_info">
+                <U n="sim_info">
+                  <V n="npc" t="enabled">
+                    <T n="enabled">True</T>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+          <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+        </U>
+      </V>
+    </V>
+    <V t="actions">
+      <T n="actions">480900<!--LootActions: loot_Sentiment_AddSentiment_Bitter_Dynasty_BadLeadership_ActorToActorDynastyHead--></T>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>466527<!--Trait: trait_Dynasty_Head--></T>
+          </L>
+        </U>
+      </V>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified">
+            <L n="specified">
+              <E>TEEN</E>
+              <E>YOUNGADULT</E>
+              <E>ADULT</E>
+              <E>ELDER</E>
+              <E>CHILD</E>
+            </L>
+          </V>
+        </U>
+      </V>
+      <V t="dynasty_value">
+        <U n="dynasty_value">
+          <V n="test_type" t="compare_sim_traits_to_value">
+            <U n="compare_sim_traits_to_value">
+              <T n="dynasty_value">467965<!--DynastyValue: dynastyValue_Skill_MediaProduction--></T>
+              <U n="value_threshold">
+                <E n="comparison">GREATER</E>
+              </U>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

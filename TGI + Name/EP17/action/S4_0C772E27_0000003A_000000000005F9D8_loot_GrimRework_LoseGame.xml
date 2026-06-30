@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_GrimRework_LoseGame" s="391640">
+  <L n="loot_actions">
+    <V t="buff_removal">
+      <U n="buff_removal">
+        <L n="buffs_to_remove">
+          <T>128480<!--Buff: buff_Object_Dartboard_SoreLoser--></T>
+          <T>340939<!--Buff: buff_Hopscotch_MortifyingMisstep--></T>
+          <T>340938<!--Buff: buff_Hopscotch_HoppingMad--></T>
+          <T>105089<!--Buff: buff_Object_HorseShoes_SoreLoser--></T>
+          <T>105891<!--Buff: buff_Object_HorseShoes_Lose--></T>
+          <T>129585<!--Buff: buff_Object_DontWakeLlama_LoseChallenge--></T>
+          <T>127832<!--Buff: buff_Object_DontWakeLlama_LlamaCriesSad--></T>
+          <T>124476<!--Buff: buff_Object_Foosball_Lose--></T>
+          <T>159006<!--Buff: buff_Object_BowlingLane_TheyCheated--></T>
+          <T>161270<!--Buff: buff_Object_BowlingLane_MoonlightBowling--></T>
+          <T>146888<!--Buff: buff_Object_Basketball_Visible_HowCouldILose--></T>
+          <T>146887<!--Buff: buff_Object_Basketball_Visible_GoodGame--></T>
+          <T>146886<!--Buff: buff_Object_Basketball_Visible_DunkedOn--></T>
+          <T>146876<!--Buff: buff_Object_Basketball_Visible_CourtLoss--></T>
+          <T>452073<!--Buff: buff_Archery_Game_Lose--></T>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x95E165AF<!--String: "(From Losing to Grim)"--></T>
+          </V>
+          <T n="buff_type">391661<!--Buff: buff_GrimRework_GameChallenge_Fail--></T>
+        </U>
+      </U>
+    </V>
+    <V t="buff_removal">
+      <U n="buff_removal">
+        <L n="buffs_to_remove">
+          <T>402105<!--Buff: buff_GrimRework_Hidden_Grim_ChallengeFlag_FromSocial--></T>
+        </L>
+        <E n="subject">OtherSimsInteractingWithTarget</E>
+      </U>
+    </V>
+    <V t="actions">
+      <T n="actions">424242<!--LootActions: loot_GrimRework_DontWakeLlama_StopGame--></T>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <T n="apply_whitelist_on_individual_basis">False</T>
+          <E n="subject">OtherSimsInteractingWithTarget</E>
+          <V n="whitelist" t="enabled">
+            <L n="enabled">
+              <T>402104<!--Buff: buff_GrimRework_Hidden_Grim_ChallengedTracker--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <T n="apply_whitelist_on_individual_basis">False</T>
+          <V n="whitelist" t="enabled">
+            <L n="enabled">
+              <T>423389<!--Buff: buff_GrimRework_Hidden_Grim_ChallengerTracker--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

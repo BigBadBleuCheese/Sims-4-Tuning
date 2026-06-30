@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="reaction_LoudNoises_ToddlersAndInfants" s="313131">
+  <L n="_constraints" />
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Actor</E>
+      </L>
+    </U>
+  </V>
+  <T n="_require_current_posture">True</T>
+  <V n="_saveable" t="enabled" />
+  <T n="_super_affordance_can_share_target">True</T>
+  <T n="allow_autonomous">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T o="true" n="factory" />
+        <U n="overrides">
+          <V n="balloons" t="enabled">
+            <L n="enabled">
+              <U>
+                <L n="balloon_choices">
+                  <U>
+                    <V n="item" t="balloon_icon">
+                      <U n="balloon_icon">
+                        <V n="icon" t="resource_key">
+                          <U n="resource_key">
+                            <T p="InGame\UI\Icons\Headlines\Final\headline_musicnotes.png" n="key">2f7d0004:00000000:d1e34d4b981f03e8</T>
+                          </U>
+                        </V>
+                        <T p="InGame\UI\Icons\Headlines\Final\headline_Prohibit.png" n="overlay">2f7d0004:00000000:ab4a67c934164fb1</T>
+                      </U>
+                    </V>
+                  </U>
+                </L>
+                <T n="balloon_delay">1</T>
+                <L n="balloon_target">
+                  <E>Actor</E>
+                </L>
+              </U>
+            </L>
+          </V>
+        </U>
+      </U>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="balloon">
+      <U n="balloon">
+        <L n="balloon_choices">
+          <U>
+            <V n="item" t="balloon_icon">
+              <U n="balloon_icon">
+                <V n="icon" t="resource_key">
+                  <U n="resource_key">
+                    <T p="InGame\UI\Icons\Headlines\Final\headline_musicnotes.png" n="key">2f7d0004:00000000:d1e34d4b981f03e8</T>
+                  </U>
+                </V>
+                <T p="InGame\UI\Icons\Headlines\Final\headline_Prohibit.png" n="overlay">2f7d0004:00000000:ab4a67c934164fb1</T>
+              </U>
+            </V>
+          </U>
+        </L>
+        <L n="balloon_target">
+          <E>Actor</E>
+        </L>
+      </U>
+    </V>
+    <V t="buff_fire_and_forget">
+      <U n="buff_fire_and_forget">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x937482F0<!--String: "(From being Woken Up by Loud Noises)"--></T>
+          </V>
+          <T n="buff_type">507800<!--Buff: buff_Infant_LoudNoises--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <L n="blacklist">
+                  <T>321698<!--Buff: buff_Infant_LoudNoise_NoisyNeighbor_Hidden--></T>
+                </L>
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>510743<!--Buff: buff_Infant_RecentlyWokenUp--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="notification">
+      <U n="notification">
+        <V n="dialog" t="single">
+          <V n="single" t="literal">
+            <U n="literal">
+              <L n="dialog_options">
+                <E>DISABLE_CLOSE_BUTTON</E>
+              </L>
+              <V n="icon" t="enabled">
+                <V n="enabled" t="resource_key">
+                  <U n="resource_key">
+                    <T n="key" p="InGame\UI\Icons\Notifications\notification_ListenAndLearn.png">2f7d0004:00000000:f8746cd93a7a53c1</T>
+                  </U>
+                </V>
+              </V>
+              <V n="secondary_icon" t="enabled">
+                <V n="enabled" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>Actor</E>
+                    </L>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x273F91F8<!--String: "{0.SimFirstName} has woken up due to loud noises! Ensure Infants have peaceful surroundings when they sleep or they'll be woken up and their caregiver will come check on them!"--></T>
+              </V>
+              <V n="title" t="enabled">
+                <T n="enabled">0xD0396BE6<!--String: "Infants & Loud Noises"--></T>
+              </V>
+              <V n="tns_suppression_group" t="enabled">
+                <E n="enabled">Onboarding_InfantSleep</E>
+              </V>
+            </U>
+          </V>
+        </V>
+        <U n="success_chance">
+          <L n="multipliers">
+            <U>
+              <T n="multiplier">0</T>
+              <L n="tests">
+                <L>
+                  <V t="buff">
+                    <U n="buff">
+                      <L n="blacklist">
+                        <T>510743<!--Buff: buff_Infant_RecentlyWokenUp--></T>
+                      </L>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+          </L>
+        </U>
+      </U>
+    </V>
+  </L>
+  <L n="basic_liabilities" />
+  <V n="basic_reserve_object" t="disabled" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xC7C4F084<!--String: "Loud Noises"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TODDLER</E>
+            <E>INFANT</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+  <T n="visible">False</T>
+</I>

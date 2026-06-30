@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Trait_ChildoftheSEA_RelMultiplier" s="351749">
+  <L n="loot_actions">
+    <V t="statistics">
+      <V n="statistics" t="relationship_change">
+        <U n="relationship_change">
+          <V n="relationship_multiplier" t="enabled">
+            <U n="enabled">
+              <T n="base_value">1.25</T>
+              <L n="multipliers">
+                <U>
+                  <T n="multiplier">1.5</T>
+                  <L n="tests">
+                    <L>
+                      <V t="relationship">
+                        <U n="relationship">
+                          <U n="required_relationship_bits">
+                            <L n="match_any">
+                              <T>474387<!--RelationshipBitCollection: rbc_Family_InLaws--></T>
+                              <T>15806<!--RelationshipBitCollection: rbc_Family_IncludingSpouseAndDistantAndStep--></T>
+                              <T>273773<!--RelationshipBitCollection: rbc_Friend_AtLeastFriend--></T>
+                              <T>15807<!--RelationshipBitCollection: rbc_Friend_Track--></T>
+                            </L>
+                          </U>
+                          <L n="subject">
+                            <E>Actor</E>
+                          </L>
+                          <L n="target_sim">
+                            <E>TargetSim</E>
+                          </L>
+                        </U>
+                      </V>
+                    </L>
+                    <L>
+                      <V t="filter_test">
+                        <U n="filter_test">
+                          <T n="sim_filter">280283<!--TunableSimFilter: filter_DramaNode_AllowOccults_IsNeighbor--></T>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+              </L>
+            </U>
+          </V>
+          <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+        </U>
+      </V>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="required_relationship_bits">
+            <L n="match_any">
+              <T>474387<!--RelationshipBitCollection: rbc_Family_InLaws--></T>
+              <T>15806<!--RelationshipBitCollection: rbc_Family_IncludingSpouseAndDistantAndStep--></T>
+              <T>273773<!--RelationshipBitCollection: rbc_Friend_AtLeastFriend--></T>
+              <T>15807<!--RelationshipBitCollection: rbc_Friend_Track--></T>
+            </L>
+          </U>
+          <L n="subject">
+            <E>Actor</E>
+          </L>
+          <L n="target_sim">
+            <E>TargetSim</E>
+          </L>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="filter_test">
+        <U n="filter_test">
+          <T n="sim_filter">280283<!--TunableSimFilter: filter_DramaNode_AllowOccults_IsNeighbor--></T>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

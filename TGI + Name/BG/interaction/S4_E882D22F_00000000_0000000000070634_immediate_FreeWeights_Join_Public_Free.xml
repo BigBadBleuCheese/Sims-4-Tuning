@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="ImmediateSuperInteraction" i="interaction" m="interactions.base.immediate_interaction" n="immediate_FreeWeights_Join_Public_Free" s="460340">
+  <V n="_icon" t="resource_key">
+    <U n="resource_key">
+      <T p="InGame\UI\Icons\Headlines\Final\headline_PumpItUpClass.png" n="key">2f7d0004:00000000:1fb213c12c215ce6</T>
+    </U>
+  </V>
+  <V n="_saveable" t="disabled" />
+  <L n="basic_extras">
+    <V t="join_situation">
+      <U n="join_situation">
+        <V n="situation" t="by_definition">
+          <U n="by_definition">
+            <L n="situations">
+              <T>460461<!--GuidedMeditationSituation: situation_FreeWeights_Class_Public_Free--></T>
+            </L>
+          </U>
+        </V>
+        <V n="situation_job" t="specify_job">
+          <T n="specify_job">460464<!--SituationJob: situationJob_FreeWeights_Class_Student--></T>
+        </V>
+        <L n="subject">
+          <E>Actor</E>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xE8FB8C86<!--String: "Join Pump It Up Class"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Func_Freeweight</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="continuation">
+          <U>
+            <T n="affordance">460391<!--SuperInteraction: superInteraction_FreeWeights_Class_WaitForStart_Student--></T>
+          </U>
+          <U>
+            <E n="actor">TargetSim</E>
+            <T n="affordance">460690<!--ImmediateSuperInteraction: immediate_FreeWeights_SummonNPCTarget--></T>
+          </U>
+        </L>
+      </U>
+    </U>
+  </V>
+  <T n="pie_menu_priority">10</T>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <E n="who">TargetSim</E>
+      </U>
+    </V>
+    <V t="situation_running_test">
+      <U n="situation_running_test">
+        <V n="participant" t="enabled">
+          <E n="enabled">TargetSim</E>
+        </V>
+        <V n="situation_whitelist" t="enabled">
+          <L n="enabled">
+            <T>460461<!--GuidedMeditationSituation: situation_FreeWeights_Class_Public_Free--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+    <V t="identity">
+      <U n="identity">
+        <E n="subject_b">TargetSim</E>
+      </U>
+    </V>
+  </L>
+</I>

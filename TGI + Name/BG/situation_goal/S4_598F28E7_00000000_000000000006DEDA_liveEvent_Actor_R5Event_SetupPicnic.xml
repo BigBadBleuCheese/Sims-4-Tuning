@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalActor" i="situation_goal" m="situations.situation_goal_actor" n="liveEvent_Actor_R5Event_SetupPicnic" s="450266">
+  <T n="_cooldown">0</T>
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T p="InGame\UI\Icons\Headlines\Final\headline_grilledcheese.png" n="enabled">2f7d0004:00000000:4d88c7c33d0d8158</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x715ED3C5<!--String: "Setup a Picnic on a Romantic Blanket"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0x54C6D9AF<!--String: "Select the Romantic Blanket and choose Set Up Picnic.\n\n<i>This <b>optional goal</b> requires <b>Lovestruck Expansion Pack</b> to complete.</i>\n\nSelect to learn more."--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>447711<!--SituationGoalLootActions: liveEvent_GoalLoot_CompleteQuestGoal--></T>
+  </L>
+  <V n="_goal_test" t="situation_running">
+    <U n="situation_running">
+      <V n="situation_whitelist" t="enabled">
+        <L n="enabled">
+          <T>368314<!--BlanketPicnicSituation: blanketPicnicSituation_RomanticBlanket_BLT--></T>
+          <T>368308<!--BlanketPicnicSituation: blanketPicnicSituation_RomanticBlanket_ExistingSlottedFood--></T>
+          <T>368309<!--BlanketPicnicSituation: blanketPicnicSituation_RomanticBlanket_FlirtyHeartCookies--></T>
+          <T>368312<!--BlanketPicnicSituation: blanketPicnicSituation_RomanticBlanket_GardenSalad--></T>
+          <T>368300<!--BlanketPicnicSituation: blanketPicnicSituation_RomanticBlanket_GrilledCheese--></T>
+          <T>368307<!--BlanketPicnicSituation: blanketPicnicSituation_RomanticBlanket_Pambazo--></T>
+          <T>363229<!--BlanketPicnicSituation: blanketPicnicSituation_RomanticBlanket_PicnicBasket--></T>
+        </L>
+      </V>
+      <E n="test_event">SituationStarted</E>
+    </U>
+  </V>
+  <L n="_post_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+      </U>
+    </V>
+  </L>
+  <T n="_score">0</T>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+  <T n="mandatory">False</T>
+  <V n="mtx_bundle" t="enabled">
+    <T n="enabled">412516</T>
+  </V>
+  <V n="tutorial_tip_group" t="enabled">
+    <T n="enabled">450247<!--TutorialTipGroup: tutorialTipGroup_LiveEvent_R5Event_SetupPicnic--></T>
+  </V>
+</I>

@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="ZoneModifier" i="zone_modifier" m="zone_modifier.zone_modifier" n="zoneModifier_muEvent_TrashOverload" s="343795">
+  <U n="cleanup_loot">
+    <L n="actions">
+      <V t="modify_lot_items">
+        <U n="modify_lot_items">
+          <U n="actions">
+            <L n="modifications">
+              <U>
+                <V n="action" t="set_state">
+                  <U n="set_state">
+                    <T n="action_value">343918<!--ObjectStateValue: muEvent_TrashOverload_NotActive--></T>
+                  </U>
+                </V>
+                <L n="tests">
+                  <L>
+                    <V t="object_definition">
+                      <U n="object_definition">
+                        <V n="item" t="tagged_item">
+                          <U n="tagged_item">
+                            <L n="tag_set">
+                              <E>Func_TrashCan_Indoor</E>
+                              <E>Func_TrashCan_Outdoor</E>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <V n="action" t="set_state">
+                  <U n="set_state">
+                    <T n="action_value">343921<!--ObjectStateValue: muEvent_TrashOverload_TimerOff--></T>
+                  </U>
+                </V>
+                <L n="tests">
+                  <L>
+                    <V t="object_definition">
+                      <U n="object_definition">
+                        <V n="item" t="tagged_item">
+                          <U n="tagged_item">
+                            <L n="tag_set">
+                              <E>Func_TrashCan_Indoor</E>
+                              <E>Func_TrashCan_Outdoor</E>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T n="hide_screen_slam">True</T>
+  <U n="on_add_loot">
+    <L n="actions">
+      <V t="spawn_objects">
+        <U n="spawn_objects">
+          <U n="creation_op">
+            <V n="creation_data" t="definition">
+              <U n="definition">
+                <T n="definition">155152</T>
+              </U>
+            </V>
+            <V n="location" t="position">
+              <U n="position">
+                <V n="initial_location" t="from_lot">
+                  <U n="from_lot">
+                    <E n="lot_location_strategy">RANDOM</E>
+                  </U>
+                </V>
+                <T n="stay_outside_placement">True</T>
+              </U>
+            </V>
+            <E n="subject">Lot</E>
+          </U>
+          <V n="iterations" t="enabled">
+            <U n="enabled">
+              <T n="lower_bound">3</T>
+              <T n="upper_bound">5</T>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T n="zone_modifier_locked">True</T>
+  <U n="zone_wide_loot">
+    <L n="actions">
+      <V t="modify_lot_items">
+        <U n="modify_lot_items">
+          <U n="actions">
+            <L n="modifications">
+              <U>
+                <V n="action" t="loot">
+                  <U n="loot">
+                    <L n="loot_actions">
+                      <T>343796<!--LootActions: loot_muEvent_TrashOverload_FillTrash--></T>
+                    </L>
+                  </U>
+                </V>
+                <L n="tests">
+                  <L>
+                    <V t="object_definition">
+                      <U n="object_definition">
+                        <V n="item" t="tagged_item">
+                          <U n="tagged_item">
+                            <L n="tag_set">
+                              <E>Func_TrashCan_Indoor</E>
+                              <E>Func_TrashCan_Outdoor</E>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+      </V>
+      <V t="modify_lot_items">
+        <U n="modify_lot_items">
+          <U n="actions">
+            <L n="modifications">
+              <U>
+                <V n="action" t="set_state">
+                  <U n="set_state">
+                    <T n="action_value">343916<!--ObjectStateValue: muEvent_TrashOverload_Active--></T>
+                  </U>
+                </V>
+                <L n="tests">
+                  <L>
+                    <V t="object_definition">
+                      <U n="object_definition">
+                        <V n="item" t="tagged_item">
+                          <U n="tagged_item">
+                            <L n="tag_set">
+                              <E>Func_TrashCan_Indoor</E>
+                              <E>Func_TrashCan_Outdoor</E>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+      </V>
+    </L>
+  </U>
+</I>

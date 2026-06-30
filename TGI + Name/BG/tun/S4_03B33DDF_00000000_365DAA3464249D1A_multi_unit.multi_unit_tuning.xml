@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<M n="multi_unit.multi_unit_tuning" s="3917474392877341978">
+  <C n="MultiUnitEventType">
+    <L n="_elements">
+      <T ev="1">ALGAE</T>
+      <T ev="2">BLIGHT</T>
+      <T ev="3">CHARITY</T>
+      <T ev="4">CURSED</T>
+      <T ev="5">ELECTRICAL</T>
+      <T ev="6">EXPLOSION</T>
+      <T ev="7">HAUNTING</T>
+      <T ev="8">INFESTATION</T>
+      <T ev="9">LEASEBREAK</T>
+      <T ev="10">MAINTENANCEDAY</T>
+      <T ev="11">NUISANCE</T>
+      <T ev="12">PETDAY</T>
+      <T ev="13">RENTARREARS</T>
+      <T ev="14">RULEBREAKNOISE</T>
+      <T ev="15">RULEBREAKSOCIALEVENT</T>
+      <T ev="16">RULEBREAKTRASH</T>
+      <T ev="17">SEWAGELEAK</T>
+      <T ev="18">TENANTREVOLT</T>
+      <T ev="19">TRASHOVERLOAD</T>
+      <T ev="20">WATERLEAK</T>
+      <T ev="21">ALGAE_COMMON</T>
+      <T ev="22">BLIGHT_COMMON</T>
+      <T ev="23">EXPLOSION_COMMON</T>
+    </L>
+  </C>
+  <C n="MultiUnitTuning">
+    <U n="GRACE_PERIOD">
+      <U n="duration">
+        <T n="days">1</T>
+      </U>
+      <U n="starting_time">
+        <T n="hour">9</T>
+      </U>
+    </U>
+    <U n="MAX_RENT">
+      <U n="cost_modifiers">
+        <T n="base_value">4</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">0.25</T>
+            <L n="tests">
+              <L>
+                <V t="business_settings">
+                  <U n="business_settings">
+                    <V n="star_rating" t="test">
+                      <U n="test">
+                        <T n="lower_bound">1</T>
+                        <T n="upper_bound">1</T>
+                      </U>
+                    </V>
+                    <V n="zone" t="use_picked_zone_ids" />
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0.4</T>
+            <L n="tests">
+              <L>
+                <V t="business_settings">
+                  <U n="business_settings">
+                    <V n="star_rating" t="test">
+                      <U n="test">
+                        <T n="lower_bound">2</T>
+                        <T n="upper_bound">2</T>
+                      </U>
+                    </V>
+                    <V n="zone" t="use_picked_zone_ids" />
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0.4</T>
+            <L n="tests">
+              <L>
+                <V t="business_settings">
+                  <U n="business_settings">
+                    <V n="star_rating" t="test">
+                      <U n="test">
+                        <T n="lower_bound">3</T>
+                        <T n="upper_bound">3</T>
+                      </U>
+                    </V>
+                    <V n="zone" t="use_picked_zone_ids" />
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0.5</T>
+            <L n="tests">
+              <L>
+                <V t="business_settings">
+                  <U n="business_settings">
+                    <V n="star_rating" t="test">
+                      <U n="test">
+                        <T n="lower_bound">4</T>
+                        <T n="upper_bound">4</T>
+                      </U>
+                    </V>
+                    <V n="zone" t="use_picked_zone_ids" />
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0.65</T>
+            <L n="tests">
+              <L>
+                <V t="business_settings">
+                  <U n="business_settings">
+                    <V n="star_rating" t="test">
+                      <U n="test">
+                        <T n="lower_bound">5</T>
+                        <T n="upper_bound">5</T>
+                      </U>
+                    </V>
+                    <V n="zone" t="use_picked_zone_ids" />
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+      <T n="initial_rent_percentage">50</T>
+      <T n="simolean_cost_per_tile">2</T>
+    </U>
+    <V n="NO_TENANT_LEFT_NOTIFICATION" t="literal">
+      <U n="literal">
+        <V n="text" t="single">
+          <T n="single">0xC43299C5<!--String: "A tenant household has been vacated. Their former unit is now unoccupied."--></T>
+        </V>
+        <V n="title" t="enabled">
+          <T n="enabled">0x407108C7<!--String: "Tenant Vacated"--></T>
+        </V>
+      </U>
+    </V>
+    <L n="ON_RENT_INCREASE_LOOT">
+      <T>359586<!--LootActions: loot_UnitRating_Progression_PickedUnit_ActiveLot_RentChange_NotGracePeriod_Small_Loss--></T>
+    </L>
+    <T n="TAXES_PER_UNIT">350</T>
+    <E n="TAXES_PER_UNIT_BILL_SOURCE">Taxes_per_Rental_Unit</E>
+  </C>
+  <C n="PropertyOwnerTuning">
+    <T n="NPC_PROPERTY_OWNER_FILTER">345853<!--TunableSimFilter: filter_MultiUnit_PropertyOwner--></T>
+    <L n="PROPERTY_OWNER_EVICTION_LOOT">
+      <T>346430<!--LootActions: loot_EvictionSystem_UnjustEvict--></T>
+    </L>
+    <T n="PROPERTY_OWNER_REL_BIT">343628<!--RelationshipBit: relBit_MultiUnit_TenantToLandlord--></T>
+    <L n="PROPERTY_OWNER_SIM_TESTS">
+      <L>
+        <V t="sim_info">
+          <U n="sim_info">
+            <V n="ages" t="specified" />
+            <V n="species" t="specified">
+              <U n="specified">
+                <L n="species">
+                  <E />
+                </L>
+              </U>
+            </V>
+          </U>
+        </V>
+      </L>
+    </L>
+    <T n="TENANT_EVICTION_AFFORDANCE">358504<!--SocialSuperInteraction: social_LandlordTenant_Evict_UI--></T>
+    <T n="TENANT_REL_BIT">343629<!--RelationshipBit: relBit_MultiUnit_LandlordToTenant--></T>
+    <L n="TENANT_SIM_TESTS">
+      <L>
+        <V t="sim_info">
+          <U n="sim_info">
+            <V n="species" t="specified">
+              <U n="specified">
+                <L n="species">
+                  <E />
+                </L>
+              </U>
+            </V>
+          </U>
+        </V>
+      </L>
+    </L>
+  </C>
+</M>

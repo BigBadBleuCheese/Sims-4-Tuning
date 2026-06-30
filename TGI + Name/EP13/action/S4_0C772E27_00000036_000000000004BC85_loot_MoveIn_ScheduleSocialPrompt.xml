@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_MoveIn_ScheduleSocialPrompt" s="310405">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">310404<!--Buff: buff_AutonomyMod_MoveIn--></T>
+        </U>
+        <U n="chance">
+          <T n="base_chance">20</T>
+          <L n="multipliers">
+            <U>
+              <T n="multiplier">2</T>
+              <L n="tests">
+                <L>
+                  <V t="relationship">
+                    <U n="relationship">
+                      <U n="required_relationship_bits">
+                        <L n="match_any">
+                          <T>15816<!--RelationshipBit: romantic-Engaged--></T>
+                          <T>15822<!--RelationshipBit: romantic-Married--></T>
+                          <T>15825<!--RelationshipBit: romantic-Significant_Other--></T>
+                        </L>
+                      </U>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+          </L>
+        </U>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="npc" t="enabled">
+            <T n="enabled">True</T>
+          </V>
+        </U>
+      </V>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="required_relationship_bits">
+            <L n="match_any">
+              <T>15839<!--RelationshipBit: RomanticCombo_Soulmates--></T>
+              <T>474387<!--RelationshipBitCollection: rbc_Family_InLaws--></T>
+              <T>15806<!--RelationshipBitCollection: rbc_Family_IncludingSpouseAndDistantAndStep--></T>
+              <T>15794<!--RelationshipBit: friendship-bff--></T>
+              <T>31211<!--RelationshipBit: friendship-bff_BromanticPartner--></T>
+              <T>15795<!--RelationshipBit: friendship-bff_Evil--></T>
+              <T>15797<!--RelationshipBit: friendship-friend--></T>
+              <T>15798<!--RelationshipBit: friendship-friend_Evil--></T>
+              <T>15799<!--RelationshipBit: friendship-good_friends--></T>
+              <T>15800<!--RelationshipBit: friendship-good_friends_Evil--></T>
+              <T>369543<!--RelationshipBitCollection: rbc_Romantic_HasRelationship--></T>
+            </L>
+          </U>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

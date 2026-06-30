@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="muEvent_Infestation_Fumigate_Ender" s="359630">
+  <V n="_cancelable_by_user" t="prohibit_cancelation" />
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T o="true" n="factory" />
+      </U>
+    </U>
+  </V>
+  <V n="canonical_animation" t="enabled">
+    <U n="enabled">
+      <T n="factory">96791<!--AnimationElement: OutfitChange_Canonical--></T>
+    </U>
+  </V>
+  <V n="content_score" t="disabled" />
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+    <E>Interaction_Laundry_GenerateNoPile</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="basic_extras">
+          <V t="change_outfit">
+            <U n="change_outfit">
+              <V n="outfit_change" t="for_reason">
+                <U n="for_reason">
+                  <V n="on_exit" t="enabled">
+                    <E n="enabled">PreviousClothing</E>
+                  </V>
+                </U>
+              </V>
+              <L n="subject">
+                <E>Actor</E>
+              </L>
+              <L n="tests">
+                <L>
+                  <V t="trait">
+                    <U n="trait">
+                      <L n="blacklist_trait_types">
+                        <E>GHOST</E>
+                      </L>
+                      <L n="blacklist_traits">
+                        <T>253237<!--Trait: trait_Bonehilda--></T>
+                        <T>218444<!--Trait: trait_Humanoid_Robots_MainTrait--></T>
+                        <T>187088<!--Trait: trait_Scarecrow--></T>
+                        <T>16851<!--Trait: trait_isGrimReaper--></T>
+                        <T>431929<!--Trait: trait_Hidden_EP19_NPC_GreenMan--></T>
+                      </L>
+                    </U>
+                  </V>
+                  <V t="buff">
+                    <U n="buff">
+                      <L n="blacklist">
+                        <T>203478<!--Buff: buff_Sim_HazmatSuit--></T>
+                      </L>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+          </V>
+        </L>
+        <L n="loot_list">
+          <T>355806<!--LootActions: loot_MoldSystem_RemoveSicknessCommodityFreezer--></T>
+        </L>
+      </U>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+  <T n="visible">False</T>
+</I>

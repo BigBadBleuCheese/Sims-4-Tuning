@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="lootActions_FairyOccult_PC_SleepEnd_EmotionalTracker" s="434070">
+  <L n="loot_actions">
+    <V t="buff_removal">
+      <U n="buff_removal">
+        <L n="buffs_to_remove">
+          <T>460584<!--Buff: buff_FairyOccult_EmotionalStruggles_SuppressAfterHelpManageEmotions--></T>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x9CF18712<!--String: "(From Having Learned to Control Emotions)"--></T>
+          </V>
+          <T n="buff_type">433512<!--Buff: buff_FairyOccult_EmotionalStability--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="must_have_stat">True</T>
+                <T n="stat">434067<!--Statistic: statistic_FairyOccult_ManageEmotionsCounter--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <T n="value">3</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x2E6AE740<!--String: "(From Still Learning to Control Emotions)"--></T>
+          </V>
+          <T n="buff_type">433511<!--Buff: buff_FairyOccult_EmotionalStruggles--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">434067<!--Statistic: statistic_FairyOccult_ManageEmotionsCounter--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">LESS</E>
+                    <T n="value">3</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified">
+            <L n="specified">
+              <E>CHILD</E>
+              <E>TODDLER</E>
+            </L>
+          </V>
+          <V n="species" t="specified">
+            <U n="specified">
+              <L n="species">
+                <E />
+              </L>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="trait">
+        <U n="trait">
+          <L n="whitelist_traits">
+            <T>433287<!--Trait: trait_OccultFairy_AllAges--></T>
+          </L>
+        </U>
+      </V>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>434068<!--Buff: buff_FairyOccult_Hidden_PC_Sleep_EmotionalBuffTracker--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

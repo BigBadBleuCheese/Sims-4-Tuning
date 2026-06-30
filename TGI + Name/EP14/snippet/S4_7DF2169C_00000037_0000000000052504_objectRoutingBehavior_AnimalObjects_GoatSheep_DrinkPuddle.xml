@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="ObjectRoutingBehavior" i="snippet" m="routing.object_routing.object_routing_behavior" n="objectRoutingBehavior_AnimalObjects_GoatSheep_DrinkPuddle" s="337156">
+  <E n="object_routing_priority">HIGH</E>
+  <V n="route" t="from_target_object">
+    <U n="from_target_object">
+      <L n="constraints">
+        <V t="circle">
+          <U n="circle">
+            <T n="ideal_radius">0.5</T>
+            <T n="ideal_radius_width">0.1</T>
+            <T n="multi_surface">True</T>
+            <T n="radius">1.3</T>
+            <T n="require_los">True</T>
+          </U>
+        </V>
+        <V t="facing" />
+        <V t="line_of_sight">
+          <U n="line_of_sight">
+            <T n="multi_surface">True</T>
+            <V n="temporary_los" t="enabled" />
+          </U>
+        </V>
+      </L>
+      <V n="radius" t="enabled">
+        <T n="enabled">40</T>
+      </V>
+      <L n="route_fail_loot">
+        <T>256635<!--LootActions: loot_animalObjects_Stop--></T>
+      </L>
+      <U n="target_action_rules">
+        <L n="actions">
+          <U>
+            <L n="actions">
+              <V t="play_animation">
+                <U n="play_animation">
+                  <U n="animation">
+                    <T n="loop_time">10</T>
+                    <T n="reference">344616<!--ObjectAnimationElement: animalObjects_Idles_GoatSheep_Drink--></T>
+                  </U>
+                </U>
+              </V>
+              <V t="apply_loot">
+                <U n="apply_loot">
+                  <L n="loot_actions">
+                    <T>337157<!--LootActions: loot_AnimalObjects_GoatSheep_DrinkPuddle--></T>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </U>
+        </L>
+      </U>
+      <V n="target_type" t="object">
+        <U n="object">
+          <L n="tags">
+            <E>Func_Puddle</E>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="success_loot">
+    <T>263264<!--LootActions: loot_AnimalObjects_StartWalk--></T>
+  </L>
+</I>

@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Buff" i="buff" m="buffs.buff" n="buff_CAD_Host_Hidden" s="357800">
+  <L n="_loot_on_removal">
+    <T>369833<!--LootActions: lootActions_CAD_RemoveAskBuffs--></T>
+  </L>
+  <L n="actor_mixers">
+    <U>
+      <T n="key">13991<!--SocialSuperInteraction: sim_BeAffectionate--></T>
+      <L n="value">
+        <T>365094<!--SocialMixerInteraction: socialMixer_Romantic_CDG_EndDate_Positively--></T>
+        <T>365101<!--SocialMixerInteraction: socialMixer_Friendly_CDG_EndEvent_Positively--></T>
+      </L>
+    </U>
+    <U>
+      <T n="key">13998<!--SocialSuperInteraction: sim_Chat--></T>
+      <L n="value">
+        <T>361732<!--SocialMixerInteraction: socialMixer_Romantic_CDG_AskTo_ChangeVenue--></T>
+        <T>361736<!--SocialMixerInteraction: socialMixer_Romantic_CDG_AskTo_ExtendEvent--></T>
+        <T>363085<!--SocialMixerInteraction: socials_Targeted_Friendly_CAD_TalkAboutBoardGames--></T>
+        <T>363202<!--SocialMixerInteraction: socials_Targeted_Friendly_CAD_TalkAboutVideoGames--></T>
+        <T>359237<!--SocialMixerInteraction: socials_Targeted_Friendly_CAD_TalkAboutDrinks--></T>
+        <T>359238<!--SocialMixerInteraction: socials_Targeted_Friendly_CAD_TalkAboutFood--></T>
+        <T>359239<!--SocialMixerInteraction: socials_Targeted_Friendly_CAD_TalkAboutSnow--></T>
+        <T>359240<!--SocialMixerInteraction: socials_Targeted_Friendly_CAD_TalkAboutTV--></T>
+        <T>363558<!--SocialMixerInteraction: socials_Targeted_Friendly_CAD_TalkAboutPainting--></T>
+        <T>363745<!--SocialMixerInteraction: socials_Targeted_Friendly_CAD_TalkAboutReminisce--></T>
+        <T>363977<!--SocialMixerInteraction: socials_Targeted_Friendly_CAD_TalkAboutSkating--></T>
+        <T>364171<!--SocialMixerInteraction: socials_Targeted_Friendly_CAD_TalkAboutSkyWatching--></T>
+        <T>364196<!--SocialMixerInteraction: socials_Targeted_Friendly_CAD_TalkAboutAnimals--></T>
+        <T>364195<!--SocialMixerInteraction: socials_Targeted_Friendly_CAD_TalkAboutGardening--></T>
+        <T>364194<!--SocialMixerInteraction: socials_Targeted_Friendly_CAD_TalkAboutMusicalInstruments--></T>
+        <T>364197<!--SocialMixerInteraction: socials_Targeted_Friendly_CAD_TalkAboutSinging--></T>
+        <T>364439<!--SocialMixerInteraction: socials_Targeted_Friendly_CAD_TalkAboutPhoto--></T>
+        <T>364706<!--SocialMixerInteraction: socials_Targeted_Friendly_CAD_TalkAboutDancing--></T>
+        <T>364756<!--SocialMixerInteraction: socials_Targeted_Friendly_CAD_TalkAboutExercise--></T>
+        <T>364757<!--SocialMixerInteraction: socials_Targeted_Friendly_CAD_TalkAboutSwimming--></T>
+        <T>365098<!--SocialMixerInteraction: socialMixer_Friendly_CDG_AskTo_ChangeVenue--></T>
+        <T>365099<!--SocialMixerInteraction: socialMixer_Friendly_CDG_AskTo_ExtendEvent--></T>
+        <T>365100<!--SocialMixerInteraction: socialMixer_Friendly_CDG_EndEvent_Negatively--></T>
+        <T>365514<!--SocialMixerInteraction: socialMixer_Friendly_CDG_TellSimToLeaveDate--></T>
+        <T>365095<!--SocialMixerInteraction: socialMixer_Romantic_CDG_EndDate_Negatively--></T>
+        <T>370562<!--SocialMixerInteraction: socialMixer_Romantic_CDG_Ask_HowDatesGoing--></T>
+        <T>365515<!--SocialMixerInteraction: socialMixer_Romantic_CDG_TellSimToLeaveDate--></T>
+        <T>374797<!--SocialMixerInteraction: socials_Targeted_Friendly_CAD_TalkAboutFishing--></T>
+        <T>393469<!--SocialMixerInteraction: socials_Targeted_Friendly_CAD_TalkAboutMessingAround--></T>
+        <T>393467<!--SocialMixerInteraction: socials_Targeted_Friendly_CAD_TalkAboutPhysicalIntimacy--></T>
+        <T>393466<!--SocialMixerInteraction: socials_Targeted_Friendly_CAD_TalkAboutWoohoo--></T>
+      </L>
+    </U>
+  </L>
+  <T p="InGame\Audio\Stings\sting_buff_gain.propx" n="audio_sting_on_add">39b2aa4a:00000000:8af8b916cf64c646</T>
+  <T p="InGame\Audio\Stings\sting_buff_loss.propx" n="audio_sting_on_remove">39b2aa4a:00000000:3bf33216a25546ea</T>
+  <U n="game_effect_modifier">
+    <L n="_game_effect_modifiers">
+      <V t="affordance_modifier">
+        <U n="affordance_modifier">
+          <L n="basic_extras">
+            <V t="loot">
+              <U n="loot">
+                <L n="loot_list">
+                  <T>368108<!--LootActions: lootActions_CDG_NPCLeave_SawAffectionFlirtation--></T>
+                </L>
+                <V n="timing" t="at_beginning" />
+              </U>
+            </V>
+          </L>
+          <L n="interaction_category_tags">
+            <E>Interaction_Category_Affection</E>
+            <E>Interaction_Category_Flirtation</E>
+          </L>
+          <L n="test">
+            <L>
+              <V t="situation_running_test">
+                <U n="situation_running_test">
+                  <T n="check_for_initiating_sim">True</T>
+                  <V n="participant" t="enabled" />
+                  <V n="situation_whitelist" t="enabled">
+                    <L n="enabled">
+                      <T>357767<!--CustomStatesSituation: situation_CAD_GetToKnow_Date_Adult--></T>
+                      <T>365241<!--CustomStatesSituation: situation_CAD_Recovery_Date_Adult--></T>
+                      <T>357530<!--CustomStatesSituation: situation_CAD_Romantic_Date_Adult--></T>
+                      <T>362238<!--CustomStatesSituation: situation_CAD_GetToKnow_Date_Teen--></T>
+                      <T>365242<!--CustomStatesSituation: situation_CAD_Recovery_Date_Teen--></T>
+                      <T>362239<!--CustomStatesSituation: situation_CAD_Romantic_Date_Adult_Teen--></T>
+                      <T>373553<!--CustomStatesSituation: situation_CAD_BlindDate_Date_Adult--></T>
+                      <T>375209<!--CustomStatesSituation: situation_CAD_BlindDate_Date_Adult_Catfish--></T>
+                    </L>
+                  </V>
+                  <E n="test_event">SituationStarted</E>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+      <V t="affordance_modifier">
+        <U n="affordance_modifier">
+          <L n="basic_extras">
+            <V t="loot">
+              <U n="loot">
+                <L n="loot_list">
+                  <T>368109<!--LootActions: lootActions_CDG_NPCLeave_SawPhysicalIntimacy--></T>
+                </L>
+                <V n="timing" t="at_beginning" />
+              </U>
+            </V>
+          </L>
+          <L n="interaction_category_blacklist_tags">
+            <E>Interaction_Woohoo</E>
+          </L>
+          <L n="interaction_category_tags">
+            <E>Interaction_Category_PhysicalIntimacy</E>
+          </L>
+          <L n="test">
+            <L>
+              <V t="situation_running_test">
+                <U n="situation_running_test">
+                  <T n="check_for_initiating_sim">True</T>
+                  <V n="participant" t="enabled" />
+                  <V n="situation_whitelist" t="enabled">
+                    <L n="enabled">
+                      <T>357767<!--CustomStatesSituation: situation_CAD_GetToKnow_Date_Adult--></T>
+                      <T>365241<!--CustomStatesSituation: situation_CAD_Recovery_Date_Adult--></T>
+                      <T>357530<!--CustomStatesSituation: situation_CAD_Romantic_Date_Adult--></T>
+                      <T>362238<!--CustomStatesSituation: situation_CAD_GetToKnow_Date_Teen--></T>
+                      <T>365242<!--CustomStatesSituation: situation_CAD_Recovery_Date_Teen--></T>
+                      <T>362239<!--CustomStatesSituation: situation_CAD_Romantic_Date_Adult_Teen--></T>
+                      <T>373553<!--CustomStatesSituation: situation_CAD_BlindDate_Date_Adult--></T>
+                      <T>375209<!--CustomStatesSituation: situation_CAD_BlindDate_Date_Adult_Catfish--></T>
+                    </L>
+                  </V>
+                  <E n="test_event">SituationStarted</E>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+      <V t="affordance_modifier">
+        <U n="affordance_modifier">
+          <L n="basic_extras">
+            <V t="loot">
+              <U n="loot">
+                <L n="loot_list">
+                  <T>385497<!--LootActions: lootActions_CDG_NPCLeave_SawWoohoo--></T>
+                </L>
+                <V n="timing" t="at_beginning" />
+              </U>
+            </V>
+          </L>
+          <L n="interaction_category_tags">
+            <E>Interaction_Woohoo</E>
+          </L>
+          <L n="test">
+            <L>
+              <V t="situation_running_test">
+                <U n="situation_running_test">
+                  <T n="check_for_initiating_sim">True</T>
+                  <V n="participant" t="enabled" />
+                  <V n="situation_whitelist" t="enabled">
+                    <L n="enabled">
+                      <T>357767<!--CustomStatesSituation: situation_CAD_GetToKnow_Date_Adult--></T>
+                      <T>365241<!--CustomStatesSituation: situation_CAD_Recovery_Date_Adult--></T>
+                      <T>357530<!--CustomStatesSituation: situation_CAD_Romantic_Date_Adult--></T>
+                      <T>362238<!--CustomStatesSituation: situation_CAD_GetToKnow_Date_Teen--></T>
+                      <T>365242<!--CustomStatesSituation: situation_CAD_Recovery_Date_Teen--></T>
+                      <T>362239<!--CustomStatesSituation: situation_CAD_Romantic_Date_Adult_Teen--></T>
+                      <T>373553<!--CustomStatesSituation: situation_CAD_BlindDate_Date_Adult--></T>
+                      <T>375209<!--CustomStatesSituation: situation_CAD_BlindDate_Date_Adult_Catfish--></T>
+                    </L>
+                  </V>
+                  <E n="test_event">SituationStarted</E>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+      <V t="affordance_modifier">
+        <U n="affordance_modifier">
+          <L n="basic_extras">
+            <V t="loot">
+              <U n="loot">
+                <L n="loot_list">
+                  <T>368318<!--LootActions: lootActions_CDG_NPCLeave_MeanSocials--></T>
+                </L>
+                <U n="success_chance">
+                  <T n="base_chance">25</T>
+                </U>
+              </U>
+            </V>
+          </L>
+          <L n="interaction_category_tags">
+            <E>Interaction_Category_Deception</E>
+            <E>Interaction_Category_Malice</E>
+            <E>Interaction_Category_Prank</E>
+          </L>
+          <L n="test">
+            <L>
+              <V t="situation_running_test">
+                <U n="situation_running_test">
+                  <T n="check_for_initiating_sim">True</T>
+                  <V n="participant" t="enabled" />
+                  <V n="situation_whitelist" t="enabled">
+                    <L n="enabled">
+                      <T>357767<!--CustomStatesSituation: situation_CAD_GetToKnow_Date_Adult--></T>
+                      <T>365241<!--CustomStatesSituation: situation_CAD_Recovery_Date_Adult--></T>
+                      <T>357530<!--CustomStatesSituation: situation_CAD_Romantic_Date_Adult--></T>
+                      <T>362238<!--CustomStatesSituation: situation_CAD_GetToKnow_Date_Teen--></T>
+                      <T>365242<!--CustomStatesSituation: situation_CAD_Recovery_Date_Teen--></T>
+                      <T>362239<!--CustomStatesSituation: situation_CAD_Romantic_Date_Adult_Teen--></T>
+                      <T>373553<!--CustomStatesSituation: situation_CAD_BlindDate_Date_Adult--></T>
+                      <T>375209<!--CustomStatesSituation: situation_CAD_BlindDate_Date_Adult_Catfish--></T>
+                    </L>
+                  </V>
+                  <E n="test_event">SituationStarted</E>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+      <V t="affordance_modifier">
+        <U n="affordance_modifier">
+          <L n="basic_extras">
+            <V t="loot">
+              <U n="loot">
+                <L n="loot_list">
+                  <T>371050<!--LootActions: lootActions_CDG_NPC_AskTo--></T>
+                </L>
+                <U n="success_chance">
+                  <T n="base_chance">5</T>
+                </U>
+              </U>
+            </V>
+          </L>
+          <L n="interaction_category_tags">
+            <E>Interaction_SocialAll</E>
+            <E>Interaction_SocialMixer</E>
+          </L>
+          <L n="test">
+            <L>
+              <V t="situation_running_test">
+                <U n="situation_running_test">
+                  <T n="check_for_initiating_sim">True</T>
+                  <V n="participant" t="enabled" />
+                  <V n="situation_whitelist" t="enabled">
+                    <L n="enabled">
+                      <T>357767<!--CustomStatesSituation: situation_CAD_GetToKnow_Date_Adult--></T>
+                      <T>365241<!--CustomStatesSituation: situation_CAD_Recovery_Date_Adult--></T>
+                      <T>357530<!--CustomStatesSituation: situation_CAD_Romantic_Date_Adult--></T>
+                      <T>362238<!--CustomStatesSituation: situation_CAD_GetToKnow_Date_Teen--></T>
+                      <T>365242<!--CustomStatesSituation: situation_CAD_Recovery_Date_Teen--></T>
+                      <T>362239<!--CustomStatesSituation: situation_CAD_Romantic_Date_Adult_Teen--></T>
+                      <T>373553<!--CustomStatesSituation: situation_CAD_BlindDate_Date_Adult--></T>
+                      <T>375209<!--CustomStatesSituation: situation_CAD_BlindDate_Date_Adult_Catfish--></T>
+                    </L>
+                  </V>
+                  <E n="test_event">SituationStarted</E>
+                </U>
+              </V>
+              <V t="relationship">
+                <U n="relationship">
+                  <U n="required_relationship_bits">
+                    <L n="match_any">
+                      <T>358558<!--RelationshipBit: relBit_Attraction_4_Actor_AttractedTo_Target--></T>
+                      <T>358559<!--RelationshipBit: relBit_Attraction_5_Actor_VeryAttractedTo_Target--></T>
+                    </L>
+                  </U>
+                  <L n="subject">
+                    <E>TargetSim</E>
+                  </L>
+                  <L n="target_sim">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+              <V t="buff">
+                <U n="buff">
+                  <L n="blacklist">
+                    <T>371049<!--Buff: buff_CDG_SimRecentlyAskedQuestion--></T>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+      <V t="affordance_modifier">
+        <U n="affordance_modifier">
+          <L n="affordances">
+            <T>26132<!--SocialMixerInteraction: mixer_social_BreakUp_targeted_mean_relationship--></T>
+            <T>125592<!--SocialSuperInteraction: goingOutSocials_PushedInteractions_BreakUpSims--></T>
+            <T>26133<!--SocialMixerInteraction: mixer_social_Divorce_targeted_mean_relationship--></T>
+            <T>243173<!--SocialSuperInteraction: social_Knitting_SweaterCurseBreakUp--></T>
+          </L>
+          <L n="basic_extras">
+            <V t="loot">
+              <U n="loot">
+                <L n="loot_list">
+                  <T>382363<!--LootActions: lootActions_CDG_NPCLeave_BrokeUp--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+          <L n="test">
+            <L>
+              <V t="situation_running_test">
+                <U n="situation_running_test">
+                  <T n="check_for_initiating_sim">True</T>
+                  <V n="participant" t="enabled" />
+                  <V n="situation_whitelist" t="enabled">
+                    <L n="enabled">
+                      <T>357767<!--CustomStatesSituation: situation_CAD_GetToKnow_Date_Adult--></T>
+                      <T>365241<!--CustomStatesSituation: situation_CAD_Recovery_Date_Adult--></T>
+                      <T>357530<!--CustomStatesSituation: situation_CAD_Romantic_Date_Adult--></T>
+                      <T>362238<!--CustomStatesSituation: situation_CAD_GetToKnow_Date_Teen--></T>
+                      <T>365242<!--CustomStatesSituation: situation_CAD_Recovery_Date_Teen--></T>
+                      <T>362239<!--CustomStatesSituation: situation_CAD_Romantic_Date_Adult_Teen--></T>
+                      <T>373553<!--CustomStatesSituation: situation_CAD_BlindDate_Date_Adult--></T>
+                      <T>375209<!--CustomStatesSituation: situation_CAD_BlindDate_Date_Adult_Catfish--></T>
+                    </L>
+                  </V>
+                  <E n="test_event">SituationStarted</E>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T p="InGame\UI\Icons\Debug\missing_image.png" n="icon">2f7d0004:00000000:30f0846c783606f9</T>
+  <L n="super_affordances">
+    <T>387423<!--SimPickerInteraction: simPicker_CDG_Debug_NPC_AskTo_BackToYourPlace--></T>
+    <T>387422<!--SimPickerInteraction: simPicker_CDG_Debug_NPC_AskTo_ExtendEvent--></T>
+  </L>
+  <T n="visible">False</T>
+</I>

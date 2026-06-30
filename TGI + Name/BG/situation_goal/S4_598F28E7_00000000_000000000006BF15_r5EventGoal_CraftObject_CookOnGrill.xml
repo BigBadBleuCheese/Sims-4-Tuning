@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalCraftObject" i="situation_goal" m="situations.situation_goal_craft_object" n="r5EventGoal_CraftObject_CookOnGrill" s="442133">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T p="InGame\UI\Icons\Headlines\Final\headline_cookbook.png" n="enabled">2f7d0004:00000000:a5cd90d6a1f0a0fb</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x2AFE8AC9<!--String: "Cook on the Grill"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0x7508AA3B<!--String: "Time for a cookout! Select a Grill and choose a recipe to cook.\n\nSelect to learn more."--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>447711<!--SituationGoalLootActions: liveEvent_GoalLoot_CompleteQuestGoal--></T>
+    <T>456479<!--SituationGoalLootActions: r5EventLoot_GoalLoot_Autonomy_RemoveBuff_Grill--></T>
+  </L>
+  <L n="_post_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+      </U>
+    </V>
+  </L>
+  <L n="_pre_goal_loot_list">
+    <T>456472<!--SituationGoalLootActions: r5EventLoot_GoalLoot_Autonomy_Grill--></T>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+  <U n="crafted_item_test">
+    <V n="skill_or_item" t="crafted_tagged_item">
+      <U n="crafted_tagged_item">
+        <L n="tag_set">
+          <E>Func_Grill_Recipe</E>
+        </L>
+      </U>
+    </V>
+  </U>
+  <V n="tutorial_tip_group" t="enabled">
+    <T n="enabled">448436<!--TutorialTipGroup: tutorialTipGroup_LiveEvent_R5Event_CookOnGrill--></T>
+  </V>
+</I>

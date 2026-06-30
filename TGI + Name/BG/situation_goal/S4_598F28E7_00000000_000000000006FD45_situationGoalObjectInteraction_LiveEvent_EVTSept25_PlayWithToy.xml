@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalObjectInteraction" i="situation_goal" m="situations.situation_goal_object_interaction" n="situationGoalObjectInteraction_LiveEvent_EVTSept25_PlayWithToy" s="458053">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T p="InGame\UI\Icons\Headlines\Final\headline_toybox.png" n="enabled">2f7d0004:00000000:5b84e11f5f5934fb</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0xF8F02FEF<!--String: "Play with a Toy from the Toybox"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0x24CD32E1<!--String: "A child Sim needs to first open the Toybox and place a Toy in their inventory.\n\nThen, they can select it in their inventory and play with it."--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>447711<!--SituationGoalLootActions: liveEvent_GoalLoot_CompleteQuestGoal--></T>
+    <T>478541<!--SituationGoalLootActions: liveEvent_GoalLoot_EVTSept25_Autonomy_PlayToysRemove--></T>
+  </L>
+  <U n="_goal_test">
+    <L n="affordances">
+      <T>157456<!--SuperInteraction: toybox_RouteAway--></T>
+      <T>14441<!--SuperInteraction: toy_Play--></T>
+      <T>161894<!--SuperInteraction: toy_PlayAwayFeelings--></T>
+    </L>
+    <E n="test_event">InteractionComplete</E>
+  </U>
+  <L n="_post_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+      </U>
+    </V>
+  </L>
+  <L n="_pre_goal_loot_list">
+    <T>478540<!--SituationGoalLootActions: liveEvent_GoalLoot_EVTSept25_Autonomy_PlayToys--></T>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+  <V n="goal_completion_notification" t="enabled">
+    <U n="enabled">
+      <V n="icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T n="key" p="InGame\UI\Icons\Headlines\Events\ImaginationEvent_EventTNS.png">2f7d0004:00000000:a7d998e23b3c9bc3</T>
+          </U>
+        </V>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0x7CBE8A67<!--String: "{0.SimFirstName} envisioned a new adventure, projecting {0.SimPronounReflexive} into the role of the toys {0.SimPronounSubjective} played with. Another great moment of bonding and friendship with {0.SimPronounPossessiveDependent} Stuffed Animal friend.\n\nBut now, {0.SimPronounSubjective} {S0.is}{P0.are} getting sleepy from all the excitement from today..."--></T>
+      </V>
+    </U>
+  </V>
+  <V n="tutorial_tip_group" t="enabled">
+    <T n="enabled">468677<!--TutorialTipGroup: tutorialTipGroup_LiveEvent_EVTSept25_PlayWithToy--></T>
+  </V>
+</I>

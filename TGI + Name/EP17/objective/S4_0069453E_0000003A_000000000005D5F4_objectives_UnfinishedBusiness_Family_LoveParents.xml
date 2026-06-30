@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Objective" i="objective" m="event_testing.objective_tuning" n="objectives_UnfinishedBusiness_Family_LoveParents" s="382452">
+  <E n="category_type">Family</E>
+  <L n="completion_loot">
+    <T>385159<!--LootActions: loot_UnfinishedBusiness_GoalCompleted--></T>
+  </L>
+  <T n="display_text">0xACF61796<!--String: ""I should make sure to tell my parents I love them.""--></T>
+  <L n="loot_on_completion_ui_update">
+    <T>396545<!--LootActions: loot_UnfinishedBusiness_clearCompleteObjective--></T>
+  </L>
+  <V n="objective_test" t="ran_interaction_test">
+    <U n="ran_interaction_test">
+      <L n="affordances">
+        <T>382204<!--SocialSuperInteraction: social_UnfinishedBusiness_Love--></T>
+      </L>
+    </U>
+  </V>
+  <L n="target_super_affordances">
+    <U>
+      <T n="affordance">382204<!--SocialSuperInteraction: social_UnfinishedBusiness_Love--></T>
+    </U>
+  </L>
+  <L n="tests_for_picker_availability">
+    <L>
+      <V t="relationship_bit_count">
+        <U n="relationship_bit_count">
+          <E n="comparison_operator">GREATER_OR_EQUAL</E>
+          <T n="rel_bit">8809<!--RelationshipBit: family_Target_IsParentOf_Actor--></T>
+          <T n="relationship_count">1</T>
+          <L n="subject">
+            <E>Actor</E>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+  <T n="tooltip">0x5732D0EF<!--String: "<b><font color='#2182E6'>Tell a Parent You Love Them</font></b>\nI wouldn't have made it this far without the love of my parent, and they should know that! Before it's too late, I should meet with my parent and <b>Tell Them I Love Them</b>."--></T>
+</I>

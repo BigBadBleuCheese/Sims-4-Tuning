@@ -1,0 +1,542 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="splashpad_Play_PadOn" s="304528">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="circle">
+            <U n="circle">
+              <T n="ideal_radius">0.75</T>
+              <T n="ideal_radius_width">0.25</T>
+              <T n="radius">1.5</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <L n="_false_advertisements">
+    <V t="statistic_change">
+      <U n="statistic_change">
+        <T n="amount">-10</T>
+        <T n="stat">181204<!--Statistic: statistic_sim_EffectiveTemperature--></T>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>186002<!--Buff: buff_Temperature_Hidden_Overheating--></T>
+                    <T>186000<!--Buff: buff_Temperature_Hidden_Freezing--></T>
+                    <T>186004<!--Buff: buff_Temperature_Hidden_ExtremeMelting--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="state_based">
+                <U n="state_based">
+                  <V n="state" t="on_trigger">
+                    <T n="on_trigger">304342<!--ObjectStateValue: splashpad_OnOff_Values_Off--></T>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </U>
+        </V>
+        <V t="list_reference">
+          <T n="list_reference">40702<!--ExitConditionList: ExitConditionList_EmotionStressed--></T>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="buff_based">
+                <U n="buff_based">
+                  <T n="buff">12847<!--Buff: MoodBuff_Hidden_Miserable--></T>
+                  <E n="timing">HAS_BUFF</E>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_CANCEL</E>
+            <L n="loot_actions">
+              <T>185939<!--LootActions: loot_Sprinkler_PlayIn_UncomfExit--></T>
+            </L>
+          </U>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="time_based">
+                <U n="time_based">
+                  <T n="max_time">25</T>
+                  <T n="min_time">10</T>
+                </U>
+              </V>
+            </L>
+          </U>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="time_based">
+                <U n="time_based">
+                  <T n="max_time">5</T>
+                  <T n="min_time">3</T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">NO_ACTION</E>
+            <L n="loot_actions">
+              <T>320087<!--LootActions: loot_ToddlerPersonalityUpdate_Reveal_WaterLover--></T>
+            </L>
+          </U>
+        </V>
+      </L>
+      <V n="content" t="looping_content">
+        <U n="looping_content">
+          <U n="animation_ref">
+            <T n="factory">306686<!--AnimationElement: SplashPad_play--></T>
+            <U n="overrides">
+              <T n="animation_context">True</T>
+            </U>
+          </U>
+        </U>
+      </V>
+      <V n="periodic_stat_change" t="enabled">
+        <U n="enabled">
+          <L n="operations">
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="amount">0.39</T>
+                <T n="stat">16655<!--Commodity: motive_Fun--></T>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+                <L n="tests">
+                  <L>
+                    <V t="sim_info">
+                      <U n="sim_info">
+                        <V n="ages" t="specified">
+                          <L n="specified">
+                            <E>TEEN</E>
+                            <E>YOUNGADULT</E>
+                            <E>ADULT</E>
+                            <E>ELDER</E>
+                          </L>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </V>
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="advertise">False</T>
+                <T n="amount">0.78</T>
+                <T n="stat">16655<!--Commodity: motive_Fun--></T>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+                <L n="tests">
+                  <L>
+                    <V t="sim_info">
+                      <U n="sim_info">
+                        <V n="ages" t="specified">
+                          <L n="specified">
+                            <E>CHILD</E>
+                            <E>TODDLER</E>
+                          </L>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </V>
+            <V t="statistic_set_max">
+              <U n="statistic_set_max">
+                <T n="stat">77338<!--Commodity: commodity_Trait_Autonomy_LovesOutdoors--></T>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+              </U>
+            </V>
+            <V t="statistic_set_max">
+              <U n="statistic_set_max">
+                <T n="stat">305299<!--Commodity: commodity_Trait_Toddler_Autonomy_ToddlerPersonalityUpdate_WaterLover--></T>
+                <L n="tests">
+                  <L>
+                    <V t="trait">
+                      <U n="trait">
+                        <L n="whitelist_traits">
+                          <T>305298<!--Trait: trait_Hidden_ToddlerPersonalityUpdate_WaterLover--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </V>
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="amount">0.4</T>
+                <T n="stat">16657<!--Commodity: motive_Hygiene--></T>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+                <L n="tests">
+                  <L>
+                    <V t="trait">
+                      <U n="trait">
+                        <L n="whitelist_traits">
+                          <T>211545<!--Trait: trait_OccultMermaid_TYAE--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </V>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="buff_fire_and_forget">
+      <U n="buff_fire_and_forget">
+        <U n="buff">
+          <T n="buff_type">311089<!--Buff: buff_Splashpad_Statistic--></T>
+        </U>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+    <V t="state_change">
+      <U n="state_change">
+        <V n="new_value" t="single_value">
+          <U n="single_value">
+            <T n="new_value">304343<!--ObjectStateValue: splashpad_OnOff_Values_On--></T>
+          </U>
+        </V>
+        <V n="timing" t="immediately" />
+      </U>
+    </V>
+    <V t="trigger_reaction">
+      <U n="trigger_reaction">
+        <T n="reaction_affordance">304684<!--SuperInteraction: splashpad_Infant_PadReact--></T>
+        <L n="reaction_constraints">
+          <V t="circle">
+            <U n="circle">
+              <T n="radius">0.1</T>
+            </U>
+          </V>
+        </L>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>320240<!--LootActions: loot_Splashpad_SimTemp--></T>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <T n="buff_type">229867<!--Buff: buff_Motives_Humanoid_Robots_DurabilityLossFrom_Water_Low--></T>
+        </U>
+        <L n="subject">
+          <E>Actor</E>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <L n="whitelist_traits">
+                  <T>218444<!--Trait: trait_Humanoid_Robots_MainTrait--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="basic_liabilities">
+    <V t="remove_buff">
+      <U n="remove_buff">
+        <T n="buff_to_remove">311089<!--Buff: buff_Splashpad_Statistic--></T>
+      </U>
+    </V>
+  </L>
+  <V n="basic_reserve_object" t="disabled" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x4530A60A<!--String: "Play in Water"--></T>
+  <V n="display_name_in_queue" t="enabled">
+    <T n="enabled">0x4530A60A<!--String: "Play in Water"--></T>
+  </V>
+  <V n="display_name_overrides" t="testable">
+    <U n="testable">
+      <L n="overrides">
+        <U>
+          <V n="new_display_name" t="enabled">
+            <T n="enabled">0x69D0A7E8<!--String: "Play in Water while Holding Sim"--></T>
+          </V>
+          <L n="test">
+            <L>
+              <V t="buff">
+                <U n="buff">
+                  <V n="whitelist" t="enabled">
+                    <L n="enabled">
+                      <T>276004<!--Buff: buff_Infant_CarryRight_Hidden--></T>
+                    </L>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <V n="new_display_name" t="disabled" />
+          <V n="new_pie_menu_icon" t="enabled">
+            <V n="enabled" t="resource_key">
+              <U n="resource_key">
+                <T n="key" p="InEP13\UI\Icons\PieMenu\Quirks\PieMenu_ObsessedwithWaterToddler.png">2f7d0004:00000000:f878a62a24778606</T>
+              </U>
+            </V>
+          </V>
+          <L n="test">
+            <L>
+              <V t="trait">
+                <U n="trait">
+                  <L n="whitelist_traits">
+                    <T>319864<!--Trait: trait_Human_ToddlerPersonalityUpdate_Visible_WaterLover--></T>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <E n="duplicate_affordance_group">Func_SplashPad_PlayOn</E>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <L n="continuation">
+              <U>
+                <T n="affordance">304524<!--AutonomousObjectTaggedPickerInteraction: autonomous_ObjectPicker_Splashpad_Play--></T>
+                <E n="target">Invalid</E>
+              </U>
+            </L>
+            <L n="loot_list">
+              <T>304335<!--LootActions: loot_Splashpad_ColdWeather--></T>
+              <T>304334<!--LootActions: loot_Splashpad_Rainy--></T>
+              <T>304330<!--LootActions: loot_Splashpad_Shenanigans--></T>
+              <T>310710<!--LootActions: loot_Splashpad_IncrementStatistic--></T>
+            </L>
+          </U>
+        </U>
+      </L>
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">271032<!--SuperInteraction: socialSuperInteraction_CarryPickUp_Infant--></T>
+                  </U>
+                </L>
+                <L n="loot_list">
+                  <T>304335<!--LootActions: loot_Splashpad_ColdWeather--></T>
+                  <T>304334<!--LootActions: loot_Splashpad_Rainy--></T>
+                  <T>304330<!--LootActions: loot_Splashpad_Shenanigans--></T>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="posture">
+                <U n="posture">
+                  <L n="required_postures">
+                    <T>132169<!--CarryingSim: posture_CarrySim--></T>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">304524<!--AutonomousObjectTaggedPickerInteraction: autonomous_ObjectPicker_Splashpad_Play--></T>
+                    <E n="target">Invalid</E>
+                  </U>
+                </L>
+                <L n="loot_list">
+                  <T>304335<!--LootActions: loot_Splashpad_ColdWeather--></T>
+                  <T>304334<!--LootActions: loot_Splashpad_Rainy--></T>
+                  <T>304330<!--LootActions: loot_Splashpad_Shenanigans--></T>
+                  <T>310710<!--LootActions: loot_Splashpad_IncrementStatistic--></T>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="posture">
+                <U n="posture">
+                  <L n="prohibited_postures">
+                    <T>132169<!--CarryingSim: posture_CarrySim--></T>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <L n="rallyable">
+    <U />
+  </L>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="include_all">
+        <U n="include_all">
+          <L n="exclude_affordances">
+            <T>168304<!--SuperInteraction: walk_Dog_Leashed--></T>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_autonomous">
+    <L>
+      <V t="object_definition_criteria">
+        <U n="object_definition_criteria">
+          <V n="identity_test" t="tags">
+            <U n="tags">
+              <L n="tag_set">
+                <E>Func_SplashPad_OpenStreet</E>
+              </L>
+              <E n="test_type">CONTAINS_NO_TAGS_IN_SET</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="state">
+        <U n="state">
+          <T n="value">304343<!--ObjectStateValue: splashpad_OnOff_Values_On--></T>
+        </U>
+      </V>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>186056<!--Buff: buff_GlobalTemperature_Cold--></T>
+            <T>185970<!--Buff: buff_GlobalTemperature_Freezing--></T>
+            <T>180208<!--Buff: buff_Temperature_Freezing--></T>
+            <T>182205<!--Buff: buff_Temperature_Freezing_Extreme--></T>
+            <T>185937<!--Buff: buff_Temperature_Hidden_Chilled--></T>
+            <T>186001<!--Buff: buff_Temperature_Hidden_ExtremeFreezing--></T>
+            <T>186000<!--Buff: buff_Temperature_Hidden_Freezing--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+            <E>TODDLER</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="statistic">
+      <U n="statistic">
+        <T n="stat">310713<!--Statistic: statistic_Splashpad_PlayCounter--></T>
+        <V n="threshold" t="value_threshold">
+          <U n="value_threshold">
+            <E n="comparison">LESS_OR_EQUAL</E>
+            <T n="value">3</T>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+  <V n="utility_info" t="enabled">
+    <L n="enabled">
+      <U>
+        <E n="key">WATER</E>
+      </U>
+    </L>
+  </V>
+</I>

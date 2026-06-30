@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="CareerTone" i="away_action" m="careers.career_interactions" n="careerTone_ParkWorker_ChaseAnimal" s="458331">
+  <T n="_available_when_instanced">True</T>
+  <V n="_disabled_when_running" t="disabled_when_running">
+    <T n="disabled_when_running">0xD31BCFBD<!--String: "Your Sim is already doing this."--></T>
+  </V>
+  <T n="_display_name">0x91C98998<!--String: "See a Sim about a Plumbird"--></T>
+  <L n="_exit_conditions">
+    <U>
+      <L n="conditions">
+        <V t="time_based">
+          <U n="time_based">
+            <T n="max_time">30</T>
+            <T n="min_time">15</T>
+          </U>
+        </V>
+      </L>
+    </U>
+    <U>
+      <L n="conditions">
+        <V t="stat_based">
+          <U n="stat_based">
+            <T n="stat">16652<!--Commodity: motive_Bladder--></T>
+            <U n="threshold">
+              <T n="value">100</T>
+            </U>
+          </U>
+        </V>
+      </L>
+    </U>
+  </L>
+  <U n="_periodic_stat_changes">
+    <L n="operations">
+      <V t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">5</T>
+          <T n="stat">16652<!--Commodity: motive_Bladder--></T>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="_tests">
+    <L>
+      <V t="at_work">
+        <U n="at_work">
+          <T n="is_at_work">True</T>
+        </U>
+      </V>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified">
+            <L n="specified">
+              <E>TEEN</E>
+              <E>YOUNGADULT</E>
+              <E>ADULT</E>
+              <E>ELDER</E>
+            </L>
+          </V>
+        </U>
+      </V>
+      <V t="statistic">
+        <U n="statistic">
+          <T n="stat">16652<!--Commodity: motive_Bladder--></T>
+          <V n="threshold" t="value_threshold">
+            <U n="value_threshold">
+              <E n="comparison">LESS_OR_EQUAL</E>
+              <T n="value">80</T>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>218444<!--Trait: trait_Humanoid_Robots_MainTrait--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="icon_data" t="enabled">
+    <U n="enabled">
+      <T p="InGame\UI\Icons\AwayActions\AwayAction_General.png" n="icon">2f7d0004:00000000:7ed032d2aeb9db44</T>
+      <T n="tooltip">0x91C98998<!--String: "See a Sim about a Plumbird"--></T>
+    </U>
+  </V>
+  <V n="override_default_away_action" t="use_override">
+    <T n="use_override">465181<!--CareerTone: careerTone_ParkWorker_Normal--></T>
+  </V>
+  <T n="pie_menu_tooltip">0xE4385B15<!--String: "Replenishes Bladder Need. Does not affect Work Performance. A quick break for...personal business."--></T>
+  <L n="working_sim_periodic_loots">
+    <U>
+      <T n="loot">494859<!--LootActions: loot_Commodity_Motive_Hunger_CareerTone_FixUp--></T>
+    </U>
+    <U>
+      <T n="loot">494858<!--LootActions: loot_Commodity_Motive_Bladder_CareerTone_FixUp--></T>
+    </U>
+    <U>
+      <T n="loot">494728<!--LootActions: loot_Commodity_Motive_Energy_CareerTone_FixUp--></T>
+    </U>
+    <U>
+      <U n="chance">
+        <T n="base_chance">25</T>
+      </U>
+      <T n="loot">97666<!--LootActions: loot_Commodity_Motive_SocializeWithCoworkers--></T>
+    </U>
+  </L>
+</I>

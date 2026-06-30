@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_muEvent_Haunting_StopPossess" s="358705">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">344754<!--Buff: buff_muEvent_Hidden_Haunting_CancelPossess--></T>
+        </U>
+        <E n="subject">OtherSimsInteractingWithTarget</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <L n="whitelist_trait_types">
+                  <E>GHOST</E>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="destroy_situation">
+      <U n="destroy_situation">
+        <L n="situation_tags">
+          <E>Situation_muEvent</E>
+        </L>
+      </U>
+    </V>
+    <V t="reaction">
+      <U n="reaction">
+        <V n="si_reaction" t="enabled">
+          <U n="enabled">
+            <T n="affordance">169887<!--ImmediateSuperInteraction: Push_Leave_Lot_Must_Run_Immediate--></T>
+            <E n="affordance_priority">Critical</E>
+            <V n="affordance_target" t="disabled" />
+          </U>
+        </V>
+        <E n="subject">OtherSimsInteractingWithTarget</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <L n="whitelist_trait_types">
+                  <E>GHOST</E>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="DialogDramaNode" i="drama_node" m="drama_scheduler.dialog_drama_node" n="dialogDramaNode_SmallBusiness_Reputation_Ultimatum_Start" s="436815">
+  <V n="dialog_and_loot" t="notification">
+    <U n="notification">
+      <L n="loot_list">
+        <T>436527<!--LootActions: loot_SmallBusiness_Reputation_Consequences_Ultimatum_Start--></T>
+      </L>
+      <U n="notification">
+        <V n="audio_sting" t="enabled">
+          <U n="enabled">
+            <T n="audio" p="InEP18\Audio\music\bumpers\bumper_ep18_consequences_headed_for_breakup.propx">39b2aa4a:00000000:85e78169ba2d8111</T>
+          </U>
+        </V>
+        <V n="icon" t="enabled">
+          <V n="enabled" t="participant">
+            <U n="participant">
+              <L n="participant_type">
+                <E>SignificantOtherActor</E>
+              </L>
+            </U>
+          </V>
+        </V>
+        <V n="secondary_icon" t="enabled">
+          <V n="enabled" t="participant">
+            <U n="participant">
+              <L n="participant_type">
+                <E>Actor</E>
+              </L>
+            </U>
+          </V>
+        </V>
+        <V n="text" t="single">
+          <T n="single">0x3C987CC<!--String: "{0.SimFirstName} is not feeling great about how {1.SimFirstName} is running {1.SimPronounPossessiveDependent} Small Business and {S0.is}{P0.are} ready to leave the relationship!\n{1.SimFirstName} should talk to {0.SimFirstName} and Ask for Second Chance if {1.SimPronounSubjective} {S1.wants}{P1.want} to save the relationship."--></T>
+        </V>
+        <V n="text_tokens" t="enabled">
+          <U n="enabled">
+            <L n="tokens">
+              <V t="participant_type">
+                <U n="participant_type">
+                  <V n="objects" t="from_participant">
+                    <U n="from_participant">
+                      <E n="participant">SignificantOtherActor</E>
+                    </U>
+                  </V>
+                </U>
+              </V>
+              <V t="participant_type">
+                <U n="participant_type">
+                  <V n="objects" t="from_participant" />
+                </U>
+              </V>
+            </L>
+          </U>
+        </V>
+      </U>
+    </U>
+  </V>
+  <U n="min_and_max_times">
+    <T n="lower_bound">4</T>
+    <T n="upper_bound">24</T>
+  </U>
+  <V n="reschedule_on_failed_tests" t="reschedule" />
+  <L n="run_tests">
+    <L>
+      <V t="in_same_household">
+        <U n="in_same_household">
+          <E n="subject_b">SignificantOtherActor</E>
+          <T n="subjects_households_match">False</T>
+        </U>
+      </V>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>10094<!--Buff: buff_Sim_IsSleeping--></T>
+            <T>275549<!--Buff: buff_Sim_IsSleeping_Hidden--></T>
+          </L>
+        </U>
+      </V>
+      <V t="location">
+        <U n="location">
+          <U n="location_tests">
+            <V n="is_on_active_lot" t="Is_or_is_not_on_active_lot" />
+          </U>
+        </U>
+      </V>
+      <V t="test_set_reference">
+        <T n="test_set_reference">439041<!--TestSetInstance: testSet_SmallBusiness_Misaligned_Traits_Partner--></T>
+      </V>
+    </L>
+    <L>
+      <V t="in_same_household">
+        <U n="in_same_household">
+          <E n="subject_b">SignificantOtherActor</E>
+        </U>
+      </V>
+      <V t="location">
+        <U n="location">
+          <U n="location_tests">
+            <V n="is_on_active_lot" t="Is_or_is_not_on_active_lot" />
+          </U>
+        </U>
+      </V>
+      <V t="location">
+        <U n="location">
+          <U n="location_tests">
+            <V n="is_on_active_lot" t="Is_or_is_not_on_active_lot" />
+          </U>
+          <E n="subject">SignificantOtherActor</E>
+        </U>
+      </V>
+      <V t="existence">
+        <U n="existence">
+          <E n="participant">SignificantOtherActor</E>
+        </U>
+      </V>
+      <V t="test_set_reference">
+        <T n="test_set_reference">439041<!--TestSetInstance: testSet_SmallBusiness_Misaligned_Traits_Partner--></T>
+      </V>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>10094<!--Buff: buff_Sim_IsSleeping--></T>
+            <T>275549<!--Buff: buff_Sim_IsSleeping_Hidden--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="sender_sim_info" t="sim_filter">
+    <U n="sim_filter">
+      <T n="sim_filter">419251<!--TunableSimFilter: filter_SmallBusinessOwner_RomanticPartner--></T>
+    </U>
+  </V>
+  <E n="sender_sim_info_type">INSTANCED_ALLOWED</E>
+  <V n="time_option" t="schedule">
+    <U n="schedule">
+      <L n="valid_times">
+        <U>
+          <U n="days_available">
+            <T n="0 SUNDAY">True</T>
+            <T n="1 MONDAY">True</T>
+            <T n="2 TUESDAY">True</T>
+            <T n="3 WEDNESDAY">True</T>
+            <T n="4 THURSDAY">True</T>
+            <T n="5 FRIDAY">True</T>
+            <T n="6 SATURDAY">True</T>
+          </U>
+          <T n="duration">24</T>
+          <U n="start_time">
+            <T n="hour">6</T>
+          </U>
+        </U>
+      </L>
+    </U>
+  </V>
+</I>

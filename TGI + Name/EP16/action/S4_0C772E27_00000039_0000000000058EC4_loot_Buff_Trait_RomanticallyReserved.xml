@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Buff_Trait_RomanticallyReserved" s="364228">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0xA2C626<!--String: "(From Being Romantically Reserved)"--></T>
+          </V>
+          <T n="buff_type">361971<!--Buff: buff_Trait_RomanticallyReserved_UnwantedAdvances--></T>
+        </U>
+        <E n="subject">TargetSim</E>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InEP16\UI\Icons\Notifications\notification_RomanticallyReserved.png">2f7d0004:00000000:bc60358fbeb41128</T>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x9CEBDB09<!--String: "{0.SimFirstName} prefers slow-burn connections, feeling very uneasy when there isn't a strong foundation of friendship. For {0.SimPronounObjective}, love is an intensely serious matter."--></T>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="participant_type">
+                    <U n="participant_type">
+                      <V n="objects" t="from_participant">
+                        <U n="from_participant">
+                          <E n="participant">TargetSim</E>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x428CAC7D<!--String: "Romantically Reserved"--></T>
+            </V>
+          </U>
+        </V>
+        <E n="subject">TargetSim</E>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <L n="blacklist">
+                  <T>361971<!--Buff: buff_Trait_RomanticallyReserved_UnwantedAdvances--></T>
+                </L>
+                <E n="subject">TargetSim</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T n="run_test_first">True</T>
+  <L n="tests">
+    <L>
+      <V t="trait">
+        <U n="trait">
+          <E n="subject">TargetSim</E>
+          <L n="whitelist_traits">
+            <T>361564<!--Trait: trait_RomanticallyReserved--></T>
+          </L>
+        </U>
+      </V>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="relationship_score_interval">
+            <T n="upper_bound">35</T>
+          </U>
+          <L n="subject">
+            <E>TargetSim</E>
+          </L>
+          <L n="target_sim">
+            <E>Actor</E>
+          </L>
+          <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

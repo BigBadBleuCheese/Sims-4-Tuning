@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="burglarNPC_Arrested_CheckForPolice" s="444542">
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Actor</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <L n="_static_commodities">
+    <U>
+      <T n="static_commodity">421845<!--StaticCommodity: staticCommodity_Burglar--></T>
+    </U>
+  </L>
+  <T n="allow_autonomous">True</T>
+  <T n="allow_user_directed">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xFE983BAD<!--String: "Careers"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="continuation">
+          <U>
+            <T n="affordance">443958<!--NPCLeaveLotInteraction: NPCLeaveLot_Burglar_Arrested_Done--></T>
+            <E n="target">Actor</E>
+          </U>
+        </L>
+      </U>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">ACTOR</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="identity">
+      <U n="identity">
+        <T n="subjects_match">True</T>
+      </U>
+    </V>
+    <V t="situation_running_test">
+      <U n="situation_running_test">
+        <V n="situation_blacklist" t="enabled">
+          <L n="enabled">
+            <T>421823<!--CustomStatesSituation: situation_Burglar_Police--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+    <V t="participant_running_interaction">
+      <U n="participant_running_interaction">
+        <L n="affordances">
+          <T>443958<!--NPCLeaveLotInteraction: NPCLeaveLot_Burglar_Arrested_Done--></T>
+          <T>443957<!--NPCLeaveLotInteraction: NPCLeaveLot_Burglar_Arrested_Escape--></T>
+          <T>426973<!--SuperInteraction: burglarNPC_Arrested_GoToEscape--></T>
+        </L>
+        <T n="test_for_not_running">True</T>
+        <T n="test_interaction_queue">True</T>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

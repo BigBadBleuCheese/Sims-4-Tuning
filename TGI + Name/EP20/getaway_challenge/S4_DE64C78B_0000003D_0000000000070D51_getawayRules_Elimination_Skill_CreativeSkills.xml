@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SkillElimination" i="getaway_challenge" m="custom_schedules.getaway_challenge_tuning" n="getawayRules_Elimination_Skill_CreativeSkills" s="462161">
+  <U n="daily_timer">
+    <T n="hour">11</T>
+  </U>
+  <T n="description_tooltip">0xA1F70629<!--String: "Let the creativity flow! Sims with the least progress or lowest score in creative Skills like Painting and Writing will be eliminated. Only selected roles are eligible, and participation is limited to teens and older."--></T>
+  <T n="display_name">0xB323F0ED<!--String: "Creative Skills Elimination"--></T>
+  <L n="groups">
+    <U>
+      <L n="associated_buff">
+        <U>
+          <T n="buff_type">477374<!--Buff: buff_Trait_Competitive_Hidden_Getaway_SkillContest_CreativeSkills--></T>
+        </U>
+        <U>
+          <T n="buff_type">483862<!--Buff: buff_Getaway_EliminationCandidate--></T>
+        </U>
+      </L>
+      <L n="disallowed_ages">
+        <E />
+        <E>INFANT</E>
+        <E>TODDLER</E>
+        <E>CHILD</E>
+      </L>
+      <L n="disallowed_species">
+        <E>CAT</E>
+        <E>DOG</E>
+        <E>FOX</E>
+        <E>HORSE</E>
+        <E>SMALLDOG</E>
+      </L>
+      <T n="group_name">0xD450CE15<!--String: "Competing Sims"--></T>
+    </U>
+  </L>
+  <T n="icon" p="InEP20\UI\Icons\GetawayRules\getaway_rules_CreativeSkills.png">2f7d0004:00000000:d6af556f78e0ed85</T>
+  <L n="loots_after_daily_timer">
+    <T>487479<!--LootActions: loot_Getaway_Elimination_CreativitySkill--></T>
+    <T>489163<!--LootActions: loot_Getaway_Elimination_CreativitySkill_2_Remaining--></T>
+    <T>489164<!--LootActions: loot_Getaway_Elimination_CreativitySkill_3_Remaining--></T>
+    <T>489165<!--LootActions: loot_Getaway_Elimination_CreativitySkill_4_Remaining--></T>
+    <T>489166<!--LootActions: loot_Getaway_Elimination_CreativitySkill_FinalElimination--></T>
+  </L>
+  <L n="skills">
+    <T>450214<!--Skill: statistic_Skill_AdultMajor_Papercraft--></T>
+    <T>16714<!--Skill: statistic_Skill_AdultMajor_Writing--></T>
+    <T>371129<!--Skill: statistic_Skill_AdultMajor_Pottery--></T>
+    <T>239521<!--Skill: statistic_Skill_AdultMajor_Knitting--></T>
+    <T>259758<!--Skill: statistic_Skill_CrossStitch--></T>
+    <T>16708<!--Skill: statistic_Skill_AdultMajor_Painting--></T>
+  </L>
+  <L n="tests_blocking_daily_timer_behavior">
+    <L>
+      <V t="count">
+        <U n="count">
+          <V n="participant" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">GetawayEliminationCandidates</E>
+            </U>
+          </V>
+          <V n="threshold" t="from_value">
+            <U n="from_value">
+              <E n="comparison">LESS_OR_EQUAL</E>
+              <T n="value">1</T>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

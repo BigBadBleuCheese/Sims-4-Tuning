@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="funerals_Reminisce" s="383286">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="circle">
+            <U n="circle">
+              <T n="ideal_radius">1</T>
+              <T n="ideal_radius_width">0</T>
+              <T n="radius">2</T>
+              <T n="require_los">False</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="value" t="facing" />
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <V n="_situation_participant_provider" t="enabled">
+    <U n="enabled">
+      <L n="provided_participant_type_to_job_map">
+        <U>
+          <E n="key">SituationParticipants1</E>
+          <L n="value">
+            <U>
+              <T n="job">381374<!--SituationJob: job_Funeral_DepartedSim--></T>
+              <V n="sim_info_source" t="from_guest_list" />
+              <E n="situation_participant">Actor</E>
+              <V n="situations" t="by_definition">
+                <U n="by_definition">
+                  <L n="situations">
+                    <T>381372<!--CustomStateFuneralSituation: Situation_Funeral--></T>
+                  </L>
+                </U>
+              </V>
+            </U>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <L n="_static_commodities">
+    <U>
+      <T n="static_commodity">383560<!--StaticCommodity: staticCommodity_Funeral_RoleActions--></T>
+    </U>
+    <U>
+      <T n="static_commodity">388975<!--StaticCommodity: staticCommodity_Cemetery_Mourner_Reminisce--></T>
+    </U>
+    <U>
+      <T n="static_commodity">405697<!--StaticCommodity: staticCommodity_Funeral_RoleActions_DailyFestival--></T>
+    </U>
+  </L>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">381296<!--AnimationElement: heirlooms_RememberSim_Positive--></T>
+      </U>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="balloon">
+      <U n="balloon">
+        <L n="balloon_choices">
+          <U>
+            <V n="item" t="balloon_category">
+              <T n="balloon_category">32075<!--BalloonCategory: balloonCategory_SetDeath_Though--></T>
+            </V>
+          </U>
+          <U>
+            <V n="item" t="balloon_icon">
+              <U n="balloon_icon">
+                <V n="icon" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>SituationParticipants1</E>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </U>
+        </L>
+        <T n="balloon_delay_random_offset">3</T>
+        <L n="balloon_target">
+          <E>Actor</E>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="basic_reserve_object" t="disabled" />
+  <T n="category">383557<!--PieMenuCategory: pieMenuCategory_Funeral--></T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x8EB77A56<!--String: "Reminisce about Deceased"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="loot_list">
+          <T>393698<!--RandomWeightedLoot: randomWeightedLoot_Funerals_Reminisce--></T>
+        </L>
+      </U>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">404575<!--TestSetInstance: testSet_FloatingUrn_Disallow--></T>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>392382<!--Buff: buff_Funerals_RoleBuffs_Speeches--></T>
+            <T>392383<!--Buff: buff_Funerals_RoleBuffs_Celebration--></T>
+            <T>392384<!--Buff: buff_Funerals_RoleBuffs_Mingle--></T>
+            <T>392381<!--Buff: buff_Funerals_RoleBuffs_Mourn--></T>
+          </L>
+        </U>
+      </V>
+      <V t="situation_job_test">
+        <U n="situation_job_test">
+          <L n="situation_jobs">
+            <T>378339<!--SituationJob: job_Cemetery_Keeper--></T>
+            <T>388741<!--SituationJob: job_Cemetery_Mourner--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <V n="whitelist" t="enabled">
+            <L n="enabled">
+              <T>392382<!--Buff: buff_Funerals_RoleBuffs_Speeches--></T>
+              <T>392383<!--Buff: buff_Funerals_RoleBuffs_Celebration--></T>
+              <T>392384<!--Buff: buff_Funerals_RoleBuffs_Mingle--></T>
+              <T>392381<!--Buff: buff_Funerals_RoleBuffs_Mourn--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="state_white_black">
+        <U n="state_white_black">
+          <U n="states">
+            <V n="whitelist" t="specify">
+              <U n="specify">
+                <L n="whitelist">
+                  <T>389685<!--ObjectStateValue: memorialAltar_Value_Dedicated--></T>
+                  <T>389689<!--ObjectStateValue: memorialAltar_Value_DedicatedFamily--></T>
+                </L>
+              </U>
+            </V>
+          </U>
+        </U>
+      </V>
+    </L>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_EP20_IF_CreepedOut_React" s="474894">
+  <L n="loot_actions">
+    <V t="show_balloon">
+      <U n="show_balloon">
+        <U n="balloon">
+          <L n="balloon_choices">
+            <U>
+              <V n="item" t="balloon_icon">
+                <U n="balloon_icon">
+                  <V n="icon" t="resource_key">
+                    <U n="resource_key">
+                      <T n="key" p="InEP20\UI\Icons\Headlines\headline_ImaginaryFriend.png">2f7d0004:00000000:8fab86dc80abcb03</T>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </U>
+          </L>
+          <L n="balloon_target">
+            <E>Actor</E>
+          </L>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>474892<!--Buff: buff_EP20_IF_WhoTalkingTo_Playful--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="reaction">
+      <U n="reaction">
+        <V n="mixer_reaction" t="enabled">
+          <U n="enabled">
+            <T n="affordance">474893<!--MixerInteraction: reaction_Mixers_EP20_IF_CreepedOut--></T>
+          </U>
+        </V>
+        <V n="si_reaction" t="enabled">
+          <U n="enabled">
+            <T n="affordance">474895<!--SuperInteraction: sI_EP20_IF_CreepedOut_Target--></T>
+            <E n="affordance_priority">High</E>
+            <V n="affordance_run_priority" t="enabled">
+              <E n="enabled">High</E>
+            </V>
+            <V n="affordance_target" t="disabled" />
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="show_balloon">
+      <U n="show_balloon">
+        <U n="balloon">
+          <T n="balloon_chance">75</T>
+          <L n="balloon_choices">
+            <U>
+              <V n="item" t="balloon_icon">
+                <U n="balloon_icon">
+                  <V n="icon" t="resource_key">
+                    <U n="resource_key">
+                      <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_QuestionMark.png">2f7d0004:00000000:873da6c8ff732f1f</T>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </U>
+          </L>
+          <L n="balloon_target">
+            <E>Actor</E>
+          </L>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <L n="blacklist">
+                  <T>474892<!--Buff: buff_EP20_IF_WhoTalkingTo_Playful--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

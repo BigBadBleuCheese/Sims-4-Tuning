@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Burglar_RunAway_RouteFailCount" s="445607">
+  <L n="loot_actions">
+    <V t="statistics">
+      <V n="statistics" t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">1</T>
+          <T n="stat">445609<!--Commodity: commodity_Burglar_RouteFailCounter--></T>
+        </U>
+      </V>
+    </V>
+    <V t="reaction">
+      <U n="reaction">
+        <V n="si_reaction" t="enabled">
+          <U n="enabled">
+            <T n="affordance">443954<!--NPCLeaveLotInteraction: NPCLeaveLot_Burglar_Run--></T>
+            <E n="affordance_priority">Critical</E>
+            <V n="affordance_target" t="disabled" />
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">445609<!--Commodity: commodity_Burglar_RouteFailCounter--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <T n="value">4</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_remove">
+        <U n="statistic_remove">
+          <T n="stat">445609<!--Commodity: commodity_Burglar_RouteFailCounter--></T>
+          <L n="tests">
+            <L>
+              <V t="statistic">
+                <U n="statistic">
+                  <T n="stat">445609<!--Commodity: commodity_Burglar_RouteFailCounter--></T>
+                  <V n="threshold" t="value_threshold">
+                    <U n="value_threshold">
+                      <T n="value">4</T>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+    </V>
+  </L>
+</I>

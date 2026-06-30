@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="lootActions_FairyOccult_Ability_BottleMood_Actor_Flirty" s="435494">
+  <L n="loot_actions">
+    <V t="object_rewards">
+      <U n="object_rewards">
+        <V n="notification" t="enabled">
+          <V n="enabled" t="literal">
+            <U n="literal">
+              <L n="dialog_options">
+                <E>DISABLE_CLOSE_BUTTON</E>
+              </L>
+              <V n="icon" t="enabled">
+                <V n="enabled" t="resource_key">
+                  <U n="resource_key">
+                    <T n="key" p="InEP19\UI\Icons\Notifications\notification_EmotionPotion.png">2f7d0004:00000000:6e06f5f4ee551abf</T>
+                  </U>
+                </V>
+              </V>
+              <V n="primary_icon_response" t="enabled">
+                <U n="enabled">
+                  <E n="ui_request">SHOW_SIM_INVENTORY</E>
+                </U>
+              </V>
+              <V n="secondary_icon" t="enabled">
+                <V n="enabled" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>Actor</E>
+                    </L>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x341B97A1<!--String: "{0.SimFirstName} just bottled some Emotions and placed them into {0.SimPronounPossessiveDependent} inventory:\n\n{2.String}"--></T>
+              </V>
+            </U>
+          </V>
+        </V>
+        <L n="object_rewards">
+          <U>
+            <T n="quantity">1</T>
+            <L n="reward_objects">
+              <U>
+                <L n="reward">
+                  <V t="specify_definition">
+                    <U n="specify_definition">
+                      <T n="definition">472076</T>
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </L>
+            <U n="tested_bonus_quantity">
+              <L n="modifiers">
+                <U>
+                  <T n="modifier">1</T>
+                  <L n="tests">
+                    <L>
+                      <V t="buff">
+                        <U n="buff">
+                          <V n="whitelist" t="enabled">
+                            <L n="enabled">
+                              <T>12850<!--Buff: MoodBuff_Hidden_Passionate--></T>
+                            </L>
+                          </V>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+              </L>
+            </U>
+          </U>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="mood">
+        <U n="mood">
+          <T n="mood">14638<!--Mood: Mood_Flirty--></T>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

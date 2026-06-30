@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Wills_GatherSims" s="387095">
+  <L n="loot_actions">
+    <V t="interaction">
+      <U n="interaction">
+        <E n="affordance_priority">High</E>
+        <V n="affordance_run_priority" t="enabled">
+          <E n="enabled">High</E>
+        </V>
+        <L n="affordances">
+          <T>387096<!--SuperInteraction: wills_Gather--></T>
+        </L>
+        <E n="subject">AllInstancedActiveHouseholdSims</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="participant_running_interaction">
+              <U n="participant_running_interaction">
+                <L n="affordances">
+                  <T>379740<!--SuperInteraction: wills_ReadWillOutLoud--></T>
+                </L>
+                <T n="test_for_not_running">True</T>
+              </U>
+            </V>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="ages" t="specified">
+                  <L n="specified">
+                    <E>TEEN</E>
+                    <E>YOUNGADULT</E>
+                    <E>ADULT</E>
+                    <E>ELDER</E>
+                    <E>CHILD</E>
+                  </L>
+                </V>
+                <V n="species" t="specified">
+                  <U n="specified">
+                    <L n="species">
+                      <E />
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+        <E n="target_participant_type">Actor</E>
+      </U>
+    </V>
+  </L>
+</I>

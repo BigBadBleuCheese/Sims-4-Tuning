@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="RandomWeightedLoot" i="action" m="interactions.utils.loot" n="random_Sentiment_Buffs_Adoring_WitnessFoalBirth" s="338413">
+  <L n="random_loot_actions">
+    <U>
+      <V n="action" t="buff">
+        <U n="buff">
+          <U n="buff">
+            <V n="buff_reason" t="enabled">
+              <T n="enabled">0xA9BD7C3C<!--String: "(From Adoring a Foal Nearby)"--></T>
+            </V>
+            <T n="buff_type">338408<!--Buff: buff_Sentiment_Adoring_Happy_Primary_WitnessFoalBirth--></T>
+          </U>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">9</T>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="buff">
+        <U n="buff">
+          <U n="buff">
+            <V n="buff_reason" t="enabled">
+              <T n="enabled">0xA9BD7C3C<!--String: "(From Adoring a Foal Nearby)"--></T>
+            </V>
+            <T n="buff_type">338411<!--Buff: buff_Sentiment_Adoring_Playful_WitnessFoalBirth--></T>
+          </U>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">3</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="trait">
+                  <U n="trait">
+                    <L n="blacklist_traits">
+                      <T>257365<!--Trait: Trait_AnimalEnthusiast--></T>
+                    </L>
+                  </U>
+                </V>
+                <V t="skill_test">
+                  <U n="skill_test">
+                    <T n="skill">322708<!--Skill: statistic_Skill_AdultMajor_EquestrianSkill--></T>
+                    <V n="skill_range" t="threshold">
+                      <U n="threshold">
+                        <U n="skill_threshold">
+                          <E n="comparison">LESS</E>
+                          <T n="value">4</T>
+                        </U>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+  </L>
+</I>

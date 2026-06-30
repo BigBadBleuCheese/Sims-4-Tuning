@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_APM_StartTNS_Charity" s="349361">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="audio_sting" t="enabled">
+              <U n="enabled">
+                <T n="audio" p="InGame\Audio\Music\bumpers\bumper_ep15_multiunit_events_community.propx">39b2aa4a:00000000:9d48f02440608b1c</T>
+              </U>
+            </V>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InGame\UI\Icons\Notifications\notification_giftbox.png">2f7d0004:00000000:ca9f7c82e7f59688</T>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x85FC5D0D<!--String: "We're having a Charity Gift Drive over here in {1.String}. Feel free to visit! All donations and gifts are welcome."--></T>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="participant_type_special">
+                    <U n="participant_type_special">
+                      <V n="participant_type" t="zone">
+                        <U n="zone">
+                          <V n="attribute" t="occupant_household_name" />
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                  <V t="participant_type_special">
+                    <U n="participant_type_special">
+                      <V n="participant_type" t="zone" />
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0xD1FC3DDF<!--String: "Charity Gift Drive"--></T>
+            </V>
+          </U>
+        </V>
+        <E n="subject">ActiveHousehold</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="is_active_sim" t="enabled" />
+              </U>
+            </V>
+          </L>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="identity">
+              <U n="identity">
+                <E n="subject_a">PickedZoneId</E>
+                <E n="subject_b">CurrentZoneId</E>
+                <T n="use_value">True</T>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="audio_sting" t="enabled">
+              <U n="enabled">
+                <T n="audio" p="InGame\Audio\Music\bumpers\bumper_ep15_multiunit_events_community.propx">39b2aa4a:00000000:9d48f02440608b1c</T>
+              </U>
+            </V>
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InGame\UI\Icons\Notifications\notification_giftbox.png">2f7d0004:00000000:ca9f7c82e7f59688</T>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x365A2AF4<!--String: "It's time to do good with a Charity Gift Drive. Take part by donating items to share the generosity!"--></T>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="participant_type_special">
+                    <U n="participant_type_special">
+                      <V n="participant_type" t="zone">
+                        <U n="zone">
+                          <V n="attribute" t="occupant_household_name" />
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                  <V t="participant_type_special">
+                    <U n="participant_type_special">
+                      <V n="participant_type" t="zone" />
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0xD1FC3DDF<!--String: "Charity Gift Drive"--></T>
+            </V>
+          </U>
+        </V>
+        <E n="subject">ActiveHousehold</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="is_active_sim" t="enabled" />
+              </U>
+            </V>
+          </L>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="identity">
+              <U n="identity">
+                <E n="subject_a">PickedZoneId</E>
+                <E n="subject_b">CurrentZoneId</E>
+                <T n="subjects_match">True</T>
+                <T n="use_value">True</T>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_set">
+        <U n="statistic_set">
+          <T n="stat">351590<!--Statistic: statistic_muEvent_EventType--></T>
+          <L n="subject">
+            <E>Lot</E>
+          </L>
+          <T n="value">0</T>
+        </U>
+      </V>
+    </V>
+  </L>
+</I>

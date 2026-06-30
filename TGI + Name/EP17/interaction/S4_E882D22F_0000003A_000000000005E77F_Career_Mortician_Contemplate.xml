@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="Career_Mortician_Contemplate" s="386943">
+  <V n="_icon" t="career_icon_override">
+    <U n="career_icon_override">
+      <T n="career_reference">377586<!--Career: careers_Adult_Mortician--></T>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="allowed_to_combine">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xE016B0FC<!--String: "Contemplate Existence"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="dual">
+    <U n="dual">
+      <U n="failure_actions">
+        <V n="animation_ref" t="enabled">
+          <U n="enabled">
+            <T n="factory">386932<!--AnimationElement: career_Mortician_Existence_fail--></T>
+            <U n="overrides">
+              <V n="balloons" t="enabled">
+                <L n="enabled">
+                  <U>
+                    <L n="balloon_choices">
+                      <U>
+                        <V n="item" t="balloon_icon">
+                          <U n="balloon_icon">
+                            <V n="icon" t="resource_key">
+                              <U n="resource_key">
+                                <T n="key" p="InEP17\UI\Icons\Headlines\headline_ContemplateExistence.png">2f7d0004:00000000:557add7270bcb582</T>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </U>
+                    </L>
+                    <L n="balloon_target">
+                      <E>Actor</E>
+                    </L>
+                  </U>
+                </L>
+              </V>
+            </U>
+          </U>
+        </V>
+        <L n="basic_extras">
+          <V t="buff_fire_and_forget">
+            <U n="buff_fire_and_forget">
+              <U n="buff">
+                <V n="buff_reason" t="enabled">
+                  <T n="enabled">0xB7106C80<!--String: "(From Contemplating Existence)"--></T>
+                </V>
+                <T n="buff_type">386945<!--Buff: buff_Career_Mortician_Contemplate_neg--></T>
+              </U>
+            </U>
+          </V>
+        </L>
+      </U>
+      <U n="success_actions">
+        <V n="animation_ref" t="enabled">
+          <U n="enabled">
+            <T n="factory">386931<!--AnimationElement: career_Mortician_Existence_succeed--></T>
+            <U n="overrides">
+              <V n="balloons" t="enabled">
+                <L n="enabled">
+                  <U>
+                    <L n="balloon_choices">
+                      <U>
+                        <V n="item" t="balloon_icon">
+                          <U n="balloon_icon">
+                            <V n="icon" t="resource_key">
+                              <U n="resource_key">
+                                <T n="key" p="InEP17\UI\Icons\Headlines\headline_ContemplateExistence.png">2f7d0004:00000000:557add7270bcb582</T>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </U>
+                    </L>
+                    <L n="balloon_target">
+                      <E>Actor</E>
+                    </L>
+                  </U>
+                </L>
+              </V>
+            </U>
+          </U>
+        </V>
+        <L n="basic_extras">
+          <V t="buff_fire_and_forget">
+            <U n="buff_fire_and_forget">
+              <U n="buff">
+                <V n="buff_reason" t="enabled">
+                  <T n="enabled">0xB7106C80<!--String: "(From Contemplating Existence)"--></T>
+                </V>
+                <T n="buff_type">386944<!--Buff: buff_Career_Mortician_Contemplate_pos--></T>
+              </U>
+            </U>
+          </V>
+        </L>
+      </U>
+      <U n="success_chance">
+        <T n="base_chance">75</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">1.2</T>
+            <L n="tests">
+              <L>
+                <V t="skill_test">
+                  <U n="skill_test">
+                    <T n="skill">380495<!--Skill: statistic_Skill_AdultMinor_Thanatology--></T>
+                    <V n="skill_range" t="interval">
+                      <U n="interval">
+                        <U n="skill_interval">
+                          <T n="lower_bound">5</T>
+                          <T n="upper_bound">5</T>
+                        </U>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T n="key" p="InEP17\UI\Icons\PieMenu\Interactions\icon_pieMenu_Mortician.png">2f7d0004:00000000:4a13a272c8ba8007</T>
+      </U>
+    </V>
+  </V>
+  <T n="pie_menu_priority">5</T>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">ACTOR</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">386947<!--TestSetInstance: testSetInstance_MorticianCareer_Contemplate--></T>
+    </V>
+    <V t="identity">
+      <U n="identity">
+        <T n="subjects_match">True</T>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

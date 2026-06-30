@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Broadcaster" i="broadcaster" m="broadcasters.broadcaster" n="broadcaster_CDG_Woohoo" s="385496">
+  <V n="allow_sim_test" t="enabled">
+    <L n="enabled">
+      <L>
+        <V t="situation_job_test">
+          <U n="situation_job_test">
+            <L n="situation_jobs">
+              <T>365356<!--SituationJob: job_CAD_Target_Date_Adult--></T>
+              <T>365357<!--SituationJob: job_CAD_Target_Date_Adult_AdditionalDate--></T>
+              <T>365358<!--SituationJob: job_CAD_Target_Date_Teen--></T>
+              <T>365359<!--SituationJob: job_CAD_Target_Date_Teen_AdditionalDate--></T>
+              <T>374485<!--SituationJob: job_CAD_Target_Date_Adult_BlindDate--></T>
+              <T>375208<!--SituationJob: job_CAD_Target_Date_Adult_BlindDate_Catfish--></T>
+            </L>
+          </U>
+        </V>
+      </L>
+    </L>
+  </V>
+  <L n="constraints">
+    <V t="circle">
+      <U n="circle">
+        <T n="radius">5</T>
+      </U>
+    </V>
+    <V t="line_of_sight">
+      <U n="line_of_sight">
+        <V n="temporary_los" t="enabled" />
+      </U>
+    </V>
+  </L>
+  <L n="effects">
+    <V t="affordance">
+      <U n="affordance">
+        <T n="affordance_must_run_next">True</T>
+        <E n="affordance_priority">Critical</E>
+        <V n="affordance_run_priority" t="enabled">
+          <E n="enabled">Critical</E>
+        </V>
+        <V n="affordance_target" t="enabled">
+          <E n="enabled">TargetSim</E>
+        </V>
+        <L n="affordances">
+          <U>
+            <T n="affordance">368315<!--SuperInteraction: SI_CDG_LeaveDate_RelationshipExpectations--></T>
+          </U>
+        </L>
+        <V n="excluded_participants" t="enabled" />
+        <L n="tests">
+          <L>
+            <V t="test_set_reference">
+              <T n="test_set_reference">36955<!--TestSetInstance: testSet_JealousyAvailability_Tier1--></T>
+            </V>
+            <V t="trait">
+              <U n="trait">
+                <L n="whitelist_traits">
+                  <T>373825<!--Trait: trait_RelExpectations_WoohooExclusivity_Yes--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="frequency" t="on_enter" />
+  <T n="immediate">True</T>
+</I>

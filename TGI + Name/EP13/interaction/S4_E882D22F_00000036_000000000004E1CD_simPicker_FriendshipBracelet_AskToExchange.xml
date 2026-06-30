@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SimPickerInteraction" i="interaction" m="interactions.base.picker_interaction" n="simPicker_FriendshipBracelet_AskToExchange" s="319949">
+  <V n="_saveable" t="disabled" />
+  <L n="actor_continuation">
+    <U>
+      <T n="affordance">319972<!--SocialSuperInteraction: social_FriendshipBracelet_AskToExchange--></T>
+      <E n="target">PickedSim</E>
+    </U>
+  </L>
+  <T n="allow_from_sim_inventory">True</T>
+  <L n="basic_extras">
+    <V t="save_participant">
+      <U n="save_participant">
+        <E n="participant">Object</E>
+        <E n="saved_participant">SavedActor1</E>
+      </U>
+    </V>
+  </L>
+  <V n="cell_enabled_tests" t="enabled">
+    <L n="enabled">
+      <L>
+        <V t="sim_info">
+          <U n="sim_info">
+            <V n="npc" t="enabled">
+              <T n="enabled">True</T>
+            </V>
+            <E n="who">PickedSim</E>
+          </U>
+        </V>
+        <V t="relationship_bit_count">
+          <U n="relationship_bit_count">
+            <E n="comparison_operator">EQUAL</E>
+            <T n="rel_bit">319551<!--RelationshipBit: relbit_FriendshipBraceletBuddy--></T>
+            <L n="subject">
+              <E>PickedSim</E>
+            </L>
+            <V n="tooltip" t="enabled">
+              <T n="enabled">0xB313E79A<!--String: "{1.SimFirstName} is already wearing a friendship bracelet from someone."--></T>
+            </V>
+          </U>
+        </V>
+      </L>
+      <L>
+        <V t="sim_info">
+          <U n="sim_info">
+            <V n="npc" t="enabled" />
+            <E n="who">PickedSim</E>
+          </U>
+        </V>
+        <V t="relationship_bit_count">
+          <U n="relationship_bit_count">
+            <E n="comparison_operator">EQUAL</E>
+            <T n="rel_bit">319551<!--RelationshipBit: relbit_FriendshipBraceletBuddy--></T>
+            <L n="subject">
+              <E>PickedSim</E>
+            </L>
+            <V n="tooltip" t="enabled">
+              <T n="enabled">0xB313E79A<!--String: "{1.SimFirstName} is already wearing a friendship bracelet from someone."--></T>
+            </V>
+          </U>
+        </V>
+        <V t="inventory">
+          <U n="inventory">
+            <V n="contents_check" t="has_object_with_states">
+              <U n="has_object_with_states">
+                <V n="object_requirement" t="tag">
+                  <U n="tag">
+                    <U n="tag">
+                      <L n="tag_set">
+                        <E>Func_FriendshipBracelet</E>
+                      </L>
+                    </U>
+                  </U>
+                </V>
+                <L n="state_set">
+                  <T>319909<!--ObjectStateValue: friendshipBracelet_Exchanged_No--></T>
+                  <T>319906<!--ObjectStateValue: friendshipBracelet_Default--></T>
+                </L>
+                <E n="test_type">CONTAINS_ALL_STATES_IN_SET</E>
+              </U>
+            </V>
+            <V n="inventory_location" t="participant_inventory">
+              <U n="participant_inventory">
+                <E n="inventory">PickedSim</E>
+              </U>
+            </V>
+            <V n="tooltip" t="enabled">
+              <T n="enabled">0xAC8E1F92<!--String: "Both household Sims are required to have a friendship bracelet in their inventory. {1.SimFirstName} doesn't have any friendship bracelets to trade."--></T>
+            </V>
+          </U>
+        </V>
+      </L>
+    </L>
+  </V>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x98F0BF14<!--String: "Exchange Friendship Bracelets"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">PickedSim</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T n="include_uninstantiated_sims">False</T>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <V n="picker_dialog" t="sim_picker">
+    <U n="sim_picker">
+      <L n="custom_filters">
+        <V t="reference">
+          <T n="reference">499295<!--CustomSimFilter: customSimFilter_NobleCareer--></T>
+        </V>
+      </L>
+    </U>
+  </V>
+  <V n="pie_menu_test_tooltip" t="enabled">
+    <T n="enabled">0x46940605<!--String: "There aren't any friends that {0.SimFirstName} is close enough with nearby."--></T>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <V n="sim_filter" t="sim_filter_selected">
+    <T n="sim_filter_selected">494687<!--TunableSimFilter: filter_IsFriend_AllowedNPCs--></T>
+  </V>
+  <L n="sim_tests">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified">
+            <L n="specified">
+              <E>TEEN</E>
+              <E>YOUNGADULT</E>
+              <E>ADULT</E>
+              <E>ELDER</E>
+              <E>CHILD</E>
+            </L>
+          </V>
+          <E n="who">PickedSim</E>
+        </U>
+      </V>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="required_relationship_bits">
+            <L n="match_any">
+              <T>15799<!--RelationshipBit: friendship-good_friends--></T>
+              <T>15800<!--RelationshipBit: friendship-good_friends_Evil--></T>
+              <T>15794<!--RelationshipBit: friendship-bff--></T>
+              <T>31211<!--RelationshipBit: friendship-bff_BromanticPartner--></T>
+              <T>15795<!--RelationshipBit: friendship-bff_Evil--></T>
+            </L>
+          </U>
+          <L n="target_sim">
+            <E>PickedSim</E>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="state">
+      <U n="state">
+        <T n="value">319906<!--ObjectStateValue: friendshipBracelet_Default--></T>
+      </U>
+    </V>
+    <V t="relationship_bit_count">
+      <U n="relationship_bit_count">
+        <T n="rel_bit">319551<!--RelationshipBit: relbit_FriendshipBraceletBuddy--></T>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xE9F72F9F<!--String: "{0.SimFirstName} already exchanged bracelets with someone! Wait for the current one to fall off."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+</I>

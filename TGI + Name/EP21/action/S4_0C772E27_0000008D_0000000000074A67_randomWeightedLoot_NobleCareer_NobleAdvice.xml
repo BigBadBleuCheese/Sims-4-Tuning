@@ -1,0 +1,721 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="RandomWeightedLoot" i="action" m="interactions.utils.loot" n="randomWeightedLoot_NobleCareer_NobleAdvice" s="477799">
+  <L n="random_loot_actions">
+    <U>
+      <V n="action" t="sim_interaction_dialog">
+        <U n="sim_interaction_dialog">
+          <U n="dialog">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="text" t="single">
+              <T n="single">0x704EF48E<!--String: "I've been thinking, maybe it's time for you to consider your family legacy and set up a <b>Dynasty</b>? It could make your name last throughout the ages!"--></T>
+            </V>
+            <L n="ui_responses">
+              <U>
+                <V n="response_command" t="enabled">
+                  <V n="enabled" t="literal">
+                    <U n="literal">
+                      <L n="arguments">
+                        <V t="participant_id" />
+                      </L>
+                      <T n="command">dynasty.request_show_dynasty_configurator</T>
+                    </U>
+                  </V>
+                </V>
+                <T n="text">0x1D33F0AB<!--String: "Yes, sounds great!"--></T>
+                <E n="ui_request">SEND_COMMAND</E>
+              </U>
+            </L>
+          </U>
+          <L n="possible_responses">
+            <U>
+              <U n="item">
+                <L n="loot">
+                  <T>478777<!--LootActions: loot_NobleCareer_NobleAdvice_Dynasty_OptOut--></T>
+                </L>
+                <T n="text">0x8AA42A55<!--String: "Hmm, maybe later!"--></T>
+              </U>
+            </U>
+          </L>
+          <E n="target_participant_type">TargetSim</E>
+          <L n="tests">
+            <L>
+              <V t="trait">
+                <U n="trait">
+                  <L n="blacklist_traits">
+                    <T>466524<!--Trait: trait_Dynasty_Member--></T>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <V n="action" t="sim_interaction_dialog">
+        <U n="sim_interaction_dialog">
+          <U n="dialog">
+            <V n="text" t="single">
+              <T n="single">0xFDDCA08A<!--String: "I know you are stressed with that Scandal looming over you. Consider holding a Press Conference then either Publicly Apologize or Deny it. Or use the Computer to write an Apology Statement, or a Denial Statement to ensure it passes faster. "--></T>
+            </V>
+          </U>
+          <L n="possible_responses">
+            <U>
+              <U n="item">
+                <L n="loot">
+                  <T>479079<!--LootActions: loot_NobleCareer_NobleAdvice_Scandal_OptIn--></T>
+                </L>
+                <T n="text">0xEA971383<!--String: "I'll resolve this!"--></T>
+              </U>
+            </U>
+            <U>
+              <U n="item">
+                <L n="loot">
+                  <T>479080<!--LootActions: loot_NobleCareer_NobleAdvice_Scandal_OptOut--></T>
+                </L>
+                <T n="text">0x2257E283<!--String: "It's probably fine..."--></T>
+              </U>
+            </U>
+          </L>
+          <E n="target_participant_type">TargetSim</E>
+          <L n="tests">
+            <L>
+              <V t="scandal_secret_quantity_test">
+                <U n="scandal_secret_quantity_test">
+                  <T n="secret_count">1</T>
+                  <V n="secret_status" t="enabled">
+                    <E n="enabled">REVEALED</E>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <V n="action" t="sim_interaction_dialog">
+        <U n="sim_interaction_dialog">
+          <U n="dialog">
+            <V n="text" t="single">
+              <T n="single">0xEDCAB757<!--String: "I can tell something is on your mind, is there a secret you would like to share with me? I promise I will keep it safe, it's important to lead with a clear head..."--></T>
+            </V>
+          </U>
+          <L n="possible_responses">
+            <U>
+              <U n="item">
+                <L n="loot">
+                  <T>479081<!--LootActions: loot_NobleCareer_NobleAdvice_PersonalSecret_OptIn--></T>
+                </L>
+                <T n="text">0xCA50B348<!--String: "I'm not sure..."--></T>
+              </U>
+            </U>
+            <U>
+              <U n="item">
+                <L n="loot">
+                  <T>479082<!--LootActions: loot_NobleCareer_NobleAdvice_PersonalSecret_OptOut--></T>
+                </L>
+                <T n="text">0xBA13F34F<!--String: "No, nothing is on my mind!"--></T>
+              </U>
+            </U>
+          </L>
+          <E n="target_participant_type">TargetSim</E>
+          <L n="tests">
+            <L>
+              <V t="scandal_secret_quantity_test">
+                <U n="scandal_secret_quantity_test">
+                  <T n="secret_count">1</T>
+                  <V n="secret_status" t="enabled">
+                    <E n="enabled">SECRET</E>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <V n="action" t="sim_interaction_dialog">
+        <U n="sim_interaction_dialog">
+          <U n="dialog">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="text" t="single">
+              <T n="single">0x9FDB02A7<!--String: "That smirk on your face...do you know a <b>secret</b> about someone? Of course there is value in keeping quiet about a secret of a close one, but if they are a foe, there are choices to be made..."--></T>
+            </V>
+          </U>
+          <L n="possible_responses">
+            <U>
+              <U n="item">
+                <L n="loot">
+                  <T>479083<!--LootActions: loot_NobleCareer_NobleAdvice_UsingSecret_OptIn--></T>
+                </L>
+                <T n="text">0x2DABF74B<!--String: "What do you suggest?"--></T>
+              </U>
+            </U>
+            <U>
+              <U n="item">
+                <L n="loot">
+                  <T>479084<!--LootActions: loot_NobleCareer_NobleAdvice_UsingSecret_OptOut--></T>
+                </L>
+                <T n="text">0x8B38407D<!--String: "No, I keep my friend's secrets to myself!"--></T>
+              </U>
+            </U>
+          </L>
+          <E n="target_participant_type">TargetSim</E>
+          <L n="tests">
+            <L>
+              <V t="scandal_secret_quantity_test">
+                <U n="scandal_secret_quantity_test">
+                  <T n="secret_count">1</T>
+                  <V n="secret_keeper_participant" t="enabled">
+                    <E n="enabled">Actor</E>
+                  </V>
+                  <V n="secret_relationship_status" t="enabled">
+                    <E n="enabled">DISCOVERED</E>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <V n="action" t="sim_interaction_dialog">
+        <U n="sim_interaction_dialog">
+          <U n="dialog">
+            <V n="text" t="single">
+              <T n="single">0x7EC1F1D1<!--String: "Maybe it's time to choose who should be the inheritor of your Noble Title if you are ever unable to rule? You can <b>Promise to Inherit</b> a spouse or child if they are of age and you trust them to continue your legacy... "--></T>
+            </V>
+          </U>
+          <L n="possible_responses">
+            <U>
+              <U n="item">
+                <L n="loot">
+                  <T>479374<!--LootActions: loot_NobleCareer_NobleAdvice_Promise_OptIn--></T>
+                </L>
+                <T n="text">0xEF4BC0C7<!--String: "Yes, I agree!"--></T>
+              </U>
+            </U>
+            <U>
+              <U n="item">
+                <L n="loot">
+                  <T>479375<!--LootActions: loot_NobleCareer_NobleAdvice_Promise_OptOut--></T>
+                </L>
+                <T n="text">0x9D7B5A18<!--String: "Hmm, let me think about it!"--></T>
+              </U>
+            </U>
+          </L>
+          <E n="target_participant_type">TargetSim</E>
+          <L n="tests">
+            <L>
+              <V t="relationship_bit_count">
+                <U n="relationship_bit_count">
+                  <E n="comparison_operator">GREATER_OR_EQUAL</E>
+                  <T n="rel_bit">8805<!--RelationshipBit: family_Target_IsSonOrDaughterOf_Actor--></T>
+                  <T n="relationship_count">2</T>
+                </U>
+              </V>
+            </L>
+            <L>
+              <V t="relationship_bit_count">
+                <U n="relationship_bit_count">
+                  <E n="comparison_operator">GREATER_OR_EQUAL</E>
+                  <T n="rel_bit">8805<!--RelationshipBit: family_Target_IsSonOrDaughterOf_Actor--></T>
+                  <T n="relationship_count">1</T>
+                  <L n="subject">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+              <V t="relationship_bit_count">
+                <U n="relationship_bit_count">
+                  <E n="comparison_operator">GREATER_OR_EQUAL</E>
+                  <T n="rel_bit">15822<!--RelationshipBit: romantic-Married--></T>
+                  <T n="relationship_count">1</T>
+                  <L n="subject">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <V n="action" t="sim_interaction_dialog">
+        <U n="sim_interaction_dialog">
+          <U n="dialog">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="text" t="single">
+              <T n="single">0xB7239197<!--String: "I see a strong leader in you, but no children that could potentially carry on your Noble legacy! Maybe it's time to bless this Kingdom with some children of your own?"--></T>
+            </V>
+          </U>
+          <L n="possible_responses">
+            <U>
+              <U n="item">
+                <L n="loot">
+                  <T>479376<!--LootActions: loot_NobleCareer_NobleAdvice_Inheritance_OptIn--></T>
+                </L>
+                <T n="text">0xA4F4ED2<!--String: "Yes, I'd love that!"--></T>
+              </U>
+            </U>
+            <U>
+              <U n="item">
+                <L n="loot">
+                  <T>479377<!--LootActions: loot_NobleCareer_NobleAdvice_Inheritance_OptOut--></T>
+                </L>
+                <T n="text">0xFD143E20<!--String: "Hmm, I don't think so..."--></T>
+              </U>
+            </U>
+          </L>
+          <E n="target_participant_type">TargetSim</E>
+          <L n="tests">
+            <L>
+              <V t="relationship_bit_count">
+                <U n="relationship_bit_count">
+                  <E n="comparison_operator">EQUAL</E>
+                  <T n="rel_bit">8805<!--RelationshipBit: family_Target_IsSonOrDaughterOf_Actor--></T>
+                  <T n="relationship_count">0</T>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <V n="action" t="sim_interaction_dialog">
+        <U n="sim_interaction_dialog">
+          <U n="dialog">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="text" t="single">
+              <T n="single">0xACF796DC<!--String: "One of the strongest forces within Nobility is love! Maybe it's time for you to tie the knot and get Married? You could Marry for love, but you could also Marry a high ranking Noble for a more prestigious title..."--></T>
+            </V>
+          </U>
+          <L n="possible_responses">
+            <U>
+              <U n="item">
+                <L n="loot">
+                  <T>479388<!--LootActions: loot_NobleCareer_NobleAdvice_Marriage_OptIn--></T>
+                </L>
+                <T n="text">0xD01C7CB8<!--String: "Ohh, Marriage sounds great!"--></T>
+              </U>
+            </U>
+            <U>
+              <U n="item">
+                <L n="loot">
+                  <T>479389<!--LootActions: loot_NobleCareer_NobleAdvice_Marriage_OptOut--></T>
+                </L>
+                <T n="text">0x1613C459<!--String: "Nah, I'm not ready for that..."--></T>
+              </U>
+            </U>
+          </L>
+          <E n="target_participant_type">TargetSim</E>
+          <L n="tests">
+            <L>
+              <V t="relationship_bit_count">
+                <U n="relationship_bit_count">
+                  <E n="comparison_operator">EQUAL</E>
+                  <T n="rel_bit">15822<!--RelationshipBit: romantic-Married--></T>
+                  <T n="relationship_count">0</T>
+                  <L n="subject">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+              <V t="relationship">
+                <U n="relationship">
+                  <T n="must_have_track">False</T>
+                  <U n="prohibited_relationship_bits">
+                    <L n="match_any">
+                      <T>15816<!--RelationshipBit: romantic-Engaged--></T>
+                      <T>99429<!--RelationshipBit: romantic-Promised--></T>
+                      <T>15825<!--RelationshipBit: romantic-Significant_Other--></T>
+                    </L>
+                  </U>
+                  <L n="subject">
+                    <E>Actor</E>
+                  </L>
+                  <L n="target_sim">
+                    <E>TargetSim</E>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <V n="action" t="notification_and_dialog">
+        <U n="notification_and_dialog">
+          <V n="dialog" t="notification">
+            <U n="notification">
+              <L n="dialog_options">
+                <E>DISABLE_CLOSE_BUTTON</E>
+              </L>
+              <V n="icon" t="enabled">
+                <V n="enabled" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>TargetSim</E>
+                    </L>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0xD228F90<!--String: "I see you lead the Kingdom with a firm hand, but the Commoners in the realm don't feel heard at all! You could consider working towards gaining more Favor with Commoners. Build relationships with them, <b>Set Low Taxes</b> and choose different <b>Noble Ventures</b> to pursue. "--></T>
+              </V>
+              <E n="visual_type">SPEECH</E>
+            </U>
+          </V>
+          <L n="tests">
+            <L>
+              <V t="trait">
+                <U n="trait">
+                  <L n="whitelist_traits">
+                    <T>466634<!--Trait: trait_NobleFavor_Rank_6_Royal--></T>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <V n="action" t="notification_and_dialog">
+        <U n="notification_and_dialog">
+          <V n="dialog" t="notification">
+            <U n="notification">
+              <L n="dialog_options">
+                <E>DISABLE_CLOSE_BUTTON</E>
+              </L>
+              <V n="icon" t="enabled">
+                <V n="enabled" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>TargetSim</E>
+                    </L>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0xD2F3EAA1<!--String: "I see you lead the Kingdom with a strong focus on the Commoners within it, but the Royalty Favored Nobles do not feel appreciated at all! It's important not to burn bridges with other Nobles, as they will be leading alongside you. You could consider changing your Favor to suit more of their needs. Build relationships with them, <b>Set High Taxes</b> and choose different <b>Noble Ventures</b> to pursue. "--></T>
+              </V>
+              <E n="visual_type">SPEECH</E>
+            </U>
+          </V>
+          <L n="tests">
+            <L>
+              <V t="trait">
+                <U n="trait">
+                  <L n="whitelist_traits">
+                    <T>466628<!--Trait: trait_NobleFavor_Rank_0_Commoner--></T>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <V n="action" t="notification_and_dialog">
+        <U n="notification_and_dialog">
+          <V n="dialog" t="notification">
+            <U n="notification">
+              <L n="dialog_options">
+                <E>DISABLE_CLOSE_BUTTON</E>
+              </L>
+              <V n="icon" t="enabled">
+                <V n="enabled" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>TargetSim</E>
+                    </L>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x19CBC0FD<!--String: "It's essential to know the kind of leader you want to be. How you lead will determine your <b>Favor</b> within your Kingdom, and make Commoners or Royal aligned Nobles react accordingly!"--></T>
+              </V>
+              <E n="visual_type">SPEECH</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </U>
+    <U>
+      <V n="action" t="notification_and_dialog">
+        <U n="notification_and_dialog">
+          <V n="dialog" t="notification">
+            <U n="notification">
+              <L n="dialog_options">
+                <E>DISABLE_CLOSE_BUTTON</E>
+              </L>
+              <V n="icon" t="enabled">
+                <V n="enabled" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>TargetSim</E>
+                    </L>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x4EF4525<!--String: "Having a large impressive home is important to a Noble! I've heard of palaces having <b>Secret Passageways</b> where you can travel all across the mansion, or maybe even to other places in the Kingdom! Maybe this is something you should explore?"--></T>
+              </V>
+              <E n="visual_type">SPEECH</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </U>
+    <U>
+      <V n="action" t="notification_and_dialog">
+        <U n="notification_and_dialog">
+          <V n="dialog" t="notification">
+            <U n="notification">
+              <L n="dialog_options">
+                <E>DISABLE_CLOSE_BUTTON</E>
+              </L>
+              <V n="icon" t="enabled">
+                <V n="enabled" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>TargetSim</E>
+                    </L>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x58B57A8<!--String: "Don't underestimate the value of the Sword! Swordsmanship is an important skill for any Noble. You can solve any kind of dispute or gain benefits with a <b>Duel</b>!"--></T>
+              </V>
+              <E n="visual_type">SPEECH</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </U>
+    <U>
+      <V n="action" t="notification_and_dialog">
+        <U n="notification_and_dialog">
+          <V n="dialog" t="notification">
+            <U n="notification">
+              <L n="dialog_options">
+                <E>DISABLE_CLOSE_BUTTON</E>
+              </L>
+              <V n="icon" t="enabled">
+                <V n="enabled" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>TargetSim</E>
+                    </L>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0xB15344B<!--String: "Taxes are essential to any Kingdom and part of the reason you get paid as a Noble at all! Consider the amount you tax your Kingdom inhabitants though, too high and the Commoners will surely take issue with your decisions... You can readjust your tax level using the <b>Throne</b>."--></T>
+              </V>
+              <E n="visual_type">SPEECH</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </U>
+    <U>
+      <V n="action" t="notification_and_dialog">
+        <U n="notification_and_dialog">
+          <V n="dialog" t="notification">
+            <U n="notification">
+              <L n="dialog_options">
+                <E>DISABLE_CLOSE_BUTTON</E>
+              </L>
+              <V n="icon" t="enabled">
+                <V n="enabled" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>TargetSim</E>
+                    </L>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x16643C4C<!--String: "As a Noble you will receive <b>Noble Mail</b> once in a while. These are messages from the people in your Kingdom, and depending on how you reply, they can affect your  <b>Favor</b>! These letters are a good way to show your support for either Commoner or Royalty Favored Sims. "--></T>
+              </V>
+              <E n="visual_type">SPEECH</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </U>
+    <U>
+      <V n="action" t="notification_and_dialog">
+        <U n="notification_and_dialog">
+          <V n="dialog" t="notification">
+            <U n="notification">
+              <L n="dialog_options">
+                <E>DISABLE_CLOSE_BUTTON</E>
+              </L>
+              <V n="icon" t="enabled">
+                <V n="enabled" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>TargetSim</E>
+                    </L>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x4E2ECAE4<!--String: "As a Noble you are bound to have an abundance of wealth, right? Share it to benefit the Kingdom as a whole! You can <b>Donate to Kingdom Funds</b> using the throne or computer and ensure your Kingdom remains economically stable!"--></T>
+              </V>
+              <E n="visual_type">SPEECH</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </U>
+    <U>
+      <V n="action" t="notification_and_dialog">
+        <U n="notification_and_dialog">
+          <V n="dialog" t="notification">
+            <U n="notification">
+              <L n="dialog_options">
+                <E>DISABLE_CLOSE_BUTTON</E>
+              </L>
+              <V n="icon" t="enabled">
+                <V n="enabled" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>TargetSim</E>
+                    </L>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x14B7755A<!--String: "To lead a Kingdom successfully you need to bond with the people within it! Form relationships and get to know them, it's always better to know too much about others than too little. Maybe Host a <b>Grand Ball</b> and share a drink with someone new?"--></T>
+              </V>
+              <E n="visual_type">SPEECH</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </U>
+    <U>
+      <V n="action" t="notification_and_dialog">
+        <U n="notification_and_dialog">
+          <V n="dialog" t="notification">
+            <U n="notification">
+              <L n="dialog_options">
+                <E>DISABLE_CLOSE_BUTTON</E>
+              </L>
+              <V n="icon" t="enabled">
+                <V n="enabled" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>TargetSim</E>
+                    </L>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0xE3951551<!--String: "Nobles have such a busy schedule, tedious tasks such as dishes and yard work are easily avoided. I think it's time to delegate! Consider hiring a <b>Maid</b> or a <b>Gardener</b>, or any other services you might benefit from! It will make everyday life a breeze!"--></T>
+              </V>
+              <E n="visual_type">SPEECH</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </U>
+    <U>
+      <V n="action" t="notification_and_dialog">
+        <U n="notification_and_dialog">
+          <V n="dialog" t="notification">
+            <U n="notification">
+              <L n="dialog_options">
+                <E>DISABLE_CLOSE_BUTTON</E>
+              </L>
+              <V n="icon" t="enabled">
+                <V n="enabled" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>TargetSim</E>
+                    </L>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x1C4A5A63<!--String: "It's important to take care of yourself! While working as a Noble you will accumulate some well-earned PTO and you should use it! Go on vacation, sip some drinks at some beautiful location, and come back well rested! The Kingdom will understand!"--></T>
+              </V>
+              <E n="visual_type">SPEECH</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </U>
+    <U>
+      <V n="action" t="notification_and_dialog">
+        <U n="notification_and_dialog">
+          <V n="dialog" t="notification">
+            <U n="notification">
+              <L n="dialog_options">
+                <E>DISABLE_CLOSE_BUTTON</E>
+              </L>
+              <V n="icon" t="enabled">
+                <V n="enabled" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>TargetSim</E>
+                    </L>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0xE4813ABB<!--String: "Being a Noble means dealing with all the interpersonal drama that occurs in court. Once in a while you might encounter a <b>Noble Rival</b> that will stand in your way for promotion! There are many ways you can deal with them, both more friendly and...less friendly."--></T>
+              </V>
+              <E n="visual_type">SPEECH</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </U>
+    <U>
+      <V n="action" t="notification_and_dialog">
+        <U n="notification_and_dialog">
+          <V n="dialog" t="notification">
+            <U n="notification">
+              <L n="dialog_options">
+                <E>DISABLE_CLOSE_BUTTON</E>
+              </L>
+              <V n="icon" t="enabled">
+                <V n="enabled" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>TargetSim</E>
+                    </L>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0xD9C2B39B<!--String: "You are doing great! Continue to bond with other Noble Sims and Hold Court often, and you will surely rise through the ranks!"--></T>
+              </V>
+              <E n="visual_type">SPEECH</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </U>
+  </L>
+</I>

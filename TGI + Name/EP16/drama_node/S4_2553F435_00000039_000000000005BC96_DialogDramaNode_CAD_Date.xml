@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="DialogDramaNode" i="drama_node" m="drama_scheduler.dialog_drama_node" n="DialogDramaNode_CAD_Date" s="375958">
+  <V n="dialog_and_loot" t="dialog_multi_response">
+    <U n="dialog_multi_response">
+      <U n="dialog">
+        <E n="phone_ring_type">BUZZ</E>
+        <V n="text" t="variation">
+          <U n="variation">
+            <L n="variations">
+              <T>0x2FFEC21C<!--String: "I noticed you canceled our date.\nIs everything OK?"--></T>
+              <T>0xB6FDEDE8<!--String: "Did I do something wrong? You called off our date. I can BE BETTER!"--></T>
+              <T>0xF29ADDB2<!--String: "We had a date and you <I>canceled</I>! Uh...what gives?"--></T>
+              <T>0xB6DA0461<!--String: "Oh you canceled on me, huh? Was it something I said?"--></T>
+              <T>0x2A255DA5<!--String: "I'm disappointed, {0.SimFirstName}. Disappointed that you scrapped our date plans. What could have possibly kept you?!"--></T>
+            </L>
+          </U>
+        </V>
+        <L n="ui_responses">
+          <U>
+            <V n="loots_for_response" t="enabled">
+              <U n="enabled">
+                <L n="loots">
+                  <T>375959<!--LootActions: lootActions_CAD_LetsGoNow--></T>
+                  <T>376813<!--LootActions: lootActions_CAD_LetsGoNow_Teen--></T>
+                </L>
+              </U>
+            </V>
+            <T n="text">0x4A204C6B<!--String: "Let's Go Now"--></T>
+          </U>
+          <U>
+            <T n="text">0xB4FEE1F1<!--String: "I'll Reschedule"--></T>
+            <V n="ui_message_name" t="enabled">
+              <T n="enabled">ShowCalendar</T>
+            </V>
+            <E n="ui_request">SEND_UI_MESSAGE</E>
+          </U>
+          <U>
+            <V n="loots_for_response" t="enabled">
+              <U n="enabled">
+                <E n="dialog_response_id_override">DIALOG_RESPONSE_CUSTOM_2</E>
+                <L n="loots">
+                  <T>376045<!--RandomWeightedLoot: loot_random_CAD_SomethingCameUp--></T>
+                </L>
+              </U>
+            </V>
+            <T n="text">0xA4A0528A<!--String: "Err...Something Came Up"--></T>
+          </U>
+        </L>
+      </U>
+    </U>
+  </V>
+  <U n="min_and_max_times">
+    <T n="lower_bound">0.1</T>
+    <T n="upper_bound">0.2</T>
+  </U>
+  <L n="run_tests">
+    <L>
+      <V t="distance">
+        <U n="distance">
+          <U n="distance_threshold">
+            <T n="value">10</T>
+          </U>
+          <V n="target" t="participant_type">
+            <U n="participant_type">
+              <E n="participant">TargetSim</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="sender_sim_info" t="participant_type">
+    <U n="participant_type">
+      <E n="participant_type">TargetSim</E>
+    </U>
+  </V>
+  <E n="sender_sim_info_type">INSTANCED_ALLOWED</E>
+  <V n="time_option" t="schedule">
+    <U n="schedule">
+      <L n="valid_times">
+        <U>
+          <U n="days_available">
+            <T n="0 SUNDAY">True</T>
+            <T n="1 MONDAY">True</T>
+            <T n="2 TUESDAY">True</T>
+            <T n="3 WEDNESDAY">True</T>
+            <T n="4 THURSDAY">True</T>
+            <T n="5 FRIDAY">True</T>
+            <T n="6 SATURDAY">True</T>
+          </U>
+          <T n="duration">24</T>
+          <U n="start_time">
+            <T n="hour">0</T>
+          </U>
+        </U>
+      </L>
+    </U>
+  </V>
+</I>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Objective" i="objective" m="event_testing.objective_tuning" n="objectives_UnfinishedBusiness_Create_Book" s="382506">
+  <E n="category_type">Create</E>
+  <L n="completion_loot">
+    <T>385159<!--LootActions: loot_UnfinishedBusiness_GoalCompleted--></T>
+  </L>
+  <T n="display_text">0xC031D37E<!--String: ""I'd like to write the greatest book ever!""--></T>
+  <L n="loot_on_completion_ui_update">
+    <T>396545<!--LootActions: loot_UnfinishedBusiness_clearCompleteObjective--></T>
+  </L>
+  <V n="objective_test" t="ran_interaction_test">
+    <U n="ran_interaction_test">
+      <L n="affordances">
+        <T>382184<!--SuperInteraction: unfinishedBusiness_Declare_Book--></T>
+        <T>425338<!--ImmediateSuperInteraction: immediate_UnfinishedBusiness_Declare_Book--></T>
+      </L>
+    </U>
+  </V>
+  <L n="target_super_affordances">
+    <U>
+      <T n="affordance">382184<!--SuperInteraction: unfinishedBusiness_Declare_Book--></T>
+      <V n="object_filter" t="filter_by_tags">
+        <U n="filter_by_tags">
+          <L n="tags">
+            <E>Func_Book</E>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <T n="affordance">425338<!--ImmediateSuperInteraction: immediate_UnfinishedBusiness_Declare_Book--></T>
+      <V n="object_filter" t="filter_by_tags">
+        <U n="filter_by_tags">
+          <L n="tags">
+            <E>Func_Book</E>
+          </L>
+        </U>
+      </V>
+    </U>
+  </L>
+  <T n="tooltip">0x3B0FE77<!--String: "<b><font color='#2182E6'>Reach Writing level 10 and Declare Life's Finest Literary Work</font></b>\nI <b>will</b> be counted among the pantheon of the best writers in all of Simkind! After mastering the skill of Writing, I will pen a tome of the utmost quality. Then, I can proudly <b>Declare it my Life's Finest Work</b>! Only then will I have reached the true pinnacle of writerhood."--></T>
+</I>

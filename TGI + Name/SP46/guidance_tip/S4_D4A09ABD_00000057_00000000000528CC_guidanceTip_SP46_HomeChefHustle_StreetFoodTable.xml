@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="GuidanceTip" i="guidance_tip" m="guidance.guidance_tip" n="guidanceTip_SP46_HomeChefHustle_StreetFoodTable" s="338124">
+  <L n="activation_rules">
+    <U>
+      <L n="criteria">
+        <U>
+          <V n="criterion" t="guidance_mode" />
+        </U>
+        <U>
+          <V n="criterion" t="feature_parameter">
+            <T n="feature_parameter">guidance_tip_live_disable</T>
+          </V>
+          <T n="exclude_if_matched">True</T>
+        </U>
+        <U>
+          <V n="criterion" t="build_buy_object_tag">
+            <E n="build_buy_object_tag">Func_StreetFoodTable</E>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <T p="InGame\UI\Icons\GuidanceSystem\Poses\EmilyPose_Wave.png" n="icon">2f7d0004:00000000:cfafcaf7fc9c9b7e</T>
+  <L n="options">
+    <U>
+      <U n="actions">
+        <L n="actions_on_activate">
+          <V t="ui_message">
+            <U n="ui_message">
+              <V n="ui_message_cmn" t="enabled">
+                <U n="enabled">
+                  <T n="message_name">ShowTutorial</T>
+                  <L n="parameters">
+                    <U>
+                      <T n="key">source</T>
+                      <V n="value" t="raw_string">
+                        <T n="raw_string">live_mode</T>
+                      </V>
+                    </U>
+                    <U>
+                      <T n="key">tutorial_id</T>
+                      <V n="value" t="raw_string">
+                        <T n="raw_string">338121<!--Tutorial: Tutorial_SP46_HomeChefHustles_StreetFoodTable--></T>
+                      </V>
+                    </U>
+                  </L>
+                </U>
+              </V>
+            </U>
+          </V>
+        </L>
+        <T n="satisfy_on_activate">True</T>
+      </U>
+      <T n="text">0xCF494344<!--String: "View Lesson"--></T>
+    </U>
+    <U>
+      <U n="actions">
+        <T n="satisfy_on_activate">True</T>
+      </U>
+      <T n="text">0x6A484AD1<!--String: "No thanks!"--></T>
+    </U>
+  </L>
+  <T n="satisfy_on_timeout">True</T>
+  <T n="text">0x3F616BCC<!--String: "Congrats on buying the <b>Anywhere Any Fare Food Stand</b>! You can now start your entrepreneurship journey and sell food and other goods around the world.\n\nDo you want to learn more about selling items with the <b>Food Stand</b>?"--></T>
+  <T n="timeout">3600</T>
+  <T n="title">0x509D5946<!--String: "Food Stand"--></T>
+</I>

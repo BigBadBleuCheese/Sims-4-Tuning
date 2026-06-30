@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalObjectInteraction" i="situation_goal" m="situations.situation_goal_object_interaction" n="r5Event_ObjectInteraction_DrawInSand" s="441932">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T p="InGame\UI\Icons\Headlines\Final\headline_imaginative_v2.png" n="enabled">2f7d0004:00000000:9a104c73eef29665</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x6B71728D<!--String: "Draw in the Sand"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0xA05B1727<!--String: "Let nature guide your hand. Interact with the Sand, select Draw and chose what sand art you will create.\n\nSelect to learn more."--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>447711<!--SituationGoalLootActions: liveEvent_GoalLoot_CompleteQuestGoal--></T>
+  </L>
+  <U n="_goal_test">
+    <L n="affordances">
+      <T>280825<!--SuperInteraction: sandPlay_Draw_Smiley--></T>
+      <T>280826<!--SuperInteraction: sandPlay_Draw_Star--></T>
+      <T>280822<!--SuperInteraction: sandPlay_Draw_Heart--></T>
+    </L>
+    <E n="test_event">InteractionComplete</E>
+  </U>
+  <L n="_post_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+      </U>
+    </V>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+  <V n="goal_completion_notification" t="enabled">
+    <U n="enabled">
+      <V n="audio_sting" t="enabled">
+        <U n="enabled">
+          <T n="audio" p="InGame\Audio\music\bumpers\bumper_ef63_event_rumble.propx">39b2aa4a:00000000:a210d75164cfda0a</T>
+          <T n="immediate_audio">True</T>
+        </U>
+      </V>
+      <V n="audio_sting_owner" t="enabled" />
+      <L n="dialog_options">
+        <E>DISABLE_CLOSE_BUTTON</E>
+      </L>
+      <V n="icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T n="key" p="InGame\UI\Icons\Headlines\Events\headline_NatureEvent_50x50.png">2f7d0004:00000000:9d935d64bf26de30</T>
+          </U>
+        </V>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0x742DD3B4<!--String: "A deep rumble resonates from the ground—<i>Be wary, for the sands conceal more than beauty. Some secrets are better left buried. Proceed with caution, lest you disturb what lies beneath.</i>"--></T>
+      </V>
+    </U>
+  </V>
+  <V n="tutorial_tip_group" t="disabled" />
+</I>

@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="super_FairyJourney_submerge" s="438203">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="ocean_loc">
+            <U n="ocean_loc">
+              <E n="interval">WADE</E>
+              <T n="radius">3</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="value" t="water_depth">
+            <U n="water_depth">
+              <V n="max_water_depth" t="enabled">
+                <T n="enabled">500</T>
+              </V>
+              <V n="min_water_depth" t="disabled" />
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="value" t="facing" />
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Actor</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">465767<!--AnimationElement: anim_FairyJourney_react--></T>
+      </U>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="change_outfit">
+      <U n="change_outfit">
+        <V n="outfit_change" t="for_reason">
+          <U n="for_reason">
+            <V n="on_entry" t="enabled">
+              <E n="enabled">EnterOceanWater</E>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>438204<!--LootActions: loot_FairyJourney_transform--></T>
+        </L>
+        <V n="timing" t="on_xevt">
+          <U n="on_xevt">
+            <T n="xevt_id">200</T>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="create_and_enter_carry_while_holding">
+      <U n="create_and_enter_carry_while_holding">
+        <T n="object_definition">460952</T>
+        <T n="owning_affordance">426489<!--SuperInteraction: superInteraction_FairyOccult_Wings_HoldWingProxyObject_Back--></T>
+        <E n="posture_track">BACK</E>
+      </U>
+    </V>
+  </L>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x89182A2C<!--String: "Become a Fairy"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <V n="animation_ref" t="enabled">
+          <U n="enabled">
+            <T n="factory">438202<!--AnimationElement: anim_FairyJourney_submerge--></T>
+          </U>
+        </V>
+        <L n="basic_extras">
+          <V t="notification">
+            <U n="notification">
+              <V n="dialog" t="single">
+                <V n="single" t="literal">
+                  <U n="literal">
+                    <L n="dialog_options">
+                      <E>DISABLE_CLOSE_BUTTON</E>
+                    </L>
+                    <V n="icon" t="enabled">
+                      <V n="enabled" t="participant">
+                        <U n="participant">
+                          <L n="participant_type">
+                            <E>Actor</E>
+                          </L>
+                        </U>
+                      </V>
+                    </V>
+                    <V n="text" t="single">
+                      <T n="single">0xE37428E9<!--String: "Fairy life awaits! With wings aflutter and emotions swirling, {0.SimFirstName} has been welcomed into the Fae.\n\nSpeaking of wings fluttering...Mother Nature thought those would fit {0.SimFirstName}'s personality, but since beauty is in the eye of the beholder, {0.SimFirstName} is welcome to find something more fitting if {0.SimPronounSubjective} {S0.chooses}{P0.choose}."--></T>
+                    </V>
+                    <V n="title" t="enabled">
+                      <T n="enabled">0xEB9832DB<!--String: "Metamorphosis!"--></T>
+                    </V>
+                    <L n="ui_responses">
+                      <U>
+                        <V n="response_command" t="enabled">
+                          <V n="enabled" t="literal">
+                            <U n="literal">
+                              <L n="arguments">
+                                <V t="string">
+                                  <U n="string">
+                                    <T n="arg_value">0</T>
+                                  </U>
+                                </V>
+                                <V t="string">
+                                  <U n="string">
+                                    <T n="arg_value">0</T>
+                                  </U>
+                                </V>
+                                <V t="participant_id" />
+                                <V t="integer">
+                                  <U n="integer">
+                                    <T n="arg_value">438203<!--SuperInteraction: super_FairyJourney_submerge--></T>
+                                  </U>
+                                </V>
+                              </L>
+                              <T n="command">sims.modify_outfit_in_cas</T>
+                            </U>
+                          </V>
+                        </V>
+                        <T n="text">0x3FA9FDC1<!--String: "Modify in CAS"--></T>
+                        <E n="ui_request">SEND_COMMAND</E>
+                      </U>
+                    </L>
+                  </U>
+                </V>
+              </V>
+            </U>
+          </V>
+          <V t="buff_fire_and_forget">
+            <U n="buff_fire_and_forget">
+              <U n="buff">
+                <V n="buff_reason" t="enabled">
+                  <T n="enabled">0xB54B2C2F<!--String: "(From Becoming a Fairy)"--></T>
+                </V>
+                <T n="buff_type">436772<!--Buff: buff_FairyJourney_FairyComplete--></T>
+              </U>
+            </U>
+          </V>
+          <V t="create_object">
+            <U n="create_object">
+              <V n="creation_data" t="definition">
+                <U n="definition">
+                  <T n="definition">486362</T>
+                </U>
+              </V>
+              <V n="location" t="inventory" />
+              <E n="owner_sim">Actor</E>
+            </U>
+          </V>
+        </L>
+      </U>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T n="key" p="InEP19\UI\Icons\PieMenu\Category\icon_piemenu_category_fairyjourney.png">2f7d0004:00000000:29eaf26ed3d0c567</T>
+      </U>
+    </V>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all" />
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <V n="whitelist" t="enabled">
+          <L n="enabled">
+            <T>435938<!--Buff: buff_FairyJourney_Marking--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+    <V t="trait">
+      <U n="trait">
+        <L n="blacklist_traits">
+          <T>433287<!--Trait: trait_OccultFairy_AllAges--></T>
+        </L>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">470043<!--TestSetInstance: testSet_NoOccult_Actor_FairyJourney_Submerge--></T>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>272014<!--Buff: buff_Infants_CarryBack_Hidden--></T>
+          <T>271983<!--Buff: buff_Infants_TYAE_CarryBack_Hidden--></T>
+          <T>276004<!--Buff: buff_Infant_CarryRight_Hidden--></T>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x7013ED4F<!--String: "{0.SimFirstName} can't do this while holding a Sim or Pet."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

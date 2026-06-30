@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="super_FairyJourney_Pour" s="443301">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="ocean_loc">
+            <U n="ocean_loc">
+              <E n="interval">WADE</E>
+              <T n="radius">3</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="value" t="water_depth">
+            <U n="water_depth">
+              <V n="max_water_depth" t="enabled">
+                <T n="enabled">500</T>
+              </V>
+              <V n="min_water_depth" t="disabled" />
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="value" t="facing" />
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Actor</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">465767<!--AnimationElement: anim_FairyJourney_react--></T>
+      </U>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="change_outfit">
+      <U n="change_outfit">
+        <V n="outfit_change" t="for_reason">
+          <U n="for_reason">
+            <V n="on_entry" t="enabled">
+              <E n="enabled">EnterOceanWater</E>
+            </V>
+          </U>
+        </V>
+        <L n="subject">
+          <E>Actor</E>
+        </L>
+      </U>
+    </V>
+    <V t="destroy_specified_objects_from_target_inventory">
+      <U n="destroy_specified_objects_from_target_inventory">
+        <E n="inventory_owner">Actor</E>
+        <L n="object_tests">
+          <L>
+            <V t="object_definition_criteria">
+              <U n="object_definition_criteria">
+                <V n="identity_test" t="definition_id">
+                  <U n="definition_id">
+                    <T n="actual_object">469107</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+        <V n="timing" t="at_beginning">
+          <U n="at_beginning">
+            <V n="offset_time" t="enabled" />
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x550E13F4<!--String: "Relinquish Fairy Essence"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <V n="animation_ref" t="enabled">
+              <U n="enabled">
+                <T n="factory">443302<!--AnimationElement: anim_FairyJourney_pour--></T>
+              </U>
+            </V>
+            <L n="basic_extras">
+              <V t="buff_fire_and_forget">
+                <U n="buff_fire_and_forget">
+                  <U n="buff">
+                    <V n="buff_reason" t="enabled">
+                      <T n="enabled">0x37716BE0<!--String: "(From Becoming Non-Occult)"--></T>
+                    </V>
+                    <T n="buff_type">443303<!--Buff: buff_FairyJourney_MortalComplete--></T>
+                  </U>
+                </U>
+              </V>
+              <V t="notification">
+                <U n="notification">
+                  <V n="dialog" t="single">
+                    <V n="single" t="literal">
+                      <U n="literal">
+                        <L n="dialog_options">
+                          <E>DISABLE_CLOSE_BUTTON</E>
+                        </L>
+                        <V n="icon" t="enabled">
+                          <V n="enabled" t="participant">
+                            <U n="participant">
+                              <L n="participant_type">
+                                <E>Actor</E>
+                              </L>
+                            </U>
+                          </V>
+                        </V>
+                        <V n="text" t="single">
+                          <T n="single">0xD088C220<!--String: "Leaving {0.SimPronounPossessiveDependent} wings behind, {0.SimFirstName} steps into a life no longer ruled by emotions. {0.SimPronounSubjective|xxUpper} {S0.understands}{P0.understand} nature's enchantments can exist with or without a fairy lifestyle and wants to pursue a future with a touch more normalcy. Regardless of {0.SimPronounPossessiveDependent} choice, {0.SimFirstName} will always have a special place in Mother Nature's heart."--></T>
+                        </V>
+                        <V n="title" t="enabled">
+                          <T n="enabled">0x53ACCCEE<!--String: "Sense of Normalcy"--></T>
+                        </V>
+                        <L n="ui_responses">
+                          <U>
+                            <V n="response_command" t="enabled">
+                              <V n="enabled" t="literal">
+                                <U n="literal">
+                                  <L n="arguments">
+                                    <V t="string">
+                                      <U n="string">
+                                        <T n="arg_value">0</T>
+                                      </U>
+                                    </V>
+                                    <V t="string">
+                                      <U n="string">
+                                        <T n="arg_value">0</T>
+                                      </U>
+                                    </V>
+                                    <V t="participant_id" />
+                                    <V t="integer">
+                                      <U n="integer">
+                                        <T n="arg_value">443301<!--SuperInteraction: super_FairyJourney_Pour--></T>
+                                      </U>
+                                    </V>
+                                  </L>
+                                  <T n="command">sims.modify_outfit_in_cas</T>
+                                </U>
+                              </V>
+                            </V>
+                            <T n="text">0x3FA9FDC1<!--String: "Modify in CAS"--></T>
+                            <E n="ui_request">SEND_COMMAND</E>
+                          </U>
+                        </L>
+                      </U>
+                    </V>
+                  </V>
+                </U>
+              </V>
+              <V t="loot">
+                <U n="loot">
+                  <L n="loot_list">
+                    <T>443304<!--LootActions: loot_FairyJourney_transform_mortal--></T>
+                  </L>
+                  <V n="timing" t="on_xevt">
+                    <U n="on_xevt">
+                      <T n="xevt_id">200</T>
+                    </U>
+                  </V>
+                </U>
+              </V>
+              <V t="exit_carry_while_holding">
+                <U n="exit_carry_while_holding">
+                  <V n="carry_target_from_hand" t="enabled">
+                    <E n="enabled">BACK</E>
+                  </V>
+                </U>
+              </V>
+              <V t="create_object">
+                <U n="create_object">
+                  <V n="creation_data" t="definition">
+                    <U n="definition">
+                      <T n="definition">486362</T>
+                    </U>
+                  </V>
+                  <V n="location" t="inventory" />
+                  <E n="owner_sim">Actor</E>
+                </U>
+              </V>
+            </L>
+            <L n="loot_list">
+              <T>468175<!--LootActions: loot_FairyJourney_RemoveTrait--></T>
+            </L>
+          </U>
+        </U>
+      </L>
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">443302<!--AnimationElement: anim_FairyJourney_pour--></T>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <V n="buff_reason" t="enabled">
+                          <T n="enabled">0x37716BE0<!--String: "(From Becoming Non-Occult)"--></T>
+                        </V>
+                        <T n="buff_type">443303<!--Buff: buff_FairyJourney_MortalComplete--></T>
+                      </U>
+                    </U>
+                  </V>
+                  <V t="notification">
+                    <U n="notification">
+                      <V n="dialog" t="single">
+                        <V n="single" t="literal">
+                          <U n="literal">
+                            <L n="dialog_options">
+                              <E>DISABLE_CLOSE_BUTTON</E>
+                            </L>
+                            <V n="icon" t="enabled">
+                              <V n="enabled" t="participant">
+                                <U n="participant">
+                                  <L n="participant_type">
+                                    <E>Actor</E>
+                                  </L>
+                                </U>
+                              </V>
+                            </V>
+                            <V n="text" t="single">
+                              <T n="single">0xD088C220<!--String: "Leaving {0.SimPronounPossessiveDependent} wings behind, {0.SimFirstName} steps into a life no longer ruled by emotions. {0.SimPronounSubjective|xxUpper} {S0.understands}{P0.understand} nature's enchantments can exist with or without a fairy lifestyle and wants to pursue a future with a touch more normalcy. Regardless of {0.SimPronounPossessiveDependent} choice, {0.SimFirstName} will always have a special place in Mother Nature's heart."--></T>
+                            </V>
+                            <V n="title" t="enabled">
+                              <T n="enabled">0x53ACCCEE<!--String: "Sense of Normalcy"--></T>
+                            </V>
+                            <L n="ui_responses">
+                              <U>
+                                <V n="response_command" t="enabled">
+                                  <V n="enabled" t="literal">
+                                    <U n="literal">
+                                      <L n="arguments">
+                                        <V t="string">
+                                          <U n="string">
+                                            <T n="arg_value">0</T>
+                                          </U>
+                                        </V>
+                                        <V t="string">
+                                          <U n="string">
+                                            <T n="arg_value">0</T>
+                                          </U>
+                                        </V>
+                                        <V t="participant_id" />
+                                        <V t="integer">
+                                          <U n="integer">
+                                            <T n="arg_value">443301<!--SuperInteraction: super_FairyJourney_Pour--></T>
+                                          </U>
+                                        </V>
+                                      </L>
+                                      <T n="command">sims.modify_outfit_in_cas</T>
+                                    </U>
+                                  </V>
+                                </V>
+                                <T n="text">0x3FA9FDC1<!--String: "Modify in CAS"--></T>
+                                <E n="ui_request">SEND_COMMAND</E>
+                              </U>
+                            </L>
+                          </U>
+                        </V>
+                      </V>
+                    </U>
+                  </V>
+                  <V t="loot">
+                    <U n="loot">
+                      <L n="loot_list">
+                        <T>443304<!--LootActions: loot_FairyJourney_transform_mortal--></T>
+                      </L>
+                      <V n="timing" t="on_xevt">
+                        <U n="on_xevt">
+                          <T n="xevt_id">200</T>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                  <V t="create_object">
+                    <U n="create_object">
+                      <V n="creation_data" t="definition">
+                        <U n="definition">
+                          <T n="definition">486362</T>
+                        </U>
+                      </V>
+                      <V n="location" t="inventory" />
+                      <E n="owner_sim">Actor</E>
+                    </U>
+                  </V>
+                </L>
+                <L n="loot_list">
+                  <T>468175<!--LootActions: loot_FairyJourney_RemoveTrait--></T>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="posture">
+                <U n="posture">
+                  <L n="prohibited_postures">
+                    <T>422836<!--CarryingObject: posture_CarryWingProxyObject_Back--></T>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T n="key" p="InEP19\UI\Icons\PieMenu\Category\icon_piemenu_category_fairyjourney.png">2f7d0004:00000000:29eaf26ed3d0c567</T>
+      </U>
+    </V>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all" />
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <V n="whitelist" t="enabled">
+          <L n="enabled">
+            <T>441510<!--Buff: buff_FairyJourney_Mortal--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+    <V t="trait">
+      <U n="trait">
+        <L n="whitelist_traits">
+          <T>414620<!--Trait: trait_OccultFairy_TYAE--></T>
+        </L>
+      </U>
+    </V>
+    <V t="inventory">
+      <U n="inventory">
+        <V n="contents_check" t="has_object_with_def">
+          <U n="has_object_with_def">
+            <T n="definition">469107</T>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>272014<!--Buff: buff_Infants_CarryBack_Hidden--></T>
+          <T>271983<!--Buff: buff_Infants_TYAE_CarryBack_Hidden--></T>
+          <T>276004<!--Buff: buff_Infant_CarryRight_Hidden--></T>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x7013ED4F<!--String: "{0.SimFirstName} can't do this while holding a Sim or Pet."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

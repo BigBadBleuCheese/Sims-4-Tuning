@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalObjectInteraction" i="situation_goal" m="situations.situation_goal_object_interaction" n="whim_Shady_UndercoverDeal" s="420925">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T n="enabled" p="InEP18\UI\Icons\Whims\whims_Undercover_Deal.png">2f7d0004:00000000:14a62cb5ae4fc148</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x6F31B65D<!--String: "Perform a Schemer Business Interaction"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0x1C4AC277<!--String: "Perform any Schemer Business interaction. Check the Small Business Perks Screen in the Small Business panel to view interactions available from unlocked Perks."--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>272907<!--SituationGoalLootActions: goalLoot_WantFear_Fulfillment_Gain--></T>
+    <T>421212<!--SituationGoalLootActions: situationGoalLootActions_UndercoverDeal_Completed--></T>
+  </L>
+  <U n="_goal_test">
+    <L n="affordances">
+      <T>405204<!--SocialSuperInteraction: social_a2a_SmallBusinessPerks_SwayToBuy_LightRetail--></T>
+      <T>380263<!--SocialSuperInteraction: social_a2a_SmallBusinessPerks_SwayToBuy_Ticket--></T>
+      <T>405206<!--SocialSuperInteraction: social_c2a_SmallBusinessPerks_SwayToBuy_LightRetail--></T>
+      <T>379871<!--SocialSuperInteraction: social_c2a_SmallBusinessPerks_SwayToBuy_Ticket--></T>
+      <T>408854<!--SuperInteraction: swipe_SmallBusinessPerk_WhiteCollar--></T>
+      <T>408857<!--SuperInteraction: swipe_Household_Inventory_SmallBusinessPerk_WhiteCollar--></T>
+      <T>400069<!--SuperInteraction: smallBusinessPerks_Arsonist_AccidentalFire--></T>
+      <T>373376<!--SuperInteraction: bills_PayBills_FakeBillPayment--></T>
+      <T>373377<!--SuperInteraction: computer_PayBills_FakeBillPayment--></T>
+      <T>373378<!--SuperInteraction: mailboxWall_PayBills_FakeBillPayment--></T>
+      <T>373379<!--SuperInteraction: mailbox_PayBills_FakeBillPayment--></T>
+      <T>373710<!--SuperInteraction: phone_PayBills_FakeBillPayment--></T>
+      <T>373711<!--SuperInteraction: tablet_PayBills_FakeBillPayment--></T>
+    </L>
+    <E n="test_event">InteractionComplete</E>
+  </U>
+  <L n="_pre_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="trait">
+      <U n="trait">
+        <L n="whitelist_traits">
+          <T>396064<!--Trait: trait_Shady--></T>
+        </L>
+      </U>
+    </V>
+    <V t="trait">
+      <U n="trait">
+        <T n="num_whitelist_required">1</T>
+        <L n="whitelist_traits">
+          <T>376339<!--Trait: trait_SmallBusiness_Reputation_2_Schemer--></T>
+          <T>376338<!--Trait: trait_SmallBusiness_Reputation_1_Schemer--></T>
+          <T>376340<!--Trait: trait_SmallBusiness_Reputation_3_Schemer--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T n="_score">25</T>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+</I>

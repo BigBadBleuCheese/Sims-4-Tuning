@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SocialSuperInteraction" i="interaction" m="interactions.social.social_super_interaction" n="horseSocials_SimToFoal_Touching_WeanToHay" s="329218">
+  <V n="_animation_actor_map" t="literal">
+    <U n="literal">
+      <V n="carry_target" t="enabled">
+        <E n="enabled">PickedObject</E>
+      </V>
+    </U>
+  </V>
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="posture">
+            <U n="posture">
+              <L n="posture_manifest_tuning">
+                <U>
+                  <V n="posture_type" t="enabled">
+                    <T n="enabled">15537<!--MobilePosture: posture_Stand--></T>
+                  </V>
+                </U>
+              </L>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <L n="_false_advertisements" />
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>TargetSim</E>
+      </L>
+    </U>
+  </V>
+  <L n="_party_size_weight_tuning">
+    <U>
+      <T n="y">100</T>
+    </U>
+    <U>
+      <T n="x">1</T>
+      <T n="y">100</T>
+    </U>
+    <U>
+      <T n="x">2</T>
+      <T n="y">50</T>
+    </U>
+    <U>
+      <T n="x">3</T>
+      <T n="y">0</T>
+    </U>
+    <U>
+      <T n="x">4</T>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <T n="_social_group_type">327196<!--JigGroup: group_Horses_Touching_HandFeed--></T>
+  <L n="_static_commodities" />
+  <V n="affordance_to_push_on_target" t="push_affordance">
+    <T n="push_affordance">346717<!--SocialSuperInteraction: horseSocials_SimToHorse_Touching_Listen_HandFeed--></T>
+  </V>
+  <T n="allow_user_directed">True</T>
+  <L n="asm_actor_overrides">
+    <U>
+      <T n="actor_name">y1</T>
+      <E n="actor_participant">TargetSimFrontCarriedSim</E>
+    </U>
+  </L>
+  <T n="attention_cost">0</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">327193<!--AnimationElement: horseSocialAnims_Sim2Horse_T_Handfeed--></T>
+      </U>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>162659<!--LootActions: loot_Commodity_Culling_GhostAdd_target--></T>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <T n="buff_type">328033<!--Buff: buff_Horse_IsSocializing--></T>
+        </U>
+        <L n="subject">
+          <E>TargetSim</E>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="species" t="specified">
+                  <U n="specified">
+                    <L n="species">
+                      <E>HORSE</E>
+                    </L>
+                  </U>
+                </V>
+                <E n="who">TargetSim</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>328646<!--LootActions: loot_Trait_HorseLover_ResetNeedHorseInteractionTimer_Actor--></T>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>328656<!--LootActions: loot_Trait_HorseLover_RemoveMissingHorsesBuff_Actor--></T>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>320900<!--LootActions: loot_Trait_HorseLover_HorseEmpathy--></T>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>348536<!--LootActions: loot_Horses_Needy_SetCommodityMax_Target--></T>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>441165<!--LootActions: lootActions_FairyOccult_Ability_EmotionalEnergyPositiveSocials--></T>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>324244<!--LootActions: loot_Commodity_HorseCare_HandFeed--></T>
+        </L>
+      </U>
+    </V>
+    <V t="transience_change">
+      <U n="transience_change">
+        <V n="new_value_beginning" t="make_transient" />
+        <V n="new_value_ending" t="make_transient" />
+        <E n="who">PickedObject</E>
+        <V n="xevt_id" t="enabled" />
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <T n="buff_type">334179<!--Buff: buff_Object_HorseTraining_SkillGain_Temperament_Small--></T>
+        </U>
+        <L n="subject">
+          <E>TargetSim</E>
+        </L>
+      </U>
+    </V>
+    <V t="exit_carry_while_holding" />
+  </L>
+  <L n="basic_liabilities">
+    <V t="temporary_hidden_inventory_transfer" />
+  </L>
+  <V n="basic_reserve_object" t="disabled" />
+  <T n="category">15507<!--PieMenuCategory: sim_Friendly--></T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x943D8346<!--String: "Train to Eat Hay"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <V n="idle_animation" t="enabled">
+    <U n="enabled">
+      <T n="factory">11570<!--AnimationElement: Listen_Listen_Looping_basic--></T>
+    </U>
+  </V>
+  <T n="ignore_group_socials">False</T>
+  <L n="interaction_category_tags">
+    <E>Interaction_SocialSuper</E>
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+    <E>Interaction_SocialAll</E>
+    <E>Interaction_Animal</E>
+    <E>Interaction_Social_Contagious</E>
+  </L>
+  <T n="invite_in_after_interaction">True</T>
+  <U n="listen_animation">
+    <T o="true" n="factory" />
+  </U>
+  <L n="listen_asm_actor_overrides">
+    <U>
+      <T n="actor_name">x1</T>
+      <E n="actor_participant">TargetSimFrontCarriedSim</E>
+    </U>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <V n="animation_ref" t="disabled" />
+            <L n="basic_extras">
+              <V t="buff_fire_and_forget">
+                <U n="buff_fire_and_forget">
+                  <U n="buff">
+                    <T n="buff_type">330047<!--Buff: buff_Horse_Moodlets_Happy_WeanToHay--></T>
+                  </U>
+                  <E n="participant">TargetSim</E>
+                </U>
+              </V>
+            </L>
+            <L n="continuation">
+              <U>
+                <E n="actor">Object</E>
+                <T n="affordance">328109<!--SuperInteraction: reaction_Horse_Outcome_Success--></T>
+                <E n="target">Actor</E>
+              </U>
+            </L>
+            <L n="loot_list">
+              <T>322256<!--LootActions: loot_Relationship_SimToPet_Gain_Small--></T>
+              <T>322598<!--LootActions: loot_Commodity_HorseSocials_SocialMotive_Med--></T>
+            </L>
+            <E n="outcome_result">SUCCESS</E>
+          </U>
+          <U n="weight">
+            <T n="base_value">1</T>
+            <L n="multipliers">
+              <U>
+                <T n="multiplier">2</T>
+                <L n="tests">
+                  <L>
+                    <V t="skill_test">
+                      <U n="skill_test">
+                        <T n="skill">324631<!--Skill: statistic_Skill_Horse_Temperament--></T>
+                        <V n="skill_range" t="threshold">
+                          <U n="threshold">
+                            <U n="skill_threshold">
+                              <T n="value">2</T>
+                            </U>
+                          </U>
+                        </V>
+                        <E n="subject">TargetSim</E>
+                        <T n="use_effective_skill_level">True</T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+              <U>
+                <T n="multiplier">2</T>
+                <L n="tests">
+                  <L>
+                    <V t="skill_test">
+                      <U n="skill_test">
+                        <T n="skill">324631<!--Skill: statistic_Skill_Horse_Temperament--></T>
+                        <V n="skill_range" t="threshold">
+                          <U n="threshold">
+                            <U n="skill_threshold">
+                              <T n="value">3</T>
+                            </U>
+                          </U>
+                        </V>
+                        <E n="subject">TargetSim</E>
+                        <T n="use_effective_skill_level">True</T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+      </L>
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="disabled" />
+                <L n="basic_extras">
+                  <V t="loot">
+                    <U n="loot">
+                      <L n="loot_list">
+                        <T>340976<!--LootActions: lootActions_Horse_Reactions_Fearful_Spooked_RunAway--></T>
+                      </L>
+                      <U n="success_chance">
+                        <T n="base_chance">25</T>
+                      </U>
+                    </U>
+                  </V>
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <T n="buff_type">330048<!--Buff: buff_Horse_Moodlets_Sad_WeanToHay--></T>
+                      </U>
+                      <E n="participant">TargetSim</E>
+                    </U>
+                  </V>
+                </L>
+                <L n="continuation">
+                  <U>
+                    <E n="actor">Object</E>
+                    <T n="affordance">328110<!--SuperInteraction: reaction_Horse_Outcome_Failure--></T>
+                    <E n="target">Invalid</E>
+                  </U>
+                </L>
+                <L n="loot_list">
+                  <T>322253<!--LootActions: loot_Relationship_SimToPet_Loss_Small--></T>
+                  <T>322597<!--LootActions: loot_Commodity_HorseSocials_SocialMotive_Small--></T>
+                  <T>323760<!--LootActions: loot_Fear_Horses_Trigger--></T>
+                  <T>325498<!--LootActions: loot_Buff_HorseSocials_Spooked--></T>
+                </L>
+                <E n="outcome_result">FAILURE</E>
+              </U>
+              <U n="weight">
+                <T n="base_value">1</T>
+              </U>
+            </U>
+          </L>
+          <L n="tests" />
+        </U>
+      </L>
+      <T n="use_fallback_as_default">True</T>
+    </U>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">True</T>
+  </U>
+  <T n="relationship_scoring">True</T>
+  <V n="require_reins_for_formation" t="enabled">
+    <T n="enabled">314817<!--RoutingFormation: routingFormation_HorseRiding_Ride--></T>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <V n="sim_affinity_posture_scoring_data" t="enabled">
+    <U n="enabled">
+      <L n="my_scoring">
+        <U>
+          <V n="affinity_strategy" t="relationship_based" />
+          <T n="negate_tag">True</T>
+          <E n="running_interaction_tag">Sleeping</E>
+        </U>
+        <U>
+          <V n="affinity_strategy" t="avoid" />
+          <E n="running_interaction_tag">Very_Loud</E>
+        </U>
+      </L>
+      <L n="my_tags">
+        <E>Loud</E>
+        <E>Chat</E>
+      </L>
+    </U>
+  </V>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">TARGET</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E>HORSE</E>
+            </L>
+          </U>
+        </V>
+        <E n="who">TargetSim</E>
+      </U>
+    </V>
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E>HUMAN</E>
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="relationship">
+      <U n="relationship">
+        <U n="required_relationship_bits">
+          <L n="match_all">
+            <T>15803<!--RelationshipBit: has_met--></T>
+          </L>
+        </U>
+      </U>
+    </V>
+  </L>
+  <L n="tests" />
+  <T n="time_overhead">30</T>
+</I>

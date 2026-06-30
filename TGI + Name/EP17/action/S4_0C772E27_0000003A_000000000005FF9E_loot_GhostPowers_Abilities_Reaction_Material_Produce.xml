@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_GhostPowers_Abilities_Reaction_Material_Produce" s="393118">
+  <L n="loot_actions">
+    <V t="reaction">
+      <U n="reaction">
+        <V n="mixer_reaction" t="enabled">
+          <U n="enabled">
+            <T n="affordance">169085<!--MixerInteraction: reaction_Generic_Disgusted_Mixer--></T>
+          </U>
+        </V>
+        <V n="si_reaction" t="enabled">
+          <U n="enabled">
+            <T n="affordance">74259<!--SuperInteraction: reaction_AnnoyedByMess--></T>
+            <E n="affordance_priority">Critical</E>
+            <V n="affordance_run_priority" t="enabled">
+              <E n="enabled">Critical</E>
+            </V>
+            <V n="affordance_target" t="disabled" />
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="show_balloon">
+      <U n="show_balloon">
+        <U n="balloon">
+          <T n="balloon_chance">75</T>
+          <L n="balloon_choices">
+            <U>
+              <V n="item" t="balloon_icon">
+                <U n="balloon_icon">
+                  <V n="icon" t="resource_key">
+                    <U n="resource_key">
+                      <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_Trashcan.png">2f7d0004:00000000:6d04ad83e0f23628</T>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </U>
+          </L>
+          <L n="balloon_target">
+            <E>Actor</E>
+          </L>
+        </U>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x2950B8F6<!--String: "(From Conjuring Material)"--></T>
+          </V>
+          <T n="buff_type">403855<!--Buff: buff_GhostPowers_ProduceMaterial_Happy_Enemy--></T>
+        </U>
+        <E n="subject">TargetSim</E>
+        <L n="tests">
+          <L>
+            <V t="lot_owner">
+              <U n="lot_owner">
+                <T n="consider_business_lot_as_owned">False</T>
+              </U>
+            </V>
+            <V t="relationship">
+              <U n="relationship">
+                <U n="required_relationship_bits">
+                  <L n="match_any">
+                    <T>15801<!--RelationshipBit: friendship-nemesis--></T>
+                    <T>15796<!--RelationshipBit: friendship-despised--></T>
+                    <T>15802<!--RelationshipBit: friendship-disliked--></T>
+                    <T>26560<!--RelationshipBit: SpecialBits_Enemy--></T>
+                  </L>
+                </U>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+                <L n="target_sim">
+                  <E>TargetSim</E>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified">
+            <L n="specified">
+              <E>TEEN</E>
+              <E>YOUNGADULT</E>
+              <E>ADULT</E>
+              <E>ELDER</E>
+              <E>CHILD</E>
+            </L>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

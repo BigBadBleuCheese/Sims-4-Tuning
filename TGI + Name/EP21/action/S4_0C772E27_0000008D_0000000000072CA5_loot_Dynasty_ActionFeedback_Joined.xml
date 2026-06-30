@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Dynasty_ActionFeedback_Joined" s="470181">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="audio_sting" t="disabled" />
+            <V n="icon" t="enabled">
+              <V n="enabled" t="dynasty" />
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant" />
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x7E08D3EF<!--String: "{0.SimFirstName} has joined the {2.String} Dynasty! \n\n{0.SimPronounSubjective|xxUpper} will now benefit from any unlocked Dynasty Perks, and can Encourage or Discourage other members to do certain things. {0.SimPronounPossessiveDependent|xxUpper} actions will help increase (or decrease) the {2.String} Dynasty's Prestige and determine {0.SimPronounPossessiveDependent} Rank within the Dynasty."--></T>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="participant_type" />
+                  <V t="participant_type">
+                    <U n="participant_type">
+                      <V n="objects" t="from_participant">
+                        <U n="from_participant">
+                          <E n="participant">ActorDynastyHead</E>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                  <V t="dynasty" />
+                </L>
+              </U>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x66310FED<!--String: "Joined Dynasty"--></T>
+            </V>
+            <L n="ui_responses">
+              <U>
+                <T n="text">0x7CC08378<!--String: "View Dynasty Lesson"--></T>
+                <V n="tutorial_id" t="enabled">
+                  <T n="enabled">488444<!--Tutorial: tutorial_EP21_ProjectGold_FoundingADynasty--></T>
+                </V>
+                <E n="ui_request">SHOW_LESSONS</E>
+              </U>
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="interaction">
+      <U n="interaction">
+        <E n="affordance_priority">High</E>
+        <L n="affordances">
+          <T>470180<!--SuperInteraction: si_Dynasty_ActionFeedback_Joined--></T>
+        </L>
+        <E n="target_participant_type">Actor</E>
+        <L n="tests">
+          <L>
+            <V t="existence">
+              <U n="existence">
+                <E n="participant">Actor</E>
+              </U>
+            </V>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="ages" t="specified">
+                  <L n="specified">
+                    <E>TEEN</E>
+                    <E>YOUNGADULT</E>
+                    <E>ADULT</E>
+                    <E>ELDER</E>
+                    <E>CHILD</E>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>466525<!--Trait: trait_Dynasty_Founder--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

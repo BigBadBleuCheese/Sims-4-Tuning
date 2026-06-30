@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Tarot_HighSpell" s="387341">
+  <L n="loot_actions">
+    <V t="create_object">
+      <U n="create_object">
+        <V n="creation_data" t="definition">
+          <U n="definition">
+            <T n="definition">427572</T>
+          </U>
+        </V>
+        <V n="location" t="inventory" />
+        <E n="owner_sim">Actor</E>
+        <T n="set_sim_as_owner">True</T>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T p="InEP17\UI\Icons\Whims\Whims_GiveTarotReading.png" n="key">2f7d0004:00000000:89d4867e7317ab9f</T>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xC214ADD7<!--String: "<i>Seen and unseen, thou art the path between.</i> <b>The High Spellcaster</b> dwells where light and dark share a delicate balance. Those who draw wisdom from this duality may unlock her ethereal presence. As a vessel of divine femininity, her essence and the cycle of the moon are closely entwined. She personifies magic in all forms and is guided by the rhythmic pulse of her own <b>Intuition</b>."--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0xB9410995<!--String: "The High Spellcaster"--></T>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="trait_add">
+      <U n="trait_add">
+        <T n="trait">387187<!--Trait: trait_Hidden_Tarot_Quest--></T>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="inventory">
+        <U n="inventory">
+          <V n="contents_check" t="has_object_with_def">
+            <U n="has_object_with_def">
+              <T n="definition">427572</T>
+            </U>
+          </V>
+          <U n="required_count">
+            <E n="comparison">EQUAL</E>
+            <T n="value">0</T>
+          </U>
+        </U>
+      </V>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>387187<!--Trait: trait_Hidden_Tarot_Quest--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

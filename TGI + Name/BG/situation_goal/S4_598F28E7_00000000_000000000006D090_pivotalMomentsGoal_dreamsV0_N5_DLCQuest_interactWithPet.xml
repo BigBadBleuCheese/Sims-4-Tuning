@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalRanInteractionOnTargetedSim" i="situation_goal" m="situations.situation_goal_targeted_sim" n="pivotalMomentsGoal_dreamsV0_N5_DLCQuest_interactWithPet" s="446608">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T n="enabled" p="InGame\UI\Icons\Headlines\Final\headline_PetFriendly_bg.png">2f7d0004:00000000:b7945452ba8923d0</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x1F2914DC<!--String: "Interact with a Pet"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0xD36EBB7C<!--String: "Select a pet and do any interaction with them!\n\n<i>Requires Cats & Dogs Expansion Pack</i>."--></T>
+      </V>
+    </U>
+  </V>
+  <U n="_goal_test">
+    <L n="tags">
+      <E>Interaction_Animal</E>
+    </L>
+    <E n="test_event">InteractionComplete</E>
+  </U>
+  <T n="_iterations">10</T>
+  <L n="_post_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="_select_all_instantiated_sims">True</T>
+  <L n="_target_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <E n="match_type">MATCH_ANY</E>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E>DOG</E>
+              <E>CAT</E>
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+</I>

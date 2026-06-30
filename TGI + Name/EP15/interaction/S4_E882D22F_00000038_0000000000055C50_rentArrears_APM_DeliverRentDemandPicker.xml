@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="RentArrearsPickerSuperInteraction" i="interaction" m="interactions.base.business_rule_interaction" n="rentArrears_APM_DeliverRentDemandPicker" s="351312">
+  <V n="_saveable" t="disabled" />
+  <V n="content_score" t="disabled" />
+  <L n="continuation">
+    <U>
+      <T n="affordance">349083<!--SuperInteraction: door_APM_DeliverRentDemand--></T>
+    </U>
+  </L>
+  <T n="display_name">0x67FD733F<!--String: "Deliver Rent Demand"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <V n="display_tooltip" t="enabled">
+    <T n="enabled">0x8F706655<!--String: "This will attempt to recoup overdue rent from your tenant."--></T>
+  </V>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <V n="pie_menu_option" t="use_pie_menu">
+    <U n="use_pie_menu">
+      <T n="pie_menu_name">0x67FD733F<!--String: "Deliver Rent Demand"--></T>
+    </U>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <T n="rent_arrears_picker_row_name">0x67FD733F<!--String: "Deliver Rent Demand"--></T>
+  <V n="rent_arrears_target" t="zone">
+    <U n="zone">
+      <E n="participant">CurrentZoneId</E>
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="rental_unit_has_overdue_status_test">
+      <U n="rental_unit_has_overdue_status_test">
+        <E n="tenant">LotOwnerSingleAndInstanced</E>
+      </U>
+    </V>
+    <V t="state">
+      <U n="state">
+        <T n="value">135096<!--ObjectStateValue: FrontDoor_IsFrontDoor--></T>
+      </U>
+    </V>
+    <V t="multi_unit_role_test">
+      <U n="multi_unit_role_test">
+        <V n="lot_source" t="enabled" />
+        <V n="role_to_check" t="is_property_owner" />
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>359214<!--Buff: buff_APM_DeliverRentCooldown--></T>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x94B2B15E<!--String: "{0.SimFirstName} needs to wait awhile before {M0.he}{F0.she} can do this again!"--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+</I>

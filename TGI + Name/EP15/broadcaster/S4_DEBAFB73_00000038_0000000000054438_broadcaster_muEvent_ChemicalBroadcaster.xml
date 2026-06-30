@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Broadcaster" i="broadcaster" m="broadcasters.broadcaster" n="broadcaster_muEvent_ChemicalBroadcaster" s="345144">
+  <V n="allow_sim_test" t="enabled">
+    <L n="enabled">
+      <L>
+        <V t="sim_info">
+          <U n="sim_info">
+            <V n="ages" t="specified">
+              <L n="specified">
+                <E>TEEN</E>
+                <E>YOUNGADULT</E>
+                <E>ADULT</E>
+                <E>ELDER</E>
+                <E>CHILD</E>
+              </L>
+            </V>
+          </U>
+        </V>
+      </L>
+    </L>
+  </V>
+  <L n="constraints">
+    <V t="circle">
+      <U n="circle">
+        <T n="radius">5</T>
+      </U>
+    </V>
+  </L>
+  <L n="effects">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0xBAAC17D7<!--String: "(From Nearby Chemical Spray)"--></T>
+          </V>
+          <T n="buff_type">345145<!--Buff: buff_muEvent_ChemicalBroadcaster--></T>
+        </U>
+        <V n="excluded_participants" t="enabled">
+          <L n="enabled">
+            <E>TargetSim</E>
+          </L>
+        </V>
+        <T n="remove_buff">False</T>
+      </U>
+    </V>
+  </L>
+  <V n="frequency" t="on_enter" />
+  <T n="immediate">True</T>
+</I>

@@ -1,0 +1,651 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SchedulingZoneDirector" i="zone_director" m="venues.scheduling_zone_director" n="zoneDirector_Cemetery" s="377695">
+  <V n="fan_situation_support" t="disabled" />
+  <V n="object_situation_shifts" t="enabled">
+    <U n="enabled">
+      <L n="object_situations">
+        <U>
+          <E n="object_tag">Func_Urnstone</E>
+          <U n="shift_data">
+            <T n="consider_off_lot_objects">False</T>
+            <V n="include_objects_within_object_inventories" t="disabled" />
+            <V n="set_host_as" t="enabled">
+              <E n="enabled">SimFromObject</E>
+            </V>
+            <L n="situation_shifts">
+              <U>
+                <V n="shift_curve" t="curve_based">
+                  <U n="curve_based">
+                    <L n="entries">
+                      <U>
+                        <U n="days_of_the_week">
+                          <T n="0 SUNDAY">True</T>
+                          <T n="1 MONDAY">True</T>
+                          <T n="2 TUESDAY">True</T>
+                          <T n="3 WEDNESDAY">True</T>
+                          <T n="4 THURSDAY">True</T>
+                          <T n="5 FRIDAY">True</T>
+                          <T n="6 SATURDAY">True</T>
+                        </U>
+                        <L n="walkby_desire_by_time_of_day">
+                          <U>
+                            <T n="hour_of_day">6</T>
+                            <U n="desired_walkby_situations">
+                              <V n="desired_sim_count" t="random_in_range">
+                                <U n="random_in_range">
+                                  <T n="lower_bound">2</T>
+                                  <T n="upper_bound">2</T>
+                                </U>
+                              </V>
+                              <L n="weighted_situations">
+                                <U>
+                                  <T n="situation">388740<!--TendObjectSituation: situation_Cemetery_Mourner--></T>
+                                  <L n="tests">
+                                    <L>
+                                      <V t="test_set_reference">
+                                        <T n="test_set_reference">421386<!--TestSetInstance: testSet_Cemetery_FuneralRunning--></T>
+                                      </V>
+                                    </L>
+                                  </L>
+                                </U>
+                              </L>
+                            </U>
+                          </U>
+                          <U>
+                            <T n="hour_of_day">12</T>
+                            <U n="desired_walkby_situations">
+                              <V n="desired_sim_count" t="random_in_range">
+                                <U n="random_in_range">
+                                  <T n="lower_bound">2</T>
+                                  <T n="upper_bound">2</T>
+                                </U>
+                              </V>
+                              <L n="weighted_situations">
+                                <U>
+                                  <T n="situation">388740<!--TendObjectSituation: situation_Cemetery_Mourner--></T>
+                                  <L n="tests">
+                                    <L>
+                                      <V t="test_set_reference">
+                                        <T n="test_set_reference">421386<!--TestSetInstance: testSet_Cemetery_FuneralRunning--></T>
+                                      </V>
+                                    </L>
+                                  </L>
+                                </U>
+                              </L>
+                            </U>
+                          </U>
+                          <U>
+                            <T n="hour_of_day">18</T>
+                            <U n="desired_walkby_situations">
+                              <V n="desired_sim_count" t="random_in_range">
+                                <U n="random_in_range">
+                                  <T n="lower_bound">1</T>
+                                  <T n="upper_bound">1</T>
+                                </U>
+                              </V>
+                              <L n="weighted_situations">
+                                <U>
+                                  <T n="situation">388740<!--TendObjectSituation: situation_Cemetery_Mourner--></T>
+                                </U>
+                              </L>
+                            </U>
+                          </U>
+                        </L>
+                      </U>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </L>
+          </U>
+        </U>
+      </L>
+    </U>
+  </V>
+  <L n="situation_shifts">
+    <U>
+      <V n="shift_curve" t="curve_based">
+        <U n="curve_based">
+          <L n="entries">
+            <U>
+              <U n="days_of_the_week">
+                <T n="0 SUNDAY">True</T>
+                <T n="1 MONDAY">True</T>
+                <T n="2 TUESDAY">True</T>
+                <T n="3 WEDNESDAY">True</T>
+                <T n="4 THURSDAY">True</T>
+                <T n="5 FRIDAY">True</T>
+                <T n="6 SATURDAY">True</T>
+              </U>
+              <L n="walkby_desire_by_time_of_day">
+                <U>
+                  <T n="hour_of_day">6</T>
+                  <U n="desired_walkby_situations">
+                    <V n="desired_sim_count" t="random_in_range">
+                      <U n="random_in_range">
+                        <T n="lower_bound">1</T>
+                        <T n="upper_bound">2</T>
+                      </U>
+                    </V>
+                    <L n="weighted_situations">
+                      <U>
+                        <T n="situation">378331<!--SingleJobSituation: situation_Cemetery_GhostBackup_Day--></T>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+                <U>
+                  <T n="hour_of_day">11</T>
+                  <U n="desired_walkby_situations">
+                    <V n="desired_sim_count" t="random_in_range">
+                      <U n="random_in_range">
+                        <T n="lower_bound">1</T>
+                        <T n="upper_bound">1</T>
+                      </U>
+                    </V>
+                    <L n="weighted_situations">
+                      <U>
+                        <T n="situation">378331<!--SingleJobSituation: situation_Cemetery_GhostBackup_Day--></T>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+                <U>
+                  <T n="hour_of_day">17</T>
+                  <U n="desired_walkby_situations">
+                    <V n="desired_sim_count" t="random_in_range">
+                      <U n="random_in_range">
+                        <T n="lower_bound">1</T>
+                        <T n="upper_bound">1</T>
+                      </U>
+                    </V>
+                    <L n="weighted_situations">
+                      <U>
+                        <T n="situation">378332<!--SingleJobSituation: situation_Cemetery_GhostBackup_Night--></T>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+                <U>
+                  <T n="hour_of_day">22</T>
+                  <U n="desired_walkby_situations">
+                    <V n="desired_sim_count" t="random_in_range">
+                      <U n="random_in_range">
+                        <T n="lower_bound">1</T>
+                        <T n="upper_bound">1</T>
+                      </U>
+                    </V>
+                    <L n="weighted_situations">
+                      <U>
+                        <T n="situation">378332<!--SingleJobSituation: situation_Cemetery_GhostBackup_Night--></T>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+              </L>
+            </U>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <V n="shift_curve" t="curve_based">
+        <U n="curve_based">
+          <L n="entries">
+            <U>
+              <U n="days_of_the_week">
+                <T n="0 SUNDAY">True</T>
+                <T n="1 MONDAY">True</T>
+                <T n="2 TUESDAY">True</T>
+                <T n="3 WEDNESDAY">True</T>
+                <T n="4 THURSDAY">True</T>
+                <T n="5 FRIDAY">True</T>
+                <T n="6 SATURDAY">True</T>
+              </U>
+              <L n="walkby_desire_by_time_of_day">
+                <U>
+                  <T n="hour_of_day">6</T>
+                  <U n="desired_walkby_situations">
+                    <V n="desired_sim_count" t="random_in_range">
+                      <U n="random_in_range">
+                        <T n="lower_bound">2</T>
+                        <T n="upper_bound">2</T>
+                      </U>
+                    </V>
+                    <L n="weighted_situations">
+                      <U>
+                        <T n="situation">388744<!--SingleJobSituation: situation_Venue_Jogger--></T>
+                        <L n="tests">
+                          <L>
+                            <V t="test_set_reference">
+                              <T n="test_set_reference">378799<!--TestSetInstance: testSet_Cemetery_NoOccupiedUrnstones--></T>
+                            </V>
+                          </L>
+                        </L>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+                <U>
+                  <T n="hour_of_day">18</T>
+                  <U n="desired_walkby_situations">
+                    <V n="desired_sim_count" t="random_in_range">
+                      <U n="random_in_range">
+                        <T n="lower_bound">1</T>
+                        <T n="upper_bound">1</T>
+                      </U>
+                    </V>
+                    <L n="weighted_situations">
+                      <U>
+                        <T n="situation">388744<!--SingleJobSituation: situation_Venue_Jogger--></T>
+                        <L n="tests">
+                          <L>
+                            <V t="test_set_reference">
+                              <T n="test_set_reference">378799<!--TestSetInstance: testSet_Cemetery_NoOccupiedUrnstones--></T>
+                            </V>
+                          </L>
+                        </L>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+              </L>
+            </U>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <V n="shift_curve" t="curve_based">
+        <U n="curve_based">
+          <L n="entries">
+            <U>
+              <U n="days_of_the_week">
+                <T n="0 SUNDAY">True</T>
+                <T n="1 MONDAY">True</T>
+                <T n="2 TUESDAY">True</T>
+                <T n="3 WEDNESDAY">True</T>
+                <T n="4 THURSDAY">True</T>
+                <T n="5 FRIDAY">True</T>
+                <T n="6 SATURDAY">True</T>
+              </U>
+              <L n="walkby_desire_by_time_of_day">
+                <U>
+                  <T n="hour_of_day">8</T>
+                  <U n="desired_walkby_situations">
+                    <V n="desired_sim_count" t="random_in_range">
+                      <U n="random_in_range">
+                        <T n="lower_bound">1</T>
+                        <T n="upper_bound">1</T>
+                      </U>
+                    </V>
+                    <L n="weighted_situations">
+                      <U>
+                        <T n="situation">391946<!--SingleJobSituation: situation_Cemetery_MournerBackup--></T>
+                        <L n="tests">
+                          <L>
+                            <V t="test_set_reference">
+                              <T n="test_set_reference">378799<!--TestSetInstance: testSet_Cemetery_NoOccupiedUrnstones--></T>
+                            </V>
+                          </L>
+                        </L>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+                <U>
+                  <T n="hour_of_day">14</T>
+                  <U n="desired_walkby_situations">
+                    <V n="desired_sim_count" t="random_in_range">
+                      <U n="random_in_range">
+                        <T n="lower_bound">2</T>
+                        <T n="upper_bound">2</T>
+                      </U>
+                    </V>
+                    <L n="weighted_situations">
+                      <U>
+                        <T n="situation">391946<!--SingleJobSituation: situation_Cemetery_MournerBackup--></T>
+                        <L n="tests">
+                          <L>
+                            <V t="test_set_reference">
+                              <T n="test_set_reference">378799<!--TestSetInstance: testSet_Cemetery_NoOccupiedUrnstones--></T>
+                            </V>
+                          </L>
+                        </L>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+                <U>
+                  <T n="hour_of_day">20</T>
+                  <U n="desired_walkby_situations">
+                    <V n="desired_sim_count" t="random_in_range">
+                      <U n="random_in_range">
+                        <T n="lower_bound">1</T>
+                        <T n="upper_bound">1</T>
+                      </U>
+                    </V>
+                    <L n="weighted_situations">
+                      <U>
+                        <T n="situation">391946<!--SingleJobSituation: situation_Cemetery_MournerBackup--></T>
+                        <L n="tests">
+                          <L>
+                            <V t="test_set_reference">
+                              <T n="test_set_reference">378799<!--TestSetInstance: testSet_Cemetery_NoOccupiedUrnstones--></T>
+                            </V>
+                          </L>
+                        </L>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+              </L>
+            </U>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <V n="shift_curve" t="curve_based">
+        <U n="curve_based">
+          <L n="entries">
+            <U>
+              <U n="days_of_the_week">
+                <T n="0 SUNDAY">True</T>
+                <T n="1 MONDAY">True</T>
+                <T n="2 TUESDAY">True</T>
+                <T n="3 WEDNESDAY">True</T>
+                <T n="4 THURSDAY">True</T>
+                <T n="5 FRIDAY">True</T>
+                <T n="6 SATURDAY">True</T>
+              </U>
+              <L n="walkby_desire_by_time_of_day">
+                <U>
+                  <T n="hour_of_day">6</T>
+                  <U n="desired_walkby_situations">
+                    <V n="desired_sim_count" t="literal">
+                      <U n="literal">
+                        <T n="value">1</T>
+                      </U>
+                    </V>
+                    <L n="weighted_situations">
+                      <U>
+                        <T n="situation">378333<!--SingleJobSituation: situation_Cemetery_Keeper_Day--></T>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+                <U>
+                  <T n="hour_of_day">18</T>
+                  <U n="desired_walkby_situations">
+                    <V n="desired_sim_count" t="literal">
+                      <U n="literal">
+                        <T n="value">1</T>
+                      </U>
+                    </V>
+                    <L n="weighted_situations">
+                      <U>
+                        <T n="situation">378334<!--SingleJobSituation: situation_Cemetery_Keeper_Night--></T>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+              </L>
+            </U>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <V n="shift_curve" t="curve_based">
+        <U n="curve_based">
+          <L n="entries">
+            <U>
+              <U n="days_of_the_week">
+                <T n="0 SUNDAY">True</T>
+                <T n="1 MONDAY">True</T>
+                <T n="2 TUESDAY">True</T>
+                <T n="3 WEDNESDAY">True</T>
+                <T n="4 THURSDAY">True</T>
+                <T n="5 FRIDAY">True</T>
+                <T n="6 SATURDAY">True</T>
+              </U>
+              <L n="walkby_desire_by_time_of_day">
+                <U>
+                  <T n="hour_of_day">1</T>
+                  <U n="desired_walkby_situations">
+                    <V n="desired_sim_count" t="literal">
+                      <U n="literal">
+                        <T n="value">1</T>
+                      </U>
+                    </V>
+                    <L n="weighted_situations">
+                      <U>
+                        <T n="situation">378720<!--SelectableSimBackgroundSituation: situation_Cemetery_Player--></T>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+              </L>
+            </U>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <V n="shift_curve" t="curve_based">
+        <U n="curve_based">
+          <L n="entries">
+            <U>
+              <U n="days_of_the_week">
+                <T n="0 SUNDAY">True</T>
+                <T n="1 MONDAY">True</T>
+                <T n="2 TUESDAY">True</T>
+                <T n="3 WEDNESDAY">True</T>
+                <T n="4 THURSDAY">True</T>
+                <T n="5 FRIDAY">True</T>
+                <T n="6 SATURDAY">True</T>
+              </U>
+              <L n="walkby_desire_by_time_of_day">
+                <U>
+                  <T n="hour_of_day">6</T>
+                  <U n="desired_walkby_situations">
+                    <V n="desired_sim_count" t="random_in_range">
+                      <U n="random_in_range">
+                        <T n="lower_bound">1</T>
+                        <T n="upper_bound">1</T>
+                      </U>
+                    </V>
+                    <L n="weighted_situations">
+                      <U>
+                        <T n="situation">394776<!--SingleJobSituation: situation_Cemetery_Lounger--></T>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+                <U>
+                  <T n="hour_of_day">18</T>
+                  <U n="desired_walkby_situations">
+                    <V n="desired_sim_count" t="random_in_range">
+                      <U n="random_in_range">
+                        <T n="lower_bound">1</T>
+                        <T n="upper_bound">2</T>
+                      </U>
+                    </V>
+                    <L n="weighted_situations">
+                      <U>
+                        <T n="situation">394776<!--SingleJobSituation: situation_Cemetery_Lounger--></T>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+              </L>
+            </U>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <V n="shift_curve" t="curve_based">
+        <U n="curve_based">
+          <L n="entries">
+            <U>
+              <U n="days_of_the_week">
+                <T n="0 SUNDAY">True</T>
+                <T n="1 MONDAY">True</T>
+                <T n="2 TUESDAY">False</T>
+                <T n="3 WEDNESDAY">True</T>
+                <T n="4 THURSDAY">False</T>
+                <T n="5 FRIDAY">True</T>
+                <T n="6 SATURDAY">True</T>
+              </U>
+              <L n="walkby_desire_by_time_of_day">
+                <U>
+                  <T n="hour_of_day">11</T>
+                  <U n="desired_walkby_situations">
+                    <V n="desired_sim_count" t="literal">
+                      <U n="literal">
+                        <T n="value">1</T>
+                      </U>
+                    </V>
+                    <T n="disable_churn">True</T>
+                    <L n="weighted_situations">
+                      <U>
+                        <T n="situation">380906<!--CustomStatesSituation: customSituation_Cemetery_GrievingRitual--></T>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+                <U>
+                  <T n="hour_of_day">16</T>
+                  <U n="desired_walkby_situations">
+                    <V n="desired_sim_count" t="literal">
+                      <U n="literal">
+                        <T n="value">1</T>
+                      </U>
+                    </V>
+                    <T n="disable_churn">True</T>
+                    <L n="weighted_situations">
+                      <U>
+                        <T n="situation">380906<!--CustomStatesSituation: customSituation_Cemetery_GrievingRitual--></T>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+              </L>
+            </U>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <V n="shift_curve" t="curve_based">
+        <U n="curve_based">
+          <L n="entries">
+            <U>
+              <U n="days_of_the_week">
+                <T n="0 SUNDAY">True</T>
+                <T n="1 MONDAY">True</T>
+                <T n="2 TUESDAY">True</T>
+                <T n="3 WEDNESDAY">True</T>
+                <T n="4 THURSDAY">True</T>
+                <T n="5 FRIDAY">True</T>
+                <T n="6 SATURDAY">True</T>
+              </U>
+              <L n="walkby_desire_by_time_of_day">
+                <U>
+                  <T n="hour_of_day">8</T>
+                  <U n="desired_walkby_situations">
+                    <V n="desired_sim_count" t="random_in_range">
+                      <U n="random_in_range">
+                        <T n="lower_bound">1</T>
+                        <T n="upper_bound">1</T>
+                      </U>
+                    </V>
+                    <L n="weighted_situations">
+                      <U>
+                        <T n="situation">391946<!--SingleJobSituation: situation_Cemetery_MournerBackup--></T>
+                        <L n="tests">
+                          <L>
+                            <V t="test_set_reference">
+                              <T n="test_set_reference">421386<!--TestSetInstance: testSet_Cemetery_FuneralRunning--></T>
+                            </V>
+                          </L>
+                        </L>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+                <U>
+                  <T n="hour_of_day">14</T>
+                  <U n="desired_walkby_situations">
+                    <V n="desired_sim_count" t="random_in_range">
+                      <U n="random_in_range">
+                        <T n="lower_bound">1</T>
+                        <T n="upper_bound">1</T>
+                      </U>
+                    </V>
+                    <L n="weighted_situations">
+                      <U>
+                        <T n="situation">391946<!--SingleJobSituation: situation_Cemetery_MournerBackup--></T>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+                <U>
+                  <T n="hour_of_day">20</T>
+                  <U n="desired_walkby_situations">
+                    <V n="desired_sim_count" t="random_in_range">
+                      <U n="random_in_range">
+                        <T n="lower_bound">1</T>
+                        <T n="upper_bound">1</T>
+                      </U>
+                    </V>
+                    <L n="weighted_situations">
+                      <U>
+                        <T n="situation">391946<!--SingleJobSituation: situation_Cemetery_MournerBackup--></T>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+              </L>
+            </U>
+          </L>
+        </U>
+      </V>
+    </U>
+  </L>
+  <V n="tested_spawn_point_override" t="enabled">
+    <U n="enabled">
+      <L n="tested_list">
+        <U>
+          <U n="item">
+            <E n="spawn_tag">Spawn_VisitorArrival</E>
+          </U>
+          <L n="test">
+            <L>
+              <V t="sim_info">
+                <U n="sim_info">
+                  <V n="species" t="specified">
+                    <U n="specified">
+                      <L n="species">
+                        <E>HORSE</E>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </V>
+              <V t="zone">
+                <U n="zone">
+                  <U n="zone_tests">
+                    <V n="is_apartment" t="Is_or_is_not_apartment_zone" />
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+</I>

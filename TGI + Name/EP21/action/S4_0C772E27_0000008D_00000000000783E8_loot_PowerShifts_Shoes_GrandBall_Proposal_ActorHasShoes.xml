@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_PowerShifts_Shoes_GrandBall_Proposal_ActorHasShoes" s="492520">
+  <L n="loot_actions">
+    <V t="interaction">
+      <U n="interaction">
+        <E n="affordance_priority">Critical</E>
+        <V n="affordance_run_priority" t="enabled">
+          <E n="enabled">Critical</E>
+        </V>
+        <L n="affordances">
+          <T>492653<!--GenericChooseBetweenTwoAffordancesSuperInteraction: genericChoose_PowerShifts_Shoes_Propose_ActorHasShoes--></T>
+        </L>
+        <E n="target_participant_type">TargetSim</E>
+        <L n="tests">
+          <L>
+            <V t="relationship">
+              <U n="relationship">
+                <U n="prohibited_relationship_bits">
+                  <L n="match_any">
+                    <T>15816<!--RelationshipBit: romantic-Engaged--></T>
+                    <T>15822<!--RelationshipBit: romantic-Married--></T>
+                  </L>
+                </U>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">492521<!--Buff: buff_PowerShifts_Shoes_BlockMultipleProposals--></T>
+        </U>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">492521<!--Buff: buff_PowerShifts_Shoes_BlockMultipleProposals--></T>
+        </U>
+        <E n="subject">TargetSim</E>
+      </U>
+    </V>
+    <V t="actions">
+      <T n="actions">502725<!--LootActions: Loot_LTR_Romance_SetMaximum_Ballroom_PowerShifts--></T>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <V n="whitelist" t="enabled">
+            <L n="enabled">
+              <T>476426<!--Buff: buff_PowerShifts_Shoes_EnchantedSteps--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>492521<!--Buff: buff_PowerShifts_Shoes_BlockMultipleProposals--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

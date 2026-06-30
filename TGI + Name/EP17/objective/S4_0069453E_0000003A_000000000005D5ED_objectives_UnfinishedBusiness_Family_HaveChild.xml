@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Objective" i="objective" m="event_testing.objective_tuning" n="objectives_UnfinishedBusiness_Family_HaveChild" s="382445">
+  <E n="category_type">Family</E>
+  <L n="completion_loot">
+    <T>385159<!--LootActions: loot_UnfinishedBusiness_GoalCompleted--></T>
+  </L>
+  <T n="display_text">0xC7E27635<!--String: ""I'd like to have another child!""--></T>
+  <L n="loot_on_completion_ui_update">
+    <T>396545<!--LootActions: loot_UnfinishedBusiness_clearCompleteObjective--></T>
+  </L>
+  <V n="objective_completion_type" t="iterations" />
+  <V n="objective_test" t="buff_added">
+    <U n="buff_added">
+      <L n="acceptable_buffs">
+        <T>292508<!--Buff: buff_Social_Media_Enable_NewBaby--></T>
+        <T>300937<!--Buff: buff_Scenario_ProudParent_AdoptedBaby--></T>
+        <T>97243<!--Buff: buff_HadBaby--></T>
+        <T>317586<!--Buff: buff_FamilyDynamics_Adoption--></T>
+        <T>421283<!--Buff: buff_Pregnancy_HavingBabyHidden--></T>
+        <T>40069<!--Buff: Buff_Adoption--></T>
+        <T>423816<!--Buff: buff_UnfinishedBusiness_NearbyReincarnatedFamily--></T>
+        <T>493424<!--Buff: buff_FamilyTree_SecretChild_BundleOfJoy--></T>
+      </L>
+    </U>
+  </V>
+  <L n="tests_for_picker_availability">
+    <L>
+      <V t="relationship_bit_count">
+        <U n="relationship_bit_count">
+          <E n="comparison_operator">GREATER_OR_EQUAL</E>
+          <T n="rel_bit">8805<!--RelationshipBit: family_Target_IsSonOrDaughterOf_Actor--></T>
+          <T n="relationship_count">1</T>
+          <L n="subject">
+            <E>Actor</E>
+          </L>
+        </U>
+      </V>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>381402<!--Trait: trait_IsGhost--></T>
+            <T>16844<!--Trait: trait_HatesChildren--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+  <T n="tooltip">0xF4C9E12A<!--String: "<b><font color='#2182E6'>Add a new child to the family</font></b>\nI love my family as is, but I still have even more love in my heart to give to another child! Whether it's through <b>Trying for Baby</b>, adoption, or a science baby, it's time to expand this family."--></T>
+</I>

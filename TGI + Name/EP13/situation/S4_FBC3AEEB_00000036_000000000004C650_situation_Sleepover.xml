@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SleepoverSituation" i="situation" m="situations.complex.sleepover_situation" n="situation_Sleepover" s="312912">
+  <T n="_cost">240</T>
+  <T n="_display_name">0xB7729D46<!--String: "Slumber Party"--></T>
+  <T n="_icon" p="InEP13\UI\Icons\Events\Event_Screenshots\Slumber_Party1.png">2f7d0004:00000000:69b70a8ef4e7bed9</T>
+  <T n="_implies_greeted_status">True</T>
+  <U n="_level_data">
+    <U n="bronze">
+      <T p="InGame\UI\Icons\Events\EventGoalSlam_RewardBronze.png" n="icon">2f7d0004:00000000:e716c3d79cd07a95</T>
+      <T n="level_description">0x9353FC21<!--String: "Bronze"--></T>
+      <T n="reward">311706<!--HouseholdReward: reward_Sleepover_CTYAE_Bronze--></T>
+    </U>
+    <U n="gold">
+      <T p="InGame\UI\Icons\Events\EventGoalSlam_RewardGold.png" n="icon">2f7d0004:00000000:26e68244a4ba3f2f</T>
+      <T n="level_description">0x74BBAD57<!--String: "Gold"--></T>
+      <T n="reward">311705<!--HouseholdReward: reward_Sleepover_CTYAE_Gold--></T>
+    </U>
+    <U n="silver">
+      <T p="InGame\UI\Icons\Events\EventGoalSlam_RewardSilver.png" n="icon">2f7d0004:00000000:911dde1ca1d27362</T>
+      <T n="level_description">0xE095AD4E<!--String: "Silver"--></T>
+      <T n="reward">311708<!--HouseholdReward: reward_Sleepover_CTYAE_Silver--></T>
+    </U>
+  </U>
+  <T n="_zone_director">106124<!--ZoneDirectorBase: zone_director_default--></T>
+  <T p="InGame\Audio\Bumper\bumper_event_start.propx" n="audio_sting_on_start">39b2aa4a:00000000:78b903461d47e4fc</T>
+  <T n="calendar_icon" p="InEP13\UI\Icons\Events\EventIcons\events_SleepOver.png">2f7d0004:00000000:24f454a49a526c40</T>
+  <E n="category">Social Events</E>
+  <L n="compatible_venues">
+    <T>28614<!--Venue: venue_residential--></T>
+    <T>314133<!--Venue: venue_RecCenter--></T>
+    <T>468880<!--Venue: venue_Playground--></T>
+    <T>107453<!--Venue: venue_ForestPark--></T>
+    <T>16874<!--Venue: venue_library--></T>
+    <T>16876<!--Venue: venue_museum--></T>
+    <T>25847<!--Venue: venue_park--></T>
+    <T>125223<!--Venue: venue_ChaletGardens--></T>
+    <T>118135<!--Venue: venue_RelaxationCenter--></T>
+    <T>144206<!--Venue: venue_artscenter--></T>
+    <T>103675<!--Venue: venue_rentable_cabin--></T>
+  </L>
+  <T n="duration">780</T>
+  <T n="force_invite_only">True</T>
+  <V n="job_display_ordering" t="enabled">
+    <L n="enabled">
+      <T>311722<!--SituationJob: job_host_Sleepover--></T>
+      <T>311721<!--SituationJob: job_Guest_Sleepover--></T>
+    </L>
+  </V>
+  <T n="jobs_per_row">2</T>
+  <T n="main_goal">313350<!--SituationGoalRanInteractionOnTargetedSim: goal_Sleepover_GetSleep--></T>
+  <T p="InGame\Audio\Bumper\bumper_event_major_complete.propx" n="main_goal_audio_sting">39b2aa4a:00000000:10b476550150a33f</T>
+  <T n="max_participants">8</T>
+  <L n="minor_goal_chains">
+    <T>311725<!--SituationGoalSet: goalSet_Sleepover_1_1--></T>
+    <T>311727<!--SituationGoalSet: goalSet_Sleepover_2_1--></T>
+    <T>311729<!--SituationGoalSet: goalSet_Sleepover_3_1--></T>
+    <T>311730<!--SituationGoalSet: goalSet_Sleepover_4_1--></T>
+  </L>
+  <U n="postsleep_state">
+    <L n="job_and_role_changes">
+      <U>
+        <T n="Situation Job">311721<!--SituationJob: job_Guest_Sleepover--></T>
+        <T n="Role State">333931<!--RoleState: roleState_Sleepover_Guest_PostSleep--></T>
+      </U>
+      <U>
+        <T n="Situation Job">311722<!--SituationJob: job_host_Sleepover--></T>
+        <T n="Role State">333932<!--RoleState: roleState_Sleepover_Host_PostSleep--></T>
+      </U>
+    </L>
+  </U>
+  <U n="presleep_state">
+    <T n="add_sleeping_bag_to_world_interaction">313033<!--SwipeAddToWorldSuperInteraction: si_SwipeAddToWorld_Sleepover_SleepingBag--></T>
+    <U n="ask_to_set_up_sleeping_bag_interaction">
+      <L n="affordances">
+        <T>331391<!--SuperInteraction: si_Sleepover_AsktoSetUpSleepingBag--></T>
+      </L>
+    </U>
+    <L n="job_and_role_changes">
+      <U>
+        <T n="Situation Job">311721<!--SituationJob: job_Guest_Sleepover--></T>
+        <T n="Role State">311710<!--RoleState: roleState_Sleepover_Guest--></T>
+      </U>
+      <U>
+        <T n="Situation Job">311722<!--SituationJob: job_host_Sleepover--></T>
+        <T n="Role State">311711<!--RoleState: roleState_Sleepover_Host--></T>
+      </U>
+    </L>
+    <T n="setup_sleeping_bags_for_all_sims">True</T>
+    <L n="sleeping_bag_definitions">
+      <T>325807</T>
+      <T>330743<!--BalloonCategory: horses_BalloonCategory_Uncomfortable_Hungry--></T>
+      <T>330742<!--BalloonCategory: horses_BalloonCategory_Uncomfortable_Dirty--></T>
+      <T>330741<!--BalloonCategory: horses_BalloonCategory_Happy--></T>
+      <T>330745<!--MixerInteraction: reaction_Mixers_Horse_Tantrum_Uncomfortable_RearUp--></T>
+    </L>
+    <U n="time_for_bed_interaction">
+      <L n="affordances">
+        <T>313186<!--SocialSuperInteraction: social_Sleepover_TimeforBed--></T>
+        <T>318859<!--PushInteractionOnAllGreetedSimsInteraction: pushInteraction_Sleepover_TimeforBed--></T>
+        <T>318194<!--SuperInteraction: super_Sleepover_PushSleep--></T>
+      </L>
+    </U>
+    <L n="toddler_sleeping_bag_definitions">
+      <T>326673</T>
+      <T>330751</T>
+      <T>330750</T>
+      <T>330752</T>
+      <T>330753</T>
+    </L>
+  </U>
+  <T n="recommended_job_object_text">0x7E73F37A<!--String: "Some tips for a more successful event:\n{0.String}"--></T>
+  <V n="screen_slam_bronze" t="enabled">
+    <V n="enabled" t="reference">
+      <T n="reference">75362<!--ScreenSlam: EventOutcome_Bronze--></T>
+    </V>
+  </V>
+  <V n="screen_slam_gold" t="enabled">
+    <V n="enabled" t="reference">
+      <T n="reference">75364<!--ScreenSlam: EventOutcome_Gold--></T>
+    </V>
+  </V>
+  <V n="screen_slam_no_medal" t="enabled">
+    <V n="enabled" t="reference">
+      <T n="reference">75361<!--ScreenSlam: EventOutcome_Tin--></T>
+    </V>
+  </V>
+  <V n="screen_slam_silver" t="enabled">
+    <V n="enabled" t="reference">
+      <T n="reference">75363<!--ScreenSlam: EventOutcome_Silver--></T>
+    </V>
+  </V>
+  <T n="situation_description">0x18944525<!--String: "Gather your pals together to stay up late, tell stories, and eat snacks. Don't fall asleep first or you may get pranked!"--></T>
+  <V n="situation_end_time_string" t="show_end_time">
+    <T n="show_end_time">0xA3E17143<!--String: "Work day ends at {0.TimeShort}"--></T>
+  </V>
+  <U n="sleep_state">
+    <L n="job_and_role_changes">
+      <U>
+        <T n="Situation Job">311721<!--SituationJob: job_Guest_Sleepover--></T>
+        <T n="Role State">311712<!--RoleState: roleState_Sleepover_Sleep--></T>
+      </U>
+      <U>
+        <T n="Situation Job">311722<!--SituationJob: job_host_Sleepover--></T>
+        <T n="Role State">319582<!--RoleState: rolestate_Sleepover_Host_Sleep--></T>
+      </U>
+    </L>
+    <V n="time_out" t="enabled">
+      <T n="enabled">420</T>
+    </V>
+    <U n="time_to_wake_up_interaction">
+      <L n="affordances">
+        <T>333606<!--ImmediateSuperInteraction: immediate_Sleepover_WakeUp--></T>
+      </L>
+    </U>
+  </U>
+  <V n="sleeping_bag_autonomy_preference_tag" t="enabled">
+    <E n="enabled">BED</E>
+  </V>
+  <L n="tags">
+    <E>Situation_Sleepover</E>
+    <E>Situation_PlayerFacing_CanHost</E>
+  </L>
+  <V n="travel_request_behavior" t="allow">
+    <U n="allow">
+      <V n="dialog" t="enabled">
+        <U n="enabled">
+          <L n="dialog_options">
+            <E>DISABLE_CLOSE_BUTTON</E>
+          </L>
+          <V n="text" t="single">
+            <T n="single">0xE8A540E3<!--String: "Are you sure that you would like to leave the current event and travel to another lot? All progress toward your goal will be lost."--></T>
+          </V>
+          <V n="title" t="enabled">
+            <T n="enabled">0xFECDCF71<!--String: "Event In Progress!"--></T>
+          </V>
+        </U>
+      </V>
+    </U>
+  </V>
+</I>

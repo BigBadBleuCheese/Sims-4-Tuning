@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="funerals_ToastSim" s="383284">
+  <V n="_animation_actor_map" t="literal">
+    <U n="literal">
+      <V n="carry_target" t="enabled" />
+    </U>
+  </V>
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="circle">
+            <U n="circle">
+              <T n="ideal_radius">2</T>
+              <T n="radius">2</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="value" t="facing" />
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <V n="_situation_participant_provider" t="enabled">
+    <U n="enabled">
+      <L n="provided_participant_type_to_job_map">
+        <U>
+          <E n="key">SituationParticipants1</E>
+          <L n="value">
+            <U>
+              <T n="job">381374<!--SituationJob: job_Funeral_DepartedSim--></T>
+              <V n="sim_info_source" t="from_guest_list" />
+              <E n="situation_participant">Actor</E>
+              <V n="situations" t="by_definition">
+                <U n="by_definition">
+                  <L n="situations">
+                    <T>381372<!--CustomStateFuneralSituation: Situation_Funeral--></T>
+                  </L>
+                </U>
+              </V>
+            </U>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <L n="_static_commodities">
+    <U>
+      <T n="static_commodity">392554<!--StaticCommodity: staticCommodity_Funeral_Speeches--></T>
+    </U>
+  </L>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">28202<!--AnimationElement: Drink_Toast--></T>
+      </U>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="balloon">
+      <U n="balloon">
+        <L n="balloon_choices">
+          <U>
+            <V n="item" t="balloon_category">
+              <T n="balloon_category">32074<!--BalloonCategory: balloonCategory_SetDeath_Speech--></T>
+            </V>
+          </U>
+        </L>
+        <L n="balloon_target">
+          <E>Actor</E>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="basic_reserve_object" t="disabled" />
+  <T n="category">383557<!--PieMenuCategory: pieMenuCategory_Funeral--></T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x347D644D<!--String: "Toast Deceased Sim"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <V n="animation_ref" t="disabled" />
+        <L n="basic_extras">
+          <V t="exit_carry_while_holding" />
+          <V t="broadcaster">
+            <U n="broadcaster">
+              <L n="broadcaster_types">
+                <U>
+                  <T n="item">393707<!--Broadcaster: broadcaster_Funerals_ToastSim--></T>
+                </U>
+              </L>
+            </U>
+          </V>
+          <V t="transience_change">
+            <U n="transience_change">
+              <V n="new_value_ending" t="make_transient" />
+              <E n="who">CarriedObject</E>
+            </U>
+          </V>
+        </L>
+        <L n="loot_list">
+          <T>393531<!--LootActions: rel_Gain_Medium_Funeral--></T>
+          <T>393700<!--RandomWeightedLoot: randomWeightedLoot_Funerals_ToastSim--></T>
+        </L>
+      </U>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all" />
+    </U>
+  </V>
+  <V n="super_affordance_klobberers" t="enabled" />
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <V n="whitelist" t="enabled">
+          <L n="enabled">
+            <T>392382<!--Buff: buff_Funerals_RoleBuffs_Speeches--></T>
+            <T>392383<!--Buff: buff_Funerals_RoleBuffs_Celebration--></T>
+            <T>392384<!--Buff: buff_Funerals_RoleBuffs_Mingle--></T>
+            <T>392381<!--Buff: buff_Funerals_RoleBuffs_Mourn--></T>
+            <T>401343<!--Buff: buff_EP17Festival_FuneralBBQ_Player--></T>
+            <T>401427<!--Buff: buff_EP17Festival_AutonomyMod_FuneralBBQ_NPC--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">424996<!--TestSetInstance: testSet_nonToastDrink--></T>
+    </V>
+    <V t="trait">
+      <U n="trait">
+        <L n="blacklist_traits">
+          <T>16851<!--Trait: trait_isGrimReaper--></T>
+        </L>
+        <E n="subject">TargetSim</E>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

@@ -1,0 +1,609 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="phone_R3Event_RushMail" s="395300">
+  <V n="_affordance_key_override_for_autonomy" t="enabled">
+    <T n="enabled">Phone_Fun</T>
+  </V>
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="water_depth">
+            <U n="water_depth">
+              <V n="max_water_depth" t="enabled">
+                <T n="enabled">0.5</T>
+              </V>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="current_position">
+            <U n="current_position">
+              <T n="remain_in_carried">True</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <L n="_false_advertisements">
+    <V t="statistic_change">
+      <U n="statistic_change">
+        <T n="amount">0.39</T>
+        <U n="chance">
+          <T n="base_chance">100</T>
+        </U>
+        <T n="stat">16655<!--Commodity: motive_Fun--></T>
+      </U>
+    </V>
+  </L>
+  <V n="_icon" t="resource_key">
+    <U n="resource_key">
+      <T n="key" p="InGame\UI\Icons\InteractionQueue\IconQueueCellPhone.png">2f7d0004:00000000:6189ced9570b8609</T>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <T n="allow_user_directed">True</T>
+  <L n="appropriateness_tags">
+    <E>Appropriateness_Phone</E>
+  </L>
+  <T n="attention_cost">1.24</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="list_reference">
+          <T n="list_reference">40705<!--ExitConditionList: ExitConditionList_MotivesNearFail--></T>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="time_based">
+                <U n="time_based">
+                  <T n="max_time">10</T>
+                  <T n="min_time">5</T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+      </L>
+      <V n="content" t="looping_content">
+        <U n="looping_content">
+          <U n="animation_ref">
+            <T n="factory">11701<!--AnimationElement: Phone_Browse--></T>
+            <U n="overrides">
+              <V n="balloons" t="enabled">
+                <L n="enabled">
+                  <U>
+                    <L n="balloon_choices">
+                      <U>
+                        <V n="item" t="balloon_category">
+                          <T n="balloon_category">12353<!--BalloonCategory: Phone_Browse_Thought--></T>
+                        </V>
+                      </U>
+                    </L>
+                    <T n="balloon_delay">2</T>
+                    <L n="balloon_target">
+                      <E>Actor</E>
+                    </L>
+                  </U>
+                </L>
+              </V>
+              <L n="props">
+                <U>
+                  <T n="key">cellphone</T>
+                  <U n="value">
+                    <T n="definition">145433</T>
+                    <T n="from_actor">x</T>
+                    <L n="states_to_override">
+                      <T>149289<!--ObjectState: Phone_Color_States--></T>
+                      <T>149290<!--ObjectState: Phone_UseType_States--></T>
+                    </L>
+                  </U>
+                </U>
+              </L>
+            </U>
+          </U>
+        </U>
+      </V>
+      <V n="periodic_stat_change" t="enabled">
+        <U n="enabled">
+          <L n="operations">
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="advertise">False</T>
+                <T n="amount">0.78</T>
+                <T n="stat">16655<!--Commodity: motive_Fun--></T>
+              </U>
+            </V>
+            <V t="reference">
+              <T n="reference">253399<!--PeriodicStatChangeOperation: periodicStatChange_Lifestyles_Progress_Low_Techie--></T>
+            </V>
+            <V t="reference">
+              <T n="reference">249073<!--PeriodicStatChangeOperation: periodicStatChangeOperation_Lifestyles_Liked_Techie--></T>
+            </V>
+            <V t="reference">
+              <T n="reference">253402<!--PeriodicStatChangeOperation: periodicStatChange_Lifestyles_Progress_Low_Sedentary--></T>
+            </V>
+            <V t="reference">
+              <T n="reference">249739<!--PeriodicStatChangeOperation: periodicStatChangeOperation_Lifestyles_Liked_Sedentary--></T>
+            </V>
+          </L>
+        </U>
+      </V>
+      <T n="start_autonomous_inertial">True</T>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0xD5DCF22F<!--String: "(From Liking Phones)"--></T>
+          </V>
+          <T n="buff_type">501810<!--Buff: buff_SimPreference_Likes_Activities_Phone--></T>
+        </U>
+        <L n="subject">
+          <E>Actor</E>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <L n="whitelist_traits">
+                  <T>501776<!--Preference: trait_SimPreference_Likes_Activities_Phone--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x6D21D368<!--String: "(From Disliking Phones)"--></T>
+          </V>
+          <T n="buff_type">501812<!--Buff: buff_SimPreference_Dislikes_Activities_Phone--></T>
+        </U>
+        <L n="subject">
+          <E>Actor</E>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <L n="whitelist_traits">
+                  <T>501775<!--Preference: trait_SimPreference_Dislikes_Activities_Phone--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="adventure">
+      <U n="adventure">
+        <L n="_adventure_moments">
+          <U>
+            <E n="key">Career_ChanceCard_01</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">501782<!--AdventureMoment: adventureMoment_SimPreference_Activities_Phone_Like--></T>
+              </V>
+            </U>
+          </U>
+        </L>
+        <L n="_initial_moments">
+          <U>
+            <E n="adventure_moment_key">Career_ChanceCard_01</E>
+            <U n="weight">
+              <L n="multipliers">
+                <U>
+                  <T n="multiplier">0</T>
+                  <L n="tests">
+                    <L>
+                      <V t="test_set_reference">
+                        <T n="test_set_reference">269650<!--TestSetInstance: testSetInstance_SimPreference_PreferenceDiscovery_MaxOrCoolOrAgeChildAllowed--></T>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+                <U>
+                  <T n="multiplier">0</T>
+                  <L n="tests">
+                    <L>
+                      <V t="trait">
+                        <U n="trait">
+                          <L n="whitelist_traits">
+                            <T>501775<!--Preference: trait_SimPreference_Dislikes_Activities_Phone--></T>
+                            <T>501776<!--Preference: trait_SimPreference_Likes_Activities_Phone--></T>
+                            <T>501778<!--Trait: trait_SimPreference_NoOpinion_Activities_Phone--></T>
+                          </L>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+                <U>
+                  <T n="multiplier">0</T>
+                  <L n="tests">
+                    <L>
+                      <V t="test_set_reference">
+                        <T n="test_set_reference">267815<!--TestSetInstance: testSetInstance_SimPreference_PreferenceDiscovery_EnergizedFocusedInspired--></T>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+              </L>
+            </U>
+          </U>
+        </L>
+        <U n="success_chance">
+          <T n="base_chance">5</T>
+        </U>
+      </U>
+    </V>
+    <V t="adventure">
+      <U n="adventure">
+        <L n="_adventure_moments">
+          <U>
+            <E n="key">Career_ChanceCard_01</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">501783<!--AdventureMoment: adventureMoment_SimPreference_Activities_Phone_Dislike--></T>
+              </V>
+            </U>
+          </U>
+        </L>
+        <L n="_initial_moments">
+          <U>
+            <E n="adventure_moment_key">Career_ChanceCard_01</E>
+            <U n="weight">
+              <L n="multipliers">
+                <U>
+                  <T n="multiplier">0</T>
+                  <L n="tests">
+                    <L>
+                      <V t="test_set_reference">
+                        <T n="test_set_reference">269650<!--TestSetInstance: testSetInstance_SimPreference_PreferenceDiscovery_MaxOrCoolOrAgeChildAllowed--></T>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+                <U>
+                  <T n="multiplier">0</T>
+                  <L n="tests">
+                    <L>
+                      <V t="trait">
+                        <U n="trait">
+                          <L n="whitelist_traits">
+                            <T>501775<!--Preference: trait_SimPreference_Dislikes_Activities_Phone--></T>
+                            <T>501776<!--Preference: trait_SimPreference_Likes_Activities_Phone--></T>
+                            <T>501778<!--Trait: trait_SimPreference_NoOpinion_Activities_Phone--></T>
+                          </L>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+                <U>
+                  <T n="multiplier">0</T>
+                  <L n="tests">
+                    <L>
+                      <V t="mood">
+                        <U n="mood">
+                          <T n="disallow">True</T>
+                          <T n="mood">14645<!--Mood: Mood_Stressed--></T>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+              </L>
+            </U>
+          </U>
+        </L>
+        <U n="success_chance">
+          <T n="base_chance">10</T>
+        </U>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>149369<!--LootActions: loot_Phone_Web--></T>
+        </L>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>163544<!--LootActions: loot_Grounded_Give_BuffReward_NoPhone--></T>
+        </L>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <T n="buff_type">163474<!--Buff: buff_Grounded_Breaking--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>161757<!--Buff: buff_Grounded_Controllers_No_Phone--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>191654<!--LootActions: loot_Fame_Quirks_PhoneFanatic_Add--></T>
+          <T>201971<!--LootActions: loot_Fame_Quirks_PhoneFanatic_RelieveStressWithPhone--></T>
+        </L>
+        <V n="timing" t="at_end" />
+      </U>
+    </V>
+    <V t="buff_fire_and_forget">
+      <U n="buff_fire_and_forget">
+        <U n="buff">
+          <T n="buff_type">501846<!--Buff: buff_SimPreference_Timer_PhoneRecreation--></T>
+        </U>
+      </U>
+    </V>
+    <V t="payment">
+      <U n="payment">
+        <V n="payment" t="literal">
+          <U n="literal">
+            <V n="payment_cost" t="amount">
+              <U n="amount">
+                <T n="amount">103</T>
+              </U>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>395301<!--LootActions: loot_R3Event_RushMail--></T>
+        </L>
+      </U>
+    </V>
+    <V t="notification">
+      <U n="notification">
+        <V n="dialog" t="single">
+          <V n="single" t="literal">
+            <U n="literal">
+              <V n="icon" t="enabled">
+                <V n="enabled" t="resource_key">
+                  <U n="resource_key">
+                    <T p="InGame\UI\Icons\Notifications\notification_cellphoneold.png" n="key">2f7d0004:00000000:cc26a9254a03e4d8</T>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x205D5B2<!--String: "Your mail will arrive shortly!"--></T>
+              </V>
+            </U>
+          </V>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="category">105922<!--PieMenuCategory: phoneCategory_Household--></T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xB91D560B<!--String: "Expedite Mail Delivery"--></T>
+  <V n="display_name_overrides" t="testable">
+    <U n="testable">
+      <L n="overrides">
+        <U>
+          <V n="new_display_name" t="disabled" />
+          <V n="new_pie_menu_icon" t="enabled">
+            <V n="enabled" t="resource_key">
+              <U n="resource_key">
+                <T n="key" p="InGame\UI\Icons\PieMenu\Interactions\icon_pieMenu_grounded.png">2f7d0004:00000000:1bcafb280c1f78cd</T>
+              </U>
+            </V>
+          </V>
+          <V n="parent_name" t="enabled">
+            <T n="enabled">0xB882229F<!--String: "{1.String} Stealthily"--></T>
+          </V>
+          <L n="test">
+            <L>
+              <V t="buff">
+                <U n="buff">
+                  <V n="whitelist" t="enabled">
+                    <L n="enabled">
+                      <T>161757<!--Buff: buff_Grounded_Controllers_No_Phone--></T>
+                    </L>
+                  </V>
+                </U>
+              </V>
+              <V t="sim_info">
+                <U n="sim_info">
+                  <V n="ages" t="specified" />
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+    <E>Interaction_Lifestyles_Sedentary_FlexibleLength</E>
+    <E>Interaction_Lifestyles_Techie_FlexibleLength</E>
+  </L>
+  <T n="pie_menu_priority">10</T>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="reference">
+    <T n="reference">76418<!--AffordanceFilter: af_PhoneCompatability_TappingOnPhone--></T>
+  </V>
+  <E n="target_type">ACTOR</E>
+  <L n="test_autonomous">
+    <L>
+      <V t="location">
+        <U n="location">
+          <U n="location_tests">
+            <V n="is_venue_type" t="enabled">
+              <U n="enabled">
+                <T n="negate">True</T>
+                <T n="venue_type">111611<!--Venue: venue_HiddenAlienWorld--></T>
+              </U>
+            </V>
+          </U>
+        </U>
+      </V>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>501775<!--Preference: trait_SimPreference_Dislikes_Activities_Phone--></T>
+          </L>
+        </U>
+      </V>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>501846<!--Buff: buff_SimPreference_Timer_PhoneRecreation--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+  <L n="test_globals">
+    <V t="test_set_reference">
+      <T n="test_set_reference">237832<!--TestSetInstance: testSet_PhoneInteractions_CanUsePhone--></T>
+    </V>
+    <V t="posture">
+      <U n="posture">
+        <L n="prohibited_postures">
+          <T>447068<!--MobilePosture: posture_Kayak--></T>
+          <T>447080<!--Posture: posture_Kayak_Sit--></T>
+          <T>447081<!--Posture: posture_Kayak_Stand--></T>
+          <T>206337<!--MobilePosture: posture_IslandCanoe--></T>
+          <T>208298<!--Posture: posture_IslandCanoe_Sit--></T>
+          <T>208299<!--Posture: posture_IslandCanoe_Stand--></T>
+          <T>199821<!--MobilePosture: posture_WaterScooter--></T>
+        </L>
+      </U>
+    </V>
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E>HUMAN</E>
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="posture">
+      <U n="posture">
+        <L n="prohibited_postures">
+          <T>117257<!--Posture: posture_HotTubSit--></T>
+        </L>
+      </U>
+    </V>
+    <V t="situation_goal_test">
+      <U n="situation_goal_test">
+        <L n="situation_goals">
+          <T>388640<!--SituationGoalObjectCount: goalObjectCount_R3Event_ReceivedMail--></T>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>395302<!--Buff: buff_R3Event_RushedMail--></T>
+        </L>
+      </U>
+    </V>
+    <V t="lot_owner">
+      <U n="lot_owner">
+        <T n="consider_business_lot_as_owned">False</T>
+        <T n="consider_rented_lot_as_owned">False</T>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="identity">
+        <U n="identity">
+          <T n="subjects_match">True</T>
+        </U>
+      </V>
+    </L>
+  </L>
+  <T n="time_overhead">30</T>
+  <V n="utility_info" t="enabled">
+    <L n="enabled">
+      <U>
+        <E n="key">POWER</E>
+        <U n="value">
+          <L n="shutoff_tooltip_override">
+            <U>
+              <E n="key">OFF_THE_GRID</E>
+              <T n="value">0x14E615DA<!--String: "The internet does not work without a supply of power while Off-the-Grid."--></T>
+            </U>
+          </L>
+        </U>
+      </U>
+    </L>
+  </V>
+</I>

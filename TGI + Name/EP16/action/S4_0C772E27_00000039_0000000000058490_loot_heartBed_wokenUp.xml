@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_heartBed_wokenUp" s="361616">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">10314<!--Buff: buff_Sim_BeWokenUp_Hidden--></T>
+        </U>
+        <E n="subject">OtherSimsInteractingWithTarget</E>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0xF608765E<!--String: "(From Being Awoken by a Vibrating Bed)"--></T>
+          </V>
+          <T n="buff_type">368806<!--Buff: buff_Object_HeartBed_Tense--></T>
+        </U>
+        <E n="subject">OtherSimsInteractingWithTarget</E>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>313461<!--Buff: buff_ToddlerPersonalityUpdate_HeavySleeper_SafeSleep--></T>
+          </L>
+          <E n="subject">OtherSimsInteractingWithTarget</E>
+          <V n="whitelist" t="enabled">
+            <L n="enabled">
+              <T>10094<!--Buff: buff_Sim_IsSleeping--></T>
+              <T>275549<!--Buff: buff_Sim_IsSleeping_Hidden--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

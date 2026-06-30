@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_EP19Quests_Rewards_LiaisonFetch" s="441787">
+  <L n="loot_actions">
+    <V t="reward">
+      <U n="reward">
+        <T n="reward">441788<!--SimReward: simReward_EP19Quests_Travel--></T>
+        <L n="tests">
+          <L>
+            <V t="unlock_earned">
+              <U n="unlock_earned">
+                <V n="unlock_to_test" t="build_buy_reward_earned">
+                  <U n="build_buy_reward_earned">
+                    <T n="negate">True</T>
+                    <T n="object_definition">464505</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="actions">
+      <T n="actions">441800<!--RandomWeightedLoot: randomWeightedLoot_EP19Quests_LiaisonEmotion--></T>
+    </V>
+    <V t="actions">
+      <T n="actions">441799<!--RandomWeightedLoot: randomWeightedLoot_EP19Quests_LiaisonFruit--></T>
+    </V>
+    <V t="create_notebook_entry">
+      <U n="create_notebook_entry">
+        <V n="notebook_entry" t="create_new_entry">
+          <U n="create_new_entry">
+            <T n="notebook_entry">443306<!--NotebookEntry: notebookEntry_EP19Quest_LiaisonFetch_End--></T>
+          </U>
+        </V>
+        <U n="notifications">
+          <V n="unlocked_failed_notification" t="enabled">
+            <V n="enabled" t="literal">
+              <U n="literal">
+                <V n="icon" t="enabled">
+                  <V n="enabled" t="resource_key">
+                    <U n="resource_key">
+                      <T p="InEP19\UI\Icons\Quests\quests_FetchQuest03.png" n="key">2f7d0004:00000000:c7eb2f97867449ae</T>
+                    </U>
+                  </V>
+                </V>
+                <V n="text" t="single">
+                  <T n="single">0xEA32324B<!--String: "And so Geoffrey got sneaky, and Nancy got cheeky, their plans they both secretly smother. A password reset for the bank account’s net was surely to foil the other. But they could not expect the login to get wrecked, and now neither could get any money. So instead of rapport, they’re seemingly poor, and nobody won—which is funny.\n\n<b>A Starseed Teleporter has been placed in {0.SimFirstName}'s household inventory. An Emotion Potion and Randomized Fruit Seeds have been placed in {0.SimFirstName}'s inventory.</b>"--></T>
+                </V>
+                <V n="title" t="enabled">
+                  <T n="enabled">0x32BE7020<!--String: "Fable Completed"--></T>
+                </V>
+              </U>
+            </V>
+          </V>
+          <V n="unlocked_success_notification" t="enabled">
+            <V n="enabled" t="literal">
+              <U n="literal">
+                <V n="icon" t="enabled">
+                  <V n="enabled" t="resource_key">
+                    <U n="resource_key">
+                      <T p="InEP19\UI\Icons\Quests\quests_FetchQuest03.png" n="key">2f7d0004:00000000:c7eb2f97867449ae</T>
+                    </U>
+                  </V>
+                </V>
+                <V n="text" t="single">
+                  <T n="single">0xEA32324B<!--String: "And so Geoffrey got sneaky, and Nancy got cheeky, their plans they both secretly smother. A password reset for the bank account’s net was surely to foil the other. But they could not expect the login to get wrecked, and now neither could get any money. So instead of rapport, they’re seemingly poor, and nobody won—which is funny.\n\n<b>A Starseed Teleporter has been placed in {0.SimFirstName}'s household inventory. An Emotion Potion and Randomized Fruit Seeds have been placed in {0.SimFirstName}'s inventory.</b>"--></T>
+                </V>
+                <V n="title" t="enabled">
+                  <T n="enabled">0x32BE7020<!--String: "Fable Completed"--></T>
+                </V>
+                <L n="ui_responses">
+                  <U>
+                    <V n="response_command" t="enabled">
+                      <V n="enabled" t="literal">
+                        <U n="literal">
+                          <L n="arguments">
+                            <V t="special_command_data" />
+                            <V t="integer">
+                              <U n="integer">
+                                <T n="arg_value">129025</T>
+                              </U>
+                            </V>
+                            <V t="integer">
+                              <U n="integer">
+                                <T n="arg_value">129026</T>
+                              </U>
+                            </V>
+                          </L>
+                          <T n="command">notebook.generate_notebook</T>
+                        </U>
+                      </V>
+                    </V>
+                    <T n="text">0xF3022429<!--String: "Open Notebook"--></T>
+                    <E n="ui_request">SEND_COMMAND</E>
+                  </U>
+                </L>
+              </U>
+            </V>
+          </V>
+        </U>
+      </U>
+    </V>
+    <V t="relationship_bits_with_filter">
+      <U n="relationship_bits_with_filter">
+        <U n="filter_settings">
+          <T n="sim_filter">441776<!--TunableSimFilter: situationFilters_EP19World_NPC_EP19QuestsLiaison--></T>
+        </U>
+        <T n="relationship_score">5</T>
+      </U>
+    </V>
+  </L>
+</I>

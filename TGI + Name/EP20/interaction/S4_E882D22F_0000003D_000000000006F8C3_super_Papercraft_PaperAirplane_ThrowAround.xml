@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="super_Papercraft_PaperAirplane_ThrowAround" s="456899">
+  <V n="_animation_actor_map" t="reference">
+    <T n="reference">104045<!--AnimationActorMap: PickupInteractionTarget--></T>
+  </V>
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="circle">
+            <U n="circle">
+              <T n="ideal_radius">0.5</T>
+              <T n="radius">3</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="facing" />
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_from_sim_inventory">False</T>
+  <T n="allow_from_world">True</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">484680<!--AnimationElement: animation_Papercraft_PaperAirplane_PickupCarry--></T>
+      </U>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="balloon">
+      <U n="balloon">
+        <L n="balloon_choices">
+          <U>
+            <V n="item" t="balloon_icon">
+              <U n="balloon_icon">
+                <V n="icon" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>Object</E>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </U>
+        </L>
+        <L n="balloon_target">
+          <E>Actor</E>
+        </L>
+      </U>
+    </V>
+    <V t="enter_carry_while_holding">
+      <U n="enter_carry_while_holding">
+        <E n="carry_obj_participant_type">CarriedObject</E>
+        <V n="carry_track_override" t="explicit" />
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>456933<!--LootActions: loot_Papercraft_PaperAirplane_ThrowAround_Start--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="basic_liabilities">
+    <V t="critical_priority" />
+  </L>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xC899A05F<!--String: "Throw {1.ObjectName} Around"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">456900<!--ThrowPaperAirplaneSuperInteraction: throwPaperAirplaneSuperInteraction_Papercraft_ThrowAround_Long--></T>
+                    <V n="carry_target" t="enabled" />
+                  </U>
+                </L>
+              </U>
+            </U>
+            <U>
+              <U n="outcome">
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">456901<!--ThrowPaperAirplaneSuperInteraction: throwPaperAirplaneSuperInteraction_Papercraft_ThrowAround_Short--></T>
+                    <V n="carry_target" t="enabled" />
+                  </U>
+                </L>
+              </U>
+              <U n="weight">
+                <T n="base_value">1</T>
+              </U>
+            </U>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="state">
+      <U n="state">
+        <E n="operator">NOTEQUAL</E>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x6E1A0AE9<!--String: "This {1.ObjectName} has been ruined by water."--></T>
+        </V>
+        <T n="value">455051<!--ObjectStateValue: papercraft_Values_Origami_Wet--></T>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

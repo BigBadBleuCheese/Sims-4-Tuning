@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Child_Confidence_TraitUpdate_High_Target" s="327086">
+  <L n="loot_actions">
+    <V t="trait_add">
+      <U n="trait_add">
+        <E n="subject">TargetSim</E>
+        <T n="trait">314056<!--Trait: trait_ChildConfidence_High--></T>
+      </U>
+    </V>
+    <V t="trait_remove">
+      <U n="trait_remove">
+        <E n="subject">TargetSim</E>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <E n="subject">TargetSim</E>
+                <L n="whitelist_traits">
+                  <T>314055<!--Trait: trait_ChildConfidence_Neutral--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+        <V n="trait" t="specific_trait">
+          <U n="specific_trait">
+            <T n="specific_trait">314055<!--Trait: trait_ChildConfidence_Neutral--></T>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="test_set_reference">
+        <T n="test_set_reference">327089<!--TestSetInstance: testSetInstance_Child_Confidence_High_Target--></T>
+      </V>
+    </L>
+    <L>
+      <V t="trait">
+        <U n="trait">
+          <T n="apply_thresholds_on_individual_basis">False</T>
+          <L n="blacklist_traits">
+            <T>378502<!--Trait: trait_Hidden_EP17World_NPC_EdithBasu--></T>
+          </L>
+          <E n="subject">TargetSim</E>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

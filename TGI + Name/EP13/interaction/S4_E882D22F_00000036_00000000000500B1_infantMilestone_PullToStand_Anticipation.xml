@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="infantMilestone_PullToStand_Anticipation" s="327857">
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="reference">
+          <T n="reference">328738<!--ExitCondition: exitCondition_InfantMilestones_Anticipation_Big--></T>
+        </V>
+      </L>
+      <V n="content" t="looping_content">
+        <U n="looping_content">
+          <U n="animation_ref">
+            <T n="factory">287636<!--AnimationElement: animation_InfantMilestones_Anticipation_BigMoment--></T>
+          </U>
+        </U>
+      </V>
+      <V n="periodic_stat_change" t="enabled">
+        <U n="enabled">
+          <L n="operations">
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="amount">2</T>
+                <T n="stat">16655<!--Commodity: motive_Fun--></T>
+              </U>
+            </V>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>321997<!--LootActions: loot_InfantMilestones_Anticipation_Big_Gather_Actor--></T>
+        </L>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+    <V t="audio_sting">
+      <U n="audio_sting">
+        <U n="audio_sting">
+          <T n="audio" p="InEP13\Audio\music\stings\sting_ep13_milestone_infant_anticipation.propx">39b2aa4a:00000000:5d9034e0a0553dfa</T>
+        </U>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <T n="buff_type">327859<!--Buff: buff_InfantMilestones_AnticipationMoment_Big--></T>
+        </U>
+        <L n="subject">
+          <E>Actor</E>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="canonical_animation" t="enabled">
+    <U n="enabled">
+      <T n="factory">287688<!--AnimationElement: animation_InfantMilestones_PullToStand_Idle--></T>
+    </U>
+  </V>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xC1117813<!--String: "Reaching a Milestone"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <V n="animation_ref" t="enabled">
+          <U n="enabled">
+            <T n="factory">287688<!--AnimationElement: animation_InfantMilestones_PullToStand_Idle--></T>
+          </U>
+        </V>
+        <L n="continuation">
+          <U>
+            <T n="affordance">287980<!--SuperInteraction: infantMilestone_PullToStand--></T>
+          </U>
+        </L>
+        <T n="force_outcome_on_exit">True</T>
+      </U>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T n="key" p="InEP13\UI\Icons\PieMenu\PieMenu_Milestone.png">2f7d0004:00000000:81afa02926deee4b</T>
+      </U>
+    </V>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all" />
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>INFANT</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

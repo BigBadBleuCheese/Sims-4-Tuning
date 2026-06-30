@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SimPickerInteraction" i="interaction" m="interactions.base.picker_interaction" n="simPicker_Dynasty_AskPermissionToMarry_FromActorFamily_DynastyCat" s="493155">
+  <V n="_saveable" t="disabled" />
+  <L n="actor_continuation">
+    <U>
+      <T n="affordance">480962<!--SocialMixerInteraction: socialMixer_Dynasty_AskPermissionMarry--></T>
+      <T n="si_affordance_override">13991<!--SocialSuperInteraction: sim_BeAffectionate--></T>
+    </U>
+  </L>
+  <T n="category">470461<!--PieMenuCategory: pieMenuCategory_Dynasty--></T>
+  <V n="cell_enabled_tests" t="enabled">
+    <L n="enabled">
+      <L>
+        <V t="relationship">
+          <U n="relationship">
+            <U n="prohibited_relationship_bits">
+              <L n="match_any">
+                <T>481094<!--RelationshipBit: shortTermBit_Dynasty_MarriageApprovedByTargetFamily--></T>
+              </L>
+            </U>
+            <L n="subject">
+              <E>PickedSim</E>
+            </L>
+            <L n="target_sim">
+              <E>Actor</E>
+            </L>
+            <V n="tooltip" t="enabled">
+              <T n="enabled">0x1245C8E4<!--String: "Already granted by {0.SimFirstName}'s side."--></T>
+            </V>
+          </U>
+        </V>
+        <V t="relationship">
+          <U n="relationship">
+            <U n="prohibited_relationship_bits">
+              <L n="match_any">
+                <T>487640<!--RelationshipBit: shortTermBit_Dynasty_AskPermissionToMarryCooldown--></T>
+              </L>
+            </U>
+            <L n="subject">
+              <E>PickedSim</E>
+            </L>
+            <L n="target_sim">
+              <E>Actor</E>
+            </L>
+            <V n="tooltip" t="enabled">
+              <T n="enabled">0x8DBFA1F2<!--String: "{0.SimFirstName}'s side recently refused."--></T>
+            </V>
+          </U>
+        </V>
+        <V t="relationship">
+          <U n="relationship">
+            <U n="prohibited_relationship_bits">
+              <L n="match_any">
+                <T>496380<!--RelationshipBit: shortTermBit_Dynasty_MarriageApprovalFromTarget--></T>
+              </L>
+            </U>
+            <L n="subject">
+              <E>PickedSim</E>
+            </L>
+            <V n="tooltip" t="enabled">
+              <T n="enabled">0x6C0DE97A<!--String: "{1.SimFirstName} already approved of {2.SimFirstName}'s marriage to someone else!"--></T>
+            </V>
+          </U>
+        </V>
+        <V t="relationship">
+          <U n="relationship">
+            <U n="prohibited_relationship_bits">
+              <L n="match_any">
+                <T>496380<!--RelationshipBit: shortTermBit_Dynasty_MarriageApprovalFromTarget--></T>
+              </L>
+            </U>
+            <V n="tooltip" t="enabled">
+              <T n="enabled">0x9483BA3<!--String: "{1.SimFirstName} already approved one of {0.SimFirstName}'s relationships."--></T>
+            </V>
+          </U>
+        </V>
+      </L>
+    </L>
+  </V>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x22C1D0B7<!--String: "Ask Permission to Marry"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">PickedSim</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T n="force_show_dialog_when_single_choice">False</T>
+  <T n="include_rabbithole_sims">True</T>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <V n="picker_dialog" t="sim_picker">
+    <U n="sim_picker">
+      <L n="custom_filters">
+        <V t="reference">
+          <T n="reference">499295<!--CustomSimFilter: customSimFilter_NobleCareer--></T>
+        </V>
+      </L>
+    </U>
+  </V>
+  <T n="pie_menu_priority">0</T>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <V n="sim_filter" t="sim_filter_selected">
+    <T n="sim_filter_selected">481343<!--TunableSimFilter: filter_SimPicker_InRomanticRelationshipWithRequestor--></T>
+  </V>
+  <L n="sim_tests">
+    <L>
+      <V t="relationship_bit_count">
+        <U n="relationship_bit_count">
+          <T n="rel_bit">15822<!--RelationshipBit: romantic-Married--></T>
+          <L n="subject">
+            <E>PickedSim</E>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="single_choice_display_name" t="enabled">
+    <T n="enabled">0x99973D4A<!--String: "Ask Permission to Marry {2.SimName}"--></T>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">493175<!--TestSetInstance: testSet_Dynasty_ActorOrTargetIsMember--></T>
+    </V>
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+          </L>
+        </V>
+        <E n="who">TargetSim</E>
+      </U>
+    </V>
+    <V t="relationship">
+      <U n="relationship">
+        <U n="required_relationship_bits">
+          <L n="match_any">
+            <T>15803<!--RelationshipBit: has_met--></T>
+            <T>192631<!--RelationshipBit: relationshipBit_CelebrityAcquaintance--></T>
+          </L>
+        </U>
+      </U>
+    </V>
+    <V t="identity">
+      <U n="identity">
+        <E n="subject_b">TargetSim</E>
+      </U>
+    </V>
+    <V t="existence">
+      <U n="existence">
+        <E n="participant">SignificantOtherActor</E>
+        <T n="require_instantiated">False</T>
+      </U>
+    </V>
+    <V t="relationship_bit_count">
+      <U n="relationship_bit_count">
+        <T n="rel_bit">15822<!--RelationshipBit: romantic-Married--></T>
+      </U>
+    </V>
+    <V t="identity">
+      <U n="identity">
+        <E n="subject_a">TargetSim</E>
+        <E n="subject_b">SignificantOtherActor</E>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">481876<!--TestSetInstance: testSet_Dynasty_AskPermissionToMarry_TargetActorSide--></T>
+    </V>
+  </L>
+</I>

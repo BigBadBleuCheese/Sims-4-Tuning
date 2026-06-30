@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="ObjectInInventoryPickerInteraction" i="interaction" m="interactions.base.picker_interaction" n="objectInInventoryPickerInteraction_HorseCare_HandFeed" s="324136">
+  <V n="_saveable" t="disabled" />
+  <T n="category">324137<!--PieMenuCategory: pieMenuCategory_PetCare_Horses--></T>
+  <V n="content_score" t="enabled">
+    <U n="enabled">
+      <T n="base_score">2</T>
+      <L n="buff_target_preference">
+        <U>
+          <T n="key">322217<!--Buff: buff_Horse_Moodlets_Uncomfortable_Hungry--></T>
+          <T n="value">50</T>
+        </U>
+        <U>
+          <T n="key">322218<!--Buff: buff_Horse_Moodlets_Uncomfortable_Famished--></T>
+          <T n="value">50</T>
+        </U>
+        <U>
+          <T n="key">340725<!--Buff: buff_Horse_Moodlets_Sad_Needy_NeedsHandFeed--></T>
+          <T n="value">50</T>
+        </U>
+      </L>
+    </U>
+  </V>
+  <V n="continuation" t="enabled">
+    <L n="enabled">
+      <U>
+        <T n="affordance">324132<!--SocialSuperInteraction: horseSocials_SimToHorse_Touching_PetCare_HandFeed--></T>
+        <V n="carry_target" t="enabled">
+          <E n="enabled">PickedObject</E>
+        </V>
+      </U>
+    </L>
+  </V>
+  <T n="display_name">0xEFA576D1<!--String: "Hand Feed"--></T>
+  <V n="display_name_overrides" t="testable">
+    <U n="testable">
+      <L n="overrides">
+        <U>
+          <V n="new_display_name" t="disabled" />
+          <V n="new_pie_menu_icon" t="enabled">
+            <V n="enabled" t="resource_key">
+              <U n="resource_key">
+                <T n="key" p="InEP14\UI\Icons\PieMenu\PieMenu_HorseMood_Uncomfortable.png">2f7d0004:00000000:60d521bcadec9ea5</T>
+              </U>
+            </V>
+          </V>
+          <L n="test">
+            <L>
+              <V t="buff">
+                <U n="buff">
+                  <E n="subject">TargetSim</E>
+                  <V n="whitelist" t="enabled">
+                    <L n="enabled">
+                      <T>322217<!--Buff: buff_Horse_Moodlets_Uncomfortable_Hungry--></T>
+                      <T>322218<!--Buff: buff_Horse_Moodlets_Uncomfortable_Famished--></T>
+                    </L>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <V n="new_display_name" t="disabled" />
+          <V n="new_pie_menu_icon" t="enabled">
+            <V n="enabled" t="resource_key">
+              <U n="resource_key">
+                <T n="key" p="InEP14\UI\Icons\PieMenu\PieMenu_HorseMood_Sad.png">2f7d0004:00000000:d4e7237ec4a6451e</T>
+              </U>
+            </V>
+          </V>
+          <L n="test">
+            <L>
+              <V t="buff">
+                <U n="buff">
+                  <E n="subject">TargetSim</E>
+                  <V n="whitelist" t="enabled">
+                    <L n="enabled">
+                      <T>340725<!--Buff: buff_Horse_Moodlets_Sad_Needy_NeedsHandFeed--></T>
+                    </L>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <E n="hidden_inventory_test">NON_HIDDEN_ONLY</E>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <V n="inventory_item_test" t="tag_set">
+    <U n="tag_set">
+      <L n="tag_set">
+        <E>Food_HorseFriendly</E>
+      </L>
+    </U>
+  </V>
+  <V n="picker_dialog" t="object_picker" />
+  <T n="pie_menu_priority">19</T>
+  <V n="pie_menu_test_tooltip" t="enabled">
+    <T n="enabled">0xA4CA4F3D<!--String: "Requires food in the Sim's Inventory that's Horse-friendly such as Hay, Apples, Carrots, or Strawberries."--></T>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">329400<!--TestSetInstance: testSetInstance_Horses_TemperamentSkill_FoalSkillMeetsReqOrAE_CanFeed--></T>
+    </V>
+    <V t="statistic">
+      <U n="statistic">
+        <T n="stat">312265<!--Commodity: motive_Horse_Hunger--></T>
+        <V n="threshold" t="value_threshold">
+          <U n="value_threshold">
+            <E n="comparison">LESS</E>
+            <T n="value">90</T>
+          </U>
+        </V>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xA8743AB5<!--String: "{1.SimFirstName} is not hungry right now."--></T>
+        </V>
+        <E n="who">TargetSim</E>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="npc" t="enabled" />
+        </U>
+      </V>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="required_relationship_bits">
+            <L n="match_any">
+              <T>15803<!--RelationshipBit: has_met--></T>
+            </L>
+          </U>
+          <L n="subject">
+            <E>Actor</E>
+          </L>
+          <L n="target_sim">
+            <E>TargetSim</E>
+          </L>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="npc" t="enabled">
+            <T n="enabled">True</T>
+          </V>
+        </U>
+      </V>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="relationship_score_interval">
+            <T n="lower_bound">5</T>
+          </U>
+          <L n="subject">
+            <E>Actor</E>
+          </L>
+          <L n="target_sim">
+            <E>TargetSim</E>
+          </L>
+          <T n="track">159228<!--RelationshipTrack: LTR_SimToPet_Friendship_Main--></T>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

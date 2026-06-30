@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="RandomWeightedLoot" i="action" m="interactions.utils.loot" n="randomWeightedLoot_SelfDiscovery_NewTraitPicker_Critic_Max" s="306997">
+  <L n="random_loot_actions">
+    <U>
+      <V n="action" t="statistics">
+        <V n="statistics" t="statistic_set">
+          <U n="statistic_set">
+            <T n="stat">306823<!--Commodity: commodity_SelfDiscovery_Tracker_Critic--></T>
+            <T n="value">50</T>
+          </U>
+        </V>
+      </V>
+      <U n="weight">
+        <T n="base_value">1</T>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">310308<!--RandomWeightedLoot: randomWeightedLoot_SelfDiscovery_DiscoveryMoment_Critic_Foodie--></T>
+      </V>
+      <U n="weight">
+        <T n="base_value">0.5</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="trait_comparison">
+                  <U n="trait_comparison">
+                    <V n="compare_against" t="trait_list">
+                      <U n="trait_list">
+                        <L n="traits">
+                          <T>27176<!--Trait: trait_Foodie--></T>
+                        </L>
+                      </U>
+                    </V>
+                    <L n="exclude_traits" />
+                    <V n="trait_comparison" t="conflict" />
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>27176<!--Trait: trait_Foodie--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

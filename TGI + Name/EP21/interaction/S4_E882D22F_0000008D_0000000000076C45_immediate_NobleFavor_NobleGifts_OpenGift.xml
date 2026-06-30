@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="ImmediateSuperInteraction" i="interaction" m="interactions.base.immediate_interaction" n="immediate_NobleFavor_NobleGifts_OpenGift" s="486469">
+  <V n="_saveable" t="disabled" />
+  <T n="allow_from_sim_inventory">True</T>
+  <T n="allow_from_world">False</T>
+  <L n="basic_extras">
+    <V t="destroy_object">
+      <U n="destroy_object">
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+    <V t="save_participant">
+      <U n="save_participant">
+        <E n="participant">StoredSim</E>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+    <V t="save_participant">
+      <U n="save_participant">
+        <E n="participant">StoredSim2</E>
+        <E n="saved_participant">SavedActor2</E>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+  </L>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x8A90DC2E<!--String: "Open"--></T>
+  <V n="display_name_overrides" t="testable">
+    <U n="testable">
+      <L n="overrides">
+        <U>
+          <V n="new_display_name" t="enabled">
+            <T n="enabled">0x544F8259<!--String: "Open Noble Gift for {0.SimFirstName}"--></T>
+          </V>
+          <L n="test">
+            <L>
+              <V t="identity">
+                <U n="identity">
+                  <E n="subject_b">StoredSim</E>
+                  <T n="subjects_match">False</T>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">StoredSim</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <T n="buff_type">492017<!--Buff: buff_NobleFavor_NobleGifts_Rejection--></T>
+                      </U>
+                      <L n="tests">
+                        <L>
+                          <V t="identity">
+                            <U n="identity">
+                              <E n="subject_b">SavedActor1</E>
+                              <T n="subjects_match">True</T>
+                            </U>
+                          </V>
+                        </L>
+                      </L>
+                    </U>
+                  </V>
+                </L>
+                <L n="loot_list">
+                  <T>486708<!--RandomWeightedLoot: randomWeightedLoot_NobleCareer_NobleFavor_NobleGifts_CommonerNegative--></T>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="state">
+                <U n="state">
+                  <T n="value">323883<!--ObjectStateValue: genericVariant_Values_1--></T>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <T n="buff_type">492018<!--Buff: buff_NobleFavor_NobleGifts_Treats--></T>
+                      </U>
+                      <L n="tests">
+                        <L>
+                          <V t="identity">
+                            <U n="identity">
+                              <E n="subject_b">SavedActor1</E>
+                              <T n="subjects_match">True</T>
+                            </U>
+                          </V>
+                        </L>
+                      </L>
+                    </U>
+                  </V>
+                </L>
+                <L n="loot_list">
+                  <T>485872<!--RandomWeightedLoot: randomWeightedLoot_NobleCareer_NobleFavor_NobleGifts_CommonerPositive--></T>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="state">
+                <U n="state">
+                  <T n="value">323882<!--ObjectStateValue: genericVariant_Values_0--></T>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <T n="buff_type">492017<!--Buff: buff_NobleFavor_NobleGifts_Rejection--></T>
+                      </U>
+                      <L n="tests">
+                        <L>
+                          <V t="identity">
+                            <U n="identity">
+                              <E n="subject_b">SavedActor1</E>
+                              <T n="subjects_match">True</T>
+                            </U>
+                          </V>
+                        </L>
+                      </L>
+                    </U>
+                  </V>
+                </L>
+                <L n="loot_list">
+                  <T>486710<!--RandomWeightedLoot: randomWeightedLoot_NobleCareer_NobleFavor_NobleGifts_RoyalNegative--></T>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="state">
+                <U n="state">
+                  <T n="value">323885<!--ObjectStateValue: genericVariant_Values_3--></T>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <T n="buff_type">492018<!--Buff: buff_NobleFavor_NobleGifts_Treats--></T>
+                      </U>
+                      <L n="tests">
+                        <L>
+                          <V t="identity">
+                            <U n="identity">
+                              <E n="subject_b">SavedActor1</E>
+                              <T n="subjects_match">True</T>
+                            </U>
+                          </V>
+                        </L>
+                      </L>
+                    </U>
+                  </V>
+                </L>
+                <L n="loot_list">
+                  <T>486709<!--RandomWeightedLoot: randomWeightedLoot_NobleCareer_NobleFavor_NobleGifts_RoyalPositive--></T>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="state">
+                <U n="state">
+                  <T n="value">323884<!--ObjectStateValue: genericVariant_Values_2--></T>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>INFANT</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+  </L>
+</I>

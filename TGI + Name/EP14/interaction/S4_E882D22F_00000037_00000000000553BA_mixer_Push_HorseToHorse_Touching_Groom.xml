@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="MixerInteraction" i="interaction" m="interactions.base.mixer_interaction" n="mixer_Push_HorseToHorse_Touching_Groom" s="349114">
+  <T n="allow_user_directed">False</T>
+  <V n="basic_focus" t="disable_focus" />
+  <T n="display_name">0x1DBC40ED<!--String: "(Debug) Groom"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Mixer</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <V n="cancel_si" t="enabled" />
+        <L n="continuation">
+          <U>
+            <T n="affordance">322227<!--SocialSuperInteraction: horseSocials_HorseToHorse_Touching_Friendly_Groom--></T>
+          </U>
+        </L>
+      </U>
+    </U>
+  </V>
+  <U n="sub_action">
+    <T n="base_weight">2</T>
+  </U>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>317538<!--Buff: buff_HorseRiding_HorseMounted--></T>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x8E9714DD<!--String: "This horse is currently being ridden."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>317538<!--Buff: buff_HorseRiding_HorseMounted--></T>
+        </L>
+        <E n="subject">TargetSim</E>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x8E9714DD<!--String: "This horse is currently being ridden."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="visible">False</T>
+</I>

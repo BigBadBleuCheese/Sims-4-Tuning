@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="AutonomousSimPickerSuperInteraction" i="interaction" m="interactions.base.picker_interaction" n="autonomousSimPicker_SeanceTable_Commune" s="399147">
+  <V n="_saveable" t="disabled" />
+  <L n="_static_commodities">
+    <U>
+      <T n="static_commodity">399146<!--StaticCommodity: staticCommodity_Medium_Commune--></T>
+    </U>
+  </L>
+  <L n="actor_continuation">
+    <U>
+      <T n="affordance">251975<!--SuperInteraction: superInteraction_SeanceTable_PickedActor_Commune--></T>
+    </U>
+  </L>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <V n="content_score" t="disabled" />
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T n="include_uninstantiated_sims">False</T>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <L n="picked_continuation">
+    <U>
+      <T n="affordance">251671<!--SuperInteraction: superInteraction_SeanceTable_PickedSim_Commune--></T>
+    </U>
+  </L>
+  <V n="radius" t="enabled">
+    <T n="enabled">10</T>
+  </V>
+  <V n="route_start_balloon" t="enabled">
+    <U n="enabled">
+      <U n="balloon">
+        <L n="balloon_choices">
+          <U>
+            <V n="item" t="balloon_icon">
+              <U n="balloon_icon">
+                <V n="icon" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>Object</E>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </U>
+        </L>
+        <L n="balloon_target">
+          <E>Actor</E>
+        </L>
+      </U>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <L n="sim_tests">
+    <L>
+      <V t="location">
+        <U n="location">
+          <U n="location_tests">
+            <V n="is_on_active_lot" t="Is_or_is_not_on_active_lot" />
+          </U>
+          <E n="subject">PickedSim</E>
+        </U>
+      </V>
+      <V t="mood">
+        <U n="mood">
+          <T n="disallow">True</T>
+          <T n="mood">14646<!--Mood: Mood_Uncomfortable--></T>
+          <E n="who">PickedSim</E>
+        </U>
+      </V>
+      <V t="mood">
+        <U n="mood">
+          <T n="disallow">True</T>
+          <T n="mood">14645<!--Mood: Mood_Stressed--></T>
+          <E n="who">PickedSim</E>
+        </U>
+      </V>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified">
+            <L n="specified">
+              <E>TEEN</E>
+              <E>YOUNGADULT</E>
+              <E>ADULT</E>
+              <E>ELDER</E>
+              <E>CHILD</E>
+            </L>
+          </V>
+          <V n="species" t="specified">
+            <U n="specified">
+              <L n="species">
+                <E />
+              </L>
+            </U>
+          </V>
+          <E n="who">PickedSim</E>
+        </U>
+      </V>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>256353<!--Trait: trait_HauntedHouse_Temperance--></T>
+          </L>
+          <E n="subject">PickedSim</E>
+        </U>
+      </V>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>12818<!--Buff: Buff_Motives_Energy_Exhausted--></T>
+          </L>
+          <E n="subject">PickedSim</E>
+        </U>
+      </V>
+    </L>
+  </L>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_autonomous">
+    <L>
+      <V t="test_set_reference">
+        <T n="test_set_reference">126907<!--TestSetInstance: testSetInstance_InteractionIsEncouragedByClubOrCustomerRulesOrHobbyClassOrDynasty--></T>
+      </V>
+    </L>
+  </L>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="skill_test">
+      <U n="skill_test">
+        <T n="skill">255249<!--Skill: statistic_Skill_AdultMinor_Medium--></T>
+        <V n="skill_range" t="interval">
+          <U n="interval">
+            <U n="skill_interval">
+              <T n="lower_bound">2</T>
+            </U>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="slot_test_related">
+      <U n="slot_test_related">
+        <L n="slot_tests">
+          <U>
+            <V n="requires_child" t="Has_Children">
+              <U n="Has_Children">
+                <V n="object_type" t="enabled">
+                  <V n="enabled" t="object_tags">
+                    <U n="object_tags">
+                      <L n="tag_set">
+                        <E>Func_DiningChair</E>
+                        <E>BuyCatSS_DeskChair</E>
+                      </L>
+                    </U>
+                  </V>
+                </V>
+              </U>
+            </V>
+            <T n="slot">slot_SitChair</T>
+          </U>
+          <U>
+            <T n="slot">slot_SitShared</T>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V t="in_use">
+      <U n="in_use">
+        <T n="negate">True</T>
+        <L n="targets">
+          <E>Object</E>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xEF4B85DB<!--String: "The Séance Table is already in use!"--></T>
+        </V>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">28305<!--TestSetInstance: testSet_EmotionNotMiserable--></T>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">28176<!--TestSetInstance: testSet_EmotionNotStressed--></T>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>12818<!--Buff: Buff_Motives_Energy_Exhausted--></T>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xAA6B8E8<!--String: "{0.SimFirstName} is too tired to do this right now!"--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+  <T n="visible">False</T>
+</I>

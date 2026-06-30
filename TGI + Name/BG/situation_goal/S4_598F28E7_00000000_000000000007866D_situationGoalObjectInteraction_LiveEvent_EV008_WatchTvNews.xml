@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalObjectInteraction" i="situation_goal" m="situations.situation_goal_object_interaction" n="situationGoalObjectInteraction_LiveEvent_EV008_WatchTvNews" s="493165">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T p="InGame\UI\Icons\Headlines\Final\icon_headline_tvtube.png" n="enabled">2f7d0004:00000000:d713f3a824bb3b70</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x3E664081<!--String: "Watch the News on TV"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0x89CAE3E3<!--String: "Find a TV and watch the news channel on it by selecting Watch Channel..., then look for Watch News.\n\nSometimes, you may have to look under More Choices..."--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>447711<!--SituationGoalLootActions: liveEvent_GoalLoot_CompleteQuestGoal--></T>
+  </L>
+  <U n="_goal_test">
+    <L n="affordances">
+      <T>9111<!--WatchSuperInteraction: tv_WatchNews--></T>
+    </L>
+    <V n="running_time" t="enabled">
+      <T n="enabled">15</T>
+    </V>
+    <E n="test_event">InteractionUpdate</E>
+  </U>
+  <L n="_post_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+      </U>
+    </V>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+  <V n="goal_completion_notification" t="enabled">
+    <U n="enabled">
+      <V n="icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T p="InGame\UI\Icons\Events\EventGoal_Television.png" n="key">2f7d0004:00000000:cbdf720703663afd</T>
+          </U>
+        </V>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0x463F69E4<!--String: ""...An envoy has been spotted in town, and they appear to be royal in nature. Several local residents claim to have seen them. Stay tuned for updates on this intriguing development!""--></T>
+      </V>
+      <V n="title" t="enabled">
+        <T n="enabled">0x1FAB1BA2<!--String: "News Alert"--></T>
+      </V>
+    </U>
+  </V>
+  <V n="tutorial_tip_group" t="enabled">
+    <T n="enabled">498387<!--TutorialTipGroup: tutorialTipGroup_LiveEvent_EV008_WatchNewsTV--></T>
+  </V>
+</I>

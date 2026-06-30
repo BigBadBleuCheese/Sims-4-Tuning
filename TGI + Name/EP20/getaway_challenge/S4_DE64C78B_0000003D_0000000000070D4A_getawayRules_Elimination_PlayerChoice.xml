@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="PlayerElimination" i="getaway_challenge" m="custom_schedules.getaway_challenge_tuning" n="getawayRules_Elimination_PlayerChoice" s="462154">
+  <V n="daily_timer_notification" t="enabled">
+    <U n="enabled">
+      <V n="audio_sting" t="enabled">
+        <U n="enabled">
+          <T n="audio" p="InEP20\Audio\music\mu_bumpers_ep20\bumper_ep20_getaway_eliminated.propx">39b2aa4a:00000000:81a59ed6b7405638</T>
+          <T n="immediate_audio">True</T>
+        </U>
+      </V>
+      <L n="dialog_options">
+        <E>DISABLE_CLOSE_BUTTON</E>
+      </L>
+      <V n="icon" t="enabled">
+        <V n="enabled" t="participant" />
+      </V>
+      <V n="text" t="single">
+        <T n="single">0x3B765D1A<!--String: "You've made your decision and chosen {0.SimName} as the Sim to send home! Some Sims may have tears, others might cheer, but one thing's for sure: everyone's breathing a little easier knowing it wasn't them. Don't get too comfortable though...another decision is just around the corner."--></T>
+      </V>
+      <V n="title" t="enabled">
+        <T n="enabled">0x214DA214<!--String: "Say Goodbye!"--></T>
+      </V>
+    </U>
+  </V>
+  <T n="description_tooltip">0x396B1E2<!--String: "The choice is yours! Each day, choose one Sim to eliminate from the Getaway!"--></T>
+  <T n="display_name">0xCF22D680<!--String: "Player Choice Elimination"--></T>
+  <L n="groups">
+    <U>
+      <L n="associated_buff">
+        <U>
+          <T n="buff_type">483862<!--Buff: buff_Getaway_EliminationCandidate--></T>
+        </U>
+      </L>
+      <L n="disallowed_ages">
+        <E>INFANT</E>
+        <E />
+        <E>TODDLER</E>
+      </L>
+      <L n="disallowed_species">
+        <E>CAT</E>
+        <E>DOG</E>
+        <E>FOX</E>
+        <E>HORSE</E>
+        <E>SMALLDOG</E>
+      </L>
+      <T n="group_name">0x36F2FADF<!--String: "Elimination Candidates"--></T>
+    </U>
+  </L>
+  <T n="icon" p="InEP20\UI\Icons\GetawayRules\getaway_rules_PlayerChoiceElimination.png">2f7d0004:00000000:e1418c2bd97d416d</T>
+  <L n="loots_after_daily_timer">
+    <T>492381<!--LootActions: loot_Getaway_PlayerElimination_Ending--></T>
+  </L>
+  <U n="sim_picker">
+    <L n="dialog_options">
+      <E>DISABLE_CLOSE_BUTTON</E>
+    </L>
+    <T n="force_done_button">True</T>
+    <T n="include_cancel_response">False</T>
+    <T n="min_choices">1</T>
+    <V n="text" t="enabled">
+      <V n="enabled" t="single">
+        <T n="single">0x1EF1CBAD<!--String: "The time has come to choose which Sim will be leaving the Getaway. Choose the Sim you wish to eliminate and say goodbye!"--></T>
+      </V>
+    </V>
+    <T n="text_ok">0x25ACCEDB<!--String: "Eliminate"--></T>
+    <V n="title" t="enabled">
+      <T n="enabled">0x604246D<!--String: "Elimination Time!"--></T>
+    </V>
+    <V n="tooltip_text_ok" t="enabled">
+      <T n="enabled">0xFE8543ED<!--String: "This Sim will be sent home and removed from the Getaway."--></T>
+    </V>
+  </U>
+  <L n="tests_blocking_daily_timer_behavior">
+    <L>
+      <V t="count">
+        <U n="count">
+          <V n="participant" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">GetawayEliminationCandidates</E>
+            </U>
+          </V>
+          <V n="threshold" t="from_value">
+            <U n="from_value">
+              <E n="comparison">LESS_OR_EQUAL</E>
+              <T n="value">1</T>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Lose_Teeth_ApplyMisadventure" s="315030">
+  <L n="loot_actions">
+    <V t="reaction">
+      <U n="reaction">
+        <V n="si_reaction" t="enabled">
+          <U n="enabled">
+            <T n="affordance">315031<!--SuperInteraction: superInteraction_Lose_Teeth_MisadventureReaction--></T>
+            <E n="affordance_priority">High</E>
+            <V n="affordance_run_priority" t="enabled">
+              <E n="enabled">High</E>
+            </V>
+            <V n="affordance_target" t="disabled" />
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">312134<!--Buff: buff_Lose_Teeth_Missing_Tooth_AppearanceModifier--></T>
+        </U>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x8D948A93<!--String: "Oops! {0.SimFirstName} needs to be more careful about what {0.SimPronounSubjective} is doing; because {0.SimPronounSubjective} just knocked out a tooth. Thankfully, {0.SimPronounSubjective}’ll be able to fix this in a jiffy."--></T>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">327987<!--Buff: buff_Lose_Teeth_Missing_Tooth_BedSwipe--></T>
+        </U>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified">
+            <L n="specified">
+              <E>CHILD</E>
+            </L>
+          </V>
+          <V n="species" t="specified">
+            <U n="specified">
+              <L n="species">
+                <E />
+              </L>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

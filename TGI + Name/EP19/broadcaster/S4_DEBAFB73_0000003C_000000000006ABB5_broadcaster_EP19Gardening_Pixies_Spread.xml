@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Broadcaster" i="broadcaster" m="broadcasters.broadcaster" n="broadcaster_EP19Gardening_Pixies_Spread" s="437173">
+  <V n="allow_objects" t="from_tags">
+    <U n="from_tags">
+      <L n="tags">
+        <E>Func_GardeningSkillPlant</E>
+      </L>
+    </U>
+  </V>
+  <T n="allow_sims">False</T>
+  <L n="constraints">
+    <V t="circle">
+      <U n="circle">
+        <T n="radius">4</T>
+      </U>
+    </V>
+  </L>
+  <L n="effects">
+    <V t="loot">
+      <U n="loot">
+        <V n="affected_object_cap" t="enabled" />
+        <L n="loot_list">
+          <T>437174<!--LootActions: loot_EP19Gardening_Pixies_Spread--></T>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="state">
+              <U n="state">
+                <T n="value">437169<!--ObjectStateValue: state_EP19Gardening_Pixies_Gameplay_Off--></T>
+                <E n="who">Actor</E>
+              </U>
+            </V>
+            <V t="state">
+              <U n="state">
+                <E n="operator">NOTEQUAL</E>
+                <T n="value">39330<!--CommodityBasedObjectStateValue: PlantEvolution_0_Death--></T>
+                <E n="who">Actor</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="frequency" t="on_enter">
+    <U n="on_enter">
+      <T n="allow_multiple">True</T>
+    </U>
+  </V>
+  <T n="immediate">True</T>
+</I>

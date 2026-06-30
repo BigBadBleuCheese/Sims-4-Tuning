@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="QuestGig" i="career_gig" m="careers.missions.mission_gig" n="questGig_EP19Quests_Liaison_Travel" s="441781">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_description" t="enabled">
+        <T n="enabled">0xF2319015<!--String: "<i>Through mist or through rock, found deep in a cove, a land lived alone and in secret. And any reward that could be discovered, the Sim was allowed to just keep it. Now this place was made for all of life’s creatures, but nobody knew its true worth. Except Mother Nature, and her nomenclature, which stated “it’s deep in the earth”. So go my dear friend, figure out what she means, and catch your reward if you dare. You can teleport, the travel is short, then find out what’s hidden in there...</i>\n\n<font color="#1E81E6">Travel and Collect a Fish.</font>\n"--></T>
+      </V>
+      <V n="instance_display_icon" t="enabled">
+        <T n="enabled" p="InEP19\UI\Icons\Quests\quests_FetchQuest04.png">2f7d0004:00000000:c7eb2f97867449a9</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0xE68621BE<!--String: "The Ground’s Jewel"--></T>
+      </V>
+    </U>
+  </V>
+  <T n="career">424758<!--Career: career_EP19Quests--></T>
+  <L n="cycling_display_data">
+    <U>
+      <T n="customer_description">0xF2319015<!--String: "<i>Through mist or through rock, found deep in a cove, a land lived alone and in secret. And any reward that could be discovered, the Sim was allowed to just keep it. Now this place was made for all of life’s creatures, but nobody knew its true worth. Except Mother Nature, and her nomenclature, which stated “it’s deep in the earth”. So go my dear friend, figure out what she means, and catch your reward if you dare. You can teleport, the travel is short, then find out what’s hidden in there...</i>\n\n<font color="#1E81E6">Travel and Collect a Fish.</font>\n"--></T>
+      <T n="mission_name">0xD7AF39A<!--String: "The Ground's Jewel"--></T>
+    </U>
+  </L>
+  <T n="gig_assignment_aspiration">441783<!--AspirationGig: aspirationGig_EP19Quests_Liaison_Travel--></T>
+  <V n="gig_pay" t="flat_amount">
+    <U n="flat_amount">
+      <T n="value">222</T>
+    </U>
+  </V>
+  <T n="hide_inactive_objectives">True</T>
+  <L n="mission_objective_data">
+    <U>
+      <L n="weighted_objectives">
+        <U>
+          <T n="objective">441808<!--Objective: objective_EP19Quests_Liaison_Travel_Teleport--></T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="requires_previous_objective_complete">True</T>
+      <L n="weighted_objectives">
+        <U>
+          <T n="objective">441809<!--Objective: objective_EP19Quests_Liaison_Travel_Catch--></T>
+        </U>
+      </L>
+    </U>
+  </L>
+  <T n="mission_rewards_description">0x3B18AFDC<!--String: "{0.String}\n<font color='#199C2C'>{1.String}</font>"--></T>
+  <V n="mission_rewards_text" t="enabled">
+    <T n="enabled">0xFFFD7D68<!--String: "Reward: Forbidden Fruit, Live Houseplant, End of Fable"--></T>
+  </V>
+  <V n="mission_trait" t="enabled">
+    <T n="enabled">441771<!--Trait: trait_Hidden_EP19Quests_OnQuest_LiaisonTravel--></T>
+  </V>
+  <U n="objective_completion_audio">
+    <T n="audio" p="InGame\Audio\Bumper\bumper_other_goal_complete.propx">39b2aa4a:00000000:ea1687e36b0b32f3</T>
+  </U>
+  <E n="on_pick_behavior">REMOVE</E>
+  <T n="open_career_panel">True</T>
+  <V n="picker_associated_sim_filter" t="enabled">
+    <T n="enabled">441776<!--TunableSimFilter: situationFilters_EP19World_NPC_EP19QuestsLiaison--></T>
+  </V>
+  <T n="picker_description_text">0x3B18AFDC<!--String: "{0.String}\n<font color='#199C2C'>{1.String}</font>"--></T>
+  <T n="picker_disable_if_visibility_tests_fail_with_tooltip">True</T>
+  <T n="picker_replace_if_removed">True</T>
+  <V n="picker_scheduling_behavior" t="enabled">
+    <V n="enabled" t="schedule_career_gig">
+      <U n="schedule_career_gig">
+        <T n="allow_add_career">True</T>
+      </U>
+    </V>
+  </V>
+  <V n="picker_scoring" t="enabled">
+    <U n="enabled">
+      <E n="bucket">EP19Quest_Liaison</E>
+    </U>
+  </V>
+  <L n="picker_visibility_tests">
+    <L>
+      <V t="career_gig_test">
+        <U n="career_gig_test">
+          <T n="career">424758<!--Career: career_EP19Quests--></T>
+          <T n="negate">True</T>
+          <V n="test_type" t="specific_gigs">
+            <U n="specific_gigs">
+              <L n="gigs">
+                <T>441781<!--QuestGig: questGig_EP19Quests_Liaison_Travel--></T>
+              </L>
+            </U>
+          </V>
+          <V n="tooltip" t="enabled">
+            <T n="enabled">0x67109623<!--String: "This Fable is currently in progress."--></T>
+          </V>
+        </U>
+      </V>
+      <V t="unlock_earned">
+        <U n="unlock_earned">
+          <V n="tooltip" t="enabled">
+            <T n="enabled">0x27E7731F<!--String: "Complete the Stubborn Misfortune Fable from the Fairy Council Liaison to unlock."--></T>
+          </V>
+          <V n="unlock_to_test" t="aspiration">
+            <U n="aspiration">
+              <T n="aspiration">441782<!--AspirationGig: aspirationGig_EP19Quests_Liaison_Fetch--></T>
+              <T n="negate">False</T>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="result_based_loots" t="enabled">
+    <L n="enabled">
+      <U>
+        <E n="key">CANCELED</E>
+        <L n="value">
+          <T>441784<!--LootActions: loot_EP19Quests_Cleanup_LiaisonTravel--></T>
+        </L>
+      </U>
+      <U>
+        <E n="key">SUCCESS</E>
+        <L n="value">
+          <T>441786<!--LootActions: loot_EP19Quests_Rewards_LiaisonTravel--></T>
+        </L>
+      </U>
+    </L>
+  </V>
+</I>

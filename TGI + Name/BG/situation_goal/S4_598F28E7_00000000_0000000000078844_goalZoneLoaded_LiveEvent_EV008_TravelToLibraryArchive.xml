@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalZoneLoaded" i="situation_goal" m="situations.situation_goal_zone_loaded" n="goalZoneLoaded_LiveEvent_EV008_TravelToLibraryArchive" s="493636">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T n="enabled" p="InGame\UI\Icons\Headlines\Final\headline_TravelTo.png">2f7d0004:00000000:a7b5f5ad9f674e37</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x64E32DDA<!--String: "Visit the Willow Creek Archive Library"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0x67855002<!--String: "To travel to the library, open the Phone Menu and choose Travel.\n\nThen, find the Willow Creek Archive Library in Willow Creek."--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>447711<!--SituationGoalLootActions: liveEvent_GoalLoot_CompleteQuestGoal--></T>
+  </L>
+  <L n="_post_tests">
+    <V t="zone">
+      <U n="zone">
+        <U n="zone_tests">
+          <V n="venue_type" t="enabled">
+            <U n="enabled">
+              <V n="whitelist" t="specify">
+                <U n="specify">
+                  <L n="whitelist">
+                    <T>16874<!--Venue: venue_library--></T>
+                  </L>
+                </U>
+              </V>
+            </U>
+          </V>
+          <V n="world_tests" t="enabled">
+            <U n="enabled">
+              <V n="whitelist" t="specify">
+                <U n="specify">
+                  <L n="whitelist">
+                    <T>36244</T>
+                  </L>
+                </U>
+              </V>
+            </U>
+          </V>
+        </U>
+      </U>
+    </V>
+  </L>
+  <V n="goal_completion_notification" t="enabled">
+    <U n="enabled">
+      <V n="icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T n="key" p="InGame\UI\Icons\LiveEvents\EV008\Notifications\notification_EventNotificationIcon.png">2f7d0004:00000000:0f0474c26fe0b4f3</T>
+          </U>
+        </V>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0x4EB90CD4<!--String: "The Envoy rushed out and said they would be here at the library.\n\nSurprise them with a question!"--></T>
+      </V>
+    </U>
+  </V>
+  <T n="should_reevaluate_on_load">True</T>
+  <V n="tutorial_tip_group" t="enabled">
+    <T n="enabled">498418<!--TutorialTipGroup: tutorialTipGroup_LiveEvent_EV008_Travel--></T>
+  </V>
+</I>

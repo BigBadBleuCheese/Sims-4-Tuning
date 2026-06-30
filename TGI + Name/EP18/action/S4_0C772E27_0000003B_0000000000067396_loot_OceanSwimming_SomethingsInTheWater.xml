@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_OceanSwimming_SomethingsInTheWater" s="422806">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0xA884E494<!--String: "(From Something Slimy Touching {0.SimFirstName} in the Water)"--></T>
+          </V>
+          <T n="buff_type">389978<!--Buff: buff_EP18World_SomethingInTheWater--></T>
+        </U>
+        <U n="chance">
+          <T n="base_chance">5</T>
+          <L n="multipliers">
+            <U>
+              <T n="multiplier">2</T>
+              <L n="tests">
+                <L>
+                  <V t="trait">
+                    <U n="trait">
+                      <L n="whitelist_traits">
+                        <T>203542<!--Trait: trait_Paranoid--></T>
+                        <T>16848<!--Trait: trait_Insane--></T>
+                        <T>384182<!--Trait: trait_ChasedByDeath--></T>
+                        <T>396064<!--Trait: trait_Shady--></T>
+                        <T>379635<!--Trait: trait_Macabre--></T>
+                      </L>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+            <U>
+              <T n="multiplier">2</T>
+              <L n="tests">
+                <L>
+                  <V t="weather_type">
+                    <U n="weather_type">
+                      <L n="weather_types">
+                        <E>Rain_Heavy</E>
+                        <E>Thunder</E>
+                        <E>Snow_Storm</E>
+                        <E>Snow_Heavy</E>
+                        <E>AnyLightning</E>
+                      </L>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+            <U>
+              <T n="multiplier">3</T>
+              <L n="tests">
+                <L>
+                  <V t="statistic">
+                    <U n="statistic">
+                      <V n="score_to_use" t="user_value" />
+                      <T n="stat">206483<!--Commodity: commodity_OceanSwimming_TimeSpentSwimming--></T>
+                      <V n="threshold" t="value_threshold">
+                        <U n="value_threshold">
+                          <E n="comparison">GREATER</E>
+                          <T n="value">450</T>
+                        </U>
+                      </V>
+                      <E n="who">Actor</E>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+          </L>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="region">
+              <U n="region">
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>379402<!--Region: region_Residential_EP18World--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+            <V t="swim_location">
+              <U n="swim_location">
+                <V n="test" t="swim_in_ocean" />
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

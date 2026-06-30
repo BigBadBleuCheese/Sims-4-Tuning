@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SentimentalTattooMultiPickerInteraction" i="interaction" m="tattoo.sentimental_tattoo_multi_picker" n="tattooingMultiPickerInteraction_RegularSentimental_Debug_Excellent" s="391284">
+  <V n="_saveable" t="disabled" />
+  <L n="basic_extras">
+    <V t="payment">
+      <U n="payment">
+        <T n="display_only">True</T>
+        <V n="payment" t="literal">
+          <U n="literal">
+            <V n="payment_cost" t="amount" />
+            <V n="payment_source" t="household">
+              <U n="household">
+                <T n="allow_credits">True</T>
+              </U>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <L n="basic_liabilities">
+    <V t="critical_priority" />
+  </L>
+  <T n="category">391274<!--PieMenuCategory: pieMenuCategory_Cheats_EP18_Tattooing--></T>
+  <V n="content_score" t="disabled" />
+  <V n="continuation" t="enabled">
+    <L n="enabled">
+      <U>
+        <T n="affordance">391281<!--ImmediateSuperInteraction: debugImmediate_Tattooing_Apply_Excellent--></T>
+        <T o="true" n="si_affordance_override" />
+        <E n="target">Actor</E>
+      </U>
+    </L>
+  </V>
+  <T n="debug">True</T>
+  <T n="display_name">0x6CB18E59<!--String: "Get Excellent Dedication Tattoo"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <V n="display_tooltip" t="enabled">
+    <T n="enabled">0x89D71BC4<!--String: "Select a Tattoo design from a menu and dedicate it to a Sim or Pet without entering Create a Sim."--></T>
+  </V>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <U n="picker_dialog">
+    <L n="pickers">
+      <U>
+        <T n="disabled_tooltip">0xFDAE2DFE<!--String: "Select a Tattoo Design."--></T>
+        <T n="picker_interaction">387235<!--TattooDesignPicker: tattooingDesignPicker_Request_RegularSentimental--></T>
+      </U>
+      <U>
+        <T n="disabled_tooltip">0xB9E5EBE<!--String: "Select a Sim to dedicate the Tattoo to."--></T>
+        <T n="picker_interaction">387240<!--SimPickerInteraction: simPickerInteraction_Tattooing_SentimentalTarget_Request_RegularSentimental--></T>
+      </U>
+    </L>
+    <V n="text" t="single">
+      <T n="single">0x8624CF87<!--String: ""--></T>
+    </V>
+  </U>
+  <T n="pie_menu_priority">3</T>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="identity">
+      <U n="identity">
+        <E n="subject_b">TargetSim</E>
+        <T n="subjects_match">True</T>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">388114<!--TestSetInstance: testSetInstance_Tattooing_HasSentimentalRelation_Actor--></T>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">28305<!--TestSetInstance: testSet_EmotionNotMiserable--></T>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">28176<!--TestSetInstance: testSet_EmotionNotStressed--></T>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">386307<!--TestSetInstance: testSetInstance_Tattooing_CheckIfForbidden_Actor--></T>
+    </V>
+  </L>
+</I>

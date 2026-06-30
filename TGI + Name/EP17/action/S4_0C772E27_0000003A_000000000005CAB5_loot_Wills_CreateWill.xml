@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Wills_CreateWill" s="379573">
+  <L n="loot_actions">
+    <V t="create_object">
+      <U n="create_object">
+        <V n="creation_data" t="definition">
+          <U n="definition">
+            <T n="definition">418229</T>
+          </U>
+        </V>
+        <V n="location" t="inventory" />
+        <V n="notification_inventory" t="enabled">
+          <U n="enabled">
+            <U n="household_inventory">
+              <V n="text" t="single">
+                <T n="single">0x53BE22FC<!--String: "{0.SimFirstName} has created a Will, which can be found in {0.SimPronounPossessiveDependent} inventory! It's now up to {0.SimPronounObjective} to decide who is most deserving of each inheritance. Keep in mind that <b>Simoleons from the {0.SimLastName} household cannot be passed down to other households unless {0.SimFirstName} is the last Sim in the household to die</b>."--></T>
+              </V>
+            </U>
+            <U n="participant_inventory">
+              <V n="icon" t="enabled">
+                <V n="enabled" t="resource_key">
+                  <U n="resource_key">
+                    <T p="InGame\UI\Icons\Notifications\notification_wills.png" n="key">2f7d0004:00000000:518e1275655a7a96</T>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x53BE22FC<!--String: "{0.SimFirstName} has created a Will, which can be found in {0.SimPronounPossessiveDependent} inventory! It's now up to {0.SimPronounObjective} to decide who is most deserving of each inheritance. Keep in mind that <b>Simoleons from the {0.SimLastName} household cannot be passed down to other households unless {0.SimFirstName} is the last Sim in the household to die</b>."--></T>
+              </V>
+            </U>
+          </U>
+        </V>
+        <E n="owner_sim">Actor</E>
+        <T n="set_sim_as_owner">True</T>
+      </U>
+    </V>
+    <V t="will_loot" />
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0xA5C7C934<!--String: "(From Writing a Will)"--></T>
+          </V>
+          <T n="buff_type">392415<!--Buff: buff_Wills_Emotion_ProudAboutWritingWill--></T>
+        </U>
+        <U n="chance">
+          <T n="base_chance">100</T>
+        </U>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="will">
+        <U n="will">
+          <T n="negate">True</T>
+          <V n="test_type" t="sim_will_exists" />
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

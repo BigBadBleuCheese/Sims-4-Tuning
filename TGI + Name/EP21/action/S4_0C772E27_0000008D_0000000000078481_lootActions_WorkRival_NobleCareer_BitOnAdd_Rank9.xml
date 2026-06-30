@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="lootActions_WorkRival_NobleCareer_BitOnAdd_Rank9" s="492673">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="audio_sting" t="enabled">
+              <U n="enabled">
+                <T n="audio" p="InGame\Audio\Stings\base_sting.propx">39b2aa4a:00000000:5d8113c3809b3850</T>
+                <T n="immediate_audio">True</T>
+              </U>
+            </V>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>TargetSim</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x85CA8084<!--String: "The power and status held by the top Sim in the Kingdom look mighty inviting, and it seems that {1.SimNameWithPrefix} has noticed {0.SimFirstNameWithPrefix} watching them. Both of these Sims know only one can rule the Kingdom, and an uneasy truce may not last long...\n\n{0.SimFirstNameWithPrefix} can choose to challenge the throne, or respect {0.SimPronounPossessiveDependent} ruler.\n\n{0.SimFirstNameWithPrefix} won't be able to earn a promotion until the Kingdom Leader role is no longer occupied. {0.SimPronounSubjective|xxUpper} can try befriending or sabotaging {1.SimFirstNameWithPrefix} to remedy the problem. Resolving the matters in person is also an option, whether {0.SimPronounSubjective} chooses to be friendly or try more...creative solutions.\n"--></T>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="participant_type" />
+                  <V t="participant_type">
+                    <U n="participant_type">
+                      <V n="objects" t="from_participant">
+                        <U n="from_participant">
+                          <E n="participant">TargetSim</E>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0xB394042C<!--String: "A Power Struggle Ensues"--></T>
+            </V>
+            <E n="urgency">URGENT</E>
+          </U>
+        </V>
+        <E n="subject">ActorHouseholdMembers</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="is_active_sim" t="enabled" />
+                <V n="npc" t="enabled">
+                  <T n="enabled">False</T>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="ZoneModifier" i="zone_modifier" m="zone_modifier.zone_modifier" n="zoneModifiers_lotTrait_Geothermal" s="231727">
+  <U n="cleanup_loot">
+    <L n="actions">
+      <V t="modify_lot_items">
+        <U n="modify_lot_items">
+          <U n="actions">
+            <L n="modifications">
+              <U>
+                <V n="action" t="set_state">
+                  <U n="set_state">
+                    <T n="action_value">252814<!--ObjectStateValue: genericBroadcasterOnOff_Off--></T>
+                  </U>
+                </V>
+                <L n="tests">
+                  <L>
+                    <V t="object_definition">
+                      <U n="object_definition">
+                        <V n="item" t="tagged_item">
+                          <U n="tagged_item">
+                            <L n="tag_set">
+                              <E>Func_WaterHeater</E>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="enter_lot_loot">
+    <T>231947<!--LootActions: loot_Buff_zoneModifiers_Geothermal_AddBuff--></T>
+  </L>
+  <L n="exit_lot_loot">
+    <T>231948<!--LootActions: loot_Buff_zoneModifiers_Geothermal_RemoveBuff--></T>
+  </L>
+  <L n="household_actions">
+    <V t="lot_statistic_modifier">
+      <U n="lot_statistic_modifier">
+        <T n="modifier">0.0198412</T>
+        <T n="statistic">233027<!--Commodity: commodity_Utilities_Power--></T>
+      </U>
+    </V>
+  </L>
+  <U n="zone_wide_loot">
+    <L n="actions">
+      <V t="modify_lot_items">
+        <U n="modify_lot_items">
+          <U n="actions">
+            <L n="modifications">
+              <U>
+                <V n="action" t="set_state">
+                  <U n="set_state">
+                    <T n="action_value">252813<!--ObjectStateValue: genericBroadcasterOnOff_On--></T>
+                  </U>
+                </V>
+                <L n="tests">
+                  <L>
+                    <V t="object_definition">
+                      <U n="object_definition">
+                        <V n="item" t="tagged_item">
+                          <U n="tagged_item">
+                            <L n="tag_set">
+                              <E>Func_WaterHeater</E>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+      </V>
+    </L>
+  </U>
+</I>

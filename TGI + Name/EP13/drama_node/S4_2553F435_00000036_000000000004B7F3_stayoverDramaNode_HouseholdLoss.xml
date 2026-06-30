@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="StayoverDramaNode" i="drama_node" m="drama_scheduler.stayover_drama_node" n="stayoverDramaNode_HouseholdLoss" s="309235">
+  <V n="cooldown_data" t="group_cooldown">
+    <U n="group_cooldown">
+      <E n="group">StayOverCooldown</E>
+    </U>
+  </V>
+  <T n="duration">3</T>
+  <V n="invitees" t="participant">
+    <U n="participant">
+      <E n="participant">TargetHouseholdMembers</E>
+    </U>
+  </V>
+  <U n="min_and_max_times">
+    <T n="lower_bound">2</T>
+    <T n="upper_bound">3</T>
+  </U>
+  <L n="receiver_sim_pretests">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified" />
+          <V n="species" t="specified">
+            <U n="specified">
+              <L n="species">
+                <E />
+              </L>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+  <L n="run_tests">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified" />
+          <V n="species" t="specified">
+            <U n="specified">
+              <L n="species">
+                <E />
+              </L>
+            </U>
+          </V>
+          <E n="who">TargetSim</E>
+        </U>
+      </V>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="prohibited_relationship_bits">
+            <L n="match_any">
+              <T>306282<!--RelationshipBit: familyTrope_distant--></T>
+              <T>310888<!--RelationshipBit: familyTrope_difficult--></T>
+            </L>
+          </U>
+        </U>
+      </V>
+      <V t="situation_running_test">
+        <U n="situation_running_test">
+          <V n="situation_blacklist" t="enabled">
+            <L n="enabled">
+              <T>321830<!--AmbientSimSpecificCustomStatesSituation: situation_Stayover_Behavior_InfantIntro--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="scoring" t="disabled" />
+  <V n="sender_sim_info" t="sim_filter">
+    <U n="sim_filter">
+      <T n="sim_filter">319127<!--TunableSimFilter: filter_TemporaryStays_HouseholdLoss--></T>
+    </U>
+  </V>
+  <E n="sender_sim_info_type">INSTANCED_ALLOWED</E>
+  <T n="stayover_behavioral_situation">309240<!--AmbientSimSpecificCustomStatesSituation: situation_Stayover_Behavior_HouseholdLoss--></T>
+  <L n="stayover_prompt_messages">
+    <U>
+      <U n="dialog">
+        <E n="dialog_bg_style">BG_DEFAULT</E>
+        <L n="dialog_options">
+          <E>DISABLE_CLOSE_BUTTON</E>
+        </L>
+        <E n="phone_ring_type">RING</E>
+        <V n="text" t="single">
+          <T n="single">0x916428AE<!--String: "Hey, we heard what happened. I'm so sorry you're going through such a tough time. If you'd like some company, we wouldn't mind staying over for a few days to keep you company."--></T>
+        </V>
+        <T n="text_cancel">0x790848D2<!--String: "No, thank you. I'd rather be alone right now."--></T>
+        <T n="text_ok">0xC11A15AA<!--String: "Sure, feel free to come over. Thank you!"--></T>
+      </U>
+    </U>
+  </L>
+  <V n="time_option" t="schedule">
+    <U n="schedule">
+      <L n="valid_times">
+        <U>
+          <U n="days_available">
+            <T n="0 SUNDAY">True</T>
+            <T n="1 MONDAY">True</T>
+            <T n="2 TUESDAY">True</T>
+            <T n="3 WEDNESDAY">True</T>
+            <T n="4 THURSDAY">True</T>
+            <T n="5 FRIDAY">True</T>
+            <T n="6 SATURDAY">True</T>
+          </U>
+          <T n="duration">24</T>
+          <U n="start_time">
+            <T n="hour">0</T>
+            <T n="minute">0</T>
+          </U>
+        </U>
+      </L>
+    </U>
+  </V>
+</I>

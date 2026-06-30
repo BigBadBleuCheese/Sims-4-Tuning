@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="QuestGig" i="career_gig" m="careers.missions.mission_gig" n="questGig_EP19Quests_Trade_Fetch" s="441723">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_description" t="enabled">
+        <T n="enabled">0xBD034A7A<!--String: "<i>There was once a man, built in physique, who relished a good love affair. He’d sprinkle his charm wherever he went, and many girls flocked to his care. But a woman in red did not fall for his tricks, and left the poor fella on read. So from this rejection, to his feigned affection, a plot he concocted was bred...</i>\n\n<font color="#1E81E6">Deliver a Given Item.</font>\n"--></T>
+      </V>
+      <V n="instance_display_icon" t="enabled">
+        <T p="InEP19\UI\Icons\Quests\quests_FetchQuest01.png" n="enabled">2f7d0004:00000000:c7eb2f97867449ac</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0xABD8E333<!--String: "Deliver the News"--></T>
+      </V>
+    </U>
+  </V>
+  <T n="career">424758<!--Career: career_EP19Quests--></T>
+  <L n="cycling_display_data">
+    <U>
+      <T n="customer_description">0xBD034A7A<!--String: "<i>There was once a man, built in physique, who relished a good love affair. He’d sprinkle his charm wherever he went, and many girls flocked to his care. But a woman in red did not fall for his tricks, and left the poor fella on read. So from this rejection, to his feigned affection, a plot he concocted was bred...</i>\n\n<font color="#1E81E6">Deliver a Given Item.</font>\n"--></T>
+      <T n="mission_name">0xCAFCE01A<!--String: "Deliver the News"--></T>
+    </U>
+  </L>
+  <T n="gig_assignment_aspiration">441725<!--AspirationGig: aspirationGig_EP19Quests_Trade_Fetch--></T>
+  <V n="gig_pay" t="flat_amount">
+    <U n="flat_amount">
+      <T n="value">222</T>
+    </U>
+  </V>
+  <T n="hide_inactive_objectives">True</T>
+  <L n="loots_on_schedule">
+    <T>441750<!--LootActions: loot_EP19Quests_Trade_FetchStart--></T>
+  </L>
+  <L n="mission_objective_data">
+    <U>
+      <L n="weighted_objectives">
+        <U>
+          <T n="objective">441753<!--Objective: objective_EP19Quests_Trade_Fetch_DeliverA--></T>
+        </U>
+        <U>
+          <T n="objective">441754<!--Objective: objective_EP19Quests_Trade_Fetch_DeliverB--></T>
+        </U>
+        <U>
+          <T n="objective">441755<!--Objective: objective_EP19Quests_Trade_Fetch_DeliverC--></T>
+        </U>
+        <U>
+          <T n="objective">441756<!--Objective: objective_EP19Quests_Trade_Fetch_DeliverD--></T>
+        </U>
+        <U>
+          <T n="objective">441757<!--Objective: objective_EP19Quests_Trade_Fetch_DeliverE--></T>
+        </U>
+      </L>
+    </U>
+  </L>
+  <T n="mission_rewards_description">0x3B18AFDC<!--String: "{0.String}\n<font color='#199C2C'>{1.String}</font>"--></T>
+  <V n="mission_rewards_text" t="enabled">
+    <T n="enabled">0x51AD4B7F<!--String: "Reward: Fairy Seedling, Fairy Dust, End of Fable"--></T>
+  </V>
+  <V n="mission_trait" t="enabled">
+    <T n="enabled">441742<!--Trait: trait_Hidden_EP19Quests_OnQuest_TradeFetch--></T>
+  </V>
+  <U n="objective_completion_audio">
+    <T n="audio" p="InGame\Audio\Bumper\bumper_other_goal_complete.propx">39b2aa4a:00000000:ea1687e36b0b32f3</T>
+  </U>
+  <E n="on_pick_behavior">REMOVE</E>
+  <T n="open_career_panel">True</T>
+  <V n="picker_associated_sim_filter" t="enabled">
+    <T n="enabled">441734<!--TunableSimFilter: situationFilters_EP19World_NPC_EP19QuestTrade--></T>
+  </V>
+  <T n="picker_description_text">0x3B18AFDC<!--String: "{0.String}\n<font color='#199C2C'>{1.String}</font>"--></T>
+  <T n="picker_disable_if_visibility_tests_fail_with_tooltip">True</T>
+  <T n="picker_replace_if_removed">True</T>
+  <V n="picker_scheduling_behavior" t="enabled">
+    <V n="enabled" t="schedule_career_gig">
+      <U n="schedule_career_gig">
+        <T n="allow_add_career">True</T>
+      </U>
+    </V>
+  </V>
+  <V n="picker_scoring" t="enabled">
+    <U n="enabled">
+      <E n="bucket">EP19Quest_Trade</E>
+    </U>
+  </V>
+  <L n="picker_visibility_tests">
+    <L>
+      <V t="career_gig_test">
+        <U n="career_gig_test">
+          <T n="career">424758<!--Career: career_EP19Quests--></T>
+          <T n="negate">True</T>
+          <V n="test_type" t="specific_gigs">
+            <U n="specific_gigs">
+              <L n="gigs">
+                <T>441723<!--QuestGig: questGig_EP19Quests_Trade_Fetch--></T>
+              </L>
+            </U>
+          </V>
+          <V n="tooltip" t="enabled">
+            <T n="enabled">0x67109623<!--String: "This Fable is currently in progress."--></T>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="result_based_loots" t="enabled">
+    <L n="enabled">
+      <U>
+        <E n="key">CANCELED</E>
+        <L n="value">
+          <T>441729<!--LootActions: loot_EP19Quests_Cleanup_TradeFetch--></T>
+        </L>
+      </U>
+      <U>
+        <E n="key">SUCCESS</E>
+        <L n="value">
+          <T>441726<!--LootActions: loot_EP19Quests_Rewards_TradeFetch--></T>
+        </L>
+      </U>
+    </L>
+  </V>
+</I>

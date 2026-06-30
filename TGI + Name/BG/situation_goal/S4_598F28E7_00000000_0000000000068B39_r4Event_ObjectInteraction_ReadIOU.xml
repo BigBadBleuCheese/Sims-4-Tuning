@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalObjectInteraction" i="situation_goal" m="situations.situation_goal_object_interaction" n="r4Event_ObjectInteraction_ReadIOU" s="428857">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T p="InGame\UI\Icons\Notifications\notification_notepad.png" n="enabled">2f7d0004:00000000:db4d8edeeb85566e</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x60187C40<!--String: "Read the IOU"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0xF3A35908<!--String: "Why was the note in a time capsule, and what is this all about?\n\nOpen your inventory and find the IOU Note, then select Read IOU.\n\n(If you no longer have the IOU Note, it can be replaced at a mailbox)\n\n<i>(+15 Event Points)</i>"--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>447711<!--SituationGoalLootActions: liveEvent_GoalLoot_CompleteQuestGoal--></T>
+  </L>
+  <U n="_goal_test">
+    <L n="affordances">
+      <T>428858<!--ImmediateSuperInteraction: immediate_R4Event_readIOU--></T>
+    </L>
+    <E n="test_event">InteractionComplete</E>
+  </U>
+  <L n="_post_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+      </U>
+    </V>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+  <V n="goal_completion_notification" t="enabled">
+    <U n="enabled">
+      <V n="icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T p="InGame\UI\Icons\Notifications\notification_notepad.png" n="key">2f7d0004:00000000:db4d8edeeb85566e</T>
+          </U>
+        </V>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0x1A9D3AA6<!--String: "If you're reading this, I don't have time to explain everything.\n\nLet's just say I needed to borrow some things for now. Catch you later...or earlier."--></T>
+      </V>
+      <V n="title" t="enabled">
+        <T n="enabled">0xCA48DA80<!--String: "IOU Note"--></T>
+      </V>
+      <E n="visual_type">SPEECH</E>
+    </U>
+  </V>
+  <V n="tutorial_tip_group" t="disabled" />
+</I>

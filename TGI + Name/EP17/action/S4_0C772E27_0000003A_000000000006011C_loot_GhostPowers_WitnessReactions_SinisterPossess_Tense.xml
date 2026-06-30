@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_GhostPowers_WitnessReactions_SinisterPossess_Tense" s="393500">
+  <L n="loot_actions">
+    <V t="reaction">
+      <U n="reaction">
+        <V n="mixer_reaction" t="enabled">
+          <U n="enabled">
+            <T n="affordance">393448<!--MixerInteraction: mixer_GhostPowers_Witness_Reactions_LowIntensity--></T>
+          </U>
+        </V>
+        <V n="si_reaction" t="enabled">
+          <U n="enabled">
+            <T n="affordance">385308<!--SuperInteraction: reactions_Ghosts_ScaredReaction_LowIntensity--></T>
+            <E n="affordance_priority">Critical</E>
+            <V n="affordance_run_priority" t="enabled">
+              <E n="enabled">Critical</E>
+            </V>
+            <V n="affordance_target" t="disabled" />
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x73EF8D62<!--String: "(From Witnessing Sinister Haunt)"--></T>
+          </V>
+          <T n="buff_type">393509<!--Buff: buff_GhostPowers_SinisterPossess_WhatIsHappening--></T>
+        </U>
+      </U>
+    </V>
+    <V t="show_balloon">
+      <U n="show_balloon">
+        <U n="balloon">
+          <L n="balloon_choices">
+            <U>
+              <V n="item" t="balloon_category">
+                <T n="balloon_category">412489<!--BalloonCategory: balloonCategory_GhostPowers_SinisterPossess_Tense--></T>
+              </V>
+            </U>
+          </L>
+          <L n="balloon_target">
+            <E>Actor</E>
+          </L>
+        </U>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>422882<!--Buff: buff_Role_ReaperCareer_Player--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

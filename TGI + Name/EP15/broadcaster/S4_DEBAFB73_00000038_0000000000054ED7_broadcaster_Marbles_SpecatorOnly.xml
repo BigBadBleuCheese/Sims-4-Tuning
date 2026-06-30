@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Broadcaster" i="broadcaster" m="broadcasters.broadcaster" n="broadcaster_Marbles_SpecatorOnly" s="347863">
+  <L n="constraints">
+    <V t="line_of_sight">
+      <U n="line_of_sight">
+        <V n="temporary_los" t="enabled" />
+      </U>
+    </V>
+    <V t="circle">
+      <U n="circle">
+        <T n="radius">8</T>
+      </U>
+    </V>
+  </L>
+  <L n="effects">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>348596<!--LootActions: marbles_SpectatorReaction--></T>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="user_running_interaction">
+              <U n="user_running_interaction">
+                <L n="affordances">
+                  <T>346980<!--SuperInteraction: marblesGame_Spectator--></T>
+                </L>
+                <E n="participant">Actor</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="frequency" t="on_enter" />
+</I>

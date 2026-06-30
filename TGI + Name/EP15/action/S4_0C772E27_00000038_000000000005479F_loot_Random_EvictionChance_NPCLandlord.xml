@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="RandomWeightedLoot" i="action" m="interactions.utils.loot" n="loot_Random_EvictionChance_NPCLandlord" s="346015">
+  <L n="random_loot_actions">
+    <U>
+      <V n="action" t="create_situation">
+        <U n="create_situation">
+          <U n="create_situation">
+            <V n="actor_init_job" t="specify_job">
+              <T n="specify_job">346020<!--SituationJob: job_Eviction_Tenant--></T>
+            </V>
+            <L n="invite_participants">
+              <U>
+                <E n="participants_to_invite">ActiveHousehold</E>
+                <V n="invite_to_job" t="specify_job">
+                  <L n="specify_job">
+                    <T>346020<!--SituationJob: job_Eviction_Tenant--></T>
+                  </L>
+                </V>
+              </U>
+            </L>
+            <T n="invite_picked_sims">False</T>
+            <T n="invite_target_sim">False</T>
+            <V n="linked_sim_participant" t="enabled">
+              <E n="enabled">Actor</E>
+            </V>
+            <T n="situation">346012<!--EvictionTenantSituation: situation_Eviction_Tenant--></T>
+          </U>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">4</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">999999</T>
+            <L n="tests">
+              <L>
+                <V t="buff">
+                  <U n="buff">
+                    <V n="whitelist" t="enabled">
+                      <L n="enabled">
+                        <T>290825<!--Buff: buff_Debug_InteractionFail--></T>
+                      </L>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="trait">
+                  <U n="trait">
+                    <L n="blacklist_traits">
+                      <T>351533<!--Trait: trait_Hidden_EvictionSystem_UsedFreeChance--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">1.5</T>
+            <L n="tests">
+              <L>
+                <V t="rental_unit_has_overdue_status_test">
+                  <U n="rental_unit_has_overdue_status_test">
+                    <E n="tenant">ActorHouseholdMembers</E>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">3</T>
+            <L n="tests">
+              <L>
+                <V t="business_rule_state">
+                  <U n="business_rule_state">
+                    <E n="state">BROKEN</E>
+                    <U n="threshold">
+                      <T n="value">2</T>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">3</T>
+            <L n="tests">
+              <L>
+                <V t="business_rule_state">
+                  <U n="business_rule_state">
+                    <E n="state">BROKEN</E>
+                    <U n="threshold">
+                      <T n="value">3</T>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">3</T>
+            <L n="tests">
+              <L>
+                <V t="business_rule_state">
+                  <U n="business_rule_state">
+                    <E n="state">BROKEN</E>
+                    <U n="threshold">
+                      <T n="value">4</T>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="actions">
+        <T n="actions">351532<!--LootActions: loot_EvictionSystem_Tenant_NoEviction--></T>
+      </V>
+      <U n="weight">
+        <T n="base_value">8</T>
+      </U>
+    </U>
+  </L>
+</I>

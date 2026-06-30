@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalObjectInteraction" i="situation_goal" m="situations.situation_goal_object_interaction" n="situationGoalObjectInteraction_CommunalEvents_RanchGathering_Guests_CountryDance" s="338513">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T n="enabled" p="InEP14\UI\Icons\Events\EventGoal_CountryDance.png">2f7d0004:00000000:c25893ebb2f4ec52</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x6B372A3A<!--String: "Have Guests Perform a Cowpoke Dance"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0x25A99468<!--String: "Have Guests Perform Cowpoke Dance by choosing to Cowpoke Dance Together on any Radio or Dance Floor or Cowpoke Group Dance on a Dance Floor. "--></T>
+      </V>
+    </U>
+  </V>
+  <U n="_goal_test">
+    <L n="affordances">
+      <T>305312<!--CancelOnStateChangeInteraction: danceFloor_CountryDancing--></T>
+      <T>303992<!--CancelOnStateChangeInteraction: stereo_CountryDancing--></T>
+      <T>303308<!--JigPartConstraintInteraction: countryDancing_Sequence_1--></T>
+      <T>303309<!--JigPartConstraintInteraction: CountryDancing_JigPartConstraintInteraction--></T>
+    </L>
+    <E n="test_event">InteractionStart</E>
+  </U>
+  <T n="_iterations">3</T>
+  <L n="_post_tests">
+    <V t="situation_job">
+      <U n="situation_job">
+        <L n="situation_jobs">
+          <T>330679<!--SituationJob: communalEvents_Job_Guests--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T n="_score">30</T>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+</I>

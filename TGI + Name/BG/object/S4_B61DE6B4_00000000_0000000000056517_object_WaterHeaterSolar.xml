@@ -1,0 +1,702 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="GameObject" i="object" m="objects.game_object" n="object_WaterHeaterSolar" s="353559">
+  <U n="_components">
+    <V n="focus" t="enabled">
+      <U n="enabled">
+        <V n="_focus_score" t="globally">
+          <U n="globally">
+            <E n="base">LOW</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V n="retail_component" t="enabled">
+      <V n="enabled" t="reference">
+        <T n="reference">115301<!--RetailComponent: retailComponent_Default_LowAppeal--></T>
+      </V>
+    </V>
+    <V n="state" t="enabled">
+      <U n="enabled">
+        <V n="delinquency_state_changes" t="enabled">
+          <L n="enabled">
+            <U>
+              <E n="key">WATER</E>
+              <L n="value">
+                <T>354120<!--ObjectStateValue: genericLotHasUtility_Water_No--></T>
+              </L>
+            </U>
+          </L>
+        </V>
+        <L n="state_triggers">
+          <U>
+            <L n="at_states">
+              <T>240327<!--ObjectStateValue: solarPanel_WeatherValues_Cloudy--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>35297<!--ObjectStateValue: GenericOnOff_Off--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>15258<!--ObjectStateValue: NightTime--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>35297<!--ObjectStateValue: GenericOnOff_Off--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>240329<!--ObjectStateValue: solarPanel_WeatherValues_Default--></T>
+              <T>15127<!--ObjectStateValue: DayTime--></T>
+              <T>354119<!--ObjectStateValue: genericLotHasUtility_Water_Yes--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>35296<!--ObjectStateValue: GenericOnOff_On--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>354120<!--ObjectStateValue: genericLotHasUtility_Water_No--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>35297<!--ObjectStateValue: GenericOnOff_Off--></T>
+              </L>
+            </V>
+          </U>
+          <U>
+            <L n="at_states">
+              <T>77532<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Replace--></T>
+            </L>
+            <V n="set_states" t="Set_state_list">
+              <L n="Set_state_list">
+                <T>39737<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Not_Burning--></T>
+              </L>
+            </V>
+          </U>
+        </L>
+        <L n="states">
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">35296<!--ObjectStateValue: GenericOnOff_On--></T>
+                <U n="value">
+                  <V n="audio_state" t="apply_new_value">
+                    <V n="apply_new_value" t="start_audio">
+                      <U n="start_audio">
+                        <T n="audio" p="InGame\Audio\SFX\utility_object\utility_object_water_heater_lp.propx">39b2aa4a:00000000:f098e9a8faa8bb20</T>
+                      </U>
+                    </V>
+                  </V>
+                  <V n="autonomy_modifiers" t="apply_new_value">
+                    <V n="apply_new_value" t="apply_statistic_modifiers">
+                      <U n="apply_statistic_modifiers">
+                        <L n="lot_statistic_modifiers">
+                          <U>
+                            <V n="modifier" t="basic_value">
+                              <U n="basic_value">
+                                <T n="value">-0.00875</T>
+                              </U>
+                            </V>
+                            <T n="statistic">233233<!--Commodity: commodity_EcoFootprint_Lot--></T>
+                          </U>
+                        </L>
+                      </U>
+                    </V>
+                  </V>
+                  <V n="material_state" t="apply_new_value" />
+                </U>
+              </U>
+              <U>
+                <T n="key">35297<!--ObjectStateValue: GenericOnOff_Off--></T>
+                <U n="value">
+                  <V n="audio_state" t="apply_new_value" />
+                  <V n="autonomy_modifiers" t="apply_new_value" />
+                  <V n="material_state" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <V n="state_name" t="set_to_custom_value">
+                        <T n="set_to_custom_value">Off</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">35296<!--ObjectStateValue: GenericOnOff_On--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">15127<!--ObjectStateValue: DayTime--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">240329<!--ObjectStateValue: solarPanel_WeatherValues_Default--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">354119<!--ObjectStateValue: genericLotHasUtility_Water_Yes--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">35956<!--CommodityBasedObjectStateValue: Materialistic_Admired--></T>
+              </U>
+              <U>
+                <T n="key">35957<!--CommodityBasedObjectStateValue: Materialistic_YetToAdmire--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">35957<!--CommodityBasedObjectStateValue: Materialistic_YetToAdmire--></T>
+            </V>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V n="time_of_day_component" t="enabled">
+      <U n="enabled">
+        <L n="state_changes">
+          <U>
+            <T n="key">15345<!--ObjectState: TimeOfDay--></T>
+            <L n="value">
+              <U>
+                <T n="start_time">5</T>
+                <L n="tests">
+                  <L>
+                    <V t="day_and_time">
+                      <U n="day_and_time">
+                        <V n="is_day" t="enabled">
+                          <T n="enabled">True</T>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">15127<!--ObjectStateValue: DayTime--></T>
+              </U>
+              <U>
+                <T n="start_time">5.5</T>
+                <L n="tests">
+                  <L>
+                    <V t="day_and_time">
+                      <U n="day_and_time">
+                        <V n="is_day" t="enabled">
+                          <T n="enabled">True</T>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">15127<!--ObjectStateValue: DayTime--></T>
+              </U>
+              <U>
+                <T n="start_time">6</T>
+                <L n="tests">
+                  <L>
+                    <V t="day_and_time">
+                      <U n="day_and_time">
+                        <V n="is_day" t="enabled">
+                          <T n="enabled">True</T>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">15127<!--ObjectStateValue: DayTime--></T>
+              </U>
+              <U>
+                <T n="start_time">6.25</T>
+                <L n="tests">
+                  <L>
+                    <V t="day_and_time">
+                      <U n="day_and_time">
+                        <V n="is_day" t="enabled">
+                          <T n="enabled">True</T>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">15127<!--ObjectStateValue: DayTime--></T>
+              </U>
+              <U>
+                <T n="start_time">6.5</T>
+                <L n="tests">
+                  <L>
+                    <V t="day_and_time">
+                      <U n="day_and_time">
+                        <V n="is_day" t="enabled">
+                          <T n="enabled">True</T>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">15127<!--ObjectStateValue: DayTime--></T>
+              </U>
+              <U>
+                <T n="start_time">7</T>
+                <L n="tests">
+                  <L>
+                    <V t="day_and_time">
+                      <U n="day_and_time">
+                        <V n="is_day" t="enabled">
+                          <T n="enabled">True</T>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">15127<!--ObjectStateValue: DayTime--></T>
+              </U>
+              <U>
+                <T n="start_time">7.5</T>
+                <L n="tests">
+                  <L>
+                    <V t="day_and_time">
+                      <U n="day_and_time">
+                        <V n="is_day" t="enabled">
+                          <T n="enabled">True</T>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">15127<!--ObjectStateValue: DayTime--></T>
+              </U>
+              <U>
+                <T n="start_time">18</T>
+                <L n="tests">
+                  <L>
+                    <V t="day_and_time">
+                      <U n="day_and_time">
+                        <V n="is_day" t="enabled">
+                          <T n="enabled">False</T>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">15258<!--ObjectStateValue: NightTime--></T>
+              </U>
+              <U>
+                <T n="start_time">18.5</T>
+                <L n="tests">
+                  <L>
+                    <V t="day_and_time">
+                      <U n="day_and_time">
+                        <V n="is_day" t="enabled">
+                          <T n="enabled">False</T>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">15258<!--ObjectStateValue: NightTime--></T>
+              </U>
+              <U>
+                <T n="start_time">19</T>
+                <L n="tests">
+                  <L>
+                    <V t="day_and_time">
+                      <U n="day_and_time">
+                        <V n="is_day" t="enabled">
+                          <T n="enabled">False</T>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">15258<!--ObjectStateValue: NightTime--></T>
+              </U>
+              <U>
+                <T n="start_time">19.5</T>
+                <L n="tests">
+                  <L>
+                    <V t="day_and_time">
+                      <U n="day_and_time">
+                        <V n="is_day" t="enabled">
+                          <T n="enabled">False</T>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">15258<!--ObjectStateValue: NightTime--></T>
+              </U>
+              <U>
+                <T n="start_time">20</T>
+                <L n="tests">
+                  <L>
+                    <V t="day_and_time">
+                      <U n="day_and_time">
+                        <V n="is_day" t="enabled">
+                          <T n="enabled">False</T>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">15258<!--ObjectStateValue: NightTime--></T>
+              </U>
+              <U>
+                <T n="start_time">20.5</T>
+                <L n="tests">
+                  <L>
+                    <V t="day_and_time">
+                      <U n="day_and_time">
+                        <V n="is_day" t="enabled">
+                          <T n="enabled">False</T>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+                <T n="value">15258<!--ObjectStateValue: NightTime--></T>
+              </U>
+            </L>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V n="tooltip_component" t="enabled">
+      <U n="enabled">
+        <L n="custom_tooltips">
+          <U>
+            <L n="object_tests">
+              <L>
+                <V t="state">
+                  <U n="state">
+                    <T n="value">35296<!--ObjectStateValue: GenericOnOff_On--></T>
+                  </U>
+                </V>
+              </L>
+            </L>
+            <L n="tooltip_fields">
+              <U>
+                <E n="key">recipe_description</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x6C3CBDA8<!--String: "<b>Status:</b> <font color='#199C2C'>Fully Operational</font>"--></T>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <E n="key">recipe_name</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x41A0F856<!--String: "{0.ObjectCatalogName}"--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">Object</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+            </L>
+          </U>
+          <U>
+            <L n="object_tests">
+              <L>
+                <V t="state">
+                  <U n="state">
+                    <T n="value">35297<!--ObjectStateValue: GenericOnOff_Off--></T>
+                  </U>
+                </V>
+                <V t="state">
+                  <U n="state">
+                    <T n="value">354119<!--ObjectStateValue: genericLotHasUtility_Water_Yes--></T>
+                  </U>
+                </V>
+              </L>
+            </L>
+            <L n="tooltip_fields">
+              <U>
+                <E n="key">recipe_description</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x20774208<!--String: "<b>Status:</b> <font color='#D10007'>No Power Utility</font>"--></T>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <E n="key">recipe_name</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x41A0F856<!--String: "{0.ObjectCatalogName}"--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">Object</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+            </L>
+          </U>
+          <U>
+            <L n="object_tests">
+              <L>
+                <V t="state">
+                  <U n="state">
+                    <T n="value">15258<!--ObjectStateValue: NightTime--></T>
+                  </U>
+                </V>
+              </L>
+            </L>
+            <L n="tooltip_fields">
+              <U>
+                <E n="key">subtext</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0xB91CEE40<!--String: "Poor Light Conditions"--></T>
+                  </V>
+                </U>
+              </U>
+            </L>
+          </U>
+          <U>
+            <L n="object_tests">
+              <L>
+                <V t="state">
+                  <U n="state">
+                    <E n="operator">NOTEQUAL</E>
+                    <T n="value">15258<!--ObjectStateValue: NightTime--></T>
+                  </U>
+                </V>
+                <V t="state">
+                  <U n="state">
+                    <T n="value">240327<!--ObjectStateValue: solarPanel_WeatherValues_Cloudy--></T>
+                  </U>
+                </V>
+              </L>
+            </L>
+            <L n="tooltip_fields">
+              <U>
+                <E n="key">subtext</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x2E3D977E<!--String: "Poor Weather Conditions"--></T>
+                  </V>
+                </U>
+              </U>
+            </L>
+          </U>
+          <U>
+            <L n="object_tests">
+              <L>
+                <V t="state">
+                  <U n="state">
+                    <T n="value">35296<!--ObjectStateValue: GenericOnOff_On--></T>
+                  </U>
+                </V>
+                <V t="game_option">
+                  <U n="game_option">
+                    <E n="gameplay_option">ECO_FOOTPRINT_GAMEPLAY</E>
+                  </U>
+                </V>
+              </L>
+            </L>
+            <L n="tooltip_fields">
+              <U>
+                <E n="key">header</E>
+                <U n="value">
+                  <V n="override_component_information" t="concatenate_with_component_fields" />
+                  <V n="text" t="single">
+                    <T n="single">0x5D0F1C0E<!--String: "<font color='#4BA64A'>+ Green Eco Footprint</font>"--></T>
+                  </V>
+                </U>
+              </U>
+            </L>
+          </U>
+          <U>
+            <L n="object_tests">
+              <L>
+                <V t="state">
+                  <U n="state">
+                    <T n="value">35297<!--ObjectStateValue: GenericOnOff_Off--></T>
+                  </U>
+                </V>
+                <V t="state">
+                  <U n="state">
+                    <T n="value">354120<!--ObjectStateValue: genericLotHasUtility_Water_No--></T>
+                  </U>
+                </V>
+              </L>
+            </L>
+            <L n="tooltip_fields">
+              <U>
+                <E n="key">recipe_description</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x11933086<!--String: "<b>Status:</b> <font color='#D10007'>No Water Utility</font>"--></T>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <E n="key">recipe_name</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x41A0F856<!--String: "{0.ObjectCatalogName}"--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">Object</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+            </L>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V n="weather_aware_component" t="enabled">
+      <U n="enabled">
+        <L n="anywhere_loot">
+          <U>
+            <E n="key">AnyRain</E>
+            <U n="value">
+              <L n="end_loot">
+                <T>353561<!--LootActions: loot_Utilities_WaterHeaterSolar_Default--></T>
+              </L>
+              <L n="start_loot">
+                <T>353560<!--LootActions: loot_Utilities_WaterHeaterSolar_Cloudy--></T>
+              </L>
+            </U>
+          </U>
+          <U>
+            <E n="key">AnySnow</E>
+            <U n="value">
+              <L n="end_loot">
+                <T>353561<!--LootActions: loot_Utilities_WaterHeaterSolar_Default--></T>
+              </L>
+              <L n="start_loot">
+                <T>353560<!--LootActions: loot_Utilities_WaterHeaterSolar_Cloudy--></T>
+              </L>
+            </U>
+          </U>
+          <U>
+            <E n="key">Cloudy_Full</E>
+            <U n="value">
+              <L n="end_loot">
+                <T>353561<!--LootActions: loot_Utilities_WaterHeaterSolar_Default--></T>
+              </L>
+              <L n="start_loot">
+                <T>353560<!--LootActions: loot_Utilities_WaterHeaterSolar_Cloudy--></T>
+              </L>
+            </U>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V n="zone_modifier_component" t="enabled">
+      <U n="enabled">
+        <L n="zone_modifiers">
+          <U>
+            <T n="key">352987<!--ZoneModifier: zoneModifier_Hidden_WaterHeater_Off--></T>
+            <L n="value">
+              <V t="state">
+                <U n="state">
+                  <U n="state_value_test">
+                    <U n="states">
+                      <V n="whitelist" t="specify">
+                        <U n="specify">
+                          <L n="whitelist">
+                            <T>35297<!--ObjectStateValue: GenericOnOff_Off--></T>
+                          </L>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </U>
+          <U>
+            <T n="key">353068<!--ZoneModifier: zoneModifier_Hidden_WaterHeater_On--></T>
+            <L n="value">
+              <V t="state">
+                <U n="state">
+                  <U n="state_value_test">
+                    <U n="states">
+                      <V n="whitelist" t="specify">
+                        <U n="specify">
+                          <L n="whitelist">
+                            <T>35296<!--ObjectStateValue: GenericOnOff_On--></T>
+                          </L>
+                        </U>
+                      </V>
+                    </U>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </U>
+        </L>
+      </U>
+    </V>
+  </U>
+  <L n="_super_affordances">
+    <T>13328<!--ImmediateSuperInteraction: debug_Reset--></T>
+    <T>13326<!--ImmediateSuperInteraction: debug_ObjectDestroy--></T>
+    <T>103888<!--ImmediateSuperInteraction: cheat_set_as_head--></T>
+    <T>401385<!--SuperInteraction: ghost_Possess_MischieviousGhost--></T>
+    <T>13983<!--StandSuperInteraction: sim-stand--></T>
+    <T>393854<!--SuperInteraction: ghostPowers_Abilities_Scary_SinisterPossess_Autonomous--></T>
+    <T>74457<!--ImmediateSuperInteraction: fire_ReplaceBurntObject--></T>
+  </L>
+  <U n="recycling_data">
+    <L n="recycling_values">
+      <U>
+        <E n="Bucks Type">RecycleBitsBucks</E>
+        <T n="Value">0</T>
+      </U>
+      <U>
+        <E n="Bucks Type">RecyclePiecesBucks</E>
+        <T n="Value">1</T>
+      </U>
+    </L>
+  </U>
+</I>

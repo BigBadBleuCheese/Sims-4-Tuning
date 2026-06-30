@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="EvictionPropertyOwnerSituation" i="situation" m="situations.complex.eviction_property_owner_situation" n="situation_Eviction_PropertyOwner" s="346011">
+  <T n="_display_name">0x157FB66C<!--String: "Eviction in Progress"--></T>
+  <T n="_implies_greeted_status">True</T>
+  <T p="InGame\Audio\Bumper\base_bumper.propx" n="audio_sting_on_start">39b2aa4a:00000000:7bf1ebaa16e41f28</T>
+  <L n="compatible_venues">
+    <T>28614<!--Venue: venue_residential--></T>
+  </L>
+  <V n="confirmation_dialog" t="enabled">
+    <U n="enabled">
+      <V n="audio_ok" t="enabled">
+        <T n="enabled">EvictOk</T>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0x900B4D42<!--String: "Is {0.SimFirstName} sure {0.SimPronounSubjective} would like to follow through with this Eviction? The Household will be moved out of the Rental Unit immediately."--></T>
+      </V>
+      <T n="text_cancel">0xEC2D9A3E<!--String: "Don't Evict Household"--></T>
+      <T n="text_ok">0xE51E8716<!--String: "Evict Household"--></T>
+      <V n="title" t="enabled">
+        <T n="enabled">0xE9B6BE5C<!--String: "Evict Household"--></T>
+      </V>
+    </U>
+  </V>
+  <E n="creation_ui_option">NOT_AVAILABLE</E>
+  <V n="end_situation_dialog" t="enabled">
+    <U n="enabled">
+      <V n="text" t="single">
+        <T n="single">0x437DD59B<!--String: "Now that the Eviction notice has been issued, is it time to return to your Home lot?"--></T>
+      </V>
+    </U>
+  </V>
+  <U n="eviction_owner_job_and_role_state">
+    <T n="role_state">346018<!--RoleState: role_Eviction_Landlord--></T>
+    <T n="situation_job">346037<!--SituationJob: job_Eviction_Landlord--></T>
+  </U>
+  <U n="eviction_tenant_job_and_role_state">
+    <T n="role_state">346017<!--RoleState: role_Eviction_Tenant--></T>
+    <T n="situation_job">346020<!--SituationJob: job_Eviction_Tenant--></T>
+  </U>
+  <T p="InGame\Audio\Bumper\bumper_event_major_complete.propx" n="main_goal_audio_sting">39b2aa4a:00000000:10b476550150a33f</T>
+  <T n="max_participants">20</T>
+  <T n="save_lock_tooltip_message">0xF2675288<!--String: "You cannot Save the game or leave during an Eviction."--></T>
+  <T n="show_timer_in_scored_situation">True</T>
+  <T n="situation_description">0x984E4AA8<!--String: "The Tenant has been Evicted. Time to tie up any last minute conversations, then head home."--></T>
+  <V n="situation_display_type_override" t="enabled">
+    <E n="enabled">EVICTION</E>
+  </V>
+  <V n="situation_end_time_string" t="show_end_time">
+    <T n="show_end_time">0xA3E17143<!--String: "Work day ends at {0.TimeShort}"--></T>
+  </V>
+  <T n="suppress_scoring_progress_bar">True</T>
+  <U n="timeout_dialog">
+    <V n="text" t="single">
+      <T n="single">0x27E23990<!--String: "The Rental Unit will now be vacated, and you will be returned back to your Home lot."--></T>
+    </V>
+  </U>
+</I>

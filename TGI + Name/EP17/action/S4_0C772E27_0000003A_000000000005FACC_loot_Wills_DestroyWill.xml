@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Wills_DestroyWill" s="391884">
+  <L n="loot_actions">
+    <V t="destroy_objects_from_inventory">
+      <U n="destroy_objects_from_inventory">
+        <E n="object_source">VISIBLE_STORAGE</E>
+        <L n="object_tests">
+          <L>
+            <V t="object_definition_criteria">
+              <U n="object_definition_criteria">
+                <V n="identity_test" t="definition_id">
+                  <U n="definition_id">
+                    <T n="actual_object">418229</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="will_loot">
+      <U n="will_loot">
+        <V n="operation" t="destroy_will" />
+        <L n="tests">
+          <L>
+            <V t="will">
+              <U n="will">
+                <T n="negate">True</T>
+                <V n="test_type" t="will_finalized" />
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

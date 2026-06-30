@@ -1,0 +1,1809 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="solo_NeighborhoodPotluck_CreateFood" s="344375">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="posture">
+            <U n="posture">
+              <E n="body_target_tuning">CARRY_TARGET</E>
+              <L n="posture_manifest_tuning">
+                <U>
+                  <V n="carry_left" t="None" />
+                  <V n="carry_right" t="None" />
+                </U>
+              </L>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Actor</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <V n="allow_holster" t="override">
+        <T n="override">False</T>
+      </V>
+    </U>
+  </V>
+  <L n="cancel_replacement_affordances">
+    <U>
+      <E n="key">CARRY</E>
+      <U n="value">
+        <T n="affordance">13135<!--HoldObject: carry_holdobject--></T>
+        <T n="always_run">True</T>
+        <V n="target" t="enabled">
+          <E n="enabled">CreatedObject</E>
+        </V>
+      </U>
+    </U>
+  </L>
+  <V n="content_score" t="disabled" />
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <L n="basic_extras">
+              <V t="create_object">
+                <U n="create_object">
+                  <V n="creation_data" t="recipe">
+                    <U n="recipe">
+                      <T n="recipe">170132<!--Recipe: recipe_Food_Snack_Toddler_ChickenNuggets--></T>
+                    </U>
+                  </V>
+                  <L n="initial_states">
+                    <U>
+                      <T n="state">15113<!--CommodityBasedObjectStateValue: Consumable_Untouched--></T>
+                    </U>
+                    <U>
+                      <T n="state">76724<!--CommodityBasedObjectStateValue: Trash_Consumable_HasFood--></T>
+                    </U>
+                  </L>
+                  <V n="location" t="inventory" />
+                  <E n="owner_sim">Actor</E>
+                  <V n="timing" t="at_beginning" />
+                </U>
+              </V>
+              <V t="enter_carry_while_holding">
+                <U n="enter_carry_while_holding">
+                  <E n="carry_obj_participant_type">CreatedObject</E>
+                </U>
+              </V>
+            </L>
+            <L n="continuation">
+              <U>
+                <T n="affordance">344380<!--SuperInteraction: NeighborhoodPotluck_FoodCarry--></T>
+                <E n="target">CreatedObject</E>
+              </U>
+            </L>
+          </U>
+        </U>
+        <U>
+          <U n="outcome">
+            <L n="basic_extras">
+              <V t="create_object">
+                <U n="create_object">
+                  <V n="creation_data" t="recipe">
+                    <U n="recipe">
+                      <T n="recipe">15703<!--Recipe: recipe_Food_Gourmet_FrittataSpinach-Large--></T>
+                    </U>
+                  </V>
+                  <L n="initial_states">
+                    <U>
+                      <T n="state">15113<!--CommodityBasedObjectStateValue: Consumable_Untouched--></T>
+                    </U>
+                    <U>
+                      <T n="state">76724<!--CommodityBasedObjectStateValue: Trash_Consumable_HasFood--></T>
+                    </U>
+                    <U>
+                      <T n="state">15323<!--CommodityBasedObjectStateValue: Servings_LargeUntouched--></T>
+                    </U>
+                  </L>
+                  <V n="location" t="inventory" />
+                  <E n="owner_sim">Actor</E>
+                  <V n="timing" t="at_beginning" />
+                </U>
+              </V>
+              <V t="enter_carry_while_holding">
+                <U n="enter_carry_while_holding">
+                  <E n="carry_obj_participant_type">CreatedObject</E>
+                </U>
+              </V>
+            </L>
+            <L n="continuation">
+              <U>
+                <T n="affordance">344380<!--SuperInteraction: NeighborhoodPotluck_FoodCarry--></T>
+                <E n="target">CreatedObject</E>
+              </U>
+            </L>
+          </U>
+        </U>
+        <U>
+          <U n="outcome">
+            <L n="basic_extras">
+              <V t="create_object">
+                <U n="create_object">
+                  <V n="creation_data" t="recipe">
+                    <U n="recipe">
+                      <T n="recipe">15700<!--Recipe: recipe_Food_Gourmet_BakedAlaska-Large--></T>
+                    </U>
+                  </V>
+                  <L n="initial_states">
+                    <U>
+                      <T n="state">15113<!--CommodityBasedObjectStateValue: Consumable_Untouched--></T>
+                    </U>
+                    <U>
+                      <T n="state">76724<!--CommodityBasedObjectStateValue: Trash_Consumable_HasFood--></T>
+                    </U>
+                    <U>
+                      <T n="state">15323<!--CommodityBasedObjectStateValue: Servings_LargeUntouched--></T>
+                    </U>
+                  </L>
+                  <V n="location" t="inventory" />
+                  <E n="owner_sim">Actor</E>
+                  <V n="timing" t="at_beginning" />
+                </U>
+              </V>
+              <V t="enter_carry_while_holding">
+                <U n="enter_carry_while_holding">
+                  <E n="carry_obj_participant_type">CreatedObject</E>
+                </U>
+              </V>
+            </L>
+            <L n="continuation">
+              <U>
+                <T n="affordance">344380<!--SuperInteraction: NeighborhoodPotluck_FoodCarry--></T>
+                <E n="target">CreatedObject</E>
+              </U>
+            </L>
+          </U>
+        </U>
+        <U>
+          <U n="outcome">
+            <L n="basic_extras">
+              <V t="create_object">
+                <U n="create_object">
+                  <V n="creation_data" t="recipe">
+                    <U n="recipe">
+                      <T n="recipe">15735<!--Recipe: recipe_Food_Gourmet_SaltimboccaChicken-Large--></T>
+                    </U>
+                  </V>
+                  <L n="initial_states">
+                    <U>
+                      <T n="state">15113<!--CommodityBasedObjectStateValue: Consumable_Untouched--></T>
+                    </U>
+                    <U>
+                      <T n="state">76724<!--CommodityBasedObjectStateValue: Trash_Consumable_HasFood--></T>
+                    </U>
+                    <U>
+                      <T n="state">15323<!--CommodityBasedObjectStateValue: Servings_LargeUntouched--></T>
+                    </U>
+                  </L>
+                  <V n="location" t="inventory" />
+                  <E n="owner_sim">Actor</E>
+                  <V n="timing" t="at_beginning" />
+                </U>
+              </V>
+              <V t="enter_carry_while_holding">
+                <U n="enter_carry_while_holding">
+                  <E n="carry_obj_participant_type">CreatedObject</E>
+                </U>
+              </V>
+            </L>
+            <L n="continuation">
+              <U>
+                <T n="affordance">344380<!--SuperInteraction: NeighborhoodPotluck_FoodCarry--></T>
+                <E n="target">CreatedObject</E>
+              </U>
+            </L>
+          </U>
+        </U>
+        <U>
+          <U n="outcome">
+            <L n="basic_extras">
+              <V t="create_object">
+                <U n="create_object">
+                  <V n="creation_data" t="recipe">
+                    <U n="recipe">
+                      <T n="recipe">15709<!--Recipe: recipe_Food_Gourmet_LobsterThermidor-Large--></T>
+                    </U>
+                  </V>
+                  <L n="initial_states">
+                    <U>
+                      <T n="state">15113<!--CommodityBasedObjectStateValue: Consumable_Untouched--></T>
+                    </U>
+                    <U>
+                      <T n="state">76724<!--CommodityBasedObjectStateValue: Trash_Consumable_HasFood--></T>
+                    </U>
+                    <U>
+                      <T n="state">15323<!--CommodityBasedObjectStateValue: Servings_LargeUntouched--></T>
+                    </U>
+                  </L>
+                  <V n="location" t="inventory" />
+                  <E n="owner_sim">Actor</E>
+                  <V n="timing" t="at_beginning" />
+                </U>
+              </V>
+              <V t="enter_carry_while_holding">
+                <U n="enter_carry_while_holding">
+                  <E n="carry_obj_participant_type">CreatedObject</E>
+                </U>
+              </V>
+            </L>
+            <L n="continuation">
+              <U>
+                <T n="affordance">344380<!--SuperInteraction: NeighborhoodPotluck_FoodCarry--></T>
+                <E n="target">CreatedObject</E>
+              </U>
+            </L>
+          </U>
+        </U>
+        <U>
+          <U n="outcome">
+            <L n="basic_extras">
+              <V t="create_object">
+                <U n="create_object">
+                  <V n="creation_data" t="recipe">
+                    <U n="recipe">
+                      <T n="recipe">35820<!--Recipe: recipe_Food_Gourmet_SaltPepperShrimp-Large--></T>
+                    </U>
+                  </V>
+                  <L n="initial_states">
+                    <U>
+                      <T n="state">15113<!--CommodityBasedObjectStateValue: Consumable_Untouched--></T>
+                    </U>
+                    <U>
+                      <T n="state">76724<!--CommodityBasedObjectStateValue: Trash_Consumable_HasFood--></T>
+                    </U>
+                    <U>
+                      <T n="state">15323<!--CommodityBasedObjectStateValue: Servings_LargeUntouched--></T>
+                    </U>
+                  </L>
+                  <V n="location" t="inventory" />
+                  <E n="owner_sim">Actor</E>
+                  <V n="timing" t="at_beginning" />
+                </U>
+              </V>
+              <V t="enter_carry_while_holding">
+                <U n="enter_carry_while_holding">
+                  <E n="carry_obj_participant_type">CreatedObject</E>
+                </U>
+              </V>
+            </L>
+            <L n="continuation">
+              <U>
+                <T n="affordance">344380<!--SuperInteraction: NeighborhoodPotluck_FoodCarry--></T>
+                <E n="target">CreatedObject</E>
+              </U>
+            </L>
+          </U>
+        </U>
+        <U>
+          <U n="outcome">
+            <L n="basic_extras">
+              <V t="create_object">
+                <U n="create_object">
+                  <V n="creation_data" t="recipe">
+                    <U n="recipe">
+                      <T n="recipe">15697<!--Recipe: recipe_Food_Gourmet_AsparagusProscuittoWrapped-Large--></T>
+                    </U>
+                  </V>
+                  <L n="initial_states">
+                    <U>
+                      <T n="state">15113<!--CommodityBasedObjectStateValue: Consumable_Untouched--></T>
+                    </U>
+                    <U>
+                      <T n="state">76724<!--CommodityBasedObjectStateValue: Trash_Consumable_HasFood--></T>
+                    </U>
+                    <U>
+                      <T n="state">15323<!--CommodityBasedObjectStateValue: Servings_LargeUntouched--></T>
+                    </U>
+                  </L>
+                  <V n="location" t="inventory" />
+                  <E n="owner_sim">Actor</E>
+                  <V n="timing" t="at_beginning" />
+                </U>
+              </V>
+              <V t="enter_carry_while_holding">
+                <U n="enter_carry_while_holding">
+                  <E n="carry_obj_participant_type">CreatedObject</E>
+                </U>
+              </V>
+            </L>
+            <L n="continuation">
+              <U>
+                <T n="affordance">344380<!--SuperInteraction: NeighborhoodPotluck_FoodCarry--></T>
+                <E n="target">CreatedObject</E>
+              </U>
+            </L>
+          </U>
+        </U>
+        <U>
+          <U n="outcome">
+            <L n="basic_extras">
+              <V t="create_object">
+                <U n="create_object">
+                  <V n="creation_data" t="recipe">
+                    <U n="recipe">
+                      <T n="recipe">15706<!--Recipe: recipe_Food_Gourmet_GnocchiButternut-Large--></T>
+                    </U>
+                  </V>
+                  <L n="initial_states">
+                    <U>
+                      <T n="state">15113<!--CommodityBasedObjectStateValue: Consumable_Untouched--></T>
+                    </U>
+                    <U>
+                      <T n="state">76724<!--CommodityBasedObjectStateValue: Trash_Consumable_HasFood--></T>
+                    </U>
+                    <U>
+                      <T n="state">15323<!--CommodityBasedObjectStateValue: Servings_LargeUntouched--></T>
+                    </U>
+                  </L>
+                  <V n="location" t="inventory" />
+                  <E n="owner_sim">Actor</E>
+                  <V n="timing" t="at_beginning" />
+                </U>
+              </V>
+              <V t="enter_carry_while_holding">
+                <U n="enter_carry_while_holding">
+                  <E n="carry_obj_participant_type">CreatedObject</E>
+                </U>
+              </V>
+            </L>
+            <L n="continuation">
+              <U>
+                <T n="affordance">344380<!--SuperInteraction: NeighborhoodPotluck_FoodCarry--></T>
+                <E n="target">CreatedObject</E>
+              </U>
+            </L>
+          </U>
+        </U>
+        <U>
+          <U n="outcome">
+            <L n="basic_extras">
+              <V t="create_object">
+                <U n="create_object">
+                  <V n="creation_data" t="recipe">
+                    <U n="recipe">
+                      <T n="recipe">285033<!--Recipe: recipe_Food_Gourmet_NoodlesJapchae_Large--></T>
+                    </U>
+                  </V>
+                  <L n="initial_states">
+                    <U>
+                      <T n="state">15113<!--CommodityBasedObjectStateValue: Consumable_Untouched--></T>
+                    </U>
+                    <U>
+                      <T n="state">76724<!--CommodityBasedObjectStateValue: Trash_Consumable_HasFood--></T>
+                    </U>
+                    <U>
+                      <T n="state">15323<!--CommodityBasedObjectStateValue: Servings_LargeUntouched--></T>
+                    </U>
+                  </L>
+                  <V n="location" t="inventory" />
+                  <E n="owner_sim">Actor</E>
+                  <V n="timing" t="at_beginning" />
+                </U>
+              </V>
+              <V t="enter_carry_while_holding">
+                <U n="enter_carry_while_holding">
+                  <E n="carry_obj_participant_type">CreatedObject</E>
+                </U>
+              </V>
+            </L>
+            <L n="continuation">
+              <U>
+                <T n="affordance">344380<!--SuperInteraction: NeighborhoodPotluck_FoodCarry--></T>
+                <E n="target">CreatedObject</E>
+              </U>
+            </L>
+          </U>
+        </U>
+        <U>
+          <U n="outcome">
+            <L n="basic_extras">
+              <V t="create_object">
+                <U n="create_object">
+                  <V n="creation_data" t="recipe">
+                    <U n="recipe">
+                      <T n="recipe">15729<!--Recipe: recipe_Food_Gourmet_SaladCaprese-Large--></T>
+                    </U>
+                  </V>
+                  <L n="initial_states">
+                    <U>
+                      <T n="state">15113<!--CommodityBasedObjectStateValue: Consumable_Untouched--></T>
+                    </U>
+                    <U>
+                      <T n="state">76724<!--CommodityBasedObjectStateValue: Trash_Consumable_HasFood--></T>
+                    </U>
+                    <U>
+                      <T n="state">15323<!--CommodityBasedObjectStateValue: Servings_LargeUntouched--></T>
+                    </U>
+                  </L>
+                  <V n="location" t="inventory" />
+                  <E n="owner_sim">Actor</E>
+                  <V n="timing" t="at_beginning" />
+                </U>
+              </V>
+              <V t="enter_carry_while_holding">
+                <U n="enter_carry_while_holding">
+                  <E n="carry_obj_participant_type">CreatedObject</E>
+                </U>
+              </V>
+            </L>
+            <L n="continuation">
+              <U>
+                <T n="affordance">344380<!--SuperInteraction: NeighborhoodPotluck_FoodCarry--></T>
+                <E n="target">CreatedObject</E>
+              </U>
+            </L>
+          </U>
+        </U>
+        <U>
+          <U n="outcome">
+            <L n="basic_extras">
+              <V t="create_object">
+                <U n="create_object">
+                  <V n="creation_data" t="recipe">
+                    <U n="recipe">
+                      <T n="recipe">76040<!--Recipe: recipe_Food_Homestyle_BlackenedBass-Large--></T>
+                    </U>
+                  </V>
+                  <L n="initial_states">
+                    <U>
+                      <T n="state">15113<!--CommodityBasedObjectStateValue: Consumable_Untouched--></T>
+                    </U>
+                    <U>
+                      <T n="state">76724<!--CommodityBasedObjectStateValue: Trash_Consumable_HasFood--></T>
+                    </U>
+                    <U>
+                      <T n="state">15323<!--CommodityBasedObjectStateValue: Servings_LargeUntouched--></T>
+                    </U>
+                  </L>
+                  <V n="location" t="inventory" />
+                  <E n="owner_sim">Actor</E>
+                  <V n="timing" t="at_beginning" />
+                </U>
+              </V>
+              <V t="enter_carry_while_holding">
+                <U n="enter_carry_while_holding">
+                  <E n="carry_obj_participant_type">CreatedObject</E>
+                </U>
+              </V>
+            </L>
+            <L n="continuation">
+              <U>
+                <T n="affordance">344380<!--SuperInteraction: NeighborhoodPotluck_FoodCarry--></T>
+                <E n="target">CreatedObject</E>
+              </U>
+            </L>
+          </U>
+        </U>
+        <U>
+          <U n="outcome">
+            <L n="basic_extras">
+              <V t="create_object">
+                <U n="create_object">
+                  <V n="creation_data" t="recipe">
+                    <U n="recipe">
+                      <T n="recipe">343880<!--Recipe: recipe_Food_Homestyle_Grill_3SistersChili_Large--></T>
+                    </U>
+                  </V>
+                  <L n="initial_states">
+                    <U>
+                      <T n="state">15113<!--CommodityBasedObjectStateValue: Consumable_Untouched--></T>
+                    </U>
+                    <U>
+                      <T n="state">76724<!--CommodityBasedObjectStateValue: Trash_Consumable_HasFood--></T>
+                    </U>
+                    <U>
+                      <T n="state">15323<!--CommodityBasedObjectStateValue: Servings_LargeUntouched--></T>
+                    </U>
+                  </L>
+                  <V n="location" t="inventory" />
+                  <E n="owner_sim">Actor</E>
+                  <V n="timing" t="at_beginning" />
+                </U>
+              </V>
+              <V t="enter_carry_while_holding">
+                <U n="enter_carry_while_holding">
+                  <E n="carry_obj_participant_type">CreatedObject</E>
+                </U>
+              </V>
+            </L>
+            <L n="continuation">
+              <U>
+                <T n="affordance">344380<!--SuperInteraction: NeighborhoodPotluck_FoodCarry--></T>
+                <E n="target">CreatedObject</E>
+              </U>
+            </L>
+          </U>
+        </U>
+        <U>
+          <U n="outcome">
+            <L n="basic_extras">
+              <V t="create_object">
+                <U n="create_object">
+                  <V n="creation_data" t="recipe">
+                    <U n="recipe">
+                      <T n="recipe">75380<!--Recipe: recipe_Food_Homestyle_Grill_Chicken-Large--></T>
+                    </U>
+                  </V>
+                  <L n="initial_states">
+                    <U>
+                      <T n="state">15113<!--CommodityBasedObjectStateValue: Consumable_Untouched--></T>
+                    </U>
+                    <U>
+                      <T n="state">76724<!--CommodityBasedObjectStateValue: Trash_Consumable_HasFood--></T>
+                    </U>
+                    <U>
+                      <T n="state">15323<!--CommodityBasedObjectStateValue: Servings_LargeUntouched--></T>
+                    </U>
+                  </L>
+                  <V n="location" t="inventory" />
+                  <E n="owner_sim">Actor</E>
+                  <V n="timing" t="at_beginning" />
+                </U>
+              </V>
+              <V t="enter_carry_while_holding">
+                <U n="enter_carry_while_holding">
+                  <E n="carry_obj_participant_type">CreatedObject</E>
+                </U>
+              </V>
+            </L>
+            <L n="continuation">
+              <U>
+                <T n="affordance">344380<!--SuperInteraction: NeighborhoodPotluck_FoodCarry--></T>
+                <E n="target">CreatedObject</E>
+              </U>
+            </L>
+          </U>
+        </U>
+        <U>
+          <U n="outcome">
+            <L n="basic_extras">
+              <V t="create_object">
+                <U n="create_object">
+                  <V n="creation_data" t="recipe">
+                    <U n="recipe">
+                      <T n="recipe">35059<!--Recipe: recipe_Food_Homestyle_Hamburger-Large--></T>
+                    </U>
+                  </V>
+                  <L n="initial_states">
+                    <U>
+                      <T n="state">15113<!--CommodityBasedObjectStateValue: Consumable_Untouched--></T>
+                    </U>
+                    <U>
+                      <T n="state">76724<!--CommodityBasedObjectStateValue: Trash_Consumable_HasFood--></T>
+                    </U>
+                    <U>
+                      <T n="state">15323<!--CommodityBasedObjectStateValue: Servings_LargeUntouched--></T>
+                    </U>
+                  </L>
+                  <V n="location" t="inventory" />
+                  <E n="owner_sim">Actor</E>
+                  <V n="timing" t="at_beginning" />
+                </U>
+              </V>
+              <V t="enter_carry_while_holding">
+                <U n="enter_carry_while_holding">
+                  <E n="carry_obj_participant_type">CreatedObject</E>
+                </U>
+              </V>
+            </L>
+            <L n="continuation">
+              <U>
+                <T n="affordance">344380<!--SuperInteraction: NeighborhoodPotluck_FoodCarry--></T>
+                <E n="target">CreatedObject</E>
+              </U>
+            </L>
+          </U>
+        </U>
+        <U>
+          <U n="outcome">
+            <L n="basic_extras">
+              <V t="create_object">
+                <U n="create_object">
+                  <V n="creation_data" t="recipe">
+                    <U n="recipe">
+                      <T n="recipe">75374<!--Recipe: recipe_Food_Homestyle_Grill_HotDog-Large--></T>
+                    </U>
+                  </V>
+                  <L n="initial_states">
+                    <U>
+                      <T n="state">15113<!--CommodityBasedObjectStateValue: Consumable_Untouched--></T>
+                    </U>
+                    <U>
+                      <T n="state">76724<!--CommodityBasedObjectStateValue: Trash_Consumable_HasFood--></T>
+                    </U>
+                    <U>
+                      <T n="state">15323<!--CommodityBasedObjectStateValue: Servings_LargeUntouched--></T>
+                    </U>
+                  </L>
+                  <V n="location" t="inventory" />
+                  <E n="owner_sim">Actor</E>
+                  <V n="timing" t="at_beginning" />
+                </U>
+              </V>
+              <V t="enter_carry_while_holding">
+                <U n="enter_carry_while_holding">
+                  <E n="carry_obj_participant_type">CreatedObject</E>
+                </U>
+              </V>
+            </L>
+            <L n="continuation">
+              <U>
+                <T n="affordance">344380<!--SuperInteraction: NeighborhoodPotluck_FoodCarry--></T>
+                <E n="target">CreatedObject</E>
+              </U>
+            </L>
+          </U>
+        </U>
+        <U>
+          <U n="outcome">
+            <L n="basic_extras">
+              <V t="create_object">
+                <U n="create_object">
+                  <V n="creation_data" t="recipe">
+                    <U n="recipe">
+                      <T n="recipe">302326<!--Recipe: recipe_Food_Homestyle_Grill_Ribs-Large--></T>
+                    </U>
+                  </V>
+                  <L n="initial_states">
+                    <U>
+                      <T n="state">15113<!--CommodityBasedObjectStateValue: Consumable_Untouched--></T>
+                    </U>
+                    <U>
+                      <T n="state">76724<!--CommodityBasedObjectStateValue: Trash_Consumable_HasFood--></T>
+                    </U>
+                    <U>
+                      <T n="state">15323<!--CommodityBasedObjectStateValue: Servings_LargeUntouched--></T>
+                    </U>
+                  </L>
+                  <V n="location" t="inventory" />
+                  <E n="owner_sim">Actor</E>
+                  <V n="timing" t="at_beginning" />
+                </U>
+              </V>
+              <V t="enter_carry_while_holding">
+                <U n="enter_carry_while_holding">
+                  <E n="carry_obj_participant_type">CreatedObject</E>
+                </U>
+              </V>
+            </L>
+            <L n="continuation">
+              <U>
+                <T n="affordance">344380<!--SuperInteraction: NeighborhoodPotluck_FoodCarry--></T>
+                <E n="target">CreatedObject</E>
+              </U>
+            </L>
+          </U>
+        </U>
+        <U>
+          <U n="outcome">
+            <L n="basic_extras">
+              <V t="create_object">
+                <U n="create_object">
+                  <V n="creation_data" t="recipe">
+                    <U n="recipe">
+                      <T n="recipe">75384<!--Recipe: recipe_Food_Homestyle_Grill_Salmon-Large--></T>
+                    </U>
+                  </V>
+                  <L n="initial_states">
+                    <U>
+                      <T n="state">15113<!--CommodityBasedObjectStateValue: Consumable_Untouched--></T>
+                    </U>
+                    <U>
+                      <T n="state">76724<!--CommodityBasedObjectStateValue: Trash_Consumable_HasFood--></T>
+                    </U>
+                    <U>
+                      <T n="state">15323<!--CommodityBasedObjectStateValue: Servings_LargeUntouched--></T>
+                    </U>
+                  </L>
+                  <V n="location" t="inventory" />
+                  <E n="owner_sim">Actor</E>
+                  <V n="timing" t="at_beginning" />
+                </U>
+              </V>
+              <V t="enter_carry_while_holding">
+                <U n="enter_carry_while_holding">
+                  <E n="carry_obj_participant_type">CreatedObject</E>
+                </U>
+              </V>
+            </L>
+            <L n="continuation">
+              <U>
+                <T n="affordance">344380<!--SuperInteraction: NeighborhoodPotluck_FoodCarry--></T>
+                <E n="target">CreatedObject</E>
+              </U>
+            </L>
+          </U>
+        </U>
+        <U>
+          <U n="outcome">
+            <L n="basic_extras">
+              <V t="create_object">
+                <U n="create_object">
+                  <V n="creation_data" t="recipe">
+                    <U n="recipe">
+                      <T n="recipe">75392<!--Recipe: recipe_Food_Homestyle_Grill_Steak-Large--></T>
+                    </U>
+                  </V>
+                  <L n="initial_states">
+                    <U>
+                      <T n="state">15113<!--CommodityBasedObjectStateValue: Consumable_Untouched--></T>
+                    </U>
+                    <U>
+                      <T n="state">76724<!--CommodityBasedObjectStateValue: Trash_Consumable_HasFood--></T>
+                    </U>
+                    <U>
+                      <T n="state">15323<!--CommodityBasedObjectStateValue: Servings_LargeUntouched--></T>
+                    </U>
+                  </L>
+                  <V n="location" t="inventory" />
+                  <E n="owner_sim">Actor</E>
+                  <V n="timing" t="at_beginning" />
+                </U>
+              </V>
+              <V t="enter_carry_while_holding">
+                <U n="enter_carry_while_holding">
+                  <E n="carry_obj_participant_type">CreatedObject</E>
+                </U>
+              </V>
+            </L>
+            <L n="continuation">
+              <U>
+                <T n="affordance">344380<!--SuperInteraction: NeighborhoodPotluck_FoodCarry--></T>
+                <E n="target">CreatedObject</E>
+              </U>
+            </L>
+          </U>
+        </U>
+        <U>
+          <U n="outcome">
+            <L n="basic_extras">
+              <V t="create_object">
+                <U n="create_object">
+                  <V n="creation_data" t="recipe">
+                    <U n="recipe">
+                      <T n="recipe">75401<!--Recipe: recipe_Food_Homestyle_Grill_TofuDog-Large--></T>
+                    </U>
+                  </V>
+                  <L n="initial_states">
+                    <U>
+                      <T n="state">15113<!--CommodityBasedObjectStateValue: Consumable_Untouched--></T>
+                    </U>
+                    <U>
+                      <T n="state">76724<!--CommodityBasedObjectStateValue: Trash_Consumable_HasFood--></T>
+                    </U>
+                    <U>
+                      <T n="state">15323<!--CommodityBasedObjectStateValue: Servings_LargeUntouched--></T>
+                    </U>
+                  </L>
+                  <V n="location" t="inventory" />
+                  <E n="owner_sim">Actor</E>
+                  <V n="timing" t="at_beginning" />
+                </U>
+              </V>
+              <V t="enter_carry_while_holding">
+                <U n="enter_carry_while_holding">
+                  <E n="carry_obj_participant_type">CreatedObject</E>
+                </U>
+              </V>
+            </L>
+            <L n="continuation">
+              <U>
+                <T n="affordance">344380<!--SuperInteraction: NeighborhoodPotluck_FoodCarry--></T>
+                <E n="target">CreatedObject</E>
+              </U>
+            </L>
+          </U>
+          <U n="weight">
+            <L n="multipliers">
+              <U>
+                <T n="multiplier">20</T>
+                <L n="tests">
+                  <L>
+                    <V t="trait">
+                      <U n="trait">
+                        <L n="whitelist_traits">
+                          <T>132627<!--Trait: trait_Vegetarian--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+        <U>
+          <U n="outcome">
+            <L n="basic_extras">
+              <V t="create_object">
+                <U n="create_object">
+                  <V n="creation_data" t="recipe">
+                    <U n="recipe">
+                      <T n="recipe">75398<!--Recipe: recipe_Food_Homestyle_VeggieBurger-Large--></T>
+                    </U>
+                  </V>
+                  <L n="initial_states">
+                    <U>
+                      <T n="state">15113<!--CommodityBasedObjectStateValue: Consumable_Untouched--></T>
+                    </U>
+                    <U>
+                      <T n="state">76724<!--CommodityBasedObjectStateValue: Trash_Consumable_HasFood--></T>
+                    </U>
+                    <U>
+                      <T n="state">15323<!--CommodityBasedObjectStateValue: Servings_LargeUntouched--></T>
+                    </U>
+                  </L>
+                  <V n="location" t="inventory" />
+                  <E n="owner_sim">Actor</E>
+                  <V n="timing" t="at_beginning" />
+                </U>
+              </V>
+              <V t="enter_carry_while_holding">
+                <U n="enter_carry_while_holding">
+                  <E n="carry_obj_participant_type">CreatedObject</E>
+                </U>
+              </V>
+            </L>
+            <L n="continuation">
+              <U>
+                <T n="affordance">344380<!--SuperInteraction: NeighborhoodPotluck_FoodCarry--></T>
+                <E n="target">CreatedObject</E>
+              </U>
+            </L>
+          </U>
+          <U n="weight">
+            <L n="multipliers">
+              <U>
+                <T n="multiplier">20</T>
+                <L n="tests">
+                  <L>
+                    <V t="trait">
+                      <U n="trait">
+                        <L n="whitelist_traits">
+                          <T>132627<!--Trait: trait_Vegetarian--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+        <U>
+          <U n="outcome">
+            <L n="basic_extras">
+              <V t="create_object">
+                <U n="create_object">
+                  <V n="creation_data" t="recipe">
+                    <U n="recipe">
+                      <T n="recipe">33442<!--Recipe: recipe_Food_Homestyle_MacNCheese-Large--></T>
+                    </U>
+                  </V>
+                  <L n="initial_states">
+                    <U>
+                      <T n="state">15113<!--CommodityBasedObjectStateValue: Consumable_Untouched--></T>
+                    </U>
+                    <U>
+                      <T n="state">76724<!--CommodityBasedObjectStateValue: Trash_Consumable_HasFood--></T>
+                    </U>
+                    <U>
+                      <T n="state">15323<!--CommodityBasedObjectStateValue: Servings_LargeUntouched--></T>
+                    </U>
+                  </L>
+                  <V n="location" t="inventory" />
+                  <E n="owner_sim">Actor</E>
+                  <V n="timing" t="at_beginning" />
+                </U>
+              </V>
+              <V t="enter_carry_while_holding">
+                <U n="enter_carry_while_holding">
+                  <E n="carry_obj_participant_type">CreatedObject</E>
+                </U>
+              </V>
+            </L>
+            <L n="continuation">
+              <U>
+                <T n="affordance">344380<!--SuperInteraction: NeighborhoodPotluck_FoodCarry--></T>
+                <E n="target">CreatedObject</E>
+              </U>
+            </L>
+          </U>
+          <U n="weight">
+            <L n="multipliers">
+              <U>
+                <T n="multiplier">20</T>
+                <L n="tests">
+                  <L>
+                    <V t="trait">
+                      <U n="trait">
+                        <L n="whitelist_traits">
+                          <T>132627<!--Trait: trait_Vegetarian--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+        <U>
+          <U n="outcome">
+            <L n="basic_extras">
+              <V t="create_object">
+                <U n="create_object">
+                  <V n="creation_data" t="recipe">
+                    <U n="recipe">
+                      <T n="recipe">15760<!--Recipe: recipe_Food_Homestyle_GardenSalad-Large--></T>
+                    </U>
+                  </V>
+                  <L n="initial_states">
+                    <U>
+                      <T n="state">15113<!--CommodityBasedObjectStateValue: Consumable_Untouched--></T>
+                    </U>
+                    <U>
+                      <T n="state">76724<!--CommodityBasedObjectStateValue: Trash_Consumable_HasFood--></T>
+                    </U>
+                    <U>
+                      <T n="state">15323<!--CommodityBasedObjectStateValue: Servings_LargeUntouched--></T>
+                    </U>
+                  </L>
+                  <V n="location" t="inventory" />
+                  <E n="owner_sim">Actor</E>
+                  <V n="timing" t="at_beginning" />
+                </U>
+              </V>
+              <V t="enter_carry_while_holding">
+                <U n="enter_carry_while_holding">
+                  <E n="carry_obj_participant_type">CreatedObject</E>
+                </U>
+              </V>
+            </L>
+            <L n="continuation">
+              <U>
+                <T n="affordance">344380<!--SuperInteraction: NeighborhoodPotluck_FoodCarry--></T>
+                <E n="target">CreatedObject</E>
+              </U>
+            </L>
+          </U>
+          <U n="weight">
+            <L n="multipliers">
+              <U>
+                <T n="multiplier">20</T>
+                <L n="tests">
+                  <L>
+                    <V t="trait">
+                      <U n="trait">
+                        <L n="whitelist_traits">
+                          <T>132627<!--Trait: trait_Vegetarian--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+        <U>
+          <U n="outcome">
+            <L n="basic_extras">
+              <V t="create_object">
+                <U n="create_object">
+                  <V n="creation_data" t="recipe">
+                    <U n="recipe">
+                      <T n="recipe">15774<!--Recipe: recipe_Food_Homestyle_Spaghetti-Large--></T>
+                    </U>
+                  </V>
+                  <L n="initial_states">
+                    <U>
+                      <T n="state">15113<!--CommodityBasedObjectStateValue: Consumable_Untouched--></T>
+                    </U>
+                    <U>
+                      <T n="state">76724<!--CommodityBasedObjectStateValue: Trash_Consumable_HasFood--></T>
+                    </U>
+                    <U>
+                      <T n="state">15323<!--CommodityBasedObjectStateValue: Servings_LargeUntouched--></T>
+                    </U>
+                  </L>
+                  <V n="location" t="inventory" />
+                  <E n="owner_sim">Actor</E>
+                  <V n="timing" t="at_beginning" />
+                </U>
+              </V>
+              <V t="enter_carry_while_holding">
+                <U n="enter_carry_while_holding">
+                  <E n="carry_obj_participant_type">CreatedObject</E>
+                </U>
+              </V>
+            </L>
+            <L n="continuation">
+              <U>
+                <T n="affordance">344380<!--SuperInteraction: NeighborhoodPotluck_FoodCarry--></T>
+                <E n="target">CreatedObject</E>
+              </U>
+            </L>
+          </U>
+        </U>
+        <U>
+          <U n="outcome">
+            <L n="basic_extras">
+              <V t="create_object">
+                <U n="create_object">
+                  <V n="creation_data" t="recipe">
+                    <U n="recipe">
+                      <T n="recipe">205438<!--Recipe: recipe_Food_Homestyle_VeggieDumplings_Large--></T>
+                    </U>
+                  </V>
+                  <L n="initial_states">
+                    <U>
+                      <T n="state">15113<!--CommodityBasedObjectStateValue: Consumable_Untouched--></T>
+                    </U>
+                    <U>
+                      <T n="state">76724<!--CommodityBasedObjectStateValue: Trash_Consumable_HasFood--></T>
+                    </U>
+                    <U>
+                      <T n="state">15323<!--CommodityBasedObjectStateValue: Servings_LargeUntouched--></T>
+                    </U>
+                  </L>
+                  <V n="location" t="inventory" />
+                  <E n="owner_sim">Actor</E>
+                  <V n="timing" t="at_beginning" />
+                </U>
+              </V>
+              <V t="enter_carry_while_holding">
+                <U n="enter_carry_while_holding">
+                  <E n="carry_obj_participant_type">CreatedObject</E>
+                </U>
+              </V>
+            </L>
+            <L n="continuation">
+              <U>
+                <T n="affordance">344380<!--SuperInteraction: NeighborhoodPotluck_FoodCarry--></T>
+                <E n="target">CreatedObject</E>
+              </U>
+            </L>
+          </U>
+          <U n="weight">
+            <L n="multipliers">
+              <U>
+                <T n="multiplier">20</T>
+                <L n="tests">
+                  <L>
+                    <V t="trait">
+                      <U n="trait">
+                        <L n="whitelist_traits">
+                          <T>132627<!--Trait: trait_Vegetarian--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+        <U>
+          <U n="outcome">
+            <L n="basic_extras">
+              <V t="create_object">
+                <U n="create_object">
+                  <V n="creation_data" t="recipe">
+                    <U n="recipe">
+                      <T n="recipe">15744<!--Recipe: recipe_Food_Homestyle_ApplePie-Large--></T>
+                    </U>
+                  </V>
+                  <L n="initial_states">
+                    <U>
+                      <T n="state">15113<!--CommodityBasedObjectStateValue: Consumable_Untouched--></T>
+                    </U>
+                    <U>
+                      <T n="state">76724<!--CommodityBasedObjectStateValue: Trash_Consumable_HasFood--></T>
+                    </U>
+                    <U>
+                      <T n="state">15323<!--CommodityBasedObjectStateValue: Servings_LargeUntouched--></T>
+                    </U>
+                  </L>
+                  <V n="location" t="inventory" />
+                  <E n="owner_sim">Actor</E>
+                  <V n="timing" t="at_beginning" />
+                </U>
+              </V>
+              <V t="enter_carry_while_holding">
+                <U n="enter_carry_while_holding">
+                  <E n="carry_obj_participant_type">CreatedObject</E>
+                </U>
+              </V>
+            </L>
+            <L n="continuation">
+              <U>
+                <T n="affordance">344380<!--SuperInteraction: NeighborhoodPotluck_FoodCarry--></T>
+                <E n="target">CreatedObject</E>
+              </U>
+            </L>
+          </U>
+        </U>
+        <U>
+          <U n="outcome">
+            <L n="basic_extras">
+              <V t="create_object">
+                <U n="create_object">
+                  <V n="creation_data" t="recipe">
+                    <U n="recipe">
+                      <T n="recipe">15749<!--Recipe: recipe_Food_Homestyle_Cake-Large--></T>
+                    </U>
+                  </V>
+                  <L n="initial_states">
+                    <U>
+                      <T n="state">15113<!--CommodityBasedObjectStateValue: Consumable_Untouched--></T>
+                    </U>
+                    <U>
+                      <T n="state">76724<!--CommodityBasedObjectStateValue: Trash_Consumable_HasFood--></T>
+                    </U>
+                    <U>
+                      <T n="state">15323<!--CommodityBasedObjectStateValue: Servings_LargeUntouched--></T>
+                    </U>
+                  </L>
+                  <V n="location" t="inventory" />
+                  <E n="owner_sim">Actor</E>
+                  <V n="timing" t="at_beginning" />
+                </U>
+              </V>
+              <V t="enter_carry_while_holding">
+                <U n="enter_carry_while_holding">
+                  <E n="carry_obj_participant_type">CreatedObject</E>
+                </U>
+              </V>
+            </L>
+            <L n="continuation">
+              <U>
+                <T n="affordance">344380<!--SuperInteraction: NeighborhoodPotluck_FoodCarry--></T>
+                <E n="target">CreatedObject</E>
+              </U>
+            </L>
+          </U>
+        </U>
+        <U>
+          <U n="outcome">
+            <L n="basic_extras">
+              <V t="create_object">
+                <U n="create_object">
+                  <V n="creation_data" t="recipe">
+                    <U n="recipe">
+                      <T n="recipe">33418<!--Recipe: recipe_Food_Homestyle_CookieChocolateChip-Large--></T>
+                    </U>
+                  </V>
+                  <L n="initial_states">
+                    <U>
+                      <T n="state">15113<!--CommodityBasedObjectStateValue: Consumable_Untouched--></T>
+                    </U>
+                    <U>
+                      <T n="state">76724<!--CommodityBasedObjectStateValue: Trash_Consumable_HasFood--></T>
+                    </U>
+                    <U>
+                      <T n="state">15323<!--CommodityBasedObjectStateValue: Servings_LargeUntouched--></T>
+                    </U>
+                  </L>
+                  <V n="location" t="inventory" />
+                  <E n="owner_sim">Actor</E>
+                  <V n="timing" t="at_beginning" />
+                </U>
+              </V>
+              <V t="enter_carry_while_holding">
+                <U n="enter_carry_while_holding">
+                  <E n="carry_obj_participant_type">CreatedObject</E>
+                </U>
+              </V>
+            </L>
+            <L n="continuation">
+              <U>
+                <T n="affordance">344380<!--SuperInteraction: NeighborhoodPotluck_FoodCarry--></T>
+                <E n="target">CreatedObject</E>
+              </U>
+            </L>
+          </U>
+        </U>
+        <U>
+          <U n="outcome">
+            <L n="basic_extras">
+              <V t="create_object">
+                <U n="create_object">
+                  <V n="creation_data" t="recipe">
+                    <U n="recipe">
+                      <T n="recipe">97470<!--Recipe: recipe_Food_Homestyle_CakeStrawberry-Large--></T>
+                    </U>
+                  </V>
+                  <L n="initial_states">
+                    <U>
+                      <T n="state">15113<!--CommodityBasedObjectStateValue: Consumable_Untouched--></T>
+                    </U>
+                    <U>
+                      <T n="state">76724<!--CommodityBasedObjectStateValue: Trash_Consumable_HasFood--></T>
+                    </U>
+                    <U>
+                      <T n="state">15323<!--CommodityBasedObjectStateValue: Servings_LargeUntouched--></T>
+                    </U>
+                  </L>
+                  <V n="location" t="inventory" />
+                  <E n="owner_sim">Actor</E>
+                  <V n="timing" t="at_beginning" />
+                </U>
+              </V>
+              <V t="enter_carry_while_holding">
+                <U n="enter_carry_while_holding">
+                  <E n="carry_obj_participant_type">CreatedObject</E>
+                </U>
+              </V>
+            </L>
+            <L n="continuation">
+              <U>
+                <T n="affordance">344380<!--SuperInteraction: NeighborhoodPotluck_FoodCarry--></T>
+                <E n="target">CreatedObject</E>
+              </U>
+            </L>
+          </U>
+        </U>
+        <U>
+          <U n="outcome">
+            <L n="basic_extras">
+              <V t="create_object">
+                <U n="create_object">
+                  <V n="creation_data" t="recipe">
+                    <U n="recipe">
+                      <T n="recipe">40799<!--Recipe: recipe_Food_Homestyle_GummyBearPancakes-Large--></T>
+                    </U>
+                  </V>
+                  <L n="initial_states">
+                    <U>
+                      <T n="state">15113<!--CommodityBasedObjectStateValue: Consumable_Untouched--></T>
+                    </U>
+                    <U>
+                      <T n="state">76724<!--CommodityBasedObjectStateValue: Trash_Consumable_HasFood--></T>
+                    </U>
+                    <U>
+                      <T n="state">15323<!--CommodityBasedObjectStateValue: Servings_LargeUntouched--></T>
+                    </U>
+                  </L>
+                  <V n="location" t="inventory" />
+                  <E n="owner_sim">Actor</E>
+                  <V n="timing" t="at_beginning" />
+                </U>
+              </V>
+              <V t="enter_carry_while_holding">
+                <U n="enter_carry_while_holding">
+                  <E n="carry_obj_participant_type">CreatedObject</E>
+                </U>
+              </V>
+            </L>
+            <L n="continuation">
+              <U>
+                <T n="affordance">344380<!--SuperInteraction: NeighborhoodPotluck_FoodCarry--></T>
+                <E n="target">CreatedObject</E>
+              </U>
+            </L>
+          </U>
+        </U>
+        <U>
+          <U n="outcome">
+            <L n="basic_extras">
+              <V t="create_object">
+                <U n="create_object">
+                  <V n="creation_data" t="recipe">
+                    <U n="recipe">
+                      <T n="recipe">40806<!--Recipe: recipe_Food_Homestyle_CookieHeart-Large--></T>
+                    </U>
+                  </V>
+                  <L n="initial_states">
+                    <U>
+                      <T n="state">15113<!--CommodityBasedObjectStateValue: Consumable_Untouched--></T>
+                    </U>
+                    <U>
+                      <T n="state">76724<!--CommodityBasedObjectStateValue: Trash_Consumable_HasFood--></T>
+                    </U>
+                    <U>
+                      <T n="state">15323<!--CommodityBasedObjectStateValue: Servings_LargeUntouched--></T>
+                    </U>
+                  </L>
+                  <V n="location" t="inventory" />
+                  <E n="owner_sim">Actor</E>
+                  <V n="timing" t="at_beginning" />
+                </U>
+              </V>
+              <V t="enter_carry_while_holding">
+                <U n="enter_carry_while_holding">
+                  <E n="carry_obj_participant_type">CreatedObject</E>
+                </U>
+              </V>
+            </L>
+            <L n="continuation">
+              <U>
+                <T n="affordance">344380<!--SuperInteraction: NeighborhoodPotluck_FoodCarry--></T>
+                <E n="target">CreatedObject</E>
+              </U>
+            </L>
+          </U>
+        </U>
+      </L>
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="basic_extras">
+                  <V t="create_object">
+                    <U n="create_object">
+                      <V n="creation_data" t="recipe">
+                        <U n="recipe">
+                          <T n="recipe">345010<!--Recipe: recipe_Food_Homestyle_MangoRice-Large_PressureCooker--></T>
+                        </U>
+                      </V>
+                      <L n="initial_states">
+                        <U>
+                          <T n="state">15113<!--CommodityBasedObjectStateValue: Consumable_Untouched--></T>
+                        </U>
+                        <U>
+                          <T n="state">76724<!--CommodityBasedObjectStateValue: Trash_Consumable_HasFood--></T>
+                        </U>
+                        <U>
+                          <T n="state">15323<!--CommodityBasedObjectStateValue: Servings_LargeUntouched--></T>
+                        </U>
+                      </L>
+                      <V n="location" t="inventory" />
+                      <E n="owner_sim">Actor</E>
+                      <V n="timing" t="at_beginning" />
+                    </U>
+                  </V>
+                  <V t="enter_carry_while_holding">
+                    <U n="enter_carry_while_holding">
+                      <E n="carry_obj_participant_type">CreatedObject</E>
+                    </U>
+                  </V>
+                </L>
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">344380<!--SuperInteraction: NeighborhoodPotluck_FoodCarry--></T>
+                    <E n="target">CreatedObject</E>
+                  </U>
+                </L>
+              </U>
+            </U>
+            <U>
+              <U n="outcome">
+                <L n="basic_extras">
+                  <V t="create_object">
+                    <U n="create_object">
+                      <V n="creation_data" t="recipe">
+                        <U n="recipe">
+                          <T n="recipe">344948<!--Recipe: recipe_Food_Homestyle_CoconutRice-Large_PressureCooker--></T>
+                        </U>
+                      </V>
+                      <L n="initial_states">
+                        <U>
+                          <T n="state">15113<!--CommodityBasedObjectStateValue: Consumable_Untouched--></T>
+                        </U>
+                        <U>
+                          <T n="state">76724<!--CommodityBasedObjectStateValue: Trash_Consumable_HasFood--></T>
+                        </U>
+                        <U>
+                          <T n="state">15323<!--CommodityBasedObjectStateValue: Servings_LargeUntouched--></T>
+                        </U>
+                      </L>
+                      <V n="location" t="inventory" />
+                      <E n="owner_sim">Actor</E>
+                      <V n="timing" t="at_beginning" />
+                    </U>
+                  </V>
+                  <V t="enter_carry_while_holding">
+                    <U n="enter_carry_while_holding">
+                      <E n="carry_obj_participant_type">CreatedObject</E>
+                    </U>
+                  </V>
+                </L>
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">344380<!--SuperInteraction: NeighborhoodPotluck_FoodCarry--></T>
+                    <E n="target">CreatedObject</E>
+                  </U>
+                </L>
+              </U>
+            </U>
+            <U>
+              <U n="outcome">
+                <L n="basic_extras">
+                  <V t="create_object">
+                    <U n="create_object">
+                      <V n="creation_data" t="recipe">
+                        <U n="recipe">
+                          <T n="recipe">345096<!--Recipe: recipe_Food_Homestyle_SEA_Food_HaloHalo-Multi--></T>
+                        </U>
+                      </V>
+                      <L n="initial_states">
+                        <U>
+                          <T n="state">15113<!--CommodityBasedObjectStateValue: Consumable_Untouched--></T>
+                        </U>
+                        <U>
+                          <T n="state">76724<!--CommodityBasedObjectStateValue: Trash_Consumable_HasFood--></T>
+                        </U>
+                        <U>
+                          <T n="state">15323<!--CommodityBasedObjectStateValue: Servings_LargeUntouched--></T>
+                        </U>
+                      </L>
+                      <V n="location" t="inventory" />
+                      <E n="owner_sim">Actor</E>
+                      <V n="timing" t="at_beginning" />
+                    </U>
+                  </V>
+                  <V t="enter_carry_while_holding">
+                    <U n="enter_carry_while_holding">
+                      <E n="carry_obj_participant_type">CreatedObject</E>
+                    </U>
+                  </V>
+                </L>
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">344380<!--SuperInteraction: NeighborhoodPotluck_FoodCarry--></T>
+                    <E n="target">CreatedObject</E>
+                  </U>
+                </L>
+              </U>
+            </U>
+            <U>
+              <U n="outcome">
+                <L n="basic_extras">
+                  <V t="create_object">
+                    <U n="create_object">
+                      <V n="creation_data" t="recipe">
+                        <U n="recipe">
+                          <T n="recipe">348051<!--Recipe: recipe_Food_Homestyle_Stove_SEA_Food_Satay_Medium--></T>
+                        </U>
+                      </V>
+                      <L n="initial_states">
+                        <U>
+                          <T n="state">15113<!--CommodityBasedObjectStateValue: Consumable_Untouched--></T>
+                        </U>
+                        <U>
+                          <T n="state">76724<!--CommodityBasedObjectStateValue: Trash_Consumable_HasFood--></T>
+                        </U>
+                        <U>
+                          <T n="state">15323<!--CommodityBasedObjectStateValue: Servings_LargeUntouched--></T>
+                        </U>
+                      </L>
+                      <V n="location" t="inventory" />
+                      <E n="owner_sim">Actor</E>
+                      <V n="timing" t="at_beginning" />
+                    </U>
+                  </V>
+                  <V t="enter_carry_while_holding">
+                    <U n="enter_carry_while_holding">
+                      <E n="carry_obj_participant_type">CreatedObject</E>
+                    </U>
+                  </V>
+                </L>
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">344380<!--SuperInteraction: NeighborhoodPotluck_FoodCarry--></T>
+                    <E n="target">CreatedObject</E>
+                  </U>
+                </L>
+              </U>
+            </U>
+            <U>
+              <U n="outcome">
+                <L n="basic_extras">
+                  <V t="create_object">
+                    <U n="create_object">
+                      <V n="creation_data" t="recipe">
+                        <U n="recipe">
+                          <T n="recipe">15760<!--Recipe: recipe_Food_Homestyle_GardenSalad-Large--></T>
+                        </U>
+                      </V>
+                      <L n="initial_states">
+                        <U>
+                          <T n="state">15113<!--CommodityBasedObjectStateValue: Consumable_Untouched--></T>
+                        </U>
+                        <U>
+                          <T n="state">76724<!--CommodityBasedObjectStateValue: Trash_Consumable_HasFood--></T>
+                        </U>
+                        <U>
+                          <T n="state">15323<!--CommodityBasedObjectStateValue: Servings_LargeUntouched--></T>
+                        </U>
+                      </L>
+                      <V n="location" t="inventory" />
+                      <E n="owner_sim">Actor</E>
+                      <V n="timing" t="at_beginning" />
+                    </U>
+                  </V>
+                  <V t="enter_carry_while_holding">
+                    <U n="enter_carry_while_holding">
+                      <E n="carry_obj_participant_type">CreatedObject</E>
+                    </U>
+                  </V>
+                </L>
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">344380<!--SuperInteraction: NeighborhoodPotluck_FoodCarry--></T>
+                    <E n="target">CreatedObject</E>
+                  </U>
+                </L>
+              </U>
+            </U>
+            <U>
+              <U n="outcome">
+                <L n="basic_extras">
+                  <V t="create_object">
+                    <U n="create_object">
+                      <V n="creation_data" t="recipe">
+                        <U n="recipe">
+                          <T n="recipe">354037<!--Recipe: recipe_Food_Homestyle_SEA_Food_Bibingka_Large--></T>
+                        </U>
+                      </V>
+                      <L n="initial_states">
+                        <U>
+                          <T n="state">15113<!--CommodityBasedObjectStateValue: Consumable_Untouched--></T>
+                        </U>
+                        <U>
+                          <T n="state">76724<!--CommodityBasedObjectStateValue: Trash_Consumable_HasFood--></T>
+                        </U>
+                        <U>
+                          <T n="state">15323<!--CommodityBasedObjectStateValue: Servings_LargeUntouched--></T>
+                        </U>
+                      </L>
+                      <V n="location" t="inventory" />
+                      <E n="owner_sim">Actor</E>
+                      <V n="timing" t="at_beginning" />
+                    </U>
+                  </V>
+                  <V t="enter_carry_while_holding">
+                    <U n="enter_carry_while_holding">
+                      <E n="carry_obj_participant_type">CreatedObject</E>
+                    </U>
+                  </V>
+                </L>
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">344380<!--SuperInteraction: NeighborhoodPotluck_FoodCarry--></T>
+                    <E n="target">CreatedObject</E>
+                  </U>
+                </L>
+              </U>
+            </U>
+            <U>
+              <U n="outcome">
+                <L n="basic_extras">
+                  <V t="create_object">
+                    <U n="create_object">
+                      <V n="creation_data" t="recipe">
+                        <U n="recipe">
+                          <T n="recipe">344945<!--Recipe: recipe_Food_Homestyle_SEA_Food_BurmeseSamosaSoup-Large_PressureCooker--></T>
+                        </U>
+                      </V>
+                      <L n="initial_states">
+                        <U>
+                          <T n="state">15113<!--CommodityBasedObjectStateValue: Consumable_Untouched--></T>
+                        </U>
+                        <U>
+                          <T n="state">76724<!--CommodityBasedObjectStateValue: Trash_Consumable_HasFood--></T>
+                        </U>
+                        <U>
+                          <T n="state">15323<!--CommodityBasedObjectStateValue: Servings_LargeUntouched--></T>
+                        </U>
+                      </L>
+                      <V n="location" t="inventory" />
+                      <E n="owner_sim">Actor</E>
+                      <V n="timing" t="at_beginning" />
+                    </U>
+                  </V>
+                  <V t="enter_carry_while_holding">
+                    <U n="enter_carry_while_holding">
+                      <E n="carry_obj_participant_type">CreatedObject</E>
+                    </U>
+                  </V>
+                </L>
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">344380<!--SuperInteraction: NeighborhoodPotluck_FoodCarry--></T>
+                    <E n="target">CreatedObject</E>
+                  </U>
+                </L>
+              </U>
+            </U>
+            <U>
+              <U n="outcome">
+                <L n="basic_extras">
+                  <V t="create_object">
+                    <U n="create_object">
+                      <V n="creation_data" t="recipe">
+                        <U n="recipe">
+                          <T n="recipe">344951<!--Recipe: recipe_Food_Homestyle_SteamedRice-Large_PressureCooker--></T>
+                        </U>
+                      </V>
+                      <L n="initial_states">
+                        <U>
+                          <T n="state">15113<!--CommodityBasedObjectStateValue: Consumable_Untouched--></T>
+                        </U>
+                        <U>
+                          <T n="state">76724<!--CommodityBasedObjectStateValue: Trash_Consumable_HasFood--></T>
+                        </U>
+                        <U>
+                          <T n="state">15323<!--CommodityBasedObjectStateValue: Servings_LargeUntouched--></T>
+                        </U>
+                      </L>
+                      <V n="location" t="inventory" />
+                      <E n="owner_sim">Actor</E>
+                      <V n="timing" t="at_beginning" />
+                    </U>
+                  </V>
+                  <V t="enter_carry_while_holding">
+                    <U n="enter_carry_while_holding">
+                      <E n="carry_obj_participant_type">CreatedObject</E>
+                    </U>
+                  </V>
+                </L>
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">344380<!--SuperInteraction: NeighborhoodPotluck_FoodCarry--></T>
+                    <E n="target">CreatedObject</E>
+                  </U>
+                </L>
+              </U>
+            </U>
+            <U>
+              <U n="outcome">
+                <L n="basic_extras">
+                  <V t="create_object">
+                    <U n="create_object">
+                      <V n="creation_data" t="recipe">
+                        <U n="recipe">
+                          <T n="recipe">33823<!--Recipe: recipe_Food_Homestyle_CakeSignature-Large--></T>
+                        </U>
+                      </V>
+                      <L n="initial_states">
+                        <U>
+                          <T n="state">15113<!--CommodityBasedObjectStateValue: Consumable_Untouched--></T>
+                        </U>
+                        <U>
+                          <T n="state">76724<!--CommodityBasedObjectStateValue: Trash_Consumable_HasFood--></T>
+                        </U>
+                        <U>
+                          <T n="state">15323<!--CommodityBasedObjectStateValue: Servings_LargeUntouched--></T>
+                        </U>
+                      </L>
+                      <V n="location" t="inventory" />
+                      <E n="owner_sim">Actor</E>
+                      <V n="timing" t="at_beginning" />
+                    </U>
+                  </V>
+                  <V t="enter_carry_while_holding">
+                    <U n="enter_carry_while_holding">
+                      <E n="carry_obj_participant_type">CreatedObject</E>
+                    </U>
+                  </V>
+                </L>
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">344380<!--SuperInteraction: NeighborhoodPotluck_FoodCarry--></T>
+                    <E n="target">CreatedObject</E>
+                  </U>
+                </L>
+              </U>
+            </U>
+            <U>
+              <U n="outcome">
+                <L n="basic_extras">
+                  <V t="create_object">
+                    <U n="create_object">
+                      <V n="creation_data" t="recipe">
+                        <U n="recipe">
+                          <T n="recipe">40806<!--Recipe: recipe_Food_Homestyle_CookieHeart-Large--></T>
+                        </U>
+                      </V>
+                      <L n="initial_states">
+                        <U>
+                          <T n="state">15113<!--CommodityBasedObjectStateValue: Consumable_Untouched--></T>
+                        </U>
+                        <U>
+                          <T n="state">76724<!--CommodityBasedObjectStateValue: Trash_Consumable_HasFood--></T>
+                        </U>
+                        <U>
+                          <T n="state">15323<!--CommodityBasedObjectStateValue: Servings_LargeUntouched--></T>
+                        </U>
+                      </L>
+                      <V n="location" t="inventory" />
+                      <E n="owner_sim">Actor</E>
+                      <V n="timing" t="at_beginning" />
+                    </U>
+                  </V>
+                  <V t="enter_carry_while_holding">
+                    <U n="enter_carry_while_holding">
+                      <E n="carry_obj_participant_type">CreatedObject</E>
+                    </U>
+                  </V>
+                </L>
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">344380<!--SuperInteraction: NeighborhoodPotluck_FoodCarry--></T>
+                    <E n="target">CreatedObject</E>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="region">
+                <U n="region">
+                  <V n="whitelist" t="enabled">
+                    <L n="enabled">
+                      <T>337554<!--Region: region_Residential_MultiUnitWorld--></T>
+                    </L>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">ACTOR</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+  <T n="visible">False</T>
+</I>

@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="ranchNectarRack_Storage_Init_StoreAllNotAged" s="337584">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="cone">
+            <U n="cone">
+              <T n="angle">180</T>
+              <T n="max_radius">1.5</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="value" t="facing" />
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">106766<!--AnimationElement: Generic_PickUp_StandOnly--></T>
+      </U>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="inventory_transfer">
+      <U n="inventory_transfer">
+        <V n="backup_recipient" t="enabled">
+          <V n="enabled" t="participant">
+            <E n="participant">Actor</E>
+          </V>
+        </V>
+        <L n="object_tests">
+          <L>
+            <V t="object_definition_criteria">
+              <U n="object_definition_criteria">
+                <V n="identity_test" t="tags">
+                  <U n="tags">
+                    <L n="tag_set">
+                      <E>Func_RanchNectar_Bottle</E>
+                    </L>
+                  </U>
+                </V>
+                <E n="participant">PickedObject</E>
+              </U>
+            </V>
+            <V t="state">
+              <U n="state">
+                <V n="fallback_behavior" t="always_fail" />
+                <T n="value">15191<!--CommodityBasedObjectStateValue: Freshness_Untouched--></T>
+                <E n="who">PickedObject</E>
+              </U>
+            </V>
+            <V t="state">
+              <U n="state">
+                <E n="operator">NOTEQUAL</E>
+                <T n="value">322912<!--CommodityBasedObjectStateValue: RanchNectar_CommodityStateValues_Aged--></T>
+                <E n="who">PickedObject</E>
+              </U>
+            </V>
+          </L>
+        </L>
+        <V n="recipient" t="participant" />
+        <V n="source" t="participant">
+          <E n="participant">Actor</E>
+        </V>
+      </U>
+    </V>
+  </L>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xA374034<!--String: "Store All Non-Finely Aged Nectar Bottles"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="none" />
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all">
+        <U n="exclude_all">
+          <L n="include_affordances">
+            <T>13998<!--SocialSuperInteraction: sim_Chat--></T>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="inventory">
+      <U n="inventory">
+        <V n="inventory_location" t="participant_inventory">
+          <U n="participant_inventory">
+            <E n="inventory">Object</E>
+          </U>
+        </V>
+        <U n="required_count">
+          <E n="comparison">LESS</E>
+          <T n="value">13</T>
+        </U>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xA8BC1C9A<!--String: "This rack has no room for more Nectar Bottles."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">338941<!--TestSetInstance: testSet_RanchNectarRack_GrabInventoryTest--></T>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

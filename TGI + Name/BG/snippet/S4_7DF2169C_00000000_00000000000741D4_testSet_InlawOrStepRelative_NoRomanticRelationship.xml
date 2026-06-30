@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="TestSetInstance" i="snippet" m="event_testing.tests" n="testSet_InlawOrStepRelative_NoRomanticRelationship" s="475604">
+  <V n="invert_test" t="enabled" />
+  <L n="test">
+    <L>
+      <V t="relationship">
+        <U n="relationship">
+          <T n="only_validate_score_on_required_relation_bits">True</T>
+          <U n="relationship_score_interval">
+            <T n="lower_bound">10</T>
+            <T n="upper_bound">100</T>
+          </U>
+          <U n="required_relationship_bits">
+            <L n="match_any">
+              <T>474387<!--RelationshipBitCollection: rbc_Family_InLaws--></T>
+              <T>468541<!--RelationshipBit: family_Target_IsDistantRelativeOf_Actor--></T>
+              <T>468544<!--RelationshipBit: family_Target_IsStepchildOf_Actor--></T>
+              <T>468543<!--RelationshipBit: family_Target_IsStepparentOf_Actor--></T>
+              <T>8824<!--RelationshipBit: family_Target_IsStepsiblingOf_Actor--></T>
+            </L>
+          </U>
+          <T n="track">16651<!--RelationshipTrack: LTR_Romance_Main--></T>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="required_relationship_bits">
+            <L n="match_any">
+              <T>472031<!--RelationshipBit: sentimentBit_Actor_EnamoredBy_Target_LT_Family_InLaw--></T>
+              <T>472032<!--RelationshipBit: sentimentBit_Actor_EnamoredBy_Target_LT_Family_StepRelative--></T>
+            </L>
+          </U>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

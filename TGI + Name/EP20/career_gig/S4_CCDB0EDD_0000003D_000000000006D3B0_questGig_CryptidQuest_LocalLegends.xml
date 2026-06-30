@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="QuestGig" i="career_gig" m="careers.missions.mission_gig" n="questGig_CryptidQuest_LocalLegends" s="447408">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_description" t="enabled">
+        <T n="enabled">0xD3684B29<!--String: "Stories about the history of Gibbi Point's Plumbirds abound; track down more evidence as you learn about these unique birds."--></T>
+      </V>
+      <V n="instance_display_icon" t="enabled">
+        <T n="enabled" p="InEP20\UI\Icons\Career\Gigs\gig_LocalLegends.png">2f7d0004:00000000:04595810925c6cfe</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x28C18AAA<!--String: "Local Legends"--></T>
+      </V>
+    </U>
+  </V>
+  <T n="career">447413<!--Career: career_CryptidQuest--></T>
+  <V n="end_of_gig_notifications" t="enabled">
+    <L n="enabled">
+      <U>
+        <E n="key">SUCCESS</E>
+        <U n="value">
+          <L n="dialog_options">
+            <E>DISABLE_CLOSE_BUTTON</E>
+          </L>
+          <V n="text" t="single">
+            <T n="single">0xDE0BE1CF<!--String: "After learning more about the legends surrounding the Plumbird, you're one step closer to wrapping up your full investigation!"--></T>
+          </V>
+        </U>
+      </U>
+    </L>
+  </V>
+  <T n="gig_assignment_aspiration">447374<!--AspirationGig: aspirationGig_CryptidQuest_LocalLegends--></T>
+  <V n="gig_pay" t="flat_amount">
+    <U n="flat_amount">
+      <T n="value">50</T>
+    </U>
+  </V>
+  <T n="hide_inactive_objectives">True</T>
+  <L n="mission_objective_data">
+    <U>
+      <L n="weighted_objectives">
+        <U>
+          <T n="objective">447436<!--Objective: objective_CryptidQuest_LocalLegends_AskLocal--></T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="requires_previous_objective_complete">True</T>
+      <L n="weighted_objectives">
+        <U>
+          <T n="objective">447450<!--Objective: objective_CryptidQuest_LocalLegends_ExplorePOI--></T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <L n="weighted_objectives">
+        <U>
+          <T n="objective">447451<!--Objective: objective_CryptidQuest_LocalLegends_LocateEvidence--></T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="completes_mission">False</T>
+      <T n="requires_previous_objective_complete">True</T>
+      <L n="weighted_objectives">
+        <U>
+          <T n="objective">447452<!--Objective: objective_CryptidQuest_LocalLegends_DiscussEvidence--></T>
+        </U>
+      </L>
+    </U>
+  </L>
+  <T n="mission_rewards_description">0x2A6D68E8<!--String: "{0.String}\n<font color='#199C2C'>{1.String}</font>"--></T>
+  <V n="mission_rewards_text" t="enabled">
+    <T n="enabled">0x5D50FD03<!--String: "Reward: Simoleons"--></T>
+  </V>
+  <V n="mission_trait" t="enabled">
+    <T n="enabled">447456<!--Trait: trait_Hidden_CryptidQuest_OnQuest_LocalLegends--></T>
+  </V>
+  <U n="objective_completion_audio">
+    <T n="audio" p="InGame\Audio\Bumper\bumper_other_goal_complete.propx">39b2aa4a:00000000:ea1687e36b0b32f3</T>
+  </U>
+  <E n="on_pick_behavior">REMOVE</E>
+  <T n="open_career_panel">True</T>
+  <V n="picker_associated_sim_filter" t="enabled">
+    <T n="enabled">447370<!--TunableSimFilter: filter_Cryptid--></T>
+  </V>
+  <T n="picker_description_text">0x8AC19481<!--String: "{0.String}\n<font color='#199C2C'>{1.String}</font>"--></T>
+  <T n="picker_disable_if_visibility_tests_fail_with_tooltip">True</T>
+  <T n="picker_replace_if_removed">True</T>
+  <V n="picker_scheduling_behavior" t="enabled">
+    <V n="enabled" t="schedule_career_gig">
+      <U n="schedule_career_gig">
+        <T n="allow_add_career">True</T>
+      </U>
+    </V>
+  </V>
+  <V n="picker_scoring" t="enabled">
+    <U n="enabled">
+      <E n="bucket">EP20Quest_Cryptid</E>
+    </U>
+  </V>
+  <L n="picker_visibility_tests">
+    <L>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>461190<!--Trait: trait_HIdden_CryptidQuest_QuestComplete_LocalLegends--></T>
+          </L>
+        </U>
+      </V>
+      <V t="career_gig_test">
+        <U n="career_gig_test">
+          <T n="career">447413<!--Career: career_CryptidQuest--></T>
+          <T n="negate">True</T>
+          <E n="participant">ActiveHousehold</E>
+          <V n="test_type" t="specific_gigs">
+            <U n="specific_gigs">
+              <L n="gigs">
+                <T>447408<!--QuestGig: questGig_CryptidQuest_LocalLegends--></T>
+              </L>
+            </U>
+          </V>
+          <V n="tooltip" t="enabled">
+            <T n="enabled">0x45D865CC<!--String: "Another member of the household has already activated this Quest."--></T>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="result_based_loots" t="enabled">
+    <L n="enabled">
+      <U>
+        <E n="key">CANCELED</E>
+        <L n="value">
+          <T>461197<!--LootActions: loot_Cryptid_QuestCompletion_TraitCleanup--></T>
+        </L>
+      </U>
+      <U>
+        <E n="key">FAILURE</E>
+        <L n="value">
+          <T>461197<!--LootActions: loot_Cryptid_QuestCompletion_TraitCleanup--></T>
+        </L>
+      </U>
+      <U>
+        <E n="key">SUCCESS</E>
+        <L n="value">
+          <T>461196<!--LootActions: loot_Cryptid_QuestCompletion_LocalLegends--></T>
+        </L>
+      </U>
+    </L>
+  </V>
+</I>

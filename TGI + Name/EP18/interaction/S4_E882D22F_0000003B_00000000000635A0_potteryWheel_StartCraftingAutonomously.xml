@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="StartCraftingAutonomouslySuperInteraction" i="interaction" m="crafting.crafting_interactions" n="potteryWheel_StartCraftingAutonomously" s="406944">
+  <V n="_saveable" t="enabled" />
+  <L n="_static_commodities">
+    <U>
+      <T n="static_commodity">397174<!--StaticCommodity: staticCommodity_BuildSkill_Pottery--></T>
+    </U>
+    <U>
+      <T n="static_commodity">401416<!--StaticCommodity: commodity_HobbyMeetup_DoStuff--></T>
+    </U>
+  </L>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <L n="basic_extras">
+    <V t="buff_fire_and_forget">
+      <U n="buff_fire_and_forget">
+        <U n="buff">
+          <T n="buff_type">405436<!--Buff: buff_HobbyMeetup_CooldownPotteryWheel--></T>
+        </U>
+        <U n="success_chance">
+          <L n="multipliers">
+            <U>
+              <T n="multiplier">0</T>
+              <L n="tests">
+                <L>
+                  <V t="buff">
+                    <U n="buff">
+                      <L n="blacklist">
+                        <T>401896<!--Buff: buff_Role_HobbyMeetup_Pottery--></T>
+                      </L>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+          </L>
+        </U>
+      </U>
+    </V>
+  </L>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x207117F4<!--String: "Craft New Ceramic"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single" />
+  <L n="recipes">
+    <T>371897<!--Recipe: recipe_Pottery_IncenseBurner--></T>
+    <T>375268<!--Recipe: recipe_Pottery_OilBurner--></T>
+    <T>375267<!--Recipe: recipe_Pottery_WallCandleHolder--></T>
+    <T>375265<!--Recipe: recipe_Pottery_CandleLantern--></T>
+    <T>375266<!--Recipe: recipe_Pottery_CakeStand--></T>
+    <T>375269<!--Recipe: recipe_Pottery_GnomeSculpture--></T>
+    <T>375294<!--Recipe: recipe_Pottery_AbstractSculpture--></T>
+    <T>375296<!--Recipe: recipe_Pottery_AbstractWallSculpture--></T>
+    <T>375295<!--Recipe: recipe_Pottery_RomanticSculpture--></T>
+    <T>375273<!--Recipe: recipe_Pottery_IntricateVase--></T>
+    <T>375271<!--Recipe: recipe_Pottery_RaccoonVase--></T>
+    <T>375264<!--Recipe: recipe_Pottery_RoundVase--></T>
+    <T>374528<!--Recipe: recipe_Pottery_PlanterPot--></T>
+  </L>
+  <V n="route_start_balloon" t="enabled">
+    <U n="enabled">
+      <U n="balloon">
+        <L n="balloon_choices">
+          <U>
+            <V n="item" t="balloon_icon">
+              <U n="balloon_icon">
+                <V n="icon" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>Object</E>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </U>
+        </L>
+        <L n="balloon_target">
+          <E>Actor</E>
+        </L>
+      </U>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="slot_test">
+      <U n="slot_test">
+        <V n="child_slot" t="by_reference">
+          <T n="by_reference">slot_SitChair</T>
+        </V>
+        <V n="slot_test_type" t="has_used_slot" />
+      </U>
+    </V>
+    <V t="slot_test">
+      <U n="slot_test">
+        <V n="child_slot" t="by_reference">
+          <T n="by_reference">slot_Pottery</T>
+        </V>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>405436<!--Buff: buff_HobbyMeetup_CooldownPotteryWheel--></T>
+        </L>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">28305<!--TestSetInstance: testSet_EmotionNotMiserable--></T>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">28176<!--TestSetInstance: testSet_EmotionNotStressed--></T>
+    </V>
+  </L>
+  <T n="time_overhead">60</T>
+</I>

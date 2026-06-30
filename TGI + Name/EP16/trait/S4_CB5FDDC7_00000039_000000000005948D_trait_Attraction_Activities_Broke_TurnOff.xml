@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="AttractionPreference" i="trait" m="traits.attraction_preference" n="trait_Attraction_Activities_Broke_TurnOff" s="365709">
+  <L n="ages">
+    <E>TEEN</E>
+    <E>ADULT</E>
+    <E>ELDER</E>
+    <E>YOUNGADULT</E>
+  </L>
+  <U n="attraction_modifier">
+    <L n="modifiers">
+      <U>
+        <T n="modifier">-20</T>
+        <L n="tests">
+          <L>
+            <V t="simoleon_value">
+              <U n="simoleon_value">
+                <V n="value_context" t="net_worth">
+                  <U n="net_worth">
+                    <E n="subject">TargetSim</E>
+                  </U>
+                </V>
+                <U n="value_threshold">
+                  <E n="comparison">LESS_OR_EQUAL</E>
+                  <T n="value">25000</T>
+                </U>
+              </U>
+            </V>
+            <V t="knowledge">
+              <U n="knowledge">
+                <V n="knows_net_worth" t="enabled">
+                  <T n="enabled">True</T>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </L>
+  </U>
+  <L n="buffs">
+    <U>
+      <T n="buff_type">365341<!--Buff: buff_Attraction_HasTurnOff--></T>
+    </U>
+  </L>
+  <T n="cas_trait_asm_param">NegativeReactions</T>
+  <L n="conflicting_traits">
+    <T>365708<!--AttractionPreference: trait_Attraction_Activities_Broke_TurnOn--></T>
+  </L>
+  <T n="display_name">0xB2B5D196<!--String: "Broke Sims"--></T>
+  <T n="display_name_gender_neutral">0x96BEF0FE<!--String: "Broke Sims"--></T>
+  <T p="InEP16\UI\Icons\CAS\Traits\Preferences\traits_Broke.png" n="icon">2f7d0004:00000000:54c8180ab487f81c</T>
+  <T n="persistable">True</T>
+  <T n="preference_item">365690<!--AttractionPreferenceItem: preferenceItem_Attraction_Activities_Broke--></T>
+  <L n="species">
+    <E />
+  </L>
+  <T n="trait_description">0xC36BB5D<!--String: "Broke"--></T>
+  <E n="trait_type">DISLIKE</E>
+</I>

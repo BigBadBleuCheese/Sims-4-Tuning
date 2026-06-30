@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Grief_Add_NoTarget_HoldTogether" s="382584">
+  <L n="loot_actions">
+    <V t="trait_add">
+      <U n="trait_add">
+        <T n="trait">381519<!--Trait: trait_Grief_HoldTogether--></T>
+      </U>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">-2160</T>
+          <T n="stat">381524<!--Commodity: commodity_Grief_Timer--></T>
+          <L n="tests">
+            <L>
+              <V t="trait">
+                <U n="trait">
+                  <L n="whitelist_traits">
+                    <T>381522<!--Trait: trait_Grief_Conquered--></T>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InEP17\UI\Icons\Notifications\notification_GriefHolding.png">2f7d0004:00000000:1a0d7a3d8a00ea51</T>
+                </U>
+              </V>
+            </V>
+            <V n="primary_icon_response" t="enabled">
+              <U n="enabled">
+                <E n="ui_request">SHOW_SUMMARY_PANEL</E>
+              </U>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant" />
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xBA0D277E<!--String: "Whether it be a divorce, loss of a job, or losing a loved one, <b>Grief</b> is a normal, albeit tough, part of life that every Sim has to navigate.\n\n{0.SimFirstName} feels as though it's best to project a sense of optimism, even while carrying a heavy burden. {0.SimPronounSubjective} is doing well by <b>Holding It Together</b>, engaging in social interactions and activities with <b>Confident Emotions</b>, however <b>Sad Emotions</b> can certainly work their way in and bubble over from time to time.\n\n<i>More information on this <b>Grief Type</b> and <b>Grief Coping</b> can be found in the <b>Traits Section</b> of the <b>Simology Panel</b></i>"--></T>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">-1440</T>
+          <T n="stat">381524<!--Commodity: commodity_Grief_Timer--></T>
+          <L n="tests">
+            <L>
+              <V t="skill_test">
+                <U n="skill_test">
+                  <T n="skill">380495<!--Skill: statistic_Skill_AdultMinor_Thanatology--></T>
+                  <V n="skill_range" t="interval">
+                    <U n="interval">
+                      <U n="skill_interval">
+                        <T n="lower_bound">4</T>
+                        <T n="upper_bound">5</T>
+                      </U>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+            <L>
+              <V t="trait">
+                <U n="trait">
+                  <L n="whitelist_traits">
+                    <T>393555<!--Trait: trait_ReaperCareer_DeathReward--></T>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+    </V>
+    <V t="actions">
+      <T n="actions">420872<!--RandomWeightedLoot: randomLoot_Grief_PeriodicEffect_HoldTogether_OnTrigger--></T>
+    </V>
+  </L>
+</I>

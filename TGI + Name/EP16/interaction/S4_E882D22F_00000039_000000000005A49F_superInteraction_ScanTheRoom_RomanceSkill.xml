@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="superInteraction_ScanTheRoom_RomanceSkill" s="369823">
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Actor</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">370827<!--AnimationElement: RomanceSkill_ScanTheRoom_asm--></T>
+      </U>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>369824<!--LootActions: lootActions_RomanceSkill_ScanTheRoom--></T>
+        </L>
+      </U>
+    </V>
+    <V t="vfx">
+      <U n="vfx">
+        <V n="participant" t="from_participant">
+          <U n="from_participant">
+            <E n="participant">Actor</E>
+          </U>
+        </V>
+        <V n="timing" t="at_beginning" />
+        <U n="vfx">
+          <T n="effect_name">ep16_romantic_skill_scan_room</T>
+          <V n="joint_name" t="Slot">
+            <T n="Slot">b__Root__</T>
+          </V>
+        </U>
+        <V n="vfx_lifetime" t="interaction" />
+      </U>
+    </V>
+  </L>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x8CFD0B61<!--String: "Scan the Room"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <V n="display_tooltip" t="enabled">
+    <T n="enabled">0x9165B5B<!--String: "Look around to see the romantic possibilities. Who's looking to be wooed..."--></T>
+  </V>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+    <E>Interaction_Skill_Romance</E>
+  </L>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T n="key" p="InEP16\UI\Icons\PieMenu\Skills\skill_RomanceSkill_piemenu.png">2f7d0004:00000000:b1506fdca83c1fdf</T>
+      </U>
+    </V>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">ACTOR</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="identity">
+      <U n="identity">
+        <T n="subjects_match">True</T>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">472928<!--TestSetInstance: testSetInstance_DeepWaterPostures_Disallow_Actor--></T>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="skill_test">
+        <U n="skill_test">
+          <T n="skill">368684<!--Skill: statistic_Skill_AdultMajor_Romance--></T>
+          <V n="skill_range" t="interval">
+            <U n="interval">
+              <U n="skill_interval">
+                <T n="lower_bound">6</T>
+              </U>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>392933<!--Buff: buff_RomanceSkill_Delay_Timer_ScantheRoom--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

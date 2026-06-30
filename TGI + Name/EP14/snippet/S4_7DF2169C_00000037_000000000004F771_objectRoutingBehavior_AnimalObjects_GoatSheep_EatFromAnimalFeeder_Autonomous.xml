@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="ObjectRoutingBehavior" i="snippet" m="routing.object_routing.object_routing_behavior" n="objectRoutingBehavior_AnimalObjects_GoatSheep_EatFromAnimalFeeder_Autonomous" s="325489">
+  <E n="object_routing_priority">HIGH</E>
+  <V n="route" t="from_target_object">
+    <U n="from_target_object">
+      <L n="constraints">
+        <V t="cone">
+          <U n="cone">
+            <T n="angular_cost_weight">0</T>
+            <T n="max_radius">1.25</T>
+            <T n="min_radius">0.5</T>
+          </U>
+        </V>
+        <V t="facing" />
+      </L>
+      <L n="no_target_loot">
+        <T>263264<!--LootActions: loot_AnimalObjects_StartWalk--></T>
+      </L>
+      <V n="radius" t="enabled">
+        <T n="enabled">75</T>
+      </V>
+      <V n="route_fail_balloon" t="show_balloon">
+        <U n="show_balloon">
+          <V n="item" t="balloon_icon">
+            <U n="balloon_icon">
+              <V n="icon" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InEP14\UI\Icons\Headlines\headline_GoatSheepRouteFail.png">2f7d0004:00000000:91cbc1e271563365</T>
+                </U>
+              </V>
+            </U>
+          </V>
+        </U>
+      </V>
+      <L n="route_fail_loot">
+        <T>263264<!--LootActions: loot_AnimalObjects_StartWalk--></T>
+      </L>
+      <V n="target_participant" t="disabled" />
+      <E n="target_reservation_timing">NEVER</E>
+      <L n="target_selection_test">
+        <L>
+          <V t="state">
+            <U n="state">
+              <E n="operator">NOTEQUAL</E>
+              <T n="value">324406<!--CommodityBasedObjectStateValue: animalFeeder_CommodityState_Values_FoodRemaining_Empty--></T>
+            </U>
+          </V>
+        </L>
+      </L>
+      <V n="target_type" t="object">
+        <U n="object">
+          <L n="tags">
+            <E>Func_AnimalObject_Feeder</E>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="routing_actions">
+    <V t="play_animation">
+      <U n="play_animation">
+        <U n="animation">
+          <T n="loop_time">10</T>
+          <T n="reference">320919<!--ObjectAnimationElement: animalObjects_Idles_GoatSheep_Eat--></T>
+        </U>
+      </U>
+    </V>
+    <V t="apply_loot">
+      <U n="apply_loot">
+        <L n="loot_actions">
+          <T>324857<!--LootActions: loot_AnimalObjects_GoatSheep_AnimalFeeder_GainHunger--></T>
+          <T>324482<!--LootActions: loot_AnimalFeeder_Decrement_FoodRemaining--></T>
+          <T>256635<!--LootActions: loot_animalObjects_Stop--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="success_loot">
+    <T>263264<!--LootActions: loot_AnimalObjects_StartWalk--></T>
+  </L>
+</I>

@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SimPickerInteraction" i="interaction" m="interactions.base.picker_interaction" n="simPicker_KidsBike_Practice" s="314960">
+  <V n="_saveable" t="disabled" />
+  <L n="actor_continuation">
+    <U>
+      <T n="affordance">313280<!--SocialSuperInteraction: social_KidsBike_AskForHelp--></T>
+      <E n="target">PickedSim</E>
+    </U>
+  </L>
+  <T n="allow_from_sim_inventory">True</T>
+  <T n="allow_from_world">False</T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x1EB9DD0D<!--String: "Ask for Help With Bike Riding"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">PickedSim</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T n="include_uninstantiated_sims">False</T>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <V n="picker_dialog" t="sim_picker">
+    <U n="sim_picker">
+      <L n="custom_filters">
+        <V t="reference">
+          <T n="reference">499295<!--CustomSimFilter: customSimFilter_NobleCareer--></T>
+        </V>
+      </L>
+    </U>
+  </V>
+  <V n="pie_menu_test_tooltip" t="enabled">
+    <T n="enabled">0x47CCFAD6<!--String: "There is nobody nearby who can help right now."--></T>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <V n="radius" t="enabled">
+    <T n="enabled">10</T>
+  </V>
+  <V n="sim_filter" t="sim_filter_selected">
+    <T n="sim_filter_selected">363642<!--TunableSimFilter: filter_SimPicker_HasMet_CTYAE--></T>
+  </V>
+  <L n="sim_tests">
+    <L>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="relationship_score_interval">
+            <T n="lower_bound">0</T>
+          </U>
+          <L n="subject">
+            <E>Actor</E>
+          </L>
+          <L n="target_sim">
+            <E>PickedSim</E>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="single_choice_display_name" t="enabled">
+    <T n="enabled">0xE1F4B82C<!--String: "Ask {2.SimFirstName} for Help With Bike Riding"--></T>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="trait">
+      <U n="trait">
+        <L n="blacklist_traits">
+          <T>305620<!--Trait: trait_Hidden_KidsBike_CanRide--></T>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>306734<!--Buff: buff_Vehicle_Bike_Riding_KidsBike_CantConcentrate--></T>
+          <T>305934<!--Buff: buff_Vehicle_Bike_Riding_KidsBike_BikingIsHard--></T>
+          <T>305933<!--Buff: buff_Vehicle_Bike_Riding_KidsBike_NeverGetBetter--></T>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xB2F26194<!--String: "{0.SimFirstName} needs a moment before practicing again."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+</I>

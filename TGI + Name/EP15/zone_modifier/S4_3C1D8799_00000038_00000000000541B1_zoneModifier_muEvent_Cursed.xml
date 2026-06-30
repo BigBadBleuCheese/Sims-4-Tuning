@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="ZoneModifier" i="zone_modifier" m="zone_modifier.zone_modifier" n="zoneModifier_muEvent_Cursed" s="344497">
+  <U n="cleanup_loot">
+    <L n="actions">
+      <V t="modify_lot_items">
+        <U n="modify_lot_items">
+          <U n="actions">
+            <L n="modifications">
+              <U>
+                <V n="action" t="destroy_object" />
+                <L n="tests">
+                  <L>
+                    <V t="object_definition">
+                      <U n="object_definition">
+                        <V n="item" t="actual_item">
+                          <U n="actual_item">
+                            <L n="items_to_check">
+                              <T>366450</T>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T n="hide_screen_slam">True</T>
+  <U n="on_add_loot">
+    <L n="actions">
+      <V t="spawn_objects">
+        <U n="spawn_objects">
+          <U n="creation_op">
+            <V n="creation_data" t="definition">
+              <U n="definition">
+                <T n="definition">366450</T>
+              </U>
+            </V>
+            <V n="location" t="position">
+              <U n="position">
+                <T n="enclosed_room_only">True</T>
+                <V n="initial_location" t="from_lot">
+                  <U n="from_lot">
+                    <E n="lot_location_strategy">RANDOM_ANY_FLOOR</E>
+                  </U>
+                </V>
+                <T n="stay_in_connected_connectivity_group">False</T>
+              </U>
+            </V>
+            <E n="subject">Lot</E>
+            <L n="tests">
+              <L>
+                <V t="object_criteria">
+                  <U n="object_criteria">
+                    <V n="identity_test" t="definition_id">
+                      <U n="definition_id">
+                        <T n="actual_object">366450</T>
+                      </U>
+                    </V>
+                    <T n="on_active_lot">True</T>
+                    <T n="owned">False</T>
+                    <V n="subject_specific_tests" t="all_objects">
+                      <U n="all_objects">
+                        <U n="quantity">
+                          <E n="comparison">EQUAL</E>
+                          <T n="value">0</T>
+                        </U>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T n="zone_modifier_locked">True</T>
+</I>

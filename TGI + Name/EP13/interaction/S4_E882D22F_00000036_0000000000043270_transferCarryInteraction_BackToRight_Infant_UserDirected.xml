@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="transferCarryInteraction_BackToRight_Infant_UserDirected" s="275056">
+  <V n="_animation_actor_map" t="reference">
+    <T n="reference">104104<!--AnimationActorMap: AlreadyCarryingCarryTarget--></T>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <T n="category">275893<!--PieMenuCategory: sim_Infant_Care--></T>
+  <V n="content_score" t="enabled">
+    <U n="enabled">
+      <T n="base_score">1000</T>
+    </U>
+  </V>
+  <T n="disable_transitions">True</T>
+  <T n="display_name">0x8C9CA9BF<!--String: "Take {1.SimFirstName} out of Back Carrier"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="continuation">
+          <U>
+            <T n="affordance">271336<!--SuperInteraction: transferCarryInteraction_BackToRight_Infant--></T>
+          </U>
+        </L>
+      </U>
+    </U>
+  </V>
+  <T n="pie_menu_priority">10</T>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="identity">
+      <U n="identity">
+        <E n="subject_a">CarriedObject</E>
+        <E n="subject_b">TargetSim</E>
+        <T n="subjects_match">True</T>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <E n="subject">TargetSim</E>
+        <V n="whitelist" t="enabled">
+          <L n="enabled">
+            <T>272014<!--Buff: buff_Infants_CarryBack_Hidden--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Broadcaster" i="broadcaster" m="broadcasters.broadcaster" n="broadcaster_SmallBusiness_Reputation_Dreamer" s="376354">
+  <V n="clustering" t="disabled" />
+  <L n="constraints">
+    <V t="circle">
+      <U n="circle">
+        <T n="radius">5</T>
+      </U>
+    </V>
+  </L>
+  <L n="effects">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>430317<!--LootActions: loot_SmallBusiness_Reputation_Consequences_UltimateDreamer_PraiseOrArgue--></T>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="situation_job_test">
+              <U n="situation_job_test">
+                <L n="situation_jobs">
+                  <T>373362<!--SituationJob: job_SmallBusinessCustomer--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>430312<!--LootActions: loot_SmallBusiness_Reputation_Consequences_UltimateDreamer_ProudOrAshamed--></T>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="relationship">
+              <U n="relationship">
+                <U n="relationship_score_interval">
+                  <T n="lower_bound">60</T>
+                </U>
+                <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+              </U>
+            </V>
+          </L>
+          <L>
+            <V t="in_same_household" />
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="frequency" t="on_enter">
+    <U n="on_enter">
+      <T n="allow_multiple">True</T>
+    </U>
+  </V>
+  <T n="immediate">True</T>
+</I>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Dynasty_Heir_ActorRemovesTarget_HurtOrBitter" s="493614">
+  <L n="loot_actions">
+    <V t="looping_loot_ops_with_target">
+      <U n="looping_loot_ops_with_target">
+        <L n="loots_to_apply">
+          <T>493610<!--LootActions: loot_Dynasty_Heir_ActorRemovesTarget_Bitter--></T>
+        </L>
+        <E n="subject">Actor</E>
+        <E n="target_participant_type">TargetSim</E>
+        <L n="tests">
+          <L>
+            <V t="test_based_score_threshold">
+              <U n="test_based_score_threshold">
+                <T n="test_based_score">474993<!--TestBasedScore: testBasedScore_Dynasty_Titles_Heir_ActorUnmakesTarget--></T>
+                <U n="threshold">
+                  <E n="comparison">LESS</E>
+                  <T n="value">30</T>
+                </U>
+              </U>
+            </V>
+            <V t="buff">
+              <U n="buff">
+                <L n="blacklist">
+                  <T>477895<!--Buff: buff_Dynasty_Heir_UnmakeDialog_Hurt--></T>
+                </L>
+                <E n="subject">TargetSim</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="looping_loot_ops_with_target">
+      <U n="looping_loot_ops_with_target">
+        <L n="loots_to_apply">
+          <T>493611<!--LootActions: loot_Dynasty_Heir_ActorRemovesTarget_Hurt--></T>
+        </L>
+        <E n="subject">Actor</E>
+        <E n="target_participant_type">TargetSim</E>
+        <L n="tests">
+          <L>
+            <V t="test_based_score_threshold">
+              <U n="test_based_score_threshold">
+                <T n="test_based_score">474993<!--TestBasedScore: testBasedScore_Dynasty_Titles_Heir_ActorUnmakesTarget--></T>
+                <U n="threshold">
+                  <T n="value">30</T>
+                </U>
+              </U>
+            </V>
+          </L>
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <E n="subject">TargetSim</E>
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>477895<!--Buff: buff_Dynasty_Heir_UnmakeDialog_Hurt--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

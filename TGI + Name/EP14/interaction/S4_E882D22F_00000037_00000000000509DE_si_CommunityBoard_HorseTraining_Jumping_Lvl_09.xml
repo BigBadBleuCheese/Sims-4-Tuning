@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="si_CommunityBoard_HorseTraining_Jumping_Lvl_09" s="330206">
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Actor</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">322527<!--AnimationElement: HorseSocialAnims_Reactions_Happy--></T>
+        <U n="overrides">
+          <V n="balloons" t="enabled">
+            <L n="enabled">
+              <U>
+                <L n="balloon_choices">
+                  <U>
+                    <V n="item" t="balloon_icon">
+                      <U n="balloon_icon">
+                        <V n="icon" t="resource_key">
+                          <U n="resource_key">
+                            <T n="key" p="InEP14\UI\Icons\Headlines\headline_HorseSkill_Jumping.png">2f7d0004:00000000:49ad6869b47d4573</T>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </U>
+                </L>
+                <L n="balloon_target">
+                  <E>Actor</E>
+                </L>
+              </U>
+            </L>
+          </V>
+        </U>
+      </U>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="put_sim_in_rabbit_hole">
+      <U n="put_sim_in_rabbit_hole">
+        <T n="rabbit_hole">330237<!--RabbitHole: rabbitHole_CommunityBoard_HorseTraining_Jumping_Lvl_09--></T>
+      </U>
+    </V>
+  </L>
+  <V n="basic_reserve_object" t="disabled" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x7135B119<!--String: "Jumping Level 9"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="basic_extras">
+          <V t="payment">
+            <U n="payment">
+              <V n="payment" t="literal">
+                <U n="literal">
+                  <V n="payment_cost" t="amount">
+                    <U n="amount">
+                      <T n="amount">430</T>
+                      <L n="payment_destinations">
+                        <V t="no_dest" />
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </U>
+          </V>
+        </L>
+      </U>
+    </U>
+  </V>
+  <V n="require_reins_for_formation" t="enabled">
+    <T n="enabled">314817<!--RoutingFormation: routingFormation_HorseRiding_Ride--></T>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">ACTOR</E>
+  <L n="test_globals" />
+  <T n="time_overhead">30</T>
+</I>

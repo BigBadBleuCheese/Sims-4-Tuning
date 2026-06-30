@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<M n="luck.luck_tuning" s="17811844712875102948">
+  <C n="LuckTuning">
+    <L n="LUCK_LEVELS">
+      <U>
+        <T n="background" p="InGame\UI\Icons\SimInfoPanel\LuckPanel\SimInfo_LuckBanner_Bad.png">2f7d0004:00000000:b2db3b525b208c84</T>
+        <T n="description_text">0x513995B3<!--String: "<font color="#FFFFFF">{0.SimFirstName} can't be totally sure, but {0.SimPronounSubjective} feels like Bad Luck is looming over {0.SimPronounObjective} today.</font>"--></T>
+        <T n="icon" p="InGame\UI\Icons\SimInfoPanel\LuckPanel\SimInfo_Luck_Bad.png">2f7d0004:00000000:cb5a9ad52f18d002</T>
+        <T n="impact_loot">425926<!--LootActions: loot_LuckSys_BadLuck--></T>
+        <U n="interval">
+          <T n="upper_bound">-55</T>
+        </U>
+        <L n="loot_on_enter">
+          <T>452531<!--LootActions: loot_LuckSys_OnLevel_BadLuck--></T>
+        </L>
+        <T n="name">0x682D66E2<!--String: "Bad Luck"--></T>
+        <T n="perceived_value_bias">-1</T>
+        <T n="tooltip">0xF0A473B0<!--String: "With Bad Luck looming, Sims may need to beware of failures, fires, and fickle friendships."--></T>
+      </U>
+      <U>
+        <T n="background" p="InGame\UI\Icons\SimInfoPanel\LuckPanel\SimInfo_LuckBanner_Neutral.png">2f7d0004:00000000:60104c3c3a705d04</T>
+        <T n="description_text">0x5A0B5BA<!--String: "{0.SimFirstName} has Ordinary Luck on an ordinary day. Not much else to say!"--></T>
+        <T n="icon" p="InGame\UI\Icons\SimInfoPanel\LuckPanel\SimInfo_Luck_Neutral.png">2f7d0004:00000000:9ab43d666f894b46</T>
+        <T n="impact_loot">425927<!--LootActions: loot_LuckSys_NeutralLuck--></T>
+        <U n="interval">
+          <T n="lower_bound">-55</T>
+          <T n="upper_bound">55</T>
+        </U>
+        <L n="loot_on_enter">
+          <T>472134<!--LootActions: loot_LuckSys_OnLevel_NeutralLuck--></T>
+        </L>
+        <T n="name">0x27971B57<!--String: "Ordinary Luck"--></T>
+        <T n="should_show_impacts">False</T>
+        <T n="should_use_luck">False</T>
+        <T n="tooltip">0xC775C4DF<!--String: "With Ordinary Luck, a Sim's actions are not swayed for better or worse by Luck."--></T>
+      </U>
+      <U>
+        <T n="background" p="InGame\UI\Icons\SimInfoPanel\LuckPanel\SimInfo_LuckBanner_Good.png">2f7d0004:00000000:2501d6f0e6fc59c4</T>
+        <T n="description_text">0xD3C7200D<!--String: "{0.SimFirstName} is sure {0.SimPronounSubjective} can feel Good Luck shining brightly on {0.SimPronounObjective} today!"--></T>
+        <T n="icon" p="InGame\UI\Icons\SimInfoPanel\LuckPanel\SimInfo_Luck_Good.png">2f7d0004:00000000:bda69c3f15cac4f6</T>
+        <T n="impact_loot">425925<!--LootActions: loot_LuckSys_GoodLuck--></T>
+        <U n="interval">
+          <T n="lower_bound">55</T>
+        </U>
+        <L n="loot_on_enter">
+          <T>452530<!--LootActions: loot_LuckSys_OnLevel_GoodLuck--></T>
+        </L>
+        <T n="name">0x4F4A8D40<!--String: "Good Luck"--></T>
+        <T n="perceived_value_bias">2</T>
+        <T n="tooltip">0x4E40547E<!--String: "With Good Luck, Sims may see an increase in good finds, positive social interactions, and maybe even that long-awaited promotion at work!"--></T>
+      </U>
+    </L>
+    <U n="LUCK_MODIFIERS">
+      <L n="modifiers">
+        <U>
+          <T n="modifier">15</T>
+          <T n="multiply_by_count">True</T>
+          <L n="tests">
+            <L>
+              <V t="inventory">
+                <U n="inventory">
+                  <V n="contents_check" t="has_object_with_states">
+                    <U n="has_object_with_states">
+                      <V n="object_requirement" t="definition">
+                        <U n="definition">
+                          <T n="definition">486070</T>
+                        </U>
+                      </V>
+                      <L n="state_set">
+                        <T>452250<!--CommodityBasedObjectStateValue: luckInfusedObjects_LuckSys_Values_Active_Yes--></T>
+                      </L>
+                    </U>
+                  </V>
+                  <T n="get_total_count">True</T>
+                  <V n="inventory_location" t="participant_inventory" />
+                </U>
+              </V>
+              <V t="sim_info">
+                <U n="sim_info">
+                  <V n="ages" t="specified" />
+                  <V n="species" t="specified">
+                    <U n="specified">
+                      <L n="species">
+                        <E />
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <T n="modifier">-15</T>
+          <T n="multiply_by_count">True</T>
+          <L n="tests">
+            <L>
+              <V t="inventory">
+                <U n="inventory">
+                  <V n="contents_check" t="has_object_with_states">
+                    <U n="has_object_with_states">
+                      <V n="object_requirement" t="definition">
+                        <U n="definition">
+                          <T n="definition">486069</T>
+                        </U>
+                      </V>
+                      <L n="state_set">
+                        <T>452250<!--CommodityBasedObjectStateValue: luckInfusedObjects_LuckSys_Values_Active_Yes--></T>
+                      </L>
+                    </U>
+                  </V>
+                  <T n="get_total_count">True</T>
+                </U>
+              </V>
+              <V t="sim_info">
+                <U n="sim_info">
+                  <V n="ages" t="specified" />
+                  <V n="species" t="specified">
+                    <U n="specified">
+                      <L n="species">
+                        <E />
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+    <U n="LUCK_REFRESH_SCHEDULE">
+      <L n="schedule_entries">
+        <U>
+          <U n="days_available">
+            <T n="0 SUNDAY">True</T>
+            <T n="1 MONDAY">True</T>
+            <T n="2 TUESDAY">True</T>
+            <T n="3 WEDNESDAY">True</T>
+            <T n="4 THURSDAY">True</T>
+            <T n="5 FRIDAY">True</T>
+            <T n="6 SATURDAY">True</T>
+          </U>
+          <U n="start_time">
+            <T n="hour">2</T>
+          </U>
+        </U>
+      </L>
+    </U>
+    <T n="LUCK_STAT">424777<!--Statistic: statistic_LuckSys_Luck--></T>
+    <L n="SHOULD_HAVE_LUCK_TESTS">
+      <L>
+        <V t="sim_info">
+          <U n="sim_info">
+            <V n="ages" t="specified" />
+            <V n="species" t="specified">
+              <U n="specified">
+                <L n="species">
+                  <E>HUMAN</E>
+                </L>
+              </U>
+            </V>
+          </U>
+        </V>
+      </L>
+    </L>
+    <T n="SIM_INFO_TRAY_HOVER_ICON" p="InGame\UI\Icons\SimInfoPanel\SimInfoPanel_Icon_Luck_Over.png">2f7d0004:00000000:5db8d88b624b9529</T>
+    <T n="SIM_INFO_TRAY_ICON" p="InGame\UI\Icons\SimInfoPanel\SimInfoPanel_Icon_Luck.png">2f7d0004:00000000:e4792d287bb5baf4</T>
+  </C>
+</M>

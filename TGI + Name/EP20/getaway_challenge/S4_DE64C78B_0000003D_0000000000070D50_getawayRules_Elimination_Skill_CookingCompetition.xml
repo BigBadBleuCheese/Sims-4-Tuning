@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SkillElimination" i="getaway_challenge" m="custom_schedules.getaway_challenge_tuning" n="getawayRules_Elimination_Skill_CookingCompetition" s="462160">
+  <U n="daily_timer">
+    <T n="hour">11</T>
+  </U>
+  <T n="description_tooltip">0x27A7257D<!--String: "It's a culinary showdown! Sims with the least progress or lowest score in Cooking, Gourmet Cooking or Baking Skill will be eliminated. Only selected roles are eligible, and participation is limited to teens and older."--></T>
+  <T n="display_name">0x6C0D8C21<!--String: "Cooking Skills Elimination"--></T>
+  <L n="groups">
+    <U>
+      <L n="associated_buff">
+        <U>
+          <T n="buff_type">477373<!--Buff: buff_Trait_Competitive_Hidden_Getaway_SkillContest_CookingCompetition--></T>
+        </U>
+        <U>
+          <T n="buff_type">483862<!--Buff: buff_Getaway_EliminationCandidate--></T>
+        </U>
+      </L>
+      <L n="disallowed_ages">
+        <E />
+        <E>INFANT</E>
+        <E>TODDLER</E>
+        <E>CHILD</E>
+      </L>
+      <L n="disallowed_species">
+        <E>CAT</E>
+        <E>DOG</E>
+        <E>FOX</E>
+        <E>HORSE</E>
+        <E>SMALLDOG</E>
+      </L>
+      <T n="group_name">0xD450CE15<!--String: "Competing Sims"--></T>
+    </U>
+  </L>
+  <T n="icon" p="InEP20\UI\Icons\GetawayRules\getaway_rules_CookingCompetition.png">2f7d0004:00000000:85757147b5f419e1</T>
+  <L n="loots_after_daily_timer">
+    <T>486066<!--LootActions: loot_Getaway_Elimination_CookingSkill--></T>
+    <T>487109<!--LootActions: loot_Getaway_Elimination_CookingSkill_FinalElimination--></T>
+    <T>487106<!--LootActions: loot_Getaway_Elimination_CookingSkill_4_Remaining--></T>
+    <T>487107<!--LootActions: loot_Getaway_Elimination_CookingSkill_3_Remaining--></T>
+    <T>487108<!--LootActions: loot_Getaway_Elimination_CookingSkill_2_Remaining--></T>
+  </L>
+  <L n="skills">
+    <T>16701<!--Skill: statistic_Skill_AdultMajor_GourmetCooking--></T>
+    <T>16705<!--Skill: statistic_Skill_AdultMajor_HomestyleCooking--></T>
+    <T>104198<!--Skill: statistic_Skill_AdultMajor_Baking--></T>
+  </L>
+  <L n="tests_blocking_daily_timer_behavior">
+    <L>
+      <V t="count">
+        <U n="count">
+          <V n="participant" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">GetawayEliminationCandidates</E>
+            </U>
+          </V>
+          <V n="threshold" t="from_value">
+            <U n="from_value">
+              <E n="comparison">LESS_OR_EQUAL</E>
+              <T n="value">1</T>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_GrimRework_GameEnd_JuicePong" s="423391">
+  <L n="loot_actions">
+    <V t="statistics">
+      <V n="statistics" t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">100</T>
+          <T n="stat">16667<!--Statistic: statistic_NPC-GrimReaper_Clemency--></T>
+          <L n="subject">
+            <E>Lot</E>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="game_component">
+                <U n="game_component">
+                  <V n="is_winner" t="enabled" />
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x18747335<!--String: "(From Winning Against Grim)"--></T>
+          </V>
+          <T n="buff_type">391660<!--Buff: buff_GrimRework_GameChallenge_Win--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="game_component">
+              <U n="game_component">
+                <V n="is_winner" t="enabled" />
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x95E165AF<!--String: "(From Losing to Grim)"--></T>
+          </V>
+          <T n="buff_type">391661<!--Buff: buff_GrimRework_GameChallenge_Fail--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="game_component">
+              <U n="game_component">
+                <V n="is_winner" t="enabled">
+                  <T n="enabled">False</T>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff_removal">
+      <U n="buff_removal">
+        <L n="buffs_to_remove">
+          <T>402105<!--Buff: buff_GrimRework_Hidden_Grim_ChallengeFlag_FromSocial--></T>
+        </L>
+        <E n="subject">OtherSimsInteractingWithTarget</E>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="game_component">
+        <U n="game_component">
+          <V n="game_over" t="enabled" />
+        </U>
+      </V>
+      <V t="trait">
+        <U n="trait">
+          <E n="subject">OtherSimsInCurrentGame</E>
+          <L n="whitelist_traits">
+            <T>16851<!--Trait: trait_isGrimReaper--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

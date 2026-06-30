@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_LuckSys_LuckInfusedObject_Good_Found_BeachCombing" s="455259">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0xE7761DE0<!--String: "(From Beachcombing)"--></T>
+          </V>
+          <T n="buff_type">452771<!--Buff: buff_LuckSys_LuckInfusedObject_Found_Good--></T>
+        </U>
+      </U>
+    </V>
+    <V t="create_object">
+      <U n="create_object">
+        <V n="creation_data" t="recipe">
+          <U n="recipe">
+            <T n="recipe">452221<!--Recipe: recipe_Apothecary_LuckSys_LuckInfusedObject_FreezerBunnyFoot--></T>
+            <T n="show_crafted_by_text">False</T>
+          </U>
+        </V>
+        <L n="initial_states">
+          <U>
+            <T n="state">452250<!--CommodityBasedObjectStateValue: luckInfusedObjects_LuckSys_Values_Active_Yes--></T>
+            <V n="tests" t="enabled">
+              <L n="enabled">
+                <L>
+                  <V t="test_set_reference">
+                    <T n="test_set_reference">449545<!--TestSetInstance: testSetInstance_LuckSys_HasLuck--></T>
+                  </V>
+                </L>
+              </L>
+            </V>
+          </U>
+          <U>
+            <T n="state">467012<!--ObjectStateValue: luckSys_LuckInfusedObject_Values_LuckEnabled_No--></T>
+            <V n="tests" t="enabled">
+              <L n="enabled">
+                <L>
+                  <V t="test_set_reference">
+                    <T n="test_set_reference">449547<!--TestSetInstance: testSetInstance_LuckSys_HasNoLuck--></T>
+                  </V>
+                </L>
+              </L>
+            </V>
+          </U>
+        </L>
+        <V n="location" t="inventory" />
+        <E n="owner_sim">Actor</E>
+        <V n="success_loots" t="enabled">
+          <L n="enabled">
+            <T>460614<!--LootActions: loot_LuckSys_LuckInfusedObject_OnboardingTNS_Object--></T>
+          </L>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="npc" t="enabled" />
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="test_set_reference">
+        <T n="test_set_reference">449545<!--TestSetInstance: testSetInstance_LuckSys_HasLuck--></T>
+      </V>
+    </L>
+  </L>
+</I>

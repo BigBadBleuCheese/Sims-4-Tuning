@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="RandomWeightedLoot" i="action" m="interactions.utils.loot" n="randomWeightedLoot_LuckSys_CraftingQuality_Good" s="453259">
+  <V n="_luck_tuning" t="enabled">
+    <U n="enabled">
+      <L n="loot_actions">
+        <T>452780<!--LootActions: loot_LuckSys_ImpactOnAction_CraftingQuality--></T>
+      </L>
+    </U>
+  </V>
+  <L n="random_loot_actions">
+    <U>
+      <V n="action" t="do_nothing" />
+      <U n="luck_option_config">
+        <T n="show_impacts">False</T>
+      </U>
+      <U n="weight">
+        <T n="base_value">4</T>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="statistics">
+        <V n="statistics" t="statistic_change">
+          <U n="statistic_change">
+            <T n="advertise">False</T>
+            <T n="amount">30</T>
+            <T n="stat">16671<!--Statistic: statistic_Object_Consumable-Quality--></T>
+            <L n="subject">
+              <E>CreatedObject</E>
+            </L>
+          </U>
+        </V>
+      </V>
+      <U n="luck_option_config">
+        <T n="player_perception">50</T>
+      </U>
+      <U n="weight">
+        <T n="base_value">2</T>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="statistics">
+        <V n="statistics" t="statistic_change">
+          <U n="statistic_change">
+            <T n="advertise">False</T>
+            <T n="amount">50</T>
+            <T n="stat">16671<!--Statistic: statistic_Object_Consumable-Quality--></T>
+            <L n="subject">
+              <E>CreatedObject</E>
+            </L>
+          </U>
+        </V>
+      </V>
+      <U n="luck_option_config">
+        <T n="player_perception">100</T>
+      </U>
+      <U n="weight">
+        <T n="base_value">1</T>
+      </U>
+    </U>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="test_set_reference">
+        <T n="test_set_reference">449545<!--TestSetInstance: testSetInstance_LuckSys_HasLuck--></T>
+      </V>
+      <V t="test_set_reference">
+        <T n="test_set_reference">425929<!--TestSetInstance: testSetInstance_LuckSys_GoodLuck--></T>
+      </V>
+    </L>
+  </L>
+</I>

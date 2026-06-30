@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Dynasty_DramaNodeDialogOption_MutinySuggestion_TellHead_SenderNotBlackSheep_HeadNPC" s="480651">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>TargetSim</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant" />
+            </V>
+            <V n="text" t="concatenation">
+              <U n="concatenation">
+                <L n="concatenations">
+                  <V t="literal">
+                    <T n="literal">0x96F404B2<!--String: "<i>WHAT</i>?! Are you <i>serious</i>? It was just a harmless idea! You know {3.SimFirstName} won't let this slide."--></T>
+                  </V>
+                  <V t="literal">
+                    <T n="literal">0xA5F0DD40<!--String: "{3.SimPronounSubjective|xxUpper} {S3.is}{P3.are} going to make me an Outcast!"--></T>
+                  </V>
+                </L>
+              </U>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="participant_type" />
+                  <V t="participant_type">
+                    <U n="participant_type">
+                      <V n="objects" t="from_participant">
+                        <U n="from_participant">
+                          <E n="participant">TargetSim</E>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                  <V t="participant_type">
+                    <U n="participant_type">
+                      <V n="objects" t="from_participant">
+                        <U n="from_participant">
+                          <E n="participant">ActorDynastyHeir</E>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                  <V t="participant_type">
+                    <U n="participant_type">
+                      <V n="objects" t="from_participant">
+                        <U n="from_participant">
+                          <E n="participant">ActorDynastyHead</E>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </V>
+            <E n="visual_type">SPEECH</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="relationship_change">
+        <U n="relationship_change">
+          <T n="amount">-20</T>
+          <L n="subject">
+            <E>TargetSim</E>
+          </L>
+          <L n="target_participant_type">
+            <E>ActorDynastyHead</E>
+          </L>
+          <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+        </U>
+      </V>
+    </V>
+    <V t="looping_loot_ops_with_target">
+      <U n="looping_loot_ops_with_target">
+        <L n="loots_to_apply">
+          <T>491705<!--LootActions: loot_Dynasty_Titles_BlackSheep_ActorDeclaresTarget--></T>
+        </L>
+        <E n="subject">ActorDynastyHead</E>
+        <E n="target_participant_type">TargetSim</E>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>466528<!--Trait: trait_Dynasty_BlackSheep--></T>
+          </L>
+          <E n="subject">TargetSim</E>
+        </U>
+      </V>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="npc" t="enabled">
+            <T n="enabled">True</T>
+          </V>
+          <E n="who">ActorDynastyHead</E>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

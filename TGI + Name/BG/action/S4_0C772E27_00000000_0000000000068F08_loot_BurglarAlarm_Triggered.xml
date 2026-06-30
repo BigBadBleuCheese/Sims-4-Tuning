@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_BurglarAlarm_Triggered" s="429832">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">10314<!--Buff: buff_Sim_BeWokenUp_Hidden--></T>
+        </U>
+        <E n="subject">ActiveHousehold</E>
+      </U>
+    </V>
+    <V t="interaction">
+      <U n="interaction">
+        <E n="affordance_priority">Critical</E>
+        <V n="affordance_run_priority" t="enabled">
+          <E n="enabled">Critical</E>
+        </V>
+        <L n="affordances">
+          <T>250208<!--SuperInteraction: si_GoNearObject_Generic--></T>
+        </L>
+        <E n="subject">ActiveHousehold</E>
+        <E n="target_participant_type">Actor</E>
+      </U>
+    </V>
+    <V t="state_change">
+      <U n="state_change">
+        <T n="state_value">426554<!--ObjectStateValue: burglarAlarm_Triggered--></T>
+      </U>
+    </V>
+  </L>
+  <T n="run_test_first">False</T>
+</I>

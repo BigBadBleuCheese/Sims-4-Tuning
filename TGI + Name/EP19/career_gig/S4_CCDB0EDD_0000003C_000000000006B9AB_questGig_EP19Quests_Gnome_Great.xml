@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="QuestGig" i="career_gig" m="careers.missions.mission_gig" n="questGig_EP19Quests_Gnome_Great" s="440747">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_description" t="enabled">
+        <T n="enabled">0xCB56EA5C<!--String: "<i>There once stood a Gnome, taller than a throne, who lost what was once so dear. Away to his garden, the walls he did harden, secluded alone and in fear. The children came quick, for the Gnome they had kicked had locked himself far from their feet. But due to the walls, his plants he enthralled, had withered and died from no heat. So could such a Sim, hear a simple man’s whim, to waken the beast from within? I'll send you along, you won’t need a song. Just simply show them compassion...</i>\n\n<font color="#1E81E6">Obtain Fairy Dust and Wake The Great Gnome.</font>\n"--></T>
+      </V>
+      <V n="instance_display_icon" t="enabled">
+        <T p="InEP19\UI\Icons\Quests\quests_GnomeQuest.png" n="enabled">2f7d0004:00000000:209d55751aefbe61</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0xFA070FD9<!--String: "My Sleeping Giant"--></T>
+      </V>
+    </U>
+  </V>
+  <T n="career">424758<!--Career: career_EP19Quests--></T>
+  <T n="gig_assignment_aspiration">440748<!--AspirationGig: aspirationGig_EP19Quests_Gnome_Great--></T>
+  <V n="gig_pay" t="flat_amount">
+    <U n="flat_amount">
+      <T n="value">222</T>
+    </U>
+  </V>
+  <T n="hide_inactive_objectives">True</T>
+  <L n="mission_objective_data">
+    <U>
+      <L n="weighted_objectives">
+        <U>
+          <T n="objective">441061<!--Objective: objective_EP19Quests_GnomeGreat_Dust--></T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="requires_previous_objective_complete">True</T>
+      <L n="weighted_objectives">
+        <U>
+          <T n="objective">441062<!--Objective: objective_EP19Quests_GnomeGreat_Wake--></T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="requires_previous_objective_complete">True</T>
+      <L n="weighted_objectives">
+        <U>
+          <T n="objective">441063<!--Objective: objective_EP19Quests_GnomeGreat_Appease--></T>
+        </U>
+      </L>
+    </U>
+  </L>
+  <T n="mission_rewards_description">0x3B18AFDC<!--String: "{0.String}\n<font color='#199C2C'>{1.String}</font>"--></T>
+  <V n="mission_rewards_text" t="enabled">
+    <T n="enabled">0xD0FD7F1D<!--String: "Reward: Gnome, Reward Trait, End of Fable"--></T>
+  </V>
+  <V n="mission_trait" t="enabled">
+    <T n="enabled">440750<!--Trait: trait_Hidden_EP19Quests_OnQuest_GnomeGreat--></T>
+  </V>
+  <U n="objective_completion_audio">
+    <T n="audio" p="InGame\Audio\Bumper\bumper_other_goal_complete.propx">39b2aa4a:00000000:ea1687e36b0b32f3</T>
+  </U>
+  <E n="on_pick_behavior">REMOVE</E>
+  <T n="open_career_panel">True</T>
+  <V n="picker_associated_sim_filter" t="enabled">
+    <T n="enabled">440786<!--TunableSimFilter: situationFilters_EP19World_NPC_EP19QuestGnome--></T>
+  </V>
+  <T n="picker_description_text">0x3B18AFDC<!--String: "{0.String}\n<font color='#199C2C'>{1.String}</font>"--></T>
+  <T n="picker_disable_if_visibility_tests_fail_with_tooltip">True</T>
+  <T n="picker_replace_if_removed">True</T>
+  <V n="picker_scheduling_behavior" t="enabled">
+    <V n="enabled" t="schedule_career_gig">
+      <U n="schedule_career_gig">
+        <T n="allow_add_career">True</T>
+      </U>
+    </V>
+  </V>
+  <V n="picker_scoring" t="enabled">
+    <U n="enabled">
+      <E n="bucket">EP19Quest_Gnome</E>
+    </U>
+  </V>
+  <L n="picker_visibility_tests">
+    <L>
+      <V t="unlock_earned">
+        <U n="unlock_earned">
+          <V n="tooltip" t="enabled">
+            <T n="enabled">0x641708A6<!--String: "This Fable has already been completed."--></T>
+          </V>
+          <V n="unlock_to_test" t="aspiration">
+            <U n="aspiration">
+              <T n="aspiration">440748<!--AspirationGig: aspirationGig_EP19Quests_Gnome_Great--></T>
+              <T n="negate">True</T>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="career_gig_test">
+        <U n="career_gig_test">
+          <T n="career">424758<!--Career: career_EP19Quests--></T>
+          <T n="negate">True</T>
+          <V n="test_type" t="specific_gigs">
+            <U n="specific_gigs">
+              <L n="gigs">
+                <T>440747<!--QuestGig: questGig_EP19Quests_Gnome_Great--></T>
+              </L>
+            </U>
+          </V>
+          <V n="tooltip" t="enabled">
+            <T n="enabled">0x67109623<!--String: "This Fable is currently in progress."--></T>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="result_based_loots" t="enabled">
+    <L n="enabled">
+      <U>
+        <E n="key">CANCELED</E>
+        <L n="value">
+          <T>441064<!--LootActions: loot_EP19Quests_Cleanup_GnomeGreat--></T>
+        </L>
+      </U>
+      <U>
+        <E n="key">SUCCESS</E>
+        <L n="value">
+          <T>441065<!--LootActions: loot_EP19Quests_Rewards_GnomeGreat--></T>
+        </L>
+      </U>
+    </L>
+  </V>
+</I>

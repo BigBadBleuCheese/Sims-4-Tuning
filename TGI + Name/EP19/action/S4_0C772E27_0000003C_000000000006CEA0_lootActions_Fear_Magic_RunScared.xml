@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="lootActions_Fear_Magic_RunScared" s="446112">
+  <L n="loot_actions">
+    <V t="statistics">
+      <V n="statistics" t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">100</T>
+          <T n="stat">446109<!--Commodity: commodity_Fear_Magic_RunScared--></T>
+          <L n="tunable_multipliers">
+            <U>
+              <T n="base_value">1</T>
+              <L n="multipliers">
+                <U>
+                  <T n="multiplier">3</T>
+                  <L n="tests">
+                    <L>
+                      <V t="location">
+                        <U n="location">
+                          <U n="location_tests">
+                            <V n="is_venue_type" t="enabled">
+                              <U n="enabled">
+                                <T n="venue_type">28614<!--Venue: venue_residential--></T>
+                              </U>
+                            </V>
+                          </U>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+              </L>
+            </U>
+          </L>
+        </U>
+      </V>
+    </V>
+    <V t="reaction">
+      <U n="reaction">
+        <V n="si_reaction" t="enabled">
+          <U n="enabled">
+            <T n="affordance">448201<!--SuperInteraction: generic_RunAway_Scared_Fear_Magic--></T>
+            <E n="affordance_priority">High</E>
+            <V n="affordance_run_priority" t="enabled">
+              <E n="enabled">High</E>
+            </V>
+            <V n="affordance_target" t="disabled" />
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+</I>

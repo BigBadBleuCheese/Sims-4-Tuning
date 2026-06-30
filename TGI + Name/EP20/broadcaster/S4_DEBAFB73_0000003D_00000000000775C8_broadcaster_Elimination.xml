@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Broadcaster" i="broadcaster" m="broadcasters.broadcaster" n="broadcaster_Elimination" s="488904">
+  <L n="constraints">
+    <V t="circle">
+      <U n="circle">
+        <T n="radius">50</T>
+      </U>
+    </V>
+  </L>
+  <L n="effects">
+    <V t="affordance">
+      <U n="affordance">
+        <E n="affordance_priority">High</E>
+        <V n="affordance_run_priority" t="enabled">
+          <E n="enabled">High</E>
+        </V>
+        <L n="affordances">
+          <U>
+            <T n="affordance">489134<!--SuperInteraction: reactions_Generic_Sad_Getaway_Elimination--></T>
+          </U>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>456952<!--Buff: buff_Getaway--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+            <V t="relationship">
+              <U n="relationship">
+                <U n="relationship_score_interval">
+                  <T n="lower_bound">33</T>
+                </U>
+                <L n="target_sim">
+                  <E>Object</E>
+                </L>
+                <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+              </U>
+            </V>
+            <V t="trait">
+              <U n="trait">
+                <L n="blacklist_traits">
+                  <T>443222<!--Trait: trait_Competitive--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="affordance">
+      <U n="affordance">
+        <E n="affordance_priority">High</E>
+        <V n="affordance_run_priority" t="enabled">
+          <E n="enabled">High</E>
+        </V>
+        <L n="affordances">
+          <U>
+            <T n="affordance">123487<!--SocialSuperInteraction: nonTouching_Unpaired_Greeting_Wave--></T>
+          </U>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>456952<!--Buff: buff_Getaway--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+            <V t="relationship">
+              <U n="relationship">
+                <U n="relationship_score_interval">
+                  <T n="lower_bound">-33</T>
+                  <T n="upper_bound">33</T>
+                </U>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+                <L n="target_sim">
+                  <E>Object</E>
+                </L>
+                <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+              </U>
+            </V>
+            <V t="trait">
+              <U n="trait">
+                <L n="blacklist_traits">
+                  <T>443222<!--Trait: trait_Competitive--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="affordance">
+      <U n="affordance">
+        <E n="affordance_priority">High</E>
+        <V n="affordance_run_priority" t="enabled">
+          <E n="enabled">High</E>
+        </V>
+        <L n="affordances">
+          <U>
+            <T n="affordance">489135<!--SuperInteraction: reactions_Generic_Cheer_Getaway_Elimination--></T>
+          </U>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>456952<!--Buff: buff_Getaway--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+            <V t="relationship">
+              <U n="relationship">
+                <U n="relationship_score_interval">
+                  <T n="lower_bound">-100</T>
+                  <T n="upper_bound">-33</T>
+                </U>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+                <L n="target_sim">
+                  <E>Object</E>
+                </L>
+                <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+              </U>
+            </V>
+            <V t="trait">
+              <U n="trait">
+                <L n="blacklist_traits">
+                  <T>443222<!--Trait: trait_Competitive--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x3C1A5277<!--String: "(From Watching a Sim Being Eliminated)"--></T>
+          </V>
+          <T n="buff_type">456793<!--Buff: buff_Getaway_TheyAreGone--></T>
+        </U>
+        <T n="remove_buff">False</T>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>456952<!--Buff: buff_Getaway--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+            <V t="relationship">
+              <U n="relationship">
+                <U n="relationship_score_interval">
+                  <T n="lower_bound">33</T>
+                </U>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+                <L n="target_sim">
+                  <E>Object</E>
+                </L>
+                <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x3C1A5277<!--String: "(From Watching a Sim Being Eliminated)"--></T>
+          </V>
+          <T n="buff_type">456794<!--Buff: buff_Getaway_SoLongLoser--></T>
+        </U>
+        <T n="remove_buff">False</T>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>456952<!--Buff: buff_Getaway--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+            <V t="relationship">
+              <U n="relationship">
+                <U n="relationship_score_interval">
+                  <T n="lower_bound">-100</T>
+                  <T n="upper_bound">-33</T>
+                </U>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+                <L n="target_sim">
+                  <E>Object</E>
+                </L>
+                <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+              </U>
+            </V>
+            <V t="trait">
+              <U n="trait">
+                <L n="blacklist_traits">
+                  <T>443222<!--Trait: trait_Competitive--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>488375<!--LootActions: loot_Competitive_Reaction_Game_Win_ReactionOnly--></T>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>456952<!--Buff: buff_Getaway--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+            <V t="trait">
+              <U n="trait">
+                <L n="whitelist_traits">
+                  <T>443222<!--Trait: trait_Competitive--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="frequency" t="on_enter" />
+  <T n="immediate">True</T>
+</I>

@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_EP19Quests_Rewards_GnomeNarrative" s="440869">
+  <L n="loot_actions">
+    <V t="statistics">
+      <V n="statistics" t="statistic_remove">
+        <U n="statistic_remove">
+          <T n="stat">440871<!--Statistic: statistic_EP19Quests_FolkloreStat--></T>
+        </U>
+      </V>
+    </V>
+    <V t="trait_add">
+      <U n="trait_add">
+        <T n="trait">440897<!--Trait: trait_Hidden_EP19Quests_NarrativeComplete--></T>
+      </U>
+    </V>
+    <V t="relationship_bits_with_filter">
+      <U n="relationship_bits_with_filter">
+        <U n="filter_settings">
+          <T n="sim_filter">440786<!--TunableSimFilter: situationFilters_EP19World_NPC_EP19QuestGnome--></T>
+        </U>
+        <T n="relationship_score">5</T>
+      </U>
+    </V>
+    <V t="create_notebook_entry">
+      <U n="create_notebook_entry">
+        <V n="notebook_entry" t="create_new_entry">
+          <U n="create_new_entry">
+            <T n="notebook_entry">441431<!--NotebookEntry: notebookEntry_EP19Quests_GnomeNarr_End--></T>
+          </U>
+        </V>
+        <U n="notifications">
+          <V n="unlocked_success_notification" t="enabled">
+            <V n="enabled" t="literal">
+              <U n="literal">
+                <V n="icon" t="enabled">
+                  <V n="enabled" t="resource_key">
+                    <U n="resource_key">
+                      <T p="InEP19\UI\Icons\Quests\quests_NarrativeQuest.png" n="key">2f7d0004:00000000:a1b2be2030c0865b</T>
+                    </U>
+                  </V>
+                </V>
+                <V n="text" t="single">
+                  <T n="single">0x4F0703F3<!--String: "This went on for days, he got so much praise, their marriage had started to mend. But cake-man was skeptic, this ruse felt so hectic, he needed the mystery to end. He snuck down at nightfall, to see fairies so small, zapping his kitchen pristine. So he left them a snack, grilled cheese for the hack, for buttering up his dear queen.\n\n<b>{0.SimFirstName}'s reward has been granted by the Fairy Ring.</b>"--></T>
+                </V>
+                <V n="title" t="enabled">
+                  <T n="enabled">0x32BE7020<!--String: "Fable Completed"--></T>
+                </V>
+                <L n="ui_responses">
+                  <U>
+                    <V n="response_command" t="enabled">
+                      <V n="enabled" t="literal">
+                        <U n="literal">
+                          <L n="arguments">
+                            <V t="special_command_data" />
+                            <V t="integer">
+                              <U n="integer">
+                                <T n="arg_value">129025</T>
+                              </U>
+                            </V>
+                            <V t="integer">
+                              <U n="integer">
+                                <T n="arg_value">129026</T>
+                              </U>
+                            </V>
+                          </L>
+                          <T n="command">notebook.generate_notebook</T>
+                        </U>
+                      </V>
+                    </V>
+                    <T n="text">0xF3022429<!--String: "Open Notebook"--></T>
+                    <E n="ui_request">SEND_COMMAND</E>
+                  </U>
+                </L>
+              </U>
+            </V>
+          </V>
+        </U>
+      </U>
+    </V>
+  </L>
+</I>

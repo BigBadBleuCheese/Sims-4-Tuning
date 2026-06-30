@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="sI_NobleCareer_HoldCourt_ListenToVisitors" s="476392">
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="time_based">
+                <U n="time_based">
+                  <T n="max_time">90</T>
+                  <T n="min_time">75</T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="buff_based">
+                <U n="buff_based">
+                  <T n="buff">490339<!--Buff: buff_NobleCareer_Hidden_AtonementStart--></T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="situation_based">
+                <U n="situation_based">
+                  <L n="situation_types">
+                    <T>473670<!--CustomStatesSituation: situation_NobleCareer_HoldCourt--></T>
+                  </L>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+      </L>
+      <V n="content" t="staging_content">
+        <U n="staging_content">
+          <U n="content_set">
+            <L n="affordance_links">
+              <T>477314<!--MixerInteraction: mixer_NobleCareer_ListenToVisitor_PassiveIdle--></T>
+            </L>
+          </U>
+        </U>
+      </V>
+      <V n="periodic_stat_change" t="enabled">
+        <U n="enabled">
+          <U n="operation_actions">
+            <L n="actions">
+              <T>477932<!--LootActions: loot_NobleCareer_AskRoyalHelpBroadcaster--></T>
+            </L>
+            <T n="alarm_interval">15</T>
+          </U>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>477932<!--LootActions: loot_NobleCareer_AskRoyalHelpBroadcaster--></T>
+        </L>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+  </L>
+  <V n="content_score" t="enabled">
+    <U n="enabled">
+      <L n="active_career_assignments">
+        <U>
+          <T n="key">486742<!--AspirationAssignment: careerAssignment_Noble_HelpWithVisitorDilemma--></T>
+          <T n="value">1000</T>
+        </U>
+      </L>
+    </U>
+  </V>
+  <T n="display_name">0x55108419<!--String: "Listen to Visitor Concerns"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <V n="display_tooltip" t="enabled">
+    <T n="enabled">0x66B45113<!--String: "Court visitors will present their problems and dilemmas to {0.SimFirstName}! It's up to {0.SimPronounPossessiveDependent} to decide how to resolve their concerns."--></T>
+  </V>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T p="InEP21\UI\Icons\PieMenu\PieMenu_NobleCareer.png" n="key">2f7d0004:00000000:9b49aa0d1eb08413</T>
+      </U>
+    </V>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <V n="test_disallow_while_running" t="enabled">
+    <U n="enabled">
+      <T n="test_self">True</T>
+    </U>
+  </V>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="situation_running_test">
+      <U n="situation_running_test">
+        <V n="situation_whitelist" t="enabled">
+          <L n="enabled">
+            <T>473670<!--CustomStatesSituation: situation_NobleCareer_HoldCourt--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+    <V t="career_test">
+      <U n="career_test">
+        <V n="test_type" t="career_reference">
+          <U n="career_reference">
+            <V n="career" t="specific_career">
+              <T n="specific_career">466304<!--NobleCareer: career_Noble--></T>
+            </V>
+            <V n="user_level" t="enabled">
+              <U n="enabled">
+                <T n="lower_bound">3</T>
+              </U>
+            </V>
+          </U>
+        </V>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xC304E5EE<!--String: "{0.SimFirstName} has to be Level 3 in the Noble Career to do this interaction."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

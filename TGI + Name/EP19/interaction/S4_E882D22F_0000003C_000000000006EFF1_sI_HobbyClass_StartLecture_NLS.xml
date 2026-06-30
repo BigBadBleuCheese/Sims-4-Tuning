@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="sI_HobbyClass_StartLecture_NLS" s="454641">
+  <V n="_saveable" t="enabled" />
+  <L n="_static_commodities">
+    <U>
+      <T n="static_commodity">397029<!--StaticCommodity: staticCommodity_HobbyClass_Lecture--></T>
+    </U>
+  </L>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <T n="category">396055<!--PieMenuCategory: pieMenuCategory_HobbyClassWhiteboard_Lecture--></T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x481E26D1<!--String: "**DEBUG**"--></T>
+  <V n="display_name_overrides" t="testable">
+    <U n="testable">
+      <L n="overrides">
+        <U>
+          <V n="new_display_name" t="enabled">
+            <T n="enabled">0x47B5D26C<!--String: "Hold {2.String} Lecture"--></T>
+          </V>
+          <L n="test">
+            <L>
+              <V t="situation_job_test">
+                <U n="situation_job_test">
+                  <L n="situation_jobs">
+                    <T>397235<!--SituationJob: job_HobbyClass_Instructor--></T>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <V n="new_display_name" t="enabled">
+            <T n="enabled">0xF0767BAC<!--String: "{2.String} Lecture"--></T>
+          </V>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="statistic_value">
+        <U n="statistic_value">
+          <T n="statistic">434909<!--Skill: statistic_Skill_NLS--></T>
+          <T n="use_statistic_name">True</T>
+        </U>
+      </V>
+    </L>
+  </U>
+  <V n="dynamic_pie_menu_priority_based_on_skill" t="enabled">
+    <U n="enabled">
+      <T n="priority_skill">434909<!--Skill: statistic_Skill_NLS--></T>
+    </U>
+  </V>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <L n="continuation">
+              <U>
+                <T n="affordance">454753<!--SocialSuperInteraction: social_HobbyClass_Whiteboard_Lecture_NLS--></T>
+              </U>
+            </L>
+          </U>
+        </U>
+      </L>
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="basic_extras" />
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">454638<!--SuperInteraction: sI_HobbyClass_PrepareLecture_NLS_1--></T>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="state">
+                <U n="state">
+                  <E n="operator">NOTEQUAL</E>
+                  <T n="value">397653<!--ObjectStateValue: hobbyClassWhiteboard_Topic_Nature--></T>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T p="InEP19\UI\Icons\PieMenu\Skills\skill_NaturalLiving_piemenu.png" n="key">2f7d0004:00000000:0ae03817b8150713</T>
+      </U>
+    </V>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_autonomous">
+    <L>
+      <V t="situation_running_test">
+        <U n="situation_running_test">
+          <V n="situation_whitelist" t="enabled">
+            <L n="enabled">
+              <T>456972<!--GetawayPlayerFacingSituation: getawayPlayerFacingSituation--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="test_set_reference">
+        <T n="test_set_reference">126907<!--TestSetInstance: testSetInstance_InteractionIsEncouragedByClubOrCustomerRulesOrHobbyClassOrDynasty--></T>
+      </V>
+      <V t="situation_job_test">
+        <U n="situation_job_test">
+          <T n="negate">True</T>
+          <L n="situation_jobs">
+            <T>399327<!--SituationJob: jobs_SmallBusinessEmployee_Work--></T>
+            <T>401789<!--SituationJob: jobs_SmallBusinessEmployee_Work_Owner--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>400129<!--Buff: buff_HobbyClass_LecturingTracker--></T>
+          </L>
+        </U>
+      </V>
+      <V t="situation_job_test">
+        <U n="situation_job_test">
+          <L n="situation_jobs">
+            <T>399327<!--SituationJob: jobs_SmallBusinessEmployee_Work--></T>
+            <T>401789<!--SituationJob: jobs_SmallBusinessEmployee_Work_Owner--></T>
+          </L>
+        </U>
+      </V>
+      <V t="state">
+        <U n="state">
+          <T n="value">454644<!--ObjectStateValue: hobbyClassWhiteboard_EmployeeAllowed_NLS_Yes--></T>
+        </U>
+      </V>
+    </L>
+  </L>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="in_use">
+      <U n="in_use">
+        <T n="negate">True</T>
+        <L n="targets">
+          <E>Object</E>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x6AED330E<!--String: "Whiteboard is already in use."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="skill_test">
+      <U n="skill_test">
+        <T n="skill">434909<!--Skill: statistic_Skill_NLS--></T>
+        <V n="skill_range" t="threshold">
+          <U n="threshold">
+            <U n="skill_threshold">
+              <T n="value">5</T>
+            </U>
+          </U>
+        </V>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x12BEDCFB<!--String: "Requires Skill Level 5."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">28176<!--TestSetInstance: testSet_EmotionNotStressed--></T>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">28305<!--TestSetInstance: testSet_EmotionNotMiserable--></T>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="situation_job_test">
+        <U n="situation_job_test">
+          <T n="negate">True</T>
+          <L n="situation_jobs">
+            <T>397235<!--SituationJob: job_HobbyClass_Instructor--></T>
+          </L>
+        </U>
+      </V>
+      <V t="object_criteria">
+        <U n="object_criteria">
+          <V n="identity_test" t="tags">
+            <U n="tags">
+              <L n="tag_set">
+                <E>Func_HobbyClassWhiteboard_ActiveClass</E>
+              </L>
+              <E n="test_type">CONTAINS_NO_TAGS_IN_SET</E>
+            </U>
+          </V>
+          <T n="owned">False</T>
+          <V n="subject_specific_tests" t="single_object" />
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="situation_job_test">
+        <U n="situation_job_test">
+          <T n="negate">False</T>
+          <L n="situation_jobs">
+            <T>397235<!--SituationJob: job_HobbyClass_Instructor--></T>
+          </L>
+        </U>
+      </V>
+      <V t="situation_running_test">
+        <U n="situation_running_test">
+          <V n="situation_whitelist" t="enabled">
+            <L n="enabled">
+              <T>454756<!--HobbyClassSituation: situation_HobbyClass_ClassMember_NLS--></T>
+              <T>454757<!--HobbyClassSituation: situation_HobbyClass_Instructor_NLS--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+      <V t="object_criteria">
+        <U n="object_criteria">
+          <V n="identity_test" t="tags">
+            <U n="tags">
+              <L n="tag_set">
+                <E>Func_HobbyClassWhiteboard_ActiveClass</E>
+              </L>
+              <E n="test_type">CONTAINS_ANY_TAG_IN_SET</E>
+            </U>
+          </V>
+          <T n="owned">False</T>
+          <V n="subject_specific_tests" t="single_object" />
+        </U>
+      </V>
+    </L>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

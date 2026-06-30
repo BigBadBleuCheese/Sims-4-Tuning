@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_StreetFoodTable_Buff_TenderOnSituationSell" s="345287">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x5C28594A<!--String: "(From Selling Ice Cream or Drinks in Warm Weather)"--></T>
+          </V>
+          <T n="buff_type">343227<!--Buff: buff_StreetFoodTable_CoolestVendor--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="object_definition_criteria">
+              <U n="object_definition_criteria">
+                <V n="identity_test" t="tags">
+                  <U n="tags">
+                    <L n="tag_set">
+                      <E>Func_Drink</E>
+                      <E>Func_Drink_Gifting</E>
+                      <E>Func_IceCreamCone</E>
+                      <E>Func_IceCreamBowl</E>
+                      <E>Func_IceCreamCarton</E>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="weather">
+              <U n="weather">
+                <V n="temperature" t="enabled">
+                  <U n="enabled">
+                    <L n="temperature">
+                      <E>HOT</E>
+                      <E>BURNING</E>
+                      <E>WARM</E>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x5FF79CC1<!--String: "(From Selling Trash Fruit Food)"--></T>
+          </V>
+          <T n="buff_type">343226<!--Buff: buff_StreetFoodTable_TrashSold--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="object_definition_criteria">
+              <U n="object_definition_criteria">
+                <V n="identity_test" t="tags">
+                  <U n="tags">
+                    <L n="tag_set">
+                      <E>Food_TrashFruitIngredient</E>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0xC1B1B9E3<!--String: "(From Selling Soup)"--></T>
+          </V>
+          <T n="buff_type">347608<!--Buff: buff_StreetFoodTable_SoupSold--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="object_definition_criteria">
+              <U n="object_definition_criteria">
+                <V n="identity_test" t="tags">
+                  <U n="tags">
+                    <L n="tag_set">
+                      <E>Food_Soup</E>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests" />
+</I>

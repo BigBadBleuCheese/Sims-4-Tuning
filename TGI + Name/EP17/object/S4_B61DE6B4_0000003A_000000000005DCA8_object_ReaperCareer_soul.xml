@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="GameObject" i="object" m="objects.game_object" n="object_ReaperCareer_soul" s="384168">
+  <U n="_components">
+    <V n="focus" t="enabled">
+      <U n="enabled">
+        <V n="_focus_score" t="globally">
+          <U n="globally">
+            <E n="base">LOW</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V n="inventory_item" t="enabled">
+      <U n="enabled">
+        <T n="can_place_in_world">False</T>
+        <T n="inventory_only">True</T>
+        <T n="remove_from_npc_inventory">True</T>
+        <E n="stack_scheme">DEFINITION</E>
+        <L n="valid_inventory_types">
+          <E>SIM</E>
+        </L>
+      </U>
+    </V>
+    <V n="state" t="enabled">
+      <U n="enabled">
+        <L n="states">
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">98745<!--ObjectStateValue: GenericFX_On--></T>
+                <U n="value">
+                  <V n="vfx_state" t="apply_new_value">
+                    <V n="apply_new_value" t="start_vfx">
+                      <V n="start_vfx" t="single_effect">
+                        <U n="single_effect">
+                          <T n="effect_name">ep17_soulorb_mini</T>
+                          <V n="joint_name" t="Slot">
+                            <T n="Slot">b__ROOT__</T>
+                          </V>
+                        </U>
+                      </V>
+                    </V>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">98746<!--ObjectStateValue: GenericFX_Off--></T>
+                <U n="value">
+                  <V n="vfx_state" t="apply_new_value" />
+                </U>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">98745<!--ObjectStateValue: GenericFX_On--></T>
+            </V>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V n="tooltip_component" t="enabled">
+      <U n="enabled">
+        <L n="custom_tooltips">
+          <U>
+            <L n="object_tests">
+              <L>
+                <V t="existence">
+                  <U n="existence">
+                    <E n="participant">StoredSimOrNameData</E>
+                    <T n="require_instantiatable">True</T>
+                  </U>
+                </V>
+              </L>
+            </L>
+            <L n="tooltip_fields">
+              <U>
+                <E n="key">recipe_description</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0xE2E9872D<!--String: "{0.ObjectDescription}"--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">Object</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <E n="key">recipe_name</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x58FCF93F<!--String: "{0.SimName}"--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">StoredSimOrNameData</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+            </L>
+            <E n="tooltip_style">HOVER_TIP_CUSTOM_OBJECT</E>
+          </U>
+          <U>
+            <L n="object_tests">
+              <L>
+                <V t="existence">
+                  <U n="existence">
+                    <T n="exists">False</T>
+                    <E n="participant">StoredSimOrNameData</E>
+                  </U>
+                </V>
+              </L>
+            </L>
+            <L n="tooltip_fields">
+              <U>
+                <E n="key">recipe_name</E>
+                <U n="value">
+                  <V n="text" t="single">
+                    <T n="single">0x4F918F8<!--String: "{0.ObjectName}"--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled">
+                    <U n="enabled">
+                      <L n="tokens">
+                        <V t="participant_type">
+                          <U n="participant_type">
+                            <V n="objects" t="from_participant">
+                              <U n="from_participant">
+                                <E n="participant">Object</E>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+            </L>
+            <E n="tooltip_style">HOVER_TIP_CUSTOM_OBJECT</E>
+          </U>
+        </L>
+      </U>
+    </V>
+  </U>
+  <L n="_super_affordances">
+    <T>13328<!--ImmediateSuperInteraction: debug_Reset--></T>
+    <T>13326<!--ImmediateSuperInteraction: debug_ObjectDestroy--></T>
+    <T>103888<!--ImmediateSuperInteraction: cheat_set_as_head--></T>
+  </L>
+  <T n="allow_putdown_nearby_on_carry_cancellation">False</T>
+  <V n="icon_override" t="enabled">
+    <T p="InEP17\UI\Icons\Inventory\inventory_ghostSoul.png" n="enabled">2f7d0004:00000000:6e73338df0f8ee76</T>
+  </V>
+  <U n="recycling_data">
+    <L n="recycling_values">
+      <U>
+        <E n="Bucks Type">RecycleBitsBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+      <U>
+        <E n="Bucks Type">RecyclePiecesBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+    </L>
+  </U>
+</I>

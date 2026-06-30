@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Mentorship_CanAutonomouslyEnd_Chance" s="387929">
+  <L n="loot_actions">
+    <V t="relationship_bits_loot">
+      <U n="relationship_bits_loot">
+        <L n="bit_operations">
+          <U>
+            <T n="bit">387837<!--RelationshipBit: mentorshipBit_CanEndAutonomously--></T>
+            <E n="operation">ADD</E>
+            <E n="recipients">Actor</E>
+            <E n="targets">TargetSim</E>
+          </U>
+        </L>
+        <U n="chance">
+          <T n="base_chance">33</T>
+          <L n="multipliers">
+            <U>
+              <T n="multiplier">3</T>
+              <L n="tests">
+                <L>
+                  <V t="relationship">
+                    <U n="relationship">
+                      <U n="relationship_score_interval">
+                        <T n="upper_bound">0</T>
+                      </U>
+                      <L n="subject">
+                        <E>Actor</E>
+                      </L>
+                      <L n="target_sim">
+                        <E>TargetSim</E>
+                      </L>
+                      <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+          </L>
+        </U>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="required_relationship_bits">
+            <L n="match_any">
+              <T>384023<!--RelationshipBit: mentorshipBit_Actor_IsMenteeOf_Target--></T>
+              <T>384022<!--RelationshipBit: mentorshipBit_Actor_IsMentorOf_Target--></T>
+            </L>
+          </U>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

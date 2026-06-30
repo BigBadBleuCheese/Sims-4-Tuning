@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="super_EP19Gardening_EnchantGarden" s="438183">
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Actor</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">435101<!--AnimationElement: anim_EP19Gardening_EnchantGarden--></T>
+      </U>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="broadcaster">
+      <U n="broadcaster">
+        <L n="broadcaster_types">
+          <U>
+            <T n="item">438184<!--Broadcaster: broadcaster_EP19Gardening_EnchantGarden--></T>
+          </U>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xB4A0275<!--String: "Enchant All Plants Near {0.SimFirstName}"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="item_cost" t="explicit_item_cost">
+    <U n="explicit_item_cost">
+      <L n="ingredients">
+        <U>
+          <T n="ingredient">465683</T>
+          <V n="missing_ingredient_additional_text" t="enabled">
+            <T n="enabled">0x9D05C4E9<!--String: "This interaction Enchants all nearby plants."--></T>
+          </V>
+          <T n="quantity">15</T>
+        </U>
+      </L>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">ACTOR</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="identity">
+      <U n="identity">
+        <T n="subjects_match">True</T>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

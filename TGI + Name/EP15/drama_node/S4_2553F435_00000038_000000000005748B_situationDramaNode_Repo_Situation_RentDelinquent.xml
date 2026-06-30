@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationDramaNode" i="drama_node" m="drama_scheduler.situation_drama_node" n="situationDramaNode_Repo_Situation_RentDelinquent" s="357515">
+  <T n="allow_during_work_hours">False</T>
+  <T n="homelot_only">True</T>
+  <V n="host_sim_info_job" t="enabled">
+    <T n="enabled">224486<!--SituationJob: situationJob_Repo_DebtorSim--></T>
+  </V>
+  <V n="host_sim_participant" t="enabled">
+    <E n="enabled">Actor</E>
+  </V>
+  <U n="min_and_max_times">
+    <T n="lower_bound">0</T>
+    <T n="upper_bound">24</T>
+  </U>
+  <V n="notification" t="enabled">
+    <U n="enabled">
+      <V n="icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T n="key" p="InGame\UI\Icons\Notifications\notification_GenericBills.png">2f7d0004:00000000:eff779155deb7f68</T>
+          </U>
+        </V>
+      </V>
+      <V n="secondary_icon" t="enabled">
+        <V n="enabled" t="participant">
+          <U n="participant">
+            <L n="participant_type">
+              <E>TargetSim</E>
+            </L>
+          </U>
+        </V>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0xF4992C28<!--String: "{0.SimFirstName} has failed to pay {0.SimPronounPossessiveDependent} rent for too long. The Property Owner is here to repossess {0.SimPronounPossessiveDependent} valuable items in payment."--></T>
+      </V>
+      <V n="text_tokens" t="enabled">
+        <U n="enabled">
+          <L n="tokens">
+            <V t="participant_type">
+              <U n="participant_type">
+                <V n="objects" t="from_participant">
+                  <U n="from_participant">
+                    <E n="participant">TargetSim</E>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </U>
+      </V>
+      <E n="visual_type">INFORMATION</E>
+    </U>
+  </V>
+  <L n="pretests">
+    <L>
+      <V t="zone">
+        <U n="zone">
+          <V n="zone_source" t="use_participant_home_zone" />
+          <U n="zone_tests">
+            <V n="venue_type" t="enabled">
+              <U n="enabled">
+                <V n="whitelist" t="specify">
+                  <U n="specify">
+                    <L n="whitelist">
+                      <T>341299<!--Venue: venue_MultiUnit--></T>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </U>
+        </U>
+      </V>
+      <V t="rental_unit_has_overdue_status_test" />
+      <V t="relationship_bit_count">
+        <U n="relationship_bit_count">
+          <E n="comparison_operator">GREATER</E>
+          <T n="rel_bit">343628<!--RelationshipBit: relBit_MultiUnit_TenantToLandlord--></T>
+        </U>
+      </V>
+    </L>
+  </L>
+  <L n="run_tests">
+    <L>
+      <V t="situation_running_test">
+        <U n="situation_running_test">
+          <V n="situation_blacklist" t="enabled">
+            <L n="enabled">
+              <T>235713<!--RepoSituation: repo_Situation_BillsDelinquent--></T>
+              <T>357516<!--RepoSituation: repo_Situation_RentDelinquent--></T>
+              <T>344940<!--CustomStatesSituation: situation_APM_EventPO_Owned--></T>
+              <T>344939<!--CustomStatesSituation: situation_APM_EventPO_Unowned--></T>
+              <T>345211<!--CustomStatesSituation: situation_APM_RulePO_Owned--></T>
+              <T>345212<!--CustomStatesSituation: situation_APM_RulePO_Unowned--></T>
+              <T>350918<!--CustomStatesSituation: situation_APM_muEvent_Nuisance_CalledFix--></T>
+              <T>360152<!--CustomStatesSituation: situation_APM_muEvent_Nuisance_CalledFix_Unowned--></T>
+              <T>346011<!--EvictionPropertyOwnerSituation: situation_Eviction_PropertyOwner--></T>
+              <T>346012<!--EvictionTenantSituation: situation_Eviction_Tenant--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="scoring" t="enabled">
+    <U n="enabled">
+      <E n="bucket">RepoMan_Rent</E>
+    </U>
+  </V>
+  <V n="sender_sim_info" t="no_participant" />
+  <V n="sender_sim_info_job" t="disabled" />
+  <T n="situation_to_run">357516<!--RepoSituation: repo_Situation_RentDelinquent--></T>
+  <V n="time_option" t="schedule">
+    <U n="schedule">
+      <L n="valid_times">
+        <U>
+          <U n="days_available">
+            <T n="0 SUNDAY">True</T>
+            <T n="1 MONDAY">True</T>
+            <T n="2 TUESDAY">True</T>
+            <T n="3 WEDNESDAY">True</T>
+            <T n="4 THURSDAY">True</T>
+            <T n="5 FRIDAY">True</T>
+            <T n="6 SATURDAY">True</T>
+          </U>
+          <T n="duration">12</T>
+          <U n="start_time">
+            <T n="hour">9</T>
+          </U>
+        </U>
+      </L>
+    </U>
+  </V>
+</I>

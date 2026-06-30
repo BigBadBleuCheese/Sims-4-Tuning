@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="StartCraftingAutonomouslySuperInteraction" i="interaction" m="crafting.crafting_interactions" n="fridge_CookAutonomously_GrilledCheese_ForClubRule" s="375973">
+  <L n="_false_advertisements" />
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Object</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <L n="_static_commodities" />
+  <L n="appropriateness_tags">
+    <E>Appropriateness_Cooking</E>
+  </L>
+  <T n="attention_cost">0.75</T>
+  <V n="basic_content" t="one_shot" />
+  <V n="canonical_animation" t="enabled">
+    <U n="enabled">
+      <T n="factory">29356<!--AnimationElement: Fridge_Create--></T>
+    </U>
+  </V>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x922C300A<!--String: "Cook"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="basic_extras">
+          <V t="buff_fire_and_forget">
+            <U n="buff_fire_and_forget">
+              <U n="buff">
+                <T n="buff_type">375978<!--Buff: buff_ClubInteractionGroup_GrilledCheese_CraftingCooldown--></T>
+              </U>
+            </U>
+          </V>
+        </L>
+        <L n="loot_list">
+          <T>39708<!--LootActions: loot_Statistic_Breakage_Fridge--></T>
+        </L>
+      </U>
+    </U>
+  </V>
+  <L n="recipes">
+    <T>375976<!--Recipe: recipe_Food_Homestyle_GrilledCheese-Single_ClubMade--></T>
+  </L>
+  <V n="route_start_balloon" t="enabled">
+    <U n="enabled">
+      <U n="balloon">
+        <L n="balloon_choices">
+          <U>
+            <V n="item" t="balloon_icon">
+              <U n="balloon_icon">
+                <V n="icon" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>Object</E>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </U>
+        </L>
+        <L n="balloon_target">
+          <E>Actor</E>
+        </L>
+      </U>
+    </U>
+  </V>
+  <E n="scoring_priority">LOW</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_autonomous">
+    <L>
+      <V t="appropriateness" />
+      <V t="location">
+        <U n="location">
+          <U n="location_tests">
+            <V n="is_venue_type" t="enabled">
+              <U n="enabled">
+                <T n="negate">True</T>
+                <T n="venue_type">130713<!--Venue: venue_Restaurant--></T>
+              </U>
+            </V>
+          </U>
+        </U>
+      </V>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>151548<!--Buff: buff_Role_Butler_DontCook--></T>
+          </L>
+        </U>
+      </V>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>258758<!--Preference: trait_SimPreference_Dislikes_Activities_Cooking--></T>
+          </L>
+        </U>
+      </V>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>491475<!--Buff: buff_Getaway_Hidden_ActivityCategory_FoodAndDrink_DontCook_Temporary--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <V n="whitelist" t="enabled">
+            <L n="enabled">
+              <T>136649<!--Buff: buff_Career_SocialMedia_PersuadedToCook--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <V n="whitelist" t="enabled">
+            <L n="enabled">
+              <T>228421<!--Buff: buff_DebateSkill_ConvinceCook--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">28413<!--TestSetInstance: testSet_AgeChildAndOlder--></T>
+    </V>
+    <V t="zone">
+      <U n="zone">
+        <U n="zone_tests">
+          <V n="zone_modifiers" t="enabled">
+            <U n="enabled">
+              <V n="blacklist" t="specify">
+                <U n="specify">
+                  <L n="blacklist">
+                    <T>258836<!--ZoneModifier: zoneModifiers_lotTrait_RequiredIngredients--></T>
+                  </L>
+                </U>
+              </V>
+            </U>
+          </V>
+        </U>
+      </U>
+    </V>
+    <V t="zone">
+      <U n="zone">
+        <U n="zone_tests">
+          <V n="venue_type" t="enabled">
+            <U n="enabled">
+              <V n="blacklist" t="specify">
+                <U n="specify">
+                  <L n="blacklist">
+                    <T>208182<!--Venue: venue_rentable_universityHousing--></T>
+                  </L>
+                </U>
+              </V>
+            </U>
+          </V>
+        </U>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>375978<!--Buff: buff_ClubInteractionGroup_GrilledCheese_CraftingCooldown--></T>
+        </L>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">126907<!--TestSetInstance: testSetInstance_InteractionIsEncouragedByClubOrCustomerRulesOrHobbyClassOrDynasty--></T>
+    </V>
+    <V t="trait">
+      <U n="trait">
+        <L n="blacklist_traits">
+          <T>162668<!--Trait: trait_PlantSim--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">60</T>
+</I>

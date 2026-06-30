@@ -1,0 +1,939 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="RandomWeightedLoot" i="action" m="interactions.utils.loot" n="randomWeightedLoot_NobleCareer_AskForRoyalHelp" s="477927">
+  <L n="random_loot_actions">
+    <U>
+      <V n="action" t="sim_interaction_dialog">
+        <U n="sim_interaction_dialog">
+          <U n="dialog">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="text" t="single">
+              <T n="single">0xBE626F15<!--String: "Someone has been stealing my newspaper every day for months and I have never been this angry before! This is highly illegal and should be heavily punished! I demand retribution, you need to do something!"--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x8867230<!--String: "Neighbor News"--></T>
+            </V>
+          </U>
+          <L n="possible_responses">
+            <U>
+              <U n="item">
+                <L n="loot">
+                  <T>478375<!--RandomWeightedLoot: randomWeightedLoot_NobleCareer_NobleDilemmas_Commoner_Dilemma1_Option1--></T>
+                </L>
+                <T n="text">0x82115C4E<!--String: "Calm down, is this really a serious problem?"--></T>
+              </U>
+            </U>
+            <U>
+              <U n="item">
+                <L n="loot">
+                  <T>478376<!--RandomWeightedLoot: randomWeightedLoot_NobleCareer_NobleDilemmas_Commoner_Dilemma1_Option2--></T>
+                </L>
+                <T n="text">0x750428C3<!--String: "Absolutely, we should severely punish them!"--></T>
+              </U>
+            </U>
+          </L>
+          <E n="subject">TargetSim</E>
+          <E n="target_participant_type">Actor</E>
+          <L n="tests">
+            <L>
+              <V t="career_test">
+                <U n="career_test">
+                  <T n="negate">True</T>
+                  <V n="test_type" t="career_reference">
+                    <U n="career_reference">
+                      <V n="career" t="specific_career">
+                        <T n="specific_career">466304<!--NobleCareer: career_Noble--></T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">1</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="buff">
+                  <U n="buff">
+                    <T n="apply_whitelist_on_individual_basis">False</T>
+                    <E n="subject">TargetHouseholdMembers</E>
+                    <V n="whitelist" t="enabled">
+                      <L n="enabled">
+                        <T>500983<!--Buff: buff_NobleCareer_DilemmaCooldown1--></T>
+                      </L>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="sim_interaction_dialog">
+        <U n="sim_interaction_dialog">
+          <U n="dialog">
+            <V n="text" t="single">
+              <T n="single">0x21759CE1<!--String: "My internet has been acting up. I can't even livestream my cats anymore without interruption. What do I do?"--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0xEE726D61<!--String: "Connection Hiccups"--></T>
+            </V>
+          </U>
+          <L n="possible_responses">
+            <U>
+              <U n="item">
+                <L n="loot">
+                  <T>485891<!--RandomWeightedLoot: randomWeightedLoot_NobleCareer_NobleDilemmas_Commoner_Dilemma2_Option1--></T>
+                </L>
+                <T n="text">0x4B921B<!--String: "Have you tried turning it on and off again?"--></T>
+              </U>
+            </U>
+            <U>
+              <U n="item">
+                <L n="loot">
+                  <T>485892<!--RandomWeightedLoot: randomWeightedLoot_NobleCareer_NobleDilemmas_Commoner_Dilemma2_Option2--></T>
+                </L>
+                <T n="text">0x30006F7<!--String: "This is a cat-astrophe! We shall fix it at once!"--></T>
+              </U>
+            </U>
+          </L>
+          <E n="subject">TargetSim</E>
+          <E n="target_participant_type">Actor</E>
+          <L n="tests">
+            <L>
+              <V t="career_test">
+                <U n="career_test">
+                  <T n="negate">True</T>
+                  <V n="test_type" t="career_reference">
+                    <U n="career_reference">
+                      <V n="career" t="specific_career">
+                        <T n="specific_career">466304<!--NobleCareer: career_Noble--></T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">1</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="buff">
+                  <U n="buff">
+                    <T n="apply_whitelist_on_individual_basis">False</T>
+                    <E n="subject">TargetHouseholdMembers</E>
+                    <V n="whitelist" t="enabled">
+                      <L n="enabled">
+                        <T>500984<!--Buff: buff_NobleCareer_DilemmaCooldown2--></T>
+                      </L>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="sim_interaction_dialog">
+        <U n="sim_interaction_dialog">
+          <U n="dialog">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="text" t="single">
+              <T n="single">0x30819749<!--String: "I have been seeing strange light in the skies, and I'm worried about alien abductions! Please help me!"--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x5BCD23B<!--String: "Alien Trauma"--></T>
+            </V>
+          </U>
+          <L n="possible_responses">
+            <U>
+              <U n="item">
+                <L n="loot">
+                  <T>485893<!--RandomWeightedLoot: randomWeightedLoot_NobleCareer_NobleDilemmas_Commoner_Dilemma3_Option1--></T>
+                </L>
+                <T n="text">0xE152F4C5<!--String: "That's ridiculous, aliens aren't even real."--></T>
+              </U>
+            </U>
+            <U>
+              <U n="item">
+                <L n="loot">
+                  <T>485894<!--RandomWeightedLoot: randomWeightedLoot_NobleCareer_NobleDilemmas_Commoner_Dilemma3_Option2--></T>
+                </L>
+                <T n="text">0xEEF84F67<!--String: "Shall we unpack why you're so terrified of aliens? "--></T>
+              </U>
+            </U>
+          </L>
+          <E n="subject">TargetSim</E>
+          <E n="target_participant_type">Actor</E>
+          <L n="tests">
+            <L>
+              <V t="career_test">
+                <U n="career_test">
+                  <T n="negate">True</T>
+                  <V n="test_type" t="career_reference">
+                    <U n="career_reference">
+                      <V n="career" t="specific_career">
+                        <T n="specific_career">466304<!--NobleCareer: career_Noble--></T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">1</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="buff">
+                  <U n="buff">
+                    <T n="apply_whitelist_on_individual_basis">False</T>
+                    <E n="subject">TargetHouseholdMembers</E>
+                    <V n="whitelist" t="enabled">
+                      <L n="enabled">
+                        <T>500985<!--Buff: buff_NobleCareer_DilemmaCooldown3--></T>
+                      </L>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="sim_interaction_dialog">
+        <U n="sim_interaction_dialog">
+          <U n="dialog">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="text" t="single">
+              <T n="single">0x7A509F11<!--String: "My neighbor's drone keeps flying over my backyard and scaring my chickens. I demand justice!"--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x806D515D<!--String: "Drone Surveillance"--></T>
+            </V>
+          </U>
+          <L n="possible_responses">
+            <U>
+              <U n="item">
+                <L n="loot">
+                  <T>485895<!--RandomWeightedLoot: randomWeightedLoot_NobleCareer_NobleDilemmas_Commoner_Dilemma4_Option1--></T>
+                </L>
+                <T n="text">0xA7830A89<!--String: "A drone is basically a robotic chicken, it's fine."--></T>
+              </U>
+            </U>
+            <U>
+              <U n="item">
+                <L n="loot">
+                  <T>485896<!--RandomWeightedLoot: randomWeightedLoot_NobleCareer_NobleDilemmas_Commoner_Dilemma4_Option2--></T>
+                </L>
+                <T n="text">0x5B8630C9<!--String: "I'll issue a no-fly zone over your home. Drone-be-gone!"--></T>
+              </U>
+            </U>
+          </L>
+          <E n="subject">TargetSim</E>
+          <E n="target_participant_type">Actor</E>
+          <L n="tests">
+            <L>
+              <V t="career_test">
+                <U n="career_test">
+                  <T n="negate">True</T>
+                  <V n="test_type" t="career_reference">
+                    <U n="career_reference">
+                      <V n="career" t="specific_career">
+                        <T n="specific_career">466304<!--NobleCareer: career_Noble--></T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">1</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="buff">
+                  <U n="buff">
+                    <T n="apply_whitelist_on_individual_basis">False</T>
+                    <E n="subject">TargetHouseholdMembers</E>
+                    <V n="whitelist" t="enabled">
+                      <L n="enabled">
+                        <T>500986<!--Buff: buff_NobleCareer_DilemmaCooldown4--></T>
+                      </L>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="sim_interaction_dialog">
+        <U n="sim_interaction_dialog">
+          <U n="dialog">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="text" t="single">
+              <T n="single">0x7E3AD0B4<!--String: "The plants in my backyard have been complaining to me about my neighbor. They constantly have parties and it's too loud for them. What can I do?"--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x1EA34878<!--String: "Plant Whisperer"--></T>
+            </V>
+          </U>
+          <L n="possible_responses">
+            <U>
+              <U n="item">
+                <L n="loot">
+                  <T>485923<!--RandomWeightedLoot: randomWeightedLoot_NobleCareer_NobleDilemmas_Commoner_Dilemma5_Option1--></T>
+                </L>
+                <T n="text">0x3422C71<!--String: "The plants...are speaking to you?"--></T>
+              </U>
+            </U>
+            <U>
+              <U n="item">
+                <L n="loot">
+                  <T>485924<!--RandomWeightedLoot: randomWeightedLoot_NobleCareer_NobleDilemmas_Commoner_Dilemma5_Option2--></T>
+                </L>
+                <T n="text">0x34C2EF50<!--String: "I declare a halt to all social activities past sundown!"--></T>
+              </U>
+            </U>
+          </L>
+          <E n="subject">TargetSim</E>
+          <E n="target_participant_type">Actor</E>
+          <L n="tests">
+            <L>
+              <V t="career_test">
+                <U n="career_test">
+                  <T n="negate">True</T>
+                  <V n="test_type" t="career_reference">
+                    <U n="career_reference">
+                      <V n="career" t="specific_career">
+                        <T n="specific_career">466304<!--NobleCareer: career_Noble--></T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">1</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="buff">
+                  <U n="buff">
+                    <T n="apply_whitelist_on_individual_basis">False</T>
+                    <E n="subject">TargetHouseholdMembers</E>
+                    <V n="whitelist" t="enabled">
+                      <L n="enabled">
+                        <T>500987<!--Buff: buff_NobleCareer_DilemmaCooldown5--></T>
+                      </L>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="sim_interaction_dialog">
+        <U n="sim_interaction_dialog">
+          <U n="dialog">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="text" t="single">
+              <T n="single">0x363B6D7<!--String: "I have a confession to make...I've been a menace to my neighbor and I want to reform. I know I was wrong, and I want to be a valuable citizen in this Kingdom. What do I need to do to receive a second chance?"--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x46793490<!--String: "Shameful Choices"--></T>
+            </V>
+          </U>
+          <L n="possible_responses">
+            <U>
+              <U n="item">
+                <L n="loot">
+                  <T>490025<!--LootActions: loot_NobleCareer_NobleDIlemmas_PardonCommoner--></T>
+                </L>
+                <T n="text">0xE15114ED<!--String: "I shall pardon you."--></T>
+              </U>
+            </U>
+            <U>
+              <U n="item">
+                <L n="loot">
+                  <T>490022<!--LootActions: loot_NobleCareer_NobleDIlemmas_Atone--></T>
+                </L>
+                <T n="text">0xC89DD851<!--String: "You need to atone!"--></T>
+              </U>
+            </U>
+          </L>
+          <E n="subject">TargetSim</E>
+          <E n="target_participant_type">Actor</E>
+          <L n="tests">
+            <L>
+              <V t="career_test">
+                <U n="career_test">
+                  <T n="negate">True</T>
+                  <V n="test_type" t="career_reference">
+                    <U n="career_reference">
+                      <V n="career" t="specific_career">
+                        <T n="specific_career">466304<!--NobleCareer: career_Noble--></T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">1</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="buff">
+                  <U n="buff">
+                    <T n="apply_whitelist_on_individual_basis">False</T>
+                    <E n="subject">TargetHouseholdMembers</E>
+                    <V n="whitelist" t="enabled">
+                      <L n="enabled">
+                        <T>500982<!--Buff: buff_NobleCareer_DilemmaCooldown12--></T>
+                      </L>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">5</T>
+            <L n="tests">
+              <L>
+                <V t="scandal_secret_quantity_test">
+                  <U n="scandal_secret_quantity_test">
+                    <T n="secret_count">1</T>
+                    <V n="secret_owner_participants" t="enabled" />
+                    <V n="secret_status" t="enabled">
+                      <E n="enabled">REVEALED</E>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="sim_interaction_dialog">
+        <U n="sim_interaction_dialog">
+          <U n="dialog">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="text" t="single">
+              <T n="single">0xAB9D4FD9<!--String: "My neighbor keeps parking their bike in front of my Mailbox. I can't get my mail, and my bills are late! What are you going to do about it?"--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0xBE5E2AA6<!--String: "Cyclical Conundrums"--></T>
+            </V>
+          </U>
+          <L n="possible_responses">
+            <U>
+              <U n="item">
+                <L n="loot">
+                  <T>485963<!--RandomWeightedLoot: randomWeightedLoot_NobleCareer_NobleDilemmas_Noble_Dilemma6_Option1--></T>
+                </L>
+                <T n="text">0xC0442426<!--String: "Maybe just ask them to move it next time?"--></T>
+              </U>
+            </U>
+            <U>
+              <U n="item">
+                <L n="loot">
+                  <T>485964<!--RandomWeightedLoot: randomWeightedLoot_NobleCareer_NobleDilemmas_Noble_Dilemma6_Option2--></T>
+                </L>
+                <T n="text">0x47CD1730<!--String: "Unacceptable! The bike will be removed immediately."--></T>
+              </U>
+            </U>
+          </L>
+          <E n="subject">TargetSim</E>
+          <E n="target_participant_type">Actor</E>
+          <L n="tests">
+            <L>
+              <V t="career_test">
+                <U n="career_test">
+                  <V n="test_type" t="career_reference">
+                    <U n="career_reference">
+                      <V n="career" t="specific_career">
+                        <T n="specific_career">466304<!--NobleCareer: career_Noble--></T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">1</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="buff">
+                  <U n="buff">
+                    <T n="apply_whitelist_on_individual_basis">False</T>
+                    <E n="subject">TargetHouseholdMembers</E>
+                    <V n="whitelist" t="enabled">
+                      <L n="enabled">
+                        <T>500988<!--Buff: buff_NobleCareer_DilemmaCooldown6--></T>
+                      </L>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="sim_interaction_dialog">
+        <U n="sim_interaction_dialog">
+          <U n="dialog">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="text" t="single">
+              <T n="single">0x73D144F0<!--String: "My rose garden is looking a little parched, but my neighbors keep complaining about my water usage. They keep saying something about not being able to pay their...bills? What is their problem?"--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0xEEC75CA5<!--String: "Parched Garden"--></T>
+            </V>
+          </U>
+          <L n="possible_responses">
+            <U>
+              <U n="item">
+                <L n="loot">
+                  <T>485965<!--RandomWeightedLoot: randomWeightedLoot_NobleCareer_NobleDilemmas_Noble_Dilemma7_Option1--></T>
+                </L>
+                <T n="text">0x531F4337<!--String: "Be mindful of your water usage, it affects everyone."--></T>
+              </U>
+            </U>
+            <U>
+              <U n="item">
+                <L n="loot">
+                  <T>485966<!--RandomWeightedLoot: randomWeightedLoot_NobleCareer_NobleDilemmas_Noble_Dilemma7_Option2--></T>
+                </L>
+                <T n="text">0x3E2BE99E<!--String: "We will subsidize any costs, green spaces are vital!"--></T>
+              </U>
+            </U>
+          </L>
+          <E n="subject">TargetSim</E>
+          <E n="target_participant_type">Actor</E>
+          <L n="tests">
+            <L>
+              <V t="career_test">
+                <U n="career_test">
+                  <V n="test_type" t="career_reference">
+                    <U n="career_reference">
+                      <V n="career" t="specific_career">
+                        <T n="specific_career">466304<!--NobleCareer: career_Noble--></T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">1</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="buff">
+                  <U n="buff">
+                    <T n="apply_whitelist_on_individual_basis">False</T>
+                    <E n="subject">TargetHouseholdMembers</E>
+                    <V n="whitelist" t="enabled">
+                      <L n="enabled">
+                        <T>501039<!--Buff: buff_NobleCareer_DilemmaCooldown7--></T>
+                      </L>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="sim_interaction_dialog">
+        <U n="sim_interaction_dialog">
+          <U n="dialog">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="text" t="single">
+              <T n="single">0xFD959BC2<!--String: "I want to expand my palace, and I can only afford six pools. What kind of kingdom are we if we cannot raise a donation to increase our capital?"--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0xD2BAAB75<!--String: "First World Problems"--></T>
+            </V>
+          </U>
+          <L n="possible_responses">
+            <U>
+              <U n="item">
+                <L n="loot">
+                  <T>485977<!--RandomWeightedLoot: randomWeightedLoot_NobleCareer_NobleDilemmas_Noble_Dilemma8_Option1--></T>
+                </L>
+                <T n="text">0xA37A1CE7<!--String: "Only 6? Oh darling, that just won't do!"--></T>
+              </U>
+            </U>
+            <U>
+              <U n="item">
+                <L n="loot">
+                  <T>485978<!--RandomWeightedLoot: randomWeightedLoot_NobleCareer_NobleDilemmas_Noble_Dilemma8_Option2--></T>
+                </L>
+                <T n="text">0x9C410706<!--String: "The kind that believes you can afford it yourself."--></T>
+              </U>
+            </U>
+          </L>
+          <E n="subject">TargetSim</E>
+          <E n="target_participant_type">Actor</E>
+          <L n="tests">
+            <L>
+              <V t="career_test">
+                <U n="career_test">
+                  <V n="test_type" t="career_reference">
+                    <U n="career_reference">
+                      <V n="career" t="specific_career">
+                        <T n="specific_career">466304<!--NobleCareer: career_Noble--></T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">1</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="buff">
+                  <U n="buff">
+                    <T n="apply_whitelist_on_individual_basis">False</T>
+                    <E n="subject">TargetHouseholdMembers</E>
+                    <V n="whitelist" t="enabled">
+                      <L n="enabled">
+                        <T>501040<!--Buff: buff_NobleCareer_DilemmaCooldown8--></T>
+                      </L>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="sim_interaction_dialog">
+        <U n="sim_interaction_dialog">
+          <U n="dialog">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="text" t="single">
+              <T n="single">0x2FEE2EF4<!--String: "I was robbed and demand retribution! What sort of neighborhood is this, promising riches and wealth, only to be taken by petty thieves?!"--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0xBCA01E1F<!--String: "Robbed Riches"--></T>
+            </V>
+          </U>
+          <L n="possible_responses">
+            <U>
+              <U n="item">
+                <L n="loot">
+                  <T>485979<!--RandomWeightedLoot: randomWeightedLoot_NobleCareer_NobleDilemmas_Noble_Dilemma9_Option1--></T>
+                </L>
+                <T n="text">0x23B0F9A<!--String: "Thieves?! In MY neighborhood? Impossible!"--></T>
+              </U>
+            </U>
+            <U>
+              <U n="item">
+                <L n="loot">
+                  <T>485980<!--RandomWeightedLoot: randomWeightedLoot_NobleCareer_NobleDilemmas_Noble_Dilemma9_Option2--></T>
+                </L>
+                <T n="text">0x7FEB987C<!--String: "What a disgrace! Let's start a neighborhood watch."--></T>
+              </U>
+            </U>
+          </L>
+          <E n="subject">TargetSim</E>
+          <E n="target_participant_type">Actor</E>
+          <L n="tests">
+            <L>
+              <V t="career_test">
+                <U n="career_test">
+                  <V n="test_type" t="career_reference">
+                    <U n="career_reference">
+                      <V n="career" t="specific_career">
+                        <T n="specific_career">466304<!--NobleCareer: career_Noble--></T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">1</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="buff">
+                  <U n="buff">
+                    <T n="apply_whitelist_on_individual_basis">False</T>
+                    <E n="subject">TargetHouseholdMembers</E>
+                    <V n="whitelist" t="enabled">
+                      <L n="enabled">
+                        <T>501041<!--Buff: buff_NobleCareer_DilemmaCooldown9--></T>
+                      </L>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="sim_interaction_dialog">
+        <U n="sim_interaction_dialog">
+          <U n="dialog">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="text" t="single">
+              <T n="single">0xD78404D6<!--String: "My personal chef continues to serve sandwiches with regular store-bought bread instead of artisanal, home-cooked bread. My taste buds deserve better than this! Can you intervene?"--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0xDF973114<!--String: "Culinary Disaster"--></T>
+            </V>
+          </U>
+          <L n="possible_responses">
+            <U>
+              <U n="item">
+                <L n="loot">
+                  <T>485981<!--RandomWeightedLoot: randomWeightedLoot_NobleCareer_NobleDilemmas_Noble_Dilemma10_Option1--></T>
+                </L>
+                <T n="text">0x45C511D4<!--String: "Maybe try toasting them?"--></T>
+              </U>
+            </U>
+            <U>
+              <U n="item">
+                <L n="loot">
+                  <T>485982<!--RandomWeightedLoot: randomWeightedLoot_NobleCareer_NobleDilemmas_Noble_Dilemma10_Option2--></T>
+                </L>
+                <T n="text">0x5AF2BBDF<!--String: "Unacceptable! Have the chef re-trained at once!"--></T>
+              </U>
+            </U>
+          </L>
+          <E n="subject">TargetSim</E>
+          <E n="target_participant_type">Actor</E>
+          <L n="tests">
+            <L>
+              <V t="career_test">
+                <U n="career_test">
+                  <V n="test_type" t="career_reference">
+                    <U n="career_reference">
+                      <V n="career" t="specific_career">
+                        <T n="specific_career">466304<!--NobleCareer: career_Noble--></T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">1</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="buff">
+                  <U n="buff">
+                    <T n="apply_whitelist_on_individual_basis">False</T>
+                    <E n="subject">TargetHouseholdMembers</E>
+                    <V n="whitelist" t="enabled">
+                      <L n="enabled">
+                        <T>501042<!--Buff: buff_NobleCareer_DilemmaCooldown10--></T>
+                      </L>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="sim_interaction_dialog">
+        <U n="sim_interaction_dialog">
+          <U n="dialog">
+            <V n="text" t="single">
+              <T n="single">0x8A2B2D36<!--String: "I've been burdened with guilt for too long and I think you might be the person to grant me peace of mind. You are a person that we respect, and whatever your judgement is, I shall follow."--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x5B1D200C<!--String: "Mistakes Were Made"--></T>
+            </V>
+          </U>
+          <L n="possible_responses">
+            <U>
+              <U n="item">
+                <L n="loot">
+                  <T>490024<!--LootActions: loot_NobleCareer_NobleDIlemmas_PardonNoble--></T>
+                </L>
+                <T n="text">0xE15114ED<!--String: "I shall pardon you."--></T>
+              </U>
+            </U>
+            <U>
+              <U n="item">
+                <L n="loot">
+                  <T>490022<!--LootActions: loot_NobleCareer_NobleDIlemmas_Atone--></T>
+                </L>
+                <T n="text">0xC89DD851<!--String: "You need to atone!"--></T>
+              </U>
+            </U>
+          </L>
+          <E n="subject">TargetSim</E>
+          <E n="target_participant_type">Actor</E>
+          <L n="tests">
+            <L>
+              <V t="career_test">
+                <U n="career_test">
+                  <V n="test_type" t="career_reference">
+                    <U n="career_reference">
+                      <V n="career" t="specific_career">
+                        <T n="specific_career">466304<!--NobleCareer: career_Noble--></T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">1</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="buff">
+                  <U n="buff">
+                    <T n="apply_whitelist_on_individual_basis">False</T>
+                    <E n="subject">TargetHouseholdMembers</E>
+                    <V n="whitelist" t="enabled">
+                      <L n="enabled">
+                        <T>501043<!--Buff: buff_NobleCareer_DilemmaCooldown11--></T>
+                      </L>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">5</T>
+            <L n="tests">
+              <L>
+                <V t="scandal_secret_quantity_test">
+                  <U n="scandal_secret_quantity_test">
+                    <T n="secret_count">1</T>
+                    <V n="secret_owner_participants" t="enabled">
+                      <E n="enabled">Actor</E>
+                    </V>
+                    <V n="secret_status" t="enabled">
+                      <E n="enabled">REVEALED</E>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+  </L>
+</I>

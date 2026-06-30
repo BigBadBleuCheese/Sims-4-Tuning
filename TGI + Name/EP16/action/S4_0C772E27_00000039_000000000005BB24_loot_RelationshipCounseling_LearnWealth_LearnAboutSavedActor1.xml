@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_RelationshipCounseling_LearnWealth_LearnAboutSavedActor1" s="375588">
+  <L n="loot_actions">
+    <V t="know_other_sims_net_worth">
+      <U n="know_other_sims_net_worth">
+        <E n="target_participant_type">SavedActor1</E>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>SavedActor1</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x370BA7B7<!--String: "{0.SimFirstName} learned about {1.SimFirstName}'s financial status, and {1.SimFirstName} is apparently pretty wealthy!"--></T>
+            </V>
+          </U>
+        </V>
+        <E n="subject">SavedActor1</E>
+        <L n="tests">
+          <L>
+            <V t="knowledge">
+              <U n="knowledge">
+                <V n="known_net_worth" t="enabled">
+                  <U n="enabled">
+                    <T n="comparison_value">500000</T>
+                  </U>
+                </V>
+                <E n="target">SavedActor1</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>SavedActor1</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x90739192<!--String: "{0.SimFirstName} learned about {1.SimFirstName}'s financial status, and {1.SimFirstName} seems to be doing okay."--></T>
+            </V>
+          </U>
+        </V>
+        <E n="subject">TargetSim</E>
+        <L n="tests">
+          <L>
+            <V t="knowledge">
+              <U n="knowledge">
+                <V n="known_net_worth" t="enabled">
+                  <U n="enabled">
+                    <E n="comparison_type">LESS</E>
+                    <T n="comparison_value">500000</T>
+                  </U>
+                </V>
+                <E n="target">SavedActor1</E>
+              </U>
+            </V>
+            <V t="knowledge">
+              <U n="knowledge">
+                <V n="known_net_worth" t="enabled">
+                  <U n="enabled">
+                    <E n="comparison_type">GREATER</E>
+                    <T n="comparison_value">10000</T>
+                  </U>
+                </V>
+                <E n="target">SavedActor1</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>SavedActor1</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xF6B6E4E<!--String: "{0.SimFirstName} learned about {1.SimFirstName}'s financial status, and {1.SimFirstName} is a little short on funds."--></T>
+            </V>
+          </U>
+        </V>
+        <E n="subject">TargetSim</E>
+        <L n="tests">
+          <L>
+            <V t="knowledge">
+              <U n="knowledge">
+                <V n="known_net_worth" t="enabled">
+                  <U n="enabled">
+                    <E n="comparison_type">LESS_OR_EQUAL</E>
+                    <T n="comparison_value">10000</T>
+                  </U>
+                </V>
+                <E n="target">SavedActor1</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

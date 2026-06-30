@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Getaway_ShowGetawayTNS" s="458125">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="participant" t="enabled">
+              <E n="enabled">TargetSim</E>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xCD0135C9<!--String: "Alright, feel free to go to a Getaway when you're ready. You won't regret it!"--></T>
+            </V>
+            <L n="ui_responses">
+              <U>
+                <V n="loots_for_response" t="disabled" />
+                <V n="response_command" t="enabled">
+                  <V n="enabled" t="literal">
+                    <U n="literal">
+                      <L n="arguments">
+                        <V t="string">
+                          <U n="string">
+                            <T n="arg_value">immediate_Getaway_StartUI</T>
+                          </U>
+                        </V>
+                      </L>
+                      <T n="command">interactions.push_targeting_sim_info</T>
+                    </U>
+                  </V>
+                </V>
+                <T n="text">0xF5301C03<!--String: "Plan a Getaway"--></T>
+                <E n="ui_request">SEND_COMMAND</E>
+              </U>
+            </L>
+            <E n="visual_type">SPEECH</E>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+</I>

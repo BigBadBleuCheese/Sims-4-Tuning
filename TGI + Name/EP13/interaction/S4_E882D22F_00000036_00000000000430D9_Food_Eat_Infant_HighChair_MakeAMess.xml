@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="MixerInteraction" i="interaction" m="interactions.base.mixer_interaction" n="Food_Eat_Infant_HighChair_MakeAMess" s="274649">
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Object</E>
+      </L>
+    </U>
+  </V>
+  <T n="allow_user_directed">False</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">274623<!--AnimationElement: HighChair_Anim_EatFingerFood_MakeAMess--></T>
+      </U>
+    </U>
+  </V>
+  <V n="basic_focus" t="disable_focus" />
+  <T n="display_name">0xBF83AF7F<!--String: "Feed a Bite"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Mixer</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="loot_list">
+          <T>313542<!--LootActions: loot_Infant_HighChair_Dirtiness_Gain_Actor--></T>
+          <T>313544<!--LootActions: loot_Infants_HighChair_MessyEater_Dirtyness_Gain_Actor--></T>
+        </L>
+      </U>
+    </U>
+  </V>
+  <U n="sub_action">
+    <T n="base_weight">2</T>
+  </U>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="developmental_milestone">
+      <U n="developmental_milestone">
+        <T n="developmental_milestone">286469<!--DevelopmentalMilestone: infantMilestones_Generic_FirstFingerFood--></T>
+      </U>
+    </V>
+  </L>
+  <T n="visible">False</T>
+</I>

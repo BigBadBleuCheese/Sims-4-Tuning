@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="QuestGig" i="career_gig" m="careers.missions.mission_gig" n="questGig_EP19Quests_Apothecary_Fetch" s="441617">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_description" t="enabled">
+        <T n="enabled">0x7CC0AD8<!--String: "<i>Upon a full moon, at a Werewolf’s high noon, emotions were stirring down under. A boy had just met a creature to pet, but a greeting with Greg he did blunder. He went screaming away, telling neighbors <b>that stray</b> had pierced the boy’s skin with its teeth. But no marks were seen, the boy’s skin was clean, and the story was swept underneath. Again and again, that sweet charlatan would spin tale after tale about Greg. Now just wait and see, for his ultimate plea, was that Greg had consumed his whole leg...</i>\n\n<font color="#1E81E6">Deliver or Consume an Item.</font>\n"--></T>
+      </V>
+      <V n="instance_display_icon" t="enabled">
+        <T p="InEP19\UI\Icons\Quests\quests_FetchQuest02.png" n="enabled">2f7d0004:00000000:c7eb2f97867449af</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x52DE5E9D<!--String: "Ly Waiting"--></T>
+      </V>
+    </U>
+  </V>
+  <T n="career">424758<!--Career: career_EP19Quests--></T>
+  <L n="cycling_display_data">
+    <U>
+      <T n="customer_description">0x7CC0AD8<!--String: "<i>Upon a full moon, at a Werewolf’s high noon, emotions were stirring down under. A boy had just met a creature to pet, but a greeting with Greg he did blunder. He went screaming away, telling neighbors <b>that stray</b> had pierced the boy’s skin with its teeth. But no marks were seen, the boy’s skin was clean, and the story was swept underneath. Again and again, that sweet charlatan would spin tale after tale about Greg. Now just wait and see, for his ultimate plea, was that Greg had consumed his whole leg...</i>\n\n<font color="#1E81E6">Deliver or Consume an Item.</font>\n"--></T>
+      <T n="mission_name">0xBDCA6C05<!--String: "Ly Waiting"--></T>
+    </U>
+  </L>
+  <T n="gig_assignment_aspiration">441619<!--AspirationGig: aspirationGig_EP19Quests_Apothecary_Fetch--></T>
+  <V n="gig_pay" t="flat_amount">
+    <U n="flat_amount">
+      <T n="value">222</T>
+    </U>
+  </V>
+  <T n="hide_inactive_objectives">True</T>
+  <L n="mission_objective_data">
+    <U>
+      <L n="weighted_objectives">
+        <U>
+          <T n="objective">441638<!--Objective: objective_EP19Quests_Apothecary_Fetch_Bottle--></T>
+        </U>
+        <U>
+          <T n="objective">441639<!--Objective: objective_EP19Quests_Apothecary_Fetch_Craft--></T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <T n="pick_objective_when_activated">False</T>
+      <T n="requires_previous_objective_complete">False</T>
+      <L n="weighted_objectives">
+        <U>
+          <T n="objective">441641<!--Objective: objective_EP19Quests_Apothecary_Fetch_Consume--></T>
+        </U>
+        <U>
+          <T n="objective">441640<!--Objective: objective_EP19Quests_Apothecary_Fetch_Deliver--></T>
+        </U>
+      </L>
+    </U>
+  </L>
+  <T n="mission_rewards_description">0x3B18AFDC<!--String: "{0.String}\n<font color='#199C2C'>{1.String}</font>"--></T>
+  <V n="mission_rewards_text" t="enabled">
+    <T n="enabled">0x6EA02A91<!--String: "Reward: Holistic Cure, Small Critter Bones, End of Fable"--></T>
+  </V>
+  <V n="mission_trait" t="enabled">
+    <T n="enabled">441623<!--Trait: trait_Hidden_EP19Quests_OnQuest_ApothFetch--></T>
+  </V>
+  <U n="objective_completion_audio">
+    <T n="audio" p="InGame\Audio\Bumper\bumper_other_goal_complete.propx">39b2aa4a:00000000:ea1687e36b0b32f3</T>
+  </U>
+  <E n="on_pick_behavior">REMOVE</E>
+  <T n="open_career_panel">True</T>
+  <V n="picker_associated_sim_filter" t="enabled">
+    <T n="enabled">441268<!--TunableSimFilter: situationFilters_EP19World_NPC_EP19QuestApoth--></T>
+  </V>
+  <T n="picker_description_text">0x3B18AFDC<!--String: "{0.String}\n<font color='#199C2C'>{1.String}</font>"--></T>
+  <T n="picker_disable_if_visibility_tests_fail_with_tooltip">True</T>
+  <T n="picker_replace_if_removed">True</T>
+  <V n="picker_scheduling_behavior" t="enabled">
+    <V n="enabled" t="schedule_career_gig">
+      <U n="schedule_career_gig">
+        <T n="allow_add_career">True</T>
+      </U>
+    </V>
+  </V>
+  <V n="picker_scoring" t="enabled">
+    <U n="enabled">
+      <E n="bucket">EP19Quest_Apothecary</E>
+    </U>
+  </V>
+  <L n="picker_visibility_tests">
+    <L>
+      <V t="career_gig_test">
+        <U n="career_gig_test">
+          <T n="career">424758<!--Career: career_EP19Quests--></T>
+          <T n="negate">True</T>
+          <V n="test_type" t="specific_gigs">
+            <U n="specific_gigs">
+              <L n="gigs">
+                <T>441617<!--QuestGig: questGig_EP19Quests_Apothecary_Fetch--></T>
+              </L>
+            </U>
+          </V>
+          <V n="tooltip" t="enabled">
+            <T n="enabled">0x67109623<!--String: "This Fable is currently in progress."--></T>
+          </V>
+        </U>
+      </V>
+      <V t="unlock_earned">
+        <U n="unlock_earned">
+          <V n="tooltip" t="enabled">
+            <T n="enabled">0x96246CFD<!--String: "Complete the Be Kind, Unwind Fable from the Apothecary Vendor to unlock."--></T>
+          </V>
+          <V n="unlock_to_test" t="aspiration">
+            <U n="aspiration">
+              <T n="aspiration">441620<!--AspirationGig: aspirationGig_EP19Quests_Apothecary_Craft--></T>
+              <T n="negate">False</T>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="result_based_loots" t="enabled">
+    <L n="enabled">
+      <U>
+        <E n="key">CANCELED</E>
+        <L n="value">
+          <T>441630<!--LootActions: loot_EP19Quests_Cleanup_ApothFetch--></T>
+        </L>
+      </U>
+      <U>
+        <E n="key">SUCCESS</E>
+        <L n="value">
+          <T>441632<!--LootActions: loot_EP19Quests_Rewards_ApothFetch--></T>
+        </L>
+      </U>
+    </L>
+  </V>
+</I>

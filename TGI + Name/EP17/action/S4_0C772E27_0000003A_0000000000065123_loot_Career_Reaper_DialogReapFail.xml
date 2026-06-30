@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Career_Reaper_DialogReapFail" s="413987">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="dialog_ok">
+          <U n="dialog_ok">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T p="InEP17\UI\Icons\Career\career_reaper.png" n="key">2f7d0004:00000000:8c0e5c1fa91cdf5b</T>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xEAE0D464<!--String: "Reaping is harder than it looks!\n\nSuccessful Reapings depend the on Prep Work completed at the office prior to going out on assignment. Prep work includes interactions such as Practice Reaping, Researching Assignment, and Performing Scythe Maintenance.\n\nThe chosen Reap Style for Collecting a Soul also contributes to a successful Reap. Choosing a more difficult or lazy Reaping Style, like Collect Soul Flamboyantly, Collect Soul Like Grim, or Collect Soul Lazily, may result in a higher chance of failure. Choosing a safer Reaping Style, such as Collect Soul and Collect Soul Carefully, have higher chance of success.\n\nAs they say, If at first you don't succeed try, try and try again!"--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x67A0CA22<!--String: "Soul Collection Failure"--></T>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="career_test">
+        <U n="career_test">
+          <V n="test_type" t="days_worked">
+            <U n="days_worked">
+              <U n="career_source">
+                <V n="career_source" t="single_career">
+                  <U n="single_career">
+                    <T n="career">377623<!--Career: careers_Adult_Active_Reaper--></T>
+                  </U>
+                </V>
+              </U>
+              <U n="threshold">
+                <E n="comparison">LESS_OR_EQUAL</E>
+                <T n="value">2</T>
+              </U>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="statistic">
+        <U n="statistic">
+          <T n="stat">402075<!--Statistic: statistic_Career_Reaper_EasyReapCount--></T>
+          <V n="threshold" t="value_threshold">
+            <U n="value_threshold">
+              <E n="comparison">EQUAL</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="statistic">
+        <U n="statistic">
+          <T n="stat">402076<!--Statistic: statistic_Career_Reaper_HardReapCount--></T>
+          <V n="threshold" t="value_threshold">
+            <U n="value_threshold">
+              <E n="comparison">EQUAL</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

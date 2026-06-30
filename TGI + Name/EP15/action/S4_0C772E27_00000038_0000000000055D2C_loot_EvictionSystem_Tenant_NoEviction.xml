@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_EvictionSystem_Tenant_NoEviction" s="351532">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="audio_sting" t="enabled">
+              <U n="enabled">
+                <T n="audio" p="InEP15\Audio\music\bumpers\bumper_ep15_tenant_eviction_warning.propx">39b2aa4a:00000000:87f9d1b7efbb46c2</T>
+              </U>
+            </V>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InEP15\UI\Icons\Notification\notification_evicted.png">2f7d0004:00000000:cfaf24e8879bbdd5</T>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xC9FC6E55<!--String: "The {0.SimLastName} Household was caught violating the Tenant Agreement. This time is only a warning, but they might not be so lucky next time a rule is broken or rent is overdue.\n\nReach out to your Property Owner and choose to Pay Fine for any broken rules or overdue rent before they Evict your Household!"--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0xE175B969<!--String: "Eviction Avoided"--></T>
+            </V>
+          </U>
+        </V>
+        <E n="subject">LotOwnersOrRenters</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="is_active_sim" t="enabled" />
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="trait_add">
+      <U n="trait_add">
+        <E n="subject">LotOwnersOrRenters</E>
+        <T n="trait">351533<!--Trait: trait_Hidden_EvictionSystem_UsedFreeChance--></T>
+      </U>
+    </V>
+  </L>
+</I>

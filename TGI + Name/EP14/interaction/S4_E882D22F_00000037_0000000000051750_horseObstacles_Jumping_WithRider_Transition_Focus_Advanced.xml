@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="horseObstacles_Jumping_WithRider_Transition_Focus_Advanced" s="333648">
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <V n="link_carried_sims" t="enabled" />
+    </U>
+  </V>
+  <L n="basic_liabilities">
+    <V t="user_cancelable_chain" />
+  </L>
+  <V n="basic_reserve_object" t="enabled">
+    <U n="enabled">
+      <L n="subject_list">
+        <U>
+          <V n="reserve_type" t="all" />
+        </U>
+      </L>
+    </U>
+  </V>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x23B4383E<!--String: "Intensely Train"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <L n="loot_list">
+              <T>329510<!--LootActions: loot_Commodity_HorseObstacles_Jumping_RemoveTurns--></T>
+            </L>
+          </U>
+        </U>
+      </L>
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">333647<!--SuperInteraction: horseObstacles_Jumping_Focus_Advanced--></T>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="statistic">
+                <U n="statistic">
+                  <T n="must_have_stat">True</T>
+                  <T n="stat">329511<!--Statistic: statistic_Object_HorseObstacles_Jumping_Turns--></T>
+                  <V n="threshold" t="value_threshold">
+                    <U n="value_threshold">
+                      <E n="comparison">LESS</E>
+                      <T n="value">20</T>
+                    </U>
+                  </V>
+                </U>
+              </V>
+              <V t="buff">
+                <U n="buff">
+                  <L n="blacklist">
+                    <T>327961<!--Buff: buff_HorseTraining_Fatigue--></T>
+                  </L>
+                </U>
+              </V>
+              <V t="motive">
+                <U n="motive">
+                  <L n="stats">
+                    <T>312266<!--Commodity: motive_Horse_Energy--></T>
+                    <T>312267<!--Commodity: motive_Horse_Bladder--></T>
+                    <T>312265<!--Commodity: motive_Horse_Hunger--></T>
+                    <T>312269<!--Commodity: motive_Horse_Hygiene--></T>
+                  </L>
+                  <U n="threshold">
+                    <E n="comparison">GREATER_OR_EQUAL</E>
+                    <T n="value">-90</T>
+                  </U>
+                </U>
+              </V>
+              <V t="motive">
+                <U n="motive">
+                  <L n="stats">
+                    <T>16652<!--Commodity: motive_Bladder--></T>
+                    <T>16654<!--Commodity: motive_Energy--></T>
+                    <T>16656<!--Commodity: motive_Hunger--></T>
+                  </L>
+                  <U n="threshold">
+                    <E n="comparison">GREATER</E>
+                    <T n="value">-90</T>
+                  </U>
+                  <E n="who">RoutingSlaves</E>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <V n="require_reins_for_formation" t="enabled">
+    <T n="enabled">314817<!--RoutingFormation: routingFormation_HorseRiding_Ride--></T>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals" />
+  <T n="time_overhead">30</T>
+  <T n="visible">True</T>
+</I>

@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="super_Treehouse_Wait_Follower" s="315111">
+  <V n="_saveable" t="enabled" />
+  <T n="allow_user_directed">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="stat_based">
+                <U n="stat_based">
+                  <T n="stat">315240<!--Statistic: statistic_Treehouse_PlayPretendWith_WaitingSims--></T>
+                  <U n="threshold">
+                    <T n="value">2</T>
+                  </U>
+                  <E n="who">Object</E>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+      </L>
+      <V n="content" t="looping_content">
+        <U n="looping_content">
+          <U n="animation_ref">
+            <T n="factory">12082<!--AnimationElement: Stand_Idle_Stand_Idle_Looping_basic--></T>
+          </U>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="stat_increment_decrement">
+      <U n="stat_increment_decrement">
+        <T n="stat">315240<!--Statistic: statistic_Treehouse_PlayPretendWith_WaitingSims--></T>
+      </U>
+    </V>
+  </L>
+  <V n="basic_reserve_object" t="enabled">
+    <U n="enabled">
+      <V n="reserve_type_for_provided_target" t="basic" />
+    </U>
+  </V>
+  <V n="canonical_animation" t="enabled">
+    <U n="enabled">
+      <T n="factory">317346<!--AnimationElement: anim_Treehouse_PlayPretendWith_Canonical--></T>
+    </U>
+  </V>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x24EB927D<!--String: "Wait To Play Pretend"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals" />
+  <T n="time_overhead">30</T>
+</I>

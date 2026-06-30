@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Buff" i="buff" m="buffs.buff" n="buff_Dynasty_Trait_Member" s="493033">
+  <V n="_temporary_commodity_info" t="disabled" />
+  <T p="InGame\Audio\Stings\sting_buff_gain.propx" n="audio_sting_on_add">39b2aa4a:00000000:8af8b916cf64c646</T>
+  <T p="InGame\Audio\Stings\sting_buff_loss.propx" n="audio_sting_on_remove">39b2aa4a:00000000:3bf33216a25546ea</T>
+  <U n="game_effect_modifier">
+    <L n="_game_effect_modifiers">
+      <V t="affordance_modifier">
+        <U n="affordance_modifier">
+          <L n="basic_extras">
+            <V t="loot">
+              <U n="loot">
+                <L n="loot_list">
+                  <T>493036<!--LootActions: loot_Dynasty_RankSentimentChance_HighRanking--></T>
+                </L>
+                <U n="success_chance">
+                  <T n="base_chance">5</T>
+                  <L n="multipliers">
+                    <U>
+                      <T n="multiplier">0.3</T>
+                      <L n="tests">
+                        <L>
+                          <V t="relationship">
+                            <U n="relationship">
+                              <U n="relationship_score_interval">
+                                <T n="upper_bound">10</T>
+                              </U>
+                              <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+                            </U>
+                          </V>
+                        </L>
+                      </L>
+                    </U>
+                    <U>
+                      <T n="multiplier">2</T>
+                      <L n="tests">
+                        <L>
+                          <V t="relationship">
+                            <U n="relationship">
+                              <U n="relationship_score_interval">
+                                <T n="lower_bound">45</T>
+                                <T n="upper_bound">100</T>
+                              </U>
+                              <L n="subject">
+                                <E>Actor</E>
+                              </L>
+                              <L n="target_sim">
+                                <E>TargetSim</E>
+                              </L>
+                              <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+                            </U>
+                          </V>
+                        </L>
+                      </L>
+                    </U>
+                  </L>
+                </U>
+              </U>
+            </V>
+          </L>
+          <L n="interaction_category_blacklist_tags">
+            <E>Interaction_Dynasty_ExcludeFrRankSentimentMod</E>
+          </L>
+          <L n="interaction_category_tags">
+            <E>Interaction_Friendly</E>
+          </L>
+        </U>
+      </V>
+      <V t="affordance_modifier">
+        <U n="affordance_modifier">
+          <L n="basic_extras">
+            <V t="loot">
+              <U n="loot">
+                <L n="loot_list">
+                  <T>493034<!--LootActions: loot_Dynasty_RankSentimentChance_LowRanking--></T>
+                </L>
+                <U n="success_chance">
+                  <T n="base_chance">5</T>
+                  <L n="multipliers">
+                    <U>
+                      <T n="multiplier">3</T>
+                      <L n="tests">
+                        <L>
+                          <V t="relationship">
+                            <U n="relationship">
+                              <U n="relationship_score_interval">
+                                <T n="upper_bound">20</T>
+                              </U>
+                              <L n="subject">
+                                <E>Actor</E>
+                              </L>
+                              <L n="target_sim">
+                                <E>TargetSim</E>
+                              </L>
+                              <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+                            </U>
+                          </V>
+                        </L>
+                      </L>
+                    </U>
+                    <U>
+                      <T n="multiplier">0.1</T>
+                      <L n="tests">
+                        <L>
+                          <V t="relationship">
+                            <U n="relationship">
+                              <U n="relationship_score_interval">
+                                <T n="lower_bound">35</T>
+                                <T n="upper_bound">100</T>
+                              </U>
+                              <L n="subject">
+                                <E>Actor</E>
+                              </L>
+                              <L n="target_sim">
+                                <E>TargetSim</E>
+                              </L>
+                              <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+                            </U>
+                          </V>
+                        </L>
+                      </L>
+                    </U>
+                  </L>
+                </U>
+              </U>
+            </V>
+          </L>
+          <L n="interaction_category_blacklist_tags">
+            <E>Interaction_Dynasty_ExcludeFrRankSentimentMod</E>
+          </L>
+          <L n="interaction_category_tags">
+            <E>Interaction_Friendly</E>
+            <E>Interaction_Mean</E>
+          </L>
+        </U>
+      </V>
+      <V t="affordance_modifier">
+        <U n="affordance_modifier">
+          <L n="basic_extras">
+            <V t="loot">
+              <U n="loot">
+                <L n="loot_list">
+                  <T>499784<!--LootActions: loot_Dynasty_Prestige_AllySocial--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+          <L n="interaction_category_tags">
+            <E>Interaction_Friendly</E>
+          </L>
+        </U>
+      </V>
+      <V t="affordance_modifier">
+        <U n="affordance_modifier">
+          <L n="basic_extras">
+            <V t="loot">
+              <U n="loot">
+                <L n="loot_list">
+                  <T>500038<!--LootActions: loot_Dynasty_Prestige_RivalSocial--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+          <L n="interaction_category_tags">
+            <E>Interaction_Mean</E>
+          </L>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T p="InGame\UI\Icons\Debug\missing_image.png" n="icon">2f7d0004:00000000:30f0846c783606f9</T>
+  <T n="visible">False</T>
+</I>

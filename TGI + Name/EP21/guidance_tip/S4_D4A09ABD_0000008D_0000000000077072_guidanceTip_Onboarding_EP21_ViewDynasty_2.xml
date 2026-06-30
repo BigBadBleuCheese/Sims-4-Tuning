@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="GuidanceTip" i="guidance_tip" m="guidance.guidance_tip" n="guidanceTip_Onboarding_EP21_ViewDynasty_2" s="487538">
+  <L n="activation_rules">
+    <U>
+      <L n="criteria">
+        <U>
+          <V n="criterion" t="game_state">
+            <E n="game_state">LIVE_MODE</E>
+          </V>
+        </U>
+      </L>
+    </U>
+    <U>
+      <L n="criteria">
+        <U>
+          <V n="criterion" t="ui_element_visible">
+            <L n="ui_element_visible">
+              <E>LIVE_DYNASTY_CONF_SKILLS_VIEW</E>
+            </L>
+          </V>
+        </U>
+      </L>
+    </U>
+    <U>
+      <E n="children_condition">OR</E>
+      <L n="criteria">
+        <U>
+          <V n="criterion" t="guidance_tips_satisfied">
+            <L n="guidance_tips_satisfied">
+              <T>487537<!--GuidanceTip: guidanceTip_Onboarding_EP21_ViewDynasty_1--></T>
+            </L>
+          </V>
+        </U>
+        <U>
+          <V n="criterion" t="guidance_tips_satisfied">
+            <L n="guidance_tips_satisfied">
+              <T>487520<!--GuidanceTip: guidanceTip_Onboarding_EP21_CreateDynasty_2--></T>
+            </L>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <T n="auto_select_on_activate">True</T>
+  <L n="options">
+    <U>
+      <U n="actions">
+        <L n="actions_on_activate">
+          <V t="tutorial_tip_group">
+            <T n="tutorial_tip_group">487536<!--TutorialTipGroup: tutorialTipGroup_Onboarding_EP21_ViewDynasty_2--></T>
+          </V>
+        </L>
+        <T n="satisfy_on_action_cancel">True</T>
+        <T n="satisfy_on_action_success">True</T>
+        <T n="satisfy_on_activate">False</T>
+      </U>
+    </U>
+  </L>
+  <T n="satisfy_on_timeout">True</T>
+  <T n="timeout">0</T>
+</I>

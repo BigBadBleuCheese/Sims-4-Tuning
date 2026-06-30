@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="CustomStatesSituation" i="situation" m="situations.custom_states.custom_states_situation" n="situation_EP17World_WaylonWarez" s="387197">
+  <T n="_is_unique">True</T>
+  <L n="_situation_states">
+    <U>
+      <T n="Situation State Key">default</T>
+      <V n="Situation State" t="literal">
+        <U n="literal">
+          <L n="job_and_role_changes">
+            <U>
+              <T n="Situation Job">387195<!--SituationJob: job_EP17World_WaylonWarez--></T>
+              <T n="Role State">387199<!--RoleState: role_EP17World_WaylonWarez_Default--></T>
+            </U>
+          </L>
+          <L n="triggers">
+            <U>
+              <V n="effect" t="change_state">
+                <U n="change_state">
+                  <U n="possible_states">
+                    <L n="possible_state_keys">
+                      <U>
+                        <T n="situation_key">sit</T>
+                      </U>
+                      <U>
+                        <T n="situation_key">tendcrow</T>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+              </V>
+              <L n="triggers">
+                <V t="duration">
+                  <U n="duration">
+                    <U n="duration">
+                      <T n="hours">1</T>
+                      <T n="minutes">30</T>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </U>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <T n="Situation State Key">sit</T>
+      <V n="Situation State" t="literal">
+        <U n="literal">
+          <L n="job_and_role_changes">
+            <U>
+              <T n="Situation Job">387195<!--SituationJob: job_EP17World_WaylonWarez--></T>
+              <T n="Role State">424356<!--RoleState: role_EP17World_WaylonWarez_Sit--></T>
+            </U>
+          </L>
+          <L n="triggers">
+            <U>
+              <V n="effect" t="change_state">
+                <U n="change_state">
+                  <U n="possible_states">
+                    <L n="possible_state_keys">
+                      <U>
+                        <T n="situation_key">default</T>
+                      </U>
+                      <U>
+                        <T n="situation_key">tendcrow</T>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+              </V>
+              <L n="triggers">
+                <V t="duration">
+                  <U n="duration">
+                    <U n="duration">
+                      <T n="minutes">45</T>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </U>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <T n="Situation State Key">start</T>
+      <V n="Situation State" t="literal">
+        <U n="literal">
+          <L n="job_and_role_changes">
+            <U>
+              <T n="Situation Job">387195<!--SituationJob: job_EP17World_WaylonWarez--></T>
+              <T n="Role State">387348<!--RoleState: role_EP17World_WaylonWarez_Start--></T>
+            </U>
+          </L>
+          <L n="triggers">
+            <U>
+              <V n="effect" t="change_state">
+                <U n="change_state">
+                  <U n="possible_states">
+                    <L n="possible_state_keys">
+                      <U>
+                        <T n="situation_key">default</T>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+              </V>
+              <L n="triggers">
+                <V t="duration">
+                  <U n="duration">
+                    <U n="duration">
+                      <T n="minutes">5</T>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </U>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <T n="Situation State Key">tendcrow</T>
+      <V n="Situation State" t="literal">
+        <U n="literal">
+          <L n="job_and_role_changes">
+            <U>
+              <T n="Situation Job">387195<!--SituationJob: job_EP17World_WaylonWarez--></T>
+              <T n="Role State">424357<!--RoleState: role_EP17World_WaylonWarez_TendPetCrow--></T>
+            </U>
+          </L>
+          <L n="triggers">
+            <U>
+              <V n="effect" t="change_state">
+                <U n="change_state">
+                  <U n="possible_states">
+                    <L n="possible_state_keys">
+                      <U>
+                        <T n="situation_key">default</T>
+                      </U>
+                      <U>
+                        <T n="situation_key">sit</T>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+              </V>
+              <L n="triggers">
+                <V t="duration">
+                  <U n="duration">
+                    <U n="duration">
+                      <T n="hours">1</T>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </U>
+          </L>
+        </U>
+      </V>
+    </U>
+  </L>
+  <V n="_starting_state" t="random_starting_state">
+    <U n="random_starting_state">
+      <L n="possible_state_keys">
+        <U>
+          <T n="situation_key">start</T>
+        </U>
+      </L>
+    </U>
+  </V>
+  <T p="InGame\Audio\Bumper\bumper_event_start.propx" n="audio_sting_on_start">39b2aa4a:00000000:78b903461d47e4fc</T>
+  <L n="compatible_venues" />
+  <L n="default_job_and_roles">
+    <U>
+      <T n="Situation Job">387195<!--SituationJob: job_EP17World_WaylonWarez--></T>
+      <T n="Role State">387199<!--RoleState: role_EP17World_WaylonWarez_Default--></T>
+    </U>
+  </L>
+  <T n="duration">1440</T>
+  <T p="InGame\Audio\Bumper\bumper_event_major_complete.propx" n="main_goal_audio_sting">39b2aa4a:00000000:10b476550150a33f</T>
+  <T n="max_participants">20</T>
+  <E n="persistence_option">OPEN_STREETS</E>
+  <V n="situation_end_time_string" t="show_end_time">
+    <T n="show_end_time">0xA3E17143<!--String: "Work day ends at {0.TimeShort}"--></T>
+  </V>
+  <L n="tags">
+    <E>Situation_WaylonWarez</E>
+  </L>
+</I>

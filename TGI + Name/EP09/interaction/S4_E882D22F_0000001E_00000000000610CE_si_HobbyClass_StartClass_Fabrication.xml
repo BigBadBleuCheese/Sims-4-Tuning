@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="si_HobbyClass_StartClass_Fabrication" s="397518">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="cone">
+            <U n="cone">
+              <T n="angle">75</T>
+              <T n="max_radius">2</T>
+              <T n="min_radius">1</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="value" t="facing">
+            <U n="facing">
+              <T n="invert">True</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">75846<!--AnimationElement: Soc_Generic_CallOver_basic--></T>
+      </U>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="payment">
+      <U n="payment">
+        <T n="display_only">True</T>
+        <V n="payment" t="literal">
+          <U n="literal">
+            <U n="cost_modifiers">
+              <L n="multipliers">
+                <U>
+                  <T n="multiplier">1.2</T>
+                  <L n="tests">
+                    <L>
+                      <V t="skill_test">
+                        <U n="skill_test">
+                          <T n="skill">231908<!--Skill: statistic_Skill_AdultMajor_Fabrication--></T>
+                          <V n="skill_range" t="interval">
+                            <U n="interval">
+                              <U n="skill_interval">
+                                <T n="lower_bound">6</T>
+                                <T n="upper_bound">6</T>
+                              </U>
+                            </U>
+                          </V>
+                          <E n="subject">Actor</E>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+                <U>
+                  <T n="multiplier">1.45</T>
+                  <L n="tests">
+                    <L>
+                      <V t="skill_test">
+                        <U n="skill_test">
+                          <T n="skill">231908<!--Skill: statistic_Skill_AdultMajor_Fabrication--></T>
+                          <V n="skill_range" t="interval">
+                            <U n="interval">
+                              <U n="skill_interval">
+                                <T n="lower_bound">7</T>
+                                <T n="upper_bound">7</T>
+                              </U>
+                            </U>
+                          </V>
+                          <E n="subject">Actor</E>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+                <U>
+                  <T n="multiplier">1.8</T>
+                  <L n="tests">
+                    <L>
+                      <V t="skill_test">
+                        <U n="skill_test">
+                          <T n="skill">231908<!--Skill: statistic_Skill_AdultMajor_Fabrication--></T>
+                          <V n="skill_range" t="interval">
+                            <U n="interval">
+                              <U n="skill_interval">
+                                <T n="lower_bound">8</T>
+                                <T n="upper_bound">8</T>
+                              </U>
+                            </U>
+                          </V>
+                          <E n="subject">Actor</E>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+                <U>
+                  <T n="multiplier">2.4</T>
+                  <L n="tests">
+                    <L>
+                      <V t="skill_test">
+                        <U n="skill_test">
+                          <T n="skill">231908<!--Skill: statistic_Skill_AdultMajor_Fabrication--></T>
+                          <V n="skill_range" t="interval">
+                            <U n="interval">
+                              <U n="skill_interval">
+                                <T n="lower_bound">9</T>
+                                <T n="upper_bound">9</T>
+                              </U>
+                            </U>
+                          </V>
+                          <E n="subject">Actor</E>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+                <U>
+                  <T n="multiplier">3</T>
+                  <L n="tests">
+                    <L>
+                      <V t="skill_test">
+                        <U n="skill_test">
+                          <T n="skill">231908<!--Skill: statistic_Skill_AdultMajor_Fabrication--></T>
+                          <V n="skill_range" t="interval">
+                            <U n="interval">
+                              <U n="skill_interval">
+                                <T n="lower_bound">10</T>
+                                <T n="upper_bound">10</T>
+                              </U>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+              </L>
+            </U>
+            <V n="payment_cost" t="amount">
+              <U n="amount">
+                <T n="amount">-120</T>
+              </U>
+            </V>
+            <V n="payment_source" t="household">
+              <U n="household">
+                <V n="gain_string_override" t="enabled">
+                  <T n="enabled">0xCFD4F105<!--String: "{0.String} (+{1.Money}/Attendee)"--></T>
+                </V>
+              </U>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>400580<!--LootActions: loot_HobbyClass_ActiveWhiteboardTag_Apply--></T>
+        </L>
+      </U>
+    </V>
+    <V t="save_participant">
+      <U n="save_participant">
+        <E n="participant">Object</E>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+    <V t="create_situation">
+      <U n="create_situation">
+        <V n="create_situation" t="situation_start">
+          <U n="situation_start">
+            <V n="actor_init_job" t="specify_job">
+              <T n="specify_job">397235<!--SituationJob: job_HobbyClass_Instructor--></T>
+            </V>
+            <V n="linked_sim_participant" t="enabled" />
+            <T n="situation">398031<!--HobbyClassSituation: situation_HobbyClass_Instructor_RocketScience--></T>
+            <V n="situation_default_target" t="enabled" />
+          </U>
+        </V>
+        <V n="timing" t="at_end">
+          <U n="at_end">
+            <E n="criticality">NotCritical</E>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="category">397231<!--PieMenuCategory: pieMenuCategory_EP18_HobbyClassWhiteboard_StartClass--></T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x481E26D1<!--String: "**DEBUG**"--></T>
+  <V n="display_name_overrides" t="testable">
+    <U n="testable">
+      <L n="overrides">
+        <U>
+          <V n="new_display_name" t="enabled">
+            <T n="enabled">0x5A952C4E<!--String: "{2.String} Class"--></T>
+          </V>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="statistic_value">
+        <U n="statistic_value">
+          <T n="statistic">231908<!--Skill: statistic_Skill_AdultMajor_Fabrication--></T>
+          <T n="use_statistic_name">True</T>
+        </U>
+      </V>
+    </L>
+  </U>
+  <V n="dynamic_pie_menu_priority_based_on_skill" t="enabled">
+    <U n="enabled">
+      <T n="priority_skill">231908<!--Skill: statistic_Skill_AdultMajor_Fabrication--></T>
+    </U>
+  </V>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="continuation">
+          <U>
+            <T n="affordance">396386<!--SuperInteraction: sI_HobbyClass_StartLecture_Fabrication--></T>
+          </U>
+        </L>
+      </U>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T n="key" p="InEP09\UI\Icons\PieMenu\PieMenu_Fabrication.png">2f7d0004:00000000:5b3913ef93ce78f7</T>
+      </U>
+    </V>
+  </V>
+  <T n="pie_menu_priority">5</T>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="object_ownership" />
+    <V t="situation_job_test">
+      <U n="situation_job_test">
+        <L n="situation_jobs">
+          <T>399327<!--SituationJob: jobs_SmallBusinessEmployee_Work--></T>
+          <T>401789<!--SituationJob: jobs_SmallBusinessEmployee_Work_Owner--></T>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xDD252809<!--String: "{0.SimFirstName} must be the Owner or an Employee of an open Small Business."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="situation_running_test">
+      <U n="situation_running_test">
+        <L n="tag_blacklist">
+          <E>Situation_HobbyClass</E>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xE1CDD05F<!--String: "Only one Hobby Class can run at a time."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="in_use">
+      <U n="in_use">
+        <T n="negate">True</T>
+        <L n="targets">
+          <E>Object</E>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x6AED330E<!--String: "Whiteboard is already in use."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="can_create_user_facing_situation">
+      <U n="can_create_user_facing_situation">
+        <T n="allow_non_prestige_is_exempt">True</T>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x7BB8AA76<!--String: "Can't start a Class when another Social Event is already running."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="skill_test">
+      <U n="skill_test">
+        <T n="skill">231908<!--Skill: statistic_Skill_AdultMajor_Fabrication--></T>
+        <V n="skill_range" t="interval">
+          <U n="interval">
+            <U n="skill_interval">
+              <T n="lower_bound">5</T>
+            </U>
+          </U>
+        </V>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x12BEDCFB<!--String: "Requires Skill Level 5."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <T n="apply_whitelist_on_individual_basis">False</T>
+        <E n="subject">AllInstancedSims</E>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x556F93A6<!--String: "Class can't be started until a customer has checked in."--></T>
+        </V>
+        <V n="whitelist" t="enabled">
+          <L n="enabled">
+            <T>400877<!--Buff: buff_SmallBusiness_CheckedIn--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">28176<!--TestSetInstance: testSet_EmotionNotStressed--></T>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">28305<!--TestSetInstance: testSet_EmotionNotMiserable--></T>
+    </V>
+    <V t="object_criteria">
+      <U n="object_criteria">
+        <V n="identity_test" t="tags">
+          <U n="tags">
+            <L n="tag_set">
+              <E>Func_Fabricator</E>
+              <E>Func_CandleMakingStation</E>
+            </L>
+          </U>
+        </V>
+        <V n="positional_relationship_test" t="radius_test">
+          <U n="radius_test">
+            <T n="check_same_level">True</T>
+            <T n="radius">9</T>
+          </U>
+        </V>
+        <V n="subject_specific_tests" t="all_objects">
+          <U n="all_objects">
+            <U n="quantity">
+              <T n="value">3</T>
+            </U>
+          </U>
+        </V>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xC0250D01<!--String: "Requires at least 3 Fabricators or Candle Making Stations nearby."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

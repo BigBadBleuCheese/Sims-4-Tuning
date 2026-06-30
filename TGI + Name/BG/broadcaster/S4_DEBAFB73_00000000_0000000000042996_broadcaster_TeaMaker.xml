@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Broadcaster" i="broadcaster" m="broadcasters.broadcaster" n="broadcaster_TeaMaker" s="272790">
+  <L n="constraints">
+    <V t="circle">
+      <U n="circle">
+        <T n="radius">6</T>
+      </U>
+    </V>
+    <V t="line_of_sight" />
+  </L>
+  <L n="effects">
+    <V t="affordance">
+      <U n="affordance">
+        <E n="affordance_priority">High</E>
+        <V n="affordance_run_priority" t="enabled">
+          <E n="enabled">High</E>
+        </V>
+        <L n="affordances">
+          <U>
+            <T n="affordance">76985<!--GrabServingSuperInteraction: teaMaker_Grab--></T>
+          </U>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <L n="blacklist">
+                  <T>10094<!--Buff: buff_Sim_IsSleeping--></T>
+                  <T>355197<!--Buff: buff_Drink_CoffeeTeaCooldown--></T>
+                  <T>275549<!--Buff: buff_Sim_IsSleeping_Hidden--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="frequency" t="on_pulse">
+    <U n="on_pulse">
+      <T n="cooldown_time">20</T>
+    </U>
+  </V>
+</I>

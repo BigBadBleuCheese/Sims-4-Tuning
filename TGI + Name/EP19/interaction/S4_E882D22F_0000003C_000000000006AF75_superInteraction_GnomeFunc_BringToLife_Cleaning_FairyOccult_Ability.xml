@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="superInteraction_GnomeFunc_BringToLife_Cleaning_FairyOccult_Ability" s="438133">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="circle">
+            <U n="circle">
+              <T n="radius">1</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="value" t="facing">
+            <U n="facing">
+              <T n="range">30</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">438142<!--AnimationElement: animations_FairyOccult_Ability_BringGnomeToLife--></T>
+      </U>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>424739<!--LootActions: lootActions_FairyOccult_Ability_Cost_Medium--></T>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>444656<!--LootActions: loot_EP19World_MagicCoastalBroadcaster_Start--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="basic_focus" t="tunable_focus">
+    <U n="tunable_focus">
+      <T n="focus_bone_override">transformBone</T>
+      <T n="layer">5</T>
+      <L n="subject">
+        <E>Object</E>
+      </L>
+    </U>
+  </V>
+  <T n="category">438141<!--PieMenuCategory: pieMenuCategory_GnomeFunc_BringToLife_FairyOccult_Ability--></T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xC9E94B68<!--String: "For Cleaning"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <V n="display_tooltip" t="enabled">
+    <T n="enabled">0xA000C940<!--String: "Gnomes brought to life for cleaning will teleport to dirty items, trash cans, and trash piles to keep your humble abode sparkling clean!\n\nWARNING: Evil Gnomes are watching this prohibitive use of fairy magic. Use with caution lest you anger the Gnome High Council.\n"--></T>
+  </V>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="loot_list">
+          <T>417244<!--LootActions: loot_GnomeFunc_BringToLife_Cleaning--></T>
+        </L>
+      </U>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="include_all">
+        <U n="include_all">
+          <L n="exclude_affordances">
+            <T>271032<!--SuperInteraction: socialSuperInteraction_CarryPickUp_Infant--></T>
+            <T>134423<!--SuperInteraction: socialSuperInteraction_CarryPickUp--></T>
+            <T>132162<!--SuperInteraction: socialSuperInteraction_CarryPickUp_Pet--></T>
+            <T>132170<!--HoldObject: carry_HoldSim--></T>
+            <T>271209<!--HoldObject: carry_HoldSim_Back--></T>
+            <T>271090<!--SuperInteraction: socialSuperInteraction_CarryPickUp_Infant_Back--></T>
+            <T>288662<!--SuperInteraction: socialSuperInteraction_CarryPickUp_Infant_Handoff--></T>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="holiday_tradition">
+      <U n="holiday_tradition">
+        <U n="tradition_filter">
+          <V n="blacklist" t="specify">
+            <U n="specify">
+              <L n="blacklist">
+                <T>182136<!--HolidayTradition: holidayTradition_GiveGiftToGnomes--></T>
+              </L>
+            </U>
+          </V>
+        </U>
+      </U>
+    </V>
+    <V t="bucks_perks_test">
+      <U n="bucks_perks_test">
+        <T n="bucks_perk">437360<!--BucksPerk: fairyPerks_BringGnomesToLife--></T>
+      </U>
+    </V>
+    <V t="state">
+      <U n="state">
+        <E n="operator">EQUAL</E>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x580391FB<!--String: "This Gnome has already been brought to life! Wait for it to finish its work!"--></T>
+        </V>
+        <T n="value">419126<!--ObjectStateValue: gnomeFuncStates_BringToLife_Dead--></T>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">436907<!--TestSetInstance: testSetInstance_FairyOccult_Ability_EmotionalAppetite_Cost_Medium--></T>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

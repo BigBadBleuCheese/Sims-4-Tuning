@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="mailbox_APM_PostFine" s="349098">
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Object</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.75</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">11572<!--AnimationElement: Mailbox_MailLetter--></T>
+        <U n="overrides">
+          <L n="props">
+            <U>
+              <T n="key">letter</T>
+              <U n="value">
+                <T n="definition">71829</T>
+              </U>
+            </U>
+          </L>
+        </U>
+      </U>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="buff_fire_and_forget">
+      <U n="buff_fire_and_forget">
+        <U n="buff">
+          <T n="buff_type">359215<!--Buff: buff_APM_PostFineCooldown--></T>
+        </U>
+      </U>
+    </V>
+  </L>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x14C56316<!--String: "Post Fine"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="loot_list">
+                  <T>349432<!--LootActions: loot_APM_PostFine_RuleBreakNoise--></T>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="match_tuning_reference">
+                <U n="match_tuning_reference">
+                  <V n="test_type" t="check_match_rule">
+                    <U n="check_match_rule">
+                      <T n="rule_to_match">348401<!--BusinessRule: Rule_PMI_LoudNoises--></T>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="loot_list">
+                  <T>349433<!--LootActions: loot_APM_PostFine_RuleBreakSocialEvent--></T>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="match_tuning_reference">
+                <U n="match_tuning_reference">
+                  <V n="test_type" t="check_match_rule">
+                    <U n="check_match_rule">
+                      <T n="rule_to_match">348400<!--BusinessRule: Rule_PMI_NoEvents--></T>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="loot_list">
+                  <T>349434<!--LootActions: loot_APM_PostFine_RuleBreakTrash--></T>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="match_tuning_reference">
+                <U n="match_tuning_reference">
+                  <V n="test_type" t="check_match_rule">
+                    <U n="check_match_rule">
+                      <T n="rule_to_match">343562<!--BusinessRule: Rule_PMI_NoTrash--></T>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="loot_list">
+                  <T>353812<!--LootActions: loot_APM_PostFine_RuleBreakGhosts--></T>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="match_tuning_reference">
+                <U n="match_tuning_reference">
+                  <V n="test_type" t="check_match_rule">
+                    <U n="check_match_rule">
+                      <T n="rule_to_match">348397<!--BusinessRule: Rule_PMI_NoGhosts--></T>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="loot_list">
+                  <T>353816<!--LootActions: loot_APM_PostFine_RuleBreakHousehold--></T>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="match_tuning_reference">
+                <U n="match_tuning_reference">
+                  <V n="test_type" t="check_match_rule">
+                    <U n="check_match_rule">
+                      <T n="rule_to_match">347342<!--BusinessRule: Rule_PMI_MaxHousehold--></T>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="loot_list">
+                  <T>353815<!--LootActions: loot_APM_PostFine_RuleBreakPets--></T>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="match_tuning_reference">
+                <U n="match_tuning_reference">
+                  <V n="test_type" t="check_match_rule">
+                    <U n="check_match_rule">
+                      <T n="rule_to_match">352253<!--BusinessRule: Rule_PMI_NoPets_EP04--></T>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <V n="route_start_balloon" t="enabled">
+    <U n="enabled">
+      <U n="balloon">
+        <L n="balloon_choices">
+          <U>
+            <V n="item" t="balloon_icon">
+              <U n="balloon_icon">
+                <V n="icon" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>Object</E>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </U>
+        </L>
+        <L n="balloon_target">
+          <E>Actor</E>
+        </L>
+      </U>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="object_criteria">
+      <U n="object_criteria">
+        <V n="identity_test" t="tags">
+          <U n="tags">
+            <L n="tag_set">
+              <E>Func_MailBoxGround</E>
+            </L>
+          </U>
+        </V>
+        <T n="on_active_lot">True</T>
+        <T n="owned">False</T>
+        <V n="subject_specific_tests" t="single_object" />
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">5</T>
+  <T n="visible">True</T>
+</I>

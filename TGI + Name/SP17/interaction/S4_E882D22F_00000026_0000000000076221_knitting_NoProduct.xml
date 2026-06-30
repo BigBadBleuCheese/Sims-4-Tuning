@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="knitting_NoProduct" s="483873">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="circle">
+            <U n="circle">
+              <T n="ideal_radius">3.5</T>
+              <T n="ideal_radius_width">2</T>
+              <T n="radius">10</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <L n="_static_commodities">
+    <U>
+      <T n="static_commodity">377252<!--StaticCommodity: staticCommodity_BuildSkill_MasteryPerk_SkillfulSleepClone--></T>
+    </U>
+    <U>
+      <T n="static_commodity">397401<!--StaticCommodity: staticCommodity_Knitting_Knit_NPC--></T>
+    </U>
+  </L>
+  <T n="allow_user_directed">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="time_based">
+                <U n="time_based">
+                  <T n="max_time">150</T>
+                  <T n="min_time">90</T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="buff_based">
+                <U n="buff_based">
+                  <T n="buff">226416<!--Buff: buff_Generic_CancelInteraction--></T>
+                  <E n="timing">HAS_BUFF</E>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_CANCEL</E>
+          </U>
+        </V>
+      </L>
+      <V n="content" t="looping_content">
+        <U n="looping_content">
+          <U n="animation_ref">
+            <T n="factory">240520<!--AnimationElement: knitting_Knit--></T>
+          </U>
+        </U>
+      </V>
+    </U>
+  </V>
+  <V n="basic_reserve_object" t="disabled" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xA006303F<!--String: "Knitting"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <L n="joinable">
+    <U>
+      <V n="invite_available" t="enabled">
+        <U n="enabled">
+          <V n="loc_custom_invite_name" t="enabled">
+            <T n="enabled">0xF80506D0<!--String: "{0.String}"--></T>
+          </V>
+          <T n="use_proxied_affordance_name">True</T>
+        </U>
+      </V>
+      <V n="join_affordance" t="affordance">
+        <U n="affordance">
+          <V n="value" t="custom">
+            <T n="custom">245598<!--SuperInteraction: mentor_Knitting--></T>
+          </V>
+        </U>
+      </V>
+      <V n="join_available" t="enabled">
+        <U n="enabled">
+          <V n="loc_custom_join_name" t="enabled">
+            <T n="enabled">0xF80506D0<!--String: "{0.String}"--></T>
+          </V>
+        </U>
+      </V>
+      <E n="join_target">Actor</E>
+      <T n="link_joinable">True</T>
+    </U>
+    <U>
+      <V n="invite_available" t="enabled">
+        <U n="enabled">
+          <V n="loc_custom_invite_name" t="enabled">
+            <T n="enabled">0xF80506D0<!--String: "{0.String}"--></T>
+          </V>
+          <T n="use_proxied_affordance_name">True</T>
+        </U>
+      </V>
+      <V n="join_affordance" t="affordance">
+        <U n="affordance">
+          <V n="value" t="custom">
+            <T n="custom">487378<!--SuperInteraction: mentor_Knitting_Getaway--></T>
+          </V>
+        </U>
+      </V>
+      <V n="join_available" t="enabled">
+        <U n="enabled">
+          <V n="loc_custom_join_name" t="enabled">
+            <T n="enabled">0xF80506D0<!--String: "{0.String}"--></T>
+          </V>
+        </U>
+      </V>
+      <E n="join_target">Actor</E>
+      <T n="link_joinable">True</T>
+    </U>
+  </L>
+  <U n="posture_preferences">
+    <T n="apply_posture_costs">True</T>
+    <L n="posture_cost_overrides">
+      <U>
+        <T n="key">15527<!--Posture: posture_Kneel--></T>
+        <T n="value">5</T>
+      </U>
+      <U>
+        <T n="key">15535<!--Posture: posture_Sit--></T>
+      </U>
+    </L>
+  </U>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="test_set_reference">
+        <T n="test_set_reference">126907<!--TestSetInstance: testSetInstance_InteractionIsEncouragedByClubOrCustomerRulesOrHobbyClassOrDynasty--></T>
+      </V>
+    </L>
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <V n="whitelist" t="enabled">
+            <L n="enabled">
+              <T>377847<!--Buff: buff_MasteryPerk_Hidden_SkillfulSleep_Clone--></T>
+              <T>401393<!--Buff: buff_Role_HobbyMeetup_Creative--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="test_set_reference">
+        <T n="test_set_reference">483388<!--TestSetInstance: testSetInstance_Getaways_IsInteractionEncouraged--></T>
+      </V>
+    </L>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

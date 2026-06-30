@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Buff" i="buff" m="buffs.buff" n="buff_Fear_BeingAlone_Effects_Alone" s="366274">
+  <V n="_add_test_set" t="tests_set">
+    <L n="tests_set">
+      <L>
+        <V t="existence">
+          <U n="existence">
+            <E n="participant">Actor</E>
+          </U>
+        </V>
+        <V t="mood">
+          <U n="mood">
+            <T n="disallow">True</T>
+            <T n="mood">27149<!--Mood: Mood_Asleep--></T>
+          </U>
+        </V>
+        <V t="trait">
+          <U n="trait">
+            <L n="whitelist_traits">
+              <T>364229<!--Trait: trait_Fear_BeingAlone--></T>
+            </L>
+          </U>
+        </V>
+      </L>
+    </L>
+  </V>
+  <V n="_temporary_commodity_info" t="enabled">
+    <U n="enabled">
+      <L n="categories">
+        <E>NegativeFromRomance_Buffs</E>
+      </L>
+    </U>
+  </V>
+  <T p="InGame\Audio\Stings\sting_buff_gain.propx" n="audio_sting_on_add">39b2aa4a:00000000:8af8b916cf64c646</T>
+  <T p="InGame\Audio\Stings\sting_buff_loss.propx" n="audio_sting_on_remove">39b2aa4a:00000000:3bf33216a25546ea</T>
+  <U n="game_effect_modifier">
+    <L n="_game_effect_modifiers">
+      <V t="continuous_statistic_modifier">
+        <U n="continuous_statistic_modifier">
+          <T n="modifier_value">-10</T>
+          <T n="statistic">365598<!--Commodity: commodity_Fear_BeingAlone_SolitudeTracker--></T>
+        </U>
+      </V>
+      <V t="autonomy_modifier">
+        <U n="autonomy_modifier">
+          <L n="decay_modifiers">
+            <U>
+              <T n="key">365598<!--Commodity: commodity_Fear_BeingAlone_SolitudeTracker--></T>
+            </U>
+          </L>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T p="InGame\UI\Icons\Debug\missing_image.png" n="icon">2f7d0004:00000000:30f0846c783606f9</T>
+  <L n="tags">
+    <E>Buff_NegativeFromRomance</E>
+  </L>
+  <T n="visible">False</T>
+</I>

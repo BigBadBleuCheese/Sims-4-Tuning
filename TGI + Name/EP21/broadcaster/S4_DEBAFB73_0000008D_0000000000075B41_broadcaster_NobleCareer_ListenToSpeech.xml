@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Broadcaster" i="broadcaster" m="broadcasters.broadcaster" n="broadcaster_NobleCareer_ListenToSpeech" s="482113">
+  <V n="allow_sim_test" t="enabled">
+    <L n="enabled">
+      <L>
+        <V t="mood">
+          <U n="mood">
+            <T n="disallow">True</T>
+            <T n="mood">201531<!--Mood: Mood_Possessed--></T>
+          </U>
+        </V>
+        <V t="test_set_reference">
+          <T n="test_set_reference">202221<!--TestSetInstance: testSetInstance_ImportantJobTest--></T>
+        </V>
+      </L>
+    </L>
+  </V>
+  <L n="constraints">
+    <V t="circle">
+      <U n="circle">
+        <T n="radius">10</T>
+      </U>
+    </V>
+  </L>
+  <L n="effects">
+    <V t="affordance">
+      <U n="affordance">
+        <E n="affordance_priority">High</E>
+        <L n="affordances">
+          <U>
+            <T n="affordance">482110<!--SuperInteraction: sI_NobleCareer_NobleEvents_ListenToSpeech--></T>
+          </U>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="participant_running_interaction">
+              <U n="participant_running_interaction">
+                <L n="affordances">
+                  <T>482110<!--SuperInteraction: sI_NobleCareer_NobleEvents_ListenToSpeech--></T>
+                  <T>480948<!--SuperInteraction: sI_NobleCareer_HoldPressConference_GiveNobleSpeech--></T>
+                  <T>502704<!--SuperInteraction: sI_NobleCareer_PressConference_SpeechStart--></T>
+                  <T>502819<!--SuperInteraction: sI_NobleCareer_PressConference_SpeechPreWatch--></T>
+                </L>
+                <T n="test_for_not_running">True</T>
+                <T n="test_interaction_queue">True</T>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="frequency" t="on_pulse">
+    <U n="on_pulse">
+      <T n="cooldown_time">8</T>
+    </U>
+  </V>
+</I>

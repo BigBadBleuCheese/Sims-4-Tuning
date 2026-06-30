@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Infant_WiggleToMusic_Trigger" s="317596">
+  <L n="loot_actions">
+    <V t="reaction">
+      <U n="reaction">
+        <U n="chance">
+          <T n="base_chance">25</T>
+          <L n="multipliers">
+            <U>
+              <T n="multiplier">2</T>
+              <L n="tests">
+                <L>
+                  <V t="trait">
+                    <U n="trait">
+                      <L n="whitelist_traits">
+                        <T>273760<!--Trait: trait_Infant_Wiggly--></T>
+                      </L>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+          </L>
+        </U>
+        <V n="si_reaction" t="enabled">
+          <U n="enabled">
+            <T n="affordance">317594<!--CancelOnStateChangeInteraction: infant_WiggleToMusic--></T>
+            <V n="affordance_target" t="enabled">
+              <E n="enabled">Object</E>
+            </V>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="user_running_interaction">
+              <U n="user_running_interaction">
+                <L n="affordances">
+                  <T>317594<!--CancelOnStateChangeInteraction: infant_WiggleToMusic--></T>
+                </L>
+                <E n="participant">Actor</E>
+                <T n="test_for_not_running">True</T>
+              </U>
+            </V>
+            <V t="posture">
+              <U n="posture">
+                <L n="required_postures">
+                  <T>15537<!--MobilePosture: posture_Stand--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">335336<!--Buff: buff_Infant_WiggleToMudic_CD--></T>
+        </U>
+        <U n="chance">
+          <L n="multipliers">
+            <U>
+              <T n="multiplier">0</T>
+              <L n="tests">
+                <L>
+                  <V t="trait">
+                    <U n="trait">
+                      <L n="whitelist_traits">
+                        <T>273760<!--Trait: trait_Infant_Wiggly--></T>
+                      </L>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+          </L>
+        </U>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>335336<!--Buff: buff_Infant_WiggleToMudic_CD--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

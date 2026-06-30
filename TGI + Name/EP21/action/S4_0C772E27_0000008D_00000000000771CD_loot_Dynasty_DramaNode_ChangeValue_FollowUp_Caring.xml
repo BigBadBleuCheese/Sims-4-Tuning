@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Dynasty_DramaNode_ChangeValue_FollowUp_Caring" s="487885">
+  <L n="loot_actions">
+    <V t="looping_loot_ops_with_target">
+      <U n="looping_loot_ops_with_target">
+        <L n="loots_to_apply">
+          <T>487930<!--LootActions: loot_Dynasty_DramaNode_ChangeValue_Success--></T>
+        </L>
+        <E n="subject">ActorDynastyMembers</E>
+        <L n="tests">
+          <L>
+            <V t="dynasty_value">
+              <U n="dynasty_value">
+                <V n="test_type" t="has_dynasty_value">
+                  <U n="has_dynasty_value">
+                    <T n="dynasty_value">467902<!--DynastyValue: dynastyValue_Ideal_Caring--></T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="looping_loot_ops_with_target">
+      <U n="looping_loot_ops_with_target">
+        <L n="loots_to_apply">
+          <T>487931<!--LootActions: loot_Dynasty_DramaNode_ChangeValue_Failure--></T>
+        </L>
+        <E n="subject">ActorDynastyMembers</E>
+        <L n="tests">
+          <L>
+            <V t="dynasty_value">
+              <U n="dynasty_value">
+                <T n="negate">True</T>
+                <V n="test_type" t="has_dynasty_value">
+                  <U n="has_dynasty_value">
+                    <T n="dynasty_value">467902<!--DynastyValue: dynastyValue_Ideal_Caring--></T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

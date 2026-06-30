@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="DialogDramaNode" i="drama_node" m="drama_scheduler.dialog_drama_node" n="dialogDramaNode_ChildhoodSentiment_NepoTime" s="449005">
+  <V n="cooldown_data" t="node_cooldown">
+    <U n="node_cooldown">
+      <V n="duration" t="permanent" />
+    </U>
+  </V>
+  <V n="dialog_and_loot" t="dialog_ok_cancel">
+    <U n="dialog_ok_cancel">
+      <U n="dialog">
+        <V n="icon" t="enabled">
+          <V n="enabled" t="participant" />
+        </V>
+        <V n="secondary_icon" t="enabled">
+          <V n="enabled" t="participant">
+            <U n="participant">
+              <L n="participant_type">
+                <E>TargetSim</E>
+              </L>
+            </U>
+          </V>
+        </V>
+        <V n="text" t="single">
+          <T n="single">0xCEE798D9<!--String: "Hey {0.SimFirstName}! Remember me? {1.SimName}! From the old friend group, y'know? Have I got an offer for you! It's too good to refuse, I promise. I want you to join me in this super cool career, <i>tons</i> of good experience to be had. The only catch is, I'm, uh, sort of legally <b>not allowed to tell you what the job is</b> before you sign the contract. But trust me, I <i>swear</i> you won't regret taking the leap, old pal! And you strike me as the kind of Sim that's willing to take a good risk, am I right?"--></T>
+        </V>
+        <T n="text_cancel">0x81C99905<!--String: "You're Wrong."--></T>
+        <T n="text_ok">0x9458101<!--String: "You're Right! I'll take the job!"--></T>
+        <V n="title" t="enabled">
+          <T n="enabled">0x917C1A0B<!--String: "Nepo Time, Baby!"--></T>
+        </V>
+      </U>
+      <L n="on_dialog_accepted_loot_list">
+        <T>463490<!--LootActions: loot_ChildhoodSentiment_Response_NepoTime_Pos--></T>
+      </L>
+      <L n="on_dialog_canceled_loot_list">
+        <T>463491<!--LootActions: loot_ChildhoodSentiment_Response_NepoTime_Neg--></T>
+      </L>
+    </U>
+  </V>
+  <U n="min_and_max_times">
+    <T n="upper_bound">12</T>
+  </U>
+  <L n="pretests">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified">
+            <L n="specified">
+              <E>TEEN</E>
+              <E>YOUNGADULT</E>
+              <E>ADULT</E>
+              <E>ELDER</E>
+            </L>
+          </V>
+          <E n="who">TargetSim</E>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="reschedule_on_failed_tests" t="reschedule" />
+  <V n="sender_sim_info" t="participant_type">
+    <U n="participant_type">
+      <E n="participant_type">TargetSim</E>
+    </U>
+  </V>
+  <E n="sender_sim_info_type">INSTANCED_ALLOWED</E>
+  <V n="time_option" t="schedule">
+    <U n="schedule">
+      <L n="valid_times">
+        <U>
+          <U n="days_available">
+            <T n="0 SUNDAY">True</T>
+            <T n="1 MONDAY">True</T>
+            <T n="2 TUESDAY">True</T>
+            <T n="3 WEDNESDAY">True</T>
+            <T n="4 THURSDAY">True</T>
+            <T n="5 FRIDAY">True</T>
+            <T n="6 SATURDAY">True</T>
+          </U>
+          <T n="duration">24</T>
+        </U>
+      </L>
+    </U>
+  </V>
+</I>

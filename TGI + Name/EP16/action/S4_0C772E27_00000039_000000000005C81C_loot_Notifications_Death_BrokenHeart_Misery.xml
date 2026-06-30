@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Notifications_Death_BrokenHeart_Misery" s="378908">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x2A8BF629<!--String: "(From Broken Heart)"--></T>
+          </V>
+          <T n="buff_type">377367<!--Buff: buff_Death_BrokenHeart_Misery--></T>
+        </U>
+      </U>
+    </V>
+    <V t="buff_removal">
+      <U n="buff_removal">
+        <L n="buffs_to_remove">
+          <T>377366<!--Buff: buff_Death_BrokenHeart_Sorrow--></T>
+        </L>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant" />
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x9D1AAD41<!--String: "{0.SimFirstName} has experienced a lot of turmoil in {0.SimPronounPossessiveIndependent} romantic life; if {0.SimFirstName} doesn't take safety measures, this could result in {0.SimPronounPossessiveIndependent} death by a broken heart. Until this sad mood passes, stay away from rejection, jealousy, horrible dates, depressed eating, and bad breakups.\n\nIf {0.SimFirstName} is already in a relationship, {0.SimPronounSubjective} might want to consider relationship counseling. Otherwise, try working on {0.SimFirstName}'s romance skills, or crying it out."--></T>
+            </V>
+            <E n="urgency">URGENT</E>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>377367<!--Buff: buff_Death_BrokenHeart_Misery--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_trait_types">
+            <E>GHOST</E>
+          </L>
+          <L n="blacklist_traits">
+            <T>149527<!--Trait: trait_OccultVampire--></T>
+            <T>34317<!--Trait: trait_teen--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

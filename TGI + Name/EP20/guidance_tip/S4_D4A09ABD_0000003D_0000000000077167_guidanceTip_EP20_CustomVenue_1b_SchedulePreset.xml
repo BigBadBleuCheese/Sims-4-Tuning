@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="GuidanceTip" i="guidance_tip" m="guidance.guidance_tip" n="guidanceTip_EP20_CustomVenue_1b_SchedulePreset" s="487783">
+  <L n="activation_rules">
+    <U>
+      <L n="criteria">
+        <U>
+          <V n="criterion" t="game_option_setting">
+            <U n="game_option_setting">
+              <T n="setting_name">PackGuidanceEnabled</T>
+              <T n="setting_value">1</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="criterion" t="game_option_setting">
+            <U n="game_option_setting">
+              <T n="setting_name">GuidancePack</T>
+              <T n="setting_value">2</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+    <U>
+      <L n="criteria">
+        <U>
+          <V n="criterion" t="guidance_tips_satisfied">
+            <L n="guidance_tips_satisfied">
+              <T>478911<!--GuidanceTip: guidanceTip_EP20_CustomVenue_1_NewLotType--></T>
+            </L>
+          </V>
+        </U>
+      </L>
+    </U>
+    <U>
+      <L n="criteria">
+        <U>
+          <V n="criterion" t="game_state">
+            <E n="game_state">BUILD_BUY</E>
+          </V>
+        </U>
+        <U>
+          <V n="criterion" t="ui_element_visible">
+            <L n="ui_element_visible">
+              <E>BB_CUSTOM_VENUE</E>
+            </L>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <T n="auto_select_on_activate">True</T>
+  <L n="options">
+    <U>
+      <U n="actions">
+        <L n="actions_on_activate">
+          <V t="tutorial_tip_group">
+            <T n="tutorial_tip_group">487784<!--TutorialTipGroup: tutorialTipGroup_EP20_CustomVenues_BuildBuy_1b--></T>
+          </V>
+        </L>
+        <L n="actions_on_cancel">
+          <V t="satisfy_guidance_item_group">
+            <T n="satisfy_guidance_item_group">479616<!--GuidanceTipGroup: guidanceTipGroup_CustomVenues_BuildBuyGroup--></T>
+          </V>
+          <V t="activate_guidance_item">
+            <T n="activate_guidance_item">487650<!--GuidanceTip: guidanceTip_EP20_CustomVenue_8_Reminder--></T>
+          </V>
+        </L>
+        <T n="satisfy_on_action_cancel">True</T>
+        <T n="satisfy_on_activate">False</T>
+      </U>
+    </U>
+  </L>
+  <T n="satisfy_on_timeout">True</T>
+  <T n="timeout">0</T>
+</I>

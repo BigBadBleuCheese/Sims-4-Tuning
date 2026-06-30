@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalObjectInteraction" i="situation_goal" m="situations.situation_goal_object_interaction" n="r5Event_ObjectInteraction_TelescopeLookForSigns" s="443093">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T p="InGame\UI\Icons\Headlines\Final\icon_headline_planetsaturn.png" n="enabled">2f7d0004:00000000:d1b0b2c5493d2aa3</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0xBE19D15A<!--String: "Use the Telescope to Look for Signs"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0xA3D9B682<!--String: "Maybe the answer is in the stars? Select a telescope and choose Look for Signs.\n\nSelect to learn more."--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>447711<!--SituationGoalLootActions: liveEvent_GoalLoot_CompleteQuestGoal--></T>
+  </L>
+  <U n="_goal_test">
+    <L n="affordances">
+      <T>443524<!--SuperInteraction: Telescope_Small_R5Event_LookForSigns--></T>
+      <T>443525<!--SuperInteraction: Telescope_R5Event_LookForSigns--></T>
+    </L>
+    <V n="running_time" t="enabled">
+      <T n="enabled">15</T>
+    </V>
+    <E n="test_event">InteractionUpdate</E>
+  </U>
+  <L n="_post_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+      </U>
+    </V>
+  </L>
+  <T p="" n="audio_sting_on_complete" />
+  <V n="goal_completion_notification" t="enabled">
+    <U n="enabled">
+      <V n="audio_sting" t="enabled">
+        <U n="enabled">
+          <T n="audio" p="InGame\Audio\music\bumpers\bumper_ef63_event_rumble.propx">39b2aa4a:00000000:a210d75164cfda0a</T>
+          <T n="immediate_audio">True</T>
+        </U>
+      </V>
+      <V n="audio_sting_owner" t="enabled" />
+      <V n="icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T n="key" p="InGame\UI\Icons\Headlines\Events\headline_NatureEvent_50x50.png">2f7d0004:00000000:9d935d64bf26de30</T>
+          </U>
+        </V>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0xADB34754<!--String: "A deep, rumbling voice seems to rise from the earth itself—<i>Tread carefully, for some secrets are deeply buried for a reason. The path ahead may lead to unforeseen consequences. Heed the warnings of the land.</i>"--></T>
+      </V>
+    </U>
+  </V>
+  <V n="tutorial_tip_group" t="enabled">
+    <T n="enabled">448163<!--TutorialTipGroup: tutorialTipGroup_LiveEvent_R5Event_LookForSigns--></T>
+  </V>
+</I>

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="AttractionPreference" i="trait" m="traits.attraction_preference" n="trait_Attraction_Activities_Slacker_TurnOn" s="365742">
+  <L n="ages">
+    <E>TEEN</E>
+    <E>ADULT</E>
+    <E>ELDER</E>
+    <E>YOUNGADULT</E>
+  </L>
+  <U n="attraction_modifier">
+    <L n="modifiers">
+      <U>
+        <T n="modifier">20</T>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <E n="subject">TargetSim</E>
+                <L n="whitelist_traits">
+                  <T>9599<!--Trait: trait_Lazy--></T>
+                </L>
+              </U>
+            </V>
+            <V t="knowledge">
+              <U n="knowledge">
+                <L n="required_traits">
+                  <T>9599<!--Trait: trait_Lazy--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+          <L>
+            <V t="career_test">
+              <U n="career_test">
+                <T n="negate">False</T>
+                <E n="subjects">TargetSim</E>
+                <V n="test_type" t="has_career">
+                  <U n="has_career">
+                    <T n="has_career">False</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="knowledge">
+              <U n="knowledge">
+                <V n="career_knowledge_requirement" t="knows_about_career" />
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </L>
+  </U>
+  <L n="buffs">
+    <U>
+      <T n="buff_type">365340<!--Buff: buff_Attraction_HasTurnOn--></T>
+    </U>
+  </L>
+  <T n="cas_trait_asm_param">PositiveReactions</T>
+  <L n="conflicting_traits">
+    <T>365743<!--AttractionPreference: trait_Attraction_Activities_Slacker_TurnOff--></T>
+  </L>
+  <T n="display_name">0x6BAD38F8<!--String: "Slackers"--></T>
+  <T n="display_name_gender_neutral">0x610B83A0<!--String: "Slackers"--></T>
+  <T p="InEP16\UI\Icons\CAS\Traits\Preferences\traits_Slacker.png" n="icon">2f7d0004:00000000:e36a6a1973ab7b0e</T>
+  <T n="persistable">True</T>
+  <T n="preference_item">365687<!--AttractionPreferenceItem: preferenceItem_Attraction_Activities_Slacker--></T>
+  <L n="species">
+    <E />
+  </L>
+  <T n="trait_description">0xE40E8E7F<!--String: "Slacker"--></T>
+  <E n="trait_type">LIKE</E>
+</I>

@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="CustomStatesSituation" i="situation" m="situations.custom_states.custom_states_situation" n="situation_Dynasty_NPCVisit_BlackSheepUndeclare" s="479807">
+  <L n="_situation_states">
+    <U>
+      <T n="Situation State Key">DoAction</T>
+      <V n="Situation State" t="literal">
+        <U n="literal">
+          <L n="job_and_role_changes">
+            <U>
+              <T n="Situation Job">388352<!--SituationJob: jobs_NPCInvites_NPC_BlankFilter--></T>
+              <T n="Role State">479806<!--RoleState: role_NPCInvite_Dynasty_BlackSheepUndeclare--></T>
+            </U>
+          </L>
+          <L n="triggers">
+            <U>
+              <V n="effect" t="end_situation" />
+              <L n="triggers">
+                <V t="duration">
+                  <U n="duration">
+                    <U n="duration">
+                      <T n="hours">4</T>
+                    </U>
+                  </U>
+                </V>
+                <V t="test_event">
+                  <U n="test_event">
+                    <V n="test" t="ran_interaction_test">
+                      <U n="ran_interaction_test">
+                        <L n="affordances">
+                          <T>479164<!--SocialMixerInteraction: socialMixer_Dynasty_Internal_Titles_BlackSheepUndeclare--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </U>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <T n="Situation State Key">KnockWait</T>
+      <V n="Situation State" t="literal">
+        <U n="literal">
+          <L n="job_and_role_changes">
+            <U>
+              <T n="Situation Job">388352<!--SituationJob: jobs_NPCInvites_NPC_BlankFilter--></T>
+              <T n="Role State">360464<!--RoleState: role_NPCVisit_KnockOnDoor--></T>
+            </U>
+          </L>
+          <L n="triggers">
+            <U>
+              <V n="effect" t="end_situation" />
+              <L n="triggers">
+                <V t="duration">
+                  <U n="duration">
+                    <U n="duration">
+                      <T n="hours">1</T>
+                      <T n="minutes">0</T>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </U>
+            <U>
+              <V n="effect" t="change_state">
+                <U n="change_state">
+                  <U n="possible_states">
+                    <L n="possible_state_keys">
+                      <U>
+                        <T n="situation_key">DoAction</T>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+              </V>
+              <L n="triggers">
+                <V t="test_event">
+                  <U n="test_event">
+                    <T n="only_trigger_for_situation_sims">False</T>
+                    <V n="test" t="ran_interaction_test">
+                      <U n="ran_interaction_test">
+                        <L n="affordances">
+                          <T>234517<!--SocialSuperInteraction: sim_InviteIn_NoSummon_NoEnterFrontDoor--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </U>
+            <U>
+              <V n="effect" t="change_state">
+                <U n="change_state">
+                  <U n="possible_states">
+                    <L n="possible_state_keys">
+                      <U>
+                        <T n="situation_key">WaitForInvite</T>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+              </V>
+              <L n="triggers">
+                <V t="test_event">
+                  <U n="test_event">
+                    <T n="only_trigger_for_situation_sims">False</T>
+                    <V n="test" t="ran_interaction_test">
+                      <U n="ran_interaction_test">
+                        <L n="affordances">
+                          <T>25211<!--SuperInteraction: door_RingDoorbell--></T>
+                          <T>201065<!--SuperInteraction: door_RingDoorbell_Sliding--></T>
+                          <T>139307<!--SuperInteraction: door_Apartment_NPCRingDoorbell--></T>
+                        </L>
+                        <E n="test_event">InteractionStart</E>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </U>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <T n="Situation State Key">MailboxWait</T>
+      <V n="Situation State" t="literal">
+        <U n="literal">
+          <L n="job_and_role_changes">
+            <U>
+              <T n="Situation Job">388352<!--SituationJob: jobs_NPCInvites_NPC_BlankFilter--></T>
+              <T n="Role State">345139<!--RoleState: role_NPCVisit_WaitAtMailbox--></T>
+            </U>
+          </L>
+          <L n="triggers">
+            <U>
+              <V n="effect" t="end_situation" />
+              <L n="triggers">
+                <V t="duration">
+                  <U n="duration">
+                    <U n="duration">
+                      <T n="minutes">30</T>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </U>
+            <U>
+              <V n="effect" t="change_state">
+                <U n="change_state">
+                  <U n="possible_states">
+                    <L n="possible_state_keys">
+                      <U>
+                        <T n="situation_key">DoAction</T>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+              </V>
+              <L n="triggers">
+                <V t="test_event">
+                  <U n="test_event">
+                    <V n="test" t="ran_interaction_test">
+                      <U n="ran_interaction_test">
+                        <L n="affordances">
+                          <T>234517<!--SocialSuperInteraction: sim_InviteIn_NoSummon_NoEnterFrontDoor--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </U>
+            <U>
+              <V n="effect" t="change_state">
+                <U n="change_state">
+                  <U n="possible_states">
+                    <L n="possible_state_keys">
+                      <U>
+                        <T n="situation_key">WaitForInvite</T>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+              </V>
+              <L n="triggers">
+                <V t="test_event">
+                  <U n="test_event">
+                    <V n="test" t="ran_interaction_test">
+                      <U n="ran_interaction_test">
+                        <L n="affordances">
+                          <T>24821<!--SuperInteraction: mailbox_visit--></T>
+                        </L>
+                        <E n="test_event">InteractionStart</E>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </U>
+          </L>
+        </U>
+      </V>
+    </U>
+    <U>
+      <T n="Situation State Key">WaitForInvite</T>
+      <V n="Situation State" t="literal">
+        <U n="literal">
+          <L n="job_and_role_changes">
+            <U>
+              <T n="Situation Job">388352<!--SituationJob: jobs_NPCInvites_NPC_BlankFilter--></T>
+              <T n="Role State">345142<!--RoleState: role_NPCVisit_WaitForInvite--></T>
+            </U>
+          </L>
+          <L n="triggers">
+            <U>
+              <V n="effect" t="end_situation" />
+              <L n="triggers">
+                <V t="duration">
+                  <U n="duration">
+                    <U n="duration">
+                      <T n="hours">1</T>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </U>
+            <U>
+              <V n="effect" t="change_state">
+                <U n="change_state">
+                  <U n="possible_states">
+                    <L n="possible_state_keys">
+                      <U>
+                        <T n="situation_key">DoAction</T>
+                      </U>
+                    </L>
+                  </U>
+                </U>
+              </V>
+              <L n="triggers">
+                <V t="test_event">
+                  <U n="test_event">
+                    <T n="only_trigger_for_situation_sims">False</T>
+                    <V n="test" t="ran_interaction_test">
+                      <U n="ran_interaction_test">
+                        <L n="affordances">
+                          <T>234517<!--SocialSuperInteraction: sim_InviteIn_NoSummon_NoEnterFrontDoor--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </U>
+          </L>
+        </U>
+      </V>
+    </U>
+  </L>
+  <V n="_starting_state" t="random_starting_state">
+    <U n="random_starting_state">
+      <L n="possible_state_keys">
+        <U>
+          <T n="situation_key">KnockWait</T>
+          <U n="weight">
+            <L n="multipliers">
+              <U>
+                <T n="multiplier">0</T>
+                <L n="tests">
+                  <L>
+                    <V t="lot_has_front_door">
+                      <U n="lot_has_front_door">
+                        <T n="invert">True</T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+        <U>
+          <T n="situation_key">MailboxWait</T>
+          <U n="weight">
+            <L n="multipliers">
+              <U>
+                <T n="multiplier">0</T>
+                <L n="tests">
+                  <L>
+                    <V t="lot_has_front_door">
+                      <U n="lot_has_front_door">
+                        <T n="invert">False</T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+      </L>
+    </U>
+  </V>
+  <T p="InGame\Audio\Bumper\bumper_event_start.propx" n="audio_sting_on_start">39b2aa4a:00000000:78b903461d47e4fc</T>
+  <L n="compatible_venues">
+    <T>28614<!--Venue: venue_residential--></T>
+  </L>
+  <E n="creation_ui_option">NOT_AVAILABLE</E>
+  <L n="default_job_and_roles">
+    <U>
+      <T n="Situation Job">128964<!--SituationJob: jobs_NPCInvites_InviteOver_Actor_Target--></T>
+      <T n="Role State">324590<!--RoleState: role_Empty--></T>
+    </U>
+    <U>
+      <T n="Situation Job">388352<!--SituationJob: jobs_NPCInvites_NPC_BlankFilter--></T>
+      <T n="Role State">128962<!--RoleState: role_NPCInvite_HangOut--></T>
+    </U>
+  </L>
+  <T n="duration">240</T>
+  <T p="InGame\Audio\Bumper\bumper_event_major_complete.propx" n="main_goal_audio_sting">39b2aa4a:00000000:10b476550150a33f</T>
+  <T n="max_participants">20</T>
+  <V n="situation_end_time_string" t="show_end_time">
+    <T n="show_end_time">0xA3E17143<!--String: "Work day ends at {0.TimeShort}"--></T>
+  </V>
+</I>

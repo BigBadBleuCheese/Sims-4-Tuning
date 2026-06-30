@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="sI_NobleCareer_NobleBookJoin" s="499944">
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Actor</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>499946<!--LootActions: loot_NobleCareer_JoinCareer_NoDialog--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="confirmation_dialog" t="enabled">
+    <U n="enabled">
+      <U n="dialog">
+        <V n="dialog" t="ok_cancel">
+          <U n="ok_cancel">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T p="InEP21\UI\Icons\Career\career_NobleCareerMain_main.png" n="key">2f7d0004:00000000:3d97e174aeb108f9</T>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xB9A1D6E5<!--String: "After scouring the pages, {0.SimFirstName} finds a distant relative who was a well-respected Noble hundreds of years ago! Does {0.SimFirstName} want to take this opportunity to follow in their relative's footsteps and join the Noble Career?\n\nThis will make {0.SimFirstName} leave any Career {0.SimPronounSubjective} currently have and join the Noble Career instead."--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x733C4122<!--String: "Research Noble Legacy"--></T>
+            </V>
+          </U>
+        </V>
+      </U>
+    </U>
+  </V>
+  <V n="content_score" t="disabled" />
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T p="InEP21\UI\Icons\PieMenu\PieMenu_NobleCareer.png" n="key">2f7d0004:00000000:9b49aa0d1eb08413</T>
+      </U>
+    </V>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">ACTOR</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+  <T n="visible">False</T>
+</I>

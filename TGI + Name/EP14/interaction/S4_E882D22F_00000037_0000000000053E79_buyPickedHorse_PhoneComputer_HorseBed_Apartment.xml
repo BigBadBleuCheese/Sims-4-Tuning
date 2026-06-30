@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="AdoptionSuperInteraction" i="interaction" m="adoption.adoption_interactions" n="buyPickedHorse_PhoneComputer_HorseBed_Apartment" s="343673">
+  <V n="_cancelable_by_user" t="prohibit_cancelation" />
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="spawn_points">
+            <U n="spawn_points">
+              <V n="tags" t="Spawn_Point_Tags">
+                <L n="Spawn_Point_Tags">
+                  <E>Spawn_VisitorArrival</E>
+                </L>
+              </V>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>PickedSim</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="time_based">
+                <U n="time_based">
+                  <T n="max_time">15</T>
+                  <T n="min_time">15</T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+      </L>
+      <V n="content" t="looping_content" />
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="payment">
+      <U n="payment">
+        <V n="payment" t="literal">
+          <U n="literal">
+            <V n="payment_cost" t="amount">
+              <U n="amount">
+                <T n="amount">1000</T>
+              </U>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>338099<!--LootActions: loot_Relationship_Bit_HorseAdopt--></T>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>341686<!--LootActions: rel_Bit_HasMet_Add_Horse--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="basic_reserve_object" t="enabled" />
+  <V n="content_score" t="disabled" />
+  <T n="counts_as_inside">True</T>
+  <U n="dialog">
+    <V n="audio_sting" t="enabled">
+      <U n="enabled">
+        <T n="audio" p="InGame\Audio\Stings\sting_adopt.propx">39b2aa4a:00000000:23b62be90541300b</T>
+      </U>
+    </V>
+    <V n="icon" t="enabled">
+      <V n="enabled" t="participant">
+        <U n="participant">
+          <L n="participant_type">
+            <E>PickedSim</E>
+          </L>
+        </U>
+      </V>
+    </V>
+    <V n="naming_title_text" t="enabled">
+      <T n="enabled">0x1203BBBB<!--String: "It's always exciting to welcome a new Horse to the Household. This Horse is going to need a name..."--></T>
+    </V>
+    <V n="text" t="single">
+      <T n="single">0xDA46C818<!--String: "Congratulations! Your family has grown."--></T>
+    </V>
+    <U n="text_inputs">
+      <U n="first_name">
+        <V n="default_text" t="enabled">
+          <T n="enabled">0xC20093B2<!--String: "{1.SimFirstName}"--></T>
+        </V>
+        <V n="initial_value" t="enabled">
+          <V n="enabled" t="single">
+            <T n="single">0xC20093B2<!--String: "{1.SimFirstName}"--></T>
+          </V>
+        </V>
+        <V n="length_restriction" t="cas_first_name" />
+      </U>
+      <U n="last_name">
+        <V n="default_text" t="enabled">
+          <T n="enabled">0xD48756AA<!--String: "{0.SimLastName}"--></T>
+        </V>
+        <V n="initial_value" t="enabled">
+          <V n="enabled" t="single">
+            <T n="single">0xD48756AA<!--String: "{0.SimLastName}"--></T>
+          </V>
+        </V>
+        <V n="length_restriction" t="cas_last_name" />
+      </U>
+    </U>
+    <V n="text_tokens" t="enabled">
+      <U n="enabled">
+        <L n="tokens">
+          <V t="participant_type" />
+          <V t="participant_type">
+            <U n="participant_type">
+              <V n="objects" t="from_participant">
+                <U n="from_participant">
+                  <E n="participant">PickedSim</E>
+                </U>
+              </V>
+            </U>
+          </V>
+        </L>
+      </U>
+    </V>
+    <V n="title" t="enabled">
+      <T n="enabled">0xE7573116<!--String: "Horse Purchased"--></T>
+    </V>
+  </U>
+  <T n="disable_autonomous_multitasking_if_user_directed">True</T>
+  <T n="display_name">0x7A38D67D<!--String: "Purchase Horse"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T n="fade_sim_out">True</T>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <V n="animation_ref" t="enabled">
+          <U n="enabled">
+            <T n="factory">328514<!--AnimationElement: horseSocialAnims_Sim2Horse_CallOver--></T>
+          </U>
+        </V>
+        <L n="continuation">
+          <U>
+            <T n="affordance">340605<!--SuperInteraction: superInteraction_HorseTransaction_NewHorse--></T>
+          </U>
+          <U>
+            <E n="actor">PickedSim</E>
+            <T n="affordance">325307<!--SuperInteraction: horseBed_ClaimOwnership--></T>
+            <E n="target">SavedActor1</E>
+          </U>
+        </L>
+      </U>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all" />
+    </U>
+  </V>
+  <E n="target_type">ACTOR</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="zone">
+      <U n="zone">
+        <U n="zone_tests">
+          <V n="is_apartment" t="Is_or_is_not_apartment_zone" />
+        </U>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

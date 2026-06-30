@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="pottery_CleanUp" s="443853">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="circle" />
+        </U>
+      </L>
+    </U>
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="facing">
+            <U n="facing">
+              <T n="range">15</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="posture">
+            <U n="posture">
+              <L n="posture_manifest_tuning">
+                <U>
+                  <V n="posture_type" t="enabled">
+                    <T n="enabled">15537<!--MobilePosture: posture_Stand--></T>
+                  </V>
+                </U>
+              </L>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_forwarding" t="Forward" />
+  <T n="_require_current_posture">False</T>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_from_sim_inventory">True</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">23926<!--AnimationElement: Generic_PickUp--></T>
+      </U>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="destroy_object">
+      <U n="destroy_object">
+        <V n="objects_to_destroy" t="from_participant">
+          <U n="from_participant">
+            <E n="participant">Object</E>
+          </U>
+        </V>
+        <V n="timing" t="at_end" />
+      </U>
+    </V>
+  </L>
+  <T n="can_acquire_posture_ownership">False</T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x53DB840A<!--String: "Clean Up"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_autonomous">
+    <L>
+      <V t="existence">
+        <U n="existence">
+          <T n="exists">False</T>
+          <E n="participant">ObjectCrafter</E>
+        </U>
+      </V>
+      <V t="object_criteria">
+        <U n="object_criteria">
+          <V n="identity_test" t="tags">
+            <U n="tags">
+              <L n="tag_set">
+                <E>Func_Pottery</E>
+              </L>
+              <E n="test_type">CONTAINS_ANY_TAG_IN_SET</E>
+            </U>
+          </V>
+          <V n="subject_specific_tests" t="single_object">
+            <U n="single_object">
+              <E n="target">ObjectParent</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="state">
+        <U n="state">
+          <T n="value">374609<!--CommodityBasedObjectStateValue: potteryCeramic_CommodityState_Brokenness_Broken--></T>
+        </U>
+      </V>
+    </L>
+  </L>
+  <L n="test_globals">
+    <V t="test_set_reference">
+      <T n="test_set_reference">445883<!--TestSetInstance: testSetInstance_Pottery_InWheelORKilnOvenIsEmpty--></T>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">445542<!--TestSetInstance: testSetInstance_Pottery_InUseCleaning--></T>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="state">
+        <U n="state">
+          <T n="value">374609<!--CommodityBasedObjectStateValue: potteryCeramic_CommodityState_Brokenness_Broken--></T>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="lot_owner">
+        <U n="lot_owner">
+          <E n="subject">Actor</E>
+        </U>
+      </V>
+      <V t="object_ownership">
+        <U n="object_ownership">
+          <T n="is_not_owner">True</T>
+          <T n="is_owner">False</T>
+          <T n="must_be_owned">True</T>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="is_business_employee">
+        <U n="is_business_employee">
+          <E n="subject">LotOwnersOrRenters</E>
+          <E n="target_sim">Actor</E>
+        </U>
+      </V>
+      <V t="object_ownership">
+        <U n="object_ownership">
+          <T n="is_not_owner">True</T>
+          <T n="is_owner">False</T>
+          <T n="must_be_owned">True</T>
+          <E n="sim">LotOwnersOrRenters</E>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="npc" t="enabled" />
+        </U>
+      </V>
+      <V t="situation_job_test">
+        <U n="situation_job_test">
+          <L n="situation_jobs">
+            <T>373362<!--SituationJob: job_SmallBusinessCustomer--></T>
+          </L>
+        </U>
+      </V>
+      <V t="object_ownership">
+        <U n="object_ownership">
+          <T n="is_not_owner">True</T>
+          <T n="is_owner">False</T>
+          <T n="must_be_owned">True</T>
+        </U>
+      </V>
+      <V t="location">
+        <U n="location">
+          <U n="location_tests">
+            <V n="is_in_slot" t="enabled">
+              <U n="enabled">
+                <V n="slot_test_type" t="specific_slot">
+                  <U n="specific_slot">
+                    <T n="specific_slot_set">slotSet_Pottery</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </U>
+          <E n="subject">Object</E>
+        </U>
+      </V>
+    </L>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

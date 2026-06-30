@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="TestSetInstance" i="snippet" m="event_testing.tests" n="testSetInstance_RomanceTrope_steamy" s="363257">
+  <L n="test">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="npc" t="enabled">
+            <T n="enabled">True</T>
+          </V>
+        </U>
+      </V>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="npc" t="enabled">
+            <T n="enabled">True</T>
+          </V>
+          <E n="who">TargetSim</E>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="required_relationship_bits">
+            <L n="match_all">
+              <T>362476<!--RelationshipBit: romanceTrope_steamy--></T>
+            </L>
+          </U>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="prohibited_relationship_bits">
+            <L n="match_any">
+              <T>363250<!--RelationshipBit: romanceTrope_WorkingOnRomanceDynamic--></T>
+            </L>
+          </U>
+          <U n="required_relationship_bits">
+            <L n="match_any">
+              <T>362479<!--RelationshipBit: romanceTrope_NotSteamy--></T>
+            </L>
+          </U>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="prohibited_relationship_bits">
+            <L n="match_any">
+              <T>363250<!--RelationshipBit: romanceTrope_WorkingOnRomanceDynamic--></T>
+            </L>
+          </U>
+        </U>
+      </V>
+      <V t="buff">
+        <U n="buff">
+          <E n="subject">TargetSim</E>
+          <V n="whitelist" t="enabled">
+            <L n="enabled">
+              <T>363091<!--Buff: buff_RomanceDynamics_RomanceTropeAdventureCooldown--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+      <V t="buff">
+        <U n="buff">
+          <V n="whitelist" t="enabled">
+            <L n="enabled">
+              <T>363091<!--Buff: buff_RomanceDynamics_RomanceTropeAdventureCooldown--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="npc" t="enabled">
+            <T n="enabled">True</T>
+          </V>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="existence">
+        <U n="existence">
+          <T n="exists">False</T>
+          <E n="participant">Actor</E>
+          <T n="require_instantiated">True</T>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="existence">
+        <U n="existence">
+          <T n="exists">False</T>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="prohibited_relationship_bits">
+            <L n="match_all">
+              <T>291678<!--RelationshipBit: relBit_SexualORientation_WooHooPartners--></T>
+            </L>
+          </U>
+          <U n="relationship_score_interval">
+            <T n="upper_bound">29</T>
+          </U>
+          <T n="track">16651<!--RelationshipTrack: LTR_Romance_Main--></T>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

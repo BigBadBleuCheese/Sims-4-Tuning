@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="StayoverDramaNode" i="drama_node" m="drama_scheduler.stayover_drama_node" n="stayoverDramaNode_Clone" s="308501">
+  <V n="cooldown_data" t="group_cooldown">
+    <U n="group_cooldown">
+      <E n="group">StayOverCooldown</E>
+    </U>
+  </V>
+  <T n="duration">3</T>
+  <V n="invitees" t="relative">
+    <U n="relative">
+      <L n="loot_list">
+        <T>319741<!--LootActions: loot_TemporaryStay_CloneRelGain--></T>
+      </L>
+      <V n="relationship_bit" t="enabled">
+        <U n="enabled">
+          <T n="relationship_bit">8826<!--RelationshipBit: family_Target_IsCousinOf_Actor--></T>
+        </U>
+      </V>
+    </U>
+  </V>
+  <U n="min_and_max_times">
+    <T n="lower_bound">1</T>
+    <T n="upper_bound">24</T>
+  </U>
+  <L n="receiver_sim_pretests">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified" />
+          <V n="species" t="specified">
+            <U n="specified">
+              <L n="species">
+                <E />
+              </L>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+  <L n="run_tests">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified" />
+          <V n="species" t="specified">
+            <U n="specified">
+              <L n="species">
+                <E />
+              </L>
+            </U>
+          </V>
+          <E n="who">TargetSim</E>
+        </U>
+      </V>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="prohibited_relationship_bits">
+            <L n="match_any">
+              <T>306282<!--RelationshipBit: familyTrope_distant--></T>
+              <T>310888<!--RelationshipBit: familyTrope_difficult--></T>
+            </L>
+          </U>
+        </U>
+      </V>
+      <V t="situation_running_test">
+        <U n="situation_running_test">
+          <V n="situation_blacklist" t="enabled">
+            <L n="enabled">
+              <T>321830<!--AmbientSimSpecificCustomStatesSituation: situation_Stayover_Behavior_InfantIntro--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="scoring" t="disabled" />
+  <V n="sender_sim_info" t="sim_filter">
+    <U n="sim_filter">
+      <T n="sim_filter">15939<!--TunableSimFilter: filter_ages_adult--></T>
+    </U>
+  </V>
+  <E n="sender_sim_info_type">INSTANCED_ALLOWED</E>
+  <T n="stayover_behavioral_situation">309243<!--AmbientSimSpecificCustomStatesSituation: situation_Stayover_Behavior_Clone--></T>
+  <L n="stayover_prompt_messages">
+    <U>
+      <U n="dialog">
+        <V n="custom_mask_target_sim" t="enabled">
+          <U n="enabled">
+            <V n="alert_icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InGame\UI\Icons\Dialog\phone_anonymous_caller_icon.png">2f7d0004:00000000:257c708573e63faf</T>
+                </U>
+              </V>
+            </V>
+            <V n="alert_sim_name" t="enabled">
+              <T n="enabled">0x2577C03B<!--String: "Unknown Caller"--></T>
+            </V>
+            <V n="header_icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InGame\UI\Icons\Dialog\phone_anonymous_caller_icon.png">2f7d0004:00000000:257c708573e63faf</T>
+                </U>
+              </V>
+            </V>
+          </U>
+        </V>
+        <E n="dialog_bg_style">BG_DEFAULT</E>
+        <E n="phone_ring_type">RING</E>
+        <V n="text" t="single">
+          <T n="single">0x5FC361B6<!--String: "Hey, {1.SimFirstName}! I just took a DNA test, turns out we're 100% long lost relatives. And would you look at that, I'm actually in town for the next couple days! Would you mind if I stayed at your place? I know this might be asking a lot, but I think we might actually have... a <b>lot</b> more in common than you'd think. "--></T>
+        </V>
+      </U>
+    </U>
+  </L>
+  <V n="time_option" t="schedule">
+    <U n="schedule">
+      <L n="valid_times">
+        <U>
+          <U n="days_available">
+            <T n="0 SUNDAY">True</T>
+            <T n="1 MONDAY">True</T>
+            <T n="2 TUESDAY">True</T>
+            <T n="3 WEDNESDAY">True</T>
+            <T n="4 THURSDAY">True</T>
+            <T n="5 FRIDAY">True</T>
+            <T n="6 SATURDAY">True</T>
+          </U>
+          <T n="duration">10</T>
+          <U n="start_time">
+            <T n="hour">9</T>
+            <T n="minute">0</T>
+          </U>
+        </U>
+      </L>
+    </U>
+  </V>
+</I>

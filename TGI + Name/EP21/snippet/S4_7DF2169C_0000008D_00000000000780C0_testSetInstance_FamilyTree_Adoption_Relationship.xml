@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="TestSetInstance" i="snippet" m="event_testing.tests" n="testSetInstance_FamilyTree_Adoption_Relationship" s="491712">
+  <L n="test">
+    <L>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="prohibited_relationship_bits">
+            <L n="match_any">
+              <T>480798<!--RelationshipBitCollection: rbc_Family_NotSpouseOrDistantOrStep--></T>
+              <T>474387<!--RelationshipBitCollection: rbc_Family_InLaws--></T>
+              <T>468541<!--RelationshipBit: family_Target_IsDistantRelativeOf_Actor--></T>
+            </L>
+          </U>
+        </U>
+      </V>
+      <V t="relationship">
+        <U n="relationship">
+          <V n="test_incest" t="is not incestuous" />
+        </U>
+      </V>
+      <V t="relationship">
+        <U n="relationship">
+          <T n="invert_num_relations">False</T>
+          <U n="prohibited_relationship_bits">
+            <L n="match_any">
+              <T>240628<!--RelationshipBitCollection: rbc_Romantic--></T>
+            </L>
+          </U>
+          <L n="subject">
+            <E>Actor</E>
+          </L>
+          <L n="target_sim">
+            <E>TargetSim</E>
+          </L>
+        </U>
+      </V>
+      <V t="relationship">
+        <U n="relationship">
+          <U n="relationship_score_interval">
+            <T n="lower_bound">0</T>
+            <T n="upper_bound">0</T>
+          </U>
+          <T n="track">16651<!--RelationshipTrack: LTR_Romance_Main--></T>
+        </U>
+      </V>
+      <V t="are_sims_blood_related">
+        <U n="are_sims_blood_related">
+          <T n="negate">True</T>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

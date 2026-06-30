@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Adoption_MoveIn" s="479958">
+  <L n="loot_actions">
+    <V t="interaction">
+      <U n="interaction">
+        <L n="affordances">
+          <T>476160<!--MoveInSuperInteraction: adopted_MoveIn--></T>
+        </L>
+        <E n="subject">Actor</E>
+        <E n="target_participant_type">TargetSim</E>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <E n="subject">TargetSim</E>
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>476164<!--Buff: buff_Family_Adoption_NewFamilyBond--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="interaction">
+      <U n="interaction">
+        <L n="affordances">
+          <T>476160<!--MoveInSuperInteraction: adopted_MoveIn--></T>
+        </L>
+        <E n="subject">Actor</E>
+        <E n="target_participant_type">TargetSim</E>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <E n="subject">TargetSim</E>
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>476163<!--Buff: buff_Family_Adoption_ChosenFamily--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="in_same_household">
+        <U n="in_same_household">
+          <T n="subjects_households_match">False</T>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

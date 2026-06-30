@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="landlordTenant_GiveNoticeInWriting" s="341603">
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <L n="basic_extras">
+    <V t="payment">
+      <U n="payment">
+        <T n="display_only">True</T>
+        <V n="payment" t="literal">
+          <U n="literal">
+            <U n="cost_modifiers">
+              <L n="multipliers">
+                <U>
+                  <T n="multiplier">0</T>
+                  <L n="tests">
+                    <L>
+                      <V t="rental_business_is_grace_period">
+                        <U n="rental_business_is_grace_period">
+                          <V n="target_business" t="household">
+                            <U n="household">
+                              <E n="participant">ActorHousehold</E>
+                            </U>
+                          </V>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+              </L>
+            </U>
+            <V n="payment_cost" t="amount">
+              <U n="amount">
+                <T n="amount">500</T>
+                <L n="payment_destinations">
+                  <V t="rental_unit_property_owner">
+                    <U n="rental_unit_property_owner">
+                      <V n="target_business" t="sim" />
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </V>
+            <V n="payment_source" t="no_source">
+              <U n="no_source">
+                <T n="advertise_simoleon_delta">True</T>
+              </U>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="payment">
+      <U n="payment">
+        <T n="display_only">True</T>
+        <V n="payment" t="literal">
+          <U n="literal">
+            <V n="payment_cost" t="housing_costs" />
+            <V n="payment_source" t="no_source">
+              <U n="no_source">
+                <T n="advertise_simoleon_delta">True</T>
+              </U>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <V n="canonical_animation" t="enabled">
+    <U n="enabled">
+      <T n="factory">11572<!--AnimationElement: Mailbox_MailLetter--></T>
+    </U>
+  </V>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xEAFE7FC1<!--String: "Give Notice In Writing"--></T>
+  <V n="display_name_overrides" t="testable">
+    <U n="testable">
+      <L n="overrides">
+        <U>
+          <V n="new_display_name" t="disabled" />
+          <V n="new_display_tooltip" t="enabled">
+            <T n="enabled">0x6497868<!--String: "A Lease Breaking fee will be applied for moving outside of the Grace Period."--></T>
+          </V>
+          <L n="test">
+            <L>
+              <V t="rental_business_is_grace_period">
+                <U n="rental_business_is_grace_period">
+                  <T n="negate">True</T>
+                  <V n="target_business" t="household">
+                    <U n="household">
+                      <E n="participant">ActorHousehold</E>
+                    </U>
+                  </V>
+                </U>
+              </V>
+              <V t="bills">
+                <U n="bills">
+                  <V n="payment_due" t="enabled">
+                    <U n="enabled">
+                      <E n="bill_type">HOUSING_BILLS</E>
+                      <E n="due_type">IS_NOT_DUE</E>
+                    </U>
+                  </V>
+                  <T n="test_participant_owned_households">True</T>
+                </U>
+              </V>
+              <V t="rental_unit_has_overdue_status_test">
+                <U n="rental_unit_has_overdue_status_test">
+                  <T n="negate">True</T>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <V n="new_display_name" t="disabled" />
+          <V n="new_display_tooltip" t="enabled">
+            <T n="enabled">0x193E17C5<!--String: "A Lease Breaking fee, from moving outside of the Grace Period, along with any owed rent will be charged."--></T>
+          </V>
+          <L n="test">
+            <L>
+              <V t="rental_business_is_grace_period">
+                <U n="rental_business_is_grace_period">
+                  <T n="negate">True</T>
+                  <V n="target_business" t="household">
+                    <U n="household">
+                      <E n="participant">ActorHousehold</E>
+                    </U>
+                  </V>
+                </U>
+              </V>
+              <V t="bills">
+                <U n="bills">
+                  <V n="payment_due" t="enabled">
+                    <U n="enabled">
+                      <E n="bill_type">HOUSING_BILLS</E>
+                    </U>
+                  </V>
+                  <T n="test_participant_owned_households">True</T>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <V n="display_tooltip" t="enabled">
+    <T n="enabled">0xC3FD773B<!--String: "This will immediately take you to Manage Worlds to select a new lot to move into."--></T>
+  </V>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="continuation">
+          <U>
+            <T n="affordance">14105<!--MoveInMoveOutSuperInteraction: sim_MoveInMoveOut--></T>
+          </U>
+        </L>
+        <L n="loot_list">
+          <T>359865<!--LootActions: loot_FearOfEviction_Removal--></T>
+        </L>
+      </U>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">352605<!--TestSetInstance: testSet_MultiUnit_isTenantNotOwner_CurrentLot--></T>
+    </V>
+    <V t="travel_group">
+      <U n="travel_group">
+        <V n="test_type" t="in_travel_group">
+          <U n="in_travel_group">
+            <T n="exists">False</T>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="situation_running_test">
+      <U n="situation_running_test">
+        <V n="participant" t="enabled" />
+        <L n="tag_blacklist">
+          <E>Situation_ActiveCareer_Adult</E>
+        </L>
+      </U>
+    </V>
+    <V t="can_create_user_facing_situation">
+      <U n="can_create_user_facing_situation">
+        <T n="allow_non_prestige_is_exempt">True</T>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xDB48D4EC<!--String: "You cannot go Move Out while there’s a Social Event or while working."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">302562<!--TestSetInstance: testSet_HighSchool_Active_NotAllowedAtSchool--></T>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalObjectInteraction" i="situation_goal" m="situations.situation_goal_object_interaction" n="situationGoalObjectInteraction_LiveEvent_EVTSept25_TellAboutPlayingGames" s="458605">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T p="InGame\UI\Icons\Headlines\Final\headline_Social.png" n="enabled">2f7d0004:00000000:e6e72c39896a0b29</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x71AFF8D3<!--String: "Tell a Sim about Playing Games"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0x397764AB<!--String: "Games...oh games! Win or lose—it didn't matter.\n\nTell a Sim about the time spent playing games together."--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>447711<!--SituationGoalLootActions: liveEvent_GoalLoot_CompleteQuestGoal--></T>
+    <T>478545<!--SituationGoalLootActions: liveEvent_GoalLoot_EVTSept25_Autonomy_SocialsRemove--></T>
+  </L>
+  <U n="_goal_test">
+    <L n="affordances">
+      <T>458609<!--SocialMixerInteraction: socials_Targeted_Friendly_AlwaysOn_STC_Events_EVTSept25_TellAboutGames--></T>
+    </L>
+    <E n="test_event">InteractionComplete</E>
+  </U>
+  <L n="_post_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+      </U>
+    </V>
+  </L>
+  <L n="_pre_goal_loot_list">
+    <T>478544<!--SituationGoalLootActions: liveEvent_GoalLoot_EVTSept25_Autonomy_Socials--></T>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+  <V n="goal_completion_notification" t="enabled">
+    <U n="enabled">
+      <V n="icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T n="key" p="InGame\UI\Icons\Headlines\Events\ImaginationEvent_EventTNS.png">2f7d0004:00000000:a7d998e23b3c9bc3</T>
+          </U>
+        </V>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0xCECC3EB6<!--String: "{0.SimFirstName} shared all the games played recently.\n\nThe reply was "well maybe we can play new games in the future, too.""--></T>
+      </V>
+    </U>
+  </V>
+  <V n="tutorial_tip_group" t="enabled">
+    <T n="enabled">471112<!--TutorialTipGroup: tutorialTipGroup_LiveEvent_EVTSept25_TalkWithSim--></T>
+  </V>
+</I>

@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_PowerShifts_Sword_OnDeath" s="484808">
+  <L n="loot_actions">
+    <V t="trait_remove">
+      <U n="trait_remove">
+        <V n="trait" t="specific_trait">
+          <U n="specific_trait">
+            <T n="specific_trait">484831<!--Trait: trait_Hidden_PowerShifts_SwordOwner--></T>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="narrative">
+      <U n="narrative">
+        <V n="op_type" t="start_narrative">
+          <U n="start_narrative">
+            <T n="narrative">484829<!--Narrative: narrative_PowerShifts_Sword_InStone--></T>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="state_change">
+      <U n="state_change">
+        <T n="state_value">323884<!--ObjectStateValue: genericVariant_Values_2--></T>
+        <V n="subject" t="all_objects_with_tag">
+          <E n="all_objects_with_tag">Func_PowerShifts_Sword</E>
+        </V>
+      </U>
+    </V>
+    <V t="state_change">
+      <U n="state_change">
+        <T n="state_value">466093<!--ObjectStateValue: powerShifts_Values_Sword_Stone_In--></T>
+        <V n="subject" t="all_objects_with_tag">
+          <E n="all_objects_with_tag">Func_PowerShifts_Stone</E>
+        </V>
+      </U>
+    </V>
+    <V t="destroy_objects_from_inventory">
+      <U n="destroy_objects_from_inventory">
+        <L n="object_tests">
+          <L>
+            <V t="object_definition_criteria">
+              <U n="object_definition_criteria">
+                <V n="identity_test" t="tags">
+                  <U n="tags">
+                    <L n="tag_set">
+                      <E>Func_PowerShifts_Sword</E>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InEP21\UI\Icons\Notifications\notification_SwordInTheStone.png">2f7d0004:00000000:2e60f8bf21705b07</T>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x650D1B2B<!--String: "Simcalibur's chosen has journeyed beyond. The sword now rests once more in its stone in Verdemar, awaiting another worthy to claim it."--></T>
+            </V>
+          </U>
+        </V>
+        <E n="subject">ActiveHousehold</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="is_active_sim" t="enabled" />
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="trait">
+        <U n="trait">
+          <L n="whitelist_traits">
+            <T>484831<!--Trait: trait_Hidden_PowerShifts_SwordOwner--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

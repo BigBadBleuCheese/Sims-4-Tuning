@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="GuidanceTip" i="guidance_tip" m="guidance.guidance_tip" n="guidanceTip_Sunrise_Live_NUUeventPriroity_setDataFlag" s="449239">
+  <L n="activation_rules">
+    <U>
+      <E n="children_condition">AND</E>
+      <L n="criteria">
+        <U>
+          <V n="criterion" t="game_state">
+            <E n="game_state">LIVE_MODE</E>
+          </V>
+        </U>
+        <U>
+          <V n="criterion" t="guidance_tips_satisfied">
+            <L n="guidance_tips_satisfied">
+              <T>310755<!--GuidanceTip: guidanceTip_Sunrise_Live_BasicControls--></T>
+            </L>
+          </V>
+        </U>
+      </L>
+      <E n="parent_condition">OR</E>
+    </U>
+    <U>
+      <E n="children_condition">AND</E>
+      <L n="criteria">
+        <U>
+          <V n="criterion" t="game_state">
+            <E n="game_state">LIVE_MODE</E>
+          </V>
+        </U>
+        <U>
+          <V n="criterion" t="guidance_tips_satisfied">
+            <L n="guidance_tips_satisfied">
+              <T>316335<!--GuidanceTip: guidanceTip_Sunrise_Live_BasicControls_SatisfyTracker--></T>
+            </L>
+          </V>
+        </U>
+      </L>
+      <E n="parent_condition">OR</E>
+    </U>
+  </L>
+  <T n="auto_select_on_activate">True</T>
+  <L n="options">
+    <U>
+      <U n="actions">
+        <L n="actions_on_activate">
+          <V t="tutorial_tip_group">
+            <T n="tutorial_tip_group">449237<!--TutorialTipGroup: tutorialTipGroup_NUUeventPriority_setDataFlag--></T>
+          </V>
+        </L>
+        <L n="actions_on_cancel" />
+        <L n="actions_on_success" />
+        <T n="satisfy_on_action_cancel">True</T>
+        <T n="satisfy_on_activate">True</T>
+      </U>
+      <T n="text">0x718C9621<!--String: "Yes, show me how!"--></T>
+    </U>
+  </L>
+  <T n="priority">100</T>
+  <T n="relaunch_item_sort_order">100</T>
+  <L n="relaunch_rules" />
+  <T n="satisfy_on_timeout">False</T>
+  <T n="timeout">0</T>
+  <T n="title">0xE4DDD8E3<!--String: "Emily here to help!"--></T>
+</I>

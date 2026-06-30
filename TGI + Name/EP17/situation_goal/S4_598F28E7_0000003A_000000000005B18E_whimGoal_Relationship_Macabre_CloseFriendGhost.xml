@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalRelationshipChangeTargetedSim" i="situation_goal" m="situations.situation_goal_targeted_sim" n="whimGoal_Relationship_Macabre_CloseFriendGhost" s="373134">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T n="enabled" p="InGame\UI\Icons\Whims\whim_HandsHoldingFlower.png">2f7d0004:00000000:ac357da1bb73d2d3</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0xF1400890<!--String: "Become Close Friends with a Ghost"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0x26121658<!--String: "If your Sim doesn't know many Ghosts, try finding one roaming the streets of Ravenwood."--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>272907<!--SituationGoalLootActions: goalLoot_WantFear_Fulfillment_Gain--></T>
+    <T>291795<!--SituationGoalLootActions: goalLoot_Want_Fulfilled_BuffGain_Happy--></T>
+  </L>
+  <U n="_goal_test">
+    <U n="relationship_score_interval">
+      <T n="lower_bound">60</T>
+    </U>
+    <E n="test_event">AddRelationshipBit</E>
+  </U>
+  <L n="_pre_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="_score">25</T>
+  <T n="_select_all_instantiated_sims">True</T>
+  <L n="_target_tests">
+    <V t="trait">
+      <U n="trait">
+        <L n="whitelist_trait_types">
+          <E>GHOST</E>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+</I>

@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Dynasty_ActionFeedback_RemovedHeir" s="474286">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="audio_sting" t="disabled" />
+            <V n="icon" t="enabled">
+              <V n="enabled" t="dynasty" />
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant" />
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x8B3CB5B0<!--String: "{0.SimFirstName} has been removed from the position of Dynasty Heir of the {2.String} Dynasty by the Dynasty Head, {1.SimName}.\n\n{0.SimPronounSubjective|xxUpper} will no longer inherit the Dynasty Headship, and {S0.has}{P0.have} lost the bonuses to Prestige gain and Relationship gain with other Dynasty Members. "--></T>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="participant_type" />
+                  <V t="participant_type">
+                    <U n="participant_type">
+                      <V n="objects" t="from_participant">
+                        <U n="from_participant">
+                          <E n="participant">ActorDynastyHead</E>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                  <V t="dynasty" />
+                </L>
+              </U>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0xCFF8982<!--String: "Dynasty Heir Denounced"--></T>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="interaction">
+      <U n="interaction">
+        <E n="affordance_priority">High</E>
+        <L n="affordances">
+          <T>474284<!--SuperInteraction: sI_Dynasty_ActionFeedback_RemovedHeir--></T>
+        </L>
+        <E n="target_participant_type">Actor</E>
+        <L n="tests">
+          <L>
+            <V t="existence">
+              <U n="existence">
+                <E n="participant">Actor</E>
+              </U>
+            </V>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="ages" t="specified">
+                  <L n="specified">
+                    <E>TEEN</E>
+                    <E>YOUNGADULT</E>
+                    <E>ADULT</E>
+                    <E>ELDER</E>
+                    <E>CHILD</E>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

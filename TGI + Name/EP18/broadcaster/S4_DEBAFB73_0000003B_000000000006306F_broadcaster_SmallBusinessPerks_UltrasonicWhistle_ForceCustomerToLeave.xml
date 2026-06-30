@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Broadcaster" i="broadcaster" m="broadcasters.broadcaster" n="broadcaster_SmallBusinessPerks_UltrasonicWhistle_ForceCustomerToLeave" s="405615">
+  <V n="allow_sim_test" t="enabled">
+    <L n="enabled">
+      <L>
+        <V t="buff">
+          <U n="buff">
+            <V n="whitelist" t="enabled">
+              <L n="enabled">
+                <T>400877<!--Buff: buff_SmallBusiness_CheckedIn--></T>
+              </L>
+            </V>
+          </U>
+        </V>
+      </L>
+    </L>
+  </V>
+  <L n="constraints">
+    <V t="circle">
+      <U n="circle">
+        <T n="radius">7</T>
+      </U>
+    </V>
+  </L>
+  <L n="effects">
+    <V t="affordance">
+      <U n="affordance">
+        <T n="actor_can_violate_privacy_from_owning_interaction">False</T>
+        <T n="affordance_must_run_next">True</T>
+        <L n="affordances">
+          <U>
+            <T n="affordance">405632<!--SuperInteraction: smallBusinessPerks_UltrasonicWhistle_ForceSimCheckOutState--></T>
+          </U>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="frequency" t="on_pulse" />
+</I>

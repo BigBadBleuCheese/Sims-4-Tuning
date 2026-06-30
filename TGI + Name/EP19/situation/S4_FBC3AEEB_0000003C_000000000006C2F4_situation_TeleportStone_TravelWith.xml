@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="TravelTeleportSituation" i="situation" m="situations.complex.travel_teleport_situation" n="situation_TeleportStone_TravelWith" s="443124">
+  <T n="_allow_external_autonomy">False</T>
+  <T n="duration">150</T>
+  <U n="gather_at_teleporter_state">
+    <U n="interaction_of_interest">
+      <L n="affordances">
+        <T>440063<!--SuperInteraction: super_TeleportStone_GoToStone--></T>
+        <T>467148<!--SuperInteraction: super_TeleportStone_WaitAtStone--></T>
+      </L>
+    </U>
+    <L n="job_and_role_changes">
+      <U>
+        <T n="Situation Job">444348<!--SituationJob: job_TeleportStone_TravelWith_Guest--></T>
+        <T n="Role State">440065<!--RoleState: role_TeleportStone_TravelWith_GoToStone--></T>
+      </U>
+      <U>
+        <T n="Situation Job">444349<!--SituationJob: job_TeleportStone_TravelWith_Host--></T>
+        <T n="Role State">440065<!--RoleState: role_TeleportStone_TravelWith_GoToStone--></T>
+      </U>
+    </L>
+  </U>
+  <T n="guest_job">444348<!--SituationJob: job_TeleportStone_TravelWith_Guest--></T>
+  <T n="host_job">444349<!--SituationJob: job_TeleportStone_TravelWith_Host--></T>
+  <V n="situation_end_time_string" t="show_end_time">
+    <T n="show_end_time">0xA3E17143<!--String: "Work day ends at {0.TimeShort}"--></T>
+  </V>
+  <U n="teleport_state">
+    <U n="interaction_of_interest">
+      <L n="affordances">
+        <T>428662<!--GoToSpecificLotTravelInteraction: Super_TeleportStone_TeleportTo_Sixam--></T>
+        <T>428663<!--GoToSpecificLotTravelInteraction: super_TeleportStone_TeleportTo_MagicRealm--></T>
+        <T>428665<!--GoToSpecificLotTravelInteraction: Super_TeleportStone_TeleportTo_MountainPeak--></T>
+        <T>427714<!--GoToSpecificLotTravelInteraction: super_TeleportStone_TeleportTo_Glade--></T>
+        <T>427716<!--GoToSpecificLotTravelInteraction: super_TeleportStone_TeleportTo_Grotto--></T>
+      </L>
+    </U>
+    <L n="job_and_role_changes">
+      <U>
+        <T n="Situation Job">444348<!--SituationJob: job_TeleportStone_TravelWith_Guest--></T>
+        <T n="Role State">440067<!--RoleState: role_TeleportStone_TravelWith_Wait--></T>
+      </U>
+      <U>
+        <T n="Situation Job">444349<!--SituationJob: job_TeleportStone_TravelWith_Host--></T>
+        <T n="Role State">440066<!--RoleState: role_TeleportStone_TravelWith_Teleport--></T>
+      </U>
+    </L>
+  </U>
+</I>

@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Skill" i="statistic" m="statistics.skill" n="statistic_Skill_Archery" s="452067">
+  <L n="ages">
+    <E>CHILD</E>
+    <E />
+    <E>TEEN</E>
+    <E>YOUNGADULT</E>
+    <E>ELDER</E>
+  </L>
+  <T n="icon" p="InGame\UI\Icons\Skills\skill_Archery.png">2f7d0004:00000000:c7feae5a578f421f</T>
+  <T n="initial_value">100</T>
+  <L n="level_data">
+    <U>
+      <T n="key">1</T>
+      <U n="value">
+        <U n="level_up_notification">
+          <V n="text" t="single">
+            <T n="single">0xD72B00AF<!--String: "<b>Bullseye!</b>\n{0.SimFirstName} can improve {0.SimPronounPossessiveDependent} Archery skill by selecting to Practice Archery at an Archery Target, or participating in an Archery Competition."--></T>
+          </V>
+          <V n="title" t="enabled">
+            <T n="enabled">0x3B21054D<!--String: "Acquired the Archery Skill"--></T>
+          </V>
+        </U>
+      </U>
+    </U>
+    <U>
+      <T n="key">2</T>
+      <U n="value">
+        <L n="actor_mixers">
+          <U>
+            <T n="key">13998<!--SocialSuperInteraction: sim_Chat--></T>
+            <L n="value">
+              <T>455167<!--SocialMixerInteraction: mixer_Social_Friendly_Archery_AcclaimArchery--></T>
+            </L>
+          </U>
+        </L>
+        <U n="level_up_notification">
+          <V n="audio_sting" t="enabled">
+            <U n="enabled">
+              <T n="audio" p="InGame\Audio\Stings\sting_skill_progress.propx">39b2aa4a:00000000:54381264540dd53c</T>
+            </U>
+          </V>
+          <V n="text" t="single">
+            <T n="single">0x3364B21<!--String: "{0.SimFirstName} can now Start Archery Competitions at Archery Targets, and Acclaim about Archery to other Sims."--></T>
+          </V>
+          <V n="title" t="enabled">
+            <T n="enabled">0x22012393<!--String: "Reached Archery Level 2"--></T>
+          </V>
+        </U>
+        <V n="level_up_screen_slam" t="enabled">
+          <V n="enabled" t="reference">
+            <T n="reference">458891<!--ScreenSlam: screenSlam_Skill_Archery_LevelUp--></T>
+          </V>
+        </V>
+        <L n="loot">
+          <T>182401<!--LootActions: loot_SurpriseHoliday_SkillDay_SkillIUpCheck--></T>
+          <T>307087<!--LootActions: loot_Child_Confidence_Gain_Small--></T>
+          <T>372622<!--LootActions: loot_Trait_practiceMakesPerfect_LevelSkill_Whim--></T>
+          <T>456796<!--LootActions: loot_Getaway_AddBuff_WorkingOnMyself--></T>
+          <T>460916<!--LootActions: loot_Competitive_SkillBuffs--></T>
+        </L>
+        <L n="target_super_affordances">
+          <U>
+            <T n="affordance">451694<!--SimPickerInteraction: simPicker_Archery_PlayWith--></T>
+            <V n="object_filter" t="filter_by_tags">
+              <U n="filter_by_tags">
+                <L n="tags">
+                  <E>Func_Archery</E>
+                </L>
+              </U>
+            </V>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <T n="key">3</T>
+      <U n="value">
+        <L n="actor_mixers">
+          <U>
+            <T n="key">13998<!--SocialSuperInteraction: sim_Chat--></T>
+            <L n="value">
+              <T>455167<!--SocialMixerInteraction: mixer_Social_Friendly_Archery_AcclaimArchery--></T>
+              <T>454773<!--SocialMixerInteraction: mixer_Social_Friendly_Archery_DiscussTechniques--></T>
+            </L>
+          </U>
+        </L>
+        <U n="level_up_notification">
+          <V n="audio_sting" t="enabled">
+            <U n="enabled">
+              <T n="audio" p="InGame\Audio\Stings\sting_skill_progress.propx">39b2aa4a:00000000:54381264540dd53c</T>
+            </U>
+          </V>
+          <V n="text" t="concatenation">
+            <U n="concatenation">
+              <L n="concatenations">
+                <V t="literal">
+                  <T n="literal">0x1C320806<!--String: "{0.SimFirstName} can now Discuss Archery Techniques with other Sims and has access to an upgraded bow."--></T>
+                </V>
+                <V t="reference">
+                  <T n="reference">482499<!--LocalizedString: archery_RewardString_Level3--></T>
+                </V>
+              </L>
+            </U>
+          </V>
+          <V n="title" t="enabled">
+            <T n="enabled">0xDCE0D160<!--String: "Reached Archery Level 3"--></T>
+          </V>
+        </U>
+        <V n="level_up_screen_slam" t="enabled">
+          <V n="enabled" t="reference">
+            <T n="reference">458891<!--ScreenSlam: screenSlam_Skill_Archery_LevelUp--></T>
+          </V>
+        </V>
+        <L n="loot">
+          <T>182401<!--LootActions: loot_SurpriseHoliday_SkillDay_SkillIUpCheck--></T>
+          <T>307087<!--LootActions: loot_Child_Confidence_Gain_Small--></T>
+          <T>372622<!--LootActions: loot_Trait_practiceMakesPerfect_LevelSkill_Whim--></T>
+          <T>456796<!--LootActions: loot_Getaway_AddBuff_WorkingOnMyself--></T>
+          <T>460916<!--LootActions: loot_Competitive_SkillBuffs--></T>
+          <T>458893<!--LootActions: loot_Archery_Reward_Level3_CAS--></T>
+        </L>
+        <L n="target_super_affordances">
+          <U>
+            <T n="affordance">451694<!--SimPickerInteraction: simPicker_Archery_PlayWith--></T>
+            <V n="object_filter" t="filter_by_tags">
+              <U n="filter_by_tags">
+                <L n="tags">
+                  <E>Func_Archery</E>
+                </L>
+              </U>
+            </V>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <T n="key">4</T>
+      <U n="value">
+        <L n="actor_mixers">
+          <U>
+            <T n="key">13998<!--SocialSuperInteraction: sim_Chat--></T>
+            <L n="value">
+              <T>455167<!--SocialMixerInteraction: mixer_Social_Friendly_Archery_AcclaimArchery--></T>
+              <T>454773<!--SocialMixerInteraction: mixer_Social_Friendly_Archery_DiscussTechniques--></T>
+            </L>
+          </U>
+        </L>
+        <U n="level_up_notification">
+          <V n="audio_sting" t="enabled">
+            <U n="enabled">
+              <T n="audio" p="InGame\Audio\Stings\sting_skill_progress.propx">39b2aa4a:00000000:54381264540dd53c</T>
+            </U>
+          </V>
+          <V n="text" t="concatenation">
+            <U n="concatenation">
+              <L n="concatenations">
+                <V t="literal">
+                  <T n="literal">0x3194838A<!--String: "{0.SimFirstName} can now go Bowfishing at fishing spots. {0.SimPronounSubjective|xxUpper} can also mentor other Sims in archery. {0.SimPronounSubjective|xxUpper} will also use a fully upgraded bow!"--></T>
+                </V>
+                <V t="reference">
+                  <T n="reference">482497<!--LocalizedString: archery_RewardString_Level4--></T>
+                </V>
+              </L>
+            </U>
+          </V>
+          <V n="title" t="enabled">
+            <T n="enabled">0x19A77C4<!--String: "Reached Archery Level 4"--></T>
+          </V>
+        </U>
+        <V n="level_up_screen_slam" t="enabled">
+          <V n="enabled" t="reference">
+            <T n="reference">458891<!--ScreenSlam: screenSlam_Skill_Archery_LevelUp--></T>
+          </V>
+        </V>
+        <L n="loot">
+          <T>182401<!--LootActions: loot_SurpriseHoliday_SkillDay_SkillIUpCheck--></T>
+          <T>307087<!--LootActions: loot_Child_Confidence_Gain_Small--></T>
+          <T>372622<!--LootActions: loot_Trait_practiceMakesPerfect_LevelSkill_Whim--></T>
+          <T>456796<!--LootActions: loot_Getaway_AddBuff_WorkingOnMyself--></T>
+          <T>460916<!--LootActions: loot_Competitive_SkillBuffs--></T>
+          <T>458910<!--LootActions: loot_Archery_Reward_Level4_CAS--></T>
+        </L>
+        <L n="target_super_affordances">
+          <U>
+            <T n="affordance">451694<!--SimPickerInteraction: simPicker_Archery_PlayWith--></T>
+            <V n="object_filter" t="filter_by_tags">
+              <U n="filter_by_tags">
+                <L n="tags">
+                  <E>Func_Archery</E>
+                </L>
+              </U>
+            </V>
+          </U>
+          <U>
+            <T n="affordance">455968<!--AggregateSuperInteraction: fishingLocation_Archery_BowFishingAggregate--></T>
+            <V n="object_filter" t="filter_by_tags">
+              <U n="filter_by_tags">
+                <L n="tags">
+                  <E>Func_FishingLocation_Spot</E>
+                </L>
+              </U>
+            </V>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <T n="key">5</T>
+      <U n="value">
+        <L n="actor_mixers">
+          <U>
+            <T n="key">13998<!--SocialSuperInteraction: sim_Chat--></T>
+            <L n="value">
+              <T>455167<!--SocialMixerInteraction: mixer_Social_Friendly_Archery_AcclaimArchery--></T>
+              <T>454773<!--SocialMixerInteraction: mixer_Social_Friendly_Archery_DiscussTechniques--></T>
+              <T>454775<!--SocialMixerInteraction: mixer_Social_Friendly_Archery_ShootAppleOffHead--></T>
+            </L>
+          </U>
+        </L>
+        <U n="level_up_notification">
+          <V n="audio_sting" t="enabled">
+            <U n="enabled">
+              <T n="audio" p="InGame\Audio\Stings\sting_skill_highest.propx">39b2aa4a:00000000:321d9f89413aeb9b</T>
+            </U>
+          </V>
+          <V n="text" t="concatenation">
+            <U n="concatenation">
+              <L n="concatenations">
+                <V t="literal">
+                  <T n="literal">0x7F7697D1<!--String: "{0.SimFirstName} is a master archer! {0.SimPronounSubjective|xxUpper} can now attempt to shoot an apple off another Sim's head, if {0.SimPronounSubjective}{S0.'s}{P0.'re} willing to risk it..."--></T>
+                </V>
+                <V t="reference">
+                  <T n="reference">482500<!--LocalizedString: archery_RewardString_Level5--></T>
+                </V>
+              </L>
+            </U>
+          </V>
+          <V n="title" t="enabled">
+            <T n="enabled">0xDE9DFEC3<!--String: "Reached Archery Level 5"--></T>
+          </V>
+        </U>
+        <V n="level_up_screen_slam" t="enabled">
+          <V n="enabled" t="reference">
+            <T n="reference">458892<!--ScreenSlam: screenSlam_Skill_Archery_MaxLevel--></T>
+          </V>
+        </V>
+        <L n="loot">
+          <T>182401<!--LootActions: loot_SurpriseHoliday_SkillDay_SkillIUpCheck--></T>
+          <T>306801<!--LootActions: loot_Child_Confidence_Gain_Medium--></T>
+          <T>334198<!--LootActions: loot_MidlifeCrisis_MaxASkill--></T>
+          <T>311355<!--LootActions: loot_SelfDiscovery_Progress_Skill_Min_Large--></T>
+          <T>372622<!--LootActions: loot_Trait_practiceMakesPerfect_LevelSkill_Whim--></T>
+          <T>456796<!--LootActions: loot_Getaway_AddBuff_WorkingOnMyself--></T>
+          <T>460916<!--LootActions: loot_Competitive_SkillBuffs--></T>
+          <T>458895<!--LootActions: loot_Archery_Reward_Level5_Deco--></T>
+        </L>
+        <L n="target_super_affordances">
+          <U>
+            <T n="affordance">451694<!--SimPickerInteraction: simPicker_Archery_PlayWith--></T>
+            <V n="object_filter" t="filter_by_tags">
+              <U n="filter_by_tags">
+                <L n="tags">
+                  <E>Func_Archery</E>
+                </L>
+              </U>
+            </V>
+          </U>
+          <U>
+            <T n="affordance">455968<!--AggregateSuperInteraction: fishingLocation_Archery_BowFishingAggregate--></T>
+            <V n="object_filter" t="filter_by_tags">
+              <U n="filter_by_tags">
+                <L n="tags">
+                  <E>Func_FishingLocation_Spot</E>
+                </L>
+              </U>
+            </V>
+          </U>
+        </L>
+      </U>
+    </U>
+  </L>
+  <T n="mood_id">14639<!--Mood: Mood_Focused--></T>
+  <L n="packs_needed_for_skill_picker_display">
+    <E>EP20</E>
+  </L>
+  <T n="skill_description">0x13F36F40<!--String: "Hitting bullseyes isn't as simple as nocking arrows and sending them flying! It can take hours of practice with a bow to be the best archer around.\n\nThe Archery Skill can be improved by practicing at an Archery Target or participating in Archery Competitions. Improved Archery Skill means more bullseyes, better competition performance, and cooler bows. It also unlocks new interactions, catching fish via Bowfishing, and some sweet archery-related accessories in Create a Sim.\n\nArchery can be mentored from Skill level 4 at an Archery Target."--></T>
+  <E n="skill_level_type">MINOR</E>
+  <U n="stat_asm_param">
+    <T n="asm_param_name">statLevel</T>
+    <L n="level_ranges">
+      <U>
+        <T n="key">high</T>
+        <U n="value">
+          <T n="lower_bound">5</T>
+          <T n="upper_bound">5</T>
+        </U>
+      </U>
+      <U>
+        <T n="key">low</T>
+        <U n="value">
+          <T n="lower_bound">0</T>
+          <T n="upper_bound">1</T>
+        </U>
+      </U>
+      <U>
+        <T n="key">medium</T>
+        <U n="value">
+          <T n="lower_bound">3</T>
+          <T n="upper_bound">3</T>
+        </U>
+      </U>
+      <U>
+        <T n="key">mediumHigh</T>
+        <U n="value">
+          <T n="lower_bound">4</T>
+          <T n="upper_bound">4</T>
+        </U>
+      </U>
+      <U>
+        <T n="key">mediumLow</T>
+        <U n="value">
+          <T n="lower_bound">2</T>
+          <T n="upper_bound">2</T>
+        </U>
+      </U>
+    </L>
+  </U>
+  <T n="stat_name">0x1C604094<!--String: "Archery"--></T>
+  <L n="tags">
+    <E>Skill_All</E>
+    <E>Skill_All_Visible</E>
+    <E>Skill_University_CanListen</E>
+    <E>Skill_Archery</E>
+    <E>Skill_OutdoorActivity</E>
+    <E>Skill_CompetitiveTrait</E>
+    <E>Skill_Attraction_HealthSports</E>
+    <E>Skill_DynastyMisc</E>
+  </L>
+  <L n="tooltip_icon_list">
+    <T p="InGame\UI\Icons\Headlines\Final\headline_Archery.png">2f7d0004:00000000:93b4ab6b9dbf5cee</T>
+  </L>
+</I>

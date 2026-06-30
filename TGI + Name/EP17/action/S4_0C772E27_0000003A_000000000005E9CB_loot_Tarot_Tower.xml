@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Tarot_Tower" s="387531">
+  <L n="loot_actions">
+    <V t="create_object">
+      <U n="create_object">
+        <U n="chance">
+          <T n="base_chance">100</T>
+        </U>
+        <V n="creation_data" t="definition">
+          <U n="definition">
+            <T n="definition">427585</T>
+          </U>
+        </V>
+        <V n="location" t="inventory" />
+        <E n="owner_sim">Actor</E>
+        <T n="set_sim_as_owner">True</T>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T p="InEP17\UI\Icons\Whims\Whims_GiveTarotReading.png" n="key">2f7d0004:00000000:89d4867e7317ab9f</T>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xAC28067E<!--String: "Chaos. Destruction. <b>The Tower</b>, thought to be a sturdy constant, reveals itself a mere façade. With flames aglow and meteors in flight, the universe has uttered its decree! In the midst of unrest, the only hope remains divine intervention."--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0xCD791358<!--String: "The Tower"--></T>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="inventory">
+        <U n="inventory">
+          <V n="contents_check" t="has_object_with_def">
+            <U n="has_object_with_def">
+              <T n="definition">427585</T>
+            </U>
+          </V>
+          <U n="required_count">
+            <E n="comparison">EQUAL</E>
+            <T n="value">0</T>
+          </U>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

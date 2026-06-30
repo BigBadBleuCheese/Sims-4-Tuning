@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="rabbitHole_CommunityBoard_HorseTraining_Lvl_07" s="329923">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="spawn_points">
+            <U n="spawn_points">
+              <V n="tags" t="Spawn_Point_Tags">
+                <L n="Spawn_Point_Tags">
+                  <E>Spawn_EquestrianCenter</E>
+                </L>
+              </V>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Actor</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="rabbit_hole_based">
+                <U n="rabbit_hole_based">
+                  <T n="max_time">160</T>
+                  <T n="min_time">160</T>
+                </U>
+              </V>
+            </L>
+          </U>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="buff_based">
+                <U n="buff_based">
+                  <T n="buff">349192<!--Buff: buff_Hidden_HorseTraining_Cancel--></T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_CANCEL</E>
+          </U>
+        </V>
+      </L>
+      <V n="content" t="looping_content">
+        <U n="looping_content">
+          <U n="animation_ref">
+            <T o="true" n="factory" />
+          </U>
+        </U>
+      </V>
+      <V n="periodic_stat_change" t="enabled">
+        <U n="enabled">
+          <U n="operation_actions">
+            <L n="actions">
+              <T>327965<!--LootActions: loot_Commodity_HorseTraining_Fatigue_Gain_Med--></T>
+            </L>
+          </U>
+          <L n="operations">
+            <V t="dynamic_skill">
+              <U n="dynamic_skill">
+                <U n="skill_loot_data_override">
+                  <E n="effectiveness">StandardPeriodic</E>
+                  <T n="stat">324632<!--Skill: statistic_Skill_Horse_Agility--></T>
+                </U>
+              </U>
+            </V>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="notification">
+      <U n="notification">
+        <V n="dialog" t="single">
+          <V n="single" t="literal">
+            <U n="literal">
+              <V n="icon" t="enabled">
+                <V n="enabled" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>Actor</E>
+                    </L>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0x5DBD8381<!--String: "{0.SimName} went off for training. They'll be back shortly."--></T>
+              </V>
+              <V n="text_tokens" t="enabled">
+                <U n="enabled">
+                  <L n="tokens">
+                    <V t="participant_type">
+                      <U n="participant_type">
+                        <V n="objects" t="from_participant" />
+                      </U>
+                    </V>
+                  </L>
+                </U>
+              </V>
+            </U>
+          </V>
+        </V>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+  </L>
+  <L n="basic_liabilities">
+    <V t="hide_sim_liability" />
+    <V t="game_speed">
+      <U n="game_speed">
+        <E n="game_speed">SUPER_SPEED3</E>
+        <U n="species_interaction_speed_requirements">
+          <L n="exempt_sim_buffs">
+            <T>167047<!--Buff: buff_Motives_Pet_Cat_InSS3Mode--></T>
+            <T>167048<!--Buff: buff_Motives_Pet_Dog_InSS3Mode--></T>
+            <T>328034<!--Buff: buff_Horse_IsSleepingSS3--></T>
+          </L>
+          <L n="species_affordance_mapping">
+            <U>
+              <E n="key">CAT</E>
+              <T n="value">171288<!--AggregateSuperInteraction: pet_Sleep_Aggregate_LeftAtHome_Selection--></T>
+            </U>
+            <U>
+              <E n="key">DOG</E>
+              <T n="value">171288<!--AggregateSuperInteraction: pet_Sleep_Aggregate_LeftAtHome_Selection--></T>
+            </U>
+            <U>
+              <E n="key">HORSE</E>
+              <T n="value">328363<!--AggregateSuperInteraction: aggregate_Horses_SS3_Selection--></T>
+            </U>
+          </L>
+          <L n="speed_affordance_tags">
+            <E>Interaction_Sleep</E>
+            <E>Interaction_Pets_SS3Allowed</E>
+          </L>
+        </U>
+      </U>
+    </V>
+    <V t="remove_buff">
+      <U n="remove_buff">
+        <T n="buff_to_remove">349192<!--Buff: buff_Hidden_HorseTraining_Cancel--></T>
+      </U>
+    </V>
+  </L>
+  <V n="content_score" t="disabled" />
+  <T n="counts_as_inside">True</T>
+  <T n="display_name">0xA3806112<!--String: "Horse Training"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T n="fade_sim_out">True</T>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+    <E>Interaction_Pets_SS3Allowed</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="basic_extras">
+                  <V t="change_outfit">
+                    <U n="change_outfit">
+                      <V n="outfit_change" t="for_reason">
+                        <U n="for_reason">
+                          <V n="on_entry" t="enabled">
+                            <E n="enabled">Category_Everyday</E>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">334280<!--SuperInteraction: si_moveAwayCircle_EquestrianCenter_Exit--></T>
+                  </U>
+                </L>
+                <T n="force_outcome_on_exit">True</T>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="zone">
+                <U n="zone">
+                  <U n="zone_tests">
+                    <V n="world_tests" t="enabled">
+                      <U n="enabled">
+                        <V n="whitelist" t="specify">
+                          <U n="specify">
+                            <L n="whitelist">
+                              <T>329926<!--SuperInteraction: rabbitHole_CommunityBoard_HorseTraining_Lvl_10--></T>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="basic_extras">
+                  <V t="change_outfit">
+                    <U n="change_outfit">
+                      <V n="outfit_change" t="for_reason">
+                        <U n="for_reason">
+                          <V n="on_entry" t="enabled">
+                            <E n="enabled">Category_Everyday</E>
+                          </V>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">14261<!--SuperInteraction: si_moveAwayCircle--></T>
+                  </U>
+                </L>
+                <T n="force_outcome_on_exit">True</T>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="zone">
+                <U n="zone">
+                  <U n="zone_tests">
+                    <V n="world_tests" t="enabled">
+                      <U n="enabled">
+                        <V n="blacklist" t="specify">
+                          <U n="specify">
+                            <L n="blacklist">
+                              <T>329926<!--SuperInteraction: rabbitHole_CommunityBoard_HorseTraining_Lvl_10--></T>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">ACTOR</E>
+  <L n="test_globals" />
+  <T n="time_overhead">30</T>
+</I>

@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Lose_Teeth_ToothFairy" s="315027">
+  <L n="loot_actions">
+    <V t="buff_removal">
+      <U n="buff_removal">
+        <L n="buffs_to_remove">
+          <T>327987<!--Buff: buff_Lose_Teeth_Missing_Tooth_BedSwipe--></T>
+          <T>312134<!--Buff: buff_Lose_Teeth_Missing_Tooth_AppearanceModifier--></T>
+          <T>314782<!--Buff: buff_Lose_Teeth_ToothYoinked--></T>
+        </L>
+      </U>
+    </V>
+    <V t="headline_loot">
+      <U n="headline_loot">
+        <T n="amount">1</T>
+        <T n="headline">315026<!--Headline: headline_Lose_Teeth_ToothFairy--></T>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x16A79613<!--String: "(From Losing a Tooth)"--></T>
+          </V>
+          <T n="buff_type">314778<!--Buff: buff_Lose_Teeth_ToothFairy--></T>
+        </U>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T n="key" p="InEP13\UI\Icons\Notifications\notification_ToothFairy.png">2f7d0004:00000000:d85be35cf2baf4e2</T>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant" />
+            </V>
+            <V n="text" t="variation">
+              <U n="variation">
+                <L n="variations">
+                  <T>0xEAE8F281<!--String: "You lost a practice tooth! Remember to take care of your real ones!"--></T>
+                  <T>0xBD7EECF3<!--String: "Too many sweets cause the death of your teeth."--></T>
+                  <T>0x4BBA2AC7<!--String: "Your tooth is gone, but this gift is no con."--></T>
+                  <T>0xD4052536<!--String: "A fair trade was made, but be not dismayed, soon you'll have an upgrade."--></T>
+                </L>
+              </U>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="object_rewards">
+      <U n="object_rewards">
+        <L n="object_rewards">
+          <U>
+            <T n="quantity">1</T>
+            <L n="reward_objects">
+              <U>
+                <V n="quantity" t="specific_amount" />
+                <L n="reward">
+                  <V t="specify_definition">
+                    <U n="specify_definition">
+                      <T n="definition">328035</T>
+                    </U>
+                  </V>
+                </L>
+              </U>
+              <U>
+                <V n="quantity" t="specific_amount" />
+                <L n="reward">
+                  <V t="specify_definition">
+                    <U n="specify_definition">
+                      <T n="definition">328038</T>
+                    </U>
+                  </V>
+                </L>
+              </U>
+              <U>
+                <V n="quantity" t="specific_amount" />
+                <L n="reward">
+                  <V t="specify_definition">
+                    <U n="specify_definition">
+                      <T n="definition">328036</T>
+                    </U>
+                  </V>
+                </L>
+              </U>
+              <U>
+                <V n="quantity" t="specific_amount" />
+                <L n="reward">
+                  <V t="specify_definition">
+                    <U n="specify_definition">
+                      <T n="definition">328037</T>
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </L>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V t="money_loot">
+      <U n="money_loot">
+        <V n="amount" t="random_in_range">
+          <U n="random_in_range">
+            <T n="lower_bound">50</T>
+            <T n="upper_bound">100</T>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="reaction">
+      <U n="reaction">
+        <V n="si_reaction" t="enabled">
+          <U n="enabled">
+            <T n="affordance">320864<!--SuperInteraction: reaction_Lose_Teeth_Celebration--></T>
+            <E n="affordance_priority">High</E>
+            <V n="affordance_run_priority" t="enabled">
+              <E n="enabled">High</E>
+            </V>
+            <V n="affordance_target" t="enabled">
+              <E n="enabled">Actor</E>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">334268<!--Buff: buff_Lose_Teeth_ToothFairyLockout--></T>
+        </U>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>334268<!--Buff: buff_Lose_Teeth_ToothFairyLockout--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

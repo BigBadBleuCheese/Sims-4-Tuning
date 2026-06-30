@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationDramaNode" i="drama_node" m="drama_scheduler.situation_drama_node" n="situationDramaNode_EP18_Onboarding_SmallBusinessVenue" s="430016">
+  <T n="allow_during_work_hours">False</T>
+  <V n="cooldown_data" t="node_cooldown">
+    <U n="node_cooldown">
+      <E n="cooldown_option">ON_RUN</E>
+      <V n="duration" t="permanent" />
+    </U>
+  </V>
+  <T n="homelot_only">True</T>
+  <U n="min_and_max_times">
+    <T n="lower_bound">0</T>
+    <T n="upper_bound">23</T>
+  </U>
+  <L n="pretests">
+    <L>
+      <V t="account_gameplay_data_test">
+        <U n="account_gameplay_data_test">
+          <T n="name">DiscoveryQuest_BusinessVenue</T>
+          <T n="negate">True</T>
+          <T n="value">Complete</T>
+        </U>
+      </V>
+      <V t="region">
+        <U n="region">
+          <V n="blacklist" t="enabled">
+            <L n="enabled">
+              <T>104062<!--Region: region_Hidden_ForgottenGrotto--></T>
+              <T>104063<!--Region: region_Hidden_SlyvanGlade--></T>
+              <T>219134<!--Region: region_Hidden_Magic_Venue--></T>
+              <T>190064<!--Region: region_Hidden_ActingStudio--></T>
+              <T>104096<!--Region: region_Destination_CampingForest--></T>
+              <T>173593<!--Region: region_Destination_Jungle--></T>
+              <T>231104<!--Region: region_Destination_Batuu--></T>
+              <T>131195<!--Region: region_BGDebug_MegaLotsTestWorld--></T>
+              <T>104067<!--Region: region_Debug_Magalog--></T>
+              <T>104068<!--Region: region_Debug_PerfTest--></T>
+              <T>104066<!--Region: region_Debug_TestWorld--></T>
+              <T>121398<!--Region: region_Debug_TestWorld_GP02--></T>
+              <T>197994<!--Region: region_Debug_EP07_TestWorld--></T>
+              <T>108705<!--Region: region_Career_AlienWorld--></T>
+              <T>108704<!--Region: region_Career_Retail--></T>
+              <T>109306<!--Region: career_Career_DoctorClinic--></T>
+              <T>108706<!--Region: region_Career_PoliceStation--></T>
+              <T>108707<!--Region: region_Career_ScienceLab--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+      <V t="lot_ownership_by_venue_type">
+        <U n="lot_ownership_by_venue_type">
+          <T n="negate">True</T>
+          <T n="venue_type">394911<!--Venue: venue_SmallBusiness--></T>
+        </U>
+      </V>
+      <V t="can_start_pivotal_moment" />
+    </L>
+  </L>
+  <V n="sender_sim_info" t="no_participant" />
+  <T n="situation_to_run">429997<!--SpecificSimCustomStatesSituation: situation_ShadyNPC_Onboarding_SmallBusinessVenue--></T>
+  <L n="tests_failed_loot">
+    <T>434784<!--LootActions: loot_EP18_Onboarding_Rescheduler_SmallBusinessVenue--></T>
+  </L>
+  <V n="time_option" t="schedule">
+    <U n="schedule">
+      <L n="valid_times">
+        <U>
+          <U n="days_available">
+            <T n="0 SUNDAY">True</T>
+            <T n="1 MONDAY">True</T>
+            <T n="2 TUESDAY">True</T>
+            <T n="3 WEDNESDAY">True</T>
+            <T n="4 THURSDAY">True</T>
+            <T n="5 FRIDAY">True</T>
+            <T n="6 SATURDAY">True</T>
+          </U>
+          <T n="duration">10</T>
+          <U n="start_time">
+            <T n="hour">8</T>
+          </U>
+        </U>
+      </L>
+    </U>
+  </V>
+</I>

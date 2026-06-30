@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Commodity_Motive_Energy_NLS_OnBoarding_TNS_Wants" s="444571">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T p="InEP19\UI\Icons\Skills\Skill_NaturalLiving.png" n="key">2f7d0004:00000000:b7f6856da7f9bde9</T>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x6B7FD1B3<!--String: "{0.SimFirstName} badly needs rest! Instead of heading home to bed, {0.SimPronounSubjective} can sleep right on the ground outdoors thanks to Natural Living! It will take some getting used to, but with enough practice {0.SimFirstName} will find rest and replenishment almost anywhere."--></T>
+            </V>
+            <L n="ui_responses">
+              <U>
+                <T n="text">0x9AC94881<!--String: "Show Lesson"--></T>
+                <V n="tutorial_id" t="enabled">
+                  <T n="enabled">448260<!--Tutorial: tutorial_EP19_NaturalLivingSkill--></T>
+                </V>
+                <E n="ui_request">SHOW_LESSONS</E>
+              </U>
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="push_whimset">
+      <U n="push_whimset">
+        <T n="whimset">445161<!--ObjectivelessWhimSet: whimSet_NLS_Energy--></T>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="location">
+        <U n="location">
+          <U n="location_tests">
+            <V n="is_natural_ground" t="enabled" />
+            <V n="is_outside" t="enabled" />
+          </U>
+        </U>
+      </V>
+      <V t="skill_test">
+        <U n="skill_test">
+          <T n="skill">434909<!--Skill: statistic_Skill_NLS--></T>
+          <V n="skill_range" t="interval">
+            <U n="interval">
+              <U n="skill_interval">
+                <T n="lower_bound">1</T>
+              </U>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

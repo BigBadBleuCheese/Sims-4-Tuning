@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Buff" i="buff" m="buffs.buff" n="buff_Pregnancy_HorseBreeding_InLabor" s="323055">
+  <V n="_add_test_set" t="tests_set">
+    <L n="tests_set">
+      <L>
+        <V t="sim_info">
+          <U n="sim_info">
+            <V n="ages" t="specified">
+              <L n="specified">
+                <E>YOUNGADULT</E>
+                <E>ADULT</E>
+                <E>ELDER</E>
+              </L>
+            </V>
+          </U>
+        </V>
+        <V t="buff">
+          <U n="buff">
+            <L n="blacklist">
+              <T>256302<!--Buff: buff_Suppress_InLabor--></T>
+            </L>
+          </U>
+        </V>
+      </L>
+    </L>
+  </V>
+  <L n="_appropriateness_tags">
+    <E>Appropriateness_GrabSnack</E>
+  </L>
+  <L n="_inappropriateness_tags">
+    <E>Appropriateness_Cooking</E>
+    <E>Appropriateness_Cleaning</E>
+    <E>Appropriateness_Sleeping</E>
+  </L>
+  <L n="_loot_on_addition">
+    <T>324083<!--LootActions: loot_Pregnancy_HorseBreeding_InLabor_Notification--></T>
+  </L>
+  <T p="InGame\Audio\Stings\sting_buff_gain.propx" n="audio_sting_on_add">39b2aa4a:00000000:8af8b916cf64c646</T>
+  <T p="InGame\Audio\Stings\sting_buff_loss.propx" n="audio_sting_on_remove">39b2aa4a:00000000:3bf33216a25546ea</T>
+  <T n="buff_description">0xE9B77235<!--String: "It's go time!"--></T>
+  <T n="buff_name">0xB0756FD0<!--String: "Pregnant: In Labor"--></T>
+  <V n="buff_notification_info" t="enabled">
+    <U n="enabled">
+      <T n="priority">5</T>
+      <T n="text">0x5B3B42F5<!--String: "{0.SimFirstName} is currently in labor. The uncomfortable feeling will pass soon as her Foal has been delivered!"--></T>
+    </U>
+  </V>
+  <T n="flip_arrow_for_progress_update">True</T>
+  <U n="game_effect_modifier">
+    <L n="_game_effect_modifiers">
+      <V t="autonomy_modifier">
+        <U n="autonomy_modifier">
+          <L n="decay_modifiers">
+            <U>
+              <T n="key">312265<!--Commodity: motive_Horse_Hunger--></T>
+              <T n="value">1.75</T>
+            </U>
+            <U>
+              <T n="key">312266<!--Commodity: motive_Horse_Energy--></T>
+              <T n="value">1.75</T>
+            </U>
+            <U>
+              <T n="key">312267<!--Commodity: motive_Horse_Bladder--></T>
+              <T n="value">4</T>
+            </U>
+            <U>
+              <T n="key">312268<!--Commodity: motive_Horse_Fun--></T>
+              <T n="value">0.5</T>
+            </U>
+            <U>
+              <T n="key">312269<!--Commodity: motive_Horse_Hygiene--></T>
+              <T n="value">1.2</T>
+            </U>
+            <U>
+              <T n="key">312270<!--Commodity: motive_Horse_Social--></T>
+              <T n="value">0.5</T>
+            </U>
+          </L>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T p="InGame\UI\Icons\Buffs\buffs_pregnant.png" n="icon">2f7d0004:00000000:3da968bb826b9623</T>
+  <V n="interactions" t="enabled">
+    <U n="enabled">
+      <L n="interaction_items" />
+      <T n="weight">6</T>
+    </U>
+  </V>
+  <T n="mood_type">313600<!--Mood: mood_Horse_Uncomfortable--></T>
+  <T n="mood_weight">100000<!--PaintingTexture: PaintingTexture_Sml_IMP_High_01--></T>
+  <T n="show_timeout">True</T>
+  <L n="super_affordances">
+    <T>324084<!--DeliverBabySuperInteraction: deliverBabyFoal_HorseBreeding--></T>
+    <T>324232<!--SuperInteraction: horseBreeding_SimtoHorse_HelpBirthFoal--></T>
+  </L>
+  <L n="topics">
+    <T>16812<!--Topic: topic_thinkingaboutchildren--></T>
+  </L>
+  <T n="visible">True</T>
+  <V n="walkstyle" t="disabled" />
+  <V n="walkstyle_behavior_override" t="enabled">
+    <U n="enabled">
+      <L n="removed_run_flags">
+        <E />
+        <E>RUN_ALLOWED_OUTDOORS</E>
+      </L>
+    </U>
+  </V>
+</I>

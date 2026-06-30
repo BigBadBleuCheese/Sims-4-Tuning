@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="horseObstacles_Barrels_Start_Focus" s="326448">
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x23B4383E<!--String: "Intensely Train"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="buff_duration_remaining">
+        <U n="buff_duration_remaining">
+          <T n="buff">327961<!--Buff: buff_HorseTraining_Fatigue--></T>
+          <E n="participant">RoutingMaster</E>
+        </U>
+      </V>
+    </L>
+  </U>
+  <V n="display_tooltip" t="enabled">
+    <T n="enabled">0xAF3AE697<!--String: "Intense Training provides a Horse with more Skill but will cause the Horse to become Fatigued more quickly. "--></T>
+  </V>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <L n="continuation">
+              <U>
+                <E n="actor">RoutingMaster</E>
+                <T n="affordance">326451<!--SuperInteraction: horseObstacles_Barrels_Focus--></T>
+              </U>
+            </L>
+          </U>
+          <U n="weight">
+            <L n="multipliers">
+              <U>
+                <T n="multiplier">0</T>
+                <L n="tests">
+                  <L>
+                    <V t="skill_test">
+                      <U n="skill_test">
+                        <T n="skill">324632<!--Skill: statistic_Skill_Horse_Agility--></T>
+                        <V n="skill_range" t="threshold">
+                          <U n="threshold">
+                            <U n="skill_threshold">
+                              <E n="comparison">LESS</E>
+                              <T n="value">5</T>
+                            </U>
+                          </U>
+                        </V>
+                        <E n="subject">RoutingMaster</E>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+      </L>
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="continuation">
+                  <U>
+                    <E n="actor">RoutingMaster</E>
+                    <T n="affordance">331622<!--SuperInteraction: horseObstacles_Barrels_Focus_Basic--></T>
+                  </U>
+                </L>
+              </U>
+              <U n="weight">
+                <L n="multipliers">
+                  <U>
+                    <T n="multiplier">0</T>
+                    <L n="tests">
+                      <L>
+                        <V t="skill_test">
+                          <U n="skill_test">
+                            <T n="skill">324632<!--Skill: statistic_Skill_Horse_Agility--></T>
+                            <V n="skill_range" t="threshold">
+                              <U n="threshold">
+                                <U n="skill_threshold">
+                                  <E n="comparison">GREATER_OR_EQUAL</E>
+                                  <T n="value">5</T>
+                                </U>
+                              </U>
+                            </V>
+                            <E n="subject">RoutingMaster</E>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+        </U>
+      </L>
+      <T n="use_fallback_as_default">True</T>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+      </U>
+    </V>
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xEDBB49CC<!--String: "Children are not old enough to train with obstacles."--></T>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x471A07EA<!--String: "{0.SimFirstName} needs to be mounted on a Horse to do this."--></T>
+        </V>
+        <V n="whitelist" t="enabled">
+          <L n="enabled">
+            <T>317537<!--Buff: buff_HorseRiding_SimMounted--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">331492<!--TestSetInstance: testSetInstance_Horses_RiddenHorse_NotFatigued--></T>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">331491<!--TestSetInstance: testSetInstance_Horses_RiddenHorse_NotPregnant--></T>
+    </V>
+    <V t="state">
+      <U n="state">
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x6DFBF1CF<!--String: "Fix this Horse obstacle to continue training."--></T>
+        </V>
+        <T n="value">326202<!--ObjectStateValue: horseObstacles_Barrels_NotFallen--></T>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="skill_test">
+        <U n="skill_test">
+          <T n="skill">322708<!--Skill: statistic_Skill_AdultMajor_EquestrianSkill--></T>
+          <V n="skill_range" t="threshold">
+            <U n="threshold">
+              <U n="skill_threshold">
+                <T n="value">5</T>
+              </U>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

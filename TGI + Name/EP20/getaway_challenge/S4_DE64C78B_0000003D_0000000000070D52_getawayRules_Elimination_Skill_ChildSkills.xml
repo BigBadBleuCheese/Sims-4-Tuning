@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SkillElimination" i="getaway_challenge" m="custom_schedules.getaway_challenge_tuning" n="getawayRules_Elimination_Skill_ChildSkills" s="462162">
+  <U n="daily_timer">
+    <T n="hour">11</T>
+  </U>
+  <T n="description_tooltip">0x5C475298<!--String: "Play hard or go home! Sims with the least progress or lowest score in Creativity, Mental, Motor or Social Skills will be eliminated. Only selected roles are eligible, and participation is limited to children Sims."--></T>
+  <T n="display_name">0x76ABCDF6<!--String: "Child Skills Elimination"--></T>
+  <L n="groups">
+    <U>
+      <L n="associated_buff">
+        <U>
+          <T n="buff_type">477372<!--Buff: buff_Trait_Competitive_Hidden_Getaway_SkillContest_ChildSkills--></T>
+        </U>
+        <U>
+          <T n="buff_type">483862<!--Buff: buff_Getaway_EliminationCandidate--></T>
+        </U>
+      </L>
+      <L n="disallowed_ages">
+        <E>BABY</E>
+        <E>INFANT</E>
+        <E>TODDLER</E>
+        <E>TEEN</E>
+        <E>YOUNGADULT</E>
+        <E>ADULT</E>
+        <E>ELDER</E>
+      </L>
+      <L n="disallowed_species">
+        <E>CAT</E>
+        <E>DOG</E>
+        <E>FOX</E>
+        <E>HORSE</E>
+        <E>SMALLDOG</E>
+      </L>
+      <T n="group_name">0xD450CE15<!--String: "Competing Sims"--></T>
+    </U>
+  </L>
+  <T n="icon" p="InEP20\UI\Icons\GetawayRules\getaway_rules_ChildSkills.png">2f7d0004:00000000:f3e2eecb01251adc</T>
+  <L n="loots_after_daily_timer">
+    <T>486064<!--LootActions: loot_Getaway_Elimination_ChildSkill--></T>
+    <T>487103<!--LootActions: loot_Getaway_Elimination_ChildSkill_2_Remaining--></T>
+    <T>487101<!--LootActions: loot_Getaway_Elimination_ChildSkill_4_Remaining--></T>
+    <T>487102<!--LootActions: loot_Getaway_Elimination_ChildSkill_3_Remaining--></T>
+    <T>487104<!--LootActions: loot_Getaway_Elimination_ChildSkill_FinalElimination--></T>
+  </L>
+  <L n="skills">
+    <T>16718<!--Skill: statistic_Skill_Child_Creativity--></T>
+    <T>16719<!--Skill: statistic_Skill_Child_Mental--></T>
+    <T>16720<!--Skill: statistic_Skill_Child_Motor--></T>
+    <T>16721<!--Skill: statistic_Skill_Child_Social--></T>
+  </L>
+  <L n="tests_blocking_daily_timer_behavior">
+    <L>
+      <V t="count">
+        <U n="count">
+          <V n="participant" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">GetawayEliminationCandidates</E>
+            </U>
+          </V>
+          <V n="threshold" t="from_value">
+            <U n="from_value">
+              <E n="comparison">LESS_OR_EQUAL</E>
+              <T n="value">1</T>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

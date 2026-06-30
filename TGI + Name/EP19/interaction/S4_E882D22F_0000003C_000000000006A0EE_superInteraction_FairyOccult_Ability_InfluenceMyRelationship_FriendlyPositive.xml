@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="superInteraction_FairyOccult_Ability_InfluenceMyRelationship_FriendlyPositive" s="434414">
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Actor</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">435503<!--AnimationElement: animations_FairyOccult_Ability_InfluenceMyRelationship_Positive--></T>
+      </U>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>424740<!--LootActions: lootActions_FairyOccult_Ability_Cost_High--></T>
+          <T>434419<!--LootActions: lootActions_FairyOccult_Ability_InfluenceRelationship_FriendlyPositive--></T>
+          <T>445490<!--LootActions: loot_Aspiration_FairyStories_LightPixie_FunGain--></T>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>444656<!--LootActions: loot_EP19World_MagicCoastalBroadcaster_Start--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T n="category">424680<!--PieMenuCategory: pieMenuCategory_FairyOccult--></T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xC7BAB179<!--String: "Increase Friendly Relationship"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <V n="response" t="enabled">
+          <V n="enabled" t="individual">
+            <U n="individual">
+              <L n="animations">
+                <U>
+                  <E n="target">Actor</E>
+                  <U n="animation">
+                    <T n="factory">435484<!--AnimationElement: animations_FairyOccult_Ability_Response_PlayWithTheirLuckRelationshipSentiment_Positive--></T>
+                  </U>
+                </U>
+              </L>
+            </U>
+          </V>
+        </V>
+      </U>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T p="InGame\UI\Icons\PieMenu\SpecialInteractions\specialinteraction_consumeemotionalenergy_piemenu.png" n="key">2f7d0004:00000000:063ecf9a6c7efd31</T>
+      </U>
+    </V>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="include_all">
+        <U n="include_all">
+          <L n="exclude_affordances">
+            <T>271032<!--SuperInteraction: socialSuperInteraction_CarryPickUp_Infant--></T>
+            <T>134423<!--SuperInteraction: socialSuperInteraction_CarryPickUp--></T>
+            <T>132162<!--SuperInteraction: socialSuperInteraction_CarryPickUp_Pet--></T>
+            <T>132170<!--HoldObject: carry_HoldSim--></T>
+            <T>271209<!--HoldObject: carry_HoldSim_Back--></T>
+            <T>271090<!--SuperInteraction: socialSuperInteraction_CarryPickUp_Infant_Back--></T>
+            <T>288662<!--SuperInteraction: socialSuperInteraction_CarryPickUp_Infant_Handoff--></T>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <E n="target_type">ACTOR</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="region">
+      <U n="region">
+        <V n="blacklist" t="enabled">
+          <L n="enabled">
+            <T>231104<!--Region: region_Destination_Batuu--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">436908<!--TestSetInstance: testSetInstance_FairyOccult_Ability_EmotionalAppetite_Cost_High--></T>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="sI_Dynasty_ActionFeedback_BecameHeir" s="474283">
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <T n="allow_user_directed">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">474292<!--AnimationElement: animation_Dynasty_ActionFeedback_BecameHeir--></T>
+        <U n="overrides">
+          <V n="balloons" t="enabled">
+            <L n="enabled">
+              <U>
+                <L n="balloon_choices">
+                  <U>
+                    <V n="item" t="balloon_icon">
+                      <U n="balloon_icon">
+                        <V n="category_icon" t="show_category_icon">
+                          <V n="show_category_icon" t="dynasty">
+                            <U n="dynasty">
+                              <L n="participant_type">
+                                <E>Actor</E>
+                              </L>
+                            </U>
+                          </V>
+                        </V>
+                        <V n="icon" t="resource_key">
+                          <U n="resource_key">
+                            <T n="key" p="InEP21\UI\Icons\Headlines\headline_DynastyHeir.png">2f7d0004:00000000:af80bfc956d328f8</T>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </U>
+                </L>
+                <L n="balloon_target">
+                  <E>Actor</E>
+                </L>
+              </U>
+            </L>
+          </V>
+        </U>
+      </U>
+    </U>
+  </V>
+  <V n="content_score" t="disabled" />
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all">
+        <U n="exclude_all">
+          <L n="include_affordances">
+            <T>13998<!--SocialSuperInteraction: sim_Chat--></T>
+            <T>13991<!--SocialSuperInteraction: sim_BeAffectionate--></T>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <E n="target_type">ACTOR</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="trait">
+      <U n="trait">
+        <L n="whitelist_traits">
+          <T>466526<!--Trait: trait_Dynasty_Heir--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+  <T n="visible">False</T>
+</I>

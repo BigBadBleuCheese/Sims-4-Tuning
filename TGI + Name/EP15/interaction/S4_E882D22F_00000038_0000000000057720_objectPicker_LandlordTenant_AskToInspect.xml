@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="FilteredObjectPickerInteraction" i="interaction" m="interactions.picker.filtered_object_picker" n="objectPicker_LandlordTenant_AskToInspect" s="358176">
+  <V n="_saveable" t="disabled" />
+  <V n="additional_tests" t="enabled">
+    <L n="enabled">
+      <L>
+        <V t="location">
+          <U n="location">
+            <U n="location_tests">
+              <V n="in_common_area" t="enabled">
+                <T n="enabled">False</T>
+              </V>
+            </U>
+            <E n="subject">PickedObject</E>
+          </U>
+        </V>
+      </L>
+    </L>
+  </V>
+  <L n="basic_extras">
+    <V t="save_participant" />
+  </L>
+  <T n="category">358637<!--PieMenuCategory: pieMenuCategory_LandlordTenant_AskToInspect--></T>
+  <V n="content_score" t="disabled" />
+  <V n="continuation" t="enabled">
+    <L n="enabled">
+      <U>
+        <E n="actor">Actor</E>
+        <T n="affordance">358086<!--SocialSuperInteraction: social_LandlordTenant_AskToInspect_Cont--></T>
+        <E n="target">TargetSim</E>
+      </U>
+    </L>
+  </V>
+  <T n="display_name">0x502BAE4A<!--String: "Unit Object"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <V n="object_filter" t="object_tags">
+    <U n="object_tags">
+      <L n="tag_set">
+        <E>Func_Fridge</E>
+        <E>Func_Refrigerator</E>
+        <E>Func_Toilet</E>
+        <E>Func_Sink</E>
+        <E>Func_Shower</E>
+        <E>Func_ShowerTub</E>
+        <E>Func_Bathtub</E>
+        <E>Func_Microwave</E>
+        <E>Func_Oven</E>
+        <E>Func_Laundry_Hero_Object</E>
+        <E>Func_ElectricKettle</E>
+        <E>Func_PressureCooker</E>
+        <E>Func_WaterHeater</E>
+        <E>Func_FuseBox</E>
+      </L>
+    </U>
+  </V>
+  <V n="picker_dialog" t="object_picker">
+    <U n="object_picker">
+      <E n="row_description_display">NO_DESCRIPTION</E>
+    </U>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="relationship">
+      <U n="relationship">
+        <U n="required_relationship_bits">
+          <L n="match_all">
+            <T>343628<!--RelationshipBit: relBit_MultiUnit_TenantToLandlord--></T>
+          </L>
+          <L n="match_any">
+            <T>192631<!--RelationshipBit: relationshipBit_CelebrityAcquaintance--></T>
+            <T>15803<!--RelationshipBit: has_met--></T>
+          </L>
+        </U>
+      </U>
+    </V>
+    <V t="multi_unit_role_test">
+      <U n="multi_unit_role_test">
+        <V n="lot_source" t="enabled" />
+      </U>
+    </V>
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <E n="who">TargetSim</E>
+      </U>
+    </V>
+  </L>
+</I>

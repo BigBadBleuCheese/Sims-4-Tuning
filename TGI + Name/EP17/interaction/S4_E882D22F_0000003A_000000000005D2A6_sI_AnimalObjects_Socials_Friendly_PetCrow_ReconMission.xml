@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SocialObjectSuperInteraction" i="interaction" m="interactions.social.social_object_super_interaction" n="sI_AnimalObjects_Socials_Friendly_PetCrow_ReconMission" s="381606">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="cone">
+            <U n="cone">
+              <T n="angle">150</T>
+              <T n="ideal_radius_max">1</T>
+              <T n="ideal_radius_min">0.5</T>
+              <T n="max_radius">2</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="value" t="facing" />
+        </U>
+        <U>
+          <V n="value" t="circle">
+            <U n="circle">
+              <T n="radius">2</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <L n="_false_advertisements">
+    <V t="statistic_set_max">
+      <U n="statistic_set_max">
+        <T n="stat">265709<!--Commodity: commodity_Trait_Autonomy_AnimalEnthusiast--></T>
+      </U>
+    </V>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <L n="_static_commodities">
+    <U>
+      <T n="static_commodity">331508<!--StaticCommodity: staticCommodity_CommunalEvents_AnimalDay_Guests--></T>
+    </U>
+    <U>
+      <T n="static_commodity">393308<!--StaticCommodity: staticCommodity_EP17World_GRIM_Garden--></T>
+    </U>
+    <U>
+      <T n="static_commodity">400795<!--StaticCommodity: staticCommodity_EP17World_BonehildaCosplay--></T>
+    </U>
+    <U>
+      <T n="desire">5</T>
+      <T n="static_commodity">424358<!--StaticCommodity: staticCommodity_EP17World_WaylonWarez_TendPetCrow--></T>
+    </U>
+  </L>
+  <T n="allow_autonomous">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">381596<!--AnimationElement: AnimalObjects_Socials_PetCrow_Socials_SendOnReconMission--></T>
+      </U>
+      <V n="periodic_stat_change" t="enabled">
+        <U n="enabled">
+          <L n="operations">
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="amount">0.6</T>
+                <T n="stat">16655<!--Commodity: motive_Fun--></T>
+                <L n="tests">
+                  <L>
+                    <V t="trait">
+                      <U n="trait">
+                        <L n="blacklist_traits">
+                          <T>379635<!--Trait: trait_Macabre--></T>
+                          <T>9332<!--Trait: trait_Gloomy--></T>
+                          <T>27914<!--Trait: trait_LovesOutdoors--></T>
+                          <T>257365<!--Trait: Trait_AnimalEnthusiast--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </V>
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="amount">0.75</T>
+                <T n="stat">16655<!--Commodity: motive_Fun--></T>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+                <L n="tests">
+                  <L>
+                    <V t="trait">
+                      <U n="trait">
+                        <L n="whitelist_traits">
+                          <T>379635<!--Trait: trait_Macabre--></T>
+                          <T>9332<!--Trait: trait_Gloomy--></T>
+                          <T>27914<!--Trait: trait_LovesOutdoors--></T>
+                          <T>257365<!--Trait: Trait_AnimalEnthusiast--></T>
+                        </L>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </V>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>251822<!--LootActions: loot_Lifestyles_Outdoorsy_Liked--></T>
+          <T>250345<!--LootActions: loot_Lifestyles_Progress_Unlock_Outdoorsy--></T>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>266867<!--LootActions: loot_animalObjects_Relationship_CritterTenderMax--></T>
+        </L>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>265728<!--LootActions: Commodity_Trait_AnimalEnthusiast_SatisfyAutonomy--></T>
+          <T>267154<!--LootActions: loot_Skill_Toddler_Communication_AnimalObjects--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="basic_focus" t="tunable_focus" />
+  <T n="category">260969<!--PieMenuCategory: pieMenuCategory_AnimalObjects_Socialize--></T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x16F408FB<!--String: "Send on Crow Collective Recon Mission"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+    <E>Interaction_AnimalObjects_Social_All</E>
+    <E>Interaction_Animal</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="basic_extras">
+          <V t="loot">
+            <U n="loot">
+              <L n="loot_list">
+                <T>381709<!--LootActions: loot_AnimalObjects_PetCrow_RelGain--></T>
+                <T>381711<!--LootActions: loot_AnimalObjects_PetCrow_ReconMission--></T>
+              </L>
+            </U>
+          </V>
+          <V t="buff_fire_and_forget">
+            <U n="buff_fire_and_forget">
+              <U n="buff">
+                <T n="buff_type">390585<!--Buff: buff_AnimalObjects_PetCrow_Moodlets_ReconCooldown--></T>
+              </U>
+            </U>
+          </V>
+        </L>
+      </U>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T n="key" p="InGame\UI\Icons\PieMenu\Category\icon_piemenu_category_friendly.png">2f7d0004:00000000:ea4aa419d39866ff</T>
+      </U>
+    </V>
+  </V>
+  <T n="pie_menu_priority">10</T>
+  <E n="scoring_priority">NORMAL</E>
+  <V n="state_value_exit" t="enabled">
+    <V n="enabled" t="value_from_test_list">
+      <U n="value_from_test_list">
+        <V n="fallback_value" t="enabled">
+          <T n="enabled">262374<!--ObjectStateValue: animalObjects_Generic_MasterController_Free--></T>
+        </V>
+      </U>
+    </V>
+  </V>
+  <V n="state_value_prepare" t="enabled">
+    <V n="enabled" t="value_from_test_list">
+      <U n="value_from_test_list">
+        <V n="fallback_value" t="enabled">
+          <T n="enabled">262375<!--ObjectStateValue: animalObjects_Generic_MasterController_Socializing--></T>
+        </V>
+      </U>
+    </V>
+  </V>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all" />
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_autonomous">
+    <L>
+      <V t="distance">
+        <U n="distance">
+          <U n="distance_threshold">
+            <E n="comparison">LESS_OR_EQUAL</E>
+            <T n="value">20</T>
+          </U>
+          <V n="level_modifier" t="infinite" />
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="location">
+        <U n="location">
+          <U n="location_tests">
+            <V n="is_on_active_lot" t="Is_or_is_not_on_active_lot" />
+          </U>
+        </U>
+      </V>
+      <V t="location">
+        <U n="location">
+          <U n="location_tests">
+            <V n="is_on_active_lot" t="Is_or_is_not_on_active_lot" />
+          </U>
+          <E n="subject">Object</E>
+        </U>
+      </V>
+    </L>
+  </L>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="object_relationship">
+      <U n="object_relationship">
+        <V n="relationship_status" t="relationship_range">
+          <U n="relationship_range">
+            <U n="value_interval">
+              <T n="lower_bound">20</T>
+            </U>
+          </U>
+        </V>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x58617E7E<!--String: "The Crow Collective does not entertain recon missions unless you are close to your crow."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="state">
+      <U n="state">
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x426CB927<!--String: "Your crow is too upset to do this right now. Help them feel better by showing them some affection."--></T>
+        </V>
+        <T n="value">383342<!--CommodityBasedObjectStateValue: petCrow_Mood_Values_Fine--></T>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>390585<!--Buff: buff_AnimalObjects_PetCrow_Moodlets_ReconCooldown--></T>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x319BE79D<!--String: "You can't query the Crow Collective too often—they need a break."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="state">
+      <U n="state">
+        <E n="operator">NOTEQUAL</E>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x5F9CF5F2<!--String: "Your crow is off communing with the Crow Collective—wait for them to return!"--></T>
+        </V>
+        <T n="value">381844<!--ObjectStateValue: animalObjects_StateValues_PetCrow_Away--></T>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

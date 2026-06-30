@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalMultipleSimsWithBuff" i="situation_goal" m="situations.situation_goal_multi_sim" n="Goal_Ballroom_MoodMatch" s="482617">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T n="enabled" p="InEP21\UI\Icons\Events\EventGoal_SetTheMood.png">2f7d0004:00000000:6cc98caa91e688c1</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0xBF582955<!--String: "Help your Dance Partner get in the Right Mood"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0xA8AD4E7F<!--String: "If dancing for Romance, you could flirt with your partner until they're in a Flirty mood. If dancing for Status, get your partner in a Confident mood—giving them Compliments can help with that."--></T>
+      </V>
+    </U>
+  </V>
+  <U n="_goal_test">
+    <T n="buff_type">482615<!--Buff: buff_Ballroom_Hidden_MoodMatch--></T>
+    <V n="sim_count" t="fixed">
+      <U n="fixed">
+        <T n="count">1</T>
+      </U>
+    </V>
+  </U>
+  <L n="_post_tests">
+    <V t="buff">
+      <U n="buff">
+        <V n="whitelist" t="enabled">
+          <L n="enabled">
+            <T>473351<!--Buff: buff_Ballroom_Hidden_HostDancePartner--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="_pre_tests_can_use_situation_initiator">True</T>
+</I>

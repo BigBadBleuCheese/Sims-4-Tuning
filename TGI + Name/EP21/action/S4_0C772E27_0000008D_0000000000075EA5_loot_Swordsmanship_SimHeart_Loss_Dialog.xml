@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Swordsmanship_SimHeart_Loss_Dialog" s="482981">
+  <L n="loot_actions">
+    <V t="statistics">
+      <V n="statistics" t="relationship_change">
+        <U n="relationship_change">
+          <T n="amount">-100</T>
+          <L n="subject">
+            <E>Actor</E>
+          </L>
+          <L n="target_participant_type">
+            <E>PickedSim</E>
+          </L>
+          <T n="track">16651<!--RelationshipTrack: LTR_Romance_Main--></T>
+        </U>
+      </V>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="relationship_change">
+        <U n="relationship_change">
+          <T n="amount">-25</T>
+          <L n="subject">
+            <E>Actor</E>
+          </L>
+          <L n="target_participant_type">
+            <E>PickedSim</E>
+          </L>
+          <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+        </U>
+      </V>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="relationship_change">
+        <U n="relationship_change">
+          <T n="amount">50</T>
+          <L n="subject">
+            <E>TargetSim</E>
+          </L>
+          <L n="target_participant_type">
+            <E>PickedSim</E>
+          </L>
+          <T n="track">16651<!--RelationshipTrack: LTR_Romance_Main--></T>
+        </U>
+      </V>
+    </V>
+    <V t="looping_loot_ops_with_target">
+      <U n="looping_loot_ops_with_target">
+        <L n="loots_to_apply">
+          <T>10796<!--LootActions: Loot_BrokenUp--></T>
+        </L>
+        <E n="subject">PickedSim</E>
+        <E n="target_participant_type">Actor</E>
+        <L n="tests">
+          <L>
+            <V t="relationship">
+              <U n="relationship">
+                <U n="required_relationship_bits">
+                  <L n="match_any">
+                    <T>15816<!--RelationshipBit: romantic-Engaged--></T>
+                    <T>99429<!--RelationshipBit: romantic-Promised--></T>
+                    <T>15825<!--RelationshipBit: romantic-Significant_Other--></T>
+                    <T>491011<!--RelationshipBit: romantic-SecretLover--></T>
+                  </L>
+                </U>
+                <L n="subject">
+                  <E>PickedSim</E>
+                </L>
+                <L n="target_sim">
+                  <E>Actor</E>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="looping_loot_ops_with_target">
+      <U n="looping_loot_ops_with_target">
+        <L n="loots_to_apply">
+          <T>10847<!--LootActions: Loot_Divorced--></T>
+        </L>
+        <E n="subject">PickedSim</E>
+        <E n="target_participant_type">Actor</E>
+        <L n="tests">
+          <L>
+            <V t="relationship">
+              <U n="relationship">
+                <U n="required_relationship_bits">
+                  <L n="match_any">
+                    <T>15822<!--RelationshipBit: romantic-Married--></T>
+                  </L>
+                </U>
+                <L n="subject">
+                  <E>PickedSim</E>
+                </L>
+                <L n="target_sim">
+                  <E>Actor</E>
+                </L>
+              </U>
+            </V>
+          </L>
+          <L />
+        </L>
+      </U>
+    </V>
+    <V t="sim_interaction_dialog">
+      <U n="sim_interaction_dialog">
+        <U n="dialog">
+          <T n="anonymous_target_sim">False</T>
+          <L n="dialog_options">
+            <E>DISABLE_CLOSE_BUTTON</E>
+          </L>
+          <V n="icon" t="enabled">
+            <V n="enabled" t="participant">
+              <U n="participant">
+                <L n="participant_type">
+                  <E>PickedSim</E>
+                </L>
+              </U>
+            </V>
+          </V>
+          <E n="phone_ring_type">RING</E>
+          <V n="text" t="single">
+            <T n="single">0xE2664EFE<!--String: "If you were arrogant enough to duel someone else for MY heart, I expected you would at least win!"--></T>
+          </V>
+          <V n="text_tokens" t="enabled">
+            <U n="enabled">
+              <L n="tokens">
+                <V t="participant_type" />
+                <V t="participant_type">
+                  <U n="participant_type">
+                    <V n="objects" t="from_participant">
+                      <U n="from_participant">
+                        <E n="participant">TargetSim</E>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </U>
+          </V>
+        </U>
+        <L n="possible_responses">
+          <U>
+            <U n="item">
+              <T n="text">0x2F13DCA6<!--String: "Sorry to disappoint you."--></T>
+            </U>
+          </U>
+          <U>
+            <U n="item">
+              <T n="text">0x5576AA94<!--String: "At least I tried!"--></T>
+            </U>
+          </U>
+        </L>
+        <E n="subject">Actor</E>
+        <E n="target_participant_type">PickedSim</E>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="distance">
+        <U n="distance">
+          <U n="distance_threshold">
+            <E n="comparison">GREATER_OR_EQUAL</E>
+            <T n="value">50</T>
+          </U>
+          <V n="level_modifier" t="specific" />
+          <V n="target" t="participant_type">
+            <U n="participant_type">
+              <E n="participant">PickedSim</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

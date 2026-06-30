@@ -1,0 +1,1000 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Sim" i="object" m="sims.sim" n="object_Horse" s="120619">
+  <V n="_awareness_component" t="enabled" />
+  <U n="_carrying_component">
+    <V n="carry_locomotion" t="quadrupedal" />
+    <T n="default_put_down_strategy">145549<!--PutDownStrategy: putDownStrategy_Default--></T>
+    <U n="holstering_behavior">
+      <V n="default_behavior" t="disallow" />
+    </U>
+  </U>
+  <U n="_components">
+    <V n="autonomy" t="enabled">
+      <U n="enabled">
+        <E n="_settings_group">PETS</E>
+        <V n="get_comfortable" t="disabled" />
+        <L n="preroll_affordance_skip_set">
+          <T>30917<!--SocialPickerSuperInteraction: SocialPickerSI--></T>
+        </L>
+      </U>
+    </V>
+    <V n="carryable" t="disabled" />
+    <V n="censor_grid" t="enabled" />
+    <V n="focus" t="enabled">
+      <U n="enabled">
+        <T n="_focus_bone">b__R_Eye__</T>
+        <V n="_focus_score" t="globally">
+          <U n="globally">
+            <E n="base">HIGH</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V n="line_of_sight" t="enabled">
+      <U n="enabled">
+        <U n="line_of_sight">
+          <T n="max_line_of_sight_radius">10</T>
+        </U>
+      </U>
+    </V>
+    <V n="live_drag_target" t="disabled" />
+    <V n="proximity_component" t="enabled">
+      <U n="enabled">
+        <L n="buffs">
+          <T>32807<!--Buff: Buff_Near_Friendly--></T>
+          <T>32818<!--Buff: Buff_Near_Unfriendly--></T>
+          <T>169547<!--Buff: buff_Near_HouseholdToddler--></T>
+          <T>500390<!--Buff: Buff_Near_Family--></T>
+          <T>500391<!--Buff: Buff_Near_HH--></T>
+        </L>
+      </U>
+    </V>
+    <V n="routing_component" t="enabled">
+      <U n="enabled">
+        <U n="plan_context_data">
+          <L n="context_age_species_overrides">
+            <U>
+              <E n="age">CHILD</E>
+              <U n="context_override">
+                <T n="_agent_extra_clearance_modifier">2</T>
+                <T n="_agent_goal_radius">0.8</T>
+                <V n="_agent_height_clearance_override" t="enabled">
+                  <T n="enabled">1.5</T>
+                </V>
+                <V n="_agent_path_plan_radius" t="enabled">
+                  <T n="enabled">0.4</T>
+                </V>
+                <U n="_agent_position_offset">
+                  <T n="z">-0.23</T>
+                </U>
+                <T n="_agent_radius">0.7</T>
+                <V n="_agent_shape" t="rectangle">
+                  <U n="rectangle">
+                    <T n="length">0.85</T>
+                    <T n="width">0.17</T>
+                  </U>
+                </V>
+                <V n="_allowed_wading_depths" t="enabled">
+                  <L n="enabled">
+                    <E>WADING_SHALLOW</E>
+                    <E>WADING_VERY_SHALLOW</E>
+                  </L>
+                </V>
+                <T n="_disable_fake_portals">True</T>
+                <T n="_max_goal_clipping_score">40</T>
+                <V n="_max_slope_angle" t="enabled">
+                  <T n="enabled">17</T>
+                </V>
+              </U>
+              <E n="species">HORSE</E>
+            </U>
+          </L>
+          <U n="default_context">
+            <V n="_agent_additional_height_clearance_when_carrying_sims" t="enabled">
+              <T n="enabled">0.7</T>
+            </V>
+            <T n="_agent_extra_clearance_modifier">4.4</T>
+            <T n="_agent_goal_radius">1.4</T>
+            <V n="_agent_height_clearance_override" t="enabled">
+              <T n="enabled">2.3</T>
+            </V>
+            <V n="_agent_path_plan_radius" t="enabled">
+              <T n="enabled">0.35</T>
+            </V>
+            <U n="_agent_position_offset">
+              <T n="x">0</T>
+              <T n="y">0</T>
+              <T n="z">-0.4</T>
+            </U>
+            <T n="_agent_radius">1.2</T>
+            <V n="_agent_shape" t="rectangle">
+              <U n="rectangle">
+                <T n="length">1.8</T>
+                <T n="width">0.25</T>
+              </U>
+            </V>
+            <V n="_allowed_portal_flags" t="disabled" />
+            <V n="_allowed_wading_depths" t="enabled">
+              <L n="enabled">
+                <E>WADING_SHALLOW</E>
+                <E>WADING_VERY_SHALLOW</E>
+              </L>
+            </V>
+            <T n="_disable_fake_portals">True</T>
+            <V n="_exclusion_portal_flags" t="enabled">
+              <L n="enabled">
+                <E>SPECIES_HORSE</E>
+              </L>
+            </V>
+            <V n="_max_slope_angle" t="enabled">
+              <T n="enabled">17</T>
+            </V>
+          </U>
+        </U>
+        <U n="walkstyle_behavior">
+          <L n="combo_walkstyle_replacements">
+            <U>
+              <L n="key_combo_list">
+                <T p="InGame\Locomotion\RunPanic.walkstyle">27c01d95:00000000:00000000278b1e71</T>
+              </L>
+              <T p="InEP14\Locomotion\Horse_Canter.walkstyle" n="result">27c01d95:00000000:000000002b03da08</T>
+            </U>
+          </L>
+          <T n="default_walkstyle" p="InEP14\Locomotion\Horse_Trot.walkstyle">27c01d95:00000000:00000000e0218918</T>
+          <L n="run_allowed_flags">
+            <E>RUN_ALLOWED_OUTDOORS</E>
+            <E />
+          </L>
+          <T n="run_required_segment_distance">10</T>
+          <T n="run_required_total_distance">15</T>
+          <T p="InEP14\Locomotion\Horse_Canter.walkstyle" n="run_walkstyle">27c01d95:00000000:000000002b03da08</T>
+          <T p="InEP14\Locomotion\Horse_Walk.walkstyle" n="short_walkstyle">27c01d95:00000000:000000006b98b008</T>
+          <T n="short_walkstyle_distance">3.5</T>
+          <L n="short_walkstyle_distance_override_map">
+            <U>
+              <T p="InEP14\Locomotion\Horse_Riding_Canter.walkstyle" n="key">27c01d95:00000000:00000000582023b8</T>
+              <T n="value">4.5</T>
+            </U>
+            <U>
+              <T p="InEP14\Locomotion\Horse_Riding_Trot.walkstyle" n="key">27c01d95:00000000:0000000002c6f268</T>
+              <T n="value">3.5</T>
+            </U>
+          </L>
+          <L n="short_walkstyle_map">
+            <U>
+              <T n="key" p="InEP04\Locomotion\EP04_RunGhost.walkstyle">27c01d95:00000000:00000000a828aa51</T>
+              <T p="InEP04\Locomotion\EP04_WalkGhost.walkstyle" n="value">27c01d95:00000000:00000000e95830a7</T>
+            </U>
+            <U>
+              <T n="key" p="InEP04\Locomotion\EP04_TrotGhost.walkstyle">27c01d95:00000000:000000008c5f2f77</T>
+              <T p="InEP04\Locomotion\EP04_WalkGhost.walkstyle" n="value">27c01d95:00000000:00000000e95830a7</T>
+            </U>
+            <U>
+              <T p="InEP04\Locomotion\EP04_WalkDroopyGhost.walkstyle" n="key">27c01d95:00000000:00000000710e0820</T>
+              <T p="InEP04\Locomotion\EP04_WalkDroopyGhost.walkstyle" n="value">27c01d95:00000000:00000000710e0820</T>
+            </U>
+            <U>
+              <T p="InEP04\Locomotion\EP04_WalkStalkGhost.walkstyle" n="key">27c01d95:00000000:00000000c5d5a4d0</T>
+              <T p="InEP04\Locomotion\EP04_WalkStalkGhost.walkstyle" n="value">27c01d95:00000000:00000000c5d5a4d0</T>
+            </U>
+            <U>
+              <T p="InEP05\Locomotion\EP05_IceSkate.walkstyle" n="key">27c01d95:00000000:0000000003eddea7</T>
+              <T p="InEP05\Locomotion\EP05_IceSkate.walkstyle" n="value">27c01d95:00000000:0000000003eddea7</T>
+            </U>
+            <U>
+              <T p="InEP05\Locomotion\EP05_IceSkateBackwards.walkstyle" n="key">27c01d95:00000000:000000005fffed97</T>
+              <T p="InEP05\Locomotion\EP05_IceSkateBackwards.walkstyle" n="value">27c01d95:00000000:000000005fffed97</T>
+            </U>
+            <U>
+              <T p="InEP05\Locomotion\EP05_IceSkateHighSkill.walkstyle" n="key">27c01d95:00000000:000000005555a4ea</T>
+              <T p="InEP05\Locomotion\EP05_IceSkateHighSkill.walkstyle" n="value">27c01d95:00000000:000000005555a4ea</T>
+            </U>
+            <U>
+              <T p="InEP05\Locomotion\EP05_IceSkateLowSkill.walkstyle" n="key">27c01d95:00000000:00000000d4dc3a9e</T>
+              <T p="InEP05\Locomotion\EP05_IceSkateLowSkill.walkstyle" n="value">27c01d95:00000000:00000000d4dc3a9e</T>
+            </U>
+            <U>
+              <T p="InEP05\Locomotion\EP05_RollerSkate.walkstyle" n="key">27c01d95:00000000:000000001cb6aa0c</T>
+              <T p="InEP05\Locomotion\EP05_RollerSkate.walkstyle" n="value">27c01d95:00000000:000000001cb6aa0c</T>
+            </U>
+            <U>
+              <T p="InEP05\Locomotion\EP05_RollerSkateBackwards.walkstyle" n="key">27c01d95:00000000:000000003ef677de</T>
+              <T p="InEP05\Locomotion\EP05_RollerSkateBackwards.walkstyle" n="value">27c01d95:00000000:000000003ef677de</T>
+            </U>
+            <U>
+              <T p="InEP05\Locomotion\EP05_RollerSkateHighSkill.walkstyle" n="key">27c01d95:00000000:0000000031319277</T>
+              <T p="InEP05\Locomotion\EP05_RollerSkateHighSkill.walkstyle" n="value">27c01d95:00000000:0000000031319277</T>
+            </U>
+            <U>
+              <T p="InEP05\Locomotion\EP05_RollerSkateLowSkill.walkstyle" n="key">27c01d95:00000000:00000000c010a085</T>
+              <T p="InEP05\Locomotion\EP05_RollerSkateLowSkill.walkstyle" n="value">27c01d95:00000000:00000000c010a085</T>
+            </U>
+            <U>
+              <T p="InGame\Locomotion\RunPanic.walkstyle" n="key">27c01d95:00000000:00000000278b1e71</T>
+              <T p="InGame\Locomotion\RunPanic.walkstyle" n="value">27c01d95:00000000:00000000278b1e71</T>
+            </U>
+            <U>
+              <T p="InGame\Locomotion\Swim.walkstyle" n="key">27c01d95:00000000:00000000090d7f4d</T>
+              <T p="InGame\Locomotion\Swim.walkstyle" n="value">27c01d95:00000000:00000000090d7f4d</T>
+            </U>
+            <U>
+              <T p="InGame\Locomotion\SwimAngry.walkstyle" n="key">27c01d95:00000000:00000000fbbc7568</T>
+              <T p="InGame\Locomotion\SwimAngry.walkstyle" n="value">27c01d95:00000000:00000000fbbc7568</T>
+            </U>
+            <U>
+              <T p="InGame\Locomotion\SwimEnergized.walkstyle" n="key">27c01d95:00000000:000000003f3989ce</T>
+              <T p="InGame\Locomotion\SwimEnergized.walkstyle" n="value">27c01d95:00000000:000000003f3989ce</T>
+            </U>
+            <U>
+              <T p="InGame\Locomotion\SwimPlayful.walkstyle" n="key">27c01d95:00000000:00000000708846c8</T>
+              <T p="InGame\Locomotion\SwimPlayful.walkstyle" n="value">27c01d95:00000000:00000000708846c8</T>
+            </U>
+            <U>
+              <T p="InGame\Locomotion\SwimSad.walkstyle" n="key">27c01d95:00000000:000000006b45f2f3</T>
+              <T p="InGame\Locomotion\SwimSad.walkstyle" n="value">27c01d95:00000000:000000006b45f2f3</T>
+            </U>
+            <U>
+              <T p="InGame\Locomotion\WalkGhost.walkstyle" n="key">27c01d95:00000000:0000000085fa674b</T>
+              <T p="InGame\Locomotion\WalkGhost.walkstyle" n="value">27c01d95:00000000:0000000085fa674b</T>
+            </U>
+            <U>
+              <T p="InGame\Locomotion\WalkGhostAngry.walkstyle" n="key">27c01d95:00000000:0000000059778116</T>
+              <T p="InGame\Locomotion\WalkGhostAngry.walkstyle" n="value">27c01d95:00000000:0000000059778116</T>
+            </U>
+            <U>
+              <T p="InGame\Locomotion\WalkGhostHappy.walkstyle" n="key">27c01d95:00000000:0000000050190287</T>
+              <T p="InGame\Locomotion\WalkGhostHappy.walkstyle" n="value">27c01d95:00000000:0000000050190287</T>
+            </U>
+            <U>
+              <T p="InGame\Locomotion\WalkGhostSad.walkstyle" n="key">27c01d95:00000000:0000000035c03e01</T>
+              <T p="InGame\Locomotion\WalkGhostSad.walkstyle" n="value">27c01d95:00000000:0000000035c03e01</T>
+            </U>
+            <U>
+              <T p="InGame\Locomotion\WalkPregnant.walkstyle" n="key">27c01d95:00000000:000000000f5ca155</T>
+              <T p="InGame\Locomotion\WalkPregnant.walkstyle" n="value">27c01d95:00000000:000000000f5ca155</T>
+            </U>
+            <U>
+              <T p="InGame\Locomotion\WalkReaper.walkstyle" n="key">27c01d95:00000000:00000000ae69ba8b</T>
+              <T p="InGame\Locomotion\WalkReaper.walkstyle" n="value">27c01d95:00000000:00000000ae69ba8b</T>
+            </U>
+          </L>
+        </U>
+      </U>
+    </V>
+    <V n="state" t="enabled">
+      <U n="enabled">
+        <L n="state_triggers" />
+        <L n="states">
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">15152<!--CommodityBasedObjectStateValue: Fat_0--></T>
+              </U>
+              <U>
+                <T n="key">15153<!--CommodityBasedObjectStateValue: Fat_1--></T>
+              </U>
+              <U>
+                <T n="key">15154<!--CommodityBasedObjectStateValue: Fat_2--></T>
+              </U>
+              <U>
+                <T n="key">15155<!--CommodityBasedObjectStateValue: Fat_3--></T>
+              </U>
+              <U>
+                <T n="key">15156<!--CommodityBasedObjectStateValue: Fat_4--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">15154<!--CommodityBasedObjectStateValue: Fat_2--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">15180<!--CommodityBasedObjectStateValue: Fit_0--></T>
+              </U>
+              <U>
+                <T n="key">15181<!--CommodityBasedObjectStateValue: Fit_1--></T>
+              </U>
+              <U>
+                <T n="key">15182<!--CommodityBasedObjectStateValue: Fit_2--></T>
+              </U>
+              <U>
+                <T n="key">15183<!--CommodityBasedObjectStateValue: Fit_3--></T>
+              </U>
+              <U>
+                <T n="key">15184<!--CommodityBasedObjectStateValue: Fit_4--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">15182<!--CommodityBasedObjectStateValue: Fit_2--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">39737<!--CommodityBasedObjectStateValue: FireState_Burn_Material_Change_Not_Burning--></T>
+              </U>
+              <U>
+                <T n="key">75468<!--CommodityBasedObjectStateValue: FireState_Burn_Sim_Burning--></T>
+              </U>
+              <U>
+                <T n="key">75469<!--CommodityBasedObjectStateValue: FireState_Burn_Sim_Burning_Singed--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">74096<!--CommodityBasedObjectStateValue: FireState_Burn_Sim_Not_Burning--></T>
+            </V>
+            <T n="reset_to_default">True</T>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">75466<!--ObjectStateValue: Sim_singed_singed--></T>
+              </U>
+              <U>
+                <T n="key">75467<!--ObjectStateValue: Sim_singed_non_singed--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">75467<!--ObjectStateValue: Sim_singed_non_singed--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">274808<!--ObjectStateValue: SimFaceGrubby_FaceGrubby--></T>
+              </U>
+              <U>
+                <T n="key">274809<!--ObjectStateValue: SimFaceGrubby_NotFaceGrubby--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">274809<!--ObjectStateValue: SimFaceGrubby_NotFaceGrubby--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">160280<!--ObjectStateValue: bowling_Ball_Values_Red--></T>
+              </U>
+              <U>
+                <T n="key">160282<!--ObjectStateValue: bowling_Ball_Values_default--></T>
+              </U>
+              <U>
+                <T n="key">160532<!--ObjectStateValue: bowling_Ball_Values_Gold--></T>
+              </U>
+              <U>
+                <T n="key">160533<!--ObjectStateValue: bowling_Ball_Values_Blue--></T>
+              </U>
+              <U>
+                <T n="key">160534<!--ObjectStateValue: bowling_Ball_Values_LightBlue--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">160282<!--ObjectStateValue: bowling_Ball_Values_default--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">115466<!--CommodityBasedObjectStateValue: sim_Frozen_Unfrozen--></T>
+              </U>
+              <U>
+                <T n="key">115467<!--CommodityBasedObjectStateValue: sim_Frozen_Frozen--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">115466<!--CommodityBasedObjectStateValue: sim_Frozen_Unfrozen--></T>
+            </V>
+            <T n="reset_on_load_if_time_passes">True</T>
+            <T n="reset_to_default">True</T>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">115715<!--CommodityBasedObjectStateValue: sim_Frozen_Frozen_Child--></T>
+              </U>
+              <U>
+                <T n="key">115716<!--CommodityBasedObjectStateValue: sim_Frozen_UnFrozen_Child--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">115716<!--CommodityBasedObjectStateValue: sim_Frozen_UnFrozen_Child--></T>
+            </V>
+            <T n="reset_on_load_if_time_passes">True</T>
+            <T n="reset_to_default">True</T>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">121725<!--ObjectStateValue: iceCream_Broadcaster_On--></T>
+              </U>
+              <U>
+                <T n="key">121726<!--ObjectStateValue: iceCream_Broadcaster_Off--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">121726<!--ObjectStateValue: iceCream_Broadcaster_Off--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">149312<!--ObjectStateValue: phone_UseType_Camera--></T>
+              </U>
+              <U>
+                <T n="key">149313<!--ObjectStateValue: phone_UseType_Game--></T>
+              </U>
+              <U>
+                <T n="key">149314<!--ObjectStateValue: phone_UseType_Photo--></T>
+              </U>
+              <U>
+                <T n="key">149315<!--ObjectStateValue: phone_UseType_Text--></T>
+              </U>
+              <U>
+                <T n="key">149316<!--ObjectStateValue: phone_UseType_Web--></T>
+              </U>
+              <U>
+                <T n="key">283303<!--ObjectStateValue: phone_UseType_vChat--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">149315<!--ObjectStateValue: phone_UseType_Text--></T>
+            </V>
+            <T n="reset_on_load_if_time_passes">True</T>
+            <T n="reset_to_default">True</T>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">149293<!--ObjectStateValue: phone_Color_TurquoiseStripes--></T>
+              </U>
+              <U>
+                <T n="key">149294<!--ObjectStateValue: phone_Color_Default--></T>
+              </U>
+              <U>
+                <T n="key">149295<!--ObjectStateValue: phone_Color_Lime--></T>
+              </U>
+              <U>
+                <T n="key">149296<!--ObjectStateValue: phone_Color_MintGreenStripes--></T>
+              </U>
+              <U>
+                <T n="key">149297<!--ObjectStateValue: phone_Color_OrangePolka--></T>
+              </U>
+              <U>
+                <T n="key">149298<!--ObjectStateValue: phone_Color_Purple--></T>
+              </U>
+              <U>
+                <T n="key">149299<!--ObjectStateValue: phone_Color_Red--></T>
+              </U>
+              <U>
+                <T n="key">149300<!--ObjectStateValue: phone_Color_RoseGold--></T>
+              </U>
+              <U>
+                <T n="key">149301<!--ObjectStateValue: phone_Color_Silver--></T>
+              </U>
+              <U>
+                <T n="key">149302<!--ObjectStateValue: phone_Color_White--></T>
+              </U>
+              <U>
+                <T n="key">149303<!--ObjectStateValue: phone_Color_BlackStripes--></T>
+              </U>
+              <U>
+                <T n="key">149304<!--ObjectStateValue: phone_Color_Black--></T>
+              </U>
+              <U>
+                <T n="key">149305<!--ObjectStateValue: phone_Color_BluePolka--></T>
+              </U>
+              <U>
+                <T n="key">149306<!--ObjectStateValue: phone_Color_Brown--></T>
+              </U>
+              <U>
+                <T n="key">149307<!--ObjectStateValue: phone_Color_DarkBlue--></T>
+              </U>
+              <U>
+                <T n="key">149308<!--ObjectStateValue: phone_Color_DarkGreen--></T>
+              </U>
+              <U>
+                <T n="key">149309<!--ObjectStateValue: phone_Color_Gold--></T>
+              </U>
+              <U>
+                <T n="key">149310<!--ObjectStateValue: phone_Color_HotPinkPolka--></T>
+              </U>
+              <U>
+                <T n="key">149311<!--ObjectStateValue: phone_Color_LightPink--></T>
+              </U>
+              <U>
+                <T n="key">284000<!--ObjectStateValue: phone_Color_Values_swirlBlue--></T>
+              </U>
+              <U>
+                <T n="key">284001<!--ObjectStateValue: phone_Color_Values_swirlGray--></T>
+              </U>
+              <U>
+                <T n="key">284002<!--ObjectStateValue: phone_Color_Values_swirlGreen--></T>
+              </U>
+              <U>
+                <T n="key">284003<!--ObjectStateValue: phone_Color_Values_swirlOrange--></T>
+              </U>
+              <U>
+                <T n="key">284004<!--ObjectStateValue: phone_Color_Values_swirlPink--></T>
+              </U>
+              <U>
+                <T n="key">284005<!--ObjectStateValue: phone_Color_Values_swirlPurple--></T>
+              </U>
+              <U>
+                <T n="key">284034<!--ObjectStateValue: phone_Color_Values_paintCanary--></T>
+              </U>
+              <U>
+                <T n="key">284035<!--ObjectStateValue: phone_Color_Values_paintBlack--></T>
+              </U>
+              <U>
+                <T n="key">284036<!--ObjectStateValue: phone_Color_Values_paintBlue--></T>
+              </U>
+              <U>
+                <T n="key">284037<!--ObjectStateValue: phone_Color_Values_paintGreen--></T>
+              </U>
+              <U>
+                <T n="key">284038<!--ObjectStateValue: phone_Color_Values_paintTeal--></T>
+              </U>
+              <U>
+                <T n="key">284039<!--ObjectStateValue: phone_Color_Values_paintWhite--></T>
+              </U>
+              <U>
+                <T n="key">284062<!--ObjectStateValue: phone_Color_Values_astroBlack--></T>
+              </U>
+              <U>
+                <T n="key">284063<!--ObjectStateValue: phone_Color_Values_astroGray--></T>
+              </U>
+              <U>
+                <T n="key">284064<!--ObjectStateValue: phone_Color_Values_astroMaroon--></T>
+              </U>
+              <U>
+                <T n="key">284065<!--ObjectStateValue: phone_Color_Values_astroPeach--></T>
+              </U>
+              <U>
+                <T n="key">284066<!--ObjectStateValue: phone_Color_Values_astroPink--></T>
+              </U>
+              <U>
+                <T n="key">284067<!--ObjectStateValue: phone_Color_Values_astroPurple--></T>
+              </U>
+              <U>
+                <T n="key">284226<!--ObjectStateValue: phone_Color_Values_roseWhite--></T>
+              </U>
+              <U>
+                <T n="key">284227<!--ObjectStateValue: phone_Color_Values_roseMetalGold--></T>
+              </U>
+              <U>
+                <T n="key">284228<!--ObjectStateValue: phone_Color_Values_roseBlack--></T>
+              </U>
+              <U>
+                <T n="key">284229<!--ObjectStateValue: phone_Color_Values_roseBlue--></T>
+              </U>
+              <U>
+                <T n="key">284230<!--ObjectStateValue: phone_Color_Values_roseGreen--></T>
+              </U>
+              <U>
+                <T n="key">284231<!--ObjectStateValue: phone_Color_Values_roseLavender--></T>
+              </U>
+              <U>
+                <T n="key">284250<!--ObjectStateValue: phone_Color_Values_floralPeach--></T>
+              </U>
+              <U>
+                <T n="key">284251<!--ObjectStateValue: phone_Color_Values_floralGreenBlue--></T>
+              </U>
+              <U>
+                <T n="key">284252<!--ObjectStateValue: phone_Color_Values_floralYellow--></T>
+              </U>
+              <U>
+                <T n="key">284253<!--ObjectStateValue: phone_Color_Values_floralMauve--></T>
+              </U>
+              <U>
+                <T n="key">284254<!--ObjectStateValue: phone_Color_Values_floralPink--></T>
+              </U>
+              <U>
+                <T n="key">284255<!--ObjectStateValue: phone_Color_Values_floralSlate--></T>
+              </U>
+              <U>
+                <T n="key">284274<!--ObjectStateValue: phone_Color_Values_geoBlue--></T>
+              </U>
+              <U>
+                <T n="key">284275<!--ObjectStateValue: phone_Color_Values_geoRed--></T>
+              </U>
+              <U>
+                <T n="key">284276<!--ObjectStateValue: phone_Color_Values_geoGreen--></T>
+              </U>
+              <U>
+                <T n="key">284277<!--ObjectStateValue: phone_Color_Values_geoSilver--></T>
+              </U>
+              <U>
+                <T n="key">284278<!--ObjectStateValue: phone_Color_Values_geoGold--></T>
+              </U>
+              <U>
+                <T n="key">284279<!--ObjectStateValue: phone_Color_Values_geoBrown--></T>
+              </U>
+              <U>
+                <T n="key">284299<!--ObjectStateValue: phone_Color_Values_cassetteRed--></T>
+              </U>
+              <U>
+                <T n="key">284300<!--ObjectStateValue: phone_Color_Values_cassetteBlack--></T>
+              </U>
+              <U>
+                <T n="key">284301<!--ObjectStateValue: phone_Color_Values_cassetteGreen--></T>
+              </U>
+              <U>
+                <T n="key">284302<!--ObjectStateValue: phone_Color_Values_cassetteBlue--></T>
+              </U>
+              <U>
+                <T n="key">284303<!--ObjectStateValue: phone_Color_Values_cassettePink--></T>
+              </U>
+              <U>
+                <T n="key">284304<!--ObjectStateValue: phone_Color_Values_cassetteOrange--></T>
+              </U>
+              <U>
+                <T n="key">284323<!--ObjectStateValue: phone_Color_Values_duoSlate--></T>
+              </U>
+              <U>
+                <T n="key">284324<!--ObjectStateValue: phone_Color_Values_duoUmber--></T>
+              </U>
+              <U>
+                <T n="key">284325<!--ObjectStateValue: phone_Color_Values_duoBabyBlue--></T>
+              </U>
+              <U>
+                <T n="key">284326<!--ObjectStateValue: phone_Color_Values_duoLavender--></T>
+              </U>
+              <U>
+                <T n="key">284327<!--ObjectStateValue: phone_Color_Values_duoGreen--></T>
+              </U>
+              <U>
+                <T n="key">284328<!--ObjectStateValue: phone_Color_Values_duoBlack--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">149294<!--ObjectStateValue: phone_Color_Default--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">154789<!--ObjectStateValue: SimReflection_NoMirrors--></T>
+              </U>
+              <U>
+                <T n="key">154790<!--ObjectStateValue: SimReflection_Default--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">154790<!--ObjectStateValue: SimReflection_Default--></T>
+            </V>
+          </U>
+          <U>
+            <V n="default_value" t="reference">
+              <T n="reference">104128<!--ObjectStateValue: SimGrubby_NotGrubby--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">323119<!--CommodityBasedObjectStateValue: horseBreeding_Pregnancy_Horse_NotPregnant--></T>
+              </U>
+              <U>
+                <T n="key">323120<!--CommodityBasedObjectStateValue: horseBreeding_Pregnancy_Horse_NotShowing--></T>
+              </U>
+              <U>
+                <T n="key">323121<!--CommodityBasedObjectStateValue: horseBreeding_Pregnancy_Horse_1stTrimester--></T>
+              </U>
+              <U>
+                <T n="key">323122<!--CommodityBasedObjectStateValue: horseBreeding_Pregnancy_Horse_2ndTrimester--></T>
+              </U>
+              <U>
+                <T n="key">323123<!--CommodityBasedObjectStateValue: horseBreeding_Pregnancy_Horse_3rdTrimester--></T>
+              </U>
+              <U>
+                <T n="key">323124<!--CommodityBasedObjectStateValue: horseBreeding_Pregnancy_Horse_InLabor--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">323119<!--CommodityBasedObjectStateValue: horseBreeding_Pregnancy_Horse_NotPregnant--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states" />
+            <V n="default_value" t="reference">
+              <T n="reference">335395<!--CommodityBasedObjectStateValue: wetness_State_Values_Horse_Dry--></T>
+            </V>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V n="tooltip_component" t="enabled">
+      <U n="enabled">
+        <L n="commodities_to_display">
+          <T>312265<!--Commodity: motive_Horse_Hunger--></T>
+          <T>312266<!--Commodity: motive_Horse_Energy--></T>
+          <T>312268<!--Commodity: motive_Horse_Fun--></T>
+          <T>312270<!--Commodity: motive_Horse_Social--></T>
+          <T>312269<!--Commodity: motive_Horse_Hygiene--></T>
+        </L>
+        <L n="custom_tooltips">
+          <U>
+            <L n="tooltip_fields">
+              <U>
+                <E n="key">recipe_name</E>
+                <U n="value">
+                  <V n="override_component_information" t="concatenate_with_component_fields">
+                    <U n="concatenate_with_component_fields">
+                      <E n="concatenation_style">CONCATENATE_SEPARATION</E>
+                      <E n="concatenation_type">CONCATENATE_AFTER</E>
+                    </U>
+                  </V>
+                  <V n="text" t="single">
+                    <T n="single">0x4A792A50<!--String: ""--></T>
+                  </V>
+                </U>
+              </U>
+            </L>
+            <E n="tooltip_style">HOVER_TIP_OBJECT_RELATIONSHIP</E>
+          </U>
+        </L>
+        <T n="update_if_stat_or_buck_changes">False</T>
+      </U>
+    </V>
+    <V n="weather_aware_component" t="enabled">
+      <U n="enabled">
+        <L n="anywhere_loot">
+          <U>
+            <E n="key">Frozen_Water</E>
+            <U n="value">
+              <L n="end_loot">
+                <T>265349<!--LootActions: loot_Ponds_FrozenWaterRules_TurnOff--></T>
+              </L>
+              <L n="start_loot">
+                <T>265421<!--LootActions: loot_Ponds_FrozneWaterRules_PushReaction--></T>
+              </L>
+            </U>
+          </U>
+        </L>
+        <L n="disable_loot" />
+        <L n="enable_loot" />
+        <L n="inside_loot" />
+        <L n="outside_loot">
+          <U>
+            <E n="key">Cold</E>
+            <U n="value">
+              <L n="end_loot">
+                <T>184202<!--LootActions: loot_Temperature_VFX_ColdBreath_Removal--></T>
+                <T>237519<!--LootActions: loot_Temperature_MountainSnow_VFX_ColdBreath_Remove--></T>
+              </L>
+              <L n="start_loot">
+                <T>184199<!--LootActions: loot_Temperature_VFX_ColdBreath--></T>
+                <T>237517<!--LootActions: loot_Temperature_MountainSnow_VFX_ColdBreath--></T>
+              </L>
+            </U>
+          </U>
+          <U>
+            <E n="key">Freezing</E>
+            <U n="value">
+              <L n="end_loot">
+                <T>184202<!--LootActions: loot_Temperature_VFX_ColdBreath_Removal--></T>
+                <T>237519<!--LootActions: loot_Temperature_MountainSnow_VFX_ColdBreath_Remove--></T>
+              </L>
+              <L n="start_loot">
+                <T>184199<!--LootActions: loot_Temperature_VFX_ColdBreath--></T>
+                <T>237517<!--LootActions: loot_Temperature_MountainSnow_VFX_ColdBreath--></T>
+              </L>
+            </U>
+          </U>
+          <U>
+            <E n="key">AnyRain</E>
+            <U n="value">
+              <L n="end_loot">
+                <T>335387<!--LootActions: loot_Buff_Horse_SeasonWeather_Rain_Reset--></T>
+              </L>
+              <L n="start_loot">
+                <T>335397<!--LootActions: loot_Buff_Horse_SeasonWeather_Rain_Outside--></T>
+              </L>
+            </U>
+          </U>
+        </L>
+      </U>
+    </V>
+  </U>
+  <L n="_default_anim_params">
+    <U>
+      <T n="name">isMermaid</T>
+      <V n="value" t="boolean" />
+    </U>
+  </L>
+  <T n="_disable_child_footprint_and_shadow">True</T>
+  <U n="_interaction_queue">
+    <T n="always_start_inertial">False</T>
+    <T n="max_interactions">3</T>
+  </U>
+  <L n="_relation_panel_affordances">
+    <T>305173<!--ImmediateSuperInteraction: immediate_RelPanel_AnimalObjects_LockCamera_GoatSheep--></T>
+    <T>333736<!--ImmediateSuperInteraction: immediate_RelPanel_CallOver_AnimalObjects_GoatSheep--></T>
+    <T>362291<!--ImmediateSuperInteraction: immediateSuperInteraction_CAD_AskOnDate_RelPanel_Adult--></T>
+    <T>362247<!--ImmediateSuperInteraction: immediateSuperInteraction_CAD_AskOnDate_RelPanel_Teen--></T>
+    <T>365250<!--ImmediateSuperInteraction: immediateSuperInteraction_CAD_AskToHangout_RelPanel--></T>
+    <T>373122<!--SuperInteraction: phone_Chat_OpenableWindow_TriggerCollegeParty--></T>
+    <T>374095<!--SuperInteraction: phone_RelPanelSocial_DiscussInterests--></T>
+    <T>374097<!--SuperInteraction: phone_RelPanelSocial_Flirt--></T>
+    <T>374096<!--SuperInteraction: phone_RelPanelSocial_GetToKnow--></T>
+    <T>374098<!--SuperInteraction: phone_RelPanelSocial_SendSelfie--></T>
+    <T>378503<!--ImmediateSuperInteraction: immediateSuperInteraction_RelSocials_HideRelationship_FromRelPanel--></T>
+    <T>395003<!--ImmediateSuperInteraction: immediateSuperInteraction_AskOnDate_RelPanel_Adult--></T>
+    <T>395004<!--ImmediateSuperInteraction: immediateSuperInteraction_AskOnDate_RelPanel_Teen--></T>
+  </L>
+  <L n="_super_affordances">
+    <T>24107<!--RelbitPickerSuperInteraction: picker_Relbit_Add--></T>
+    <T>13328<!--ImmediateSuperInteraction: debug_Reset--></T>
+    <T>274798<!--ImmediateSuperInteraction: debug_ObjectDestroy_Sim--></T>
+    <T>103888<!--ImmediateSuperInteraction: cheat_set_as_head--></T>
+    <T>334890<!--ImmediateSuperInteraction: horses_DebugCheats_GiveItems--></T>
+    <T>100184<!--CheatSetSkillSuperInteraction: cheat_SetSkillAlmostTo--></T>
+    <T>13143<!--ImmediateSuperInteraction: cheat_make_me_happy--></T>
+    <T>13141<!--ImmediateSuperInteraction: cheat_enable_stat_decay--></T>
+    <T>13140<!--ImmediateSuperInteraction: cheat_disable_stat_decay--></T>
+    <T>176207<!--ImmediateSuperInteraction: debug_AddDebugInteractionBuff--></T>
+    <T>13144<!--ImmediateSuperInteraction: cheat_modify_in_cas--></T>
+    <T>13323<!--ImmediateSuperInteraction: debug_MakePregnant--></T>
+    <T>189659<!--ImmediateSuperInteraction: debug_RemoveRecentFire--></T>
+    <T>13322<!--ImmediateSuperInteraction: debug_EnableHaveBaby--></T>
+    <T>215186<!--ImmediateSuperInteraction: debugImmediate_rabbitHole--></T>
+    <T>13817<!--TraitPickerSuperInteraction: picker_Trait_Add--></T>
+    <T>13818<!--TraitPickerSuperInteraction: picker_Trait_Remove--></T>
+    <T>13145<!--CheatSetSkillSuperInteraction: cheat_SetSkill--></T>
+    <T>191703<!--ImmediateSuperInteraction: Cheat_RemoveFromFamilyBG--></T>
+    <T>219569<!--ImmediateSuperInteraction: cheat_LockMotives--></T>
+    <T>103822<!--ImmediateSuperInteraction: Cheat_AddToFamily--></T>
+    <T>258314<!--ImmediateSuperInteraction: debug_AddTraitOutcomeBuff--></T>
+    <T>290848<!--ImmediateSuperInteraction: debug_AddDebugFailOutcomeBuff--></T>
+    <T>116234<!--AggregateSuperInteraction: aggregateSI_goHome--></T>
+    <T>328124<!--OutfitPickerSuperInteraction: changeOutfitPicker_TargetSim_Horse--></T>
+    <T>328606<!--SuperInteraction: planOutfit_Horses--></T>
+    <T>328399<!--SuperInteraction: horseInteractions_SimToHorse_GoHome--></T>
+    <T>345033<!--SocialSuperInteraction: super_Social_Infant_SmileAtPet--></T>
+    <T>196293<!--SuperInteraction: ageDown_PCTYAE_Debug--></T>
+    <T>196291<!--SuperInteraction: ageUp_IPCTYAE_Debug--></T>
+    <T>322180<!--ImmediateSuperInteraction: debugEmotionIntensity_Horses_Angry--></T>
+    <T>322181<!--ImmediateSuperInteraction: debugEmotionIntensity_Horses_VeryAngry--></T>
+    <T>322183<!--ImmediateSuperInteraction: debugEmotionIntensity_Horses_Confident--></T>
+    <T>322184<!--ImmediateSuperInteraction: debugEmotionIntensity_Horses_VeryConfident--></T>
+    <T>322192<!--ImmediateSuperInteraction: debugEmotionIntensity_Horses_Dazed--></T>
+    <T>322193<!--ImmediateSuperInteraction: debugEmotionIntensity_Horses_VeryDazed--></T>
+    <T>322201<!--ImmediateSuperInteraction: debugEmotionIntensity_Horses_Happy--></T>
+    <T>322202<!--ImmediateSuperInteraction: debugEmotionIntensity_Horses_VeryHappy--></T>
+    <T>322195<!--ImmediateSuperInteraction: debugEmotionIntensity_Horses_Sad--></T>
+    <T>322196<!--ImmediateSuperInteraction: debugEmotionIntensity_Horses_VerySad--></T>
+    <T>322198<!--ImmediateSuperInteraction: debugEmotionIntensity_Horses_Scared--></T>
+    <T>322199<!--ImmediateSuperInteraction: debugEmotionIntensity_Horses_VeryScared--></T>
+    <T>322189<!--ImmediateSuperInteraction: debugEmotionIntensity_Horses_Tense--></T>
+    <T>322190<!--ImmediateSuperInteraction: debugEmotionIntensity_Horses_VeryTense--></T>
+    <T>322186<!--ImmediateSuperInteraction: debugEmotionIntensity_Horses_Uncomfortable--></T>
+    <T>322187<!--ImmediateSuperInteraction: debugEmotionIntensity_Horses_VeryUncomfortable--></T>
+    <T>348117<!--AutonomousObjectTaggedPickerInteraction: autonomous_ObjectPicker_Horses_PlayWithBall--></T>
+    <T>322270<!--SocialSuperInteraction: horseSocials_HorseToHorse_Introduction--></T>
+    <T>322227<!--SocialSuperInteraction: horseSocials_HorseToHorse_Touching_Friendly_Groom--></T>
+    <T>327298<!--SocialSuperInteraction: horseSocials_HorseToHorse_Touching_Friendly_Nuzzle--></T>
+    <T>354895<!--SuperInteraction: horseInteractions_HorseToSelf_MoveAround_Autonomy--></T>
+    <T>438704<!--SuperInteraction: horseInteractions_HorseToSelf_MoveAround_SmallBusiness_ConsiderVisit--></T>
+    <T>322268<!--SocialSuperInteraction: horseSocials_HorseToHorse_Touching_Friendly_Sniff--></T>
+    <T>322264<!--SocialSuperInteraction: horseSocials_HorseToHorse_Touching_Mean_BiteAt--></T>
+    <T>322231<!--SocialSuperInteraction: horseSocials_HorseToHorse_Touching_Mean_YellAt--></T>
+    <T>341922<!--SuperInteraction: sI_WaterTrough_Sim_To_Horse_AskToDrink_TargetSim--></T>
+    <T>348696<!--AutonomousObjectTaggedPickerInteraction: autonomous_ObjectPicker_AnimalFeeder_HorseEat--></T>
+    <T>322267<!--SocialSuperInteraction: HorseSocials_HorseToHorse_NonTouching--></T>
+    <T>349117<!--SuperInteraction: Super_Push_HorseToHorse_Touching--></T>
+    <T>319842<!--SocialSuperInteraction: HorseSocials_SimToHorse_NonTouching--></T>
+    <T>322272<!--SocialSuperInteraction: HorseSocials_SimToHorse_Introduction--></T>
+    <T>322226<!--SocialSuperInteraction: horseSocials_SimToHorse_Touching_Friendly_Hug--></T>
+    <T>319845<!--SocialSuperInteraction: HorseSocials_SimToHorse_Touching_Friendly_ScratchNeck--></T>
+    <T>323240<!--SocialSuperInteraction: horseSocials_SimToHorse_Touching_Mean_YellAt--></T>
+    <T>324136<!--ObjectInInventoryPickerInteraction: objectInInventoryPickerInteraction_HorseCare_HandFeed--></T>
+    <T>410739<!--SocialSuperInteraction: horseSocials_SimToHorse_Touching_PetCare_HandFeed_NPC_ClubRulesOnly--></T>
+    <T>324133<!--SocialSuperInteraction: horseSocials_SimToHorse_Touching_PetCare_BrushCoat--></T>
+    <T>324134<!--SocialSuperInteraction: horseSocials_SimToHorse_Touching_PetCare_CleanHooves--></T>
+    <T>325466<!--FilteredObjectPickerInteraction: filteredObjectPicker_AnimalObject_Goats_SocializeWith--></T>
+    <T>325467<!--FilteredObjectPickerInteraction: filteredObjectPicker_AnimalObject_Sheep_SocializeWith--></T>
+    <T>325462<!--SimPickerInteraction: simPicker_HorseSocials_SocializeWithHorses--></T>
+    <T>325730<!--SimPickerInteraction: simPicker_HorseSocials_SocializeWithSims--></T>
+    <T>325499<!--SocialSuperInteraction: horseSocials_SimToHorse_Touching_Friendly_RubNeck--></T>
+    <T>325500<!--SocialSuperInteraction: horseSocials_SimToHorse_Touching_Friendly_WhisperTo--></T>
+    <T>321337<!--WaypointInteraction: waypoint_Horses_RunAround--></T>
+    <T>328262<!--ImmediateSuperInteraction: horseTraining_LearnAbout_Agility--></T>
+    <T>328264<!--ImmediateSuperInteraction: horseTraining_LearnAbout_Endurance--></T>
+    <T>328265<!--ImmediateSuperInteraction: horseTraining_LearnAbout_Jumping--></T>
+    <T>328263<!--ImmediateSuperInteraction: horseTraining_LearnAbout_Temperament--></T>
+    <T>328007<!--SocialSuperInteraction: horseSocials_SimToHorse_Touching_Friendly_CheerUp--></T>
+    <T>329725<!--SuperInteraction: horseInteractions_SimToHorse_DebugReaction_Angry--></T>
+    <T>329726<!--SuperInteraction: horseInteractions_SimToHorse_DebugReaction_Anxious--></T>
+    <T>329735<!--SuperInteraction: horseInteractions_SimToHorse_DebugReaction_Ashamed--></T>
+    <T>329736<!--SuperInteraction: horseInteractions_SimToHorse_DebugReaction_Confident--></T>
+    <T>329737<!--SuperInteraction: horseInteractions_SimToHorse_DebugReaction_Curious--></T>
+    <T>329738<!--SuperInteraction: horseInteractions_SimToHorse_DebugReaction_Drowsy--></T>
+    <T>328129<!--SuperInteraction: horseInteractions_RunAround_Frolic--></T>
+    <T>328397<!--SuperInteraction: horseInteractions_SimToHorse_CallOver--></T>
+    <T>329739<!--SuperInteraction: horseInteractions_SimToHorse_DebugReaction_Excited--></T>
+    <T>329740<!--SuperInteraction: horseInteractions_SimToHorse_DebugReaction_Happy--></T>
+    <T>329741<!--SuperInteraction: horseInteractions_SimToHorse_DebugReaction_Laugh--></T>
+    <T>329742<!--SuperInteraction: horseInteractions_SimToHorse_DebugReaction_Negative--></T>
+    <T>329743<!--SuperInteraction: horseInteractions_SimToHorse_DebugReaction_Neutral--></T>
+    <T>329727<!--SuperInteraction: horseInteractions_SimToHorse_DebugReaction_Playful--></T>
+    <T>329728<!--SuperInteraction: horseInteractions_SimToHorse_DebugReaction_Positive--></T>
+    <T>329729<!--SuperInteraction: horseInteractions_SimToHorse_DebugReaction_Riding_RearUp--></T>
+    <T>329730<!--SuperInteraction: horseInteractions_SimToHorse_DebugReaction_Sad--></T>
+    <T>329731<!--SuperInteraction: horseInteractions_SimToHorse_DebugReaction_Scared--></T>
+    <T>329732<!--SuperInteraction: horseInteractions_SimToHorse_DebugReaction_Scared_RearUp--></T>
+    <T>329733<!--SuperInteraction: horseInteractions_SimToHorse_DebugReaction_Tense--></T>
+    <T>329734<!--SuperInteraction: horseInteractions_SimToHorse_DebugReaction_Uncomfortable--></T>
+    <T>329755<!--DebugDeathInteraction: debugDeathInteraction_Horse--></T>
+    <T>329401<!--SocialSuperInteraction: horseSocials_SimToFoal_Touching_BottleFeed--></T>
+    <T>328878<!--SocialSuperInteraction: horseSocials_SimToFoal_Touching_Cradle--></T>
+    <T>329220<!--SocialSuperInteraction: horseSocials_SimToFoal_Touching_GentleTouch--></T>
+    <T>330419<!--ImmediateSuperInteraction: immediate_OpenSimProfile_HorseCare--></T>
+    <T>329278<!--ObjectInInventoryPickerInteraction: objectInInventoryPickerInteraction_HorseCare_WeanToHay--></T>
+    <T>339949<!--AutonomousObjectInInventoryPickerInteraction: autonomousPicker_SimToFoal_Touching_WeanToHay--></T>
+    <T>329429<!--AutonomousObjectTaggedPickerInteraction: autonomous_ObjectPicker_WildGrassHay_HorseEat--></T>
+    <T>331461<!--SocialSuperInteraction: horseSocials_FoalToHorse_Touching_Nurse--></T>
+    <T>331381<!--SocialSuperInteraction: horseSocials_HorseToFoal_NonTouching_TeachToCanter--></T>
+    <T>331712<!--WaypointInteraction: waypoint_Horses_FoalInteractions_StumbleAround--></T>
+    <T>331713<!--WaypointInteraction: waypoint_Horses_FoalInteractions_ScamperAround--></T>
+    <T>334229<!--SuperInteraction: situation_RanchHand_Horse_HandFeed_Start--></T>
+    <T>330088<!--SuperInteraction: sI_HorseTransaction_SellHorse_FromHorse--></T>
+    <T>332125<!--ImmediateSuperInteraction: horses_DebugCheats_HorseRiding_BuckOff_Always--></T>
+    <T>332127<!--ImmediateSuperInteraction: horses_DebugCheats_HorseRiding_BuckOff_Clear--></T>
+    <T>332126<!--ImmediateSuperInteraction: horses_DebugCheats_HorseRiding_BuckOff_Never--></T>
+    <T>325747<!--AggregateSuperInteraction: aggregate_Horses_Sleep--></T>
+    <T>327076<!--AggregateSuperInteraction: aggregate_Horses_Sleep_FreeSpirit--></T>
+    <T>329985<!--AggregateSuperInteraction: aggregate_Horses_Nap--></T>
+    <T>329986<!--AggregateSuperInteraction: aggregate_Horses_Nap_FreeSpirit--></T>
+    <T>324322<!--SocialSuperInteraction: social_Infant_CooAt_Pet--></T>
+    <T>321851<!--SocialSuperInteraction: social_Infant_WaveAt_Pet--></T>
+    <T>327768<!--SuperInteraction: horseInteractions_HorseToSelf_UseBladder--></T>
+    <T>327769<!--SuperInteraction: horseInteractions_HorseToSelf_UseBladder_Manure--></T>
+    <T>484212<!--ImmediateSuperInteraction: debug_AddAilmentSpreadBuff--></T>
+    <T>24108<!--RelbitPickerSuperInteraction: picker_Relbit_Remove--></T>
+    <T>24110<!--BuffPickerSuperInteraction: picker_Buff_Add--></T>
+    <T>24112<!--BuffPickerSuperInteraction: picker_Buff_Remove--></T>
+    <T>250627<!--ImmediateSuperInteraction: immediate_OpenSimProfile--></T>
+    <T>373337<!--ImmediateSuperInteraction: immediate_OpenSimProfile_PieMenu_Relationship--></T>
+    <T>96807<!--SuperInteraction: fire_ExtinguishSim--></T>
+    <T>120430<!--StandSuperInteraction: horse_stand--></T>
+    <T>312888<!--SocialSuperInteraction: SI_HorseRiding_MountHorse_Begin--></T>
+    <T>329389<!--SocialSuperInteraction: sI_HorseRiding_MountHorse_Begin_EnduranceRide--></T>
+    <T>329390<!--SocialSuperInteraction: sI_HorseRiding_MountHorse_Begin_EnergeticRide--></T>
+    <T>329396<!--SocialSuperInteraction: sI_HorseRiding_MountHorse_Begin_LeisureRide--></T>
+    <T>134435<!--SuperInteraction: generic_BeCarried--></T>
+  </L>
+  <U n="animation_overlay_component">
+    <L n="animation_overlays">
+      <U>
+        <T n="_overlay_animation">11495<!--AnimationElement: Facial_Overlay_Mood--></T>
+      </U>
+    </L>
+  </U>
+  <U n="initial_buff">
+    <T n="buff_type">319708<!--Buff: moodBuffs_Horses_Hidden_Fine--></T>
+  </U>
+  <U n="recycling_data">
+    <L n="recycling_values">
+      <U>
+        <E n="Bucks Type">RecycleBitsBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+      <U>
+        <E n="Bucks Type">RecyclePiecesBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+    </L>
+  </U>
+  <U n="trait_quirks">
+    <L n="_quirk_sets">
+      <U>
+        <L n="entries">
+          <U>
+            <T n="quirk_trait">332655<!--Trait: trait_Horse_HorseCompetition_NoCompetitionsWon--></T>
+          </U>
+        </L>
+      </U>
+    </L>
+  </U>
+</I>

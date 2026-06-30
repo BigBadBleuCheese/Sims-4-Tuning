@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Ghost_Drown_Puddle" s="103637">
+  <L n="loot_actions">
+    <V t="create_puddles">
+      <U n="create_puddles">
+        <U n="chance">
+          <T n="base_chance">50</T>
+          <L n="multipliers">
+            <U>
+              <T n="multiplier">0.1</T>
+              <L n="tests">
+                <L>
+                  <V t="situation_running_test">
+                    <U n="situation_running_test">
+                      <V n="situation_whitelist" t="enabled">
+                        <L n="enabled">
+                          <T>464260<!--CustomScheduleBackgroundSituation: customScheduleBackgroundSituation_1--></T>
+                        </L>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+          </L>
+        </U>
+        <U n="default_puddle_factory">
+          <T n="large">6</T>
+          <T n="medium">3</T>
+          <T n="none">0</T>
+          <T n="small">13</T>
+        </U>
+        <E n="target_participant_type">Actor</E>
+      </U>
+    </V>
+  </L>
+</I>

@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_OnHallowedGrounds_FissureCollectible" s="380536">
+  <L n="loot_actions">
+    <V t="create_object">
+      <U n="create_object">
+        <V n="creation_data" t="random_by_tags">
+          <U n="random_by_tags">
+            <L n="filter_tags">
+              <E>BuyCat_Collection_Fossil</E>
+              <E>BuyCat_Collection_Crystal</E>
+              <E>BuyCat_Collection_Metal</E>
+              <E>BuyCat_Collection_Treasure</E>
+              <E>BuyCat_Collection_Frog</E>
+              <E>BuyCat_Collection_MySim</E>
+            </L>
+          </U>
+        </V>
+        <V n="location" t="inventory" />
+        <V n="notification_inventory" t="enabled">
+          <U n="enabled">
+            <U n="household_inventory">
+              <V n="icon" t="enabled">
+                <V n="enabled" t="resource_key">
+                  <U n="resource_key">
+                    <T p="InEP17\UI\Icons\Headlines\headline_hallowedGrounds.png" n="key">2f7d0004:00000000:8874ec4f1e879578</T>
+                  </U>
+                </V>
+              </V>
+              <V n="secondary_icon" t="enabled">
+                <V n="enabled" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>Actor</E>
+                    </L>
+                  </U>
+                </V>
+              </V>
+              <V n="text" t="single">
+                <T n="single">0xB527FB18<!--String: "Good instincts! Shoving a hand into that horrifying, steaming fissure got {0.SimFirstName} a prize! Check in {0.SimPronounPossessiveDependent} inventory for:\n{2.String}"--></T>
+              </V>
+              <V n="text_tokens" t="enabled">
+                <U n="enabled">
+                  <L n="tokens">
+                    <V t="participant_type" />
+                    <V t="participant_type" />
+                  </L>
+                </U>
+              </V>
+            </U>
+            <U n="participant_inventory">
+              <V n="icon" t="enabled">
+                <V n="enabled" t="resource_key">
+                  <U n="resource_key">
+                    <T p="InEP17\UI\Icons\Headlines\headline_hallowedGrounds.png" n="key">2f7d0004:00000000:8874ec4f1e879578</T>
+                  </U>
+                </V>
+              </V>
+              <V n="secondary_icon" t="enabled">
+                <V n="enabled" t="participant" />
+              </V>
+              <V n="text" t="single">
+                <T n="single">0xB527FB18<!--String: "Good instincts! Shoving a hand into that horrifying, steaming fissure got {0.SimFirstName} a prize! Check in {0.SimPronounPossessiveDependent} inventory for:\n{2.String}"--></T>
+              </V>
+              <V n="text_tokens" t="enabled">
+                <U n="enabled">
+                  <L n="tokens">
+                    <V t="participant_type" />
+                    <V t="participant_type" />
+                  </L>
+                </U>
+              </V>
+            </U>
+          </U>
+        </V>
+        <T n="set_sim_as_owner">True</T>
+        <T n="set_value_to_crafted_tooltip">False</T>
+      </U>
+    </V>
+    <V t="actions">
+      <T n="actions">382273<!--RandomWeightedLoot: randomWeightedLoot_OnHallowedGrounds_FissureBuffs--></T>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_set">
+        <U n="statistic_set">
+          <T n="stat">382274<!--Statistic: statistic_OnHallowedGrounds_FissureCollected--></T>
+          <L n="subject">
+            <E>Object</E>
+          </L>
+          <T n="value">1</T>
+        </U>
+      </V>
+    </V>
+  </L>
+</I>

@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="BusinessRulePickerSuperInteraction" i="interaction" m="interactions.base.business_rule_interaction" n="businessRule_APM_DeliverFinePicker" s="348945">
+  <V n="_saveable" t="disabled" />
+  <E n="business_rule_target">PickedZoneId</E>
+  <V n="content_score" t="disabled" />
+  <L n="continuation">
+    <U>
+      <T n="affordance">348940<!--SuperInteraction: door_APM_DeliverFine--></T>
+    </U>
+  </L>
+  <T n="display_name">0x34AFE30B<!--String: "Deliver Fine"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <V n="display_tooltip" t="enabled">
+    <T n="enabled">0x1D2008E8<!--String: "This will attempt to extract the posted fine from your rule-breaking tenant. This does not force them into future compliance."--></T>
+  </V>
+  <T n="generate_property_owner_rule_fines">True</T>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <V n="pie_menu_option" t="use_pie_menu">
+    <U n="use_pie_menu">
+      <T n="force_pie_menu_category">True</T>
+      <T n="pie_menu_category">357425<!--PieMenuCategory: pieMenuCategory_APM_DeliverFine--></T>
+      <T n="pie_menu_name">0x7584A90F<!--String: "{2.String}"--></T>
+    </U>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <V n="property_owner_rule_fine_picker_row_name" t="enabled">
+    <T n="enabled">0x2ED290F4<!--String: "{0.String} (§{1.String})"--></T>
+  </V>
+  <L n="rule_states">
+    <E>BROKEN</E>
+  </L>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="state">
+      <U n="state">
+        <T n="value">135096<!--ObjectStateValue: FrontDoor_IsFrontDoor--></T>
+      </U>
+    </V>
+    <V t="multi_unit_role_test">
+      <U n="multi_unit_role_test">
+        <V n="lot_source" t="enabled" />
+        <V n="role_to_check" t="is_property_owner" />
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>359216<!--Buff: buff_APM_DeliverFineCooldown--></T>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x94B2B15E<!--String: "{0.SimFirstName} needs to wait awhile before {M0.he}{F0.she} can do this again!"--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+</I>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Commodity_Motive_Hunger_NLS_OnBoarding_TNS_Wants" s="444573">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T p="InEP19\UI\Icons\Skills\Skill_NaturalLiving.png" n="key">2f7d0004:00000000:b7f6856da7f9bde9</T>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xB6442AD3<!--String: "{0.SimFirstName}'s stomach is rumbling! {0.SimPronounSubjective} can fix this almost anywhere thanks to Natural Living.\n\nForage for Food on natural terrain or gather harvestables from plants for an easy snack. With a little practice, {0.SimFirstName} can also eat fish and frogs straight from {0.SimPronounPossessiveDependent} inventory. It's not appetizing at first, but with practice {0.SimFirstName} will come to appreciate the flavors (and extreme convenience) of Natural Living."--></T>
+            </V>
+            <L n="ui_responses">
+              <U>
+                <T n="text">0x9AC94881<!--String: "Show Lesson"--></T>
+                <V n="tutorial_id" t="enabled">
+                  <T n="enabled">448260<!--Tutorial: tutorial_EP19_NaturalLivingSkill--></T>
+                </V>
+                <E n="ui_request">SHOW_LESSONS</E>
+              </U>
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="push_whimset">
+      <U n="push_whimset">
+        <T n="whimset">448968<!--ObjectivelessWhimSet: whimSet_NLS_Hunger--></T>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="location">
+        <U n="location">
+          <U n="location_tests">
+            <V n="is_natural_ground" t="Don't_Test" />
+            <V n="is_outside" t="enabled" />
+          </U>
+        </U>
+      </V>
+      <V t="skill_test">
+        <U n="skill_test">
+          <T n="skill">434909<!--Skill: statistic_Skill_NLS--></T>
+          <V n="skill_range" t="interval">
+            <U n="interval">
+              <U n="skill_interval">
+                <T n="lower_bound">2</T>
+              </U>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

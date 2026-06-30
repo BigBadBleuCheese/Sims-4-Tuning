@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Dynasty_CrisisProtest_Begin" s="489458">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="variation">
+              <U n="variation">
+                <L n="variations">
+                  <T>0x9BC2D62F<!--String: "We have a crisis! This cannot go on any longer!"--></T>
+                  <T>0x48345298<!--String: "We have come here today to protest about the ongoing crisis!"--></T>
+                </L>
+              </U>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="dynasty" />
+                </L>
+              </U>
+            </V>
+            <E n="visual_type">SPEECH</E>
+          </U>
+        </V>
+        <E n="subject">LotOwnerSingleAndInstanced</E>
+        <L n="tests">
+          <L>
+            <V t="situation_job_test">
+              <U n="situation_job_test">
+                <L n="situation_jobs">
+                  <T>489463<!--SituationJob: job_visitor_Angry_NoGoodbye_CrisisProtest--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="relationship_bits_loot">
+      <U n="relationship_bits_loot">
+        <L n="bit_operations">
+          <U>
+            <T n="bit">489461<!--RelationshipBit: shortTermBit_Dynasty_CrisisProtest--></T>
+            <E n="operation">ADD</E>
+            <E n="recipients">Actor</E>
+            <E n="targets">ActorDynastyHead</E>
+          </U>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="situation_job_test">
+              <U n="situation_job_test">
+                <L n="situation_jobs">
+                  <T>489463<!--SituationJob: job_visitor_Angry_NoGoodbye_CrisisProtest--></T>
+                  <T>489754<!--SituationJob: job_visitor_Angry_NoGoodbye_CrisisProtest_Additional--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

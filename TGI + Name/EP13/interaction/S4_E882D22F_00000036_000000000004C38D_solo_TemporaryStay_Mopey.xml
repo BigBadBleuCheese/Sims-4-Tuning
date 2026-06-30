@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="solo_TemporaryStay_Mopey" s="312205">
+  <L n="_false_advertisements">
+    <V t="statistic_change">
+      <U n="statistic_change">
+        <T n="amount">100</T>
+        <T n="stat">16658<!--Commodity: motive_Social--></T>
+      </U>
+    </V>
+  </L>
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Actor</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_user_directed">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <V n="periodic_stat_change" t="enabled">
+        <U n="enabled">
+          <L n="operations">
+            <V t="statistic_set_max">
+              <U n="statistic_set_max">
+                <T n="stat">16658<!--Commodity: motive_Social--></T>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+              </U>
+            </V>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <V n="content_score" t="disabled" />
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">11835<!--AnimationElement: Social_Responses_Sad_Cry--></T>
+                    <U n="overrides">
+                      <V n="balloons" t="enabled">
+                        <L n="enabled">
+                          <U>
+                            <L n="balloon_choices">
+                              <U>
+                                <V n="item" t="balloon_icon">
+                                  <U n="balloon_icon">
+                                    <V n="icon" t="resource_key">
+                                      <U n="resource_key">
+                                        <T n="key" p="InGame\UI\Icons\Headlines\Final\icon_headline_sad_v2.png">2f7d0004:00000000:54a197295f6a9e5b</T>
+                                      </U>
+                                    </V>
+                                  </U>
+                                </V>
+                              </U>
+                            </L>
+                            <L n="balloon_target">
+                              <E>Actor</E>
+                            </L>
+                          </U>
+                        </L>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <T n="buff_type">310694<!--Buff: buff_TemporaryStay_Gloomy--></T>
+                      </U>
+                    </U>
+                  </V>
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <T n="buff_type">311524<!--Buff: buff_TemporaryStay_Hidden_SpecialBehaviorCooldown--></T>
+                      </U>
+                    </U>
+                  </V>
+                </L>
+              </U>
+            </U>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">ACTOR</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>311524<!--Buff: buff_TemporaryStay_Hidden_SpecialBehaviorCooldown--></T>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <V n="whitelist" t="enabled">
+          <L n="enabled">
+            <T>312430<!--Buff: buff_TemporaryStay_Hidden_GuestSpecial_Mopey--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+  <T n="visible">False</T>
+</I>

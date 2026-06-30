@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="Loot_LearnSkill_LearnAboutTarget_Archaeology" s="377663">
+  <L n="loot_actions">
+    <V t="know_other_sims_statistics">
+      <U n="know_other_sims_statistics">
+        <V n="notification" t="enabled">
+          <U n="enabled">
+            <V n="dialog" t="single">
+              <V n="single" t="literal">
+                <U n="literal">
+                  <V n="icon" t="enabled">
+                    <V n="enabled" t="participant">
+                      <U n="participant">
+                        <L n="participant_type">
+                          <E>TargetSim</E>
+                        </L>
+                      </U>
+                    </V>
+                  </V>
+                  <V n="secondary_icon" t="enabled">
+                    <V n="enabled" t="participant" />
+                  </V>
+                  <V n="text" t="single">
+                    <T n="single">0x42DFB2F4<!--String: "{0.SimFirstName} has learned that {1.SimFirstName} has the following skill:\n{2.String}"--></T>
+                  </V>
+                </U>
+              </V>
+            </V>
+          </U>
+        </V>
+        <L n="statistics">
+          <T>174237<!--Skill: statistic_Skill_AdultMajor_Archaeology--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <V n="whitelist" t="enabled">
+            <L n="enabled">
+              <T>380149<!--Buff: buff_Attraction_CanLearnAttractionRequiredStuff--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+      <V t="skill_test">
+        <U n="skill_test">
+          <T n="skill">174237<!--Skill: statistic_Skill_AdultMajor_Archaeology--></T>
+          <V n="skill_range" t="threshold">
+            <U n="threshold">
+              <U n="skill_threshold">
+                <T n="value">2</T>
+              </U>
+            </U>
+          </V>
+          <E n="subject">TargetSim</E>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

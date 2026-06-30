@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_APM_HireExpensiveContractorOutcome_Success_SewageLeak" s="354450">
+  <L n="loot_actions">
+    <V t="set_multi_unit_event_outcome">
+      <U n="set_multi_unit_event_outcome">
+        <E n="receiver">Actor</E>
+        <L n="tests">
+          <L>
+            <V t="situation_running_test">
+              <U n="situation_running_test">
+                <V n="situation_blacklist" t="enabled">
+                  <L n="enabled">
+                    <T>344498<!--MultiUnitEventSituation: situation_muEvent_SewageLeak--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="cancel_scheduled_drama_node">
+      <U n="cancel_scheduled_drama_node">
+        <L n="drama_nodes">
+          <T>347314<!--MultiUnitEventDramaNode: dramaNode_APM_SewageLeak--></T>
+        </L>
+        <E n="receiver">PickedZoneId</E>
+        <L n="tests">
+          <L>
+            <V t="situation_running_test">
+              <U n="situation_running_test">
+                <V n="situation_blacklist" t="enabled">
+                  <L n="enabled">
+                    <T>344498<!--MultiUnitEventSituation: situation_muEvent_SewageLeak--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="set_multi_unit_event_outcome">
+      <U n="set_multi_unit_event_outcome">
+        <V n="event_zone" t="use_current_zone_id" />
+        <E n="receiver">Actor</E>
+        <L n="tests">
+          <L>
+            <V t="situation_running_test">
+              <U n="situation_running_test">
+                <V n="situation_whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>344498<!--MultiUnitEventSituation: situation_muEvent_SewageLeak--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="cancel_scheduled_drama_node">
+      <U n="cancel_scheduled_drama_node">
+        <L n="drama_nodes">
+          <T>347314<!--MultiUnitEventDramaNode: dramaNode_APM_SewageLeak--></T>
+        </L>
+        <E n="receiver">CurrentZoneId</E>
+        <L n="tests">
+          <L>
+            <V t="situation_running_test">
+              <U n="situation_running_test">
+                <V n="situation_whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>344498<!--MultiUnitEventSituation: situation_muEvent_SewageLeak--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0xA4DDF0B8<!--String: "(From Hiring Contractor)"--></T>
+          </V>
+          <T n="buff_type">347761<!--Buff: buff_APM_ReliableSupport--></T>
+        </U>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">351013<!--Buff: buff_LandlordTenant_Hidden_EmergencySuccess--></T>
+        </U>
+      </U>
+    </V>
+  </L>
+</I>

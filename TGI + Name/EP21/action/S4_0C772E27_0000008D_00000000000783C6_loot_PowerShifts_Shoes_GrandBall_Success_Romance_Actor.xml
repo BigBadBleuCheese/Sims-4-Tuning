@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_PowerShifts_Shoes_GrandBall_Success_Romance_Actor" s="492486">
+  <L n="loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">476427<!--Buff: buff_PowerShifts_Shoes_DanceOfDestiny--></T>
+        </U>
+        <E n="subject">Actor</E>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>476426<!--Buff: buff_PowerShifts_Shoes_EnchantedSteps--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">476427<!--Buff: buff_PowerShifts_Shoes_DanceOfDestiny--></T>
+        </U>
+        <E n="subject">TargetSim</E>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <E n="subject">TargetSim</E>
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>476426<!--Buff: buff_PowerShifts_Shoes_EnchantedSteps--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>TargetSim</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant" />
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xAF1EC122<!--String: "Wow! What an enchanting dance! {1.SimFirstName} could hardly keep {1.SimPronounPossessiveDependent} eyes off {0.SimFirstName}, their chemistry and dance moves had everyone transfixed, resulting in a truly romantic proposal! "--></T>
+            </V>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>476426<!--Buff: buff_PowerShifts_Shoes_EnchantedSteps--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>TargetSim</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x387717B8<!--String: "Wow! What an enchanting dance! {0.SimFirstName} could hardly keep {0.SimPronounPossessiveDependent} eyes off {1.SimFirstName}, their chemistry and dance moves had everyone transfixed, resulting in a truly romantic proposal! "--></T>
+            </V>
+          </U>
+        </V>
+        <E n="subject">TargetSim</E>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <E n="subject">TargetSim</E>
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>476426<!--Buff: buff_PowerShifts_Shoes_EnchantedSteps--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="interaction">
+      <U n="interaction">
+        <E n="affordance_priority">Critical</E>
+        <V n="affordance_run_priority" t="enabled">
+          <E n="enabled">Critical</E>
+        </V>
+        <L n="affordances">
+          <T>490363<!--SuperInteraction: powerShifts_SuperInteractions_Shoes_RemoveShoes--></T>
+        </L>
+        <E n="target_participant_type">Actor</E>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>476426<!--Buff: buff_PowerShifts_Shoes_EnchantedSteps--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="interaction">
+      <U n="interaction">
+        <E n="affordance_priority">Critical</E>
+        <V n="affordance_run_priority" t="enabled">
+          <E n="enabled">Critical</E>
+        </V>
+        <L n="affordances">
+          <T>490363<!--SuperInteraction: powerShifts_SuperInteractions_Shoes_RemoveShoes--></T>
+        </L>
+        <E n="subject">TargetSim</E>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <E n="subject">TargetSim</E>
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>476426<!--Buff: buff_PowerShifts_Shoes_EnchantedSteps--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

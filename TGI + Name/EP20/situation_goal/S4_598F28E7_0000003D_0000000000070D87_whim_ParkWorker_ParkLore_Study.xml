@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalActor" i="situation_goal" m="situations.situation_goal_actor" n="whim_ParkWorker_ParkLore_Study" s="462215">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T n="enabled" p="InEP20\UI\Icons\Whims\whim_StudyParkLore.png">2f7d0004:00000000:1d08fecff654b0f4</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x19516DA1<!--String: "Learn More Park Lore"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0x7523A303<!--String: "Select Study Park Lore on the Computer, at the Ranger Station, or while away at work."--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>272907<!--SituationGoalLootActions: goalLoot_WantFear_Fulfillment_Gain--></T>
+    <T>291795<!--SituationGoalLootActions: goalLoot_Want_Fulfilled_BuffGain_Happy--></T>
+  </L>
+  <V n="_goal_test" t="buff">
+    <U n="buff">
+      <V n="whitelist" t="enabled">
+        <L n="enabled">
+          <T>462216<!--Buff: buff_Career_ParkWorker_StudiedParkLore_Hidden--></T>
+          <T>457193<!--Buff: buff_Career_ParkWorker_ParkLore_5--></T>
+          <T>457194<!--Buff: buff_Career_ParkWorker_ParkLoremaster--></T>
+          <T>457189<!--Buff: buff_Career_ParkWorker_ParkLore_1--></T>
+          <T>457190<!--Buff: buff_Career_ParkWorker_ParkLore_2--></T>
+          <T>457191<!--Buff: buff_Career_ParkWorker_ParkLore_3--></T>
+          <T>457192<!--Buff: buff_Career_ParkWorker_ParkLore_4--></T>
+        </L>
+      </V>
+    </U>
+  </V>
+  <L n="_pre_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="career">
+      <U n="career">
+        <V n="test_type" t="career_reference">
+          <U n="career_reference">
+            <V n="career" t="specific_career">
+              <T n="specific_career">452992<!--Career: career_Adult_ParkWorker--></T>
+            </V>
+            <V n="user_level" t="enabled">
+              <U n="enabled">
+                <T n="lower_bound">6</T>
+              </U>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="_score">25</T>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+</I>

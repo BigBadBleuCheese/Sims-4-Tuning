@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Papercraft_PaperAirplane_School_EndOfDay" s="485360">
+  <L n="loot_actions">
+    <V t="create_object">
+      <U n="create_object">
+        <U n="chance">
+          <T n="base_chance">20</T>
+          <L n="multipliers">
+            <U>
+              <T n="multiplier">999</T>
+              <L n="tests">
+                <L>
+                  <V t="buff">
+                    <U n="buff">
+                      <V n="whitelist" t="enabled">
+                        <L n="enabled">
+                          <T>75636<!--Buff: buff_Career_19_AirplaneInnovation--></T>
+                          <T>75638<!--Buff: buff_Career_19_BentAirplane--></T>
+                        </L>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+            <U>
+              <T n="multiplier">0</T>
+              <L n="tests">
+                <L>
+                  <V t="inventory">
+                    <U n="inventory">
+                      <V n="contents_check" t="has_object_with_tag">
+                        <U n="has_object_with_tag">
+                          <L n="tag_set">
+                            <E>Func_PaperAirplane</E>
+                          </L>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+          </L>
+        </U>
+        <V n="creation_data" t="definition">
+          <U n="definition">
+            <T n="definition">480844</T>
+          </U>
+        </V>
+        <V n="location" t="inventory" />
+      </U>
+    </V>
+  </L>
+</I>

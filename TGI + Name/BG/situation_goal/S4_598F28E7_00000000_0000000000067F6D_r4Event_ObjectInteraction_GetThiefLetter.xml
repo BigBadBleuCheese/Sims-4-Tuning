@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalObjectInteraction" i="situation_goal" m="situations.situation_goal_object_interaction" n="r4Event_ObjectInteraction_GetThiefLetter" s="425837">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T n="enabled" p="InGame\UI\Icons\Notifications\notification_mailbox.png">2f7d0004:00000000:c26297ae7d750501</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x374F7455<!--String: "Retrieve the Thief's Letter from the Mailbox"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0x1991477F<!--String: "The thief's response is in the mailbox? And it has been waiting all this time—that's the mystery of time!\n\nSelect Retrieve Thief's Letter from a Mailbox.\n\n<i>(+35 Event Points)</i>"--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>447711<!--SituationGoalLootActions: liveEvent_GoalLoot_CompleteQuestGoal--></T>
+  </L>
+  <U n="_goal_test">
+    <L n="affordances">
+      <T>425836<!--SuperInteraction: mailbox_R4Event_GetLetter--></T>
+    </L>
+    <E n="test_event">InteractionComplete</E>
+  </U>
+  <L n="_post_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+      </U>
+    </V>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+  <V n="goal_completion_notification" t="enabled">
+    <U n="enabled">
+      <V n="icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T p="InGame\UI\Icons\Headlines\Final\headline_letterEnvelope.png" n="key">2f7d0004:00000000:1de925c5e8d4f2cc</T>
+          </U>
+        </V>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0xEBFBA4D1<!--String: "How wild and weaving time is! From now, to then, and back to here instantly in the future—it boggles the mind!\n\nThe Thief's Letter can now be found in {0.SimFirstName}'s inventory."--></T>
+      </V>
+      <V n="title" t="enabled">
+        <T n="enabled">0xE36253C3<!--String: "Thief's Letter Found"--></T>
+      </V>
+    </U>
+  </V>
+  <V n="tutorial_tip_group" t="disabled" />
+</I>

@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="PurchasePickerInteraction" i="interaction" m="interactions.base.picker_interaction" n="purchase_Marbles_Computer" s="346978">
+  <V n="_saveable" t="disabled" />
+  <T n="category">98910<!--PieMenuCategory: computer_Order--></T>
+  <V n="content_score" t="disabled" />
+  <V n="delivery_method" t="purchase_to_inventory">
+    <U n="purchase_to_inventory">
+      <E n="participant_type">Actor</E>
+    </U>
+  </V>
+  <T n="display_name">0xA59E4284<!--String: "Purchase Marbles"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <V n="object_count_option" t="enabled">
+    <L n="enabled">
+      <V t="participant_inventory_count" />
+    </L>
+  </V>
+  <V n="picker_dialog" t="purchase_picker">
+    <U n="purchase_picker">
+      <V n="max_selectable" t="unlimited" />
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T n="key" p="InGame\UI\Icons\PieMenu\Interactions\icon_pieMenu_immediateInteraction.png">2f7d0004:00000000:25eea5cdba6a6fd6</T>
+      </U>
+    </V>
+  </V>
+  <U n="price_multiplier">
+    <L n="multipliers">
+      <U>
+        <T n="multiplier">0.9</T>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>377844<!--Buff: buff_MovingOn_Hidden_FindingPurpose--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+      <U>
+        <T n="multiplier">0.25</T>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>345820<!--Buff: buff_LandlordTenant_Coupon--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </L>
+  </U>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <L n="purchase_list_option">
+    <V t="random_items">
+      <U n="random_items">
+        <L n="item_list">
+          <U>
+            <T n="item">364953<!--AttractionPreference: trait_Attraction_Fashion_Country_TurnOn--></T>
+          </U>
+          <U>
+            <T n="item">364668<!--AttractionPreferenceItem: preferenceItem_Attraction_RomanceStyles_PhysicalIntimacy--></T>
+          </U>
+          <U>
+            <T n="item">364669<!--AttractionPreferenceItem: preferenceItem_Attraction_RomanceStyles_Flirting--></T>
+          </U>
+          <U>
+            <T n="item">364670</T>
+          </U>
+          <U>
+            <T n="item">364671</T>
+          </U>
+          <U>
+            <T n="item">364672</T>
+          </U>
+          <U>
+            <T n="item">364674<!--SituationGoalRanInteractionOnTargetedSim: Whim_FearConfrontation_BeingAlone_SeekValidation--></T>
+          </U>
+          <U>
+            <T n="item">364673</T>
+          </U>
+          <U>
+            <T n="item">364719</T>
+          </U>
+          <U>
+            <T n="item">364720</T>
+          </U>
+          <U>
+            <T n="item">364724</T>
+          </U>
+        </L>
+        <T n="items_avaiable">5</T>
+      </U>
+    </V>
+    <V t="specific_items">
+      <U n="specific_items">
+        <L n="item_list">
+          <T>379727<!--LootActions: loot_WitnessedDeath_Disgusted--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="purchase_notification" t="enabled">
+    <V n="enabled" t="literal">
+      <U n="literal">
+        <V n="icon" t="enabled">
+          <V n="enabled" t="resource_key">
+            <U n="resource_key">
+              <T n="key" p="InEP15\UI\Icons\Notification\notification_marblecollection.png">2f7d0004:00000000:d01d7b5421e6c90c</T>
+            </U>
+          </V>
+        </V>
+        <V n="secondary_icon" t="enabled">
+          <V n="enabled" t="participant" />
+        </V>
+        <V n="text" t="single">
+          <T n="single">0xE0406E00<!--String: "Thanks for purchasing from the Golden Ticket Toy Shop! Purchases can be found in {0.SimFirstName}'s inventory.\n\nNow that {0.SimFirstName} has a Marble, use the Golden Ticket Marbles Game Ring to try <b>Play for Keeps</b>. {0.SimPronounSubjective|xxUpper} might lose a Marble BUT {0.SimPronounSubjective} might win a new one! The risk is half the fun, right?"--></T>
+        </V>
+      </U>
+    </V>
+  </V>
+  <T n="show_descriptions">False</T>
+  <T n="show_discount">True</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="state">
+      <U n="state">
+        <V n="fallback_behavior" t="always_pass" />
+        <E n="operator">NOTEQUAL</E>
+        <T n="value">15080<!--ObjectStateValue: BrokenState_Broken--></T>
+      </U>
+    </V>
+    <V t="state">
+      <U n="state">
+        <V n="fallback_behavior" t="always_pass" />
+        <T n="value">110121<!--ObjectStateValue: frontDesk_Slotted_0_No--></T>
+      </U>
+    </V>
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+  </L>
+  <V n="utility_info" t="enabled">
+    <L n="enabled">
+      <U>
+        <E n="key">POWER</E>
+      </U>
+    </L>
+  </V>
+</I>

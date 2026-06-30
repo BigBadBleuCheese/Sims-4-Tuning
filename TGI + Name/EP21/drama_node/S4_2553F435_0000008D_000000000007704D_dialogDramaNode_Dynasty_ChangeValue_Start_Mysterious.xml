@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="DialogDramaNode" i="drama_node" m="drama_scheduler.dialog_drama_node" n="dialogDramaNode_Dynasty_ChangeValue_Start_Mysterious" s="487501">
+  <T n="allow_during_work_hours">False</T>
+  <V n="cooldown_data" t="group_cooldown">
+    <U n="group_cooldown">
+      <E n="group">DynastyCooldown</E>
+    </U>
+  </V>
+  <V n="dialog_and_loot" t="dialog_multi_response">
+    <U n="dialog_multi_response">
+      <U n="dialog">
+        <E n="phone_ring_type">RING</E>
+        <V n="text" t="single">
+          <T n="single">0x8BBB31A1<!--String: "Our Dynasty is driving towards disaster and ruin. We're so caught up in trivial, worldly matters that we forsake the big questions that give life meaning.\n\nI'm urging you to embrace <b>mystery</b> as an ideal. If you won't, I will leave this Dynasty to seek out the deeper mysteries..."--></T>
+        </V>
+        <V n="text_tokens" t="enabled">
+          <U n="enabled">
+            <L n="tokens">
+              <V t="participant_type">
+                <U n="participant_type">
+                  <V n="objects" t="from_participant">
+                    <U n="from_participant">
+                      <E n="participant">Actor</E>
+                    </U>
+                  </V>
+                </U>
+              </V>
+              <V t="participant_type">
+                <U n="participant_type">
+                  <V n="objects" t="from_participant">
+                    <U n="from_participant">
+                      <E n="participant">TargetSim</E>
+                    </U>
+                  </V>
+                </U>
+              </V>
+              <V t="dynasty" />
+              <V t="dynasty">
+                <U n="dynasty">
+                  <E n="participant">TargetSim</E>
+                </U>
+              </V>
+            </L>
+          </U>
+        </V>
+      </U>
+      <L n="on_dialog_canceled_loot_list">
+        <T>487841<!--LootActions: loot_Dynasty_DramaNodeDialogOption_ChangeValue_Accept_Mysterious--></T>
+        <T>487900<!--LootActions: loot_Dynasty_DramaNodeDialogOption_ChangeValue_IgnoreTNS_Mysterious--></T>
+      </L>
+      <L n="on_dialog_no_response_loot_list">
+        <T>487841<!--LootActions: loot_Dynasty_DramaNodeDialogOption_ChangeValue_Accept_Mysterious--></T>
+        <T>487900<!--LootActions: loot_Dynasty_DramaNodeDialogOption_ChangeValue_IgnoreTNS_Mysterious--></T>
+      </L>
+      <L n="possible_responses">
+        <U>
+          <U n="item">
+            <L n="loot">
+              <T>487840<!--LootActions: loot_Dynasty_DramaNodeDialogOption_ChangeValue_AcceptTNS--></T>
+              <T>487841<!--LootActions: loot_Dynasty_DramaNodeDialogOption_ChangeValue_Accept_Mysterious--></T>
+            </L>
+            <T n="text">0x9C239346<!--String: "I see. I will consider your request."--></T>
+          </U>
+        </U>
+        <U>
+          <U n="item">
+            <L n="loot">
+              <T>146094<!--LootActions: rel_Loss_Large_Target--></T>
+              <T>473898<!--LootActions: loot_Dynasty_Membership_Leave_Failure_Target--></T>
+              <T>487838<!--LootActions: loot_Dynasty_DramaNodeDialogOption_ChangeValue_Refuse--></T>
+            </L>
+            <T n="text">0x5E2961B5<!--String: "Our ideals are <i>not</i> up for debate. Leave, then."--></T>
+          </U>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="min_and_max_times">
+    <T n="lower_bound">0</T>
+    <T n="upper_bound">24</T>
+  </U>
+  <L n="pretests">
+    <L>
+      <V t="trait">
+        <U n="trait">
+          <L n="whitelist_traits">
+            <T>466527<!--Trait: trait_Dynasty_Head--></T>
+          </L>
+        </U>
+      </V>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified">
+            <L n="specified">
+              <E>TEEN</E>
+              <E>YOUNGADULT</E>
+              <E>ADULT</E>
+              <E>ELDER</E>
+            </L>
+          </V>
+        </U>
+      </V>
+      <V t="test_set_reference">
+        <T n="test_set_reference">502460<!--TestSetInstance: testSet_Dynasty_UnityLevel_NotStability_Actor--></T>
+      </V>
+      <V t="dynasty_value">
+        <U n="dynasty_value">
+          <T n="negate">True</T>
+          <V n="test_type" t="has_dynasty_value">
+            <U n="has_dynasty_value">
+              <T n="dynasty_value">467898<!--DynastyValue: dynastyValue_Ideal_Mysterious--></T>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+  <L n="run_tests">
+    <L>
+      <V t="dynasty_member">
+        <U n="dynasty_member">
+          <V n="test_type" t="same_dynasty_membership" />
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="scoring" t="enabled">
+    <U n="enabled">
+      <T n="base_score">1</T>
+      <E n="bucket">EP21Dynasty</E>
+    </U>
+  </V>
+  <V n="sender_sim_info" t="specific_sim_filter">
+    <U n="specific_sim_filter">
+      <T n="sim_filter">487619<!--TunableSimFilter: filter_Dynasty_DramaNodes_ChangeValue_Mysterious--></T>
+    </U>
+  </V>
+  <V n="time_option" t="schedule">
+    <U n="schedule">
+      <L n="valid_times">
+        <U>
+          <U n="days_available">
+            <T n="0 SUNDAY">True</T>
+            <T n="1 MONDAY">True</T>
+            <T n="2 TUESDAY">True</T>
+            <T n="3 WEDNESDAY">True</T>
+            <T n="4 THURSDAY">True</T>
+            <T n="5 FRIDAY">True</T>
+            <T n="6 SATURDAY">True</T>
+          </U>
+          <T n="duration">12</T>
+        </U>
+      </L>
+    </U>
+  </V>
+</I>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalObjectInteraction" i="situation_goal" m="situations.situation_goal_object_interaction" n="situationGoalObjectInteraction_CommunalEvents_RanchGathering_LightAFire" s="338371">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T n="enabled" p="InEP14\UI\Icons\Events\EventGoal_MakeFire.png">2f7d0004:00000000:90f255ed9c545e97</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x98FC2133<!--String: "Light or Stoke a Firepit"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0x9428D304<!--String: "As a Host, place a Campfire from Build mode and light it. Alternatively, you can add Logs or Fuel to one that is already lit."--></T>
+      </V>
+    </U>
+  </V>
+  <U n="_goal_test">
+    <L n="affordances">
+      <T>121477<!--SuperInteraction: bonfire_light--></T>
+      <T>121482<!--SuperInteraction: bonfire_light_succeed--></T>
+      <T>110289<!--SuperInteraction: campfire_Light_Succeed--></T>
+      <T>101940<!--SuperInteraction: campire_Light--></T>
+      <T>102352<!--SuperInteraction: campfire_AddLog--></T>
+      <T>121485<!--SuperInteraction: bonfire_add_fuel--></T>
+    </L>
+    <E n="test_event">InteractionComplete</E>
+  </U>
+  <T n="_iterations">1</T>
+  <L n="_post_tests">
+    <V t="situation_job">
+      <U n="situation_job">
+        <L n="situation_jobs">
+          <T>338342<!--SituationJob: communalEvents_Job_Host_RanchGathering--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+</I>

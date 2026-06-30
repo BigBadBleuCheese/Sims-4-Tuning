@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalObjectInteraction" i="situation_goal" m="situations.situation_goal_object_interaction" n="situationGoalObjectInteraction_LiveEvent_EVTSept25_PlayToyChestWithoutStuffedAnimal" s="458655">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T p="InGame\UI\Icons\Headlines\Final\headline_toybox.png" n="enabled">2f7d0004:00000000:5b84e11f5f5934fb</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x6592B32A<!--String: "Play with the Toybox without a Stuffed Animal Nearby"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0xF5412438<!--String: "It feels a little different without your stuffed companion by your side, but give it a try.\n\nMake sure no stuffed animal is near a Toybox, then play with a toy from a Toybox. Also, make sure a Stuffed Animal is on the lot."--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>447711<!--SituationGoalLootActions: liveEvent_GoalLoot_CompleteQuestGoal--></T>
+  </L>
+  <U n="_goal_test">
+    <L n="affordances">
+      <T>157456<!--SuperInteraction: toybox_RouteAway--></T>
+      <T>14441<!--SuperInteraction: toy_Play--></T>
+      <T>161894<!--SuperInteraction: toy_PlayAwayFeelings--></T>
+    </L>
+    <E n="test_event">InteractionComplete</E>
+  </U>
+  <L n="_post_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+      </U>
+    </V>
+    <V t="object_criteria">
+      <U n="object_criteria">
+        <V n="desired_state_threshold" t="enabled">
+          <U n="enabled">
+            <E n="comparison">EQUAL</E>
+            <T n="value">466995<!--ObjectStateValue: giantStuffedAnimal_NearObject_EVTSept25_Toybox_False--></T>
+          </U>
+        </V>
+        <V n="identity_test" t="tags">
+          <U n="tags">
+            <L n="tag_set">
+              <E>Func_StuffedAnimal</E>
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <L n="_pre_goal_loot_list">
+    <T>458051<!--SituationGoalLootActions: liveEvent_GoalLoot_EVTSept25_StuffedAnimalBroadcasterOn--></T>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+  <V n="goal_completion_notification" t="enabled">
+    <U n="enabled">
+      <V n="icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T n="key" p="InGame\UI\Icons\Headlines\Events\ImaginationEvent_EventTNS.png">2f7d0004:00000000:a7d998e23b3c9bc3</T>
+          </U>
+        </V>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0x86AFB636<!--String: "{0.SimFirstName} played and had a good time. No stuffed animal nearby this time, and it did feel different. But {0.SimPronounSubjective} {S0.was}{P0.were} ok with it. It's as though it was meant to be this way."--></T>
+      </V>
+    </U>
+  </V>
+  <V n="tutorial_tip_group" t="enabled">
+    <T n="enabled">468677<!--TutorialTipGroup: tutorialTipGroup_LiveEvent_EVTSept25_PlayWithToy--></T>
+  </V>
+</I>

@@ -1,0 +1,623 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="crypts_Adventures_start" s="377262">
+  <V n="_cancelable_by_user" t="require_confirmation">
+    <U n="require_confirmation">
+      <V n="text" t="single">
+        <T n="single">0x198C95F8<!--String: "{0.SimFirstName} spots a beam of light illuminating a hidden corridor. {0.SimPronounSubjective} could make for the exit, or continue exploring the Crypt."--></T>
+      </V>
+      <T n="text_cancel">0x65A0C79C<!--String: "Continue Exploring the Crypt"--></T>
+      <T n="text_ok">0x8751F688<!--String: "Exit Crypt"--></T>
+      <V n="title" t="enabled">
+        <T n="enabled">0xEDB80FE6<!--String: "A Way Out"--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="cone">
+            <U n="cone">
+              <T n="angle">30</T>
+              <T n="max_radius">3.5</T>
+              <T n="min_radius">1.5</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="value" t="facing" />
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_icon" t="resource_key">
+    <U n="resource_key">
+      <T n="key" p="InEP17\UI\Icons\InteractionQueue\IconQueueCrypt.png">2f7d0004:00000000:5b109c147a614131</T>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="list_reference">
+          <T n="list_reference">395026<!--ExitConditionList: exitConditionList_MotiveFail_ExitCancel--></T>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="buff_based">
+                <U n="buff_based">
+                  <T n="buff">226414<!--Buff: buff_Generic_ExitInteraction--></T>
+                  <E n="timing">HAS_BUFF</E>
+                </U>
+              </V>
+            </L>
+          </U>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="in_use_based" />
+            </L>
+            <E n="interaction_action">EXIT_CANCEL</E>
+          </U>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="buff_based">
+                <U n="buff_based">
+                  <T n="buff">285810<!--Buff: buff_Werewolf_Rampage--></T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_CANCEL</E>
+          </U>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="buff_based">
+                <U n="buff_based">
+                  <T n="buff">288633<!--Buff: buff_Werewolf_Rampage_FirstTime--></T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_CANCEL</E>
+          </U>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="buff_based">
+                <U n="buff_based">
+                  <T n="buff">149567<!--Buff: buff_Motives_Vampire_Thirst_IrresistibleThirst--></T>
+                  <E n="timing">HAS_BUFF</E>
+                </U>
+              </V>
+            </L>
+          </U>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="buff_based">
+                <U n="buff_based">
+                  <T n="buff">75271<!--Buff: buff_Pregnancy_InLabor--></T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_CANCEL</E>
+          </U>
+        </V>
+      </L>
+      <V n="content" t="looping_content">
+        <U n="looping_content">
+          <U n="animation_ref">
+            <T n="factory">8749<!--AnimationElement: PostureIdle_Stand--></T>
+          </U>
+        </U>
+      </V>
+      <V n="periodic_stat_change" t="enabled">
+        <U n="enabled">
+          <L n="operations">
+            <V t="reference">
+              <T n="reference">252299<!--PeriodicStatChangeOperation: periodictStatChange_Adventurous_Adventuring--></T>
+            </V>
+            <V t="reference">
+              <T n="reference">249770<!--PeriodicStatChangeOperation: periodicStatChangeOperation_Lifestyles_Liked_AdrenalineSeeker--></T>
+            </V>
+            <V t="reference">
+              <T n="reference">249762<!--PeriodicStatChangeOperation: periodicStatChangeOperation_Lifestyles_Progress_AdrenalineSeeker--></T>
+            </V>
+            <V t="reference">
+              <T n="reference">289137<!--PeriodicStatChangeOperation: periodicStatChange_WerewolfPackValue_ExpandExplore--></T>
+            </V>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="stat_increment_decrement">
+      <U n="stat_increment_decrement">
+        <T n="stat">395025<!--Statistic: statistic_Object_Generic_InUse_Counter--></T>
+        <L n="subject">
+          <E>Object</E>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>377270<!--LootActions: loot_Crypts_RemoveTrackingAdventureBuffs--></T>
+        </L>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <T n="buff_type">423560<!--Buff: buff_Crypts_TrackingBuffs_TimeOutExit_InteractionRunning--></T>
+        </U>
+      </U>
+    </V>
+    <V t="buff_fire_and_forget">
+      <U n="buff_fire_and_forget">
+        <U n="buff">
+          <T n="buff_type">423559<!--Buff: buff_Crypts_TrackingBuffs_TimeOutExit_Buffer--></T>
+        </U>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+    <V t="adventure">
+      <U n="adventure">
+        <L n="_adventure_moments">
+          <U>
+            <E n="key">Crypt_AliceChild_01</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">377306<!--AdventureMoment: adventureMoment_Crypts_Content_AliceChild_01--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Crypt_AliceChild_FlowStarter</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">377278<!--AdventureMoment: adventureMoment_Crypts_FlowStarter_AliceChild--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Crypt_Enter</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">377273<!--AdventureMoment: adventureMoment_Crypts_enter--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Crypt_HissingFriend_01</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">377304<!--AdventureMoment: adventureMoment_Crypts_Content_hissingFriend_01--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Crypt_HissingFriend_FlowStarter</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">377277<!--AdventureMoment: adventureMoment_Crypts_FlowStarter_hissingFriend--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Crypt_Hissing_01</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">377296<!--AdventureMoment: adventureMoment_Crypts_Content_hissing_01--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Crypt_Hissing_02</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">377297<!--AdventureMoment: adventureMoment_Crypts_Content_hissing_02--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Crypt_Hissing_03</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">377298<!--AdventureMoment: adventureMoment_Crypts_Content_hissing_03--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Crypt_Hissing_04</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">377299<!--AdventureMoment: adventureMoment_Crypts_Content_hissing_04--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Crypt_Hissing_05</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">377300<!--AdventureMoment: adventureMoment_Crypts_Content_hissing_05--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Crypt_Hissing_06</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">377301<!--AdventureMoment: adventureMoment_Crypts_Content_hissing_06--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Crypt_Hissing_FlowStarter</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">377275<!--AdventureMoment: adventureMoment_Crypts_FlowStarter_hissing--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Crypt_ItFollows_01</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">377287<!--AdventureMoment: adventureMoment_Crypts_Content_itFollows_01--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Crypt_ItFollows_02</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">377289<!--AdventureMoment: adventureMoment_Crypts_Content_itFollows_02--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Crypt_ItFollows_03</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">377290<!--AdventureMoment: adventureMoment_Crypts_Content_itFollows_03--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Crypt_ItFollows_04</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">377291<!--AdventureMoment: adventureMoment_Crypts_Content_itFollows_04--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Crypt_ItFollows_05</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">377292<!--AdventureMoment: adventureMoment_Crypts_Content_itFollows_05--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Crypt_ItFollows_FlowStarter</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">377274<!--AdventureMoment: adventureMoment_Crypts_FlowStarter_itFollows--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Crypt_LooseBrick_01</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">377307<!--AdventureMoment: adventureMoment_Crypts_Content_looseBrick_01--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Crypt_LooseBrick_FlowStarter</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">377279<!--AdventureMoment: adventureMoment_Crypts_FlowStarter_looseBrick--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Crypt_MusicalPuzzle_01</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">377310<!--AdventureMoment: adventureMoment_Crypts_Content_musicalPuzzle_01--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Crypt_MusicalPuzzle_02</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">377311<!--AdventureMoment: adventureMoment_Crypts_Content_musicalPuzzle_02--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Crypt_MusicalPuzzle_03</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">377309<!--AdventureMoment: adventureMoment_Crypts_Content_musicalPuzzle_03--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Crypt_MusicalPuzzle_FlowStarter</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">377281<!--AdventureMoment: adventureMoment_Crypts_FlowStarter_musicalPuzzle--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Crypt_MysteryBox_01</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">377285<!--AdventureMoment: adventureMoment_Crypts_Content_MysterBox_01--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Crypt_MysteryBox_02</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">377286<!--AdventureMoment: adventureMoment_Crypts_Content_MysteryBox_02--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Crypt_MysteryBox_03</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">387859<!--AdventureMoment: adventureMoment_Crypts_Content_MysteryBox_03--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Crypt_MysteryBox_FlowStarter</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">377282<!--AdventureMoment: adventureMoment_Crypts_FlowStarter_MysteryBox--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Crypt_RandomSelector</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">377283<!--AdventureMoment: adventureMoment_Crypts_randomSelector--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Crypt_RestingSpot_01</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">377305<!--AdventureMoment: adventureMoment_Crypts_Content_restingSpot_01--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Crypt_RestingSpot_FlowStarter</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">377276<!--AdventureMoment: adventureMoment_Crypts_FlowStarter_restingSpot--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Crypt_Waylon_01</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">377308<!--AdventureMoment: adventureMoment_Crypts_Content_Waylon_01--></T>
+              </V>
+            </U>
+          </U>
+          <U>
+            <E n="key">Crypt_Waylon_FlowStarter</E>
+            <U n="value">
+              <V n="adventure_moment" t="reference">
+                <T n="reference">377280<!--AdventureMoment: adventureMoment_Crypts_FlowStarter_Waylon--></T>
+              </V>
+            </U>
+          </U>
+        </L>
+        <L n="_initial_moments">
+          <U>
+            <E n="adventure_moment_key">Crypt_Enter</E>
+          </U>
+        </L>
+        <T n="_resumable">False</T>
+        <U n="_trigger_interval">
+          <T n="lower_bound">12</T>
+          <T n="upper_bound">18</T>
+        </U>
+        <V n="timing" t="at_beginning">
+          <U n="at_beginning">
+            <V n="offset_time" t="enabled">
+              <T n="enabled">4</T>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="buff_fire_and_forget">
+      <U n="buff_fire_and_forget">
+        <U n="buff">
+          <T n="buff_type">423561<!--Buff: buff_Crypts_TrackingBuffs_TimeOutExit_SafetyNet--></T>
+        </U>
+      </U>
+    </V>
+    <V t="buff_fire_and_forget">
+      <U n="buff_fire_and_forget">
+        <U n="buff">
+          <T n="buff_type">423564<!--Buff: buff_Crypts_TrackingBuffs_TimeOutExit_DelayedRemoval--></T>
+        </U>
+        <U n="success_chance">
+          <L n="multipliers">
+            <U>
+              <T n="multiplier">0</T>
+              <L n="tests">
+                <L>
+                  <V t="buff">
+                    <U n="buff">
+                      <V n="whitelist" t="enabled">
+                        <L n="enabled">
+                          <T>423876<!--Buff: buff_Crypts_TrackingBuffs_Buffer_PreventDelay--></T>
+                        </L>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+          </L>
+        </U>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>377270<!--LootActions: loot_Crypts_RemoveTrackingAdventureBuffs--></T>
+        </L>
+        <V n="timing" t="at_end" />
+      </U>
+    </V>
+  </L>
+  <L n="basic_liabilities">
+    <V t="hide_sim_liability">
+      <U n="hide_sim_liability">
+        <T n="include_carried_sims">True</T>
+        <L n="participants">
+          <E>Actor</E>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="basic_reserve_object" t="disabled" />
+  <V n="content_score" t="disabled" />
+  <T n="counts_as_inside">True</T>
+  <T n="display_name">0xFA9DB748<!--String: "Explore the Underground Crypts"--></T>
+  <V n="display_name_overrides" t="testable">
+    <U n="testable">
+      <L n="overrides">
+        <U>
+          <V n="new_display_name" t="disabled" />
+          <V n="new_pie_menu_icon" t="enabled">
+            <V n="enabled" t="resource_key">
+              <U n="resource_key">
+                <T n="key" p="InEP17\UI\Icons\PieMenu\Interactions\icon_pieMenu_AlicesDeadTree.png">2f7d0004:00000000:7c74900f90c8aca2</T>
+              </U>
+            </V>
+          </V>
+          <L n="test">
+            <L>
+              <V t="career_gig_test">
+                <U n="career_gig_test">
+                  <T n="career">386484<!--Career: career_AliceTree_AliceQuest--></T>
+                  <V n="test_type" t="any_gig">
+                    <U n="any_gig">
+                      <V n="active_objective" t="enabled">
+                        <T n="enabled">386510<!--Objective: objective_EP17World_AliceTree_AliceQuest_01_Deimos--></T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+    <E>Interaction_Lifestyles_AdrenalineSeeker_FlexibleLength</E>
+  </L>
+  <V n="outcome" t="single" />
+  <T n="pie_menu_priority">10</T>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all" />
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>288633<!--Buff: buff_Werewolf_Rampage_FirstTime--></T>
+          <T>285810<!--Buff: buff_Werewolf_Rampage--></T>
+        </L>
+      </U>
+    </V>
+    <V t="in_use">
+      <U n="in_use">
+        <T n="negate">True</T>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x3217482C<!--String: "Crypt is currently in use."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="heirlooms_RemoveHeirloom" s="381354">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="circle">
+            <U n="circle">
+              <T n="ideal_radius">1.5</T>
+              <T n="ideal_radius_width">1</T>
+              <T n="radius">5</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="value" t="facing" />
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_from_sim_inventory">True</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">381295<!--AnimationElement: heirlooms_RemoveHeirloom--></T>
+      </U>
+    </U>
+  </V>
+  <V n="basic_reserve_object" t="disabled" />
+  <T n="category">395098<!--PieMenuCategory: pieMenuCategory_Heirlooms--></T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xCB2ED5E4<!--String: "Remove Heirloom"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="basic_extras">
+          <V t="buff_fire_and_forget">
+            <U n="buff_fire_and_forget">
+              <U n="buff">
+                <V n="buff_reason" t="enabled">
+                  <T n="enabled">0x90059201<!--String: "(From Removing Heirloom)"--></T>
+                </V>
+                <T n="buff_type">381430<!--Buff: buff_Heirlooms_SecondThoughts--></T>
+              </U>
+            </U>
+          </V>
+          <V t="notification">
+            <U n="notification">
+              <V n="dialog" t="single">
+                <V n="single" t="literal">
+                  <U n="literal">
+                    <V n="icon" t="enabled">
+                      <V n="enabled" t="participant" />
+                    </V>
+                    <V n="secondary_icon" t="enabled">
+                      <V n="enabled" t="participant">
+                        <U n="participant">
+                          <L n="participant_type">
+                            <E>Object</E>
+                          </L>
+                        </U>
+                      </V>
+                    </V>
+                    <V n="text" t="single">
+                      <T n="single">0x1FE36D<!--String: "Heirloom no more! {0.SimFirstName} has removed heirloom status from an object. Any additional heirloom value accumulated over each inheritance has been lost. {0.SimPronounSubjective|xxUpper} can always designate it as an heirloom again."--></T>
+                    </V>
+                  </U>
+                </V>
+              </V>
+            </U>
+          </V>
+        </L>
+        <L n="loot_list">
+          <T>381309<!--LootActions: loot_Heirlooms_RemoveHeirloom--></T>
+        </L>
+      </U>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T p="InEP17\UI\Icons\PieMenu\Interactions\icon_pieMenu_Heirloom.png" n="key">2f7d0004:00000000:8581aa691a6b5e94</T>
+      </U>
+    </V>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all" />
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">385131<!--TestSetInstance: testSetInstance_Heirlooms_IsNotInherited--></T>
+    </V>
+    <V t="heirloom">
+      <U n="heirloom">
+        <V n="heirloom_object_creator" t="enabled">
+          <E n="enabled">Actor</E>
+        </V>
+        <V n="is_heirloom_object" t="enabled" />
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xBC852244<!--String: "This Heirloom does not belong to {0.SimFirstName}."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

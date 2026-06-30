@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SocialSuperInteraction" i="interaction" m="interactions.social.social_super_interaction" n="ghostPowers_Abilities_Ultimate_Curse" s="393958">
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>TargetSim</E>
+      </L>
+    </U>
+  </V>
+  <L n="_party_size_weight_tuning">
+    <U>
+      <T n="y">100</T>
+    </U>
+    <U>
+      <T n="x">1</T>
+      <T n="y">100</T>
+    </U>
+    <U>
+      <T n="x">2</T>
+      <T n="y">50</T>
+    </U>
+    <U>
+      <T n="x">3</T>
+      <T n="y">0</T>
+    </U>
+    <U>
+      <T n="x">4</T>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <T n="_social_group_type">16390<!--SocialGroup: chat--></T>
+  <V n="affordance_to_push_on_target" t="push_affordance">
+    <T n="push_affordance">421580<!--SocialSuperInteraction: socialSI_Touching_DoNothing_TargetSim--></T>
+  </V>
+  <T n="allow_autonomous">False</T>
+  <T n="attention_cost">0</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">393972<!--AnimationElement: ghostPowers_Curse--></T>
+      </U>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>162659<!--LootActions: loot_Commodity_Culling_GhostAdd_target--></T>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x9C09275F<!--String: "(From Being in a social group with at least 3 Sims)"--></T>
+          </V>
+          <T n="buff_type">125555<!--Buff: buff_Trait_WithMyFriends--></T>
+        </U>
+        <L n="subject">
+          <E>Actor</E>
+          <E>SocialGroupSims</E>
+          <E>TargetSim</E>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="social_group">
+              <U n="social_group">
+                <V n="threshold" t="enabled">
+                  <U n="enabled">
+                    <T n="value">3</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>390827<!--LootActions: loot_GhostPowers_Progression_XP_Large--></T>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>390313<!--LootActions: loot_GhostPowers_GhostEssence_Fear_Large--></T>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>390822<!--LootActions: loot_GhostPowers_Stamina_Progression_Decrease_Large--></T>
+        </L>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+  </L>
+  <V n="basic_reserve_object" t="disabled" />
+  <T n="category">384917<!--PieMenuCategory: pieMenuCategory_GhostPowers--></T>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xC24E0D47<!--String: "Cast Otherworldly Curse"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <V n="idle_animation" t="enabled">
+    <U n="enabled">
+      <T n="factory">11570<!--AnimationElement: Listen_Listen_Looping_basic--></T>
+    </U>
+  </V>
+  <T n="ignore_group_socials">False</T>
+  <L n="interaction_category_tags">
+    <E>Interaction_SocialSuper</E>
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+    <E>Interaction_SocialAll</E>
+    <E>Interaction_Social_Contagious</E>
+  </L>
+  <T n="invite_in_after_interaction">True</T>
+  <U n="listen_animation">
+    <T n="factory">11570<!--AnimationElement: Listen_Listen_Looping_basic--></T>
+  </U>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <L n="basic_extras">
+              <V t="buff_fire_and_forget">
+                <U n="buff_fire_and_forget">
+                  <U n="buff">
+                    <V n="buff_reason" t="enabled">
+                      <T n="enabled">0x24366C4<!--String: "(From Otherworldly Curse)"--></T>
+                    </V>
+                    <T n="buff_type">393944<!--Buff: buff_GhostPowers_Ult_Cursed--></T>
+                  </U>
+                  <E n="participant">TargetSim</E>
+                </U>
+              </V>
+            </L>
+            <L n="loot_list">
+              <T>11038<!--LootActions: Rel_Loss_Large--></T>
+              <T>423151<!--LootActions: loot_Burglar_RunAwayPanic_Target--></T>
+            </L>
+          </U>
+        </U>
+      </L>
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="basic_extras">
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <V n="buff_reason" t="enabled">
+                          <T n="enabled">0x24366C4<!--String: "(From Otherworldly Curse)"--></T>
+                        </V>
+                        <T n="buff_type">393944<!--Buff: buff_GhostPowers_Ult_Cursed--></T>
+                      </U>
+                      <E n="participant">TargetSim</E>
+                    </U>
+                  </V>
+                  <V t="buff_fire_and_forget">
+                    <U n="buff_fire_and_forget">
+                      <U n="buff">
+                        <V n="buff_reason" t="enabled">
+                          <T n="enabled">0x129AECAF<!--String: "(From Cursing Enemy)"--></T>
+                        </V>
+                        <T n="buff_type">393969<!--Buff: buff_GhostPowers_CursedEnemy--></T>
+                      </U>
+                    </U>
+                  </V>
+                </L>
+                <L n="loot_list">
+                  <T>11038<!--LootActions: Rel_Loss_Large--></T>
+                  <T>423151<!--LootActions: loot_Burglar_RunAwayPanic_Target--></T>
+                </L>
+              </U>
+              <U n="weight">
+                <L n="multipliers" />
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="relationship">
+                <U n="relationship">
+                  <U n="required_relationship_bits">
+                    <L n="match_any">
+                      <T>15796<!--RelationshipBit: friendship-despised--></T>
+                      <T>15802<!--RelationshipBit: friendship-disliked--></T>
+                      <T>15801<!--RelationshipBit: friendship-nemesis--></T>
+                    </L>
+                  </U>
+                  <L n="subject">
+                    <E>Actor</E>
+                  </L>
+                  <L n="target_sim">
+                    <E>TargetSim</E>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="basic_extras" />
+                <L n="loot_list">
+                  <T>11038<!--LootActions: Rel_Loss_Large--></T>
+                  <T>442953<!--LootActions: Apothecary_AuraShield_CuresAndElixirs_Loot_Remove_Buff--></T>
+                </L>
+              </U>
+              <U n="weight">
+                <T n="base_value">1</T>
+                <L n="multipliers" />
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="buff">
+                <U n="buff">
+                  <E n="subject">TargetSim</E>
+                  <V n="whitelist" t="enabled">
+                    <L n="enabled">
+                      <T>442916<!--Buff: Apothecary_CuresAndElixirs_Buff_AuraShield--></T>
+                    </L>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <T n="relationship_scoring">True</T>
+  <E n="scoring_priority">NORMAL</E>
+  <V n="sim_affinity_posture_scoring_data" t="enabled">
+    <U n="enabled">
+      <L n="my_scoring">
+        <U>
+          <V n="affinity_strategy" t="relationship_based" />
+          <T n="negate_tag">True</T>
+          <E n="running_interaction_tag">Sleeping</E>
+        </U>
+        <U>
+          <V n="affinity_strategy" t="avoid" />
+          <E n="running_interaction_tag">Very_Loud</E>
+        </U>
+      </L>
+      <L n="my_tags">
+        <E>Loud</E>
+        <E>Chat</E>
+      </L>
+    </U>
+  </V>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all" />
+    </U>
+  </V>
+  <E n="target_type">TARGET</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">TargetSim</E>
+      </U>
+    </V>
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="bucks_perks_test">
+      <U n="bucks_perks_test">
+        <T n="bucks_perk">391287<!--BucksPerk: ghostPowersPerks_Ult_Curse--></T>
+      </U>
+    </V>
+    <V t="trait">
+      <U n="trait">
+        <L n="whitelist_traits">
+          <T>384623<!--Trait: trait_GhostPowers_Manifested--></T>
+        </L>
+      </U>
+    </V>
+    <V t="trait">
+      <U n="trait">
+        <L n="blacklist_traits">
+          <T>381402<!--Trait: trait_IsGhost--></T>
+          <T>16851<!--Trait: trait_isGrimReaper--></T>
+          <T>218444<!--Trait: trait_Humanoid_Robots_MainTrait--></T>
+        </L>
+        <E n="subject">TargetSim</E>
+      </U>
+    </V>
+    <V t="ranked_statistic">
+      <U n="ranked_statistic">
+        <T n="ranked_stat">384633<!--RankedStatistic: rankedStatistic_GhostPowers_GhostXP--></T>
+        <V n="threshold" t="value_threshold">
+          <U n="value_threshold">
+            <E n="comparison">EQUAL</E>
+            <T n="value">5</T>
+          </U>
+        </V>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xD91E3F23<!--String: "Must reach Ghost Mastery tier <b>Transcendent Wraith</b>."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>404414<!--Buff: buff_GhostPowers_Stamina_BurntOut_Completely--></T>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x75B5DF62<!--String: "{0.SimFirstName} has exhausted all of {0.SimPronounPossessiveDependent} Stamina and cannot perform any more Ghost Mastery until it is replenished. Time for a Spectral Slumber or give it time to recharge."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>393944<!--Buff: buff_GhostPowers_Ult_Cursed--></T>
+        </L>
+        <E n="subject">TargetSim</E>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x24B2907<!--String: "This Sim has already been cursed."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>393955<!--Buff: buff_GhostPowers_Ult_GoodFortune--></T>
+          <T>393971<!--Buff: buff_GhostPowers_Ult_GoodFortune_FamilyFriend--></T>
+        </L>
+        <E n="subject">TargetSim</E>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x8A0E7451<!--String: "This Sim has already been blessed and cannot be cursed."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

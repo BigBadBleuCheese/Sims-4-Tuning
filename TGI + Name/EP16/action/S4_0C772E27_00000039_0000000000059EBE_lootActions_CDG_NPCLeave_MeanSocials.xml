@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="lootActions_CDG_NPCLeave_MeanSocials" s="368318">
+  <L n="loot_actions">
+    <V t="reaction">
+      <U n="reaction">
+        <V n="si_reaction" t="enabled">
+          <U n="enabled">
+            <T n="affordance">368317<!--SuperInteraction: SI_CDG_LeaveDate_MeanSocials--></T>
+            <E n="affordance_priority">Critical</E>
+            <V n="affordance_run_priority" t="enabled">
+              <E n="enabled">Critical</E>
+            </V>
+            <V n="affordance_target" t="enabled">
+              <E n="enabled">Actor</E>
+            </V>
+          </U>
+        </V>
+        <E n="subject">TargetSim</E>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0xBE6E4F47<!--String: "(An Awkward Date Moment)"--></T>
+          </V>
+          <T n="buff_type">371551<!--Buff: buff_CDG_Embarrased_DateLeft_MeanInteractions--></T>
+        </U>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0xBE6E4F47<!--String: "(An Awkward Date Moment)"--></T>
+          </V>
+          <T n="buff_type">371551<!--Buff: buff_CDG_Embarrased_DateLeft_MeanInteractions--></T>
+        </U>
+        <E n="subject">TargetSim</E>
+      </U>
+    </V>
+  </L>
+  <T n="run_test_first">True</T>
+  <L n="tests">
+    <L>
+      <V t="situation_job_test">
+        <U n="situation_job_test">
+          <E n="participant">TargetSim</E>
+          <L n="situation_jobs">
+            <T>365356<!--SituationJob: job_CAD_Target_Date_Adult--></T>
+            <T>365357<!--SituationJob: job_CAD_Target_Date_Adult_AdditionalDate--></T>
+            <T>365358<!--SituationJob: job_CAD_Target_Date_Teen--></T>
+            <T>365359<!--SituationJob: job_CAD_Target_Date_Teen_AdditionalDate--></T>
+            <T>375208<!--SituationJob: job_CAD_Target_Date_Adult_BlindDate_Catfish--></T>
+            <T>374485<!--SituationJob: job_CAD_Target_Date_Adult_BlindDate--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

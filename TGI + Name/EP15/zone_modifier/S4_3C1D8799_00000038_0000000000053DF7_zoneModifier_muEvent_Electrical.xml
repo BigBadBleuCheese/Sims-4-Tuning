@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="ZoneModifier" i="zone_modifier" m="zone_modifier.zone_modifier" n="zoneModifier_muEvent_Electrical" s="343543">
+  <U n="cleanup_loot">
+    <L n="actions">
+      <V t="loot">
+        <U n="loot">
+          <V n="loot_distribution" t="active_sim_only" />
+          <L n="loots">
+            <T>341490<!--LootActions: loot_muEvent_Electrical_RestorePower--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T n="hide_screen_slam">True</T>
+  <U n="on_add_loot">
+    <L n="actions">
+      <V t="loot">
+        <U n="loot">
+          <V n="loot_distribution" t="active_sim_only" />
+          <L n="loots">
+            <T>341489<!--LootActions: loot_muEvent_Electrical_ShutOffPower--></T>
+          </L>
+        </U>
+      </V>
+      <V t="modify_lot_items">
+        <U n="modify_lot_items">
+          <U n="actions">
+            <L n="modifications">
+              <U>
+                <V n="action" t="set_state">
+                  <U n="set_state">
+                    <T n="action_value">15076<!--CommodityBasedObjectStateValue: Brokenness_Broken--></T>
+                  </U>
+                </V>
+                <V n="max_num_modification" t="enabled">
+                  <T n="enabled">3</T>
+                </V>
+                <L n="tests">
+                  <L>
+                    <V t="location">
+                      <U n="location">
+                        <U n="location_tests">
+                          <V n="in_common_area" t="enabled">
+                            <T n="enabled">False</T>
+                          </V>
+                        </U>
+                      </U>
+                    </V>
+                    <V t="object_definition">
+                      <U n="object_definition">
+                        <V n="item" t="tagged_item">
+                          <U n="tagged_item">
+                            <L n="tag_set">
+                              <E>Func_TV</E>
+                              <E>Func_Fridge</E>
+                              <E>Func_RobotVacuum</E>
+                              <E>Func_Computer</E>
+                              <E>Func_Stereo</E>
+                              <E>BuyCatEE_MiscElectronics</E>
+                              <E>BuyCatPA_SmallAppliance</E>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                    <V t="state">
+                      <U n="state">
+                        <E n="operator">NOTEQUAL</E>
+                        <T n="value">15076<!--CommodityBasedObjectStateValue: Brokenness_Broken--></T>
+                      </U>
+                    </V>
+                    <V t="object_definition">
+                      <U n="object_definition">
+                        <V n="item" t="tagged_item">
+                          <U n="tagged_item">
+                            <L n="tag_set">
+                              <E>Func_Unbreakable_Object</E>
+                            </L>
+                            <E n="test_type">CONTAINS_NO_TAGS_IN_SET</E>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                    <V t="state">
+                      <U n="state">
+                        <V n="fallback_behavior" t="always_pass" />
+                        <E n="operator">NOTEQUAL</E>
+                        <T n="value">118536<!--CommodityBasedObjectStateValue: upgrade_HotTub_Unbreakable_Completed--></T>
+                      </U>
+                    </V>
+                    <V t="state">
+                      <U n="state">
+                        <V n="fallback_behavior" t="always_pass" />
+                        <E n="operator">NOTEQUAL</E>
+                        <T n="value">174124<!--CommodityBasedObjectStateValue: upgrade_Surgery_Unbreakable_Complete--></T>
+                      </U>
+                    </V>
+                    <V t="state">
+                      <U n="state">
+                        <V n="fallback_behavior" t="always_pass" />
+                        <E n="operator">NOTEQUAL</E>
+                        <T n="value">145587<!--CommodityBasedObjectStateValue: upgrade_VideoGameConsole_Unbreakable_Completed--></T>
+                      </U>
+                    </V>
+                    <V t="state">
+                      <U n="state">
+                        <V n="fallback_behavior" t="always_pass" />
+                        <E n="operator">NOTEQUAL</E>
+                        <T n="value">184677<!--CommodityBasedObjectStateValue: upgrade_Sprinkler_Unbreakable_Completed--></T>
+                      </U>
+                    </V>
+                    <V t="state">
+                      <U n="state">
+                        <V n="fallback_behavior" t="always_pass" />
+                        <E n="operator">NOTEQUAL</E>
+                        <T n="value">192492<!--CommodityBasedObjectStateValue: upgrade_VideoStation_Unbreakable_Completed--></T>
+                      </U>
+                    </V>
+                    <V t="state">
+                      <U n="state">
+                        <V n="fallback_behavior" t="always_pass" />
+                        <E n="operator">NOTEQUAL</E>
+                        <T n="value">232411<!--CommodityBasedObjectStateValue: upgrade_AtmosphericCondenser_Unbreakable_Completed--></T>
+                      </U>
+                    </V>
+                    <V t="state">
+                      <U n="state">
+                        <V n="fallback_behavior" t="always_pass" />
+                        <E n="operator">NOTEQUAL</E>
+                        <T n="value">257280<!--CommodityBasedObjectStateValue: upgrade_Vacuum_Completed_Unbreakable--></T>
+                      </U>
+                    </V>
+                    <V t="state">
+                      <U n="state">
+                        <V n="fallback_behavior" t="always_pass" />
+                        <E n="operator">NOTEQUAL</E>
+                        <T n="value">199601<!--ObjectStateValue: sleepingPod_StateValues_Upgrades_Unbreakable_True--></T>
+                      </U>
+                    </V>
+                    <V t="state">
+                      <U n="state">
+                        <V n="fallback_behavior" t="always_pass" />
+                        <E n="operator">NOTEQUAL</E>
+                        <T n="value">108300<!--CommodityBasedObjectStateValue: upgrade_ChemicalAnalyzer_NeverBreaks_Completed--></T>
+                      </U>
+                    </V>
+                    <V t="state">
+                      <U n="state">
+                        <V n="fallback_behavior" t="always_pass" />
+                        <E n="operator">NOTEQUAL</E>
+                        <T n="value">109294<!--CommodityBasedObjectStateValue: upgrade_XrayMachine_NeverBreaks_Completed--></T>
+                      </U>
+                    </V>
+                    <V t="state">
+                      <U n="state">
+                        <V n="fallback_behavior" t="always_pass" />
+                        <E n="operator">NOTEQUAL</E>
+                        <T n="value">177317<!--CommodityBasedObjectStateValue: upgrade_Laundry_Dryer_NeverBreaks_Completed--></T>
+                      </U>
+                    </V>
+                    <V t="state">
+                      <U n="state">
+                        <V n="fallback_behavior" t="always_pass" />
+                        <E n="operator">NOTEQUAL</E>
+                        <T n="value">177239<!--CommodityBasedObjectStateValue: upgrade_Laundry_WashingMachine_NeverBreaks_Completed--></T>
+                      </U>
+                    </V>
+                    <V t="state">
+                      <U n="state">
+                        <V n="fallback_behavior" t="always_pass" />
+                        <E n="operator">NOTEQUAL</E>
+                        <T n="value">15384<!--CommodityBasedObjectStateValue: Upgrade_Generic_LockBrokenness_Completed--></T>
+                      </U>
+                    </V>
+                    <V t="state">
+                      <U n="state">
+                        <V n="fallback_behavior" t="always_pass" />
+                        <E n="operator">NOTEQUAL</E>
+                        <T n="value">141813<!--CommodityBasedObjectStateValue: upgrade_TalkingToilet_LockBrokenness_Electronic_Completed--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+      </V>
+      <V t="modify_lot_items">
+        <U n="modify_lot_items">
+          <U n="actions">
+            <L n="modifications">
+              <U>
+                <V n="action" t="set_state">
+                  <U n="set_state">
+                    <T n="action_value">15076<!--CommodityBasedObjectStateValue: Brokenness_Broken--></T>
+                  </U>
+                </V>
+                <V n="max_num_modification" t="enabled" />
+                <L n="tests">
+                  <L>
+                    <V t="object_definition">
+                      <U n="object_definition">
+                        <V n="item" t="tagged_item">
+                          <U n="tagged_item">
+                            <L n="tag_set">
+                              <E>Func_FuseBox</E>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                    <V t="state">
+                      <U n="state">
+                        <E n="operator">NOTEQUAL</E>
+                        <T n="value">15076<!--CommodityBasedObjectStateValue: Brokenness_Broken--></T>
+                      </U>
+                    </V>
+                    <V t="state">
+                      <U n="state">
+                        <E n="operator">NOTEQUAL</E>
+                        <T n="value">15384<!--CommodityBasedObjectStateValue: Upgrade_Generic_LockBrokenness_Completed--></T>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+      </V>
+    </L>
+  </U>
+  <U n="spin_up_lot_loot">
+    <L n="actions">
+      <V t="loot">
+        <U n="loot">
+          <V n="loot_distribution" t="active_sim_only" />
+          <L n="loots">
+            <T>341489<!--LootActions: loot_muEvent_Electrical_ShutOffPower--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T n="zone_modifier_locked">True</T>
+</I>

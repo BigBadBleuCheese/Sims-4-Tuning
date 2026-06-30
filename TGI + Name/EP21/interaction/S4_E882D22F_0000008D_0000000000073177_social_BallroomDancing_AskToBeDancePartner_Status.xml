@@ -1,0 +1,666 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SocialSuperInteraction" i="interaction" m="interactions.social.social_super_interaction" n="social_BallroomDancing_AskToBeDancePartner_Status" s="471415">
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>TargetSim</E>
+      </L>
+    </U>
+  </V>
+  <L n="_party_size_weight_tuning">
+    <U>
+      <T n="y">100</T>
+    </U>
+    <U>
+      <T n="x">1</T>
+      <T n="y">100</T>
+    </U>
+    <U>
+      <T n="x">2</T>
+      <T n="y">50</T>
+    </U>
+    <U>
+      <T n="x">3</T>
+      <T n="y">0</T>
+    </U>
+    <U>
+      <T n="x">4</T>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <T n="_social_group_type">74849<!--JigGroup: group_Platonic--></T>
+  <V n="affordance_to_push_on_target" t="push_affordance">
+    <T n="push_affordance">430352<!--SocialSuperInteraction: nonTouching_GenericListen_Platonic--></T>
+  </V>
+  <T n="allow_autonomous">False</T>
+  <T n="attention_cost">0</T>
+  <V n="basic_content" t="one_shot" />
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>162659<!--LootActions: loot_Commodity_Culling_GhostAdd_target--></T>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x9C09275F<!--String: "(From Being in a social group with at least 3 Sims)"--></T>
+          </V>
+          <T n="buff_type">125555<!--Buff: buff_Trait_WithMyFriends--></T>
+        </U>
+        <L n="subject">
+          <E>Actor</E>
+          <E>SocialGroupSims</E>
+          <E>TargetSim</E>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="social_group">
+              <U n="social_group">
+                <V n="threshold" t="enabled">
+                  <U n="enabled">
+                    <T n="value">3</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="basic_reserve_object" t="disabled" />
+  <T n="category">471514<!--PieMenuCategory: pieMenuCategory_Ballroom_DancePartner--></T>
+  <V n="content_score" t="enabled">
+    <U n="enabled">
+      <L n="relationship_bit_preference">
+        <U>
+          <T n="key">462977<!--RelationshipBit: ballroomParty_Relbit_DancePartner--></T>
+          <T n="value">10</T>
+        </U>
+      </L>
+    </U>
+  </V>
+  <T n="display_name">0x4935D159<!--String: "Ask to be Dance Partners for Social Status"--></T>
+  <V n="display_name_overrides" t="testable">
+    <U n="testable">
+      <L n="overrides">
+        <U>
+          <V n="new_display_name" t="disabled" />
+          <V n="new_display_tooltip" t="enabled">
+            <T n="enabled">0x9D0EF097<!--String: "If successful, this will change the intent of your dance during the Grand Waltz. You and your partner will dance to improve your Social Status."--></T>
+          </V>
+          <L n="test">
+            <L>
+              <V t="relationship">
+                <U n="relationship">
+                  <U n="required_relationship_bits">
+                    <L n="match_all">
+                      <T>462978<!--RelationshipBit: ballroomParty_Relbit_RomancePartner--></T>
+                    </L>
+                  </U>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <V n="display_tooltip" t="enabled">
+    <T n="enabled">0xC530A0D3<!--String: "If your Dance Partner agrees to dancing for Social Status, try getting them in a Confident mood. This will improve the final outcome during your Grand Waltz. You can do this with any interactions that boost their confidence, such as Compliments."--></T>
+  </V>
+  <V n="idle_animation" t="enabled">
+    <U n="enabled">
+      <T n="factory">11570<!--AnimationElement: Listen_Listen_Looping_basic--></T>
+    </U>
+  </V>
+  <T n="ignore_group_socials">False</T>
+  <L n="interaction_category_tags">
+    <E>Interaction_SocialSuper</E>
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+    <E>Interaction_SocialAll</E>
+    <E>Interaction_Social_Contagious</E>
+  </L>
+  <T n="invite_in_after_interaction">True</T>
+  <U n="listen_animation">
+    <T n="factory">11570<!--AnimationElement: Listen_Listen_Looping_basic--></T>
+  </U>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <V n="animation_ref" t="enabled">
+              <U n="enabled">
+                <T n="factory">471418<!--AnimationElement: ballroom_AskToBeDancePartner_Success--></T>
+                <U n="overrides">
+                  <V n="balloons" t="enabled">
+                    <L n="enabled">
+                      <U>
+                        <L n="balloon_choices">
+                          <U>
+                            <V n="item" t="balloon_icon">
+                              <U n="balloon_icon">
+                                <E n="balloon_type">SPEECH</E>
+                                <V n="category_icon" t="show_category_icon">
+                                  <V n="show_category_icon" t="resource_key">
+                                    <U n="resource_key">
+                                      <T p="InGame\UI\Icons\Headlines\Final\headline_QuestionMark.png" n="key">2f7d0004:00000000:873da6c8ff732f1f</T>
+                                    </U>
+                                  </V>
+                                </V>
+                                <V n="icon" t="resource_key">
+                                  <U n="resource_key">
+                                    <T n="key" p="InEP21\UI\Icons\Headlines\headline_DancePartner.png">2f7d0004:00000000:626080df88de0a91</T>
+                                  </U>
+                                </V>
+                              </U>
+                            </V>
+                          </U>
+                        </L>
+                        <L n="balloon_target">
+                          <E>Actor</E>
+                        </L>
+                      </U>
+                    </L>
+                  </V>
+                </U>
+              </U>
+            </V>
+            <L n="basic_extras">
+              <V t="add_to_ensemble">
+                <U n="add_to_ensemble">
+                  <T n="ensemble_type">477333<!--Ensemble: ensemble_BallroomDancing--></T>
+                  <V n="timing" t="at_beginning">
+                    <U n="at_beginning">
+                      <V n="offset_time" t="enabled">
+                        <T n="enabled">3</T>
+                      </V>
+                    </U>
+                  </V>
+                </U>
+              </V>
+              <V t="buff_fire_and_forget">
+                <U n="buff_fire_and_forget">
+                  <U n="buff">
+                    <T n="buff_type">473351<!--Buff: buff_Ballroom_Hidden_HostDancePartner--></T>
+                  </U>
+                  <E n="participant">TargetSim</E>
+                  <L n="tests">
+                    <L>
+                      <V t="situation_job_test">
+                        <U n="situation_job_test">
+                          <E n="participant">TargetSim</E>
+                          <L n="situation_jobs">
+                            <T>461959<!--SituationJob: job_Guest_Ballroom--></T>
+                          </L>
+                        </U>
+                      </V>
+                      <V t="situation_job_test">
+                        <U n="situation_job_test">
+                          <L n="situation_jobs">
+                            <T>461960<!--SituationJob: job_Host_Ballroom--></T>
+                          </L>
+                        </U>
+                      </V>
+                    </L>
+                  </L>
+                </U>
+              </V>
+              <V t="buff_fire_and_forget">
+                <U n="buff_fire_and_forget">
+                  <U n="buff">
+                    <T n="buff_type">474637<!--Buff: buff_Ballroom_PartneredUp--></T>
+                  </U>
+                </U>
+              </V>
+              <V t="buff_fire_and_forget">
+                <U n="buff_fire_and_forget">
+                  <U n="buff">
+                    <T n="buff_type">474637<!--Buff: buff_Ballroom_PartneredUp--></T>
+                  </U>
+                  <E n="participant">TargetSim</E>
+                </U>
+              </V>
+            </L>
+            <L n="loot_list">
+              <T>476470<!--LootActions: loot_Ballroom_DancePartner_Outcomes_StatusSuccess--></T>
+              <T>482964<!--LootActions: loot_ScandalSecret_CreateSecret_ballroom--></T>
+            </L>
+          </U>
+        </U>
+      </L>
+      <L n="prioritized_tested_outcomes">
+        <U>
+          <U n="outcome">
+            <V n="animation_ref" t="enabled">
+              <U n="enabled">
+                <T n="factory">471419<!--AnimationElement: ballroom_AskToBeDancePartner_Fail--></T>
+                <U n="overrides">
+                  <V n="balloons" t="enabled">
+                    <L n="enabled">
+                      <U>
+                        <L n="balloon_choices">
+                          <U>
+                            <V n="item" t="balloon_icon">
+                              <U n="balloon_icon">
+                                <E n="balloon_type">SPEECH</E>
+                                <T p="InGame\UI\Icons\Headlines\Final\headline_Prohibit.png" n="debug_overlay_override">2f7d0004:00000000:ab4a67c934164fb1</T>
+                                <V n="icon" t="participant">
+                                  <U n="participant">
+                                    <L n="participant_type">
+                                      <E>Actor</E>
+                                    </L>
+                                  </U>
+                                </V>
+                              </U>
+                            </V>
+                          </U>
+                        </L>
+                        <T n="balloon_delay">-2</T>
+                        <L n="balloon_target">
+                          <E>TargetSim</E>
+                        </L>
+                      </U>
+                      <U>
+                        <L n="balloon_choices">
+                          <U>
+                            <V n="item" t="balloon_icon">
+                              <U n="balloon_icon">
+                                <E n="balloon_type">SPEECH</E>
+                                <V n="category_icon" t="show_category_icon">
+                                  <V n="show_category_icon" t="resource_key">
+                                    <U n="resource_key">
+                                      <T p="InGame\UI\Icons\Headlines\Final\headline_QuestionMark.png" n="key">2f7d0004:00000000:873da6c8ff732f1f</T>
+                                    </U>
+                                  </V>
+                                </V>
+                                <V n="icon" t="resource_key">
+                                  <U n="resource_key">
+                                    <T n="key" p="InEP21\UI\Icons\Headlines\headline_DancePartner.png">2f7d0004:00000000:626080df88de0a91</T>
+                                  </U>
+                                </V>
+                              </U>
+                            </V>
+                          </U>
+                        </L>
+                        <L n="balloon_target">
+                          <E>Actor</E>
+                        </L>
+                      </U>
+                    </L>
+                  </V>
+                </U>
+              </U>
+            </V>
+            <L n="loot_list">
+              <T>476408<!--LootActions: loot_Ballroom_DancePartner_Outcomes_GenericFailure--></T>
+              <T>476406<!--RandomWeightedLoot: randomLoot_Ballroom_AskToBeDancePartner_FailureTNS--></T>
+            </L>
+            <E n="outcome_result">FAILURE</E>
+          </U>
+          <L n="tests">
+            <L>
+              <V t="buff">
+                <U n="buff">
+                  <L n="blacklist">
+                    <T>476426<!--Buff: buff_PowerShifts_Shoes_EnchantedSteps--></T>
+                  </L>
+                </U>
+              </V>
+              <V t="test_set_reference">
+                <T n="test_set_reference">382063<!--TestSetInstance: testSetInstance_EmotionVeryNegative_MoodBuffs_Target--></T>
+              </V>
+            </L>
+            <L>
+              <V t="social_context">
+                <U n="social_context">
+                  <L n="required_set">
+                    <T>24090<!--SocialContextBit: relbit_SocialContext_Awkwardness_VeryAwkward--></T>
+                    <T>24088<!--SocialContextBit: relbit_SocialContext_Friendship_Abhorrent--></T>
+                    <T>24086<!--SocialContextBit: relbit_SocialContext_Friendship_Distasteful--></T>
+                    <T>24087<!--SocialContextBit: relbit_SocialContext_Friendship_Offensive--></T>
+                    <T>24083<!--SocialContextBit: relbit_SocialContext_Fun_InsufferablyTedious--></T>
+                  </L>
+                </U>
+              </V>
+              <V t="buff">
+                <U n="buff">
+                  <L n="blacklist">
+                    <T>476426<!--Buff: buff_PowerShifts_Shoes_EnchantedSteps--></T>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <U n="outcome">
+            <V n="animation_ref" t="enabled">
+              <U n="enabled">
+                <T n="factory">471419<!--AnimationElement: ballroom_AskToBeDancePartner_Fail--></T>
+                <U n="overrides">
+                  <V n="balloons" t="enabled">
+                    <L n="enabled">
+                      <U>
+                        <L n="balloon_choices">
+                          <U>
+                            <V n="item" t="balloon_icon">
+                              <U n="balloon_icon">
+                                <E n="balloon_type">SPEECH</E>
+                                <T p="InGame\UI\Icons\Headlines\Final\headline_Prohibit.png" n="debug_overlay_override">2f7d0004:00000000:ab4a67c934164fb1</T>
+                                <V n="icon" t="participant">
+                                  <U n="participant">
+                                    <L n="participant_type">
+                                      <E>Actor</E>
+                                    </L>
+                                  </U>
+                                </V>
+                              </U>
+                            </V>
+                          </U>
+                        </L>
+                        <T n="balloon_delay">-2</T>
+                        <L n="balloon_target">
+                          <E>TargetSim</E>
+                        </L>
+                      </U>
+                      <U>
+                        <L n="balloon_choices">
+                          <U>
+                            <V n="item" t="balloon_icon">
+                              <U n="balloon_icon">
+                                <E n="balloon_type">SPEECH</E>
+                                <V n="category_icon" t="show_category_icon">
+                                  <V n="show_category_icon" t="resource_key">
+                                    <U n="resource_key">
+                                      <T p="InGame\UI\Icons\Headlines\Final\headline_QuestionMark.png" n="key">2f7d0004:00000000:873da6c8ff732f1f</T>
+                                    </U>
+                                  </V>
+                                </V>
+                                <V n="icon" t="resource_key">
+                                  <U n="resource_key">
+                                    <T n="key" p="InEP21\UI\Icons\Headlines\headline_DancePartner.png">2f7d0004:00000000:626080df88de0a91</T>
+                                  </U>
+                                </V>
+                              </U>
+                            </V>
+                          </U>
+                        </L>
+                        <L n="balloon_target">
+                          <E>Actor</E>
+                        </L>
+                      </U>
+                    </L>
+                  </V>
+                </U>
+              </U>
+            </V>
+            <L n="loot_list">
+              <T>476408<!--LootActions: loot_Ballroom_DancePartner_Outcomes_GenericFailure--></T>
+              <T>476406<!--RandomWeightedLoot: randomLoot_Ballroom_AskToBeDancePartner_FailureTNS--></T>
+            </L>
+            <E n="outcome_result">FAILURE</E>
+          </U>
+          <L n="tests">
+            <L>
+              <V t="relationship">
+                <U n="relationship">
+                  <U n="relationship_score_interval">
+                    <T n="lower_bound">-100</T>
+                    <T n="upper_bound">10</T>
+                  </U>
+                  <L n="subject">
+                    <E>Actor</E>
+                  </L>
+                  <L n="target_sim">
+                    <E>TargetSim</E>
+                  </L>
+                  <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+                </U>
+              </V>
+              <V t="buff">
+                <U n="buff">
+                  <L n="blacklist">
+                    <T>476426<!--Buff: buff_PowerShifts_Shoes_EnchantedSteps--></T>
+                  </L>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">471419<!--AnimationElement: ballroom_AskToBeDancePartner_Fail--></T>
+                    <U n="overrides">
+                      <V n="balloons" t="enabled">
+                        <L n="enabled">
+                          <U>
+                            <L n="balloon_choices">
+                              <U>
+                                <V n="item" t="balloon_icon">
+                                  <U n="balloon_icon">
+                                    <E n="balloon_type">SPEECH</E>
+                                    <T p="InGame\UI\Icons\Headlines\Final\headline_Prohibit.png" n="debug_overlay_override">2f7d0004:00000000:ab4a67c934164fb1</T>
+                                    <V n="icon" t="participant">
+                                      <U n="participant">
+                                        <L n="participant_type">
+                                          <E>Actor</E>
+                                        </L>
+                                      </U>
+                                    </V>
+                                  </U>
+                                </V>
+                              </U>
+                            </L>
+                            <T n="balloon_delay">-2</T>
+                            <L n="balloon_target">
+                              <E>TargetSim</E>
+                            </L>
+                          </U>
+                          <U>
+                            <L n="balloon_choices">
+                              <U>
+                                <V n="item" t="balloon_icon">
+                                  <U n="balloon_icon">
+                                    <E n="balloon_type">SPEECH</E>
+                                    <V n="category_icon" t="show_category_icon">
+                                      <V n="show_category_icon" t="resource_key">
+                                        <U n="resource_key">
+                                          <T p="InGame\UI\Icons\Headlines\Final\headline_QuestionMark.png" n="key">2f7d0004:00000000:873da6c8ff732f1f</T>
+                                        </U>
+                                      </V>
+                                    </V>
+                                    <V n="icon" t="resource_key">
+                                      <U n="resource_key">
+                                        <T n="key" p="InEP21\UI\Icons\Headlines\headline_DancePartner.png">2f7d0004:00000000:626080df88de0a91</T>
+                                      </U>
+                                    </V>
+                                  </U>
+                                </V>
+                              </U>
+                            </L>
+                            <L n="balloon_target">
+                              <E>Actor</E>
+                            </L>
+                          </U>
+                        </L>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+                <L n="loot_list">
+                  <T>476408<!--LootActions: loot_Ballroom_DancePartner_Outcomes_GenericFailure--></T>
+                  <T>499795<!--RandomWeightedLoot: randomLoot_Ballroom_AskToBeDancePartner_FailureTNS_Status--></T>
+                </L>
+                <E n="outcome_result">FAILURE</E>
+              </U>
+              <U n="weight">
+                <T n="base_value">1</T>
+                <L n="multipliers">
+                  <U>
+                    <T n="multiplier">0</T>
+                    <L n="tests">
+                      <L>
+                        <V t="buff">
+                          <U n="buff">
+                            <V n="whitelist" t="enabled">
+                              <L n="enabled">
+                                <T>476426<!--Buff: buff_PowerShifts_Shoes_EnchantedSteps--></T>
+                              </L>
+                            </V>
+                          </U>
+                        </V>
+                      </L>
+                    </L>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="test_set_reference">
+                <T n="test_set_reference">499083<!--TestSetInstance: testSetInstance_Ballroom_DancePartners_Status--></T>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+      <T n="use_fallback_as_default">True</T>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T p="InEP21\UI\Icons\PieMenu\PieMenu_Category_DancePartnerPieMenuCategory.png" n="key">2f7d0004:00000000:ef500fc5079e6ad6</T>
+      </U>
+    </V>
+  </V>
+  <T n="pie_menu_priority">5</T>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <T n="relationship_scoring">True</T>
+  <E n="scoring_priority">NORMAL</E>
+  <V n="sim_affinity_posture_scoring_data" t="enabled">
+    <U n="enabled">
+      <L n="my_scoring">
+        <U>
+          <V n="affinity_strategy" t="relationship_based" />
+          <T n="negate_tag">True</T>
+          <E n="running_interaction_tag">Sleeping</E>
+        </U>
+        <U>
+          <V n="affinity_strategy" t="avoid" />
+          <E n="running_interaction_tag">Very_Loud</E>
+        </U>
+      </L>
+      <L n="my_tags">
+        <E>Loud</E>
+        <E>Chat</E>
+      </L>
+    </U>
+  </V>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all" />
+    </U>
+  </V>
+  <E n="target_type">TARGET</E>
+  <L n="test_globals">
+    <V t="test_set_reference">
+      <T n="test_set_reference">129700<!--TestSetInstance: testSet_HasMet--></T>
+    </V>
+    <V t="relationship">
+      <U n="relationship">
+        <U n="prohibited_relationship_bits">
+          <L n="match_all">
+            <T>471517<!--RelationshipBit: ballroomParty_Relbit_RejectionCooldown--></T>
+          </L>
+        </U>
+        <L n="subject">
+          <E>Actor</E>
+        </L>
+        <L n="target_sim">
+          <E>TargetSim</E>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x38B58F81<!--String: "You've recently been rejected by this Sim. Try again later."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="relationship">
+      <U n="relationship">
+        <U n="prohibited_relationship_bits">
+          <L n="match_any">
+            <T>26560<!--RelationshipBit: SpecialBits_Enemy--></T>
+          </L>
+        </U>
+        <L n="subject">
+          <E>Actor</E>
+        </L>
+        <L n="target_sim">
+          <E>TargetSim</E>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x73A56240<!--String: "Cannot ask an Enemy to become a Dance Partner."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">499939<!--TestSetInstance: testSetInstance_Ballroom_DancePartners_ExistingStatus--></T>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">500960<!--TestSetInstance: testSetInstance_TeensToTeensANDAdultsToAdults_TargetSim_Ballroom--></T>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="situation_job_test">
+        <U n="situation_job_test">
+          <E n="participant">TargetSim</E>
+          <L n="situation_jobs">
+            <T>461960<!--SituationJob: job_Host_Ballroom--></T>
+            <T>461959<!--SituationJob: job_Guest_Ballroom--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

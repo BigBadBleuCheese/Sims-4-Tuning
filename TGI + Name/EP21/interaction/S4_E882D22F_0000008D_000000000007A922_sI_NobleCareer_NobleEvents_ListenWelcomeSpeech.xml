@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="sI_NobleCareer_NobleEvents_ListenWelcomeSpeech" s="502050">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="cone">
+            <U n="cone">
+              <T n="angle">120</T>
+              <T n="max_radius">4</T>
+              <T n="min_radius">1</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="value" t="facing">
+            <U n="facing">
+              <T n="range">180</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="buff_based">
+                <U n="buff_based">
+                  <T n="buff">502051<!--Buff: buff_NobleCareer_Hudden_WelcomeSpeechCompleted--></T>
+                  <E n="participant">TargetSim</E>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="time_based">
+                <U n="time_based">
+                  <T n="max_time">20</T>
+                  <T n="min_time">20</T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+      </L>
+      <V n="content" t="looping_content">
+        <U n="looping_content">
+          <U n="animation_ref">
+            <T n="factory">12142<!--AnimationElement: View_View_Looping_basic--></T>
+          </U>
+        </U>
+      </V>
+    </U>
+  </V>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x302749BE<!--String: "Listen To Welcome Speech"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="dual">
+    <U n="dual">
+      <U n="failure_actions">
+        <L n="continuation">
+          <U>
+            <T n="affordance">125613<!--AggregateSuperInteraction: reaction_Generic_HeckleAggregate--></T>
+          </U>
+        </L>
+        <L n="loot_list">
+          <T>130277<!--LootActions: rel_Loss_Small_TargetSim--></T>
+        </L>
+      </U>
+      <U n="success_actions">
+        <L n="continuation">
+          <U>
+            <T n="affordance">125612<!--AggregateSuperInteraction: reaction_Generic_CheerAggregate--></T>
+          </U>
+        </L>
+        <L n="loot_list">
+          <T>130279<!--LootActions: rel_Gain_Small_TargetSim--></T>
+        </L>
+      </U>
+      <U n="success_chance">
+        <T n="base_chance">60</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">1.2</T>
+            <L n="tests">
+              <L>
+                <V t="skill_test">
+                  <U n="skill_test">
+                    <T n="skill">16699<!--Skill: statistic_Skill_AdultMajor_Charisma--></T>
+                    <V n="skill_range" t="interval">
+                      <U n="interval">
+                        <U n="skill_interval">
+                          <T n="upper_bound">3</T>
+                        </U>
+                      </U>
+                    </V>
+                    <E n="subject">TargetSim</E>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">1.4</T>
+            <L n="tests">
+              <L>
+                <V t="skill_test">
+                  <U n="skill_test">
+                    <T n="skill">16699<!--Skill: statistic_Skill_AdultMajor_Charisma--></T>
+                    <V n="skill_range" t="interval">
+                      <U n="interval">
+                        <U n="skill_interval">
+                          <T n="lower_bound">4</T>
+                          <T n="upper_bound">6</T>
+                        </U>
+                      </U>
+                    </V>
+                    <E n="subject">TargetSim</E>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">1.6</T>
+            <L n="tests">
+              <L>
+                <V t="skill_test">
+                  <U n="skill_test">
+                    <T n="skill">16699<!--Skill: statistic_Skill_AdultMajor_Charisma--></T>
+                    <V n="skill_range" t="interval">
+                      <U n="interval">
+                        <U n="skill_interval">
+                          <T n="lower_bound">7</T>
+                        </U>
+                      </U>
+                    </V>
+                    <E n="subject">TargetSim</E>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T p="InEP21\UI\Icons\PieMenu\PieMenu_NobleCareer.png" n="key">2f7d0004:00000000:9b49aa0d1eb08413</T>
+      </U>
+    </V>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="TestSetInstance" i="snippet" m="event_testing.tests" n="testSetInstance_Tattooing_CheckIfForbidden_PickedSim" s="386308">
+  <L n="test">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified" />
+          <E n="who">PickedSim</E>
+        </U>
+      </V>
+      <V t="situation_job_test">
+        <U n="situation_job_test">
+          <T n="negate">True</T>
+          <E n="participant">PickedSim</E>
+          <L n="situation_jobs">
+            <T>403075<!--SituationJob: job_TattooArtist_Service--></T>
+          </L>
+        </U>
+      </V>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>175972<!--Trait: trait_Hidden_Skeleton--></T>
+            <T>177810<!--Trait: trait_Hidden_Skeleton_ServiceSkeleton--></T>
+            <T>178437<!--Trait: trait_Hidden_Skeleton_TempleSkeleton--></T>
+            <T>253237<!--Trait: trait_Bonehilda--></T>
+            <T>181918<!--Trait: trait_Ghost_Rodent_Disease--></T>
+            <T>16851<!--Trait: trait_isGrimReaper--></T>
+            <T>187088<!--Trait: trait_Scarecrow--></T>
+            <T>216314<!--Trait: trait_Ghost_Curses_NightStalker_Stalker--></T>
+            <T>249203<!--Trait: trait_TownMascot--></T>
+            <T>369735<!--Trait: trait_SpecialNPCs_EP16SpecialNPC_TheRingBear--></T>
+            <T>395139<!--Trait: trait_ShadyNPC--></T>
+            <T>186785<!--Trait: trait_FlowerBunny--></T>
+            <T>377848<!--Trait: trait_MasteryPerk_SkillfulSleep_Clone--></T>
+            <T>412517<!--Trait: trait_GhostHasRebirthedIntoNewSim--></T>
+          </L>
+          <E n="subject">PickedSim</E>
+        </U>
+      </V>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>276222<!--Trait: trait_OccultWerewolf_WereForm--></T>
+          </L>
+          <E n="subject">PickedSim</E>
+          <V n="tooltip" t="enabled">
+            <T n="enabled">0xFD859C08<!--String: "Werewolves can't get tattooed while in Beast Form."--></T>
+          </V>
+        </U>
+      </V>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>218444<!--Trait: trait_Humanoid_Robots_MainTrait--></T>
+          </L>
+          <E n="subject">PickedSim</E>
+          <V n="tooltip" t="enabled">
+            <T n="enabled">0xB4B794E2<!--String: "Servos can't get tattooed."--></T>
+          </V>
+        </U>
+      </V>
+      <V t="participant_running_interaction">
+        <U n="participant_running_interaction">
+          <L n="affordances">
+            <T>383880<!--SuperInteraction: si_TattooingTable_Tend_Autonomous--></T>
+            <T>383848<!--SuperInteraction: si_TattooingTable_Tend_UserDirected--></T>
+          </L>
+          <E n="participant">PickedSim</E>
+          <T n="test_for_not_running">True</T>
+          <V n="tooltip" t="enabled">
+            <T n="enabled">0xB5077DF6<!--String: "Sims can't get tattooed while tending a Tattoo Table."--></T>
+          </V>
+        </U>
+      </V>
+      <V t="state">
+        <U n="state">
+          <V n="fallback_behavior" t="always_pass" />
+          <E n="operator">NOTEQUAL</E>
+          <V n="tooltip" t="enabled">
+            <T n="enabled">0xDEC430C3<!--String: "Pregnant Sims can't get tattooed."--></T>
+          </V>
+          <T n="value">75273<!--CommodityBasedObjectStateValue: Pregnant_InLabor--></T>
+          <E n="who">PickedSim</E>
+        </U>
+      </V>
+      <V t="state">
+        <U n="state">
+          <V n="fallback_behavior" t="always_pass" />
+          <E n="operator">NOTEQUAL</E>
+          <V n="tooltip" t="enabled">
+            <T n="enabled">0xDEC430C3<!--String: "Pregnant Sims can't get tattooed."--></T>
+          </V>
+          <T n="value">15301<!--CommodityBasedObjectStateValue: Pregnant_SecondTrimester--></T>
+          <E n="who">PickedSim</E>
+        </U>
+      </V>
+      <V t="state">
+        <U n="state">
+          <V n="fallback_behavior" t="always_pass" />
+          <E n="operator">NOTEQUAL</E>
+          <V n="tooltip" t="enabled">
+            <T n="enabled">0xDEC430C3<!--String: "Pregnant Sims can't get tattooed."--></T>
+          </V>
+          <T n="value">15302<!--CommodityBasedObjectStateValue: Pregnant_ThirdTrimester--></T>
+          <E n="who">PickedSim</E>
+        </U>
+      </V>
+      <V t="state">
+        <U n="state">
+          <V n="fallback_behavior" t="always_pass" />
+          <E n="operator">NOTEQUAL</E>
+          <V n="tooltip" t="enabled">
+            <T n="enabled">0xDEC430C3<!--String: "Pregnant Sims can't get tattooed."--></T>
+          </V>
+          <T n="value">15298<!--CommodityBasedObjectStateValue: Pregnant_FirstTrimester--></T>
+          <E n="who">PickedSim</E>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

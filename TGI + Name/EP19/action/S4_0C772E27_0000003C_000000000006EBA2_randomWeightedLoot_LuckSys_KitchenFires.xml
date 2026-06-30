@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="RandomWeightedLoot" i="action" m="interactions.utils.loot" n="randomWeightedLoot_LuckSys_KitchenFires" s="453538">
+  <V n="_luck_tuning" t="enabled">
+    <U n="enabled">
+      <L n="loot_actions">
+        <T>452779<!--LootActions: loot_LuckSys_ImpactOnAction_KitchenFires--></T>
+      </L>
+    </U>
+  </V>
+  <L n="random_loot_actions">
+    <U>
+      <V n="action" t="do_nothing" />
+      <U n="luck_option_config">
+        <T n="player_perception">25</T>
+        <T n="show_impacts">False</T>
+      </U>
+      <U n="weight">
+        <T n="base_value">350</T>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="fire">
+        <U n="fire">
+          <E n="subject">Object</E>
+        </U>
+      </V>
+      <U n="luck_option_config">
+        <T n="player_perception">-30</T>
+      </U>
+      <U n="weight">
+        <T n="base_value">5</T>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="fire">
+        <U n="fire">
+          <T n="fire_count">2</T>
+          <E n="subject">Object</E>
+        </U>
+      </V>
+      <U n="luck_option_config">
+        <T n="player_perception">-100</T>
+      </U>
+    </U>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="test_set_reference">
+        <T n="test_set_reference">449545<!--TestSetInstance: testSetInstance_LuckSys_HasLuck--></T>
+      </V>
+      <V t="test_set_reference">
+        <T n="test_set_reference">425930<!--TestSetInstance: testSetInstance_LuckSys_BadLuck--></T>
+      </V>
+    </L>
+  </L>
+</I>

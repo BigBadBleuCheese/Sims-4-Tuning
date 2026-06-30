@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="BasicFestivalOpenStreetDirector" i="open_street_director" m="open_street_director.basic_festival" n="festivals_EP17_OpenStreetDirector_MoonBathing_FullMoon" s="403216">
+  <U n="cleanup_festival_state">
+    <L n="_conditional_layers">
+      <T>385429<!--ConditionalLayer: conditionalLayer_EP17Festival_MoonBathing--></T>
+      <T>420578<!--ConditionalLayer: conditionalLayer_EP17Festival_Moonbathing_Client--></T>
+    </L>
+  </U>
+  <U n="cooldown_festival_state">
+    <V n="notification" t="enabled">
+      <V n="enabled" t="literal">
+        <U n="literal">
+          <V n="text" t="single">
+            <T n="single">0x8A4DBD8<!--String: "The festival will end in 1 hour. Finish up any activities before it closes. Be sure to come back the next time the festival is in town!"--></T>
+          </V>
+        </U>
+      </V>
+    </V>
+  </U>
+  <U n="main_festival_state">
+    <T n="_duration">300</T>
+    <L n="_situations">
+      <U>
+        <T n="number_of_situations">8</T>
+        <L n="situations">
+          <U>
+            <T n="situation">403217<!--GenericOneStateFestivalAttendeeSituation: EP17Festival_MoonBathing_Nude_NPC--></T>
+          </U>
+          <U>
+            <T n="situation">403232<!--GenericOneStateFestivalAttendeeSituation: EP17Festival_MoonBathing_Witches_Nude_NPC--></T>
+          </U>
+        </L>
+      </U>
+      <U>
+        <L n="situations">
+          <U>
+            <T n="situation">403259<!--SelectableSimFestivalSituation: festival_EP17_Moonbathing_PlayerSituation--></T>
+          </U>
+        </L>
+      </U>
+      <U>
+        <L n="situations">
+          <U>
+            <T n="situation">425065<!--EmployeeFestivalSituationState: eP17Festival_Employee_Moonbathing_WidowedFather--></T>
+          </U>
+        </L>
+      </U>
+    </L>
+  </U>
+  <L n="npc_summoning_behavior">
+    <U>
+      <E n="key">DEFAULT</E>
+      <V n="value" t="create_situation">
+        <U n="create_situation">
+          <T n="situation_job">208913<!--SituationJob: OpenStreetEvent_PlayerSim--></T>
+          <T n="situation_to_create">208912<!--SingleJobSituation: OpenStreetEvent_TravelWithNPC--></T>
+        </U>
+      </V>
+    </U>
+  </L>
+  <V n="reactionary_whim_set" t="enabled">
+    <T n="enabled">385431<!--ObjectivelessWhimSet: whimSet_EP17Festival_MoonBathing--></T>
+  </V>
+  <U n="spinup_festival_state">
+    <L n="_conditional_layers">
+      <T>385429<!--ConditionalLayer: conditionalLayer_EP17Festival_MoonBathing--></T>
+      <T>420578<!--ConditionalLayer: conditionalLayer_EP17Festival_Moonbathing_Client--></T>
+    </L>
+  </U>
+</I>

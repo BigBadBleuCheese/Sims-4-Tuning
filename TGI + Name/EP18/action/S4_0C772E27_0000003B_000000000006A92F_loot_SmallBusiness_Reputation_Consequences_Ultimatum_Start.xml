@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_SmallBusiness_Reputation_Consequences_Ultimatum_Start" s="436527">
+  <L n="loot_actions">
+    <V t="trait_add">
+      <U n="trait_add">
+        <T n="trait">441916<!--Trait: trait_SmallBusiness_Reputation_Consequences_Ultimatum_Initiated_Hidden--></T>
+      </U>
+    </V>
+    <V t="summon_npc">
+      <U n="summon_npc">
+        <L n="tests">
+          <L>
+            <V t="filter_test">
+              <U n="filter_test">
+                <T n="duration_available">30</T>
+                <T n="sim_filter">419251<!--TunableSimFilter: filter_SmallBusinessOwner_RomanticPartner--></T>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x4509511E<!--String: "(From Having Misaligned Traits to {0.SimPronounPossessiveDependent} Partner's Small Business)"--></T>
+          </V>
+          <T n="buff_type">404105<!--Buff: buff_SmallBusiness_Reputation_Consequences_ConflictingValues--></T>
+        </U>
+        <E n="subject">SignificantOtherActor</E>
+      </U>
+    </V>
+    <V t="trait_add">
+      <U n="trait_add">
+        <T n="trait">441915<!--Trait: trait_SmallBusiness_Reputation_Consequences_Ultimatum_FirstWarningGiven_Hidden--></T>
+      </U>
+    </V>
+  </L>
+</I>

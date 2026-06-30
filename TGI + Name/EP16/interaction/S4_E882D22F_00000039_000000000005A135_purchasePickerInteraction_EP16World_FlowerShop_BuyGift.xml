@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="PurchasePickerInteraction" i="interaction" m="interactions.base.picker_interaction" n="purchasePickerInteraction_EP16World_FlowerShop_BuyGift" s="368949">
+  <V n="_saveable" t="disabled" />
+  <V n="content_score" t="disabled" />
+  <V n="delivery_method" t="purchase_to_inventory">
+    <U n="purchase_to_inventory">
+      <E n="participant_type">Actor</E>
+    </U>
+  </V>
+  <T n="display_name">0x55B5BEB2<!--String: "Buy Gifts"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <L n="loots_on_purchase">
+    <T>372938<!--LootActions: lootActions_EP16World_flowerShop_purchaseFixup--></T>
+    <T>388579<!--LootActions: loot_Object_RanchNectar_PurchaseFixup--></T>
+  </L>
+  <V n="picker_dialog" t="purchase_picker">
+    <U n="purchase_picker">
+      <V n="max_selectable" t="unlimited" />
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T n="key" p="InGame\UI\Icons\PieMenu\Interactions\icon_pieMenu_immediateInteraction.png">2f7d0004:00000000:25eea5cdba6a6fd6</T>
+      </U>
+    </V>
+  </V>
+  <U n="price_multiplier">
+    <L n="multipliers">
+      <U>
+        <T n="multiplier">0.9</T>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>377844<!--Buff: buff_MovingOn_Hidden_FindingPurpose--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </L>
+  </U>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <L n="purchase_list_option">
+    <V t="specific_items">
+      <U n="specific_items">
+        <L n="item_list">
+          <T>399094</T>
+          <T>398846</T>
+          <T>398845</T>
+          <T>398844</T>
+          <T>398843</T>
+          <T>398842</T>
+          <T>398841</T>
+          <T>398840<!--SuperInteraction: wedding_PlayMusic_Start--></T>
+          <T>399553<!--LootActions: loot_SmallBusiness_SetMarkUp_Low--></T>
+          <T>399552<!--LootActions: loot_SmallBusiness_SetMarkUp_VLow--></T>
+          <T>399551</T>
+          <T>345902</T>
+          <T>345904</T>
+          <T>334188<!--SocialSuperInteraction: social_Infant_Interim_ChangeDiaper_Table_Carried--></T>
+          <T>345903</T>
+          <T>388996<!--SuperInteraction: EP16World_Interactables_RomanticBush--></T>
+          <T>388963<!--ReincarnationTraitPickerSuperInteraction: reincarnationTraitPickerSuperInteraction_MovingOn--></T>
+          <T>388974<!--StaticCommodity: staticCommodity_Cemetery_Mourner_TendGravesite--></T>
+          <T>388985</T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="purchase_notification" t="enabled">
+    <V n="enabled" t="literal">
+      <U n="literal">
+        <V n="secondary_icon" t="enabled">
+          <V n="enabled" t="participant" />
+        </V>
+        <V n="text" t="single">
+          <T n="single">0xD20E9154<!--String: "Thanks for shopping! {0.SimFirstName}'s purchases can be found in {0.SimPronounPossessiveDependent} Inventory."--></T>
+        </V>
+      </U>
+    </V>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="state">
+      <U n="state">
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x1DAA7A32<!--String: "Isabela's Flower Shop is only open from 6am to 11pm."--></T>
+        </V>
+        <T n="value">203040<!--ObjectStateValue: genericOpenClosed_Open--></T>
+      </U>
+    </V>
+  </L>
+</I>

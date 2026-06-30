@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="moldSystem_FungalOvergrowth" s="344366">
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Actor</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">343993<!--AnimationElement: moldSystem_BlowSpores--></T>
+      </U>
+    </U>
+  </V>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x7392B52B<!--String: "Create Fungal Overgrowth"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="basic_extras">
+          <V t="create_object">
+            <U n="create_object">
+              <V n="creation_data" t="random_by_tags">
+                <U n="random_by_tags">
+                  <L n="filter_tags">
+                    <E>Func_MushroomOvergrowth</E>
+                  </L>
+                </U>
+              </V>
+              <V n="location" t="position">
+                <U n="position">
+                  <U n="initial_location_offset">
+                    <U n="default_offset">
+                      <T n="z">1</T>
+                    </U>
+                  </U>
+                  <L n="reference_obj_hidden_flags">
+                    <E>RABBIT_HOLE</E>
+                  </L>
+                  <L n="search_flag_set">
+                    <E>STAY_IN_CONNECTED_CONNECTIVITY_GROUP</E>
+                    <E>CALCULATE_RESULT_TERRAIN_HEIGHTS</E>
+                    <E>DONE_ON_MAX_RESULTS</E>
+                  </L>
+                </U>
+              </V>
+            </U>
+          </V>
+          <V t="buff_fire_and_forget">
+            <U n="buff_fire_and_forget">
+              <U n="buff">
+                <T n="buff_type">356556<!--Buff: buff_MoldSystem_FungalOvergrowthAutonomousCooldown--></T>
+              </U>
+            </U>
+          </V>
+        </L>
+        <L n="loot_list">
+          <T>188845<!--LootActions: loot_Commodity_Motive_Fun_Gain_Large--></T>
+          <T>336635<!--LootActions: loot_Commodity_Motive_Energy_Loss_Medium--></T>
+        </L>
+      </U>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T n="key" p="InEP15\UI\Icons\PieMenu\pieMenu_ghostSpore.png">2f7d0004:00000000:bd2d966654aa0813</T>
+      </U>
+    </V>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all" />
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="location">
+      <U n="location">
+        <U n="location_tests">
+          <V n="is_outside" t="enabled">
+            <T n="enabled">True</T>
+          </V>
+        </U>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

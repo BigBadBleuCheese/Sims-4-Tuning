@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Broadcaster" i="broadcaster" m="broadcasters.broadcaster" n="broadcaster_SmallBusiness_TalkUpBusiness" s="426476">
+  <V n="allow_sim_test" t="enabled">
+    <L n="enabled">
+      <L>
+        <V t="situation_job_test">
+          <U n="situation_job_test">
+            <L n="situation_jobs">
+              <T>373362<!--SituationJob: job_SmallBusinessCustomer--></T>
+            </L>
+          </U>
+        </V>
+      </L>
+    </L>
+  </V>
+  <L n="constraints">
+    <V t="circle">
+      <U n="circle">
+        <T n="radius">15</T>
+      </U>
+    </V>
+    <V t="line_of_sight" />
+  </L>
+  <L n="effects">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">426477<!--Buff: buff_SmallBusiness_Customer_TalkUpBusiness_Affected--></T>
+        </U>
+        <V n="excluded_participants" t="enabled">
+          <L n="enabled">
+            <E>Actor</E>
+          </L>
+        </V>
+      </U>
+    </V>
+    <V t="affordance">
+      <U n="affordance">
+        <T n="affordance_must_run_next">True</T>
+        <E n="affordance_priority">High</E>
+        <L n="affordances">
+          <U>
+            <T n="affordance">441560<!--SuperInteraction: smallBusiness_Entry_TalkUpBusiness_Hmmm--></T>
+          </U>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="frequency" t="on_enter">
+    <U n="on_enter">
+      <T n="allow_multiple">True</T>
+    </U>
+  </V>
+</I>

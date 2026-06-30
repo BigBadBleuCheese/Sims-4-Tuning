@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="burglarNPC_Arrested_GoToEscape" s="426973">
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Actor</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <T n="allow_user_directed">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="time_based" />
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+      </L>
+      <V n="content" t="looping_content">
+        <U n="looping_content">
+          <U n="animation_ref">
+            <T n="factory">8749<!--AnimationElement: PostureIdle_Stand--></T>
+          </U>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="balloon">
+      <U n="balloon">
+        <L n="balloon_choices">
+          <U>
+            <V n="item" t="balloon_icon">
+              <U n="balloon_icon">
+                <V n="icon" t="resource_key">
+                  <U n="resource_key">
+                    <T p="InGame\UI\Icons\Headlines\Final\headline_QuestionMark.png" n="key">2f7d0004:00000000:873da6c8ff732f1f</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </U>
+        </L>
+        <L n="balloon_target">
+          <E>Actor</E>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="basic_liabilities">
+    <V t="critical_priority" />
+  </L>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xFE983BAD<!--String: "Careers"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="basic_extras">
+          <V t="notification">
+            <U n="notification">
+              <V n="dialog" t="single">
+                <V n="single" t="literal">
+                  <U n="literal">
+                    <V n="icon" t="enabled">
+                      <V n="enabled" t="participant" />
+                    </V>
+                    <V n="secondary_icon" t="enabled">
+                      <V n="enabled" t="participant">
+                        <U n="participant">
+                          <L n="participant_type">
+                            <E>TargetSim</E>
+                          </L>
+                        </U>
+                      </V>
+                    </V>
+                    <V n="text" t="variation">
+                      <U n="variation">
+                        <L n="variations">
+                          <T>0x5F567A8E<!--String: "Whoa, okay! That's my cue! Byeeeeee..."--></T>
+                        </L>
+                      </U>
+                    </V>
+                    <E n="visual_type">SPEECH</E>
+                  </U>
+                </V>
+              </V>
+              <T n="limit_to_one_notification">True</T>
+              <E n="recipient_subject">TargetSim</E>
+            </U>
+          </V>
+        </L>
+        <L n="continuation">
+          <U>
+            <T n="affordance">443957<!--NPCLeaveLotInteraction: NPCLeaveLot_Burglar_Arrested_Escape--></T>
+          </U>
+        </L>
+        <L n="loot_list">
+          <T>241355<!--LootActions: Rel_Gain_Medium_TargetSim--></T>
+        </L>
+      </U>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="situation_job_test">
+      <U n="situation_job_test">
+        <L n="situation_jobs">
+          <T>421825<!--SituationJob: job_Burglar--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

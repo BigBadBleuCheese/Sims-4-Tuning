@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_triviaBox_thumbsUp_learnAboutPlayers" s="366024">
+  <L n="loot_actions">
+    <V t="know_other_sims_trait">
+      <U n="know_other_sims_trait">
+        <U n="chance">
+          <T n="base_chance">100</T>
+        </U>
+        <V n="notification" t="enabled">
+          <U n="enabled">
+            <V n="dialog" t="single">
+              <V n="single" t="literal">
+                <U n="literal">
+                  <V n="icon" t="enabled">
+                    <V n="enabled" t="participant">
+                      <U n="participant">
+                        <L n="participant_type">
+                          <E>Actor</E>
+                        </L>
+                      </U>
+                    </V>
+                  </V>
+                  <V n="secondary_icon" t="disabled" />
+                  <V n="text" t="single">
+                    <T n="single">0x2043B778<!--String: "The Thumbs-Up! players learned the following about {1.SimFirstName} while playing the game: \n{2.String}"--></T>
+                  </V>
+                  <V n="text_tokens" t="enabled" />
+                  <E n="visual_type">INFORMATION</E>
+                </U>
+              </V>
+            </V>
+          </U>
+        </V>
+        <T n="notification_limit_one_per_instance">True</T>
+        <E n="subject">OtherSimsInCurrentGame</E>
+        <E n="target_participant_type">Actor</E>
+        <V n="traits" t="random">
+          <U n="random">
+            <L n="trait_types">
+              <E />
+              <E>LIFESTYLE</E>
+            </L>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+</I>

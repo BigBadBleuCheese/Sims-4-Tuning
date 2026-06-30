@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Dynasty_ChallengeHead_Won_Fight" s="489724">
+  <L n="loot_actions">
+    <V t="statistics">
+      <V n="statistics" t="relationship_change">
+        <U n="relationship_change">
+          <T n="amount">10</T>
+          <L n="subject">
+            <E>Actor</E>
+          </L>
+          <L n="target_filter_tests">
+            <L>
+              <V t="trait">
+                <U n="trait">
+                  <L n="blacklist_traits">
+                    <T>466527<!--Trait: trait_Dynasty_Head--></T>
+                  </L>
+                </U>
+              </V>
+              <V t="dynasty_value">
+                <U n="dynasty_value">
+                  <V n="test_type" t="compare_sim_traits_to_value">
+                    <U n="compare_sim_traits_to_value">
+                      <T n="dynasty_value">467899<!--DynastyValue: dynastyValue_Ideal_Vicious--></T>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+          <L n="target_participant_type">
+            <E>ActorDynastyMembers</E>
+          </L>
+          <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+        </U>
+      </V>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">483598<!--Buff: buff_Dynasty_JustLostHead--></T>
+        </U>
+        <E n="subject">TargetSim</E>
+      </U>
+    </V>
+    <V t="dynasty">
+      <U n="dynasty">
+        <V n="operation" t="set_head" />
+      </U>
+    </V>
+    <V t="actions">
+      <T n="actions">476080<!--LootActions: loot_Sentiment_AddSentiment_Bitter_Dynasty_UnmadeHead--></T>
+    </V>
+  </L>
+</I>

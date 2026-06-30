@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="RandomWeightedLoot" i="action" m="interactions.utils.loot" n="randomWeightedLoot_NobleCareer_NobleFavor_NobleGift_Situations" s="485685">
+  <L n="random_loot_actions">
+    <U>
+      <V n="action" t="create_situation">
+        <U n="create_situation">
+          <U n="create_situation">
+            <V n="actor_init_job" t="specify_job">
+              <T n="specify_job">128964<!--SituationJob: jobs_NPCInvites_InviteOver_Actor_Target--></T>
+            </V>
+            <T n="invite_actor">True</T>
+            <T n="invite_picked_sims">False</T>
+            <T n="invite_target_sim">False</T>
+            <T n="situation">485068<!--CustomStatesSituation: situation_NobleFavor_NobleGifts_Negative_Commoner--></T>
+            <T n="user_facing">False</T>
+          </U>
+        </U>
+      </V>
+      <U n="weight">
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="trait">
+                  <U n="trait">
+                    <L n="whitelist_traits">
+                      <T>466630<!--Trait: trait_NobleFavor_Rank_2_Commoner--></T>
+                      <T>466628<!--Trait: trait_NobleFavor_Rank_0_Commoner--></T>
+                      <T>466629<!--Trait: trait_NobleFavor_Rank_1_Commoner--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="create_situation">
+        <U n="create_situation">
+          <U n="create_situation">
+            <V n="actor_init_job" t="specify_job">
+              <T n="specify_job">128964<!--SituationJob: jobs_NPCInvites_InviteOver_Actor_Target--></T>
+            </V>
+            <T n="invite_actor">True</T>
+            <T n="invite_picked_sims">False</T>
+            <T n="invite_target_sim">False</T>
+            <T n="situation">485081<!--CustomStatesSituation: situation_NobleFavor_NobleGifts_Positive_Royal--></T>
+            <T n="user_facing">False</T>
+          </U>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">1</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="trait">
+                  <U n="trait">
+                    <L n="whitelist_traits">
+                      <T>466630<!--Trait: trait_NobleFavor_Rank_2_Commoner--></T>
+                      <T>466628<!--Trait: trait_NobleFavor_Rank_0_Commoner--></T>
+                      <T>466629<!--Trait: trait_NobleFavor_Rank_1_Commoner--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">1</T>
+            <L n="tests">
+              <L>
+                <V t="trait">
+                  <U n="trait">
+                    <L n="whitelist_traits">
+                      <T>466634<!--Trait: trait_NobleFavor_Rank_6_Royal--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">1.5</T>
+            <L n="tests">
+              <L>
+                <V t="trait">
+                  <U n="trait">
+                    <L n="whitelist_traits">
+                      <T>466633<!--Trait: trait_NobleFavor_Rank_5_Royal--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">2</T>
+            <L n="tests">
+              <L>
+                <V t="trait">
+                  <U n="trait">
+                    <L n="whitelist_traits">
+                      <T>466632<!--Trait: trait_NobleFavor_Rank_4_Royal--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="filter_test">
+                  <U n="filter_test">
+                    <T n="duration_available">200</T>
+                    <V n="filter_target" t="disabled" />
+                    <T n="include_rabbithole_sims">True</T>
+                    <E n="relative_sim">Actor</E>
+                    <T n="sim_filter">485584<!--TunableSimFilter: filter_NobleCareer_RoyalAligned--></T>
+                    <V n="threshold_matched" t="enabled">
+                      <U n="enabled">
+                        <E n="comparison">LESS</E>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="create_situation">
+        <U n="create_situation">
+          <U n="create_situation">
+            <V n="actor_init_job" t="specify_job">
+              <T n="specify_job">128964<!--SituationJob: jobs_NPCInvites_InviteOver_Actor_Target--></T>
+            </V>
+            <T n="invite_actor">True</T>
+            <T n="invite_picked_sims">False</T>
+            <T n="invite_target_sim">False</T>
+            <T n="situation">485069<!--CustomStatesSituation: situation_NobleFavor_NobleGifts_Negative_Royal--></T>
+            <T n="user_facing">False</T>
+          </U>
+        </U>
+      </V>
+      <U n="weight">
+        <T n="base_value">1</T>
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="trait">
+                  <U n="trait">
+                    <L n="whitelist_traits">
+                      <T>466634<!--Trait: trait_NobleFavor_Rank_6_Royal--></T>
+                      <T>466632<!--Trait: trait_NobleFavor_Rank_4_Royal--></T>
+                      <T>466633<!--Trait: trait_NobleFavor_Rank_5_Royal--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="filter_test">
+                  <U n="filter_test">
+                    <T n="duration_available">200</T>
+                    <V n="filter_target" t="disabled" />
+                    <T n="include_rabbithole_sims">True</T>
+                    <E n="relative_sim">Actor</E>
+                    <T n="sim_filter">485584<!--TunableSimFilter: filter_NobleCareer_RoyalAligned--></T>
+                    <V n="threshold_matched" t="enabled">
+                      <U n="enabled">
+                        <E n="comparison">LESS</E>
+                      </U>
+                    </V>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+    <U>
+      <V n="action" t="create_situation">
+        <U n="create_situation">
+          <U n="create_situation">
+            <V n="actor_init_job" t="specify_job">
+              <T n="specify_job">128964<!--SituationJob: jobs_NPCInvites_InviteOver_Actor_Target--></T>
+            </V>
+            <T n="invite_actor">True</T>
+            <T n="invite_picked_sims">False</T>
+            <T n="invite_target_sim">False</T>
+            <T n="situation">485080<!--CustomStatesSituation: situation_NobleFavor_NobleGifts_Positive_Commoner--></T>
+            <T n="user_facing">False</T>
+          </U>
+        </U>
+      </V>
+      <U n="weight">
+        <L n="multipliers">
+          <U>
+            <T n="multiplier">0</T>
+            <L n="tests">
+              <L>
+                <V t="trait">
+                  <U n="trait">
+                    <L n="whitelist_traits">
+                      <T>466634<!--Trait: trait_NobleFavor_Rank_6_Royal--></T>
+                      <T>466632<!--Trait: trait_NobleFavor_Rank_4_Royal--></T>
+                      <T>466633<!--Trait: trait_NobleFavor_Rank_5_Royal--></T>
+                    </L>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </U>
+  </L>
+</I>

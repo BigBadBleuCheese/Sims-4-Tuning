@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalObjectInteraction" i="situation_goal" m="situations.situation_goal_object_interaction" n="r4Event_ObjectInteraction_RepairComputer" s="431636">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T p="InGame\UI\Icons\Events\EventGoal_Computer.png" n="enabled">2f7d0004:00000000:0112f79d8b2d699e</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0xE4E994D5<!--String: "Repair or Replace the Computer"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0xED724CFF<!--String: "What a setback! Going to have to fix up the computer if there is any chance of moving forward.\n\nSelect Repair or Replace on a broken computer. Or from the Phone, select Home and then Hire a Service to hire a repair service.\n\n<i>(+25 Event Points)</i>"--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>447711<!--SituationGoalLootActions: liveEvent_GoalLoot_CompleteQuestGoal--></T>
+  </L>
+  <U n="_goal_test">
+    <L n="affordances">
+      <T>99087<!--ImmediateSuperInteraction: object_ReplaceBrokenObject--></T>
+      <T>34920<!--SuperInteraction: object_Repair_Computer--></T>
+      <T>129468<!--SuperInteraction: phone_HireRepair--></T>
+      <T>230201<!--SuperInteraction: phone_HireRepair_Free--></T>
+    </L>
+    <L n="tags" />
+    <U n="target_filters">
+      <V n="object_tags" t="enabled">
+        <U n="enabled">
+          <L n="tag_set">
+            <E>Func_Computer</E>
+            <E>Func_Laptop</E>
+          </L>
+        </U>
+      </V>
+    </U>
+    <E n="test_event">InteractionComplete</E>
+  </U>
+  <L n="_post_tests">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="npc" t="enabled" />
+      </U>
+    </V>
+  </L>
+  <T p="InGame\Audio\Bumper\bumper_event_goal_complete.propx" n="audio_sting_on_complete">39b2aa4a:00000000:ed52c39bcc2a7111</T>
+  <V n="goal_completion_notification" t="enabled">
+    <U n="enabled">
+      <V n="icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T p="InGame\UI\Icons\Events\EventGoal_Repair.png" n="key">2f7d0004:00000000:5c8dcc2817775976</T>
+          </U>
+        </V>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0xF5353651<!--String: "Whew! That was indeed close. The computer is available again, and the Time Travel Component is intact and back in place.\n\nMaybe next time {0.SimFirstName} shouldn't just rush into things. Perhaps {0.SimPronounSubjective} might want to talk to Emit before proceeding."--></T>
+      </V>
+      <V n="title" t="enabled">
+        <T n="enabled">0x3E560143<!--String: "Computer Back Online"--></T>
+      </V>
+    </U>
+  </V>
+  <V n="tutorial_tip_group" t="disabled" />
+</I>

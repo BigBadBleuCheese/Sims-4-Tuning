@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="Apothecary_EmotionalReset_CuresAndElixirs_Loot" s="442823">
+  <L n="loot_actions">
+    <V t="reaction">
+      <U n="reaction">
+        <V n="mixer_reaction" t="enabled">
+          <U n="enabled">
+            <T n="affordance">466468<!--MixerInteraction: apothecary_CuresandElixirs_Cured_Reaction--></T>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>427745<!--Buff: buff_Ailments_MainBuff_EmotionalVoid--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="actions">
+      <T n="actions">455683<!--LootActions: loot_Sentiment_AddSentiment_Adoring_HealingHelper_CraftingSim--></T>
+    </V>
+    <V t="dynamic_skill_loot">
+      <U n="dynamic_skill_loot">
+        <U n="skill_loot_data_override">
+          <E n="effectiveness">Small</E>
+          <T n="stat">439222<!--Skill: statistic_Skill_AdultMajor_Apothecary--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <L n="blacklist">
+                  <T>427745<!--Buff: buff_Ailments_MainBuff_EmotionalVoid--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x1BCE08BD<!--String: "(From Curing an Ailment)"--></T>
+          </V>
+          <T n="buff_type">454720<!--Buff: Apothecary_CuresAndElixirs_Buff_GotCured--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="buff">
+              <U n="buff">
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>427745<!--Buff: buff_Ailments_MainBuff_EmotionalVoid--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff_removal">
+      <U n="buff_removal">
+        <L n="buffs_to_remove">
+          <T>427745<!--Buff: buff_Ailments_MainBuff_EmotionalVoid--></T>
+          <T>428668<!--Buff: buff_Ailments_PulseEffect_EmotionalVoid--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <T n="run_test_first">False</T>
+</I>

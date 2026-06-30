@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_muEvent_Algae_Spawn" s="344348">
+  <L n="loot_actions">
+    <V t="create_object">
+      <U n="create_object">
+        <V n="creation_data" t="definition">
+          <U n="definition">
+            <T n="definition">364773</T>
+          </U>
+        </V>
+        <T n="destroy_on_placement_failure">True</T>
+        <V n="location" t="position">
+          <U n="position">
+            <V n="initial_location" t="from_swimming_pool" />
+            <U n="initial_location_offset">
+              <V n="x_randomization_range" t="enabled">
+                <U n="enabled">
+                  <T n="lower_bound">-10</T>
+                  <T n="upper_bound">10</T>
+                </U>
+              </V>
+              <V n="z_randomization_range" t="enabled">
+                <U n="enabled">
+                  <T n="lower_bound">-10</T>
+                  <T n="upper_bound">10</T>
+                </U>
+              </V>
+            </U>
+          </U>
+        </V>
+        <E n="subject">Lot</E>
+        <L n="tests">
+          <L>
+            <V t="object_criteria">
+              <U n="object_criteria">
+                <V n="identity_test" t="tags">
+                  <U n="tags">
+                    <L n="tag_set">
+                      <E>Func_muEvent_Algae</E>
+                    </L>
+                  </U>
+                </V>
+                <T n="on_active_lot">True</T>
+                <T n="owned">False</T>
+                <V n="subject_specific_tests" t="all_objects">
+                  <U n="all_objects">
+                    <U n="quantity">
+                      <E n="comparison">LESS_OR_EQUAL</E>
+                      <T n="value">10</T>
+                    </U>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="state_white_black">
+        <U n="state_white_black">
+          <U n="states">
+            <V n="blacklist" t="specify">
+              <U n="specify">
+                <L n="blacklist">
+                  <T>323885<!--ObjectStateValue: genericVariant_Values_3--></T>
+                  <T>323887<!--ObjectStateValue: genericVariant_Values_5--></T>
+                </L>
+              </U>
+            </V>
+          </U>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

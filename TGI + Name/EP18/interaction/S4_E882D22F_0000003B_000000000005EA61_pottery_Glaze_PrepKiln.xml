@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="pottery_Glaze_PrepKiln" s="387681">
+  <V n="_saveable" t="enabled" />
+  <T n="allow_from_sim_inventory">True</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x941DBA0D<!--String: "Glaze"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <L n="joinable">
+    <U>
+      <V n="invite_available" t="enabled">
+        <U n="enabled">
+          <V n="loc_custom_invite_name" t="enabled">
+            <T n="enabled">0xF80506D0<!--String: "{0.String}"--></T>
+          </V>
+          <T n="use_proxied_affordance_name">True</T>
+        </U>
+      </V>
+      <V n="join_affordance" t="affordance">
+        <U n="affordance">
+          <V n="value" t="custom">
+            <T n="custom">406938<!--SuperInteraction: mentor_Pottery--></T>
+          </V>
+        </U>
+      </V>
+      <V n="join_available" t="enabled">
+        <U n="enabled">
+          <V n="loc_custom_join_name" t="enabled">
+            <T n="enabled">0xF80506D0<!--String: "{0.String}"--></T>
+          </V>
+        </U>
+      </V>
+      <E n="join_target">Actor</E>
+      <T n="link_joinable">True</T>
+    </U>
+    <U>
+      <V n="invite_available" t="enabled">
+        <U n="enabled">
+          <V n="loc_custom_invite_name" t="enabled">
+            <T n="enabled">0xF80506D0<!--String: "{0.String}"--></T>
+          </V>
+          <T n="use_proxied_affordance_name">True</T>
+        </U>
+      </V>
+      <V n="join_affordance" t="affordance">
+        <U n="affordance">
+          <V n="value" t="custom">
+            <T n="custom">487439<!--SuperInteraction: mentor_Pottery_Getaway--></T>
+          </V>
+        </U>
+      </V>
+      <V n="join_available" t="enabled">
+        <U n="enabled">
+          <V n="loc_custom_join_name" t="enabled">
+            <T n="enabled">0xF80506D0<!--String: "{0.String}"--></T>
+          </V>
+        </U>
+      </V>
+      <E n="join_target">Actor</E>
+      <T n="link_joinable">True</T>
+    </U>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <L n="continuation">
+              <U>
+                <T n="affordance">394754<!--SuperInteraction: si_SwipeIntoSimInventory_CollectCeramicForGlazing--></T>
+                <E n="target">SavedActor1</E>
+              </U>
+            </L>
+          </U>
+        </U>
+      </L>
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">394316<!--SuperInteraction: pottery_Glaze_BenchToKiln--></T>
+                    <E n="target">ObjectParent</E>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="state">
+                <U n="state">
+                  <T n="value">394319<!--ObjectStateValue: potteryCeramic_GlazeState_Values_Sprayed--></T>
+                  <E n="who">SavedActor1</E>
+                </U>
+              </V>
+              <V t="object_criteria">
+                <U n="object_criteria">
+                  <V n="identity_test" t="tags">
+                    <U n="tags">
+                      <L n="tag_set">
+                        <E>Func_PotteryKiln</E>
+                      </L>
+                    </U>
+                  </V>
+                  <V n="slot_test" t="test">
+                    <U n="test">
+                      <V n="child_slot" t="by_reference">
+                        <T n="by_reference">slot_Kiln</T>
+                      </V>
+                      <E n="participant">ObjectParent</E>
+                    </U>
+                  </V>
+                  <V n="subject_specific_tests" t="single_object">
+                    <U n="single_object">
+                      <E n="target">ObjectParent</E>
+                    </U>
+                  </V>
+                </U>
+              </V>
+              <V t="location">
+                <U n="location">
+                  <U n="location_tests">
+                    <V n="is_in_slot" t="enabled">
+                      <U n="enabled">
+                        <V n="slot_test_type" t="specific_slot">
+                          <U n="specific_slot">
+                            <T n="specific_slot_set">slotSet_Pottery</T>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </U>
+                  <E n="subject">Object</E>
+                </U>
+              </V>
+            </L>
+            <L>
+              <V t="state">
+                <U n="state">
+                  <T n="value">428950<!--ObjectStateValue: potteryCeramic_UnbreakableGlaze_Sprayed--></T>
+                  <E n="who">SavedActor1</E>
+                </U>
+              </V>
+              <V t="object_criteria">
+                <U n="object_criteria">
+                  <V n="identity_test" t="tags">
+                    <U n="tags">
+                      <L n="tag_set">
+                        <E>Func_PotteryKiln</E>
+                      </L>
+                    </U>
+                  </V>
+                  <V n="slot_test" t="test">
+                    <U n="test">
+                      <V n="child_slot" t="by_reference">
+                        <T n="by_reference">slot_Kiln</T>
+                      </V>
+                      <E n="participant">ObjectParent</E>
+                    </U>
+                  </V>
+                  <V n="subject_specific_tests" t="single_object">
+                    <U n="single_object">
+                      <E n="target">ObjectParent</E>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">394315<!--SuperInteraction: pottery_Glaze_Spray--></T>
+                    <E n="target">ObjectParent</E>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="state">
+                <U n="state">
+                  <E n="operator">EQUAL</E>
+                  <T n="value">374605<!--ObjectStateValue: potteryCeramic_GlazeState_Values_Unglazed--></T>
+                  <E n="who">SavedActor1</E>
+                </U>
+              </V>
+              <V t="object_criteria">
+                <U n="object_criteria">
+                  <V n="identity_test" t="tags">
+                    <U n="tags">
+                      <L n="tag_set">
+                        <E>Func_PotteryKiln</E>
+                      </L>
+                    </U>
+                  </V>
+                  <V n="slot_test" t="test">
+                    <U n="test">
+                      <V n="child_slot" t="by_reference">
+                        <T n="by_reference">slot_Kiln</T>
+                      </V>
+                      <E n="participant">ObjectParent</E>
+                    </U>
+                  </V>
+                  <V n="subject_specific_tests" t="single_object">
+                    <U n="single_object">
+                      <E n="target">ObjectParent</E>
+                    </U>
+                  </V>
+                </U>
+              </V>
+              <V t="state">
+                <U n="state">
+                  <E n="operator">NOTEQUAL</E>
+                  <T n="value">428768<!--ObjectStateValue: potteryCeramic_UnbreakableGlaze_PreSpray--></T>
+                  <E n="who">SavedActor1</E>
+                </U>
+              </V>
+            </L>
+            <L>
+              <V t="state">
+                <U n="state">
+                  <E n="operator">EQUAL</E>
+                  <T n="value">428768<!--ObjectStateValue: potteryCeramic_UnbreakableGlaze_PreSpray--></T>
+                  <E n="who">SavedActor1</E>
+                </U>
+              </V>
+              <V t="object_criteria">
+                <U n="object_criteria">
+                  <V n="identity_test" t="tags">
+                    <U n="tags">
+                      <L n="tag_set">
+                        <E>Func_PotteryKiln</E>
+                      </L>
+                    </U>
+                  </V>
+                  <V n="slot_test" t="test">
+                    <U n="test">
+                      <V n="child_slot" t="by_reference">
+                        <T n="by_reference">slot_Kiln</T>
+                      </V>
+                      <E n="participant">ObjectParent</E>
+                    </U>
+                  </V>
+                  <V n="subject_specific_tests" t="single_object">
+                    <U n="single_object">
+                      <E n="target">ObjectParent</E>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">394751<!--SuperInteraction: pottery_Glaze_InventoryToKiln--></T>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="in_inventory">
+                <U n="in_inventory">
+                  <L n="inventory_types">
+                    <E>SIM</E>
+                  </L>
+                  <E n="participant">SavedActor1</E>
+                </U>
+              </V>
+              <V t="object_criteria">
+                <U n="object_criteria">
+                  <V n="identity_test" t="tags">
+                    <U n="tags">
+                      <L n="tag_set">
+                        <E>Func_PotteryKiln</E>
+                      </L>
+                    </U>
+                  </V>
+                  <T n="owned">False</T>
+                  <V n="subject_specific_tests" t="single_object">
+                    <U n="single_object">
+                      <E n="target">Object</E>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">394753<!--AutonomousObjectTaggedPickerInteraction: autonomous_ObjectPicker_PotteryKiln--></T>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="in_inventory">
+                <U n="in_inventory">
+                  <L n="inventory_types">
+                    <E>SIM</E>
+                  </L>
+                  <E n="participant">SavedActor1</E>
+                </U>
+              </V>
+              <V t="object_criteria">
+                <U n="object_criteria">
+                  <V n="identity_test" t="tags">
+                    <U n="tags">
+                      <L n="tag_set">
+                        <E>Func_PotteryKiln</E>
+                      </L>
+                      <E n="test_type">CONTAINS_NO_TAGS_IN_SET</E>
+                    </U>
+                  </V>
+                  <T n="owned">False</T>
+                  <V n="subject_specific_tests" t="single_object">
+                    <U n="single_object">
+                      <E n="target">Object</E>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">394317<!--SuperInteraction: pottery_Glaze_Wait--></T>
+                    <E n="target">ObjectParent</E>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="location">
+                <U n="location">
+                  <U n="location_tests">
+                    <V n="is_in_slot" t="enabled">
+                      <U n="enabled">
+                        <V n="slot_test_type" t="specific_slot">
+                          <U n="specific_slot">
+                            <T n="specific_slot_set">slotSet_Kiln</T>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </U>
+                  <E n="subject">Object</E>
+                </U>
+              </V>
+              <V t="state">
+                <U n="state">
+                  <T n="value">394319<!--ObjectStateValue: potteryCeramic_GlazeState_Values_Sprayed--></T>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals" />
+  <T n="time_overhead">30</T>
+</I>

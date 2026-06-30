@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="ZoneModifier" i="zone_modifier" m="zone_modifier.zone_modifier" n="zoneModifier_Hidden_WaterHeater_Off" s="352987">
+  <T n="hide_screen_slam">True</T>
+  <U n="on_add_loot">
+    <L n="actions">
+      <V t="modify_lot_items">
+        <U n="modify_lot_items">
+          <U n="actions">
+            <L n="modifications">
+              <U>
+                <V n="action" t="set_state">
+                  <U n="set_state">
+                    <T n="action_value">358778<!--ObjectStateValue: shower_VFX_Cold--></T>
+                  </U>
+                </V>
+                <L n="global_tests">
+                  <V t="zone">
+                    <U n="zone">
+                      <U n="zone_tests">
+                        <V n="zone_modifiers" t="enabled">
+                          <U n="enabled">
+                            <V n="blacklist" t="specify">
+                              <U n="specify">
+                                <L n="blacklist">
+                                  <T>353068<!--ZoneModifier: zoneModifier_Hidden_WaterHeater_On--></T>
+                                  <T>343359<!--ZoneModifier: zoneModifier_muEvent_WaterLeak--></T>
+                                </L>
+                              </U>
+                            </V>
+                          </U>
+                        </V>
+                      </U>
+                    </U>
+                  </V>
+                </L>
+                <L n="tests">
+                  <L>
+                    <V t="object_definition">
+                      <U n="object_definition">
+                        <V n="item" t="tagged_item">
+                          <U n="tagged_item">
+                            <L n="tag_set">
+                              <E>Func_Shower</E>
+                              <E>Func_ShowerTub</E>
+                            </L>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T n="zone_modifier_locked">True</T>
+</I>

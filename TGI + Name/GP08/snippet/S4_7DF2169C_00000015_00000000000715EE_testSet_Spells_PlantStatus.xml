@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="TestSetInstance" i="snippet" m="event_testing.tests" n="testSet_Spells_PlantStatus" s="464366">
+  <L n="test">
+    <L>
+      <V t="object_definition_criteria">
+        <U n="object_definition_criteria">
+          <V n="identity_test" t="tags">
+            <U n="tags">
+              <L n="tag_set">
+                <E>Func_HousePlants_BG</E>
+              </L>
+              <E n="test_type">CONTAINS_NO_TAGS_IN_SET</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="state_white_black">
+        <U n="state_white_black">
+          <U n="states">
+            <V n="whitelist" t="specify">
+              <U n="specify">
+                <L n="whitelist">
+                  <T>185499<!--ObjectStateValue: MoistureEffects_1_Waterable--></T>
+                  <T>185497<!--ObjectStateValue: MoistureEffects_0_Dry--></T>
+                  <T>185721<!--ObjectStateValue: InfestationEffects_0_BugsHeavy--></T>
+                  <T>185722<!--ObjectStateValue: InfestationEffects_1_BugsLight--></T>
+                  <T>185723<!--ObjectStateValue: InfestationEffects_2_BugsSprayable--></T>
+                  <T>98292<!--ObjectStateValue: GardeningWeedFX_Stage1--></T>
+                  <T>98290<!--ObjectStateValue: GardeningWeedFX_Stage2--></T>
+                </L>
+              </U>
+            </V>
+          </U>
+          <V n="tooltip" t="enabled">
+            <T n="enabled">0x66D2E98C<!--String: "This plant does not need tending."--></T>
+          </V>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="object_definition_criteria">
+        <U n="object_definition_criteria">
+          <V n="identity_test" t="tags">
+            <U n="tags">
+              <L n="tag_set">
+                <E>Func_HousePlants_BG</E>
+              </L>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="statistic">
+        <U n="statistic">
+          <T n="stat">444784<!--Commodity: commodity_HousePlants_Health--></T>
+          <V n="threshold" t="value_threshold">
+            <U n="value_threshold">
+              <E n="comparison">LESS_OR_EQUAL</E>
+              <T n="value">50</T>
+            </U>
+          </V>
+          <V n="tooltip" t="enabled">
+            <T n="enabled">0x66D2E98C<!--String: "This plant does not need tending."--></T>
+          </V>
+          <E n="who">Object</E>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

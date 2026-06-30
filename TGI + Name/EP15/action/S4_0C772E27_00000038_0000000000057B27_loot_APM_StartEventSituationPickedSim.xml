@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_APM_StartEventSituationPickedSim" s="359207">
+  <L n="loot_actions">
+    <V t="create_situation">
+      <U n="create_situation">
+        <U n="create_situation">
+          <V n="actor_init_job" t="use_default_job" />
+          <T n="invite_actor">False</T>
+          <L n="invite_participants">
+            <U>
+              <E n="participants_to_invite">PickedSim</E>
+              <V n="invite_to_job" t="specify_job">
+                <L n="specify_job">
+                  <T>360614<!--SituationJob: job_APM_PO_OwnedUniform--></T>
+                </L>
+              </V>
+            </U>
+          </L>
+          <T n="invite_picked_sims">False</T>
+          <T n="invite_target_sim">False</T>
+          <T n="situation">344940<!--CustomStatesSituation: situation_APM_EventPO_Owned--></T>
+          <T n="user_facing">False</T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="filter_test">
+              <U n="filter_test">
+                <V n="filter_target" t="disabled" />
+                <T n="sim_filter">350529<!--TunableSimFilter: filter_ages_tyae_PlayedPO--></T>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="create_situation">
+      <U n="create_situation">
+        <U n="create_situation">
+          <T n="invite_actor">False</T>
+          <T n="invite_picked_sims">False</T>
+          <T n="invite_target_sim">False</T>
+          <T n="situation">344939<!--CustomStatesSituation: situation_APM_EventPO_Unowned--></T>
+          <T n="user_facing">False</T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="filter_test">
+              <U n="filter_test">
+                <V n="filter_target" t="disabled" />
+                <T n="sim_filter">350527<!--TunableSimFilter: filter_ages_tyae_PremadePO--></T>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="test_set_reference">
+        <T n="test_set_reference">352764<!--TestSetInstance: testSet_muEvent_EventActive--></T>
+      </V>
+    </L>
+  </L>
+</I>

@@ -1,0 +1,752 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<M n="multi_unit.multi_unit_event_service" s="12886598690868443651">
+  <C n="MultiUnitEventService">
+    <T n="PROPERTY_OWNER_EVENT_TABLE">347719<!--RandomWeightedLoot: randomWeightedLoot_APM_EventPicker--></T>
+    <U n="PROPERTY_OWNER_EVENT_TIME_INTERVAL">
+      <T n="lower_bound">24</T>
+      <T n="upper_bound">30</T>
+    </U>
+    <T n="TENANT_EVENT_TABLE">347708<!--RandomWeightedLoot: randomWeightedLoot_muEvent_EventPicker--></T>
+    <U n="TENANT_EVENT_TIME_INTERVAL">
+      <T n="lower_bound">56</T>
+      <T n="upper_bound">72</T>
+    </U>
+    <L n="TESTED_UNIT_LOT_TRAITS">
+      <U>
+        <T n="key">347990<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasElectricalObject--></T>
+        <L n="value">
+          <L>
+            <V t="object_criteria">
+              <U n="object_criteria">
+                <V n="desired_state_threshold" t="enabled">
+                  <U n="enabled">
+                    <E n="comparison">LESS</E>
+                    <T n="value">15384<!--CommodityBasedObjectStateValue: Upgrade_Generic_LockBrokenness_Completed--></T>
+                  </U>
+                </V>
+                <V n="identity_test" t="tags">
+                  <U n="tags">
+                    <L n="tag_set">
+                      <E>Func_TV</E>
+                      <E>Func_Fridge</E>
+                      <E>Func_RobotVacuum</E>
+                      <E>Func_Computer</E>
+                      <E>Func_Stereo</E>
+                    </L>
+                  </U>
+                </V>
+                <E n="object_location">PrivateSpaceOnly</E>
+                <T n="on_active_lot">True</T>
+                <T n="owned">False</T>
+              </U>
+            </V>
+            <V t="object_criteria">
+              <U n="object_criteria">
+                <V n="desired_state_threshold" t="enabled">
+                  <U n="enabled">
+                    <T n="value">15384<!--CommodityBasedObjectStateValue: Upgrade_Generic_LockBrokenness_Completed--></T>
+                  </U>
+                </V>
+                <V n="identity_test" t="tags">
+                  <U n="tags">
+                    <L n="tag_set">
+                      <E>Func_FuseBox</E>
+                    </L>
+                  </U>
+                </V>
+                <T n="on_active_lot">True</T>
+                <T n="owned">False</T>
+                <V n="subject_specific_tests" t="all_objects">
+                  <U n="all_objects">
+                    <U n="quantity">
+                      <E n="comparison">EQUAL</E>
+                      <T n="value">0</T>
+                    </U>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+      <U>
+        <T n="key">347991<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasWaterObject--></T>
+        <L n="value">
+          <L>
+            <V t="object_criteria">
+              <U n="object_criteria">
+                <V n="identity_test" t="tags">
+                  <U n="tags">
+                    <L n="tag_set">
+                      <E>Func_Shower</E>
+                      <E>Func_ShowerTub</E>
+                      <E>Func_Bath</E>
+                      <E>Func_Sink</E>
+                    </L>
+                  </U>
+                </V>
+                <E n="object_location">PrivateSpaceOnly</E>
+                <T n="on_active_lot">True</T>
+                <T n="owned">False</T>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+      <U>
+        <T n="key">347992<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasToiletObject--></T>
+        <L n="value">
+          <L>
+            <V t="object_criteria">
+              <U n="object_criteria">
+                <V n="identity_test" t="tags">
+                  <U n="tags">
+                    <L n="tag_set">
+                      <E>Func_Toilet</E>
+                    </L>
+                  </U>
+                </V>
+                <E n="object_location">PrivateSpaceOnly</E>
+                <T n="on_active_lot">True</T>
+                <T n="owned">False</T>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+      <U>
+        <T n="key">347993<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasExplosiveObject--></T>
+        <L n="value">
+          <L>
+            <V t="object_criteria">
+              <U n="object_criteria">
+                <V n="identity_test" t="tags">
+                  <U n="tags">
+                    <L n="tag_set">
+                      <E>Func_muEvent_Explosion</E>
+                    </L>
+                  </U>
+                </V>
+                <E n="object_location">PrivateSpaceOnly</E>
+                <T n="on_active_lot">True</T>
+                <T n="owned">False</T>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+      <U>
+        <T n="key">347994<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasGardenObject--></T>
+        <L n="value">
+          <L>
+            <V t="lot_has_garden" />
+            <V t="object_criteria">
+              <U n="object_criteria">
+                <V n="desired_state_threshold" t="enabled">
+                  <U n="enabled">
+                    <T n="value">15294<!--CommodityBasedObjectStateValue: PlantGrowth_1_Seedling--></T>
+                  </U>
+                </V>
+                <E n="object_location">PrivateSpaceOnly</E>
+                <T n="on_active_lot">True</T>
+                <T n="owned">False</T>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+      <U>
+        <T n="key">347995<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasTrashcanObject--></T>
+        <L n="value">
+          <L>
+            <V t="object_criteria">
+              <U n="object_criteria">
+                <V n="identity_test" t="tags">
+                  <U n="tags">
+                    <L n="tag_set">
+                      <E>Func_TrashCan_Indoor</E>
+                      <E>Func_TrashCan_Outdoor</E>
+                    </L>
+                  </U>
+                </V>
+                <E n="object_location">PrivateSpaceOnly</E>
+                <T n="on_active_lot">True</T>
+                <T n="owned">False</T>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+      <U>
+        <T n="key">347996<!--ZoneModifier: zoneModifier_muEventAPM_Test_BrokenPowerObjects--></T>
+        <L n="value">
+          <L>
+            <V t="object_criteria">
+              <U n="object_criteria">
+                <V n="desired_state_threshold" t="enabled">
+                  <U n="enabled">
+                    <E n="comparison">LESS_OR_EQUAL</E>
+                    <T n="value">15076<!--CommodityBasedObjectStateValue: Brokenness_Broken--></T>
+                  </U>
+                </V>
+                <V n="identity_test" t="tags">
+                  <U n="tags">
+                    <L n="tag_set">
+                      <E>Func_TV</E>
+                      <E>Func_Fridge</E>
+                      <E>Func_RobotVacuum</E>
+                      <E>Func_Computer</E>
+                      <E>Func_Stereo</E>
+                    </L>
+                  </U>
+                </V>
+                <T n="on_active_lot">True</T>
+                <T n="owned">False</T>
+                <V n="subject_specific_tests" t="all_objects">
+                  <U n="all_objects">
+                    <U n="quantity">
+                      <T n="value">1</T>
+                    </U>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+      <U>
+        <T n="key">348057<!--ZoneModifier: zoneModifier_muEventAPM_Test_BrokenWaterObjects--></T>
+        <L n="value">
+          <L>
+            <V t="object_criteria">
+              <U n="object_criteria">
+                <V n="desired_state_threshold" t="enabled">
+                  <U n="enabled">
+                    <E n="comparison">LESS_OR_EQUAL</E>
+                    <T n="value">15076<!--CommodityBasedObjectStateValue: Brokenness_Broken--></T>
+                  </U>
+                </V>
+                <V n="identity_test" t="tags">
+                  <U n="tags">
+                    <L n="tag_set">
+                      <E>Func_Shower</E>
+                      <E>Func_ShowerTub</E>
+                      <E>Func_Bath</E>
+                      <E>Func_Sink</E>
+                    </L>
+                  </U>
+                </V>
+                <T n="on_active_lot">True</T>
+                <T n="owned">False</T>
+                <V n="subject_specific_tests" t="all_objects">
+                  <U n="all_objects">
+                    <U n="quantity">
+                      <T n="value">1</T>
+                    </U>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+      <U>
+        <T n="key">348058<!--ZoneModifier: zoneModifier_muEventAPM_Test_BrokenToiletObjects--></T>
+        <L n="value">
+          <L>
+            <V t="object_criteria">
+              <U n="object_criteria">
+                <V n="desired_state_threshold" t="enabled">
+                  <U n="enabled">
+                    <E n="comparison">LESS_OR_EQUAL</E>
+                    <T n="value">15076<!--CommodityBasedObjectStateValue: Brokenness_Broken--></T>
+                  </U>
+                </V>
+                <V n="identity_test" t="tags">
+                  <U n="tags">
+                    <L n="tag_set">
+                      <E>Func_Toilet</E>
+                    </L>
+                  </U>
+                </V>
+                <T n="on_active_lot">True</T>
+                <T n="owned">False</T>
+                <V n="subject_specific_tests" t="all_objects">
+                  <U n="all_objects">
+                    <U n="quantity">
+                      <T n="value">1</T>
+                    </U>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+      <U>
+        <T n="key">348059<!--ZoneModifier: zoneModifier_muEventAPM_Test_BrokenExplosiveObjects--></T>
+        <L n="value">
+          <L>
+            <V t="object_criteria">
+              <U n="object_criteria">
+                <V n="desired_state_threshold" t="enabled">
+                  <U n="enabled">
+                    <E n="comparison">LESS_OR_EQUAL</E>
+                    <T n="value">15076<!--CommodityBasedObjectStateValue: Brokenness_Broken--></T>
+                  </U>
+                </V>
+                <V n="identity_test" t="tags">
+                  <U n="tags">
+                    <L n="tag_set">
+                      <E>Func_muEvent_Explosion</E>
+                    </L>
+                  </U>
+                </V>
+                <T n="owned">False</T>
+                <V n="subject_specific_tests" t="all_objects">
+                  <U n="all_objects">
+                    <U n="quantity">
+                      <T n="value">1</T>
+                    </U>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+      <U>
+        <T n="key">348060<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasTrash--></T>
+        <L n="value">
+          <L>
+            <V t="object_criteria">
+              <U n="object_criteria">
+                <V n="identity_test" t="tags">
+                  <U n="tags">
+                    <L n="tag_set">
+                      <E>Func_TrashPile</E>
+                      <E>Func_TrashPile_Compostable</E>
+                      <E>Func_TrashPile_Recyclable</E>
+                    </L>
+                  </U>
+                </V>
+                <T n="on_active_lot">True</T>
+                <T n="owned">False</T>
+                <V n="subject_specific_tests" t="all_objects">
+                  <U n="all_objects">
+                    <U n="quantity">
+                      <T n="value">3</T>
+                    </U>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+      <U>
+        <T n="key">348061<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasSlobSim--></T>
+        <L n="value">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <E n="subject">ActorHousehold</E>
+                <L n="whitelist_traits">
+                  <T>16860<!--Trait: trait_Slob--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+      <U>
+        <T n="key">348062<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasParanormalInvestigatorSim--></T>
+        <L n="value">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <E n="subject">ActorHousehold</E>
+                <L n="whitelist_traits">
+                  <T>252647<!--Trait: trait_Freelancer_Career_Hidden_Agencies_ParanormalInvestigator--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+      <U>
+        <T n="key">348063<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasEvilSim--></T>
+        <L n="value">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <E n="subject">ActorHousehold</E>
+                <L n="whitelist_traits">
+                  <T>16836<!--Trait: trait_Evil--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+      <U>
+        <T n="key">348064<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasPetLover--></T>
+        <L n="value">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <E n="subject">ActorHousehold</E>
+                <L n="whitelist_traits">
+                  <T>157978<!--Trait: trait_CatLover--></T>
+                  <T>157979<!--Trait: trait_DogLover--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+      <U>
+        <T n="key">348065<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasHighHandinessSim--></T>
+        <L n="value">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <E n="subject">ActorHousehold</E>
+                <L n="whitelist_traits">
+                  <T>27328<!--Trait: trait_TheKnack--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+      <U>
+        <T n="key">348066<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasDirtyObjects--></T>
+        <L n="value">
+          <L>
+            <V t="object_criteria">
+              <U n="object_criteria">
+                <V n="desired_state_threshold" t="enabled">
+                  <U n="enabled">
+                    <E n="comparison">LESS_OR_EQUAL</E>
+                    <T n="value">15133<!--CommodityBasedObjectStateValue: Dirty_Dirty--></T>
+                  </U>
+                </V>
+                <T n="on_active_lot">True</T>
+                <T n="owned">False</T>
+                <V n="subject_specific_tests" t="all_objects">
+                  <U n="all_objects">
+                    <U n="quantity">
+                      <T n="value">3</T>
+                    </U>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+      <U>
+        <T n="key">348077<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasUnemptiedTrashcans--></T>
+        <L n="value">
+          <L>
+            <V t="object_criteria">
+              <U n="object_criteria">
+                <V n="desired_state_threshold" t="enabled">
+                  <U n="enabled">
+                    <T n="value">15348<!--CommodityBasedObjectStateValue: Trashcan_Capacity_Full--></T>
+                  </U>
+                </V>
+                <V n="identity_test" t="tags">
+                  <U n="tags">
+                    <L n="tag_set">
+                      <E>Func_TrashCan</E>
+                    </L>
+                  </U>
+                </V>
+                <E n="object_location">PrivateSpaceOnly</E>
+                <T n="on_active_lot">True</T>
+                <T n="owned">False</T>
+                <V n="subject_specific_tests" t="all_objects">
+                  <U n="all_objects">
+                    <U n="quantity">
+                      <T n="value">2</T>
+                    </U>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+      <U>
+        <T n="key">348078<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasNeatSim--></T>
+        <L n="value">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <E n="subject">ActorHousehold</E>
+                <L n="whitelist_traits">
+                  <T>16858<!--Trait: trait_Neat--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+      <U>
+        <T n="key">348337<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasPoolObject--></T>
+        <L n="value">
+          <L>
+            <V t="object_criteria">
+              <U n="object_criteria">
+                <V n="identity_test" t="definition_id">
+                  <U n="definition_id">
+                    <T n="actual_object">66422</T>
+                  </U>
+                </V>
+                <E n="object_location">PrivateSpaceOnly</E>
+                <T n="on_active_lot">True</T>
+                <T n="owned">False</T>
+                <V n="subject_specific_tests" t="all_objects">
+                  <U n="all_objects">
+                    <U n="quantity">
+                      <T n="value">10</T>
+                    </U>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+      <U>
+        <T n="key">348776<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasGoodSim--></T>
+        <L n="value">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <E n="subject">ActorHousehold</E>
+                <L n="whitelist_traits">
+                  <T>27915<!--Trait: trait_Good--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+      <U>
+        <T n="key">348798<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasObjectCount--></T>
+        <L n="value">
+          <L>
+            <V t="object_criteria">
+              <U n="object_criteria">
+                <E n="object_location">PrivateSpaceOnly</E>
+                <T n="on_active_lot">True</T>
+                <T n="owned">False</T>
+                <V n="subject_specific_tests" t="all_objects">
+                  <U n="all_objects">
+                    <U n="quantity">
+                      <T n="value">20</T>
+                    </U>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+      <U>
+        <T n="key">350227<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasNoisySim--></T>
+        <L n="value">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <E n="subject">ActorHousehold</E>
+                <L n="whitelist_traits">
+                  <T>16826<!--Trait: trait_Bro--></T>
+                  <T>9604<!--Trait: trait_MusicLover--></T>
+                  <T>284112<!--Trait: trait_PartyAnimal--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+      <U>
+        <T n="key">350228<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasSocialSim--></T>
+        <L n="value">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <E n="subject">ActorHousehold</E>
+                <L n="whitelist_traits">
+                  <T>16838<!--Trait: trait_FamilyOriented--></T>
+                  <T>29571<!--Trait: trait_Outgoing--></T>
+                  <T>284112<!--Trait: trait_PartyAnimal--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+      <U>
+        <T n="key">350229<!--ZoneModifier: zoneModifier_muEventAPM_Test_NoPets--></T>
+        <L n="value">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <L n="blacklist_traits">
+                  <T>131194<!--Trait: trait_Species_Dog--></T>
+                  <T>144685<!--Trait: trait_Species_Cat--></T>
+                </L>
+                <E n="subject">ActorHousehold</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+      <U>
+        <T n="key">350230<!--ZoneModifier: zoneModifier_muEventAPM_Test_HighWealth--></T>
+        <L n="value">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <E n="subject">ActorHousehold</E>
+                <L n="whitelist_traits">
+                  <T>27942<!--Trait: trait_Invested--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+      <U>
+        <T n="key">358971<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasExplosiveObject_CommonArea--></T>
+        <L n="value">
+          <L>
+            <V t="object_criteria">
+              <U n="object_criteria">
+                <V n="identity_test" t="tags">
+                  <U n="tags">
+                    <L n="tag_set">
+                      <E>Func_muEvent_Explosion</E>
+                    </L>
+                  </U>
+                </V>
+                <E n="object_location">SharedSpaceOnly</E>
+                <T n="on_active_lot">True</T>
+                <T n="owned">False</T>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+      <U>
+        <T n="key">359114<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasPool_CommonArea--></T>
+        <L n="value">
+          <L>
+            <V t="object_criteria">
+              <U n="object_criteria">
+                <V n="identity_test" t="definition_id">
+                  <U n="definition_id">
+                    <T n="actual_object">66422</T>
+                  </U>
+                </V>
+                <E n="object_location">SharedSpaceOnly</E>
+                <T n="on_active_lot">True</T>
+                <T n="owned">False</T>
+                <V n="subject_specific_tests" t="all_objects">
+                  <U n="all_objects">
+                    <U n="quantity">
+                      <T n="value">10</T>
+                    </U>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+      <U>
+        <T n="key">359119<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasGarden_CommonArea--></T>
+        <L n="value">
+          <L>
+            <V t="lot_has_garden" />
+            <V t="object_criteria">
+              <U n="object_criteria">
+                <V n="desired_state_threshold" t="enabled">
+                  <U n="enabled">
+                    <T n="value">15294<!--CommodityBasedObjectStateValue: PlantGrowth_1_Seedling--></T>
+                  </U>
+                </V>
+                <E n="object_location">SharedSpaceOnly</E>
+                <T n="on_active_lot">True</T>
+                <T n="owned">False</T>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+      <U>
+        <T n="key">359890<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasMinimumObjects--></T>
+        <L n="value">
+          <L>
+            <V t="object_criteria">
+              <U n="object_criteria">
+                <V n="identity_test" t="tags">
+                  <U n="tags">
+                    <L n="tag_set">
+                      <E>Build_Door</E>
+                      <E>Func_Mailbox</E>
+                    </L>
+                    <E n="test_type">CONTAINS_NO_TAGS_IN_SET</E>
+                  </U>
+                </V>
+                <E n="object_location">PrivateSpaceOnly</E>
+                <T n="on_active_lot">True</T>
+                <T n="owned">False</T>
+                <V n="subject_specific_tests" t="all_objects">
+                  <U n="all_objects">
+                    <U n="quantity">
+                      <T n="value">1</T>
+                    </U>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+      <U>
+        <T n="key">360100<!--ZoneModifier: zoneModifier_muEventAPM_Test_HasNoisyObjects--></T>
+        <L n="value">
+          <L>
+            <V t="object_criteria">
+              <U n="object_criteria">
+                <V n="identity_test" t="tags">
+                  <U n="tags">
+                    <L n="tag_set">
+                      <E>Func_TV</E>
+                      <E>Func_Stereo</E>
+                    </L>
+                  </U>
+                </V>
+                <E n="object_location">PrivateSpaceOnly</E>
+                <T n="on_active_lot">True</T>
+                <T n="owned">False</T>
+                <V n="subject_specific_tests" t="all_objects">
+                  <U n="all_objects">
+                    <U n="quantity">
+                      <T n="value">1</T>
+                    </U>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </L>
+  </C>
+</M>

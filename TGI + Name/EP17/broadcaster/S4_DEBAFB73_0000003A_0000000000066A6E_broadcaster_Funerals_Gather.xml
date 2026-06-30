@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Broadcaster" i="broadcaster" m="broadcasters.broadcaster" n="broadcaster_Funerals_Gather" s="420462">
+  <V n="allow_sim_test" t="enabled">
+    <L n="enabled">
+      <L>
+        <V t="situation_job_test">
+          <U n="situation_job_test">
+            <L n="situation_jobs">
+              <T>381380<!--SituationJob: job_Funeral_Uninvited_Stranger--></T>
+              <T>381374<!--SituationJob: job_Funeral_DepartedSim--></T>
+              <T>381378<!--SituationJob: job_Funeral_Entertainer--></T>
+              <T>381376<!--SituationJob: job_Funeral_Guest--></T>
+              <T>381377<!--SituationJob: job_Funeral_HiredMourner--></T>
+              <T>381375<!--SituationJob: job_Funeral_Host--></T>
+              <T>381382<!--SituationJob: job_Funeral_Uninvited_DepartedSimGhost--></T>
+              <T>381379<!--SituationJob: job_Funeral_Uninvited_GrimReaper--></T>
+              <T>381381<!--SituationJob: job_Funeral_Uninvited_Macabre--></T>
+            </L>
+          </U>
+        </V>
+      </L>
+    </L>
+  </V>
+  <L n="constraints">
+    <V t="circle">
+      <U n="circle">
+        <T n="ideal_radius">3</T>
+        <T n="radius">60</T>
+      </U>
+    </V>
+  </L>
+  <L n="effects">
+    <V t="affordance">
+      <U n="affordance">
+        <E n="affordance_priority">Critical</E>
+        <V n="affordance_run_priority" t="enabled">
+          <E n="enabled">Critical</E>
+        </V>
+        <L n="affordances">
+          <U>
+            <T n="affordance">420464<!--SuperInteraction: funerals_GoNear_Sim--></T>
+          </U>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="frequency" t="on_pulse">
+    <U n="on_pulse">
+      <T n="cooldown_time">2</T>
+    </U>
+  </V>
+  <T n="immediate">True</T>
+</I>

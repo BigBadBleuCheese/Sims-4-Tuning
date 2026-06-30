@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="career_Reaper_ScryTravel" s="382359">
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <L n="basic_extras">
+    <V t="buff_fire_and_forget">
+      <U n="buff_fire_and_forget">
+        <U n="buff">
+          <T n="buff_type">385254<!--Buff: buff_Career_Reaper_Hidden_Travel--></T>
+        </U>
+      </U>
+    </V>
+  </L>
+  <V n="basic_reserve_object" t="disabled" />
+  <V n="confirmation_dialog" t="enabled">
+    <U n="enabled">
+      <U n="dialog">
+        <V n="dialog" t="ok_cancel">
+          <U n="ok_cancel">
+            <V n="text" t="single">
+              <T n="single">0x4A60474B<!--String: "Would you like to Travel to your Assignment Location? Be advised that prepping for the assignment is recommended.\n\nOnce finished reaping, you will return to the office to complete the rest of the day's tasks."--></T>
+            </V>
+          </U>
+        </V>
+      </U>
+    </U>
+  </V>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x972C842C<!--String: "Travel"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">382516<!--SuperInteraction: career_Reaper_Travel_Cont_Training--></T>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="situation_running_test">
+                <U n="situation_running_test">
+                  <V n="situation_whitelist" t="enabled">
+                    <L n="enabled">
+                      <T>381769<!--CareerEventSituation: eventSituation_ReaperCareer_Low_Day01--></T>
+                    </L>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">382513<!--SuperInteraction: career_Reaper_Travel_Cont_GrimReaping--></T>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="situation_running_test">
+                <U n="situation_running_test">
+                  <V n="situation_whitelist" t="enabled">
+                    <L n="enabled">
+                      <T>381770<!--CareerEventSituation: eventSituation_ReaperCareer_Low_GrimReaping--></T>
+                    </L>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">382381<!--SuperInteraction: career_Reaper_Travel_Cont_Reaping--></T>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="situation_running_test">
+                <U n="situation_running_test">
+                  <V n="situation_whitelist" t="enabled">
+                    <L n="enabled">
+                      <T>381785<!--CareerEventSituation: eventSituation_ReaperCareer_Mid_Solo01--></T>
+                      <T>381786<!--CareerEventSituation: eventSituation_ReaperCareer_Mid_Solo--></T>
+                      <T>381766<!--CareerEventSituation: eventSituation_ReaperCareer_High_Solo--></T>
+                    </L>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">382514<!--SuperInteraction: career_Reaper_Travel_Cont_ReapingPlea--></T>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="situation_running_test">
+                <U n="situation_running_test">
+                  <V n="situation_whitelist" t="enabled">
+                    <L n="enabled">
+                      <T>381774<!--CareerEventSituation: eventSituation_ReaperCareer_Mid_GrimReapingPlea--></T>
+                    </L>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">382517<!--SuperInteraction: career_Reaper_Travel_Cont_Capture--></T>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="situation_running_test">
+                <U n="situation_running_test">
+                  <V n="situation_whitelist" t="enabled">
+                    <L n="enabled">
+                      <T>381772<!--CareerEventSituation: eventSituation_ReaperCareer_Mid_Capture01--></T>
+                      <T>381773<!--CareerEventSituation: eventSituation_ReaperCareer_Mid_Capture--></T>
+                      <T>381765<!--CareerEventSituation: eventSituation_ReaperCareer_High_Capture--></T>
+                    </L>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">382515<!--SuperInteraction: career_Reaper_Travel_Cont_Haunting--></T>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="situation_running_test">
+                <U n="situation_running_test">
+                  <V n="situation_whitelist" t="enabled">
+                    <L n="enabled">
+                      <T>381767<!--CareerEventSituation: eventSituation_ReaperCareer_High_Haunt01--></T>
+                      <T>381768<!--CareerEventSituation: eventSituation_ReaperCareer_High_Haunt--></T>
+                    </L>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">392128<!--SuperInteraction: career_Reaper_Travel_Cont_SoloPlea--></T>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="situation_running_test">
+                <U n="situation_running_test">
+                  <V n="situation_whitelist" t="enabled">
+                    <L n="enabled">
+                      <T>381941<!--CareerEventSituation: eventSituation_ReaperCareer_Mid_SoloPlea--></T>
+                      <T>381942<!--CareerEventSituation: eventSituation_ReaperCareer_High_SoloPlea--></T>
+                    </L>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">400771<!--SuperInteraction: career_Reaper_Travel_Cont_Catastrophic_Comedy--></T>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="situation_running_test">
+                <U n="situation_running_test">
+                  <V n="situation_whitelist" t="enabled">
+                    <L n="enabled">
+                      <T>403268<!--CareerEventSituation: careerEventSituation_ReaperCareer_Catastrophic_Comedian_Office--></T>
+                    </L>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <L n="continuation">
+                  <U>
+                    <T n="affordance">400772<!--SuperInteraction: career_Reaper_Travel_Cont_Catastrophic_Cowplant--></T>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="situation_running_test">
+                <U n="situation_running_test">
+                  <V n="situation_whitelist" t="enabled">
+                    <L n="enabled">
+                      <T>403269<!--CareerEventSituation: careerEventSituation_ReaperCareer_Catastrophic_Cowplant_Office--></T>
+                    </L>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T p="InEP17\UI\Icons\PieMenu\Interactions\icon_pieMenu_Reaper.png" n="key">2f7d0004:00000000:a95c18ad1ba6103e</T>
+      </U>
+    </V>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="career_test">
+      <U n="career_test">
+        <V n="test_type" t="career_reference">
+          <U n="career_reference">
+            <V n="career" t="specific_career">
+              <T n="specific_career">377623<!--Career: careers_Adult_Active_Reaper--></T>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="at_work">
+      <U n="at_work">
+        <V n="active_work_restriction" t="enabled" />
+      </U>
+    </V>
+    <V t="situation_running_test">
+      <U n="situation_running_test">
+        <V n="situation_blacklist" t="enabled">
+          <L n="enabled">
+            <T>400770<!--CareerEventSituation: eventSituation_ReaperCareer_Low_HQSabotage--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>385254<!--Buff: buff_Career_Reaper_Hidden_Travel--></T>
+        </L>
+        <V n="whitelist" t="enabled">
+          <L n="enabled">
+            <T>383162<!--Buff: buff_Career_Reaper_Hidden_Assignment--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+    <V t="state">
+      <U n="state">
+        <V n="fallback_behavior" t="always_pass" />
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xACB612CF<!--String: "Repairs Needed"--></T>
+        </V>
+        <T n="value">15081<!--ObjectStateValue: BrokenState_Unbroken--></T>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="powerShifts_SuperInteractions_Sword_AscendToMonarch" s="468608">
+  <V n="_saveable" t="enabled" />
+  <T n="allow_autonomous">False</T>
+  <T n="allow_from_sim_inventory">True</T>
+  <T n="allow_from_world">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <V n="confirmation_dialog" t="enabled">
+    <U n="enabled">
+      <U n="dialog">
+        <V n="dialog" t="ok_cancel">
+          <U n="ok_cancel">
+            <V n="text" t="single">
+              <T n="single">0xFA53ED39<!--String: "This will promote {0.SimFirstName} to Kingdom Leader in the Noble Career. If {0.SimFirstName} does not have a job or is in a different career, {0.SimPronounSubjective} will join the Noble Career. Continue?"--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0xD5159A9B<!--String: "Claim the Throne?"--></T>
+            </V>
+          </U>
+        </V>
+      </U>
+    </U>
+  </V>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x901D9F6<!--String: "Ascend to Kingdom Leader"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <V n="display_tooltip" t="enabled">
+    <T n="enabled">0x4D64098A<!--String: "This interaction will make {0.SimFirstName} a Kingdom Leader in the Noble Career for the world {0.SimPronounSubjective} lives in."--></T>
+  </V>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <V n="animation_ref" t="enabled">
+          <U n="enabled">
+            <T n="factory">471398<!--AnimationElement: powerShifts_Sword_AscendToMonarch--></T>
+          </U>
+        </V>
+        <L n="basic_extras">
+          <V t="loot">
+            <U n="loot">
+              <L n="loot_list">
+                <T>477597<!--LootActions: loot_PowerShifts_Sentiment_AddSentiment_Bitter_AscendToMonarch--></T>
+                <T>468615<!--LootActions: loot_PowerShifts_Career_Monarch--></T>
+                <T>471452<!--LootActions: loot_PowerShifts_Sword_Block_AscendToThrone--></T>
+              </L>
+            </U>
+          </V>
+          <V t="buff_fire_and_forget">
+            <U n="buff_fire_and_forget">
+              <U n="buff">
+                <T n="buff_type">499318<!--Buff: buff_NobleCareer_Hidden_Ascended--></T>
+              </U>
+            </U>
+          </V>
+        </L>
+      </U>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="career_test">
+      <U n="career_test">
+        <T n="negate">True</T>
+        <V n="test_type" t="career_reference">
+          <U n="career_reference">
+            <V n="career" t="specific_career">
+              <T n="specific_career">466304<!--NobleCareer: career_Noble--></T>
+            </V>
+            <V n="user_level" t="enabled">
+              <U n="enabled">
+                <T n="lower_bound">10</T>
+                <T n="upper_bound">10</T>
+              </U>
+            </V>
+          </U>
+        </V>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xA68576D3<!--String: "{0.SimFirstName} is already a Kingdom Leader."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>494901<!--Buff: buff_PowerShifts_Sword_Cooldown_AscendToMonarch--></T>
+        </L>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x8C9FA184<!--String: "Simcalibur needs to recharge before this interaction can be performed again."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

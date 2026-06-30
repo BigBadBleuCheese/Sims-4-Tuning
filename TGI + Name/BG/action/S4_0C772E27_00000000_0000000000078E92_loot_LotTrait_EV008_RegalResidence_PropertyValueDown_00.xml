@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_LotTrait_EV008_RegalResidence_PropertyValueDown_00" s="495250">
+  <L n="loot_actions">
+    <V t="reaction">
+      <U n="reaction">
+        <V n="si_reaction" t="enabled">
+          <U n="enabled">
+            <T n="affordance">495251<!--SuperInteraction: EV008_RegalResidence_Reaction_PropertyValueDown--></T>
+            <V n="affordance_target" t="enabled">
+              <E n="enabled">Actor</E>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">495249<!--Buff: buff_Trait_Lot_EV008_RegalResidence_LostHappiness--></T>
+        </U>
+        <E n="subject">AllInstancedActiveHouseholdSims</E>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">495188<!--Buff: buff_Trait_Lot_EV008_RegalResidence_Threshold_00--></T>
+        </U>
+        <E n="subject">AllInstancedActiveHouseholdSims</E>
+      </U>
+    </V>
+    <V t="buff_removal">
+      <U n="buff_removal">
+        <L n="buffs_to_remove">
+          <T>495181<!--Buff: buff_Trait_Lot_EV008_RegalResidence_Threshold_1--></T>
+          <T>495182<!--Buff: buff_Trait_Lot_EV008_RegalResidence_Threshold_2--></T>
+          <T>495183<!--Buff: buff_Trait_Lot_EV008_RegalResidence_Threshold_3--></T>
+          <T>495184<!--Buff: buff_Trait_Lot_EV008_RegalResidence_Threshold_4--></T>
+          <T>495410<!--Buff: buff_Trait_Lot_EV008_RegalResidence_Threshold_5--></T>
+          <T>495061<!--Buff: buff_Trait_Lot_EV008_RegalResidence_MoneyBuyHappiness--></T>
+        </L>
+        <E n="subject">AllInstancedActiveHouseholdSims</E>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="resource_key">
+                <U n="resource_key">
+                  <T p="InGame\UI\Icons\LiveEvents\EV008\LotTraits\LotTrait_RegalResidence.png" n="key">2f7d0004:00000000:571b4c44193d16e2</T>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xD094B9E7<!--String: "The {0.SimLastName} family's property value dropped below §25k!\n\n{0.SimPronounPossessiveDependent|xxUpper} needs are not as well met as before and will decay faster!"--></T>
+            </V>
+          </U>
+        </V>
+        <E n="subject">Actor</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="is_active_sim" t="enabled" />
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="simoleon_value">
+        <U n="simoleon_value">
+          <V n="value_context" t="property_only" />
+          <U n="value_threshold">
+            <E n="comparison">LESS</E>
+            <T n="value">25000</T>
+          </U>
+        </U>
+      </V>
+      <V t="buff">
+        <U n="buff">
+          <V n="whitelist" t="enabled">
+            <L n="enabled">
+              <T>495181<!--Buff: buff_Trait_Lot_EV008_RegalResidence_Threshold_1--></T>
+              <T>495182<!--Buff: buff_Trait_Lot_EV008_RegalResidence_Threshold_2--></T>
+              <T>495183<!--Buff: buff_Trait_Lot_EV008_RegalResidence_Threshold_3--></T>
+              <T>495184<!--Buff: buff_Trait_Lot_EV008_RegalResidence_Threshold_4--></T>
+              <T>495410<!--Buff: buff_Trait_Lot_EV008_RegalResidence_Threshold_5--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

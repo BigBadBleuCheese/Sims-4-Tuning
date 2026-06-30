@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_GnomeFunc_GnomePowers_RepairingUpgrades" s="419132">
+  <L n="loot_actions">
+    <V t="oneshot_broadcaster">
+      <U n="oneshot_broadcaster">
+        <U n="broadcaster_request">
+          <L n="broadcaster_types">
+            <U>
+              <T n="item">419205<!--Broadcaster: broadcaster_GnomeFunc_RepairingUpgrades--></T>
+            </U>
+          </L>
+        </U>
+        <E n="subject">Object</E>
+      </U>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">-1</T>
+          <T n="stat">428743<!--Statistic: statistic_GnomeFunc_PowerCounter--></T>
+          <L n="subject">
+            <E>Object</E>
+          </L>
+        </U>
+      </V>
+    </V>
+    <V t="actions">
+      <T n="actions">417248<!--LootActions: loot_GnomeFunc_EndSituation_RepairingUpgrades--></T>
+    </V>
+    <V t="vfx">
+      <U n="vfx">
+        <E n="subject">Object</E>
+        <U n="vfx">
+          <T n="effect_name">ep19_gnome_glow</T>
+          <V n="joint_name" t="Current_Position" />
+        </U>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Object</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x44CBB594<!--String: "A Gnome just used their powers to repair and upgrade! A Gnome brought to life to repair and upgrade will teleport near...\n\n• Broken Objects to Fix Them\n• Scratched Items to Repair Them\n• Upgradeable Objects to Upgrade Them"--></T>
+            </V>
+            <V n="tns_suppression_group" t="enabled">
+              <E n="enabled">Onboarding_GnomesRepairs</E>
+            </V>
+          </U>
+        </V>
+        <E n="subject">ActiveHousehold</E>
+      </U>
+    </V>
+  </L>
+</I>

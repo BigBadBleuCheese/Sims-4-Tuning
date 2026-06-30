@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Dynasty_ActionFeedback_HeadChanged" s="475768">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="audio_sting" t="disabled" />
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>ActorDynastyHead</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="disabled" />
+            <V n="text" t="concatenation">
+              <U n="concatenation">
+                <L n="concatenations">
+                  <V t="literal">
+                    <T n="literal">0xF4F25A46<!--String: "{1.SimName} has become the new Head of the {2.String} Dynasty."--></T>
+                  </V>
+                  <V t="literal">
+                    <T n="literal">0x775DB75C<!--String: "\nWhile {1.SimFirstName} remains the Head, only {1.SimPronounSubjective} can buy Dynasty Perks, start and end Alliances and Rivalries, and decide who can be a Member, Heir, or Outcast of the Dynasty. Members can make certain requests from {1.SimFirstName} via Social Interactions in the Dynasty menu."--></T>
+                  </V>
+                </L>
+              </U>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="participant_type" />
+                  <V t="participant_type">
+                    <U n="participant_type">
+                      <V n="objects" t="from_participant">
+                        <U n="from_participant">
+                          <E n="participant">ActorDynastyHead</E>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                  <V t="dynasty" />
+                </L>
+              </U>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x74DB7E2D<!--String: "New Dynasty Head"--></T>
+            </V>
+          </U>
+        </V>
+        <E n="subject">ActiveHousehold</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="is_active_sim" t="enabled" />
+              </U>
+            </V>
+          </L>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="ages" t="specified">
+                  <L n="specified">
+                    <E>TEEN</E>
+                    <E>YOUNGADULT</E>
+                    <E>ADULT</E>
+                    <E>ELDER</E>
+                    <E>CHILD</E>
+                  </L>
+                </V>
+                <E n="who">ActorDynastyHead</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="audio_sting" t="disabled" />
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>ActorDynastyHead</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="concatenation">
+              <U n="concatenation">
+                <L n="concatenations">
+                  <V t="literal">
+                    <T n="literal">0xF4F25A46<!--String: "{1.SimName} has become the new Head of the {2.String} Dynasty."--></T>
+                  </V>
+                  <V t="literal">
+                    <T n="literal">0x4A31E4E7<!--String: "\nBecause {1.SimFirstName} is so young, {1.SimPronounSubjective} won't have access to all the powers of a Dynasty Head until {1.SimPronounSubjective} {S1.gets}{P1.get} older. Another member may Usurp the Dynasty Headship from {1.SimFirstName} during this time to regain control."--></T>
+                  </V>
+                </L>
+              </U>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="participant_type" />
+                  <V t="participant_type">
+                    <U n="participant_type">
+                      <V n="objects" t="from_participant">
+                        <U n="from_participant">
+                          <E n="participant">ActorDynastyHead</E>
+                        </U>
+                      </V>
+                    </U>
+                  </V>
+                  <V t="dynasty" />
+                </L>
+              </U>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x74DB7E2D<!--String: "New Dynasty Head"--></T>
+            </V>
+          </U>
+        </V>
+        <E n="subject">ActiveHousehold</E>
+        <L n="subject_filter_tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="is_active_sim" t="enabled" />
+              </U>
+            </V>
+          </L>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="ages" t="specified">
+                  <L n="specified">
+                    <E>BABY</E>
+                    <E>INFANT</E>
+                    <E>TODDLER</E>
+                  </L>
+                </V>
+                <E n="who">ActorDynastyHead</E>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="dynasty_member">
+        <U n="dynasty_member">
+          <E n="subjects">Actor</E>
+          <E n="targets">ActiveHousehold</E>
+          <V n="test_type" t="same_dynasty_membership" />
+        </U>
+      </V>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="npc" t="enabled">
+            <T n="enabled">True</T>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

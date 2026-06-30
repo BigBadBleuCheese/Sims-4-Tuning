@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="TestSetInstance" i="snippet" m="event_testing.tests" n="testSet_Vacuum_Standing_InInventory_OR_World_OffGrid" s="436846">
+  <L n="test">
+    <L>
+      <V t="inventory">
+        <U n="inventory">
+          <V n="contents_check" t="has_object_with_tag">
+            <U n="has_object_with_tag">
+              <L n="tag_set">
+                <E>Func_VacuumCleaner_Upright</E>
+                <E>Func_Vacuum_Upgraded_SelfCharging</E>
+              </L>
+              <E n="test_type">CONTAINS_ALL_TAGS_IN_SET</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="inventory">
+        <U n="inventory">
+          <V n="contents_check" t="has_object_with_states">
+            <U n="has_object_with_states">
+              <V n="object_requirement" t="tag">
+                <U n="tag">
+                  <U n="tag">
+                    <L n="tag_set">
+                      <E>Func_VacuumCleaner_Upright</E>
+                    </L>
+                  </U>
+                </U>
+              </V>
+              <L n="state_set">
+                <T>15078<!--CommodityBasedObjectStateValue: Brokenness_Unbroken--></T>
+                <T>15077<!--CommodityBasedObjectStateValue: Brokenness_Neutral--></T>
+              </L>
+              <E n="test_type">CONTAINS_ANY_STATE_IN_SET</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="object_criteria">
+        <U n="object_criteria">
+          <V n="desired_state_threshold" t="enabled">
+            <U n="enabled">
+              <E n="comparison">NOTEQUAL</E>
+              <T n="value">15080<!--ObjectStateValue: BrokenState_Broken--></T>
+            </U>
+          </V>
+          <V n="identity_test" t="tags">
+            <U n="tags">
+              <L n="tag_set">
+                <E>Func_VacuumCleaner_Upright</E>
+                <E>Func_Vacuum_Upgraded_SelfCharging</E>
+              </L>
+              <E n="test_type">CONTAINS_ALL_TAGS_IN_SET</E>
+            </U>
+          </V>
+          <V n="sim_ownership" t="disabled" />
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

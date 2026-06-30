@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Broadcaster" i="broadcaster" m="broadcasters.broadcaster" n="broadcaster_EP20_IF_CreepedOut" s="474886">
+  <L n="constraints">
+    <V t="circle">
+      <U n="circle">
+        <T n="radius">8</T>
+      </U>
+    </V>
+    <V t="line_of_sight" />
+  </L>
+  <L n="effects">
+    <V t="loot">
+      <U n="loot">
+        <V n="excluded_participants" t="enabled" />
+        <L n="loot_list">
+          <T>474894<!--LootActions: loot_EP20_IF_CreepedOut_React--></T>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="ages" t="specified">
+                  <L n="specified">
+                    <E>TEEN</E>
+                    <E>YOUNGADULT</E>
+                    <E>ADULT</E>
+                    <E>ELDER</E>
+                  </L>
+                </V>
+                <V n="species" t="specified">
+                  <U n="specified">
+                    <L n="species">
+                      <E />
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="trait">
+              <U n="trait">
+                <L n="blacklist_traits">
+                  <T>474887<!--Trait: trait_Hidden_EP20_IF_Former--></T>
+                </L>
+              </U>
+            </V>
+            <V t="buff">
+              <U n="buff">
+                <L n="blacklist">
+                  <T>474892<!--Buff: buff_EP20_IF_WhoTalkingTo_Playful--></T>
+                  <T>474889<!--Buff: buff_EP20_IF_WhoTalkingTo--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x98E5572C<!--String: "(From Seeing Child Talk to Self)"--></T>
+          </V>
+          <T n="buff_type">474889<!--Buff: buff_EP20_IF_WhoTalkingTo--></T>
+        </U>
+        <V n="excluded_participants" t="enabled" />
+        <T n="remove_buff">False</T>
+        <L n="tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="ages" t="specified" />
+                <V n="species" t="specified">
+                  <U n="specified">
+                    <L n="species">
+                      <E />
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="trait">
+              <U n="trait">
+                <L n="blacklist_traits">
+                  <T>474887<!--Trait: trait_Hidden_EP20_IF_Former--></T>
+                </L>
+              </U>
+            </V>
+            <V t="buff">
+              <U n="buff">
+                <L n="blacklist">
+                  <T>474892<!--Buff: buff_EP20_IF_WhoTalkingTo_Playful--></T>
+                  <T>474889<!--Buff: buff_EP20_IF_WhoTalkingTo--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="frequency" t="on_pulse" />
+  <T n="immediate">True</T>
+</I>

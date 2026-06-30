@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="GameObject" i="object" m="objects.game_object" n="Object_EP17World_Belltower" s="401919">
+  <U n="_components">
+    <V n="focus" t="enabled">
+      <U n="enabled">
+        <V n="_focus_score" t="globally">
+          <U n="globally">
+            <E n="base">LOW</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V n="state" t="enabled">
+      <U n="enabled">
+        <L n="states">
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">401920<!--ObjectStateValue: EP17World_Values_Belltower_Default--></T>
+              </U>
+              <U>
+                <T n="key">401921<!--ObjectStateValue: EP17World_Values_Belltower_Cooldown--></T>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">401920<!--ObjectStateValue: EP17World_Values_Belltower_Default--></T>
+            </V>
+          </U>
+          <U>
+            <L n="client_states">
+              <U>
+                <T n="key">35296<!--ObjectStateValue: GenericOnOff_On--></T>
+                <U n="value">
+                  <V n="periodic_loot" t="apply_new_value">
+                    <U n="apply_new_value">
+                      <L n="periodic_loots">
+                        <U>
+                          <T n="frequency_interval">5</T>
+                          <T n="initial_delay">2</T>
+                          <L n="loots_to_apply">
+                            <T>402094<!--LootActions: loot_EP17World_Specter_Creation--></T>
+                          </L>
+                        </U>
+                      </L>
+                    </U>
+                  </V>
+                </U>
+              </U>
+              <U>
+                <T n="key">35297<!--ObjectStateValue: GenericOnOff_Off--></T>
+                <U n="value">
+                  <V n="periodic_loot" t="apply_new_value" />
+                </U>
+              </U>
+            </L>
+            <V n="default_value" t="reference">
+              <T n="reference">35297<!--ObjectStateValue: GenericOnOff_Off--></T>
+            </V>
+          </U>
+        </L>
+        <V n="timed_state_triggers" t="enabled">
+          <L n="enabled">
+            <U>
+              <T n="key">401921<!--ObjectStateValue: EP17World_Values_Belltower_Cooldown--></T>
+              <U n="value">
+                <L n="ops">
+                  <U>
+                    <L n="states_to_trigger">
+                      <T>401920<!--ObjectStateValue: EP17World_Values_Belltower_Default--></T>
+                    </L>
+                    <T n="trigger_time">360</T>
+                  </U>
+                </L>
+              </U>
+            </U>
+          </L>
+        </V>
+      </U>
+    </V>
+  </U>
+  <L n="_super_affordances">
+    <T>13328<!--ImmediateSuperInteraction: debug_Reset--></T>
+    <T>13326<!--ImmediateSuperInteraction: debug_ObjectDestroy--></T>
+    <T>103888<!--ImmediateSuperInteraction: cheat_set_as_head--></T>
+    <T>401923<!--SuperInteraction: EP17World_Belltower_View--></T>
+    <T>401924<!--SuperInteraction: EP17World_Belltower_RingBell--></T>
+    <T>13983<!--StandSuperInteraction: sim-stand--></T>
+    <T>421368<!--SuperInteraction: EP17World_RouteDummy_MacabreTourists--></T>
+    <T>421512<!--ImmediateSuperInteraction: immediate_EP17World_BellTower_ResetCooldown_debug--></T>
+  </L>
+  <U n="recycling_data">
+    <L n="recycling_values">
+      <U>
+        <E n="Bucks Type">RecycleBitsBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+      <U>
+        <E n="Bucks Type">RecyclePiecesBucks</E>
+        <T n="Value">0.5</T>
+      </U>
+    </L>
+  </U>
+</I>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="ProtestSituation" i="situation" m="situations.complex.protest_situation" n="situation_muEvent_TenantRevoltProtestors" s="344417">
+  <T n="_use_spawner_tags_on_travel">True</T>
+  <T n="allow_instanced_sims_as_protesters">True</T>
+  <T n="duration">720</T>
+  <E n="exclusivity">NORMAL</E>
+  <U n="number_of_protesters">
+    <T n="lower_bound">5</T>
+    <T n="upper_bound">6</T>
+  </U>
+  <L n="protester_exclusion_tests">
+    <L>
+      <V t="multi_unit_role_test">
+        <U n="multi_unit_role_test">
+          <V n="lot_source" t="enabled" />
+          <V n="role_to_check" t="is_property_owner" />
+        </U>
+      </V>
+    </L>
+  </L>
+  <T n="protester_job">344422<!--SituationJob: job_muEvent_TenantRevolt--></T>
+  <E n="protester_request_priority">EVENT_AUTO_FILL</E>
+  <T n="protester_role">344423<!--RoleState: role_muEvent_TenantRevolt--></T>
+  <T n="protester_search_filter">344424<!--DynamicSimFilter: simFilter_muEvent_TenantRevolt--></T>
+  <U n="protesting_situation_state">
+    <E n="attractor_point_identifier">AtPo_Tourist</E>
+    <T n="create_sign_interaction">344419<!--CreateCarriedObjectSuperInteraction: createCarry_muEvent_CreateProtestSign--></T>
+    <L n="fallback_signs">
+      <T>364756<!--SocialMixerInteraction: socials_Targeted_Friendly_CAD_TalkAboutExercise--></T>
+      <T>369050<!--Objective: objective_Skill_Romance_Level03--></T>
+      <T>369051<!--SocialMixerInteraction: mixer_social_KissNeck_targeted_romance_middleScore--></T>
+    </L>
+    <U n="interaction_of_interest">
+      <L n="affordances">
+        <T>344852<!--SuperInteraction: muEvent_TenantRevolt_PromisedBetterConditions--></T>
+        <T>351764<!--SuperInteraction: muEvent_TenantRevolt_RequestedBetterConditions--></T>
+      </L>
+    </U>
+  </U>
+  <V n="situation_end_time_string" t="show_end_time">
+    <T n="show_end_time">0xA3E17143<!--String: "Work day ends at {0.TimeShort}"--></T>
+  </V>
+  <L n="weighted_causes">
+    <U>
+      <T n="cause">344508<!--Trait: trait_Hidden_muEvent_TenantRevolt_GenericCause--></T>
+    </U>
+  </L>
+</I>

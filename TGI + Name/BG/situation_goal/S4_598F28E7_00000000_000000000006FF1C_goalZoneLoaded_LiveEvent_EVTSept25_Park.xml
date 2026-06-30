@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalZoneLoaded" i="situation_goal" m="situations.situation_goal_zone_loaded" n="goalZoneLoaded_LiveEvent_EVTSept25_Park" s="458524">
+  <V n="_display_data" t="enabled">
+    <U n="enabled">
+      <V n="instance_display_icon" t="enabled">
+        <T n="enabled" p="InGame\UI\Icons\Headlines\Final\headline_TravelTo.png">2f7d0004:00000000:a7b5f5ad9f674e37</T>
+      </V>
+      <V n="instance_display_name" t="enabled">
+        <T n="enabled">0x70287287<!--String: "Travel to a Park"--></T>
+      </V>
+      <V n="instance_display_tooltip" t="enabled">
+        <T n="enabled">0x640E5B69<!--String: "Go visit your favorite park, or any park actually.\n\nTo make things easier, add a Stuffed Animal to your Sim's inventory to place it at the park later."--></T>
+      </V>
+    </U>
+  </V>
+  <L n="_goal_loot_list">
+    <T>447711<!--SituationGoalLootActions: liveEvent_GoalLoot_CompleteQuestGoal--></T>
+  </L>
+  <L n="_post_tests">
+    <V t="zone">
+      <U n="zone">
+        <U n="zone_tests">
+          <V n="venue_type" t="enabled">
+            <U n="enabled">
+              <V n="whitelist" t="specify">
+                <U n="specify">
+                  <L n="whitelist">
+                    <T>25847<!--Venue: venue_park--></T>
+                    <T>107453<!--Venue: venue_ForestPark--></T>
+                    <T>138380<!--Venue: venue_MyshunoMeadows--></T>
+                    <T>468880<!--Venue: venue_Playground--></T>
+                  </L>
+                </U>
+              </V>
+            </U>
+          </V>
+        </U>
+      </U>
+    </V>
+  </L>
+  <V n="goal_completion_notification" t="enabled">
+    <U n="enabled">
+      <V n="icon" t="enabled">
+        <V n="enabled" t="resource_key">
+          <U n="resource_key">
+            <T n="key" p="InGame\UI\Icons\Headlines\Events\ImaginationEvent_EventTNS.png">2f7d0004:00000000:a7d998e23b3c9bc3</T>
+          </U>
+        </V>
+      </V>
+      <V n="text" t="single">
+        <T n="single">0xF29543EF<!--String: "Having reached a park, {0.SimFirstName} is ready to capture even more memories with {0.SimPronounPossessiveDependent} stuffed friend."--></T>
+      </V>
+    </U>
+  </V>
+  <T n="should_reevaluate_on_load">True</T>
+  <V n="tutorial_tip_group" t="enabled">
+    <T n="enabled">468650<!--TutorialTipGroup: tutorialTipGroup_LiveEvent_EVTSept25_Travel--></T>
+  </V>
+</I>

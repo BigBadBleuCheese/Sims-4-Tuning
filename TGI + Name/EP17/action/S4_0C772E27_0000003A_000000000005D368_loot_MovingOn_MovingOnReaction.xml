@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_MovingOn_MovingOnReaction" s="381800">
+  <L n="loot_actions">
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Object</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant" />
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x949F419C<!--String: "{0.SimName} has gracefully moved on to the Great Beyond, leaving behind a profound sense of closure and inspiration!\n\nAll nearby Sims in the household have been granted the <b>Perspectives on Death</b> trait. This trait enhances their ability to navigate grief with greater emotional resilience, increasing their chances of staying confident and composed. It also provides a boost to all Soul’s Journey gains!"--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0x9BBF437A<!--String: "Moving On"--></T>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x35A5036D<!--String: "(From a Household Member Moving On)"--></T>
+          </V>
+          <T n="buff_type">377860<!--Buff: buff_MovingOn_WhatASim--></T>
+        </U>
+        <E n="subject">ActiveHousehold</E>
+      </U>
+    </V>
+    <V t="trait_add">
+      <U n="trait_add">
+        <E n="subject">ActiveHousehold</E>
+        <T n="trait">377780<!--Trait: trait_MovingOn_PerspectivesOnDeath--></T>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x1EE0AD9D<!--String: "(From a Sim with a Burning Soul)"--></T>
+          </V>
+          <T n="buff_type">377861<!--Buff: buff_MovingOn_EmbersOfABurningSoul--></T>
+        </U>
+        <E n="subject">ActiveHousehold</E>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <L n="whitelist_traits">
+                  <T>377781<!--Trait: trait_MovingOn_BurningSoul--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+</I>

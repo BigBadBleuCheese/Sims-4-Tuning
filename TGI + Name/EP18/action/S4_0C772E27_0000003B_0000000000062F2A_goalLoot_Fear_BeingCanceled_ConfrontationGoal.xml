@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalLootActions" i="action" m="situations.situation_goal" n="goalLoot_Fear_BeingCanceled_ConfrontationGoal" s="405290">
+  <L n="goal_loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0xA984DCC6<!--String: "(From Successfully Confronting a Fear)"--></T>
+          </V>
+          <T n="buff_type">277638<!--Buff: buff_Fear_ConfrontedRecently--></T>
+        </U>
+      </U>
+    </V>
+    <V t="remove_trait">
+      <U n="remove_trait">
+        <L n="tests" />
+        <V n="trait" t="specific_trait">
+          <U n="specific_trait">
+            <T n="specific_trait">405291<!--Trait: trait_Fear_BeingCanceled--></T>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">308140<!--Buff: buff_Fear_ConfrontFearSuccess_ConfidenceGain--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="ages" t="specified">
+                  <L n="specified">
+                    <E>CHILD</E>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="remove_buff">
+      <U n="remove_buff">
+        <L n="buffs_to_remove">
+          <T>284204<!--Buff: buff_Fear_Gained_Anxiety--></T>
+          <T>284203<!--Buff: buff_Fear_Gained_Scared--></T>
+        </L>
+      </U>
+    </V>
+    <V t="remove_buff">
+      <U n="remove_buff">
+        <L n="buffs_to_remove">
+          <T>408832<!--Buff: buff_SmallBusiness_Reputation_Consequences_BeingMentored_Hidden--></T>
+          <T>408833<!--Buff: buff_SmallBusiness_Reputation_Consequences_TeachingClass_Hidden--></T>
+        </L>
+      </U>
+    </V>
+    <V t="state_change">
+      <U n="state_change">
+        <T n="state_value">414738<!--ObjectStateValue: smallBusiness_StateValues_Fear_BeingCanceled_Off--></T>
+      </U>
+    </V>
+    <V t="remove_trait">
+      <U n="remove_trait">
+        <V n="trait" t="specific_trait">
+          <U n="specific_trait">
+            <T n="specific_trait">421975<!--Trait: trait_SmallBusiness_Reputation_Consequences_FearWhimCompleted_Hidden--></T>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+</I>

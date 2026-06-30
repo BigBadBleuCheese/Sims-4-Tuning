@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="TunableSimFilter" i="sim_filter" m="filters.tunable" n="filter_SocialObservation_Familiar" s="503032">
+  <L n="_filter_terms">
+    <V t="sim_info_lod" />
+    <V t="species" />
+    <V t="is_hidden">
+      <U n="is_hidden">
+        <T n="invert_score">True</T>
+      </U>
+    </V>
+    <V t="is_hidden_relationship">
+      <U n="is_hidden_relationship">
+        <T n="invert_score">True</T>
+      </U>
+    </V>
+    <V t="relationship_bit">
+      <U n="relationship_bit">
+        <L n="white_list">
+          <T>15803<!--RelationshipBit: has_met--></T>
+        </L>
+      </U>
+    </V>
+    <V t="relationship_track">
+      <U n="relationship_track">
+        <V n="combine_strategy" t="multiply" />
+        <T n="ideal_value">65</T>
+        <T n="min_value">-15</T>
+        <T n="minimum_filter_score">0.1</T>
+        <T n="relationship_track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
+      </U>
+    </V>
+    <V t="relationship_track">
+      <U n="relationship_track">
+        <V n="combine_strategy" t="multiply" />
+        <T n="ideal_value">65</T>
+        <T n="min_value">-15</T>
+        <T n="minimum_filter_score">0.1</T>
+        <T n="relationship_track">16651<!--RelationshipTrack: LTR_Romance_Main--></T>
+      </U>
+    </V>
+  </L>
+  <V n="_household_templates_override" t="enabled">
+    <L n="enabled">
+      <T>98542<!--HouseholdTemplate: HH_template_NPC_adult_single--></T>
+    </L>
+  </V>
+  <T n="use_weighted_random">True</T>
+</I>

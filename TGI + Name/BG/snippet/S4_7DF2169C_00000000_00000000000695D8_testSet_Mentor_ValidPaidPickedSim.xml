@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="TestSetInstance" i="snippet" m="event_testing.tests" n="testSet_Mentor_ValidPaidPickedSim" s="431576">
+  <L n="test">
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="npc" t="enabled">
+            <T n="enabled">True</T>
+          </V>
+          <E n="who">PickedSim</E>
+        </U>
+      </V>
+      <V t="situation_job_test">
+        <U n="situation_job_test">
+          <T n="negate">True</T>
+          <L n="situation_jobs">
+            <T>401789<!--SituationJob: jobs_SmallBusinessEmployee_Work_Owner--></T>
+            <T>399327<!--SituationJob: jobs_SmallBusinessEmployee_Work--></T>
+          </L>
+        </U>
+      </V>
+      <V t="situation_job_test">
+        <U n="situation_job_test">
+          <T n="negate">True</T>
+          <E n="participant">PickedSim</E>
+          <L n="role_tags">
+            <E>Situation_Walkby</E>
+          </L>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="situation_job_test">
+        <U n="situation_job_test">
+          <L n="situation_jobs">
+            <T>401789<!--SituationJob: jobs_SmallBusinessEmployee_Work_Owner--></T>
+            <T>399327<!--SituationJob: jobs_SmallBusinessEmployee_Work--></T>
+          </L>
+        </U>
+      </V>
+      <V t="buff">
+        <U n="buff">
+          <E n="subject">PickedSim</E>
+          <V n="whitelist" t="enabled">
+            <L n="enabled">
+              <T>400877<!--Buff: buff_SmallBusiness_CheckedIn--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

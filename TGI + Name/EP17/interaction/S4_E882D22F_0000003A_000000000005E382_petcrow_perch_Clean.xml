@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="petcrow_perch_Clean" s="385922">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="cone">
+            <U n="cone">
+              <T n="angle">150</T>
+              <T n="ideal_radius_max">1</T>
+              <T n="ideal_radius_min">0.5</T>
+              <T n="max_radius">2</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="value" t="facing" />
+        </U>
+        <U>
+          <V n="value" t="circle">
+            <U n="circle">
+              <T n="radius">2</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <L n="_static_commodities">
+    <U>
+      <T n="desire">2</T>
+      <T n="static_commodity">400795<!--StaticCommodity: staticCommodity_EP17World_BonehildaCosplay--></T>
+    </U>
+    <U>
+      <T n="static_commodity">33808<!--StaticCommodity: StaticCommodity_MaidClean--></T>
+    </U>
+    <U>
+      <T n="static_commodity">393308<!--StaticCommodity: staticCommodity_EP17World_GRIM_Garden--></T>
+    </U>
+    <U>
+      <T n="static_commodity">424358<!--StaticCommodity: staticCommodity_EP17World_WaylonWarez_TendPetCrow--></T>
+    </U>
+  </L>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">23926<!--AnimationElement: Generic_PickUp--></T>
+      </U>
+    </U>
+  </V>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x85178BCA<!--String: "Clean Perch"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+    <E>Interaction_Clean</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="loot_list">
+          <T>385923<!--LootActions: loot_AnimalObjects_PetCrow_Clean--></T>
+          <T>381709<!--LootActions: loot_AnimalObjects_PetCrow_RelGain--></T>
+        </L>
+      </U>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all" />
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="state">
+      <U n="state">
+        <E n="operator">NOTEQUAL</E>
+        <T n="value">15132<!--CommodityBasedObjectStateValue: Dirty_Clean--></T>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

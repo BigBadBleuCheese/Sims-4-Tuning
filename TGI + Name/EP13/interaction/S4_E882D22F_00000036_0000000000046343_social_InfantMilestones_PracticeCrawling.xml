@@ -1,0 +1,528 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SocialSuperInteraction" i="interaction" m="interactions.social.social_super_interaction" n="social_InfantMilestones_PracticeCrawling" s="287555">
+  <V n="_affordance_key_override_for_autonomy" t="enabled">
+    <T n="enabled">Infant_Practice</T>
+  </V>
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>TargetSim</E>
+      </L>
+    </U>
+  </V>
+  <L n="_party_size_weight_tuning">
+    <U>
+      <T n="y">100</T>
+    </U>
+    <U>
+      <T n="x">1</T>
+      <T n="y">100</T>
+    </U>
+    <U>
+      <T n="x">2</T>
+      <T n="y">50</T>
+    </U>
+    <U>
+      <T n="x">3</T>
+      <T n="y">0</T>
+    </U>
+    <U>
+      <T n="x">4</T>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <T n="_social_group_type">316498<!--JigGroup: group_Infant_PracticeCrawling--></T>
+  <V n="affordance_to_push_on_target" t="push_affordance">
+    <T n="push_affordance">316499<!--SocialSuperInteraction: social_InfantMilestones_PracticeCrawling_Listen--></T>
+  </V>
+  <T n="attention_cost">0</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="time_based">
+                <U n="time_based">
+                  <T n="max_time">30</T>
+                  <T n="min_time">30</T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+            <E n="progress_bar_action">FORCE_USE_CONDITION</E>
+          </U>
+        </V>
+        <V t="reference">
+          <T n="reference">157477<!--ExitCondition: ExitCondition_MotiveNearFail_Energy_TargetSim--></T>
+        </V>
+        <V t="reference">
+          <T n="reference">28162<!--ExitCondition: ExitCondition_EmotionBored--></T>
+        </V>
+        <V t="reference">
+          <T n="reference">157478<!--ExitCondition: exitCondition_MotivenearFailHunger_TargetSim--></T>
+        </V>
+      </L>
+      <V n="content" t="staging_content">
+        <U n="staging_content">
+          <U n="content_set">
+            <L n="affordance_links">
+              <T>287544<!--SocialMixerInteraction: practiceCrawling_Mixer_Picker--></T>
+              <T>333199<!--SocialMixerInteraction: practiceCrawling_Mixer_Picker_Cry--></T>
+            </L>
+          </U>
+          <T n="only_use_mixers_from_SI">True</T>
+        </U>
+      </V>
+      <V n="periodic_stat_change" t="enabled">
+        <U n="enabled">
+          <L n="operations">
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="amount">1</T>
+                <T n="stat">286574<!--Commodity: commodity_InfantMilestones_Crawling--></T>
+                <L n="subject">
+                  <E>TargetSim</E>
+                </L>
+              </U>
+            </V>
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="amount">0.3</T>
+                <T n="stat">286580<!--Commodity: commodity_InfantMilestones_PullToStand--></T>
+                <L n="subject">
+                  <E>TargetSim</E>
+                </L>
+              </U>
+            </V>
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="amount">1.2</T>
+                <T n="stat">142037<!--Commodity: motive_Toddler_Attention--></T>
+                <L n="subject">
+                  <E>TargetSim</E>
+                </L>
+              </U>
+            </V>
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="amount">0.78</T>
+                <T n="stat">16658<!--Commodity: motive_Social--></T>
+              </U>
+            </V>
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="advertise">True</T>
+                <T n="amount">0.75</T>
+                <T n="stat">16655<!--Commodity: motive_Fun--></T>
+                <L n="subject">
+                  <E>TargetSim</E>
+                </L>
+              </U>
+            </V>
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="advertise">True</T>
+                <T n="amount">0.6</T>
+                <T n="stat">16655<!--Commodity: motive_Fun--></T>
+              </U>
+            </V>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>162659<!--LootActions: loot_Commodity_Culling_GhostAdd_target--></T>
+        </L>
+      </U>
+    </V>
+    <V t="broadcaster">
+      <U n="broadcaster">
+        <L n="broadcaster_types">
+          <U>
+            <T n="item">317887<!--Broadcaster: broadcaster_AttentionJealousy_FindDependents--></T>
+            <L n="test">
+              <L>
+                <V t="relationship">
+                  <U n="relationship">
+                    <U n="required_relationship_bits">
+                      <L n="match_any">
+                        <T>8805<!--RelationshipBit: family_Target_IsSonOrDaughterOf_Actor--></T>
+                        <T>152851<!--RelationshipBit: toddler_notParent_Actor_IsCareDependentOf_Target--></T>
+                      </L>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V t="broadcaster">
+      <U n="broadcaster">
+        <L n="broadcaster_types">
+          <U>
+            <T n="item">317088<!--Broadcaster: broadcaster_SiblingJealousy_FindSiblings--></T>
+            <L n="test">
+              <L>
+                <V t="relationship">
+                  <U n="relationship">
+                    <U n="required_relationship_bits">
+                      <L n="match_any">
+                        <T>8805<!--RelationshipBit: family_Target_IsSonOrDaughterOf_Actor--></T>
+                        <T>152851<!--RelationshipBit: toddler_notParent_Actor_IsCareDependentOf_Target--></T>
+                      </L>
+                    </U>
+                  </U>
+                </V>
+              </L>
+            </L>
+          </U>
+        </L>
+        <E n="participant">TargetSim</E>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>166752<!--LootActions: loot_Commodity_Motive_Fun_Gain_Small--></T>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>332209<!--LootActions: loot_InfantMilestones_SocializationBoost_Target--></T>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="basic_reserve_object" t="enabled">
+    <U n="enabled">
+      <L n="subject_list">
+        <U />
+      </L>
+    </U>
+  </V>
+  <T n="can_acquire_posture_ownership">False</T>
+  <V n="canonical_animation" t="enabled">
+    <U n="enabled">
+      <T n="factory">287643<!--AnimationElement: animation_InfantMilestones_PracticeCrawling_Idles--></T>
+    </U>
+  </V>
+  <T n="category">318696<!--PieMenuCategory: sim_SubCat_Friendly_Activities--></T>
+  <V n="content_score" t="enabled">
+    <U n="enabled">
+      <T n="base_score">5</T>
+    </U>
+  </V>
+  <T n="display_name">0xB93A5230<!--String: "Practice Crawling"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <V n="idle_animation" t="disabled" />
+  <T n="ignore_group_socials">False</T>
+  <L n="interaction_category_tags">
+    <E>Interaction_SocialSuper</E>
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+    <E>Interaction_SocialAll</E>
+    <E>Interaction_Social_Contagious</E>
+  </L>
+  <T n="invite_in_after_interaction">False</T>
+  <U n="listen_animation">
+    <T o="true" n="factory" />
+  </U>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <V n="animation_ref" t="enabled">
+              <U n="enabled">
+                <T n="factory">303330<!--AnimationElement: animation_InfantMilestones_PracticeCrawling_Outcomes_RollsInfantOver--></T>
+              </U>
+            </V>
+            <T n="force_outcome_on_exit">True</T>
+            <L n="loot_list">
+              <T>11036<!--LootActions: Rel_Gain_Small--></T>
+              <T>165339<!--LootActions: loot_ParentingSkill_Tiny--></T>
+              <T>262325<!--LootActions: loot_Commodity_Motive_Social_Gain_Small--></T>
+              <T>308972<!--LootActions: loot_Infant_AttentionGain_TargetSim_Small--></T>
+              <T>315200<!--LootActions: loot_Sentiment_AddSentiment_Adoring_infantPreferredSim_TargetAboutActor--></T>
+              <T>274026<!--LootActions: loot_Infant_Attachment_Gain_Large--></T>
+              <T>275650<!--LootActions: loot_Infant_Attachment_PositiveAffection--></T>
+            </L>
+          </U>
+        </U>
+      </L>
+      <L n="prioritized_tested_outcomes">
+        <U>
+          <U n="outcome">
+            <V n="animation_ref" t="enabled">
+              <U n="enabled">
+                <T n="factory">303326<!--AnimationElement: animation_InfantMilestones_PracticeCrawling_Outcomes_ScootForward--></T>
+              </U>
+            </V>
+            <L n="continuation">
+              <U>
+                <E n="actor">TargetSim</E>
+                <T n="affordance">327739<!--SuperInteraction: infantMilestones_Anticipation_Start_Big--></T>
+                <E n="target">TargetSim</E>
+              </U>
+            </L>
+            <T n="force_outcome_on_exit">True</T>
+          </U>
+          <L n="tests">
+            <L>
+              <V t="statistic">
+                <U n="statistic">
+                  <T n="stat">286574<!--Commodity: commodity_InfantMilestones_Crawling--></T>
+                  <V n="threshold" t="value_threshold">
+                    <U n="value_threshold">
+                      <T n="value">99</T>
+                    </U>
+                  </V>
+                  <E n="who">TargetSim</E>
+                </U>
+              </V>
+              <V t="motive">
+                <U n="motive">
+                  <L n="stats">
+                    <T>16652<!--Commodity: motive_Bladder--></T>
+                    <T>16654<!--Commodity: motive_Energy--></T>
+                    <T>16656<!--Commodity: motive_Hunger--></T>
+                  </L>
+                  <U n="threshold">
+                    <T n="value">-90</T>
+                  </U>
+                  <E n="who">TargetSim</E>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">303330<!--AnimationElement: animation_InfantMilestones_PracticeCrawling_Outcomes_RollsInfantOver--></T>
+                  </U>
+                </V>
+                <T n="force_outcome_on_exit">True</T>
+                <L n="loot_list">
+                  <T>11036<!--LootActions: Rel_Gain_Small--></T>
+                  <T>165339<!--LootActions: loot_ParentingSkill_Tiny--></T>
+                  <T>262325<!--LootActions: loot_Commodity_Motive_Social_Gain_Small--></T>
+                  <T>308972<!--LootActions: loot_Infant_AttentionGain_TargetSim_Small--></T>
+                  <T>315200<!--LootActions: loot_Sentiment_AddSentiment_Adoring_infantPreferredSim_TargetAboutActor--></T>
+                  <T>274026<!--LootActions: loot_Infant_Attachment_Gain_Large--></T>
+                  <T>275650<!--LootActions: loot_Infant_Attachment_PositiveAffection--></T>
+                </L>
+              </U>
+            </U>
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">303329<!--AnimationElement: animation_InfantMilestones_PracticeCrawling_Outcomes_RollsSleepingInfantOver--></T>
+                  </U>
+                </V>
+                <T n="force_outcome_on_exit">True</T>
+                <L n="loot_list">
+                  <T>11036<!--LootActions: Rel_Gain_Small--></T>
+                  <T>165339<!--LootActions: loot_ParentingSkill_Tiny--></T>
+                  <T>262325<!--LootActions: loot_Commodity_Motive_Social_Gain_Small--></T>
+                  <T>308972<!--LootActions: loot_Infant_AttentionGain_TargetSim_Small--></T>
+                  <T>315200<!--LootActions: loot_Sentiment_AddSentiment_Adoring_infantPreferredSim_TargetAboutActor--></T>
+                  <T>274026<!--LootActions: loot_Infant_Attachment_Gain_Large--></T>
+                  <T>275650<!--LootActions: loot_Infant_Attachment_PositiveAffection--></T>
+                </L>
+              </U>
+            </U>
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">303328<!--AnimationElement: animation_InfantMilestones_PracticeCrawling_Outcomes_RollsCryingInfantOver--></T>
+                  </U>
+                </V>
+                <T n="force_outcome_on_exit">True</T>
+                <L n="loot_list">
+                  <T>11036<!--LootActions: Rel_Gain_Small--></T>
+                  <T>165339<!--LootActions: loot_ParentingSkill_Tiny--></T>
+                  <T>262325<!--LootActions: loot_Commodity_Motive_Social_Gain_Small--></T>
+                  <T>308972<!--LootActions: loot_Infant_AttentionGain_TargetSim_Small--></T>
+                  <T>315200<!--LootActions: loot_Sentiment_AddSentiment_Adoring_infantPreferredSim_TargetAboutActor--></T>
+                </L>
+              </U>
+            </U>
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">303327<!--AnimationElement: animation_InfantMilestones_PracticeCrawling_Outcomes_InfantRollsOver--></T>
+                  </U>
+                </V>
+                <T n="force_outcome_on_exit">True</T>
+                <L n="loot_list">
+                  <T>11036<!--LootActions: Rel_Gain_Small--></T>
+                  <T>165339<!--LootActions: loot_ParentingSkill_Tiny--></T>
+                  <T>262325<!--LootActions: loot_Commodity_Motive_Social_Gain_Small--></T>
+                  <T>308972<!--LootActions: loot_Infant_AttentionGain_TargetSim_Small--></T>
+                  <T>315200<!--LootActions: loot_Sentiment_AddSentiment_Adoring_infantPreferredSim_TargetAboutActor--></T>
+                  <T>274026<!--LootActions: loot_Infant_Attachment_Gain_Large--></T>
+                  <T>275650<!--LootActions: loot_Infant_Attachment_PositiveAffection--></T>
+                </L>
+              </U>
+            </U>
+          </L>
+        </U>
+      </L>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T n="key" p="InEP13\UI\Icons\PieMenu\PieMenu_Milestone.png">2f7d0004:00000000:81afa02926deee4b</T>
+      </U>
+    </V>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">True</T>
+  </U>
+  <T n="relationship_scoring">True</T>
+  <E n="scoring_priority">NORMAL</E>
+  <V n="sim_affinity_posture_scoring_data" t="enabled">
+    <U n="enabled">
+      <L n="my_scoring">
+        <U>
+          <V n="affinity_strategy" t="relationship_based" />
+          <T n="negate_tag">True</T>
+          <E n="running_interaction_tag">Sleeping</E>
+        </U>
+        <U>
+          <V n="affinity_strategy" t="avoid" />
+          <E n="running_interaction_tag">Very_Loud</E>
+        </U>
+      </L>
+      <L n="my_tags">
+        <E>Loud</E>
+        <E>Chat</E>
+      </L>
+    </U>
+  </V>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="exclude_all" />
+    </U>
+  </V>
+  <E n="target_type">TARGET</E>
+  <L n="test_autonomous">
+    <L>
+      <V t="statistic">
+        <U n="statistic">
+          <T n="stat">16656<!--Commodity: motive_Hunger--></T>
+          <V n="threshold" t="value_threshold">
+            <U n="value_threshold">
+              <T n="value">-50</T>
+            </U>
+          </V>
+          <E n="who">TargetSim</E>
+        </U>
+      </V>
+      <V t="statistic">
+        <U n="statistic">
+          <T n="stat">16654<!--Commodity: motive_Energy--></T>
+          <V n="threshold" t="value_threshold">
+            <U n="value_threshold">
+              <T n="value">-50</T>
+            </U>
+          </V>
+          <E n="who">TargetSim</E>
+        </U>
+      </V>
+    </L>
+  </L>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">129700<!--TestSetInstance: testSet_HasMet--></T>
+    </V>
+    <V t="developmental_milestone">
+      <U n="developmental_milestone">
+        <T n="developmental_milestone">286480<!--DevelopmentalMilestone: infantMilestones_GrossMotor_Creep--></T>
+        <E n="subject">TargetSim</E>
+      </U>
+    </V>
+    <V t="developmental_milestone">
+      <U n="developmental_milestone">
+        <T n="developmental_milestone">286479<!--DevelopmentalMilestone: infantMilestones_GrossMotor_Crawl--></T>
+        <T n="invert">True</T>
+        <E n="subject">TargetSim</E>
+      </U>
+    </V>
+    <V t="developmental_milestone">
+      <U n="developmental_milestone">
+        <T n="developmental_milestone">286486<!--DevelopmentalMilestone: infantMilestones_GrossMotor_SitUp--></T>
+        <T n="invert">False</T>
+        <E n="subject">TargetSim</E>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>280281<!--Buff: buff_AutonomyMod_Posture_Crib--></T>
+          <T>280282<!--Buff: buff_AutonomyMod_Posture_Playmat--></T>
+          <T>280280<!--Buff: buff_AutonomyMod_Posture_HighChair--></T>
+        </L>
+        <E n="subject">TargetSim</E>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">331642<!--TestSetInstance: testSetInstance_Infants_TargetNotInWater--></T>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

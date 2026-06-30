@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SocialSuperInteraction" i="interaction" m="interactions.social.social_super_interaction" n="triviaBox_thumbsUp_playing" s="359332">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="posture">
+            <U n="posture">
+              <L n="posture_manifest_tuning">
+                <U>
+                  <V n="posture_type" t="enabled">
+                    <T n="enabled">15535<!--Posture: posture_Sit--></T>
+                  </V>
+                </U>
+                <U>
+                  <V n="posture_type" t="enabled">
+                    <T n="enabled">15527<!--Posture: posture_Kneel--></T>
+                  </V>
+                </U>
+              </L>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Object</E>
+      </L>
+    </U>
+  </V>
+  <L n="_party_size_weight_tuning">
+    <U>
+      <T n="y">100</T>
+    </U>
+    <U>
+      <T n="x">1</T>
+      <T n="y">100</T>
+    </U>
+    <U>
+      <T n="x">2</T>
+      <T n="y">50</T>
+    </U>
+    <U>
+      <T n="x">3</T>
+      <T n="y">0</T>
+    </U>
+    <U>
+      <T n="x">4</T>
+    </U>
+  </L>
+  <V n="_saveable" t="enabled" />
+  <T n="_social_group_type">369247<!--SocialGameGroup: socialGameGroup_triviaBox_games--></T>
+  <T n="allow_autonomous">False</T>
+  <T n="attention_cost">0</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="time_based">
+                <U n="time_based">
+                  <T n="max_time">90</T>
+                  <T n="min_time">90</T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+            <L n="loot_actions">
+              <T>366017<!--LootActions: loot_triviaBox_thumbsUp_buffRewards--></T>
+            </L>
+          </U>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="group_based">
+                <U n="group_based">
+                  <U n="threshold">
+                    <E n="comparison">LESS</E>
+                    <T n="value">2</T>
+                  </U>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+            <L n="loot_actions">
+              <T>383578<!--LootActions: loot_triviaBox_thumbsUp_wooWho_gameEnd_failsafe--></T>
+            </L>
+          </U>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="buff_based">
+                <U n="buff_based">
+                  <T n="buff">366016<!--Buff: buff_triviaBox_thumbsUp_tense--></T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_CANCEL</E>
+          </U>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="buff_based">
+                <U n="buff_based">
+                  <T n="buff">383577<!--Buff: buff_TriviaBox_gameEnd_abort--></T>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_CANCEL</E>
+          </U>
+        </V>
+        <V t="list_reference">
+          <T n="list_reference">40705<!--ExitConditionList: ExitConditionList_MotivesNearFail--></T>
+        </V>
+        <V t="list_reference">
+          <T n="list_reference">40144<!--ExitConditionList: ExitConditionList_EmotionMiserable--></T>
+        </V>
+      </L>
+      <V n="content" t="staging_content">
+        <U n="staging_content">
+          <U n="content_set">
+            <L n="affordance_links">
+              <T>365312<!--SocialMixerInteraction: triviabox_thumbsUp_activePlayer_guess_crying--></T>
+              <T>362431<!--SocialMixerInteraction: triviabox_thumbsUp_activePlayer_guess_scream--></T>
+              <T>362432<!--SocialMixerInteraction: triviabox_thumbsUp_activePlayer_guess_surprised--></T>
+              <T>362430<!--SocialMixerInteraction: triviabox_thumbsUp_activePlayer_guess_sweatSmile--></T>
+              <T>365313<!--SocialMixerInteraction: triviabox_thumbsUp_activePlayer_guess_mindBlown--></T>
+              <T>365314<!--SocialMixerInteraction: triviabox_thumbsUp_activePlayer_guess_thinking--></T>
+              <T>365315<!--SocialMixerInteraction: triviabox_thumbsUp_activePlayer_guess_vomit--></T>
+              <T>365316<!--SocialMixerInteraction: triviabox_thumbsUp_activePlayer_guess_zipperMouth--></T>
+            </L>
+          </U>
+          <T n="only_use_mixers_from_SI">True</T>
+        </U>
+      </V>
+      <V n="periodic_stat_change" t="enabled">
+        <U n="enabled">
+          <L n="operations">
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="amount">1.5</T>
+                <E n="periodic_change_behavior">APPLY_AT_INTERVAL_ONLY</E>
+                <T n="stat">16655<!--Commodity: motive_Fun--></T>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+              </U>
+            </V>
+            <V t="statistic_change">
+              <U n="statistic_change">
+                <T n="amount">1.5</T>
+                <E n="periodic_change_behavior">APPLY_AT_INTERVAL_ONLY</E>
+                <T n="stat">16658<!--Commodity: motive_Social--></T>
+                <L n="subject">
+                  <E>Actor</E>
+                </L>
+              </U>
+            </V>
+            <V t="reference">
+              <T n="reference">249721<!--PeriodicStatChangeOperation: periodicStatChangeOperation_Lifestyles_Progress_Sedentary--></T>
+            </V>
+            <V t="reference">
+              <T n="reference">249739<!--PeriodicStatChangeOperation: periodicStatChangeOperation_Lifestyles_Liked_Sedentary--></T>
+            </V>
+            <V t="reference">
+              <T n="reference">249843<!--PeriodicStatChangeOperation: periodicStatChangeOperation_Lifestyles_Progress_AdreanlineSeeker_Mundane--></T>
+            </V>
+            <V t="reference">
+              <T n="reference">250954<!--PeriodicStatChangeOperation: periodicStatChangeOperation_Lifestyles_Disliked_AdrenalineSeeker--></T>
+            </V>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>162659<!--LootActions: loot_Commodity_Culling_GhostAdd_target--></T>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x9C09275F<!--String: "(From Being in a social group with at least 3 Sims)"--></T>
+          </V>
+          <T n="buff_type">125555<!--Buff: buff_Trait_WithMyFriends--></T>
+        </U>
+        <L n="subject">
+          <E>Actor</E>
+          <E>SocialGroupSims</E>
+          <E>TargetSim</E>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="social_group">
+              <U n="social_group">
+                <V n="threshold" t="enabled">
+                  <U n="enabled">
+                    <T n="value">3</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="join_game">
+      <U n="join_game">
+        <T n="ensure_setup">True</T>
+        <T n="game_type">358344<!--GameRules: gameRules_triviaBox_thumbsUpGame--></T>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>362508<!--LootActions: loot_triviaBox_thumbsUp_trackerClear--></T>
+        </L>
+        <V n="timing" t="at_end">
+          <U n="at_end">
+            <E n="criticality">OnCancelOrException</E>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="stat_increment_decrement">
+      <U n="stat_increment_decrement">
+        <T n="stat">364537<!--Statistic: triviaBox_thumbsUp_wooWho_playerCount--></T>
+      </U>
+    </V>
+    <V t="buff_fire_and_forget">
+      <U n="buff_fire_and_forget">
+        <U n="buff">
+          <T n="buff_type">503811<!--Buff: buff_TriviaBox_Cooldown--></T>
+        </U>
+      </U>
+    </V>
+  </L>
+  <V n="basic_reserve_object" t="enabled">
+    <U n="enabled">
+      <L n="subject_list">
+        <U>
+          <V n="reserve_type" t="social_group_exclusive">
+            <U n="social_group_exclusive">
+              <T n="reserve_immediately">True</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </V>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0x477DD999<!--String: "Playing Thumbs-Up! Game"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <V n="idle_animation" t="enabled">
+    <U n="enabled">
+      <T n="factory">361340<!--AnimationElement: triviaBox_thumbsUp_wooWho_listenLoop--></T>
+    </U>
+  </V>
+  <T n="ignore_group_socials">False</T>
+  <L n="interaction_category_tags">
+    <E>Interaction_SocialSuper</E>
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+    <E>Interaction_SocialAll</E>
+    <E>Interaction_PlayGame</E>
+    <E>Interaction_Social_Contagious</E>
+  </L>
+  <T n="invite_in_after_interaction">True</T>
+  <L n="joinable">
+    <U>
+      <V n="invite_available" t="enabled">
+        <U n="enabled">
+          <V n="loc_custom_invite_name" t="enabled">
+            <T n="enabled">0xD8749E34<!--String: "Invite {1.SimFirstName} to Play Thumbs-Up! Game"--></T>
+          </V>
+        </U>
+      </V>
+      <V n="join_affordance" t="affordance">
+        <U n="affordance">
+          <V n="value" t="custom">
+            <T n="custom">370773<!--SocialSuperInteraction: triviaBox_thumbsUp_gameInProgress_join--></T>
+          </V>
+        </U>
+      </V>
+      <V n="join_available" t="enabled">
+        <U n="enabled">
+          <V n="loc_custom_join_name" t="enabled">
+            <T n="enabled">0x1A8D9E70<!--String: "Join {1.SimFirstName}'s Thumbs-Up! Game"--></T>
+          </V>
+        </U>
+      </V>
+    </U>
+  </L>
+  <U n="listen_animation">
+    <T o="true" n="factory" />
+  </U>
+  <U n="posture_preferences">
+    <T n="apply_posture_costs">True</T>
+    <L n="posture_cost_overrides">
+      <U>
+        <T n="key">15527<!--Posture: posture_Kneel--></T>
+        <T n="value">20</T>
+      </U>
+      <U>
+        <T n="key">15537<!--MobilePosture: posture_Stand--></T>
+        <T n="value">100</T>
+      </U>
+    </L>
+  </U>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">True</T>
+  </U>
+  <T n="relationship_scoring">True</T>
+  <E n="scoring_priority">NORMAL</E>
+  <V n="sim_affinity_posture_scoring_data" t="enabled">
+    <U n="enabled">
+      <L n="my_scoring">
+        <U>
+          <V n="affinity_strategy" t="relationship_based" />
+          <T n="negate_tag">True</T>
+          <E n="running_interaction_tag">Sleeping</E>
+        </U>
+        <U>
+          <V n="affinity_strategy" t="avoid" />
+          <E n="running_interaction_tag">Very_Loud</E>
+        </U>
+      </L>
+      <L n="my_tags">
+        <E>Loud</E>
+        <E>Chat</E>
+      </L>
+    </U>
+  </V>
+  <T n="subaction_selection_weight">1</T>
+  <V n="super_affordance_compatibility" t="literal">
+    <U n="literal">
+      <V n="default_inclusion" t="include_all">
+        <U n="include_all">
+          <L n="exclude_affordances">
+            <T>13998<!--SocialSuperInteraction: sim_Chat--></T>
+          </L>
+        </U>
+      </V>
+    </U>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">TargetSim</E>
+      </U>
+    </V>
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="game_component">
+      <U n="game_component">
+        <V n="current_game_rule" t="enabled">
+          <U n="enabled">
+            <T n="negate">True</T>
+            <T n="rule">360123<!--GameRules: gameRules_triviaBox_wooWho_game--></T>
+          </U>
+        </V>
+        <V n="number_of_players" t="enabled">
+          <U n="enabled">
+            <T n="upper_bound">6</T>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

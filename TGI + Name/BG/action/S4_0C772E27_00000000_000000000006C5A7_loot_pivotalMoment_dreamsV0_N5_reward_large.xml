@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_pivotalMoment_dreamsV0_N5_reward_large" s="443815">
+  <L n="loot_actions">
+    <V t="money_loot">
+      <U n="money_loot">
+        <V n="amount" t="literal">
+          <U n="literal">
+            <T n="value">2500</T>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_change">
+        <U n="statistic_change">
+          <T n="advertise">False</T>
+          <T n="amount">1</T>
+          <T n="stat">447830<!--Statistic: statistic_dreamsv0_N5_objectiveCounter--></T>
+          <L n="subject">
+            <E>ActiveHousehold</E>
+          </L>
+        </U>
+      </V>
+    </V>
+    <V t="event">
+      <U n="event">
+        <E n="test_event">event_DreamsV0_DLC</E>
+        <L n="tests">
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">447830<!--Statistic: statistic_dreamsv0_N5_objectiveCounter--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <T n="value">2</T>
+                  </U>
+                </V>
+                <E n="who">ActiveHousehold</E>
+              </U>
+            </V>
+            <V t="experiment_group">
+              <U n="experiment_group">
+                <E n="experiment_name">N5_DreamsV0_DLC</E>
+                <L n="groups">
+                  <T>1</T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="event">
+      <U n="event">
+        <E n="test_event">event_DreamsV0_DLC</E>
+        <L n="tests">
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">447830<!--Statistic: statistic_dreamsv0_N5_objectiveCounter--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <T n="value">5</T>
+                  </U>
+                </V>
+                <E n="who">ActiveHousehold</E>
+              </U>
+            </V>
+            <V t="experiment_group">
+              <U n="experiment_group">
+                <E n="experiment_name">N5_DreamsV0_DLC</E>
+                <L n="groups">
+                  <T>2</T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="statistics">
+      <V n="statistics" t="statistic_change">
+        <U n="statistic_change">
+          <T n="amount">-1</T>
+          <T n="stat">458876<!--Statistic: statistic_dreamsv0_N5_rewardCounter_large--></T>
+          <L n="subject">
+            <E>ActorHouseholdMembers</E>
+          </L>
+        </U>
+      </V>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">443813<!--Buff: buff_DreamsV0_N5_rewardTrigger_large--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="statistic">
+              <U n="statistic">
+                <T n="stat">458876<!--Statistic: statistic_dreamsv0_N5_rewardCounter_large--></T>
+                <V n="threshold" t="value_threshold">
+                  <U n="value_threshold">
+                    <E n="comparison">GREATER</E>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>443813<!--Buff: buff_DreamsV0_N5_rewardTrigger_large--></T>
+          </L>
+          <E n="subject">ActorHouseholdMembers</E>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

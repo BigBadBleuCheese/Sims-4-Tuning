@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="TestSetInstance" i="snippet" m="event_testing.tests" n="testSet_SmallBusiness_CanOpenBusiness" s="383889">
+  <L n="test">
+    <L>
+      <V t="small_business_ownership_test" />
+      <V t="is_small_business_open">
+        <U n="is_small_business_open">
+          <T n="negate">True</T>
+          <E n="participant">Actor</E>
+        </U>
+      </V>
+      <V t="test_set_reference">
+        <T n="test_set_reference">402348<!--TestSetInstance: testSetInstance_Venue_AllowableSmallBusinessVenues--></T>
+      </V>
+      <V t="small_business_is_zone_assigned_allowed">
+        <U n="small_business_is_zone_assigned_allowed">
+          <E n="participant">Actor</E>
+          <V n="tooltip" t="enabled">
+            <T n="enabled">0x7CECF613<!--String: "This Small Business is not currently assigned to operate on this lot. This may be changed in the Business Lot Assignment of the Small Business Settings."--></T>
+          </V>
+        </U>
+      </V>
+      <V t="is_small_business_open">
+        <U n="is_small_business_open">
+          <T n="negate">True</T>
+          <V n="tooltip" t="enabled">
+            <T n="enabled">0x6BBB4037<!--String: "Another Small Business is already open!"--></T>
+          </V>
+        </U>
+      </V>
+      <V t="club_gathering_test">
+        <U n="club_gathering_test">
+          <V n="club" t="use_any_club" />
+          <V n="club_gathering_status" t="enabled">
+            <V n="enabled" t="No Gathering Exists" />
+          </V>
+          <E n="subject">Actor</E>
+          <V n="subject_club_gathering_status" t="enabled">
+            <V n="enabled" t="Not In Gathering" />
+          </V>
+          <V n="tooltip" t="enabled">
+            <T n="enabled">0x68394FCA<!--String: "Cannot open a Small Business during a Club Gathering!"--></T>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

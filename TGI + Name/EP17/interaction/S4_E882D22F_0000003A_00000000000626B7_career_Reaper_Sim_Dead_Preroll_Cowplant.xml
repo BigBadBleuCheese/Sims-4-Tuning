@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="career_Reaper_Sim_Dead_Preroll_Cowplant" s="403127">
+  <L n="_constraints">
+    <U>
+      <L n="constraints">
+        <U>
+          <V n="value" t="circle">
+            <U n="circle">
+              <T n="radius">8</T>
+              <T n="require_los">False</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <V n="_icon" t="participant">
+    <U n="participant">
+      <L n="participant_type">
+        <E>Actor</E>
+      </L>
+    </U>
+  </V>
+  <V n="_saveable" t="enabled" />
+  <L n="_static_commodities">
+    <U>
+      <T n="static_commodity">403267<!--StaticCommodity: commodity_RoleAutonomy_ReaperCareer_DeadSim_Cowplant--></T>
+    </U>
+  </L>
+  <T n="allow_autonomous">True</T>
+  <T n="allow_from_world">True</T>
+  <T n="allow_user_directed">False</T>
+  <T n="allowed_to_combine">False</T>
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="flexible_length">
+    <U n="flexible_length">
+      <L n="conditional_actions">
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="buff_based">
+                <U n="buff_based">
+                  <T n="buff">393067<!--Buff: buff_Career_Reaper_Hidden_DeadSim_Revive--></T>
+                  <E n="timing">ON_ADD</E>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+        <V t="literal">
+          <U n="literal">
+            <L n="conditions">
+              <V t="situation_based">
+                <U n="situation_based">
+                  <L n="situation_types">
+                    <T>403268<!--CareerEventSituation: careerEventSituation_ReaperCareer_Catastrophic_Comedian_Office--></T>
+                    <T>403269<!--CareerEventSituation: careerEventSituation_ReaperCareer_Catastrophic_Cowplant_Office--></T>
+                    <T>381765<!--CareerEventSituation: eventSituation_ReaperCareer_High_Capture--></T>
+                    <T>381768<!--CareerEventSituation: eventSituation_ReaperCareer_High_Haunt--></T>
+                    <T>381767<!--CareerEventSituation: eventSituation_ReaperCareer_High_Haunt01--></T>
+                    <T>381766<!--CareerEventSituation: eventSituation_ReaperCareer_High_Solo--></T>
+                    <T>381942<!--CareerEventSituation: eventSituation_ReaperCareer_High_SoloPlea--></T>
+                    <T>381769<!--CareerEventSituation: eventSituation_ReaperCareer_Low_Day01--></T>
+                    <T>381770<!--CareerEventSituation: eventSituation_ReaperCareer_Low_GrimReaping--></T>
+                    <T>400770<!--CareerEventSituation: eventSituation_ReaperCareer_Low_HQSabotage--></T>
+                    <T>381773<!--CareerEventSituation: eventSituation_ReaperCareer_Mid_Capture--></T>
+                    <T>381772<!--CareerEventSituation: eventSituation_ReaperCareer_Mid_Capture01--></T>
+                    <T>381774<!--CareerEventSituation: eventSituation_ReaperCareer_Mid_GrimReapingPlea--></T>
+                    <T>381786<!--CareerEventSituation: eventSituation_ReaperCareer_Mid_Solo--></T>
+                    <T>381785<!--CareerEventSituation: eventSituation_ReaperCareer_Mid_Solo01--></T>
+                    <T>381941<!--CareerEventSituation: eventSituation_ReaperCareer_Mid_SoloPlea--></T>
+                  </L>
+                </U>
+              </V>
+            </L>
+            <E n="interaction_action">EXIT_NATURALLY</E>
+          </U>
+        </V>
+      </L>
+      <V n="content" t="looping_content">
+        <U n="looping_content">
+          <U n="animation_ref">
+            <T n="factory">403765<!--AnimationElement: career_Reaper_DeadOnGround--></T>
+          </U>
+        </U>
+      </V>
+      <T n="start_autonomous_inertial">False</T>
+    </U>
+  </V>
+  <L n="basic_extras">
+    <V t="broadcaster">
+      <U n="broadcaster">
+        <L n="broadcaster_types">
+          <U>
+            <T n="item">393948<!--Broadcaster: broadcaster_ReactionDeath_ReaperCareer--></T>
+          </U>
+        </L>
+      </U>
+    </V>
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>184202<!--LootActions: loot_Temperature_VFX_ColdBreath_Removal--></T>
+        </L>
+        <V n="timing" t="at_beginning" />
+      </U>
+    </V>
+  </L>
+  <L n="basic_liabilities">
+    <V t="critical_priority">
+      <U n="critical_priority">
+        <E n="priority_on_push">Critical</E>
+        <E n="priority_on_run">Critical</E>
+      </U>
+    </V>
+    <V t="save_lock">
+      <U n="save_lock">
+        <T n="save_lock_tooltip">0x58E0B681<!--String: "You cannot do this while a Sim is dying!"--></T>
+      </U>
+    </V>
+  </L>
+  <V n="basic_reserve_object" t="disabled" />
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xEBEFE23F<!--String: "Dead"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <T n="ensemble_scoring">False</T>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="none" />
+  <E n="scoring_priority">VERY HIGH</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <V n="test_disallow_while_running" t="enabled">
+    <U n="enabled">
+      <T n="test_self">True</T>
+    </U>
+  </V>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="situation_job_test">
+      <U n="situation_job_test">
+        <L n="situation_jobs">
+          <T>383317<!--SituationJob: job_Career_Reaper_DeadSim--></T>
+          <T>392122<!--SituationJob: job_Career_Reaper_DeadSim_Premade--></T>
+          <T>392121<!--SituationJob: job_Career_Reaper_DeadSim_Townie--></T>
+          <T>401361<!--SituationJob: job_Career_Reaper_Catastrophic_Deceased--></T>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <L n="blacklist">
+          <T>393067<!--Buff: buff_Career_Reaper_Hidden_DeadSim_Revive--></T>
+        </L>
+      </U>
+    </V>
+    <V t="situation_running_test">
+      <U n="situation_running_test">
+        <V n="situation_whitelist" t="enabled">
+          <L n="enabled">
+            <T>403268<!--CareerEventSituation: careerEventSituation_ReaperCareer_Catastrophic_Comedian_Office--></T>
+            <T>403269<!--CareerEventSituation: careerEventSituation_ReaperCareer_Catastrophic_Cowplant_Office--></T>
+            <T>381765<!--CareerEventSituation: eventSituation_ReaperCareer_High_Capture--></T>
+            <T>381768<!--CareerEventSituation: eventSituation_ReaperCareer_High_Haunt--></T>
+            <T>381767<!--CareerEventSituation: eventSituation_ReaperCareer_High_Haunt01--></T>
+            <T>381766<!--CareerEventSituation: eventSituation_ReaperCareer_High_Solo--></T>
+            <T>381942<!--CareerEventSituation: eventSituation_ReaperCareer_High_SoloPlea--></T>
+            <T>381769<!--CareerEventSituation: eventSituation_ReaperCareer_Low_Day01--></T>
+            <T>381770<!--CareerEventSituation: eventSituation_ReaperCareer_Low_GrimReaping--></T>
+            <T>400770<!--CareerEventSituation: eventSituation_ReaperCareer_Low_HQSabotage--></T>
+            <T>381773<!--CareerEventSituation: eventSituation_ReaperCareer_Mid_Capture--></T>
+            <T>381772<!--CareerEventSituation: eventSituation_ReaperCareer_Mid_Capture01--></T>
+            <T>381774<!--CareerEventSituation: eventSituation_ReaperCareer_Mid_GrimReapingPlea--></T>
+            <T>381786<!--CareerEventSituation: eventSituation_ReaperCareer_Mid_Solo--></T>
+            <T>381785<!--CareerEventSituation: eventSituation_ReaperCareer_Mid_Solo01--></T>
+            <T>381941<!--CareerEventSituation: eventSituation_ReaperCareer_Mid_SoloPlea--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+  <T n="use_best_scoring_aop">False</T>
+  <T n="visible">True</T>
+</I>

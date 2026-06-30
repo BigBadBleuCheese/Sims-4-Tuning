@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="ObjectInInventoryPickerInteraction" i="interaction" m="interactions.base.picker_interaction" n="objectInInventoryPicker_Pottery_Glazing_ChooseObject_KilnStart" s="387623">
+  <V n="_saveable" t="disabled" />
+  <L n="additional_item_test">
+    <L>
+      <V t="state_white_black">
+        <U n="state_white_black">
+          <U n="states">
+            <V n="blacklist" t="specify">
+              <U n="specify">
+                <L n="blacklist">
+                  <T>374606<!--ObjectStateValue: potteryCeramic_GlazeState_Values_Glazed--></T>
+                  <T>428950<!--ObjectStateValue: potteryCeramic_UnbreakableGlaze_Sprayed--></T>
+                  <T>374610<!--CommodityBasedObjectStateValue: potteryCeramic_CommodityState_Brokenness_Repairing--></T>
+                  <T>374609<!--CommodityBasedObjectStateValue: potteryCeramic_CommodityState_Brokenness_Broken--></T>
+                  <T>378646<!--CommodityBasedObjectStateValue: pottery_CeramicBurner_Lit--></T>
+                  <T>239788<!--ObjectStateValue: Lighting_On--></T>
+                </L>
+              </U>
+            </V>
+          </U>
+        </U>
+      </V>
+    </L>
+  </L>
+  <V n="content_score" t="disabled" />
+  <V n="continuation" t="enabled">
+    <L n="enabled">
+      <U>
+        <T n="affordance">389917<!--ImmediateSuperInteraction: pottery_Glazing_PreChooseGlaze_KilnStart--></T>
+      </U>
+    </L>
+  </V>
+  <T n="display_name">0x6CD0B4F3<!--String: "Glaze Ceramic from Inventory"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <V n="inventory_item_test" t="tag_set">
+    <U n="tag_set">
+      <L n="tag_set">
+        <E>Func_Pottery</E>
+      </L>
+    </U>
+  </V>
+  <V n="picker_dialog" t="object_picker" />
+  <V n="pie_menu_test_tooltip" t="enabled">
+    <T n="enabled">0x78282654<!--String: "{0.SimFirstName} has no unglazed non-broken ceramics in {0.SimPronounPossessiveDependent} Inventory!"--></T>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <T n="single_push_continuation">True</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">28176<!--TestSetInstance: testSet_EmotionNotStressed--></T>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">28305<!--TestSetInstance: testSet_EmotionNotMiserable--></T>
+    </V>
+    <V t="slot_test">
+      <U n="slot_test">
+        <V n="child_slot" t="by_reference">
+          <T n="by_reference">slot_Kiln</T>
+        </V>
+        <V n="slot_test_type" t="has_empty_slot" />
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x6A1E163B<!--String: "The Kiln is occupied with another ceramic in the oven"--></T>
+        </V>
+      </U>
+    </V>
+    <V t="slot_test">
+      <U n="slot_test">
+        <V n="child_slot" t="by_reference">
+          <T n="by_reference">slot_Pottery</T>
+        </V>
+        <V n="slot_test_type" t="has_empty_slot" />
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xD24F307C<!--String: "The Kiln is occupied with another ceramic on the glazing bench."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <V n="utility_info" t="enabled">
+    <L n="enabled">
+      <U>
+        <E n="key">POWER</E>
+      </U>
+    </L>
+  </V>
+</I>

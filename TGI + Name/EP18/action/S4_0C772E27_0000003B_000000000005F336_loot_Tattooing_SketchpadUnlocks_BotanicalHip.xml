@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="loot_Tattooing_SketchpadUnlocks_BotanicalHip" s="389942">
+  <L n="loot_actions">
+    <V t="cas_unlock">
+      <U n="cas_unlock">
+        <V n="cas_part_source" t="reference">
+          <U n="reference">
+            <L n="cas_parts">
+              <T>434393</T>
+              <T>434394</T>
+              <T>434395</T>
+              <T>434396</T>
+            </L>
+          </U>
+        </V>
+        <E n="unlock_mode">SIM</E>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Object</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="secondary_icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0xDC166951<!--String: "{0.SimFirstName} has unlocked the <b>Botanical Hip</b> Left Leg tattoo design."--></T>
+            </V>
+            <V n="title" t="enabled">
+              <T n="enabled">0xC71D13B<!--String: "Tattoo Design Unlocked"--></T>
+            </V>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="buff">
+        <U n="buff">
+          <V n="whitelist" t="enabled">
+            <L n="enabled">
+              <T>403113<!--Buff: buff_Role_ServiceNPC_TattooArtist--></T>
+            </L>
+          </V>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="canvas_texture">
+        <U n="canvas_texture">
+          <L n="textures">
+            <T>377726<!--PaintingTexture: paintingTexture_TattooingDesign_BotanicalHip--></T>
+          </L>
+        </U>
+      </V>
+      <V t="reward_part_test">
+        <U n="reward_part_test">
+          <T n="invert">True</T>
+          <L n="reward_parts">
+            <T>434393</T>
+          </L>
+          <E n="subject">Actor</E>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

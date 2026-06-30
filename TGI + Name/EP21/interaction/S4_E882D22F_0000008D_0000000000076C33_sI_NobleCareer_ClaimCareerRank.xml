@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SuperInteraction" i="interaction" m="interactions.base.super_interaction" n="sI_NobleCareer_ClaimCareerRank" s="486451">
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot">
+    <U n="one_shot">
+      <U n="animation_ref">
+        <T n="factory">491189<!--AnimationElement: anim_NobleCareer_Throne_JoinNobleCareer--></T>
+      </U>
+    </U>
+  </V>
+  <V n="content_score" t="disabled" />
+  <T n="display_name">0xE2220445<!--String: "Claim Lost Career Rank"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single">
+    <U n="single">
+      <U n="actions">
+        <L n="loot_list">
+          <T>486510<!--LootActions: loot_NobleCareer_InheritNobleTitle_ClaimLostRank--></T>
+        </L>
+      </U>
+    </U>
+  </V>
+  <V n="pie_menu_icon" t="enabled">
+    <V n="enabled" t="resource_key">
+      <U n="resource_key">
+        <T p="InEP21\UI\Icons\PieMenu\PieMenu_NobleCareer.png" n="key">2f7d0004:00000000:9b49aa0d1eb08413</T>
+      </U>
+    </V>
+  </V>
+  <T n="pie_menu_priority">2</T>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <V n="whitelist" t="enabled">
+          <L n="enabled">
+            <T>486446<!--Buff: buff_NobleCareer_NoPromiseCanInherit--></T>
+            <T>486447<!--Buff: buff_NobleCareer_NoPromiseCannotInherit--></T>
+          </L>
+        </V>
+      </U>
+    </V>
+    <V t="in_home_region">
+      <U n="in_home_region">
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xE2ED99EC<!--String: "Noble Actions cannot be performed outside the Kingdom {0.SimFirstName} lives in."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="career_test">
+      <U n="career_test">
+        <V n="test_type" t="career_reference">
+          <U n="career_reference">
+            <V n="career" t="specific_career">
+              <T n="specific_career">466304<!--NobleCareer: career_Noble--></T>
+            </V>
+          </U>
+        </V>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0xE66564A1<!--String: "{0.SimFirstName} must be part of the Noble Career to perform this interaction."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="kingdom">
+      <U n="kingdom">
+        <V n="test_type" t="can_claim_title">
+          <U n="can_claim_title">
+            <V n="tooltip" t="enabled">
+              <T n="enabled">0x9EEF5D45<!--String: "{0.SimFirstNameWithPrefix} would not benefit from claiming the lost rank, {0.SimPronounPossessiveDependent} career level is either the same or higher than the lost rank."--></T>
+            </V>
+          </U>
+        </V>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x9EEF5D45<!--String: "{0.SimFirstNameWithPrefix} would not benefit from claiming the lost rank, {0.SimPronounPossessiveDependent} career level is either the same or higher than the lost rank."--></T>
+        </V>
+      </U>
+    </V>
+    <V t="kingdom">
+      <U n="kingdom">
+        <V n="test_type" t="can_claim_title">
+          <U n="can_claim_title">
+            <T n="check_exclusive">True</T>
+            <V n="tooltip" t="enabled">
+              <T n="enabled">0x912CFC7D<!--String: "There is already a Kingdom Leader in this world."--></T>
+            </V>
+          </U>
+        </V>
+        <V n="tooltip" t="enabled">
+          <T n="enabled">0x912CFC7D<!--String: "There is already a Kingdom Leader in this world."--></T>
+        </V>
+      </U>
+    </V>
+  </L>
+  <T n="time_overhead">30</T>
+</I>

@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="LootActions" i="action" m="interactions.utils.loot" n="lootActions_RomanticEducation_TraitAdd_Cleanup_Actor" s="378258">
+  <L n="loot_actions">
+    <V t="statistics">
+      <V n="statistics" t="statistic_remove">
+        <U n="statistic_remove">
+          <T n="stat">378255<!--Commodity: commodity_RomanticEducation--></T>
+        </U>
+      </V>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant" />
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x8432EADB<!--String: "After having enough meaningful experiences in which {0.SimPronounSubjective} witnessed how rewarding well-executed romance can be, {0.SimFirstName} has developed the <b>Romantic Sage</b> trait. Sims with the <b>Romantic Sage</b> trait find it easier to maintain <b>Romantic Satisfaction</b>. They also have more influence when performing socials that guide other Sims towards gaining the <b>Romantic Sage</b> trait. Additionally, they can <b>Remember Positive Romantic Experiences</b> to reduce the effects of negative moodlets gained from negative Romantic experiences."--></T>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="participant_type" />
+                </L>
+              </U>
+            </V>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="ages" t="specified" />
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="trait_add">
+      <U n="trait_add">
+        <L n="tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="ages" t="specified">
+                  <L n="specified">
+                    <E>TEEN</E>
+                    <E>YOUNGADULT</E>
+                    <E>ADULT</E>
+                    <E>ELDER</E>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+        <T n="trait">377565<!--Trait: trait_RomanticSage--></T>
+      </U>
+    </V>
+    <V t="trait_add">
+      <U n="trait_add">
+        <L n="tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="ages" t="specified">
+                  <L n="specified">
+                    <E>CHILD</E>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+        <T n="trait">378263<!--Trait: trait_Hidden_Child_RomanticSage--></T>
+      </U>
+    </V>
+    <V t="notification_and_dialog">
+      <U n="notification_and_dialog">
+        <V n="dialog" t="notification">
+          <U n="notification">
+            <L n="dialog_options">
+              <E>DISABLE_CLOSE_BUTTON</E>
+            </L>
+            <V n="icon" t="enabled">
+              <V n="enabled" t="participant">
+                <U n="participant">
+                  <L n="participant_type">
+                    <E>Actor</E>
+                  </L>
+                </U>
+              </V>
+            </V>
+            <V n="text" t="single">
+              <T n="single">0x5BC8992<!--String: "Thanks to the knowledge developed after some positive romantic education from elder Sims, {0.SimFirstName} will now develop the <b>Romantic Sage</b> trait upon becoming a Teen."--></T>
+            </V>
+            <V n="text_tokens" t="enabled">
+              <U n="enabled">
+                <L n="tokens">
+                  <V t="participant_type" />
+                </L>
+              </U>
+            </V>
+          </U>
+        </V>
+        <L n="tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="ages" t="specified">
+                  <L n="specified">
+                    <E>CHILD</E>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="trait_remove">
+      <U n="trait_remove">
+        <L n="tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="ages" t="specified">
+                  <L n="specified">
+                    <E>TEEN</E>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+        <V n="trait" t="specific_trait">
+          <U n="specific_trait">
+            <T n="specific_trait">378263<!--Trait: trait_Hidden_Child_RomanticSage--></T>
+          </U>
+        </V>
+      </U>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="trait">
+        <U n="trait">
+          <L n="whitelist_traits">
+            <T>378263<!--Trait: trait_Hidden_Child_RomanticSage--></T>
+          </L>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified">
+            <L n="specified">
+              <E>TEEN</E>
+              <E>CHILD</E>
+            </L>
+          </V>
+        </U>
+      </V>
+      <V t="statistic">
+        <U n="statistic">
+          <T n="stat">378255<!--Commodity: commodity_RomanticEducation--></T>
+          <V n="threshold" t="value_threshold">
+            <U n="value_threshold">
+              <T n="value">5</T>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+    <L>
+      <V t="sim_info">
+        <U n="sim_info">
+          <V n="ages" t="specified">
+            <L n="specified">
+              <E>YOUNGADULT</E>
+              <E>ADULT</E>
+              <E>ELDER</E>
+            </L>
+          </V>
+        </U>
+      </V>
+      <V t="statistic">
+        <U n="statistic">
+          <T n="stat">378255<!--Commodity: commodity_RomanticEducation--></T>
+          <V n="threshold" t="value_threshold">
+            <U n="value_threshold">
+              <T n="value">8</T>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </L>
+</I>

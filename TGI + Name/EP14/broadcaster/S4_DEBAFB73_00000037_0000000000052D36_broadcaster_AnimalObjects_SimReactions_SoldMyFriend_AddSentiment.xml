@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="Broadcaster" i="broadcaster" m="broadcasters.broadcaster" n="broadcaster_AnimalObjects_SimReactions_SoldMyFriend_AddSentiment" s="339254">
+  <V n="allow_objects" t="disallow" />
+  <T n="allow_sims">True</T>
+  <V n="clustering" t="disabled" />
+  <L n="constraints">
+    <V t="circle">
+      <U n="circle">
+        <T n="radius">50</T>
+      </U>
+    </V>
+  </L>
+  <L n="effects">
+    <V t="loot">
+      <U n="loot">
+        <L n="loot_list">
+          <T>339252<!--LootActions: loot_Sentiment_AddSentiment_Hurt_SoldMyFriend--></T>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="ages" t="specified">
+                  <L n="specified">
+                    <E>TEEN</E>
+                    <E>CHILD</E>
+                  </L>
+                </V>
+                <V n="species" t="specified">
+                  <U n="specified">
+                    <L n="species">
+                      <E />
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+            <V t="buff">
+              <U n="buff">
+                <V n="whitelist" t="enabled">
+                  <L n="enabled">
+                    <T>339253<!--Buff: buff_AnimalObjects_soldMyfriend_Tracker--></T>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+  </L>
+  <V n="frequency" t="on_enter" />
+  <T n="immediate">True</T>
+</I>

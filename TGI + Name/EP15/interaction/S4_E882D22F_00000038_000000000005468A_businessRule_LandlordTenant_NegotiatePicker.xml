@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="BusinessRulePickerSuperInteraction" i="interaction" m="interactions.base.business_rule_interaction" n="businessRule_LandlordTenant_NegotiatePicker" s="345738">
+  <V n="_saveable" t="disabled" />
+  <E n="business_rule_target">Actor</E>
+  <T n="category">345363<!--PieMenuCategory: pieMenuCategory_LandlordTenant_Rental--></T>
+  <V n="content_score" t="disabled" />
+  <L n="continuation">
+    <U>
+      <T n="affordance">348130<!--SocialSuperInteraction: social_LandlordTenant_NegotiateRule--></T>
+      <E n="target">TargetSim</E>
+    </U>
+  </L>
+  <T n="display_name">0xB14CFAF5<!--String: "Negotiate Rules"--></T>
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>INVALID</E>
+  </L>
+  <V n="pie_menu_option" t="use_pie_menu">
+    <U n="use_pie_menu">
+      <T n="pie_menu_category">340917<!--PieMenuCategory: pieMenuCategory_LandlordTenant_RuleMenuCategory--></T>
+      <T n="pie_menu_name">0x538317EE<!--String: "Discuss Rule Forgiveness for {2.String}"--></T>
+      <T n="show_disabled_item">False</T>
+    </U>
+  </V>
+  <U n="progress_bar_enabled">
+    <T n="bar_enabled">False</T>
+  </U>
+  <L n="rule_states">
+    <E />
+  </L>
+  <V n="single_choice_display_name" t="enabled">
+    <T n="enabled">0x63090911<!--String: "Discuss Rule Forgiveness for {2.String}"--></T>
+  </V>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+            <E>TODDLER</E>
+            <E>BABY</E>
+            <E>INFANT</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="relationship">
+      <U n="relationship">
+        <U n="required_relationship_bits">
+          <L n="match_any">
+            <T>343628<!--RelationshipBit: relBit_MultiUnit_TenantToLandlord--></T>
+          </L>
+        </U>
+      </U>
+    </V>
+    <V t="trait">
+      <U n="trait">
+        <L n="blacklist_traits">
+          <T>341149<!--Trait: trait_MultiUnit_Aspiration_DiscerningDweller--></T>
+        </L>
+      </U>
+    </V>
+    <V t="relationship">
+      <U n="relationship">
+        <U n="required_relationship_bits">
+          <L n="match_any">
+            <T>15803<!--RelationshipBit: has_met--></T>
+            <T>192631<!--RelationshipBit: relationshipBit_CelebrityAcquaintance--></T>
+          </L>
+        </U>
+        <L n="subject">
+          <E>Actor</E>
+        </L>
+        <L n="target_sim">
+          <E>TargetSim</E>
+        </L>
+      </U>
+    </V>
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified" />
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">TargetSim</E>
+      </U>
+    </V>
+  </L>
+</I>

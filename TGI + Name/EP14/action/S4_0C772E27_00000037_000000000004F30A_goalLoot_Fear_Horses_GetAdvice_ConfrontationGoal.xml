@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="SituationGoalLootActions" i="action" m="situations.situation_goal" n="goalLoot_Fear_Horses_GetAdvice_ConfrontationGoal" s="324362">
+  <L n="goal_loot_actions">
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <T n="buff_type">308140<!--Buff: buff_Fear_ConfrontFearSuccess_ConfidenceGain--></T>
+        </U>
+        <L n="tests">
+          <L>
+            <V t="sim_info">
+              <U n="sim_info">
+                <V n="ages" t="specified">
+                  <L n="specified">
+                    <E>CHILD</E>
+                  </L>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="remove_buff">
+      <U n="remove_buff">
+        <L n="buffs_to_remove">
+          <T>284204<!--Buff: buff_Fear_Gained_Anxiety--></T>
+          <T>284203<!--Buff: buff_Fear_Gained_Scared--></T>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x9AFC1443<!--String: "(From Discussing Fear of Horses)"--></T>
+          </V>
+          <T n="buff_type">323772<!--Buff: buff_Fear_Horses_GetAdvice_Sucess--></T>
+        </U>
+      </U>
+    </V>
+    <V t="remove_buff">
+      <U n="remove_buff">
+        <L n="buffs_to_remove">
+          <T>323759<!--Buff: buff_Fear_Horses_Trait_Effects--></T>
+        </L>
+      </U>
+    </V>
+    <V t="remove_trait">
+      <U n="remove_trait">
+        <V n="trait" t="specific_trait">
+          <U n="specific_trait">
+            <T n="specific_trait">323758<!--Trait: trait_Fear_Horses--></T>
+          </U>
+        </V>
+      </U>
+    </V>
+    <V t="add_trait">
+      <U n="add_trait">
+        <T n="trait">324580<!--Trait: trait_Fear_Horses_Progress--></T>
+      </U>
+    </V>
+  </L>
+</I>

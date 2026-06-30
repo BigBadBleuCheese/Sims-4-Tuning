@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="GuidanceTip" i="guidance_tip" m="guidance.guidance_tip" n="guidanceTip_MultiUnit_Landlord_Live_01" s="352485">
+  <L n="activation_rules">
+    <U>
+      <L n="criteria">
+        <U>
+          <V n="criterion" t="guidance_mode" />
+        </U>
+        <U>
+          <V n="criterion" t="game_state">
+            <E n="game_state">LIVE_MODE</E>
+          </V>
+        </U>
+        <U>
+          <V n="criterion" t="guidance_tips_satisfied">
+            <L n="guidance_tips_satisfied">
+              <T>349708<!--GuidanceTip: guidanceTip_MultiUnit_A1--></T>
+            </L>
+          </V>
+        </U>
+        <U>
+          <V n="criterion" t="guidance_tip_group_satisfied">
+            <L n="guidance_tip_group_satisfied">
+              <T>352563<!--GuidanceTipGroup: guidanceTipGroup_MultiUnit_Live_01--></T>
+            </L>
+          </V>
+          <T n="exclude_if_matched">True</T>
+        </U>
+      </L>
+    </U>
+    <U>
+      <L n="criteria">
+        <U>
+          <V n="criterion" t="game_option_setting">
+            <U n="game_option_setting">
+              <T n="setting_name">PackGuidanceEnabled</T>
+              <T n="setting_value">1</T>
+            </U>
+          </V>
+        </U>
+        <U>
+          <V n="criterion" t="game_option_setting">
+            <U n="game_option_setting">
+              <T n="setting_name">GuidancePack</T>
+              <T n="setting_value">1</T>
+            </U>
+          </V>
+        </U>
+      </L>
+    </U>
+  </L>
+  <T p="InEP15\UI\Icons\GuidanceSystem\Poses\VaneshaPose_Wrench.png" n="icon">2f7d0004:00000000:d6b65943d27f70a6</T>
+  <L n="options">
+    <U>
+      <U n="actions">
+        <L n="actions_on_activate">
+          <V t="activate_guidance_item">
+            <T n="activate_guidance_item">352791<!--GuidanceTip: guidanceTip_MultiUnit_Landlord_Live_03--></T>
+          </V>
+        </L>
+        <L n="actions_on_cancel">
+          <V t="activate_guidance_item">
+            <T n="activate_guidance_item">352407<!--GuidanceTip: guidanceTip_MultiUnit_Reminder--></T>
+          </V>
+        </L>
+        <L n="actions_on_success">
+          <V t="satisfy_guidance_item_group">
+            <T n="satisfy_guidance_item_group">352792<!--GuidanceTipGroup: guidanceTipGroup_MultiUnit_Live_03--></T>
+          </V>
+        </L>
+        <T n="satisfy_on_action_success">True</T>
+        <T n="satisfy_on_activate">True</T>
+      </U>
+      <T n="text">0x8B12DB61<!--String: "Convert this lot into a Residential Rental"--></T>
+    </U>
+    <U>
+      <U n="actions">
+        <L n="actions_on_activate">
+          <V t="activate_guidance_item">
+            <T n="activate_guidance_item">353070<!--GuidanceTip: guidanceTip_MultiUnit_Landlord_Live_01_A--></T>
+          </V>
+        </L>
+        <L n="actions_on_cancel">
+          <V t="activate_guidance_item">
+            <T n="activate_guidance_item">352407<!--GuidanceTip: guidanceTip_MultiUnit_Reminder--></T>
+          </V>
+        </L>
+        <L n="actions_on_success">
+          <V t="satisfy_guidance_item_group">
+            <T n="satisfy_guidance_item_group">352563<!--GuidanceTipGroup: guidanceTipGroup_MultiUnit_Live_01--></T>
+          </V>
+        </L>
+        <T n="satisfy_on_activate">True</T>
+      </U>
+      <T n="text">0x6AB05AF1<!--String: "Buy a Residential Rental"--></T>
+    </U>
+  </L>
+  <L n="relaunch_rules" />
+  <T n="relaunch_text">0x42B391F8<!--String: "Tutorial: Residential Rental"--></T>
+  <T n="satisfy_on_timeout">True</T>
+  <T n="text">0x88DFADF1<!--String: "As a Property Owner, you can convert this lot into a Residential Rental and live alongside your tenants, or you can buy a Residential Rental at a different lot and manage your business remotely. The choice is yours to make!"--></T>
+  <T n="timeout">3600</T>
+  <T n="title">0x18422113<!--String: "Vanesha is here to help!"--></T>
+</I>

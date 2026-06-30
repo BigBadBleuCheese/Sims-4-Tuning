@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="StartCraftingAutonomouslySuperInteraction" i="interaction" m="crafting.crafting_interactions" n="startCraftingAutonomously_recreationTable_puzzles_start" s="380466">
+  <V n="_saveable" t="enabled" />
+  <T n="attention_cost">0.5</T>
+  <V n="basic_content" t="one_shot" />
+  <V n="content_score" t="disabled" />
+  <U n="display_name_text_tokens">
+    <L n="tokens">
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Actor</E>
+            </U>
+          </V>
+        </U>
+      </V>
+      <V t="participant_type">
+        <U n="participant_type">
+          <V n="objects" t="from_participant">
+            <U n="from_participant">
+              <E n="participant">Object</E>
+            </U>
+          </V>
+        </U>
+      </V>
+    </L>
+  </U>
+  <L n="interaction_category_tags">
+    <E>Interaction_Super</E>
+    <E>Interaction_All</E>
+  </L>
+  <V n="outcome" t="single" />
+  <L n="recipes">
+    <T>317192<!--PaintingRecipe: recipe_recreationTable_puzzles_size01_animal_pic2--></T>
+    <T>317200<!--PaintingRecipe: recipe_recreationTable_puzzles_size01_fntsy_pic4--></T>
+    <T>317224<!--PaintingRecipe: recipe_recreationTable_puzzles_size02_landsc_pic3--></T>
+    <T>317231<!--PaintingRecipe: recipe_recreationTable_puzzles_size02_scifi_pic5--></T>
+    <T>317271<!--PaintingRecipe: recipe_recreationTable_puzzles_size03_animal_pic3--></T>
+    <T>317280<!--PaintingRecipe: recipe_recreationTable_puzzles_size03_landsc_pic2--></T>
+    <T>317308<!--PaintingRecipe: recipe_recreationTable_puzzles_size04_fntsy_pic1--></T>
+    <T>317318<!--PaintingRecipe: recipe_recreationTable_puzzles_size04_scifi_pic1--></T>
+  </L>
+  <V n="route_start_balloon" t="enabled">
+    <U n="enabled">
+      <U n="balloon">
+        <L n="balloon_choices">
+          <U>
+            <V n="item" t="balloon_icon">
+              <U n="balloon_icon">
+                <V n="icon" t="participant">
+                  <U n="participant">
+                    <L n="participant_type">
+                      <E>Object</E>
+                    </L>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </U>
+        </L>
+        <L n="balloon_target">
+          <E>Actor</E>
+        </L>
+      </U>
+    </U>
+  </V>
+  <E n="scoring_priority">NORMAL</E>
+  <T n="subaction_selection_weight">1</T>
+  <E n="target_type">OBJECT</E>
+  <L n="test_globals">
+    <V t="sim_info">
+      <U n="sim_info">
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
+        <V n="species" t="specified">
+          <U n="specified">
+            <L n="species">
+              <E />
+            </L>
+          </U>
+        </V>
+        <E n="who">Actor</E>
+      </U>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">28305<!--TestSetInstance: testSet_EmotionNotMiserable--></T>
+    </V>
+    <V t="test_set_reference">
+      <T n="test_set_reference">28176<!--TestSetInstance: testSet_EmotionNotStressed--></T>
+    </V>
+  </L>
+  <L n="tests">
+    <L>
+      <V t="test_set_reference">
+        <T n="test_set_reference">126907<!--TestSetInstance: testSetInstance_InteractionIsEncouragedByClubOrCustomerRulesOrHobbyClassOrDynasty--></T>
+      </V>
+    </L>
+    <L>
+      <V t="test_set_reference">
+        <T n="test_set_reference">483388<!--TestSetInstance: testSetInstance_Getaways_IsInteractionEncouraged--></T>
+      </V>
+    </L>
+  </L>
+  <T n="time_overhead">60</T>
+  <T n="visible">False</T>
+</I>

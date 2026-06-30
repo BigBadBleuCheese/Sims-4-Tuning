@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="AdventureMoment" i="snippet" m="snippets" n="EP14World_AdventureMoments_Cave_AttackedByHeadlessRider_Start" s="325378">
+  <U n="value">
+    <L n="_finish_actions">
+      <U>
+        <L n="action_results">
+          <U>
+            <L n="loot_actions">
+              <T>325574<!--LootActions: loot_EP14World_Rabbithole_Cave_AttackedByHeadlessRider_AttackIt_Success--></T>
+              <T>325355<!--LootActions: loot_EP14World_Rabbithole_Cave_ResetCreatureHealth--></T>
+              <T>325356<!--LootActions: loot_EP14World_Rabbithole_Cave_ResetAttackDamage_Sim--></T>
+              <T>325775<!--LootActions: loot_EP14World_Rabbithole_Cave_ResetAttackDamage_Creature--></T>
+            </L>
+            <L n="next_moments">
+              <E>Cave_Explore</E>
+            </L>
+            <L n="weight_modifiers">
+              <U>
+                <V n="test" t="relative_statistic">
+                  <U n="relative_statistic">
+                    <E n="comparison">LESS</E>
+                    <E n="source">Object</E>
+                    <T n="stat">325167<!--Statistic: statistic_EP14World_Cave_AttackDamage_Sim--></T>
+                    <E n="target">Object</E>
+                    <L n="target_stats">
+                      <T>325166<!--Statistic: statistic_EP14World_Cave_CreatureHealth--></T>
+                    </L>
+                  </U>
+                </V>
+                <T n="weight_multiplier">0</T>
+              </U>
+            </L>
+          </U>
+          <U>
+            <L n="loot_actions">
+              <T>325572<!--LootActions: loot_EP14World_Rabbithole_Cave_AttackedByHeadlessRider_AttackIt_Neutral--></T>
+              <T>325357<!--LootActions: loot_EP14World_Rabbithole_Cave_Damage_Creature--></T>
+              <T>325356<!--LootActions: loot_EP14World_Rabbithole_Cave_ResetAttackDamage_Sim--></T>
+              <T>325775<!--LootActions: loot_EP14World_Rabbithole_Cave_ResetAttackDamage_Creature--></T>
+            </L>
+            <L n="next_moments">
+              <E>Cave_BossCreature2_Repeat</E>
+            </L>
+            <L n="weight_modifiers">
+              <U>
+                <V n="test" t="relative_statistic">
+                  <U n="relative_statistic">
+                    <E n="comparison">GREATER_OR_EQUAL</E>
+                    <E n="source">Object</E>
+                    <T n="stat">325167<!--Statistic: statistic_EP14World_Cave_AttackDamage_Sim--></T>
+                    <E n="target">Object</E>
+                    <L n="target_stats">
+                      <T>325166<!--Statistic: statistic_EP14World_Cave_CreatureHealth--></T>
+                    </L>
+                  </U>
+                </V>
+                <T n="weight_multiplier">0</T>
+              </U>
+            </L>
+          </U>
+          <U>
+            <L n="loot_actions">
+              <T>325569<!--LootActions: loot_EP14World_Rabbithole_Cave_AttackedByHeadlessRider_AttackIt_Fail--></T>
+              <T>325359<!--LootActions: loot_EP14World_Rabbithole_Cave_Damage_Sim--></T>
+              <T>325356<!--LootActions: loot_EP14World_Rabbithole_Cave_ResetAttackDamage_Sim--></T>
+              <T>325775<!--LootActions: loot_EP14World_Rabbithole_Cave_ResetAttackDamage_Creature--></T>
+            </L>
+            <L n="next_moments">
+              <E>Cave_BossCreature2_Repeat</E>
+            </L>
+            <L n="weight_modifiers">
+              <U>
+                <V n="test" t="relative_statistic">
+                  <U n="relative_statistic">
+                    <E n="comparison">GREATER_OR_EQUAL</E>
+                    <E n="source">Object</E>
+                    <T n="stat">325773<!--Statistic: statistic_EP14World_Cave_AttackDamage_Creature--></T>
+                    <E n="target">Object</E>
+                    <L n="target_stats">
+                      <T>325175<!--Statistic: statistic_EP14World_Cave_SimHealth--></T>
+                    </L>
+                  </U>
+                </V>
+                <T n="weight_multiplier">0</T>
+              </U>
+            </L>
+          </U>
+          <U>
+            <L n="loot_actions">
+              <T>325576<!--LootActions: loot_EP14World_Rabbithole_Cave_AttackedByHeadlessRider_AttackIt_SuperFail--></T>
+            </L>
+            <L n="weight_modifiers">
+              <U>
+                <V n="test" t="relative_statistic">
+                  <U n="relative_statistic">
+                    <E n="comparison">LESS</E>
+                    <E n="source">Object</E>
+                    <T n="stat">325773<!--Statistic: statistic_EP14World_Cave_AttackDamage_Creature--></T>
+                    <E n="target">Object</E>
+                    <L n="target_stats">
+                      <T>325175<!--Statistic: statistic_EP14World_Cave_SimHealth--></T>
+                    </L>
+                  </U>
+                </V>
+                <T n="weight_multiplier">0</T>
+              </U>
+            </L>
+          </U>
+        </L>
+        <L n="availability_tests">
+          <L>
+            <V t="inventory">
+              <U n="inventory">
+                <V n="contents_check" t="has_object_with_def">
+                  <U n="has_object_with_def">
+                    <T n="definition">345906</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+        <V n="cost" t="item_cost">
+          <U n="item_cost">
+            <U n="item_cost">
+              <L n="ingredients">
+                <U>
+                  <T n="ingredient">345906</T>
+                </U>
+              </L>
+            </U>
+          </U>
+        </V>
+        <V n="disabled_text" t="enabled">
+          <T n="enabled">0x5BB1552A<!--String: "Only with a swig of <b>Energy Nectar</b> could a Sim hope to defeat a rider like this!"--></T>
+        </V>
+        <V n="display_subtext" t="single">
+          <T n="single">0x725CDC4<!--String: "Consumes Special Item"--></T>
+        </V>
+        <V n="display_text" t="single">
+          <T n="single">0xAD7B40A2<!--String: "Offense"--></T>
+        </V>
+      </U>
+      <U>
+        <L n="action_results">
+          <U>
+            <L n="loot_actions">
+              <T>325580<!--LootActions: loot_EP14World_Rabbithole_Cave_AttackedByHeadlessRider_RunAway_Neutral--></T>
+              <T>325360<!--LootActions: loot_EP14World_Rabbithole_Cave_Heal_Sim--></T>
+              <T>325356<!--LootActions: loot_EP14World_Rabbithole_Cave_ResetAttackDamage_Sim--></T>
+              <T>325775<!--LootActions: loot_EP14World_Rabbithole_Cave_ResetAttackDamage_Creature--></T>
+            </L>
+            <L n="next_moments">
+              <E>Cave_BossCreature2_Repeat</E>
+            </L>
+            <L n="weight_modifiers">
+              <U>
+                <T n="weight_multiplier">1</T>
+              </U>
+            </L>
+          </U>
+          <U>
+            <L n="loot_actions">
+              <T>325578<!--LootActions: loot_EP14World_Rabbithole_Cave_AttackedByHeadlessRider_RunAway_Fail--></T>
+            </L>
+            <L n="weight_modifiers">
+              <U>
+                <T n="weight_multiplier">1</T>
+              </U>
+            </L>
+          </U>
+          <U>
+            <L n="loot_actions">
+              <T>325581<!--LootActions: loot_EP14World_Rabbithole_Cave_AttackedByHeadlessRider_RunAway_Success--></T>
+              <T>325355<!--LootActions: loot_EP14World_Rabbithole_Cave_ResetCreatureHealth--></T>
+              <T>325356<!--LootActions: loot_EP14World_Rabbithole_Cave_ResetAttackDamage_Sim--></T>
+              <T>325775<!--LootActions: loot_EP14World_Rabbithole_Cave_ResetAttackDamage_Creature--></T>
+            </L>
+            <L n="next_moments">
+              <E>Cave_Explore</E>
+            </L>
+            <L n="weight_modifiers">
+              <U>
+                <T n="weight_multiplier">1</T>
+              </U>
+            </L>
+          </U>
+        </L>
+        <L n="availability_tests">
+          <L>
+            <V t="inventory">
+              <U n="inventory">
+                <V n="contents_check" t="has_object_with_def">
+                  <U n="has_object_with_def">
+                    <T n="definition">345906</T>
+                  </U>
+                </V>
+              </U>
+            </V>
+          </L>
+        </L>
+        <V n="display_text" t="single">
+          <T n="single">0xFF1BD1F5<!--String: "Defense"--></T>
+        </V>
+      </U>
+      <U>
+        <L n="action_results">
+          <U>
+            <L n="loot_actions">
+              <T>324981<!--LootActions: loot_EP14World_Rabbithole_Cave_AttackedByBat_RunAway_Fail--></T>
+            </L>
+            <L n="weight_modifiers">
+              <U>
+                <T n="weight_multiplier">1</T>
+              </U>
+            </L>
+          </U>
+        </L>
+        <L n="availability_tests">
+          <L>
+            <V t="inventory">
+              <U n="inventory">
+                <V n="contents_check" t="has_object_with_def">
+                  <U n="has_object_with_def">
+                    <T n="definition">345906</T>
+                  </U>
+                </V>
+                <U n="required_count">
+                  <E n="comparison">EQUAL</E>
+                  <T n="value">0</T>
+                </U>
+              </U>
+            </V>
+          </L>
+        </L>
+        <V n="display_text" t="single">
+          <T n="single">0x4F7A3607<!--String: "Run Away!"--></T>
+        </V>
+      </U>
+    </L>
+    <V n="_visibility" t="show_dialog">
+      <U n="show_dialog">
+        <V n="audio_sting" t="enabled">
+          <U n="enabled">
+            <T n="audio" p="InEP14\Audio\music\cave_chance_cards\bumper_ep14_cave_headless_rider_appear.propx">39b2aa4a:00000000:acb89f11db5af49c</T>
+            <T n="immediate_audio">True</T>
+          </U>
+        </V>
+        <E n="dialog_bg_style">BG_CHANCE_CARD</E>
+        <E n="dialog_style">LARGE_ICON</E>
+        <V n="icon" t="enabled">
+          <V n="enabled" t="resource_key">
+            <U n="resource_key">
+              <T n="key" p="InEP14\UI\Icons\Dialog\ChanceCard_AttackedByHeadlessRider.png">2f7d0004:00000000:c75eb4b4ccd0cc85</T>
+            </U>
+          </V>
+        </V>
+        <V n="text" t="single">
+          <T n="single">0xA77446E8<!--String: "Within a large cavern opening, a Headless Rider bursts forth in front of {0.SimFirstName} and begins to circle with an other-worldly groan from their fiery horse.\n\n<b>Rider Health: {1.Number}</b>\n<b>{0.SimFirstName}'s Health: {2.Number}</b>\n<b>Cave Progress: {3.Number}/100</b>"--></T>
+        </V>
+        <V n="text_tokens" t="enabled">
+          <U n="enabled">
+            <L n="tokens">
+              <V t="participant_type" />
+              <V t="statistic_value">
+                <U n="statistic_value">
+                  <E n="participant">Object</E>
+                  <T n="statistic">325166<!--Statistic: statistic_EP14World_Cave_CreatureHealth--></T>
+                </U>
+              </V>
+              <V t="statistic_value">
+                <U n="statistic_value">
+                  <E n="participant">Object</E>
+                  <T n="statistic">325175<!--Statistic: statistic_EP14World_Cave_SimHealth--></T>
+                </U>
+              </V>
+              <V t="statistic_value">
+                <U n="statistic_value">
+                  <E n="participant">Actor</E>
+                  <T n="statistic">325538<!--Statistic: statistic_EP14World_Cave_Progress--></T>
+                </U>
+              </V>
+              <V t="statistic_value">
+                <U n="statistic_value">
+                  <E n="participant">Actor</E>
+                  <T n="statistic">325362<!--Statistic: statistic_EP14World_Cave_Level--></T>
+                </U>
+              </V>
+            </L>
+          </U>
+        </V>
+        <V n="title" t="enabled">
+          <T n="enabled">0xEC11EB56<!--String: "The Headless Rider"--></T>
+        </V>
+      </U>
+    </V>
+  </U>
+</I>
