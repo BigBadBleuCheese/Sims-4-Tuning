@@ -209,6 +209,61 @@
         </V>
       </U>
     </V>
+    <V t="buff_fire_and_forget">
+      <U n="buff_fire_and_forget">
+        <U n="buff">
+          <T n="buff_type">502857<!--Buff: buff_SimPreference_Timer_Dance--></T>
+        </U>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0xCA7319E3<!--String: "(From Liking Dancing)"--></T>
+          </V>
+          <T n="buff_type">264205<!--Buff: buff_SimPreference_Likes_Activities_Dancing--></T>
+        </U>
+        <L n="subject">
+          <E>Actor</E>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <L n="whitelist_traits">
+                  <T>264179<!--Preference: Trait_SimPreference_Likes_Activities_Dancing--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
+    <V t="buff">
+      <U n="buff">
+        <U n="buff_type">
+          <V n="buff_reason" t="enabled">
+            <T n="enabled">0x6AB39385<!--String: "(From Disliking Dancing)"--></T>
+          </V>
+          <T n="buff_type">264118<!--Buff: buff_SimPreference_Dislikes_Activities_Dancing--></T>
+        </U>
+        <L n="subject">
+          <E>Actor</E>
+        </L>
+        <L n="tests">
+          <L>
+            <V t="trait">
+              <U n="trait">
+                <L n="whitelist_traits">
+                  <T>264144<!--Preference: Trait_SimPreference_Dislikes_Activities_Dancing--></T>
+                </L>
+              </U>
+            </V>
+          </L>
+        </L>
+      </U>
+    </V>
   </L>
   <V n="canonical_animation" t="enabled">
     <U n="enabled">
@@ -400,8 +455,42 @@
   <L n="test_autonomous">
     <L>
       <V t="object_ownership" />
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>264144<!--Preference: Trait_SimPreference_Dislikes_Activities_Dancing--></T>
+          </L>
+        </U>
+      </V>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>502857<!--Buff: buff_SimPreference_Timer_Dance--></T>
+          </L>
+          <L n="blacklist_tags">
+            <E>Buff_DislikeMusic</E>
+          </L>
+        </U>
+      </V>
     </L>
     <L>
+      <V t="trait">
+        <U n="trait">
+          <L n="blacklist_traits">
+            <T>264144<!--Preference: Trait_SimPreference_Dislikes_Activities_Dancing--></T>
+          </L>
+        </U>
+      </V>
+      <V t="buff">
+        <U n="buff">
+          <L n="blacklist">
+            <T>502857<!--Buff: buff_SimPreference_Timer_Dance--></T>
+          </L>
+          <L n="blacklist_tags">
+            <E>Buff_DislikeMusic</E>
+          </L>
+        </U>
+      </V>
       <V t="buff">
         <U n="buff">
           <V n="whitelist" t="enabled">
