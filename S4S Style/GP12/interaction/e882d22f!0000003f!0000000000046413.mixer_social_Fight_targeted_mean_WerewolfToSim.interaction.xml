@@ -751,7 +751,7 @@
             <E n="key">Career_ChanceCard_01</E>
             <U n="value">
               <V n="adventure_moment" t="reference">
-                <T n="reference">310418<!--AdventureMoment: adventureMoment_FamilyTrope_difficult--></T>
+                <T n="reference">309175<!--AdventureMoment: adventureMoment_FamilyTrope_distant--></T>
               </V>
             </U>
           </U>
@@ -760,9 +760,12 @@
           <U>
             <E n="adventure_moment_key">Career_ChanceCard_01</E>
           </U>
+          <U>
+            <E n="adventure_moment_key">Career_ChanceCard_01</E>
+          </U>
         </L>
         <U n="success_chance">
-          <T n="base_chance">75</T>
+          <T n="base_chance">100</T>
           <L n="multipliers">
             <U>
               <T n="multiplier">0</T>
@@ -903,6 +906,142 @@
                         <T n="enabled">True</T>
                       </V>
                       <E n="who">TargetSim</E>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+            <U>
+              <T n="multiplier">0</T>
+              <L n="tests">
+                <L>
+                  <V t="sim_info">
+                    <U n="sim_info">
+                      <V n="npc" t="enabled">
+                        <T n="enabled">True</T>
+                      </V>
+                    </U>
+                  </V>
+                  <V t="sim_info">
+                    <U n="sim_info">
+                      <V n="npc" t="enabled">
+                        <T n="enabled">True</T>
+                      </V>
+                      <E n="who">TargetSim</E>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+            <U>
+              <T n="multiplier">0</T>
+              <L n="tests">
+                <L>
+                  <V t="relationship">
+                    <U n="relationship">
+                      <U n="required_relationship_bits">
+                        <L n="match_any">
+                          <T>306282<!--RelationshipBit: familyTrope_distant--></T>
+                          <T>309177<!--RelationshipBit: familyTrope_NotDistant--></T>
+                        </L>
+                      </U>
+                      <L n="subject">
+                        <E>Actor</E>
+                      </L>
+                      <L n="target_sim">
+                        <E>TargetSim</E>
+                      </L>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+            <U>
+              <T n="multiplier">0</T>
+              <L n="tests">
+                <L>
+                  <V t="buff">
+                    <U n="buff">
+                      <V n="whitelist" t="enabled">
+                        <L n="enabled">
+                          <T>306626<!--Buff: buff_FamilyDynamics_FamilyTropeAdventureCooldown--></T>
+                        </L>
+                      </V>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+            <U>
+              <T n="multiplier">0</T>
+              <L n="tests">
+                <L>
+                  <V t="relationship">
+                    <U n="relationship">
+                      <U n="prohibited_relationship_bits">
+                        <L n="match_any">
+                          <T>15806<!--RelationshipBitCollection: rbc_Family_IncludingSpouseAndDistantAndStep--></T>
+                          <T>474387<!--RelationshipBitCollection: rbc_Family_InLaws--></T>
+                        </L>
+                      </U>
+                      <L n="subject">
+                        <E>Actor</E>
+                      </L>
+                      <L n="target_sim">
+                        <E>TargetSim</E>
+                      </L>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+            <U>
+              <T n="multiplier">0.01</T>
+              <L n="tests">
+                <L>
+                  <V t="relationship">
+                    <U n="relationship">
+                      <U n="required_relationship_bits">
+                        <L n="match_any">
+                          <T>306293<!--RelationshipBit: familyTrope_close--></T>
+                          <T>306291<!--RelationshipBit: familyTrope_compliant_target_isAuthorityOf_actor--></T>
+                          <T>306294<!--RelationshipBit: familyTrope_compliant_target_IsSubordinateOf_actor--></T>
+                          <T>310888<!--RelationshipBit: familyTrope_difficult--></T>
+                          <T>306279<!--RelationshipBit: familyTrope_Jokesters--></T>
+                          <T>306356<!--RelationshipBit: familyTrope_loving_target_IsAuthorityOf_actor--></T>
+                          <T>306357<!--RelationshipBit: familyTrope_loving_target_isSubordinateOf_actor--></T>
+                          <T>306289<!--RelationshipBit: familyTrope_permissive_target_isAuthorityOf_actor--></T>
+                          <T>306296<!--RelationshipBit: familyTrope_permissive_target_isSubordinateOf_actor--></T>
+                        </L>
+                      </U>
+                      <L n="subject">
+                        <E>Actor</E>
+                      </L>
+                      <L n="target_sim">
+                        <E>TargetSim</E>
+                      </L>
+                    </U>
+                  </V>
+                </L>
+              </L>
+            </U>
+            <U>
+              <T n="multiplier">0</T>
+              <L n="tests">
+                <L>
+                  <V t="relationship">
+                    <U n="relationship">
+                      <U n="relationship_score_interval">
+                        <T n="lower_bound">5</T>
+                        <T n="upper_bound">100</T>
+                      </U>
+                      <L n="subject">
+                        <E>Actor</E>
+                      </L>
+                      <L n="target_sim">
+                        <E>TargetSim</E>
+                      </L>
+                      <T n="track">16650<!--RelationshipTrack: LTR_Friendship_Main--></T>
                     </U>
                   </V>
                 </L>

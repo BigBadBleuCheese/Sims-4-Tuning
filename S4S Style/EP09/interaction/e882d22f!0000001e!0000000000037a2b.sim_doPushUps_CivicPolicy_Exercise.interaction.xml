@@ -666,14 +666,174 @@
   <L n="mood_list">
     <T>14632<!--Mood: Mood_Angry--></T>
   </L>
-  <V n="outcome" t="single">
-    <U n="single">
-      <U n="actions">
-        <L n="loot_list">
-          <T>11081<!--LootActions: Skill_Loot_Dynamic_Tiny--></T>
-          <T>100862<!--LootActions: Skill_Loot_Dynamic_Small_ChildrenOnly_Motor--></T>
-        </L>
-      </U>
+  <V n="outcome" t="test_based">
+    <U n="test_based">
+      <L n="fallback_outcomes">
+        <U>
+          <U n="outcome">
+            <L n="loot_list">
+              <T>11081<!--LootActions: Skill_Loot_Dynamic_Tiny--></T>
+              <T>100862<!--LootActions: Skill_Loot_Dynamic_Small_ChildrenOnly_Motor--></T>
+            </L>
+          </U>
+          <U n="weight">
+            <T n="base_value">4</T>
+          </U>
+        </U>
+        <U>
+          <U n="outcome">
+            <V n="animation_ref" t="enabled">
+              <U n="enabled">
+                <T n="factory">513652<!--AnimationElement: doPushUps_Fail--></T>
+                <U n="overrides">
+                  <V n="balloons" t="enabled">
+                    <L n="enabled">
+                      <U>
+                        <L n="balloon_choices">
+                          <U>
+                            <V n="item" t="balloon_icon">
+                              <U n="balloon_icon">
+                                <V n="icon" t="resource_key">
+                                  <U n="resource_key">
+                                    <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_EmotionEmbarrassed.png">2f7d0004:00000000:bfa08d146be80ed6</T>
+                                  </U>
+                                </V>
+                              </U>
+                            </V>
+                          </U>
+                        </L>
+                        <L n="balloon_target">
+                          <E>Actor</E>
+                        </L>
+                      </U>
+                    </L>
+                  </V>
+                </U>
+              </U>
+            </V>
+            <L n="basic_extras">
+              <V t="broadcaster">
+                <U n="broadcaster">
+                  <L n="broadcaster_types">
+                    <U>
+                      <T n="item">125125<!--Broadcaster: broadcaster_Generic_Reactions_Shocked--></T>
+                    </U>
+                  </L>
+                </U>
+              </V>
+            </L>
+            <L n="loot_list">
+              <T>11081<!--LootActions: Skill_Loot_Dynamic_Tiny--></T>
+              <T>100862<!--LootActions: Skill_Loot_Dynamic_Small_ChildrenOnly_Motor--></T>
+            </L>
+          </U>
+          <U n="weight">
+            <L n="multipliers">
+              <U>
+                <T n="multiplier">0</T>
+                <L n="tests">
+                  <L>
+                    <V t="skill_test">
+                      <U n="skill_test">
+                        <T n="skill">16659<!--Skill: skill_Fitness--></T>
+                        <V n="skill_range" t="interval">
+                          <U n="interval">
+                            <U n="skill_interval">
+                              <T n="lower_bound">3</T>
+                            </U>
+                          </U>
+                        </V>
+                      </U>
+                    </V>
+                  </L>
+                </L>
+              </U>
+            </L>
+          </U>
+        </U>
+      </L>
+      <L n="tested_outcomes">
+        <U>
+          <L n="potential_outcomes">
+            <U>
+              <U n="outcome">
+                <V n="animation_ref" t="enabled">
+                  <U n="enabled">
+                    <T n="factory">513652<!--AnimationElement: doPushUps_Fail--></T>
+                    <U n="overrides">
+                      <V n="balloons" t="enabled">
+                        <L n="enabled">
+                          <U>
+                            <L n="balloon_choices">
+                              <U>
+                                <V n="item" t="balloon_icon">
+                                  <U n="balloon_icon">
+                                    <V n="icon" t="resource_key">
+                                      <U n="resource_key">
+                                        <T n="key" p="InGame\UI\Icons\Headlines\Final\headline_EmotionEmbarrassed.png">2f7d0004:00000000:bfa08d146be80ed6</T>
+                                      </U>
+                                    </V>
+                                  </U>
+                                </V>
+                              </U>
+                            </L>
+                            <L n="balloon_target">
+                              <E>Actor</E>
+                            </L>
+                          </U>
+                        </L>
+                      </V>
+                    </U>
+                  </U>
+                </V>
+                <L n="basic_extras">
+                  <V t="broadcaster">
+                    <U n="broadcaster">
+                      <L n="broadcaster_types">
+                        <U>
+                          <T n="item">125125<!--Broadcaster: broadcaster_Generic_Reactions_Shocked--></T>
+                        </U>
+                      </L>
+                    </U>
+                  </V>
+                </L>
+                <L n="loot_list">
+                  <T>11081<!--LootActions: Skill_Loot_Dynamic_Tiny--></T>
+                  <T>100862<!--LootActions: Skill_Loot_Dynamic_Small_ChildrenOnly_Motor--></T>
+                </L>
+              </U>
+            </U>
+          </L>
+          <L n="tests">
+            <L>
+              <V t="statistic">
+                <U n="statistic">
+                  <T n="stat">16654<!--Commodity: motive_Energy--></T>
+                  <V n="threshold" t="value_threshold">
+                    <U n="value_threshold">
+                      <E n="comparison">LESS_OR_EQUAL</E>
+                      <T n="value">-55</T>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+            <L>
+              <V t="statistic">
+                <U n="statistic">
+                  <T n="stat">16656<!--Commodity: motive_Hunger--></T>
+                  <V n="threshold" t="value_threshold">
+                    <U n="value_threshold">
+                      <E n="comparison">LESS_OR_EQUAL</E>
+                      <T n="value">-55</T>
+                    </U>
+                  </V>
+                </U>
+              </V>
+            </L>
+          </L>
+        </U>
+      </L>
     </U>
   </V>
   <E n="scoring_priority">NORMAL</E>
@@ -780,7 +940,15 @@
   <L n="test_globals">
     <V t="sim_info">
       <U n="sim_info">
-        <V n="ages" t="specified" />
+        <V n="ages" t="specified">
+          <L n="specified">
+            <E>TEEN</E>
+            <E>YOUNGADULT</E>
+            <E>ADULT</E>
+            <E>ELDER</E>
+            <E>CHILD</E>
+          </L>
+        </V>
         <V n="species" t="specified">
           <U n="specified">
             <L n="species">
